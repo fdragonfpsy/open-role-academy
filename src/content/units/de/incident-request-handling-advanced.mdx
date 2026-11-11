@@ -1,0 +1,79 @@
+---
+id: incident-request-handling-advanced
+competency: incident-request-handling
+level: advanced
+title: "Supportbetrieb steuern: Methoden der Ursachenanalyse, ausgewogene Kennzahlen, Kategorien und Rückstand"
+objectives:
+  - Techniken der Ursachenanalyse wie die 5-Why-Methode nutzen und ihre Grenzen kennen.
+  - Ausgewogene Support-Kennzahlen und sinnvolle Ticketkategorien gestalten.
+  - Einen wachsenden Rückstand als Flussproblem analysieren und den richtigen Hebel wählen.
+minutes: 30
+resources:
+  - wikipedia-de-5-why-methode
+  - wikipedia-de-incident-management
+  - wikipedia-root-cause-analysis
+status: ai-draft
+sources:
+  - title: "Five whys"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Five_whys
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Root cause analysis"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Root_cause_analysis
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Issue tracking system"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Issue_tracking_system
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Service-level agreement"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Service-level_agreement
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Das System führen, nicht nur Tickets
+
+Auf Experten-Niveau verantwortest du, wie Störungs- und Anfragebearbeitung als System funktioniert: Methoden, Kennzahlen, Tool-Konfiguration und Kapazität. Deine Entscheidungen prägen das Verhalten des ganzen Teams.
+
+## Methoden der Ursachenanalyse und ihre Grenzen
+
+Die **5-Why-Methode** fragt wiederholt „warum?“, um ein Problem auf seine Ursache zurückzuführen. Sie ist einfach und für Teamgespräche nützlich. Ihre Grenzen sind bekannt: Die Tiefe von fünf ist willkürlich, sie folgt oft nur einer Ursachenkette, obwohl es mehrere gibt, und sie kann bei Symptomen stehen bleiben. Kombiniere sie bei komplexen oder schweren Störungen mit Daten (Protokolle, Zeitleisten, Änderungsdatensätze) und strukturierteren Analysen, und suche nach beitragenden Faktoren in Prozessen und Werkzeugen – nicht nach Personen, denen man die Schuld geben kann.
+
+## Ausgewogene Kennzahlen
+
+Eine einzelne Tempo-Kennzahl wie „geschlossene Tickets pro Person“ verleitet dazu, Tickets zu früh zu schließen. Kombiniere Kennzahlen, die sich ausgleichen:
+
+- **Lösungszeit** im Vergleich zum SLA (Tempo);
+- **Wiedereröffnungsquote** (Qualität der Lösung);
+- **Zufriedenheit der Nutzenden** nach Abschluss (Erleben);
+- **Alter des Rückstands** (wie lange Tickets warten).
+
+Überprüfe das Set regelmäßig und besprich es mit dem Team – Kennzahlen dienen dem Lernen, nicht der Bestrafung.
+
+## Kategorien, die nützliche Daten liefern
+
+Kategorien dienen dazu, Tickets **zuzuweisen** und **Muster sichtbar** zu machen. Bietet ein Tool 140 Kategorien und wird in 40 % der Fälle „Sonstiges“ gewählt, sind die Daten wertlos. Entwirf ein kleines, klares Set, das sich daran orientiert, was Zuweisung und Berichte wirklich brauchen, erkläre es und überprüfe es regelmäßig.
+
+## Der Rückstand als Flussproblem
+
+Wächst der Rückstand, vergleiche **eingehende und gelöste Tickets** nach Kategorie und Team. Ist die Nachfrage gestiegen – etwa nach einem Rollout – oder die Kapazität gesunken? Welche wiederkehrenden Themen treiben das Volumen? Die Hebel unterscheiden sich: Nachfrage senken, indem Ursachen beseitigt und Self-Service angeboten wird, oder Kapazität erhöhen beziehungsweise verlagern. Alte Tickets massenhaft zu schließen verdeckt das Problem nur.
+
+## Beispiel aus der Praxis
+
+Nach einem Laptop-Rollout hat sich der Rückstand in Noras Service Desk verdoppelt. Ihre Flussanalyse zeigt, dass 60 % der neuen Tickets Treiber für Dockingstationen betreffen. Sie fordert ein festes Treiberpaket an, veröffentlicht einen Self-Service-Artikel und plant für vier Wochen zusätzliche Kapazität ein. Innerhalb eines Monats ist der Rückstand wieder normal.
+
+## Das Wichtigste in Kürze
+
+- Die 5-Why-Methode mit Daten nutzen; mehrere Ursachen suchen, Schuldzuweisungen vermeiden.
+- Tempo, Qualität, Zufriedenheit und Rückstandsalter ausbalancieren.
+- Wenige, zweckmäßige Kategorien machen Berichte verlässlich.
+- Rückstandswachstum als Flussproblem behandeln: Zufluss, Abfluss, Treiber.

@@ -37,7 +37,7 @@ For each competency: ≥1 unit per required level (en + de), ≥6 items across d
   - [x] business-finance-fundamentals
 - [ ] IT Support & Operations content complete (sub-tasks below; publish the role when all are done)
   - [x] it-service-management
-  - [ ] incident-request-handling
+  - [x] incident-request-handling
   - [ ] troubleshooting-methods
   - [ ] user-support-communication
   - [ ] endpoint-management
