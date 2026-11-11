@@ -1,0 +1,197 @@
+competency: communication-collaboration
+items:
+  # ---------- foundation (950 ± 100) ----------
+  - id: cc-f-active-listening
+    level: foundation
+    difficulty: 880
+    type: single
+    stem:
+      en: A colleague explains a problem with a delivery. Which response shows active listening best?
+      de: Ein Kollege erklärt ein Problem mit einer Lieferung. Welche Reaktion zeigt aktives Zuhören am besten?
+    options:
+      - { en: '"So if I understand you correctly, the parts arrived but the paperwork is missing — is that right?"', de: '„Wenn ich dich richtig verstehe, sind die Teile da, aber die Papiere fehlen – stimmt das?“', correct: true }
+      - { en: '"That happens all the time, don''t worry."', de: '„Das passiert ständig, mach dir keine Sorgen.“', correct: false }
+      - { en: '"I had a much worse problem last week …"', de: '„Ich hatte letzte Woche ein viel schlimmeres Problem …“', correct: false }
+      - { en: Answering e-mails while the colleague is talking, de: "E-Mails beantworten, während der Kollege spricht", correct: false }
+    explanation:
+      en: Paraphrasing what you heard and checking it is a core technique of active listening. It shows attention and clears up misunderstandings early.
+      de: Das Gehörte mit eigenen Worten wiederzugeben und nachzufragen ist eine Kerntechnik des aktiven Zuhörens. Es zeigt Aufmerksamkeit und klärt Missverständnisse früh.
+    source: https://en.wikipedia.org/wiki/Active_listening
+  - id: cc-f-clear-email
+    level: foundation
+    difficulty: 930
+    type: multi
+    stem:
+      en: You need a decision from your manager by Friday. What makes your e-mail clear?
+      de: Du brauchst bis Freitag eine Entscheidung deiner Führungskraft. Was macht deine E-Mail klar?
+    options:
+      - { en: A subject line that names the topic and the request, de: "Eine Betreffzeile, die Thema und Anliegen nennt", correct: true }
+      - { en: The concrete question and the deadline near the beginning, de: Die konkrete Frage und die Frist gleich am Anfang, correct: true }
+      - { en: The most important background in a few short sentences, de: Der wichtigste Hintergrund in wenigen kurzen Sätzen, correct: true }
+      - { en: The full history of the project before the question, de: Die komplette Projektgeschichte vor der eigentlichen Frage, correct: false }
+    explanation:
+      en: Busy readers decide quickly what to do with a message. Put the request and deadline first, add only the background they need, and make the subject line meaningful.
+      de: Viel beschäftigte Menschen entscheiden schnell, was sie mit einer Nachricht tun. Stell Anliegen und Frist an den Anfang, ergänze nur den nötigen Hintergrund und formuliere einen aussagekräftigen Betreff.
+    source: https://openstax.org/books/organizational-behavior/pages/11-introduction
+  - id: cc-f-channel-choice
+    level: foundation
+    difficulty: 980
+    type: single
+    stem:
+      en: A customer system is down right now and you need the on-call colleague immediately. Which channel is most suitable?
+      de: Ein Kundensystem ist gerade ausgefallen und du brauchst sofort die Kollegin in Rufbereitschaft. Welcher Kanal ist am besten geeignet?
+    options:
+      - { en: A phone call (followed by a short written note in the ticket), de: "Ein Anruf (danach eine kurze schriftliche Notiz im Ticket)", correct: true }
+      - { en: A long e-mail, de: Eine lange E-Mail, correct: false }
+      - { en: A comment in a shared document, de: Ein Kommentar in einem gemeinsamen Dokument, correct: false }
+      - { en: A post in the monthly newsletter, de: Ein Beitrag im monatlichen Newsletter, correct: false }
+    explanation:
+      en: Urgent matters need a synchronous channel. Documenting the outcome in writing afterwards keeps everyone informed and makes the case traceable.
+      de: Dringendes braucht einen direkten, synchronen Kanal. Das Ergebnis danach schriftlich festzuhalten hält alle informiert und macht den Fall nachvollziehbar.
+    source: https://openstax.org/books/organizational-behavior/pages/11-introduction
+  - id: cc-f-feedback-specific
+    level: foundation
+    difficulty: 1030
+    type: single
+    stem:
+      en: Which piece of feedback is most helpful?
+      de: Welches Feedback ist am hilfreichsten?
+    options:
+      - { en: '"In today''s meeting you presented the figures without the comparison to last year, so the team could not judge the trend. Could you add it next time?"', de: '„Im heutigen Meeting hast du die Zahlen ohne Vorjahresvergleich gezeigt, deshalb konnte das Team den Trend nicht einschätzen. Kannst du ihn nächstes Mal ergänzen?“', correct: true }
+      - { en: '"Your presentations are always a bit chaotic."', de: '„Deine Präsentationen sind immer etwas chaotisch.“', correct: false }
+      - { en: '"Great job!"', de: '„Super gemacht!“', correct: false }
+      - { en: '"You are not a numbers person."', de: '„Du bist halt kein Zahlenmensch.“', correct: false }
+    explanation:
+      en: Helpful feedback describes a concrete observation, its effect and a clear request — about behaviour, not about the person. Vague praise or labels give no direction.
+      de: Hilfreiches Feedback beschreibt eine konkrete Beobachtung, ihre Wirkung und eine klare Bitte – zum Verhalten, nicht zur Person. Pauschales Lob oder Etiketten geben keine Richtung.
+    source: https://en.wikipedia.org/wiki/Feedback
+  # ---------- practitioner (1250 ± 100) ----------
+  - id: cc-p-meeting-outcomes
+    level: practitioner
+    difficulty: 1170
+    type: multi
+    stem:
+      en: You organise a one-hour project meeting. What makes it effective?
+      de: Du organisierst ein einstündiges Projektmeeting. Was macht es wirksam?
+    options:
+      - { en: A goal and agenda shared in advance, de: "Ein vorab geteiltes Ziel und eine Agenda", correct: true }
+      - { en: Only the people needed for the decisions are invited, de: "Nur die Personen sind eingeladen, die für die Entscheidungen gebraucht werden", correct: true }
+      - { en: Decisions and action items with owners and dates are written down and shared, de: "Entscheidungen und Aufgaben mit Verantwortlichen und Terminen werden festgehalten und geteilt", correct: true }
+      - { en: Everyone in the department is invited just in case, de: "Vorsichtshalber wird die ganze Abteilung eingeladen", correct: false }
+    explanation:
+      en: Meetings are worth their cost when they have a clear purpose, the right people and documented results. Inviting everyone "just in case" wastes time and blurs responsibility.
+      de: Meetings lohnen sich, wenn sie einen klaren Zweck, die richtigen Teilnehmenden und dokumentierte Ergebnisse haben. Alle „vorsichtshalber“ einzuladen kostet Zeit und verwischt Verantwortung.
+    source: https://openstax.org/books/organizational-behavior/pages/9-introduction
+  - id: cc-p-async
+    level: practitioner
+    difficulty: 1230
+    type: single
+    stem:
+      en: Your team works in different locations and time zones and needs to agree on a document. What works best?
+      de: Dein Team arbeitet an verschiedenen Orten und in verschiedenen Zeitzonen und muss sich auf ein Dokument einigen. Was funktioniert am besten?
+    options:
+      - { en: One shared document with comments, a clear deadline for input and a named person who decides, de: "Ein gemeinsames Dokument mit Kommentaren, einer klaren Frist für Rückmeldungen und einer benannten Person, die entscheidet", correct: true }
+      - { en: Everyone sends their edited copy by e-mail to the whole team, de: "Alle schicken ihre bearbeitete Kopie per E-Mail an das ganze Team", correct: false }
+      - { en: Wait until everyone can join a call at the same time, however long it takes, de: "Warten, bis alle gleichzeitig an einem Call teilnehmen können, egal wie lange es dauert", correct: false }
+      - { en: The person who replies first decides alone without telling the others, de: "Wer zuerst antwortet, entscheidet allein, ohne die anderen zu informieren", correct: false }
+    explanation:
+      en: Asynchronous collaboration works with one shared artefact, transparent comments, deadlines and clear decision rights. Parallel copies create conflicting versions.
+      de: Asynchrone Zusammenarbeit funktioniert mit einem gemeinsamen Arbeitsstand, transparenten Kommentaren, Fristen und klaren Entscheidungsrechten. Parallele Kopien erzeugen widersprüchliche Versionen.
+    source: https://en.wikipedia.org/wiki/Asynchronous_communication
+  - id: cc-p-disagreement
+    level: practitioner
+    difficulty: 1280
+    type: single
+    stem:
+      en: In a meeting, a colleague strongly disagrees with your proposal. What is the most constructive reaction?
+      de: In einem Meeting widerspricht eine Kollegin deinem Vorschlag heftig. Was ist die konstruktivste Reaktion?
+    options:
+      - { en: Ask what concerns are behind the objection, summarise them and look for criteria both can agree on, de: "Nachfragen, welche Bedenken hinter dem Einwand stehen, sie zusammenfassen und nach Kriterien suchen, denen beide zustimmen können", correct: true }
+      - { en: Repeat your proposal louder until she gives up, de: "Den eigenen Vorschlag lauter wiederholen, bis sie aufgibt", correct: false }
+      - { en: Drop your proposal immediately to avoid conflict, de: "Den Vorschlag sofort fallen lassen, um Konflikte zu vermeiden", correct: false }
+      - { en: Complain about her to the team afterwards, de: "Sich danach beim Team über sie beschweren", correct: false }
+    explanation:
+      en: Disagreement about the task can improve decisions if it is handled with curiosity. Understanding the underlying concerns and agreeing on criteria turns a clash of positions into joint problem-solving.
+      de: Meinungsverschiedenheiten in der Sache können Entscheidungen verbessern, wenn man ihnen mit Neugier begegnet. Wer die Bedenken dahinter versteht und gemeinsame Kriterien vereinbart, macht aus einem Positionskampf gemeinsames Problemlösen.
+    source: https://en.wikipedia.org/wiki/Active_listening
+  - id: cc-p-receiving-feedback
+    level: practitioner
+    difficulty: 1330
+    type: single
+    stem:
+      en: You receive critical feedback on a report you are proud of. What is the most useful first step?
+      de: Du erhältst kritisches Feedback zu einem Bericht, auf den du stolz bist. Was ist der sinnvollste erste Schritt?
+    options:
+      - { en: Listen, ask clarifying questions and thank the person before deciding what to change, de: "Zuhören, klärende Fragen stellen und dich bedanken, bevor du entscheidest, was du änderst", correct: true }
+      - { en: Explain immediately why the feedback is wrong, de: "Sofort erklären, warum das Feedback falsch ist", correct: false }
+      - { en: Agree with everything to end the conversation quickly, de: "Allem zustimmen, um das Gespräch schnell zu beenden", correct: false }
+      - { en: Ignore it, because you know the topic best, de: "Es ignorieren, weil du das Thema am besten kennst", correct: false }
+    explanation:
+      en: Receiving feedback well means understanding it first; you can still decide afterwards which points to act on. Defending yourself immediately makes people less willing to give feedback next time.
+      de: Gut mit Feedback umzugehen heißt, es zuerst zu verstehen; was du davon umsetzt, kannst du danach entscheiden. Wer sich sofort verteidigt, macht andere weniger bereit, beim nächsten Mal Feedback zu geben.
+    source: https://en.wikipedia.org/wiki/Feedback
+  # ---------- advanced (1550 ± 100) ----------
+  - id: cc-a-psych-safety
+    level: advanced
+    difficulty: 1480
+    type: single
+    stem:
+      en: What does "psychological safety" in a team mean?
+      de: Was bedeutet „psychologische Sicherheit“ in einem Team?
+    options:
+      - { en: Members believe they will not be punished or humiliated for speaking up with ideas, questions, concerns or mistakes, de: "Die Mitglieder sind überzeugt, dass sie nicht bestraft oder bloßgestellt werden, wenn sie Ideen, Fragen, Bedenken oder Fehler ansprechen", correct: true }
+      - { en: Nobody ever disagrees with anyone, de: "Niemand widerspricht jemals jemandem", correct: false }
+      - { en: Performance problems are never addressed, de: "Leistungsprobleme werden nie angesprochen", correct: false }
+      - { en: Every team member has a permanent contract, de: "Alle Teammitglieder haben einen unbefristeten Vertrag", correct: false }
+    explanation:
+      en: The concept, associated with researcher Amy Edmondson, is about speaking up without fear. It does not mean avoiding conflict or lowering standards — open disagreement is often a sign of it.
+      de: Das Konzept, das mit der Forscherin Amy Edmondson verbunden ist, beschreibt, ohne Angst sprechen zu können. Es bedeutet nicht, Konflikte zu vermeiden oder Ansprüche zu senken – offener Widerspruch ist oft sogar ein Zeichen dafür.
+    source: https://en.wikipedia.org/wiki/Psychological_safety
+  - id: cc-a-build-safety
+    level: advanced
+    difficulty: 1530
+    type: multi
+    stem:
+      en: As a team lead, which behaviours help to build psychological safety?
+      de: Welche Verhaltensweisen helfen dir als Teamleitung, psychologische Sicherheit aufzubauen?
+    options:
+      - { en: Openly acknowledging your own mistakes and open questions, de: "Eigene Fehler und offene Fragen offen ansprechen", correct: true }
+      - { en: Actively inviting quieter team members to contribute, de: "Zurückhaltendere Teammitglieder aktiv zu Beiträgen einladen", correct: true }
+      - { en: Reacting to bad news with questions about causes rather than blame, de: "Auf schlechte Nachrichten mit Fragen nach Ursachen statt mit Schuldzuweisungen reagieren", correct: true }
+      - { en: Publicly criticising people who report problems late, de: "Personen öffentlich kritisieren, die Probleme spät melden", correct: false }
+    explanation:
+      en: Leaders shape what is safe to say. Modelling fallibility, inviting input and responding to problems with curiosity encourage speaking up; public blame teaches people to stay silent.
+      de: Führungskräfte prägen, was man gefahrlos sagen kann. Eigene Fehlbarkeit zeigen, Beiträge einladen und auf Probleme mit Neugier reagieren ermutigt zum Sprechen; öffentliche Schuldzuweisungen lehren Schweigen.
+    source: https://en.wikipedia.org/wiki/Psychological_safety
+  - id: cc-a-hybrid-meetings
+    level: advanced
+    difficulty: 1590
+    type: single
+    stem:
+      en: In your hybrid meetings, remote participants rarely speak. Which measure addresses this most directly?
+      de: In deinen hybriden Meetings melden sich Teilnehmende aus der Ferne kaum zu Wort. Welche Maßnahme setzt am direktesten an?
+    options:
+      - { en: Structure turns (e.g. remote participants first), use a shared chat/document for input and give everyone equal audio and video quality, de: "Wortbeiträge strukturieren (z. B. Remote-Teilnehmende zuerst), einen gemeinsamen Chat oder ein Dokument für Beiträge nutzen und allen gleiche Ton- und Bildqualität geben", correct: true }
+      - { en: Ask remote participants to turn their cameras off to save bandwidth, de: "Remote-Teilnehmende bitten, die Kamera auszuschalten, um Bandbreite zu sparen", correct: false }
+      - { en: Make decisions in the room after the call ends, de: "Entscheidungen nach dem Ende des Calls im Raum treffen", correct: false }
+      - { en: Stop inviting remote colleagues, de: "Remote-Kolleginnen und -Kollegen nicht mehr einladen", correct: false }
+    explanation:
+      en: Hybrid settings favour people in the room. Deliberate facilitation — turn-taking, parallel written input and equal technical conditions — gives everyone a fair voice. Decisions made after the call exclude people.
+      de: Hybride Formate bevorzugen Anwesende im Raum. Bewusste Moderation – Reihenfolge der Wortbeiträge, parallele schriftliche Beiträge und gleiche technische Bedingungen – gibt allen eine faire Stimme. Entscheidungen nach dem Call schließen Menschen aus.
+    source: https://openstax.org/books/organizational-behavior/pages/9-introduction
+  - id: cc-a-cross-functional
+    level: advanced
+    difficulty: 1640
+    type: single
+    stem:
+      en: Two departments keep blaming each other for delays in a shared process. What is the best first step for you as the person coordinating both?
+      de: Zwei Abteilungen geben sich gegenseitig die Schuld an Verzögerungen in einem gemeinsamen Prozess. Was ist dein bester erster Schritt als Person, die beide koordiniert?
+    options:
+      - { en: Bring both sides together to map the process, agree on facts and define shared goals and hand-over rules, de: "Beide Seiten zusammenbringen, den Prozess gemeinsam darstellen, sich auf Fakten einigen und gemeinsame Ziele sowie Übergaberegeln festlegen", correct: true }
+      - { en: Decide which department is right and announce it by e-mail, de: "Entscheiden, welche Abteilung recht hat, und es per E-Mail verkünden", correct: false }
+      - { en: Wait until the conflict resolves itself, de: "Warten, bis sich der Konflikt von selbst löst", correct: false }
+      - { en: Talk to each department separately and tell each that the other is at fault, de: "Mit jeder Abteilung einzeln sprechen und jeder sagen, die andere sei schuld", correct: false }
+    explanation:
+      en: Intergroup conflict often comes from different goals and unclear interfaces. A shared view of the process, agreed facts and common goals shift the discussion from blame to improvement.
+      de: Konflikte zwischen Gruppen entstehen oft aus unterschiedlichen Zielen und unklaren Schnittstellen. Ein gemeinsames Bild des Prozesses, abgestimmte Fakten und gemeinsame Ziele verlagern die Diskussion von Schuld zu Verbesserung.
+    source: https://openstax.org/books/organizational-behavior/pages/9-introduction

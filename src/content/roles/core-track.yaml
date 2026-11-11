@@ -5,12 +5,18 @@ title:
   de: Kernkompetenzen für jede Rolle
 summary:
   en: >-
-    The shared core track that every role builds on. Currently available: digital and AI literacy and
-    information security basics (more core competencies follow).
+    The shared core track that every role builds on. Currently available: digital and AI literacy,
+    communication and collaboration, and information security basics (more core competencies follow).
   de: >-
     Der gemeinsame Kernbereich, auf dem jede Rolle aufbaut. Aktuell verfügbar: digitale Kompetenz und
-    KI-Kompetenz sowie Grundlagen der Informationssicherheit (weitere Kernkompetenzen folgen).
+    KI-Kompetenz, Kommunikation und Zusammenarbeit sowie Grundlagen der Informationssicherheit (weitere Kernkompetenzen folgen).
 competencies:
+  - id: communication-collaboration
+    priority: 1
+    targets:
+      foundation: foundation
+      practitioner: practitioner
+      advanced: advanced
   - id: digital-ai-literacy
     priority: 1
     targets:

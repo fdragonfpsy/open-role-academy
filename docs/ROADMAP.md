@@ -31,7 +31,7 @@ For each competency: ≥1 unit per required level (en + de), ≥6 items across d
 - [ ] Core track content complete (sub-tasks below; tick when all are done)
   - [x] information-security-basics (Phase 0 demo slice)
   - [x] digital-ai-literacy
-  - [ ] communication-collaboration
+  - [x] communication-collaboration
   - [ ] working-with-data
   - [ ] self-organisation-project-basics
   - [ ] business-finance-fundamentals
