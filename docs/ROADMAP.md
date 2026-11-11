@@ -38,7 +38,7 @@ For each competency: ≥1 unit per required level (en + de), ≥6 items across d
 - [ ] IT Support & Operations content complete (sub-tasks below; publish the role when all are done)
   - [x] it-service-management
   - [x] incident-request-handling
-  - [ ] troubleshooting-methods
+  - [x] troubleshooting-methods
   - [ ] user-support-communication
   - [ ] endpoint-management
   - [ ] identity-access-management

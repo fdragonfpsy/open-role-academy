@@ -1,0 +1,77 @@
+---
+id: troubleshooting-methods-foundation
+competency: troubleshooting-methods
+level: foundation
+title: "Troubleshooting step by step: describe, reproduce, check, change one thing, verify"
+objectives:
+  - Describe a problem as the difference between expected and actual behaviour.
+  - Follow a simple, repeatable troubleshooting sequence instead of guessing.
+  - Verify a fix with the user and document what solved the problem.
+minutes: 20
+resources:
+  - wikipedia-troubleshooting
+  - wikipedia-logging-computing
+  - wikipedia-de-logdatei
+status: ai-draft
+sources:
+  - title: "Troubleshooting"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Troubleshooting
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Logging (computing)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Logging_(computing)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+When something breaks, the quickest-looking move is to try random fixes: reinstall, restart, swap the cable, update the driver — all at once. Sometimes the problem goes away, but nobody knows why, and it may come back. **Troubleshooting** is the opposite: a logical, systematic search for the cause of a problem, followed by a check that the system really works again.
+
+## Step 1: Describe the problem precisely
+
+A problem is a **difference between what should happen and what actually happens**. "Printing doesn't work" is vague. "When Anna prints from the spreadsheet program, nothing comes out of the second-floor printer; printing from the browser works" is a description you can work with. Ask:
+
+- What exactly happens, and what **error message** appears (word for word, or a screenshot)?
+- What **should** happen instead?
+- **Since when** — and what changed shortly before (update, new device, new password, move)?
+- **Who and what** is affected — one user, one device, one program, everyone?
+
+## Step 2: Reproduce it
+
+Try to make the problem happen again, ideally while you watch. A problem you can reproduce can be tested; a problem you cannot reproduce needs more information first (exact time, exact steps). Note the exact steps.
+
+## Step 3: Check the simple things first
+
+Many problems have simple causes. Check them early because they are cheap to rule out: Is the device switched on and connected? Is the network available? Is the user signed in with the right account? Does the problem also occur after closing and reopening the program? Is there disk space left?
+
+## Step 4: Change one thing at a time
+
+Form a guess ("maybe the printer driver is outdated"), make **one** change to test it, and observe the result. If you change three things at once and the problem disappears, you do not know which change helped — and you may have created a new problem. Write down what you changed, so you can undo it if it did not help.
+
+## Step 5: Use what the system tells you
+
+Error messages and **log files** — records that systems write about their events — often name the cause directly. Note the time the problem occurred and look for entries around that time. You do not need to understand every line; look for words like "error", "failed" or "denied".
+
+## Step 6: Verify and document
+
+A problem is solved when the **user confirms** that the original task works again — not when you think it should. Then document symptom, cause and fix in the ticket so the next person finds the solution faster.
+
+## When to escalate
+
+If you have checked the basics, cannot find the cause within the agreed time, or the fix needs rights or knowledge you do not have, escalate — and hand over everything you have already found and tried.
+
+## Worked example
+
+Jonas gets a ticket: "Laptop has no internet." He asks and learns: since this morning, only on this laptop, colleagues are fine, the laptop is in the office on Wi-Fi. He reproduces it: the browser shows "No connection". Simple checks: Wi-Fi is on, but the laptop is connected to the guest network, which has no access to internal systems. He reconnects to the company network — pages load. The user confirms it works, and Jonas documents "connected to guest Wi-Fi; switched to company Wi-Fi" in the ticket.
+
+## Key takeaways
+
+- A problem = expected behaviour vs. actual behaviour.
+- Describe, reproduce, check simple things, change one thing at a time.
+- Read error messages and logs; note the time.
+- Solved means confirmed by the user — and documented.

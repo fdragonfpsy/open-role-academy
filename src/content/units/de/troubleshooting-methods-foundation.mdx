@@ -1,0 +1,77 @@
+---
+id: troubleshooting-methods-foundation
+competency: troubleshooting-methods
+level: foundation
+title: "Fehlersuche Schritt für Schritt: beschreiben, nachstellen, prüfen, eine Sache ändern, bestätigen"
+objectives:
+  - Ein Problem als Unterschied zwischen erwartetem und tatsächlichem Verhalten beschreiben.
+  - Einer einfachen, wiederholbaren Reihenfolge bei der Fehlersuche folgen, statt zu raten.
+  - Eine Lösung mit den Nutzenden bestätigen und dokumentieren, was das Problem behoben hat.
+minutes: 20
+resources:
+  - wikipedia-de-logdatei
+  - wikipedia-troubleshooting
+  - wikipedia-logging-computing
+status: ai-draft
+sources:
+  - title: "Troubleshooting"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Troubleshooting
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Logging (computing)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Logging_(computing)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Wenn etwas kaputt ist, wirkt es am schnellsten, einfach Lösungen auszuprobieren: neu installieren, neu starten, Kabel tauschen, Treiber aktualisieren – alles auf einmal. Manchmal verschwindet das Problem, aber niemand weiß, warum, und es kann wiederkommen. **Strukturierte Fehlersuche** (englisch *troubleshooting*) ist das Gegenteil: eine logische, systematische Suche nach der Ursache eines Problems und danach die Prüfung, ob das System wirklich wieder funktioniert.
+
+## Schritt 1: Das Problem genau beschreiben
+
+Ein Problem ist ein **Unterschied zwischen dem, was passieren sollte, und dem, was tatsächlich passiert**. „Drucken geht nicht“ ist vage. „Wenn Anna aus der Tabellenkalkulation druckt, kommt am Drucker im zweiten Stock nichts an; aus dem Browser funktioniert es“ ist eine Beschreibung, mit der du arbeiten kannst. Frag:
+
+- Was genau passiert, und welche **Fehlermeldung** erscheint (wörtlich oder als Screenshot)?
+- Was **sollte** stattdessen passieren?
+- **Seit wann** – und was hat sich kurz vorher geändert (Update, neues Gerät, neues Passwort, Umzug)?
+- **Wer und was** ist betroffen – eine Person, ein Gerät, ein Programm, alle?
+
+## Schritt 2: Das Problem nachstellen
+
+Versuche, das Problem erneut auftreten zu lassen, am besten, während du zusiehst. Ein Problem, das du nachstellen kannst, lässt sich testen; für ein Problem, das du nicht nachstellen kannst, brauchst du zuerst mehr Informationen (genaue Uhrzeit, genaue Schritte). Notiere die Schritte.
+
+## Schritt 3: Zuerst das Einfache prüfen
+
+Viele Probleme haben einfache Ursachen. Prüfe sie früh, weil sie sich schnell ausschließen lassen: Ist das Gerät eingeschaltet und angeschlossen? Ist das Netzwerk verfügbar? Ist die Person mit dem richtigen Konto angemeldet? Tritt das Problem auch nach dem Schließen und erneuten Öffnen des Programms auf? Ist noch Speicherplatz frei?
+
+## Schritt 4: Immer nur eine Sache ändern
+
+Bilde eine Vermutung („vielleicht ist der Druckertreiber veraltet“), ändere **eine** Sache, um sie zu prüfen, und beobachte das Ergebnis. Wenn du drei Dinge gleichzeitig änderst und das Problem verschwindet, weißt du nicht, welche Änderung geholfen hat – und hast vielleicht ein neues Problem geschaffen. Schreib auf, was du geändert hast, damit du es rückgängig machen kannst, falls es nicht geholfen hat.
+
+## Schritt 5: Nutzen, was das System dir sagt
+
+Fehlermeldungen und **Logdateien** – Protokolle, die Systeme über ihre Ereignisse schreiben – nennen die Ursache oft direkt. Notiere den Zeitpunkt des Problems und suche nach Einträgen um diese Zeit. Du musst nicht jede Zeile verstehen; achte auf Wörter wie „error“, „failed“ oder „denied“.
+
+## Schritt 6: Bestätigen und dokumentieren
+
+Ein Problem ist gelöst, wenn die **Nutzenden bestätigen**, dass die ursprüngliche Aufgabe wieder funktioniert – nicht, wenn du meinst, dass es klappen müsste. Dokumentiere dann Symptom, Ursache und Lösung im Ticket, damit die nächste Person die Lösung schneller findet.
+
+## Wann du eskalierst
+
+Wenn du die Grundlagen geprüft hast, die Ursache nicht in der vereinbarten Zeit findest oder die Lösung Rechte oder Wissen erfordert, die du nicht hast, eskaliere – und übergib alles, was du bereits herausgefunden und ausprobiert hast.
+
+## Beispiel
+
+Jonas bekommt ein Ticket: „Laptop hat kein Internet.“ Er fragt nach und erfährt: seit heute Morgen, nur dieser Laptop, bei Kolleginnen und Kollegen klappt es, der Laptop ist im Büro im WLAN. Er stellt es nach: Der Browser zeigt „Keine Verbindung“. Einfache Prüfungen: Das WLAN ist an, aber der Laptop ist mit dem Gästenetz verbunden, das keinen Zugriff auf interne Systeme hat. Er verbindet ihn mit dem Firmennetz – die Seiten laden. Die Nutzerin bestätigt, dass es funktioniert, und Jonas dokumentiert „mit Gäste-WLAN verbunden; auf Firmen-WLAN umgestellt“ im Ticket.
+
+## Das Wichtigste in Kürze
+
+- Ein Problem = erwartetes Verhalten vs. tatsächliches Verhalten.
+- Beschreiben, nachstellen, Einfaches prüfen, immer nur eine Sache ändern.
+- Fehlermeldungen und Logs lesen; den Zeitpunkt notieren.
+- Gelöst heißt: von den Nutzenden bestätigt – und dokumentiert.

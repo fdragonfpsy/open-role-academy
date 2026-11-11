@@ -1,0 +1,290 @@
+competency: troubleshooting-methods
+items:
+  - id: tsm-f-describe
+    level: foundation
+    difficulty: 870
+    type: single
+    stem:
+      en: "Which ticket description gives the best starting point for troubleshooting?"
+      de: "Welche Ticketbeschreibung ist der beste Ausgangspunkt für die Fehlersuche?"
+    options:
+      - en: "\"Printing from the spreadsheet program to the 2nd-floor printer produces nothing since this morning's update; printing from the browser works.\""
+        de: "„Drucken aus der Tabellenkalkulation auf den Drucker im 2. Stock liefert seit dem Update heute Morgen nichts; aus dem Browser klappt es.“"
+        correct: true
+      - en: "\"Printer broken.\""
+        de: "„Drucker kaputt.“"
+        correct: false
+      - en: "\"Printing has been annoying for a while.\""
+        de: "„Drucken nervt schon länger.“"
+        correct: false
+      - en: "\"Please buy a new printer.\""
+        de: "„Bitte einen neuen Drucker kaufen.“"
+        correct: false
+    explanation:
+      en: "A useful description states the expected vs. actual behaviour, since when, what changed and what still works. The comparison (browser works) already narrows down the cause."
+      de: "Eine brauchbare Beschreibung nennt erwartetes vs. tatsächliches Verhalten, seit wann, was sich geändert hat und was noch funktioniert. Der Vergleich (Browser klappt) grenzt die Ursache bereits ein."
+    source: https://en.wikipedia.org/wiki/Troubleshooting
+  - id: tsm-f-one-change
+    level: foundation
+    difficulty: 930
+    type: single
+    stem:
+      en: "You suspect three possible causes for a problem. Why should you test them by changing one thing at a time?"
+      de: "Du vermutest drei mögliche Ursachen für ein Problem. Warum solltest du sie prüfen, indem du immer nur eine Sache änderst?"
+    options:
+      - en: "So you know which change actually solved the problem and can undo changes that did not help"
+        de: "Damit du weißt, welche Änderung das Problem tatsächlich gelöst hat, und Änderungen, die nicht geholfen haben, rückgängig machen kannst"
+        correct: true
+      - en: "Because changing several things at once is forbidden by law"
+        de: "Weil es gesetzlich verboten ist, mehrere Dinge gleichzeitig zu ändern"
+        correct: false
+      - en: "Because it always takes less time than changing everything at once"
+        de: "Weil es immer weniger Zeit braucht, als alles auf einmal zu ändern"
+        correct: false
+      - en: "So that the ticket stays open longer"
+        de: "Damit das Ticket länger offen bleibt"
+        correct: false
+    explanation:
+      en: "If several changes are made at once and the problem disappears, nobody knows which one helped — and unnecessary changes may cause new problems. One change at a time keeps cause and effect clear."
+      de: "Werden mehrere Änderungen gleichzeitig vorgenommen und das Problem verschwindet, weiß niemand, welche geholfen hat – und unnötige Änderungen können neue Probleme verursachen. Eine Änderung nach der anderen hält Ursache und Wirkung klar."
+    source: https://en.wikipedia.org/wiki/Troubleshooting
+  - id: tsm-f-logs
+    level: foundation
+    difficulty: 990
+    type: multi
+    stem:
+      en: "A program crashed at about 10:15. Which steps help you use the log files effectively?"
+      de: "Ein Programm ist gegen 10:15 Uhr abgestürzt. Welche Schritte helfen dir, die Logdateien sinnvoll zu nutzen?"
+    options:
+      - en: "Look for entries around 10:15"
+        de: "Nach Einträgen um 10:15 Uhr suchen"
+        correct: true
+      - en: "Look for words such as \"error\", \"failed\" or \"denied\""
+        de: "Nach Wörtern wie „error“, „failed“ oder „denied“ suchen"
+        correct: true
+      - en: "Delete the log so the error does not happen again"
+        de: "Das Log löschen, damit der Fehler nicht wieder auftritt"
+        correct: false
+      - en: "Read only the oldest entries from last year"
+        de: "Nur die ältesten Einträge vom letzten Jahr lesen"
+        correct: false
+    explanation:
+      en: "Logs record events with timestamps. Filtering by the time of the failure and scanning for error keywords finds relevant entries quickly. Deleting logs destroys evidence and fixes nothing."
+      de: "Logs halten Ereignisse mit Zeitstempel fest. Nach dem Zeitpunkt des Fehlers zu filtern und nach Fehler-Schlüsselwörtern zu suchen, findet relevante Einträge schnell. Logs zu löschen vernichtet Belege und behebt nichts."
+    source: https://en.wikipedia.org/wiki/Logging_(computing)
+  - id: tsm-f-verify
+    level: foundation
+    difficulty: 1040
+    type: single
+    stem:
+      en: "You changed a setting and believe the problem is fixed. When is the problem actually solved?"
+      de: "Du hast eine Einstellung geändert und glaubst, das Problem sei behoben. Wann ist das Problem tatsächlich gelöst?"
+    options:
+      - en: "When the user confirms the original task works again, and the fix is documented"
+        de: "Wenn die Person bestätigt, dass die ursprüngliche Aufgabe wieder funktioniert, und die Lösung dokumentiert ist"
+        correct: true
+      - en: "As soon as you have made the change"
+        de: "Sobald du die Änderung vorgenommen hast"
+        correct: false
+      - en: "When the device restarts without an error message"
+        de: "Wenn das Gerät ohne Fehlermeldung neu startet"
+        correct: false
+      - en: "When no new ticket arrives within one hour"
+        de: "Wenn innerhalb einer Stunde kein neues Ticket eingeht"
+        correct: false
+    explanation:
+      en: "Troubleshooting ends with confirmation that the system works again for its original purpose. Only the user can confirm that their task works; documentation helps the next person with the same issue."
+      de: "Die Fehlersuche endet mit der Bestätigung, dass das System für seinen ursprünglichen Zweck wieder funktioniert. Nur die Person selbst kann bestätigen, dass ihre Aufgabe klappt; die Dokumentation hilft der nächsten Person mit demselben Problem."
+    source: https://en.wikipedia.org/wiki/Troubleshooting
+  - id: tsm-p-half-split
+    level: practitioner
+    difficulty: 1170
+    type: single
+    stem:
+      en: "A PC can reach the file server by its IP address but not by its name. What does this result tell you?"
+      de: "Ein PC erreicht den Dateiserver über die IP-Adresse, aber nicht über den Namen. Was sagt dir dieses Ergebnis?"
+    options:
+      - en: "The basic network connection works; focus on name resolution (e.g. DNS)"
+        de: "Die grundlegende Netzwerkverbindung funktioniert; konzentriere dich auf die Namensauflösung (z. B. DNS)"
+        correct: true
+      - en: "The network cable is most likely defective"
+        de: "Das Netzwerkkabel ist höchstwahrscheinlich defekt"
+        correct: false
+      - en: "The file server is switched off"
+        de: "Der Dateiserver ist ausgeschaltet"
+        correct: false
+      - en: "Nothing — the test was useless"
+        de: "Nichts – der Test war nutzlos"
+        correct: false
+    explanation:
+      en: "Reaching the server by IP proves that the lower layers (cable, addressing, routing) and the server itself work. The fault must lie in translating the name to the address. One test has ruled out half of the possibilities."
+      de: "Dass der Server über die IP erreichbar ist, beweist, dass die unteren Schichten (Kabel, Adressierung, Routing) und der Server selbst funktionieren. Der Fehler muss bei der Übersetzung des Namens in die Adresse liegen. Ein Test hat die Hälfte der Möglichkeiten ausgeschlossen."
+    source: https://en.wikipedia.org/wiki/OSI_model
+  - id: tsm-p-first-error
+    level: practitioner
+    difficulty: 1230
+    type: single
+    stem:
+      en: "A log shows twenty error entries within one minute before an application stopped. Which entry should you examine first?"
+      de: "Ein Log zeigt zwanzig Fehlereinträge innerhalb einer Minute, bevor eine Anwendung stoppte. Welchen Eintrag solltest du zuerst untersuchen?"
+    options:
+      - en: "The first error in the sequence, because later errors are often consequences of it"
+        de: "Den ersten Fehler der Folge, weil spätere Fehler oft dessen Konsequenzen sind"
+        correct: true
+      - en: "The last error, because it is the most recent"
+        de: "Den letzten Fehler, weil er der neueste ist"
+        correct: false
+      - en: "A random entry, because they are all equally important"
+        de: "Einen zufälligen Eintrag, weil alle gleich wichtig sind"
+        correct: false
+      - en: "None — log entries are only relevant for auditors"
+        de: "Keinen – Logeinträge sind nur für die Revision relevant"
+        correct: false
+    explanation:
+      en: "Failures often cascade: one fault triggers follow-up errors in dependent components. The earliest error is usually closest to the cause; the last one often only shows the final effect."
+      de: "Fehler lösen oft Kettenreaktionen aus: Ein Fehler erzeugt Folgefehler in abhängigen Komponenten. Der früheste Fehler liegt meist am nächsten an der Ursache; der letzte zeigt oft nur die Endwirkung."
+    source: https://en.wikipedia.org/wiki/Logging_(computing)
+  - id: tsm-p-compare
+    level: practitioner
+    difficulty: 1280
+    type: single
+    stem:
+      en: "A problem occurs for one user on every device they log in to, but not for colleagues on the same devices. Where is the cause most likely?"
+      de: "Ein Problem tritt bei einer Person auf jedem Gerät auf, an dem sie sich anmeldet, aber nicht bei Kolleginnen und Kollegen auf denselben Geräten. Wo liegt die Ursache am wahrscheinlichsten?"
+    options:
+      - en: "In the user's account or profile (e.g. permissions, settings)"
+        de: "Im Konto oder Profil der Person (z. B. Berechtigungen, Einstellungen)"
+        correct: true
+      - en: "In the hardware of the devices"
+        de: "In der Hardware der Geräte"
+        correct: false
+      - en: "In the building's power supply"
+        de: "In der Stromversorgung des Gebäudes"
+        correct: false
+      - en: "In the monitor settings of one device"
+        de: "In den Monitoreinstellungen eines Geräts"
+        correct: false
+    explanation:
+      en: "Comparing with working cases asks \"what is different?\". The devices work for others, so they are ruled out; the one constant factor is the user's account or profile."
+      de: "Der Vergleich mit funktionierenden Fällen fragt: „Was ist anders?“ Die Geräte funktionieren bei anderen, sind also ausgeschlossen; der einzige gleichbleibende Faktor ist das Konto oder Profil der Person."
+    source: https://en.wikipedia.org/wiki/Troubleshooting
+  - id: tsm-p-strategy
+    level: practitioner
+    difficulty: 1330
+    type: single
+    stem:
+      en: "You tried the three fixes that usually solve this kind of error, and none worked. What is the best next step?"
+      de: "Du hast die drei Lösungen ausprobiert, die diese Art von Fehler normalerweise beheben, und keine hat funktioniert. Was ist der beste nächste Schritt?"
+    options:
+      - en: "Switch to a structured search: follow the path of the data through the system and test where it breaks"
+        de: "Zu einer strukturierten Suche wechseln: dem Weg der Daten durch das System folgen und testen, wo er abbricht"
+        correct: true
+      - en: "Keep trying further fixes from internet forums until one works"
+        de: "Weitere Lösungen aus Internetforen ausprobieren, bis eine funktioniert"
+        correct: false
+      - en: "Close the ticket as \"cannot be reproduced\""
+        de: "Das Ticket als „nicht reproduzierbar“ schließen"
+        correct: false
+      - en: "Reinstall the operating system right away"
+        de: "Sofort das Betriebssystem neu installieren"
+        correct: false
+    explanation:
+      en: "Experience-based (symptomatic) reasoning is fast but fails for unfamiliar problems. Then a topographic strategy — using knowledge of how the system is built to isolate the faulty part — is more reliable than guessing on."
+      de: "Erfahrungsbasiertes (symptomorientiertes) Vorgehen ist schnell, scheitert aber bei unbekannten Problemen. Dann ist eine topografische Strategie – mit Wissen über den Systemaufbau den fehlerhaften Teil eingrenzen – verlässlicher als weiteres Raten."
+    source: https://en.wikipedia.org/wiki/Troubleshooting
+  - id: tsm-a-root-cause
+    level: advanced
+    difficulty: 1480
+    type: single
+    stem:
+      en: "An application was slow because the disk was full; log files are never rotated and disk space is not monitored. Which statement is the root cause?"
+      de: "Eine Anwendung war langsam, weil die Festplatte voll war; Logdateien werden nie rotiert, und der Speicherplatz wird nicht überwacht. Welche Aussage beschreibt die Grundursache?"
+    options:
+      - en: "Log files are never rotated and nobody monitors disk space"
+        de: "Logdateien werden nie rotiert, und niemand überwacht den Speicherplatz"
+        correct: true
+      - en: "The application was slow"
+        de: "Die Anwendung war langsam"
+        correct: false
+      - en: "The disk was full"
+        de: "Die Festplatte war voll"
+        correct: false
+      - en: "A user complained"
+        de: "Eine Person hat sich beschwert"
+        correct: false
+    explanation:
+      en: "\"Slow\" is the symptom and \"disk full\" the immediate cause. The root cause is the condition that allowed it — removing it prevents recurrence; freeing disk space only restores service."
+      de: "„Langsam“ ist das Symptom, „Festplatte voll“ die unmittelbare Ursache. Die Grundursache ist der Zustand, der das ermöglicht hat – ihre Beseitigung verhindert eine Wiederholung; Speicher freizugeben stellt nur den Dienst wieder her."
+    source: https://en.wikipedia.org/wiki/Root_cause_analysis
+  - id: tsm-a-bisection
+    level: advanced
+    difficulty: 1530
+    type: single
+    stem:
+      en: "A configuration worked before 16 recorded changes and fails after them. Using bisection, roughly how many tests do you need at most to find the change that caused the failure?"
+      de: "Eine Konfiguration funktionierte vor 16 dokumentierten Änderungen und schlägt danach fehl. Wie viele Tests brauchst du mit Bisektion höchstens ungefähr, um die verursachende Änderung zu finden?"
+    options:
+      - en: "About 4, because each test halves the remaining candidates"
+        de: "Etwa 4, weil jeder Test die verbleibenden Kandidaten halbiert"
+        correct: true
+      - en: "16, one per change"
+        de: "16, eine pro Änderung"
+        correct: false
+      - en: "8, half of the changes"
+        de: "8, die Hälfte der Änderungen"
+        correct: false
+      - en: "It cannot be determined without testing every change"
+        de: "Das lässt sich nicht bestimmen, ohne jede Änderung zu testen"
+        correct: false
+    explanation:
+      en: "Bisection works like binary search: 16 → 8 → 4 → 2 → 1 candidates, so about four tests suffice. This only works if changes are recorded and the failure can be tested reliably."
+      de: "Bisektion funktioniert wie eine binäre Suche: 16 → 8 → 4 → 2 → 1 Kandidaten, also genügen etwa vier Tests. Das klappt nur, wenn Änderungen dokumentiert sind und sich der Fehler zuverlässig testen lässt."
+    source: https://en.wikipedia.org/wiki/Bisection_(software_engineering)
+  - id: tsm-a-five-whys-limits
+    level: advanced
+    difficulty: 1590
+    type: multi
+    stem:
+      en: "Which statements describe limitations of the five whys, and how to counter them?"
+      de: "Welche Aussagen beschreiben Grenzen der 5-Why-Methode und wie man ihnen begegnet?"
+    options:
+      - en: "It tends to follow a single chain of causes, so contributing factors can be missed"
+        de: "Sie folgt meist einer einzigen Ursachenkette, sodass beitragende Faktoren übersehen werden können"
+        correct: true
+      - en: "Different people may reach different root causes for the same event, so each answer should be checked against evidence"
+        de: "Verschiedene Personen können für dasselbe Ereignis zu unterschiedlichen Grundursachen kommen, daher sollte jede Antwort an Belegen geprüft werden"
+        correct: true
+      - en: "An Ishikawa diagram can help a group consider several categories of causes"
+        de: "Ein Ishikawa-Diagramm kann einer Gruppe helfen, mehrere Kategorien von Ursachen zu betrachten"
+        correct: true
+      - en: "You must always stop after exactly five questions, even if the cause is unclear"
+        de: "Man muss immer nach genau fünf Fragen aufhören, auch wenn die Ursache unklar ist"
+        correct: false
+    explanation:
+      en: "Five is a guideline, not a rule. The method's main weaknesses are its single-chain focus and the subjectivity of answers; evidence checks and fishbone diagrams with several branches address both."
+      de: "Fünf ist ein Richtwert, keine Regel. Die Hauptschwächen der Methode sind der Fokus auf eine Kette und die Subjektivität der Antworten; Belegprüfungen und Fischgrätendiagramme mit mehreren Ästen begegnen beidem."
+    source: https://en.wikipedia.org/wiki/Five_whys
+  - id: tsm-a-bias
+    level: advanced
+    difficulty: 1640
+    type: single
+    stem:
+      en: "After yesterday's update, a service fails. A colleague says: \"It's obviously the update,\" and only searches for evidence supporting this. What is the best response?"
+      de: "Nach dem gestrigen Update fällt ein Dienst aus. Ein Kollege sagt: „Das ist offensichtlich das Update“, und sucht nur nach Belegen dafür. Was ist die beste Reaktion?"
+    options:
+      - en: "Treat the update as a strong suspect, but also ask what would disprove it and check whether it explains all symptoms"
+        de: "Das Update als starken Verdächtigen behandeln, aber auch fragen, was es widerlegen würde, und prüfen, ob es alle Symptome erklärt"
+        correct: true
+      - en: "Roll back the update and close the case without further checks"
+        de: "Das Update zurücknehmen und den Fall ohne weitere Prüfung schließen"
+        correct: false
+      - en: "Ignore the update completely, because recent changes are never the cause"
+        de: "Das Update komplett ignorieren, weil jüngste Änderungen nie die Ursache sind"
+        correct: false
+      - en: "Find out who installed the update and hold that person responsible"
+        de: "Herausfinden, wer das Update installiert hat, und diese Person verantwortlich machen"
+        correct: false
+    explanation:
+      en: "Recent changes are good suspects, but looking only for confirming evidence (confirmation bias) can hide the real cause. Seek disconfirming evidence, check that the explanation covers every symptom, and keep reviews blameless."
+      de: "Jüngste Änderungen sind gute Verdächtige, aber nur nach bestätigenden Belegen zu suchen (Bestätigungsfehler) kann die eigentliche Ursache verdecken. Suche nach widerlegenden Belegen, prüfe, ob die Erklärung jedes Symptom abdeckt, und werte ohne Schuldzuweisung aus."
+    source: https://en.wikipedia.org/wiki/Root_cause_analysis

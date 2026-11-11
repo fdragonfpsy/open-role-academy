@@ -1,0 +1,13 @@
+id: wikipedia-osi-model
+url: "https://en.wikipedia.org/wiki/OSI_model"
+title: "OSI model"
+provider: Wikipedia
+language: en
+format: article
+minutes: 20
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-11
+mode: link
+competencies: [troubleshooting-methods]
+levels: [practitioner, advanced]
