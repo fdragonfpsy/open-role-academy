@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-11 — Phase 1 complete: Human Resources framework + FRAMEWORK.md
+
+**Done**
+- Finance & Accounting framework merged ([#4](https://github.com/fdragonfpsy/open-role-academy/pull/4)).
+- Role `human-resources` (status `draft`): 11 role-specific competencies + 6 core competencies with targets and priorities; en/de texts, prerequisites, ESCO references.
+- `docs/FRAMEWORK.md` generated from the YAML (`npm run docs:framework`); a test keeps it in sync.
+
+**Counts:** roles 4 (1 published, 3 draft) · competencies 38 (6 core, 32 role) · units 6 · items 12 · resources 7
+
+**Next:** Phase 2 — core track content (units en/de, ≥ 6 items and 2–4 verified resources per competency), starting with `digital-ai-literacy`.
+
 ## 2026-11-11 — Phase 1: Finance & Accounting framework
 
 **Done**

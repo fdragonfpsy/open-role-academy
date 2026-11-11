@@ -1,0 +1,22 @@
+id: recruitment-selection
+title:
+  en: Recruitment and selection
+  de: Personalgewinnung und -auswahl
+description:
+  en: >-
+    Define requirements with hiring managers, write inclusive job ads, choose sourcing channels,
+    screen applications fairly, run structured interviews and make well-documented, non-
+    discriminatory selection decisions.
+  de: >-
+    Anforderungen mit Führungskräften klären, inklusive Stellenanzeigen schreiben, Kanäle für die
+    Ansprache wählen, Bewerbungen fair sichten, strukturierte Interviews führen und gut
+    dokumentierte, diskriminierungsfreie Auswahlentscheidungen treffen.
+prerequisites: [employment-law-basics]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/496932f1-0b6b-4f73-9432-d95c7ddcd43b
+    label: recruit employees
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/4d313147-b39d-413f-a5e2-b12d5f0dc9e6
+    label: perform interviews

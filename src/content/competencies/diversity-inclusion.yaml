@@ -1,0 +1,18 @@
+id: diversity-inclusion
+title:
+  en: Diversity, equity and inclusion
+  de: Vielfalt, Chancengerechtigkeit und Inklusion
+description:
+  en: >-
+    Apply equal treatment rules, recognise and reduce bias in HR processes, make workplaces
+    accessible and inclusive, and support measures that give everyone fair opportunities.
+  de: >-
+    Regeln zur Gleichbehandlung anwenden, Verzerrungen in HR-Prozessen erkennen und verringern,
+    Arbeitsplätze barrierefrei und inklusiv gestalten und Maßnahmen unterstützen, die allen faire
+    Chancen geben.
+prerequisites: [employment-law-basics]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/bcd2ce08-ba12-4d66-865f-f4ba36419707
+    label: promote inclusion

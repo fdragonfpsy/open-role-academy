@@ -1,0 +1,19 @@
+id: onboarding-offboarding
+title:
+  en: Onboarding and offboarding
+  de: Onboarding und Offboarding
+description:
+  en: >-
+    Plan the employee journey at entry and exit: preboarding, first-day and first-weeks plans,
+    buddies and feedback loops, as well as respectful exits with handovers, access removal,
+    references and exit interviews.
+  de: >-
+    Den Weg von Mitarbeitenden beim Eintritt und Austritt gestalten: Preboarding, Pläne für den
+    ersten Tag und die ersten Wochen, Buddys und Feedbackschleifen sowie respektvolle Austritte mit
+    Übergaben, Entzug von Zugängen, Zeugnissen und Austrittsgesprächen.
+prerequisites: []
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/9d9ba780-4aa2-43d2-888c-95a41a713fb9
+    label: introduce new employees
