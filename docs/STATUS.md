@@ -1,5 +1,15 @@
 # Status
 
+## 2026-11-11 — Phase 2: core track content for communication-collaboration
+
+**Done**
+- `digital-ai-literacy` content merged ([#6](https://github.com/fdragonfpsy/open-role-academy/pull/6)).
+- `communication-collaboration`: 6 units (3 levels × en/de), 12 items, 6 new link-only resources (Wikipedia en/de CC BY-SA 4.0; OpenStax *Organizational Behavior* chapters 9 and 11, CC BY-NC-SA → link only). Added to the published `core-track` role.
+
+**Counts:** roles 4 (1 published, 3 draft) · competencies 38 · units 18 · items 36 · resources 20
+
+**Next:** core track content for `working-with-data`, `self-organisation-project-basics`, `business-finance-fundamentals`.
+
 ## 2026-11-11 — Phase 2 started: core track content for digital-ai-literacy
 
 **Done**

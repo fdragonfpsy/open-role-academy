@@ -1,0 +1,13 @@
+id: wikipedia-active-listening
+url: https://en.wikipedia.org/wiki/Active_listening
+title: "Active listening"
+provider: Wikipedia
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-11
+mode: link
+competencies: [communication-collaboration]
+levels: [foundation, practitioner]

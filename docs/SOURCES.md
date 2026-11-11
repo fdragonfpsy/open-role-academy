@@ -7,7 +7,7 @@ Every resource is stored in `src/content/resources/<id>.yaml` with `license`, `l
 | Source | Typical license | Allowed use |
 |---|---|---|
 | Wikipedia / Wikibooks (en, de) | CC BY-SA 4.0 (text) | embed/adapt with attribution (makes the unit CC BY-SA); currently link only |
-| OpenStax | CC BY 4.0 (most books) | embed/adapt with attribution — verify per book |
+| OpenStax | CC BY 4.0 for many books, but e.g. *Organizational Behavior* is CC BY-NC-SA 4.0 | verify per book; NC → link only |
 | OpenLearn (Open University) | CC BY-NC-SA 4.0 (most free courses) | **link only** |
 | MIT OpenCourseWare | CC BY-NC-SA 4.0 | **link only** |
 | Khan Academy | CC BY-NC-SA (most content) | **link only** |
@@ -29,6 +29,13 @@ Every resource is stored in `src/content/resources/<id>.yaml` with `license`, `l
 | bsi-phishing-password-theft | BSI | free-access | link | 2026-11-11 |
 | bsi-it-grundschutz | BSI | free-access | link | 2026-11-11 |
 | openlearn-intro-cyber-security | OpenLearn | CC BY-NC-SA 4.0 | link | 2026-11-11 |
+| wikipedia-large-language-model, wikipedia-ai-hallucination, wikipedia-information-literacy | Wikipedia (en) | CC BY-SA 4.0 | link | 2026-11-11 |
+| wikipedia-de-halluzination-ki, wikipedia-de-grosses-sprachmodell | Wikipedia (de) | CC BY-SA 4.0 | link | 2026-11-11 |
+| bsi-kuenstliche-intelligenz | BSI | free-access | link | 2026-11-11 |
+| jrc-digcomp-framework | European Commission JRC | free-access (no license stated on page) | link | 2026-11-11 |
+| wikipedia-active-listening, wikipedia-psychological-safety | Wikipedia (en) | CC BY-SA 4.0 | link | 2026-11-11 |
+| wikipedia-de-aktives-zuhoeren, wikipedia-de-teamarbeit | Wikipedia (de) | CC BY-SA 4.0 | link | 2026-11-11 |
+| openstax-ob-communication, openstax-ob-groups | OpenStax (*Organizational Behavior*) | CC BY-NC-SA 4.0 | link | 2026-11-11 |
 
 ## Framework references
 
