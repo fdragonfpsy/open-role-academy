@@ -103,3 +103,8 @@ Format: date — decision — reason — alternatives considered.
 - **Decision:** The placement check is limited to 15 questions in total. Competencies are placed in priority order; with more than 5 targeted competencies, the lowest-priority ones are not placed and keep their prior (self-rating) until their mastery checks.
 - **Reason:** CLAUDE.md §7.1 requires 3–5 items per competency **and** ≤ 15 minutes in total. With the full core track (6 competencies) or a role (up to 18 competencies) both cannot hold at once; the time limit protects learners, and priorities decide what is measured first.
 - **Alternatives:** 1–2 items per competency (too unreliable for an Elo estimate); a multi-session placement (more complex UI) — possible later.
+
+## 2026-11-11 — `troubleshooting-methods`: German resources and canonical Wikipedia URLs
+- **Decision:** German Wikipedia has no general article on IT troubleshooting ("Fehlersuche" does not exist; "Fehleranalyse" is a generic article about the notion of an error). The German units therefore link to the German articles *Logdatei*, *OSI-Modell*, *5-Why-Methode* and *Ursache-Wirkungs-Diagramm* and additionally to the English *Troubleshooting* article. Resource URLs use the canonical article title (*Ursache-Wirkungs-Diagramm*), not the redirect *Ishikawa-Diagramm*.
+- **Reason:** Link only to pages that match the unit's topic; canonical URLs avoid redirect noise in the link check.
+- **Alternatives:** Link the generic *Fehleranalyse* article (off-topic); omit German resources for the foundation level (worse for German learners).

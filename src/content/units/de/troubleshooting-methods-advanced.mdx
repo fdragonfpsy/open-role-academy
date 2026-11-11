@@ -1,0 +1,95 @@
+---
+id: troubleshooting-methods-advanced
+competency: troubleshooting-methods
+level: advanced
+title: "Mehr als die Lösung: Grundursachen, Bisektion, Denkfallen und Lernen aus Störungen"
+objectives:
+  - Symptome, unmittelbare Ursachen und Grundursachen unterscheiden und die 5-Why-Methode sowie Ishikawa-Diagramme anwenden.
+  - Mit Bisektion die Änderung finden, die einen Fehler eingeführt hat.
+  - Typische Denkfallen erkennen und eine strukturierte Störungsauswertung ohne Schuldzuweisung leiten.
+minutes: 30
+resources:
+  - wikipedia-de-5-why-methode
+  - wikipedia-de-ursache-wirkungs-diagramm
+  - wikipedia-root-cause-analysis
+  - wikipedia-five-whys
+  - wikipedia-ishikawa-diagram
+status: ai-draft
+sources:
+  - title: "Root cause analysis"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Root_cause_analysis
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Five whys"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Five_whys
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Ishikawa diagram"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Ishikawa_diagram
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Bisection (software engineering)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Bisection_(software_engineering)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Troubleshooting"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Troubleshooting
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Den Dienst wiederherzustellen ist nicht das Ende
+
+Ein Neustart des Servers stellt den Dienst vielleicht wieder her – aber wenn niemand weiß, warum er ausgefallen ist, fällt er wieder aus. Auf Experten-Niveau leitest du die Arbeit nach der Lösung: die **Grundursache** finden, eine Wiederholung verhindern und das Team besser in der Diagnose machen.
+
+## Symptom, unmittelbare Ursache, Grundursache
+
+- **Symptom:** was Nutzende bemerken („die Anwendung ist langsam“).
+- **Unmittelbare Ursache:** was es direkt ausgelöst hat („die Festplatte war voll“).
+- **Grundursache:** warum das passieren konnte („Logdateien werden nie rotiert, und niemand überwacht den Speicherplatz“).
+
+Die unmittelbare Ursache zu beheben stellt den Dienst wieder her; die Grundursache zu beheben verhindert den nächsten Vorfall. Die Ursachenanalyse (*root cause analysis*) sucht die Faktoren, deren Beseitigung das Problem verhindert hätte.
+
+## 5-Why-Methode und Ishikawa-Diagramm
+
+Bei der **5-Why-Methode** fragst du wiederholt „Warum?“; jede Antwort wird zur nächsten Frage. Sie ist einfach und in Workshops nützlich, hat aber Grenzen: Sie folgt meist einer einzigen Kette, und verschiedene Personen können für dasselbe Ereignis zu unterschiedlichen „Grundursachen“ kommen. Nimm die Zahl fünf als Richtwert und prüfe jede Antwort an Belegen.
+
+Ein **Ishikawa-Diagramm** (Ursache-Wirkungs- oder Fischgrätendiagramm) wirkt dem Ein-Ketten-Problem entgegen: Du schreibst das Problem an den „Kopf“ und sammelst mögliche Ursachen entlang mehrerer Äste – in der IT etwa Menschen, Prozesse, Technik, Umgebung, Lieferanten. So betrachtet eine Gruppe mehrere beitragende Faktoren, bevor sie entscheidet, was sie genauer untersucht.
+
+## Bisektion: die Änderung finden, die es kaputt gemacht hat
+
+Wenn etwas letzte Woche funktioniert hat und heute nicht, liegt die Ursache oft in einer Änderung dazwischen. **Bisektion** durchsucht die Liste der Änderungen wie eine binäre Suche: Teste die Version in der Mitte; schlägt sie fehl, liegt die Ursache in der ersten Hälfte, sonst in der zweiten. Mit jedem Test halbiert sich die Menge der Kandidaten, sodass auch eine lange Liste schnell schrumpft. Versionsverwaltungen unterstützen das für Code; die gleiche Idee funktioniert für Konfigurationsänderungen, Updates oder Rollout-Gruppen – vorausgesetzt, Änderungen werden dokumentiert.
+
+## Denkfallen
+
+Erfahrene Leute sind schnell, weil sie Muster erkennen – aber diese Geschwindigkeit hat Risiken:
+
+- **Bestätigungsfehler:** nur nach Belegen suchen, die die erste Idee stützen. Frag: „Was würde mich widerlegen?“
+- **Fixierung auf die letzte Änderung:** Das jüngste Update ist ein guter Verdächtiger, keine bewiesene Ursache.
+- **Korrelation vs. Ursache:** Zwei Dinge, die zusammen auftreten, bedeuten nicht, dass eines das andere verursacht.
+- **Stopp bei der ersten plausiblen Ursache:** Prüfe, ob deine Erklärung *alle* Symptome erklärt.
+
+## Auswertungen ohne Schuldzuweisung
+
+Führe nach einer bedeutenden Störung eine kurze Auswertung durch: Zeitlinie, Auswirkung, was geholfen hat, was die Diagnose verlangsamt hat, Grundursache und beitragende Faktoren sowie konkrete Maßnahmen mit Verantwortlichen. Konzentriere dich auf Systeme und Bedingungen, nicht auf persönliche Schuld – Menschen teilen Informationen nur offen, wenn sie dafür nicht bestraft werden. Lass die Ergebnisse ins Problemmanagement, in die Wissensdatenbank und ins Monitoring einfließen.
+
+## Beispiel
+
+Ein nächtlicher Datenexport ist in zwei Wochen dreimal fehlgeschlagen. Jedes Mal hat ihn jemand neu gestartet. Mira leitet eine Auswertung. 5-Why: Der Export schlug fehl → die Datenbankverbindung lief in eine Zeitüberschreitung → gleichzeitig lief ein Backup-Job → beide waren für 02:00 Uhr geplant → niemand koordiniert die Job-Zeitpläne. Eine Ishikawa-Runde ergänzt einen zweiten Faktor: Kein Alarm erreichte jemanden vor dem Morgen. Maßnahmen: ein gemeinsamer Job-Kalender, ein Alarm bei fehlgeschlagenem Export und ein Artikel in der Wissensdatenbank. Seitdem läuft der Export zuverlässig; die Auswertung ist mit Belegen dokumentiert.
+
+## Das Wichtigste in Kürze
+
+- Symptom, unmittelbare Ursache und Grundursache trennen.
+- 5-Why mit Belegen nutzen; Fischgrätendiagramme zeigen mehrere Faktoren.
+- Bisektion findet die verursachende Änderung schnell, wenn Änderungen dokumentiert sind.
+- Die eigene Hypothese hinterfragen; Störungen ohne Schuldzuweisung auswerten.

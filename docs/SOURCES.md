@@ -48,6 +48,8 @@ Every resource is stored in `src/content/resources/<id>.yaml` with `license`, `l
 | wikipedia-de-it-service-management, wikipedia-de-itil, wikipedia-de-service-level-agreement | Wikipedia (de) | CC BY-SA 4.0 | link | 2026-11-11 |
 | wikipedia-issue-tracking-system, wikipedia-root-cause-analysis, wikipedia-five-whys, wikipedia-knowledge-base | Wikipedia (en) | CC BY-SA 4.0 | link | 2026-11-11 |
 | wikipedia-de-trouble-ticket-system, wikipedia-de-5-why-methode, wikipedia-de-incident-management | Wikipedia (de) | CC BY-SA 4.0 | link | 2026-11-11 |
+| wikipedia-troubleshooting, wikipedia-logging-computing, wikipedia-osi-model, wikipedia-ishikawa-diagram | Wikipedia (en) | CC BY-SA 4.0 | link | 2026-11-11 |
+| wikipedia-de-logdatei, wikipedia-de-osi-modell, wikipedia-de-ursache-wirkungs-diagramm | Wikipedia (de) | CC BY-SA 4.0 | link | 2026-11-11 |
 | openstax-principles-accounting-statements | OpenStax (*Principles of Accounting, Vol. 1*) | CC BY-NC-SA (page footer); no LLM ingestion without permission | link | 2026-11-11 |
 
 ## Framework references

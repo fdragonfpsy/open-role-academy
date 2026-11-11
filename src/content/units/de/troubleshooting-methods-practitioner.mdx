@@ -1,0 +1,86 @@
+---
+id: troubleshooting-methods-practitioner
+competency: troubleshooting-methods
+level: practitioner
+title: "Ursachen eingrenzen: Hypothesen, Schichten, Halbierung und Logs"
+objectives:
+  - Prüfbare Hypothesen formulieren und den Test wählen, der am meisten ausschließt.
+  - Netzwerk- und Anwendungsprobleme Schicht für Schicht eingrenzen (top-down, bottom-up, Teile und herrsche).
+  - Den Vergleich mit einem funktionierenden System und die Log-Analyse nutzen, um eine Ursache einzugrenzen.
+minutes: 25
+resources:
+  - wikipedia-de-osi-modell
+  - wikipedia-de-logdatei
+  - wikipedia-troubleshooting
+  - wikipedia-osi-model
+status: ai-draft
+sources:
+  - title: "Troubleshooting"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Troubleshooting
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "OSI model"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/OSI_model
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Logging (computing)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Logging_(computing)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Von der Checkliste zur Diagnose
+
+Auf Grundlagen-Niveau folgt die Fehlersuche einer Checkliste. Mit Erfahrung arbeitest du eher wie eine Ermittlerin oder ein Ermittler: Jede Beobachtung stützt mögliche Ursachen oder schließt sie aus. Das Ziel ist nicht, Lösungen auszuprobieren, sondern so schnell wie möglich **einzugrenzen, wo der Fehler liegt**.
+
+## Zwei Strategien – und wann du wechselst
+
+Die Literatur zur Fehlersuche unterscheidet zwei Arten des Denkens. Bei einer **symptomorientierten** Strategie erkennst du ein Muster aus früheren Fällen: „Dieser Fehler nach einem Update – das kenne ich.“ Das ist schnell, und so beginnen erfahrene Leute meist. Bei einer **topografischen** Strategie nutzt du dein Verständnis davon, wie das System aufgebaut ist, und verfolgst den Weg der Daten oder Signale, bis du findest, wo er abbricht. Das ist langsamer, funktioniert aber auch bei Problemen, die noch niemand gesehen hat. Beginne symptomorientiert; wenn deine ersten Ideen scheitern, wechsle zu einer strukturierten topografischen Suche, statt weiter zu raten.
+
+## Hypothesen, die sich prüfen lassen
+
+Schreib deine möglichen Ursachen auf und zu jeder einen Test, der sie bestätigen oder ausschließen würde. Wähle Tests, die **günstig und aussagekräftig** sind: Ein Test, der die Hälfte der Möglichkeiten ausschließt, ist mehr wert als einer, der eine einzelne unwahrscheinliche Ursache prüft. Frag: „Wenn diese Hypothese stimmt, was muss dann noch zutreffen?“ – und prüfe genau das.
+
+## Nach Schichten eingrenzen
+
+Viele IT-Probleme lassen sich finden, indem du in Schichten denkst, wie im **OSI-Modell** (vom physischen Kabel bis zur Anwendung). Drei gängige Vorgehen:
+
+- **Bottom-up:** Beginne bei der physischen Schicht (Link-Lampe, Kabel, WLAN), dann Adressierung, dann Dienste, dann Anwendung. Gut, wenn du Hardware oder Verbindung vermutest.
+- **Top-down:** Beginne bei der Anwendung und arbeite dich nach unten. Gut, wenn andere Anwendungen auf demselben Gerät funktionieren.
+- **Teile und herrsche / Halbierung:** Beginne in der Mitte. Wenn ein Gerät ein anderes über die IP-Adresse erreicht, aber nicht über den Namen, funktionieren die unteren Schichten, und du kannst dich auf die Namensauflösung und darüber konzentrieren. Jeder Test halbiert den Suchraum.
+
+Die gleiche Idee gilt auch außerhalb von Netzwerken: Teile einen langen Ablauf (Anmeldung → Profil laden → Datei öffnen → speichern) und teste in der Mitte.
+
+## Mit einem funktionierenden System vergleichen
+
+„Was ist anders?“ ist eine der stärksten Fragen. Tritt das Problem auf einem Laptop auf, aber nicht auf einem baugleichen, vergleiche Versionen, Einstellungen, Konten und Netzwerk. Tritt es bei einer Person auf jedem Gerät auf, liegt die Ursache wahrscheinlich im Konto oder Profil, nicht in der Hardware.
+
+## Logs systematisch lesen
+
+Logs halten Ereignisse mit Zeitstempel, Quelle und Schweregrad fest. Nutze sie gezielt:
+
+- Notiere die **genaue Uhrzeit** des Fehlers und filtere Einträge um diese Zeit.
+- Schau auf den **ersten** Fehler, nicht den letzten – spätere Fehler sind oft Folgen.
+- Verknüpfe Logs mehrerer Systeme (Client, Server, Firewall) über die Zeit; prüfe, ob die Uhren synchron sind.
+- Vergleiche mit Logs eines funktionierenden Falls, um zu sehen, was fehlt.
+
+## Sporadische Probleme
+
+Probleme, die kommen und gehen, sind schwierig, weil du nicht auf Abruf testen kannst. Halte jedes Auftreten fest (Zeit, Person, Ort, Aktion), suche nach einem Muster und ergänze, wo möglich, Monitoring oder ausführlichere Protokollierung bis zum nächsten Auftreten.
+
+## Beispiel
+
+Mitarbeitende in einem Gebäude melden, dass das Intranet „manchmal“ nicht lädt. Leila sammelt die Zeitpunkte aus fünf Tickets: alle zwischen 8:55 und 9:10 Uhr. Der Laptop eines Kollegen in einem anderen Gebäude funktioniert. Halbierung: Über die IP-Adresse antwortet der Intranet-Server auch um 9:00 Uhr, über den Namen läuft die Anfrage ins Leere. Das Problem liegt also in der Namensauflösung, nicht im Netzwerk oder am Server. Das Log des DNS-Servers zeigt um 9:00 Uhr eine geplante Aufgabe, die ihn überlastet. Die Aufgabe wird verschoben, das Problem ist gelöst; Leila dokumentiert Ursache und Belege.
+
+## Das Wichtigste in Kürze
+
+- Mit Erfahrung beginnen, zur strukturierten Suche wechseln, wenn das scheitert.
+- Tests bevorzugen, die die meisten Möglichkeiten ausschließen.
+- Nach Schichten eingrenzen: bottom-up, top-down oder Halbierung.
+- „Was ist anders?“ fragen und Logs ab dem ersten Fehler lesen.

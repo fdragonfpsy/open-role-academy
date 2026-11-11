@@ -1,0 +1,86 @@
+---
+id: troubleshooting-methods-practitioner
+competency: troubleshooting-methods
+level: practitioner
+title: "Isolating causes: hypotheses, layers, half-splitting and logs"
+objectives:
+  - Formulate testable hypotheses and choose the test that rules out the most.
+  - Isolate network and application problems layer by layer (top-down, bottom-up, divide and conquer).
+  - Use comparison with a working system and log analysis to narrow down a cause.
+minutes: 25
+resources:
+  - wikipedia-troubleshooting
+  - wikipedia-osi-model
+  - wikipedia-de-osi-modell
+  - wikipedia-logging-computing
+status: ai-draft
+sources:
+  - title: "Troubleshooting"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Troubleshooting
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "OSI model"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/OSI_model
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Logging (computing)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Logging_(computing)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## From checklist to diagnosis
+
+At foundation level, troubleshooting follows a checklist. With experience, you work more like a detective: every observation either supports or rules out possible causes. The goal is not to try fixes, but to **narrow down where the fault is** as quickly as possible.
+
+## Two strategies — and when to switch
+
+Troubleshooting literature distinguishes two kinds of reasoning. With a **symptomatic** strategy you recognise a pattern from past cases: "this error after an update — I have seen that before." It is fast, and it is how experienced people usually start. With a **topographic** strategy you use your understanding of how the system is built and follow the path of the data or signal until you find where it breaks. It is slower, but it also works for problems nobody has seen before. Start symptomatically; when your first ideas fail, switch to a structured topographic search rather than guessing on.
+
+## Hypotheses that can be tested
+
+Write down your candidate causes and, for each one, a test that would confirm or rule it out. Choose tests that are **cheap and informative**: a test that rules out half of the possibilities is worth more than one that checks a single unlikely cause. Ask: "If this hypothesis is true, what else must also be true?" — then check that.
+
+## Isolate by layers
+
+Many IT problems can be located by thinking in layers, as in the **OSI model** (from physical cable up to the application). Three common approaches:
+
+- **Bottom-up:** start with the physical layer (link light, cable, Wi-Fi), then addressing, then services, then the application. Good when you suspect hardware or connectivity.
+- **Top-down:** start with the application and work down. Good when other applications on the same device work.
+- **Divide and conquer / half-splitting:** start in the middle. If a device can reach another by IP address but not by name, the lower layers work and you can focus on name resolution and above. Each test halves the search space.
+
+The same idea applies outside networks: split a long process (login → load profile → open file → save) and test in the middle.
+
+## Compare with a known-good system
+
+"What is different?" is one of the strongest questions. If the problem occurs on one laptop but not on an identical one, compare versions, settings, accounts and network. If it occurs for one user on any device, the cause is probably in the account or profile, not the hardware.
+
+## Read logs systematically
+
+Logs record events with timestamps, sources and severity levels. Use them deliberately:
+
+- Note the **exact time** of the failure and filter entries around it.
+- Look at the **first** error, not the last — later errors are often consequences.
+- Correlate logs from several systems (client, server, firewall) by time; check that clocks are synchronised.
+- Compare with logs from a working case to see what is missing.
+
+## Intermittent problems
+
+Problems that come and go are hard because you cannot test on demand. Record each occurrence (time, user, location, action), look for a pattern, and, where possible, add monitoring or more detailed logging until the next occurrence.
+
+## Worked example
+
+Users in one building report that the intranet "sometimes" fails to load. Leila collects timestamps from five tickets: all between 8:55 and 9:10. A colleague's laptop in another building works. Half-splitting: by IP address the intranet server responds even at 9:00, by name it times out. So the problem lies in name resolution, not in the network or the server. The DNS server log shows a scheduled task at 9:00 that overloads it. Moving the task solves the problem; Leila documents the cause and the evidence.
+
+## Key takeaways
+
+- Start with experience, switch to structured search when it fails.
+- Prefer tests that rule out the most possibilities.
+- Isolate by layers: bottom-up, top-down or half-splitting.
+- Ask "what is different?" and read logs from the first error onwards.

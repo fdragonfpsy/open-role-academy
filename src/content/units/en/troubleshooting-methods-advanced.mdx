@@ -1,0 +1,95 @@
+---
+id: troubleshooting-methods-advanced
+competency: troubleshooting-methods
+level: advanced
+title: "Beyond the fix: root causes, bisection, bias and learning from failures"
+objectives:
+  - Distinguish symptoms, immediate causes and root causes, and apply the five whys and Ishikawa diagrams.
+  - Use bisection to find the change that introduced a fault.
+  - Recognise common reasoning traps and lead a structured, blameless failure review.
+minutes: 30
+resources:
+  - wikipedia-root-cause-analysis
+  - wikipedia-five-whys
+  - wikipedia-ishikawa-diagram
+  - wikipedia-de-5-why-methode
+  - wikipedia-de-ursache-wirkungs-diagramm
+status: ai-draft
+sources:
+  - title: "Root cause analysis"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Root_cause_analysis
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Five whys"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Five_whys
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Ishikawa diagram"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Ishikawa_diagram
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Bisection (software engineering)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Bisection_(software_engineering)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Troubleshooting"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Troubleshooting
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Restoring service is not the end
+
+Restarting a server may restore service, but if nobody knows why it failed, it will fail again. At advanced level you lead the work after the fix: finding the **root cause**, preventing recurrence and making the team better at diagnosis.
+
+## Symptom, immediate cause, root cause
+
+- **Symptom:** what users notice ("the application is slow").
+- **Immediate cause:** what directly produced it ("the disk was full").
+- **Root cause:** why that could happen ("log files are never rotated, and nobody monitors disk space").
+
+Fixing the immediate cause restores service; fixing the root cause prevents the next incident. Root cause analysis looks for the factors that, if removed, would have prevented the problem.
+
+## Five whys and Ishikawa diagrams
+
+The **five whys** ask "why?" repeatedly, each answer becoming the next question. It is simple and useful in a workshop, but it has limits: it tends to follow a single chain, and different people can reach different "root causes" for the same event. Treat the number five as a guideline and check each answer against evidence.
+
+An **Ishikawa (fishbone) diagram** counters the single-chain problem: you write the problem at the "head" and collect possible causes along several branches — for IT, for example, people, processes, technology, environment, suppliers. It helps a group consider several contributing factors before deciding which to investigate.
+
+## Bisection: finding the change that broke it
+
+When something worked last week and fails today, the cause is often a change in between. **Bisection** searches the list of changes like a binary search: test the version in the middle; if it fails, the culprit is in the first half, otherwise in the second. With each test the candidate set halves, so even a long list of changes is reduced quickly. Version-control tools support this for code, and the same idea works for configuration changes, updates or rollout groups — provided changes are recorded.
+
+## Reasoning traps
+
+Experienced people are fast because they recognise patterns, but that speed has risks:
+
+- **Confirmation bias:** looking only for evidence that supports your first idea. Ask, "What would prove me wrong?"
+- **Fixation on the latest change:** the recent update is a good suspect, not a proven cause.
+- **Correlation vs. cause:** two things happening together do not mean one caused the other.
+- **Stopping at the first plausible cause:** check that your explanation accounts for *all* symptoms.
+
+## Blameless reviews
+
+After a significant incident, run a short review: timeline, impact, what helped, what slowed diagnosis, root cause and contributing factors, and concrete actions with owners. Focus on systems and conditions, not on individual blame — people share information openly only if they are not punished for it. Feed the results into problem management, the knowledge base and monitoring.
+
+## Worked example
+
+A nightly data export failed three times in two weeks. Each time, someone restarted it. Mira runs a review. Five whys: the export failed → the database connection timed out → a backup job was running at the same time → both were scheduled at 02:00 → nobody coordinates job schedules. An Ishikawa session adds a second factor: no alert reached anyone until the morning. Actions: a shared job calendar, an alert on export failure, and a knowledge-base article. The export has run reliably since; the review is documented with evidence.
+
+## Key takeaways
+
+- Separate symptom, immediate cause and root cause.
+- Use five whys with evidence; use fishbone diagrams to see several factors.
+- Bisection finds the breaking change quickly if changes are recorded.
+- Challenge your own hypothesis; review incidents without blame.
