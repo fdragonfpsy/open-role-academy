@@ -1,0 +1,13 @@
+id: wikipedia-de-itil
+url: "https://de.wikipedia.org/wiki/IT_Infrastructure_Library"
+title: "IT Infrastructure Library (ITIL)"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 20
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-11
+mode: link
+competencies: [it-service-management]
+levels: [practitioner, advanced]
