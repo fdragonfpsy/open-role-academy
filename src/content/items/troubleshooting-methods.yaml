@@ -1,0 +1,290 @@
+competency: troubleshooting-methods
+items:
+  - id: ts-f-reproduce
+    level: foundation
+    difficulty: 870
+    type: single
+    stem:
+      en: "A user reports that an app \"sometimes crashes\". What is the most useful first step in troubleshooting?"
+      de: "Ein Nutzer meldet, dass eine App „manchmal abstürzt“. Was ist der sinnvollste erste Schritt bei der Fehlersuche?"
+    options:
+      - en: "Find out how to reproduce the crash: which action, which file, which time"
+        de: "Herausfinden, wie sich der Absturz nachstellen lässt: welche Aktion, welche Datei, welcher Zeitpunkt"
+        correct: true
+      - en: "Reinstall the operating system immediately"
+        de: "Sofort das Betriebssystem neu installieren"
+        correct: false
+      - en: "Replace the computer"
+        de: "Den Computer austauschen"
+        correct: false
+      - en: "Tell the user that crashes are normal"
+        de: "Dem Nutzer sagen, dass Abstürze normal sind"
+        correct: false
+    explanation:
+      en: "A problem you can reproduce on demand is much easier to isolate and to verify as fixed. Drastic measures without diagnosis waste time and may not solve anything."
+      de: "Ein Problem, das sich gezielt nachstellen lässt, ist viel leichter einzugrenzen und als behoben zu bestätigen. Drastische Maßnahmen ohne Diagnose kosten Zeit und lösen womöglich nichts."
+    source: https://en.wikipedia.org/wiki/Troubleshooting
+  - id: ts-f-recent-change
+    level: foundation
+    difficulty: 930
+    type: single
+    stem:
+      en: "A printer worked yesterday and fails today. Which question is especially helpful?"
+      de: "Ein Drucker hat gestern funktioniert und streikt heute. Welche Frage ist besonders hilfreich?"
+    options:
+      - en: "What has changed since yesterday (updates, new cables, moved devices, new settings)?"
+        de: "Was hat sich seit gestern geändert (Updates, neue Kabel, umgestellte Geräte, neue Einstellungen)?"
+        correct: true
+      - en: "What colour is the printer?"
+        de: "Welche Farbe hat der Drucker?"
+        correct: false
+      - en: "Who bought the printer?"
+        de: "Wer hat den Drucker gekauft?"
+        correct: false
+      - en: "How many pages has the user printed in total?"
+        de: "Wie viele Seiten hat der Nutzer insgesamt gedruckt?"
+        correct: false
+    explanation:
+      en: "Recent changes are strong leads. Treat them as hypotheses to test, though — a change that happened at the same time is not automatically the cause."
+      de: "Kürzliche Änderungen sind starke Hinweise. Behandle sie aber als Hypothesen, die geprüft werden – eine gleichzeitige Änderung ist nicht automatisch die Ursache."
+    source: https://en.wikipedia.org/wiki/Troubleshooting
+  - id: ts-f-simple-first
+    level: foundation
+    difficulty: 990
+    type: multi
+    stem:
+      en: "A monitor shows no picture. Which checks are sensible to do first?"
+      de: "Ein Monitor zeigt kein Bild. Welche Prüfungen sind als Erstes sinnvoll?"
+    options:
+      - en: "Is the monitor switched on and does its power LED light up?"
+        de: "Ist der Monitor eingeschaltet und leuchtet die Betriebs-LED?"
+        correct: true
+      - en: "Are the cables firmly connected at both ends?"
+        de: "Sind die Kabel an beiden Enden fest eingesteckt?"
+        correct: true
+      - en: "Is the correct input source selected on the monitor?"
+        de: "Ist am Monitor die richtige Eingangsquelle gewählt?"
+        correct: true
+      - en: "Order a new graphics card straight away"
+        de: "Sofort eine neue Grafikkarte bestellen"
+        correct: false
+    explanation:
+      en: "Start with simple, likely and cheap checks before complex ones. Many problems turn out to be power, cables or settings."
+      de: "Beginne mit einfachen, wahrscheinlichen und günstigen Prüfungen, bevor du Aufwendiges angehst. Viele Probleme stellen sich als Strom, Kabel oder Einstellungen heraus."
+    source: https://en.wikipedia.org/wiki/Troubleshooting
+  - id: ts-f-one-change
+    level: foundation
+    difficulty: 1040
+    type: single
+    stem:
+      en: "While troubleshooting, you want to try several possible fixes. What is the best way?"
+      de: "Bei der Fehlersuche möchtest du mehrere mögliche Lösungen ausprobieren. Wie gehst du am besten vor?"
+    options:
+      - en: "Change one thing at a time, test, and note what you did"
+        de: "Immer nur eine Sache ändern, testen und notieren, was du getan hast"
+        correct: true
+      - en: "Change everything at once to save time"
+        de: "Alles auf einmal ändern, um Zeit zu sparen"
+        correct: false
+      - en: "Try fixes randomly without notes"
+        de: "Lösungen zufällig ausprobieren, ohne Notizen"
+        correct: false
+      - en: "Undo nothing, even if a change made it worse"
+        de: "Nichts rückgängig machen, auch wenn eine Änderung es verschlimmert hat"
+        correct: false
+    explanation:
+      en: "One change at a time shows which action had which effect. Notes let you undo changes and help colleagues if the ticket is handed over."
+      de: "Eine Änderung nach der anderen zeigt, welche Maßnahme welche Wirkung hatte. Notizen ermöglichen das Rückgängigmachen und helfen Kolleginnen und Kollegen bei einer Übergabe."
+    source: https://en.wikipedia.org/wiki/Troubleshooting
+  - id: ts-p-half-split
+    level: practitioner
+    difficulty: 1170
+    type: single
+    stem:
+      en: "A data transfer passes through five systems in a chain and the data arrives corrupted at the end. What does the half-splitting method suggest?"
+      de: "Eine Datenübertragung läuft über fünf Systeme in einer Kette, und am Ende kommen die Daten fehlerhaft an. Was schlägt die Halbierungsmethode vor?"
+    options:
+      - en: "Check the data in the middle of the chain first, then continue in the half where the error appears"
+        de: "Zuerst die Daten in der Mitte der Kette prüfen und dann in der Hälfte weitersuchen, in der der Fehler auftritt"
+        correct: true
+      - en: "Check every system from the start in random order"
+        de: "Jedes System von vorn in zufälliger Reihenfolge prüfen"
+        correct: false
+      - en: "Replace all five systems"
+        de: "Alle fünf Systeme austauschen"
+        correct: false
+      - en: "Only check the last system, since that is where the error is seen"
+        de: "Nur das letzte System prüfen, weil der Fehler dort sichtbar ist"
+        correct: false
+    explanation:
+      en: "Half-splitting tests the midpoint of a chain to find which half contains the fault, like a binary search. It finds the faulty segment in few steps."
+      de: "Die Halbierungsmethode prüft die Mitte einer Kette, um herauszufinden, in welcher Hälfte der Fehler liegt – wie eine binäre Suche. So findet sie den fehlerhaften Abschnitt in wenigen Schritten."
+    source: https://en.wikipedia.org/wiki/Troubleshooting
+  - id: ts-p-layers
+    level: practitioner
+    difficulty: 1230
+    type: single
+    stem:
+      en: "A user cannot open an internal website. Following a layered approach \"from the bottom up\", what do you check first?"
+      de: "Ein Nutzer kann eine interne Website nicht öffnen. Was prüfst du nach einem schichtweisen Vorgehen „von unten nach oben“ zuerst?"
+    options:
+      - en: "Physical and network connectivity (cable or Wi-Fi, IP address, can the server be reached at all)"
+        de: "Physische und Netzwerkverbindung (Kabel oder WLAN, IP-Adresse, ist der Server überhaupt erreichbar)"
+        correct: true
+      - en: "The colour scheme of the website"
+        de: "Das Farbschema der Website"
+        correct: false
+      - en: "The browser bookmarks"
+        de: "Die Lesezeichen im Browser"
+        correct: false
+      - en: "The content of the website's last news article"
+        de: "Den Inhalt des letzten News-Artikels der Website"
+        correct: false
+    explanation:
+      en: "Layer models such as the OSI model help structure network troubleshooting. Bottom-up checks basic connectivity before application-level causes."
+      de: "Schichtenmodelle wie das OSI-Modell helfen, die Netzwerk-Fehlersuche zu strukturieren. Von unten nach oben prüft man zuerst die grundlegende Verbindung, dann Ursachen auf Anwendungsebene."
+    source: https://en.wikipedia.org/wiki/OSI_model
+  - id: ts-p-logs
+    level: practitioner
+    difficulty: 1280
+    type: single
+    stem:
+      en: "An application failed at 14:32. How do logs help you most?"
+      de: "Eine Anwendung ist um 14:32 Uhr ausgefallen. Wie helfen dir Protokolle (Logs) am meisten?"
+    options:
+      - en: "Look at entries around 14:32 across the involved systems and compare them on a common timeline"
+        de: "Einträge rund um 14:32 Uhr in den beteiligten Systemen ansehen und auf einer gemeinsamen Zeitleiste vergleichen"
+        correct: true
+      - en: "Delete old logs first so that the new ones are easier to read"
+        de: "Zuerst alte Logs löschen, damit die neuen leichter zu lesen sind"
+        correct: false
+      - en: "Read only the first line of the log file"
+        de: "Nur die erste Zeile der Logdatei lesen"
+        correct: false
+      - en: "Logs are only relevant for auditors, not for troubleshooting"
+        de: "Logs sind nur für Prüfende relevant, nicht für die Fehlersuche"
+        correct: false
+    explanation:
+      en: "Logs record events with timestamps. Correlating entries from several systems around the time of the failure often reveals the first error and its sequence of effects."
+      de: "Logs halten Ereignisse mit Zeitstempeln fest. Werden Einträge mehrerer Systeme rund um den Ausfallzeitpunkt verglichen, zeigt sich oft der erste Fehler und die Kette seiner Folgen."
+    source: https://en.wikipedia.org/wiki/Logging_(computing)
+  - id: ts-p-intermittent
+    level: practitioner
+    difficulty: 1330
+    type: single
+    stem:
+      en: "A network connection drops \"randomly\" a few times a day. What helps most to diagnose it?"
+      de: "Eine Netzwerkverbindung bricht „zufällig“ einige Male am Tag ab. Was hilft am meisten bei der Diagnose?"
+    options:
+      - en: "Record exact times and conditions of each drop and monitor the connection to find a pattern"
+        de: "Genaue Zeitpunkte und Bedingungen jedes Abbruchs festhalten und die Verbindung überwachen, um ein Muster zu finden"
+        correct: true
+      - en: "Wait until it fails permanently"
+        de: "Warten, bis sie dauerhaft ausfällt"
+        correct: false
+      - en: "Close the ticket because the problem cannot be reproduced right now"
+        de: "Das Ticket schließen, weil sich das Problem gerade nicht nachstellen lässt"
+        correct: false
+      - en: "Assume it is the user's fault"
+        de: "Annehmen, dass es am Nutzer liegt"
+        correct: false
+    explanation:
+      en: "Intermittent problems are hard because they cannot be reproduced on demand. Collecting data over time — timestamps, conditions, monitoring — turns \"random\" into a pattern you can test."
+      de: "Sporadische Probleme sind schwierig, weil sie sich nicht gezielt nachstellen lassen. Daten über die Zeit – Zeitstempel, Bedingungen, Überwachung – machen aus „zufällig“ ein Muster, das sich prüfen lässt."
+    source: https://en.wikipedia.org/wiki/Troubleshooting
+  - id: ts-a-correlation
+    level: advanced
+    difficulty: 1480
+    type: single
+    stem:
+      en: "Shortly after a firewall update, a service becomes slow. A colleague wants to roll back immediately. What should you keep in mind?"
+      de: "Kurz nach einem Firewall-Update wird ein Service langsam. Ein Kollege will sofort zurückrollen. Was solltest du bedenken?"
+    options:
+      - en: "The update is a strong lead, but timing alone does not prove cause — check evidence (logs, affected traffic) and weigh the rollback risk against the impact"
+        de: "Das Update ist ein starker Hinweis, aber der zeitliche Zusammenhang beweist keine Ursache – Belege prüfen (Logs, betroffener Datenverkehr) und das Risiko des Zurückrollens gegen die Auswirkung abwägen"
+        correct: true
+      - en: "Recent changes are never the cause"
+        de: "Kürzliche Änderungen sind nie die Ursache"
+        correct: false
+      - en: "Any change that happened at the same time is certainly the cause"
+        de: "Jede gleichzeitige Änderung ist sicher die Ursache"
+        correct: false
+      - en: "Wait a week to see whether it gets better"
+        de: "Eine Woche warten, ob es besser wird"
+        correct: false
+    explanation:
+      en: "Recent changes deserve critical attention, but correlation does not imply causation. A quick evidence check prevents rolling back the wrong thing; if impact is high and rollback is safe, rolling back can still be the right restore step."
+      de: "Kürzliche Änderungen verdienen kritische Aufmerksamkeit, aber Korrelation bedeutet nicht Kausalität. Eine schnelle Prüfung der Belege verhindert, das Falsche zurückzurollen; ist die Auswirkung hoch und das Zurückrollen sicher, kann es trotzdem der richtige Schritt zur Wiederherstellung sein."
+    source: https://en.wikipedia.org/wiki/Troubleshooting
+  - id: ts-a-multiple-faults
+    level: advanced
+    difficulty: 1530
+    type: single
+    stem:
+      en: "You fixed a disk error, but the system still crashes occasionally. What is a likely explanation?"
+      de: "Du hast einen Festplattenfehler behoben, aber das System stürzt weiterhin gelegentlich ab. Was ist eine wahrscheinliche Erklärung?"
+    options:
+      - en: "There may be several independent faults; the first fix removed only one of them"
+        de: "Es kann mehrere unabhängige Fehler geben; die erste Lösung hat nur einen davon beseitigt"
+        correct: true
+      - en: "The disk fix must have made things worse"
+        de: "Die Reparatur der Festplatte muss es verschlimmert haben"
+        correct: false
+      - en: "Crashes after a fix are impossible"
+        de: "Abstürze nach einer Reparatur sind unmöglich"
+        correct: false
+      - en: "The logs must be wrong"
+        de: "Die Logs müssen falsch sein"
+        correct: false
+    explanation:
+      en: "Complex systems can have multiple faults whose symptoms overlap. Be cautious when a fix only seems to work for a while; keep testing and verify against the original symptoms."
+      de: "Komplexe Systeme können mehrere Fehler haben, deren Symptome sich überlagern. Sei vorsichtig, wenn eine Lösung nur eine Weile zu helfen scheint; teste weiter und prüfe gegen die ursprünglichen Symptome."
+    source: https://en.wikipedia.org/wiki/Troubleshooting
+  - id: ts-a-runbook
+    level: advanced
+    difficulty: 1590
+    type: single
+    stem:
+      en: "Your team spends a lot of time on the same types of complex incidents. What improves troubleshooting speed and quality most sustainably?"
+      de: "Dein Team verbringt viel Zeit mit denselben Arten komplexer Störungen. Was verbessert Tempo und Qualität der Fehlersuche am nachhaltigsten?"
+    options:
+      - en: "Diagnostic runbooks with decision steps, good logging and monitoring, and reviews that update them after each incident"
+        de: "Diagnose-Runbooks mit Entscheidungsschritten, gutes Logging und Monitoring sowie Nachbetrachtungen, die sie nach jeder Störung aktualisieren"
+        correct: true
+      - en: "Relying on one expert who knows everything"
+        de: "Sich auf eine Expertin verlassen, die alles weiß"
+        correct: false
+      - en: "Turning off logging to improve performance"
+        de: "Logging abschalten, um die Performance zu verbessern"
+        correct: false
+      - en: "Escalating every ticket directly to the vendor"
+        de: "Jedes Ticket direkt an den Hersteller eskalieren"
+        correct: false
+    explanation:
+      en: "Documented diagnostic paths, observable systems and continuous learning spread expertise across the team and reduce dependence on single people."
+      de: "Dokumentierte Diagnosewege, beobachtbare Systeme und kontinuierliches Lernen verteilen Fachwissen im Team und verringern die Abhängigkeit von Einzelpersonen."
+    source: https://en.wikipedia.org/wiki/Logging_(computing)
+  - id: ts-a-production
+    level: advanced
+    difficulty: 1640
+    type: single
+    stem:
+      en: "During diagnosis of a production problem, you want to test a configuration change. What is the responsible approach?"
+      de: "Bei der Diagnose eines Produktionsproblems möchtest du eine Konfigurationsänderung testen. Was ist das verantwortungsvolle Vorgehen?"
+    options:
+      - en: "Test in a non-production environment where possible; in production follow the (emergency) change process with a back-out plan and document it"
+        de: "Wo möglich in einer Nicht-Produktionsumgebung testen; in der Produktion den (Notfall-)Change-Prozess mit Rückfallplan befolgen und dokumentieren"
+        correct: true
+      - en: "Try changes directly in production until something works"
+        de: "Änderungen direkt in der Produktion ausprobieren, bis etwas funktioniert"
+        correct: false
+      - en: "Never touch production, even if users cannot work for days"
+        de: "Die Produktion nie anfassen, auch wenn Nutzende tagelang nicht arbeiten können"
+        correct: false
+      - en: "Make the change silently and tell nobody"
+        de: "Die Änderung stillschweigend machen und niemandem Bescheid geben"
+        correct: false
+    explanation:
+      en: "Uncontrolled trial-and-error in production can turn one incident into several. Testing elsewhere and using the change process — including an emergency path — keeps diagnosis safe and traceable."
+      de: "Unkontrolliertes Ausprobieren in der Produktion kann aus einer Störung mehrere machen. Tests anderswo und der Change-Prozess – einschließlich eines Notfallwegs – halten die Diagnose sicher und nachvollziehbar."
+    source: https://en.wikipedia.org/wiki/Change_management_(ITSM)

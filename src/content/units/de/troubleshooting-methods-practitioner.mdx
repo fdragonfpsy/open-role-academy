@@ -1,0 +1,66 @@
+---
+id: troubleshooting-methods-practitioner
+competency: troubleshooting-methods
+level: practitioner
+title: "Systematische Diagnose: Halbierungsmethode, Schichten, Logs und sporadische Fehler"
+objectives:
+  - Fehler in einer Kette von Komponenten mit der Halbierungsmethode eingrenzen.
+  - Netzwerk- und Anwendungsprobleme mit einem Schichtenmodell strukturieren.
+  - Logs und Monitoring nutzen, um Ausfälle und sporadische Probleme zu diagnostizieren.
+minutes: 25
+resources:
+  - wikipedia-de-osi-modell
+  - wikipedia-de-logdatei
+  - wikipedia-troubleshooting
+status: ai-draft
+sources:
+  - title: "Troubleshooting"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Troubleshooting
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "OSI model"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/OSI_model
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Logging (computing)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Logging_(computing)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Wenn die einfachen Prüfungen erledigt sind
+
+Auf diesem Niveau sind die einfachen Ursachen meist schon ausgeschlossen, bevor ein Ticket bei dir ankommt. Jetzt brauchst du Techniken, die den Fehler in Systemen mit vielen Bestandteilen effizient eingrenzen: die Halbierungsmethode, das Denken in Schichten und das Lesen der Belege in Logs.
+
+## Die Halbierungsmethode
+
+Läuft ein Signal oder laufen Daten durch eine Kette von Komponenten – Client, Switch, Firewall, Load Balancer, Server, Datenbank –, prüfe zuerst die **Mitte**. Sind die Daten dort noch korrekt, liegt der Fehler in der zweiten Hälfte; wenn nicht, in der ersten. Wiederhole das mit der verbleibenden Hälfte. Wie bei einer binären Suche findet man so den fehlerhaften Abschnitt in wenigen Schritten, statt jede Komponente einzeln zu prüfen.
+
+## In Schichten denken
+
+Schichtenmodelle wie das **OSI-Modell** teilen Netzwerkkommunikation in Ebenen ein, von der physischen Verbindung bis zur Anwendung. Sie geben der Fehlersuche eine Struktur. Ein gängiges Vorgehen ist **von unten nach oben**: Gibt es eine Verbindung (Kabel, WLAN)? Hat das Gerät eine gültige IP-Adresse? Ist der Server erreichbar? Funktioniert die Namensauflösung? Erst dann geht es um die Anwendung selbst. Funktioniert eine Schicht, kannst du alles darunter ausschließen.
+
+## Belege lesen: Logs
+
+Logs halten Ereignisse mit **Zeitstempeln** fest – Fehler, Warnungen, Anmeldungen, Neustarts. Bei einem Ausfall um 14:32 Uhr sieh dir die Einträge rund um diese Zeit in allen beteiligten Systemen an und bring sie auf eine **gemeinsame Zeitleiste**. Der erste Fehler ist oft aufschlussreicher als der letzte; spätere Fehler sind häufig Folgen. Achte darauf, dass die Uhren synchronisiert sind – sonst führen Zeitleisten in die Irre.
+
+## Sporadische Probleme
+
+„Zufällig“ auftretende Fehler lassen sich nicht gezielt nachstellen. Mach aus ihnen Daten: **Zeitpunkt und Bedingungen** jedes Auftretens festhalten, **Monitoring** einschalten und nach Mustern suchen – Tageszeit, Last, Temperatur, bestimmte Personen oder Standorte. Sei vorsichtig, wenn eine Lösung eine Weile zu helfen scheint: Vielleicht ist der sporadische Fehler einfach noch nicht wieder aufgetreten.
+
+## Beispiel aus der Praxis
+
+Beschäftigte einer Filiale melden, dass das ERP-System langsam ist. Kai prüft die Mitte der Strecke: Die Antwort vom Filialrouter zum Rechenzentrum ist in Ordnung, vom Filial-Switch zum Router aber nicht. Das Monitoring zeigt jeden Tag um 9:00 Uhr Paketverluste – dann starten in der Filiale die Datensicherungen. Nach der Verlegung des Sicherungsfensters ist das Problem gelöst.
+
+## Das Wichtigste in Kürze
+
+- Die Halbierungsmethode findet den fehlerhaften Abschnitt in wenigen Schritten.
+- Schichten: von unten nach oben ausschließen.
+- Logs auf einer gemeinsamen Zeitleiste; der erste Fehler zählt am meisten.
+- Sporadische Fehler brauchen Daten über die Zeit.

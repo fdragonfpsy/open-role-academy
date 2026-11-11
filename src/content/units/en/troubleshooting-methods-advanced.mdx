@@ -1,0 +1,70 @@
+---
+id: troubleshooting-methods-advanced
+competency: troubleshooting-methods
+level: advanced
+title: "Leading complex diagnosis: evidence over assumptions, multiple faults and safe changes"
+objectives:
+  - Weigh evidence against assumptions when recent changes seem to explain a fault.
+  - Recognise multiple and interacting faults and verify fixes against the original symptoms.
+  - Make diagnosis safe and repeatable with change control, runbooks and observability.
+minutes: 30
+resources:
+  - wikipedia-troubleshooting
+  - wikipedia-logging-computing
+  - wikipedia-de-logdatei
+status: ai-draft
+sources:
+  - title: "Troubleshooting"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Troubleshooting
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Logging (computing)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Logging_(computing)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Change management (ITSM)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Change_management_(ITSM)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Diagnosis as a team discipline
+
+At advanced level you lead the diagnosis of complex incidents — often under time pressure, with several teams and incomplete information. Your job is to keep the investigation structured, safe and honest about what is known.
+
+## Evidence over assumptions
+
+Recent changes deserve critical attention: if a service slows down right after a firewall update, the update is a strong lead. But **correlation does not imply causation** — two things happening at the same time does not prove one caused the other. Before acting on a hypothesis, look for evidence that would confirm or refute it: logs, affected traffic, whether unchanged systems show the same symptom. If the impact is high and a rollback is safe, rolling back can still be the right step to restore service — just do not mistake it for proof of the cause.
+
+## Multiple and interacting faults
+
+Complex systems can have **several faults at once**, whose symptoms overlap. If a fix removes some symptoms but crashes continue, do not assume the fix failed — there may be a second, independent cause. Be wary of confidence when a fix only seems to work for a while. Verify every fix against the **original symptoms**, under the original conditions.
+
+## Safe diagnosis in production
+
+Trial-and-error in production can turn one incident into several. Reproduce and test in a non-production environment where possible. When you must change production during diagnosis, use the **(emergency) change process**: a short risk assessment, a back-out plan, documentation. This keeps the timeline reconstructable for the later review.
+
+## Making troubleshooting repeatable
+
+Expertise that sits in one person's head is a risk. Build:
+
+- **runbooks** with diagnostic steps and decision points for recurring incident types;
+- **observability** — meaningful logs, metrics and synchronised clocks;
+- **reviews** after significant incidents that update runbooks and monitoring.
+
+## Worked example
+
+After a storage upgrade, two applications crash at night. The team suspects the upgrade, but Elif asks for evidence: only one application uses the upgraded storage. Logs show the second crash is caused by an expired certificate. Two fixes, two causes — and a new runbook step: check certificate expiry dates during incident triage.
+
+## Key takeaways
+
+- Test hypotheses with evidence; timing alone proves nothing.
+- Expect multiple faults; verify fixes against the original symptoms.
+- Diagnose safely: test elsewhere, use change control in production.
+- Runbooks, observability and reviews spread expertise.

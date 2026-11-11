@@ -1,0 +1,70 @@
+---
+id: troubleshooting-methods-advanced
+competency: troubleshooting-methods
+level: advanced
+title: "Komplexe Diagnosen leiten: Belege statt Annahmen, mehrfache Fehler und sichere Änderungen"
+objectives:
+  - Belege gegen Annahmen abwägen, wenn kürzliche Änderungen einen Fehler zu erklären scheinen.
+  - Mehrfache und zusammenwirkende Fehler erkennen und Lösungen gegen die ursprünglichen Symptome prüfen.
+  - Diagnosen mit Change-Steuerung, Runbooks und Beobachtbarkeit sicher und wiederholbar machen.
+minutes: 30
+resources:
+  - wikipedia-de-logdatei
+  - wikipedia-de-fehleranalyse
+  - wikipedia-troubleshooting
+status: ai-draft
+sources:
+  - title: "Troubleshooting"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Troubleshooting
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Logging (computing)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Logging_(computing)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Change management (ITSM)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Change_management_(ITSM)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Diagnose als Teamdisziplin
+
+Auf Experten-Niveau leitest du die Diagnose komplexer Störungen – oft unter Zeitdruck, mit mehreren Teams und unvollständigen Informationen. Deine Aufgabe ist es, die Untersuchung strukturiert, sicher und ehrlich in Bezug auf das tatsächlich Bekannte zu halten.
+
+## Belege statt Annahmen
+
+Kürzliche Änderungen verdienen kritische Aufmerksamkeit: Wird ein Service direkt nach einem Firewall-Update langsam, ist das Update ein starker Hinweis. Aber **Korrelation bedeutet nicht Kausalität** – dass zwei Dinge gleichzeitig passieren, beweist nicht, dass das eine das andere verursacht hat. Bevor du auf eine Hypothese hin handelst, such nach Belegen, die sie bestätigen oder widerlegen: Logs, betroffener Datenverkehr, ob unveränderte Systeme dasselbe Symptom zeigen. Ist die Auswirkung hoch und ein Zurückrollen sicher, kann das trotzdem der richtige Schritt zur Wiederherstellung sein – verwechsle es nur nicht mit einem Beweis für die Ursache.
+
+## Mehrfache und zusammenwirkende Fehler
+
+Komplexe Systeme können **mehrere Fehler gleichzeitig** haben, deren Symptome sich überlagern. Beseitigt eine Lösung manche Symptome, aber Abstürze gehen weiter, nimm nicht an, dass die Lösung gescheitert ist – vielleicht gibt es eine zweite, unabhängige Ursache. Sei vorsichtig, wenn eine Lösung nur eine Weile zu helfen scheint. Prüfe jede Lösung gegen die **ursprünglichen Symptome** unter den ursprünglichen Bedingungen.
+
+## Sichere Diagnose in der Produktion
+
+Ausprobieren in der Produktion kann aus einer Störung mehrere machen. Stell Probleme wo möglich in einer Nicht-Produktionsumgebung nach und teste dort. Musst du während der Diagnose an der Produktion etwas ändern, nutze den **(Notfall-)Change-Prozess**: kurze Risikobewertung, Rückfallplan, Dokumentation. So bleibt die Zeitleiste für die spätere Nachbetrachtung nachvollziehbar.
+
+## Fehlersuche wiederholbar machen
+
+Fachwissen, das nur im Kopf einer Person steckt, ist ein Risiko. Baue auf:
+
+- **Runbooks** mit Diagnoseschritten und Entscheidungspunkten für wiederkehrende Störungsarten;
+- **Beobachtbarkeit** – aussagekräftige Logs, Metriken und synchronisierte Uhren;
+- **Nachbetrachtungen** nach bedeutenden Störungen, die Runbooks und Monitoring aktualisieren.
+
+## Beispiel aus der Praxis
+
+Nach einem Speicher-Upgrade stürzen nachts zwei Anwendungen ab. Das Team vermutet das Upgrade, doch Elif fragt nach Belegen: Nur eine der Anwendungen nutzt den neuen Speicher. Die Logs zeigen, dass der zweite Absturz durch ein abgelaufenes Zertifikat verursacht wird. Zwei Lösungen, zwei Ursachen – und ein neuer Runbook-Schritt: bei der Erstbewertung von Störungen die Ablaufdaten von Zertifikaten prüfen.
+
+## Das Wichtigste in Kürze
+
+- Hypothesen mit Belegen prüfen; zeitliches Zusammentreffen beweist nichts.
+- Mit mehreren Fehlern rechnen; Lösungen gegen die ursprünglichen Symptome prüfen.
+- Sicher diagnostizieren: anderswo testen, in der Produktion Change-Steuerung nutzen.
+- Runbooks, Beobachtbarkeit und Nachbetrachtungen verteilen Fachwissen.

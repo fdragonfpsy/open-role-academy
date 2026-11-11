@@ -1,0 +1,66 @@
+---
+id: troubleshooting-methods-practitioner
+competency: troubleshooting-methods
+level: practitioner
+title: "Systematic diagnosis: half-splitting, layers, logs and intermittent faults"
+objectives:
+  - Narrow down faults in a chain of components with half-splitting.
+  - Structure network and application problems with a layer model.
+  - Use logs and monitoring to diagnose failures and intermittent problems.
+minutes: 25
+resources:
+  - wikipedia-troubleshooting
+  - wikipedia-osi-model
+  - wikipedia-logging-computing
+status: ai-draft
+sources:
+  - title: "Troubleshooting"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Troubleshooting
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "OSI model"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/OSI_model
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Logging (computing)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Logging_(computing)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## When the simple checks are done
+
+At practitioner level the easy causes have usually been ruled out before a ticket reaches you. Now you need techniques that narrow down the fault efficiently in systems with many parts: half-splitting, thinking in layers, and reading the evidence in logs.
+
+## Half-splitting
+
+If a signal or data passes through a chain of components — client, switch, firewall, load balancer, server, database — check the **middle** first. If the data is still correct there, the fault lies in the second half; if not, in the first. Repeat with the remaining half. Like a binary search, this finds the faulty segment in a few steps instead of checking every component one by one.
+
+## Thinking in layers
+
+Layer models such as the **OSI model** split network communication into levels from the physical connection up to the application. They give troubleshooting a structure. A common approach is **bottom-up**: Is there a link (cable, Wi-Fi)? Does the device have a valid IP address? Can the server be reached? Does name resolution work? Only then look at the application itself. If one layer works, you can rule out everything below it.
+
+## Reading the evidence: logs
+
+Logs record events with **timestamps** — errors, warnings, logins, restarts. For a failure at 14:32, look at the entries around that time in all involved systems and put them on a **common timeline**. The first error is often more revealing than the last; later errors are frequently consequences. Make sure clocks are synchronised, otherwise timelines mislead.
+
+## Intermittent problems
+
+"Randomly" occurring faults cannot be reproduced on demand. Turn them into data: record the exact **time and conditions** of each occurrence, enable **monitoring**, and look for patterns — time of day, load, temperature, specific users or locations. Be careful when a fix seems to work for a while: an intermittent fault may simply not have occurred yet.
+
+## Worked example
+
+Users at one branch report that the ERP system is slow. Kai checks the middle of the path: the response from the branch router to the data centre is fine, but from the branch switch to the router it is not. Monitoring shows packet loss every day at 9:00, when backups at the branch start. Moving the backup window solves the problem.
+
+## Key takeaways
+
+- Half-splitting finds the faulty segment in a few steps.
+- Layers: rule out from the bottom up.
+- Logs on a common timeline; the first error matters most.
+- Intermittent faults need data over time.

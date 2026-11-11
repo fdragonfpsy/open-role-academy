@@ -1,5 +1,15 @@
 # Status
 
+## 2026-11-11 — Phase 2: IT Support content for troubleshooting-methods
+
+**Done**
+- `incident-request-handling` content merged ([#14](https://github.com/fdragonfpsy/open-role-academy/pull/14)).
+- `troubleshooting-methods`: 6 units (3 levels × en/de), 12 items, 6 new link-only resources (Wikipedia en/de, CC BY-SA 4.0); the OSI-model resources are shared with `networking-fundamentals`.
+
+**Counts:** roles 4 (1 published, 3 draft) · competencies 38 · units 54 · items 108 · resources 67
+
+**Next:** `user-support-communication`, then the remaining IT Support competencies in roadmap order.
+
 ## 2026-11-11 — Phase 2: IT Support content for incident-request-handling
 
 **Done**
