@@ -1,0 +1,18 @@
+id: performance-feedback
+title:
+  en: Performance management and feedback
+  de: Leistungsmanagement und Feedback
+description:
+  en: >-
+    Support goal setting, regular check-ins and appraisal processes; coach managers in giving
+    specific, fair feedback; and reduce common rating biases.
+  de: >-
+    Zielvereinbarungen, regelmäßige Gespräche und Beurteilungsprozesse unterstützen, Führungskräfte
+    darin begleiten, konkretes und faires Feedback zu geben, und typische Beurteilungsfehler
+    verringern.
+prerequisites: [communication-collaboration]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/4012e28f-1826-4024-9772-7a4183d63b7f
+    label: provide feedback on job performance

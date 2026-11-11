@@ -78,3 +78,11 @@ Format: date — decision — reason — alternatives considered.
 ## 2026-11-11 — Finance & Accounting framework
 - **Decision:** 11 role-specific competencies: bookkeeping-fundamentals, accounts-payable, accounts-receivable, reconciliation-closing (priority 1); financial-statements-reporting, tax-basics, cash-liquidity-management, budgeting-forecasting, internal-controls-audit (priority 2); cost-accounting, financial-analysis-kpis (priority 3). Budgeting, internal controls and financial analysis are not required at foundation role level. Core: business & finance fundamentals and working with data are priority 1.
 - **Reason:** Covers the typical accounting cycle from transaction to reporting. Law/tax-related competencies are explicitly labelled "Germany/EU" (CLAUDE.md §8); `tax-basics` keeps the label in its title. ESCO refs looked up via the ESCO API on 2026-11-11.
+
+## 2026-11-11 — Human Resources framework
+- **Decision:** 11 role-specific competencies: employment-law-basics, recruitment-selection, personnel-administration, hr-data-protection (priority 1); onboarding-offboarding, payroll-compensation, performance-feedback, learning-development, employee-relations-conflict (priority 2); health-safety-wellbeing, diversity-inclusion (priority 3). Law-related competencies carry "Germany/EU" or "Germany" in their titles. Core: communication & collaboration is priority 1.
+- **Reason:** Covers the employee lifecycle plus the legal and data-protection basics HR needs in the EU/Germany context (CLAUDE.md §8). ESCO refs looked up via the ESCO API on 2026-11-11.
+
+## 2026-11-11 — `docs/FRAMEWORK.md` is generated and checked in CI
+- **Decision:** `npm run docs:framework` renders the file from the YAML; a Vitest test fails when the committed file is out of date.
+- **Reason:** Keeps the overview trustworthy without a separate CI step.

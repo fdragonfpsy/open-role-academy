@@ -1,0 +1,68 @@
+id: human-resources
+kind: role
+status: draft
+title:
+  en: Human Resources
+  de: Personalwesen (HR)
+summary:
+  en: >-
+    Find, develop and support people: recruit and onboard employees, run fair and lawful HR
+    processes, advise managers and employees, and protect personal data.
+  de: >-
+    Menschen gewinnen, entwickeln und unterstützen: Mitarbeitende einstellen und einarbeiten, faire
+    und rechtssichere HR-Prozesse gestalten, Führungskräfte und Mitarbeitende beraten und
+    personenbezogene Daten schützen.
+competencies:
+  # role-specific
+  - id: employment-law-basics
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: recruitment-selection
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: personnel-administration
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: hr-data-protection
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: onboarding-offboarding
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: payroll-compensation
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: performance-feedback
+    priority: 2
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  - id: learning-development
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: employee-relations-conflict
+    priority: 2
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  - id: health-safety-wellbeing
+    priority: 3
+    targets: { foundation: foundation, practitioner: foundation, advanced: practitioner }
+  - id: diversity-inclusion
+    priority: 3
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  # core track
+  - id: communication-collaboration
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: information-security-basics
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: digital-ai-literacy
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: working-with-data
+    priority: 3
+    targets: { foundation: foundation, practitioner: foundation, advanced: practitioner }
+  - id: self-organisation-project-basics
+    priority: 3
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: business-finance-fundamentals
+    priority: 3
+    targets: { foundation: foundation, practitioner: foundation, advanced: practitioner }

@@ -1,0 +1,20 @@
+id: learning-development
+title:
+  en: Learning and development
+  de: Personalentwicklung
+description:
+  en: >-
+    Identify training needs, plan and organise learning formats (on the job, courses, e-learning),
+    support career development and evaluate whether learning measures work.
+  de: >-
+    Weiterbildungsbedarfe erkennen, Lernformate planen und organisieren (on the job, Seminare,
+    E-Learning), berufliche Entwicklung unterstützen und bewerten, ob Lernmaßnahmen wirken.
+prerequisites: []
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/4dafe480-f2ae-46b5-bd5e-8d4e538f50c7
+    label: identify training needs
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/714eebcb-569a-4f1b-b592-28f70b59a9ba
+    label: develop staff

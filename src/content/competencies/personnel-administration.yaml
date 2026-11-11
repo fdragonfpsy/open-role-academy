@@ -1,0 +1,21 @@
+id: personnel-administration
+title:
+  en: Personnel administration
+  de: Personaladministration
+description:
+  en: >-
+    Maintain accurate personnel records and processes: contracts and changes, absence and leave
+    management, time recording, certificates and documents, HR systems and retention periods.
+  de: >-
+    Personaldaten und -prozesse korrekt pflegen: Verträge und Vertragsänderungen, Abwesenheits- und
+    Urlaubsverwaltung, Zeiterfassung, Bescheinigungen und Dokumente, HR-Systeme und
+    Aufbewahrungsfristen.
+prerequisites: [employment-law-basics]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/88b406d0-72e2-4087-be19-d5992d259473
+    label: personnel management
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/7ec3c77b-1955-4397-9bd3-7b7b9d0b8531
+    label: manage personnel agenda

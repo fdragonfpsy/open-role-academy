@@ -14,7 +14,8 @@
     "lint": "eslint .",
     "typecheck": "astro check && tsc --noEmit",
     "test": "vitest run",
-    "validate:content": "tsx scripts/validate-content.ts"
+    "validate:content": "tsx scripts/validate-content.ts",
+    "docs:framework": "tsx scripts/generate-framework.ts"
   },
   "dependencies": {
     "@astrojs/mdx": "^8.1.4",

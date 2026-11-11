@@ -1,0 +1,22 @@
+id: payroll-compensation
+title:
+  en: Payroll and compensation basics (Germany)
+  de: Grundlagen von Entgeltabrechnung und Vergütung (Deutschland)
+description:
+  en: >-
+    Understand how a payslip is built in Germany (gross pay, taxes, social security contributions,
+    net pay), which data payroll needs and when, and the basics of fair, transparent pay structures
+    and benefits.
+  de: >-
+    Verstehen, wie eine Entgeltabrechnung in Deutschland aufgebaut ist (Brutto, Steuern,
+    Sozialversicherungsbeiträge, Netto), welche Daten die Abrechnung wann braucht, und die
+    Grundlagen fairer, transparenter Vergütungsstrukturen und Zusatzleistungen kennen.
+prerequisites: [personnel-administration, business-finance-fundamentals]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/9d916d7c-89b3-4084-a6d9-e2b0b3091404
+    label: manage payroll
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/6789defa-dc57-42a8-b2ed-2b8c349aa3e2
+    label: determine salaries

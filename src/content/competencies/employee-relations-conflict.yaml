@@ -1,0 +1,22 @@
+id: employee-relations-conflict
+title:
+  en: Employee relations and conflict resolution
+  de: Mitarbeiterbeziehungen und Konfliktlösung
+description:
+  en: >-
+    Handle employee concerns and conflicts fairly: listen, clarify facts, mediate between parties,
+    follow due process for complaints and disciplinary matters, and cooperate constructively with
+    employee representatives.
+  de: >-
+    Anliegen und Konflikte von Mitarbeitenden fair bearbeiten: zuhören, Sachverhalte klären,
+    zwischen Beteiligten vermitteln, bei Beschwerden und arbeitsrechtlichen Maßnahmen ein geordnetes
+    Verfahren einhalten und konstruktiv mit der Arbeitnehmervertretung zusammenarbeiten.
+prerequisites: [employment-law-basics, communication-collaboration]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/0ee94af1-b445-4973-9c3f-459fab250342
+    label: apply conflict management
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/97b713f0-b9e8-4903-8dee-7e0b4019a1c0
+    label: employment law

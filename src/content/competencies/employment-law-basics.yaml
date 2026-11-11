@@ -1,0 +1,24 @@
+id: employment-law-basics
+title:
+  en: Employment law basics (Germany/EU)
+  de: Grundlagen des Arbeitsrechts (Deutschland/EU)
+description:
+  en: >-
+    Know the main sources and rules of employment law in Germany and the EU: employment contracts,
+    working time, leave, part-time and fixed-term work, protection against dismissal, equal
+    treatment, and the role of works councils and collective agreements — and when to involve legal
+    experts.
+  de: >-
+    Die wichtigsten Quellen und Regeln des Arbeitsrechts in Deutschland und der EU kennen:
+    Arbeitsvertrag, Arbeitszeit, Urlaub, Teilzeit und Befristung, Kündigungsschutz, Gleichbehandlung
+    sowie die Rolle von Betriebsrat und Tarifverträgen – und wissen, wann rechtliche Expertise nötig
+    ist.
+prerequisites: []
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/08fe5910-8c4c-4679-a988-eb2ded3c4909
+    label: labour legislation
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/97b713f0-b9e8-4903-8dee-7e0b4019a1c0
+    label: employment law

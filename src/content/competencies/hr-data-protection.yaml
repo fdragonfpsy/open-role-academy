@@ -1,0 +1,22 @@
+id: hr-data-protection
+title:
+  en: Data protection in HR (GDPR)
+  de: Datenschutz im Personalwesen (DSGVO)
+description:
+  en: >-
+    Handle employee and applicant data lawfully under the GDPR: legal bases, purpose limitation and
+    data minimisation, special categories of data, access rights, retention and deletion, and secure
+    handling of personnel files.
+  de: >-
+    Daten von Beschäftigten sowie Bewerberinnen und Bewerbern nach der DSGVO rechtmäßig verarbeiten:
+    Rechtsgrundlagen, Zweckbindung und Datenminimierung, besondere Kategorien personenbezogener
+    Daten, Auskunftsrechte, Aufbewahrung und Löschung sowie sicherer Umgang mit Personalakten.
+prerequisites: [information-security-basics]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/a4346013-a967-4a58-a533-6b32ad1364c5
+    label: data protection
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/097c6a36-f031-4d3e-b5c1-62d6ffcb430b
+    label: respect data protection principles
