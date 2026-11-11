@@ -1,5 +1,15 @@
 # Status
 
+## 2026-11-11 — Phase 2: core track content for self-organisation-project-basics
+
+**Done**
+- `working-with-data` content merged ([#9](https://github.com/fdragonfpsy/open-role-academy/pull/9)).
+- `self-organisation-project-basics`: 6 units (3 levels × en/de), 12 items, 9 new link-only resources (Wikipedia en/de, CC BY-SA 4.0). Added to the published `core-track` role (priority 2). Items are generated in YAML block style with quoted strings.
+
+**Counts:** roles 4 (1 published, 3 draft) · competencies 38 · units 30 · items 60 · resources 37
+
+**Next:** core track content for `business-finance-fundamentals` (last core sub-task), then IT Support & Operations content.
+
 ## 2026-11-11 — Phase 2: core track content for working-with-data
 
 **Done**
