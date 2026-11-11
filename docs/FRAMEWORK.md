@@ -10,7 +10,7 @@ Targets per **role level** (the learner's self-rated level): F = Foundation, P =
 |---|---|---|---|---|---|
 | Business and finance fundamentals | core |  | P/A/A | F/F/P | —/F/F |
 | Communication and collaboration | core |  | F/P/P | F/P/A | F/P/P |
-| Digital and AI literacy | core |  | F/P/P | F/P/P | F/P/A |
+| Digital and AI literacy | core | F/P/A | F/P/P | F/P/P | F/P/A |
 | Information security basics | core | F/P/A | F/P/P | F/P/P | P/A/A |
 | Self-organisation and project basics | core |  | F/P/P | F/P/P | F/P/P |
 | Working with data | core |  | F/P/A | F/F/P | F/F/P |
@@ -49,10 +49,11 @@ Targets per **role level** (the learner's self-rated level): F = Foundation, P =
 
 ## Core skills for every role (`core-track`, core, published)
 
-The shared core track that every role builds on. Currently available: information security basics (more core competencies follow).
+The shared core track that every role builds on. Currently available: digital and AI literacy and information security basics (more core competencies follow).
 
 | Competency | Track | Priority | Foundation | Practitioner | Advanced | Prerequisites |
 |---|---|---|---|---|---|---|
+| Digital and AI literacy | core | 1 | F | P | A | — |
 | Information security basics | core | 1 | F | P | A | digital-ai-literacy |
 
 ## Finance & Accounting (`finance-accounting`, role, draft)
