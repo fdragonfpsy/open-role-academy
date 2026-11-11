@@ -1,0 +1,24 @@
+id: internal-controls-audit
+title:
+  en: Internal controls and audit readiness
+  de: Internes Kontrollsystem und Prüfungsbereitschaft
+description:
+  en: >-
+    Apply internal controls such as segregation of duties and the four-eyes principle, document
+    processes, keep records within retention periods and support internal and external audits.
+  de: >-
+    Interne Kontrollen wie Funktionstrennung und Vier-Augen-Prinzip anwenden, Prozesse
+    dokumentieren, Unterlagen innerhalb der Aufbewahrungsfristen aufbewahren und interne wie externe
+    Prüfungen unterstützen.
+prerequisites: [reconciliation-closing]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/6a536b36-c5c7-4d10-bf67-a4fb0f8549b2
+    label: audit techniques
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/89ff28d6-342c-435d-83aa-83e71dbbbc96
+    label: conduct financial audits
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/0daaf096-1639-461c-bf1a-bbeea77e6b67
+    label: internal risk management policy

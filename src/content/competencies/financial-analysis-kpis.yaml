@@ -1,0 +1,21 @@
+id: financial-analysis-kpis
+title:
+  en: Financial analysis and KPIs
+  de: Finanzanalyse und Kennzahlen
+description:
+  en: >-
+    Analyse financial statements with ratios for profitability, liquidity and capital structure,
+    build simple KPI dashboards and communicate findings to non-finance colleagues.
+  de: >-
+    Jahresabschlüsse mit Kennzahlen zu Rentabilität, Liquidität und Kapitalstruktur analysieren,
+    einfache Kennzahlen-Dashboards aufbauen und Ergebnisse für Kolleginnen und Kollegen ohne
+    Finanzhintergrund verständlich aufbereiten.
+prerequisites: [financial-statements-reporting, working-with-data]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/99571e68-801f-49af-a897-5f75996642e1
+    label: financial analysis
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/5f1d1319-7954-4a9b-90c7-57668e3a0d4b
+    label: interpret financial statements

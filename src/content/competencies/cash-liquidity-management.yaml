@@ -1,0 +1,17 @@
+id: cash-liquidity-management
+title:
+  en: Cash and liquidity management
+  de: Liquiditäts- und Zahlungsmanagement
+description:
+  en: >-
+    Monitor bank balances and cash flows, prepare short-term liquidity plans, manage payment timing
+    and working capital, and secure payment processes against fraud.
+  de: >-
+    Kontostände und Zahlungsströme überwachen, kurzfristige Liquiditätspläne erstellen,
+    Zahlungszeitpunkte und Working Capital steuern und Zahlungsprozesse gegen Betrug absichern.
+prerequisites: [bookkeeping-fundamentals]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/3f0ff149-7726-4205-be63-3c48c5c7cac8
+    label: manage cash flow

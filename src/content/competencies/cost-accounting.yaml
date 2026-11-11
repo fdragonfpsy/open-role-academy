@@ -1,0 +1,20 @@
+id: cost-accounting
+title:
+  en: Cost accounting
+  de: Kosten- und Leistungsrechnung
+description:
+  en: >-
+    Classify costs (fixed and variable, direct and indirect), use cost centres and cost objects,
+    calculate contribution margins and support pricing and make-or-buy decisions.
+  de: >-
+    Kosten einordnen (fix und variabel, Einzel- und Gemeinkosten), Kostenstellen und Kostenträger
+    nutzen, Deckungsbeiträge berechnen und Preis- sowie Make-or-buy-Entscheidungen unterstützen.
+prerequisites: [bookkeeping-fundamentals]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/c5b90c0c-3af0-4c8c-a06c-cc3ced02242c
+    label: perform cost accounting activities
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/7d35602d-bc94-4975-aa7c-f4e8e05ce8e0
+    label: cost management

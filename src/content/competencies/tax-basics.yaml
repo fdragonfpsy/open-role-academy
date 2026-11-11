@@ -1,0 +1,22 @@
+id: tax-basics
+title:
+  en: Business tax basics (Germany/EU)
+  de: Steuerliche Grundlagen für Unternehmen (Deutschland/EU)
+description:
+  en: >-
+    Apply the basics of value-added tax in Germany and the EU (input and output tax, invoice
+    requirements, cross-border supplies) and know the main business taxes, filing duties and when to
+    involve tax advisors.
+  de: >-
+    Die Grundlagen der Umsatzsteuer in Deutschland und der EU anwenden (Vor- und Umsatzsteuer,
+    Rechnungsanforderungen, grenzüberschreitende Leistungen) und die wichtigsten
+    Unternehmenssteuern, Meldepflichten und den richtigen Zeitpunkt für steuerliche Beratung kennen.
+prerequisites: [bookkeeping-fundamentals]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/b0132abb-7e1f-4b03-ae15-c7de85e6e8ca
+    label: value-added tax law
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/d669af41-756c-48d9-a286-1443253f54b1
+    label: tax legislation

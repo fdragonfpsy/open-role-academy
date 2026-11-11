@@ -1,0 +1,68 @@
+id: finance-accounting
+kind: role
+status: draft
+title:
+  en: Finance & Accounting
+  de: Finanz- und Rechnungswesen
+summary:
+  en: >-
+    Keep the books right and the money flowing: record transactions, manage payables and
+    receivables, close periods, comply with tax rules and turn numbers into decisions.
+  de: >-
+    Sorgt für korrekte Bücher und funktionierende Zahlungsströme: Geschäftsvorfälle erfassen,
+    Kreditoren und Debitoren steuern, Perioden abschließen, Steuerregeln einhalten und Zahlen in
+    Entscheidungen übersetzen.
+competencies:
+  # role-specific
+  - id: bookkeeping-fundamentals
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: accounts-payable
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: accounts-receivable
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: reconciliation-closing
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: financial-statements-reporting
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: tax-basics
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: cash-liquidity-management
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: budgeting-forecasting
+    priority: 2
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  - id: internal-controls-audit
+    priority: 2
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  - id: cost-accounting
+    priority: 3
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: financial-analysis-kpis
+    priority: 3
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  # core track
+  - id: business-finance-fundamentals
+    priority: 1
+    targets: { foundation: practitioner, practitioner: advanced, advanced: advanced }
+  - id: working-with-data
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: digital-ai-literacy
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: information-security-basics
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: communication-collaboration
+    priority: 3
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: self-organisation-project-basics
+    priority: 3
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }

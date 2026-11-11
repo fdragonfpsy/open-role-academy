@@ -1,0 +1,19 @@
+id: accounts-payable
+title:
+  en: Accounts payable
+  de: Kreditorenbuchhaltung
+description:
+  en: >-
+    Process supplier invoices from receipt to payment: formal and factual invoice checks, matching
+    with orders and goods receipts, approval workflows, payment runs, discounts and protection
+    against invoice fraud.
+  de: >-
+    Eingangsrechnungen vom Eingang bis zur Zahlung bearbeiten: formelle und sachliche
+    Rechnungsprüfung, Abgleich mit Bestellung und Wareneingang, Freigabeprozesse, Zahlungsläufe,
+    Skonto und Schutz vor Rechnungsbetrug.
+prerequisites: [bookkeeping-fundamentals]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/bdcac0c8-b77a-4640-9eaf-c0cf3efd1e23
+    label: process payments

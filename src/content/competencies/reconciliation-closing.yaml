@@ -1,0 +1,20 @@
+id: reconciliation-closing
+title:
+  en: Reconciliation and period-end closing
+  de: Abstimmung und Periodenabschluss
+description:
+  en: >-
+    Reconcile bank and sub-ledger accounts, post accruals, deferrals and depreciation, follow a
+    closing checklist and calendar, and investigate and document differences.
+  de: >-
+    Bank- und Nebenbuchkonten abstimmen, Abgrenzungen und Abschreibungen buchen, einer Abschluss-
+    Checkliste und einem Abschlusskalender folgen sowie Differenzen klären und dokumentieren.
+prerequisites: [bookkeeping-fundamentals]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/5f1ebff6-98ec-411f-a1d4-0bf04bd03bdf
+    label: check accounting records
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/08371fe9-c658-4f6a-966f-71dbb0ab683d
+    label: accounting department processes
