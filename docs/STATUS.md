@@ -1,5 +1,15 @@
 # Status
 
+## 2026-11-11 — Fix: truncated answer options in items
+
+**Done**
+- `communication-collaboration` content merged ([#7](https://github.com/fdragonfpsy/open-role-academy/pull/7)).
+- Found and fixed a content bug: unquoted commas in one-line YAML option mappings cut option texts short (22 options in 3 item files). Options are now written in block style, and item/option schemas are strict, so this fails validation from now on.
+
+**Counts:** roles 4 (1 published, 3 draft) · competencies 38 · units 18 · items 36 · resources 20
+
+**Next:** core track content for `working-with-data`.
+
 ## 2026-11-11 — Phase 2: core track content for communication-collaboration
 
 **Done**

@@ -18,6 +18,8 @@ Read [CLAUDE.md](CLAUDE.md) first — it is the project constitution. The most i
 - Items: `src/content/items/<competency>.yaml` (≥ 6 per competency, ≥ 2 per required level; difficulty foundation 950 ± 100, practitioner 1250 ± 100, advanced 1550 ± 100)
 - Resource: `src/content/resources/<id>.yaml` with `license`, `licenseUrl`, `licenseVerifiedOn`
 
+Write answer options in block style with quoted strings (`- en: "…"` / `de: "…"` / `correct: true`). Do not use one-line flow mappings like `{ en: a, b, de: … }`: an unquoted comma silently cuts the text (the schema now rejects the resulting unknown keys).
+
 New content starts with `status: ai-draft` (shown with a label on the site). Human reviewers may set `status: reviewed`.
 
 ## Before opening a pull request

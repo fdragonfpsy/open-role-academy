@@ -168,6 +168,12 @@ describe('content validator', () => {
     expect(m).toMatch(/unknown competency "nope"/);
   });
 
+  it('rejects unknown option keys (e.g. text truncated by an unquoted comma in YAML)', () => {
+    const b = validBundle();
+    d(b.items[0]!.data).items[0].options[0] = { en: 'Yes', de: 'Ja', correct: true, 'and more text': null };
+    expect(messages(b)).toMatch(/Unrecognized key/);
+  });
+
   it('checks item correctness rules and difficulty ranges', () => {
     const b = validBundle();
     const items = d(b.items[0]!.data).items;
