@@ -53,3 +53,12 @@ Format: date — decision — reason — alternatives considered.
 
 ## 2026-11-11 — Legal pages use § 5 DDG
 - **Decision:** The imprint template refers to § 5 DDG (Digitale-Dienste-Gesetz), which replaced § 5 TMG in 2024. All owner data are placeholders `{{OWNER_NAME}}`, `{{OWNER_ADDRESS}}`, `{{CONTACT_EMAIL}}`. The templates should be checked by the owner before launch.
+
+## 2026-11-11 — Core track competency ids and prerequisites
+- **Decision:** The six core competencies are `digital-ai-literacy`, `communication-collaboration`, `information-security-basics`, `working-with-data`, `self-organisation-project-basics`, `business-finance-fundamentals`. Prerequisites: `working-with-data` and `information-security-basics` require `digital-ai-literacy`; the others have none.
+- **Reason:** Mirrors the core track in CLAUDE.md §4.2; digital basics come first. Prerequisites outside a learner's open gaps are ignored by the engine, so this does not block anyone already proficient.
+- **Framework refs:** ESCO skill URIs were looked up with the public ESCO API (ec.europa.eu/esco/api) on 2026-11-11. DigComp has no per-competence URIs; the reference points to the JRC DigComp page and names the competence area/numbers in `label`.
+- **Not yet in a role:** The new competencies are not added to the `core-track` role until their units and items exist (Phase 2), because the validator requires full coverage for every competency a role references.
+
+## 2026-11-11 — Missing framework references are a warning
+- **Decision:** The validator warns (does not fail) when a competency has no `frameworkRefs`, because CLAUDE.md §4.4 says "where possible".

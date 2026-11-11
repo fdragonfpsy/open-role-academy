@@ -1,0 +1,25 @@
+id: business-finance-fundamentals
+title:
+  en: Business and finance fundamentals
+  de: Betriebswirtschaftliche und finanzielle Grundlagen
+description:
+  en: >-
+    Understand how a company creates value and earns money: revenue, costs and profit, budgets,
+    the basic financial statements, key performance indicators, and how your own role contributes
+    to business results.
+  de: >-
+    Verstehen, wie ein Unternehmen Wert schafft und Geld verdient: Umsatz, Kosten und Gewinn,
+    Budgets, die grundlegenden Finanzberichte, Kennzahlen und wie die eigene Rolle zum
+    Unternehmensergebnis beiträgt.
+prerequisites: []
+track: core
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/fcb2b5f4-3a64-42f2-987a-073bea986104
+    label: business knowledge
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/74688c5d-2af1-4f7a-9d1c-00e808eaa1e6
+    label: budgetary principles
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/4a460161-eaea-4fe2-bd0e-164ccc635be1
+    label: financial statements

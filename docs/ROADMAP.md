@@ -19,7 +19,7 @@ Work top to bottom. Tick a box only when the task is done **and** all checks pas
 
 ## Phase 1 — Competency framework (core + pilot roles)
 
-- [ ] Core track: all 6 core competencies defined (en/de, prerequisites, ESCO/DigComp refs)
+- [x] Core track: all 6 core competencies defined (en/de, prerequisites, ESCO/DigComp refs)
 - [ ] Role: IT Support & Operations — 8–12 competencies with targets per level
 - [ ] Role: Finance & Accounting — 8–12 competencies with targets per level
 - [ ] Role: Human Resources — 8–12 competencies with targets per level

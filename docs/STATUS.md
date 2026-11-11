@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-11 — Phase 1: core track competencies defined
+
+**Done**
+- Phase 0 merged ([#1](https://github.com/fdragonfpsy/open-role-academy/pull/1)).
+- All 6 core-track competencies defined (en/de titles and descriptions, prerequisites, ESCO + DigComp references). `information-security-basics` now also references ESCO "cyber security" / "protect ICT devices" and requires `digital-ai-literacy`.
+- Validator warns about competencies without framework references.
+
+**Counts:** roles 1 · competencies 6 · units 6 · items 12 · resources 7
+
+**Next:** Role IT Support & Operations (8–12 competencies with targets per level).
+
 ## 2026-11-11 — Phase 0 complete (rebuilt from scratch)
 
 **Done**

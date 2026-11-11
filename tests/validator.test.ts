@@ -198,6 +198,12 @@ describe('content validator', () => {
     expect(messages(b)).toMatch(/in the future/);
   });
 
+  it('warns when a competency has no framework reference', () => {
+    const b = validBundle();
+    const warnings = validateContent(b, { today: TODAY }).filter((i) => i.level === 'warning');
+    expect(warnings.map((w) => w.message).join()).toMatch(/frameworkRefs/);
+  });
+
   it('detects prerequisite cycles', () => {
     const b = validBundle();
     b.competencies.push({

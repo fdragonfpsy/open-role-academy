@@ -1,0 +1,28 @@
+id: communication-collaboration
+title:
+  en: Communication and collaboration
+  de: Kommunikation und Zusammenarbeit
+description:
+  en: >-
+    Communicate clearly in writing and in conversation, give and receive feedback, work
+    effectively in teams, run and take part in meetings, and choose suitable digital channels
+    and tools for collaboration.
+  de: >-
+    Schriftlich und im Gespräch klar kommunizieren, Feedback geben und annehmen, wirksam im Team
+    arbeiten, Besprechungen leiten und daran teilnehmen sowie passende digitale Kanäle und
+    Werkzeuge für die Zusammenarbeit wählen.
+prerequisites: []
+track: core
+frameworkRefs:
+  - framework: DigComp
+    uri: https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en
+    label: "DigComp 2.2 — Competence area 2: Communication and collaboration (2.1 Interacting, 2.4 Collaborating through digital technologies, 2.5 Netiquette)"
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7
+    label: communication
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/60c78287-22eb-4103-9c8c-28deaa460da0
+    label: work in teams
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/2b34a99f-9813-4c91-9509-b6b9b8c3132e
+    label: collaborate through digital technologies
