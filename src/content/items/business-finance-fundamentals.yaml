@@ -1,0 +1,290 @@
+competency: business-finance-fundamentals
+items:
+  - id: bff-f-revenue-profit
+    level: foundation
+    difficulty: 880
+    type: single
+    stem:
+      en: "A company sells goods worth 500,000 euros in a year. Its costs are 460,000 euros. Which statement is correct?"
+      de: "Ein Unternehmen verkauft in einem Jahr Waren im Wert von 500.000 Euro. Seine Kosten betragen 460.000 Euro. Welche Aussage ist richtig?"
+    options:
+      - en: "Revenue is 500,000 euros and profit is 40,000 euros"
+        de: "Der Umsatz beträgt 500.000 Euro, der Gewinn 40.000 Euro"
+        correct: true
+      - en: "Profit is 500,000 euros"
+        de: "Der Gewinn beträgt 500.000 Euro"
+        correct: false
+      - en: "Revenue is 40,000 euros"
+        de: "Der Umsatz beträgt 40.000 Euro"
+        correct: false
+      - en: "Profit is 960,000 euros"
+        de: "Der Gewinn beträgt 960.000 Euro"
+        correct: false
+    explanation:
+      en: "Revenue (sales) is what customers pay; profit is what remains after deducting costs: 500,000 − 460,000 = 40,000 euros. High revenue does not automatically mean high profit."
+      de: "Umsatz ist, was Kundinnen und Kunden bezahlen; Gewinn ist, was nach Abzug der Kosten übrig bleibt: 500.000 − 460.000 = 40.000 Euro. Hoher Umsatz bedeutet nicht automatisch hohen Gewinn."
+    source: https://en.wikipedia.org/wiki/Income_statement
+  - id: bff-f-fixed-variable
+    level: foundation
+    difficulty: 930
+    type: multi
+    stem:
+      en: "A bakery wants to know which of its costs are variable, i.e. change with the number of loaves baked. Which are variable costs?"
+      de: "Eine Bäckerei möchte wissen, welche ihrer Kosten variabel sind, sich also mit der Zahl der gebackenen Brote ändern. Welche sind variable Kosten?"
+    options:
+      - en: "Flour and other ingredients"
+        de: "Mehl und andere Zutaten"
+        correct: true
+      - en: "Packaging for each loaf"
+        de: "Verpackung für jedes Brot"
+        correct: true
+      - en: "Monthly rent for the shop"
+        de: "Monatliche Miete für den Laden"
+        correct: false
+      - en: "Insurance for the building"
+        de: "Versicherung für das Gebäude"
+        correct: false
+    explanation:
+      en: "Variable costs rise and fall with output (ingredients, packaging). Fixed costs such as rent and insurance stay the same in the short term, whether the bakery bakes 100 or 1,000 loaves."
+      de: "Variable Kosten steigen und sinken mit der Menge (Zutaten, Verpackung). Fixkosten wie Miete und Versicherung bleiben kurzfristig gleich – egal, ob die Bäckerei 100 oder 1.000 Brote backt."
+    source: https://en.wikipedia.org/wiki/Contribution_margin
+  - id: bff-f-budget
+    level: foundation
+    difficulty: 990
+    type: single
+    stem:
+      en: "What is the main purpose of a department budget?"
+      de: "Was ist der Hauptzweck eines Abteilungsbudgets?"
+    options:
+      - en: "To plan and control how much money may be spent on what in a period"
+        de: "Planen und steuern, wie viel Geld in einem Zeitraum wofür ausgegeben werden darf"
+        correct: true
+      - en: "To record every payment after it has happened, without a plan"
+        de: "Jede Zahlung nachträglich zu erfassen, ohne Plan"
+        correct: false
+      - en: "To calculate employees' taxes"
+        de: "Die Steuern der Beschäftigten zu berechnen"
+        correct: false
+      - en: "To set product prices for customers"
+        de: "Die Preise für Kundinnen und Kunden festzulegen"
+        correct: false
+    explanation:
+      en: "A budget is a financial plan for a period. Comparing actual spending with the budget (plan versus actual) shows early where action is needed."
+      de: "Ein Budget ist ein Finanzplan für einen Zeitraum. Der Vergleich der tatsächlichen Ausgaben mit dem Budget (Plan-Ist-Vergleich) zeigt früh, wo gehandelt werden muss."
+    source: https://en.wikipedia.org/wiki/Budget
+  - id: bff-f-own-contribution
+    level: foundation
+    difficulty: 1040
+    type: single
+    stem:
+      en: "You work in customer service. How does your work most directly affect the company's financial result?"
+      de: "Du arbeitest im Kundenservice. Wie beeinflusst deine Arbeit das finanzielle Ergebnis des Unternehmens am direktesten?"
+    options:
+      - en: "Satisfied customers buy again and cancel less, which protects revenue; efficient handling keeps costs down"
+        de: "Zufriedene Kundschaft kauft wieder und kündigt seltener, das sichert Umsatz; effiziente Bearbeitung hält die Kosten niedrig"
+        correct: true
+      - en: "Not at all — only sales affects the result"
+        de: "Gar nicht – nur der Vertrieb beeinflusst das Ergebnis"
+        correct: false
+      - en: "Only through the price of the office furniture"
+        de: "Nur über den Preis der Büromöbel"
+        correct: false
+      - en: "Only if you work overtime"
+        de: "Nur, wenn du Überstunden machst"
+        correct: false
+    explanation:
+      en: "Every role affects revenue, costs or both. Understanding this link helps you prioritise and explain the value of your work."
+      de: "Jede Rolle beeinflusst Umsatz, Kosten oder beides. Wer diesen Zusammenhang versteht, kann besser priorisieren und den Wert der eigenen Arbeit erklären."
+    source: https://en.wikipedia.org/wiki/Income_statement
+  - id: bff-p-statements
+    level: practitioner
+    difficulty: 1170
+    type: single
+    stem:
+      en: "What is the difference between the income statement and the balance sheet?"
+      de: "Was ist der Unterschied zwischen Gewinn- und Verlustrechnung und Bilanz?"
+    options:
+      - en: "The income statement shows income and expenses over a period; the balance sheet shows assets, liabilities and equity at a point in time"
+        de: "Die GuV zeigt Erträge und Aufwendungen über einen Zeitraum; die Bilanz zeigt Vermögen, Schulden und Eigenkapital zu einem Stichtag"
+        correct: true
+      - en: "Both show exactly the same figures in a different layout"
+        de: "Beide zeigen genau dieselben Zahlen in anderem Layout"
+        correct: false
+      - en: "The balance sheet only lists the bank balance"
+        de: "Die Bilanz listet nur den Kontostand"
+        correct: false
+      - en: "The income statement is only needed for tax purposes, the balance sheet only for banks"
+        de: "Die GuV braucht man nur für Steuern, die Bilanz nur für Banken"
+        correct: false
+    explanation:
+      en: "The income statement is a period view (how much profit or loss?), the balance sheet a snapshot (what does the company own and owe on the reporting date?)."
+      de: "Die GuV ist eine Zeitraumbetrachtung (wie viel Gewinn oder Verlust?), die Bilanz eine Momentaufnahme (was besitzt und schuldet das Unternehmen am Stichtag?)."
+    source: https://en.wikipedia.org/wiki/Balance_sheet
+  - id: bff-p-balance-equation
+    level: practitioner
+    difficulty: 1230
+    type: single
+    stem:
+      en: "A company has assets of 2 million euros and liabilities of 1.4 million euros. How high is its equity?"
+      de: "Ein Unternehmen hat ein Vermögen von 2 Mio. Euro und Schulden von 1,4 Mio. Euro. Wie hoch ist sein Eigenkapital?"
+    options:
+      - en: "0.6 million euros"
+        de: "0,6 Mio. Euro"
+        correct: true
+      - en: "3.4 million euros"
+        de: "3,4 Mio. Euro"
+        correct: false
+      - en: "1.4 million euros"
+        de: "1,4 Mio. Euro"
+        correct: false
+      - en: "2 million euros"
+        de: "2 Mio. Euro"
+        correct: false
+    explanation:
+      en: "The balance sheet always balances: assets = liabilities + equity. Equity = 2.0 − 1.4 = 0.6 million euros."
+      de: "Die Bilanz ist immer ausgeglichen: Vermögen = Schulden + Eigenkapital. Eigenkapital = 2,0 − 1,4 = 0,6 Mio. Euro."
+    source: https://en.wikipedia.org/wiki/Balance_sheet
+  - id: bff-p-contribution-margin
+    level: practitioner
+    difficulty: 1280
+    type: single
+    stem:
+      en: "A product sells for 50 euros; its variable costs are 30 euros per unit. Fixed costs are 40,000 euros per year. How many units must be sold to break even?"
+      de: "Ein Produkt kostet 50 Euro; seine variablen Kosten betragen 30 Euro pro Stück. Die Fixkosten liegen bei 40.000 Euro pro Jahr. Wie viele Stück müssen verkauft werden, um die Gewinnschwelle zu erreichen?"
+    options:
+      - en: "2,000 units"
+        de: "2.000 Stück"
+        correct: true
+      - en: "800 units"
+        de: "800 Stück"
+        correct: false
+      - en: "1,333 units"
+        de: "1.333 Stück"
+        correct: false
+      - en: "4,000 units"
+        de: "4.000 Stück"
+        correct: false
+    explanation:
+      en: "Contribution margin per unit = 50 − 30 = 20 euros. Break-even quantity = fixed costs / contribution margin = 40,000 / 20 = 2,000 units."
+      de: "Deckungsbeitrag pro Stück = 50 − 30 = 20 Euro. Break-even-Menge = Fixkosten / Deckungsbeitrag = 40.000 / 20 = 2.000 Stück."
+    source: https://en.wikipedia.org/wiki/Contribution_margin
+  - id: bff-p-profit-vs-cash
+    level: practitioner
+    difficulty: 1330
+    type: single
+    stem:
+      en: "A company reports a profit but cannot pay its suppliers on time. What is a plausible explanation?"
+      de: "Ein Unternehmen weist einen Gewinn aus, kann aber seine Lieferanten nicht pünktlich bezahlen. Was ist eine plausible Erklärung?"
+    options:
+      - en: "Customers pay their invoices late, so cash comes in after the sales have already been recorded as revenue"
+        de: "Kundinnen und Kunden zahlen ihre Rechnungen spät, sodass Geld erst eingeht, nachdem die Verkäufe schon als Umsatz gebucht wurden"
+        correct: true
+      - en: "Profit and cash are always identical, so this cannot happen"
+        de: "Gewinn und Zahlungsmittel sind immer identisch, das kann also nicht passieren"
+        correct: false
+      - en: "The company has too much cash in the bank"
+        de: "Das Unternehmen hat zu viel Geld auf der Bank"
+        correct: false
+      - en: "Profit is calculated without considering any costs"
+        de: "Der Gewinn wird ohne Berücksichtigung von Kosten berechnet"
+        correct: false
+    explanation:
+      en: "Profit and cash flow differ in timing. Sales on credit raise profit before cash arrives. Liquidity — being able to pay bills when due — must therefore be managed separately."
+      de: "Gewinn und Zahlungsströme unterscheiden sich zeitlich. Verkäufe auf Rechnung erhöhen den Gewinn, bevor Geld eingeht. Liquidität – Rechnungen bei Fälligkeit bezahlen zu können – muss deshalb eigens gesteuert werden."
+    source: https://en.wikipedia.org/wiki/Cash_flow
+  - id: bff-a-kpi-design
+    level: advanced
+    difficulty: 1480
+    type: multi
+    stem:
+      en: "You introduce KPIs for your department. Which practices make them useful?"
+      de: "Du führst Kennzahlen (KPIs) für deine Abteilung ein. Welche Vorgehensweisen machen sie nützlich?"
+    options:
+      - en: "Link each KPI to a clear goal and define exactly how it is calculated"
+        de: "Jede Kennzahl mit einem klaren Ziel verknüpfen und genau definieren, wie sie berechnet wird"
+        correct: true
+      - en: "Use few KPIs and combine speed measures with quality measures"
+        de: "Wenige Kennzahlen nutzen und Geschwindigkeits- mit Qualitätskennzahlen kombinieren"
+        correct: true
+      - en: "Review regularly whether a KPI still drives the right behaviour"
+        de: "Regelmäßig prüfen, ob eine Kennzahl noch das richtige Verhalten fördert"
+        correct: true
+      - en: "Measure as many things as possible, so nothing is missed"
+        de: "Möglichst viel messen, damit nichts übersehen wird"
+        correct: false
+    explanation:
+      en: "Good KPIs are tied to goals, precisely defined and few. A single measure such as \"tickets closed per hour\" can be gamed at the expense of quality — balancing measures and regular reviews prevent that."
+      de: "Gute Kennzahlen sind an Ziele gebunden, präzise definiert und wenige. Eine einzelne Kennzahl wie „geschlossene Tickets pro Stunde“ lässt sich auf Kosten der Qualität optimieren – ausgleichende Kennzahlen und regelmäßige Überprüfung verhindern das."
+    source: https://en.wikipedia.org/wiki/Performance_indicator
+  - id: bff-a-drop-product
+    level: advanced
+    difficulty: 1530
+    type: single
+    stem:
+      en: "A product line shows a loss after fixed costs are allocated to it, but it has a positive contribution margin. The fixed costs would remain if the product were dropped. What follows in the short term?"
+      de: "Eine Produktlinie zeigt nach Zuordnung der Fixkosten einen Verlust, hat aber einen positiven Deckungsbeitrag. Die Fixkosten blieben bestehen, wenn das Produkt eingestellt würde. Was folgt kurzfristig?"
+    options:
+      - en: "Dropping it would reduce total profit, because its contribution margin helps to cover fixed costs"
+        de: "Die Einstellung würde den Gesamtgewinn verringern, weil ihr Deckungsbeitrag hilft, die Fixkosten zu decken"
+        correct: true
+      - en: "Dropping it always increases profit because it shows a loss"
+        de: "Die Einstellung erhöht immer den Gewinn, weil sie einen Verlust zeigt"
+        correct: false
+      - en: "Contribution margins are irrelevant for such decisions"
+        de: "Deckungsbeiträge sind für solche Entscheidungen irrelevant"
+        correct: false
+      - en: "The product should be sold below its variable costs to grow volume"
+        de: "Das Produkt sollte unter seinen variablen Kosten verkauft werden, um Menge zu gewinnen"
+        correct: false
+    explanation:
+      en: "If fixed costs do not disappear, every product with a positive contribution margin improves the overall result in the short term. Long-term decisions also consider whether fixed costs can be reduced."
+      de: "Wenn Fixkosten nicht wegfallen, verbessert jedes Produkt mit positivem Deckungsbeitrag kurzfristig das Gesamtergebnis. Langfristige Entscheidungen berücksichtigen zusätzlich, ob sich Fixkosten abbauen lassen."
+    source: https://en.wikipedia.org/wiki/Contribution_margin
+  - id: bff-a-business-case
+    level: advanced
+    difficulty: 1590
+    type: multi
+    stem:
+      en: "You prepare a business case for new software. What should it contain to support a sound decision?"
+      de: "Du erstellst einen Business Case für eine neue Software. Was sollte er enthalten, um eine fundierte Entscheidung zu ermöglichen?"
+    options:
+      - en: "One-off and recurring costs, including internal effort"
+        de: "Einmalige und laufende Kosten, einschließlich interner Aufwände"
+        correct: true
+      - en: "Expected benefits with the assumptions behind them"
+        de: "Erwarteten Nutzen mit den zugrunde liegenden Annahmen"
+        correct: true
+      - en: "Risks and alternatives, including \"do nothing\""
+        de: "Risiken und Alternativen, einschließlich „nichts tun“"
+        correct: true
+      - en: "Only the vendor's marketing figures"
+        de: "Nur die Marketingzahlen des Anbieters"
+        correct: false
+    explanation:
+      en: "A business case compares costs, benefits and risks of options, and makes assumptions transparent so they can be challenged. Including the \"do nothing\" option shows what the decision really changes."
+      de: "Ein Business Case vergleicht Kosten, Nutzen und Risiken von Optionen und macht Annahmen transparent, damit sie hinterfragt werden können. Die Option „nichts tun“ zeigt, was die Entscheidung wirklich verändert."
+    source: https://en.wikipedia.org/wiki/Business_case
+  - id: bff-a-working-capital
+    level: advanced
+    difficulty: 1640
+    type: single
+    stem:
+      en: "Sales grow strongly, customers get 60 days to pay, and suppliers must be paid within 14 days. What risk should management watch?"
+      de: "Der Umsatz wächst stark, Kundinnen und Kunden haben 60 Tage Zahlungsziel, Lieferanten müssen innerhalb von 14 Tagen bezahlt werden. Welches Risiko sollte das Management beobachten?"
+    options:
+      - en: "A liquidity squeeze: growth ties up more and more cash in receivables before money comes in"
+        de: "Einen Liquiditätsengpass: Wachstum bindet immer mehr Geld in Forderungen, bevor Zahlungen eingehen"
+        correct: true
+      - en: "Too much cash, because sales are growing"
+        de: "Zu viel Liquidität, weil der Umsatz wächst"
+        correct: false
+      - en: "No risk, because growth always improves liquidity"
+        de: "Kein Risiko, weil Wachstum die Liquidität immer verbessert"
+        correct: false
+      - en: "Only a tax risk"
+        de: "Nur ein steuerliches Risiko"
+        correct: false
+    explanation:
+      en: "When money goes out faster than it comes in, growth must be pre-financed. Even profitable, growing companies can run out of cash; payment terms and liquidity planning matter."
+      de: "Wenn Geld schneller abfließt als zufließt, muss Wachstum vorfinanziert werden. Auch profitable, wachsende Unternehmen können zahlungsunfähig werden; Zahlungsziele und Liquiditätsplanung sind entscheidend."
+    source: https://en.wikipedia.org/wiki/Cash_flow

@@ -41,6 +41,9 @@ Every resource is stored in `src/content/resources/<id>.yaml` with `license`, `l
 | openstax-intro-stats-descriptive | OpenStax (*Introductory Statistics 2e*) | CC BY-NC-SA (page footer) | link | 2026-11-11 |
 | wikipedia-time-management, wikipedia-smart-criteria, wikipedia-project-management, wikipedia-kanban-development, wikipedia-raci | Wikipedia (en) | CC BY-SA 4.0 | link | 2026-11-11 |
 | wikipedia-de-eisenhower-prinzip, wikipedia-de-smart, wikipedia-de-projektmanagement, wikipedia-de-kanban-entwicklung | Wikipedia (de) | CC BY-SA 4.0 | link | 2026-11-11 |
+| wikipedia-income-statement, wikipedia-balance-sheet, wikipedia-contribution-margin, wikipedia-cash-flow, wikipedia-performance-indicator | Wikipedia (en) | CC BY-SA 4.0 | link | 2026-11-11 |
+| wikipedia-de-gewinn-und-verlustrechnung, wikipedia-de-bilanz, wikipedia-de-deckungsbeitrag | Wikipedia (de) | CC BY-SA 4.0 | link | 2026-11-11 |
+| openstax-principles-accounting-statements | OpenStax (*Principles of Accounting, Vol. 1*) | CC BY-NC-SA (page footer); no LLM ingestion without permission | link | 2026-11-11 |
 
 ## Framework references
 

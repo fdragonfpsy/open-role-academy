@@ -28,13 +28,13 @@ Work top to bottom. Tick a box only when the task is done **and** all checks pas
 ## Phase 2 — Content for core + pilot roles
 
 For each competency: ≥1 unit per required level (en + de), ≥6 items across difficulties, 2–4 verified resources.
-- [ ] Core track content complete (sub-tasks below; tick when all are done)
+- [x] Core track content complete (sub-tasks below; tick when all are done)
   - [x] information-security-basics (Phase 0 demo slice)
   - [x] digital-ai-literacy
   - [x] communication-collaboration
   - [x] working-with-data
   - [x] self-organisation-project-basics
-  - [ ] business-finance-fundamentals
+  - [x] business-finance-fundamentals
 - [ ] IT Support & Operations content complete
 - [ ] Finance & Accounting content complete
 - [ ] Human Resources content complete

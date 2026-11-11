@@ -1,0 +1,13 @@
+id: wikipedia-performance-indicator
+url: "https://en.wikipedia.org/wiki/Performance_indicator"
+title: "Performance indicator (KPI)"
+provider: Wikipedia
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-11
+mode: link
+competencies: [business-finance-fundamentals]
+levels: [advanced]

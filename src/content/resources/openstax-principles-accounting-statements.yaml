@@ -1,0 +1,14 @@
+id: openstax-principles-accounting-statements
+url: "https://openstax.org/books/principles-financial-accounting/pages/2-why-it-matters"
+title: "Principles of Accounting, Volume 1, Chapter 2: Financial statements"
+provider: OpenStax
+language: en
+format: book
+minutes: 120
+license: CC-BY-NC-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+licenseVerifiedOn: 2026-11-11
+mode: link
+competencies: [business-finance-fundamentals]
+levels: [foundation, practitioner, advanced]
+note: Page footer states "Textbook content produced by OpenStax is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike License"; OpenStax also prohibits LLM training/ingestion without permission → link only, no adaptation.
