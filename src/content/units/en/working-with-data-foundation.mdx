@@ -1,0 +1,65 @@
+---
+id: working-with-data-foundation
+competency: working-with-data
+level: foundation
+title: "Working with data basics: clean lists, formulas, filters and typical values"
+objectives:
+  - Structure data as a clean list with one record per row and one attribute per column.
+  - Use simple formulas with relative and absolute references, filters and sorting.
+  - Choose between mean and median to describe a typical value.
+minutes: 20
+resources:
+  - openstax-intro-stats-descriptive
+  - wikipedia-de-deskriptive-statistik
+status: ai-draft
+sources:
+  - title: "Introductory Statistics 2e, Chapter 2: Descriptive Statistics"
+    author: Barbara Illowsky, Susan Dean et al. (OpenStax)
+    url: https://openstax.org/books/introductory-statistics-2e/pages/2-introduction
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+  - title: Tabellenkalkulation
+    author: Wikipedia-Autorinnen und -Autoren
+    url: https://de.wikipedia.org/wiki/Tabellenkalkulation
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+Almost every role keeps lists: orders, tickets, contacts, hours, costs. Spreadsheets turn these lists into answers — how many, how much, which trend — but only if the data is set up well. A few basic habits save hours of manual work and prevent wrong conclusions.
+
+## A clean list
+
+Spreadsheet tools work best with a simple structure:
+
+- **one row per record** (one order, one ticket, one employee);
+- **one column per attribute** (date, customer, product, amount);
+- **one header row** with clear column names;
+- **no merged cells, no blank rows, no subtotals** inside the list;
+- **one kind of value per column** — dates as dates, numbers as numbers.
+
+Colours and comments are fine for reading, but never use them as the only place where information is stored: a filter or formula cannot "see" a colour reliably.
+
+## Formulas, filters and sorting
+
+Formulas calculate from other cells, for example `=A3*B1`. When you copy a formula, **relative references** (`A3`) move along. If every row must use the same cell, for example a VAT rate in B1, make the reference **absolute** with dollar signs: `=A3*$B$1`. Keeping such values in one cell also means you change them in one place.
+
+**Sorting** changes the order of rows. **Filtering** temporarily shows only the rows that match a condition — for example only March — without deleting anything. Avoid deleting rows to "focus": data you delete is gone for the next analysis.
+
+## Typical values: mean and median
+
+The **mean** (average) adds all values and divides by their number. The **median** is the middle value when the values are sorted. With one extreme value — an outlier — they can differ a lot: for invoices of 100, 110, 120, 130 and 5,000 euros, the mean is 1,092 euros, the median 120 euros. The median describes the typical invoice better; the outlier deserves a separate look.
+
+## Worked example
+
+Marco tracks support tickets in a spreadsheet where each week is a separate block with coloured priorities. Counting high-priority tickets per month takes him an hour. He restructures the data into one list (date, category, priority as text, minutes spent) and now uses a filter and a simple count formula — the monthly figure takes two minutes.
+
+## Key takeaways
+
+- One record per row, one attribute per column, one header.
+- Copying formulas: relative references move, absolute ($) ones stay.
+- Filter instead of delete.
+- With outliers, the median describes the typical value better than the mean.

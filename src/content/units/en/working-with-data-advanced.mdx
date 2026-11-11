@@ -1,0 +1,95 @@
+---
+id: working-with-data-advanced
+competency: working-with-data
+level: advanced
+title: "Data-informed decisions: causality, honest charts, data quality and samples"
+objectives:
+  - Distinguish correlation from causation and know what is needed to test causal claims.
+  - Recognise and avoid misleading charts.
+  - Secure data quality at the source and judge whether a sample is representative.
+minutes: 30
+resources:
+  - wikipedia-correlation-causation
+  - wikipedia-misleading-graph
+  - openstax-intro-stats-descriptive
+status: ai-draft
+sources:
+  - title: "Introductory Statistics 2e, Chapter 2: Descriptive Statistics"
+    author: Barbara Illowsky, Susan Dean et al. (OpenStax)
+    url: https://openstax.org/books/introductory-statistics-2e/pages/2-introduction
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+  - title: Tabellenkalkulation
+    author: Wikipedia-Autorinnen und -Autoren
+    url: https://de.wikipedia.org/wiki/Tabellenkalkulation
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: Pivot table
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Pivot_table
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: Data cleansing
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Data_cleansing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: Misleading graph
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Misleading_graph
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: Correlation does not imply causation
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Decisions rest on data — and its limits
+
+At advanced level you use data to make or prepare decisions, and others rely on your analyses. The technical part is rarely the hardest. The real skill is to know **what the data can and cannot tell you**, and to present it honestly.
+
+## Correlation is not causation
+
+If teams using a new tool have higher customer satisfaction, the tool *might* be the reason — or experienced teams adopt new tools earlier *and* satisfy customers better. A third factor can drive both; the direction can also be reversed. Before you claim an effect, ask:
+
+- Could another factor explain both observations?
+- Could the cause run the other way?
+- Is there a fair comparison, ideally planned in advance (for example a pilot group and a comparison group)?
+
+Communicate associations as associations: "teams with the tool have higher scores" rather than "the tool raises scores".
+
+## Honest charts
+
+Charts can mislead without containing a single wrong number. Typical traps:
+
+- **Truncated axes in bar charts:** values 96 and 98 on an axis starting at 95 look like a threefold difference. Start bar axes at zero.
+- **Cherry-picked time windows** that hide the longer trend.
+- **3D effects and area symbols** that distort proportions.
+- **Missing context** — no unit, no comparison, no source.
+
+## Data quality at the source
+
+Errors are cheapest to prevent where data is entered. Define each field and its owner, use input rules such as drop-down lists and range checks, and add automated plausibility checks before a report is published. Cleaning the same errors every month is a sign that the process, not the spreadsheet, needs fixing.
+
+## Samples and representativeness
+
+A survey answered by 40 of 2,000 customers — mostly those who had just complained — says something about these customers, not about all. Small and **self-selected samples** are biased. State such limitations openly and, if the decision matters, collect better data.
+
+## Worked example
+
+A dashboard suggests that remote workers produce fewer errors. Before the management meeting, Lukas checks: remote work was mainly approved for experienced staff. He presents the association with this caveat and proposes a three-month comparison of similar teams.
+
+## Key takeaways
+
+- Association ≠ cause; look for third factors and fair comparisons.
+- Honest charts: zero-based bars, full context, no 3D.
+- Fix data quality where data is entered.
+- Name sample limitations openly.

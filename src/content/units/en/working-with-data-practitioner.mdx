@@ -1,0 +1,84 @@
+---
+id: working-with-data-practitioner
+competency: working-with-data
+level: practitioner
+title: "Analysing data in practice: pivot tables, data cleaning, charts and percentages"
+objectives:
+  - Summarise large lists by categories with pivot tables.
+  - Clean inconsistent, incomplete and duplicate data before analysing it.
+  - Choose suitable charts and calculate percentage changes correctly.
+minutes: 25
+resources:
+  - wikipedia-pivot-table
+  - wikipedia-data-cleansing
+  - openstax-intro-stats-descriptive
+status: ai-draft
+sources:
+  - title: "Introductory Statistics 2e, Chapter 2: Descriptive Statistics"
+    author: Barbara Illowsky, Susan Dean et al. (OpenStax)
+    url: https://openstax.org/books/introductory-statistics-2e/pages/2-introduction
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+  - title: Tabellenkalkulation
+    author: Wikipedia-Autorinnen und -Autoren
+    url: https://de.wikipedia.org/wiki/Tabellenkalkulation
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: Pivot table
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Pivot_table
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: Data cleansing
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Data_cleansing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## From lists to answers
+
+At practitioner level you do not only keep lists — you answer questions with them: revenue by region, tickets by category, costs by month. Three skills make this fast and reliable: summarising with pivot tables, cleaning data first, and presenting results clearly.
+
+## Pivot tables
+
+A pivot table summarises a list by categories in seconds: for example **regions as rows, months as columns, revenue summed as values**. You can switch between sum, count and average, filter, and update the table when the data changes. Pivot tables need a clean list as input — another reason for one record per row and consistent values.
+
+## Clean before you count
+
+If "Köln", "Koeln" and "Cologne " (with a trailing space) appear as three cities, every summary is wrong. Data cleansing means detecting and correcting such problems:
+
+- **standardise** spellings, units and formats;
+- **trim** extra spaces;
+- **handle duplicates** — check whether two records are really the same;
+- **deal with missing values** consciously instead of ignoring them;
+- **document** what you changed, so others can follow.
+
+Do not delete records just because they are inconvenient — that distorts the result.
+
+## Charts that fit the question
+
+- **Development over time** → line chart.
+- **Comparison of categories** → bar chart, sorted by value.
+- **Parts of a whole** with few parts → stacked bar or, sparingly, a pie chart.
+
+Avoid 3D effects and pie charts with many slices; they make values hard to compare.
+
+## Percentages
+
+Percentage change = (new − old) / old. From 80,000 to 100,000 euros is +25 %, not +20 %. Also distinguish **percent** from **percentage points**: a rate rising from 10 % to 12 % is an increase of 2 percentage points, or 20 %.
+
+## Worked example
+
+Nina needs revenue per region for a quarterly meeting. Her first pivot table shows nine regions instead of five because of different spellings. She standardises the region names, removes two duplicate orders, refreshes the pivot table and shows the development as a line chart per region. She notes the cleaning steps below the chart.
+
+## Key takeaways
+
+- Pivot tables: categories as rows/columns, measures as values.
+- Clean data first: spellings, spaces, duplicates, missing values.
+- Line for time, bar for comparison; no 3D.
+- Percentage change divides by the old value.

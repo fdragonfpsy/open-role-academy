@@ -1,5 +1,15 @@
 # Status
 
+## 2026-11-11 — Phase 2: core track content for working-with-data
+
+**Done**
+- Fix for truncated answer options merged ([#8](https://github.com/fdragonfpsy/open-role-academy/pull/8)).
+- `working-with-data`: 6 units (3 levels × en/de), 12 items, 8 new link-only resources (Wikipedia en/de CC BY-SA 4.0; OpenStax *Introductory Statistics 2e* ch. 2, page footer states CC BY-NC-SA → link only). Added to the published `core-track` role (priority 2).
+
+**Counts:** roles 4 (1 published, 3 draft) · competencies 38 · units 24 · items 48 · resources 28
+
+**Next:** core track content for `self-organisation-project-basics` and `business-finance-fundamentals`.
+
 ## 2026-11-11 — Fix: truncated answer options in items
 
 **Done**

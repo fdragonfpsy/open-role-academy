@@ -1,0 +1,293 @@
+competency: working-with-data
+items:
+  # ---------- foundation (950 ± 100) ----------
+  - id: wwd-f-table-structure
+    level: foundation
+    difficulty: 870
+    type: single
+    stem:
+      en: You collect customer orders in a spreadsheet so that you can analyse them later. Which layout works best?
+      de: Du sammelst Kundenbestellungen in einer Tabelle, um sie später auszuwerten. Welcher Aufbau eignet sich am besten?
+    options:
+      - en: "One row per order, one column per attribute (date, customer, product, amount), one header row, no merged cells"
+        de: "Eine Zeile pro Bestellung, eine Spalte pro Merkmal (Datum, Kunde, Produkt, Betrag), eine Kopfzeile, keine verbundenen Zellen"
+        correct: true
+      - en: "One sheet per customer with colour codes instead of columns"
+        de: "Ein Tabellenblatt pro Kunde mit Farbcodes statt Spalten"
+        correct: false
+      - en: "Several orders in one cell, separated by commas"
+        de: "Mehrere Bestellungen in einer Zelle, durch Kommas getrennt"
+        correct: false
+      - en: "Subtotals and blank rows between every group of orders"
+        de: "Zwischensummen und Leerzeilen zwischen jeder Gruppe von Bestellungen"
+        correct: false
+    explanation:
+      en: A simple list — one record per row, one attribute per column, one header — can be sorted, filtered and analysed (e.g. with pivot tables). Colours, merged cells and blank rows break that.
+      de: Eine einfache Liste – ein Datensatz pro Zeile, ein Merkmal pro Spalte, eine Kopfzeile – lässt sich sortieren, filtern und auswerten (z. B. mit Pivot-Tabellen). Farben, verbundene Zellen und Leerzeilen verhindern das.
+    source: https://de.wikipedia.org/wiki/Tabellenkalkulation
+  - id: wwd-f-absolute-reference
+    level: foundation
+    difficulty: 930
+    type: single
+    stem:
+      en: In a spreadsheet, cell B1 contains a VAT rate. You want to copy the formula =A3*B1 down a column so that every row uses B1. How should you write the reference to B1?
+      de: In einer Tabelle steht in Zelle B1 ein Steuersatz. Du willst die Formel =A3*B1 nach unten kopieren, sodass jede Zeile B1 verwendet. Wie schreibst du den Bezug auf B1?
+    options:
+      - en: "As an absolute reference, e.g. $B$1"
+        de: "Als absoluten Bezug, z. B. $B$1"
+        correct: true
+      - en: "As B1 — it never changes when copied"
+        de: "Als B1 – er ändert sich beim Kopieren nie"
+        correct: false
+      - en: "As B2, because the formula starts in row 3"
+        de: "Als B2, weil die Formel in Zeile 3 beginnt"
+        correct: false
+      - en: "Type the rate as a number into every row instead"
+        de: "Stattdessen den Satz in jeder Zeile als Zahl eintippen"
+        correct: false
+    explanation:
+      en: Relative references shift when a formula is copied; the dollar signs fix row and column. Keeping the rate in one cell also means you change it in one place only.
+      de: Relative Bezüge verschieben sich beim Kopieren einer Formel; die Dollarzeichen fixieren Zeile und Spalte. Den Satz in einer Zelle zu halten bedeutet außerdem, dass du ihn nur an einer Stelle ändern musst.
+    source: https://de.wikipedia.org/wiki/Tabellenkalkulation
+  - id: wwd-f-median
+    level: foundation
+    difficulty: 990
+    type: single
+    stem:
+      en: Five invoices are 100, 110, 120, 130 and 5,000 euros. Which value describes a "typical" invoice best?
+      de: Fünf Rechnungen betragen 100, 110, 120, 130 und 5.000 Euro. Welcher Wert beschreibt eine „typische“ Rechnung am besten?
+    options:
+      - en: "The median (120 euros)"
+        de: "Der Median (120 Euro)"
+        correct: true
+      - en: "The mean (1,092 euros)"
+        de: "Der Mittelwert (1.092 Euro)"
+        correct: false
+      - en: "The maximum (5,000 euros)"
+        de: "Das Maximum (5.000 Euro)"
+        correct: false
+      - en: "The sum (5,460 euros)"
+        de: "Die Summe (5.460 Euro)"
+        correct: false
+    explanation:
+      en: The median is the middle value and is not pulled up by one extreme value (outlier). The mean of 1,092 euros is higher than four of the five invoices.
+      de: Der Median ist der mittlere Wert und wird von einem Extremwert (Ausreißer) nicht nach oben gezogen. Der Mittelwert von 1.092 Euro liegt über vier der fünf Rechnungen.
+    source: https://openstax.org/books/introductory-statistics-2e/pages/2-introduction
+  - id: wwd-f-sort-filter
+    level: foundation
+    difficulty: 1040
+    type: single
+    stem:
+      en: You want to see only the orders from March, without deleting any data. What do you use?
+      de: Du möchtest nur die Bestellungen aus dem März sehen, ohne Daten zu löschen. Was verwendest du?
+    options:
+      - en: "A filter on the date column"
+        de: "Einen Filter auf die Datumsspalte"
+        correct: true
+      - en: "Delete all rows that are not from March"
+        de: "Alle Zeilen löschen, die nicht aus dem März sind"
+        correct: false
+      - en: "Sort by customer name"
+        de: "Nach Kundennamen sortieren"
+        correct: false
+      - en: "Hide the date column"
+        de: "Die Datumsspalte ausblenden"
+        correct: false
+    explanation:
+      en: A filter temporarily shows only matching rows and keeps all data. Sorting changes the order but still shows everything; deleting data loses it.
+      de: Ein Filter zeigt vorübergehend nur passende Zeilen und behält alle Daten. Sortieren ändert die Reihenfolge, zeigt aber weiterhin alles; Löschen vernichtet Daten.
+    source: https://de.wikipedia.org/wiki/Tabellenkalkulation
+  # ---------- practitioner (1250 ± 100) ----------
+  - id: wwd-p-pivot
+    level: practitioner
+    difficulty: 1170
+    type: single
+    stem:
+      en: You have 5,000 rows of sales data and need total revenue per region and month. What is the most efficient tool?
+      de: Du hast 5.000 Zeilen Verkaufsdaten und brauchst den Gesamtumsatz pro Region und Monat. Welches Werkzeug ist am effizientesten?
+    options:
+      - en: "A pivot table with region and month as rows/columns and revenue summed as values"
+        de: "Eine Pivot-Tabelle mit Region und Monat als Zeilen/Spalten und dem Umsatz als summierten Werten"
+        correct: true
+      - en: "Adding up the values by hand with a calculator"
+        de: "Die Werte von Hand mit dem Taschenrechner addieren"
+        correct: false
+      - en: "Copying each region into a new file"
+        de: "Jede Region in eine neue Datei kopieren"
+        correct: false
+      - en: "Colouring the rows of each region differently"
+        de: "Die Zeilen jeder Region unterschiedlich einfärben"
+        correct: false
+    explanation:
+      en: Pivot tables summarise large lists by categories in seconds and can be updated when the data changes — provided the data is a clean list.
+      de: Pivot-Tabellen fassen große Listen in Sekunden nach Kategorien zusammen und lassen sich aktualisieren, wenn sich die Daten ändern – vorausgesetzt, die Daten liegen als saubere Liste vor.
+    source: https://en.wikipedia.org/wiki/Pivot_table
+  - id: wwd-p-cleaning
+    level: practitioner
+    difficulty: 1220
+    type: multi
+    stem:
+      en: Your customer list shows "Köln", "Koeln" and "Cologne " as separate cities in a summary. Which steps are part of cleaning the data?
+      de: In deiner Kundenliste erscheinen „Köln“, „Koeln“ und „Cologne “ in einer Auswertung als getrennte Städte. Welche Schritte gehören zur Datenbereinigung?
+    options:
+      - en: "Standardise spellings to one agreed value"
+        de: "Schreibweisen auf einen vereinbarten Wert vereinheitlichen"
+        correct: true
+      - en: "Remove extra spaces at the beginning and end of entries"
+        de: "Überflüssige Leerzeichen am Anfang und Ende von Einträgen entfernen"
+        correct: true
+      - en: "Check for and handle duplicate customer records"
+        de: "Doppelte Kundendatensätze prüfen und bereinigen"
+        correct: true
+      - en: "Delete all customers from cities with several spellings"
+        de: "Alle Kundinnen und Kunden aus Städten mit mehreren Schreibweisen löschen"
+        correct: false
+    explanation:
+      en: Data cleansing detects and corrects inconsistent, incomplete or duplicate records. Deleting affected records would distort the analysis.
+      de: Datenbereinigung erkennt und korrigiert uneinheitliche, unvollständige oder doppelte Datensätze. Betroffene Datensätze zu löschen würde die Auswertung verfälschen.
+    source: https://en.wikipedia.org/wiki/Data_cleansing
+  - id: wwd-p-chart-choice
+    level: practitioner
+    difficulty: 1280
+    type: single
+    stem:
+      en: You want to show how monthly support tickets developed over the last two years. Which chart is most suitable?
+      de: Du möchtest zeigen, wie sich die monatlichen Support-Tickets in den letzten zwei Jahren entwickelt haben. Welches Diagramm ist am besten geeignet?
+    options:
+      - en: "A line chart with months on the horizontal axis"
+        de: "Ein Liniendiagramm mit den Monaten auf der waagerechten Achse"
+        correct: true
+      - en: "A pie chart with 24 slices"
+        de: "Ein Kreisdiagramm mit 24 Segmenten"
+        correct: false
+      - en: "A 3D cone chart"
+        de: "Ein 3D-Kegeldiagramm"
+        correct: false
+      - en: "A table with the numbers in random order"
+        de: "Eine Tabelle mit den Zahlen in zufälliger Reihenfolge"
+        correct: false
+    explanation:
+      en: Line charts show developments over time. Pie charts with many slices are hard to compare, and 3D effects distort how values are perceived.
+      de: Liniendiagramme zeigen Entwicklungen über die Zeit. Kreisdiagramme mit vielen Segmenten sind schwer vergleichbar, und 3D-Effekte verzerren die Wahrnehmung der Werte.
+    source: https://openstax.org/books/introductory-statistics-2e/pages/2-introduction
+  - id: wwd-p-percent-change
+    level: practitioner
+    difficulty: 1330
+    type: single
+    stem:
+      en: Revenue grew from 80,000 to 100,000 euros. What is the percentage change?
+      de: Der Umsatz ist von 80.000 auf 100.000 Euro gestiegen. Wie hoch ist die prozentuale Veränderung?
+    options:
+      - en: "+25 %"
+        de: "+25 %"
+        correct: true
+      - en: "+20 %"
+        de: "+20 %"
+        correct: false
+      - en: "+80 %"
+        de: "+80 %"
+        correct: false
+      - en: "+2,000 %"
+        de: "+2.000 %"
+        correct: false
+    explanation:
+      en: Percentage change = (new − old) / old = 20,000 / 80,000 = 0.25 = +25 %. Dividing by the new value (20 %) is a common mistake.
+      de: Prozentuale Veränderung = (neu − alt) / alt = 20.000 / 80.000 = 0,25 = +25 %. Durch den neuen Wert zu teilen (20 %) ist ein häufiger Fehler.
+    source: https://openstax.org/books/introductory-statistics-2e/pages/2-introduction
+  # ---------- advanced (1550 ± 100) ----------
+  - id: wwd-a-correlation
+    level: advanced
+    difficulty: 1480
+    type: single
+    stem:
+      en: Teams that use the new tool have higher customer satisfaction. What can you conclude from this observation alone?
+      de: Teams, die das neue Werkzeug nutzen, haben eine höhere Kundenzufriedenheit. Was kannst du allein aus dieser Beobachtung schließen?
+    options:
+      - en: "There is an association, but not that the tool causes the higher satisfaction — other factors may explain both"
+        de: "Es gibt einen Zusammenhang, aber nicht, dass das Werkzeug die höhere Zufriedenheit verursacht – andere Faktoren können beides erklären"
+        correct: true
+      - en: "The tool causes higher satisfaction"
+        de: "Das Werkzeug verursacht die höhere Zufriedenheit"
+        correct: false
+      - en: "Higher satisfaction causes teams to use the tool"
+        de: "Höhere Zufriedenheit führt dazu, dass Teams das Werkzeug nutzen"
+        correct: false
+      - en: "The data is useless and should be ignored"
+        de: "Die Daten sind nutzlos und sollten ignoriert werden"
+        correct: false
+    explanation:
+      en: Correlation does not imply causation. For example, more experienced teams might adopt new tools earlier and also satisfy customers better. Testing causality needs a suitable design, e.g. a controlled comparison.
+      de: Korrelation bedeutet nicht Kausalität. Zum Beispiel könnten erfahrenere Teams neue Werkzeuge früher einführen und gleichzeitig Kundschaft besser zufriedenstellen. Um Kausalität zu prüfen, braucht es ein geeignetes Vorgehen, z. B. einen kontrollierten Vergleich.
+    source: https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation
+  - id: wwd-a-misleading-axis
+    level: advanced
+    difficulty: 1530
+    type: single
+    stem:
+      en: A bar chart shows two values, 96 and 98, with the vertical axis starting at 95. What is the problem?
+      de: Ein Balkendiagramm zeigt zwei Werte, 96 und 98, die senkrechte Achse beginnt bei 95. Was ist das Problem?
+    options:
+      - en: "The truncated axis makes a small difference look about three times as large"
+        de: "Die abgeschnittene Achse lässt einen kleinen Unterschied etwa dreimal so groß erscheinen"
+        correct: true
+      - en: "There is no problem — axes should always start just below the smallest value"
+        de: "Es gibt kein Problem – Achsen sollten immer knapp unter dem kleinsten Wert beginnen"
+        correct: false
+      - en: "Bar charts may only show one value"
+        de: "Balkendiagramme dürfen nur einen Wert zeigen"
+        correct: false
+      - en: "The values should be shown as a pie chart"
+        de: "Die Werte sollten als Kreisdiagramm gezeigt werden"
+        correct: false
+    explanation:
+      en: Bar lengths are read as proportional to the values. Starting at 95 makes the bars 1 and 3 units long, so a 2 % difference looks like a threefold one. Start bar axes at zero or use another chart type.
+      de: Balkenlängen werden als proportional zu den Werten gelesen. Beginnt die Achse bei 95, sind die Balken 1 und 3 Einheiten lang – ein Unterschied von rund 2 % wirkt wie ein dreifacher. Bei Balken die Achse bei null beginnen lassen oder eine andere Darstellung wählen.
+    source: https://en.wikipedia.org/wiki/Misleading_graph
+  - id: wwd-a-data-quality-controls
+    level: advanced
+    difficulty: 1590
+    type: multi
+    stem:
+      en: A monthly report regularly contains errors because several people enter data into a shared spreadsheet. Which measures address the cause?
+      de: Ein Monatsbericht enthält regelmäßig Fehler, weil mehrere Personen Daten in eine gemeinsame Tabelle eintragen. Welche Maßnahmen setzen an der Ursache an?
+    options:
+      - en: "Input rules such as drop-down lists and validation of formats and ranges"
+        de: "Eingaberegeln wie Auswahllisten und Prüfung von Formaten und Wertebereichen"
+        correct: true
+      - en: "A documented definition of each field and who is responsible for it"
+        de: "Eine dokumentierte Definition jedes Feldes und wer dafür verantwortlich ist"
+        correct: true
+      - en: "Automated plausibility checks before the report is published"
+        de: "Automatische Plausibilitätsprüfungen, bevor der Bericht veröffentlicht wird"
+        correct: true
+      - en: "Asking the report reader to spot the errors"
+        de: "Die Lesenden des Berichts bitten, die Fehler zu finden"
+        correct: false
+    explanation:
+      en: Data quality is cheapest to ensure at the point of entry. Clear definitions, ownership, validation and automated checks prevent errors instead of finding them late.
+      de: Datenqualität lässt sich am günstigsten bei der Eingabe sichern. Klare Definitionen, Verantwortlichkeiten, Eingabeprüfungen und automatische Kontrollen verhindern Fehler, statt sie spät zu finden.
+    source: https://en.wikipedia.org/wiki/Data_cleansing
+  - id: wwd-a-sample
+    level: advanced
+    difficulty: 1640
+    type: single
+    stem:
+      en: A satisfaction survey was answered by 40 of 2,000 customers, mostly those who had recently complained. How should you use the result?
+      de: Eine Zufriedenheitsumfrage wurde von 40 der 2.000 Kundinnen und Kunden beantwortet, überwiegend von solchen, die sich kürzlich beschwert hatten. Wie solltest du das Ergebnis nutzen?
+    options:
+      - en: "Treat it as an indication for these customers, not as representative of all, and state the limitation"
+        de: "Als Hinweis für diese Kundengruppe behandeln, nicht als repräsentativ für alle, und die Einschränkung offen nennen"
+        correct: true
+      - en: "Report it as the satisfaction of all customers"
+        de: "Es als Zufriedenheit aller Kundinnen und Kunden berichten"
+        correct: false
+      - en: "Multiply the results by 50 to scale them up"
+        de: "Die Ergebnisse mit 50 multiplizieren, um sie hochzurechnen"
+        correct: false
+      - en: "Delete the negative answers to balance the sample"
+        de: "Die negativen Antworten löschen, um die Stichprobe auszugleichen"
+        correct: false
+    explanation:
+      en: A small, self-selected sample is biased — it does not represent all customers. Make the limitation transparent and, if needed, collect better data.
+      de: Eine kleine, selbst ausgewählte Stichprobe ist verzerrt – sie steht nicht für alle Kundinnen und Kunden. Mach die Einschränkung transparent und erhebe bei Bedarf bessere Daten.
+    source: https://openstax.org/books/introductory-statistics-2e/pages/2-introduction

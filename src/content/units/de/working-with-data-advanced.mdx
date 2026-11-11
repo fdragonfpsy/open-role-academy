@@ -1,0 +1,95 @@
+---
+id: working-with-data-advanced
+competency: working-with-data
+level: advanced
+title: "Datengestützt entscheiden: Kausalität, ehrliche Diagramme, Datenqualität und Stichproben"
+objectives:
+  - Korrelation von Kausalität unterscheiden und wissen, was nötig ist, um Ursache-Wirkungs-Aussagen zu prüfen.
+  - Irreführende Diagramme erkennen und vermeiden.
+  - Datenqualität an der Quelle sichern und beurteilen, ob eine Stichprobe repräsentativ ist.
+minutes: 30
+resources:
+  - wikipedia-de-deskriptive-statistik
+  - wikipedia-correlation-causation
+  - wikipedia-misleading-graph
+status: ai-draft
+sources:
+  - title: "Introductory Statistics 2e, Chapter 2: Descriptive Statistics"
+    author: Barbara Illowsky, Susan Dean et al. (OpenStax)
+    url: https://openstax.org/books/introductory-statistics-2e/pages/2-introduction
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+  - title: Tabellenkalkulation
+    author: Wikipedia-Autorinnen und -Autoren
+    url: https://de.wikipedia.org/wiki/Tabellenkalkulation
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: Pivot table
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Pivot_table
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: Data cleansing
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Data_cleansing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: Misleading graph
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Misleading_graph
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: Correlation does not imply causation
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Entscheidungen beruhen auf Daten – und ihren Grenzen
+
+Auf Experten-Niveau nutzt du Daten, um Entscheidungen zu treffen oder vorzubereiten, und andere verlassen sich auf deine Auswertungen. Der technische Teil ist selten der schwierigste. Die eigentliche Kompetenz liegt darin zu wissen, **was die Daten aussagen können und was nicht**, und sie ehrlich darzustellen.
+
+## Korrelation ist nicht Kausalität
+
+Wenn Teams mit einem neuen Werkzeug eine höhere Kundenzufriedenheit haben, *könnte* das Werkzeug der Grund sein – oder erfahrene Teams führen neue Werkzeuge früher ein *und* stellen Kundschaft besser zufrieden. Ein dritter Faktor kann beides antreiben; auch die Richtung kann umgekehrt sein. Bevor du eine Wirkung behauptest, frag dich:
+
+- Könnte ein anderer Faktor beide Beobachtungen erklären?
+- Könnte die Ursache in die andere Richtung laufen?
+- Gibt es einen fairen Vergleich, idealerweise vorab geplant (zum Beispiel eine Pilotgruppe und eine Vergleichsgruppe)?
+
+Kommuniziere Zusammenhänge als Zusammenhänge: „Teams mit dem Werkzeug haben höhere Werte“ statt „das Werkzeug erhöht die Werte“.
+
+## Ehrliche Diagramme
+
+Diagramme können in die Irre führen, ohne eine einzige falsche Zahl zu enthalten. Typische Fallen:
+
+- **Abgeschnittene Achsen bei Balkendiagrammen:** Die Werte 96 und 98 auf einer Achse ab 95 wirken wie ein dreifacher Unterschied. Lass Balkenachsen bei null beginnen.
+- **Gezielt gewählte Zeitfenster**, die den längeren Trend verbergen.
+- **3D-Effekte und Flächensymbole**, die Proportionen verzerren.
+- **Fehlender Kontext** – keine Einheit, kein Vergleich, keine Quelle.
+
+## Datenqualität an der Quelle
+
+Fehler lassen sich dort am günstigsten verhindern, wo Daten eingegeben werden. Definiere jedes Feld und wer dafür verantwortlich ist, nutze Eingaberegeln wie Auswahllisten und Wertebereichsprüfungen und ergänze automatische Plausibilitätsprüfungen, bevor ein Bericht veröffentlicht wird. Wer jeden Monat dieselben Fehler bereinigt, muss den Prozess verbessern, nicht die Tabelle.
+
+## Stichproben und Repräsentativität
+
+Eine Umfrage, die 40 von 2.000 Kundinnen und Kunden beantwortet haben – überwiegend solche, die sich gerade beschwert hatten –, sagt etwas über diese Gruppe aus, nicht über alle. Kleine und **selbst ausgewählte Stichproben** sind verzerrt. Nenne solche Einschränkungen offen und erhebe bessere Daten, wenn die Entscheidung wichtig ist.
+
+## Beispiel aus der Praxis
+
+Ein Dashboard legt nahe, dass Beschäftigte im Homeoffice weniger Fehler machen. Vor dem Managementmeeting prüft Lukas: Homeoffice wurde vor allem erfahrenen Beschäftigten genehmigt. Er stellt den Zusammenhang mit diesem Hinweis vor und schlägt einen dreimonatigen Vergleich ähnlicher Teams vor.
+
+## Das Wichtigste in Kürze
+
+- Zusammenhang ≠ Ursache; nach Drittfaktoren und fairen Vergleichen suchen.
+- Ehrliche Diagramme: Balken ab null, vollständiger Kontext, kein 3D.
+- Datenqualität dort sichern, wo Daten eingegeben werden.
+- Grenzen von Stichproben offen benennen.

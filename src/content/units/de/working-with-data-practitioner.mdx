@@ -1,0 +1,84 @@
+---
+id: working-with-data-practitioner
+competency: working-with-data
+level: practitioner
+title: "Daten in der Praxis auswerten: Pivot-Tabellen, Datenbereinigung, Diagramme und Prozente"
+objectives:
+  - Große Listen mit Pivot-Tabellen nach Kategorien zusammenfassen.
+  - Uneinheitliche, unvollständige und doppelte Daten vor der Auswertung bereinigen.
+  - Passende Diagramme wählen und prozentuale Veränderungen richtig berechnen.
+minutes: 25
+resources:
+  - wikipedia-de-pivot-tabelle
+  - wikipedia-de-deskriptive-statistik
+  - wikipedia-data-cleansing
+status: ai-draft
+sources:
+  - title: "Introductory Statistics 2e, Chapter 2: Descriptive Statistics"
+    author: Barbara Illowsky, Susan Dean et al. (OpenStax)
+    url: https://openstax.org/books/introductory-statistics-2e/pages/2-introduction
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+  - title: Tabellenkalkulation
+    author: Wikipedia-Autorinnen und -Autoren
+    url: https://de.wikipedia.org/wiki/Tabellenkalkulation
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: Pivot table
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Pivot_table
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: Data cleansing
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Data_cleansing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Von Listen zu Antworten
+
+Auf diesem Niveau führst du nicht nur Listen – du beantwortest mit ihnen Fragen: Umsatz pro Region, Tickets pro Kategorie, Kosten pro Monat. Drei Fähigkeiten machen das schnell und verlässlich: mit Pivot-Tabellen zusammenfassen, Daten vorher bereinigen und Ergebnisse klar darstellen.
+
+## Pivot-Tabellen
+
+Eine Pivot-Tabelle fasst eine Liste in Sekunden nach Kategorien zusammen: zum Beispiel **Regionen als Zeilen, Monate als Spalten, Umsatz als summierte Werte**. Du kannst zwischen Summe, Anzahl und Mittelwert wechseln, filtern und die Tabelle aktualisieren, wenn sich die Daten ändern. Pivot-Tabellen brauchen eine saubere Liste als Grundlage – ein weiterer Grund für einen Datensatz pro Zeile und einheitliche Werte.
+
+## Erst bereinigen, dann zählen
+
+Wenn „Köln“, „Koeln“ und „Cologne “ (mit Leerzeichen am Ende) als drei Städte erscheinen, ist jede Auswertung falsch. Datenbereinigung heißt, solche Probleme zu erkennen und zu korrigieren:
+
+- Schreibweisen, Einheiten und Formate **vereinheitlichen**;
+- überflüssige Leerzeichen **entfernen**;
+- **Dubletten prüfen** – sind zwei Datensätze wirklich derselbe Fall?
+- **fehlende Werte** bewusst behandeln, statt sie zu übergehen;
+- **dokumentieren**, was du geändert hast, damit andere es nachvollziehen können.
+
+Lösche keine Datensätze, nur weil sie unbequem sind – das verfälscht das Ergebnis.
+
+## Diagramme, die zur Frage passen
+
+- **Entwicklung über die Zeit** → Liniendiagramm.
+- **Vergleich von Kategorien** → Balkendiagramm, nach Wert sortiert.
+- **Anteile an einem Ganzen** mit wenigen Teilen → gestapelter Balken oder, sparsam, ein Kreisdiagramm.
+
+Vermeide 3D-Effekte und Kreisdiagramme mit vielen Segmenten; sie erschweren den Vergleich.
+
+## Prozente
+
+Prozentuale Veränderung = (neu − alt) / alt. Von 80.000 auf 100.000 Euro sind +25 %, nicht +20 %. Unterscheide außerdem **Prozent** und **Prozentpunkte**: Steigt eine Quote von 10 % auf 12 %, ist das ein Plus von 2 Prozentpunkten oder 20 %.
+
+## Beispiel aus der Praxis
+
+Nina braucht den Umsatz pro Region für ein Quartalsmeeting. Ihre erste Pivot-Tabelle zeigt wegen unterschiedlicher Schreibweisen neun statt fünf Regionen. Sie vereinheitlicht die Regionsnamen, entfernt zwei doppelte Bestellungen, aktualisiert die Pivot-Tabelle und zeigt die Entwicklung als Liniendiagramm pro Region. Die Bereinigungsschritte notiert sie unter dem Diagramm.
+
+## Das Wichtigste in Kürze
+
+- Pivot-Tabellen: Kategorien als Zeilen/Spalten, Kennzahlen als Werte.
+- Erst bereinigen: Schreibweisen, Leerzeichen, Dubletten, fehlende Werte.
+- Linie für Zeitverläufe, Balken für Vergleiche; kein 3D.
+- Prozentuale Veränderung teilt durch den alten Wert.

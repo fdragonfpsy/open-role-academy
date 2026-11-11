@@ -1,0 +1,65 @@
+---
+id: working-with-data-foundation
+competency: working-with-data
+level: foundation
+title: "Grundlagen der Datenarbeit: saubere Listen, Formeln, Filter und typische Werte"
+objectives:
+  - Daten als saubere Liste mit einem Datensatz pro Zeile und einem Merkmal pro Spalte aufbauen.
+  - Einfache Formeln mit relativen und absoluten Bezügen sowie Filter und Sortierung nutzen.
+  - Zwischen Mittelwert und Median wählen, um einen typischen Wert zu beschreiben.
+minutes: 20
+resources:
+  - wikipedia-de-tabellenkalkulation
+  - wikipedia-de-deskriptive-statistik
+status: ai-draft
+sources:
+  - title: "Introductory Statistics 2e, Chapter 2: Descriptive Statistics"
+    author: Barbara Illowsky, Susan Dean et al. (OpenStax)
+    url: https://openstax.org/books/introductory-statistics-2e/pages/2-introduction
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+  - title: Tabellenkalkulation
+    author: Wikipedia-Autorinnen und -Autoren
+    url: https://de.wikipedia.org/wiki/Tabellenkalkulation
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Fast jede Rolle führt Listen: Bestellungen, Tickets, Kontakte, Stunden, Kosten. Tabellenkalkulationen machen aus diesen Listen Antworten – wie viele, wie viel, welcher Trend –, aber nur, wenn die Daten gut aufgebaut sind. Ein paar Grundgewohnheiten sparen Stunden an Handarbeit und verhindern falsche Schlüsse.
+
+## Eine saubere Liste
+
+Tabellenprogramme funktionieren am besten mit einer einfachen Struktur:
+
+- **eine Zeile pro Datensatz** (eine Bestellung, ein Ticket, eine Person);
+- **eine Spalte pro Merkmal** (Datum, Kunde, Produkt, Betrag);
+- **eine Kopfzeile** mit klaren Spaltennamen;
+- **keine verbundenen Zellen, keine Leerzeilen, keine Zwischensummen** innerhalb der Liste;
+- **eine Art von Wert pro Spalte** – Datumsangaben als Datum, Zahlen als Zahlen.
+
+Farben und Kommentare helfen beim Lesen, aber nutze sie nie als einzigen Ort für eine Information: Filter und Formeln können Farben nicht zuverlässig „sehen“.
+
+## Formeln, Filter und Sortieren
+
+Formeln rechnen mit anderen Zellen, zum Beispiel `=A3*B1`. Wenn du eine Formel kopierst, wandern **relative Bezüge** (`A3`) mit. Soll jede Zeile dieselbe Zelle nutzen, etwa einen Steuersatz in B1, mach den Bezug mit Dollarzeichen **absolut**: `=A3*$B$1`. Solche Werte in einer Zelle zu halten bedeutet außerdem, dass du sie nur an einer Stelle änderst.
+
+**Sortieren** ändert die Reihenfolge der Zeilen. **Filtern** zeigt vorübergehend nur die Zeilen, die eine Bedingung erfüllen – zum Beispiel nur März –, ohne etwas zu löschen. Lösche keine Zeilen, um dich zu „fokussieren“: Gelöschte Daten fehlen bei der nächsten Auswertung.
+
+## Typische Werte: Mittelwert und Median
+
+Der **Mittelwert** (Durchschnitt) addiert alle Werte und teilt durch ihre Anzahl. Der **Median** ist der mittlere Wert, wenn die Werte sortiert sind. Bei einem Extremwert – einem Ausreißer – können beide stark abweichen: Bei Rechnungen über 100, 110, 120, 130 und 5.000 Euro liegt der Mittelwert bei 1.092 Euro, der Median bei 120 Euro. Der Median beschreibt die typische Rechnung besser; der Ausreißer verdient einen eigenen Blick.
+
+## Beispiel aus der Praxis
+
+Marco erfasst Support-Tickets in einer Tabelle, in der jede Woche ein eigener Block mit farbigen Prioritäten ist. Hochpriorisierte Tickets pro Monat zu zählen dauert eine Stunde. Er baut die Daten in eine Liste um (Datum, Kategorie, Priorität als Text, Minuten) und nutzt jetzt einen Filter und eine einfache Zählformel – die Monatszahl dauert zwei Minuten.
+
+## Das Wichtigste in Kürze
+
+- Ein Datensatz pro Zeile, ein Merkmal pro Spalte, eine Kopfzeile.
+- Formeln kopieren: relative Bezüge wandern, absolute ($) bleiben.
+- Filtern statt löschen.
+- Bei Ausreißern beschreibt der Median den typischen Wert besser als der Mittelwert.
