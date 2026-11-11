@@ -1,0 +1,13 @@
+id: wikipedia-misleading-graph
+url: https://en.wikipedia.org/wiki/Misleading_graph
+title: "Misleading graph"
+provider: Wikipedia
+language: en
+format: article
+minutes: 20
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-11
+mode: link
+competencies: [working-with-data]
+levels: [practitioner, advanced]

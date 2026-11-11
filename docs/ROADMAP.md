@@ -32,7 +32,7 @@ For each competency: ≥1 unit per required level (en + de), ≥6 items across d
   - [x] information-security-basics (Phase 0 demo slice)
   - [x] digital-ai-literacy
   - [x] communication-collaboration
-  - [ ] working-with-data
+  - [x] working-with-data
   - [ ] self-organisation-project-basics
   - [ ] business-finance-fundamentals
 - [ ] IT Support & Operations content complete

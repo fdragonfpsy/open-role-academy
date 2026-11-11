@@ -1,0 +1,14 @@
+id: openstax-intro-stats-descriptive
+url: https://openstax.org/books/introductory-statistics-2e/pages/2-introduction
+title: "Introductory Statistics 2e, Chapter 2: Descriptive Statistics"
+provider: OpenStax
+language: en
+format: book
+minutes: 120
+license: CC-BY-NC-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+licenseVerifiedOn: 2026-11-11
+mode: link
+competencies: [working-with-data]
+levels: [foundation, practitioner, advanced]
+note: Page footer states "Textbook content produced by OpenStax is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike License" (NC → link only).
