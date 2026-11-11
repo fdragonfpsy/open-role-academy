@@ -1,0 +1,77 @@
+---
+id: it-service-management-practitioner
+competency: it-service-management
+level: practitioner
+title: "ITSM in der Praxis: Service wiederherstellen, Änderungen steuern, mit SLAs arbeiten"
+objectives:
+  - Die Wiederherstellung des Service (Incident-Management) von der Ursachensuche (Problem-Management) trennen.
+  - Erklären, warum Änderungen einen festgelegten Change-Prozess durchlaufen und was dazugehört.
+  - Servicekatalog und SLA-Berichte nutzen, um Erwartungen zu klären und Verbesserungen anzustoßen.
+minutes: 25
+resources:
+  - wikipedia-de-it-service-management
+  - wikipedia-de-itil
+  - wikipedia-change-management-itsm
+status: ai-draft
+sources:
+  - title: "Incident management (ITSM)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Incident_management_(ITSM)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Change management (ITSM)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Change_management_(ITSM)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Service catalog"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Service_catalog
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Service-level agreement"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Service-level_agreement
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Vom Tickets-Bearbeiten zum Services-Steuern
+
+Auf diesem Niveau bearbeitest du nicht nur Tickets: Du entscheidest, wie mit einem Ausfall umgegangen wird, wirkst an Änderungen mit und hilfst, den Service besser zu machen. Drei Praktiken stehen im Mittelpunkt – Incident-Management, Änderungssteuerung und Service-Level-Management.
+
+## Erst wiederherstellen, dann analysieren
+
+Das erste Ziel des **Incident-Managements** ist, den **normalen Servicebetrieb so schnell wie möglich wiederherzustellen** – „normal“ heißt innerhalb des vereinbarten SLA. Bringt ein Workaround den Service zurück, nutze ihn, informiere die Nutzenden und dokumentiere ihn. Die zugrunde liegende Ursache zu finden und zu beseitigen ist eine eigene Tätigkeit, meist **Problem-Management** genannt: Es betrachtet wiederkehrende oder schwere Störungen, analysiert Ursachen und stößt dauerhafte Lösungen an. Wer beides vermischt, bekommt entweder lange Ausfälle („wir müssen erst alles verstehen“) oder dieselbe Störung immer wieder.
+
+## Änderungen brauchen Steuerung
+
+Viele Störungen entstehen durch Änderungen: ein Update, eine neue Firewall-Regel, eine geänderte Konfiguration. Ein **Change-Prozess** wägt Tempo und Risiko ab:
+
+- die Änderung und ihren Zweck beschreiben;
+- **Risiko und Auswirkung bewerten** – wer und was ist betroffen?
+- auf der passenden Ebene **freigeben** (Standardänderungen können vorab freigegeben sein);
+- **planen und testen**, einschließlich eines **Rückfallplans**;
+- umsetzen und danach **prüfen**, ob es funktioniert hat.
+
+Risikoarme, häufige Änderungen können einen schlanken Weg gehen; riskante bekommen mehr Aufmerksamkeit.
+
+## Servicekatalog und SLAs
+
+Ein **Servicekatalog** beschreibt die Services der IT, den Weg zur Anfrage und die erwarteten Bereitstellungszeiten. Er verringert wiederkehrende Fragen und ermöglicht standardisierte Anfragen – oft als Self-Service.
+
+**SLA-Berichte** zeigen, ob Zielwerte erreicht werden. Werden sie verfehlt, analysiere Muster: Welche Tageszeit? Welche Kategorien? Welche Teams? Vereinbare dann konkrete Verbesserungen. „Verbessere“ Berichte nie, indem du Zeitstempel oder Prioritäten anpasst – das zerstört Vertrauen.
+
+## Beispiel aus der Praxis
+
+Nach einem nächtlichen Update ist das CRM für alle langsam. Mia hat Bereitschaft und rollt das Update mithilfe des Rückfallplans zurück – nach 20 Minuten läuft der Service wieder, die Nutzenden sind informiert. Danach legt sie einen Problem-Datensatz an. Die Analyse findet einen fehlenden Datenbankindex; das korrigierte Update wird als geplante Änderung neu eingeplant, mit einem vorherigen Test auf dem Testsystem.
+
+## Das Wichtigste in Kürze
+
+- Incident-Management stellt den Service wieder her; Problem-Management beseitigt Ursachen.
+- Änderungen: bewerten, freigeben, mit Rückfallplan planen, umsetzen, prüfen.
+- Servicekataloge klären Erwartungen; SLA-Berichte treiben Verbesserungen.

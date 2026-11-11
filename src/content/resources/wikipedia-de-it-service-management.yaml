@@ -1,0 +1,13 @@
+id: wikipedia-de-it-service-management
+url: "https://de.wikipedia.org/wiki/IT-Service-Management"
+title: "IT-Service-Management"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 20
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-11
+mode: link
+competencies: [it-service-management]
+levels: [foundation, practitioner, advanced]

@@ -35,7 +35,17 @@ For each competency: ≥1 unit per required level (en + de), ≥6 items across d
   - [x] working-with-data
   - [x] self-organisation-project-basics
   - [x] business-finance-fundamentals
-- [ ] IT Support & Operations content complete
+- [ ] IT Support & Operations content complete (sub-tasks below; publish the role when all are done)
+  - [x] it-service-management
+  - [ ] incident-request-handling
+  - [ ] troubleshooting-methods
+  - [ ] user-support-communication
+  - [ ] endpoint-management
+  - [ ] identity-access-management
+  - [ ] networking-fundamentals
+  - [ ] backup-recovery
+  - [ ] change-asset-management
+  - [ ] scripting-automation
 - [ ] Finance & Accounting content complete
 - [ ] Human Resources content complete
 

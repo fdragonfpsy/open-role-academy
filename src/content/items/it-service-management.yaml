@@ -1,0 +1,290 @@
+competency: it-service-management
+items:
+  - id: itsm-f-service
+    level: foundation
+    difficulty: 880
+    type: single
+    stem:
+      en: "What is the core idea of IT service management (ITSM)?"
+      de: "Was ist der Grundgedanke des IT-Service-Managements (ITSM)?"
+    options:
+      - en: "IT is delivered and managed as services that meet customer needs, with defined processes and continual improvement"
+        de: "IT wird als Services erbracht und gesteuert, die Bedürfnisse der Kundschaft erfüllen – mit festgelegten Prozessen und kontinuierlicher Verbesserung"
+        correct: true
+      - en: "IT staff should only fix hardware"
+        de: "IT-Beschäftigte sollen nur Hardware reparieren"
+        correct: false
+      - en: "Every user should solve IT problems on their own"
+        de: "Alle Nutzenden sollen IT-Probleme selbst lösen"
+        correct: false
+      - en: "IT should buy as much software as possible"
+        de: "Die IT soll möglichst viel Software kaufen"
+        correct: false
+    explanation:
+      en: "ITSM is the set of activities to design, deliver, operate and control IT services for customers, with a process approach that focuses on customer needs and continual improvement."
+      de: "ITSM umfasst die Tätigkeiten, um IT-Services für Kundinnen und Kunden zu gestalten, bereitzustellen, zu betreiben und zu steuern – mit einem Prozessansatz, der sich an deren Bedürfnissen und an kontinuierlicher Verbesserung orientiert."
+    source: https://en.wikipedia.org/wiki/IT_service_management
+  - id: itsm-f-incident-vs-request
+    level: foundation
+    difficulty: 930
+    type: single
+    stem:
+      en: "Which of these is an incident rather than a service request?"
+      de: "Was davon ist ein Incident (Störung) und kein Service Request (Serviceanfrage)?"
+    options:
+      - en: "The e-mail system is unavailable for a whole team"
+        de: "Das E-Mail-System ist für ein ganzes Team nicht erreichbar"
+        correct: true
+      - en: "A new employee needs a laptop"
+        de: "Eine neue Mitarbeiterin braucht einen Laptop"
+        correct: false
+      - en: "A user asks for access to a shared folder"
+        de: "Ein Nutzer bittet um Zugriff auf einen gemeinsamen Ordner"
+        correct: false
+      - en: "Someone wants a second monitor"
+        de: "Jemand möchte einen zweiten Monitor"
+        correct: false
+    explanation:
+      en: "An incident is an unplanned interruption or reduction in the quality of an IT service. Service requests are planned, routine requests such as equipment or access."
+      de: "Ein Incident ist eine ungeplante Unterbrechung oder Qualitätsminderung eines IT-Service. Service Requests sind geplante Routineanfragen, etwa nach Geräten oder Zugriffen."
+    source: https://en.wikipedia.org/wiki/Incident_management_(ITSM)
+  - id: itsm-f-service-desk
+    level: foundation
+    difficulty: 990
+    type: single
+    stem:
+      en: "What is the main role of a service desk?"
+      de: "Was ist die Hauptaufgabe eines Service Desks?"
+    options:
+      - en: "A single point of contact for users to report incidents and make requests, and to receive updates"
+        de: "Eine zentrale Anlaufstelle, an der Nutzende Störungen melden, Anfragen stellen und Rückmeldungen erhalten"
+        correct: true
+      - en: "Writing all of the company's software"
+        de: "Die gesamte Software des Unternehmens zu schreiben"
+        correct: false
+      - en: "Approving the IT budget"
+        de: "Das IT-Budget zu genehmigen"
+        correct: false
+      - en: "Only selling hardware to customers"
+        de: "Nur Hardware an Kundschaft zu verkaufen"
+        correct: false
+    explanation:
+      en: "The service desk is the single point of contact between users and IT. It records, routes and follows up incidents and requests, and keeps users informed."
+      de: "Der Service Desk ist die zentrale Anlaufstelle zwischen Nutzenden und IT. Er erfasst, verteilt und verfolgt Störungen und Anfragen und hält die Nutzenden auf dem Laufenden."
+    source: https://en.wikipedia.org/wiki/Service_desk
+  - id: itsm-f-sla
+    level: foundation
+    difficulty: 1040
+    type: multi
+    stem:
+      en: "Which of these are typical targets in a service-level agreement (SLA)?"
+      de: "Welche davon sind typische Zielwerte in einem Service-Level-Agreement (SLA)?"
+    options:
+      - en: "Availability of a service, e.g. during business hours"
+        de: "Verfügbarkeit eines Service, z. B. während der Geschäftszeiten"
+        correct: true
+      - en: "Response time until work on a ticket starts"
+        de: "Reaktionszeit, bis die Bearbeitung eines Tickets beginnt"
+        correct: true
+      - en: "Resolution time for incidents"
+        de: "Lösungszeit für Störungen"
+        correct: true
+      - en: "The favourite programming language of the IT team"
+        de: "Die Lieblingsprogrammiersprache des IT-Teams"
+        correct: false
+    explanation:
+      en: "An SLA defines measurable service targets between provider and customer, such as availability, response and resolution times."
+      de: "Ein SLA legt messbare Servicezielwerte zwischen Anbieter und Kundschaft fest, etwa Verfügbarkeit, Reaktions- und Lösungszeiten."
+    source: https://en.wikipedia.org/wiki/Service-level_agreement
+  - id: itsm-p-restore-first
+    level: practitioner
+    difficulty: 1170
+    type: single
+    stem:
+      en: "A business application is down. You know a workaround that restores it, but the root cause is still unknown. What is the goal of incident management now?"
+      de: "Eine Geschäftsanwendung ist ausgefallen. Du kennst einen Workaround, der sie wiederherstellt, aber die Ursache ist noch unbekannt. Was ist jetzt das Ziel des Incident-Managements?"
+    options:
+      - en: "Restore normal service as quickly as possible — apply the workaround and hand over root-cause analysis"
+        de: "Den normalen Betrieb so schnell wie möglich wiederherstellen – Workaround anwenden und die Ursachenanalyse übergeben"
+        correct: true
+      - en: "Keep the service down until the root cause is fully understood"
+        de: "Den Service abgeschaltet lassen, bis die Ursache vollständig verstanden ist"
+        correct: false
+      - en: "Close the ticket without informing users"
+        de: "Das Ticket schließen, ohne die Nutzenden zu informieren"
+        correct: false
+      - en: "Reinstall all systems in the company"
+        de: "Alle Systeme im Unternehmen neu installieren"
+        correct: false
+    explanation:
+      en: "Incident management aims to restore normal service operation (within the SLA) as quickly as possible. Finding and removing the underlying cause is a separate activity, typically called problem management."
+      de: "Incident-Management soll den normalen Servicebetrieb (innerhalb des SLA) so schnell wie möglich wiederherstellen. Die zugrunde liegende Ursache zu finden und zu beseitigen ist eine eigene Tätigkeit, meist Problem-Management genannt."
+    source: https://en.wikipedia.org/wiki/Incident_management_(ITSM)
+  - id: itsm-p-change
+    level: practitioner
+    difficulty: 1230
+    type: single
+    stem:
+      en: "Why should changes to production systems go through a defined change process?"
+      de: "Warum sollten Änderungen an Produktivsystemen einen festgelegten Change-Prozess durchlaufen?"
+    options:
+      - en: "To assess risks, plan and approve changes and be able to roll back, so that changes do not cause new incidents"
+        de: "Um Risiken zu bewerten, Änderungen zu planen und freizugeben und zurückrollen zu können, damit Änderungen keine neuen Störungen verursachen"
+        correct: true
+      - en: "Because changes are forbidden in IT"
+        de: "Weil Änderungen in der IT verboten sind"
+        correct: false
+      - en: "To make changes as slow as possible"
+        de: "Um Änderungen möglichst langsam zu machen"
+        correct: false
+      - en: "Only to create paperwork for audits"
+        de: "Nur um Papier für Prüfungen zu erzeugen"
+        correct: false
+    explanation:
+      en: "Many incidents are caused by changes. A change process balances speed and risk: assess, approve, plan, test, implement with a back-out plan, and review."
+      de: "Viele Störungen werden durch Änderungen verursacht. Ein Change-Prozess wägt Tempo und Risiko ab: bewerten, freigeben, planen, testen, mit Rückfallplan umsetzen und nachbetrachten."
+    source: https://en.wikipedia.org/wiki/Change_management_(ITSM)
+  - id: itsm-p-catalogue
+    level: practitioner
+    difficulty: 1280
+    type: single
+    stem:
+      en: "Users keep asking the service desk what IT can provide and how long it takes. What helps most?"
+      de: "Nutzende fragen beim Service Desk ständig, was die IT anbietet und wie lange es dauert. Was hilft am meisten?"
+    options:
+      - en: "A service catalogue that describes the available services, how to request them and the expected delivery times"
+        de: "Ein Servicekatalog, der die verfügbaren Services, den Weg zur Anfrage und die erwarteten Bereitstellungszeiten beschreibt"
+        correct: true
+      - en: "Answering each question individually by phone"
+        de: "Jede Frage einzeln am Telefon beantworten"
+        correct: false
+      - en: "Telling users to ask colleagues"
+        de: "Nutzende bitten, Kolleginnen und Kollegen zu fragen"
+        correct: false
+      - en: "Publishing the IT team's holiday plan"
+        de: "Den Urlaubsplan des IT-Teams veröffentlichen"
+        correct: false
+    explanation:
+      en: "A service catalogue makes services and their conditions transparent and enables standardised, often self-service requests — fewer questions, clearer expectations."
+      de: "Ein Servicekatalog macht Services und ihre Bedingungen transparent und ermöglicht standardisierte, oft selbst auszulösende Anfragen – weniger Rückfragen, klarere Erwartungen."
+    source: https://en.wikipedia.org/wiki/Service_catalog
+  - id: itsm-p-sla-breach
+    level: practitioner
+    difficulty: 1330
+    type: single
+    stem:
+      en: "The SLA promises a first response to high-priority tickets within 1 hour. Reports show this target was missed in 30 % of cases last month. What is the best next step?"
+      de: "Das SLA verspricht bei hoch priorisierten Tickets eine erste Reaktion innerhalb von 1 Stunde. Laut Bericht wurde dieses Ziel im letzten Monat in 30 % der Fälle verfehlt. Was ist der beste nächste Schritt?"
+    options:
+      - en: "Analyse when and why the target was missed (time of day, staffing, ticket routing) and agree improvements"
+        de: "Analysieren, wann und warum das Ziel verfehlt wurde (Tageszeit, Besetzung, Ticket-Zuweisung), und Verbesserungen vereinbaren"
+        correct: true
+      - en: "Change the ticket timestamps so the report looks better"
+        de: "Die Zeitstempel der Tickets ändern, damit der Bericht besser aussieht"
+        correct: false
+      - en: "Lower the priority of all tickets"
+        de: "Die Priorität aller Tickets senken"
+        correct: false
+      - en: "Ignore the report until customers complain"
+        de: "Den Bericht ignorieren, bis sich Kundschaft beschwert"
+        correct: false
+    explanation:
+      en: "SLA reports are a starting point for continual improvement. Analysing patterns leads to real fixes; manipulating data or priorities destroys trust."
+      de: "SLA-Berichte sind ein Ausgangspunkt für kontinuierliche Verbesserung. Muster zu analysieren führt zu echten Lösungen; Daten oder Prioritäten zu manipulieren zerstört Vertrauen."
+    source: https://en.wikipedia.org/wiki/Service-level_agreement
+  - id: itsm-a-frameworks
+    level: advanced
+    difficulty: 1480
+    type: multi
+    stem:
+      en: "Which statements about ITSM frameworks and standards are correct?"
+      de: "Welche Aussagen über ITSM-Rahmenwerke und -Normen sind richtig?"
+    options:
+      - en: "ITIL is a widely used framework of ITSM practices; its trademark is owned by PeopleCert"
+        de: "ITIL ist ein weit verbreitetes Rahmenwerk von ITSM-Praktiken; die Marke gehört PeopleCert"
+        correct: true
+      - en: "ISO/IEC 20000 is an international standard for IT service management"
+        de: "ISO/IEC 20000 ist eine internationale Norm für IT-Service-Management"
+        correct: true
+      - en: "Using a framework means copying all of its processes unchanged"
+        de: "Ein Rahmenwerk zu nutzen heißt, alle seine Prozesse unverändert zu übernehmen"
+        correct: false
+      - en: "ITSM frameworks are only allowed in large corporations"
+        de: "ITSM-Rahmenwerke sind nur in Großkonzernen erlaubt"
+        correct: false
+    explanation:
+      en: "ITIL and ISO/IEC 20000 are common references for ITSM. Frameworks are meant to be adapted to the organisation's size and needs, not copied blindly."
+      de: "ITIL und ISO/IEC 20000 sind gängige Bezugspunkte für ITSM. Rahmenwerke sollen an Größe und Bedarf der Organisation angepasst und nicht blind kopiert werden."
+    source: https://en.wikipedia.org/wiki/IT_service_management
+  - id: itsm-a-improvement
+    level: advanced
+    difficulty: 1530
+    type: single
+    stem:
+      en: "You lead the service desk. Which approach to continual improvement is most effective?"
+      de: "Du leitest den Service Desk. Welcher Ansatz zur kontinuierlichen Verbesserung ist am wirksamsten?"
+    options:
+      - en: "Regularly review data (top incident categories, SLA trends, user feedback), pick a few improvements, implement them and measure the effect"
+        de: "Regelmäßig Daten auswerten (häufigste Störungskategorien, SLA-Trends, Rückmeldungen der Nutzenden), wenige Verbesserungen auswählen, umsetzen und die Wirkung messen"
+        correct: true
+      - en: "Launch a large transformation programme once every five years"
+        de: "Alle fünf Jahre ein großes Transformationsprogramm starten"
+        correct: false
+      - en: "Wait for management to tell the team what to improve"
+        de: "Warten, bis das Management sagt, was zu verbessern ist"
+        correct: false
+      - en: "Add more fields to the ticket form every month"
+        de: "Jeden Monat mehr Felder ins Ticketformular aufnehmen"
+        correct: false
+    explanation:
+      en: "Continual improvement works in small, measured cycles based on data and feedback. This keeps improvements aligned with customer needs."
+      de: "Kontinuierliche Verbesserung funktioniert in kleinen, gemessenen Zyklen auf Basis von Daten und Feedback. So bleiben Verbesserungen an den Bedürfnissen der Kundschaft ausgerichtet."
+    source: https://en.wikipedia.org/wiki/IT_service_management
+  - id: itsm-a-sla-design
+    level: advanced
+    difficulty: 1590
+    type: single
+    stem:
+      en: "You negotiate a new SLA with a business department. What makes it a good agreement?"
+      de: "Du verhandelst ein neues SLA mit einem Fachbereich. Was macht es zu einer guten Vereinbarung?"
+    options:
+      - en: "Targets that reflect the business impact of the service, are measurable and achievable, with agreed reporting and review"
+        de: "Zielwerte, die die geschäftliche Bedeutung des Service abbilden, messbar und erreichbar sind, mit vereinbartem Reporting und Überprüfung"
+        correct: true
+      - en: "The strictest possible targets for every service, regardless of cost"
+        de: "Möglichst strenge Zielwerte für jeden Service, unabhängig von den Kosten"
+        correct: false
+      - en: "Vague wording so that no target can be missed"
+        de: "Vage Formulierungen, damit kein Ziel verfehlt werden kann"
+        correct: false
+      - en: "Targets that IT measures but never shares"
+        de: "Zielwerte, die die IT misst, aber nie teilt"
+        correct: false
+    explanation:
+      en: "Good SLAs balance business needs and cost, use measurable targets and include reporting and regular reviews. Over-ambitious or vague targets both damage trust."
+      de: "Gute SLAs wägen geschäftlichen Bedarf und Kosten ab, nutzen messbare Zielwerte und sehen Reporting und regelmäßige Überprüfung vor. Überzogene wie vage Ziele schaden dem Vertrauen."
+    source: https://en.wikipedia.org/wiki/Service-level_agreement
+  - id: itsm-a-major-incident
+    level: advanced
+    difficulty: 1640
+    type: single
+    stem:
+      en: "A critical service is down for the whole company. What distinguishes good major-incident handling?"
+      de: "Ein kritischer Service ist für das ganze Unternehmen ausgefallen. Was zeichnet ein gutes Vorgehen bei einem schwerwiegenden Incident aus?"
+    options:
+      - en: "A clear incident lead, regular status updates to users and management, focus on restoring service, and a post-incident review afterwards"
+        de: "Eine klare Leitung, regelmäßige Statusmeldungen an Nutzende und Management, Fokus auf die Wiederherstellung und anschließend eine Nachbetrachtung"
+        correct: true
+      - en: "Everyone works on the problem independently without coordination"
+        de: "Alle arbeiten unkoordiniert unabhängig voneinander am Problem"
+        correct: false
+      - en: "No communication until everything works again"
+        de: "Keine Kommunikation, bis alles wieder funktioniert"
+        correct: false
+      - en: "Blaming the team member who made the last change"
+        de: "Dem Teammitglied die Schuld geben, das die letzte Änderung gemacht hat"
+        correct: false
+    explanation:
+      en: "Major incidents need coordination, communication and a focus on restoring service. A post-incident review then asks why it happened despite existing controls and how to prevent recurrence."
+      de: "Schwerwiegende Incidents brauchen Koordination, Kommunikation und den Fokus auf Wiederherstellung. Eine Nachbetrachtung fragt danach, warum es trotz bestehender Kontrollen passiert ist und wie sich eine Wiederholung verhindern lässt."
+    source: https://en.wikipedia.org/wiki/Incident_management_(ITSM)

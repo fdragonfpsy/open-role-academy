@@ -1,0 +1,13 @@
+id: wikipedia-change-management-itsm
+url: "https://en.wikipedia.org/wiki/Change_management_(ITSM)"
+title: "Change management (ITSM)"
+provider: Wikipedia
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-11
+mode: link
+competencies: [it-service-management, change-asset-management]
+levels: [practitioner, advanced]

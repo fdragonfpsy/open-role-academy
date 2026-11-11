@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-11 — Phase 2: IT Support & Operations content started (it-service-management)
+
+**Done**
+- Placement budget merged ([#12](https://github.com/fdragonfpsy/open-role-academy/pull/12)).
+- Split "IT Support & Operations content complete" into one sub-task per role-specific competency (ROADMAP). The role stays `draft` (hidden) until all ten are done.
+- `it-service-management`: 6 units (3 levels × en/de), 12 items, 8 new link-only resources (Wikipedia en/de, CC BY-SA 4.0). ITIL is described only via Wikipedia; no proprietary ITIL text is used.
+
+**Counts:** roles 4 (1 published, 3 draft) · competencies 38 · units 42 · items 84 · resources 54
+
+**Next:** `incident-request-handling`, then the remaining IT Support competencies in roadmap order.
+
 ## 2026-11-11 — Engine: placement question budget
 
 **Done**

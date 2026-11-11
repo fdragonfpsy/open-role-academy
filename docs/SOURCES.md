@@ -16,6 +16,7 @@ Every resource is stored in `src/content/resources/<id>.yaml` with `license`, `l
 | BSI (German Federal Office for Information Security) | free access, no open license stated | **link only** |
 | EU sources (ESCO, DigComp, EU publications) | EU reuse policy, often CC BY 4.0 — verify per document | framework references; link |
 | gesetze-im-internet.de (German statutes) | official texts, free access | link and cite |
+| ITIL (PeopleCert) | proprietary framework | reference by name only; describe via open sources (e.g. Wikipedia), never copy ITIL text |
 | Vendor docs (e.g. Microsoft Learn) | free access, proprietary | **link only** unless stated otherwise |
 
 ## Resources in use
@@ -43,6 +44,8 @@ Every resource is stored in `src/content/resources/<id>.yaml` with `license`, `l
 | wikipedia-de-eisenhower-prinzip, wikipedia-de-smart, wikipedia-de-projektmanagement, wikipedia-de-kanban-entwicklung | Wikipedia (de) | CC BY-SA 4.0 | link | 2026-11-11 |
 | wikipedia-income-statement, wikipedia-balance-sheet, wikipedia-contribution-margin, wikipedia-cash-flow, wikipedia-performance-indicator | Wikipedia (en) | CC BY-SA 4.0 | link | 2026-11-11 |
 | wikipedia-de-gewinn-und-verlustrechnung, wikipedia-de-bilanz, wikipedia-de-deckungsbeitrag | Wikipedia (de) | CC BY-SA 4.0 | link | 2026-11-11 |
+| wikipedia-it-service-management, wikipedia-itil, wikipedia-service-level-agreement, wikipedia-incident-management-itsm, wikipedia-change-management-itsm | Wikipedia (en) | CC BY-SA 4.0 | link | 2026-11-11 |
+| wikipedia-de-it-service-management, wikipedia-de-itil, wikipedia-de-service-level-agreement | Wikipedia (de) | CC BY-SA 4.0 | link | 2026-11-11 |
 | openstax-principles-accounting-statements | OpenStax (*Principles of Accounting, Vol. 1*) | CC BY-NC-SA (page footer); no LLM ingestion without permission | link | 2026-11-11 |
 
 ## Framework references

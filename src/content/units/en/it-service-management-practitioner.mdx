@@ -1,0 +1,77 @@
+---
+id: it-service-management-practitioner
+competency: it-service-management
+level: practitioner
+title: "ITSM in practice: restoring service, controlling changes and working with SLAs"
+objectives:
+  - Separate restoring service (incident management) from finding root causes (problem management).
+  - Explain why changes go through a defined change process and what it contains.
+  - Use a service catalogue and SLA reports to set expectations and improve.
+minutes: 25
+resources:
+  - wikipedia-incident-management-itsm
+  - wikipedia-change-management-itsm
+  - wikipedia-itil
+status: ai-draft
+sources:
+  - title: "Incident management (ITSM)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Incident_management_(ITSM)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Change management (ITSM)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Change_management_(ITSM)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Service catalog"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Service_catalog
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Service-level agreement"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Service-level_agreement
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## From handling tickets to managing services
+
+At practitioner level you do more than process tickets: you decide how to handle an outage, take part in changes and help the service run better. Three practices are central — incident management, change control and service level management.
+
+## Restore first, analyse second
+
+The first goal of **incident management** is to **restore normal service operation as quickly as possible** — "normal" meaning within the agreed SLA. If a workaround brings the service back, use it, inform users and document it. Finding and removing the underlying cause is a separate activity, usually called **problem management**: it looks at recurring or severe incidents, analyses root causes and initiates lasting fixes. Mixing the two leads either to long outages ("we must understand everything first") or to the same incident coming back again and again.
+
+## Changes need control
+
+Many incidents are caused by changes: an update, a new firewall rule, a modified configuration. A **change process** balances speed and risk:
+
+- describe the change and its purpose;
+- **assess risk and impact** — who and what is affected?
+- **approve** it at the appropriate level (standard changes can be pre-approved);
+- **plan and test**, including a **back-out plan**;
+- implement, then **review** whether it worked.
+
+Low-risk, frequent changes can follow a lightweight path; risky ones get more scrutiny.
+
+## Service catalogue and SLAs
+
+A **service catalogue** describes the services IT offers, how to request them and the expected delivery times. It reduces repeated questions and makes standard requests — often self-service — possible.
+
+**SLA reports** show whether targets are met. When targets are missed, analyse patterns: Which time of day? Which categories? Which teams? Then agree concrete improvements. Never "improve" reports by adjusting timestamps or priorities — that destroys trust.
+
+## Worked example
+
+After a nightly update, the CRM is slow for everyone. Mia, on duty, rolls back the update using the back-out plan — service is restored in 20 minutes and users are informed. She then opens a problem record. The analysis finds a missing database index; the fixed update is re-scheduled as a planned change with a test on the staging system first.
+
+## Key takeaways
+
+- Incident management restores service; problem management removes root causes.
+- Changes: assess, approve, plan with back-out, implement, review.
+- Service catalogues set expectations; SLA reports drive improvement.
