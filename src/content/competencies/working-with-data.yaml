@@ -1,0 +1,25 @@
+id: working-with-data
+title:
+  en: Working with data
+  de: Arbeiten mit Daten
+description:
+  en: >-
+    Structure, clean and analyse data in spreadsheets: use formulas, sorting, filters and pivot
+    tables, create clear charts, check data quality and draw careful conclusions from simple
+    descriptive statistics.
+  de: >-
+    Daten in Tabellenkalkulationen strukturieren, bereinigen und auswerten: Formeln, Sortieren,
+    Filter und Pivot-Tabellen nutzen, verständliche Diagramme erstellen, Datenqualität prüfen und
+    aus einfachen deskriptiven Kennzahlen vorsichtige Schlüsse ziehen.
+prerequisites: [digital-ai-literacy]
+track: core
+frameworkRefs:
+  - framework: DigComp
+    uri: https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en
+    label: "DigComp 2.2 — Competence area 1: Information and data literacy (1.3 Managing data, information and digital content)"
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/1973c966-f236-40c9-b2d4-5d71a89019be
+    label: use spreadsheets software
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/f2d57f41-43b4-4f5b-8100-3df5c21eda50
+    label: process data

@@ -99,6 +99,7 @@ export function validateContent(bundle: ContentBundle, opts: ValidateOptions): I
 
   // 2. Dead references + prerequisite cycles
   for (const { file, data } of competencies) {
+    if (data.frameworkRefs.length === 0) warn(file, 'no ESCO/DigComp frameworkRefs (CLAUDE.md §4.4)');
     for (const p of data.prerequisites) {
       if (!compById.has(p)) err(file, `unknown prerequisite "${p}"`);
       if (p === data.id) err(file, 'competency lists itself as prerequisite');

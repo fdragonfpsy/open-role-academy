@@ -1,0 +1,22 @@
+id: self-organisation-project-basics
+title:
+  en: Self-organisation and project basics
+  de: Selbstorganisation und Projektgrundlagen
+description:
+  en: >-
+    Plan and prioritise your own work, manage time and tasks, set clear goals, and apply basic
+    project methods — scope, milestones, responsibilities, risks and simple agile practices — to
+    small projects.
+  de: >-
+    Die eigene Arbeit planen und priorisieren, Zeit und Aufgaben steuern, klare Ziele setzen und
+    grundlegende Projektmethoden – Umfang, Meilensteine, Verantwortlichkeiten, Risiken und
+    einfache agile Praktiken – in kleinen Projekten anwenden.
+prerequisites: []
+track: core
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/d9013e0e-e937-43d5-ab71-0e917ee882b8
+    label: manage time
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/237db40b-4600-47c0-837f-4a2c4f3014ab
+    label: project management principles

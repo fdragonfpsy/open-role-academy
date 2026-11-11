@@ -1,0 +1,26 @@
+id: digital-ai-literacy
+title:
+  en: Digital and AI literacy
+  de: Digitale Kompetenz und KI-Kompetenz
+description:
+  en: >-
+    Use common workplace software confidently, search for and critically evaluate information,
+    manage files and digital content, and use AI tools (such as chatbots and writing assistants)
+    responsibly — knowing their strengths, limits and risks, and checking their output.
+  de: >-
+    Gängige Arbeitssoftware sicher nutzen, Informationen suchen und kritisch bewerten, Dateien und
+    digitale Inhalte verwalten sowie KI-Werkzeuge (z. B. Chatbots und Schreibassistenten)
+    verantwortungsvoll einsetzen – mit Wissen über Stärken, Grenzen und Risiken und mit Prüfung
+    der Ergebnisse.
+prerequisites: []
+track: core
+frameworkRefs:
+  - framework: DigComp
+    uri: https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en
+    label: "DigComp 2.2 — Competence area 1: Information and data literacy (1.1 Browsing, searching and filtering; 1.2 Evaluating data, information and digital content)"
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/d15ce60f-ddab-41ce-ba56-398451b77b60
+    label: have computer literacy
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/e465a154-93f7-4973-9ce1-31659fe16dd2
+    label: principles of artificial intelligence
