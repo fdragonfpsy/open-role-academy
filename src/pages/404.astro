@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { t } from '../i18n';
+---
+
+<BaseLayout lang="en" title={t('en', 'notFound.title')}>
+  <h1 class="text-3xl font-bold">{t('en', 'notFound.title')}</h1>
+  <p class="mt-4" lang="de">{t('de', 'notFound.title')}</p>
+</BaseLayout>

@@ -1,0 +1,13 @@
+id: wikipedia-phishing
+url: https://en.wikipedia.org/wiki/Phishing
+title: Phishing
+provider: Wikipedia
+language: en
+format: article
+minutes: 20
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-11
+mode: link
+competencies: [information-security-basics]
+levels: [foundation]

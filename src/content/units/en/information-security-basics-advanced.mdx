@@ -1,0 +1,66 @@
+---
+id: information-security-basics-advanced
+competency: information-security-basics
+level: advanced
+title: "Leading on information security: risk, management systems and incident learning"
+objectives:
+  - Assess information security risks by likelihood and impact and choose proportionate controls.
+  - Explain the purpose of an information security management system (ISMS) such as ISO/IEC 27001 or BSI IT-Grundschutz.
+  - Design layered controls (defence in depth) and lead a blameless lessons-learned review after an incident.
+minutes: 30
+resources:
+  - bsi-it-grundschutz
+  - wikipedia-information-security
+  - wikipedia-de-informationssicherheit
+status: ai-draft
+sources:
+  - title: IT-Grundschutz (Baseline protection in information security)
+    author: Federal Office for Information Security (BSI)
+    url: https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/it-grundschutz_node.html
+    usage: cited
+  - title: Information security
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Information_security
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: Computer security incident management
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Computer_security_incident_management
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Security as a management task
+
+At advanced level you lead topics, teams or processes. Information security then becomes a question of **decisions under uncertainty**: which risks matter most, which controls are proportionate, and how the organisation learns from incidents. You do not need to be a security specialist, but you need to work with them in a structured way.
+
+## Thinking in risks
+
+A risk combines two things: the **likelihood** that a threat exploits a vulnerability, and the **impact** if it happens. Impact is more than hardware cost — it includes data loss, downtime, legal consequences and loss of trust. A simple risk matrix (for example low/medium/high for both dimensions) is often enough to prioritise.
+
+For each relevant risk there are four basic options: **reduce** it with controls, **avoid** it by not doing the risky activity, **transfer** part of it (for example via contracts or insurance), or **accept** it consciously. Accepting a risk is legitimate, as long as the right person decides it knowingly and the decision is documented.
+
+## Management systems: ISO/IEC 27001 and IT-Grundschutz
+
+An **information security management system (ISMS)** turns security into a managed, repeatable process: clear responsibilities, risk assessment, selected controls, regular review and continuous improvement. Widely used frameworks are the international standard **ISO/IEC 27001** and the **IT-Grundschutz** methodology of the German Federal Office for Information Security (BSI). According to the BSI, IT-Grundschutz covers technical, organisational, infrastructural and personnel aspects and is compatible with ISO/IEC 27001. No ISMS can guarantee that incidents never happen — its value lies in handling security systematically.
+
+## Defence in depth
+
+No single control is perfect. **Defence in depth** layers independent controls so that one failure does not immediately lead to compromise. Against account takeover, for example, you might combine phishing-resistant multi-factor authentication, e-mail filtering, an easy reporting button for staff, monitoring of unusual logins and a rehearsed response process. Think in three functions: **prevent, detect, respond**.
+
+## Learning from incidents
+
+Incident handling is commonly described in phases from preparation through identification, containment, eradication and recovery to **lessons learned**. The last phase is the one most often skipped. A **blameless review** asks what happened, why the controls did not stop it, and what will change. Blaming the person who clicked discourages future reporting — and early reporting is one of your best detection controls.
+
+## Worked example
+
+After a phishing incident, team lead Sara runs a review. The finding: the compromised account had far more rights than needed, and the report came late because staff feared consequences. Actions: access review, phishing-resistant MFA for admin accounts, a one-click report button and a clear message that reporting is always welcome.
+
+## Key takeaways
+
+- Prioritise by likelihood × impact; decide consciously how to treat each risk.
+- An ISMS makes security a continuous management process.
+- Layer controls: prevent, detect, respond.
+- Close every incident with a blameless lessons-learned review.

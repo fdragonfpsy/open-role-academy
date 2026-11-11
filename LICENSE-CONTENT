@@ -1,0 +1,25 @@
+Open Role Academy — content license
+
+All original learning content written for this project — in particular the
+files under src/content/ (roles, competencies, units, items) and the
+learner-facing texts in src/i18n/ — is licensed under the
+
+  Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)
+  https://creativecommons.org/licenses/by-sa/4.0/
+  Full legal code: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+Copyright (c) 2026 Open Role Academy contributors
+
+Attribution when reusing: "Open Role Academy contributors, <title of the unit>,
+<URL>, CC BY-SA 4.0" and indicate if changes were made.
+
+Third-party material
+--------------------
+Units cite third-party sources and link to external learning resources. Those
+resources are NOT covered by this license; each keeps its own license, which is
+recorded in src/content/resources/*.yaml (fields `license`, `licenseUrl`) and in
+the unit's `sources` list. Material under CC BY or CC BY-SA that is embedded or
+adapted is attributed in the unit (title, author, source, license, changes).
+Non-open or non-commercial / no-derivatives material is only linked, never copied.
+
+Code is licensed under the MIT License — see LICENSE.

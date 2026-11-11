@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import type { Lang } from '../../config/site';
+import { site } from '../../config/site';
+import { t } from '../../i18n';
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+// Placeholders are replaced by the site owner before launch (CLAUDE.md §9). Never fill them with guessed data.
+const owner = '{{OWNER_NAME}}';
+const address = '{{OWNER_ADDRESS}}';
+const email = '{{CONTACT_EMAIL}}';
+---
+
+<BaseLayout lang={lang} title={t(lang, 'footer.imprint')}>
+  <h1 class="mb-4 text-3xl font-bold">{t(lang, 'footer.imprint')}</h1>
+  <p class="mb-6 rounded border border-amber-700 bg-amber-50 p-3 text-sm">{t(lang, 'legal.placeholderNote')}</p>
+  {
+    lang === 'de' ? (
+      <div class="space-y-4">
+        <h2 class="text-xl font-semibold">Angaben gemäß § 5 DDG</h2>
+        <p>
+          {owner}
+          <br />
+          {address}
+        </p>
+        <h2 class="text-xl font-semibold">Kontakt</h2>
+        <p>E-Mail: {email}</p>
+        <h2 class="text-xl font-semibold">Verantwortlich für den Inhalt</h2>
+        <p>{owner}, {address}</p>
+        <h2 class="text-xl font-semibold">Hinweis zu den Inhalten</h2>
+        <p>
+          {site.name} ist ein nicht-kommerzielles Open-Source-Projekt. Lerneinheiten und Fragen sind derzeit KI-generierte
+          Entwürfe, die noch nicht von einem Menschen geprüft wurden. Sie ersetzen keine Rechts-, Steuer- oder Fachberatung.
+        </p>
+      </div>
+    ) : (
+      <div class="space-y-4">
+        <p class="text-sm text-slate-700">
+          The legally binding imprint for operators in Germany is the German version (Impressum).
+        </p>
+        <h2 class="text-xl font-semibold">Information pursuant to § 5 DDG (German Digital Services Act)</h2>
+        <p>
+          {owner}
+          <br />
+          {address}
+        </p>
+        <h2 class="text-xl font-semibold">Contact</h2>
+        <p>Email: {email}</p>
+        <h2 class="text-xl font-semibold">Responsible for content</h2>
+        <p>{owner}, {address}</p>
+        <h2 class="text-xl font-semibold">About the content</h2>
+        <p>
+          {site.name} is a non-commercial open-source project. Learning units and questions are currently AI-generated
+          drafts that have not yet been reviewed by a human. They are not legal, tax or professional advice.
+        </p>
+      </div>
+    )
+  }
+</BaseLayout>

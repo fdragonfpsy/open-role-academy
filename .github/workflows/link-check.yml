@@ -1,0 +1,41 @@
+name: Link check
+
+# Weekly check of all resource URLs. Opens (or updates) an issue listing broken links.
+on:
+  schedule:
+    - cron: '17 5 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Check resource URLs
+        id: check
+        run: |
+          set +e
+          npx tsx scripts/link-check.ts > link-report.md
+          echo "status=$?" >> "$GITHUB_OUTPUT"
+          cat link-report.md
+      - name: Open or update issue
+        if: steps.check.outputs.status != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          title="Broken resource links"
+          existing=$(gh issue list --state open --search "$title in:title" --json number --jq '.[0].number // empty')
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body-file link-report.md
+          else
+            gh issue create --title "$title" --body-file link-report.md
+          fi

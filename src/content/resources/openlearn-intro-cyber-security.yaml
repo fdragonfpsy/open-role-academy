@@ -1,0 +1,14 @@
+id: openlearn-intro-cyber-security
+url: https://www.open.edu/openlearn/science-maths-technology/introduction-cyber-security-stay-safe-online/content-section-overview
+title: "Introduction to cyber security: stay safe online"
+provider: OpenLearn (The Open University)
+language: en
+format: course
+minutes: 1440
+license: CC-BY-NC-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+licenseVerifiedOn: 2026-11-11
+mode: link
+competencies: [information-security-basics]
+levels: [foundation, practitioner]
+note: Free course (24 hours of study). OpenLearn licence badge is BY-NC-SA → link only (CLAUDE.md §6).

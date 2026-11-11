@@ -1,0 +1,100 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import type { Lang } from '../../config/site';
+import { site } from '../../config/site';
+import { t } from '../../i18n';
+import { STORAGE_KEY } from '../../lib/storage';
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+// Placeholders are replaced by the site owner before launch (CLAUDE.md §9). Never fill them with guessed data.
+const owner = '{{OWNER_NAME}}';
+const address = '{{OWNER_ADDRESS}}';
+const email = '{{CONTACT_EMAIL}}';
+const cfPrivacy = 'https://www.cloudflare.com/privacypolicy/';
+---
+
+<BaseLayout lang={lang} title={t(lang, 'footer.privacy')}>
+  <h1 class="mb-4 text-3xl font-bold">{t(lang, 'footer.privacy')}</h1>
+  <p class="mb-6 rounded border border-amber-700 bg-amber-50 p-3 text-sm">{t(lang, 'legal.placeholderNote')}</p>
+  {
+    lang === 'de' ? (
+      <div class="space-y-4">
+        <h2 class="text-xl font-semibold">1. Verantwortliche Stelle</h2>
+        <p>
+          {owner}, {address}, E-Mail: {email}
+        </p>
+        <h2 class="text-xl font-semibold">2. Kurzfassung</h2>
+        <ul class="list-disc pl-6">
+          <li>Kein Konto, keine Registrierung, keine Cookies, kein Tracking, keine Analyse-Dienste.</li>
+          <li>Dein Lernfortschritt wird nur in deinem Browser gespeichert (localStorage) und nie an uns übertragen.</li>
+          <li>Die Website ist statisch und wird bei Cloudflare Pages gehostet. Dabei entstehen technisch notwendige Server-Logs.</li>
+        </ul>
+        <h2 class="text-xl font-semibold">3. Hosting und Server-Logs</h2>
+        <p>
+          {site.name} wird als statische Website über Cloudflare Pages (Cloudflare, Inc.) ausgeliefert. Beim Aufruf der Seiten
+          verarbeitet Cloudflare technisch notwendige Verbindungsdaten, insbesondere deine IP-Adresse, Datum und Uhrzeit des
+          Abrufs, die aufgerufene Adresse und Angaben zu Browser und Betriebssystem, um die Website auszuliefern und vor
+          Angriffen zu schützen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem sicheren und
+          funktionsfähigen Angebot). Weitere Informationen: <a class="underline" href={cfPrivacy}>Datenschutzhinweise von Cloudflare</a>.
+          Wir selbst werten diese Logs nicht aus.
+        </p>
+        <h2 class="text-xl font-semibold">4. Speicherung im Browser (localStorage)</h2>
+        <p>
+          Deine Rolle, dein Niveau, deine Antworten und dein Lernstand werden unter dem Schlüssel <code>{STORAGE_KEY}</code> nur
+          lokal in deinem Browser gespeichert. Diese Daten verlassen dein Gerät nicht. Du kannst sie jederzeit im Dashboard
+          exportieren, importieren oder löschen, oder über die Einstellungen deines Browsers entfernen.
+        </p>
+        <h2 class="text-xl font-semibold">5. Cookies und externe Inhalte</h2>
+        <p>
+          Wir setzen keine Cookies und binden keine Inhalte Dritter ein, die Cookies setzen. Lernressourcen anderer Anbieter
+          sind nur verlinkt; erst wenn du einem Link folgst, gelten die Datenschutzbestimmungen des jeweiligen Anbieters.
+        </p>
+        <h2 class="text-xl font-semibold">6. Deine Rechte</h2>
+        <p>
+          Du hast nach der DSGVO das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch und
+          Beschwerde bei einer Datenschutz-Aufsichtsbehörde. Kontakt: {email}
+        </p>
+      </div>
+    ) : (
+      <div class="space-y-4">
+        <h2 class="text-xl font-semibold">1. Controller</h2>
+        <p>
+          {owner}, {address}, email: {email}
+        </p>
+        <h2 class="text-xl font-semibold">2. Summary</h2>
+        <ul class="list-disc pl-6">
+          <li>No account, no registration, no cookies, no tracking, no analytics services.</li>
+          <li>Your learning progress is stored only in your browser (localStorage) and is never sent to us.</li>
+          <li>The website is static and hosted on Cloudflare Pages, which creates technically necessary server logs.</li>
+        </ul>
+        <h2 class="text-xl font-semibold">3. Hosting and server logs</h2>
+        <p>
+          {site.name} is delivered as a static website via Cloudflare Pages (Cloudflare, Inc.). When you visit the pages,
+          Cloudflare processes technically necessary connection data, in particular your IP address, date and time of the
+          request, the requested address and information about your browser and operating system, in order to deliver the
+          website and protect it against attacks. The legal basis is Art. 6(1)(f) GDPR (legitimate interest in a secure and
+          working service). More information: <a class="underline" href={cfPrivacy}>Cloudflare privacy policy</a>. We do not
+          analyse these logs ourselves.
+        </p>
+        <h2 class="text-xl font-semibold">4. Storage in your browser (localStorage)</h2>
+        <p>
+          Your role, level, answers and learning progress are stored only locally in your browser under the key
+          <code>{STORAGE_KEY}</code>. This data does not leave your device. You can export, import or delete it at any time on the
+          dashboard, or remove it via your browser settings.
+        </p>
+        <h2 class="text-xl font-semibold">5. Cookies and external content</h2>
+        <p>
+          We do not set cookies and do not embed third-party content that sets cookies. Learning resources from other providers
+          are only linked; once you follow a link, that provider's privacy policy applies.
+        </p>
+        <h2 class="text-xl font-semibold">6. Your rights</h2>
+        <p>
+          Under the GDPR you have the right of access, rectification, erasure, restriction of processing, objection and to lodge
+          a complaint with a data protection supervisory authority. Contact: {email}
+        </p>
+      </div>
+    )
+  }
+</BaseLayout>

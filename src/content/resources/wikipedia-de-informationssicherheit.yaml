@@ -1,0 +1,14 @@
+id: wikipedia-de-informationssicherheit
+url: https://de.wikipedia.org/wiki/Informationssicherheit
+title: Informationssicherheit
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 30
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-11
+mode: link
+competencies: [information-security-basics]
+levels: [foundation, practitioner, advanced]
+note: Footer names "Creative-Commons Namensnennung – Weitergabe unter gleichen Bedingungen"; Wikimedia projects use version 4.0 since 2023.

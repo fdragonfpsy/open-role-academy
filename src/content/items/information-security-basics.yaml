@@ -1,0 +1,197 @@
+competency: information-security-basics
+items:
+  # ---------- foundation (950 ± 100) ----------
+  - id: isb-f-cia-confidentiality
+    level: foundation
+    difficulty: 880
+    type: single
+    stem:
+      en: A colleague's salary list is accidentally shared with the whole department. Which security goal has been violated first and foremost?
+      de: Eine Gehaltsliste wird versehentlich mit der ganzen Abteilung geteilt. Welches Schutzziel ist vor allem verletzt?
+    options:
+      - { en: Confidentiality, de: Vertraulichkeit, correct: true }
+      - { en: Availability, de: Verfügbarkeit, correct: false }
+      - { en: Integrity, de: Integrität, correct: false }
+      - { en: Performance, de: Leistungsfähigkeit, correct: false }
+    explanation:
+      en: Confidentiality means that only authorised people can see information. The list was not changed (integrity) and is still accessible (availability) — but people who should not see it now can.
+      de: Vertraulichkeit bedeutet, dass nur berechtigte Personen Informationen sehen können. Die Liste wurde nicht verändert (Integrität) und ist weiter abrufbar (Verfügbarkeit) – aber jetzt sehen sie Personen, die sie nicht sehen sollten.
+    source: https://en.wikipedia.org/wiki/Information_security
+  - id: isb-f-phishing-signs
+    level: foundation
+    difficulty: 920
+    type: multi
+    stem:
+      en: An e-mail claims to be from your bank and asks you to "confirm your password within 24 hours, otherwise your account will be closed". Which features are typical warning signs of phishing?
+      de: Eine E-Mail gibt sich als deine Bank aus und fordert dich auf, „innerhalb von 24 Stunden dein Passwort zu bestätigen, sonst wird dein Konto gesperrt“. Welche Merkmale sind typische Warnsignale für Phishing?
+    options:
+      - { en: Time pressure and a threat, de: Zeitdruck und eine Drohung, correct: true }
+      - { en: A request to enter your password via a link, de: Die Aufforderung, dein Passwort über einen Link einzugeben, correct: true }
+      - { en: The message uses the bank's logo and colours, de: Die Nachricht verwendet Logo und Farben der Bank, correct: false }
+      - { en: The e-mail was sent on a weekday, de: Die E-Mail wurde an einem Werktag verschickt, correct: false }
+    explanation:
+      en: Urgency, threats and requests to enter credentials via a link are classic phishing signs. A familiar logo proves nothing — attackers copy logos, colours and fonts easily. The weekday is irrelevant.
+      de: Dringlichkeit, Drohungen und die Aufforderung, Zugangsdaten über einen Link einzugeben, sind klassische Phishing-Merkmale. Ein bekanntes Logo beweist nichts – Angreifende kopieren Logos, Farben und Schriften leicht. Der Wochentag spielt keine Rolle.
+    source: https://www.bsi.bund.de/EN/Themen/Verbraucherinnen-und-Verbraucher/Cyber-Sicherheitslage/Methoden-der-Cyber-Kriminalitaet/Spam-Phishing-Co/Passwortdiebstahl-durch-Phishing/passwortdiebstahl-durch-phishing_node.html
+  - id: isb-f-password-reuse
+    level: foundation
+    difficulty: 980
+    type: single
+    stem:
+      en: Why should you use a different password for every account?
+      de: Warum solltest du für jedes Konto ein anderes Passwort verwenden?
+    options:
+      - { en: If one service is breached, attackers cannot use the stolen password to get into your other accounts., de: "Wird ein Dienst gehackt, können Angreifende das gestohlene Passwort nicht für deine anderen Konten nutzen.", correct: true }
+      - { en: Because services delete accounts that share a password with another service., de: "Weil Dienste Konten löschen, deren Passwort auch bei einem anderen Dienst genutzt wird.", correct: false }
+      - { en: Because long passwords are only allowed once per person., de: "Weil lange Passwörter pro Person nur einmal erlaubt sind.", correct: false }
+      - { en: It does not matter as long as the password is long., de: "Das ist egal, solange das Passwort lang ist.", correct: false }
+    explanation:
+      en: Stolen passwords are routinely tried on other services. A unique password per account limits the damage of a single breach. A password manager makes unique passwords practical.
+      de: Gestohlene Passwörter werden routinemäßig bei anderen Diensten ausprobiert. Ein eigenes Passwort pro Konto begrenzt den Schaden eines einzelnen Datenlecks. Ein Passwortmanager macht das im Alltag machbar.
+    source: https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Accountschutz/Sichere-Passwoerter-erstellen/sichere-passwoerter-erstellen_node.html
+  - id: isb-f-two-factor
+    level: foundation
+    difficulty: 1020
+    type: single
+    stem:
+      en: What does two-factor authentication (2FA) add to a login?
+      de: Was ergänzt die Zwei-Faktor-Authentisierung (2FA) bei einer Anmeldung?
+    options:
+      - { en: "A second, independent proof of identity, e.g. a code from an app or a hardware key, in addition to the password", de: "Einen zweiten, unabhängigen Nachweis der Identität, z. B. einen Code aus einer App oder einen Hardware-Schlüssel, zusätzlich zum Passwort", correct: true }
+      - { en: A second password that is typed in twice, de: Ein zweites Passwort, das zweimal eingegeben wird, correct: false }
+      - { en: Encryption of the password on the screen, de: Eine Verschlüsselung des Passworts auf dem Bildschirm, correct: false }
+      - { en: An automatic logout after two minutes, de: Eine automatische Abmeldung nach zwei Minuten, correct: false }
+    explanation:
+      en: 2FA combines two different factors (e.g. something you know and something you have). A stolen password alone is then no longer enough to log in.
+      de: 2FA kombiniert zwei verschiedene Faktoren (z. B. Wissen und Besitz). Ein gestohlenes Passwort allein reicht dann nicht mehr für die Anmeldung.
+    source: https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Accountschutz/Sichere-Passwoerter-erstellen/sichere-passwoerter-erstellen_node.html
+  # ---------- practitioner (1250 ± 100) ----------
+  - id: isb-p-least-privilege
+    level: practitioner
+    difficulty: 1180
+    type: single
+    stem:
+      en: A new team member needs to read customer tickets but not change billing data. Which principle should guide the access rights you request for them?
+      de: Ein neues Teammitglied muss Kundentickets lesen, aber keine Abrechnungsdaten ändern. Nach welchem Prinzip solltest du die Zugriffsrechte beantragen?
+    options:
+      - { en: Least privilege — only the rights needed for the task, de: Minimalprinzip (Least Privilege) – nur die für die Aufgabe nötigen Rechte, correct: true }
+      - { en: Same rights as the team lead so nobody gets blocked, de: Dieselben Rechte wie die Teamleitung, damit niemand blockiert wird, correct: false }
+      - { en: Full rights first and remove them later if problems occur, de: Erst volle Rechte vergeben und bei Problemen wieder entziehen, correct: false }
+      - { en: Share an existing colleague's login, de: Die Anmeldung einer Kollegin oder eines Kollegen mitbenutzen, correct: false }
+    explanation:
+      en: Least privilege limits damage from mistakes and compromised accounts. Shared logins also destroy accountability, because actions can no longer be traced to a person.
+      de: Das Minimalprinzip begrenzt den Schaden durch Fehler und kompromittierte Konten. Geteilte Anmeldungen zerstören außerdem die Nachvollziehbarkeit, weil Aktionen keiner Person mehr zugeordnet werden können.
+    source: https://en.wikipedia.org/wiki/Information_security
+  - id: isb-p-ceo-fraud
+    level: practitioner
+    difficulty: 1230
+    type: single
+    stem:
+      en: You receive an urgent e-mail, apparently from your managing director, asking you to transfer money to a new supplier account today and to keep it confidential. What is the best next step?
+      de: Du erhältst eine dringende E-Mail, scheinbar von deiner Geschäftsführung, mit der Bitte, heute Geld auf ein neues Lieferantenkonto zu überweisen und es vertraulich zu behandeln. Was ist der beste nächste Schritt?
+    options:
+      - { en: Verify the request through a separate, known channel (e.g. call the known phone number) and report it to IT security., de: "Die Anfrage über einen separaten, bekannten Kanal prüfen (z. B. die bekannte Telefonnummer anrufen) und an die IT-Sicherheit melden.", correct: true }
+      - { en: Reply to the e-mail and ask whether it is genuine., de: "Auf die E-Mail antworten und fragen, ob sie echt ist.", correct: false }
+      - { en: Make the transfer, because the request comes from management., de: "Die Überweisung ausführen, weil die Anfrage von der Geschäftsführung kommt.", correct: false }
+      - { en: Delete the e-mail and tell nobody., de: "Die E-Mail löschen und niemandem davon erzählen.", correct: false }
+    explanation:
+      en: This is a typical social-engineering pattern (often called CEO fraud). Replying to the same e-mail reaches the attacker. Verify out of band and report it, so others can be warned.
+      de: Das ist ein typisches Social-Engineering-Muster (oft „CEO-Fraud“ genannt). Eine Antwort auf dieselbe E-Mail erreicht die Angreifenden. Prüfe über einen anderen Kanal und melde den Fall, damit andere gewarnt werden können.
+    source: https://en.wikipedia.org/wiki/Phishing
+  - id: isb-p-incident-report
+    level: practitioner
+    difficulty: 1280
+    type: multi
+    stem:
+      en: You clicked a link in a suspicious e-mail and entered your work password. Which actions are appropriate?
+      de: Du hast auf einen Link in einer verdächtigen E-Mail geklickt und dein Arbeitspasswort eingegeben. Welche Schritte sind angemessen?
+    options:
+      - { en: Report the incident immediately to IT / the security contact, de: Den Vorfall sofort der IT bzw. der Sicherheitsansprechperson melden, correct: true }
+      - { en: Change the password (from a trusted device) as instructed by IT, de: Das Passwort (von einem vertrauenswürdigen Gerät) nach Anweisung der IT ändern, correct: true }
+      - { en: Wait a few days to see whether anything strange happens, de: Ein paar Tage abwarten, ob etwas Ungewöhnliches passiert, correct: false }
+      - { en: Forward the e-mail to all colleagues as a warning, de: Die E-Mail als Warnung an alle Kolleginnen und Kollegen weiterleiten, correct: false }
+    explanation:
+      en: Fast reporting lets IT block the account, check logs and warn others. Forwarding the phishing mail spreads the dangerous link — let the security team issue warnings.
+      de: Eine schnelle Meldung ermöglicht es der IT, das Konto zu sperren, Protokolle zu prüfen und andere zu warnen. Das Weiterleiten der Phishing-Mail verbreitet den gefährlichen Link – Warnungen sollte das Sicherheitsteam verschicken.
+    source: https://www.bsi.bund.de/EN/Themen/Verbraucherinnen-und-Verbraucher/Cyber-Sicherheitslage/Methoden-der-Cyber-Kriminalitaet/Spam-Phishing-Co/Passwortdiebstahl-durch-Phishing/passwortdiebstahl-durch-phishing_node.html
+  - id: isb-p-backup-integrity
+    level: practitioner
+    difficulty: 1330
+    type: single
+    stem:
+      en: Ransomware encrypts files on a shared drive. Which kind of backup helps most to restore them?
+      de: Ransomware verschlüsselt Dateien auf einem gemeinsamen Laufwerk. Welche Art von Datensicherung hilft am meisten bei der Wiederherstellung?
+    options:
+      - { en: A regularly tested backup kept separately (offline or otherwise not writable by normal accounts), de: "Eine regelmäßig getestete Sicherung, die getrennt aufbewahrt wird (offline oder für normale Konten nicht beschreibbar)", correct: true }
+      - { en: A copy of the files in another folder on the same drive, de: Eine Kopie der Dateien in einem anderen Ordner auf demselben Laufwerk, correct: false }
+      - { en: A sync folder that mirrors every change immediately, de: "Ein Sync-Ordner, der jede Änderung sofort spiegelt", correct: false }
+      - { en: Screenshots of the most important documents, de: Screenshots der wichtigsten Dokumente, correct: false }
+    explanation:
+      en: Malware that can reach the original files can usually also reach copies on the same drive, and sync tools copy the encrypted versions. Only a separated backup that has been tested by actually restoring it supports availability.
+      de: Schadsoftware, die die Originaldateien erreicht, erreicht meist auch Kopien auf demselben Laufwerk, und Sync-Werkzeuge übernehmen die verschlüsselten Versionen. Nur eine getrennte, durch echte Wiederherstellung getestete Sicherung schützt die Verfügbarkeit.
+    source: https://en.wikipedia.org/wiki/Information_security
+  # ---------- advanced (1550 ± 100) ----------
+  - id: isb-a-risk-assessment
+    level: advanced
+    difficulty: 1480
+    type: single
+    stem:
+      en: In an information security risk assessment, how is the level of a risk usually estimated?
+      de: Wie wird in einer Risikoanalyse zur Informationssicherheit die Höhe eines Risikos üblicherweise eingeschätzt?
+    options:
+      - { en: From the likelihood of a threat exploiting a vulnerability and the impact if it happens, de: "Aus der Wahrscheinlichkeit, dass eine Bedrohung eine Schwachstelle ausnutzt, und dem Schaden, falls es passiert", correct: true }
+      - { en: From the number of security tools that are installed, de: Aus der Anzahl installierter Sicherheitswerkzeuge, correct: false }
+      - { en: Only from the cost of the affected hardware, de: Nur aus den Kosten der betroffenen Hardware, correct: false }
+      - { en: From how many employees have completed awareness training, de: "Daraus, wie viele Beschäftigte eine Awareness-Schulung abgeschlossen haben", correct: false }
+    explanation:
+      en: Risk combines likelihood and impact. Tools and training are controls that can reduce likelihood or impact — they are not the risk itself. Impact includes much more than hardware cost (e.g. data loss, downtime, legal consequences).
+      de: Risiko verbindet Eintrittswahrscheinlichkeit und Auswirkung. Werkzeuge und Schulungen sind Maßnahmen, die Wahrscheinlichkeit oder Auswirkung senken können – sie sind nicht das Risiko selbst. Die Auswirkung umfasst viel mehr als Hardwarekosten (z. B. Datenverlust, Ausfallzeiten, rechtliche Folgen).
+    source: https://en.wikipedia.org/wiki/Information_security
+  - id: isb-a-isms
+    level: advanced
+    difficulty: 1530
+    type: single
+    stem:
+      en: What is the main purpose of an information security management system (ISMS), for example based on ISO/IEC 27001 or BSI IT-Grundschutz?
+      de: Was ist der Hauptzweck eines Informationssicherheits-Managementsystems (ISMS), z. B. nach ISO/IEC 27001 oder BSI IT-Grundschutz?
+    options:
+      - { en: To manage information security systematically and continuously — responsibilities, risk assessment, controls, review and improvement, de: "Informationssicherheit systematisch und dauerhaft zu steuern – Verantwortlichkeiten, Risikobewertung, Maßnahmen, Überprüfung und Verbesserung", correct: true }
+      - { en: To replace firewalls and antivirus software, de: Firewalls und Virenschutz zu ersetzen, correct: false }
+      - { en: To guarantee that no security incident will ever occur, de: "Zu garantieren, dass nie ein Sicherheitsvorfall eintritt", correct: false }
+      - { en: To document the IT inventory for accounting, de: Das IT-Inventar für die Buchhaltung zu dokumentieren, correct: false }
+    explanation:
+      en: An ISMS is a management framework covering technical, organisational, infrastructural and personnel aspects. It cannot guarantee zero incidents; it makes security a managed, continuously improved process. BSI states that IT-Grundschutz is compatible with ISO/IEC 27001.
+      de: Ein ISMS ist ein Managementrahmen, der technische, organisatorische, infrastrukturelle und personelle Aspekte abdeckt. Es kann keine Vorfälle ausschließen, macht Sicherheit aber zu einem gesteuerten, ständig verbesserten Prozess. Laut BSI ist IT-Grundschutz mit ISO/IEC 27001 kompatibel.
+    source: https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/it-grundschutz_node.html
+  - id: isb-a-defense-in-depth
+    level: advanced
+    difficulty: 1590
+    type: multi
+    stem:
+      en: Your team wants to reduce the risk of account takeover through phishing. Which combination reflects "defence in depth"?
+      de: Dein Team möchte das Risiko von Kontoübernahmen durch Phishing senken. Welche Maßnahmen spiegeln „Defence in Depth“ (gestaffelte Verteidigung) wider?
+    options:
+      - { en: Phishing-resistant multi-factor authentication, de: Phishing-resistente Mehr-Faktor-Authentisierung, correct: true }
+      - { en: E-mail filtering plus an easy way for staff to report suspicious mail, de: "E-Mail-Filter plus eine einfache Möglichkeit für Beschäftigte, verdächtige Mails zu melden", correct: true }
+      - { en: Monitoring of unusual logins with a defined response process, de: Überwachung ungewöhnlicher Anmeldungen mit einem festgelegten Reaktionsprozess, correct: true }
+      - { en: Relying on one excellent spam filter so the other measures are unnecessary, de: "Sich auf einen hervorragenden Spamfilter verlassen, sodass andere Maßnahmen unnötig sind", correct: false }
+    explanation:
+      en: Defence in depth layers independent controls (prevent, detect, respond), so the failure of one control does not lead straight to compromise. Relying on a single control is exactly what the principle avoids.
+      de: Defence in Depth kombiniert unabhängige Schutzschichten (verhindern, erkennen, reagieren), sodass das Versagen einer Maßnahme nicht direkt zur Kompromittierung führt. Sich auf eine einzige Maßnahme zu verlassen, ist genau das, was das Prinzip vermeidet.
+    source: https://en.wikipedia.org/wiki/Information_security
+  - id: isb-a-lessons-learned
+    level: advanced
+    difficulty: 1630
+    type: single
+    stem:
+      en: After a security incident has been contained and systems are restored, what should the responsible team do next?
+      de: Ein Sicherheitsvorfall ist eingedämmt und die Systeme sind wiederhergestellt. Was sollte das verantwortliche Team als Nächstes tun?
+    options:
+      - { en: Hold a blameless lessons-learned review and update controls, processes and training, de: "Eine schuldfreie Nachbetrachtung (Lessons Learned) durchführen und Maßnahmen, Prozesse und Schulungen anpassen", correct: true }
+      - { en: Close the ticket and move on, because the systems work again, de: "Das Ticket schließen und weitermachen, weil die Systeme wieder laufen", correct: false }
+      - { en: Identify the employee who clicked and remove their access permanently, de: "Die Person ermitteln, die geklickt hat, und ihr dauerhaft alle Zugänge entziehen", correct: false }
+      - { en: Delete all logs to free up storage, de: "Alle Protokolle löschen, um Speicher freizugeben", correct: false }
+    explanation:
+      en: Incident response does not end with recovery. A post-incident review turns the incident into improvements. Blaming individuals discourages reporting; logs are evidence and needed for the analysis.
+      de: Die Reaktion auf einen Vorfall endet nicht mit der Wiederherstellung. Eine Nachbetrachtung macht aus dem Vorfall Verbesserungen. Schuldzuweisungen verhindern künftige Meldungen; Protokolle sind Beweismittel und werden für die Analyse gebraucht.
+    source: https://en.wikipedia.org/wiki/Computer_security_incident_management
