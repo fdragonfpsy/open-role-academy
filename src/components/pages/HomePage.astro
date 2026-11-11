@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import type { Lang } from '../../config/site';
+import { localizePath, t } from '../../i18n';
+import { getRoles } from '../../lib/content';
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const roles = await getRoles(lang);
+---
+
+<BaseLayout lang={lang}>
+  <h1 class="mb-4 text-3xl font-bold">{t(lang, 'home.title')}</h1>
+  <p class="mb-6 text-lg">{t(lang, 'home.intro')}</p>
+  <a href={localizePath(lang, '/start')} class="inline-block rounded bg-blue-800 px-5 py-3 font-semibold text-white">
+    {t(lang, 'nav.start')}
+  </a>
+  <h2 class="mt-10 mb-3 text-2xl font-semibold">{t(lang, 'home.how')}</h2>
+  <ol class="list-decimal space-y-1 pl-6">
+    <li>{t(lang, 'home.step1')}</li>
+    <li>{t(lang, 'home.step2')}</li>
+    <li>{t(lang, 'home.step3')}</li>
+    <li>{t(lang, 'home.step4')}</li>
+  </ol>
+  <p class="mt-4">{t(lang, 'home.privacy')}</p>
+  <h2 class="mt-10 mb-3 text-2xl font-semibold">{t(lang, 'home.roles')}</h2>
+  <ul class="space-y-3">
+    {
+      roles.map((r) => (
+        <li class="rounded border border-slate-300 bg-white p-4">
+          <span class="font-semibold">{r.title}</span>
+          <p class="text-slate-700">{r.summary}</p>
+        </li>
+      ))
+    }
+  </ul>
+  <p class="mt-10 rounded border border-amber-700 bg-amber-50 p-4">{t(lang, 'home.transparency')}</p>
+</BaseLayout>

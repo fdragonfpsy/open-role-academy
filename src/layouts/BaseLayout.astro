@@ -1,0 +1,64 @@
+---
+import '../styles/global.css';
+import { site, type Lang } from '../config/site';
+import { alternatePath, localizePath, t } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  title?: string;
+  description?: string;
+}
+const { lang, title, description } = Astro.props;
+const other: Lang = lang === 'en' ? 'de' : 'en';
+const fullTitle = title ? `${title} · ${site.name}` : site.name;
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description ?? t(lang, 'site.tagline')} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate" hreflang={other} href={alternatePath(path, other)} />
+  </head>
+  <body class="flex min-h-screen flex-col bg-slate-50 text-slate-900">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:bg-white focus:p-2">
+      {t(lang, 'nav.skip')}
+    </a>
+    <header class="border-b border-slate-300 bg-white">
+      <nav class="mx-auto flex max-w-4xl flex-wrap items-center gap-4 px-4 py-3" aria-label="Main">
+        <a href={localizePath(lang, '/')} class="mr-auto text-lg font-bold text-blue-900">{site.name}</a>
+        <a href={localizePath(lang, '/start')} class="text-blue-800 underline-offset-4 hover:underline">{t(lang, 'nav.start')}</a>
+        <a href={localizePath(lang, '/dashboard')} class="text-blue-800 underline-offset-4 hover:underline">
+          {t(lang, 'nav.dashboard')}
+        </a>
+        <a
+          href={alternatePath(path, other)}
+          hreflang={other}
+          lang={other}
+          aria-label={t(lang, 'lang.switchLabel')}
+          class="rounded border border-slate-400 px-2 py-1 text-sm"
+        >
+          {t(lang, 'lang.switch')}
+        </a>
+      </nav>
+    </header>
+    <main id="main" class="mx-auto w-full max-w-4xl flex-1 px-4 py-8">
+      <slot />
+    </main>
+    <footer class="border-t border-slate-300 bg-white text-sm text-slate-700">
+      <div class="mx-auto flex max-w-4xl flex-wrap gap-x-6 gap-y-2 px-4 py-4">
+        <span>
+          {t(lang, 'footer.code')} <a class="underline" href={site.codeLicense.url}>{site.codeLicense.id}</a> ·{" "}
+          {t(lang, 'footer.content')} <a class="underline" href={site.contentLicense.url}>{site.contentLicense.id}</a>
+        </span>
+        <a class="underline" href={localizePath(lang, '/imprint')}>{t(lang, 'footer.imprint')}</a>
+        <a class="underline" href={localizePath(lang, '/privacy')}>{t(lang, 'footer.privacy')}</a>
+        <a class="underline" href={site.repoUrl}>{t(lang, 'footer.source')}</a>
+      </div>
+    </footer>
+  </body>
+</html>

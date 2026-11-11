@@ -1,0 +1,19 @@
+id: core-track
+kind: core
+title:
+  en: Core skills for every role
+  de: Kernkompetenzen für jede Rolle
+summary:
+  en: >-
+    The shared core track that every role builds on. Currently available: information security basics
+    (more core competencies follow).
+  de: >-
+    Der gemeinsame Kernbereich, auf dem jede Rolle aufbaut. Aktuell verfügbar: Grundlagen der
+    Informationssicherheit (weitere Kernkompetenzen folgen).
+competencies:
+  - id: information-security-basics
+    priority: 1
+    targets:
+      foundation: foundation
+      practitioner: practitioner
+      advanced: advanced

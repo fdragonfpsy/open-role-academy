@@ -4,18 +4,18 @@ Work top to bottom. Tick a box only when the task is done **and** all checks pas
 
 ## Phase 0 — Foundation (kickoff session)
 
-- [ ] Scaffold Astro + TypeScript (strict) + Tailwind + Preact; static output; npm scripts: `dev`, `build`, `preview`, `lint`, `typecheck`, `test`, `validate:content`
-- [ ] i18n routing: English default at `/`, German at `/de/`; language switcher; all UI strings in `src/i18n/{en,de}.ts` with a parity test
-- [ ] Content collections + Zod schemas for roles, competencies, units, items, resources (CLAUDE.md §5)
-- [ ] Content validator script (CLAUDE.md §5 rules) + tests
-- [ ] Adaptive engine skeleton in `src/engine/` (Elo model, path ordering, mastery, Leitner review, export/import) + Vitest tests + `docs/ENGINE.md`
-- [ ] GitHub Actions: `ci.yml` (lint, typecheck, test, validate:content, build on every PR and push to main)
-- [ ] GitHub Actions: `automerge.yml` — when a PR labeled `automerge` has a green CI run, squash-merge it and delete the branch
-- [ ] GitHub Actions: `link-check.yml` — weekly check of all resource URLs, opens an issue listing broken links
-- [ ] `LICENSE` (MIT), `LICENSE-CONTENT` (CC BY-SA 4.0), `README.md` (en) + `README.de.md`, `CONTRIBUTING.md`
-- [ ] `docs/STATUS.md`, `docs/DECISIONS.md`, `docs/BLOCKERS.md`, `docs/ENGINE.md`, `docs/SOURCES.md` (source list with license notes)
-- [ ] Legal page templates (Impressum, Privacy) en/de with placeholders (CLAUDE.md §9)
-- [ ] One complete **demo slice**: competency `information-security-basics` (core track), units for all 3 levels en/de, ≥9 items, ≥3 verified resources — end-to-end through onboarding → placement → unit → mastery check → dashboard
+- [x] Scaffold Astro + TypeScript (strict) + Tailwind + Preact; static output; npm scripts: `dev`, `build`, `preview`, `lint`, `typecheck`, `test`, `validate:content`
+- [x] i18n routing: English default at `/`, German at `/de/`; language switcher; all UI strings in `src/i18n/{en,de}.ts` with a parity test
+- [x] Content collections + Zod schemas for roles, competencies, units, items, resources (CLAUDE.md §5)
+- [x] Content validator script (CLAUDE.md §5 rules) + tests
+- [x] Adaptive engine skeleton in `src/engine/` (Elo model, path ordering, mastery, Leitner review, export/import) + Vitest tests + `docs/ENGINE.md`
+- [x] GitHub Actions: `ci.yml` (lint, typecheck, test, validate:content, build on every PR and push to main)
+- [x] GitHub Actions: `automerge.yml` — when a PR labeled `automerge` has a green CI run, squash-merge it and delete the branch
+- [x] GitHub Actions: `link-check.yml` — weekly check of all resource URLs, opens an issue listing broken links
+- [x] `LICENSE` (MIT), `LICENSE-CONTENT` (CC BY-SA 4.0), `README.md` (en) + `README.de.md`, `CONTRIBUTING.md`
+- [x] `docs/STATUS.md`, `docs/DECISIONS.md`, `docs/BLOCKERS.md`, `docs/ENGINE.md`, `docs/SOURCES.md` (source list with license notes)
+- [x] Legal page templates (Impressum, Privacy) en/de with placeholders (CLAUDE.md §9)
+- [x] One complete **demo slice**: competency `information-security-basics` (core track), units for all 3 levels en/de, ≥9 items, ≥3 verified resources — end-to-end through onboarding → placement → unit → mastery check → dashboard
 
 ## Phase 1 — Competency framework (core + pilot roles)
 

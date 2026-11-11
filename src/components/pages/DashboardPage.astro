@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Dashboard from '../islands/Dashboard';
+import type { Lang } from '../../config/site';
+import { t } from '../../i18n';
+import { getCompetencies, getQuizItems, getRoles, getUnitViews } from '../../lib/content';
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const [roles, competencies, units, items] = await Promise.all([
+  getRoles(lang),
+  getCompetencies(lang),
+  getUnitViews(lang),
+  getQuizItems(lang),
+]);
+---
+
+<BaseLayout lang={lang} title={t(lang, 'dashboard.title')}>
+  <h1 class="mb-6 text-3xl font-bold">{t(lang, 'dashboard.title')}</h1>
+  <Dashboard client:load lang={lang} roles={roles} competencies={competencies} units={units} items={items} />
+</BaseLayout>

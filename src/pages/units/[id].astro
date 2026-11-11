@@ -1,0 +1,15 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import UnitPage from '../../components/pages/UnitPage.astro';
+
+export async function getStaticPaths() {
+  const units = await getCollection('units', (u) => u.id.startsWith('en/'));
+  return units.map((entry) => ({ params: { id: entry.data.id }, props: { entry } }));
+}
+interface Props {
+  entry: CollectionEntry<'units'>;
+}
+const { entry } = Astro.props;
+---
+
+<UnitPage lang="en" entry={entry} />

@@ -1,0 +1,67 @@
+---
+id: information-security-basics-practitioner
+competency: information-security-basics
+level: practitioner
+title: "Information security in daily work: access, social engineering and incidents"
+objectives:
+  - Apply the least-privilege and need-to-know principles when requesting or granting access.
+  - Recognise social-engineering patterns such as fake payment requests and verify them out of band.
+  - Respond correctly to a suspected security incident and protect availability with separated backups.
+minutes: 25
+resources:
+  - wikipedia-information-security
+  - bsi-phishing-password-theft
+  - bsi-it-grundschutz
+  - openlearn-intro-cyber-security
+status: ai-draft
+sources:
+  - title: Information security
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Information_security
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: Phishing
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Phishing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: Password theft via phishing e-mails
+    author: Federal Office for Information Security (BSI)
+    url: https://www.bsi.bund.de/EN/Themen/Verbraucherinnen-und-Verbraucher/Cyber-Sicherheitslage/Methoden-der-Cyber-Kriminalitaet/Spam-Phishing-Co/Passwortdiebstahl-durch-Phishing/passwortdiebstahl-durch-phishing_node.html
+    usage: cited
+---
+
+## From personal habits to team practice
+
+At practitioner level you do not only protect your own accounts — you also influence how your team handles access, data and unusual requests. Three topics matter most: who may access what, how attackers manipulate people, and what to do when something has already gone wrong.
+
+## Least privilege and need-to-know
+
+**Least privilege** means every person and every system gets only the rights needed for the task, and only for as long as needed. **Need-to-know** applies the same idea to information: you see what you need for your work, not everything that would be interesting. Both principles limit the damage when an account is compromised or a mistake happens.
+
+In practice this means: request specific roles instead of "the same rights as my colleague", remove access when people change teams, and never share logins. Shared accounts also destroy **accountability**, because actions can no longer be traced to a person.
+
+## Social engineering beyond simple phishing
+
+Social engineering exploits trust, helpfulness, authority and time pressure. A common pattern in companies is the fake request from a manager or supplier: "Please transfer the payment today to our new account, and keep it confidential." The message may come from a look-alike address or even from a real but compromised mailbox.
+
+The defence is a **process**, not a feeling: verify unusual requests through a **separate, known channel**, for example by calling the phone number you already have — not the one in the e-mail. Changes to bank details and urgent payments should always need such a check.
+
+## When something has happened
+
+If you clicked a link, entered a password on a suspicious page or sent data to the wrong recipient: **report it immediately** through the defined channel. Speed matters, because IT can lock accounts, check logs and warn others. Do not forward the suspicious e-mail to colleagues, and do not try to clean up on your own.
+
+**Availability** also needs preparation. Ransomware can encrypt everything a compromised account can write to — including copies on the same drive and sync folders. Only **separated backups** that are regularly tested by actually restoring data help.
+
+## Worked example
+
+Jonas in purchasing receives an e-mail from a known supplier: new bank details, please use them from today. He checks the request by calling the supplier's number from the existing contract. The supplier knows nothing about it — their mailbox was compromised. Jonas reports the case; the payment is stopped and other teams are warned.
+
+## Key takeaways
+
+- Ask for the minimum access you need and give back what you no longer use.
+- Verify unusual requests out of band — especially payments and bank details.
+- Report incidents at once; speed limits damage.
+- Backups only count if they are separated and tested.
