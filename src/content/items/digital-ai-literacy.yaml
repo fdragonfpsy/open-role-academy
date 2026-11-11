@@ -9,10 +9,18 @@ items:
       en: You find a website with a surprising statistic you want to use in a presentation. Which checks help you judge whether it is trustworthy?
       de: Du findest auf einer Website eine überraschende Statistik, die du in einer Präsentation verwenden möchtest. Welche Prüfungen helfen dir einzuschätzen, ob sie vertrauenswürdig ist?
     options:
-      - { en: Who published it and what is their interest?, de: Wer hat sie veröffentlicht und welches Interesse steckt dahinter?, correct: true }
-      - { en: How recent is the information and is the original source named?, de: Wie aktuell ist die Information und wird die Originalquelle genannt?, correct: true }
-      - { en: Do other independent sources report the same?, de: Berichten andere unabhängige Quellen dasselbe?, correct: true }
-      - { en: Does the website have a modern, professional design?, de: Hat die Website ein modernes, professionelles Design?, correct: false }
+      - en: "Who published it and what is their interest?"
+        de: "Wer hat sie veröffentlicht und welches Interesse steckt dahinter?"
+        correct: true
+      - en: "How recent is the information and is the original source named?"
+        de: "Wie aktuell ist die Information und wird die Originalquelle genannt?"
+        correct: true
+      - en: "Do other independent sources report the same?"
+        de: "Berichten andere unabhängige Quellen dasselbe?"
+        correct: true
+      - en: "Does the website have a modern, professional design?"
+        de: "Hat die Website ein modernes, professionelles Design?"
+        correct: false
     explanation:
       en: Publisher and purpose, date and original source, and confirmation by independent sources are core checks of information literacy. A professional design says nothing about accuracy.
       de: Herausgeber und Zweck, Datum und Originalquelle sowie die Bestätigung durch unabhängige Quellen sind Kernprüfungen der Informationskompetenz. Ein professionelles Design sagt nichts über die Richtigkeit aus.
@@ -25,10 +33,18 @@ items:
       en: How does a large language model (LLM) such as a typical AI chatbot generate its answers?
       de: Wie erzeugt ein großes Sprachmodell (LLM), etwa ein typischer KI-Chatbot, seine Antworten?
     options:
-      - { en: It produces likely continuations of text, based on patterns learned from large amounts of training text., de: "Es erzeugt wahrscheinliche Fortsetzungen von Text auf Basis von Mustern, die es aus großen Mengen Trainingstext gelernt hat.", correct: true }
-      - { en: It looks up every answer in a verified database of facts., de: "Es schlägt jede Antwort in einer geprüften Faktendatenbank nach.", correct: false }
-      - { en: A human expert writes each answer in real time., de: "Eine Fachperson schreibt jede Antwort in Echtzeit.", correct: false }
-      - { en: It copies the first search result word for word., de: "Es kopiert das erste Suchergebnis wortwörtlich.", correct: false }
+      - en: "It produces likely continuations of text, based on patterns learned from large amounts of training text."
+        de: "Es erzeugt wahrscheinliche Fortsetzungen von Text auf Basis von Mustern, die es aus großen Mengen Trainingstext gelernt hat."
+        correct: true
+      - en: "It looks up every answer in a verified database of facts."
+        de: "Es schlägt jede Antwort in einer geprüften Faktendatenbank nach."
+        correct: false
+      - en: "A human expert writes each answer in real time."
+        de: "Eine Fachperson schreibt jede Antwort in Echtzeit."
+        correct: false
+      - en: "It copies the first search result word for word."
+        de: "Es kopiert das erste Suchergebnis wortwörtlich."
+        correct: false
     explanation:
       en: LLMs are trained on large text collections and generate text by predicting what is likely to come next. That makes them fluent — but fluency is not the same as being correct.
       de: LLMs werden mit großen Textsammlungen trainiert und erzeugen Text, indem sie vorhersagen, was wahrscheinlich als Nächstes kommt. Das macht sie sprachlich gewandt – aber Gewandtheit ist nicht dasselbe wie Richtigkeit.
@@ -41,10 +57,18 @@ items:
       en: An AI chatbot gives you a confident answer that includes a reference to a study. What should you do before using it?
       de: Ein KI-Chatbot gibt dir eine selbstsichere Antwort mit Verweis auf eine Studie. Was solltest du tun, bevor du sie verwendest?
     options:
-      - { en: Check that the study exists and says what the answer claims, de: "Prüfen, ob die Studie existiert und das aussagt, was die Antwort behauptet", correct: true }
-      - { en: Nothing — a confident tone shows that the answer is correct, de: "Nichts – ein selbstsicherer Ton zeigt, dass die Antwort stimmt", correct: false }
-      - { en: Ask the chatbot whether it is sure and trust its reply, de: "Den Chatbot fragen, ob er sicher ist, und seiner Antwort vertrauen", correct: false }
-      - { en: Only use the answer if it is longer than one paragraph, de: "Die Antwort nur verwenden, wenn sie länger als ein Absatz ist", correct: false }
+      - en: "Check that the study exists and says what the answer claims"
+        de: "Prüfen, ob die Studie existiert und das aussagt, was die Antwort behauptet"
+        correct: true
+      - en: "Nothing — a confident tone shows that the answer is correct"
+        de: "Nichts – ein selbstsicherer Ton zeigt, dass die Antwort stimmt"
+        correct: false
+      - en: "Ask the chatbot whether it is sure and trust its reply"
+        de: "Den Chatbot fragen, ob er sicher ist, und seiner Antwort vertrauen"
+        correct: false
+      - en: "Only use the answer if it is longer than one paragraph"
+        de: "Die Antwort nur verwenden, wenn sie länger als ein Absatz ist"
+        correct: false
     explanation:
       en: AI tools can "hallucinate" — produce false or invented content, including sources, presented as fact. Asking the same tool again is not an independent check; verify with the original source.
       de: KI-Werkzeuge können „halluzinieren“ – falsche oder erfundene Inhalte, auch Quellen, als Tatsache darstellen. Dasselbe Werkzeug erneut zu fragen ist keine unabhängige Prüfung; prüfe die Originalquelle.
@@ -57,10 +81,18 @@ items:
       en: You want an AI chatbot to summarise a customer complaint that contains the customer's name, address and contract number. Your company has not approved any AI tool for personal data. What is the right approach?
       de: Du möchtest eine Kundenbeschwerde von einem KI-Chatbot zusammenfassen lassen. Sie enthält Name, Adresse und Vertragsnummer. Dein Unternehmen hat kein KI-Werkzeug für personenbezogene Daten freigegeben. Was ist richtig?
     options:
-      - { en: Do not paste the personal data; remove it or summarise yourself, and follow the company's AI policy, de: "Die personenbezogenen Daten nicht einfügen; sie entfernen oder selbst zusammenfassen und die KI-Richtlinie des Unternehmens befolgen", correct: true }
-      - { en: Paste it — the chatbot deletes everything after the conversation anyway, de: "Einfügen – der Chatbot löscht ohnehin alles nach dem Gespräch", correct: false }
-      - { en: Paste it, but only from your private device, de: "Einfügen, aber nur vom privaten Gerät aus", correct: false }
-      - { en: Paste it and ask the chatbot to keep it confidential, de: "Einfügen und den Chatbot bitten, alles vertraulich zu behandeln", correct: false }
+      - en: "Do not paste the personal data; remove it or summarise yourself, and follow the company's AI policy"
+        de: "Die personenbezogenen Daten nicht einfügen; sie entfernen oder selbst zusammenfassen und die KI-Richtlinie des Unternehmens befolgen"
+        correct: true
+      - en: "Paste it — the chatbot deletes everything after the conversation anyway"
+        de: "Einfügen – der Chatbot löscht ohnehin alles nach dem Gespräch"
+        correct: false
+      - en: "Paste it, but only from your private device"
+        de: "Einfügen, aber nur vom privaten Gerät aus"
+        correct: false
+      - en: "Paste it and ask the chatbot to keep it confidential"
+        de: "Einfügen und den Chatbot bitten, alles vertraulich zu behandeln"
+        correct: false
     explanation:
       en: Data you enter may be transmitted to and stored by the provider. Without an approved tool and a legal basis, personal and confidential data must not be entered. Ask which tools are approved.
       de: Eingegebene Daten können an den Anbieter übertragen und dort gespeichert werden. Ohne freigegebenes Werkzeug und Rechtsgrundlage dürfen personenbezogene und vertrauliche Daten nicht eingegeben werden. Frag nach, welche Werkzeuge freigegeben sind.
@@ -74,10 +106,18 @@ items:
       en: Which prompt is most likely to give a useful first draft of a project update e-mail?
       de: Welcher Prompt liefert am wahrscheinlichsten einen brauchbaren ersten Entwurf für eine Projekt-Update-Mail?
     options:
-      - { en: '"Write a short update e-mail to the steering committee: project X is two weeks late because of supplier delays; new date 15 May; we need a decision on the budget. Friendly, factual, max. 150 words, three bullet points."', de: '„Schreib eine kurze Update-Mail an den Lenkungsausschuss: Projekt X ist wegen Lieferverzögerungen zwei Wochen im Verzug; neuer Termin 15. Mai; wir brauchen eine Budgetentscheidung. Freundlich, sachlich, max. 150 Wörter, drei Stichpunkte.“', correct: true }
-      - { en: '"Write an e-mail."', de: '„Schreib eine E-Mail.“', correct: false }
-      - { en: '"Project update, important!!!"', de: '„Projekt-Update, wichtig!!!“', correct: false }
-      - { en: '"Write the best e-mail ever written."', de: '„Schreib die beste E-Mail, die je geschrieben wurde.“', correct: false }
+      - en: "\"Write a short update e-mail to the steering committee: project X is two weeks late because of supplier delays; new date 15 May; we need a decision on the budget. Friendly, factual, max. 150 words, three bullet points.\""
+        de: "„Schreib eine kurze Update-Mail an den Lenkungsausschuss: Projekt X ist wegen Lieferverzögerungen zwei Wochen im Verzug; neuer Termin 15. Mai; wir brauchen eine Budgetentscheidung. Freundlich, sachlich, max. 150 Wörter, drei Stichpunkte.“"
+        correct: true
+      - en: "\"Write an e-mail.\""
+        de: "„Schreib eine E-Mail.“"
+        correct: false
+      - en: "\"Project update, important!!!\""
+        de: "„Projekt-Update, wichtig!!!“"
+        correct: false
+      - en: "\"Write the best e-mail ever written.\""
+        de: "„Schreib die beste E-Mail, die je geschrieben wurde.“"
+        correct: false
     explanation:
       en: Good prompts give context, the task, the audience and the desired format. The model can only use the facts you provide — so you still check dates and figures in the draft.
       de: Gute Prompts nennen Kontext, Aufgabe, Zielgruppe und gewünschtes Format. Das Modell kann nur mit den Fakten arbeiten, die du lieferst – Daten und Zahlen im Entwurf prüfst du trotzdem.
@@ -90,10 +130,18 @@ items:
       en: A colleague wants to use an AI tool to pre-sort job applications. Which risk should be raised first?
       de: Eine Kollegin möchte ein KI-Werkzeug nutzen, um Bewerbungen vorzusortieren. Welches Risiko sollte zuerst angesprochen werden?
     options:
-      - { en: The tool may reproduce biases from its training data and treat groups of applicants unfairly., de: "Das Werkzeug kann Verzerrungen aus seinen Trainingsdaten übernehmen und Gruppen von Bewerbenden unfair behandeln.", correct: true }
-      - { en: The tool will be too slow for many applications., de: "Das Werkzeug ist für viele Bewerbungen zu langsam.", correct: false }
-      - { en: AI tools cannot read PDF files., de: "KI-Werkzeuge können keine PDF-Dateien lesen.", correct: false }
-      - { en: There is no risk because a computer is always neutral., de: "Es gibt kein Risiko, weil ein Computer immer neutral ist.", correct: false }
+      - en: "The tool may reproduce biases from its training data and treat groups of applicants unfairly."
+        de: "Das Werkzeug kann Verzerrungen aus seinen Trainingsdaten übernehmen und Gruppen von Bewerbenden unfair behandeln."
+        correct: true
+      - en: "The tool will be too slow for many applications."
+        de: "Das Werkzeug ist für viele Bewerbungen zu langsam."
+        correct: false
+      - en: "AI tools cannot read PDF files."
+        de: "KI-Werkzeuge können keine PDF-Dateien lesen."
+        correct: false
+      - en: "There is no risk because a computer is always neutral."
+        de: "Es gibt kein Risiko, weil ein Computer immer neutral ist."
+        correct: false
     explanation:
       en: AI systems learn from data that can contain historical bias. In decisions about people this can lead to unfair outcomes, so human oversight, testing and the company's rules (and data protection law) matter.
       de: KI-Systeme lernen aus Daten, die historische Verzerrungen enthalten können. Bei Entscheidungen über Menschen kann das zu unfairen Ergebnissen führen – deshalb sind menschliche Aufsicht, Tests und die Regeln des Unternehmens (und das Datenschutzrecht) wichtig.
@@ -106,10 +154,18 @@ items:
       en: You use an AI assistant to summarise a 30-page report for your manager. Which steps make the summary reliable?
       de: Du lässt einen 30-seitigen Bericht von einem KI-Assistenten für deine Führungskraft zusammenfassen. Welche Schritte machen die Zusammenfassung verlässlich?
     options:
-      - { en: Compare key numbers and statements with the original report, de: Wichtige Zahlen und Aussagen mit dem Originalbericht abgleichen, correct: true }
-      - { en: Check whether important sections are missing or over-emphasised, de: "Prüfen, ob wichtige Abschnitte fehlen oder überbetont werden", correct: true }
-      - { en: State that the summary was created with AI support, if your team's rules require it, de: "Angeben, dass die Zusammenfassung mit KI-Unterstützung erstellt wurde, wenn die Regeln deines Teams das vorsehen", correct: true }
-      - { en: Send it unchanged, because summaries cannot contain errors, de: "Sie unverändert verschicken, weil Zusammenfassungen keine Fehler enthalten können", correct: false }
+      - en: "Compare key numbers and statements with the original report"
+        de: "Wichtige Zahlen und Aussagen mit dem Originalbericht abgleichen"
+        correct: true
+      - en: "Check whether important sections are missing or over-emphasised"
+        de: "Prüfen, ob wichtige Abschnitte fehlen oder überbetont werden"
+        correct: true
+      - en: "State that the summary was created with AI support, if your team's rules require it"
+        de: "Angeben, dass die Zusammenfassung mit KI-Unterstützung erstellt wurde, wenn die Regeln deines Teams das vorsehen"
+        correct: true
+      - en: "Send it unchanged, because summaries cannot contain errors"
+        de: "Sie unverändert verschicken, weil Zusammenfassungen keine Fehler enthalten können"
+        correct: false
     explanation:
       en: Summaries can drop, distort or invent details. You remain responsible for what you send — check against the source and be transparent about AI use where required.
       de: Zusammenfassungen können Details weglassen, verzerren oder erfinden. Du bleibst für das verantwortlich, was du verschickst – prüfe gegen die Quelle und sei transparent bei der KI-Nutzung, wo es verlangt ist.
@@ -122,10 +178,18 @@ items:
       en: Your team keeps e-mailing attachments like "budget_final_v3_NEW.xlsx" back and forth. What is the better practice?
       de: Dein Team schickt sich ständig Anhänge wie „budget_final_v3_NEU.xlsx“ hin und her. Was ist die bessere Praxis?
     options:
-      - { en: Store one shared file in an agreed location with access rights and use the version history, de: "Eine gemeinsame Datei an einem vereinbarten Ort mit Zugriffsrechten ablegen und den Versionsverlauf nutzen", correct: true }
-      - { en: Add the date and the word "final" to every file name, de: "Jedem Dateinamen das Datum und das Wort „final“ hinzufügen", correct: false }
-      - { en: Each person keeps their own copy on their desktop, de: Jede Person behält ihre eigene Kopie auf dem Desktop, correct: false }
-      - { en: Print the file after every change, de: Die Datei nach jeder Änderung ausdrucken, correct: false }
+      - en: "Store one shared file in an agreed location with access rights and use the version history"
+        de: "Eine gemeinsame Datei an einem vereinbarten Ort mit Zugriffsrechten ablegen und den Versionsverlauf nutzen"
+        correct: true
+      - en: "Add the date and the word \"final\" to every file name"
+        de: "Jedem Dateinamen das Datum und das Wort „final“ hinzufügen"
+        correct: false
+      - en: "Each person keeps their own copy on their desktop"
+        de: "Jede Person behält ihre eigene Kopie auf dem Desktop"
+        correct: false
+      - en: "Print the file after every change"
+        de: "Die Datei nach jeder Änderung ausdrucken"
+        correct: false
     explanation:
       en: A single source of truth with version history avoids conflicting copies, makes changes traceable and lets you control who can access the data.
       de: Eine einzige maßgebliche Datei mit Versionsverlauf vermeidet widersprüchliche Kopien, macht Änderungen nachvollziehbar und lässt dich steuern, wer Zugriff auf die Daten hat.
@@ -139,10 +203,18 @@ items:
       en: You lead a team that wants to introduce an AI tool for drafting customer replies. Which questions belong in the assessment before rollout?
       de: Du leitest ein Team, das ein KI-Werkzeug zum Entwerfen von Kundenantworten einführen will. Welche Fragen gehören vor der Einführung in die Bewertung?
     options:
-      - { en: Which data will be processed, where, and is that allowed under data protection rules?, de: "Welche Daten werden wo verarbeitet, und ist das nach den Datenschutzregeln zulässig?", correct: true }
-      - { en: How will quality be checked, and who reviews replies before they are sent?, de: "Wie wird die Qualität geprüft, und wer kontrolliert Antworten vor dem Versand?", correct: true }
-      - { en: What happens when the tool is wrong — how are errors detected and corrected?, de: "Was passiert, wenn das Werkzeug falschliegt – wie werden Fehler erkannt und korrigiert?", correct: true }
-      - { en: How can we avoid telling customers or staff anything about the tool?, de: "Wie vermeiden wir, Kundschaft oder Beschäftigten irgendetwas über das Werkzeug zu sagen?", correct: false }
+      - en: "Which data will be processed, where, and is that allowed under data protection rules?"
+        de: "Welche Daten werden wo verarbeitet, und ist das nach den Datenschutzregeln zulässig?"
+        correct: true
+      - en: "How will quality be checked, and who reviews replies before they are sent?"
+        de: "Wie wird die Qualität geprüft, und wer kontrolliert Antworten vor dem Versand?"
+        correct: true
+      - en: "What happens when the tool is wrong — how are errors detected and corrected?"
+        de: "Was passiert, wenn das Werkzeug falschliegt – wie werden Fehler erkannt und korrigiert?"
+        correct: true
+      - en: "How can we avoid telling customers or staff anything about the tool?"
+        de: "Wie vermeiden wir, Kundschaft oder Beschäftigten irgendetwas über das Werkzeug zu sagen?"
+        correct: false
     explanation:
       en: A responsible rollout covers data protection, quality assurance with human oversight and error handling. Hiding AI use undermines trust and may conflict with transparency obligations.
       de: Eine verantwortungsvolle Einführung umfasst Datenschutz, Qualitätssicherung mit menschlicher Aufsicht und Fehlerbehandlung. KI-Nutzung zu verschleiern untergräbt Vertrauen und kann Transparenzpflichten widersprechen.
@@ -155,10 +227,18 @@ items:
       en: You want to assess and develop the digital skills of your team with a public, vendor-neutral framework. Which option fits best?
       de: Du möchtest die digitalen Kompetenzen deines Teams mit einem öffentlichen, herstellerneutralen Rahmenwerk einschätzen und entwickeln. Welche Option passt am besten?
     options:
-      - { en: The EU's DigComp framework with its competence areas and proficiency levels, de: Das DigComp-Rahmenwerk der EU mit seinen Kompetenzbereichen und Kompetenzstufen, correct: true }
-      - { en: The feature list of the office software the team currently uses, de: Die Funktionsliste der Office-Software, die das Team derzeit nutzt, correct: false }
-      - { en: The number of apps installed on each laptop, de: Die Anzahl der auf jedem Laptop installierten Apps, correct: false }
-      - { en: A ranking of who types fastest, de: "Eine Rangliste, wer am schnellsten tippt", correct: false }
+      - en: "The EU's DigComp framework with its competence areas and proficiency levels"
+        de: "Das DigComp-Rahmenwerk der EU mit seinen Kompetenzbereichen und Kompetenzstufen"
+        correct: true
+      - en: "The feature list of the office software the team currently uses"
+        de: "Die Funktionsliste der Office-Software, die das Team derzeit nutzt"
+        correct: false
+      - en: "The number of apps installed on each laptop"
+        de: "Die Anzahl der auf jedem Laptop installierten Apps"
+        correct: false
+      - en: "A ranking of who types fastest"
+        de: "Eine Rangliste, wer am schnellsten tippt"
+        correct: false
     explanation:
       en: DigComp, published by the European Commission's Joint Research Centre, describes digital competence in five areas and several proficiency levels. It is widely used for self-assessment and training design.
       de: DigComp, herausgegeben von der Gemeinsamen Forschungsstelle (JRC) der Europäischen Kommission, beschreibt digitale Kompetenz in fünf Bereichen und mehreren Kompetenzstufen. Es wird häufig für Selbsteinschätzungen und die Gestaltung von Weiterbildung genutzt.
@@ -171,10 +251,18 @@ items:
       en: An AI system proposes which customer complaints are "low priority". What is the most robust way to keep humans in control?
       de: Ein KI-System schlägt vor, welche Kundenbeschwerden „niedrige Priorität“ haben. Wie behalten Menschen am zuverlässigsten die Kontrolle?
     options:
-      - { en: Define when humans review decisions, sample and audit outcomes regularly, and make overriding easy and documented, de: "Festlegen, wann Menschen Entscheidungen prüfen, Ergebnisse regelmäßig stichprobenartig kontrollieren und Übersteuern einfach und dokumentiert ermöglichen", correct: true }
-      - { en: Let a person click "approve" on every suggestion without time to read it, de: "Eine Person bei jedem Vorschlag auf „freigeben“ klicken lassen, ohne Zeit zum Lesen", correct: false }
-      - { en: Switch off logging to save storage, de: "Die Protokollierung abschalten, um Speicher zu sparen", correct: false }
-      - { en: Trust the system once it has worked well for a week, de: "Dem System vertrauen, sobald es eine Woche gut funktioniert hat", correct: false }
+      - en: "Define when humans review decisions, sample and audit outcomes regularly, and make overriding easy and documented"
+        de: "Festlegen, wann Menschen Entscheidungen prüfen, Ergebnisse regelmäßig stichprobenartig kontrollieren und Übersteuern einfach und dokumentiert ermöglichen"
+        correct: true
+      - en: "Let a person click \"approve\" on every suggestion without time to read it"
+        de: "Eine Person bei jedem Vorschlag auf „freigeben“ klicken lassen, ohne Zeit zum Lesen"
+        correct: false
+      - en: "Switch off logging to save storage"
+        de: "Die Protokollierung abschalten, um Speicher zu sparen"
+        correct: false
+      - en: "Trust the system once it has worked well for a week"
+        de: "Dem System vertrauen, sobald es eine Woche gut funktioniert hat"
+        correct: false
     explanation:
       en: Effective oversight needs clear review rules, monitoring of outcomes over time and a real ability to override. "Rubber-stamping" without time to review is oversight in name only, and logs are needed to detect problems.
       de: Wirksame Aufsicht braucht klare Prüfregeln, die Beobachtung der Ergebnisse über die Zeit und eine echte Möglichkeit zum Übersteuern. Abnicken ohne Zeit zur Prüfung ist Aufsicht nur dem Namen nach, und Protokolle werden gebraucht, um Probleme zu erkennen.
@@ -187,10 +275,18 @@ items:
       en: Which element is most important in a team guideline for using generative AI?
       de: Welches Element ist in einer Team-Richtlinie für generative KI am wichtigsten?
     options:
-      - { en: "Clear rules on approved tools, which data may be entered, when results must be checked and who is responsible", de: "Klare Regeln zu freigegebenen Werkzeugen, welche Daten eingegeben werden dürfen, wann Ergebnisse geprüft werden müssen und wer verantwortlich ist", correct: true }
-      - { en: A list of the most impressive things AI can do, de: "Eine Liste der beeindruckendsten Dinge, die KI kann", correct: false }
-      - { en: A ban on talking about AI at work, de: "Ein Verbot, bei der Arbeit über KI zu sprechen", correct: false }
-      - { en: The personal favourite tool of the team lead, de: "Das persönliche Lieblingswerkzeug der Teamleitung", correct: false }
+      - en: "Clear rules on approved tools, which data may be entered, when results must be checked and who is responsible"
+        de: "Klare Regeln zu freigegebenen Werkzeugen, welche Daten eingegeben werden dürfen, wann Ergebnisse geprüft werden müssen und wer verantwortlich ist"
+        correct: true
+      - en: "A list of the most impressive things AI can do"
+        de: "Eine Liste der beeindruckendsten Dinge, die KI kann"
+        correct: false
+      - en: "A ban on talking about AI at work"
+        de: "Ein Verbot, bei der Arbeit über KI zu sprechen"
+        correct: false
+      - en: "The personal favourite tool of the team lead"
+        de: "Das persönliche Lieblingswerkzeug der Teamleitung"
+        correct: false
     explanation:
       en: A practical guideline answers "which tools, which data, which checks, who is accountable". It should be updated as tools and rules change.
       de: Eine praxistaugliche Richtlinie beantwortet „welche Werkzeuge, welche Daten, welche Prüfungen, wer ist verantwortlich“. Sie sollte aktualisiert werden, wenn sich Werkzeuge und Regeln ändern.

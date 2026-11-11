@@ -94,3 +94,7 @@ Format: date — decision — reason — alternatives considered.
 ## 2026-11-11 — DigComp 3.0
 - **Decision:** Keep the existing DigComp 2.2 labels in `frameworkRefs` for now; content cites the current JRC DigComp page (DigComp 3.0: 5 areas, 21 competences). Updating the labels to the 3.0 structure is logged as a maintenance item in docs/BLOCKERS.md.
 - **Elements of AI** could not be reached from the build environment, so it was not added as a resource (license not verifiable).
+
+## 2026-11-11 — Strict item schemas; options in YAML block style
+- **Decision:** `itemSchema` and `optionSchema` are strict (unknown keys are errors). All answer options were converted from one-line flow mappings to block style with quoted strings.
+- **Reason:** An unquoted comma inside a YAML flow mapping (`{ en: text, more text, de: … }`) silently truncated option texts, because Zod dropped the resulting extra keys. 22 options in the merged core-track items were affected and showed shortened text on the site. Strict schemas make this class of error fail validation.

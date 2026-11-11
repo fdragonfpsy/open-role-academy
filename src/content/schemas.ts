@@ -81,13 +81,14 @@ export const unitSchema = z.object({
   sources: z.array(sourceSchema).default([]),
 });
 
-export const optionSchema = z.object({
+/** Strict: unknown keys usually mean an unquoted comma in a YAML flow mapping truncated the text. */
+export const optionSchema = z.strictObject({
   en: z.string().trim().min(1),
   de: z.string().trim().min(1),
   correct: z.boolean(),
 });
 
-export const itemSchema = z.object({
+export const itemSchema = z.strictObject({
   id: slug,
   level,
   difficulty: z.number().int().min(600).max(1900),
