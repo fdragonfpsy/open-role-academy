@@ -1,0 +1,13 @@
+id: wikipedia-kanban-development
+url: https://en.wikipedia.org/wiki/Kanban_(development)
+title: "Kanban (development)"
+provider: Wikipedia
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-11
+mode: link
+competencies: [self-organisation-project-basics]
+levels: [practitioner, advanced]

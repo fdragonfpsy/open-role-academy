@@ -1,0 +1,13 @@
+id: wikipedia-smart-criteria
+url: https://en.wikipedia.org/wiki/SMART_criteria
+title: "SMART criteria"
+provider: Wikipedia
+language: en
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-11
+mode: link
+competencies: [self-organisation-project-basics]
+levels: [foundation, practitioner]

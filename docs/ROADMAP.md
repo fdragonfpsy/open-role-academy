@@ -33,7 +33,7 @@ For each competency: ≥1 unit per required level (en + de), ≥6 items across d
   - [x] digital-ai-literacy
   - [x] communication-collaboration
   - [x] working-with-data
-  - [ ] self-organisation-project-basics
+  - [x] self-organisation-project-basics
   - [ ] business-finance-fundamentals
 - [ ] IT Support & Operations content complete
 - [ ] Finance & Accounting content complete

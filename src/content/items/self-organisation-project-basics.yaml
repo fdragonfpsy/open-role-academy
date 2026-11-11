@@ -1,0 +1,290 @@
+competency: self-organisation-project-basics
+items:
+  - id: sop-f-eisenhower
+    level: foundation
+    difficulty: 880
+    type: single
+    stem:
+      en: "Using the Eisenhower method, what should you do with a task that is important but not urgent (e.g. preparing next quarter's training plan)?"
+      de: "Was solltest du nach dem Eisenhower-Prinzip mit einer Aufgabe tun, die wichtig, aber nicht dringend ist (z. B. den Schulungsplan fürs nächste Quartal vorbereiten)?"
+    options:
+      - en: "Plan a fixed time for it in your calendar"
+        de: "Einen festen Termin dafür im Kalender einplanen"
+        correct: true
+      - en: "Do it immediately and drop everything else"
+        de: "Sofort erledigen und alles andere liegen lassen"
+        correct: false
+      - en: "Delete it from your list"
+        de: "Von der Liste streichen"
+        correct: false
+      - en: "Wait until it becomes urgent"
+        de: "Warten, bis sie dringend wird"
+        correct: false
+    explanation:
+      en: "Important but not urgent tasks are scheduled. If you wait until they become urgent, you work under avoidable pressure; urgent and important tasks are the ones you do immediately."
+      de: "Wichtige, aber nicht dringende Aufgaben werden eingeplant. Wer wartet, bis sie dringend werden, arbeitet unter vermeidbarem Druck; sofort erledigt werden die Aufgaben, die dringend und wichtig sind."
+    source: https://en.wikipedia.org/wiki/Time_management
+  - id: sop-f-smart
+    level: foundation
+    difficulty: 930
+    type: single
+    stem:
+      en: "Which goal is formulated according to the SMART criteria?"
+      de: "Welches Ziel ist nach den SMART-Kriterien formuliert?"
+    options:
+      - en: "Reduce the average reply time to customer e-mails from 2 days to 1 day by 30 June"
+        de: "Die durchschnittliche Antwortzeit auf Kunden-E-Mails bis zum 30. Juni von 2 Tagen auf 1 Tag senken"
+        correct: true
+      - en: "Be faster with e-mails"
+        de: "Schneller bei E-Mails werden"
+        correct: false
+      - en: "Answer every e-mail perfectly from now on"
+        de: "Ab sofort jede E-Mail perfekt beantworten"
+        correct: false
+      - en: "Improve customer service at some point"
+        de: "Irgendwann den Kundenservice verbessern"
+        correct: false
+    explanation:
+      en: "SMART goals are specific, measurable, achievable, relevant and time-bound. The first option names a measure, a starting point, a target value and a deadline."
+      de: "SMART-Ziele sind spezifisch, messbar, erreichbar, relevant und terminiert. Die erste Option nennt eine Kennzahl, einen Ausgangswert, einen Zielwert und eine Frist."
+    source: https://en.wikipedia.org/wiki/SMART_criteria
+  - id: sop-f-interruptions
+    level: foundation
+    difficulty: 990
+    type: multi
+    stem:
+      en: "You are constantly interrupted while writing a report that needs concentration. Which measures help?"
+      de: "Du wirst beim Schreiben eines Berichts, der Konzentration braucht, ständig unterbrochen. Welche Maßnahmen helfen?"
+    options:
+      - en: "Block a focus time in your calendar and tell your team"
+        de: "Eine Fokuszeit im Kalender blocken und dem Team Bescheid geben"
+        correct: true
+      - en: "Turn off e-mail and chat notifications for that time"
+        de: "Benachrichtigungen von E-Mail und Chat für diese Zeit ausschalten"
+        correct: true
+      - en: "Collect small requests and answer them in a fixed time slot"
+        de: "Kleine Anfragen sammeln und in einem festen Zeitfenster beantworten"
+        correct: true
+      - en: "Answer every message within one minute so nothing piles up"
+        de: "Jede Nachricht innerhalb einer Minute beantworten, damit sich nichts staut"
+        correct: false
+    explanation:
+      en: "Each interruption costs time to refocus. Protected focus times, fewer notifications and batching small tasks make demanding work possible. Instant replies keep you permanently interrupted."
+      de: "Jede Unterbrechung kostet Zeit, um wieder in die Aufgabe zu finden. Geschützte Fokuszeiten, weniger Benachrichtigungen und gebündelte Kleinaufgaben machen anspruchsvolle Arbeit möglich. Sofortiges Antworten hält dich dauerhaft im Unterbrechungsmodus."
+    source: https://en.wikipedia.org/wiki/Time_management
+  - id: sop-f-task-list
+    level: foundation
+    difficulty: 1040
+    type: single
+    stem:
+      en: "Your manager asks you to \"take care of the supplier issue\". What is the best first step?"
+      de: "Deine Führungskraft bittet dich, „sich um das Lieferantenthema zu kümmern“. Was ist der beste erste Schritt?"
+    options:
+      - en: "Clarify the expected result and deadline, then note it as a concrete task"
+        de: "Erwartetes Ergebnis und Frist klären und es dann als konkrete Aufgabe notieren"
+        correct: true
+      - en: "Start working on whatever seems most interesting"
+        de: "Mit dem anfangen, was am interessantesten erscheint"
+        correct: false
+      - en: "Wait until the manager asks again"
+        de: "Warten, bis die Führungskraft noch einmal fragt"
+        correct: false
+      - en: "Forward the request to a colleague without comment"
+        de: "Die Bitte kommentarlos an eine Kollegin weiterleiten"
+        correct: false
+    explanation:
+      en: "Vague requests lead to wasted effort. Clarify what \"done\" means and by when, then record the task in one trusted place (task list or tool) so it does not get lost."
+      de: "Vage Aufträge führen zu verschwendeter Mühe. Kläre, was „erledigt“ bedeutet und bis wann, und halte die Aufgabe an einem verlässlichen Ort fest (Aufgabenliste oder Tool), damit sie nicht verloren geht."
+    source: https://en.wikipedia.org/wiki/Time_management
+  - id: sop-p-project-vs-task
+    level: practitioner
+    difficulty: 1170
+    type: single
+    stem:
+      en: "Which of these is a project rather than a routine task?"
+      de: "Was davon ist ein Projekt und keine Routineaufgabe?"
+    options:
+      - en: "Introducing a new ticket system for the service team by the end of the year"
+        de: "Bis Jahresende ein neues Ticketsystem für das Serviceteam einführen"
+        correct: true
+      - en: "Answering customer e-mails every day"
+        de: "Täglich Kunden-E-Mails beantworten"
+        correct: false
+      - en: "Booking the monthly invoices"
+        de: "Die monatlichen Rechnungen buchen"
+        correct: false
+      - en: "The weekly team meeting"
+        de: "Das wöchentliche Teammeeting"
+        correct: false
+    explanation:
+      en: "A project is a temporary undertaking with a defined goal, start and end, usually unique and involving several people. Recurring activities are operations, not projects."
+      de: "Ein Projekt ist ein zeitlich begrenztes Vorhaben mit definiertem Ziel, Anfang und Ende, meist einmalig und mit mehreren Beteiligten. Wiederkehrende Tätigkeiten sind Tagesgeschäft, keine Projekte."
+    source: https://en.wikipedia.org/wiki/Project_management
+  - id: sop-p-raci
+    level: practitioner
+    difficulty: 1220
+    type: single
+    stem:
+      en: "In a RACI matrix, what does the \"A\" (Accountable) role mean?"
+      de: "Was bedeutet in einer RACI-Matrix die Rolle „A“ (Accountable)?"
+    options:
+      - en: "The person ultimately answerable for the result, who signs off the work"
+        de: "Die Person, die letztlich für das Ergebnis geradesteht und die Arbeit abnimmt"
+        correct: true
+      - en: "Everyone who should receive status updates"
+        de: "Alle, die Statusinformationen erhalten sollen"
+        correct: false
+      - en: "Experts who are asked for their opinion"
+        de: "Fachleute, deren Meinung eingeholt wird"
+        correct: false
+      - en: "The accounting department"
+        de: "Die Buchhaltung"
+        correct: false
+    explanation:
+      en: "RACI stands for Responsible (does the work), Accountable (answerable, signs off), Consulted (gives input) and Informed (kept up to date). Many approaches recommend exactly one accountable person per task."
+      de: "RACI steht für Responsible (führt aus), Accountable (steht gerade, nimmt ab), Consulted (wird beteiligt) und Informed (wird informiert). Viele Ansätze empfehlen genau eine verantwortliche Person (A) pro Aufgabe."
+    source: https://en.wikipedia.org/wiki/Responsibility_assignment_matrix
+  - id: sop-p-kanban-wip
+    level: practitioner
+    difficulty: 1280
+    type: single
+    stem:
+      en: "Your team's Kanban board shows 15 tasks \"in progress\" for 4 people, and little gets finished. What does the Kanban method suggest?"
+      de: "Auf dem Kanban-Board deines Teams stehen 15 Aufgaben „in Arbeit“ bei 4 Personen, und wenig wird fertig. Was empfiehlt die Kanban-Methode?"
+    options:
+      - en: "Limit work in progress and finish tasks before starting new ones"
+        de: "Die Menge paralleler Arbeit begrenzen und Aufgaben abschließen, bevor neue begonnen werden"
+        correct: true
+      - en: "Add more columns to the board"
+        de: "Mehr Spalten auf dem Board ergänzen"
+        correct: false
+      - en: "Start even more tasks so that something finishes"
+        de: "Noch mehr Aufgaben beginnen, damit irgendetwas fertig wird"
+        correct: false
+      - en: "Hide the board so the team is not stressed"
+        de: "Das Board ausblenden, damit das Team nicht gestresst ist"
+        correct: false
+    explanation:
+      en: "Visualising work and limiting work in progress (WIP) are the core practices of Kanban. WIP limits reduce multitasking and make bottlenecks visible."
+      de: "Arbeit sichtbar machen und die Menge paralleler Arbeit (WIP) begrenzen sind die Kernpraktiken von Kanban. WIP-Limits verringern Multitasking und machen Engpässe sichtbar."
+    source: https://en.wikipedia.org/wiki/Kanban_(development)
+  - id: sop-p-scope-change
+    level: practitioner
+    difficulty: 1330
+    type: single
+    stem:
+      en: "Halfway through your project, a stakeholder asks for an additional feature. Budget and deadline stay the same. What is the professional response?"
+      de: "Mitten im Projekt wünscht sich eine Stakeholderin eine zusätzliche Funktion. Budget und Termin bleiben gleich. Was ist die professionelle Reaktion?"
+    options:
+      - en: "Make the trade-off visible (scope, time, cost, quality) and let the responsible person decide"
+        de: "Den Zielkonflikt (Umfang, Zeit, Kosten, Qualität) sichtbar machen und die zuständige Person entscheiden lassen"
+        correct: true
+      - en: "Quietly add the feature and work overtime"
+        de: "Die Funktion stillschweigend ergänzen und Überstunden machen"
+        correct: false
+      - en: "Refuse any change on principle"
+        de: "Jede Änderung grundsätzlich ablehnen"
+        correct: false
+      - en: "Add the feature and reduce testing without telling anyone"
+        de: "Die Funktion ergänzen und ohne Absprache weniger testen"
+        correct: false
+    explanation:
+      en: "Scope, time and cost are linked: more scope needs more time or money, or another item has to go. Transparent change control lets the right person make that trade-off consciously."
+      de: "Umfang, Zeit und Kosten hängen zusammen: Mehr Umfang braucht mehr Zeit oder Geld, oder etwas anderes muss entfallen. Eine transparente Änderungssteuerung lässt die zuständige Person diesen Zielkonflikt bewusst entscheiden."
+    source: https://en.wikipedia.org/wiki/Project_management
+  - id: sop-a-risk-register
+    level: advanced
+    difficulty: 1480
+    type: multi
+    stem:
+      en: "You lead a project with a fixed go-live date. Which elements belong in a useful risk register?"
+      de: "Du leitest ein Projekt mit festem Go-live-Termin. Welche Elemente gehören in ein nützliches Risikoregister?"
+    options:
+      - en: "A description of each risk with its likelihood and impact"
+        de: "Eine Beschreibung jedes Risikos mit Eintrittswahrscheinlichkeit und Auswirkung"
+        correct: true
+      - en: "Planned measures and an owner for each risk"
+        de: "Geplante Maßnahmen und eine verantwortliche Person je Risiko"
+        correct: true
+      - en: "Regular review dates to update the assessment"
+        de: "Regelmäßige Termine, um die Bewertung zu aktualisieren"
+        correct: true
+      - en: "Only risks that have already occurred"
+        de: "Nur Risiken, die bereits eingetreten sind"
+        correct: false
+    explanation:
+      en: "A risk register makes uncertainty manageable: assess, assign an owner, plan responses and review regularly. Events that have already happened are issues, not risks."
+      de: "Ein Risikoregister macht Unsicherheit steuerbar: bewerten, Verantwortliche festlegen, Maßnahmen planen und regelmäßig überprüfen. Bereits eingetretene Ereignisse sind Probleme (Issues), keine Risiken."
+    source: https://en.wikipedia.org/wiki/Project_management
+  - id: sop-a-agile-vs-plan
+    level: advanced
+    difficulty: 1530
+    type: single
+    stem:
+      en: "When is an iterative, agile approach usually more suitable than a detailed up-front plan?"
+      de: "Wann ist ein iteratives, agiles Vorgehen meist besser geeignet als ein detaillierter Plan im Voraus?"
+    options:
+      - en: "When requirements are uncertain and early feedback from users can change the solution"
+        de: "Wenn die Anforderungen unsicher sind und frühes Feedback von Nutzenden die Lösung verändern kann"
+        correct: true
+      - en: "When requirements are fixed by law and cannot change"
+        de: "Wenn Anforderungen gesetzlich festgelegt sind und sich nicht ändern können"
+        correct: false
+      - en: "When nobody has time to talk to users"
+        de: "Wenn niemand Zeit hat, mit Nutzenden zu sprechen"
+        correct: false
+      - en: "Whenever a project has a budget"
+        de: "Immer, wenn ein Projekt ein Budget hat"
+        correct: false
+    explanation:
+      en: "Iterative approaches deliver in small steps and learn from feedback, which pays off when much is unknown. With stable, well-known requirements, a plan-driven approach can be efficient. Many projects combine both."
+      de: "Iterative Vorgehensweisen liefern in kleinen Schritten und lernen aus Feedback – das lohnt sich, wenn vieles unbekannt ist. Bei stabilen, gut bekannten Anforderungen kann ein planbasiertes Vorgehen effizient sein. Viele Projekte kombinieren beides."
+    source: https://en.wikipedia.org/wiki/Project_management
+  - id: sop-a-wbs
+    level: advanced
+    difficulty: 1590
+    type: single
+    stem:
+      en: "What is the main purpose of a work breakdown structure (WBS)?"
+      de: "Was ist der Hauptzweck eines Projektstrukturplans (PSP, englisch Work Breakdown Structure)?"
+    options:
+      - en: "To break the total scope into smaller, manageable deliverables and work packages"
+        de: "Den gesamten Projektumfang in kleinere, steuerbare Ergebnisse und Arbeitspakete zu zerlegen"
+        correct: true
+      - en: "To show the organisation chart of the company"
+        de: "Das Organigramm des Unternehmens darzustellen"
+        correct: false
+      - en: "To record the working hours of each team member"
+        de: "Die Arbeitszeiten jedes Teammitglieds zu erfassen"
+        correct: false
+      - en: "To replace the project budget"
+        de: "Das Projektbudget zu ersetzen"
+        correct: false
+    explanation:
+      en: "A WBS decomposes the scope hierarchically. Work packages can then be estimated, assigned and scheduled — the basis for time and cost planning."
+      de: "Ein Projektstrukturplan zerlegt den Umfang hierarchisch. Arbeitspakete lassen sich dann schätzen, zuweisen und terminieren – die Grundlage für Zeit- und Kostenplanung."
+    source: https://en.wikipedia.org/wiki/Work_breakdown_structure
+  - id: sop-a-lessons-learned
+    level: advanced
+    difficulty: 1640
+    type: single
+    stem:
+      en: "Your project finished three weeks late. How do you make sure the organisation learns from it?"
+      de: "Dein Projekt wurde drei Wochen zu spät fertig. Wie stellst du sicher, dass die Organisation daraus lernt?"
+    options:
+      - en: "Run a lessons-learned session with the team, document causes and concrete changes, and share them with future projects"
+        de: "Mit dem Team eine Lessons-Learned-Runde durchführen, Ursachen und konkrete Änderungen dokumentieren und für künftige Projekte bereitstellen"
+        correct: true
+      - en: "Find the person responsible for the delay and name them in the final report"
+        de: "Die für den Verzug verantwortliche Person finden und im Abschlussbericht nennen"
+        correct: false
+      - en: "Close the project quickly and move on"
+        de: "Das Projekt schnell abschließen und weitermachen"
+        correct: false
+      - en: "Add three weeks of buffer to every future project, without analysis"
+        de: "Künftig jedem Projekt ohne Analyse drei Wochen Puffer hinzufügen"
+        correct: false
+    explanation:
+      en: "A structured project closure captures what worked and what did not, with concrete improvements. Blaming individuals discourages honesty; blanket buffers without analysis hide the real causes."
+      de: "Ein strukturierter Projektabschluss hält fest, was funktioniert hat und was nicht – mit konkreten Verbesserungen. Schuldzuweisungen verhindern Ehrlichkeit; pauschale Puffer ohne Analyse verdecken die eigentlichen Ursachen."
+    source: https://en.wikipedia.org/wiki/Project_management

@@ -39,6 +39,8 @@ Every resource is stored in `src/content/resources/<id>.yaml` with `license`, `l
 | wikipedia-pivot-table, wikipedia-data-cleansing, wikipedia-misleading-graph, wikipedia-correlation-causation | Wikipedia (en) | CC BY-SA 4.0 | link | 2026-11-11 |
 | wikipedia-de-tabellenkalkulation, wikipedia-de-pivot-tabelle, wikipedia-de-deskriptive-statistik | Wikipedia (de) | CC BY-SA 4.0 | link | 2026-11-11 |
 | openstax-intro-stats-descriptive | OpenStax (*Introductory Statistics 2e*) | CC BY-NC-SA (page footer) | link | 2026-11-11 |
+| wikipedia-time-management, wikipedia-smart-criteria, wikipedia-project-management, wikipedia-kanban-development, wikipedia-raci | Wikipedia (en) | CC BY-SA 4.0 | link | 2026-11-11 |
+| wikipedia-de-eisenhower-prinzip, wikipedia-de-smart, wikipedia-de-projektmanagement, wikipedia-de-kanban-entwicklung | Wikipedia (de) | CC BY-SA 4.0 | link | 2026-11-11 |
 
 ## Framework references
 
