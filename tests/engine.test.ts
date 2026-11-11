@@ -11,6 +11,8 @@ import {
   masteredLevel,
   nextUnit,
   placementFinished,
+  planPlacement,
+  PLACEMENT_QUESTION_BUDGET,
   recordAnswer,
   reviewQueue,
   scheduleCard,
@@ -209,6 +211,38 @@ describe('item selection', () => {
   it('selects mastery items at the level, unanswered first', () => {
     const cs = { rating: 1000, correctByLevel: { foundation: 0, practitioner: 0, advanced: 0 }, answered: 1, answeredItems: ['a1'] };
     expect(selectMasteryItems(itemsA, 'foundation', cs).map((i) => i.id)).toEqual(['a2', 'a1']);
+  });
+});
+
+describe('placement plan', () => {
+  const comps = (n: number) =>
+    Array.from({ length: n }, (_, i) => ({ id: `c${String(i).padStart(2, '0')}`, priority: ((i % 3) + 1) as 1 | 2 | 3 }));
+  const counts = (n: number, k = 12) => Object.fromEntries(comps(n).map((c) => [c.id, k]));
+
+  it('never exceeds the question budget', () => {
+    for (const n of [1, 2, 3, 4, 5, 6, 10, 16]) {
+      const plan = planPlacement(comps(n), counts(n));
+      expect(plan.reduce((s, p) => s + p.items, 0)).toBeLessThanOrEqual(PLACEMENT_QUESTION_BUDGET);
+      for (const p of plan) {
+        expect(p.items).toBeGreaterThanOrEqual(3);
+        expect(p.items).toBeLessThanOrEqual(5);
+      }
+    }
+  });
+  it('places high-priority competencies first when not all fit', () => {
+    const plan = planPlacement(comps(16), counts(16));
+    expect(plan).toHaveLength(5);
+    expect(plan.slice(0, 5).every((p) => comps(16).find((c) => c.id === p.competency)!.priority <= 2)).toBe(true);
+    expect(plan[0]!.competency).toBe('c00');
+  });
+  it('uses up to 5 items for a single competency and respects available items', () => {
+    expect(planPlacement([{ id: 'a', priority: 1 }], { a: 12 })).toEqual([{ competency: 'a', items: 5 }]);
+    expect(planPlacement([{ id: 'a', priority: 1 }], { a: 2 })).toEqual([{ competency: 'a', items: 2 }]);
+    expect(planPlacement([{ id: 'a', priority: 1 }], { a: 0 })).toEqual([]);
+  });
+  it('splits the budget evenly for a few competencies', () => {
+    expect(planPlacement(comps(3), counts(3)).map((p) => p.items)).toEqual([5, 5, 5]);
+    expect(planPlacement(comps(4), counts(4)).map((p) => p.items)).toEqual([3, 3, 3, 3]);
   });
 });
 

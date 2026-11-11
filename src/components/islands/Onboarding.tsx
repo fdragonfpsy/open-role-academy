@@ -5,6 +5,7 @@ import {
   createLearnerState,
   finishPlacement,
   placementFinished,
+  planPlacement,
   recordAnswer,
   selectPlacementItem,
   type LearnerState,
@@ -37,19 +38,14 @@ export default function Onboarding({ lang, roles, items }: Props) {
   useEffect(() => setHasExisting(loadState() !== null), []);
 
   const role = roles.find((r) => r.id === roleId);
-  // Competencies that have a target at the chosen level and at least one item.
-  const placementComps = useMemo(
-    () =>
-      (role?.competencies ?? [])
-        .filter((c) => c.targets[level] !== null)
-        .map((c) => c.id)
-        .filter((id) => items.some((i) => i.competency === id)),
-    [role, level, items],
-  );
-  const totalQuestions = placementComps.reduce(
-    (n, c) => n + Math.min(4, items.filter((i) => i.competency === c).length),
-    0,
-  );
+  // Placement plan: competencies with a target at the chosen level, within the question budget.
+  const plan = useMemo(() => {
+    const targeted = (role?.competencies ?? []).filter((c) => c.targets[level] !== null);
+    const counts = Object.fromEntries(targeted.map((c) => [c.id, items.filter((i) => i.competency === c.id).length]));
+    return planPlacement(targeted, counts);
+  }, [role, level, items]);
+  const placementComps = plan.map((p) => p.competency);
+  const totalQuestions = plan.reduce((n, p) => n + p.items, 0);
 
   const begin = (skip: boolean) => {
     if (!role) return;
@@ -132,7 +128,7 @@ export default function Onboarding({ lang, roles, items }: Props) {
   const current = selectPlacementItem(compItems, compState, last) as QuizItem | null;
 
   const advance = (next: LearnerState, answeredInComp: number) => {
-    const finishedComp = placementFinished(compItems, answeredInComp) || !selectPlacementItem(compItems, next.competencies[compId]!);
+    const finishedComp = placementFinished(compItems, answeredInComp, plan[compIndex]?.items) || !selectPlacementItem(compItems, next.competencies[compId]!);
     if (!finishedComp) {
       setState(next);
       setInComp(answeredInComp);

@@ -45,7 +45,8 @@ Ordering (`buildLearningPath`):
 ## 5. Item selection (`selection.ts`)
 
 - **Placement** (`selectPlacementItem`): after a correct answer choose among unanswered items *harder* than the last item, after a wrong answer among *easier* ones; within that set pick the item whose difficulty is closest to the current θ (ties by id). Without a previous answer, or if no item exists in the required direction, pick the closest unanswered item.
-- **Placement length** (`placementFinished`): default 4 items per competency, clamped to 3–5, or fewer if a competency has fewer items. Placement can be skipped entirely (prior only).
+- **Placement plan** (`planPlacement`): the whole placement check has a budget of **15 questions** (≈ 1 minute each, so ≤ 15 minutes). Competencies that have a target at the learner's level and at least one item are ordered by priority (1 first), then id. At most ⌊15 / 3⌋ = 5 competencies are placed; each gets ⌊15 / n⌋ items, clamped to 3–5 and to the available items. Competencies left out keep their prior rating and are assessed through mastery checks later.
+- **Placement length per competency** (`placementFinished`): stops at the planned number of items (clamped to 3–5) or when the competency has no more items. Placement can be skipped entirely (prior only).
 - **Mastery check** (`selectMasteryItems`): up to 4 items of the unit's level, unanswered items first, each group ordered by difficulty then id.
 
 ## 6. Reviews (`review.ts`)

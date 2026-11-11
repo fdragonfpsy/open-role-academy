@@ -39,7 +39,7 @@ export const de: Record<UiKey, string> = {
   'level.foundation.hint': 'Neu in der Rolle, 0–2 Jahre',
   'level.practitioner.hint': 'Arbeitet selbstständig, 2–5 Jahre',
   'level.advanced.hint': 'Verantwortet Themen, 5+ Jahre',
-  'level.none': 'Noch nicht eingestuft',
+  'level.none': 'Noch nicht gemeistert',
   'quiz.question': 'Frage',
   'quiz.of': 'von',
   'quiz.check': 'Antwort prüfen',
