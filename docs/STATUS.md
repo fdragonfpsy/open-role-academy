@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-11 — Phase 2 started: core track content for digital-ai-literacy
+
+**Done**
+- Phase 1 complete: HR framework and generated `docs/FRAMEWORK.md` merged ([#5](https://github.com/fdragonfpsy/open-role-academy/pull/5)).
+- Split "Core track content complete" into one sub-task per competency (ROADMAP).
+- `digital-ai-literacy`: 6 units (3 levels × en/de), 12 items (4 per level), 7 resources (Wikipedia en/de, BSI, JRC DigComp — all link only, licenses checked 2026-11-11). Added to the published `core-track` role.
+
+**Counts:** roles 4 (1 published, 3 draft) · competencies 38 · units 12 · items 24 · resources 14
+
+**Next:** core track content for `communication-collaboration`, then `working-with-data`, `self-organisation-project-basics`, `business-finance-fundamentals`.
+
 ## 2026-11-11 — Phase 1 complete: Human Resources framework + FRAMEWORK.md
 
 **Done**

@@ -86,3 +86,11 @@ Format: date — decision — reason — alternatives considered.
 ## 2026-11-11 — `docs/FRAMEWORK.md` is generated and checked in CI
 - **Decision:** `npm run docs:framework` renders the file from the YAML; a Vitest test fails when the committed file is out of date.
 - **Reason:** Keeps the overview trustworthy without a separate CI step.
+
+## 2026-11-11 — Phase 2 split into per-competency sub-tasks
+- **Decision:** "Core track content complete" is split into one roadmap sub-task per competency; each competency's content (units en/de, ≥ 12 items, 2–4+ resources) is one PR, and the competency is added to the published `core-track` role in the same PR.
+- **Reason:** One competency is a finished, testable slice that fits into a session (CLAUDE.md §10.8).
+
+## 2026-11-11 — DigComp 3.0
+- **Decision:** Keep the existing DigComp 2.2 labels in `frameworkRefs` for now; content cites the current JRC DigComp page (DigComp 3.0: 5 areas, 21 competences). Updating the labels to the 3.0 structure is logged as a maintenance item in docs/BLOCKERS.md.
+- **Elements of AI** could not be reached from the build environment, so it was not added as a resource (license not verifiable).
