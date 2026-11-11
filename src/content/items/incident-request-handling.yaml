@@ -1,0 +1,290 @@
+competency: incident-request-handling
+items:
+  - id: irh-f-ticket-info
+    level: foundation
+    difficulty: 870
+    type: multi
+    stem:
+      en: "A user calls: \"My computer doesn't work.\" Which information should you record in the ticket?"
+      de: "Ein Nutzer ruft an: „Mein Computer geht nicht.“ Welche Informationen solltest du im Ticket festhalten?"
+    options:
+      - en: "What exactly does not work, and any error message"
+        de: "Was genau nicht funktioniert und eine eventuelle Fehlermeldung"
+        correct: true
+      - en: "Since when the problem exists and what changed before"
+        de: "Seit wann das Problem besteht und was sich vorher geändert hat"
+        correct: true
+      - en: "Who is affected — one person or several"
+        de: "Wer betroffen ist – eine Person oder mehrere"
+        correct: true
+      - en: "The user's private opinion about the IT department"
+        de: "Die private Meinung des Nutzers über die IT-Abteilung"
+        correct: false
+    explanation:
+      en: "A good ticket lets anyone continue the work without calling the user again: symptom and error message, time and recent changes, scope of impact, and contact details."
+      de: "Ein gutes Ticket ermöglicht es allen, ohne erneuten Anruf weiterzuarbeiten: Symptom und Fehlermeldung, Zeitpunkt und letzte Änderungen, Ausmaß der Betroffenheit sowie Kontaktdaten."
+    source: https://en.wikipedia.org/wiki/Issue_tracking_system
+  - id: irh-f-priority
+    level: foundation
+    difficulty: 930
+    type: single
+    stem:
+      en: "Two incidents arrive at the same time: (A) the CEO's mouse is broken, (B) the order system is down for the whole sales team. Using the common approach of prioritising by impact and urgency, which comes first?"
+      de: "Zwei Störungen kommen gleichzeitig: (A) Die Maus der Geschäftsführerin ist defekt, (B) das Bestellsystem ist für den gesamten Vertrieb ausgefallen. Nach dem gängigen Vorgehen, nach Auswirkung und Dringlichkeit zu priorisieren – was kommt zuerst?"
+    options:
+      - en: "B — many users and a business-critical process are affected"
+        de: "B – viele Nutzende und ein geschäftskritischer Prozess sind betroffen"
+        correct: true
+      - en: "A — because of the person's position"
+        de: "A – wegen der Position der Person"
+        correct: false
+      - en: "Whichever ticket was created first, regardless of impact"
+        de: "Das Ticket, das zuerst angelegt wurde, unabhängig von der Auswirkung"
+        correct: false
+      - en: "Both wait until the end of the day"
+        de: "Beide warten bis zum Ende des Tages"
+        correct: false
+    explanation:
+      en: "Priority is usually derived from impact (how many users, how critical the service) and urgency (how quickly harm occurs). A business-critical outage for a whole team outranks a single broken mouse — which can still be handled quickly with a spare."
+      de: "Die Priorität ergibt sich meist aus Auswirkung (wie viele Nutzende, wie kritisch der Service) und Dringlichkeit (wie schnell Schaden entsteht). Ein geschäftskritischer Ausfall für ein ganzes Team geht einer einzelnen defekten Maus vor – die sich trotzdem schnell mit einem Ersatzgerät lösen lässt."
+    source: https://en.wikipedia.org/wiki/Incident_management_(ITSM)
+  - id: irh-f-inform-user
+    level: foundation
+    difficulty: 990
+    type: single
+    stem:
+      en: "You cannot solve a ticket today because a spare part is missing. What should you do?"
+      de: "Du kannst ein Ticket heute nicht lösen, weil ein Ersatzteil fehlt. Was solltest du tun?"
+    options:
+      - en: "Tell the user the reason and the expected date, offer a workaround if possible, and note it in the ticket"
+        de: "Dem Nutzer Grund und voraussichtlichen Termin mitteilen, wenn möglich einen Workaround anbieten und alles im Ticket vermerken"
+        correct: true
+      - en: "Say nothing until the part arrives"
+        de: "Nichts sagen, bis das Teil da ist"
+        correct: false
+      - en: "Close the ticket and ask the user to open a new one later"
+        de: "Das Ticket schließen und den Nutzer bitten, später ein neues zu öffnen"
+        correct: false
+      - en: "Set the ticket to \"solved\" so the SLA is met"
+        de: "Das Ticket auf „gelöst“ setzen, damit das SLA eingehalten wird"
+        correct: false
+    explanation:
+      en: "Users can live with delays if they know why and when. Proactive updates and workarounds reduce frustration and follow-up calls; closing or faking the status hides the real situation."
+      de: "Nutzende können mit Verzögerungen leben, wenn sie wissen, warum und bis wann. Proaktive Updates und Workarounds verringern Frust und Rückfragen; Tickets zu schließen oder den Status zu fälschen verschleiert die tatsächliche Lage."
+    source: https://en.wikipedia.org/wiki/Issue_tracking_system
+  - id: irh-f-closing
+    level: foundation
+    difficulty: 1040
+    type: single
+    stem:
+      en: "When is the right moment to close an incident ticket?"
+      de: "Wann ist der richtige Zeitpunkt, ein Incident-Ticket zu schließen?"
+    options:
+      - en: "When the service works again, the user has confirmed it (or a defined period has passed) and the resolution is documented"
+        de: "Wenn der Service wieder funktioniert, der Nutzer das bestätigt hat (oder eine festgelegte Frist verstrichen ist) und die Lösung dokumentiert ist"
+        correct: true
+      - en: "As soon as you have sent the first reply"
+        de: "Sobald du die erste Antwort geschickt hast"
+        correct: false
+      - en: "When the ticket is older than one week"
+        de: "Wenn das Ticket älter als eine Woche ist"
+        correct: false
+      - en: "When you think the problem might be solved"
+        de: "Wenn du glaubst, dass das Problem vielleicht gelöst ist"
+        correct: false
+    explanation:
+      en: "A clean closure confirms that service is restored and records what fixed it. The documented resolution helps colleagues with similar incidents later."
+      de: "Ein sauberer Abschluss bestätigt, dass der Service wiederhergestellt ist, und hält fest, was geholfen hat. Die dokumentierte Lösung hilft Kolleginnen und Kollegen später bei ähnlichen Störungen."
+    source: https://en.wikipedia.org/wiki/Incident_management_(ITSM)
+  - id: irh-p-escalation
+    level: practitioner
+    difficulty: 1170
+    type: single
+    stem:
+      en: "You have worked on an incident for 30 minutes without progress; it needs database expertise, and the SLA resolution time is at risk. What do you do?"
+      de: "Du arbeitest seit 30 Minuten ohne Fortschritt an einer Störung; sie braucht Datenbankwissen, und die SLA-Lösungszeit ist gefährdet. Was tust du?"
+    options:
+      - en: "Escalate to the database team with a complete ticket (symptoms, steps tried, impact) and inform the user"
+        de: "An das Datenbankteam eskalieren – mit vollständigem Ticket (Symptome, bisherige Schritte, Auswirkung) – und den Nutzer informieren"
+        correct: true
+      - en: "Keep trying alone so nobody notices"
+        de: "Allein weiterprobieren, damit es niemand merkt"
+        correct: false
+      - en: "Forward the ticket without any notes"
+        de: "Das Ticket ohne Notizen weiterleiten"
+        correct: false
+      - en: "Ask the user to contact the database team directly"
+        de: "Den Nutzer bitten, sich direkt an das Datenbankteam zu wenden"
+        correct: false
+    explanation:
+      en: "Timely escalation with complete information is part of good incident handling. It prevents SLA breaches and avoids that the next team starts from zero."
+      de: "Rechtzeitiges Eskalieren mit vollständigen Informationen gehört zu guter Störungsbearbeitung. Es verhindert SLA-Verletzungen und vermeidet, dass das nächste Team bei null anfängt."
+    source: https://en.wikipedia.org/wiki/Incident_management_(ITSM)
+  - id: irh-p-mass-incident
+    level: practitioner
+    difficulty: 1230
+    type: single
+    stem:
+      en: "Within ten minutes, 25 users report that they cannot connect to the VPN. How should the service desk handle the tickets?"
+      de: "Innerhalb von zehn Minuten melden 25 Nutzende, dass sie sich nicht mit dem VPN verbinden können. Wie sollte der Service Desk die Tickets behandeln?"
+    options:
+      - en: "Create one main incident, link the user tickets to it and inform all affected users centrally"
+        de: "Einen Haupt-Incident anlegen, die Tickets der Nutzenden damit verknüpfen und alle Betroffenen zentral informieren"
+        correct: true
+      - en: "Work on all 25 tickets separately in parallel"
+        de: "Alle 25 Tickets getrennt und parallel bearbeiten"
+        correct: false
+      - en: "Delete the duplicate tickets without telling the users"
+        de: "Die doppelten Tickets löschen, ohne die Nutzenden zu informieren"
+        correct: false
+      - en: "Wait until the users stop calling"
+        de: "Warten, bis die Nutzenden aufhören anzurufen"
+        correct: false
+    explanation:
+      en: "Linking related tickets to one main incident focuses the technical work, keeps communication consistent and still lets every user receive the resolution."
+      de: "Zusammengehörige Tickets mit einem Haupt-Incident zu verknüpfen bündelt die technische Arbeit, hält die Kommunikation einheitlich und sorgt trotzdem dafür, dass alle Nutzenden die Lösung erhalten."
+    source: https://en.wikipedia.org/wiki/Issue_tracking_system
+  - id: irh-p-knowledge
+    level: practitioner
+    difficulty: 1280
+    type: single
+    stem:
+      en: "The same printer-driver problem is solved by different colleagues again and again, each time from scratch. What helps most?"
+      de: "Dasselbe Druckertreiber-Problem wird immer wieder von verschiedenen Kolleginnen und Kollegen gelöst, jedes Mal von vorn. Was hilft am meisten?"
+    options:
+      - en: "Write a short knowledge-base article with symptoms and solution and link it in future tickets"
+        de: "Einen kurzen Wissensdatenbank-Artikel mit Symptomen und Lösung schreiben und in künftigen Tickets verlinken"
+        correct: true
+      - en: "Rely on the most experienced colleague remembering it"
+        de: "Darauf vertrauen, dass sich die erfahrenste Kollegin daran erinnert"
+        correct: false
+      - en: "Send an e-mail to the team once"
+        de: "Einmal eine E-Mail ans Team schicken"
+        correct: false
+      - en: "Stop supporting printers"
+        de: "Drucker nicht mehr unterstützen"
+        correct: false
+    explanation:
+      en: "A knowledge base stores reusable solutions so the whole team — and sometimes users via self-service — can solve known issues quickly and consistently."
+      de: "Eine Wissensdatenbank speichert wiederverwendbare Lösungen, damit das ganze Team – und teils die Nutzenden per Self-Service – bekannte Probleme schnell und einheitlich lösen kann."
+    source: https://en.wikipedia.org/wiki/Knowledge_base
+  - id: irh-p-recurring
+    level: practitioner
+    difficulty: 1330
+    type: single
+    stem:
+      en: "The same incident occurs every Monday morning and is always fixed by a restart. What is the professional next step?"
+      de: "Dieselbe Störung tritt jeden Montagmorgen auf und wird immer durch einen Neustart behoben. Was ist der professionelle nächste Schritt?"
+    options:
+      - en: "Open a problem record to analyse the root cause, while continuing to restore service with the workaround"
+        de: "Einen Problem-Datensatz zur Ursachenanalyse anlegen und den Service bis dahin weiter mit dem Workaround wiederherstellen"
+        correct: true
+      - en: "Keep restarting every Monday — it works"
+        de: "Weiter jeden Montag neu starten – es funktioniert ja"
+        correct: false
+      - en: "Schedule a permanent daily restart without telling anyone"
+        de: "Ohne Absprache einen dauerhaften täglichen Neustart einplanen"
+        correct: false
+      - en: "Ask users not to work on Mondays"
+        de: "Die Nutzenden bitten, montags nicht zu arbeiten"
+        correct: false
+    explanation:
+      en: "Recurring incidents point to an underlying problem. Root cause analysis aims to remove the cause, while the workaround limits the impact in the meantime."
+      de: "Wiederkehrende Störungen deuten auf ein zugrunde liegendes Problem hin. Die Ursachenanalyse soll die Ursache beseitigen; der Workaround begrenzt bis dahin die Auswirkungen."
+    source: https://en.wikipedia.org/wiki/Root_cause_analysis
+  - id: irh-a-five-whys
+    level: advanced
+    difficulty: 1480
+    type: single
+    stem:
+      en: "Your team uses the \"five whys\" for root cause analysis. Which statement is correct?"
+      de: "Dein Team nutzt die „5-Why-Methode“ zur Ursachenanalyse. Welche Aussage ist richtig?"
+    options:
+      - en: "It is a simple iterative questioning technique; critics note that it can stop at symptoms, so complex cases may need more structured methods"
+        de: "Sie ist eine einfache iterative Fragetechnik; Kritiker merken an, dass sie bei Symptomen stehen bleiben kann – komplexe Fälle brauchen daher eventuell strukturiertere Methoden"
+        correct: true
+      - en: "Exactly five questions always find the single true cause"
+        de: "Genau fünf Fragen finden immer die eine wahre Ursache"
+        correct: false
+      - en: "It is used to assign blame to a person"
+        de: "Sie dient dazu, einer Person die Schuld zuzuweisen"
+        correct: false
+      - en: "It replaces the need to collect any data"
+        de: "Sie macht das Sammeln von Daten überflüssig"
+        correct: false
+    explanation:
+      en: "The five whys repeat \"why?\" to trace a problem back to a cause. Its depth is arbitrary and it may miss multiple causes, so use it with data and, for complex incidents, with more structured analysis."
+      de: "Die 5-Why-Methode fragt wiederholt „warum?“, um ein Problem auf eine Ursache zurückzuführen. Ihre Tiefe ist willkürlich, und sie kann mehrere Ursachen übersehen – nutze sie deshalb mit Daten und bei komplexen Störungen zusammen mit strukturierteren Analysen."
+    source: https://en.wikipedia.org/wiki/Five_whys
+  - id: irh-a-metrics
+    level: advanced
+    difficulty: 1530
+    type: multi
+    stem:
+      en: "You want a balanced view of your service desk's performance. Which metrics complement each other well?"
+      de: "Du möchtest ein ausgewogenes Bild der Leistung deines Service Desks. Welche Kennzahlen ergänzen sich gut?"
+    options:
+      - en: "Resolution time against the SLA"
+        de: "Lösungszeit im Vergleich zum SLA"
+        correct: true
+      - en: "Reopen rate of closed tickets"
+        de: "Wiedereröffnungsquote geschlossener Tickets"
+        correct: true
+      - en: "User satisfaction after ticket closure"
+        de: "Zufriedenheit der Nutzenden nach Ticketabschluss"
+        correct: true
+      - en: "Number of tickets closed per agent, as the only target"
+        de: "Anzahl geschlossener Tickets pro Person als einziges Ziel"
+        correct: false
+    explanation:
+      en: "Speed alone invites closing tickets too early. Combining speed (resolution time), quality (reopen rate) and user view (satisfaction) gives a balanced picture."
+      de: "Tempo allein verleitet dazu, Tickets zu früh zu schließen. Die Kombination aus Tempo (Lösungszeit), Qualität (Wiedereröffnungsquote) und Sicht der Nutzenden (Zufriedenheit) ergibt ein ausgewogenes Bild."
+    source: https://en.wikipedia.org/wiki/Service-level_agreement
+  - id: irh-a-categories
+    level: advanced
+    difficulty: 1590
+    type: single
+    stem:
+      en: "Ticket categories in your tool have grown to 140 options, and agents pick \"Other\" in 40 % of cases. What is the best fix?"
+      de: "Die Ticketkategorien in deinem Tool sind auf 140 Optionen angewachsen, und in 40 % der Fälle wählen die Bearbeitenden „Sonstiges“. Was ist die beste Lösung?"
+    options:
+      - en: "Redesign a small, clear category set based on what reports and routing actually need, and review it regularly"
+        de: "Ein kleines, klares Kategorienset entwerfen, das sich daran orientiert, was Berichte und Zuweisung wirklich brauchen, und es regelmäßig überprüfen"
+        correct: true
+      - en: "Add 60 more categories so every case fits"
+        de: "60 weitere Kategorien ergänzen, damit jeder Fall passt"
+        correct: false
+      - en: "Remove all categories"
+        de: "Alle Kategorien entfernen"
+        correct: false
+      - en: "Forbid the use of \"Other\" without changing anything else"
+        de: "„Sonstiges“ verbieten, ohne sonst etwas zu ändern"
+        correct: false
+    explanation:
+      en: "Categories exist to route tickets and to find patterns. Too many options lead to random choices and useless data; a small, purposeful set with regular review gives reliable reports."
+      de: "Kategorien dienen der Zuweisung von Tickets und dem Erkennen von Mustern. Zu viele Optionen führen zu beliebigen Angaben und nutzlosen Daten; ein kleines, zweckmäßiges Set mit regelmäßiger Überprüfung liefert verlässliche Auswertungen."
+    source: https://en.wikipedia.org/wiki/Issue_tracking_system
+  - id: irh-a-backlog
+    level: advanced
+    difficulty: 1640
+    type: single
+    stem:
+      en: "The ticket backlog has doubled in two months. What should you analyse first?"
+      de: "Der Ticket-Rückstand hat sich in zwei Monaten verdoppelt. Was solltest du zuerst analysieren?"
+    options:
+      - en: "Incoming versus resolved tickets by category and team, to find whether demand rose or capacity fell, and which recurring issues drive it"
+        de: "Eingehende gegenüber gelösten Tickets nach Kategorie und Team – um zu sehen, ob die Nachfrage gestiegen oder die Kapazität gesunken ist und welche wiederkehrenden Themen treiben"
+        correct: true
+      - en: "Which agent is the slowest, to discipline them"
+        de: "Wer am langsamsten arbeitet, um die Person abzumahnen"
+        correct: false
+      - en: "Nothing — close all tickets older than 30 days"
+        de: "Nichts – alle Tickets schließen, die älter als 30 Tage sind"
+        correct: false
+      - en: "Only the oldest single ticket"
+        de: "Nur das älteste einzelne Ticket"
+        correct: false
+    explanation:
+      en: "A growing backlog is a flow problem. Comparing inflow and outflow by category shows whether to reduce demand (e.g. fix recurring causes, self-service) or add capacity. Mass-closing tickets hides the problem."
+      de: "Ein wachsender Rückstand ist ein Flussproblem. Der Vergleich von Zu- und Abfluss nach Kategorie zeigt, ob die Nachfrage gesenkt (z. B. wiederkehrende Ursachen beheben, Self-Service) oder Kapazität erhöht werden muss. Massenhaftes Schließen von Tickets verdeckt das Problem."
+    source: https://en.wikipedia.org/wiki/Issue_tracking_system

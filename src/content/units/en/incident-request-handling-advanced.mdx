@@ -1,0 +1,79 @@
+---
+id: incident-request-handling-advanced
+competency: incident-request-handling
+level: advanced
+title: "Steering support operations: root-cause methods, balanced metrics, categories and backlog"
+objectives:
+  - Use root-cause techniques such as the five whys and know their limits.
+  - Design balanced support metrics and useful ticket categories.
+  - Analyse a growing backlog as a flow problem and choose the right lever.
+minutes: 30
+resources:
+  - wikipedia-five-whys
+  - wikipedia-root-cause-analysis
+  - wikipedia-de-5-why-methode
+status: ai-draft
+sources:
+  - title: "Five whys"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Five_whys
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Root cause analysis"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Root_cause_analysis
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Issue tracking system"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Issue_tracking_system
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Service-level agreement"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Service-level_agreement
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Leading the system, not just the tickets
+
+At advanced level you are responsible for how incident and request handling works as a system: methods, metrics, tool configuration and capacity. Your decisions shape the behaviour of the whole team.
+
+## Root-cause methods and their limits
+
+The **five whys** technique asks "why?" repeatedly to trace a problem back to its cause. It is simple and useful for team discussions. Its limits are well known: the depth of five is arbitrary, it tends to follow one chain of causes when there are several, and it can stop at symptoms. For complex or severe incidents, combine it with data (logs, timelines, change records) and more structured analysis, and look for contributing factors in processes and tools, not for individuals to blame.
+
+## Balanced metrics
+
+A single speed metric such as "tickets closed per agent" invites closing tickets too early. Combine metrics that balance each other:
+
+- **resolution time** against the SLA (speed);
+- **reopen rate** (quality of the fix);
+- **user satisfaction** after closure (experience);
+- **backlog age** (how long tickets wait).
+
+Review the set regularly and discuss it with the team — metrics are for learning, not for punishment.
+
+## Categories that produce useful data
+
+Categories exist to **route** tickets and to **reveal patterns**. If a tool offers 140 categories and "Other" is chosen in 40 % of cases, the data is useless. Design a small, clear set based on what routing and reporting actually need, explain it, and review it periodically.
+
+## The backlog as a flow problem
+
+When the backlog grows, compare **incoming and resolved tickets** by category and team. Did demand rise — for example after a rollout — or did capacity fall? Which recurring issues drive the volume? The levers differ: reduce demand by removing root causes and offering self-service, or add or shift capacity. Closing old tickets in bulk only hides the problem.
+
+## Worked example
+
+Nora's service desk backlog doubled after a new laptop rollout. Her flow analysis shows that 60 % of new tickets concern docking-station drivers. She asks for a fixed driver package, publishes a self-service article and adds temporary capacity for four weeks. The backlog is back to normal within a month.
+
+## Key takeaways
+
+- Use the five whys with data; look for several causes and avoid blame.
+- Balance speed, quality, satisfaction and backlog age.
+- Few, purposeful categories make reports reliable.
+- Treat backlog growth as a flow problem: inflow, outflow, drivers.

@@ -1,0 +1,72 @@
+---
+id: incident-request-handling-practitioner
+competency: incident-request-handling
+level: practitioner
+title: "Über das einzelne Ticket hinaus: Eskalation, Massenstörungen, Wissen und wiederkehrende Probleme"
+objectives:
+  - Rechtzeitig und mit vollständigen Informationen eskalieren.
+  - Viele zusammengehörige Tickets über einen Haupt-Incident bearbeiten.
+  - Wissensdatenbank-Artikel aufbauen und wiederkehrende Störungen erkennen, die eine Ursachenanalyse brauchen.
+minutes: 25
+resources:
+  - wikipedia-de-incident-management
+  - wikipedia-de-5-why-methode
+  - wikipedia-knowledge-base
+status: ai-draft
+sources:
+  - title: "Incident management (ITSM)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Incident_management_(ITSM)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Issue tracking system"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Issue_tracking_system
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Knowledge base"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Knowledge_base
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Root cause analysis"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Root_cause_analysis
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Vom einzelnen Ticket zum Arbeitsfluss
+
+Auf diesem Niveau bearbeitest du komplexe Tickets, unterstützt Kolleginnen und Kollegen und erkennst Muster. Vier Gewohnheiten machen den Unterschied: gut eskalieren, zusammengehörige Tickets bündeln, Wissen teilen und wiederkehrende Probleme erkennen.
+
+## Rechtzeitig und vollständig eskalieren
+
+Eskalieren ist kein Versagen; zu spätes Eskalieren schon. Eskaliere, wenn ein Ticket Fachwissen oder Berechtigungen braucht, die du nicht hast, oder wenn das **SLA-Ziel gefährdet** ist. Übergib ein vollständiges Bild: Symptome, Auswirkung, bisherige Schritte mit ihren Ergebnissen und deine Vermutung. Das übernehmende Team sollte nie bei null anfangen müssen, und die Nutzenden sollten wissen, wer jetzt an ihrem Anliegen arbeitet.
+
+## Massenstörungen: ein Hauptticket
+
+Melden viele Nutzende innerhalb weniger Minuten dasselbe Problem – VPN ausgefallen, E-Mail langsam –, leg **einen Haupt-Incident** an, verknüpfe die Tickets der Nutzenden damit und **kommuniziere zentral** (Statusseite, Banner, Sammelnachricht). Das technische Team konzentriert sich auf eine Untersuchung; alle Nutzenden erhalten trotzdem die Lösung, wenn der Haupt-Incident geschlossen wird.
+
+## Wissen, das man wiederverwenden kann
+
+Lösen Kolleginnen und Kollegen dasselbe Problem immer wieder von vorn, verschwendet das Team Zeit. Ein kurzer **Wissensdatenbank-Artikel** – Symptome, Ursache (falls bekannt), Lösung Schritt für Schritt, Datum der letzten Prüfung – ermöglicht allen eine schnelle, einheitliche Lösung. Gute Artikel lassen sich Nutzenden auch als **Self-Service** anbieten. Verlinke den Artikel in Tickets, damit er genutzt und verbessert wird.
+
+## Wiederkehrende Störungen deuten auf Probleme hin
+
+Kommt dieselbe Störung jeden Montag wieder und wird durch einen Neustart „behoben“, ist der Neustart ein **Workaround**, keine Lösung. Leg einen **Problem-Datensatz** an und beginne eine **Ursachenanalyse**: Daten sammeln (wann, wo, was hat sich geändert), Hypothesen prüfen und nach der Ursache hinter dem Symptom suchen. Stell den Service mit dem Workaround wieder her, bis die Ursache beseitigt ist.
+
+## Beispiel aus der Praxis
+
+In zwei Wochen fallen Aylin elf Tickets zu einem Scanner auf, der seine Netzwerkverbindung verliert. Jedes wurde mit „Scanner neu gestartet“ geschlossen. Sie schreibt einen Wissensdatenbank-Artikel mit dem Workaround und legt einen Problem-Datensatz an. Die Analyse zeigt, dass die IP-Adresse des Scanners mit einem neuen Gerät kollidiert. Nach Vergabe einer festen Adresse hören die Tickets auf.
+
+## Das Wichtigste in Kürze
+
+- Früh und vollständig eskalieren; die Nutzenden informieren.
+- Viele gleiche Meldungen → ein Haupt-Incident, zentrale Kommunikation.
+- Wiederholte Lösungen in Wissensdatenbank-Artikel überführen.
+- Wiederkehrende Störungen brauchen eine Ursachenanalyse, keine endlosen Workarounds.

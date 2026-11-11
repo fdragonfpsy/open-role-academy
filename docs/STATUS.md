@@ -1,5 +1,15 @@
 # Status
 
+## 2026-11-11 — Phase 2: IT Support content for incident-request-handling
+
+**Done**
+- `it-service-management` content merged ([#13](https://github.com/fdragonfpsy/open-role-academy/pull/13)).
+- `incident-request-handling`: 6 units (3 levels × en/de), 12 items, 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0) plus 3 shared resources from `it-service-management`.
+
+**Counts:** roles 4 (1 published, 3 draft) · competencies 38 · units 48 · items 96 · resources 61
+
+**Next:** `troubleshooting-methods`, then the remaining IT Support competencies in roadmap order.
+
 ## 2026-11-11 — Phase 2: IT Support & Operations content started (it-service-management)
 
 **Done**

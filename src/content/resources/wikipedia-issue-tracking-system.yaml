@@ -1,0 +1,13 @@
+id: wikipedia-issue-tracking-system
+url: "https://en.wikipedia.org/wiki/Issue_tracking_system"
+title: "Issue tracking system"
+provider: Wikipedia
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-11
+mode: link
+competencies: [incident-request-handling]
+levels: [foundation, practitioner]
