@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-11 — Phase 2: core track content complete (business-finance-fundamentals)
+
+**Done**
+- `self-organisation-project-basics` content merged ([#10](https://github.com/fdragonfpsy/open-role-academy/pull/10)).
+- `business-finance-fundamentals`: 6 units (3 levels × en/de), 12 items, 9 new link-only resources (Wikipedia en/de CC BY-SA 4.0; OpenStax *Principles of Accounting, Vol. 1* ch. 2, CC BY-NC-SA → link only). Added to the published `core-track` role (priority 3).
+- **Core track content complete:** all 6 core competencies have units for all 3 levels in en/de, 12 items each and 6–9 verified resources.
+
+**Counts:** roles 4 (1 published, 3 draft) · competencies 38 · units 36 · items 72 · resources 46
+
+**Next:** Phase 2 — IT Support & Operations content (10 role-specific competencies; split into per-competency sub-tasks), then publish the role.
+
 ## 2026-11-11 — Phase 2: core track content for self-organisation-project-basics
 
 **Done**

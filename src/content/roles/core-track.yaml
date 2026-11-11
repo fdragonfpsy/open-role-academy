@@ -5,15 +5,13 @@ title:
   de: Kernkompetenzen für jede Rolle
 summary:
   en: >-
-    The shared core track that every role builds on. Currently available: digital and AI literacy,
-    communication and collaboration, information security basics,
-    working with data, and self-organisation and project basics (business and finance fundamentals
-    follow).
+    The shared core track that every role builds on: digital and AI literacy, communication and
+    collaboration, information security, working with data, self-organisation and project basics,
+    and business and finance fundamentals.
   de: >-
-    Der gemeinsame Kernbereich, auf dem jede Rolle aufbaut. Aktuell verfügbar: digitale Kompetenz und
-    KI-Kompetenz, Kommunikation und Zusammenarbeit, Grundlagen der Informationssicherheit,
-    Arbeiten mit Daten sowie Selbstorganisation und Projektgrundlagen (betriebswirtschaftliche
-    Grundlagen folgen).
+    Der gemeinsame Kernbereich, auf dem jede Rolle aufbaut: digitale Kompetenz und KI-Kompetenz,
+    Kommunikation und Zusammenarbeit, Informationssicherheit, Arbeiten mit Daten,
+    Selbstorganisation und Projektgrundlagen sowie betriebswirtschaftliche Grundlagen.
 competencies:
   - id: communication-collaboration
     priority: 1
@@ -35,6 +33,12 @@ competencies:
       advanced: advanced
   - id: self-organisation-project-basics
     priority: 2
+    targets:
+      foundation: foundation
+      practitioner: practitioner
+      advanced: advanced
+  - id: business-finance-fundamentals
+    priority: 3
     targets:
       foundation: foundation
       practitioner: practitioner
