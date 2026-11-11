@@ -1,0 +1,22 @@
+id: networking-fundamentals
+title:
+  en: Networking fundamentals
+  de: Netzwerkgrundlagen
+description:
+  en: >-
+    Understand how devices communicate: IP addressing and subnets, DHCP and DNS, routing and
+    switching basics, Wi-Fi and VPN, common ports and protocols, and how to use basic network
+    diagnostic tools.
+  de: >-
+    Verstehen, wie Geräte miteinander kommunizieren: IP-Adressen und Subnetze, DHCP und DNS,
+    Grundlagen von Routing und Switching, WLAN und VPN, gängige Ports und Protokolle sowie der
+    Einsatz einfacher Netzwerk-Diagnosewerkzeuge.
+prerequisites: []
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/6e4f75b4-c60f-4623-a9ba-760c8245753b
+    label: ICT communications protocols
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/d0c6d77e-cb25-4770-bf77-2073fc5f7523
+    label: ICT infrastructure

@@ -184,6 +184,24 @@ describe('content validator', () => {
     expect(messages(b)).toMatch(/role needs 8–12 role-specific competencies \(has 0\)/);
   });
 
+  it('skips coverage for draft roles but still checks references and counts', () => {
+    const b = validBundle();
+    d(b.roles[0]!.data).status = 'draft';
+    b.units = [];
+    d(b.roles[0]!.data).competencies.push({ id: 'ghost', priority: 1, targets: { foundation: 'foundation', practitioner: 'foundation', advanced: 'foundation' } });
+    const m = messages(b);
+    expect(m).not.toMatch(/no en unit/);
+    expect(m).toMatch(/unknown competency "ghost"/);
+  });
+
+  it('rejects decreasing or empty targets', () => {
+    const b = validBundle();
+    d(b.roles[0]!.data).competencies[0].targets = { foundation: 'advanced', practitioner: 'foundation', advanced: 'foundation' };
+    expect(messages(b)).toMatch(/must not decrease/);
+    d(b.roles[0]!.data).competencies[0].targets = { foundation: null, practitioner: null, advanced: null };
+    expect(messages(b)).toMatch(/no target at any role level/);
+  });
+
   it('enforces unit length', () => {
     const b = validBundle();
     b.units[0]!.body = words(100);

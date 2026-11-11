@@ -1,0 +1,19 @@
+id: backup-recovery
+title:
+  en: Backup and recovery
+  de: Datensicherung und Wiederherstellung
+description:
+  en: >-
+    Protect data and systems against loss: backup types and schedules, separated and offline copies,
+    retention, restore tests, recovery objectives and the role of backups in responding to
+    ransomware and hardware failure.
+  de: >-
+    Daten und Systeme vor Verlust schützen: Arten und Zeitpläne von Sicherungen, getrennte und
+    Offline-Kopien, Aufbewahrung, Wiederherstellungstests, Wiederherstellungsziele und die Rolle von
+    Sicherungen bei Ransomware und Hardwareausfällen.
+prerequisites: [information-security-basics]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/cf3e976d-2c3e-495c-a874-f9e8a66d3b48
+    label: perform backups

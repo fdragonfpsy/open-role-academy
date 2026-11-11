@@ -1,0 +1,23 @@
+id: troubleshooting-methods
+title:
+  en: Structured troubleshooting
+  de: Strukturierte Fehlersuche
+description:
+  en: >-
+    Diagnose technical problems systematically: gather information, reproduce the issue, form and
+    test hypotheses, isolate causes layer by layer, use logs and diagnostic tools, apply and verify
+    a fix, and document the root cause.
+  de: >-
+    Technische Probleme systematisch diagnostizieren: Informationen sammeln, das Problem
+    nachstellen, Hypothesen bilden und prüfen, Ursachen Schicht für Schicht eingrenzen, Protokolle
+    und Diagnosewerkzeuge nutzen, eine Lösung umsetzen und überprüfen sowie die Ursache
+    dokumentieren.
+prerequisites: []
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/744442ac-c157-4350-8be0-ce454df4f5c5
+    label: perform ICT troubleshooting
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/9e06bac6-6b91-48ca-8b7d-c1f48cdecd7c
+    label: solve ICT system problems

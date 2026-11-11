@@ -1,0 +1,22 @@
+id: user-support-communication
+title:
+  en: User-oriented support communication
+  de: Nutzerorientierte Support-Kommunikation
+description:
+  en: >-
+    Support users respectfully and effectively: ask good questions, explain technical matters in
+    plain language, guide users remotely, manage expectations, handle frustrated users calmly and
+    write clear ticket updates and short how-to guides.
+  de: >-
+    Nutzende respektvoll und wirksam unterstützen: gute Fragen stellen, Technisches verständlich
+    erklären, Nutzende aus der Ferne anleiten, Erwartungen steuern, mit verärgerten Nutzenden ruhig
+    umgehen sowie klare Ticket-Updates und kurze Anleitungen schreiben.
+prerequisites: [communication-collaboration]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/db36f7f1-5900-45bd-9ffb-f2b19c4362ac
+    label: support ICT system users
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/652da95d-b336-497a-bce5-1c29a674eecb
+    label: communicate technicalities with clients

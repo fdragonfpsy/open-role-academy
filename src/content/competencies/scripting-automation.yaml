@@ -1,0 +1,19 @@
+id: scripting-automation
+title:
+  en: Scripting and automation basics
+  de: Grundlagen von Skripting und Automatisierung
+description:
+  en: >-
+    Automate repetitive administration tasks with simple scripts (for example PowerShell or Bash):
+    variables, loops, conditions, reading and writing files, running scripts safely, testing them
+    and storing them under version control.
+  de: >-
+    Wiederkehrende Administrationsaufgaben mit einfachen Skripten automatisieren (zum Beispiel
+    PowerShell oder Bash): Variablen, Schleifen, Bedingungen, Dateien lesen und schreiben, Skripte
+    sicher ausführen, testen und unter Versionsverwaltung ablegen.
+prerequisites: [troubleshooting-methods]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/5ef0c719-5bcb-49f8-b8eb-824388225333
+    label: use scripting programming
