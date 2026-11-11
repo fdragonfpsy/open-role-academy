@@ -62,3 +62,15 @@ Format: date — decision — reason — alternatives considered.
 
 ## 2026-11-11 — Missing framework references are a warning
 - **Decision:** The validator warns (does not fail) when a competency has no `frameworkRefs`, because CLAUDE.md §4.4 says "where possible".
+
+## 2026-11-11 — Draft roles (`status: draft|published`)
+- **Decision:** Roles have `status: draft|published` (default `published`). Draft roles are hidden in the UI and the validator skips the content-coverage rules for them; schema, references, the 8–12 rule and target checks still apply.
+- **Reason:** Phase 1 defines role frameworks before Phase 2 writes their content. Without a draft state the coverage rule would fail CI for every framework-only role.
+- **Alternatives:** Keep frameworks outside `src/content` (no validation); relax coverage globally (weakens a check).
+
+## 2026-11-11 — Target sanity checks
+- **Decision:** The validator rejects role competencies with no target at any role level, and targets that decrease from the foundation to the advanced role level.
+
+## 2026-11-11 — IT Support & Operations framework
+- **Decision:** 10 role-specific competencies: incident-request-handling, troubleshooting-methods, user-support-communication, endpoint-management (priority 1); it-service-management, identity-access-management, networking-fundamentals, backup-recovery (priority 2); change-asset-management, scripting-automation (priority 3, not required at foundation role level). All six core competencies are included; information security is raised (practitioner at foundation role level), business & finance is not required at foundation role level.
+- **Reason:** Covers the typical service-desk-to-operations scope; ITIL is referenced only as a common practice framework (no proprietary text). ESCO skill URIs looked up via the ESCO API on 2026-11-11.

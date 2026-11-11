@@ -1,0 +1,65 @@
+id: it-support-operations
+kind: role
+status: draft
+title:
+  en: IT Support & Operations
+  de: IT-Support & -Betrieb
+summary:
+  en: >-
+    Keep people productive and IT running: handle incidents and requests, troubleshoot devices,
+    accounts and networks, and operate IT services securely and reliably.
+  de: >-
+    Sorgt dafür, dass Menschen produktiv arbeiten und die IT läuft: Störungen und Anfragen
+    bearbeiten, Geräte, Konten und Netzwerke analysieren und IT-Services sicher und zuverlässig
+    betreiben.
+competencies:
+  # role-specific
+  - id: incident-request-handling
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: troubleshooting-methods
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: user-support-communication
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: endpoint-management
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: it-service-management
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: identity-access-management
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: networking-fundamentals
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: backup-recovery
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: change-asset-management
+    priority: 3
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  - id: scripting-automation
+    priority: 3
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  # core track
+  - id: information-security-basics
+    priority: 1
+    targets: { foundation: practitioner, practitioner: advanced, advanced: advanced }
+  - id: digital-ai-literacy
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: communication-collaboration
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: working-with-data
+    priority: 3
+    targets: { foundation: foundation, practitioner: foundation, advanced: practitioner }
+  - id: self-organisation-project-basics
+    priority: 3
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: business-finance-fundamentals
+    priority: 3
+    targets: { foundation: null, practitioner: foundation, advanced: foundation }

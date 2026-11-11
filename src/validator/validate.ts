@@ -192,8 +192,15 @@ export function validateContent(bundle: ContentBundle, opts: ValidateOptions): I
     }
   }
 
-  // Roles: competency count, refs, coverage
+  // Roles: competency count, refs, targets, coverage
   for (const { file, data } of roles) {
+    for (const rc of data.competencies) {
+      const t = rc.targets;
+      if (LEVELS.every((l) => t[l] === null)) err(file, `competency "${rc.id}" has no target at any role level`);
+      // Targets must not decrease from foundation to advanced role level.
+      if (levelRank(t.foundation) > levelRank(t.practitioner) || levelRank(t.practitioner) > levelRank(t.advanced))
+        err(file, `competency "${rc.id}": targets must not decrease with the role level`);
+    }
     const seen = new Set<string>();
     for (const rc of data.competencies) {
       if (seen.has(rc.id)) err(file, `competency "${rc.id}" listed twice`);
@@ -205,6 +212,10 @@ export function validateContent(bundle: ContentBundle, opts: ValidateOptions): I
       err(file, `role needs ${ROLE_COMPETENCIES_MIN}–${ROLE_COMPETENCIES_MAX} role-specific competencies (has ${roleSpecific})`);
     if (data.kind === 'core' && roleSpecific > 0) err(file, 'core track may only contain core competencies');
 
+    if (data.status === 'draft') {
+      warn(file, 'role is a draft: content coverage is not checked and the role is hidden in the UI');
+      continue;
+    }
     for (const rc of data.competencies) {
       if (!compById.has(rc.id)) continue;
       const maxRank = Math.max(...LEVELS.map((l) => levelRank(rc.targets[l])));

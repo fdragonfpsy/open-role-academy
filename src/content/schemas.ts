@@ -24,6 +24,8 @@ export const roleSchema = z.object({
   id: slug,
   /** `core` = the shared core track offered on its own; `role` = a role family. */
   kind: z.enum(['role', 'core']).default('role'),
+  /** draft = framework defined but content not complete: hidden in the UI, coverage not enforced. */
+  status: z.enum(['draft', 'published']).default('published'),
   title: localized,
   summary: localized,
   competencies: z

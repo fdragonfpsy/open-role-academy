@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-11 — Phase 1: IT Support & Operations framework
+
+**Done**
+- Core track competencies merged ([#2](https://github.com/fdragonfpsy/open-role-academy/pull/2)) — first PR merged by the automerge workflow.
+- Role `it-support-operations` (status `draft`): 10 role-specific competencies + 6 core competencies with targets and priorities; all with en/de texts, prerequisites and ESCO references.
+- Roles can be `draft` (hidden in UI, coverage not enforced) or `published`. Validator checks targets (none empty, non-decreasing).
+
+**Counts:** roles 2 (1 published, 1 draft) · competencies 16 · units 6 · items 12 · resources 7
+
+**Next:** Role Finance & Accounting framework, then Human Resources, then `docs/FRAMEWORK.md` generator.
+
 ## 2026-11-11 — Phase 1: core track competencies defined
 
 **Done**

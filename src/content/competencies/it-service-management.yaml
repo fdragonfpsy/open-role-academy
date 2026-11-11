@@ -1,0 +1,23 @@
+id: it-service-management
+title:
+  en: IT service management basics
+  de: Grundlagen des IT-Service-Managements
+description:
+  en: >-
+    Understand how IT services are delivered and supported as services: service desk, service
+    catalogue, service levels (SLAs), the difference between incidents, service requests, problems
+    and changes, and continual improvement as described in common practice frameworks such as ITIL.
+  de: >-
+    Verstehen, wie IT-Leistungen als Services erbracht und unterstützt werden: Service Desk,
+    Servicekatalog, Service Levels (SLAs), der Unterschied zwischen Incidents, Service Requests,
+    Problems und Changes sowie kontinuierliche Verbesserung, wie in gängigen Praxis-Rahmenwerken wie
+    ITIL beschrieben.
+prerequisites: []
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/d12e9d68-84c5-444e-aa98-d36533bf03f6
+    label: apply operations for an ITIL-based environment
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/778ca7ad-6c5d-4868-9b96-a7777dca799c
+    label: ICT help platforms

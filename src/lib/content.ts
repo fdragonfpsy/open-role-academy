@@ -4,7 +4,7 @@ import { seededShuffle } from './shuffle';
 import type { CompetencyView, QuizItem, RoleView, UnitView } from './types';
 
 export async function getRoles(lang: Lang): Promise<RoleView[]> {
-  const roles = await getCollection('roles');
+  const roles = await getCollection('roles', (r) => r.data.status === 'published');
   return roles
     .map(({ data }) => ({
       id: data.id,

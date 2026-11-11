@@ -1,0 +1,23 @@
+id: identity-access-management
+title:
+  en: Identity and access management
+  de: Identitäts- und Zugriffsmanagement
+description:
+  en: >-
+    Manage user accounts and permissions across their lifecycle (joiner, mover, leaver): roles and
+    groups, least privilege, password resets with identity verification, multi-factor
+    authentication, single sign-on basics and regular access reviews.
+  de: >-
+    Benutzerkonten und Berechtigungen über ihren Lebenszyklus verwalten (Eintritt, Wechsel,
+    Austritt): Rollen und Gruppen, Minimalprinzip, Passwort-Zurücksetzung mit Identitätsprüfung,
+    Mehr-Faktor-Authentisierung, Grundlagen von Single Sign-on und regelmäßige
+    Berechtigungsprüfungen.
+prerequisites: [information-security-basics]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/ab49f767-296b-47d5-af56-0b4a69515b03
+    label: maintain ICT identity management
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/5da73370-f6b9-417d-a94c-09bf01f84aa2
+    label: use access control software

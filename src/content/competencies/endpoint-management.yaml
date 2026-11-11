@@ -1,0 +1,25 @@
+id: endpoint-management
+title:
+  en: Endpoint and workplace device management
+  de: Verwaltung von Endgeräten und Arbeitsplätzen
+description:
+  en: >-
+    Set up, maintain and retire laptops, desktops, mobile devices and peripherals: operating system
+    basics, software installation and updates, patching, device configuration and security
+    baselines, and centralised device management.
+  de: >-
+    Laptops, Desktop-PCs, Mobilgeräte und Peripherie einrichten, pflegen und außer Betrieb nehmen:
+    Grundlagen von Betriebssystemen, Softwareinstallation und Updates, Patches, Gerätekonfiguration
+    und Sicherheitsvorgaben sowie zentrale Geräteverwaltung.
+prerequisites: [digital-ai-literacy]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/35f1be97-06c4-4367-a067-7e0e94f2fa70
+    label: use digital device operating systems
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/c8de8023-ab8a-402b-a828-b2b57cd3b2f7
+    label: install software
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/c77db25e-bb51-4a10-b2ad-99b48b1b4a37
+    label: maintain computer hardware

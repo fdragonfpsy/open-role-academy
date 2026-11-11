@@ -1,0 +1,22 @@
+id: incident-request-handling
+title:
+  en: Incident and request handling
+  de: Bearbeitung von Störungen und Anfragen
+description:
+  en: >-
+    Log, categorise and prioritise tickets by impact and urgency, keep users informed, escalate
+    correctly, meet service levels, close tickets with a clear resolution and recognise recurring
+    incidents that need problem management.
+  de: >-
+    Tickets erfassen, kategorisieren und nach Auswirkung und Dringlichkeit priorisieren, Nutzende
+    auf dem Laufenden halten, richtig eskalieren, Service Levels einhalten, Tickets mit klarer
+    Lösung schließen und wiederkehrende Störungen erkennen, die ein Problem-Management brauchen.
+prerequisites: [it-service-management]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/4fb7c7aa-9f19-4cc3-9e19-64ce564f22f5
+    label: handle incidents
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/a3ce2bf7-5562-4639-9b52-fdb4850a3904
+    label: ICT problem management techniques

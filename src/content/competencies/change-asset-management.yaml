@@ -1,0 +1,22 @@
+id: change-asset-management
+title:
+  en: Change and IT asset management
+  de: Change- und IT-Asset-Management
+description:
+  en: >-
+    Plan and document changes to IT systems so they are safe and traceable (request, assessment,
+    approval, implementation, review), and keep an accurate inventory of hardware, software and
+    licences over their lifecycle.
+  de: >-
+    Änderungen an IT-Systemen so planen und dokumentieren, dass sie sicher und nachvollziehbar sind
+    (Antrag, Bewertung, Freigabe, Umsetzung, Nachbetrachtung), und ein genaues Inventar von
+    Hardware, Software und Lizenzen über ihren Lebenszyklus führen.
+prerequisites: [it-service-management]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/0a099c81-6a0c-4f00-bb3b-990d23ec03a5
+    label: manage ICT change request process
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/ab6265f2-a9bf-49e8-a9a5-67cbab4de38b
+    label: manage inventory
