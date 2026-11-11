@@ -1,0 +1,24 @@
+id: financial-statements-reporting
+title:
+  en: Financial statements and reporting
+  de: Jahresabschluss und Berichterstattung
+description:
+  en: >-
+    Understand and help prepare the balance sheet, income statement and notes; know the main
+    differences between national GAAP (Germany: HGB) and IFRS; and prepare clear management reports.
+  de: >-
+    Bilanz, Gewinn- und Verlustrechnung und Anhang verstehen und an ihrer Erstellung mitwirken; die
+    wichtigsten Unterschiede zwischen nationalen Rechnungslegungsvorschriften (Deutschland: HGB) und
+    IFRS kennen sowie verständliche Managementberichte erstellen.
+prerequisites: [reconciliation-closing]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/60f51172-37c0-4933-a27a-cbf55dcd7580
+    label: prepare financial statements
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/d0c425c6-e3de-465e-923d-d4d30ec4be9b
+    label: national generally accepted accounting principles
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/4a855abe-ac5b-4e95-ac10-3c1adceeee28
+    label: international financial reporting standards

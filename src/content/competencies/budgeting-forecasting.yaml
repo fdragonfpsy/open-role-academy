@@ -1,0 +1,20 @@
+id: budgeting-forecasting
+title:
+  en: Budgeting and forecasting
+  de: Budgetierung und Forecasting
+description:
+  en: >-
+    Build and maintain budgets with business stakeholders, create rolling forecasts, analyse plan-
+    versus-actual variances and explain their drivers.
+  de: >-
+    Budgets gemeinsam mit Fachbereichen erstellen und pflegen, rollierende Forecasts aufbauen, Plan-
+    Ist-Abweichungen analysieren und ihre Ursachen erklären.
+prerequisites: [business-finance-fundamentals, working-with-data]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/4b2db903-cd8e-48ce-97fb-a92db4def54e
+    label: financial forecasting
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/51b53bb3-7a67-4ce8-b959-c7f6c4af3456
+    label: manage operational budgets

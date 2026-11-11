@@ -1,0 +1,21 @@
+id: accounts-receivable
+title:
+  en: Accounts receivable and credit management
+  de: Debitorenbuchhaltung und Forderungsmanagement
+description:
+  en: >-
+    Issue correct invoices, post and match incoming payments, monitor open items and payment terms,
+    run a respectful dunning process and assess customer credit risk.
+  de: >-
+    Korrekte Rechnungen stellen, Zahlungseingänge buchen und zuordnen, offene Posten und
+    Zahlungsziele überwachen, ein respektvolles Mahnwesen führen und das Kreditrisiko von Kundinnen
+    und Kunden einschätzen.
+prerequisites: [bookkeeping-fundamentals]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/e3e42d54-78bd-4337-aa87-bb31a7670c9a
+    label: issue sales invoices
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/68b51538-b056-4cb3-bb15-ab8c3e576cc9
+    label: follow up accounts receivables

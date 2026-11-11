@@ -1,0 +1,21 @@
+id: bookkeeping-fundamentals
+title:
+  en: Bookkeeping fundamentals
+  de: Grundlagen der Buchführung
+description:
+  en: >-
+    Record business transactions correctly with double-entry bookkeeping: accounts and the chart of
+    accounts, debit and credit, journal entries, supporting documents and the principles of orderly
+    bookkeeping (Germany: GoB).
+  de: >-
+    Geschäftsvorfälle mit doppelter Buchführung korrekt erfassen: Konten und Kontenrahmen, Soll und
+    Haben, Buchungssätze, Belege und die Grundsätze ordnungsmäßiger Buchführung (Deutschland: GoB).
+prerequisites: [business-finance-fundamentals]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/99b163e8-7815-43e2-83f3-a47f3076354c
+    label: accounting entries
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/ecc18804-a466-40d9-98b4-fba5cd67dd4b
+    label: accounting

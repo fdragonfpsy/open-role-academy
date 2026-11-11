@@ -1,5 +1,15 @@
 # Status
 
+## 2026-11-11 — Phase 1: Finance & Accounting framework
+
+**Done**
+- IT Support & Operations framework merged ([#3](https://github.com/fdragonfpsy/open-role-academy/pull/3)).
+- Role `finance-accounting` (status `draft`): 11 role-specific competencies + 6 core competencies with targets and priorities; en/de texts, prerequisites, ESCO references.
+
+**Counts:** roles 3 (1 published, 2 draft) · competencies 27 · units 6 · items 12 · resources 7
+
+**Next:** Human Resources framework, then `docs/FRAMEWORK.md` generator.
+
 ## 2026-11-11 — Phase 1: IT Support & Operations framework
 
 **Done**
