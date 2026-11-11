@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-11 — Engine: placement question budget
+
+**Done**
+- Core track content complete, merged ([#11](https://github.com/fdragonfpsy/open-role-academy/pull/11)).
+- Placement check limited to 15 questions in total (`planPlacement`): competencies are placed in priority order, 3–5 items each; the rest keep the prior. With the full core track the placement now asks 15 instead of 24 questions (checked in the browser).
+- Dashboard label "Not yet placed" → "Not yet mastered" (en/de), which is accurate for placed-but-not-mastered competencies.
+
+**Counts:** roles 4 (1 published, 3 draft) · competencies 38 · units 36 · items 72 · resources 46 · tests 58
+
+**Next:** Phase 2 — IT Support & Operations content (split into per-competency sub-tasks), then publish the role.
+
 ## 2026-11-11 — Phase 2: core track content complete (business-finance-fundamentals)
 
 **Done**

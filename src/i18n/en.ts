@@ -37,7 +37,7 @@ export const en = {
   'level.foundation.hint': 'New to the role, 0–2 years',
   'level.practitioner.hint': 'Works independently, 2–5 years',
   'level.advanced.hint': 'Leads topics, 5+ years',
-  'level.none': 'Not yet placed',
+  'level.none': 'Not yet mastered',
   'quiz.question': 'Question',
   'quiz.of': 'of',
   'quiz.check': 'Check answer',

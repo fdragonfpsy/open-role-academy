@@ -98,3 +98,8 @@ Format: date — decision — reason — alternatives considered.
 ## 2026-11-11 — Strict item schemas; options in YAML block style
 - **Decision:** `itemSchema` and `optionSchema` are strict (unknown keys are errors). All answer options were converted from one-line flow mappings to block style with quoted strings.
 - **Reason:** An unquoted comma inside a YAML flow mapping (`{ en: text, more text, de: … }`) silently truncated option texts, because Zod dropped the resulting extra keys. 22 options in the merged core-track items were affected and showed shortened text on the site. Strict schemas make this class of error fail validation.
+
+## 2026-11-11 — Placement question budget
+- **Decision:** The placement check is limited to 15 questions in total. Competencies are placed in priority order; with more than 5 targeted competencies, the lowest-priority ones are not placed and keep their prior (self-rating) until their mastery checks.
+- **Reason:** CLAUDE.md §7.1 requires 3–5 items per competency **and** ≤ 15 minutes in total. With the full core track (6 competencies) or a role (up to 18 competencies) both cannot hold at once; the time limit protects learners, and priorities decide what is measured first.
+- **Alternatives:** 1–2 items per competency (too unreliable for an Elo estimate); a multi-session placement (more complex UI) — possible later.

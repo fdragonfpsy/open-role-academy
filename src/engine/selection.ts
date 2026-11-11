@@ -5,6 +5,37 @@ export const PLACEMENT_MIN_ITEMS = 3;
 export const PLACEMENT_MAX_ITEMS = 5;
 export const PLACEMENT_DEFAULT_ITEMS = 4;
 export const MASTERY_CHECK_ITEMS = 4;
+/** Total placement questions (≈ 1 minute each) so that placement stays ≤ 15 minutes (CLAUDE.md §7.1). */
+export const PLACEMENT_QUESTION_BUDGET = 15;
+
+export interface PlacementPlanEntry {
+  competency: string;
+  /** Number of placement items for this competency (3–5, or fewer if fewer items exist). */
+  items: number;
+}
+
+/**
+ * Plan the placement check within the question budget.
+ * Competencies with at least one item are ordered by priority (1 first), then id.
+ * At most floor(budget / 3) competencies are placed; each gets floor(budget / n) items, clamped to 3–5
+ * and to the number of available items. Competencies left out keep their prior rating.
+ */
+export function planPlacement(
+  competencies: { id: string; priority: number }[],
+  itemCounts: Record<string, number>,
+  budget: number = PLACEMENT_QUESTION_BUDGET,
+): PlacementPlanEntry[] {
+  const candidates = competencies
+    .filter((c) => (itemCounts[c.id] ?? 0) > 0)
+    .sort((a, b) => a.priority - b.priority || a.id.localeCompare(b.id));
+  const selected = candidates.slice(0, Math.max(0, Math.floor(budget / PLACEMENT_MIN_ITEMS)));
+  if (selected.length === 0) return [];
+  const perCompetency = Math.min(
+    PLACEMENT_MAX_ITEMS,
+    Math.max(PLACEMENT_MIN_ITEMS, Math.floor(budget / selected.length)),
+  );
+  return selected.map((c) => ({ competency: c.id, items: Math.min(perCompetency, itemCounts[c.id] ?? 0) }));
+}
 
 function byClosest(rating: number) {
   return (a: EngineItem, b: EngineItem) =>
