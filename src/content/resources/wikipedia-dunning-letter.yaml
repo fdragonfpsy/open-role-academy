@@ -1,0 +1,13 @@
+id: wikipedia-dunning-letter
+url: https://en.wikipedia.org/wiki/Dunning_letter
+title: "Dunning letter"
+provider: Wikipedia
+language: en
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-12
+mode: link
+competencies: [accounts-receivable]
+levels: [practitioner]

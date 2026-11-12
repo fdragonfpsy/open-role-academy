@@ -1,0 +1,91 @@
+---
+id: accounts-receivable-foundation
+competency: accounts-receivable
+level: foundation
+title: "Debitorenbuchhaltung Grundlagen: Order-to-Cash, korrekte Rechnung, Zahlungsbedingungen, offene Posten und Zahlungseingänge buchen"
+objectives:
+  - "Den Order-to-Cash-Ablauf beschreiben und sagen, wo die Debitorenbuchhaltung ansetzt."
+  - "Prüfen, ob eine Rechnung vor dem Versand korrekt ist."
+  - "Zahlungsbedingungen und Fälligkeit erklären."
+  - "Eine Offene-Posten-Liste lesen."
+  - "Eine Kundenrechnung und ihren Zahlungseingang als einfache Buchungssätze erfassen."
+minutes: 25
+resources:
+  - wikipedia-accounts-receivable
+  - wikipedia-invoice
+  - wikipedia-de-debitorenbuchhaltung
+  - wikipedia-de-rechnung
+status: ai-draft
+sources:
+  - title: "Accounts receivable"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Accounts_receivable
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Invoice"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Invoice
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Debitorenbuchhaltung"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Debitorenbuchhaltung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Rechnung"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Rechnung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Forderungen aus Lieferungen und Leistungen (Debitoren) sind Geld, das Kundinnen und Kunden deinem Unternehmen für bereits gelieferte Waren oder erbrachte Leistungen schulden; sie stehen als Vermögenswert in der Bilanz. Verkaufen ist nur die halbe Arbeit: Solange das Geld nicht eingegangen ist, hilft der Verkauf der Liquidität nicht. Die Debitorenbuchhaltung sorgt dafür, dass Rechnungen korrekt sind, Zahlungen zeitnah gebucht werden und nichts unbemerkt offen bleibt.
+
+## Der Ablauf von der Bestellung bis zum Geldeingang
+
+Ein typischer Verkauf läuft so: Die Kundschaft bestellt, Ware oder Leistung wird geliefert, eine Rechnung wird gestellt, der Kunde zahlt, die Zahlung wird gebucht und der Rechnung zugeordnet. Das nennt man oft **Order-to-Cash**. In einem ERP- oder Buchhaltungssystem hat jeder Kunde einen **Debitorenstammsatz** mit Name, Anschrift, Rechnungsdaten und Zahlungsbedingungen. Falsche Stammdaten führen zu falschen Rechnungen, halte sie also aktuell.
+
+## Eine korrekte Rechnung stellen
+
+Eine Rechnung ist ein Handelsdokument des Verkäufers an den Käufer. Sie führt Waren oder Leistungen auf, üblicherweise mit Mengen, Preisen und Verkaufsbedingungen. Eine korrekte Rechnung ist die beste Grundlage für pünktliche Zahlung: Findet die Kundschaft einen Fehler, verzögert sich die Zahlung in der Regel, bis er behoben ist. Prüfe vor dem Versand, ob Kunde, Anschrift, Beschreibung, Beträge und Zahlungsbedingungen zu Auftrag oder Vertrag passen. Viele Länder verlangen bestimmte Angaben auf Rechnungen, zum Beispiel zur Umsatzsteuer; diese unterscheiden sich je Land. Prüfe die Regeln deines Landes und die Vorgaben deines Unternehmens.
+
+## Zahlungsbedingungen und offene Posten
+
+**Zahlungsbedingungen** legen fest, wann und wie die Kundschaft zahlen soll, zum Beispiel eine bestimmte Anzahl Tage nach Rechnungsdatum. Das daraus folgende **Fälligkeitsdatum** steuert alle weiteren Schritte. Ein **offener Posten** ist eine Rechnung, die noch nicht vollständig bezahlt ist. Die **Offene-Posten-Liste** zeigt alle offenen Posten je Kunde mit Rechnungsnummer, Betrag und Fälligkeit. Sie regelmäßig zu prüfen, ist die Kernroutine der Debitorenbuchhaltung.
+
+## Zahlungseingänge buchen
+
+Geht Geld ein, buchst du es auf das Bankkonto und gleichst die passende Forderung aus, sodass der Posten aus der Offene-Posten-Liste verschwindet. Nutze Rechnungsnummer oder Verwendungszweck, um den richtigen Posten zu finden. Kannst du eine Zahlung nicht zuordnen, rate nicht, sondern lege sie zur Klärung zurück.
+
+## Beispiel
+
+Nur zur Veranschaulichung; die Beträge sind erfunden. Ein Unternehmen stellt einer Kundin eine Leistung in Rechnung: netto 1.000, Umsatzsteuer 190 (ein für das Beispiel gewählter Satz; nutze im echten Fall den richtigen), brutto 1.190. Buchung der Rechnung:
+
+| Konto | Soll | Haben |
+|---|---|---|
+| Forderungen aus Lieferungen und Leistungen (Kunde) | 1.190 | |
+| Umsatzerlöse | | 1.000 |
+| Umsatzsteuer (Verbindlichkeit ggü. Finanzamt) | | 190 |
+
+Wenn die Kundin auf das Bankkonto zahlt:
+
+| Konto | Soll | Haben |
+|---|---|---|
+| Bank | 1.190 | |
+| Forderungen aus Lieferungen und Leistungen (Kunde) | | 1.190 |
+
+Die Forderung ist ausgeglichen, der offene Posten geschlossen. Die Behandlung der Umsatzsteuer hängt vom Land und vom steuerlichen Status des Unternehmens ab.
+
+## Das Wichtigste in Kürze
+
+- Forderungen sind Geld, das Kundschaft dir schuldet; sie sind ein Vermögenswert in der Bilanz.
+- Der Ablauf: Bestellung, Lieferung, Rechnung, Zahlung, Buchung und Zuordnung.
+- Eine korrekte Rechnung mit klaren Zahlungsbedingungen ist die beste Basis für pünktliche Zahlung.
+- Die Offene-Posten-Liste zeigt, was unbezahlt ist und wann es fällig ist; prüfe sie regelmäßig.
+- Buche Zahlungen auf die richtige Rechnung; unklare Zahlungen werden geklärt, nicht geraten.
