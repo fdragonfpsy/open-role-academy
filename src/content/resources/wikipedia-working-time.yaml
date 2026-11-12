@@ -1,0 +1,13 @@
+id: wikipedia-working-time
+url: https://en.wikipedia.org/wiki/Working_time
+title: "Working time"
+provider: Wikipedia
+language: en
+format: article
+minutes: 20
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-12
+mode: link
+competencies: [employment-law-basics]
+levels: [practitioner]

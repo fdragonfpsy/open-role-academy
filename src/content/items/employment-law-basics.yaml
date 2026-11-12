@@ -1,0 +1,290 @@
+competency: employment-law-basics
+items:
+  - id: elb-f-sources
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "Which statement about the sources of employment law in Germany is correct?"
+      de: "Welche Aussage über die Quellen des Arbeitsrechts in Deutschland ist richtig?"
+    options:
+      - en: "The rules are spread over several sources, such as EU law, statutes, collective agreements, works agreements and contracts"
+        de: "Die Regeln sind auf mehrere Quellen verteilt, etwa EU-Recht, Gesetze, Tarifverträge, Betriebsvereinbarungen und Verträge"
+        correct: true
+      - en: "A single labour code contains all rules"
+        de: "Ein einziges Arbeitsgesetzbuch enthält alle Regeln"
+        correct: false
+      - en: "Only the individual contract matters"
+        de: "Nur der Einzelvertrag zählt"
+        correct: false
+      - en: "Only EU law applies to employment relationships"
+        de: "Nur EU-Recht gilt für Arbeitsverhältnisse"
+        correct: false
+    explanation:
+      en: "Germany has no single, unified labour code. Employment rules come from several layers, and which ones apply depends on the case."
+      de: "Deutschland hat kein einheitliches Arbeitsgesetzbuch. Die Regeln des Arbeitsrechts stammen aus mehreren Ebenen, und welche gelten, hängt vom Fall ab."
+    source: https://de.wikipedia.org/wiki/Arbeitsrecht_(Deutschland)
+  - id: elb-f-individual-collective
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "What is the difference between individual and collective labour law?"
+      de: "Was unterscheidet individuelles und kollektives Arbeitsrecht?"
+    options:
+      - en: "Individual labour law concerns the relationship between employee and employer, collective labour law the relationship involving unions and employee representatives"
+        de: "Das Individualarbeitsrecht betrifft das Verhältnis zwischen Arbeitnehmenden und Arbeitgeber, das kollektive Arbeitsrecht das Verhältnis mit Gewerkschaften und Arbeitnehmervertretungen"
+        correct: true
+      - en: "Individual labour law applies only to managers, collective labour law to all other staff"
+        de: "Das Individualarbeitsrecht gilt nur für Führungskräfte, das kollektive Arbeitsrecht für alle anderen Beschäftigten"
+        correct: false
+      - en: "Individual labour law is national, collective labour law is always international"
+        de: "Das Individualarbeitsrecht ist national, das kollektive Arbeitsrecht immer international"
+        correct: false
+      - en: "There is no difference; the terms are synonyms"
+        de: "Es gibt keinen Unterschied; die Begriffe sind Synonyme"
+        correct: false
+    explanation:
+      en: "Individual labour law covers the rights of the single employee, including through the contract. Collective labour law covers the relationship between employer, employees' representatives and unions."
+      de: "Das Individualarbeitsrecht betrifft die Rechte der einzelnen beschäftigten Person, auch über den Vertrag. Das kollektive Arbeitsrecht betrifft das Verhältnis von Arbeitgeber, Arbeitnehmervertretungen und Gewerkschaften."
+    source: https://de.wikipedia.org/wiki/Arbeitsrecht_(Deutschland)
+  - id: elb-f-contract-form
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "A colleague says: \"Without a signed paper there is no employment contract.\" What is the best HR response?"
+      de: "Ein Kollege sagt: \"Ohne unterschriebenes Papier gibt es keinen Arbeitsvertrag.\" Was ist die beste HR-Reaktion?"
+    options:
+      - en: "Explain that under German law an employment contract can also be concluded orally, so terms should be documented and the current documentation duties checked"
+        de: "Erklären, dass ein Arbeitsvertrag nach deutschem Recht auch mündlich geschlossen werden kann, weshalb die Bedingungen dokumentiert und die aktuellen Dokumentationspflichten geprüft werden sollten"
+        correct: true
+      - en: "Agree, because only written contracts are valid"
+        de: "Zustimmen, weil nur schriftliche Verträge gültig sind"
+        correct: false
+      - en: "Say that employment contracts are always unwritten"
+        de: "Sagen, dass Arbeitsverträge immer mündlich sind"
+        correct: false
+      - en: "Tell the employee that no obligations exist until a paper is signed"
+        de: "Der beschäftigten Person sagen, dass keine Pflichten bestehen, bis ein Papier unterschrieben ist"
+        correct: false
+    explanation:
+      en: "The form of an employment contract is generally free in Germany, so an oral agreement can create one. Written documentation is still good practice, and statutory documentation duties should be checked in the current text."
+      de: "Die Form eines Arbeitsvertrags ist in Deutschland grundsätzlich frei, daher kann auch eine mündliche Absprache einen begründen. Schriftliche Dokumentation ist trotzdem gute Praxis, und gesetzliche Dokumentationspflichten solltest du im aktuellen Text prüfen."
+    source: https://de.wikipedia.org/wiki/Arbeitsvertrag_(Deutschland)
+  - id: elb-f-who-to-ask
+    level: foundation
+    difficulty: 1040
+    type: multi
+    stem:
+      en: "A manager asks you a detailed legal question about a particular employee. Which reactions are appropriate for HR staff?"
+      de: "Eine Führungskraft stellt dir eine detaillierte Rechtsfrage zu einer bestimmten beschäftigten Person. Welche Reaktionen sind für Personalmitarbeitende angemessen?"
+    options:
+      - en: "Collect the contract and applicable agreements and involve legal counsel"
+        de: "Den Vertrag und geltende Vereinbarungen zusammentragen und die Rechtsberatung einbeziehen"
+        correct: true
+      - en: "Say that HR staff do not give legal advice and that the case will be reviewed"
+        de: "Sagen, dass Personalmitarbeitende keine Rechtsberatung geben und der Fall geprüft wird"
+        correct: true
+      - en: "Answer from memory based on a similar case at another company"
+        de: "Aus dem Gedächtnis anhand eines ähnlichen Falls in einem anderen Unternehmen antworten"
+        correct: false
+      - en: "Tell the manager what the legal outcome will be"
+        de: "Der Führungskraft sagen, wie der rechtliche Ausgang sein wird"
+        correct: false
+    explanation:
+      en: "Rules depend on the case and the applicable layers, and HR staff do not give legal advice. Prepare the documents and involve legal counsel instead of guessing."
+      de: "Die Regeln hängen vom Fall und den geltenden Ebenen ab, und Personalmitarbeitende geben keine Rechtsberatung. Bereite die Unterlagen vor und beziehe die Rechtsberatung ein, statt zu raten."
+    source: https://de.wikipedia.org/wiki/Arbeitsrecht_(Deutschland)
+  - id: elb-p-working-time
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "You are designing a new shift model. Where should you look for the limits on working time in Germany?"
+      de: "Du entwirfst ein neues Schichtmodell. Wo suchst du in Deutschland die Grenzen der Arbeitszeit?"
+    options:
+      - en: "In the current working time statute and any applicable collective agreement"
+        de: "Im aktuellen Arbeitszeitgesetz und in einem gegebenenfalls geltenden Tarifvertrag"
+        correct: true
+      - en: "In the memory of long-serving colleagues"
+        de: "In der Erinnerung langjähriger Kolleg:innen"
+        correct: false
+      - en: "Only in the company's own shift planning software"
+        de: "Nur in der betrieblichen Schichtplanungssoftware"
+        correct: false
+      - en: "Nowhere; working time is not regulated"
+        de: "Nirgends; Arbeitszeit ist nicht geregelt"
+        correct: false
+    explanation:
+      en: "Working time is regulated by law, and collective agreements can add rules. Limits must be taken from the current texts, not from memory or software defaults."
+      de: "Arbeitszeit ist gesetzlich geregelt, und Tarifverträge können Regeln ergänzen. Grenzen müssen aus den aktuellen Texten stammen, nicht aus Erinnerung oder Softwarevorgaben."
+    source: https://en.wikipedia.org/wiki/Working_time
+  - id: elb-p-part-time-fixed
+    level: practitioner
+    difficulty: 1220
+    type: single
+    stem:
+      en: "Which statement about the German Part-Time and Fixed-Term Employment Act is correct?"
+      de: "Welche Aussage über das deutsche Teilzeit- und Befristungsgesetz ist richtig?"
+    options:
+      - en: "It regulates part-time and fixed-term work, implements EU directives and aims to prevent discrimination of these groups"
+        de: "Es regelt Teilzeit und Befristung, setzt EU-Richtlinien um und will die Diskriminierung dieser Gruppen verhindern"
+        correct: true
+      - en: "It only applies to managers"
+        de: "Es gilt nur für Führungskräfte"
+        correct: false
+      - en: "It forbids all fixed-term contracts"
+        de: "Es verbietet alle befristeten Verträge"
+        correct: false
+      - en: "It regulates only the payroll tax of part-time staff"
+        de: "Es regelt nur die Lohnsteuer von Teilzeitkräften"
+        correct: false
+    explanation:
+      en: "The act sets the conditions for fixed-term contracts, promotes part-time work and aims to prevent disadvantage of part-time and fixed-term employees. It implements EU directives."
+      de: "Das Gesetz legt Voraussetzungen für befristete Verträge fest, fördert Teilzeit und will Benachteiligung von Teilzeit- und befristet Beschäftigten verhindern. Es setzt EU-Richtlinien um."
+    source: https://de.wikipedia.org/wiki/Teilzeit-_und_Befristungsgesetz
+  - id: elb-p-works-agreement-collective
+    level: practitioner
+    difficulty: 1280
+    type: single
+    stem:
+      en: "Before drafting a works agreement on a topic, you notice that a collective agreement also covers this topic. What is the sensible next step?"
+      de: "Bevor du eine Betriebsvereinbarung zu einem Thema entwirfst, merkst du, dass auch ein Tarifvertrag dieses Thema regelt. Was ist der sinnvolle nächste Schritt?"
+    options:
+      - en: "Check whether the collective agreement applies and whether it limits or opens up works agreements on this topic, and ask legal counsel if unclear"
+        de: "Prüfen, ob der Tarifvertrag gilt und ob er Betriebsvereinbarungen zu diesem Thema begrenzt oder zulässt, und bei Unklarheit die Rechtsberatung fragen"
+        correct: true
+      - en: "Proceed, because works agreements always override collective agreements"
+        de: "Fortfahren, weil Betriebsvereinbarungen Tarifverträge immer verdrängen"
+        correct: false
+      - en: "Ignore the collective agreement, because it only concerns unions"
+        de: "Den Tarifvertrag ignorieren, weil er nur Gewerkschaften betrifft"
+        correct: false
+      - en: "Delete the topic from the draft without discussing it with anyone"
+        de: "Das Thema ohne Rücksprache aus dem Entwurf streichen"
+        correct: false
+    explanation:
+      en: "A collective agreement can limit what works agreements may regulate unless it explicitly allows supplementary rules. Check applicability and wording and involve counsel if in doubt."
+      de: "Ein Tarifvertrag kann begrenzen, was Betriebsvereinbarungen regeln dürfen, es sei denn, er lässt ergänzende Regelungen ausdrücklich zu. Prüfe Geltung und Wortlaut und frage bei Zweifeln die Rechtsberatung."
+    source: https://de.wikipedia.org/wiki/Betriebsvereinbarung
+  - id: elb-p-checklist
+    level: practitioner
+    difficulty: 1340
+    type: multi
+    stem:
+      en: "An employee asks to work fewer hours. Which steps belong in a sound HR process?"
+      de: "Eine beschäftigte Person bittet darum, weniger Stunden zu arbeiten. Welche Schritte gehören zu einem soliden HR-Prozess?"
+    options:
+      - en: "Check the current statute, the contract, and any collective or works agreement"
+        de: "Das aktuelle Gesetz, den Vertrag sowie gegebenenfalls Tarif- oder Betriebsvereinbarungen prüfen"
+        correct: true
+      - en: "Check whether the works council has a role"
+        de: "Prüfen, ob der Betriebsrat eine Rolle hat"
+        correct: true
+      - en: "Document the request, the reasons and the decision"
+        de: "Wunsch, Gründe und Entscheidung dokumentieren"
+        correct: true
+      - en: "Decide by gut feeling about how the employee is doing"
+        de: "Nach Bauchgefühl entscheiden, wie die Person sich macht"
+        correct: false
+    explanation:
+      en: "A sound process uses the current sources, considers works council involvement and documents objective reasons. Gut-feeling decisions endanger equal treatment."
+      de: "Ein solider Prozess nutzt die aktuellen Quellen, bedenkt die Beteiligung des Betriebsrats und dokumentiert sachliche Gründe. Entscheidungen nach Bauchgefühl gefährden die Gleichbehandlung."
+    source: https://de.wikipedia.org/wiki/Teilzeit-_und_Befristungsgesetz
+  - id: elb-a-favourability
+    level: advanced
+    difficulty: 1480
+    type: single
+    stem:
+      en: "An individual contract contains a term that is more favourable for the employee than a works agreement on the same matter. According to the favourability principle, which usually takes precedence?"
+      de: "Ein Einzelvertrag enthält eine für die beschäftigte Person günstigere Regelung als eine Betriebsvereinbarung zum selben Thema. Was geht nach dem Günstigkeitsprinzip in der Regel vor?"
+    options:
+      - en: "The more favourable individual term"
+        de: "Die günstigere Einzelregelung"
+        correct: true
+      - en: "The works agreement, always"
+        de: "Immer die Betriebsvereinbarung"
+        correct: false
+      - en: "Whichever was signed last, regardless of content"
+        de: "Was zuletzt unterschrieben wurde, unabhängig vom Inhalt"
+        correct: false
+      - en: "Neither; both become void"
+        de: "Keine von beiden; beide werden unwirksam"
+        correct: false
+    explanation:
+      en: "Works agreements have binding effect for employees, but individually agreed terms that are more favourable for the employee take precedence. Edge cases belong to legal counsel."
+      de: "Betriebsvereinbarungen wirken verbindlich für Beschäftigte, aber einzelvertraglich vereinbarte, für die Beschäftigten günstigere Regelungen gehen vor. Grenzfälle gehören zur Rechtsberatung."
+    source: https://de.wikipedia.org/wiki/Betriebsvereinbarung
+  - id: elb-a-counsel-triggers
+    level: advanced
+    difficulty: 1540
+    type: multi
+    stem:
+      en: "Which situations should HR hand to legal counsel early, rather than handling alone?"
+      de: "Welche Situationen sollte HR frühzeitig an die Rechtsberatung geben, statt sie allein zu bearbeiten?"
+    options:
+      - en: "A planned termination of an employee"
+        de: "Eine geplante Beendigung eines Arbeitsverhältnisses"
+        correct: true
+      - en: "A restructuring that affects several employees and workplaces"
+        de: "Eine Umstrukturierung, die mehrere Beschäftigte und Arbeitsplätze betrifft"
+        correct: true
+      - en: "A dispute with the works council about a planned measure"
+        de: "Ein Streit mit dem Betriebsrat über eine geplante Maßnahme"
+        correct: true
+      - en: "Sending a routine reminder about a team meeting"
+        de: "Eine routinemäßige Erinnerung an einen Teamtermin versenden"
+        correct: false
+    explanation:
+      en: "Terminations, restructuring and disputes with employee representatives are high-risk and hard to reverse, so involve counsel early. A routine reminder carries no such risk."
+      de: "Beendigungen, Umstrukturierungen und Streit mit Arbeitnehmervertretungen sind riskant und schwer rückgängig zu machen; beziehe die Rechtsberatung früh ein. Eine Routineerinnerung birgt dieses Risiko nicht."
+    source: https://de.wikipedia.org/wiki/Betriebsrat
+  - id: elb-a-documentation
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "Which documentation of an HR decision best supports equal treatment and later review?"
+      de: "Welche Dokumentation einer HR-Entscheidung unterstützt Gleichbehandlung und spätere Überprüfung am besten?"
+    options:
+      - en: "Objective facts, the rules relied on with version, who decided, who was informed, and the reasons"
+        de: "Sachliche Fakten, die herangezogenen Regeln mit Fassung, wer entschieden hat, wer informiert wurde und die Gründe"
+        correct: true
+      - en: "A short note saying \"approved\""
+        de: "Ein kurzer Vermerk \"genehmigt\""
+        correct: false
+      - en: "Personal impressions of the employee's character"
+        de: "Persönliche Eindrücke vom Charakter der Person"
+        correct: false
+      - en: "No record, to avoid creating evidence"
+        de: "Keine Aufzeichnung, um keine Beweise zu schaffen"
+        correct: false
+    explanation:
+      en: "Objective, complete records let you show that comparable cases were handled consistently. Speculation and missing records weaken your position and the employee's."
+      de: "Sachliche, vollständige Aufzeichnungen zeigen, dass vergleichbare Fälle einheitlich behandelt wurden. Spekulation und fehlende Aufzeichnungen schwächen deine Position und die der Beschäftigten."
+    source: https://de.wikipedia.org/wiki/Arbeitsrecht_(Deutschland)
+  - id: elb-a-keep-current
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "Your HR contract template was last reviewed some time ago. Employment statutes in Germany are amended from time to time. What is the best practice?"
+      de: "Deine HR-Vertragsvorlage wurde vor einiger Zeit zuletzt geprüft. Arbeitsrechtliche Gesetze in Deutschland werden von Zeit zu Zeit geändert. Was ist Best Practice?"
+    options:
+      - en: "Review templates regularly against current official texts and legal counsel's updates, and log the date of each check"
+        de: "Vorlagen regelmäßig anhand aktueller amtlicher Texte und Hinweisen der Rechtsberatung prüfen und das Datum jeder Prüfung festhalten"
+        correct: true
+      - en: "Keep the template unchanged because law never changes"
+        de: "Die Vorlage unverändert lassen, weil sich Recht nie ändert"
+        correct: false
+      - en: "Update the template only when an employee complains"
+        de: "Die Vorlage nur ändern, wenn sich jemand beschwert"
+        correct: false
+      - en: "Copy a template from another company without checking"
+        de: "Eine Vorlage eines anderen Unternehmens ungeprüft übernehmen"
+        correct: false
+    explanation:
+      en: "Statutes such as the Works Constitution Act have been revised several times, so templates need regular review against current sources, with a record of when they were checked."
+      de: "Gesetze wie das Betriebsverfassungsgesetz wurden mehrfach überarbeitet, daher brauchen Vorlagen regelmäßige Prüfungen anhand aktueller Quellen und einen Vermerk, wann geprüft wurde."
+    source: https://de.wikipedia.org/wiki/Betriebsrat
