@@ -1,0 +1,290 @@
+competency: financial-statements-reporting
+items:
+  - id: fsr-f-equation
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "The balance sheet shows assets of 20,000 and liabilities of 12,000. What is the equity?"
+      de: "Die Bilanz zeigt Vermögen von 20.000 und Schulden von 12.000. Wie hoch ist das Eigenkapital?"
+    options:
+      - en: "8,000"
+        de: "8.000"
+        correct: true
+      - en: "32,000"
+        de: "32.000"
+        correct: false
+      - en: "12,000"
+        de: "12.000"
+        correct: false
+      - en: "20,000"
+        de: "20.000"
+        correct: false
+    explanation:
+      en: "Equity is assets minus liabilities: 20,000 - 12,000 = 8,000."
+      de: "Eigenkapital ist Vermögen minus Schulden: 20.000 - 12.000 = 8.000."
+    source: https://en.wikipedia.org/wiki/Balance_sheet
+  - id: fsr-f-point-period
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Which statement correctly contrasts the balance sheet and the income statement?"
+      de: "Welche Aussage grenzt Bilanz und GuV richtig voneinander ab?"
+    options:
+      - en: "The balance sheet is a snapshot at one date; the income statement covers a period"
+        de: "Die Bilanz ist eine Momentaufnahme zu einem Stichtag; die GuV umfasst einen Zeitraum"
+        correct: true
+      - en: "The balance sheet covers a period; the income statement is a snapshot"
+        de: "Die Bilanz umfasst einen Zeitraum; die GuV ist eine Momentaufnahme"
+        correct: false
+      - en: "Both show only a single date"
+        de: "Beide zeigen nur einen einzelnen Stichtag"
+        correct: false
+      - en: "Both show only cash movements"
+        de: "Beide zeigen nur Zahlungsströme"
+        correct: false
+    explanation:
+      en: "The balance sheet lists assets, liabilities and equity at a point in time, whereas the income statement shows revenue and expenses over a period."
+      de: "Die Bilanz zeigt Vermögen, Schulden und Eigenkapital zu einem Zeitpunkt, die GuV dagegen Erträge und Aufwendungen eines Zeitraums."
+    source: https://en.wikipedia.org/wiki/Financial_statement
+  - id: fsr-f-profit
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "A company has revenue of 50,000 and expenses of 44,000 for the year. What does the income statement show?"
+      de: "Ein Unternehmen hat im Jahr Erträge von 50.000 und Aufwendungen von 44.000. Was zeigt die GuV?"
+    options:
+      - en: "A profit of 6,000"
+        de: "Einen Gewinn von 6.000"
+        correct: true
+      - en: "A loss of 6,000"
+        de: "Einen Verlust von 6.000"
+        correct: false
+      - en: "A profit of 94,000"
+        de: "Einen Gewinn von 94.000"
+        correct: false
+      - en: "Equity of 6,000 at a single date"
+        de: "Ein Eigenkapital von 6.000 zu einem Stichtag"
+        correct: false
+    explanation:
+      en: "Revenue minus expenses gives the profit: 50,000 - 44,000 = 6,000. A profit would turn into a loss only if expenses were higher."
+      de: "Erträge minus Aufwendungen ergeben den Gewinn: 50.000 - 44.000 = 6.000. Ein Verlust entstünde nur, wenn die Aufwendungen höher wären."
+    source: https://en.wikipedia.org/wiki/Income_statement
+  - id: fsr-f-link
+    level: foundation
+    difficulty: 1040
+    type: single
+    stem:
+      en: "How does a profit earned in the period connect the income statement to the balance sheet?"
+      de: "Wie verbindet ein Gewinn der Periode die GuV mit der Bilanz?"
+    options:
+      - en: "It increases equity (after any owner contributions and withdrawals)"
+        de: "Er erhöht das Eigenkapital (nach Einlagen und Entnahmen der Eigentümer)"
+        correct: true
+      - en: "It reduces the liabilities by the same amount"
+        de: "Er verringert die Schulden um denselben Betrag"
+        correct: false
+      - en: "It has no effect on the balance sheet"
+        de: "Er hat keine Auswirkung auf die Bilanz"
+        correct: false
+      - en: "It is shown as an asset called \"profit\""
+        de: "Er wird als Vermögensposten \"Gewinn\" ausgewiesen"
+        correct: false
+    explanation:
+      en: "Comparing equity at the start and end of the year, allowing for contributions and withdrawals, gives the profit or loss; the income statement shows how it arose."
+      de: "Der Vergleich des Eigenkapitals am Anfang und Ende des Jahres ergibt unter Berücksichtigung von Einlagen und Entnahmen den Gewinn oder Verlust; die GuV zeigt, wie er entstand."
+    source: https://de.wikipedia.org/wiki/Bilanz
+  - id: fsr-p-cf-groups
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "Into which three groups does a cash flow statement divide cash movements?"
+      de: "In welche drei Gruppen gliedert eine Kapitalflussrechnung die Zahlungsströme?"
+    options:
+      - en: "Operating, investing and financing activities"
+        de: "Laufende Geschäftstätigkeit, Investitionstätigkeit und Finanzierungstätigkeit"
+        correct: true
+      - en: "Assets, liabilities and equity"
+        de: "Vermögen, Schulden und Eigenkapital"
+        correct: false
+      - en: "Revenue, expenses and profit"
+        de: "Erträge, Aufwendungen und Gewinn"
+        correct: false
+      - en: "Current, prior and future periods"
+        de: "Laufende Periode, Vorperiode und Folgeperiode"
+        correct: false
+    explanation:
+      en: "The cash flow statement breaks cash movements into operating, investing and financing activities."
+      de: "Die Kapitalflussrechnung gliedert Zahlungsströme in laufende, Investitions- und Finanzierungstätigkeit."
+    source: https://en.wikipedia.org/wiki/Cash_flow_statement
+  - id: fsr-p-cf-tieout
+    level: practitioner
+    difficulty: 1220
+    type: single
+    stem:
+      en: "A cash flow statement starts with cash of 3,000, shows operating +9,000, investing -6,000 and financing -2,000. Which cash figure must the balance sheet show?"
+      de: "Eine Kapitalflussrechnung beginnt mit Zahlungsmitteln von 3.000 und zeigt laufend +9.000, Investition -6.000 und Finanzierung -2.000. Welchen Zahlungsmittelbestand muss die Bilanz zeigen?"
+    options:
+      - en: "4,000"
+        de: "4.000"
+        correct: true
+      - en: "6,000"
+        de: "6.000"
+        correct: false
+      - en: "3,000"
+        de: "3.000"
+        correct: false
+      - en: "10,000"
+        de: "10.000"
+        correct: false
+    explanation:
+      en: "3,000 + 9,000 - 6,000 - 2,000 = 4,000. The cash flow statement must end at the cash figure on the balance sheet."
+      de: "3.000 + 9.000 - 6.000 - 2.000 = 4.000. Die Kapitalflussrechnung muss beim Zahlungsmittelbestand der Bilanz enden."
+    source: https://en.wikipedia.org/wiki/Cash_flow_statement
+  - id: fsr-p-hgb-ifrs
+    level: practitioner
+    difficulty: 1280
+    type: single
+    stem:
+      en: "According to the cited sources, what is the main difference in purpose between traditional German HGB statements and IFRS statements?"
+      de: "Was ist laut den zitierten Quellen der wesentliche Zweckunterschied zwischen traditionellen HGB-Abschlüssen und IFRS-Abschlüssen?"
+    options:
+      - en: "HGB emphasises creditor protection; IFRS serves an information function for users such as capital-market investors"
+        de: "Das HGB betont den Gläubigerschutz; IFRS dienen der Information von Adressaten wie Kapitalmarktinvestoren"
+        correct: true
+      - en: "HGB serves only investors; IFRS serves only tax authorities"
+        de: "Das HGB dient nur Investoren; IFRS dienen nur den Finanzbehörden"
+        correct: false
+      - en: "There is no difference in purpose"
+        de: "Es gibt keinen Zweckunterschied"
+        correct: false
+      - en: "IFRS aims at creditor protection; HGB has no purpose"
+        de: "IFRS bezwecken Gläubigerschutz; das HGB hat keinen Zweck"
+        correct: false
+    explanation:
+      en: "The cited articles describe HGB accounting as aimed mainly at creditor protection under the prudence principle, and IFRS as aimed at informing users."
+      de: "Die zitierten Artikel beschreiben die Rechnungslegung nach HGB als vorwiegend am Gläubigerschutz (Vorsichtsprinzip) ausgerichtet und IFRS als auf Information der Adressaten ausgerichtet."
+    source: https://de.wikipedia.org/wiki/International_Financial_Reporting_Standards
+  - id: fsr-p-lagebericht
+    level: practitioner
+    difficulty: 1340
+    type: single
+    stem:
+      en: "Under the HGB, how does the management report (Lagebericht) relate to the annual financial statements?"
+      de: "Wie steht der Lagebericht nach HGB zum Jahresabschluss?"
+    options:
+      - en: "It accompanies the Jahresabschluss for medium-sized and large corporations but is not part of it"
+        de: "Er begleitet den Jahresabschluss mittelgroßer und großer Kapitalgesellschaften, ist aber nicht Teil davon"
+        correct: true
+      - en: "It is the first component of the Jahresabschluss for every company"
+        de: "Er ist für jedes Unternehmen der erste Bestandteil des Jahresabschlusses"
+        correct: false
+      - en: "It replaces the balance sheet"
+        de: "Er ersetzt die Bilanz"
+        correct: false
+      - en: "It is only required for sole traders"
+        de: "Er ist nur für Einzelunternehmer vorgeschrieben"
+        correct: false
+    explanation:
+      en: "The Lagebericht describes business course, results, situation, risks and outlook, and is prepared together with the Jahresabschluss without being a component of it."
+      de: "Der Lagebericht stellt Geschäftsverlauf, Ergebnis, Lage, Risiken und Ausblick dar und wird zusammen mit dem Jahresabschluss erstellt, ohne dessen Bestandteil zu sein."
+    source: https://de.wikipedia.org/wiki/Lagebericht
+  - id: fsr-a-offset
+    level: advanced
+    difficulty: 1480
+    type: single
+    stem:
+      en: "A preparer wants to net a receivable against a payable of the same counterparty to make the balance sheet shorter. Under IFRS, as stated in the cited article, what applies?"
+      de: "Eine erstellende Person möchte eine Forderung gegen eine Verbindlichkeit desselben Geschäftspartners verrechnen, um die Bilanz zu verkürzen. Was gilt nach IFRS laut dem zitierten Artikel?"
+    options:
+      - en: "Offsetting is generally forbidden unless a standard specifically requires it"
+        de: "Verrechnung ist grundsätzlich verboten, es sei denn, ein Standard verlangt sie ausdrücklich"
+        correct: true
+      - en: "Offsetting is always required"
+        de: "Verrechnung ist immer vorgeschrieben"
+        correct: false
+      - en: "Offsetting is allowed whenever it simplifies the layout"
+        de: "Verrechnung ist immer erlaubt, wenn sie die Darstellung vereinfacht"
+        correct: false
+      - en: "Offsetting is only allowed in the notes"
+        de: "Verrechnung ist nur im Anhang erlaubt"
+        correct: false
+    explanation:
+      en: "The article states that offsetting is generally forbidden in IFRS, with exceptions where particular standards require it. Presentation must not be tidied by netting."
+      de: "Der Artikel nennt, dass Verrechnung nach IFRS grundsätzlich verboten ist, mit Ausnahmen, wo einzelne Standards sie verlangen. Die Darstellung darf nicht durch Saldierung verschönert werden."
+    source: https://en.wikipedia.org/wiki/International_Financial_Reporting_Standards
+  - id: fsr-a-reclass
+    level: advanced
+    difficulty: 1540
+    type: single
+    stem:
+      en: "Before commenting that an expense line grew sharply, you learn that 1,000 was reclassified into that line this year. What should you do?"
+      de: "Bevor du kommentierst, dass ein Aufwandsposten stark gestiegen ist, erfährst du, dass in diesem Jahr 1.000 in diesen Posten umgegliedert wurden. Was tust du?"
+    options:
+      - en: "Restate or flag the prior-year figure so the comparison is on the same basis, and say so"
+        de: "Den Vorjahreswert anpassen oder kennzeichnen, damit der Vergleich auf gleicher Grundlage steht, und das benennen"
+        correct: true
+      - en: "Compare with the old prior-year figure and ignore the reclassification"
+        de: "Mit dem alten Vorjahreswert vergleichen und die Umgliederung ignorieren"
+        correct: false
+      - en: "Delete the prior-year column"
+        de: "Die Vorjahresspalte löschen"
+        correct: false
+      - en: "Explain the growth as better business performance"
+        de: "Das Wachstum als bessere Geschäftsentwicklung erklären"
+        correct: false
+    explanation:
+      en: "Comparability needs the same basis in both periods. IFRS requires comparative information and, for reclassifications, an additional balance sheet; whatever the framework, a reclassified item must be flagged."
+      de: "Vergleichbarkeit braucht dieselbe Grundlage in beiden Perioden. IFRS verlangt Vergleichsinformationen und bei Umgliederungen eine zusätzliche Bilanz; unabhängig vom Rahmen muss ein umgegliederter Posten kenntlich gemacht werden."
+    source: https://en.wikipedia.org/wiki/International_Financial_Reporting_Standards
+  - id: fsr-a-format
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "The income statement was presented in report form last year. According to the cited German article, what applies to changing the format?"
+      de: "Die GuV wurde im Vorjahr in Staffelform dargestellt. Was gilt laut dem zitierten deutschen Artikel für einen Wechsel der Form?"
+    options:
+      - en: "The chosen format generally has to be kept; deviations must be justified in the Anhang"
+        de: "Die gewählte Form muss in der Regel beibehalten werden; Abweichungen sind im Anhang zu begründen"
+        correct: true
+      - en: "The format may change freely each year without explanation"
+        de: "Die Form darf jedes Jahr ohne Erklärung frei wechseln"
+        correct: false
+      - en: "Deviations must be explained only in the management report"
+        de: "Abweichungen sind nur im Lagebericht zu erklären"
+        correct: false
+      - en: "The format is irrelevant for comparability"
+        de: "Die Form ist für die Vergleichbarkeit unerheblich"
+        correct: false
+    explanation:
+      en: "The article states that the form once chosen generally must be retained and deviations explained in the Anhang. This protects comparability between periods."
+      de: "Der Artikel nennt, dass die einmal gewählte Form in der Regel beizubehalten ist und Abweichungen im Anhang zu erläutern sind. Das schützt die Vergleichbarkeit der Perioden."
+    source: https://de.wikipedia.org/wiki/Gewinn-_und_Verlustrechnung
+  - id: fsr-a-limits
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "Which statement about the limits of financial statements fits the cited Financial statement article?"
+      de: "Welche Aussage zu den Grenzen von Abschlüssen passt zum zitierten Artikel Financial statement?"
+    options:
+      - en: "They give objective information about the past period but are not a direct measure of any reader's individual goals"
+        de: "Sie liefern objektive Informationen über die vergangene Periode, messen aber nicht unmittelbar die individuellen Ziele der Lesenden"
+        correct: true
+      - en: "They reliably predict next year's profit"
+        de: "Sie sagen den Gewinn des nächsten Jahres verlässlich voraus"
+        correct: false
+      - en: "They are identical under every accounting framework"
+        de: "Sie sind unter jedem Rechnungslegungsrahmen identisch"
+        correct: false
+      - en: "They make a review before release unnecessary"
+        de: "Sie machen eine Prüfung vor der Freigabe überflüssig"
+        correct: false
+    explanation:
+      en: "The article says statements provide objective information about the reporting period and are better protected against manipulation than forward-looking calculations, without directly measuring individual goal achievement."
+      de: "Der Artikel sagt, dass Abschlüsse objektive Informationen über die Berichtsperiode liefern und besser gegen Manipulation geschützt sind als zukunftsbezogene Rechnungen, ohne die Zielerreichung Einzelner unmittelbar zu messen."
+    source: https://en.wikipedia.org/wiki/Financial_statement
