@@ -59,6 +59,18 @@ For each competency: ≥1 unit per required level (en + de), ≥6 items across d
 - [ ] Mobile layout pass
 - [ ] **Launch checklist** in `docs/LAUNCH.md` (what the human must fill in: Impressum data, contact email, Cloudflare Pages project) — then mark the site ready
 
+## Phase 3b — Catalog, accounts and profile
+
+Owner decision (2026-11-12): real accounts with email + password, email confirmation and password reset; a short profile; a personal dashboard; a searchable catalog. Stack: Cloudflare Pages (site) + Supabase free tier (Auth + Postgres, EU region, Row Level Security). No credit card for anyone; no paid services.
+
+- [ ] Catalog: browse all published roles, competencies and units with filters (role, level, language) and full-text search via Pagefind (static, open source); works without an account
+- [ ] Supabase schema as SQL migrations in `supabase/migrations/` (profiles, progress, item responses), RLS so every user can only read/write their own rows; account deletion and data export (GDPR Art. 15/17/20); no data model for employer names
+- [ ] Auth UI (en/de): sign up, email confirmation, sign in, sign out, forgot/reset password, delete account; anonymous use keeps working with localStorage, and signing in offers to import local progress
+- [ ] Profile onboarding (optional fields, data minimisation): role family, experience level, learning goal, weekly time budget, preferred language; no employer, no birth date
+- [ ] Dashboard reads/writes progress from Supabase when signed in, localStorage otherwise
+- [ ] Privacy policy and imprint updated for accounts (processors: Cloudflare, Supabase, email sender; legal bases; retention; rights); keep `{{…}}` placeholders for owner data
+- [ ] **Blocked on owner:** email sender + domain decision, Supabase project, GitHub secrets for migrations (see `docs/BLOCKERS.md`). Until then, build everything above behind a feature flag that is off in production.
+
 ## Phase 4 — Scale to all role families
 
 One role per task, in the order of CLAUDE.md §4.3. Each task = framework + content + validation passing.
@@ -75,7 +87,6 @@ One role per task, in the order of CLAUDE.md §4.3. Each task = framework + cont
 
 ## Phase 5 — Optional extensions (only after Phase 4, still $0)
 
-- [ ] Optional accounts + cross-device sync via Supabase free tier (EU region), Row Level Security, keep-alive scheduled GitHub Action; update privacy policy first. **Owner decision needed before starting** (log a blocker and skip until decided): Supabase's built-in mailer only delivers to the project team, so email sign-up and password reset need a custom SMTP sender, which in practice needs an own domain (not $0). The $0 path is sign-in via GitHub/Google OAuth only (no emails to send). Progress stays in localStorage for anonymous users either way.
 - [ ] Optional AI tutor via Cloudflare Workers AI free allocation: explain-this-unit only, strict per-IP and per-day limits, labeled, never used for scoring; update privacy policy first
 - [ ] Anonymous, cookie-less aggregate item statistics to calibrate item difficulty (only if it can be done without personal data)
 

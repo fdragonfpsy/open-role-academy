@@ -150,17 +150,20 @@ OERSI (oersi.org, German OER search index), OpenStax, OpenLearn (Open University
 
 ## 11. Work windows and usage budget
 
-The owner runs this project on a Claude Pro plan and needs most of the weekly usage for his own work on weekdays. You cannot see the plan's usage meter, so time is the budget. All times are **Europe/Berlin** (`TZ=Europe/Berlin date`). Check the time before starting each new slice.
+The owner runs this project on a Claude Pro plan and needs his usage during the day. You cannot see the plan's usage meter, so time is the budget. All times are **Europe/Berlin** (`TZ=Europe/Berlin date`). Check the time before starting each new slice.
 
-| Day | Allowed work | No new slice after | Hard stop |
-|---|---|---|---|
-| Mon–Fri | only 20:00–24:00, never 08:00–20:00 | 23:15 | 23:45 |
-| Saturday | any time | start of run + 4h30 | start of run + 5h, latest 19:30 |
-| Sunday | any time before the weekly reset | 17:00 | 17:45 (the weekly limit resets at 18:00; do not eat into next week) |
+**Never work between 08:00 and 20:00 on any day, including weekends.**
 
-- Within the window, **work continuously**: after a slice is merged, take the next roadmap task. One slice per run is not the goal; finished, merged slices are.
-- If you hit a usage or rate limit, stop cleanly: make sure nothing half-done is pushed to `main`; push the current branch only if its checks pass.
-- If a run starts outside its allowed window (e.g. a delayed start), do nothing except a one-line note in the run output, and stop.
+| Run starts | No new slice after | Hard stop |
+|---|---|---|
+| Sun–Thu evening (20:00) | 23:15 | 23:45 |
+| Fri and Sat evening (20:00) | 00:45 | 01:30 |
+| Sat and Sun night (02:00) | 07:00 | 07:45 |
+
+- The weekly limit resets on **Sunday at 18:00**. The Saturday and Sunday night runs use what is left of the week; the Sunday evening run already uses the new week, so it stays short.
+- Within the window, **work continuously**: after a slice is merged, take the next task. Finished, merged slices are the goal, not one slice per run.
+- If you hit a usage or rate limit, stop cleanly: nothing half-done on `main`; push the current branch only if its checks pass.
+- If a run starts outside its allowed window (e.g. a delayed start), write one line and stop.
 
 ## 12. Model choice and token efficiency
 
@@ -177,3 +180,13 @@ Token hygiene:
 - Give subagents a precise brief with file paths and acceptance criteria; ask them for short results, not file dumps.
 - Batch similar work (e.g. all items of one competency in one pass).
 - Keep run output terse: no long summaries in the session, the details belong in `docs/STATUS.md`.
+
+## 13. Quality review (second instance)
+
+A separate weekly **QA run** reviews the builder's work with fresh context. It does not approve PRs; it audits merged work and files findings.
+
+- Scope: everything merged since the last QA report (`docs/QA.md`). Sample at least 1 unit (en and de) and 4 items per new competency, plus every engine or UI change.
+- Check: facts against the cited sources, license and attribution rules (§6), item quality (§8), en/de wording and parity, accessibility of new UI, and whether the work matches the roadmap and this file.
+- Output: GitHub issues labeled `qa` with severity (`blocker`, `fix`, `nit`), file paths and a concrete fix; small, clear fixes may be done directly in a `claude/qa-*` PR with `automerge`. Append a dated summary to `docs/QA.md`.
+- Builder rule: at the start of every run, fix open `qa` issues labeled `blocker` or `fix` before new roadmap work.
+- Models: sonnet for the review pass, opus only for judging disputed facts or engine logic (§12).
