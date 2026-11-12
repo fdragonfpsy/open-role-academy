@@ -2,6 +2,11 @@
 
 Format: date — decision — reason — alternatives considered.
 
+## 2026-11-12 — Weekly reviewer on Opus (owner decision)
+- **Decision:** The weekly review run uses Opus (medium effort) and reviews itself; Haiku only for mechanical subtasks. The builder stays on Sonnet.
+- **Reason:** Judgement is the reviewer's whole job; it runs once a week on budget that would otherwise reset unused; a different model than the builder catches more of its mistakes.
+- **Alternatives:** Sonnet reviewer (cheaper, but shares the builder's blind spots).
+
 ## 2026-11-12 — Evening/night-only work windows, weekly QA run, accounts planned (owner decisions)
 - **Decision:** No agent work 08:00–20:00 on any day (CLAUDE.md §11). A separate weekly QA run audits merged work and files `qa` issues (§13). Accounts (Supabase Auth + Postgres, EU) and a catalog move into Phase 3b, ahead of scaling to more roles.
 - **Reason:** The owner needs his usage during the day. A fresh-context reviewer catches errors the builder repeats. Accounts and a catalog are what turn the site into a usable learning platform; more roles are worth less without them.
