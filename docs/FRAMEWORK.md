@@ -108,7 +108,7 @@ Find, develop and support people: recruit and onboard employees, run fair and la
 | Self-organisation and project basics | core | 3 | F | P | P | — |
 | Working with data | core | 3 | F | F | P | digital-ai-literacy |
 
-## IT Support & Operations (`it-support-operations`, role, draft)
+## IT Support & Operations (`it-support-operations`, role, published)
 
 Keep people productive and IT running: handle incidents and requests, troubleshoot devices, accounts and networks, and operate IT services securely and reliably.
 

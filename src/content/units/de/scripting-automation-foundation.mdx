@@ -1,0 +1,82 @@
+---
+id: scripting-automation-foundation
+competency: scripting-automation
+level: foundation
+title: "Deine ersten Skripte: Was ein Skript ist, Grundlagen der Kommandozeile, Variablen, Schleifen und Bedingungen sowie sicheres Ausführen"
+objectives:
+  - Erklären, was ein Skript ist und wie es sich vom Eintippen einzelner Befehle unterscheidet.
+  - Variablen, Bedingungen und Schleifen in einfachen Worten beschreiben.
+  - Wiederkehrende Aufgaben erkennen, die sich für Automatisierung lohnen.
+  - Ein Skript an einem kleinen, ungefährlichen Beispiel testen, bevor es produktiv läuft.
+  - Die grundlegenden Sicherheitsregeln für Skripte nennen, auch dass Geheimnisse nie im Skript stehen.
+minutes: 25
+resources:
+  - wikipedia-de-skriptsprache
+  - wikipedia-de-versionsverwaltung
+  - wikipedia-scripting-language
+  - wikipedia-version-control
+status: ai-draft
+sources:
+  - title: "Skriptsprache"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Skriptsprache
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Scripting language"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Scripting_language
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Im IT-Support wiederholt sich vieles: dieselben Konten anlegen, Dateien umbenennen, prüfen, ob eine Liste von Geräten antwortet, für jedes Ticket dieselben Informationen sammeln. Von Hand ist das langsam, und wenn du müde bist, schleichen sich Fehler ein. Ein **Skript** lässt den Computer die Wiederholung übernehmen, jedes Mal auf dieselbe Weise.
+
+## Was ein Skript ist
+
+Ein Skript ist eine Textdatei mit einer Liste von Befehlen, die ein Programm, der Interpreter, nacheinander ausführt. Alles, was du in die **Kommandozeile** (auch Shell oder Terminal genannt) eintippen kannst, kannst du meist in einem Skript speichern und später erneut ausführen. Verbreitete Sprachen für die Administration sind Bash unter Linux und PowerShell unter Windows; die folgenden Ideen gelten aber in allen. Einen allgemeinen Überblick geben die Wikipedia-Artikel zu Skriptsprachen.
+
+## Drei Bausteine
+
+- **Variable:** ein benannter Behälter für einen Wert, zum Beispiel `name = "laptop-12"`. Du nutzt den Namen statt den Wert zu wiederholen und änderst ihn nur an einer Stelle.
+- **Bedingung:** eine Entscheidung. „Wenn die Datei existiert, kopiere sie, sonst gib eine Meldung aus.“
+- **Schleife:** Wiederholung. „Führe für jeden Namen in dieser Liste die folgenden Schritte aus.“
+
+Fast jedes kleine Administrationsskript besteht aus diesen dreien plus Befehlen, die die eigentliche Arbeit erledigen.
+
+## Was sich zu automatisieren lohnt
+
+Gute Kandidaten sind Aufgaben, die **häufig**, **langweilig**, **regelbasiert** und leicht zu prüfen sind: gleiche Schritte, gleiche Reihenfolge, klares Ergebnis. Eine Aufgabe, die du nur einmal im Jahr erledigst oder die viel Urteilsvermögen verlangt, machst du meist besser von Hand.
+
+## Sicherheitsregeln
+
+1. **Erst testen.** Lass das Skript zuerst an einem Testobjekt oder einer kleinen Datenkopie laufen, bevor es viele echte Objekte anfasst. Viele Werkzeuge bieten einen Probelauf („Dry Run“ oder „What if“), der nur anzeigt, was passieren würde; nutze ihn, wenn es ihn gibt.
+2. **Führe nie ein Skript aus, das du nicht verstehst.** Ein Skript aus einem Forum oder von Kolleg:innen kann Daten löschen oder eine Sicherheitslücke öffnen. Lies es, frage nach, was jede Zeile tut, und probiere es in einer Testumgebung aus.
+3. **Keine Geheimnisse im Skript.** Passwörter und Schlüssel im Skript landen in Kopien, Chatnachrichten und Backups. Frage sie zur Laufzeit ab oder nutze einen freigegebenen Speicher.
+4. **Vorsicht beim Löschen.** Gib zuerst aus, was gelöscht würde, prüfe es und lösche erst dann.
+5. **Sichere deine Arbeit.** Lege Skripte an einem gemeinsamen, gesicherten Ort ab, am besten unter Versionsverwaltung (siehe Einheit für Fortgeschrittene).
+
+## Beispiel aus der Praxis
+
+Dein Team soll 20 neue Laptops daraufhin prüfen, ob im Inventar ein Eintrag fehlt. Von Hand öffnest du 20 Datensätze. Als Pseudocode:
+
+```
+für jedes Tag in Liste_der_Tags:
+    wenn Datensatz_existiert(Tag):
+        ausgeben Tag, "ok"
+    sonst:
+        ausgeben Tag, "FEHLT"
+```
+
+Die Schleife wiederholt die Prüfung, die Bedingung entscheidet über die Ausgabe, und die Liste ist eine Variable, die du nächsten Monat austauschen kannst. Du startest zuerst mit drei Tags, von denen du weißt, dass eines fehlt, und prüfst, ob die Ausgabe stimmt. Erst dann lässt du alle 20 laufen. Beachte: Dieses Skript liest und gibt nur aus, es ändert nichts. Das macht es zu einem sicheren ersten Projekt.
+
+## Wichtige Erkenntnisse
+
+- Ein Skript ist eine gespeicherte Befehlsliste, die jedes Mal gleich abläuft.
+- Variablen halten Werte, Bedingungen entscheiden, Schleifen wiederholen.
+- Automatisiere Aufgaben, die häufig, langweilig und regelbasiert sind.
+- Teste zuerst an einer kleinen Stichprobe und nutze Probelauf-Modi, wenn vorhanden.
+- Führe keine Skripte aus, die du nicht verstehst, und schreibe niemals Geheimnisse hinein.

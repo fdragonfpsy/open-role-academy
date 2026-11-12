@@ -1,0 +1,82 @@
+---
+id: scripting-automation-foundation
+competency: scripting-automation
+level: foundation
+title: "Your first scripts: what a script is, command line basics, variables, loops and conditions, and running scripts safely"
+objectives:
+  - Explain what a script is and how it differs from typing commands by hand.
+  - Describe variables, conditions and loops in plain terms.
+  - Recognise repetitive tasks that are worth automating.
+  - Test a script on a small, safe sample before using it for real.
+  - Name the basic safety rules for scripts, including never storing secrets in them.
+minutes: 25
+resources:
+  - wikipedia-scripting-language
+  - wikipedia-de-skriptsprache
+  - wikipedia-version-control
+  - wikipedia-de-versionsverwaltung
+status: ai-draft
+sources:
+  - title: "Scripting language"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Scripting_language
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Skriptsprache"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Skriptsprache
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+IT support is full of tasks that repeat: creating the same set of accounts, renaming files, checking whether a list of devices answers, collecting the same information for every ticket. Doing them by hand is slow and mistakes creep in when you are tired. A **script** lets the computer do the repetition for you, the same way every time.
+
+## What a script is
+
+A script is a text file containing a list of commands that a program, called an interpreter, runs one after another. Anything you can type into the **command line** (also called shell or terminal) you can usually save in a script and run again later. Common languages for administration are Bash on Linux and PowerShell on Windows, but the ideas below are the same in all of them. The Wikipedia articles on scripting languages give a general overview.
+
+## Three building blocks
+
+- **Variable:** a named box that holds a value, for example `name = "laptop-12"`. You use the name instead of repeating the value, so you only change it in one place.
+- **Condition:** a decision. "If the file exists, then copy it, otherwise print a message."
+- **Loop:** repetition. "For each name in this list, do the following steps."
+
+Almost every small administration script is built from these three, plus commands that do the real work.
+
+## What is worth automating
+
+Good candidates are tasks that are **frequent**, **boring**, **rule-based** and easy to check: the same steps, the same order, a clear result. A task you do once a year, or one that needs a lot of judgement, is usually better done by hand.
+
+## Safety rules
+
+1. **Test first.** Run the script on one test item, or a small copy of the data, before touching many real ones. Many tools offer a "dry run" or "what if" mode that only shows what would happen; use it when it exists.
+2. **Never run a script you do not understand.** A script from a forum or a colleague can delete data or open a hole. Read it, ask what each line does, and try it in a test environment.
+3. **No secrets in scripts.** Passwords and keys written into a script end up in copies, chat messages and backups. Ask for them at run time or use an approved store.
+4. **Be careful with deleting.** Print what would be deleted first, check it, and only then delete.
+5. **Keep a copy.** Save scripts in a shared, backed-up place, ideally under version control (see the practitioner unit).
+
+## Worked example
+
+Your team must check 20 new laptops for a missing label in the inventory. By hand you would open 20 records. In pseudo-code:
+
+```
+for each tag in list_of_tags:
+    if record_exists(tag):
+        print tag, "ok"
+    else:
+        print tag, "MISSING"
+```
+
+The loop repeats the check, the condition decides what to print, and the list is a variable you can replace next month. You first run it with three tags you know, including one that you know is missing, and see that the output is right. Only then do you run it with all 20. Note that this script only reads and prints; it changes nothing, which makes it a safe first project.
+
+## Key takeaways
+
+- A script is a saved list of commands that runs the same way every time.
+- Variables hold values, conditions decide, loops repeat.
+- Automate tasks that are frequent, boring and rule-based.
+- Test on a small sample first and use dry-run modes when available.
+- Never run scripts you do not understand and never put secrets into them.

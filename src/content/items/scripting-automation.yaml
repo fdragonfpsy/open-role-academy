@@ -1,0 +1,290 @@
+competency: scripting-automation
+items:
+  - id: sa-f-what
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "What is a script?"
+      de: "Was ist ein Skript?"
+    options:
+      - en: "A text file with a list of commands that an interpreter runs one after another"
+        de: "Eine Textdatei mit einer Liste von Befehlen, die ein Interpreter nacheinander ausführt"
+        correct: true
+      - en: "A program that can only be used with a graphical interface"
+        de: "Ein Programm, das sich nur mit einer grafischen Oberfläche verwenden lässt"
+        correct: false
+      - en: "A hardware device that repeats tasks"
+        de: "Ein Hardwaregerät, das Aufgaben wiederholt"
+        correct: false
+      - en: "A password stored for later use"
+        de: "Ein Passwort, das für später gespeichert wird"
+        correct: false
+    explanation:
+      en: "A script saves commands you could type by hand so that they run the same way every time."
+      de: "Ein Skript speichert Befehle, die du auch von Hand eintippen könntest, damit sie jedes Mal gleich ablaufen."
+    source: https://en.wikipedia.org/wiki/Scripting_language
+  - id: sa-f-loop
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Which building block do you use to repeat the same steps for every name in a list?"
+      de: "Welchen Baustein nutzt du, um dieselben Schritte für jeden Namen in einer Liste zu wiederholen?"
+    options:
+      - en: "A condition"
+        de: "Eine Bedingung"
+        correct: false
+      - en: "A loop"
+        de: "Eine Schleife"
+        correct: true
+      - en: "A comment"
+        de: "Einen Kommentar"
+        correct: false
+      - en: "A password"
+        de: "Ein Passwort"
+        correct: false
+    explanation:
+      en: "A loop repeats steps for each item; a condition only decides between alternatives."
+      de: "Eine Schleife wiederholt Schritte für jedes Element; eine Bedingung entscheidet nur zwischen Alternativen."
+    source: https://en.wikipedia.org/wiki/Scripting_language
+  - id: sa-f-test
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "You received a script that deletes old files. What should you do first?"
+      de: "Du hast ein Skript erhalten, das alte Dateien löscht. Was tust du zuerst?"
+    options:
+      - en: "Run it on all real data to save time"
+        de: "Es sofort auf allen echten Daten ausführen, um Zeit zu sparen"
+        correct: false
+      - en: "Run it on a small test sample or in dry-run mode after reading it"
+        de: "Es lesen und dann an einer kleinen Testprobe oder im Probelauf ausführen"
+        correct: true
+      - en: "Send it to colleagues without reading it"
+        de: "Es an Kolleg:innen weiterleiten, ohne es zu lesen"
+        correct: false
+      - en: "Add your admin password to it so it runs without prompts"
+        de: "Dein Administratorpasswort eintragen, damit es ohne Nachfrage läuft"
+        correct: false
+    explanation:
+      en: "Read the script and test on a safe sample first; a dry run shows what would happen without changing anything."
+      de: "Lies das Skript und teste zuerst an einer sicheren Probe; ein Probelauf zeigt, was passieren würde, ohne etwas zu ändern."
+    source: https://en.wikipedia.org/wiki/Scripting_language
+  - id: sa-f-secret
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "Where should a password that a script needs be kept?"
+      de: "Wo sollte ein Passwort aufbewahrt werden, das ein Skript benötigt?"
+    options:
+      - en: "Written directly into the script so it is always available"
+        de: "Direkt im Skript, damit es immer verfügbar ist"
+        correct: false
+      - en: "In a comment at the top of the script"
+        de: "In einem Kommentar am Anfang des Skripts"
+        correct: false
+      - en: "Asked for at run time or taken from an approved secret store"
+        de: "Zur Laufzeit abgefragt oder aus einem freigegebenen Geheimnisspeicher geholt"
+        correct: true
+      - en: "In the ticket that describes the task"
+        de: "Im Ticket, das die Aufgabe beschreibt"
+        correct: false
+    explanation:
+      en: "Secrets in scripts spread into copies, chats and backups; request them at run time or use an approved store."
+      de: "Geheimnisse in Skripten verbreiten sich in Kopien, Chats und Backups; frage sie zur Laufzeit ab oder nutze einen freigegebenen Speicher."
+    source: https://en.wikipedia.org/wiki/Scripting_language
+  - id: sa-p-param
+    level: practitioner
+    difficulty: 1190
+    type: single
+    stem:
+      en: "Why use a parameter instead of writing a server name directly into a script?"
+      de: "Warum einen Parameter nutzen, statt einen Servernamen fest ins Skript zu schreiben?"
+    options:
+      - en: "Parameters make the script run faster"
+        de: "Parameter machen das Skript schneller"
+        correct: false
+      - en: "The same script can be used for different targets without editing the code"
+        de: "Dasselbe Skript lässt sich für verschiedene Ziele nutzen, ohne den Code zu ändern"
+        correct: true
+      - en: "Parameters remove the need for testing"
+        de: "Parameter machen Tests überflüssig"
+        correct: false
+      - en: "Hard-coded values are not allowed in any language"
+        de: "Fest eingebaute Werte sind in keiner Sprache erlaubt"
+        correct: false
+    explanation:
+      en: "Parameters keep values outside the code, which makes scripts reusable and reduces editing mistakes."
+      de: "Parameter halten Werte außerhalb des Codes; das macht Skripte wiederverwendbar und verringert Bearbeitungsfehler."
+    source: https://en.wikipedia.org/wiki/Scripting_language
+  - id: sa-p-error
+    level: practitioner
+    difficulty: 1240
+    type: single
+    stem:
+      en: "A scheduled script copies 100 files and some copies fail. What is the best behaviour?"
+      de: "Ein geplantes Skript kopiert 100 Dateien und einige Kopien schlagen fehl. Was ist das beste Verhalten?"
+    options:
+      - en: "Print \"done\" and exit with a success status"
+        de: "„Fertig“ ausgeben und mit Erfolgsstatus beenden"
+        correct: false
+      - en: "Delete the log so nobody sees the errors"
+        de: "Das Protokoll löschen, damit niemand die Fehler sieht"
+        correct: false
+      - en: "Log each failure with the file name and return a failure status"
+        de: "Jeden Fehler mit Dateinamen protokollieren und einen Fehlerstatus zurückgeben"
+        correct: true
+      - en: "Ignore errors because nobody watches scheduled runs"
+        de: "Fehler ignorieren, weil geplante Läufe niemand beobachtet"
+        correct: false
+    explanation:
+      en: "Unattended runs need per-item logging and an honest exit status so that a failure is noticed."
+      de: "Unbeaufsichtigte Läufe brauchen Protokollierung je Objekt und einen ehrlichen Exit-Status, damit ein Fehler auffällt."
+    source: https://en.wikipedia.org/wiki/Cron
+  - id: sa-p-idem
+    level: practitioner
+    difficulty: 1290
+    type: single
+    stem:
+      en: "What does it mean that a script is idempotent?"
+      de: "Was bedeutet es, dass ein Skript idempotent ist?"
+    options:
+      - en: "It runs only once and then deletes itself"
+        de: "Es läuft nur einmal und löscht sich dann selbst"
+        correct: false
+      - en: "It needs no parameters"
+        de: "Es braucht keine Parameter"
+        correct: false
+      - en: "It is written in a scripting language"
+        de: "Es ist in einer Skriptsprache geschrieben"
+        correct: false
+      - en: "Running it twice gives the same result as running it once"
+        de: "Zweimaliges Ausführen liefert dasselbe Ergebnis wie einmaliges"
+        correct: true
+    explanation:
+      en: "Idempotent scripts can safely be repeated, for example after a failed run, because they only change what differs from the target state."
+      de: "Idempotente Skripte lassen sich gefahrlos wiederholen, etwa nach einem fehlgeschlagenen Lauf, weil sie nur ändern, was vom Zielzustand abweicht."
+    source: https://en.wikipedia.org/wiki/Idempotence
+  - id: sa-p-vcs
+    level: practitioner
+    difficulty: 1340
+    type: single
+    stem:
+      en: "What is a main benefit of keeping scripts in version control?"
+      de: "Was ist ein Hauptvorteil, Skripte in der Versionsverwaltung zu halten?"
+    options:
+      - en: "A history of changes and the ability to return to a working version"
+        de: "Ein Änderungsverlauf und die Möglichkeit, zu einer funktionierenden Version zurückzukehren"
+        correct: true
+      - en: "The scripts no longer need testing"
+        de: "Die Skripte müssen nicht mehr getestet werden"
+        correct: false
+      - en: "Passwords in scripts become safe"
+        de: "Passwörter in Skripten werden dadurch sicher"
+        correct: false
+      - en: "The scripts run automatically at night"
+        de: "Die Skripte laufen automatisch nachts"
+        correct: false
+    explanation:
+      en: "Version control records who changed what and why and lets you roll back; it does not replace testing or secure secrets."
+      de: "Versionsverwaltung hält fest, wer was warum geändert hat, und erlaubt das Zurückgehen; sie ersetzt weder Tests noch schützt sie Geheimnisse."
+    source: https://en.wikipedia.org/wiki/Version_control
+  - id: sa-a-least
+    level: advanced
+    difficulty: 1520
+    type: single
+    stem:
+      en: "Which setup best follows least privilege for an automation that disables user accounts in one group?"
+      de: "Welche Einrichtung folgt dem Prinzip der minimalen Rechte am besten für eine Automatisierung, die Benutzerkonten einer Gruppe deaktiviert?"
+    options:
+      - en: "A shared domain administrator account used by all scripts"
+        de: "Ein gemeinsames Domänenadministrator-Konto für alle Skripte"
+        correct: false
+      - en: "The personal account of the script's author"
+        de: "Das persönliche Konto der Autorin oder des Autors des Skripts"
+        correct: false
+      - en: "A dedicated account that can only disable accounts in that group"
+        de: "Ein eigenes Konto, das nur Konten in dieser Gruppe deaktivieren darf"
+        correct: true
+      - en: "An account with read and write access to every system for convenience"
+        de: "Ein Konto mit Lese- und Schreibzugriff auf alle Systeme, der Einfachheit halber"
+        correct: false
+    explanation:
+      en: "A dedicated, narrowly scoped account limits the damage of bugs or leaks and makes logs attributable."
+      de: "Ein eigenes, eng begrenztes Konto begrenzt den Schaden durch Fehler oder Lecks und macht Protokolle zuordenbar."
+    source: https://en.wikipedia.org/wiki/Access_control
+  - id: sa-a-review
+    level: advanced
+    difficulty: 1580
+    type: single
+    stem:
+      en: "What is the main purpose of having a second person review a script change before it goes live?"
+      de: "Was ist der Hauptzweck, eine Skriptänderung vor dem Produktivgang von einer zweiten Person prüfen zu lassen?"
+    options:
+      - en: "To spread blame if something goes wrong"
+        de: "Um die Schuld zu verteilen, falls etwas schiefgeht"
+        correct: false
+      - en: "To catch mistakes and unintended effects that the author overlooked"
+        de: "Um Fehler und unbeabsichtigte Wirkungen zu finden, die der Autor oder die Autorin übersehen hat"
+        correct: true
+      - en: "To make the script run faster"
+        de: "Um das Skript schneller zu machen"
+        correct: false
+      - en: "To avoid writing documentation"
+        de: "Um keine Dokumentation schreiben zu müssen"
+        correct: false
+    explanation:
+      en: "A fresh pair of eyes finds missing error handling, wrong assumptions and risky side effects before they reach production."
+      de: "Ein frischer Blick findet fehlende Fehlerbehandlung, falsche Annahmen und riskante Nebenwirkungen, bevor sie die Produktion erreichen."
+    source: https://en.wikipedia.org/wiki/Version_control
+  - id: sa-a-decide
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "Which task is the best candidate for full automation?"
+      de: "Welche Aufgabe eignet sich am besten für vollständige Automatisierung?"
+    options:
+      - en: "Permanently deleting a departed employee's data without any approval"
+        de: "Das endgültige Löschen der Daten ausgeschiedener Mitarbeitender ohne jede Freigabe"
+        correct: false
+      - en: "A rare task that needs a lot of case-by-case judgement"
+        de: "Eine seltene Aufgabe, die viel Einzelfallurteil erfordert"
+        correct: false
+      - en: "A step in a process that nobody understands yet"
+        de: "Ein Schritt in einem Prozess, den noch niemand versteht"
+        correct: false
+      - en: "A frequent, rule-based and reversible task such as a daily report"
+        de: "Eine häufige, regelbasierte und umkehrbare Aufgabe wie ein täglicher Bericht"
+        correct: true
+    explanation:
+      en: "Stable, frequent, low-risk and reversible tasks pay back the automation effort; irreversible or judgement-heavy steps need safeguards or stay manual."
+      de: "Stabile, häufige, risikoarme und umkehrbare Aufgaben rechtfertigen den Automatisierungsaufwand; nicht umkehrbare oder urteilslastige Schritte brauchen Sicherungen oder bleiben manuell."
+    source: https://en.wikipedia.org/wiki/Idempotence
+  - id: sa-a-maintain
+    level: advanced
+    difficulty: 1620
+    type: single
+    stem:
+      en: "A scheduled script written by a colleague who left still runs nightly, but nobody knows what depends on it. What is the best approach?"
+      de: "Ein geplantes Skript einer ausgeschiedenen Kollegin läuft weiter jede Nacht, aber niemand weiß, was davon abhängt. Was ist der beste Ansatz?"
+    options:
+      - en: "Delete it immediately to remove the risk"
+        de: "Es sofort löschen, um das Risiko zu beseitigen"
+        correct: false
+      - en: "Assign an owner, document purpose and permissions, then keep, fix or retire it deliberately"
+        de: "Eine verantwortliche Person benennen, Zweck und Rechte dokumentieren und es dann bewusst behalten, reparieren oder abschalten"
+        correct: true
+      - en: "Leave it unchanged forever because it works"
+        de: "Es für immer unverändert lassen, weil es funktioniert"
+        correct: false
+      - en: "Give its account more rights so it cannot fail"
+        de: "Seinem Konto mehr Rechte geben, damit es nicht scheitern kann"
+        correct: false
+    explanation:
+      en: "Orphaned automation needs an owner and documentation; then you can decide to keep, repair or retire it, including its account and schedule."
+      de: "Verwaiste Automatisierung braucht Verantwortliche und Dokumentation; dann lässt sich entscheiden, sie zu behalten, zu reparieren oder abzuschalten, samt Konto und Zeitplan."
+    source: https://en.wikipedia.org/wiki/Cron

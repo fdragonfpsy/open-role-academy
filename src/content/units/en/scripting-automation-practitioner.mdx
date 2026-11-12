@@ -1,0 +1,100 @@
+---
+id: scripting-automation-practitioner
+competency: scripting-automation
+level: practitioner
+title: "Reliable scripts: reading and adapting, parameters, error handling and logging, scheduling, idempotence, version control and credentials"
+objectives:
+  - Read an unfamiliar script and adapt it safely.
+  - Use parameters instead of hard-coded values.
+  - Handle errors and write useful log messages.
+  - Schedule a script and explain why it should be idempotent.
+  - Keep scripts under version control and handle credentials safely.
+minutes: 30
+resources:
+  - wikipedia-scripting-language
+  - wikipedia-cron
+  - wikipedia-idempotence
+  - wikipedia-version-control
+  - wikipedia-logging-computing
+status: ai-draft
+sources:
+  - title: "Cron"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Cron
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Idempotence"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Idempotence
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Version control"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Version_control
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+A script that works once on your laptop is a start. A script that other people run, that runs at night without you, and that still works in six months must be more careful: it takes its input from outside, tells you when something goes wrong, can be run twice without damage, and is stored where the team can find it.
+
+## Reading and adapting scripts
+
+Before you change a script you did not write, read it from top to bottom and answer three questions: what does it take as input, what does it change, and what does it print or log? Run it first in a test environment, then make **one small change at a time** and test after each. Keep the original version so you can go back.
+
+## Parameters instead of hard-coded values
+
+A value written directly into the code, such as a server name or a folder path, has to be edited every time something changes. Turn such values into **parameters** that are given when the script starts, for example `script --target test-server --dry-run`. Give sensible defaults, check that required parameters are present, and document them in a comment at the top.
+
+## Error handling and logging
+
+Things go wrong: a file is missing, a network share is down, a command fails. A script should not carry on as if nothing happened.
+
+- **Check results.** After an important step, check whether it succeeded. Most shells provide an exit code; zero normally means success.
+- **Stop or handle.** Either stop with a clear message, or handle the problem deliberately (for example retry once, or skip the item and count it as failed).
+- **Log.** Write what the script did, with a time stamp, the item and the result. Log the outcome per item, not only "done". Never log passwords or other secrets.
+- **Return a meaningful exit status** so that a scheduler or a person can see that the run failed.
+
+## Scheduled tasks
+
+Many systems can start scripts at set times, for example cron on Linux or the Task Scheduler on Windows. Scheduled scripts run without you watching, so logging and error handling matter even more. Run them under a dedicated account, make sure two runs cannot overlap by accident, and decide who is told when a run fails.
+
+## Idempotence
+
+A script is **idempotent** if running it twice gives the same result as running it once. "Create folder X" fails or duplicates on the second run; "make sure folder X exists" does not. Idempotent scripts are safe to repeat after a failure or a scheduler glitch. Check the state first, change only what differs, and report "nothing to do" when the target state is already reached.
+
+## Version control for scripts
+
+Store scripts in a version control system such as Git. You get a history of who changed what and why, the possibility to return to a working version, and a place for others to review a change before it goes live. Write a short, clear message with every change.
+
+## Handling credentials safely
+
+Credentials do not belong in the script or in the repository. Better options are to prompt at run time, to read from an environment variable set by the scheduler, or to fetch from a secret store that your organisation has approved. Use an account with only the rights the script needs, and rotate a credential immediately if it was ever pasted into a script or chat.
+
+## Worked example
+
+A nightly script should remove temporary files older than 30 days from a shared folder.
+
+```
+param folder, days = 30, dry_run = false
+log "start", folder
+if not exists(folder): log "ERROR folder missing"; exit 1
+for each file in folder older than days:
+    if dry_run: log "would delete", file
+    else: delete file; log "deleted", file
+log "done"
+```
+
+You first run it with `dry_run = true`, read the log and check that the right files are listed. You commit it with a message, schedule it under a service account that has write access only to this folder, and check the log the next morning. Running it twice does no harm: the second run simply finds nothing to delete.
+
+## Key takeaways
+
+- Read what a script takes in, changes and outputs before adapting it, and change one thing at a time.
+- Use parameters, not hard-coded values.
+- Check results, log per item and return a meaningful exit status.
+- Make scripts idempotent so that repeats are safe.
+- Keep scripts in version control and credentials out of them.

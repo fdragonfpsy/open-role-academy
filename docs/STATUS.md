@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-12 — Phase 2: IT Support & Operations complete and published
+
+**Done**
+- `change-asset-management` merged ([#28](https://github.com/fdragonfpsy/open-role-academy/pull/28)).
+- `scripting-automation`: 6 units (3 levels x en/de), 12 items, 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0).
+- All 10 role-specific IT Support competencies now have units for all 3 levels (en/de), 12 items each and verified resources. Role `it-support-operations` is published (removed `status: draft`).
+
+**Counts:** roles 4 (2 published, 2 draft) · competencies 38 · units 96 · items 192 · resources 117
+
+**Next:** Finance & Accounting content (split into per-competency sub-tasks first), then Human Resources.
+
 ## 2026-11-12 — Phase 2: IT Support content for change-asset-management
 
 **Done**

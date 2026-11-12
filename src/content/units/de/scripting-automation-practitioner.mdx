@@ -1,0 +1,100 @@
+---
+id: scripting-automation-practitioner
+competency: scripting-automation
+level: practitioner
+title: "Verlässliche Skripte: Lesen und Anpassen, Parameter, Fehlerbehandlung und Protokollierung, Zeitplanung, Idempotenz, Versionsverwaltung und Zugangsdaten"
+objectives:
+  - Ein unbekanntes Skript lesen und sicher anpassen.
+  - Parameter statt fest eingebauter Werte verwenden.
+  - Fehler behandeln und aussagekräftige Protokollmeldungen schreiben.
+  - Ein Skript zeitgesteuert ausführen und erklären, warum es idempotent sein sollte.
+  - Skripte unter Versionsverwaltung halten und Zugangsdaten sicher behandeln.
+minutes: 30
+resources:
+  - wikipedia-de-cron
+  - wikipedia-de-versionsverwaltung
+  - wikipedia-de-logdatei
+  - wikipedia-idempotence
+  - wikipedia-de-skriptsprache
+status: ai-draft
+sources:
+  - title: "Cron"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Cron
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Versionsverwaltung"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Versionsverwaltung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Idempotence"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Idempotence
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Ein Skript, das einmal auf deinem Laptop funktioniert, ist ein Anfang. Ein Skript, das andere ausführen, das nachts ohne dich läuft und in sechs Monaten noch funktioniert, muss sorgfältiger gebaut sein: Es bekommt seine Eingaben von außen, meldet, wenn etwas schiefgeht, lässt sich zweimal ausführen, ohne Schaden anzurichten, und liegt dort, wo das Team es findet.
+
+## Skripte lesen und anpassen
+
+Bevor du ein Skript änderst, das du nicht geschrieben hast, lies es von oben bis unten und beantworte drei Fragen: Was bekommt es als Eingabe, was verändert es, und was gibt es aus oder protokolliert es? Lass es zuerst in einer Testumgebung laufen, ändere dann **immer nur eine Kleinigkeit** und teste nach jedem Schritt. Behalte die Originalfassung, damit du zurückgehen kannst.
+
+## Parameter statt fest eingebauter Werte
+
+Ein Wert, der direkt im Code steht, etwa ein Servername oder ein Ordnerpfad, muss bei jeder Änderung bearbeitet werden. Mache daraus **Parameter**, die beim Start übergeben werden, zum Beispiel `skript --ziel test-server --probelauf`. Lege sinnvolle Standardwerte fest, prüfe, ob Pflichtparameter vorhanden sind, und beschreibe sie in einem Kommentar am Anfang.
+
+## Fehlerbehandlung und Protokollierung
+
+Es geht immer etwas schief: Eine Datei fehlt, ein Netzlaufwerk ist nicht erreichbar, ein Befehl schlägt fehl. Ein Skript darf dann nicht so tun, als wäre nichts passiert.
+
+- **Ergebnisse prüfen.** Prüfe nach wichtigen Schritten, ob sie geklappt haben. Die meisten Shells liefern einen Exit-Code; null bedeutet normalerweise Erfolg.
+- **Anhalten oder gezielt behandeln.** Brich mit einer klaren Meldung ab oder gehe bewusst mit dem Problem um (zum Beispiel einmal wiederholen oder das Objekt überspringen und als fehlgeschlagen zählen).
+- **Protokollieren.** Schreibe auf, was das Skript getan hat: Zeitstempel, Objekt und Ergebnis. Protokolliere das Ergebnis je Objekt, nicht nur „fertig“. Schreibe nie Passwörter oder andere Geheimnisse ins Protokoll.
+- **Einen sinnvollen Exit-Status zurückgeben**, damit ein Planer oder ein Mensch erkennt, dass der Lauf fehlgeschlagen ist.
+
+## Zeitgesteuerte Aufgaben
+
+Viele Systeme können Skripte zu festen Zeiten starten, zum Beispiel cron unter Linux oder die Aufgabenplanung unter Windows. Geplante Skripte laufen, ohne dass jemand zuschaut; Protokollierung und Fehlerbehandlung sind deshalb noch wichtiger. Führe sie unter einem eigenen Konto aus, stelle sicher, dass sich zwei Läufe nicht versehentlich überschneiden, und lege fest, wer bei einem Fehler informiert wird.
+
+## Idempotenz
+
+Ein Skript ist **idempotent**, wenn zweimaliges Ausführen dasselbe Ergebnis hat wie einmaliges. „Lege Ordner X an“ schlägt beim zweiten Lauf fehl oder erzeugt Dubletten; „stelle sicher, dass Ordner X existiert“ nicht. Idempotente Skripte kannst du nach einem Fehler oder einer Panne des Planers gefahrlos wiederholen. Prüfe zuerst den Zustand, ändere nur, was abweicht, und melde „nichts zu tun“, wenn der Zielzustand schon erreicht ist.
+
+## Versionsverwaltung für Skripte
+
+Lege Skripte in einem Versionsverwaltungssystem wie Git ab. Du erhältst einen Verlauf, wer was warum geändert hat, die Möglichkeit, zu einer funktionierenden Version zurückzukehren, und einen Ort, an dem andere eine Änderung prüfen können, bevor sie live geht. Schreibe zu jeder Änderung eine kurze, klare Beschreibung.
+
+## Zugangsdaten sicher behandeln
+
+Zugangsdaten gehören weder ins Skript noch ins Repository. Besser ist es, zur Laufzeit abzufragen, aus einer vom Planer gesetzten Umgebungsvariable zu lesen oder aus einem Geheimnisspeicher zu holen, den deine Organisation freigegeben hat. Nutze ein Konto mit genau den Rechten, die das Skript braucht, und tausche Zugangsdaten sofort aus, wenn sie je in ein Skript oder einen Chat kopiert wurden.
+
+## Beispiel aus der Praxis
+
+Ein nächtliches Skript soll temporäre Dateien entfernen, die älter als 30 Tage sind, in einem gemeinsamen Ordner.
+
+```
+param ordner, tage = 30, probelauf = false
+protokoll "Start", ordner
+wenn nicht existiert(ordner): protokoll "FEHLER Ordner fehlt"; exit 1
+für jede Datei in ordner älter als tage:
+    wenn probelauf: protokoll "würde löschen", datei
+    sonst: lösche datei; protokoll "gelöscht", datei
+protokoll "Fertig"
+```
+
+Du startest zuerst mit `probelauf = true`, liest das Protokoll und prüfst, ob die richtigen Dateien aufgelistet sind. Du legst das Skript mit einer Beschreibung in der Versionsverwaltung ab, planst es unter einem Dienstkonto, das nur in diesem Ordner schreiben darf, und kontrollierst am nächsten Morgen das Protokoll. Ein zweiter Lauf schadet nicht: Er findet einfach nichts mehr zu löschen.
+
+## Wichtige Erkenntnisse
+
+- Lies vor dem Anpassen, was ein Skript aufnimmt, ändert und ausgibt, und ändere nur eine Sache auf einmal.
+- Nutze Parameter statt fest eingebauter Werte.
+- Prüfe Ergebnisse, protokolliere je Objekt und gib einen sinnvollen Exit-Status zurück.
+- Mache Skripte idempotent, damit Wiederholungen ungefährlich sind.
+- Halte Skripte in der Versionsverwaltung und Zugangsdaten heraus.
