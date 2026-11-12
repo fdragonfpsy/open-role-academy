@@ -1,0 +1,290 @@
+competency: personnel-administration
+items:
+  - id: pa-f-file
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "What best describes a personnel file?"
+      de: "Was beschreibt eine Personalakte am besten?"
+    options:
+      - en: "A collection of documents, on paper or electronic, that the employer keeps about an employee and the employment relationship"
+        de: "Eine Sammlung von Schriftstücken, auf Papier oder elektronisch, die der Arbeitgeber über eine beschäftigte Person und das Arbeitsverhältnis führt"
+        correct: true
+      - en: "A public register of all employees that anyone may read"
+        de: "Ein öffentliches Verzeichnis aller Beschäftigten, das jede Person lesen darf"
+        correct: false
+      - en: "Only the payslips of a person"
+        de: "Nur die Gehaltsabrechnungen einer Person"
+        correct: false
+      - en: "A private diary kept by the line manager"
+        de: "Ein privates Tagebuch der Führungskraft"
+        correct: false
+    explanation:
+      en: "The article describes it as a collection of documents about the person and the employment relationship, kept on paper or electronically."
+      de: "Der Artikel beschreibt sie als Sammlung von Schriftstücken zur Person und zum Arbeitsverhältnis, auf Papier oder elektronisch."
+    source: https://de.wikipedia.org/wiki/Personalakte
+  - id: pa-f-lifecycle
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Which principle should guide what happens when an employee's role changes?"
+      de: "Welcher Grundsatz sollte leiten, was bei einem Rollenwechsel geschieht?"
+    options:
+      - en: "Every data change should have a document behind it, filed with the right person"
+        de: "Hinter jeder Datenänderung sollte ein Dokument stehen, abgelegt bei der richtigen Person"
+        correct: true
+      - en: "Change the system entry first and look for a document later, if at all"
+        de: "Zuerst den Systemeintrag ändern und ein Dokument später suchen, wenn überhaupt"
+        correct: false
+      - en: "Delete the old documents so the file stays short"
+        de: "Die alten Dokumente löschen, damit die Akte kurz bleibt"
+        correct: false
+      - en: "Tell the whole team about the change by email"
+        de: "Das gesamte Team per E-Mail über die Änderung informieren"
+        correct: false
+    explanation:
+      en: "The file should give a complete, truthful and careful picture of the employment, so changes are backed by documents rather than overwritten or undocumented."
+      de: "Die Akte soll ein vollständiges, wahrheitsgemäßes und sorgfältiges Bild des Beschäftigungsverhältnisses geben; Änderungen werden daher belegt und nicht überschrieben oder undokumentiert gelassen."
+    source: https://de.wikipedia.org/wiki/Personalakte
+  - id: pa-f-confidential
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "A colleague from another department asks to see a person's personnel file out of curiosity. What is the right response?"
+      de: "Eine Kollegin aus einer anderen Abteilung möchte aus Neugier die Personalakte einer Person sehen. Was ist die richtige Reaktion?"
+    options:
+      - en: "Decline: personnel files are confidential and access is limited to those who handle them and the person's supervisors"
+        de: "Ablehnen: Personalakten sind vertraulich, und der Zugang ist auf die Bearbeitenden und die Vorgesetzten der Person beschränkt"
+        correct: true
+      - en: "Allow it if she promises not to tell anyone"
+        de: "Erlauben, wenn sie verspricht, es niemandem zu erzählen"
+        correct: false
+      - en: "Send her a scan so she can read it at her desk"
+        de: "Ihr einen Scan schicken, damit sie ihn am Schreibtisch lesen kann"
+        correct: false
+      - en: "Show her only the pages that look harmless"
+        de: "Ihr nur die Seiten zeigen, die harmlos aussehen"
+        correct: false
+    explanation:
+      en: "The article says personnel files are to be treated as strictly confidential and secured against unauthorised access."
+      de: "Der Artikel sagt, Personalakten seien strikt vertraulich zu behandeln und gegen unbefugte Einsicht zu sichern."
+    source: https://de.wikipedia.org/wiki/Personalakte
+  - id: pa-f-absence
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "Why should an absence be recorded with the correct type, such as holiday, sick leave or unpaid leave?"
+      de: "Warum sollte eine Abwesenheit mit der richtigen Art erfasst werden, etwa Urlaub, Krankheit oder unbezahlte Freistellung?"
+    options:
+      - en: "Because there are different subcategories of leave and the type decides which rules apply next"
+        de: "Weil es verschiedene Unterarten der Freistellung gibt und die Art bestimmt, welche Regeln danach gelten"
+        correct: true
+      - en: "Because all types of absence are handled in exactly the same way"
+        de: "Weil alle Abwesenheitsarten genau gleich behandelt werden"
+        correct: false
+      - en: "Because the type only matters for the team calendar colours"
+        de: "Weil die Art nur für die Farben im Teamkalender wichtig ist"
+        correct: false
+      - en: "Because HR staff can then calculate pay from the type alone"
+        de: "Weil Personalmitarbeitende dann das Entgelt allein aus der Art berechnen können"
+        correct: false
+    explanation:
+      en: "The article describes subcategories of leave and notes that rules vary by country and are set by law, contracts or agreements, so the recorded type drives what happens next."
+      de: "Der Artikel beschreibt Unterarten der Freistellung und weist darauf hin, dass Regeln je nach Land durch Gesetz, Verträge oder Vereinbarungen festgelegt werden; die erfasste Art steuert daher das Weitere."
+    source: https://en.wikipedia.org/wiki/Leave_of_absence
+  - id: pa-p-change
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "Which sequence is the most reliable for processing a contract change?"
+      de: "Welche Reihenfolge ist für die Bearbeitung einer Vertragsänderung am verlässlichsten?"
+    options:
+      - en: "Check the written agreement, update master data, file the document, verify the entry, inform dependants such as payroll"
+        de: "Schriftliche Vereinbarung prüfen, Stammdaten aktualisieren, Dokument ablegen, Eintrag prüfen, Abhängige wie die Entgeltabrechnung informieren"
+        correct: true
+      - en: "Update the system from a verbal request and file the paperwork later if asked"
+        de: "Das System nach mündlicher Bitte aktualisieren und den Beleg später ablegen, falls jemand fragt"
+        correct: false
+      - en: "Overwrite the old contract document with the new one"
+        de: "Das alte Vertragsdokument durch das neue überschreiben"
+        correct: false
+      - en: "Inform payroll first and update the master data at month end"
+        de: "Zuerst die Entgeltabrechnung informieren und die Stammdaten am Monatsende aktualisieren"
+        correct: false
+    explanation:
+      en: "A documented, repeatable routine keeps system and file consistent; the file should show a complete, truthful picture, so history is added to, not overwritten."
+      de: "Eine dokumentierte, wiederholbare Routine hält System und Akte konsistent; die Akte soll ein vollständiges, wahrheitsgemäßes Bild zeigen, daher wird die Historie ergänzt und nicht überschrieben."
+    source: https://de.wikipedia.org/wiki/Personalakte
+  - id: pa-p-calendar
+    level: practitioner
+    difficulty: 1220
+    type: single
+    stem:
+      en: "What should a shared team calendar show about an employee's sick absence?"
+      de: "Was sollte ein gemeinsamer Teamkalender über die krankheitsbedingte Abwesenheit einer Person zeigen?"
+    options:
+      - en: "Only that the person is absent, without the reason"
+        de: "Nur, dass die Person abwesend ist, ohne den Grund"
+        correct: true
+      - en: "The diagnosis, so colleagues can plan around it"
+        de: "Die Diagnose, damit Kolleginnen und Kollegen planen können"
+        correct: false
+      - en: "The reason in a short code that insiders understand"
+        de: "Den Grund in einem Kürzel, das Eingeweihte verstehen"
+        correct: false
+      - en: "A list of all earlier absences of that person"
+        de: "Eine Liste aller früheren Abwesenheiten dieser Person"
+        correct: false
+    explanation:
+      en: "The article notes that lists of illness reasons do not belong in the personnel file; a team view needs only the information that the person is absent."
+      de: "Der Artikel nennt, dass Listen mit Krankheitsgründen nicht in die Personalakte gehören; eine Teamansicht braucht nur die Information, dass die Person abwesend ist."
+    source: https://de.wikipedia.org/wiki/Personalakte
+  - id: pa-p-time
+    level: practitioner
+    difficulty: 1280
+    type: single
+    stem:
+      en: "A manager asks you to use time-recording data to rank employees by productivity. What is the best response?"
+      de: "Eine Führungskraft bittet dich, Zeiterfassungsdaten zu nutzen, um Beschäftigte nach Produktivität zu ordnen. Was ist die beste Reaktion?"
+    options:
+      - en: "Clarify the purpose and ask your DPO and works council first; the source says such further evaluation is not permissible without explicit consent"
+        de: "Zweck klären und zuerst Datenschutzbeauftragte und Betriebsrat fragen; laut Quelle ist eine solche weitergehende Auswertung ohne ausdrückliche Zustimmung nicht zulässig"
+        correct: true
+      - en: "Do it, because time data is company data"
+        de: "Es tun, denn Zeitdaten sind Unternehmensdaten"
+        correct: false
+      - en: "Do it but share the ranking only verbally"
+        de: "Es tun, aber das Ranking nur mündlich weitergeben"
+        correct: false
+      - en: "Delete the unflattering records first"
+        de: "Zuerst die unvorteilhaften Datensätze löschen"
+        correct: false
+    explanation:
+      en: "The article describes that systems recording presence are usual in Germany and that further calculation combined with productivity checks is not permissible without explicit consent; deleting recorded data would also damage its authenticity."
+      de: "Der Artikel beschreibt, dass in Deutschland Systeme zur Anwesenheitserfassung üblich sind und eine weitergehende Berechnung mit Produktivitätsprüfung ohne ausdrückliche Zustimmung nicht zulässig ist; das Löschen erfasster Daten würde außerdem deren Authentizität beschädigen."
+    source: https://de.wikipedia.org/wiki/Zeiterfassung
+  - id: pa-p-reference
+    level: practitioner
+    difficulty: 1350
+    type: single
+    stem:
+      en: "Which statement about the employment reference (Arbeitszeugnis) matches the cited article?"
+      de: "Welche Aussage zum Arbeitszeugnis passt zum zitierten Artikel?"
+    options:
+      - en: "A simple reference covers type and duration of the work, a qualified one also covers performance and conduct, and the principles include clarity and truthfulness"
+        de: "Ein einfaches Zeugnis enthält Art und Dauer der Tätigkeit, ein qualifiziertes zusätzlich Leistung und Verhalten, und zu den Grundsätzen gehören Klarheit und Wahrheit"
+        correct: true
+      - en: "It must always be written in secret code so that only HR understands it"
+        de: "Es muss immer in einem Geheimcode verfasst sein, den nur HR versteht"
+        correct: false
+      - en: "HR staff alone decide on any disputed wording without a manager"
+        de: "Personalmitarbeitende entscheiden allein über jede strittige Formulierung ohne Führungskraft"
+        correct: false
+      - en: "It contains only the employee's salary history"
+        de: "Es enthält nur den Gehaltsverlauf der Person"
+        correct: false
+    explanation:
+      en: "The article distinguishes simple and qualified references and names clarity, truthfulness, completeness and goodwill as principles; ambiguous formulations that criticise the employee are not acceptable."
+      de: "Der Artikel unterscheidet einfache und qualifizierte Zeugnisse und nennt Klarheit, Wahrheit, Vollständigkeit und Wohlwollen als Grundsätze; doppeldeutige Formulierungen, die die Person kritisieren, sind nicht zulässig."
+    source: https://de.wikipedia.org/wiki/Arbeitszeugnis
+  - id: pa-a-retention
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "What is the best way to build a retention table for personnel documents?"
+      de: "Wie baut man am besten eine Aufbewahrungstabelle für Personalunterlagen auf?"
+    options:
+      - en: "List each document type with its reason, the rule confirmed by the DPO or counsel, an owner and a logged deletion step"
+        de: "Jede Dokumentart mit Grund, der von Datenschutzbeauftragten oder Rechtsberatung bestätigten Regel, Verantwortlichen und einem protokollierten Löschschritt aufführen"
+        correct: true
+      - en: "Use one period from memory for every document"
+        de: "Eine Frist aus dem Gedächtnis für alle Dokumente verwenden"
+        correct: false
+      - en: "Keep everything for ever to be on the safe side"
+        de: "Vorsichtshalber alles dauerhaft aufbewahren"
+        correct: false
+      - en: "Delete everything at the end of employment"
+        de: "Am Ende des Beschäftigungsverhältnisses alles löschen"
+        correct: false
+    explanation:
+      en: "The sources say retention rules differ by field and document and that completed matters can regain relevance while limitation periods run, so each document type needs its own confirmed rule."
+      de: "Die Quellen sagen, dass Aufbewahrungsregeln je nach Bereich und Dokument verschieden sind und abgeschlossene Vorgänge erneut Bedeutung erlangen können, solange Verjährungsfristen laufen; jede Dokumentart braucht daher eine eigene bestätigte Regel."
+    source: https://de.wikipedia.org/wiki/Aufbewahrungsfrist
+  - id: pa-a-access
+    level: advanced
+    difficulty: 1520
+    type: single
+    stem:
+      en: "Which design best applies the principle of least privilege to HR data?"
+      de: "Welche Gestaltung wendet das Prinzip der geringsten Berechtigung auf HR-Daten am besten an?"
+    options:
+      - en: "Roles that give each person only the data needed for their tasks, reviewed regularly and adjusted when duties change"
+        de: "Rollen, die jeder Person nur die für ihre Aufgaben nötigen Daten geben, regelmäßig überprüft und bei Aufgabenwechsel angepasst"
+        correct: true
+      - en: "Full access for every HR team member, to keep things simple"
+        de: "Vollzugriff für alle im HR-Team, damit es einfach bleibt"
+        correct: false
+      - en: "Shared logins so that nobody is singled out"
+        de: "Gemeinsame Zugangsdaten, damit niemand hervorgehoben wird"
+        correct: false
+      - en: "Access for everyone who asks politely"
+        de: "Zugriff für alle, die höflich fragen"
+        correct: false
+    explanation:
+      en: "The access control article describes authorising people only for what they need for their jobs and nothing more; the Personalakte article limits access to those who handle the documents and the supervisors."
+      de: "Der Artikel zu Access control beschreibt, Menschen nur für das zu berechtigen, was sie für ihre Aufgaben brauchen; der Artikel zur Personalakte beschränkt den Zugang auf die Bearbeitenden und die Vorgesetzten."
+    source: https://en.wikipedia.org/wiki/Access_control
+  - id: pa-a-correction
+    level: advanced
+    difficulty: 1580
+    type: single
+    stem:
+      en: "An employee says an entry in their file is wrong. What is the best handling at concept level?"
+      de: "Eine beschäftigte Person sagt, ein Eintrag in ihrer Akte sei falsch. Was ist auf Konzeptebene die beste Vorgehensweise?"
+    options:
+      - en: "Log the request, route it to the DPO or HR lead per procedure, correct only what is demonstrably wrong and keep a trace"
+        de: "Die Anfrage erfassen, nach Verfahren an Datenschutzbeauftragte oder HR-Leitung weiterleiten, nur nachweislich Falsches korrigieren und eine Spur belassen"
+        correct: true
+      - en: "Quietly remove the document from the file"
+        de: "Das Dokument stillschweigend aus der Akte entfernen"
+        correct: false
+      - en: "Refuse any change because the file is the employer's property"
+        de: "Jede Änderung ablehnen, weil die Akte Eigentum des Arbeitgebers ist"
+        correct: false
+      - en: "Promise a correction within a fixed number of days"
+        de: "Eine Korrektur innerhalb einer festen Tageszahl versprechen"
+        correct: false
+    explanation:
+      en: "The article describes inspection rights, counter-statements and the possibility of removing unjustified entries; deciding what applies is a matter for the DPO or legal counsel, and informal removal would be improper."
+      de: "Der Artikel beschreibt Einsichtsrecht, Gegendarstellung und die Möglichkeit, unberechtigte Einträge zu entfernen; was gilt, entscheiden Datenschutzbeauftragte oder Rechtsberatung, und informelles Entfernen wäre falsch."
+    source: https://de.wikipedia.org/wiki/Personalakte
+  - id: pa-a-reconcile
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "HR headcount and the data passed to payroll differ for one person. What is the best approach?"
+      de: "Die Personenzahl im HR-System und die an die Entgeltabrechnung übergebenen Daten weichen bei einer Person ab. Was ist die beste Vorgehensweise?"
+    options:
+      - en: "Trace the difference to its source, correct the master data there with a note, inform payroll and finance, and add a validation rule"
+        de: "Die Abweichung bis zur Quelle verfolgen, dort die Stammdaten mit Vermerk korrigieren, Entgeltabrechnung und Finanzwesen informieren und eine Validierungsregel ergänzen"
+        correct: true
+      - en: "Adjust the payroll figure so that it matches and leave the HR record as it is"
+        de: "Den Wert in der Abrechnung angleichen und den HR-Datensatz so lassen"
+        correct: false
+      - en: "Wait until the next audit and hope the difference disappears"
+        de: "Bis zur nächsten Prüfung warten und hoffen, dass die Abweichung verschwindet"
+        correct: false
+      - en: "Delete the person's record in both systems"
+        de: "Den Datensatz der Person in beiden Systemen löschen"
+        correct: false
+    explanation:
+      en: "Master data, payroll and time data belong to one data basis, so differences are fixed at the source and the fix is recorded; patching one downstream system leaves the cause in place."
+      de: "Stammdaten, Abrechnungs- und Zeitdaten gehören zu einer gemeinsamen Datenbasis; Abweichungen werden an der Quelle behoben und festgehalten, ein Flicken im nachgelagerten System lässt die Ursache bestehen."
+    source: https://de.wikipedia.org/wiki/Personalinformationssystem

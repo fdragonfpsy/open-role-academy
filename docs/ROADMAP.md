@@ -61,7 +61,7 @@ For each competency: ≥1 unit per required level (en + de), ≥6 items across d
 - [ ] Human Resources content complete (sub-tasks below; publish the role when all are done; Germany/EU context, label it; no invented laws, deadlines or figures)
   - [x] employment-law-basics
   - [x] recruitment-selection
-  - [ ] personnel-administration
+  - [x] personnel-administration
   - [ ] hr-data-protection
   - [ ] onboarding-offboarding
   - [ ] payroll-compensation
