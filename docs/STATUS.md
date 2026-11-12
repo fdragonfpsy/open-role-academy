@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-12 — Phase 2: IT Support content for backup-recovery
+
+**Done**
+- `networking-fundamentals` merged ([#26](https://github.com/fdragonfpsy/open-role-academy/pull/26)).
+- `backup-recovery`: 6 units (3 levels x en/de), 12 items, 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0) plus shared BSI IT-Grundschutz.
+- Levels: foundation = why backups, full/incremental/differential, 3-2-1, restore as the real test; practitioner = RPO/RTO, retention, monitoring, restore tests, offsite, encryption; advanced = disaster recovery plans, immutable/offline copies, business-impact priorities, runbooks and exercises.
+
+**Counts:** roles 4 (1 published, 3 draft) · competencies 38 · units 84 · items 168 · resources 103
+
+**Next:** `change-asset-management`, `scripting-automation`, then publish the IT Support role.
+
 ## 2026-11-12 — Phase 2: IT Support content for networking-fundamentals
 
 **Done**

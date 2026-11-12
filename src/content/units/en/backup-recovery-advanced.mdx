@@ -1,0 +1,75 @@
+---
+id: backup-recovery-advanced
+competency: backup-recovery
+level: advanced
+title: "Disaster recovery: business impact, immutable and offline copies, runbooks, exercises and retention under GDPR"
+objectives:
+  - Prioritise systems for recovery by business impact and dependencies.
+  - Write a disaster recovery plan with documented runbooks.
+  - Protect backups against ransomware with immutable, offline or separated copies.
+  - Plan and evaluate recovery exercises.
+  - Consider data protection aspects of backup retention in the EU and Germany.
+minutes: 35
+resources:
+  - wikipedia-disaster-recovery
+  - wikipedia-recovery-point-objective
+  - wikipedia-de-disaster-recovery
+  - bsi-it-grundschutz
+status: ai-draft
+sources:
+  - title: "Disaster recovery"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Disaster_recovery
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Recovery point objective"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Recovery_point_objective
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+Restoring one file is routine. Restoring a whole organisation after a fire, a failed storage system or a ransomware attack is a different task: many systems are down at once, people are under pressure, and the order of recovery matters. **Disaster recovery (DR)** is the preparation for exactly that situation: decisions, documents and tested procedures made before the disaster.
+
+## Prioritise by business impact
+
+You cannot restore everything at the same moment. Start with a **business impact analysis**: for each system, ask what the business loses per hour or day of outage, which processes depend on it, and what the acceptable RPO and RTO are. Then map **dependencies**: an application may need a database, directory service, DNS and network before it can start. The recovery order follows these dependencies and the business priority, for example identity and network first, then the applications that matter most. Agree the priorities with management; they are business decisions, not only technical ones.
+
+## The disaster recovery plan and runbooks
+
+A DR plan states scope, roles, contacts, decision criteria for declaring a disaster, recovery priorities and communication. **Runbooks** are the step-by-step procedures for individual systems: where the backups are, how to reach them, in what order to restore, how to verify success, and who signs off. Write them so that someone who did not build the system could follow them, and keep copies where you can reach them when the main systems are down, including contact lists. Update them after changes and after every exercise.
+
+## Ransomware and backups
+
+Attackers who encrypt production data often also try to find and destroy backups. Protect them with several layers:
+
+- **Offline or air-gapped copies** that are not permanently reachable from the network.
+- **Immutable copies** that cannot be changed or deleted for a set period, even by administrators.
+- **Separated credentials** for the backup system, with strong authentication and no shared admin accounts.
+- **Monitoring** for unusual deletions or changes to backup jobs.
+
+Before restoring after an attack, make sure the cause is understood and the attackers are out; otherwise restored systems can be encrypted again, or a backup may already contain the malware.
+
+## Exercises
+
+A plan that has never been practised is untested. Run exercises of different depth: a walkthrough of the plan on paper, a restore of selected systems into an isolated environment, and occasionally a larger scenario. Measure actual recovery times against the RTOs, note what was missing from the runbooks, and track the improvements.
+
+## Retention and data protection (EU/Germany)
+
+Backups often contain personal data. In the EU the GDPR applies, with principles such as storage limitation and security of processing. In general terms this means: define and document how long backups are kept, do not keep them longer than needed, protect them with appropriate technical measures such as encryption and access control, and consider how a deletion request is handled when the data still exists in older backups. The details depend on your situation, so involve the data protection officer or legal advisers; this unit gives orientation, not legal advice.
+
+## Worked example
+
+A company has an ERP system, a file server, an e-mail service and a web shop. The impact analysis shows that the web shop and ERP matter most, but both depend on the database platform, the directory service and the network. The DR plan therefore restores network and directory first, then the database, then the ERP and shop, then the file server. You find that the only backup copy of the directory service is on the same storage as its production data, so you add an offline copy and an immutable copy of the backup repository. In the first exercise you restore the directory and the ERP database in an isolated network. The restore takes longer than the target, and one runbook step refers to a password that nobody can find. You fix both and log them as findings.
+
+## Key takeaways
+
+- Recovery order follows business impact and technical dependencies.
+- A DR plan and runbooks make recovery possible for people who did not build the system.
+- Immutable, offline and separated backups defend against attackers who target backups.
+- Exercise regularly, measure against the RTO, and fix the findings.
+- Backup retention is also a data protection topic; document it and involve the experts.

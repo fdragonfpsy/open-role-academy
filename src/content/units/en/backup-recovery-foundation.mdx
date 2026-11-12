@@ -1,0 +1,80 @@
+---
+id: backup-recovery-foundation
+competency: backup-recovery
+level: foundation
+title: "Why we back up: backup types, the 3-2-1 idea, what to back up and why restoring is the real test"
+objectives:
+  - Explain why backups are needed and name typical causes of data loss.
+  - Distinguish full, incremental and differential backups.
+  - Describe the 3-2-1 idea for keeping copies.
+  - Decide what needs to be backed up and what does not.
+  - Explain why RAID is not a backup and why only a successful restore proves a backup works.
+minutes: 25
+resources:
+  - wikipedia-backup
+  - wikipedia-raid
+  - wikipedia-de-datensicherung
+  - wikipedia-de-raid
+status: ai-draft
+sources:
+  - title: "Backup"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Backup
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "RAID"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Redundant_array_of_independent_disks
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+Data is lost every day: a laptop is dropped, a disk fails, someone deletes the wrong folder, a software update goes wrong, or malware encrypts files. A **backup** is an additional copy of data, kept separately, so that the data can be **restored** after such an event. Without a working backup, a single incident can cost days of work or data that can never be recreated.
+
+## Typical causes of data loss
+
+- Hardware failure, theft or loss of a device.
+- Human error, such as accidental deletion or overwriting.
+- Software faults and failed updates.
+- Malware, including ransomware that encrypts files.
+- Fire, water damage or power problems at the location.
+
+## Backup types
+
+- **Full backup:** copies everything that is selected. Simple to restore from, but takes the most time and space.
+- **Incremental backup:** copies only what changed since the last backup of any kind. Fast and small, but a restore needs the last full backup plus every incremental one after it.
+- **Differential backup:** copies what changed since the last full backup. It grows over time, but a restore needs only the last full backup plus the latest differential one.
+
+Many setups combine them, for example a full backup once a week and incremental ones in between.
+
+## The 3-2-1 idea
+
+A widely used rule of thumb: keep **three** copies of your data, on **two** different kinds of storage, with **one** copy stored somewhere else (offsite). The idea is that no single event, such as a fire, a failed disk or a mistake, can destroy every copy.
+
+## What to back up
+
+Back up what is hard or impossible to recreate: documents, databases, configuration files, mailboxes and data on file servers. Programs that can be reinstalled and temporary files usually matter less. If you are unsure, ask the data owner what the business cannot do without. Do not forget data that lives only on laptops or in someone's "Downloads" folder.
+
+## RAID is not a backup
+
+**RAID** combines several disks so that the system can keep running when one disk fails. That helps with hardware failure only. If a file is deleted, overwritten or encrypted by malware, RAID faithfully does the same on every disk. A backup is a separate, earlier copy; RAID is availability, not protection against mistakes or attacks.
+
+## A backup you have not restored is a hope
+
+Backups can fail silently: the job did not run, the wrong folder was selected, the media is damaged. The only real proof is a **restore**: take a file or system back from the backup and check that it opens and is complete.
+
+## Worked example
+
+A colleague overwrites the budget spreadsheet with an old version and notices two days later. You check the backup schedule: a nightly backup runs, and the file server keeps several earlier versions. You restore the version from before the mistake into a separate folder, ask the colleague to confirm it is the right one, and only then replace the file. You note the request in the ticket, and you also note that the restore worked, which is useful evidence that the backup is healthy.
+
+## Key takeaways
+
+- A backup is a separate copy that lets you restore data after loss, error or attack.
+- Full, incremental and differential backups trade speed and space against restore effort.
+- 3-2-1: three copies, two kinds of storage, one offsite.
+- RAID keeps a system running after a disk failure but is not a backup.
+- Only a successful restore proves that a backup works.

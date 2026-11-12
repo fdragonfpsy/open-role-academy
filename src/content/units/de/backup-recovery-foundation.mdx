@@ -1,0 +1,80 @@
+---
+id: backup-recovery-foundation
+competency: backup-recovery
+level: foundation
+title: "Warum wir sichern: Sicherungsarten, die 3-2-1-Idee, was gesichert wird und warum erst die Wiederherstellung zählt"
+objectives:
+  - Erklären, warum Datensicherungen nötig sind, und typische Ursachen für Datenverlust nennen.
+  - Vollsicherung, inkrementelle und differenzielle Sicherung unterscheiden.
+  - Die 3-2-1-Idee für das Aufbewahren von Kopien beschreiben.
+  - Entscheiden, was gesichert werden muss und was nicht.
+  - Erklären, warum RAID keine Datensicherung ist und warum erst eine erfolgreiche Wiederherstellung beweist, dass eine Sicherung funktioniert.
+minutes: 25
+resources:
+  - wikipedia-de-datensicherung
+  - wikipedia-de-raid
+  - wikipedia-backup
+  - wikipedia-raid
+status: ai-draft
+sources:
+  - title: "Datensicherung"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Datensicherung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "RAID"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/RAID
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Jeden Tag gehen Daten verloren: Ein Laptop fällt herunter, eine Festplatte fällt aus, jemand löscht den falschen Ordner, ein Update geht schief oder Schadsoftware verschlüsselt Dateien. Eine **Datensicherung** (Backup) ist eine zusätzliche, getrennt aufbewahrte Kopie von Daten, mit der du sie nach einem solchen Ereignis **wiederherstellen** kannst. Ohne funktionierende Sicherung kann ein einzelner Vorfall Tage an Arbeit oder nicht wiederherstellbare Daten kosten.
+
+## Typische Ursachen für Datenverlust
+
+- Hardwaredefekt, Diebstahl oder Verlust eines Geräts.
+- Menschliche Fehler, etwa versehentliches Löschen oder Überschreiben.
+- Softwarefehler und missglückte Updates.
+- Schadsoftware, auch Ransomware, die Dateien verschlüsselt.
+- Brand, Wasserschaden oder Stromprobleme am Standort.
+
+## Sicherungsarten
+
+- **Vollsicherung:** kopiert alles, was ausgewählt ist. Die Wiederherstellung ist einfach, aber Zeit- und Platzbedarf sind am größten.
+- **Inkrementelle Sicherung:** kopiert nur, was sich seit der letzten Sicherung beliebiger Art geändert hat. Schnell und klein, aber für die Wiederherstellung brauchst du die letzte Vollsicherung plus alle inkrementellen Sicherungen danach.
+- **Differenzielle Sicherung:** kopiert, was sich seit der letzten Vollsicherung geändert hat. Sie wächst mit der Zeit, aber für die Wiederherstellung genügen die letzte Vollsicherung und die neueste differenzielle Sicherung.
+
+Oft werden sie kombiniert, zum Beispiel einmal pro Woche eine Vollsicherung und dazwischen inkrementelle Sicherungen.
+
+## Die 3-2-1-Idee
+
+Eine weit verbreitete Faustregel: **drei** Kopien deiner Daten, auf **zwei** verschiedenen Arten von Speichermedien, davon **eine** Kopie an einem anderen Ort (extern). Die Idee: Kein einzelnes Ereignis, etwa ein Brand, ein Plattendefekt oder ein Fehler, soll alle Kopien zerstören können.
+
+## Was wird gesichert?
+
+Sichere, was schwer oder gar nicht neu zu erstellen ist: Dokumente, Datenbanken, Konfigurationsdateien, Postfächer und Daten auf Dateiservern. Programme, die sich neu installieren lassen, und temporäre Dateien sind meist weniger wichtig. Wenn du unsicher bist, frag die Datenverantwortlichen, ohne was das Unternehmen nicht arbeiten kann. Vergiss nicht Daten, die nur auf Laptops oder im "Downloads"-Ordner liegen.
+
+## RAID ist keine Datensicherung
+
+**RAID** fasst mehrere Festplatten zusammen, damit das System weiterläuft, wenn eine Platte ausfällt. Das hilft nur bei Hardwaredefekten. Wird eine Datei gelöscht, überschrieben oder von Schadsoftware verschlüsselt, macht RAID das auf allen Platten brav mit. Eine Sicherung ist eine getrennte, ältere Kopie; RAID dient der Verfügbarkeit, nicht dem Schutz vor Fehlern oder Angriffen.
+
+## Eine Sicherung ohne Wiederherstellung ist nur eine Hoffnung
+
+Sicherungen können unbemerkt fehlschlagen: Der Job lief nicht, der falsche Ordner war ausgewählt, das Medium ist beschädigt. Den einzigen echten Beweis liefert eine **Wiederherstellung**: Hol eine Datei oder ein System aus der Sicherung zurück und prüfe, ob es sich öffnen lässt und vollständig ist.
+
+## Praxisbeispiel
+
+Eine Kollegin überschreibt die Budget-Tabelle mit einer alten Version und merkt es erst zwei Tage später. Du prüfst den Sicherungsplan: Nachts läuft eine Sicherung, und der Dateiserver hält mehrere frühere Versionen vor. Du stellst die Version vor dem Fehler in einen separaten Ordner wieder her, lässt dir von der Kollegin bestätigen, dass es die richtige ist, und ersetzt erst dann die Datei. Du dokumentierst die Anfrage im Ticket und vermerkst auch, dass die Wiederherstellung geklappt hat, ein nützlicher Hinweis darauf, dass die Sicherung gesund ist.
+
+## Wichtigste Erkenntnisse
+
+- Eine Sicherung ist eine getrennte Kopie, mit der sich Daten nach Verlust, Fehler oder Angriff wiederherstellen lassen.
+- Voll, inkrementell und differenziell tauschen Zeit und Platz gegen Aufwand bei der Wiederherstellung.
+- 3-2-1: drei Kopien, zwei Medienarten, eine extern.
+- RAID hält ein System nach einem Plattenausfall am Laufen, ist aber keine Datensicherung.
+- Nur eine erfolgreiche Wiederherstellung beweist, dass eine Sicherung funktioniert.
