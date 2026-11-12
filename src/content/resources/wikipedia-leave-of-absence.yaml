@@ -1,0 +1,13 @@
+id: wikipedia-leave-of-absence
+url: https://en.wikipedia.org/wiki/Leave_of_absence
+title: "Leave of absence"
+provider: Wikipedia
+language: en
+format: article
+minutes: 5
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-12
+mode: link
+competencies: [personnel-administration]
+levels: [foundation, practitioner]

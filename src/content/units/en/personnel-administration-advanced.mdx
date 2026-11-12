@@ -1,0 +1,99 @@
+---
+id: personnel-administration-advanced
+competency: personnel-administration
+level: advanced
+title: "Designing personnel administration (Germany/EU): retention and deletion concept, audit-ready files, access rights, automation, data corrections and reconciliation with payroll"
+objectives:
+  - "Outline a retention and deletion concept and know which parties to involve."
+  - "Describe what makes a personnel file audit-ready."
+  - "Apply need-to-know thinking to access rights for personnel data."
+  - "Identify HR admin processes that suit automation and design them safely."
+  - "Handle data corrections and employee requests at concept level and reconcile HR data with payroll or finance."
+minutes: 30
+resources:
+  - wikipedia-de-personalakte
+  - wikipedia-de-aufbewahrungsfrist
+  - wikipedia-access-control
+  - wikipedia-de-personalinformationssystem
+  - wikipedia-data-cleansing
+  - wikipedia-de-zeiterfassung
+status: ai-draft
+sources:
+  - title: "Personalakte"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Personalakte
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Aufbewahrungsfrist"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Aufbewahrungsfrist
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Access control"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Access_control
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Personalinformationssystem"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Personalinformationssystem
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Data cleansing"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Data_cleansing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Zeiterfassung"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Zeiterfassung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+You design the system: how long records live and who removes them, how access is limited, what is automated and how HR data stays consistent with payroll and finance. This unit gives no retention periods, deadlines or section numbers; they differ by document type and country and change over time. Check current law, your data protection officer (DPO), the works agreement or legal counsel. HR staff do not give legal advice.
+
+## A retention and deletion concept
+
+The German article on Aufbewahrungsfristen explains that completed matters can become relevant again while limitation periods have not expired, and that retention rules differ by field, with commercial and tax law the best known. The Personalakte article adds that no general statutory duty to keep the personnel file after an employee leaves is named, that employment, social insurance and tax law can require certain documents to be kept, and that keeping documents for evidence is recommended until related claims are settled or expired. So retention is document-specific. A workable concept lists each document type, the reason to keep it, the rule that applies (confirmed by your DPO or counsel), who owns deletion and how it is carried out and logged. Never write periods from memory into the table; take them from a source your DPO has confirmed.
+
+## Audit-ready personnel files
+
+The article's requirement of a complete, truthful and careful picture gives you the test: could a reviewer follow the sequence of events from the documents alone? Practical elements: a standard file structure, consistent naming, every system change traceable to a document, and sensitive material kept in a separate part as the article describes.
+
+## Access rights: need to know
+
+The English article on access control describes it as deciding whether a subject may access an object, and cites the principle of least privilege: people should be authorised to access what they need for their job and nothing more. The Personalakte article says access should go only to those who handle the documents and the employee's supervisors, and that third parties are generally denied access. Turn that into roles: who sees master data, absence types, health-related information (usually very few) and pay data. Review roles regularly and ask your DPO before changing the model.
+
+## Automation of HR administration
+
+The German article on personnel information systems lists recurring administrative tasks, such as master data administration, statistics and storage of personal data, as typical for rationalisation. Good candidates are repetitive and rule-based. Before automating, document the manual process, validate at entry (see the data cleansing article) and name an owner for exceptions. The same article lists data protection violations through non-compliant applications as a risk, so check tools with your DPO before rollout and test with fictional data.
+
+## Data corrections and requests
+
+The Personalakte article names these concepts: employees may inspect their file, have a counter-statement added, and in certain cases demand removal of an unjustified entry; a right to correction exists under data protection law. At concept level: log the request with date and scope, route it to the DPO or HR lead per your procedure, never alter or remove documents informally, correct only what is demonstrably wrong and keep a trace, and answer as your DPO prescribes. 
+
+## Reconciling HR data with payroll and finance
+
+Personnel data feeds payroll, and payroll feeds finance, so differences usually start in master data or in time and absence data. The Personalinformationssystem article describes master data, payroll and time data as parts of one system on a shared database. Reconcile: agree a cut-off point, compare headcount and key master data fields, investigate differences, fix at the source and record the result. How pay is calculated belongs to the later payroll topic.
+
+## Worked example
+
+Illustration only; no real figures. A review finds that leave records in the HR system and the data passed to payroll differ for "Employee C". You trace it: a role change was filed but the system change came late. Do not fix it in payroll. Correct the master data at the source, with a note; tell payroll and finance which records changed; and add a validation rule that warns when a filed amendment has no matching update.
+
+## Key takeaways
+
+- Retention is document-specific: types, reasons, confirmed rules and owners, plus a logged deletion routine; no periods from memory.
+- Audit-ready means a reviewer can follow the story from the documents.
+- Apply least privilege: access by role and need to know, reviewed regularly.
+- Automate repetitive, rule-based tasks; validate at entry and own the exceptions.
+- Handle corrections and requests through a logged, DPO-guided procedure.
+- This is orientation for Germany/EU; check current law, your DPO, the works agreement or legal counsel. HR staff do not give legal advice.

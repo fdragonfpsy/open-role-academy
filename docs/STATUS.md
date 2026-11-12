@@ -1,5 +1,17 @@
 # Status
 
+## 2026-11-12 — Phase 2: Human Resources content for personnel-administration
+
+**Done**
+- `recruitment-selection` merged ([#42](https://github.com/fdragonfpsy/open-role-academy/pull/42)).
+- `personnel-administration`: 6 units (3 levels x en/de), 12 items, 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0), 3 reused. No retention periods, leave entitlements, notice periods or section numbers.
+- Levels: foundation = personnel records, lifecycle documents, accuracy and confidentiality, absence types; practitioner = contract changes, leave/absence workflows, time recording, certificates, HR system hygiene; advanced = retention/deletion concept (check rules/DPO), audit-ready files, need-to-know access, automation, data corrections, HR/payroll reconciliation.
+- Review note for humans: worked scenarios and the six-step contract-change routine are illustrations, not from a cited page. Several units sit near the 800-word limit.
+
+**Counts:** roles 4 (3 published, 1 draft) · competencies 38 · units 180 · items 360 · resources 215
+
+**Next:** `hr-data-protection`, then the remaining Human Resources competencies in roadmap order.
+
 ## 2026-11-12 — Phase 2: Human Resources content for recruitment-selection
 
 **Done**
