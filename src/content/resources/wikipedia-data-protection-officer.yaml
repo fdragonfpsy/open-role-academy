@@ -1,0 +1,13 @@
+id: wikipedia-data-protection-officer
+url: https://en.wikipedia.org/wiki/Data_protection_officer
+title: "Data protection officer"
+provider: Wikipedia
+language: en
+format: article
+minutes: 5
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-12
+mode: link
+competencies: [hr-data-protection]
+levels: [foundation, practitioner, advanced]
