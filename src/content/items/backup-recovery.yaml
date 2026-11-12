@@ -1,0 +1,290 @@
+competency: backup-recovery
+items:
+  - id: bk-f-why
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "What is a backup?"
+      de: "Was ist eine Datensicherung?"
+    options:
+      - en: "A separate additional copy of data that can be used to restore it"
+        de: "Eine getrennte zusätzliche Kopie von Daten, mit der sie wiederhergestellt werden können"
+        correct: true
+      - en: "A second name for the original file"
+        de: "Ein zweiter Name für die Originaldatei"
+        correct: false
+      - en: "A password for protecting a folder"
+        de: "Ein Passwort zum Schutz eines Ordners"
+        correct: false
+      - en: "A faster way to open large files"
+        de: "Ein schnellerer Weg, große Dateien zu öffnen"
+        correct: false
+    explanation:
+      en: "A backup is a separate copy kept so that data can be restored after loss, error or attack."
+      de: "Eine Sicherung ist eine getrennt aufbewahrte Kopie, damit Daten nach Verlust, Fehler oder Angriff wiederhergestellt werden können."
+    source: https://en.wikipedia.org/wiki/Backup
+  - id: bk-f-types
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Which backup type copies only what changed since the last full backup?"
+      de: "Welche Sicherungsart kopiert nur, was sich seit der letzten Vollsicherung geändert hat?"
+    options:
+      - en: "Differential backup"
+        de: "Differenzielle Sicherung"
+        correct: true
+      - en: "Full backup"
+        de: "Vollsicherung"
+        correct: false
+      - en: "Incremental backup, which always copies everything again"
+        de: "Inkrementelle Sicherung, die immer alles erneut kopiert"
+        correct: false
+      - en: "Mirror of the screen"
+        de: "Spiegelung des Bildschirms"
+        correct: false
+    explanation:
+      en: "A differential backup contains the changes since the last full backup, so a restore needs the last full backup plus the latest differential one. An incremental backup contains the changes since the last backup of any kind."
+      de: "Eine differenzielle Sicherung enthält die Änderungen seit der letzten Vollsicherung; für die Wiederherstellung genügen die letzte Vollsicherung und die neueste differenzielle Sicherung. Eine inkrementelle Sicherung enthält die Änderungen seit der letzten Sicherung beliebiger Art."
+    source: https://en.wikipedia.org/wiki/Backup
+  - id: bk-f-321
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "What does the 3-2-1 idea say?"
+      de: "Was besagt die 3-2-1-Idee?"
+    options:
+      - en: "Three copies of the data, on two kinds of storage, with one copy offsite"
+        de: "Drei Kopien der Daten, auf zwei Arten von Speicher, davon eine Kopie extern"
+        correct: true
+      - en: "Three passwords, two users, one administrator"
+        de: "Drei Passwörter, zwei Nutzende, eine Administration"
+        correct: false
+      - en: "Three backups per year, two per month, one per week"
+        de: "Drei Sicherungen pro Jahr, zwei pro Monat, eine pro Woche"
+        correct: false
+      - en: "Three servers in one room, two switches, one router"
+        de: "Drei Server in einem Raum, zwei Switches, ein Router"
+        correct: false
+    explanation:
+      en: "The rule of thumb spreads copies across media and locations so that no single event destroys all of them."
+      de: "Die Faustregel verteilt Kopien auf Medien und Orte, damit kein einzelnes Ereignis alle zerstören kann."
+    source: https://en.wikipedia.org/wiki/Backup
+  - id: bk-f-raid
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "A file server uses RAID. A user deletes an important folder by mistake. What does this mean for backups?"
+      de: "Ein Dateiserver nutzt RAID. Jemand löscht versehentlich einen wichtigen Ordner. Was bedeutet das für die Datensicherung?"
+    options:
+      - en: "RAID is not a backup; the deletion applies to all disks, so a real backup is needed to restore the folder"
+        de: "RAID ist keine Sicherung; die Löschung gilt für alle Platten, daher braucht man eine echte Sicherung, um den Ordner wiederherzustellen"
+        correct: true
+      - en: "RAID automatically brings the folder back from another disk"
+        de: "RAID holt den Ordner automatisch von einer anderen Platte zurück"
+        correct: false
+      - en: "RAID makes backups unnecessary on any server"
+        de: "RAID macht Sicherungen auf jedem Server überflüssig"
+        correct: false
+      - en: "The folder cannot be restored under any circumstances"
+        de: "Der Ordner kann unter keinen Umständen wiederhergestellt werden"
+        correct: false
+    explanation:
+      en: "RAID keeps a system available when a disk fails, but it copies deletions and overwrites to every disk. A separate backup is the protection against mistakes and attacks."
+      de: "RAID hält ein System bei einem Plattenausfall verfügbar, überträgt aber Löschungen und Überschreibungen auf alle Platten. Schutz vor Fehlern und Angriffen bietet eine getrennte Sicherung."
+    source: https://en.wikipedia.org/wiki/Redundant_array_of_independent_disks
+  - id: bk-p-rpo
+    level: practitioner
+    difficulty: 1190
+    type: single
+    stem:
+      en: "The business accepts losing at most four hours of data. Which term describes this, and what does it imply?"
+      de: "Das Unternehmen akzeptiert höchstens vier Stunden Datenverlust. Welcher Begriff beschreibt das, und was folgt daraus?"
+    options:
+      - en: "RPO of four hours; backups must run at least every four hours"
+        de: "RPO von vier Stunden; Sicherungen müssen mindestens alle vier Stunden laufen"
+        correct: true
+      - en: "RTO of four hours; backups must run once a week"
+        de: "RTO von vier Stunden; Sicherungen müssen einmal pro Woche laufen"
+        correct: false
+      - en: "RPO of four hours; one nightly backup is enough"
+        de: "RPO von vier Stunden; eine nächtliche Sicherung genügt"
+        correct: false
+      - en: "RTO of four hours; the data may be lost completely"
+        de: "RTO von vier Stunden; die Daten dürfen vollständig verloren gehen"
+        correct: false
+    explanation:
+      en: "The recovery point objective is the maximum acceptable data loss measured in time. It sets the minimum backup frequency. The RTO is about how long a service may be down."
+      de: "Das Recovery Point Objective ist der maximal akzeptable Datenverlust, gemessen in Zeit. Es legt die Mindesthäufigkeit der Sicherung fest. Das RTO betrifft, wie lange ein Dienst ausfallen darf."
+    source: https://en.wikipedia.org/wiki/Recovery_point_objective
+  - id: bk-p-monitor
+    level: practitioner
+    difficulty: 1240
+    type: single
+    stem:
+      en: "Which monitoring practice best prevents backups from failing unnoticed?"
+      de: "Welche Überwachungspraxis verhindert am besten, dass Sicherungen unbemerkt fehlschlagen?"
+    options:
+      - en: "Check every job result and unusual data sizes, and turn failures into alerts or tickets that someone owns"
+        de: "Jedes Jobergebnis und ungewöhnliche Datenmengen prüfen und Fehler in Alarme oder Tickets mit klarer Zuständigkeit umwandeln"
+        correct: true
+      - en: "Assume it works as long as nobody complains"
+        de: "Davon ausgehen, dass es funktioniert, solange sich niemand beschwert"
+        correct: false
+      - en: "Check the backup software only once a year"
+        de: "Die Sicherungssoftware nur einmal im Jahr prüfen"
+        correct: false
+      - en: "Turn off all warnings to reduce noise"
+        de: "Alle Warnungen abschalten, um das Rauschen zu verringern"
+        correct: false
+    explanation:
+      en: "Silent failures are the typical risk. Results, size changes and free space should be checked, and failures must reach a person who is responsible."
+      de: "Stille Fehler sind das typische Risiko. Ergebnisse, Größenänderungen und freier Speicher sollten geprüft werden, und Fehler müssen eine zuständige Person erreichen."
+    source: https://en.wikipedia.org/wiki/Backup
+  - id: bk-p-encrypt
+    level: practitioner
+    difficulty: 1290
+    type: single
+    stem:
+      en: "You encrypt an offsite backup. What must you also make sure of?"
+      de: "Du verschlüsselst eine externe Sicherung. Worauf musst du außerdem achten?"
+    options:
+      - en: "The encryption keys are stored separately and are themselves recoverable"
+        de: "Die Schlüssel werden getrennt aufbewahrt und sind selbst wiederherstellbar"
+        correct: true
+      - en: "The key is stored in a file on the same backup"
+        de: "Der Schlüssel liegt als Datei in derselben Sicherung"
+        correct: false
+      - en: "The key is shared with all employees"
+        de: "Der Schlüssel wird mit allen Beschäftigten geteilt"
+        correct: false
+      - en: "Nothing; a lost key can always be recreated"
+        de: "Nichts; ein verlorener Schlüssel lässt sich immer neu erzeugen"
+        correct: false
+    explanation:
+      en: "Encryption protects lost or leaked copies, but a backup whose key is lost cannot be restored, and a key stored next to the backup offers little protection."
+      de: "Verschlüsselung schützt verlorene oder abgeflossene Kopien, aber eine Sicherung mit verlorenem Schlüssel lässt sich nicht zurückspielen, und ein Schlüssel neben der Sicherung schützt kaum."
+    source: https://en.wikipedia.org/wiki/Backup
+  - id: bk-p-request
+    level: practitioner
+    difficulty: 1340
+    type: single
+    stem:
+      en: "A user asks you to recover a folder that was deleted last week. What is the best approach?"
+      de: "Ein Nutzer bittet dich, einen letzte Woche gelöschten Ordner wiederherzustellen. Was ist das beste Vorgehen?"
+    options:
+      - en: "Verify identity and permission, restore to a separate location, let the user check, then put it back and record it in the ticket"
+        de: "Identität und Berechtigung prüfen, an einen separaten Ort wiederherstellen, die Person prüfen lassen, dann zurücklegen und im Ticket dokumentieren"
+        correct: true
+      - en: "Restore over the current folder immediately without asking"
+        de: "Sofort über den aktuellen Ordner wiederherstellen, ohne nachzufragen"
+        correct: false
+      - en: "Refuse, because backups are never used for single folders"
+        de: "Ablehnen, weil Sicherungen nie für einzelne Ordner genutzt werden"
+        correct: false
+      - en: "Send the whole backup file to the user"
+        de: "Die gesamte Sicherungsdatei an den Nutzer schicken"
+        correct: false
+    explanation:
+      en: "Restoring to a separate location first avoids overwriting newer data and lets the user confirm the right version. Identity and permission checks protect other people's data."
+      de: "Die Wiederherstellung an einen separaten Ort vermeidet das Überschreiben neuerer Daten und lässt die Person die richtige Version bestätigen. Prüfungen von Identität und Berechtigung schützen die Daten anderer."
+    source: https://en.wikipedia.org/wiki/Backup
+  - id: bk-a-priority
+    level: advanced
+    difficulty: 1520
+    type: single
+    stem:
+      en: "How should the recovery order of systems be decided in a disaster recovery plan?"
+      de: "Wie sollte die Reihenfolge der Wiederherstellung von Systemen in einem Disaster-Recovery-Plan festgelegt werden?"
+    options:
+      - en: "By business impact and technical dependencies, agreed with management"
+        de: "Nach Geschäftsauswirkung und technischen Abhängigkeiten, abgestimmt mit der Leitung"
+        correct: true
+      - en: "Alphabetically by system name"
+        de: "Alphabetisch nach Systemnamen"
+        correct: false
+      - en: "In the order in which the systems were purchased"
+        de: "In der Reihenfolge, in der die Systeme gekauft wurden"
+        correct: false
+      - en: "The smallest system first, regardless of importance"
+        de: "Das kleinste System zuerst, unabhängig von der Bedeutung"
+        correct: false
+    explanation:
+      en: "A business impact analysis shows which systems matter most, and dependencies such as directory service, database and network decide what must come up first."
+      de: "Eine Business-Impact-Analyse zeigt, welche Systeme am wichtigsten sind, und Abhängigkeiten wie Verzeichnisdienst, Datenbank und Netzwerk bestimmen, was zuerst laufen muss."
+    source: https://en.wikipedia.org/wiki/Disaster_recovery
+  - id: bk-a-immutable
+    level: advanced
+    difficulty: 1580
+    type: single
+    stem:
+      en: "Which measure best protects backups against attackers who try to delete them after breaking in?"
+      de: "Welche Maßnahme schützt Sicherungen am besten vor Angreifenden, die sie nach einem Einbruch löschen wollen?"
+    options:
+      - en: "Immutable or offline copies with separate credentials for the backup system"
+        de: "Unveränderliche oder Offline-Kopien mit getrennten Zugangsdaten für das Sicherungssystem"
+        correct: true
+      - en: "Keeping the backup share mounted permanently on all servers"
+        de: "Die Sicherungsfreigabe dauerhaft auf allen Servern eingebunden lassen"
+        correct: false
+      - en: "Using the same administrator password as in production"
+        de: "Dasselbe Administratorpasswort wie in der Produktion nutzen"
+        correct: false
+      - en: "Storing the only backup on the production storage"
+        de: "Die einzige Sicherung auf dem Produktivspeicher ablegen"
+        correct: false
+    explanation:
+      en: "Attackers who control production access often look for backups. Copies that cannot be changed or reached, and separate credentials, keep at least one clean copy available."
+      de: "Angreifende mit Zugriff auf die Produktion suchen oft nach Sicherungen. Kopien, die nicht änderbar oder erreichbar sind, und getrennte Zugangsdaten halten mindestens eine saubere Kopie verfügbar."
+    source: https://en.wikipedia.org/wiki/Disaster_recovery
+  - id: bk-a-exercise
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "A recovery exercise took longer than the agreed RTO and a runbook step was unclear. What is the right conclusion?"
+      de: "Eine Wiederherstellungsübung dauerte länger als das vereinbarte RTO, und ein Schritt im Runbook war unklar. Was ist die richtige Schlussfolgerung?"
+    options:
+      - en: "Record the findings, fix the runbook and method, and discuss the RTO with the owner"
+        de: "Feststellungen dokumentieren, Runbook und Verfahren verbessern und das RTO mit der Verantwortlichen besprechen"
+        correct: true
+      - en: "Ignore it, since the exercise was only a test"
+        de: "Ignorieren, da es nur eine Übung war"
+        correct: false
+      - en: "Change the documented RTO silently to match the result"
+        de: "Das dokumentierte RTO stillschweigend an das Ergebnis anpassen"
+        correct: false
+      - en: "Stop exercises, since they show problems"
+        de: "Übungen einstellen, da sie Probleme zeigen"
+        correct: false
+    explanation:
+      en: "The purpose of an exercise is to find gaps. Results feed back into runbooks, methods and, openly agreed with the owner, into the targets."
+      de: "Zweck einer Übung ist, Lücken zu finden. Die Ergebnisse fließen in Runbooks, Verfahren und, offen mit den Verantwortlichen abgestimmt, in die Ziele ein."
+    source: https://en.wikipedia.org/wiki/Disaster_recovery
+  - id: bk-a-gdpr
+    level: advanced
+    difficulty: 1620
+    type: single
+    stem:
+      en: "In the EU, backups containing personal data are kept. Which statement is most appropriate?"
+      de: "In der EU werden Sicherungen mit personenbezogenen Daten aufbewahrt. Welche Aussage passt am besten?"
+    options:
+      - en: "Retention should be defined and documented, limited to what is needed, and protected with measures such as encryption and access control"
+        de: "Die Aufbewahrung sollte festgelegt, dokumentiert, auf das Nötige begrenzt und durch Maßnahmen wie Verschlüsselung und Zugriffskontrolle geschützt werden"
+        correct: true
+      - en: "Backups are outside data protection rules"
+        de: "Sicherungen liegen außerhalb der Datenschutzregeln"
+        correct: false
+      - en: "Backups should be kept forever, just in case"
+        de: "Sicherungen sollten sicherheitshalber für immer aufbewahrt werden"
+        correct: false
+      - en: "Backups need no protection if they are offsite"
+        de: "Sicherungen brauchen keinen Schutz, wenn sie extern liegen"
+        correct: false
+    explanation:
+      en: "Under the GDPR, principles such as storage limitation and security of processing also apply to backups. Details depend on the case, so involve the data protection officer. This item is about the EU context."
+      de: "Nach der DSGVO gelten Grundsätze wie Speicherbegrenzung und Sicherheit der Verarbeitung auch für Sicherungen. Die Einzelheiten hängen vom Fall ab, beziehe daher die Datenschutzbeauftragten ein. Diese Aufgabe betrifft den EU-Kontext."
+    source: https://en.wikipedia.org/wiki/Backup

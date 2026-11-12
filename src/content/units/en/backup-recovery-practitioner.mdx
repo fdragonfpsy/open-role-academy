@@ -1,0 +1,80 @@
+---
+id: backup-recovery-practitioner
+competency: backup-recovery
+level: practitioner
+title: "Running backups: RPO and RTO, retention, scheduling and monitoring, restore tests, offsite copies and encryption"
+objectives:
+  - Explain RPO and RTO and derive a backup frequency from an RPO.
+  - Define a retention period and explain the trade-offs.
+  - Schedule backups and monitor their results.
+  - Plan and document regular restore tests.
+  - Weigh cloud and offsite storage and protect backups with encryption.
+  - Handle user requests to recover deleted or overwritten data.
+minutes: 30
+resources:
+  - wikipedia-backup
+  - wikipedia-recovery-point-objective
+  - wikipedia-de-datensicherung
+status: ai-draft
+sources:
+  - title: "Backup"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Backup
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Recovery point objective"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Recovery_point_objective
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+At practitioner level you no longer only restore a file when asked; you run the backup service. That means agreeing what is protected, how often, for how long, how you know it works, and how fast things come back. These decisions should come from the needs of the business, not from whatever the backup tool does by default.
+
+## RPO and RTO
+
+- **Recovery point objective (RPO):** the maximum amount of data loss, measured in time, that the business accepts. An RPO of one day means that losing everything since the last nightly backup is acceptable; it is not acceptable if the data changes hourly and nobody can re-enter it.
+- **Recovery time objective (RTO):** the maximum time a service may stay unavailable before it is restored.
+
+The RPO drives the **backup frequency**: backups must run at least as often as the RPO allows. The RTO drives the **method**: restoring terabytes from a distant archive takes longer than restoring from a local copy. Both are agreed with the service owner, not guessed by IT.
+
+## Retention
+
+**Retention** is how long backup copies are kept. Short retention saves space but means an error that is noticed late can no longer be undone. Long retention costs storage and may conflict with rules on deleting personal data. A common approach keeps many recent copies and fewer, older ones. Write the retention period down per data type and review it with the data owners.
+
+## Scheduling and monitoring
+
+Run backups outside peak hours, avoid overlapping jobs that compete for the same resources, and document the schedule. A backup that is not monitored will eventually fail unnoticed. Check at least:
+
+1. Did every job run, and did it finish with success rather than warnings?
+2. Did the amount of data change suspiciously, much smaller or much larger than usual?
+3. Is there enough free space on the target?
+4. Are failures turned into tickets or alerts that someone owns?
+
+## Restore tests
+
+Plan restore tests on a schedule: restore single files, and from time to time a complete system, into a test location. Record what was restored, how long it took, who did it and any problems. The measured duration shows whether the RTO is realistic.
+
+## Offsite, cloud and encryption
+
+An offsite copy, in another building or a cloud service, protects against site-wide events. When data leaves your premises, consider bandwidth, restore speed, cost, and who can access it. **Encrypt backups** so that a lost disk or a leaked copy does not expose the data. Store the encryption keys separately from the backups and make sure they are themselves recoverable; an encrypted backup with a lost key cannot be restored. If personal data is involved, check the data protection requirements for the storage location (see the EU/Germany note in the advanced unit).
+
+## User recovery requests
+
+Verify the requester's identity and permission for the data, collect the exact path, the time before the loss and the preferred destination. Restore to a separate location first, let the user check, then put the data back. Record the request and the result in the ticket.
+
+## Worked example
+
+The finance team's accounting database changes all day, and the owner says that losing more than an hour of entries would be a problem. That sets an RPO of one hour, so a nightly backup is not enough. You propose frequent backups of the transaction data plus a nightly full backup, an RTO of a few hours agreed with the owner, and a monthly restore test into a test environment. After the first test you note that the restore took longer than the agreed RTO, so you raise it with the owner: either the target changes or the method must become faster.
+
+## Key takeaways
+
+- RPO decides how often to back up; RTO influences how you restore.
+- Define and document retention per data type with the data owners.
+- Unmonitored backups fail silently; monitor results, size and space.
+- Test restores regularly and measure the time.
+- Encrypt backups, protect the keys, and verify identity before restoring user data.

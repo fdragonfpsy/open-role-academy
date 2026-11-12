@@ -1,0 +1,75 @@
+---
+id: backup-recovery-advanced
+competency: backup-recovery
+level: advanced
+title: "Disaster Recovery: Geschäftsauswirkungen, unveränderliche und Offline-Kopien, Runbooks, Übungen und Aufbewahrung nach DSGVO"
+objectives:
+  - Systeme für die Wiederherstellung nach Geschäftsauswirkung und Abhängigkeiten priorisieren.
+  - Einen Disaster-Recovery-Plan mit dokumentierten Runbooks erstellen.
+  - Sicherungen mit unveränderlichen, Offline- oder getrennten Kopien gegen Ransomware schützen.
+  - Wiederherstellungsübungen planen und auswerten.
+  - Datenschutzaspekte der Aufbewahrung von Sicherungen in der EU und in Deutschland berücksichtigen.
+minutes: 35
+resources:
+  - wikipedia-de-disaster-recovery
+  - wikipedia-disaster-recovery
+  - wikipedia-recovery-point-objective
+  - bsi-it-grundschutz
+status: ai-draft
+sources:
+  - title: "Disaster Recovery"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Disaster_Recovery
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Recovery point objective"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Recovery_point_objective
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Eine einzelne Datei wiederherzustellen ist Routine. Eine ganze Organisation nach einem Brand, einem Ausfall des Speichersystems oder einem Ransomware-Angriff wiederherzustellen, ist eine andere Aufgabe: Viele Systeme sind gleichzeitig aus, die Menschen stehen unter Druck, und die Reihenfolge der Wiederherstellung ist entscheidend. **Disaster Recovery (DR)** ist die Vorbereitung genau auf diese Lage: Entscheidungen, Dokumente und getestete Abläufe, die vor dem Ernstfall entstehen.
+
+## Nach Geschäftsauswirkung priorisieren
+
+Du kannst nicht alles gleichzeitig wiederherstellen. Beginne mit einer **Business-Impact-Analyse**: Frage für jedes System, was das Unternehmen pro Stunde oder Tag Ausfall verliert, welche Prozesse davon abhängen und welche RPO und RTO vertretbar sind. Erfasse dann die **Abhängigkeiten**: Eine Anwendung braucht vielleicht Datenbank, Verzeichnisdienst, DNS und Netzwerk, bevor sie starten kann. Die Reihenfolge der Wiederherstellung folgt diesen Abhängigkeiten und der geschäftlichen Priorität, zum Beispiel zuerst Identitäten und Netzwerk, dann die wichtigsten Anwendungen. Stimme die Prioritäten mit der Leitung ab; sie sind geschäftliche, nicht nur technische Entscheidungen.
+
+## Der Disaster-Recovery-Plan und Runbooks
+
+Ein DR-Plan legt Geltungsbereich, Rollen, Kontakte, Kriterien für die Ausrufung eines Notfalls, Wiederherstellungsprioritäten und Kommunikation fest. **Runbooks** sind die Schritt-für-Schritt-Anleitungen für einzelne Systeme: wo die Sicherungen liegen, wie man darankommt, in welcher Reihenfolge wiederhergestellt wird, wie der Erfolg geprüft wird und wer abnimmt. Schreibe sie so, dass jemand, der das System nicht aufgebaut hat, ihnen folgen kann, und bewahre Kopien, auch der Kontaktlisten, dort auf, wo du sie erreichst, wenn die Hauptsysteme ausgefallen sind. Aktualisiere sie nach Änderungen und nach jeder Übung.
+
+## Ransomware und Sicherungen
+
+Angreifende, die Produktivdaten verschlüsseln, versuchen oft auch, Sicherungen zu finden und zu zerstören. Schütze sie mit mehreren Schichten:
+
+- **Offline-Kopien** oder physisch getrennte Kopien, die nicht dauerhaft aus dem Netz erreichbar sind.
+- **Unveränderliche Kopien**, die für einen festgelegten Zeitraum nicht geändert oder gelöscht werden können, auch nicht von Administrierenden.
+- **Getrennte Zugangsdaten** für das Sicherungssystem, mit starker Authentifizierung und ohne gemeinsam genutzte Admin-Konten.
+- **Überwachung** auf ungewöhnliche Löschungen oder Änderungen an Sicherungsjobs.
+
+Bevor du nach einem Angriff wiederherstellst, stelle sicher, dass die Ursache verstanden ist und die Angreifenden draußen sind; sonst können wiederhergestellte Systeme erneut verschlüsselt werden, oder eine Sicherung enthält die Schadsoftware bereits.
+
+## Übungen
+
+Ein Plan, der nie geübt wurde, ist ungetestet. Führe Übungen unterschiedlicher Tiefe durch: ein Durchgehen des Plans am Tisch, die Wiederherstellung ausgewählter Systeme in einer isolierten Umgebung und gelegentlich ein größeres Szenario. Miss die tatsächlichen Wiederherstellungszeiten gegen die RTO, halte fest, was in den Runbooks fehlte, und verfolge die Verbesserungen.
+
+## Aufbewahrung und Datenschutz (EU/Deutschland)
+
+Sicherungen enthalten oft personenbezogene Daten. In der EU gilt die DSGVO mit Grundsätzen wie Speicherbegrenzung und Sicherheit der Verarbeitung. Allgemein heißt das: Lege fest und dokumentiere, wie lange Sicherungen aufbewahrt werden, bewahre sie nicht länger als nötig auf, schütze sie mit angemessenen technischen Maßnahmen wie Verschlüsselung und Zugriffskontrolle und überlege, wie mit einem Löschverlangen umgegangen wird, wenn die Daten noch in älteren Sicherungen liegen. Die Einzelheiten hängen von deiner Situation ab, beziehe daher die Datenschutzbeauftragten oder Rechtsberatung ein; diese Einheit bietet Orientierung, keine Rechtsberatung.
+
+## Praxisbeispiel
+
+Ein Unternehmen betreibt ein ERP-System, einen Dateiserver, einen E-Mail-Dienst und einen Webshop. Die Auswirkungsanalyse zeigt: Webshop und ERP sind am wichtigsten, beide hängen aber von der Datenbankplattform, dem Verzeichnisdienst und dem Netzwerk ab. Der DR-Plan stellt daher zuerst Netzwerk und Verzeichnisdienst wieder her, dann die Datenbank, dann ERP und Shop, dann den Dateiserver. Dir fällt auf, dass die einzige Sicherungskopie des Verzeichnisdienstes auf demselben Speicher liegt wie seine Produktivdaten; du ergänzt eine Offline-Kopie und eine unveränderliche Kopie des Sicherungsarchivs. In der ersten Übung stellst du Verzeichnisdienst und ERP-Datenbank in einem isolierten Netz wieder her. Es dauert länger als das Ziel, und ein Schritt im Runbook verweist auf ein Passwort, das niemand findet. Du behebst beides und hältst es als Feststellungen fest.
+
+## Wichtigste Erkenntnisse
+
+- Die Reihenfolge der Wiederherstellung folgt Geschäftsauswirkung und technischen Abhängigkeiten.
+- Ein DR-Plan und Runbooks ermöglichen die Wiederherstellung auch für Personen, die das System nicht aufgebaut haben.
+- Unveränderliche, Offline- und getrennte Sicherungen schützen vor Angriffen auf die Sicherungen selbst.
+- Regelmäßig üben, gegen das RTO messen und die Feststellungen beheben.
+- Aufbewahrung von Sicherungen ist auch ein Datenschutzthema; dokumentiere sie und beziehe Fachleute ein.

@@ -1,0 +1,80 @@
+---
+id: backup-recovery-practitioner
+competency: backup-recovery
+level: practitioner
+title: "Sicherungen betreiben: RPO und RTO, Aufbewahrung, Planung und Überwachung, Wiederherstellungstests, externe Kopien und Verschlüsselung"
+objectives:
+  - RPO und RTO erklären und aus einem RPO eine Sicherungshäufigkeit ableiten.
+  - Eine Aufbewahrungsdauer festlegen und die Abwägungen erklären.
+  - Sicherungen planen und ihre Ergebnisse überwachen.
+  - Regelmäßige Wiederherstellungstests planen und dokumentieren.
+  - Cloud- und externe Speicherung abwägen und Sicherungen durch Verschlüsselung schützen.
+  - Anfragen von Nutzenden zur Wiederherstellung gelöschter oder überschriebener Daten bearbeiten.
+minutes: 30
+resources:
+  - wikipedia-de-datensicherung
+  - wikipedia-backup
+  - wikipedia-recovery-point-objective
+status: ai-draft
+sources:
+  - title: "Datensicherung"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Datensicherung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Recovery point objective"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Recovery_point_objective
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Auf Fortgeschrittenen-Niveau stellst du nicht mehr nur auf Anfrage eine Datei wieder her, sondern betreibst den Sicherungsdienst. Das heißt: Du klärst, was geschützt wird, wie oft, wie lange, woran du erkennst, dass es funktioniert, und wie schnell alles wieder verfügbar ist. Diese Entscheidungen sollten sich am Bedarf des Unternehmens orientieren, nicht an den Standardwerten des Sicherungsprogramms.
+
+## RPO und RTO
+
+- **Recovery Point Objective (RPO):** der maximale Datenverlust, gemessen in Zeit, den das Unternehmen akzeptiert. Ein RPO von einem Tag bedeutet: Alles seit der letzten nächtlichen Sicherung zu verlieren ist tragbar. Das ist es nicht, wenn sich die Daten stündlich ändern und niemand sie neu erfassen kann.
+- **Recovery Time Objective (RTO):** die maximale Zeit, die ein Dienst ausfallen darf, bevor er wiederhergestellt ist.
+
+Das RPO bestimmt die **Sicherungshäufigkeit**: Sicherungen müssen mindestens so oft laufen, wie das RPO es erlaubt. Das RTO beeinflusst das **Verfahren**: Terabytes aus einem entfernten Archiv zurückzuholen dauert länger als aus einer lokalen Kopie. Beide Werte legst du mit den Dienstverantwortlichen fest, die IT rät sie nicht.
+
+## Aufbewahrung
+
+**Aufbewahrung** (Retention) bedeutet, wie lange Sicherungskopien behalten werden. Kurze Aufbewahrung spart Platz, aber ein spät bemerkter Fehler lässt sich dann nicht mehr rückgängig machen. Lange Aufbewahrung kostet Speicher und kann mit Regeln zur Löschung personenbezogener Daten kollidieren. Üblich ist, viele aktuelle und weniger ältere Kopien zu behalten. Halte die Aufbewahrungsdauer pro Datenart schriftlich fest und prüfe sie mit den Datenverantwortlichen.
+
+## Planung und Überwachung
+
+Lass Sicherungen außerhalb der Hauptarbeitszeit laufen, vermeide überlappende Jobs, die um dieselben Ressourcen konkurrieren, und dokumentiere den Zeitplan. Eine nicht überwachte Sicherung schlägt irgendwann unbemerkt fehl. Prüfe mindestens:
+
+1. Ist jeder Job gelaufen und mit Erfolg statt mit Warnungen beendet worden?
+2. Hat sich die Datenmenge auffällig verändert, deutlich kleiner oder größer als üblich?
+3. Ist auf dem Ziel genug Speicherplatz frei?
+4. Werden Fehler zu Tickets oder Alarmen, für die jemand zuständig ist?
+
+## Wiederherstellungstests
+
+Plane Wiederherstellungstests nach festem Zeitplan: einzelne Dateien und von Zeit zu Zeit ein komplettes System, an einen Testort. Halte fest, was wiederhergestellt wurde, wie lange es dauerte, wer es durchgeführt hat und welche Probleme auftraten. Die gemessene Dauer zeigt, ob das RTO realistisch ist.
+
+## Externe Kopien, Cloud und Verschlüsselung
+
+Eine externe Kopie, in einem anderen Gebäude oder bei einem Cloud-Dienst, schützt vor Ereignissen, die den ganzen Standort betreffen. Wenn Daten dein Haus verlassen, bedenke Bandbreite, Wiederherstellungsgeschwindigkeit, Kosten und wer Zugriff hat. **Verschlüssele Sicherungen**, damit ein verlorener Datenträger oder eine abgeflossene Kopie die Daten nicht preisgibt. Bewahre die Schlüssel getrennt von den Sicherungen auf und stelle sicher, dass sie selbst wiederherstellbar sind; eine verschlüsselte Sicherung mit verlorenem Schlüssel lässt sich nicht zurückspielen. Wenn personenbezogene Daten betroffen sind, prüfe die Datenschutzanforderungen für den Speicherort (siehe Hinweis zu EU/Deutschland in der Experten-Einheit).
+
+## Wiederherstellungsanfragen von Nutzenden
+
+Prüfe Identität und Berechtigung der anfragenden Person, erfasse den genauen Pfad, den Zeitpunkt vor dem Verlust und den gewünschten Zielort. Stelle zuerst an einen separaten Ort wieder her, lass die Person prüfen und lege die Daten erst dann zurück. Dokumentiere Anfrage und Ergebnis im Ticket.
+
+## Praxisbeispiel
+
+Die Buchhaltungsdatenbank des Finanzteams ändert sich den ganzen Tag, und die Verantwortliche sagt, dass der Verlust von mehr als einer Stunde Buchungen ein Problem wäre. Das ergibt ein RPO von einer Stunde, eine nächtliche Sicherung reicht also nicht. Du schlägst häufige Sicherungen der Transaktionsdaten plus eine nächtliche Vollsicherung vor, ein mit der Verantwortlichen vereinbartes RTO von wenigen Stunden und einen monatlichen Wiederherstellungstest in einer Testumgebung. Nach dem ersten Test stellst du fest, dass die Wiederherstellung länger als das vereinbarte RTO dauerte, und sprichst das an: Entweder ändert sich das Ziel oder das Verfahren muss schneller werden.
+
+## Wichtigste Erkenntnisse
+
+- Das RPO bestimmt, wie oft gesichert wird; das RTO beeinflusst, wie wiederhergestellt wird.
+- Aufbewahrung pro Datenart mit den Datenverantwortlichen festlegen und dokumentieren.
+- Nicht überwachte Sicherungen scheitern unbemerkt; überwache Ergebnis, Größe und Speicherplatz.
+- Teste Wiederherstellungen regelmäßig und miss die Zeit.
+- Verschlüssele Sicherungen, schütze die Schlüssel und prüfe die Identität, bevor du Nutzerdaten wiederherstellst.
