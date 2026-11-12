@@ -1,0 +1,290 @@
+competency: tax-basics
+items:
+  - id: tb-f-formula
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "A business charged 50 units of output tax on its sales and paid 30 units of input tax on its purchases in the period. What does the VAT mechanism say about the net amount to be paid to the tax authority?"
+      de: "Ein Unternehmen hat auf seine Umsätze 50 Einheiten Umsatzsteuer berechnet und auf seine Einkäufe 30 Einheiten Vorsteuer gezahlt. Wie hoch ist nach dem Umsatzsteuer-Prinzip der an das Finanzamt zu zahlende Betrag?"
+    options:
+      - en: "20 units"
+        de: "20 Einheiten"
+        correct: true
+      - en: "80 units"
+        de: "80 Einheiten"
+        correct: false
+      - en: "30 units"
+        de: "30 Einheiten"
+        correct: false
+      - en: "50 units"
+        de: "50 Einheiten"
+        correct: false
+    explanation:
+      en: "The input tax is deducted from the output tax and the difference is paid: 50 - 30 = 20."
+      de: "Die Vorsteuer wird von der Umsatzsteuer abgezogen und die Differenz gezahlt: 50 - 30 = 20."
+    source: https://en.wikipedia.org/wiki/Value-added_tax
+  - id: tb-f-bearer
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Who is meant to bear the VAT economically?"
+      de: "Wer soll die Umsatzsteuer wirtschaftlich tragen?"
+    options:
+      - en: "The final consumer"
+        de: "Die Endverbraucherin bzw. der Endverbraucher"
+        correct: true
+      - en: "Every business along the chain, in full"
+        de: "Jedes Unternehmen der Kette in voller Höhe"
+        correct: false
+      - en: "Only the first supplier"
+        de: "Nur der erste Lieferant"
+        correct: false
+      - en: "The tax authority"
+        de: "Das Finanzamt"
+        correct: false
+    explanation:
+      en: "VAT is an indirect tax: businesses collect it and pass it on, but it is built into the price the final consumer pays."
+      de: "Die Umsatzsteuer ist eine indirekte Steuer: Unternehmen vereinnahmen sie und leiten sie weiter, sie steckt aber im Preis, den die Endverbraucherin bzw. der Endverbraucher zahlt."
+    source: https://en.wikipedia.org/wiki/Value-added_tax
+  - id: tb-f-invoice
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "Why are invoices central to the VAT system?"
+      de: "Warum sind Rechnungen für die Umsatzsteuer zentral?"
+    options:
+      - en: "They document the tax charged, which supports the input tax deduction and leaves an audit trail"
+        de: "Sie belegen die berechnete Steuer, stützen den Vorsteuerabzug und hinterlassen eine Prüfspur"
+        correct: true
+      - en: "They replace the VAT return"
+        de: "Sie ersetzen die Umsatzsteuermeldung"
+        correct: false
+      - en: "They are only needed for private customers"
+        de: "Sie werden nur für Privatkunden gebraucht"
+        correct: false
+      - en: "They remove the tax duty of the buyer"
+        de: "Sie heben die Steuerpflicht des Käufers auf"
+        correct: false
+    explanation:
+      en: "Invoices document the tax; a proper invoice is required, among other things, for input tax deduction, and every transaction leaves a trail for audits."
+      de: "Rechnungen belegen die Steuer; eine ordnungsgemäße Rechnung ist u. a. Voraussetzung für den Vorsteuerabzug, und jede Transaktion hinterlässt eine Spur für Prüfungen."
+    source: https://en.wikipedia.org/wiki/Value-added_tax
+  - id: tb-f-business
+    level: foundation
+    difficulty: 1040
+    type: single
+    stem:
+      en: "Under the German VAT law, who is a business (Unternehmer)?"
+      de: "Wer ist nach dem deutschen Umsatzsteuergesetz Unternehmer?"
+    options:
+      - en: "Someone who independently carries out a sustained commercial or professional activity"
+        de: "Wer selbstständig eine nachhaltige gewerbliche oder berufliche Tätigkeit ausübt"
+        correct: true
+      - en: "Only someone who intends to make a profit"
+        de: "Nur, wer Gewinn erzielen will"
+        correct: false
+      - en: "Only corporations"
+        de: "Nur Kapitalgesellschaften"
+        correct: false
+      - en: "Only someone who exports goods"
+        de: "Nur, wer Waren exportiert"
+        correct: false
+    explanation:
+      en: "What counts is an independent, sustained activity intended to generate income. Unlike in income tax law, an intention to make a profit is not required."
+      de: "Maßgeblich ist eine selbstständige, nachhaltige Tätigkeit, mit der Einnahmen erzielt werden sollen. Anders als im Einkommensteuerrecht ist keine Gewinnerzielungsabsicht nötig."
+    source: https://de.wikipedia.org/wiki/Umsatzsteuergesetz_(Deutschland)
+  - id: tb-p-profit
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "A company buys goods for a net 500 (input tax 100) and sells them for a net 800 (output tax 160). How much of the 160 output tax does it keep as part of its profit?"
+      de: "Ein Unternehmen kauft Ware für netto 500 (Vorsteuer 100) und verkauft sie für netto 800 (Umsatzsteuer 160). Wie viel der 160 Umsatzsteuer verbleibt als Teil des Gewinns?"
+    options:
+      - en: "None: the 60 difference is paid to the tax authority and profit is 300"
+        de: "Nichts: die Differenz von 60 geht ans Finanzamt, der Gewinn beträgt 300"
+        correct: true
+      - en: "All 160, since the customer paid it"
+        de: "Alle 160, weil die Kundschaft sie gezahlt hat"
+        correct: false
+      - en: "60, as extra profit"
+        de: "60 als zusätzlicher Gewinn"
+        correct: false
+      - en: "100, because that was the input tax"
+        de: "100, weil das die Vorsteuer war"
+        correct: false
+    explanation:
+      en: "Output tax is owed to the authority, input tax is a claim. The difference of 60 is paid over; the profit effect is the net difference of 800 - 500 = 300."
+      de: "Die Umsatzsteuer ist dem Finanzamt geschuldet, die Vorsteuer ein Anspruch. Die Differenz von 60 wird abgeführt; der Gewinneffekt ist die Nettodifferenz 800 - 500 = 300."
+    source: https://en.wikipedia.org/wiki/Value-added_tax
+  - id: tb-p-net-gross
+    level: practitioner
+    difficulty: 1220
+    type: single
+    stem:
+      en: "Why do bookkeeping systems keep separate accounts for output tax and input tax?"
+      de: "Warum führen Buchführungssysteme getrennte Konten für Umsatzsteuer und Vorsteuer?"
+    options:
+      - en: "Because they are not normal income or expense: output tax is owed to the authority, input tax is a claim against it"
+        de: "Weil sie kein normaler Ertrag oder Aufwand sind: Die Umsatzsteuer ist dem Finanzamt geschuldet, die Vorsteuer ein Anspruch gegen es"
+        correct: true
+      - en: "Because VAT is always a cost of the company"
+        de: "Weil die Umsatzsteuer immer ein Aufwand des Unternehmens ist"
+        correct: false
+      - en: "Because gross and net amounts are identical"
+        de: "Weil Brutto- und Nettobetrag identisch sind"
+        correct: false
+      - en: "Because VAT is never reported"
+        de: "Weil Umsatzsteuer nie gemeldet wird"
+        correct: false
+    explanation:
+      en: "The tax is passed through, so it is tracked separately and the balance is reported to the authority."
+      de: "Die Steuer ist ein durchlaufender Posten, daher wird sie getrennt geführt und der Saldo dem Finanzamt gemeldet."
+    source: https://de.wikipedia.org/wiki/Umsatzsteuergesetz_(Deutschland)
+  - id: tb-p-eu
+    level: practitioner
+    difficulty: 1280
+    type: single
+    stem:
+      en: "Which statement about an intra-Community supply between two businesses in different EU states is correct?"
+      de: "Welche Aussage zu einer innergemeinschaftlichen Lieferung zwischen zwei Unternehmen in verschiedenen EU-Staaten ist richtig?"
+    options:
+      - en: "The supplier needs proof, such as the customer's valid VAT ID and evidence the goods moved, and the recipient taxes the acquisition in their own country"
+        de: "Der Lieferant braucht Nachweise, etwa die gültige USt-IdNr. des Kunden und einen Beleg über den Transport, und der Empfänger versteuert den Erwerb in seinem Land"
+        correct: true
+      - en: "No proof or reporting is ever needed"
+        de: "Es sind nie Nachweise oder Meldungen nötig"
+        correct: false
+      - en: "The supplier always charges the recipient's local VAT on the invoice"
+        de: "Der Lieferant berechnet immer die Umsatzsteuer des Empfängerlandes auf der Rechnung"
+        correct: false
+      - en: "The recipient may never deduct the tax"
+        de: "Der Empfänger darf die Steuer nie abziehen"
+        correct: false
+    explanation:
+      en: "The supply is exempt in the state where transport begins if conditions are met; the supplier carries the burden of proof, and the recipient usually deducts the acquisition tax as input tax."
+      de: "Die Lieferung ist im Staat des Transportbeginns steuerfrei, wenn die Voraussetzungen erfüllt sind; der Lieferant trägt die Nachweislast, und der Empfänger zieht die Erwerbsteuer meist als Vorsteuer ab."
+    source: https://de.wikipedia.org/wiki/Innergemeinschaftliche_Lieferung
+  - id: tb-p-gewst
+    level: practitioner
+    difficulty: 1340
+    type: single
+    stem:
+      en: "Which statement about the Gewerbesteuer (trade tax) is correct?"
+      de: "Welche Aussage zur Gewerbesteuer ist richtig?"
+    options:
+      - en: "It is a municipal tax on the earnings of commercial businesses; municipalities set a multiplier (Hebesatz)"
+        de: "Sie ist eine Gemeindesteuer auf den Ertrag gewerblicher Betriebe; die Gemeinden legen den Hebesatz fest"
+        correct: true
+      - en: "It is a federal tax on every invoice"
+        de: "Sie ist eine Bundessteuer auf jede Rechnung"
+        correct: false
+      - en: "It replaces VAT for small businesses"
+        de: "Sie ersetzt für kleine Unternehmen die Umsatzsteuer"
+        correct: false
+      - en: "It applies to freelancers like every other business"
+        de: "Sie gilt für Freiberufler wie für alle anderen Unternehmen"
+        correct: false
+    explanation:
+      en: "It is levied on the earnings of commercial businesses and is a municipal tax; freelancers are not covered."
+      de: "Sie wird auf den Ertrag gewerblicher Betriebe erhoben und ist eine Gemeindesteuer; Freiberufler sind nicht erfasst."
+    source: https://de.wikipedia.org/wiki/Gewerbesteuer
+  - id: tb-a-reverse
+    level: advanced
+    difficulty: 1480
+    type: single
+    stem:
+      en: "What characterises the reverse charge mechanism?"
+      de: "Was kennzeichnet das Reverse-Charge-Verfahren?"
+    options:
+      - en: "The recipient, not the supplier, reports and pays the tax, and can generally deduct it as input tax"
+        de: "Der Empfänger, nicht der Lieferant, meldet und zahlt die Steuer und kann sie grundsätzlich als Vorsteuer abziehen"
+        correct: true
+      - en: "The supplier pays the tax twice"
+        de: "Der Lieferant zahlt die Steuer doppelt"
+        correct: false
+      - en: "No one ever owes any tax"
+        de: "Niemand schuldet jemals Steuer"
+        correct: false
+      - en: "The tax authority refunds the consumer directly"
+        de: "Das Finanzamt erstattet der Verbraucherin direkt"
+        correct: false
+    explanation:
+      en: "Under reverse charge the liability shifts to the recipient; the tax owed can generally be deducted as input tax."
+      de: "Beim Reverse Charge geht die Steuerschuld auf den Empfänger über; die geschuldete Steuer ist grundsätzlich als Vorsteuer abziehbar."
+    source: https://de.wikipedia.org/wiki/Umsatzsteuergesetz_(Deutschland)
+  - id: tb-a-proof
+    level: advanced
+    difficulty: 1540
+    type: single
+    stem:
+      en: "A company delivered goods to another EU state without German VAT but cannot show proof of the customer's status or of the transport. What is the risk?"
+      de: "Ein Unternehmen lieferte Waren ohne deutsche Umsatzsteuer in einen anderen EU-Staat, kann aber weder den Kundenstatus noch den Transport belegen. Welches Risiko besteht?"
+    options:
+      - en: "It may have to pay German VAT afterwards, unless it can rely on good faith"
+        de: "Es muss unter Umständen nachträglich deutsche Umsatzsteuer zahlen, sofern es sich nicht auf guten Glauben berufen kann"
+        correct: true
+      - en: "The recipient must pay German VAT instead"
+        de: "Stattdessen muss der Empfänger deutsche Umsatzsteuer zahlen"
+        correct: false
+      - en: "No risk, because exempt supplies need no evidence"
+        de: "Kein Risiko, weil steuerfreie Lieferungen keinen Nachweis brauchen"
+        correct: false
+      - en: "The supply becomes a private transaction"
+        de: "Die Lieferung wird zu einem privaten Geschäft"
+        correct: false
+    explanation:
+      en: "The supplier bears the risk and may have to pay the tax if the conditions cannot be shown and good faith does not apply."
+      de: "Der Lieferant trägt das Risiko und muss die Steuer ggf. nachzahlen, wenn die Voraussetzungen nicht belegt werden und kein guter Glaube greift."
+    source: https://de.wikipedia.org/wiki/Innergemeinschaftliche_Lieferung
+  - id: tb-a-control
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "Which AP control best reduces the risk of wrongly deducting input tax?"
+      de: "Welche Kreditorenkontrolle senkt das Risiko eines unberechtigten Vorsteuerabzugs am besten?"
+    options:
+      - en: "Checking each incoming invoice for completeness against the current legal requirements before the deduction is posted"
+        de: "Jede Eingangsrechnung vor der Buchung des Abzugs anhand der aktuellen gesetzlichen Anforderungen auf Vollständigkeit prüfen"
+        correct: true
+      - en: "Deducting input tax from every document that mentions tax"
+        de: "Vorsteuer aus jedem Beleg abziehen, der Steuer nennt"
+        correct: false
+      - en: "Deducting only at year end without checks"
+        de: "Erst zum Jahresende ohne Prüfung abziehen"
+        correct: false
+      - en: "Letting the supplier decide whether the deduction applies"
+        de: "Den Lieferanten entscheiden lassen, ob der Abzug gilt"
+        correct: false
+    explanation:
+      en: "A proper invoice is among the conditions for input tax deduction, so completeness should be checked against the current rules before the deduction."
+      de: "Eine ordnungsgemäße Rechnung ist u. a. Voraussetzung für den Vorsteuerabzug; daher wird die Vollständigkeit vor dem Abzug anhand der aktuellen Regeln geprüft."
+    source: https://de.wikipedia.org/wiki/Umsatzsteuergesetz_(Deutschland)
+  - id: tb-a-advisor
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "In which situation is involving a tax advisor most clearly advisable?"
+      de: "In welcher Situation ist die Einbeziehung der Steuerberatung am deutlichsten ratsam?"
+    options:
+      - en: "A new cross-border service with doubt whether reverse charge applies"
+        de: "Eine neue grenzüberschreitende Dienstleistung mit Zweifel, ob Reverse Charge gilt"
+        correct: true
+      - en: "A routine domestic invoice that matches the standard process"
+        de: "Eine routinemäßige Inlandsrechnung nach dem Standardprozess"
+        correct: false
+      - en: "Posting a standard office supplies invoice"
+        de: "Die Buchung einer Standardrechnung für Büromaterial"
+        correct: false
+      - en: "Filing a document in the archive"
+        de: "Das Ablegen eines Belegs im Archiv"
+        correct: false
+    explanation:
+      en: "Tax advisors help with non-standard questions such as cross-border services, doubtful treatment and notices; routine items follow the standard process."
+      de: "Die Steuerberatung hilft bei Sonderfragen wie grenzüberschreitenden Leistungen, unklarer Behandlung und Behördenschreiben; Routinevorgänge folgen dem Standardprozess."
+    source: https://de.wikipedia.org/wiki/Steuerberater

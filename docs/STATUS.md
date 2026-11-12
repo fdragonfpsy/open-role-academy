@@ -1,5 +1,17 @@
 # Status
 
+## 2026-11-12 — Phase 2: Finance & Accounting content for tax-basics
+
+**Done**
+- `financial-statements-reporting` merged ([#34](https://github.com/fdragonfpsy/open-role-academy/pull/34)).
+- `tax-basics` (Germany/EU): 6 units (3 levels x en/de), 12 items, 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0). Concepts only: no rates, thresholds, deadlines, section or form numbers; worked examples use invented amounts.
+- Levels: foundation = VAT as a chain, input vs output tax, invoices; practitioner = net/gross, VAT in the booking flow, intra-EU vs domestic overview, filing duty exists, business tax types; advanced = reverse charge concept, cross-border pitfalls, VAT control in AP/AR, tax advisors, keeping up with law changes.
+- Review note for humans (tax is high-risk): general-practice statements without a dedicated source: AP/AR control suggestions, net vs gross definitions, "retention periods are set by law", profit-based tax wording. The German Umsatzsteuer Wikipedia page is flagged as partly outdated and was used for concepts only. Needs human tax review before leaving `ai-draft`.
+
+**Counts:** roles 4 (2 published, 2 draft) · competencies 38 · units 132 · items 264 · resources 159
+
+**Next:** `cash-liquidity-management`, then the remaining Finance & Accounting competencies in roadmap order.
+
 ## 2026-11-12 — Phase 2: Finance & Accounting content for financial-statements-reporting
 
 **Done**

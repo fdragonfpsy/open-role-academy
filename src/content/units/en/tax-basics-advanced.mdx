@@ -1,0 +1,107 @@
+---
+id: tax-basics-advanced
+competency: tax-basics
+level: advanced
+title: "VAT control and risk (Germany/EU): reverse charge, cross-border pitfalls, controls in payables and receivables, documentation, advisors and law changes"
+objectives:
+  - "Explain the reverse charge concept and its effect on invoices and input tax."
+  - "Identify cross-border pitfalls such as missing proof or invalid VAT numbers."
+  - "Design simple VAT controls for accounts payable and receivable and keep documentation."
+  - "Decide when to involve a tax advisor and where to find current rules."
+minutes: 30
+resources:
+  - wikipedia-european-union-value-added-tax
+  - wikipedia-de-innergemeinschaftliche-lieferung
+  - wikipedia-de-umsatzsteuergesetz
+  - wikipedia-de-umsatzsteuer-deutschland
+  - wikipedia-de-steuerberater
+  - wikipedia-value-added-tax
+status: ai-draft
+sources:
+  - title: "Value-added tax"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Value-added_tax
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "European Union value added tax"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/European_Union_value_added_tax
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Umsatzsteuer (Deutschland)"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Umsatzsteuer_(Deutschland)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Umsatzsteuergesetz (Deutschland)"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Umsatzsteuergesetz_(Deutschland)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Innergemeinschaftliche Lieferung"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Innergemeinschaftliche_Lieferung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Steuerberater"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Steuerberater
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Gewerbesteuer"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Gewerbesteuer
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+At advanced level you are the person who spots VAT risks before the authority does. This unit covers concepts for Germany and the EU. It contains no rates, thresholds, deadlines or section numbers on purpose: check them in the current law, official guidance or with your tax advisor.
+
+## Reverse charge
+
+Normally the supplier owes the tax. With the reverse charge (in German: Steuerschuldnerschaft des Leistungsempfängers, also called Abzugsverfahren) the **recipient** reports and pays the tax instead (German article on the VAT law). The English article on EU VAT says the same for cross-border goods and for services supplied to taxable persons: the recipient accounts for the tax in the destination state. The German article names as examples services by foreign businesses and construction services between businesses that themselves regularly provide such services. The tax owed by the recipient can generally be deducted as input tax. Reverse charge is described as a tool against tax fraud. Practical consequence: the invoice may show no tax, yet the recipient has bookings and reporting to do. Never assume a case is reverse charge: confirm it.
+
+## Cross-border pitfalls
+
+- **Customer status:** a delivery is exempt as intra-Community supply only if the customer is a business in another EU state. The customer is usually identified by a valid VAT identification number, which the supplier should check (German article).
+- **Proof:** the supplier carries the risk. Without the required evidence and bookkeeping records, the supplier may have to pay German VAT afterwards unless good faith can be shown.
+- **Transfers:** moving own goods permanently to another EU state is treated like a supply; temporary use is excluded.
+- **Fraud:** both articles mention carousel fraud that exploits zero-rated cross-border supplies. Be cautious with unusual trading partners.
+
+## Controls in payables and receivables
+
+Practical controls, designed by you for your context:
+
+- **AP:** check each incoming invoice for completeness against the current legal list before releasing input tax; flag invoices without tax and check if reverse charge applies; check supplier identity.
+- **AR:** verify customer status and VAT number before tax-exempt invoices; keep delivery proof; make sure the outgoing invoice shows what the rules require.
+- **Reconciliation:** reconcile the VAT accounts to the returns each period; investigate differences.
+- **Segregation:** the person who sets up master data should not release payments alone.
+
+## Documentation and audits
+
+The VAT system creates a trail: each invoice documents tax, which supports audits (English article). The German article mentions unannounced VAT spot checks (Umsatzsteuer-Nachschau) by officials at business premises during business hours. Keep invoices, proofs and calculations retrievable. Retention periods are set by law, so look them up.
+
+## Advisors and law changes
+
+A Steuerberater advises on tax matters, prepares returns, checks tax assessments and represents clients in disputes; lawyers and auditors may also help in tax matters (German article). Involve one for new business models, cross-border services, reverse charge doubt and notices from the authority. Note that one German article is marked partly outdated: Wikipedia is a starting point, never the final source. Sources of truth are the law itself, the EU VAT Directive (the English article names it as the legal basis, to be implemented nationally) and the authorities' guidance.
+
+## Worked example
+
+Invented amounts. Your company in Germany sells goods with a net value of 1,000 to a business in another EU state. Two controls: the customer VAT number is checked and recorded, and a proof of arrival is filed. The invoice shows no German tax. Months later the authority asks for evidence. Because the VAT number check and the proof are on file, the supply stays exempt. Had the customer been a consumer or the proof missing, the company could have owed German tax on the 1,000 that it never collected, which it would have to pay from its own pocket.
+
+## Key takeaways
+
+- Reverse charge shifts reporting from the supplier to the recipient, who can usually deduct the same tax as input tax.
+- Cross-border exemption depends on customer status, a valid VAT number and proof; the supplier bears the risk.
+- Build VAT checks into AP and AR and reconcile VAT accounts to returns.
+- Keep documentation retrievable; retention periods are set by law.
+- Use the law and official guidance as the source of truth and involve a tax advisor early.
