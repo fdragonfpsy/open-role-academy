@@ -2,7 +2,7 @@
 
 Open items that could not be solved autonomously. Newest first.
 
-- 2026-11-12 — (owner) Accounts need: (1) a domain for sending confirmation and password-reset emails (Supabase's built-in mailer only reaches project team members), (2) a Supabase project in the EU region, (3) repository secrets for applying migrations. Build Phase 3b behind a feature flag until resolved.
+- 2026-11-12 — (owner) Accounts: the Supabase project exists (EU, auto-RLS on, site URL and redirect URLs set; config in `src/config/supabase.ts`). Still open: (1) email sending for confirmation/reset — owner registers a free domain (DigitalPlat FreeDomain, e.g. `*.dpdns.org`, nameservers on Cloudflare) and a free email sender without credit card (Brevo or Resend); (2) applying SQL migrations — connect the GitHub repo in the Supabase project (GitHub integration) so `supabase/migrations` deploy on merge. Until then keep `accountsEnabled: false`.
 
 
 ## Resolved

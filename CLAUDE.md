@@ -16,7 +16,7 @@ Working name: "Open Role Academy" (rename freely; keep it in one place: `src/con
 ## 2. Hard constraints (never violate)
 
 1. **$0 running cost.** Only free tiers: GitHub (public repo + Actions), Cloudflare Pages. No paid APIs at runtime. No service that needs a credit card.
-2. **No personal data in Phase 1.** No accounts, no server-side learner data, no analytics cookies, no third-party trackers, no embedded third-party iframes that set cookies (link out instead). Learner progress lives in `localStorage` with JSON export/import.
+2. **Personal data only through Supabase, only as planned in Phase 3b.** Anonymous use always works with progress in `localStorage` (JSON export/import). Signed-in users' data lives only in the Supabase project `open-role-academy` (EU, Row Level Security on every table; new tables are not exposed to the Data API automatically, so grant access explicitly). Collect only what Phase 3b lists. No analytics cookies, no third-party trackers, no embedded third-party iframes that set cookies (link out instead). Public config: `src/config/supabase.ts` (publishable key only; the secret/service-role key must never appear in the repo or in a session).
 3. **No secrets in the repo.** Never commit tokens, passwords or account emails. Never ask for credentials. Never try to log in to any account.
 4. **Licensing rules (section 6) are binding.** If a license is unclear, the resource is **link-only** or excluded.
 5. **Everything static.** The site must build to static files (`dist/`) and run without a backend.
