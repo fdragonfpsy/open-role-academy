@@ -50,6 +50,8 @@ Every resource is stored in `src/content/resources/<id>.yaml` with `license`, `l
 | wikipedia-de-trouble-ticket-system, wikipedia-de-5-why-methode, wikipedia-de-incident-management | Wikipedia (de) | CC BY-SA 4.0 | link | 2026-11-11 |
 | wikipedia-troubleshooting, wikipedia-logging-computing, wikipedia-osi-model, wikipedia-ishikawa-diagram | Wikipedia (en) | CC BY-SA 4.0 | link | 2026-11-11 |
 | wikipedia-de-logdatei, wikipedia-de-osi-modell, wikipedia-de-ursache-wirkungs-diagramm | Wikipedia (de) | CC BY-SA 4.0 | link | 2026-11-11 |
+| wikipedia-identity-management, wikipedia-access-control, wikipedia-multi-factor-authentication, wikipedia-role-based-access-control | Wikipedia (en) | CC BY-SA 4.0 | link | 2026-11-12 |
+| wikipedia-de-identitaetsmanagement, wikipedia-de-rollenbasierte-zugriffskontrolle, wikipedia-de-single-sign-on | Wikipedia (de) | CC BY-SA 4.0 | link | 2026-11-12 |
 | wikipedia-customer-support, wikipedia-plain-language, wikipedia-remote-desktop-software, wikipedia-conflict-resolution | Wikipedia (en) | CC BY-SA 4.0 | link | 2026-11-12 |
 | wikipedia-de-leichte-sprache, wikipedia-de-fernwartung, wikipedia-de-deeskalation | Wikipedia (de) | CC BY-SA 4.0 | link | 2026-11-12 |
 | wikipedia-operating-system, wikipedia-patch-computing, wikipedia-disk-encryption, wikipedia-mobile-device-management | Wikipedia (en) | CC BY-SA 4.0 | link | 2026-11-12 |

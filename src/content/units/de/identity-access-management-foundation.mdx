@@ -1,0 +1,78 @@
+---
+id: identity-access-management-foundation
+competency: identity-access-management
+level: foundation
+title: "Konten, Passwörter, Mehr-Faktor-Authentisierung und der Lebenszyklus Eintritt, Wechsel, Austritt"
+objectives:
+  - Erklären, was ein Benutzerkonto ist und warum jede Person ein eigenes braucht.
+  - Gute Passwortpraxis beschreiben, einschließlich der Nutzung eines Passwortmanagers.
+  - Erklären, warum die Mehr-Faktor-Authentisierung (MFA) Konten schützt.
+  - Die Schritte Eintritt, Wechsel und Austritt im Lebenszyklus eines Kontos benennen.
+  - Ein Passwort nur zurücksetzen, nachdem die Identität der Person geprüft wurde.
+minutes: 25
+resources:
+  - wikipedia-de-identitaetsmanagement
+  - wikipedia-multi-factor-authentication
+  - wikipedia-identity-management
+  - bsi-sichere-passwoerter
+status: ai-draft
+sources:
+  - title: "Identitätsmanagement"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Identit%C3%A4tsmanagement
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Multi-factor authentication"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Multi-factor_authentication
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Fast alles, was Menschen bei der Arbeit tun, beginnt mit der Anmeldung. Kommt die falsche Person in ein Konto oder die richtige nicht hinein, steht die Arbeit still oder Daten sind gefährdet. Identitäts- und Zugriffsmanagement sorgt dafür, dass die richtigen Personen den richtigen Zugriff haben, und nur so lange, wie sie ihn brauchen. Im IT-Support begegnet dir das täglich: neue Konten, vergessene Passwörter, Mitarbeitende, die das Team wechseln oder gehen.
+
+## Konten und Identitäten
+
+Eine **Identität** beschreibt eine Person (oder ein System) in den Unterlagen der Organisation. Ein **Benutzerkonto** ist der Weg, über den sich diese Identität an einem System anmeldet. Daraus folgen zwei Regeln:
+
+- **Eine Person, ein Konto.** Gemeinsam genutzte Konten machen es unmöglich nachzuvollziehen, wer etwas getan hat, und sie sind schwer zu sichern, wenn jemand geht.
+- **Alltag und Administration trennen.** Administrierende arbeiten im Alltag mit einem normalen Konto und nutzen ein erhöhtes Konto nur bei Bedarf.
+
+## Passwörter und Passwortmanager
+
+Ein Passwort ist ein Geheimnis, das beweist, dass du die Kontoinhaberin oder der Kontoinhaber bist. Gute Praxis, im Einklang mit den Empfehlungen des BSI:
+
+- Nutze ein **langes, einmaliges Passwort** für jeden Dienst. Wiederverwendung ist gefährlich, weil ein Datenleck dann viele Türen öffnet.
+- Nutze einen **Passwortmanager**, damit sich niemand Dutzende Passwörter merken muss. Man merkt sich nur ein starkes Hauptpasswort.
+- Gib Passwörter nie per E-Mail, Chat oder Telefon weiter und schreibe sie nicht auf einen Zettel am Arbeitsplatz.
+
+## Mehr-Faktor-Authentisierung
+
+Die **Mehr-Faktor-Authentisierung (MFA)** verlangt mehr als eine Art von Nachweis, bevor der Zugang gewährt wird. Üblich sind etwas, das du **weißt** (ein Passwort), etwas, das du **hast** (ein Smartphone oder ein Sicherheitsschlüssel), und etwas, das du **bist** (ein Fingerabdruck). Selbst wenn ein Passwort gestohlen wird, etwa durch Phishing, fehlt Angreifenden der zweite Faktor. Erkläre den Nutzenden, dass MFA kein Misstrauen ist, sondern ein Sicherheitsnetz, und hilf ihnen, sie korrekt einzurichten, auch mit einer Wiederherstellungsoption.
+
+## Der Lebenszyklus eines Kontos: Eintritt, Wechsel, Austritt
+
+Konten haben ein eigenes Leben:
+
+1. **Eintritt:** Eine neue Kollegin oder ein neuer Kollege beginnt. Lege das Konto aus einem genehmigten Antrag an, vergib den Standardzugriff für die Rolle und nicht mehr, und übergib die erste Anmeldung sicher.
+2. **Wechsel:** Eine Person wechselt Rolle oder Team. Ergänze den Zugriff, den die neue Rolle braucht, und **entziehe den Zugriff der alten Rolle**. Vergessenes Entziehen ist der Grund, warum sich über die Jahre Rechte ansammeln.
+3. **Austritt:** Eine Person verlässt die Organisation. Sperre das Konto am letzten Tag oder zum vereinbarten Zeitpunkt, behandle Postfach und Dateien nach dem Prozess und nimm Geräte und Token zurück.
+
+## Sicheres Zurücksetzen von Passwörtern
+
+Ein Passwort-Reset ist ein beliebtes Ziel für Betrügende, denn ein erfolgreicher Anruf liefert ein Konto aus. Bevor du zurücksetzt, **prüfe die Identität** mit dem Verfahren, das deine Organisation festlegt, zum Beispiel ein Rückruf an die im Verzeichnis hinterlegte Nummer, die Bestätigung durch die Führungskraft oder ein Self-Service-Reset mit MFA. Akzeptiere weder „Ich habe es eilig“ noch die eigene Telefonnummer einer unbekannten Person als Nachweis. Nach dem Reset erzwingst du eine Änderung bei der nächsten Anmeldung, übermittelst das temporäre Passwort über einen anderen Kanal als die Anfrage und vermerkst den Reset im Ticket.
+
+## Praxisbeispiel
+
+Frau Weber ruft an: Sie hat ihr Passwort vergessen und in zehn Minuten einen Termin. Du kennst ihre Stimme nicht. Du folgst dem Verfahren: Du rufst die im Verzeichnis hinterlegte Nummer zurück, sie meldet sich, und du löst den Reset aus. Das temporäre Passwort geht auf dem freigegebenen Weg an die hinterlegte Mobilnummer, und das System lässt sie ein neues wählen. Die Schritte hältst du im Ticket fest. Eine Woche später stoppt dasselbe Verfahren einen Angreifer, der sich als Geschäftsführer ausgab: Der Rückruf erreicht die echte Person, die von nichts weiß.
+
+## Kernaussagen
+
+- Eine Person, ein Konto; Administrierende nutzen getrennte erhöhte Konten.
+- Lange, einmalige Passwörter im Passwortmanager nutzen; MFA aktivieren.
+- Bei einem Wechsel verfällt der alte Zugriff, beim Austritt wird rechtzeitig gesperrt.
+- Nie ein Passwort zurücksetzen, ohne die Identität nach vereinbartem Verfahren zu prüfen.

@@ -41,7 +41,7 @@ For each competency: ≥1 unit per required level (en + de), ≥6 items across d
   - [x] troubleshooting-methods
   - [x] user-support-communication
   - [x] endpoint-management
-  - [ ] identity-access-management
+  - [x] identity-access-management
   - [ ] networking-fundamentals
   - [ ] backup-recovery
   - [ ] change-asset-management
