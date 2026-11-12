@@ -1,0 +1,290 @@
+competency: cash-liquidity-management
+items:
+  - id: clm-f-profit-cash
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "Why can a profitable company still run short of cash?"
+      de: "Warum kann ein profitables Unternehmen trotzdem knapp bei Kasse sein?"
+    options:
+      - en: "Profit is recorded when earned, but cash arrives and leaves at different times"
+        de: "Der Gewinn wird erfasst, wenn er entsteht, Geld fließt aber zu anderen Zeitpunkten"
+        correct: true
+      - en: "Profit and cash are always identical"
+        de: "Gewinn und Cash sind immer identisch"
+        correct: false
+      - en: "Profitable companies never pay suppliers"
+        de: "Profitable Unternehmen zahlen nie Lieferanten"
+        correct: false
+      - en: "Cash only changes at year end"
+        de: "Cash ändert sich nur zum Jahresende"
+        correct: false
+    explanation:
+      en: "Revenue is recorded when earned, but customers pay later, and expenses are paid on their own schedule. A company can have profit and still not be able to meet payments on time."
+      de: "Erträge werden erfasst, wenn sie entstehen, die Kundschaft zahlt aber später, und Aufwendungen werden nach eigenem Zeitplan bezahlt. Ein Unternehmen kann Gewinn haben und trotzdem Zahlungen nicht pünktlich leisten."
+    source: https://en.wikipedia.org/wiki/Working_capital
+  - id: clm-f-inflow
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Which of these is a cash outflow?"
+      de: "Welche dieser Positionen ist eine Auszahlung?"
+    options:
+      - en: "Paying salaries"
+        de: "Gehälter zahlen"
+        correct: true
+      - en: "A customer paying an invoice"
+        de: "Eine Kundenzahlung auf eine Rechnung"
+        correct: false
+      - en: "Interest received on a deposit"
+        de: "Erhaltene Zinsen auf eine Einlage"
+        correct: false
+      - en: "Receiving a loan payout"
+        de: "Eine Kreditauszahlung erhalten"
+        correct: false
+    explanation:
+      en: "Money leaving the company, such as salaries, supplier payments, rent or taxes, is an outflow. The other options are money coming in."
+      de: "Geld, das das Unternehmen verlässt, etwa Gehälter, Lieferantenzahlungen, Miete oder Steuern, ist eine Auszahlung. Die anderen Optionen sind Geldeingänge."
+    source: https://en.wikipedia.org/wiki/Cash_flow
+  - id: clm-f-position
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "How is a simple daily cash position built?"
+      de: "Wie entsteht eine einfache tägliche Liquiditätsposition?"
+    options:
+      - en: "Start from the bank balances, add expected inflows and subtract payments that are certain"
+        de: "Von den Kontoständen ausgehen, erwartete Eingänge addieren und sichere Zahlungen abziehen"
+        correct: true
+      - en: "Take last year's profit and divide by 365"
+        de: "Den Vorjahresgewinn nehmen und durch 365 teilen"
+        correct: false
+      - en: "Count only the invoices sent this month"
+        de: "Nur die in diesem Monat gestellten Rechnungen zählen"
+        correct: false
+      - en: "Use the balance sheet total"
+        de: "Die Bilanzsumme verwenden"
+        correct: false
+    explanation:
+      en: "A cash position starts from today's bank balances and adjusts for known coming inflows and outflows. Profit or balance sheet totals say nothing about daily liquidity."
+      de: "Die Liquiditätsposition beginnt mit den heutigen Kontoständen und berücksichtigt bekannte kommende Ein- und Auszahlungen. Gewinn oder Bilanzsumme sagen nichts über die tägliche Liquidität aus."
+    source: https://en.wikipedia.org/wiki/Cash_management
+  - id: clm-f-reconcile
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "The bank balance is lower than the balance in your records. What is a sensible first step?"
+      de: "Der Kontostand der Bank liegt unter dem Stand in deinen Aufzeichnungen. Was ist ein sinnvoller erster Schritt?"
+    options:
+      - en: "Reconcile the bank statement with your records to find the differences"
+        de: "Kontoauszug und Aufzeichnungen abgleichen, um die Differenzen zu finden"
+        correct: true
+      - en: "Ignore the bank and use your records"
+        de: "Die Bank ignorieren und mit den eigenen Aufzeichnungen weiterarbeiten"
+        correct: false
+      - en: "Pay all open invoices at once"
+        de: "Alle offenen Rechnungen sofort bezahlen"
+        correct: false
+      - en: "Close the account"
+        de: "Das Konto schließen"
+        correct: false
+    explanation:
+      en: "Differences often come from timing, such as payments issued but not yet booked by the bank. A reconciliation explains them and shows whether either side has an error."
+      de: "Differenzen entstehen oft durch Zeitunterschiede, etwa ausgelöste, aber von der Bank noch nicht gebuchte Zahlungen. Ein Abgleich erklärt sie und zeigt, ob eine Seite einen Fehler enthält."
+    source: https://en.wikipedia.org/wiki/Bank_reconciliation
+  - id: clm-p-rolling
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "What does a rolling weekly liquidity plan mean?"
+      de: "Was bedeutet ein rollierender wöchentlicher Liquiditätsplan?"
+    options:
+      - en: "The plan is updated regularly: the past week is replaced by actuals and a new week is added"
+        de: "Der Plan wird regelmäßig fortgeschrieben: Die vergangene Woche wird durch Ist-Werte ersetzt und eine neue Woche ergänzt"
+        correct: true
+      - en: "The plan is made once and never changed"
+        de: "Der Plan wird einmal erstellt und nie geändert"
+        correct: false
+      - en: "The plan only covers the past"
+        de: "Der Plan betrifft nur die Vergangenheit"
+        correct: false
+      - en: "The plan lists only profits"
+        de: "Der Plan enthält nur Gewinne"
+        correct: false
+    explanation:
+      en: "A liquidity plan is a typical rolling plan: it is continuously updated and adjusted as actuals become known."
+      de: "Ein Liquiditätsplan ist ein typischer rollierender Plan: Er wird fortlaufend aktualisiert und angepasst, sobald Ist-Werte vorliegen."
+    source: https://en.wikipedia.org/wiki/Cash_flow
+  - id: clm-p-wc
+    level: practitioner
+    difficulty: 1220
+    type: single
+    stem:
+      en: "Which formula describes working capital?"
+      de: "Welche Formel beschreibt das Working Capital?"
+    options:
+      - en: "Current assets minus current liabilities"
+        de: "Umlaufvermögen minus kurzfristige Verbindlichkeiten"
+        correct: true
+      - en: "Revenue minus expenses"
+        de: "Erträge minus Aufwendungen"
+        correct: false
+      - en: "Total assets plus equity"
+        de: "Gesamtvermögen plus Eigenkapital"
+        correct: false
+      - en: "Cash plus fixed assets"
+        de: "Zahlungsmittel plus Anlagevermögen"
+        correct: false
+    explanation:
+      en: "Working capital is the difference between current assets and current liabilities. Revenue minus expenses is profit."
+      de: "Working Capital ist die Differenz zwischen Umlaufvermögen und kurzfristigen Verbindlichkeiten. Erträge minus Aufwendungen ist der Gewinn."
+    source: https://en.wikipedia.org/wiki/Working_capital
+  - id: clm-p-ccc
+    level: practitioner
+    difficulty: 1290
+    type: single
+    stem:
+      en: "Which change shortens the cash conversion cycle, all else equal?"
+      de: "Welche Änderung verkürzt den Cash Conversion Cycle, sonst gleiche Bedingungen?"
+    options:
+      - en: "Customers pay faster"
+        de: "Die Kundschaft zahlt schneller"
+        correct: true
+      - en: "Inventory is held longer"
+        de: "Die Vorräte werden länger gehalten"
+        correct: false
+      - en: "Customers receive longer payment terms"
+        de: "Die Kundschaft erhält längere Zahlungsziele"
+        correct: false
+      - en: "Suppliers are paid earlier"
+        de: "Lieferanten werden früher bezahlt"
+        correct: false
+    explanation:
+      en: "The cycle is inventory days plus receivables days minus payables days. Faster customer payment cuts receivables days. The other options lengthen the cycle."
+      de: "Der Zyklus ergibt sich aus Vorratstagen plus Forderungstagen minus Verbindlichkeitstagen. Schnellere Kundenzahlung senkt die Forderungstage. Die anderen Optionen verlängern den Zyklus."
+    source: https://en.wikipedia.org/wiki/Cash_conversion_cycle
+  - id: clm-p-timing
+    level: practitioner
+    difficulty: 1340
+    type: single
+    stem:
+      en: "A supplier offers a discount for payment within a short period. How should you decide whether to take it?"
+      de: "Ein Lieferant bietet für Zahlung innerhalb einer kurzen Frist einen Preisnachlass. Wie entscheidest du, ob du ihn nutzt?"
+    options:
+      - en: "Compare the saving with your own financing costs and schedule the payment before the discount deadline"
+        de: "Die Ersparnis mit den eigenen Finanzierungskosten vergleichen und die Zahlung vor Ablauf der Skontofrist einplanen"
+        correct: true
+      - en: "Always take it without checking cash"
+        de: "Immer nutzen, ohne die Liquidität zu prüfen"
+        correct: false
+      - en: "Never take it"
+        de: "Nie nutzen"
+        correct: false
+      - en: "Pay after the deadline and deduct it anyway"
+        de: "Nach der Frist zahlen und trotzdem abziehen"
+        correct: false
+    explanation:
+      en: "A discount is a trade-off between earlier cash outflow and the saving. Compare with financing costs and respect the deadline."
+      de: "Ein Skonto ist ein Abwägen zwischen früherem Geldabfluss und Ersparnis. Vergleiche mit den Finanzierungskosten und halte die Frist ein."
+    source: https://de.wikipedia.org/wiki/Skonto
+  - id: clm-a-variance
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "Actual inflows were far below forecast. What is the most useful next step?"
+      de: "Die tatsächlichen Einzahlungen lagen weit unter der Prognose. Was ist der nützlichste nächste Schritt?"
+    options:
+      - en: "Find the causes of the variance and improve the forecast inputs"
+        de: "Die Ursachen der Abweichung finden und die Prognose-Eingangsdaten verbessern"
+        correct: true
+      - en: "Change the forecast to match actuals and say nothing"
+        de: "Die Prognose an die Ist-Werte anpassen und nichts sagen"
+        correct: false
+      - en: "Stop forecasting"
+        de: "Die Prognose einstellen"
+        correct: false
+      - en: "Blame the customers"
+        de: "Der Kundschaft die Schuld geben"
+        correct: false
+    explanation:
+      en: "A forecast improves when variances are traced to causes such as late payment or missing items and the inputs are corrected. A rolling plan feeds each review into the next update."
+      de: "Eine Prognose wird besser, wenn Abweichungen auf Ursachen wie verspätete Zahlungen oder fehlende Posten zurückgeführt und die Eingangsdaten korrigiert werden. Ein rollierender Plan lässt jede Auswertung in die nächste Aktualisierung einfließen."
+    source: https://de.wikipedia.org/wiki/Liquidit%C3%A4tsplan
+  - id: clm-a-levers
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "What is a risk of stretching supplier payments to improve cash?"
+      de: "Welches Risiko birgt es, Lieferantenzahlungen zu dehnen, um Liquidität zu verbessern?"
+    options:
+      - en: "It may strain supplier relationships and is not always sustainable"
+        de: "Es kann Lieferantenbeziehungen belasten und ist nicht immer tragfähig"
+        correct: true
+      - en: "It always improves profit"
+        de: "Es verbessert immer den Gewinn"
+        correct: false
+      - en: "It has no downside"
+        de: "Es hat keinen Nachteil"
+        correct: false
+      - en: "It shortens the due date"
+        de: "Es verkürzt das Fälligkeitsdatum"
+        correct: false
+    explanation:
+      en: "Strict collections combined with lax payments is described as not always sustainable. Later payment can also cost discounts and goodwill."
+      de: "Strenges Einfordern bei nachlässigem Zahlen wird als nicht immer tragfähig beschrieben. Spätere Zahlung kann auch Skonto und Vertrauen kosten."
+    source: https://en.wikipedia.org/wiki/Cash_conversion_cycle
+  - id: clm-a-fraud
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "A message supposedly from the CEO asks for an urgent payment to a new account and not to tell anyone. What do you do?"
+      de: "Eine Nachricht, angeblich von der Geschäftsführung, verlangt eine dringende Zahlung auf ein neues Konto und Geheimhaltung. Was tust du?"
+    options:
+      - en: "Do not pay; verify through a known channel and follow the dual authorisation process"
+        de: "Nicht zahlen; über einen bekannten Kanal prüfen und den Zwei-Personen-Freigabeprozess einhalten"
+        correct: true
+      - en: "Pay quickly and check later"
+        de: "Schnell zahlen und später prüfen"
+        correct: false
+      - en: "Reply to the sender to ask"
+        de: "Dem Absender antworten und nachfragen"
+        correct: false
+      - en: "Pay half to limit damage"
+        de: "Die Hälfte zahlen, um den Schaden zu begrenzen"
+        correct: false
+    explanation:
+      en: "Spoofed emails have been used to request payments in the name of senior managers. Urgency and secrecy are red flags; confirm independently and follow the approval process."
+      de: "Gefälschte E-Mails wurden genutzt, um im Namen von Führungskräften Zahlungen anzufordern. Dringlichkeit und Geheimhaltung sind Warnsignale; bestätige unabhängig und halte den Freigabeprozess ein."
+    source: https://en.wikipedia.org/wiki/Email_spoofing
+  - id: clm-a-dual
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "Which setup best follows segregation of duties for payments?"
+      de: "Welche Aufteilung entspricht am besten der Funktionstrennung bei Zahlungen?"
+    options:
+      - en: "One person prepares the payment and a different person releases it"
+        de: "Eine Person bereitet die Zahlung vor, eine andere gibt sie frei"
+        correct: true
+      - en: "One person prepares and releases"
+        de: "Eine Person bereitet vor und gibt frei"
+        correct: false
+      - en: "The person who changes bank details also releases payments"
+        de: "Wer Bankdaten ändert, gibt auch Zahlungen frei"
+        correct: false
+      - en: "The payment needs no approval below any amount"
+        de: "Zahlungen brauchen unabhängig vom Betrag keine Freigabe"
+        correct: false
+    explanation:
+      en: "Segregation of duties means more than one person is needed for a task, to prevent fraud and errors. Preparing and releasing should be done by different people."
+      de: "Funktionstrennung heißt, dass für eine Aufgabe mehr als eine Person nötig ist, um Betrug und Fehler zu verhindern. Vorbereiten und Freigeben sollten verschiedene Personen übernehmen."
+    source: https://en.wikipedia.org/wiki/Separation_of_duties

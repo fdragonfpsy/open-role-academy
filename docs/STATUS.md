@@ -1,5 +1,17 @@
 # Status
 
+## 2026-11-12 — Phase 2: Finance & Accounting content for cash-liquidity-management
+
+**Done**
+- `tax-basics` merged ([#35](https://github.com/fdragonfpsy/open-role-academy/pull/35)).
+- `cash-liquidity-management`: 6 units (3 levels x en/de), 12 items, 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0). Amounts invented and labelled as illustration; no SEPA or EU-specific claims (pages could not be read).
+- Levels: foundation = cash vs profit, balance monitoring, daily cash position; practitioner = weekly rolling liquidity plan, payment timing, working capital, payment runs; advanced = forecast variance, working-capital levers, payment fraud controls, contingencies.
+- Review note for humans: the cash conversion cycle formula is inferred from the cited page's definitions; contingency options and bank/management communication advice are practice guidance without a source.
+
+**Counts:** roles 4 (2 published, 2 draft) · competencies 38 · units 138 · items 276 · resources 166
+
+**Next:** `budgeting-forecasting`, then the remaining Finance & Accounting competencies in roadmap order.
+
 ## 2026-11-12 — Phase 2: Finance & Accounting content for tax-basics
 
 **Done**
