@@ -1,0 +1,13 @@
+id: wikipedia-de-gob
+url: https://de.wikipedia.org/wiki/Grundsätze_ordnungsmäßiger_Buchführung
+title: "Grundsätze ordnungsmäßiger Buchführung"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 20
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-12
+mode: link
+competencies: [bookkeeping-fundamentals]
+levels: [advanced]

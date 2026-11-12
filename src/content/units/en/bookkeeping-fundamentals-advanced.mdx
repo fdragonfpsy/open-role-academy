@@ -1,0 +1,112 @@
+---
+id: bookkeeping-fundamentals-advanced
+competency: bookkeeping-fundamentals
+level: advanced
+title: "Period-end and control: adjusting entries, accruals and deferrals, audit trail, error detection, sub-ledgers and automation in accounting software"
+objectives:
+  - "Explain why period-end adjusting entries are needed and distinguish accruals from deferrals."
+  - "Describe the audit trail and the general idea of retention and traceability duties (Germany/EU)."
+  - "Use a systematic approach to find errors that a trial balance does not reveal."
+  - "Explain how sub-ledgers relate to the general ledger and control accounts."
+  - "Assess what accounting software can automate and where human review stays necessary."
+minutes: 35
+resources:
+  - wikipedia-double-entry-bookkeeping
+  - wikipedia-chart-of-accounts
+  - wikipedia-trial-balance
+  - wikipedia-de-doppelte-buchfuehrung
+  - wikipedia-de-kontenrahmen
+  - wikipedia-de-gob
+status: ai-draft
+sources:
+  - title: "Double-entry bookkeeping"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Double-entry_bookkeeping
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Chart of accounts"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Chart_of_accounts
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Trial balance"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Trial_balance
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Doppelte Buchführung"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Doppelte_Buchführung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Kontenrahmen"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Kontenrahmen
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Grundsätze ordnungsmäßiger Buchführung"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Grundsätze_ordnungsmäßiger_Buchführung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+At the end of a period the ledger shows what was recorded, not yet what is true for the period. Some costs were incurred but not invoiced, some payments cover future months. Seniors in accounting make sure the books are complete, traceable and reliable, and they design how routine work is automated without losing control.
+
+## Period-end adjustments
+
+**Adjusting entries** move amounts into the period they belong to, following the accrual idea from the practitioner unit. Two families matter:
+
+- **Accruals**: the economic event is in this period, the invoice or payment comes later. Examples: a service received but not yet invoiced (accrued expense), or revenue earned but not yet billed (accrued income).
+- **Deferrals**: payment happens now, but it covers future periods. Example: an annual fee paid in advance is partly a prepaid expense, and only the part for this period becomes expense now.
+
+Many companies reverse accruals at the start of the next period so the real invoice can be booked normally. Which method and which rules apply for the annual accounts depends on the legal framework; in Germany these are commercial law and the principles of orderly bookkeeping (GoB), elsewhere other standards. Check the rules for your entity.
+
+## Audit trail and retention (Germany/EU, general)
+
+An **audit trail** lets a knowledgeable third party follow a transaction from the receipt through the journal and ledger to the report, and back. The English Wikipedia article on double-entry bookkeeping states that primary journals should make it possible to trace every business transaction back to the original voucher during the retention periods. In Germany, GoB and related rules set requirements such as completeness, traceability and keeping records for statutory periods; in the EU other member states have their own rules. This unit stays general: for periods and formats, use your company's tax or legal advice and the current statutory texts. Practical consequences are universal: do not delete, keep who changed what and when, and document corrections.
+
+## Finding errors
+
+When something is off, work systematically.
+
+1. **Check the trial balance**: do debits equal credits? If not, look for a one-sided entry, a typo in an amount, or a transposition (digits swapped).
+2. **If it balances, look for errors it cannot show**: wrong account, duplicated entry, missing entry, entry in the wrong period.
+3. **Reconcile** key accounts with external evidence such as bank statements and supplier statements.
+4. **Analytical review**: compare against the prior period and the budget; unusual jumps point to errors.
+5. Fix by correcting entry and record the cause so the process can be improved.
+
+## Sub-ledgers and the general ledger
+
+For high-volume areas such as customers and suppliers, companies keep **sub-ledgers** (subsidiary ledgers) with a record per customer or supplier. The general ledger holds one **control account** per sub-ledger, and its balance should equal the total of the sub-ledger. A difference is a signal to investigate, typically a posting that reached only one of the two.
+
+## Automation in accounting software
+
+Software can automate recurring entries, bank-feed matching, document capture, rule-based account suggestions and period-end reversals. It reduces typing errors and speeds up closing. The risks are also real: a wrong rule repeats a wrong booking thousands of times, and automatic suggestions can hide errors. Good practice: document each rule, test it on a sample, review exceptions, restrict who can change rules and keep the audit trail switched on.
+
+## Worked example
+
+Invented numbers. A company pays 1,200 for a twelve-month service on 1 October; its year ends 31 December. Without adjustment the whole 1,200 sits in expense, but only three months belong to this year. Expense for the year is 300; the remaining 900 is a **prepaid expense** (deferral) carried into the next year.
+
+| Account | Debit | Credit |
+|---|---|---|
+| Prepaid expense | 900 | |
+| Service expense | | 900 |
+
+Next year the prepaid amount is released to expense month by month. A recurring entry in the software can do this, but a person confirms the setup once and reviews the result at the close.
+
+## Key takeaways
+
+- Adjusting entries put costs and income into the period they belong to: accruals for later invoices, deferrals for advance payments.
+- An audit trail connects receipt, entry and report; do not delete, document changes. Retention rules differ by country, so check them (Germany: GoB).
+- A balanced trial balance hides wrong accounts, duplicates, omissions and wrong periods; use reconciliation and analytical review.
+- A control account in the general ledger must match its sub-ledger total.
+- Automate with documented, tested rules and keep human review of exceptions.

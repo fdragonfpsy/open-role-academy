@@ -1,0 +1,290 @@
+competency: bookkeeping-fundamentals
+items:
+  - id: bf-f-sides
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "In bookkeeping, what do the words debit and credit refer to?"
+      de: "Was bedeuten die Wörter Soll und Haben in der Buchführung?"
+    options:
+      - en: "The left and the right side of an account"
+        de: "Die linke und die rechte Seite eines Kontos"
+        correct: true
+      - en: "Good and bad transactions"
+        de: "Gute und schlechte Geschäftsvorfälle"
+        correct: false
+      - en: "Money owed to and by the bank card"
+        de: "Geld, das einer Bankkarte geschuldet wird"
+        correct: false
+      - en: "Two kinds of receipts"
+        de: "Zwei Arten von Belegen"
+        correct: false
+    explanation:
+      en: "Debit is the left side and credit the right side of an account. The words are technical and carry no judgement."
+      de: "Soll ist die linke und Haben die rechte Seite eines Kontos. Die Wörter sind Fachbegriffe ohne Wertung."
+    source: https://en.wikipedia.org/wiki/Double-entry_bookkeeping
+  - id: bf-f-double
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "What is the basic rule of double-entry bookkeeping?"
+      de: "Was ist die Grundregel der doppelten Buchführung?"
+    options:
+      - en: "Every transaction is entered once, in the most important account"
+        de: "Jeder Geschäftsvorfall wird einmal im wichtigsten Konto erfasst"
+        correct: false
+      - en: "Every transaction is entered in at least two accounts and debits equal credits"
+        de: "Jeder Geschäftsvorfall wird auf mindestens zwei Konten erfasst und Soll und Haben sind gleich"
+        correct: true
+      - en: "Every transaction is entered twice in the same account"
+        de: "Jeder Geschäftsvorfall wird zweimal auf demselben Konto erfasst"
+        correct: false
+      - en: "Every transaction is entered by two people"
+        de: "Jeder Geschäftsvorfall wird von zwei Personen erfasst"
+        correct: false
+    explanation:
+      en: "Double entry means each transaction affects at least two accounts and the debit total equals the credit total."
+      de: "Doppelte Buchführung heißt: Jeder Vorfall berührt mindestens zwei Konten und die Sollsumme entspricht der Habensumme."
+    source: https://en.wikipedia.org/wiki/Double-entry_bookkeeping
+  - id: bf-f-receipt
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "What is the purpose of a receipt (voucher) in bookkeeping?"
+      de: "Wozu dient ein Beleg in der Buchführung?"
+    options:
+      - en: "It replaces the journal entry"
+        de: "Er ersetzt den Buchungssatz"
+        correct: false
+      - en: "It is optional decoration for the file"
+        de: "Er ist ein optionales Extra für die Ablage"
+        correct: false
+      - en: "It is evidence for the entry, showing who, what, when and how much"
+        de: "Er ist der Nachweis für die Buchung und zeigt, wer, was, wann und wie viel"
+        correct: true
+      - en: "It is only needed when the amount is large"
+        de: "Er wird nur bei hohen Beträgen benötigt"
+        correct: false
+    explanation:
+      en: "The receipt is the document behind the entry. Without evidence, an entry is only a claim."
+      de: "Der Beleg ist das Dokument hinter der Buchung. Ohne Nachweis ist eine Buchung nur eine Behauptung."
+    source: https://en.wikipedia.org/wiki/Double-entry_bookkeeping
+  - id: bf-f-entry
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "A company pays for printer paper from its bank account. Which entry is correct? (Expense accounts increase on the debit side; the bank account is an asset.)"
+      de: "Ein Unternehmen bezahlt Druckerpapier vom Bankkonto. Welche Buchung ist richtig? (Aufwandskonten nehmen im Soll zu; das Bankkonto ist ein Aktivkonto.)"
+    options:
+      - en: "Debit Bank, credit Office supplies expense"
+        de: "Soll Bank, Haben Büromaterial (Aufwand)"
+        correct: false
+      - en: "Debit Office supplies expense, credit Bank"
+        de: "Soll Büromaterial (Aufwand), Haben Bank"
+        correct: true
+      - en: "Debit Office supplies expense only"
+        de: "Nur Soll Büromaterial (Aufwand)"
+        correct: false
+      - en: "Credit Office supplies expense, credit Bank"
+        de: "Haben Büromaterial (Aufwand), Haben Bank"
+        correct: false
+    explanation:
+      en: "The expense increases (debit) and the bank balance decreases (credit). Both sides are equal."
+      de: "Der Aufwand steigt (Soll) und der Bankbestand sinkt (Haben). Beide Seiten sind gleich."
+    source: https://en.wikipedia.org/wiki/Double-entry_bookkeeping
+  - id: bf-p-coa
+    level: practitioner
+    difficulty: 1190
+    type: single
+    stem:
+      en: "Why does a company use a chart of accounts?"
+      de: "Warum nutzt ein Unternehmen einen Kontenrahmen bzw. Kontenplan?"
+    options:
+      - en: "To make sure similar transactions are booked to the same accounts so reports are comparable"
+        de: "Damit gleichartige Vorfälle auf dieselben Konten gebucht werden und Auswertungen vergleichbar sind"
+        correct: true
+      - en: "To avoid keeping receipts"
+        de: "Um keine Belege aufbewahren zu müssen"
+        correct: false
+      - en: "To replace the trial balance"
+        de: "Um die Saldenliste zu ersetzen"
+        correct: false
+      - en: "To hide small transactions"
+        de: "Um kleine Vorfälle zu verbergen"
+        correct: false
+    explanation:
+      en: "The chart of accounts is the shared structure of the books. Consistent account choice makes reports reliable."
+      de: "Der Kontenplan ist die gemeinsame Struktur der Buchführung. Einheitliche Kontenwahl macht Auswertungen verlässlich."
+    source: https://en.wikipedia.org/wiki/Chart_of_accounts
+  - id: bf-p-tbmiss
+    level: practitioner
+    difficulty: 1240
+    type: single
+    stem:
+      en: "Which error would a balanced trial balance NOT reveal?"
+      de: "Welchen Fehler zeigt eine ausgeglichene Saldenliste NICHT?"
+    options:
+      - en: "A debit amount recorded without a matching credit"
+        de: "Ein Sollbetrag ohne passenden Habenbetrag"
+        correct: false
+      - en: "A purchase booked to the wrong expense account, with correct amounts on both sides"
+        de: "Ein Einkauf auf das falsche Aufwandskonto, bei richtigen Beträgen auf beiden Seiten"
+        correct: true
+      - en: "A typing error in only one side of an entry"
+        de: "Ein Tippfehler nur auf einer Seite einer Buchung"
+        correct: false
+      - en: "An entry with unequal debit and credit amounts"
+        de: "Eine Buchung mit ungleichen Soll- und Habenbeträgen"
+        correct: false
+    explanation:
+      en: "The trial balance checks only that debits equal credits. Wrong accounts, duplicates and omissions stay hidden."
+      de: "Die Saldenliste prüft nur, ob Soll und Haben gleich sind. Falsche Konten, Dubletten und Auslassungen bleiben verborgen."
+    source: https://en.wikipedia.org/wiki/Trial_balance
+  - id: bf-p-accrual
+    level: practitioner
+    difficulty: 1290
+    type: single
+    stem:
+      en: "An invoice for a sale is issued in December and paid in January. On an accrual basis, in which period is the revenue recorded?"
+      de: "Eine Rechnung für einen Verkauf wird im Dezember gestellt und im Januar bezahlt. In welcher Periode wird der Erlös periodengerecht erfasst?"
+    options:
+      - en: "January, when the money arrives"
+        de: "Januar, wenn das Geld eingeht"
+        correct: false
+      - en: "December, when it is earned"
+        de: "Dezember, wenn er entsteht"
+        correct: true
+      - en: "Split evenly between both months"
+        de: "Gleichmäßig auf beide Monate verteilt"
+        correct: false
+      - en: "Neither, until the year ends"
+        de: "In keiner, bis das Jahr endet"
+        correct: false
+    explanation:
+      en: "Accrual basis records revenue when it is earned, regardless of when payment is received."
+      de: "Periodengerecht wird ein Erlös erfasst, wenn er entsteht, unabhängig vom Zahlungseingang."
+    source: https://en.wikipedia.org/wiki/Trial_balance
+  - id: bf-p-correct
+    level: practitioner
+    difficulty: 1340
+    type: single
+    stem:
+      en: "A posted entry used the wrong account. What is the recommended way to fix it?"
+      de: "Eine gebuchte Buchung nutzte das falsche Konto. Wie wird sie am besten korrigiert?"
+    options:
+      - en: "Delete the original entry from the journal"
+        de: "Die ursprüngliche Buchung aus dem Journal löschen"
+        correct: false
+      - en: "Overwrite the old amounts without a note"
+        de: "Die alten Beträge ohne Vermerk überschreiben"
+        correct: false
+      - en: "Post a correcting entry that reverses the wrong one and book the right one, with explanation"
+        de: "Eine Korrekturbuchung erfassen, die die falsche umkehrt, und die richtige buchen, mit Erläuterung"
+        correct: true
+      - en: "Leave it and mention it at year end"
+        de: "Es belassen und am Jahresende erwähnen"
+        correct: false
+    explanation:
+      en: "Correcting entries keep the history visible and the audit trail intact."
+      de: "Korrekturbuchungen halten die Historie sichtbar und den Prüfpfad intakt."
+    source: https://en.wikipedia.org/wiki/Double-entry_bookkeeping
+  - id: bf-a-defer
+    level: advanced
+    difficulty: 1520
+    type: single
+    stem:
+      en: "On 1 October a company pays a twelve-month fee in advance; its year ends 31 December. How is the payment treated at year end?"
+      de: "Am 1. Oktober zahlt ein Unternehmen eine Zwölfmonatsgebühr im Voraus; das Geschäftsjahr endet am 31. Dezember. Wie wird die Zahlung zum Jahresende behandelt?"
+    options:
+      - en: "Three months are expense; nine months are carried forward as a prepaid expense"
+        de: "Drei Monate sind Aufwand; neun Monate werden als Rechnungsabgrenzung vorgetragen"
+        correct: true
+      - en: "The whole amount is expense this year"
+        de: "Der gesamte Betrag ist Aufwand in diesem Jahr"
+        correct: false
+      - en: "The whole amount is expense next year"
+        de: "Der gesamte Betrag ist Aufwand im nächsten Jahr"
+        correct: false
+      - en: "Nothing is recorded until the fee is used up"
+        de: "Nichts wird erfasst, bis die Gebühr verbraucht ist"
+        correct: false
+    explanation:
+      en: "Only the part belonging to this period is expense; the rest is a deferral into later periods."
+      de: "Nur der Teil, der zu dieser Periode gehört, ist Aufwand; der Rest wird in spätere Perioden abgegrenzt."
+    source: https://en.wikipedia.org/wiki/Double-entry_bookkeeping
+  - id: bf-a-subledger
+    level: advanced
+    difficulty: 1580
+    type: single
+    stem:
+      en: "The customer sub-ledger total differs from the receivables control account in the general ledger. What is the most sensible first step?"
+      de: "Die Summe des Kundennebenbuchs weicht vom Forderungssammelkonto im Hauptbuch ab. Was ist der sinnvollste erste Schritt?"
+    options:
+      - en: "Adjust the control account to match without investigation"
+        de: "Das Sammelkonto ohne Prüfung angleichen"
+        correct: false
+      - en: "Ignore it if the trial balance is balanced"
+        de: "Es ignorieren, wenn die Saldenliste ausgeglichen ist"
+        correct: false
+      - en: "Delete the sub-ledger"
+        de: "Das Nebenbuch löschen"
+        correct: false
+      - en: "Investigate postings that reached only one of the two, then correct them with entries"
+        de: "Buchungen suchen, die nur eines von beiden erreicht haben, und per Buchung korrigieren"
+        correct: true
+    explanation:
+      en: "A difference signals that a posting went only to the sub-ledger or only to the control account. Find the cause, then correct."
+      de: "Eine Differenz deutet an, dass eine Buchung nur das Nebenbuch oder nur das Sammelkonto erreicht hat. Ursache finden, dann korrigieren."
+    source: https://en.wikipedia.org/wiki/Double-entry_bookkeeping
+  - id: bf-a-audit
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "Which practice best supports an audit trail?"
+      de: "Welche Praxis unterstützt einen Prüfpfad am besten?"
+    options:
+      - en: "Changing entries in place so the books look tidy"
+        de: "Buchungen direkt ändern, damit die Bücher aufgeräumt wirken"
+        correct: false
+      - en: "Keeping receipts linked to entries and recording who changed what and when, without deleting"
+        de: "Belege mit Buchungen verknüpft halten und festhalten, wer wann was geändert hat, ohne zu löschen"
+        correct: true
+      - en: "Keeping receipts only for large amounts"
+        de: "Belege nur bei hohen Beträgen aufbewahren"
+        correct: false
+      - en: "Sharing one login among the team"
+        de: "Eine gemeinsame Anmeldung für das Team nutzen"
+        correct: false
+    explanation:
+      en: "An audit trail lets a third party follow a transaction from receipt to report. Retention rules differ by country, for example Germany (GoB)."
+      de: "Ein Prüfpfad lässt Dritte einen Vorfall vom Beleg bis zum Bericht verfolgen. Aufbewahrungsregeln unterscheiden sich je Land, zum Beispiel Deutschland (GoB)."
+    source: https://en.wikipedia.org/wiki/Double-entry_bookkeeping
+  - id: bf-a-auto
+    level: advanced
+    difficulty: 1620
+    type: single
+    stem:
+      en: "A team wants to automate account assignment in accounting software with rules. Which approach is best?"
+      de: "Ein Team will die Kontenzuordnung in der Buchhaltungssoftware mit Regeln automatisieren. Welcher Ansatz ist am besten?"
+    options:
+      - en: "Enable all rules at once and stop reviewing"
+        de: "Alle Regeln gleichzeitig aktivieren und nicht mehr prüfen"
+        correct: false
+      - en: "Let every user edit rules"
+        de: "Jede:r Nutzer:in darf Regeln ändern"
+        correct: false
+      - en: "Turn off the audit trail to speed things up"
+        de: "Den Prüfpfad abschalten, um zu beschleunigen"
+        correct: false
+      - en: "Document and test rules on a sample, restrict who can change them and review exceptions"
+        de: "Regeln dokumentieren und an einer Stichprobe testen, Änderungsrechte begrenzen und Ausnahmen prüfen"
+        correct: true
+    explanation:
+      en: "A wrong rule repeats a wrong booking many times. Documentation, testing, access limits and exception review keep control."
+      de: "Eine falsche Regel wiederholt eine falsche Buchung vielfach. Dokumentation, Tests, Rechtebegrenzung und Ausnahmeprüfung erhalten die Kontrolle."
+    source: https://en.wikipedia.org/wiki/Double-entry_bookkeeping

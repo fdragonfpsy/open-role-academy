@@ -1,0 +1,112 @@
+---
+id: bookkeeping-fundamentals-advanced
+competency: bookkeeping-fundamentals
+level: advanced
+title: "Periodenabschluss und Kontrolle: Abgrenzungsbuchungen, Rechnungsabgrenzung, Prüfpfad, Fehlersuche, Nebenbücher und Automatisierung in der Buchhaltungssoftware"
+objectives:
+  - "Erklären, warum Abgrenzungsbuchungen zum Periodenende nötig sind, und Rückstellungen/Abgrenzungen von Vorauszahlungen unterscheiden."
+  - "Den Prüfpfad und die Grundidee von Aufbewahrungs- und Nachvollziehbarkeitspflichten (Deutschland/EU) beschreiben."
+  - "Systematisch Fehler finden, die eine Saldenliste nicht zeigt."
+  - "Erklären, wie Nebenbücher mit dem Hauptbuch und Sammelkonten zusammenhängen."
+  - "Einschätzen, was Buchhaltungssoftware automatisieren kann und wo menschliche Prüfung nötig bleibt."
+minutes: 35
+resources:
+  - wikipedia-de-doppelte-buchfuehrung
+  - wikipedia-de-kontenrahmen
+  - wikipedia-de-gob
+  - wikipedia-double-entry-bookkeeping
+  - wikipedia-chart-of-accounts
+  - wikipedia-trial-balance
+status: ai-draft
+sources:
+  - title: "Double-entry bookkeeping"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Double-entry_bookkeeping
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Chart of accounts"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Chart_of_accounts
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Trial balance"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Trial_balance
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Doppelte Buchführung"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Doppelte_Buchführung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Kontenrahmen"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Kontenrahmen
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Grundsätze ordnungsmäßiger Buchführung"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Grundsätze_ordnungsmäßiger_Buchführung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Am Periodenende zeigt das Hauptbuch, was erfasst wurde, aber noch nicht, was für die Periode zutrifft. Manche Kosten sind entstanden, aber noch nicht in Rechnung gestellt, manche Zahlungen betreffen künftige Monate. Erfahrene Fachkräfte im Rechnungswesen sorgen dafür, dass die Bücher vollständig, nachvollziehbar und verlässlich sind, und gestalten, wie Routinearbeit automatisiert wird, ohne die Kontrolle zu verlieren.
+
+## Abgrenzungen zum Periodenende
+
+**Abgrenzungsbuchungen** ordnen Beträge der Periode zu, zu der sie gehören, nach dem Gedanken der periodengerechten Erfassung aus der Einheit für Fortgeschrittene. Zwei Gruppen sind wichtig:
+
+- **Noch nicht abgerechnete Vorfälle**: Das wirtschaftliche Ereignis liegt in dieser Periode, Rechnung oder Zahlung folgt später. Beispiele: eine erhaltene, noch nicht in Rechnung gestellte Leistung (Aufwand) oder eine erbrachte, noch nicht abgerechnete Leistung (Ertrag).
+- **Vorauszahlungen (Rechnungsabgrenzung)**: Die Zahlung erfolgt jetzt, betrifft aber künftige Perioden. Beispiel: Eine im Voraus gezahlte Jahresgebühr ist teils ein aktiver Rechnungsabgrenzungsposten, und nur der Teil für diese Periode wird jetzt Aufwand.
+
+Viele Unternehmen lösen solche Abgrenzungen zu Beginn der nächsten Periode auf, damit die echte Rechnung normal gebucht werden kann. Welche Methoden und Regeln für den Jahresabschluss gelten, hängt vom rechtlichen Rahmen ab; in Deutschland sind das das Handelsrecht und die Grundsätze ordnungsmäßiger Buchführung (GoB), anderswo andere Standards. Prüfe die Regeln für deine Gesellschaft.
+
+## Prüfpfad und Aufbewahrung (Deutschland/EU, allgemein)
+
+Ein **Prüfpfad** ermöglicht es einer sachkundigen dritten Person, einen Geschäftsvorfall vom Beleg über Journal und Hauptbuch bis zum Bericht und zurück zu verfolgen. Der englische Wikipedia-Artikel zur doppelten Buchführung nennt, dass die Grundbücher es ermöglichen sollen, jeden Geschäftsvorfall während der Aufbewahrungsfristen auf den Originalbeleg zurückzuführen. In Deutschland setzen die GoB und verwandte Regeln Anforderungen wie Vollständigkeit, Nachvollziehbarkeit und Aufbewahrung über gesetzliche Fristen; andere EU-Mitgliedstaaten haben eigene Regeln. Diese Einheit bleibt allgemein: Für Fristen und Formate nutze die Steuer- oder Rechtsberatung deines Unternehmens und die aktuellen Gesetzestexte. Praktische Folgen gelten überall: nicht löschen, festhalten, wer wann was geändert hat, und Korrekturen dokumentieren.
+
+## Fehlersuche
+
+Wenn etwas nicht stimmt, gehe systematisch vor.
+
+1. **Saldenliste prüfen**: Sind Soll und Haben gleich? Wenn nicht, suche eine einseitige Buchung, einen Tippfehler im Betrag oder einen Zahlendreher.
+2. **Wenn sie stimmt, suche Fehler, die sie nicht zeigt**: falsches Konto, doppelte Buchung, fehlende Buchung, falsche Periode.
+3. **Abstimmen** wichtiger Konten mit externen Nachweisen wie Kontoauszügen und Lieferantenkontoauszügen.
+4. **Analytische Prüfung**: Vergleiche mit Vorperiode und Plan; auffällige Sprünge deuten auf Fehler hin.
+5. Per Korrekturbuchung beheben und die Ursache festhalten, damit der Prozess besser wird.
+
+## Nebenbücher und Hauptbuch
+
+Für Bereiche mit hohem Volumen wie Kund:innen und Lieferant:innen führen Unternehmen **Nebenbücher** mit einer Aufzeichnung je Kund:in oder Lieferant:in. Im Hauptbuch gibt es je Nebenbuch ein **Sammelkonto**, dessen Saldo der Summe des Nebenbuchs entsprechen sollte. Eine Differenz ist ein Signal zum Nachforschen, meist eine Buchung, die nur eines von beiden erreicht hat.
+
+## Automatisierung in der Buchhaltungssoftware
+
+Software kann wiederkehrende Buchungen, den Abgleich mit Bankdaten, Belegerfassung, regelbasierte Kontenvorschläge und Rückbuchungen zum Periodenende automatisieren. Das senkt Tippfehler und beschleunigt den Abschluss. Die Risiken sind real: Eine falsche Regel wiederholt eine falsche Buchung tausendfach, und automatische Vorschläge können Fehler verdecken. Gute Praxis: jede Regel dokumentieren, an einer Stichprobe testen, Ausnahmen prüfen, den Kreis der Änderungsberechtigten begrenzen und den Prüfpfad eingeschaltet lassen.
+
+## Beispiel
+
+Erfundene Zahlen. Ein Unternehmen zahlt am 1. Oktober 1.200 für eine zwölfmonatige Leistung; das Geschäftsjahr endet am 31. Dezember. Ohne Abgrenzung stünde die gesamte Summe im Aufwand, aber nur drei Monate gehören in dieses Jahr. Der Aufwand des Jahres beträgt 300; die restlichen 900 sind ein **aktiver Rechnungsabgrenzungsposten**, der ins nächste Jahr übertragen wird.
+
+| Konto | Soll | Haben |
+|---|---|---|
+| Aktive Rechnungsabgrenzung | 900 | |
+| Aufwand für die Leistung | | 900 |
+
+Im nächsten Jahr wird der Betrag Monat für Monat in den Aufwand aufgelöst. Eine wiederkehrende Buchung in der Software kann das übernehmen, aber eine Person bestätigt einmal die Einrichtung und prüft das Ergebnis beim Abschluss.
+
+## Das Wichtigste in Kürze
+
+- Abgrenzungsbuchungen ordnen Aufwand und Ertrag der richtigen Periode zu: noch nicht abgerechnete Vorfälle und Vorauszahlungen.
+- Ein Prüfpfad verbindet Beleg, Buchung und Bericht; nicht löschen, Änderungen dokumentieren. Aufbewahrungsregeln unterscheiden sich je Land, prüfe sie (Deutschland: GoB).
+- Eine ausgeglichene Saldenliste verbirgt falsche Konten, Dubletten, Auslassungen und falsche Perioden; nutze Abstimmung und analytische Prüfung.
+- Ein Sammelkonto im Hauptbuch muss zur Summe des Nebenbuchs passen.
+- Automatisiere mit dokumentierten, getesteten Regeln und prüfe Ausnahmen weiter von Hand.
