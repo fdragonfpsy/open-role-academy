@@ -181,12 +181,23 @@ Token hygiene:
 - Batch similar work (e.g. all items of one competency in one pass).
 - Keep run output terse: no long summaries in the session, the details belong in `docs/STATUS.md`.
 
-## 13. Quality review (second instance)
+## 13. Weekly review: QA + project management (second instance)
 
-A separate weekly **QA run** reviews the builder's work with fresh context. It does not approve PRs; it audits merged work and files findings.
+A separate weekly run reviews the builder's work with fresh context and steers the project. It does not approve PRs; it audits merged work, measures progress and adjusts the plan within strict limits.
 
-- Scope: everything merged since the last QA report (`docs/QA.md`). Sample at least 1 unit (en and de) and 4 items per new competency, plus every engine or UI change.
-- Check: facts against the cited sources, license and attribution rules (§6), item quality (§8), en/de wording and parity, accessibility of new UI, and whether the work matches the roadmap and this file.
-- Output: GitHub issues labeled `qa` with severity (`blocker`, `fix`, `nit`), file paths and a concrete fix; small, clear fixes may be done directly in a `claude/qa-*` PR with `automerge`. Append a dated summary to `docs/QA.md`.
-- Builder rule: at the start of every run, fix open `qa` issues labeled `blocker` or `fix` before new roadmap work.
-- Models: sonnet for the review pass, opus only for judging disputed facts or engine logic (§12).
+**QA part**
+- Scope: everything merged since the last report (`docs/WEEKLY.md`). Sample at least 1 unit (en and de) and 4 items per new competency, plus every engine or UI change.
+- Check facts against cited sources, licenses and attribution (§6), item quality (§8), en/de wording and parity, accessibility of new UI.
+- Findings become GitHub issues labeled `qa` with severity (`blocker`, `fix`, `nit`), file paths and a concrete fix. Small, clear fixes may be done directly in a `claude/qa-*` PR with `automerge`.
+
+**Project-management part**
+- Measure the last 7 days from git and GitHub: PRs merged per run night, roadmap tasks ticked, CI failures and how long they stayed red, open `qa` issues, time from first to last commit per run (proxy for run length), slices that were started but not merged.
+- Spot problems: repeated failures, tasks that are too big (split them), content that regresses in quality, work outside §11 windows, model use against §12.
+- Allowed changes (in a `claude/pm-*` PR with `automerge`): reorder or split roadmap tasks, add missing tasks, sharpen task acceptance criteria, add or update checks and scripts that catch recurring problems.
+- **Not allowed:** changing §2 (hard constraints), §6 (licensing), §9 (legal), §11 (work windows) or this section, enabling paused (⏸) tasks, or anything that costs money. Propose such changes as a GitHub issue labeled `owner` instead.
+
+**Report**: prepend a dated entry to `docs/WEEKLY.md` with: done this week (counts), quality verdict, problems found, changes made, recommendations for the owner (including whether more or fewer run windows look worthwhile, based on throughput), and a one-line reminder that the owner should compare this with the plan's usage meter.
+
+**Builder rule**: at the start of every run, fix open `qa` issues labeled `blocker` or `fix` before new roadmap work.
+
+**Models**: sonnet for review and measurement, opus only for disputed facts or engine logic (§12).
