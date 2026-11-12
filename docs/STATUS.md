@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-12 — Phase 2: Finance & Accounting started (bookkeeping-fundamentals)
+
+**Done**
+- IT Support & Operations published ([#29](https://github.com/fdragonfpsy/open-role-academy/pull/29)).
+- Split "Finance & Accounting content complete" into 11 per-competency sub-tasks (ROADMAP). The role stays `draft` until all are done.
+- `bookkeeping-fundamentals`: 6 units (3 levels x en/de), 12 items, 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0). Examples use invented amounts, labelled as illustration; German specifics (GoB, SKR03/SKR04) are labelled and kept general.
+
+**Counts:** roles 4 (2 published, 2 draft) · competencies 38 · units 102 · items 204 · resources 124
+
+**Next:** `accounts-payable`, then the remaining Finance & Accounting competencies in roadmap order.
+
 ## 2026-11-12 — Phase 2: IT Support & Operations complete and published
 
 **Done**

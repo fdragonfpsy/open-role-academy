@@ -1,0 +1,13 @@
+id: wikipedia-chart-of-accounts
+url: https://en.wikipedia.org/wiki/Chart_of_accounts
+title: "Chart of accounts"
+provider: Wikipedia
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-12
+mode: link
+competencies: [bookkeeping-fundamentals]
+levels: [practitioner, advanced]
