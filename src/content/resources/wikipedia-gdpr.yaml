@@ -1,0 +1,13 @@
+id: wikipedia-gdpr
+url: https://en.wikipedia.org/wiki/General_Data_Protection_Regulation
+title: "General Data Protection Regulation"
+provider: Wikipedia
+language: en
+format: article
+minutes: 30
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-12
+mode: link
+competencies: [hr-data-protection]
+levels: [foundation, practitioner, advanced]

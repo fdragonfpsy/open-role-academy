@@ -1,5 +1,17 @@
 # Status
 
+## 2026-11-12 — Phase 2: Human Resources content for hr-data-protection
+
+**Done**
+- `personnel-administration` merged ([#43](https://github.com/fdragonfpsy/open-role-academy/pull/43)).
+- `hr-data-protection` (EU/Germany, GDPR): 6 units (3 levels x en/de), 12 items, 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0), 5 reused. Concepts only: no deadlines, retention periods, article or § numbers, or fine amounts; breach handling is described as internal escalation to the DPO.
+- Levels: foundation = personal data, why HR data is sensitive, principles, need-to-know, DPO; practitioner = legal bases and purpose limitation (concept), minimisation, special categories, access requests (route to DPO), secure files, retention concept; advanced = privacy by design, processors, breach process, monitoring caution, documentation, keeping up with guidance.
+- Review note for humans (legal content, needs human legal review before leaving `ai-draft`): the Betriebsrat description relies on an earlier resource; German units attribute some points to the German DSGVO page that were read on the English GDPR page; German DPO tasks come from the English DPO page.
+
+**Counts:** roles 4 (3 published, 1 draft) · competencies 38 · units 186 · items 372 · resources 222
+
+**Next:** `onboarding-offboarding`, then the remaining Human Resources competencies in roadmap order.
+
 ## 2026-11-12 — Phase 2: Human Resources content for personnel-administration
 
 **Done**

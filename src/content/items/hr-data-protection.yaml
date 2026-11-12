@@ -1,0 +1,290 @@
+competency: hr-data-protection
+items:
+  - id: hrdp-f-personal
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "Which of these is personal data in an HR context?"
+      de: "Welche dieser Angaben ist im HR-Kontext ein personenbezogenes Datum?"
+    options:
+      - en: "A work email address of an employee"
+        de: "Eine dienstliche E-Mail-Adresse einer beschäftigten Person"
+        correct: true
+      - en: "Only a person's home address"
+        de: "Nur die Privatadresse einer Person"
+        correct: false
+      - en: "Only information marked 'confidential'"
+        de: "Nur Informationen, die als „vertraulich“ gekennzeichnet sind"
+        correct: false
+      - en: "Only data stored on paper"
+        de: "Nur Daten, die auf Papier gespeichert sind"
+        correct: false
+    explanation:
+      en: "Personal data is any information relating to an identified or identifiable person; a work email address counts, regardless of how it is marked or stored."
+      de: "Personenbezogene Daten sind alle Informationen zu einer identifizierten oder identifizierbaren Person; auch eine dienstliche E-Mail-Adresse zählt, unabhängig von Kennzeichnung oder Speicherform."
+    source: https://de.wikipedia.org/wiki/Personenbezogene_Daten
+  - id: hrdp-f-minimisation
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "What does the principle of data minimisation ask of you?"
+      de: "Was verlangt der Grundsatz der Datenminimierung von dir?"
+    options:
+      - en: "Collect and keep only the data you need for the purpose"
+        de: "Nur die Daten erheben und behalten, die du für den Zweck brauchst"
+        correct: true
+      - en: "Collect as much as possible in case it is useful later"
+        de: "So viel wie möglich erheben, falls es später nützlich ist"
+        correct: false
+      - en: "Store all data on private devices to keep it small"
+        de: "Alle Daten auf privaten Geräten speichern, damit es wenig bleibt"
+        correct: false
+      - en: "Delete all data every evening"
+        de: "Jeden Abend alle Daten löschen"
+        correct: false
+    explanation:
+      en: "Data minimisation is one of the named principles: limit data to what is needed for the stated purpose."
+      de: "Datenminimierung ist einer der genannten Grundsätze: Daten auf das für den Zweck Nötige begrenzen."
+    source: https://en.wikipedia.org/wiki/General_Data_Protection_Regulation
+  - id: hrdp-f-needtoknow
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "A colleague from another department asks you for a list of employees' salaries 'out of interest'. What is the best response?"
+      de: "Eine Kollegin aus einer anderen Abteilung bittet dich „aus Interesse“ um eine Liste der Gehälter der Beschäftigten. Was ist die beste Reaktion?"
+    options:
+      - en: "Decline, because the request does not follow need-to-know, and point her to the HR lead or DPO if there is a work reason"
+        de: "Ablehnen, weil die Anfrage nicht dem Need-to-know entspricht, und bei dienstlichem Grund auf die HR-Leitung oder den DSB verweisen"
+        correct: true
+      - en: "Send the list, since she works for the same company"
+        de: "Die Liste senden, da sie im selben Unternehmen arbeitet"
+        correct: false
+      - en: "Send only half of the list"
+        de: "Nur die Hälfte der Liste senden"
+        correct: false
+      - en: "Read the numbers out loud in the canteen"
+        de: "Die Zahlen in der Kantine vorlesen"
+        correct: false
+    explanation:
+      en: "Confidential HR data is shared only with people who need it for their task. Belonging to the same company is not a reason."
+      de: "Vertrauliche HR-Daten gehen nur an Personen, die sie für ihre Aufgabe brauchen. Die Zugehörigkeit zum selben Unternehmen ist kein Grund."
+    source: https://de.wikipedia.org/wiki/Personalakte
+  - id: hrdp-f-dpo
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "You are unsure whether you may share an employee's health-related information with a manager. What should you do first?"
+      de: "Du bist unsicher, ob du gesundheitsbezogene Informationen einer beschäftigten Person an eine Führungskraft weitergeben darfst. Was tust du zuerst?"
+    options:
+      - en: "Ask the DPO or your HR lead before sharing anything"
+        de: "Die oder den DSB oder die HR-Leitung fragen, bevor du etwas weitergibst"
+        correct: true
+      - en: "Share it and ask afterwards"
+        de: "Weitergeben und danach fragen"
+        correct: false
+      - en: "Look up a legal deadline online and decide yourself"
+        de: "Eine gesetzliche Frist online nachschlagen und selbst entscheiden"
+        correct: false
+      - en: "Post a question in a private messaging group"
+        de: "Die Frage in einer privaten Messenger-Gruppe stellen"
+        correct: false
+    explanation:
+      en: "The DPO advises on data protection within the organisation. Ask before acting; HR staff do not give legal advice and do not decide such questions alone."
+      de: "Der DSB berät in der Organisation zum Datenschutz. Frage vor dem Handeln; HR-Mitarbeitende geben keine Rechtsberatung und entscheiden solche Fragen nicht allein."
+    source: https://en.wikipedia.org/wiki/Data_protection_officer
+  - id: hrdp-p-basis
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "Which statement about legal bases in HR is most accurate?"
+      de: "Welche Aussage zu Rechtsgrundlagen im HR-Bereich trifft am ehesten zu?"
+    options:
+      - en: "Each HR process should rely on an identifiable legal basis; if you cannot name it, ask the DPO"
+        de: "Jeder HR-Prozess sollte sich auf eine erkennbare Rechtsgrundlage stützen; kannst du sie nicht benennen, frage den DSB"
+        correct: true
+      - en: "Consent from the employee is always the right basis for everything"
+        de: "Die Einwilligung der beschäftigten Person ist immer die richtige Grundlage für alles"
+        correct: false
+      - en: "No basis is needed for internal data"
+        de: "Für interne Daten braucht es keine Grundlage"
+        correct: false
+      - en: "The basis only matters for external customers"
+        de: "Die Grundlage ist nur für externe Kundschaft relevant"
+        correct: false
+    explanation:
+      en: "Personal data may not be processed without at least one legal basis. In employment, consent is not a catch-all, because dependency affects how voluntary it is."
+      de: "Ohne mindestens eine Rechtsgrundlage dürfen personenbezogene Daten nicht verarbeitet werden. Im Beschäftigungsverhältnis ist Einwilligung kein Allheilmittel, weil die Abhängigkeit die Freiwilligkeit beeinflusst."
+    source: https://de.wikipedia.org/wiki/Arbeitnehmerdatenschutz
+  - id: hrdp-p-purpose
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "Data collected for payroll is to be used to rank employees for promotion. What does purpose limitation suggest?"
+      de: "Daten aus der Gehaltsabrechnung sollen genutzt werden, um Beschäftigte für Beförderungen zu ranken. Was legt die Zweckbindung nahe?"
+    options:
+      - en: "Do not reuse it quietly; the new purpose needs to be assessed with the DPO first"
+        de: "Nicht stillschweigend wiederverwenden; der neue Zweck muss zuerst mit dem DSB geprüft werden"
+        correct: true
+      - en: "Reuse it, because the data is already in the system"
+        de: "Wiederverwenden, weil die Daten ohnehin im System sind"
+        correct: false
+      - en: "Reuse it, but only on Fridays"
+        de: "Wiederverwenden, aber nur freitags"
+        correct: false
+      - en: "Reuse it if the manager asks nicely"
+        de: "Wiederverwenden, wenn die Führungskraft freundlich fragt"
+        correct: false
+    explanation:
+      en: "Purpose limitation means data is used for the purpose it was collected for; a new purpose needs its own assessment."
+      de: "Zweckbindung bedeutet, Daten für den Zweck zu nutzen, für den sie erhoben wurden; ein neuer Zweck braucht eine eigene Prüfung."
+    source: https://en.wikipedia.org/wiki/General_Data_Protection_Regulation
+  - id: hrdp-p-special
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "Which handling of an employee's sick-note diagnosis is most appropriate?"
+      de: "Welcher Umgang mit der Diagnose auf der Krankmeldung einer beschäftigten Person ist am angemessensten?"
+    options:
+      - en: "Collect only what a documented process requires, restrict access to the few who need it, and ask the DPO about new uses"
+        de: "Nur erheben, was ein dokumentierter Prozess verlangt, den Zugriff auf wenige beschränken und bei neuen Nutzungen den DSB fragen"
+        correct: true
+      - en: "Add it to the shared team calendar for transparency"
+        de: "Im gemeinsamen Teamkalender eintragen, um transparent zu sein"
+        correct: false
+      - en: "Email it to all managers in the department"
+        de: "Per E-Mail an alle Führungskräfte der Abteilung senden"
+        correct: false
+      - en: "Store it in a public folder"
+        de: "In einem öffentlichen Ordner ablegen"
+        correct: false
+    explanation:
+      en: "Health data is a special category and needs extra care: minimal collection, restricted access and DPO involvement for any new use."
+      de: "Gesundheitsdaten sind eine besondere Kategorie und brauchen besondere Sorgfalt: minimale Erhebung, eingeschränkter Zugriff und Einbindung des DSB bei jeder neuen Nutzung."
+    source: https://de.wikipedia.org/wiki/Personenbezogene_Daten
+  - id: hrdp-p-request
+    level: practitioner
+    difficulty: 1350
+    type: single
+    stem:
+      en: "A former employee asks in writing which data you hold about them. What is the right first step?"
+      de: "Eine ehemalige beschäftigte Person fragt schriftlich, welche Daten du über sie hast. Was ist der richtige erste Schritt?"
+    options:
+      - en: "Log the date of receipt and route the request to the DPO immediately, without promising anything"
+        de: "Das Eingangsdatum festhalten und die Anfrage sofort an den DSB leiten, ohne etwas zu versprechen"
+        correct: true
+      - en: "Ignore it, because the person has left"
+        de: "Ignorieren, weil die Person ausgeschieden ist"
+        correct: false
+      - en: "Send everything you find right away"
+        de: "Sofort alles senden, was du findest"
+        correct: false
+      - en: "Tell them it will be answered within a specific number of days you recall"
+        de: "Mitteilen, dass innerhalb einer bestimmten Anzahl Tage geantwortet wird, an die du dich erinnerst"
+        correct: false
+    explanation:
+      en: "Access requests are a data subject right. HR routes them to the DPO or process owner; whether and how to answer depends on current law and the case, so do not promise anything."
+      de: "Auskunftsanfragen sind ein Betroffenenrecht. HR leitet sie an den DSB oder die zuständige Stelle weiter; ob und wie zu antworten ist, hängt von Rechtslage und Fall ab, daher nichts versprechen."
+    source: https://en.wikipedia.org/wiki/General_Data_Protection_Regulation
+  - id: hrdp-a-design
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "A new applicant portal is planned. When should the DPO be involved?"
+      de: "Ein neues Bewerbungsportal ist geplant. Wann sollte der DSB einbezogen werden?"
+    options:
+      - en: "At the design stage, before go-live, so purpose, data set, access and deletion are defined up front"
+        de: "In der Entwurfsphase, vor dem Start, damit Zweck, Datenumfang, Zugriff und Löschung vorab festgelegt werden"
+        correct: true
+      - en: "Only after the first complaint"
+        de: "Erst nach der ersten Beschwerde"
+        correct: false
+      - en: "Never, because software vendors handle it"
+        de: "Nie, weil die Softwareanbieter das erledigen"
+        correct: false
+      - en: "Only when the portal is switched off"
+        de: "Erst, wenn das Portal abgeschaltet wird"
+        correct: false
+    explanation:
+      en: "Privacy by design means taking privacy into account throughout the process, proactively rather than after problems appear."
+      de: "Privacy by Design bedeutet, den Schutz der Privatsphäre über den gesamten Prozess zu berücksichtigen, vorbeugend statt erst nach Problemen."
+    source: https://en.wikipedia.org/wiki/Privacy_by_design
+  - id: hrdp-a-processor
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "Your company uses external HR software that processes employee data on its behalf. Which statement fits best?"
+      de: "Dein Unternehmen nutzt externe HR-Software, die Beschäftigtendaten in seinem Auftrag verarbeitet. Welche Aussage passt am besten?"
+    options:
+      - en: "The company stays accountable; involve the DPO and procurement and make sure agreed terms and tool settings match"
+        de: "Das Unternehmen bleibt verantwortlich; DSB und Einkauf einbeziehen und sicherstellen, dass vereinbarte Bedingungen und Toolkonfiguration zusammenpassen"
+        correct: true
+      - en: "Responsibility passes completely to the vendor"
+        de: "Die Verantwortung geht vollständig auf den Anbieter über"
+        correct: false
+      - en: "No review is needed if the vendor is well known"
+        de: "Eine Prüfung ist unnötig, wenn der Anbieter bekannt ist"
+        correct: false
+      - en: "HR staff should draft the legal terms alone"
+        de: "HR-Mitarbeitende sollten die rechtlichen Bedingungen allein entwerfen"
+        correct: false
+    explanation:
+      en: "The controller remains responsible and must be able to demonstrate compliance even when a processor does the work."
+      de: "Der Verantwortliche bleibt verantwortlich und muss die Einhaltung nachweisen können, auch wenn ein Auftragsverarbeiter die Arbeit erledigt."
+    source: https://en.wikipedia.org/wiki/General_Data_Protection_Regulation
+  - id: hrdp-a-breach
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "You accidentally emailed a spreadsheet with employee data to the wrong external address. What is the best action?"
+      de: "Du hast versehentlich eine Tabelle mit Beschäftigtendaten an eine falsche externe Adresse gemailt. Was ist die beste Handlung?"
+    options:
+      - en: "Escalate immediately to the DPO and IT security per the company process and document the facts"
+        de: "Sofort nach Unternehmensprozess an DSB und IT-Sicherheit eskalieren und die Fakten dokumentieren"
+        correct: true
+      - en: "Wait a few days to see whether anything happens"
+        de: "Ein paar Tage abwarten, ob etwas passiert"
+        correct: false
+      - en: "Contact the authority yourself before telling anyone internally"
+        de: "Zuerst selbst die Behörde kontaktieren, bevor du intern jemanden informierst"
+        correct: false
+      - en: "Say nothing to avoid trouble"
+        de: "Nichts sagen, um Ärger zu vermeiden"
+        correct: false
+    explanation:
+      en: "Breach handling starts with immediate internal escalation; the DPO and management decide on external steps based on current law. Honest, factual documentation helps containment."
+      de: "Der Umgang mit Datenpannen beginnt mit sofortiger interner Eskalation; DSB und Leitung entscheiden anhand der aktuellen Rechtslage über externe Schritte. Ehrliche, sachliche Dokumentation hilft bei der Eindämmung."
+    source: https://en.wikipedia.org/wiki/Data_breach
+  - id: hrdp-a-monitoring
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "A manager asks you to activate software that logs employees' computer activity. What is the most appropriate response?"
+      de: "Eine Führungskraft bittet dich, eine Software zu aktivieren, die die Computeraktivität von Beschäftigten protokolliert. Was ist die angemessenste Reaktion?"
+    options:
+      - en: "Do not activate it; document the purpose and bring in the DPO and, where applicable, the works council before any decision"
+        de: "Nicht aktivieren; den Zweck festhalten und vor jeder Entscheidung den DSB und gegebenenfalls den Betriebsrat einbeziehen"
+        correct: true
+      - en: "Activate it quietly, since managers decide"
+        de: "Heimlich aktivieren, da Führungskräfte entscheiden"
+        correct: false
+      - en: "Activate it for a trial week without informing anyone"
+        de: "Für eine Probewoche aktivieren, ohne jemanden zu informieren"
+        correct: false
+      - en: "Activate it if the vendor says it is compliant"
+        de: "Aktivieren, wenn der Anbieter sagt, es sei konform"
+        correct: false
+    explanation:
+      en: "Monitoring at the workplace is a high-caution topic where national rules and collective agreements may apply; the DPO and works council need to be involved before implementation."
+      de: "Überwachung am Arbeitsplatz ist ein Thema besonderer Vorsicht, bei dem nationale Regeln und Kollektivvereinbarungen greifen können; DSB und Betriebsrat sind vor der Umsetzung einzubeziehen."
+    source: https://de.wikipedia.org/wiki/Arbeitnehmerdatenschutz

@@ -1,0 +1,13 @@
+id: wikipedia-de-dsgvo
+url: https://de.wikipedia.org/wiki/Datenschutz-Grundverordnung
+title: "Datenschutz-Grundverordnung"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 30
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-12
+mode: link
+competencies: [hr-data-protection]
+levels: [foundation, practitioner, advanced]
