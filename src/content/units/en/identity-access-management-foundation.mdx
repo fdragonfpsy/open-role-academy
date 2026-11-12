@@ -1,0 +1,78 @@
+---
+id: identity-access-management-foundation
+competency: identity-access-management
+level: foundation
+title: "Accounts, passwords, multi-factor authentication and the joiner-mover-leaver lifecycle"
+objectives:
+  - Explain what a user account is and why every person needs their own.
+  - Describe good password practice, including the use of a password manager.
+  - Explain why multi-factor authentication (MFA) protects accounts.
+  - Name the joiner, mover and leaver steps of an account lifecycle.
+  - Reset a password only after the person's identity has been verified.
+minutes: 25
+resources:
+  - wikipedia-identity-management
+  - wikipedia-multi-factor-authentication
+  - wikipedia-de-identitaetsmanagement
+  - bsi-sichere-passwoerter
+status: ai-draft
+sources:
+  - title: "Identity management"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Identity_management
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Multi-factor authentication"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Multi-factor_authentication
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+Almost everything a person does at work starts with signing in. If the wrong person gets into an account, or the right person cannot get in, work stops or data is exposed. Identity and access management is the discipline of making sure the right people have the right access, and only for as long as they need it. In IT support you will touch it every day: new accounts, forgotten passwords, people who change teams or leave.
+
+## Accounts and identities
+
+An **identity** describes a person (or a system) in the organisation's records. A **user account** is how that identity signs in to a system. Two rules follow:
+
+- **One person, one account.** Shared accounts make it impossible to tell who did what, and they are hard to secure when someone leaves.
+- **Separate everyday and administrative use.** Administrators should work with a normal account for daily tasks and use an elevated account only when needed.
+
+## Passwords and password managers
+
+A password is a secret that proves you are the account holder. Good practice, in line with the guidance of the German BSI:
+
+- Use a **long, unique password** for every service. Reuse is dangerous because one leak then opens many doors.
+- Use a **password manager** so that nobody has to remember dozens of passwords. The user only memorises one strong main password.
+- Never share passwords by email, chat or phone, and never write them on a note at the desk.
+
+## Multi-factor authentication
+
+**Multi-factor authentication (MFA)** requires more than one kind of proof before access is granted. The usual kinds are something you **know** (a password), something you **have** (a phone or a security key) and something you **are** (a fingerprint). Even if a password is stolen, for example through phishing, the attacker still lacks the second factor. Explain to users that MFA is not a sign of distrust but a safety net, and help them set it up properly, including a recovery option.
+
+## The account lifecycle: joiner, mover, leaver
+
+Accounts have a life of their own:
+
+1. **Joiner:** a new colleague starts. Create the account from an approved request, give the standard access for their role and no more, and hand over the first sign-in safely.
+2. **Mover:** a colleague changes role or team. Add the access the new role needs and **remove the access the old role needed**. Forgetting the removal is how people collect rights over the years.
+3. **Leaver:** a colleague leaves. Disable the account on the last day or at the agreed time, handle mailbox and files as the process says, and retrieve devices and tokens.
+
+## Secure password resets
+
+A password reset is a favourite target for impostors, because a successful call hands over an account. Before you reset, **verify identity** using the method your organisation defines, for example a call-back to the number stored in the directory, confirmation by the manager, or a self-service reset with MFA. Do not accept "I am in a hurry" or an unknown caller's own phone number as proof. After the reset, force a change at next sign-in, deliver the temporary password over a different channel than the request, and note the reset in the ticket.
+
+## Worked example
+
+Ms Weber calls: she has forgotten her password and has a meeting in ten minutes. You do not know her voice. You follow the procedure: you call back the number stored in the directory, she picks up, and you trigger the reset. The temporary password goes to the registered mobile number by the approved method, and the system makes her choose a new one. You record the steps in the ticket. A week later, the same procedure stops an attacker who called pretending to be an executive: the call-back reaches the real person, who knows nothing about it.
+
+## Key takeaways
+
+- One person, one account; admins use separate elevated accounts.
+- Use long, unique passwords, stored in a password manager; enable MFA.
+- Movers lose old access, leavers are disabled on time.
+- Never reset a password without verifying identity by an agreed method.

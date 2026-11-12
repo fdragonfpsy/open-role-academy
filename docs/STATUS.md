@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-12 — Phase 2: IT Support content for identity-access-management
+
+**Done**
+- `endpoint-management` merged ([#24](https://github.com/fdragonfpsy/open-role-academy/pull/24)).
+- `identity-access-management`: 6 units (3 levels x en/de), 12 items, 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0) plus 2 shared (BSI).
+- Levels: foundation = accounts, passwords, MFA, joiner/mover/leaver, verified resets; practitioner = RBAC, least privilege, access requests, SSO, lockouts; advanced = access reviews, privileged access, directory services, federation, segregation of duties, audit trails.
+
+**Counts:** roles 4 (1 published, 3 draft) · competencies 38 · units 72 · items 144 · resources 89
+
+**Next:** `networking-fundamentals`, then the remaining IT Support competencies in roadmap order.
+
 ## 2026-11-12 — Phase 2: IT Support content for endpoint-management
 
 **Done**

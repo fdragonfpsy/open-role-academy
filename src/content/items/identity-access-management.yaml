@@ -1,0 +1,290 @@
+competency: identity-access-management
+items:
+  - id: iam-f-one-account
+    level: foundation
+    difficulty: 890
+    type: single
+    stem:
+      en: "Why should each person have their own user account instead of sharing one?"
+      de: "Warum sollte jede Person ein eigenes Benutzerkonto haben, statt eines zu teilen?"
+    options:
+      - en: "Actions can be traced to one person, and access can be removed when that person leaves."
+        de: "Handlungen lassen sich einer Person zuordnen, und der Zugriff kann entfernt werden, wenn sie geht."
+        correct: true
+      - en: "It makes the sign-in faster for everybody."
+        de: "Es macht die Anmeldung für alle schneller."
+        correct: false
+      - en: "It removes the need for passwords."
+        de: "Es macht Passwörter überflüssig."
+        correct: false
+      - en: "It saves licence costs in every case."
+        de: "Es spart in jedem Fall Lizenzkosten."
+        correct: false
+    explanation:
+      en: "With shared accounts nobody can tell who did what, and removing one person's access means changing the secret for everyone. Individual accounts keep actions traceable and access manageable."
+      de: "Bei geteilten Konten lässt sich nicht sagen, wer was getan hat, und der Zugriffsentzug einer Person bedeutet, das Geheimnis für alle zu ändern. Einzelkonten halten Handlungen nachvollziehbar und den Zugriff steuerbar."
+    source: https://en.wikipedia.org/wiki/Identity_management
+  - id: iam-f-password-manager
+    level: foundation
+    difficulty: 940
+    type: single
+    stem:
+      en: "What is the main benefit of a password manager?"
+      de: "Was ist der Hauptvorteil eines Passwortmanagers?"
+    options:
+      - en: "Users can have a long, unique password for every service without memorising them all."
+        de: "Nutzende können für jeden Dienst ein langes, einmaliges Passwort haben, ohne sich alle zu merken."
+        correct: true
+      - en: "It makes it safe to use the same password everywhere."
+        de: "Er macht es sicher, überall dasselbe Passwort zu verwenden."
+        correct: false
+      - en: "It replaces the need for multi-factor authentication."
+        de: "Er ersetzt die Notwendigkeit der Mehr-Faktor-Authentisierung."
+        correct: false
+      - en: "It lets colleagues share one common password."
+        de: "Er erlaubt Kolleginnen und Kollegen, ein gemeinsames Passwort zu teilen."
+        correct: false
+    explanation:
+      en: "Unique passwords stop one leak from opening many accounts, and a manager removes the burden of remembering them. It complements MFA and does not replace it."
+      de: "Einmalige Passwörter verhindern, dass ein Datenleck viele Konten öffnet, und der Manager nimmt die Last des Merkens ab. Er ergänzt MFA, ersetzt sie aber nicht."
+    source: https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Accountschutz/Sichere-Passwoerter-erstellen/sichere-passwoerter-erstellen_node.html
+  - id: iam-f-mfa-why
+    level: foundation
+    difficulty: 990
+    type: single
+    stem:
+      en: "A user's password is stolen through a phishing page, but their account has MFA enabled. What is the most likely result?"
+      de: "Das Passwort einer Nutzerin wird über eine Phishing-Seite gestohlen, ihr Konto hat aber MFA aktiviert. Was ist das wahrscheinlichste Ergebnis?"
+    options:
+      - en: "The attacker still lacks the second factor and cannot easily sign in."
+        de: "Dem Angreifer fehlt weiterhin der zweite Faktor, und er kann sich nicht ohne Weiteres anmelden."
+        correct: true
+      - en: "The attacker can sign in, because MFA only protects offline files."
+        de: "Der Angreifer kann sich anmelden, weil MFA nur Offline-Dateien schützt."
+        correct: false
+      - en: "The password becomes valid for all of the attacker's accounts."
+        de: "Das Passwort wird für alle Konten des Angreifers gültig."
+        correct: false
+      - en: "MFA automatically deletes the account."
+        de: "MFA löscht das Konto automatisch."
+        correct: false
+    explanation:
+      en: "MFA requires a further proof besides the password, for example a code or a security key. A stolen password alone is then usually not enough, though users should still change it and report the incident."
+      de: "MFA verlangt neben dem Passwort einen weiteren Nachweis, etwa einen Code oder einen Sicherheitsschlüssel. Ein gestohlenes Passwort allein reicht dann meist nicht, dennoch sollten Nutzende es ändern und den Vorfall melden."
+    source: https://en.wikipedia.org/wiki/Multi-factor_authentication
+  - id: iam-f-reset-verify
+    level: foundation
+    difficulty: 1040
+    type: single
+    stem:
+      en: "An unknown caller says they are an executive in a hurry and asks you to reset their password and read it out over the phone. What do you do?"
+      de: "Ein unbekannter Anrufer gibt sich als eilige Führungskraft aus und bittet dich, das Passwort zurückzusetzen und es am Telefon vorzulesen. Was tust du?"
+    options:
+      - en: "Verify identity by the agreed method, for example a call-back to the number in the directory, before any reset."
+        de: "Du prüfst die Identität nach dem vereinbarten Verfahren, etwa mit einem Rückruf an die im Verzeichnis hinterlegte Nummer, bevor du etwas zurücksetzt."
+        correct: true
+      - en: "Reset it immediately because executives have priority."
+        de: "Du setzt es sofort zurück, weil Führungskräfte Vorrang haben."
+        correct: false
+      - en: "Reset it and tell the caller the old password too."
+        de: "Du setzt es zurück und nennst auch das alte Passwort."
+        correct: false
+      - en: "Ask the caller to confirm by giving their own phone number and use that."
+        de: "Du lässt dir eine eigene Telefonnummer nennen und nutzt diese zur Bestätigung."
+        correct: false
+    explanation:
+      en: "Urgency and rank are common pressure tactics. A call-back to a number you already trust, or another agreed method, protects the account. A number supplied by the caller proves nothing."
+      de: "Eile und Rang sind typische Druckmittel. Ein Rückruf an eine bereits vertrauenswürdige Nummer oder ein anderes vereinbartes Verfahren schützt das Konto. Eine vom Anrufer genannte Nummer beweist nichts."
+    source: https://en.wikipedia.org/wiki/Identity_management
+  - id: iam-p-group-access
+    level: practitioner
+    difficulty: 1180
+    type: single
+    stem:
+      en: "Why is it better to grant access to a shared folder via a group than to individual users?"
+      de: "Warum ist es besser, Zugriff auf ein gemeinsames Laufwerk über eine Gruppe statt an einzelne Nutzende zu vergeben?"
+    options:
+      - en: "Changes of role only need a change of membership, and you can see who has access."
+        de: "Bei Rollenwechseln genügt eine Änderung der Mitgliedschaft, und man sieht, wer Zugriff hat."
+        correct: true
+      - en: "Groups cannot be audited."
+        de: "Gruppen lassen sich nicht prüfen."
+        correct: false
+      - en: "Individual rights are always faster to review."
+        de: "Einzelrechte sind immer schneller zu prüfen."
+        correct: false
+      - en: "Groups give everyone administrator rights."
+        de: "Gruppen geben allen Administratorrechte."
+        correct: false
+    explanation:
+      en: "Group-based assignment makes joiners and movers easier and keeps access visible. Individual exceptions are easy to forget and hard to find later."
+      de: "Die Vergabe über Gruppen erleichtert Eintritte und Wechsel und hält den Zugriff sichtbar. Einzelne Ausnahmen sind leicht vergessen und später schwer zu finden."
+    source: https://en.wikipedia.org/wiki/Role-based_access_control
+  - id: iam-p-least-privilege
+    level: practitioner
+    difficulty: 1230
+    type: single
+    stem:
+      en: "A service desk agent only needs to reset passwords for ordinary users. Which access follows the principle of least privilege?"
+      de: "Ein Service-Desk-Mitarbeiter muss nur Passwörter normaler Nutzender zurücksetzen. Welcher Zugriff folgt dem Prinzip der geringsten Rechte?"
+    options:
+      - en: "A role that allows password resets for ordinary users only."
+        de: "Eine Rolle, die nur Passwort-Resets für normale Nutzende erlaubt."
+        correct: true
+      - en: "Full domain administrator rights, to be safe."
+        de: "Volle Administratorrechte für die gesamte Domäne, sicherheitshalber."
+        correct: false
+      - en: "The access of the most senior agent on the team."
+        de: "Der Zugriff des dienstältesten Teammitglieds."
+        correct: false
+      - en: "No access, with every reset done by a colleague."
+        de: "Kein Zugriff, jeder Reset wird von einer Kollegin erledigt."
+        correct: false
+    explanation:
+      en: "Least privilege means the access needed for the task and no more. A narrow role is enough for resets; full administrator rights add risk without need."
+      de: "Geringste Rechte bedeuten den für die Aufgabe nötigen Zugriff und nicht mehr. Für Resets genügt eine enge Rolle; volle Administratorrechte erhöhen das Risiko ohne Bedarf."
+    source: https://en.wikipedia.org/wiki/Access_control
+  - id: iam-p-approval
+    level: practitioner
+    difficulty: 1290
+    type: single
+    stem:
+      en: "A colleague asks you, in the hallway, to add them to the payroll group. What is the correct handling?"
+      de: "Ein Kollege bittet dich auf dem Flur, ihn in die Gehaltsabrechnungs-Gruppe aufzunehmen. Wie gehst du richtig vor?"
+    options:
+      - en: "Ask for a ticket and get approval from the resource owner or manager, then grant and document it."
+        de: "Du bittest um ein Ticket und holst die Genehmigung der verantwortlichen Person oder Führungskraft ein, vergibst den Zugriff dann und dokumentierst ihn."
+        correct: true
+      - en: "Add them, because they are a colleague you know."
+        de: "Du nimmst ihn auf, weil du ihn als Kollegen kennst."
+        correct: false
+      - en: "Add them temporarily and only record it if someone asks."
+        de: "Du nimmst ihn vorübergehend auf und dokumentierst es nur auf Nachfrage."
+        correct: false
+      - en: "Approve it yourself since you manage the group technically."
+        de: "Du genehmigst es selbst, weil du die Gruppe technisch verwaltest."
+        correct: false
+    explanation:
+      en: "Access needs an accountable approver and a record. Technical ability to change a group is not the same as the authority to decide who may have access."
+      de: "Zugriff braucht eine verantwortliche genehmigende Person und ein Protokoll. Die technische Möglichkeit, eine Gruppe zu ändern, ist nicht dieselbe wie die Befugnis zu entscheiden, wer Zugriff haben darf."
+    source: https://en.wikipedia.org/wiki/Access_control
+  - id: iam-p-lockout
+    level: practitioner
+    difficulty: 1340
+    type: single
+    stem:
+      en: "A user is repeatedly locked out although they type the correct password. What is a frequent cause to check first?"
+      de: "Eine Nutzerin wird immer wieder gesperrt, obwohl sie das richtige Passwort eingibt. Welche häufige Ursache prüfst du zuerst?"
+    options:
+      - en: "A device or mail app that still uses an old saved password."
+        de: "Ein Gerät oder eine Mail-App, das noch ein altes gespeichertes Passwort verwendet."
+        correct: true
+      - en: "The lockout feature is broken and should be turned off."
+        de: "Die Sperrfunktion ist defekt und sollte abgeschaltet werden."
+        correct: false
+      - en: "The user has too few permissions."
+        de: "Die Nutzerin hat zu wenige Berechtigungen."
+        correct: false
+      - en: "The password manager has been uninstalled."
+        de: "Der Passwortmanager wurde deinstalliert."
+        correct: false
+    explanation:
+      en: "After a password change, forgotten devices keep trying the old one and trigger the lockout. Check connected devices, and do not disable the lockout, which protects against password guessing."
+      de: "Nach einer Passwortänderung probieren vergessene Geräte weiter das alte und lösen die Sperre aus. Prüfe verbundene Geräte und schalte die Sperre nicht ab, denn sie schützt vor dem Raten von Passwörtern."
+    source: https://en.wikipedia.org/wiki/Access_control
+  - id: iam-a-review
+    level: advanced
+    difficulty: 1520
+    type: single
+    stem:
+      en: "In an access review, a reviewer does not respond by the deadline. What is the best way to handle this?"
+      de: "Bei einer Berechtigungsprüfung antwortet eine prüfende Person nicht bis zur Frist. Wie gehst du am besten damit um?"
+    options:
+      - en: "Escalate it, and do not treat silence as approval."
+        de: "Du eskalierst es und wertest Schweigen nicht als Zustimmung."
+        correct: true
+      - en: "Treat silence as approval and keep all access."
+        de: "Du wertest Schweigen als Zustimmung und lässt alle Zugriffe bestehen."
+        correct: false
+      - en: "Remove all access of the reviewer's team immediately without notice."
+        de: "Du entziehst sofort und ohne Ankündigung den gesamten Zugriff des Teams der prüfenden Person."
+        correct: false
+      - en: "Skip the review and run it again next year."
+        de: "Du überspringst die Prüfung und führst sie nächstes Jahr erneut durch."
+        correct: false
+    explanation:
+      en: "A review only works if decisions are made. Silence is escalated according to the process, so that missing answers do not turn into automatic approval."
+      de: "Eine Prüfung wirkt nur, wenn Entscheidungen getroffen werden. Schweigen wird nach dem Prozess eskaliert, damit fehlende Antworten nicht zur automatischen Zustimmung werden."
+    source: https://en.wikipedia.org/wiki/Access_control
+  - id: iam-a-privileged
+    level: advanced
+    difficulty: 1580
+    type: single
+    stem:
+      en: "Which set of measures best fits the control of privileged accounts?"
+      de: "Welche Maßnahmen passen am besten zur Kontrolle privilegierter Konten?"
+    options:
+      - en: "Separate accounts, limited duration with approval, strong authentication and logging."
+        de: "Getrennte Konten, befristete Vergabe mit Genehmigung, starke Authentisierung und Protokollierung."
+        correct: true
+      - en: "One shared administrator account for the whole team, with a simple password."
+        de: "Ein gemeinsames Administratorkonto für das ganze Team mit einfachem Passwort."
+        correct: false
+      - en: "Permanent administrator rights for everyone in IT for convenience."
+        de: "Dauerhafte Administratorrechte für alle in der IT aus Bequemlichkeit."
+        correct: false
+      - en: "Using the administrator account for daily mail and browsing."
+        de: "Das Administratorkonto für tägliche E-Mails und zum Surfen nutzen."
+        correct: false
+    explanation:
+      en: "Privileged access carries the highest risk, so it is separated, limited in time, strongly authenticated and logged. Shared or permanent accounts remove traceability and widen exposure."
+      de: "Privilegierter Zugriff birgt das höchste Risiko, daher wird er getrennt, zeitlich begrenzt, stark authentisiert und protokolliert. Geteilte oder dauerhafte Konten nehmen die Nachvollziehbarkeit und vergrößern die Angriffsfläche."
+    source: https://en.wikipedia.org/wiki/Access_control
+  - id: iam-a-sod
+    level: advanced
+    difficulty: 1540
+    type: single
+    stem:
+      en: "One employee can both enter supplier invoices and approve payments. Which principle is violated?"
+      de: "Eine Mitarbeiterin kann sowohl Lieferantenrechnungen erfassen als auch Zahlungen freigeben. Welches Prinzip wird verletzt?"
+    options:
+      - en: "Segregation of duties."
+        de: "Funktionstrennung."
+        correct: true
+      - en: "Single sign-on."
+        de: "Single Sign-on."
+        correct: false
+      - en: "Password rotation."
+        de: "Passwortwechsel."
+        correct: false
+      - en: "Account lockout."
+        de: "Kontosperre."
+        correct: false
+    explanation:
+      en: "Segregation of duties means no one person completes a critical process alone. Combining entry and approval allows errors or fraud to go unnoticed."
+      de: "Funktionstrennung bedeutet, dass keine Person einen kritischen Prozess allein abschließt. Die Kombination von Erfassung und Freigabe lässt Fehler oder Betrug unbemerkt."
+    source: https://en.wikipedia.org/wiki/Access_control
+  - id: iam-a-audit-trail
+    level: advanced
+    difficulty: 1620
+    type: single
+    stem:
+      en: "Which property is most important for an audit trail of permission changes to be trustworthy as evidence?"
+      de: "Welche Eigenschaft ist am wichtigsten, damit ein Audit-Trail zu Rechteänderungen als Nachweis vertrauenswürdig ist?"
+    options:
+      - en: "It is complete for important events and protected against changes by the people it records."
+        de: "Er ist für wichtige Ereignisse vollständig und vor Änderungen durch die Protokollierten geschützt."
+        correct: true
+      - en: "It is editable by every administrator to correct mistakes."
+        de: "Er ist von jedem Administrator editierbar, um Fehler zu korrigieren."
+        correct: false
+      - en: "It records only successful sign-ins."
+        de: "Er erfasst nur erfolgreiche Anmeldungen."
+        correct: false
+      - en: "It is deleted after each review to protect privacy."
+        de: "Er wird nach jeder Prüfung gelöscht, um die Privatsphäre zu schützen."
+        correct: false
+    explanation:
+      en: "A trail that can be altered by those it monitors, or that misses key events, cannot serve as evidence. Retention and read access should follow policy and data protection rules."
+      de: "Ein Protokoll, das von den Überwachten geändert werden kann oder wichtige Ereignisse auslässt, taugt nicht als Nachweis. Aufbewahrung und Leserechte sollten Richtlinie und Datenschutzregeln folgen."
+    source: https://en.wikipedia.org/wiki/Identity_management

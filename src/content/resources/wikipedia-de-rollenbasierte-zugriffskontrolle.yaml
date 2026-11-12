@@ -1,0 +1,13 @@
+id: wikipedia-de-rollenbasierte-zugriffskontrolle
+url: https://de.wikipedia.org/wiki/Rollenbasierte_Zugriffskontrolle
+title: "Rollenbasierte Zugriffskontrolle"
+provider: Wikipedia
+language: de
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-12
+mode: link
+competencies: [identity-access-management]
+levels: [practitioner, advanced]

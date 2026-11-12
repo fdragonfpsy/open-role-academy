@@ -1,0 +1,86 @@
+---
+id: identity-access-management-advanced
+competency: identity-access-management
+level: advanced
+title: "Access reviews, privileged access, directory services, federation, segregation of duties and audit trails"
+objectives:
+  - Plan and run a regular access review (recertification) with clear owners.
+  - Control privileged access with separate accounts, limited duration and logging.
+  - Explain the role of a directory service as a central source of identity data.
+  - Describe federation and where trust between organisations must be defined.
+  - Apply segregation of duties and use audit trails as evidence.
+minutes: 35
+resources:
+  - wikipedia-access-control
+  - wikipedia-identity-management
+  - wikipedia-de-identitaetsmanagement
+  - wikipedia-de-rollenbasierte-zugriffskontrolle
+  - bsi-it-grundschutz
+status: ai-draft
+sources:
+  - title: "Access control"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Access_control
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Identity management"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Identity_management
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+Even with groups and approvals, access grows over time: people change tasks, projects end, exceptions stay. Without checks, the organisation slowly ends up with more access than anyone intended. At the advanced level you design controls that keep access correct over years and that you can explain to an auditor.
+
+## Access reviews (recertification)
+
+An **access review** asks the people who know the need, typically managers and resource owners, to confirm regularly that each person's access is still required. The core ideas:
+
+- Define the **scope** (which systems, which groups), the **frequency** and the **reviewers**. Review more often for sensitive systems.
+- Give reviewers readable information: names, roles, group descriptions, last use, not raw technical identifiers.
+- Treat "no answer" as a decision to be escalated, not as approval.
+- **Act on the result** within a set time, and keep the evidence: who reviewed what, when and what changed.
+
+A review where everyone clicks "approve" without looking is worse than none, as it creates false confidence. Keep lists short and meaningful, for example by reviewing groups rather than thousands of single rights.
+
+## Privileged access
+
+Accounts with administrator rights can change or disable everything, so an attacker or a mistake there costs the most. Measures that fit together:
+
+- **Separate** privileged accounts from everyday accounts; never read mail or browse with them.
+- Grant privileges **only when needed and for a limited time**, with approval and a recorded reason.
+- Protect them with strong authentication, such as MFA.
+- **Log** privileged activity and review the logs.
+- Keep the number of privileged accounts small and review them more often than ordinary ones.
+
+## Directory services
+
+A **directory service** is a central store of identity data: users, groups, devices and their attributes. Systems query it to authenticate users and to read group memberships. This gives you one place to create, change and disable accounts, and consistent group definitions for many systems. Its quality matters: wrong or stale attributes lead to wrong access. Decide who owns each attribute (for example the HR process for job title and department) and keep the directory itself highly protected, because it is a prime target.
+
+## Federation
+
+**Federation** extends the trust of single sign-on across organisational boundaries. One organisation's identity service vouches for its users to another organisation's applications, so that users need no separate account there. The key design questions are not technical alone: which partner is trusted, for which applications, what information about the user is passed on, and who is responsible when an account at the partner is misused. Agree this in writing and include the removal of trust when the cooperation ends.
+
+## Segregation of duties
+
+**Segregation of duties** means that no single person can complete a critical process alone, for example both requesting and approving a payment, or both creating and approving their own access. Identify the conflicting combinations in your organisation, ideally with the owners of finance and compliance, and make the access system prevent or flag them. Where small teams cannot separate fully, add compensating controls such as additional review.
+
+## Audit trails
+
+An **audit trail** records who did what, when and to which object: sign-ins, permission changes, privileged actions. It lets you investigate incidents and show an auditor that controls work. Make sure that logs are complete for important events, protected against changes by the people they record, time-synchronised and kept for the period your policy and legal requirements define. Logs also contain personal data, so limit who may read them.
+
+## Worked example
+
+During the yearly review of the finance application, you export the groups and send each owner a short list. One owner finds that two people hold both "enter invoices" and "approve payments". The conflict is removed: one of them keeps the approval right, the other keeps entry. A former project member still in an admin group is found because the log shows no use for months; the membership is removed. You record who reviewed, what was changed and when, and store the evidence with the review record, and the next review date is set.
+
+## Key takeaways
+
+- Run regular access reviews with clear scope, owners and follow-up; silence is not approval.
+- Restrict privileged access in number, time and protect and log it.
+- A directory service is the central source of identity data; its data needs owners.
+- Federation needs written agreement on trust, data and responsibility.
+- Separate conflicting duties and keep protected audit trails.

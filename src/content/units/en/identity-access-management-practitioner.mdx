@@ -1,0 +1,96 @@
+---
+id: identity-access-management-practitioner
+competency: identity-access-management
+level: practitioner
+title: "Groups and roles, least privilege, access requests, single sign-on and lockouts"
+objectives:
+  - Use groups and roles to grant access instead of assigning rights person by person.
+  - Apply the principle of least privilege when granting access.
+  - Run an access request with a clear approval step and a record.
+  - Explain what single sign-on does and what it changes for support.
+  - Handle account lockouts without weakening security.
+minutes: 30
+resources:
+  - wikipedia-role-based-access-control
+  - wikipedia-access-control
+  - wikipedia-de-rollenbasierte-zugriffskontrolle
+  - wikipedia-de-single-sign-on
+status: ai-draft
+sources:
+  - title: "Role-based access control"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Role-based_access_control
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Access control"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Access_control
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Single sign-on"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Single_sign-on
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+At the foundation level you managed single accounts. In real organisations there are hundreds of accounts and many systems. Granting rights person by person does not scale, is error-prone and leaves nobody able to say who may do what. Good structure and clear processes make access both safer and faster.
+
+## Groups and roles (RBAC)
+
+In **role-based access control (RBAC)** permissions are attached to **roles**, and people receive roles according to their job. A common practical form is the **group**: you put people in a group such as "Accounting" and give the group access to a shared folder or application. Benefits:
+
+- A new colleague gets the right access by joining the right groups.
+- Changing a role means changing group membership, not hunting for individual rights.
+- You can answer "who has access to this?" by looking at a group.
+
+Keep names clear and descriptions current. Avoid giving rights to individuals directly, because those exceptions are invisible later.
+
+## Least privilege
+
+The **principle of least privilege** says a person or program should have only the access needed for the task, and no more. If a service desk agent only needs to reset passwords, they do not need full administrator rights. Start with little and add on justified request, rather than starting broad and trimming later. Time-limited access for a specific task fits the principle well.
+
+## Access requests and approvals
+
+An access request should answer: who needs what, why, for how long, and who approved it. A typical flow:
+
+1. The requester or their manager submits the request in the ticket system.
+2. The **owner of the resource** or the manager approves. Support staff do not approve their own or a friend's request.
+3. You grant exactly what was approved, preferably by adding a group.
+4. You document it and tell the requester.
+
+The approval is not bureaucracy: it ties the right to a decision that someone is accountable for, and it provides evidence later.
+
+## Single sign-on
+
+**Single sign-on (SSO)** lets a person sign in once and then use several applications without entering credentials again. A central identity service checks who the person is, and the applications trust its result. For users this means fewer passwords. For support it means:
+
+- A problem with the central sign-in can affect many applications at once, so check there first when several systems fail together.
+- Strong protection such as MFA at that one place protects everything behind it.
+- Removing the central account cuts access to connected applications, though a few may still keep their own local accounts; know which ones.
+
+## Handling lockouts
+
+Accounts lock after repeated failed sign-ins to hinder password guessing. When a user is locked out:
+
+- Verify identity as for a password reset before unlocking.
+- Look for the cause. One wrong password after a change is harmless; repeated attempts from an unusual place or at night may be an attack. In that case, report it as a security incident and reset the password.
+- A saved old password on a phone or mail client is a frequent cause of repeated lockouts; check connected devices.
+- Do not disable the lockout feature to reduce calls; improve self-service instead.
+
+## Worked example
+
+Mr Okafor moves from sales support to the finance team. His manager files a ticket. You remove him from the sales groups, add him to the finance group the manager approved, and check that he can open the finance share but not the sales-only CRM export. Two days later he is locked out. You verify his identity by call-back and find that his old phone still tries the former password every few minutes. You remove the stale mail profile from the phone, unlock the account and note the cause in the ticket.
+
+## Key takeaways
+
+- Grant access through groups and roles, not through individual exceptions.
+- Give the least privilege needed, preferably time-limited for special tasks.
+- Every access request needs a named approver and a record.
+- With SSO, a central problem hits many applications; protect and check the central sign-in first.
+- Verify identity before unlocking and look for the cause of lockouts.

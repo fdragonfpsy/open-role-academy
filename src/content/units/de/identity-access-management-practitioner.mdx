@@ -1,0 +1,96 @@
+---
+id: identity-access-management-practitioner
+competency: identity-access-management
+level: practitioner
+title: "Gruppen und Rollen, Minimalprinzip, Zugriffsanträge, Single Sign-on und Kontosperren"
+objectives:
+  - Zugriff über Gruppen und Rollen vergeben statt Rechte einzeln an Personen.
+  - Das Prinzip der geringsten Rechte beim Vergeben von Zugriff anwenden.
+  - Einen Zugriffsantrag mit klarer Genehmigung und Protokoll abwickeln.
+  - Erklären, was Single Sign-on leistet und was es für den Support ändert.
+  - Kontosperren behandeln, ohne die Sicherheit zu schwächen.
+minutes: 30
+resources:
+  - wikipedia-de-rollenbasierte-zugriffskontrolle
+  - wikipedia-de-single-sign-on
+  - wikipedia-role-based-access-control
+  - wikipedia-access-control
+status: ai-draft
+sources:
+  - title: "Rollenbasierte Zugriffskontrolle"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Rollenbasierte_Zugriffskontrolle
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Single Sign-on"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Single_Sign-on
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Access control"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Access_control
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Auf der Einstiegsstufe hast du einzelne Konten verwaltet. In echten Organisationen gibt es Hunderte Konten und viele Systeme. Rechte Person für Person zu vergeben, skaliert nicht, ist fehleranfällig und lässt niemanden mehr sagen, wer was darf. Gute Struktur und klare Prozesse machen Zugriff sicherer und schneller.
+
+## Gruppen und Rollen (RBAC)
+
+Bei der **rollenbasierten Zugriffskontrolle (RBAC)** hängen Berechtigungen an **Rollen**, und Personen erhalten Rollen entsprechend ihrer Aufgabe. Eine verbreitete praktische Form ist die **Gruppe**: Du nimmst Personen in eine Gruppe wie „Buchhaltung“ auf und gibst der Gruppe Zugriff auf ein gemeinsames Laufwerk oder eine Anwendung. Vorteile:
+
+- Neue Mitarbeitende erhalten den passenden Zugriff durch die Aufnahme in die richtigen Gruppen.
+- Ein Rollenwechsel bedeutet, Gruppenmitgliedschaften zu ändern, statt einzelne Rechte zu suchen.
+- Die Frage „Wer hat darauf Zugriff?“ beantwortest du mit einem Blick auf eine Gruppe.
+
+Halte Namen klar und Beschreibungen aktuell. Vermeide Rechte direkt an Einzelpersonen, denn solche Ausnahmen sind später unsichtbar.
+
+## Minimalprinzip
+
+Das **Prinzip der geringsten Rechte** besagt, dass eine Person oder ein Programm nur den Zugriff haben sollte, den die Aufgabe braucht, und nicht mehr. Wenn eine Service-Desk-Mitarbeiterin nur Passwörter zurücksetzen muss, braucht sie keine vollen Administratorrechte. Beginne mit wenig und ergänze auf begründeten Antrag, statt breit zu starten und später zu beschneiden. Zeitlich begrenzter Zugriff für eine bestimmte Aufgabe passt gut zum Prinzip.
+
+## Zugriffsanträge und Genehmigungen
+
+Ein Zugriffsantrag sollte beantworten: Wer braucht was, warum, wie lange, und wer hat es genehmigt? Ein typischer Ablauf:
+
+1. Die antragstellende Person oder ihre Führungskraft stellt den Antrag im Ticketsystem.
+2. Die **verantwortliche Person für die Ressource** oder die Führungskraft genehmigt. Support-Mitarbeitende genehmigen weder eigene Anträge noch die von Bekannten.
+3. Du vergibst genau das Genehmigte, am besten durch Aufnahme in eine Gruppe.
+4. Du dokumentierst es und informierst die antragstellende Person.
+
+Die Genehmigung ist keine Bürokratie: Sie bindet das Recht an eine Entscheidung, für die jemand geradesteht, und liefert später einen Nachweis.
+
+## Single Sign-on
+
+**Single Sign-on (SSO)** lässt Personen sich einmal anmelden und dann mehrere Anwendungen nutzen, ohne erneut Zugangsdaten einzugeben. Ein zentraler Identitätsdienst prüft, wer die Person ist, und die Anwendungen vertrauen seinem Ergebnis. Für Nutzende bedeutet das weniger Passwörter. Für den Support heißt es:
+
+- Ein Problem an der zentralen Anmeldung kann viele Anwendungen gleichzeitig betreffen; prüfe dort zuerst, wenn mehrere Systeme zugleich ausfallen.
+- Starker Schutz wie MFA an dieser einen Stelle schützt alles dahinter.
+- Das Entfernen des zentralen Kontos kappt den Zugang zu angebundenen Anwendungen, doch einige führen eventuell noch lokale Konten; wisse, welche.
+
+## Kontosperren behandeln
+
+Konten sperren sich nach wiederholten Fehlversuchen, um Raten von Passwörtern zu erschweren. Ist jemand gesperrt:
+
+- Prüfe die Identität wie bei einem Passwort-Reset, bevor du entsperrst.
+- Suche die Ursache. Ein falsches Passwort nach einer Änderung ist harmlos; wiederholte Versuche von ungewöhnlichem Ort oder nachts können ein Angriff sein. Melde das dann als Sicherheitsvorfall und setze das Passwort zurück.
+- Ein gespeichertes altes Passwort auf Smartphone oder Mailprogramm ist eine häufige Ursache für wiederholte Sperren; prüfe verbundene Geräte.
+- Schalte die Sperre nicht ab, um Anrufe zu verringern; verbessere stattdessen die Selbstbedienung.
+
+## Praxisbeispiel
+
+Herr Okafor wechselt aus dem Vertriebsinnendienst ins Finanzteam. Seine Führungskraft stellt ein Ticket. Du entfernst ihn aus den Vertriebsgruppen, nimmst ihn in die genehmigte Finanzgruppe auf und prüfst, dass er das Finanzlaufwerk öffnen kann, nicht aber den reinen Vertriebs-Export des CRM. Zwei Tage später ist er gesperrt. Du prüfst seine Identität per Rückruf und stellst fest, dass sein altes Smartphone alle paar Minuten das frühere Passwort probiert. Du entfernst das veraltete Mailprofil vom Gerät, entsperrst das Konto und notierst die Ursache im Ticket.
+
+## Kernaussagen
+
+- Zugriff über Gruppen und Rollen vergeben, nicht über individuelle Ausnahmen.
+- Nur die nötigen Rechte geben, für Sonderaufgaben möglichst zeitlich begrenzt.
+- Jeder Zugriffsantrag braucht eine benannte genehmigende Person und ein Protokoll.
+- Bei SSO trifft ein zentrales Problem viele Anwendungen; die zentrale Anmeldung zuerst schützen und prüfen.
+- Vor dem Entsperren die Identität prüfen und die Ursache von Sperren suchen.

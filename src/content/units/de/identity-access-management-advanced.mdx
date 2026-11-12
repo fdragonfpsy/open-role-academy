@@ -1,0 +1,86 @@
+---
+id: identity-access-management-advanced
+competency: identity-access-management
+level: advanced
+title: "Berechtigungsprüfungen, privilegierter Zugriff, Verzeichnisdienste, Föderation, Funktionstrennung und Audit-Trails"
+objectives:
+  - Eine regelmäßige Berechtigungsprüfung (Rezertifizierung) mit klaren Verantwortlichen planen und durchführen.
+  - Privilegierten Zugriff mit getrennten Konten, begrenzter Dauer und Protokollierung kontrollieren.
+  - Die Rolle eines Verzeichnisdienstes als zentrale Quelle für Identitätsdaten erklären.
+  - Föderation beschreiben und benennen, wo Vertrauen zwischen Organisationen geregelt werden muss.
+  - Funktionstrennung anwenden und Audit-Trails als Nachweis nutzen.
+minutes: 35
+resources:
+  - wikipedia-de-identitaetsmanagement
+  - wikipedia-de-rollenbasierte-zugriffskontrolle
+  - wikipedia-access-control
+  - wikipedia-identity-management
+  - bsi-it-grundschutz
+status: ai-draft
+sources:
+  - title: "Identitätsmanagement"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Identit%C3%A4tsmanagement
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Access control"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Access_control
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Auch mit Gruppen und Genehmigungen wächst Zugriff mit der Zeit: Aufgaben wechseln, Projekte enden, Ausnahmen bleiben. Ohne Kontrollen hat die Organisation irgendwann mehr Zugriff, als jemand beabsichtigt hat. Auf der fortgeschrittenen Stufe gestaltest du Kontrollen, die Zugriff über Jahre korrekt halten und die du einer Prüfung erklären kannst.
+
+## Berechtigungsprüfungen (Rezertifizierung)
+
+Eine **Berechtigungsprüfung** bittet die Personen, die den Bedarf kennen, meist Führungskräfte und Ressourcenverantwortliche, regelmäßig zu bestätigen, dass der Zugriff jeder Person weiterhin nötig ist. Die Kernideen:
+
+- Lege **Umfang** (welche Systeme, welche Gruppen), **Häufigkeit** und **Prüfende** fest. Bei sensiblen Systemen prüfst du häufiger.
+- Gib den Prüfenden lesbare Informationen: Namen, Rollen, Gruppenbeschreibungen, letzte Nutzung, keine rohen technischen Kennungen.
+- Behandle „keine Antwort“ als Entscheidung, die eskaliert wird, nicht als Zustimmung.
+- **Setze das Ergebnis um**, innerhalb einer festgelegten Frist, und bewahre die Nachweise auf: wer was wann geprüft hat und was sich geändert hat.
+
+Eine Prüfung, bei der alle ungesehen „genehmigen“ anklicken, ist schlechter als keine, weil sie falsche Sicherheit erzeugt. Halte Listen kurz und aussagekräftig, etwa indem du Gruppen statt Tausender Einzelrechte prüfst.
+
+## Privilegierter Zugriff
+
+Konten mit Administratorrechten können alles ändern oder abschalten, deshalb kosten Angriffe oder Fehler dort am meisten. Maßnahmen, die zusammenpassen:
+
+- **Trenne** privilegierte Konten von Alltagskonten; lies damit keine Mails und surfe nicht.
+- Vergib Privilegien **nur bei Bedarf und befristet**, mit Genehmigung und dokumentiertem Grund.
+- Schütze sie mit starker Authentisierung wie MFA.
+- **Protokolliere** privilegierte Tätigkeiten und werte die Protokolle aus.
+- Halte die Zahl privilegierter Konten klein und prüfe sie öfter als normale.
+
+## Verzeichnisdienste
+
+Ein **Verzeichnisdienst** ist ein zentraler Speicher für Identitätsdaten: Benutzer, Gruppen, Geräte und ihre Attribute. Systeme fragen ihn ab, um Nutzende zu authentisieren und Gruppenzugehörigkeiten zu lesen. So hast du einen Ort, um Konten anzulegen, zu ändern und zu sperren, und einheitliche Gruppendefinitionen für viele Systeme. Auf die Qualität kommt es an: falsche oder veraltete Attribute führen zu falschem Zugriff. Lege fest, wer jedes Attribut verantwortet (zum Beispiel der Personalprozess für Funktion und Abteilung), und schütze das Verzeichnis selbst besonders gut, denn es ist ein bevorzugtes Ziel.
+
+## Föderation
+
+**Föderation** weitet das Vertrauen des Single Sign-on über Organisationsgrenzen aus. Der Identitätsdienst einer Organisation bürgt gegenüber den Anwendungen einer anderen für seine Nutzenden, sodass dort kein eigenes Konto nötig ist. Die zentralen Gestaltungsfragen sind nicht nur technisch: Welchem Partner wird vertraut, für welche Anwendungen, welche Informationen über die Person werden weitergegeben, und wer ist verantwortlich, wenn ein Konto beim Partner missbraucht wird? Vereinbare das schriftlich und regle auch, wie das Vertrauen endet, wenn die Zusammenarbeit endet.
+
+## Funktionstrennung
+
+**Funktionstrennung** bedeutet, dass keine einzelne Person einen kritischen Prozess allein abschließen kann, zum Beispiel eine Zahlung sowohl beantragen als auch freigeben oder den eigenen Zugriff sowohl anlegen als auch genehmigen. Ermittle die unverträglichen Kombinationen in deiner Organisation, am besten mit den Verantwortlichen für Finanzen und Compliance, und lass das Zugriffssystem sie verhindern oder melden. Wo kleine Teams nicht vollständig trennen können, ergänze ausgleichende Kontrollen wie zusätzliche Prüfung.
+
+## Audit-Trails
+
+Ein **Audit-Trail** hält fest, wer wann was an welchem Objekt getan hat: Anmeldungen, Rechteänderungen, privilegierte Aktionen. Er erlaubt, Vorfälle zu untersuchen und einer Prüfung zu zeigen, dass Kontrollen wirken. Sorge dafür, dass Protokolle für wichtige Ereignisse vollständig sind, vor Änderungen durch die Protokollierten geschützt, zeitlich synchronisiert und so lange aufbewahrt werden, wie Richtlinie und rechtliche Vorgaben es verlangen. Protokolle enthalten auch personenbezogene Daten, beschränke also, wer sie lesen darf.
+
+## Praxisbeispiel
+
+Bei der jährlichen Prüfung der Finanzanwendung exportierst du die Gruppen und schickst jeder verantwortlichen Person eine kurze Liste. Eine Person stellt fest, dass zwei Mitarbeitende sowohl „Rechnungen erfassen“ als auch „Zahlungen freigeben“ innehaben. Der Konflikt wird beseitigt: Eine Person behält die Freigabe, die andere die Erfassung. Ein ehemaliges Projektmitglied in einer Admin-Gruppe fällt auf, weil das Protokoll seit Monaten keine Nutzung zeigt; die Mitgliedschaft wird entfernt. Du dokumentierst, wer geprüft, was geändert wurde und wann, legst den Nachweis zur Prüfakte und setzt den nächsten Prüftermin.
+
+## Kernaussagen
+
+- Regelmäßige Berechtigungsprüfungen mit klarem Umfang, Verantwortlichen und Nachverfolgung durchführen; Schweigen ist keine Zustimmung.
+- Privilegierten Zugriff in Zahl und Dauer begrenzen, schützen und protokollieren.
+- Ein Verzeichnisdienst ist die zentrale Quelle für Identitätsdaten; seine Daten brauchen Verantwortliche.
+- Föderation braucht schriftliche Vereinbarungen zu Vertrauen, Daten und Verantwortung.
+- Unverträgliche Aufgaben trennen und geschützte Audit-Trails führen.
