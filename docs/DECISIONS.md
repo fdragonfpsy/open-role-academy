@@ -2,6 +2,15 @@
 
 Format: date — decision — reason — alternatives considered.
 
+## 2026-11-12 — Time-boxed work windows instead of a usage-percentage rule (owner decision)
+- **Decision:** Runs work continuously inside fixed windows (CLAUDE.md §11): weekdays 20:00–23:45 only, weekends longer, Sunday stop before the 18:00 weekly reset. Model choice per task via subagents (§12).
+- **Reason:** The owner needs most of the weekly Pro usage for his own weekday work. The agent cannot read the plan's usage meter, so a rule like "use at most 14–20 % per weekday" cannot be enforced from inside a run; time windows are the enforceable proxy.
+- **Alternatives:** One slice per run (too slow: about one competency per night); unbounded runs (would eat the owner's weekday budget).
+
+## 2026-11-12 — DigComp 3.0 replaces DigComp 2.2
+- **Decision:** All `frameworkRefs` use DigComp 3.0 names and the JRC framework page as URI.
+- **Reason:** The JRC published DigComp 3.0 in November 2025; 2.2 names are outdated.
+
 ## 2026-11-11 — Astro 7 with `src/content.config.ts`; schemas in `src/content/schemas.ts`
 - **Decision:** Use the current Astro (7.x) content layer. Collections are defined in `src/content.config.ts` (glob loaders); the Zod schemas live in `src/content/schemas.ts` instead of `src/content/config.ts` as CLAUDE.md §5 names it.
 - **Reason:** Astro 5+ treats `src/content/config.ts` as the deprecated legacy config location. A plain schema module can be shared by Astro and the Node validator script.

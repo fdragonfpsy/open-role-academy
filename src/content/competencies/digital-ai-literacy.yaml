@@ -16,8 +16,8 @@ prerequisites: []
 track: core
 frameworkRefs:
   - framework: DigComp
-    uri: https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en
-    label: "DigComp 2.2 — Competence area 1: Information and data literacy (1.1 Browsing, searching and filtering; 1.2 Evaluating data, information and digital content)"
+    uri: https://joint-research-centre.ec.europa.eu/digcomp/digcomp-framework_en
+    label: "DigComp 3.0 — Competence area 1: Information search, evaluation and management (1.1 Browsing, searching and filtering information; 1.2 Evaluating information); AI competence is integrated across all 21 DigComp 3.0 competences"
   - framework: ESCO
     uri: http://data.europa.eu/esco/skill/d15ce60f-ddab-41ce-ba56-398451b77b60
     label: have computer literacy

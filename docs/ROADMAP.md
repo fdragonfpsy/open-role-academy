@@ -75,7 +75,7 @@ One role per task, in the order of CLAUDE.md §4.3. Each task = framework + cont
 
 ## Phase 5 — Optional extensions (only after Phase 4, still $0)
 
-- [ ] Optional accounts + cross-device sync via Supabase free tier (EU region), Row Level Security, keep-alive scheduled GitHub Action; update privacy policy first
+- [ ] Optional accounts + cross-device sync via Supabase free tier (EU region), Row Level Security, keep-alive scheduled GitHub Action; update privacy policy first. **Owner decision needed before starting** (log a blocker and skip until decided): Supabase's built-in mailer only delivers to the project team, so email sign-up and password reset need a custom SMTP sender, which in practice needs an own domain (not $0). The $0 path is sign-in via GitHub/Google OAuth only (no emails to send). Progress stays in localStorage for anonymous users either way.
 - [ ] Optional AI tutor via Cloudflare Workers AI free allocation: explain-this-unit only, strict per-IP and per-day limits, labeled, never used for scoring; update privacy policy first
 - [ ] Anonymous, cookie-less aggregate item statistics to calibrate item difficulty (only if it can be done without personal data)
 
