@@ -2,6 +2,11 @@
 
 Format: date — decision — reason — alternatives considered.
 
+## 2026-11-12 — Accounts via Supabase Auth + Brevo SMTP, no own domain (owner decision)
+- **Decision:** Email/password sign-up with confirmation, password reset and email-link sign-in, sent through Brevo's free SMTP from a verified freemail sender.
+- **Reason:** No free domain was acceptable to the owner; Supabase's built-in mailer only reaches project team members; Brevo's free tier needs no domain and no credit card.
+- **Trade-offs:** Some mail lands in spam (freemail sender via a third-party relay, no DKIM/DMARC alignment); Brevo branding in mails. Switch to a domain later by changing only the SMTP settings.
+
 ## 2026-11-12 — Weekly reviewer on Opus (owner decision)
 - **Decision:** The weekly review run uses Opus (medium effort) and reviews itself; Haiku only for mechanical subtasks. The builder stays on Sonnet.
 - **Reason:** Judgement is the reviewer's whole job; it runs once a week on budget that would otherwise reset unused; a different model than the builder catches more of its mistakes.
