@@ -1,0 +1,96 @@
+---
+id: reconciliation-closing-practitioner
+competency: reconciliation-closing
+level: practitioner
+title: "Reconciliation and closing in practice: sub-ledger to general ledger, posting accruals and deferrals, straight-line depreciation, the closing calendar and documenting differences"
+objectives:
+  - "Reconcile a sub-ledger to its control account in the general ledger."
+  - "Post accruals and deferrals with adjusting entries."
+  - "Explain depreciation and calculate straight-line depreciation."
+  - "Follow a closing calendar and document open differences."
+minutes: 30
+resources:
+  - wikipedia-adjusting-entry
+  - wikipedia-depreciation
+  - wikipedia-de-abschreibung
+  - wikipedia-de-rechnungsabgrenzungsposten
+  - wikipedia-trial-balance
+status: ai-draft
+sources:
+  - title: "Adjusting entry"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Adjusting_entry
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Depreciation"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Depreciation
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Abschreibung"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Abschreibung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Rechnungsabgrenzungsposten"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Rechnungsabgrenzungsposten
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Trial balance"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Trial_balance
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+At practitioner level you own reconciliations, not just attend to them. You compare the detailed records of the sub-ledgers with the general ledger, make the period-end adjustments that put expenses and revenue in the right period, and leave a trail that someone else can follow.
+
+## Sub-ledger to general ledger
+
+The accounts receivable and accounts payable sub-ledgers hold the detail per customer or supplier. In the general ledger each has a **control account** (reconciliation account) holding the total. At period end the sum of open items in the sub-ledger must equal the control account balance. Differences usually come from manual postings straight to the control account, postings in the wrong period, or interface failures between systems. The same logic applies to other sub-ledgers such as fixed assets or inventory. A trial balance, a list of all ledger balances, is a good starting point for spotting accounts that look wrong.
+
+## Posting accruals and deferrals
+
+Adjusting entries are journal entries made at the end of a period to allocate income and expenditure to the period in which they actually occurred. Typical cases:
+
+- **Accrued expense**: a service was received but not yet invoiced; debit expense, credit accrued liabilities.
+- **Accrued revenue**: a service was delivered but not yet invoiced; debit accrued receivable, credit revenue.
+- **Prepaid expense (deferral)**: cash paid for a later period; the amount sits as an asset and is expensed as time passes. In German practice: aktiver Rechnungsabgrenzungsposten.
+- **Unearned revenue (deferral)**: cash received before delivery; it is a liability until the service is delivered. German: passiver Rechnungsabgrenzungsposten.
+
+Where the exact amount is not yet known, use a documented estimate and true it up later.
+
+## Depreciation
+
+Depreciation allocates the cost of a long-lived asset over the periods in which it is used. It is an expense that needs no current cash payment, and it is usually collected in an accumulated depreciation account that reduces the asset's carrying amount on the balance sheet. The simplest method is **straight-line**: cost minus expected residual value, divided by the useful life. The useful life and method come from company policy and applicable rules; in Germany the commercial code requires scheduled depreciation for assets with limited useful life, and tax rules use their own terms, so check with your policy and tax advisers.
+
+## Closing calendar and documentation
+
+A **closing calendar** assigns each step to an owner and a working day: cut-off of postings, reconciliations, accruals, depreciation run, review, lock. Document every reconciliation with the date, preparer, the two balances compared, each difference with an explanation and an action. Open differences carry an owner and a target date.
+
+## Worked example
+
+Illustration only; the amounts are invented. A machine costs 12,000 with an assumed residual value of 0 and an assumed useful life of 4 years (chosen for the example, not a rule). Straight-line depreciation is 12,000 / 4 = 3,000 a year, or 250 a month. The monthly entry:
+
+| Account | Debit | Credit |
+|---|---|---|
+| Depreciation expense | 250 | |
+| Accumulated depreciation | | 250 |
+
+Separately, a rent of 600 for the next month was paid this month. The adjusting entry moves it out of expense: debit prepaid expense 600, credit rent expense 600.
+
+## Key takeaways
+
+- Sub-ledger totals must equal their control accounts; investigate every difference.
+- Adjusting entries put expenses and revenue in the period they belong to.
+- Straight-line depreciation spreads cost minus residual value evenly over the useful life.
+- A closing calendar with owners keeps the close predictable.
+- Document each reconciliation so a reviewer can follow it without asking you.

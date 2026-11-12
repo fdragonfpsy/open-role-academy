@@ -1,0 +1,290 @@
+competency: reconciliation-closing
+items:
+  - id: rc-f-purpose
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "What is the main purpose of reconciling two sets of accounting records?"
+      de: "Was ist der Hauptzweck, zwei Buchhaltungsdatenbestände abzustimmen?"
+    options:
+      - en: "To confirm the records agree and to find errors or missing entries early"
+        de: "Zu bestätigen, dass die Daten übereinstimmen, und Fehler oder fehlende Buchungen früh zu finden"
+        correct: true
+      - en: "To increase the company's profit"
+        de: "Den Gewinn des Unternehmens zu erhöhen"
+        correct: false
+      - en: "To delete old transactions"
+        de: "Alte Buchungen zu löschen"
+        correct: false
+      - en: "To avoid ever posting adjusting entries"
+        de: "Korrekturbuchungen für immer zu vermeiden"
+        correct: false
+    explanation:
+      en: "Reconciliation ensures that two sets of records, usually two account balances, agree. Differences point to errors, missing entries or timing gaps."
+      de: "Abstimmung stellt sicher, dass zwei Datenbestände, meist zwei Kontensalden, übereinstimmen. Differenzen weisen auf Fehler, fehlende Buchungen oder zeitliche Lücken hin."
+    source: https://en.wikipedia.org/wiki/Bank_reconciliation
+  - id: rc-f-outstanding
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "In a bank reconciliation, a payment is posted in your books but has not yet appeared on the bank statement. What is it?"
+      de: "Bei einer Bankabstimmung ist eine Zahlung in deinen Büchern gebucht, steht aber noch nicht auf dem Kontoauszug. Was ist das?"
+    options:
+      - en: "A timing difference (outstanding item) that clears on its own"
+        de: "Eine zeitliche Differenz (offener Posten), die sich von selbst auflöst"
+        correct: true
+      - en: "A bank error that must be reversed immediately"
+        de: "Ein Bankfehler, der sofort storniert werden muss"
+        correct: false
+      - en: "Revenue for the period"
+        de: "Ein Ertrag der Periode"
+        correct: false
+      - en: "A depreciation entry"
+        de: "Eine Abschreibungsbuchung"
+        correct: false
+    explanation:
+      en: "A posted payment that the bank has not processed yet is an outstanding item. It needs no correction and is listed until it appears on the statement."
+      de: "Eine gebuchte Zahlung, die die Bank noch nicht ausgeführt hat, ist ein offener Posten. Er braucht keine Korrektur und bleibt gelistet, bis er auf dem Auszug erscheint."
+    source: https://en.wikipedia.org/wiki/Bank_reconciliation
+  - id: rc-f-bankcharge
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "Bank charges appear on the statement but are not yet in your books. What do you do?"
+      de: "Bankgebühren stehen auf dem Kontoauszug, aber noch nicht in deinen Büchern. Was tust du?"
+    options:
+      - en: "Post them in your books, because they are real transactions you had not recorded"
+        de: "Du buchst sie in deinen Büchern, weil es echte, noch nicht erfasste Vorgänge sind"
+        correct: true
+      - en: "Ignore them as a timing difference"
+        de: "Du ignorierst sie als zeitliche Differenz"
+        correct: false
+      - en: "Ask the bank to remove them from the statement"
+        de: "Du bittest die Bank, sie vom Auszug zu entfernen"
+        correct: false
+      - en: "Wait until next year"
+        de: "Du wartest bis zum nächsten Jahr"
+        correct: false
+    explanation:
+      en: "Items that are on the statement but missing in your books need a posting; unlike outstanding items they will not clear on their own."
+      de: "Posten, die auf dem Auszug stehen, aber in deinen Büchern fehlen, brauchen eine Buchung; anders als offene Posten lösen sie sich nicht von selbst auf."
+    source: https://en.wikipedia.org/wiki/Bank_reconciliation
+  - id: rc-f-accrual
+    level: foundation
+    difficulty: 1040
+    type: single
+    stem:
+      en: "Electricity used in December is billed in January. What does accrual accounting do at the end of December?"
+      de: "Der im Dezember verbrauchte Strom wird erst im Januar abgerechnet. Was macht die periodengerechte Buchführung Ende Dezember?"
+    options:
+      - en: "It records the expense in December, when it was incurred"
+        de: "Sie erfasst den Aufwand im Dezember, wenn er entstanden ist"
+        correct: true
+      - en: "It records the expense only in January, when it is paid"
+        de: "Sie erfasst den Aufwand erst im Januar, wenn bezahlt wird"
+        correct: false
+      - en: "It records no expense at all"
+        de: "Sie erfasst gar keinen Aufwand"
+        correct: false
+      - en: "It records revenue instead"
+        de: "Sie erfasst stattdessen einen Ertrag"
+        correct: false
+    explanation:
+      en: "Accrual accounting recognises expenses when they are incurred, not necessarily when cash is paid."
+      de: "Die periodengerechte Buchführung erfasst Aufwand, wenn er entsteht, nicht zwingend, wenn gezahlt wird."
+    source: https://en.wikipedia.org/wiki/Accrual
+  - id: rc-p-subledger
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "At period end, the open items of the accounts receivable sub-ledger total 50,000 and the control account in the general ledger shows 48,000. What is the correct first step?"
+      de: "Zum Periodenende ergeben die offenen Posten der Debitorenbuchhaltung 50.000, das Sammelkonto im Hauptbuch zeigt 48.000. Was ist der richtige erste Schritt?"
+    options:
+      - en: "Investigate the 2,000 difference, for example manual postings to the control account or wrong-period postings"
+        de: "Die Differenz von 2.000 klären, zum Beispiel manuelle Buchungen auf das Sammelkonto oder Buchungen in der falschen Periode"
+        correct: true
+      - en: "Adjust the sub-ledger so it matches the control account"
+        de: "Das Nebenbuch anpassen, damit es zum Sammelkonto passt"
+        correct: false
+      - en: "Post the difference to revenue"
+        de: "Die Differenz als Ertrag buchen"
+        correct: false
+      - en: "Do nothing, since 2,000 is small"
+        de: "Nichts tun, weil 2.000 klein sind"
+        correct: false
+    explanation:
+      en: "A sub-ledger must equal its control account. Find the cause first; do not force the numbers to match or ignore the difference."
+      de: "Ein Nebenbuch muss dem Sammelkonto entsprechen. Such zuerst die Ursache; gleiche die Zahlen nicht einfach an und ignoriere die Differenz nicht."
+    source: https://en.wikipedia.org/wiki/Adjusting_entry
+  - id: rc-p-prepaid
+    level: practitioner
+    difficulty: 1220
+    type: single
+    stem:
+      en: "A company pays 600 in November for rent of the following month. What is the correct treatment at the November closing?"
+      de: "Ein Unternehmen zahlt im November 600 Miete für den Folgemonat. Wie ist das beim Novemberabschluss richtig?"
+    options:
+      - en: "Defer it: show it as a prepaid expense (asset) and expense it in the following month"
+        de: "Abgrenzen: als aktiven Rechnungsabgrenzungsposten (Vermögen) zeigen und im Folgemonat als Aufwand erfassen"
+        correct: true
+      - en: "Expense the full 600 in November"
+        de: "Die vollen 600 im November als Aufwand erfassen"
+        correct: false
+      - en: "Record it as revenue"
+        de: "Als Ertrag erfassen"
+        correct: false
+      - en: "Do not record it until the following month"
+        de: "Erst im Folgemonat erfassen"
+        correct: false
+    explanation:
+      en: "Cash paid for a later period is deferred so the expense lands in the period it belongs to."
+      de: "Eine Zahlung für eine spätere Periode wird abgegrenzt, damit der Aufwand in der Periode landet, in die er gehört."
+    source: https://en.wikipedia.org/wiki/Adjusting_entry
+  - id: rc-p-straightline
+    level: practitioner
+    difficulty: 1280
+    type: single
+    stem:
+      en: "An asset costs 9,000 with an assumed residual value of 0 and an assumed useful life of 3 years. What is the yearly straight-line depreciation?"
+      de: "Ein Gegenstand kostet 9.000, angenommener Restwert 0, angenommene Nutzungsdauer 3 Jahre. Wie hoch ist die jährliche lineare Abschreibung?"
+    options:
+      - en: "3,000"
+        de: "3.000"
+        correct: true
+      - en: "9,000"
+        de: "9.000"
+        correct: false
+      - en: "27,000"
+        de: "27.000"
+        correct: false
+      - en: "1,500"
+        de: "1.500"
+        correct: false
+    explanation:
+      en: "Straight-line depreciation is (cost minus residual value) divided by useful life: (9,000 - 0) / 3 = 3,000 per year."
+      de: "Lineare Abschreibung = (Kosten minus Restwert) geteilt durch Nutzungsdauer: (9.000 - 0) / 3 = 3.000 pro Jahr."
+    source: https://en.wikipedia.org/wiki/Depreciation
+  - id: rc-p-documentation
+    level: practitioner
+    difficulty: 1340
+    type: single
+    stem:
+      en: "Which documentation of a reconciliation is most useful for a reviewer?"
+      de: "Welche Dokumentation einer Abstimmung ist für Prüfende am nützlichsten?"
+    options:
+      - en: "Date, preparer, both balances, each difference with explanation, action and owner"
+        de: "Datum, Ersteller, beide Salden, jede Differenz mit Erklärung, Maßnahme und Verantwortlichem"
+        correct: true
+      - en: "Only the final total"
+        de: "Nur die Endsumme"
+        correct: false
+      - en: "A verbal confirmation"
+        de: "Eine mündliche Bestätigung"
+        correct: false
+      - en: "The list of items without any explanation"
+        de: "Die Postenliste ohne jede Erklärung"
+        correct: false
+    explanation:
+      en: "A reviewer must be able to follow the work without asking. That needs the balances, explained differences, actions and owners."
+      de: "Prüfende müssen die Arbeit ohne Rückfrage nachvollziehen können. Dafür braucht es Salden, erklärte Differenzen, Maßnahmen und Verantwortliche."
+    source: https://en.wikipedia.org/wiki/Adjusting_entry
+  - id: rc-a-rootcause
+    level: advanced
+    difficulty: 1480
+    type: single
+    stem:
+      en: "The same reconciling difference between an interface and the ledger appears every month and is corrected manually each time. What is the best response?"
+      de: "Dieselbe Abstimmdifferenz zwischen Schnittstelle und Hauptbuch tritt jeden Monat auf und wird jedes Mal manuell korrigiert. Was ist die beste Reaktion?"
+    options:
+      - en: "Do a root cause analysis and fix the cause, for example the interface or the rule"
+        de: "Eine Ursachenanalyse durchführen und die Ursache beheben, zum Beispiel Schnittstelle oder Regel"
+        correct: true
+      - en: "Keep correcting it manually, it is quick"
+        de: "Weiter manuell korrigieren, das geht schnell"
+        correct: false
+      - en: "Write the difference off without documentation"
+        de: "Die Differenz ohne Dokumentation ausbuchen"
+        correct: false
+      - en: "Stop reconciling that account"
+        de: "Dieses Konto nicht mehr abstimmen"
+        correct: false
+    explanation:
+      en: "A recurring difference is a symptom. Removing the root cause saves time and reduces risk."
+      de: "Eine wiederkehrende Differenz ist ein Symptom. Wer die Ursache beseitigt, spart Zeit und senkt das Risiko."
+    source: https://en.wikipedia.org/wiki/Root_cause_analysis
+  - id: rc-a-materiality
+    level: advanced
+    difficulty: 1540
+    type: single
+    stem:
+      en: "A small unexplained difference keeps appearing and might point to a systematic error. How does materiality apply?"
+      de: "Eine kleine ungeklärte Differenz tritt immer wieder auf und könnte auf einen systematischen Fehler hinweisen. Wie wirkt Wesentlichkeit hier?"
+    options:
+      - en: "Do not treat it as trivial only because of its size; investigate the pattern"
+        de: "Sie nicht allein wegen ihrer Größe als unwichtig behandeln; das Muster untersuchen"
+        correct: true
+      - en: "Ignore it, because small amounts never matter"
+        de: "Ignorieren, weil kleine Beträge nie wichtig sind"
+        correct: false
+      - en: "Set your own personal threshold and skip it"
+        de: "Eine eigene Schwelle festlegen und sie überspringen"
+        correct: false
+      - en: "Delete the item from the report"
+        de: "Den Posten aus dem Bericht streichen"
+        correct: false
+    explanation:
+      en: "Thresholds guide effort, but a small difference that signals a systematic error or possible fraud still deserves investigation."
+      de: "Schwellen lenken den Aufwand, aber eine kleine Differenz, die auf einen systematischen Fehler oder möglichen Betrug hindeutet, verdient weiter Klärung."
+    source: https://en.wikipedia.org/wiki/Root_cause_analysis
+  - id: rc-a-signoff
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "Who should review and sign off a reconciliation, and why?"
+      de: "Wer sollte eine Abstimmung prüfen und freigeben, und warum?"
+    options:
+      - en: "A person other than the preparer, for segregation of duties"
+        de: "Eine andere Person als die erstellende, wegen der Funktionstrennung"
+        correct: true
+      - en: "The preparer, because they know the details best"
+        de: "Die erstellende Person, weil sie die Details am besten kennt"
+        correct: false
+      - en: "No one, if the totals agree"
+        de: "Niemand, wenn die Summen stimmen"
+        correct: false
+      - en: "Any system, without human involvement"
+        de: "Irgendein System ohne menschliche Beteiligung"
+        correct: false
+    explanation:
+      en: "Separation of duties means no single person controls a task from start to finish, so preparer and reviewer must differ."
+      de: "Funktionstrennung heißt, dass niemand einen Vorgang allein von Anfang bis Ende kontrolliert; erstellende und prüfende Person müssen verschieden sein."
+    source: https://en.wikipedia.org/wiki/Separation_of_duties
+  - id: rc-a-reversing
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "At month end an expense accrual of 800 is booked. Why is it usually reversed at the start of the next period?"
+      de: "Zum Monatsende wird eine Aufwandsabgrenzung von 800 gebucht. Warum wird sie üblicherweise zu Beginn der Folgeperiode zurückgebucht?"
+    options:
+      - en: "So the expense is not counted twice when the real invoice is posted"
+        de: "Damit der Aufwand nicht doppelt erfasst wird, wenn die echte Rechnung gebucht wird"
+        correct: true
+      - en: "To increase the expense in the new period"
+        de: "Um den Aufwand der neuen Periode zu erhöhen"
+        correct: false
+      - en: "To hide the original entry"
+        de: "Um die ursprüngliche Buchung zu verbergen"
+        correct: false
+      - en: "Because accruals are not allowed"
+        de: "Weil Abgrenzungen nicht erlaubt sind"
+        correct: false
+    explanation:
+      en: "The reversal cancels the accrual so that the invoice, when posted, records the expense once in the new period."
+      de: "Die Rückbuchung hebt die Abgrenzung auf, sodass die später gebuchte Rechnung den Aufwand nur einmal erfasst."
+    source: https://en.wikipedia.org/wiki/Adjusting_entry

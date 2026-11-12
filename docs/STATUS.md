@@ -1,5 +1,17 @@
 # Status
 
+## 2026-11-12 — Phase 2: Finance & Accounting content for reconciliation-closing
+
+**Done**
+- `accounts-receivable` merged ([#32](https://github.com/fdragonfpsy/open-role-academy/pull/32)).
+- `reconciliation-closing`: 6 units (3 levels x en/de), 12 items, 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0), 4 reused. Amounts invented and labelled as illustration; no depreciation rates or deadlines.
+- Levels: foundation = bank reconciliation, accrual/deferral meaning, closing checklist; practitioner = sub-ledger reconciliation, accruals/deferrals, straight-line depreciation, closing calendar; advanced = root causes, materiality, review/sign-off, reversing entries, audit-ready documentation.
+- Review note for humans: the materiality paragraph and reversing-entry details are general definitions without a dedicated cited page.
+
+**Counts:** roles 4 (2 published, 2 draft) · competencies 38 · units 120 · items 240 · resources 145
+
+**Next:** `financial-statements-reporting`, then the remaining Finance & Accounting competencies in roadmap order.
+
 ## 2026-11-12 — Phase 2: Finance & Accounting content for accounts-receivable
 
 **Done**
