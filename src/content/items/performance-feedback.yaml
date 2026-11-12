@@ -1,0 +1,290 @@
+competency: performance-feedback
+items:
+  - id: pf-f-purpose
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "What best describes a performance appraisal?"
+      de: "Was beschreibt eine Leistungsbeurteilung am besten?"
+    options:
+      - en: "A periodic process in which an employee's job performance is documented and evaluated, often by the manager"
+        de: "Ein regelmäßiger Prozess, in dem die Arbeitsleistung von Beschäftigten dokumentiert und bewertet wird, häufig durch die Führungskraft"
+        correct: true
+      - en: "A one-off decision about whether to hire someone"
+        de: "Eine einmalige Entscheidung darüber, ob jemand eingestellt wird"
+        correct: false
+      - en: "A list of tasks that nobody needs to discuss"
+        de: "Eine Aufgabenliste, die niemand besprechen muss"
+        correct: false
+      - en: "A payroll calculation"
+        de: "Eine Entgeltabrechnung"
+        correct: false
+    explanation:
+      en: "A performance appraisal is a periodic process in which job performance is documented and evaluated, most often by the immediate manager."
+      de: "Eine Leistungsbeurteilung ist ein regelmäßiger Prozess, in dem die Arbeitsleistung dokumentiert und bewertet wird, meist durch die direkte Führungskraft."
+    source: https://en.wikipedia.org/wiki/Performance_appraisal
+  - id: pf-f-goal
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Which of these is a goal rather than a task?"
+      de: "Welche der folgenden Aussagen ist ein Ziel und keine Aufgabe?"
+    options:
+      - en: "Send the monthly report"
+        de: "Den Monatsbericht versenden"
+        correct: false
+      - en: "Managers receive reliable figures by the fifth working day"
+        de: "Führungskräfte erhalten bis zum fünften Arbeitstag verlässliche Zahlen"
+        correct: true
+      - en: "Book a meeting room"
+        de: "Einen Besprechungsraum buchen"
+        correct: false
+      - en: "Update the spreadsheet"
+        de: "Die Tabelle aktualisieren"
+        correct: false
+    explanation:
+      en: "A goal describes a desired future state or result; the other options are pieces of work to do."
+      de: "Ein Ziel beschreibt einen gewünschten künftigen Zustand oder ein Ergebnis; die anderen Optionen sind Arbeitsschritte."
+    source: https://en.wikipedia.org/wiki/Goal_setting
+  - id: pf-f-feedback
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "Which feedback is specific, timely and focused on behaviour?"
+      de: "Welches Feedback ist konkret, zeitnah und verhaltensbezogen?"
+    options:
+      - en: "\"You are careless.\""
+        de: "\"Du bist schlampig.\""
+        correct: false
+      - en: "\"In today's meeting you gave the status only when asked. Please tell the team early about delays.\""
+        de: "\"Im heutigen Meeting hast du den Stand erst auf Nachfrage genannt. Bitte sag dem Team früh Bescheid, wenn sich etwas verzögert.\""
+        correct: true
+      - en: "\"Your attitude is a problem, as always.\""
+        de: "\"Deine Einstellung ist wie immer ein Problem.\""
+        correct: false
+      - en: "\"We will talk about this at the end of the year.\""
+        de: "\"Darüber sprechen wir am Jahresende.\""
+        correct: false
+    explanation:
+      en: "Useful feedback names a concrete situation and observable behaviour, comes soon after, and says what is wanted. Judgments about character and long waits do not help."
+      de: "Hilfreiches Feedback nennt eine konkrete Situation und beobachtbares Verhalten, kommt bald danach und sagt, was gewünscht ist. Charakterurteile und langes Warten helfen nicht."
+    source: https://de.wikipedia.org/wiki/Feedback_(Gruppendynamik)
+  - id: pf-f-fair
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "Which practice supports a fair appraisal?"
+      de: "Welche Praxis unterstützt eine faire Beurteilung?"
+    options:
+      - en: "Different criteria for each person, chosen after the fact"
+        de: "Für jede Person andere Kriterien, die erst im Nachhinein gewählt werden"
+        correct: false
+      - en: "Uniform, transparent criteria and a clearly defined scale for everyone"
+        de: "Einheitliche, transparente Kriterien und ein klar definierter Maßstab für alle"
+        correct: true
+      - en: "Keeping the criteria secret from employees"
+        de: "Die Kriterien vor den Beschäftigten geheim halten"
+        correct: false
+      - en: "Judging only the most recent week"
+        de: "Nur die letzte Woche beurteilen"
+        correct: false
+    explanation:
+      en: "Uniform and transparent criteria, a clear scale and the same standards for all make appraisals fairer and easier to accept."
+      de: "Einheitliche, transparente Merkmale, ein klarer Maßstab und gleiche Maßstäbe für alle machen Beurteilungen fairer und besser akzeptierbar."
+    source: https://de.wikipedia.org/wiki/Leistungsbeurteilung_(Personalwesen)
+  - id: pf-p-smart
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "Which goal best meets SMART-style criteria?"
+      de: "Welches Ziel erfüllt SMART-ähnliche Kriterien am besten?"
+    options:
+      - en: "Be better at reporting"
+        de: "Besser im Berichtswesen werden"
+        correct: false
+      - en: "Deliver the monthly report to finance by the agreed date in the next three cycles"
+        de: "Den Monatsbericht in den nächsten drei Zyklen zum vereinbarten Termin an das Controlling liefern"
+        correct: true
+      - en: "Try hard"
+        de: "Sich anstrengen"
+        correct: false
+      - en: "Do everything perfectly"
+        de: "Alles perfekt machen"
+        correct: false
+    explanation:
+      en: "The goal is specific, measurable, has an owner and a time frame; the others are vague. SMART is a checklist, not a guarantee."
+      de: "Das Ziel ist konkret, messbar, hat eine verantwortliche Person und einen Zeitrahmen; die anderen sind vage. SMART ist eine Checkliste, keine Garantie."
+    source: https://en.wikipedia.org/wiki/SMART_criteria
+  - id: pf-p-cycle
+    level: practitioner
+    difficulty: 1220
+    type: single
+    stem:
+      en: "Which order matches a typical goal-agreement cycle?"
+      de: "Welche Reihenfolge entspricht einem typischen Zielvereinbarungsprozess?"
+    options:
+      - en: "Implementation, then agreement, then preparation"
+        de: "Umsetzung, dann Vereinbarung, dann Vorbereitung"
+        correct: false
+      - en: "Preparation, agreement, implementation, target-actual comparison, then restart"
+        de: "Vorbereitung, Vereinbarung, Umsetzung, Soll-Ist-Vergleich, danach erneuter Beginn"
+        correct: true
+      - en: "Target-actual comparison, then preparation, then nothing"
+        de: "Soll-Ist-Vergleich, dann Vorbereitung, dann nichts mehr"
+        correct: false
+      - en: "Agreement only; no review is needed"
+        de: "Nur Vereinbarung; eine Überprüfung ist nicht nötig"
+        correct: false
+    explanation:
+      en: "The process runs from preparation and agreement through implementation to a target-actual comparison, and then begins again."
+      de: "Der Prozess läuft von Vorbereitung und Vereinbarung über Umsetzung zum Soll-Ist-Vergleich und beginnt danach erneut."
+    source: https://de.wikipedia.org/wiki/Zielvereinbarung
+  - id: pf-p-sbi
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "A manager drafts: \"You were rude in the call.\" How do you coach them using situation, behaviour, impact?"
+      de: "Eine Führungskraft formuliert: \"Du warst im Gespräch unhöflich.\" Wie coachst du sie mit Situation, Verhalten, Wirkung?"
+    options:
+      - en: "Keep the wording; it is short and clear"
+        de: "Die Formulierung beibehalten; sie ist kurz und klar"
+        correct: false
+      - en: "Name the call, describe what was said or done, explain the effect, then ask for the other person's view"
+        de: "Das Gespräch nennen, beschreiben, was gesagt oder getan wurde, die Wirkung erklären und dann nach der Sicht der Person fragen"
+        correct: true
+      - en: "Add more adjectives about the person's character"
+        de: "Weitere Adjektive über den Charakter der Person ergänzen"
+        correct: false
+      - en: "Delay the feedback until the annual review"
+        de: "Das Feedback bis zum Jahresgespräch aufschieben"
+        correct: false
+    explanation:
+      en: "Situation, behaviour, impact is one common model: replace judgments with observable facts, state the effect and invite a response."
+      de: "Situation, Verhalten, Wirkung ist ein verbreitetes Modell: Wertungen werden durch beobachtbare Fakten ersetzt, die Wirkung wird genannt und die Antwort eingeladen."
+    source: https://de.wikipedia.org/wiki/Feedback_(Gruppendynamik)
+  - id: pf-p-difficult
+    level: practitioner
+    difficulty: 1350
+    type: single
+    stem:
+      en: "Which step helps most in a difficult feedback conversation?"
+      de: "Welcher Schritt hilft in einem schwierigen Feedbackgespräch am meisten?"
+    options:
+      - en: "Prepare examples, state the purpose, listen, and agree a written next step with a follow-up date"
+        de: "Beispiele vorbereiten, den Zweck nennen, zuhören und einen schriftlichen nächsten Schritt mit Folgetermin vereinbaren"
+        correct: true
+      - en: "Speak quickly so the other person cannot respond"
+        de: "Schnell sprechen, damit die Person nicht antworten kann"
+        correct: false
+      - en: "Avoid examples to keep it friendly"
+        de: "Beispiele vermeiden, um freundlich zu bleiben"
+        correct: false
+      - en: "Record nothing so there is no dispute"
+        de: "Nichts festhalten, damit es keinen Streit gibt"
+        correct: false
+    explanation:
+      en: "Preparation with concrete examples, active listening and a clear next step make the conversation fair and useful; documenting agreements protects all parties."
+      de: "Vorbereitung mit konkreten Beispielen, aktives Zuhören und ein klarer nächster Schritt machen das Gespräch fair und nützlich; die Dokumentation von Vereinbarungen schützt alle Beteiligten."
+    source: https://en.wikipedia.org/wiki/Performance_appraisal
+  - id: pf-a-bias
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "A manager rates a strong performer highly on every criterion because of one outstanding project. Which bias is this?"
+      de: "Eine Führungskraft bewertet eine leistungsstarke Person bei allen Kriterien hoch wegen eines herausragenden Projekts. Welcher Fehler ist das?"
+    options:
+      - en: "Halo effect"
+        de: "Halo-Effekt"
+        correct: true
+      - en: "Central tendency"
+        de: "Tendenz zur Mitte"
+        correct: false
+      - en: "Forced distribution"
+        de: "Erzwungene Verteilung"
+        correct: false
+      - en: "Calibration"
+        de: "Kalibrierung"
+        correct: false
+    explanation:
+      en: "The halo effect describes one positive impression influencing the judgment of other areas. Central tendency means rating everyone in the middle."
+      de: "Der Halo-Effekt beschreibt, dass ein positiver Eindruck die Beurteilung anderer Bereiche beeinflusst. Tendenz zur Mitte heißt, alle in der Mitte zu bewerten."
+    source: https://en.wikipedia.org/wiki/Halo_effect
+  - id: pf-a-reduce
+    level: advanced
+    difficulty: 1520
+    type: single
+    stem:
+      en: "Which measure is a sensible practice for reducing rating bias?"
+      de: "Welche Maßnahme ist eine sinnvolle Praxis, um Beurteilungsfehler zu verringern?"
+    options:
+      - en: "Let each manager use private criteria"
+        de: "Jede Führungskraft eigene, private Kriterien nutzen lassen"
+        correct: false
+      - en: "Ask for concrete evidence from the whole period and hold a calibration discussion using the same criteria"
+        de: "Konkrete Belege aus dem ganzen Zeitraum verlangen und eine Kalibrierung anhand derselben Kriterien durchführen"
+        correct: true
+      - en: "Base ratings on the manager's memory of last week"
+        de: "Bewertungen auf die Erinnerung der Führungskraft an die letzte Woche stützen"
+        correct: false
+      - en: "Remove all documentation"
+        de: "Jegliche Dokumentation abschaffen"
+        correct: false
+    explanation:
+      en: "Evidence from the whole period, shared criteria and calibration are practice insights that reduce, but do not remove, bias such as recency."
+      de: "Belege aus dem ganzen Zeitraum, gemeinsame Kriterien und Kalibrierung sind Praxiswissen, das Fehler wie den Rezenzeffekt verringert, aber nicht beseitigt."
+    source: https://de.wikipedia.org/wiki/Beurteilungsfehler
+  - id: pf-a-data
+    level: advanced
+    difficulty: 1580
+    type: single
+    stem:
+      en: "You want to introduce a new tool that stores appraisal results. What is a sound first step?"
+      de: "Du möchtest ein neues Tool einführen, das Beurteilungsergebnisse speichert. Was ist ein vernünftiger erster Schritt?"
+    options:
+      - en: "Upload all records and decide on access later"
+        de: "Alle Unterlagen hochladen und den Zugriff später klären"
+        correct: false
+      - en: "Check with the data protection officer and your company rules on what is collected, who has access and how long it is kept"
+        de: "Mit den Datenschutzbeauftragten und euren Regeln klären, was erhoben wird, wer Zugriff hat und wie lange es aufbewahrt wird"
+        correct: true
+      - en: "Give every employee access to all records"
+        de: "Allen Beschäftigten Zugriff auf alle Unterlagen geben"
+        correct: false
+      - en: "Keep the tool secret from the works council"
+        de: "Das Tool vor dem Betriebsrat geheim halten"
+        correct: false
+    explanation:
+      en: "Appraisal records are personal data. Check with the data protection officer and the applicable rules, including the works council where relevant, before collecting and storing them."
+      de: "Beurteilungsunterlagen sind personenbezogene Daten. Klär vor Erhebung und Speicherung mit den Datenschutzbeauftragten und den geltenden Regeln, wo relevant auch mit dem Betriebsrat."
+    source: https://de.wikipedia.org/wiki/Arbeitnehmerdatenschutz
+  - id: pf-a-improve
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "After an appraisal cycle, Team X gave everyone the same middle rating. What is the best response?"
+      de: "Nach einem Beurteilungszyklus hat Team X allen dieselbe mittlere Bewertung gegeben. Was ist die beste Reaktion?"
+    options:
+      - en: "Accuse the manager of dishonesty"
+        de: "Die Führungskraft der Unehrlichkeit bezichtigen"
+        correct: false
+      - en: "Treat it as a reason to ask questions: discuss concrete examples against shared criteria and note what to improve next cycle"
+        de: "Es als Anlass zum Nachfragen sehen: konkrete Beispiele anhand gemeinsamer Kriterien besprechen und notieren, was im nächsten Zyklus verbessert wird"
+        correct: true
+      - en: "Ignore it; patterns never matter"
+        de: "Ignorieren; Muster spielen nie eine Rolle"
+        correct: false
+      - en: "Compare with an invented industry average"
+        de: "Mit einem erfundenen Branchendurchschnitt vergleichen"
+        correct: false
+    explanation:
+      en: "A pattern such as all-middle ratings (central tendency) is a prompt for questions, not proof of a mistake. Use evidence and shared criteria rather than invented benchmarks."
+      de: "Ein Muster wie lauter mittlere Bewertungen (Tendenz zur Mitte) ist ein Anlass für Fragen, kein Beweis für einen Fehler. Nutze Belege und gemeinsame Kriterien statt erfundener Vergleichswerte."
+    source: https://de.wikipedia.org/wiki/Beurteilungsfehler

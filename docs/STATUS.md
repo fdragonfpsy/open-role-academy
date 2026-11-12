@@ -1,5 +1,17 @@
 # Status
 
+## 2026-11-12 — Phase 2: Human Resources content for performance-feedback
+
+**Done**
+- `payroll-compensation` merged ([#46](https://github.com/fdragonfpsy/open-role-academy/pull/46)).
+- `performance-feedback`: 6 units (3 levels x en/de, bodies 585-713 words), 12 items, 7 new link-only resources (Wikipedia, CC BY-SA 4.0). No statistics or study claims.
+- Levels: foundation = purpose, goals vs tasks, useful feedback, check-ins, fairness; practitioner = supporting goal setting, appraisal steps and documentation, coaching managers, difficult conversations; advanced = rating biases and how to reduce them, consistency across teams, development vs pay talks, appraisal data protection, process improvement.
+- Review notes for humans: the situation-behaviour-impact model, calibration/evidence as bias reducers, "keep development talks separate from pay" and data-minimisation advice are labelled "practice insight" without a source; the English foundation and practitioner units cite the German feedback article (English "Feedback" page covers system feedback loops); recency bias is cited only in the German units; three reused resources were not tagged with this competency.
+
+**Counts:** roles 4 (3 published, 1 draft) · competencies 38 · units 204 · items 408 · resources 243
+
+**Next:** `learning-development`, `employee-relations-conflict`, `health-safety-wellbeing`, `diversity-inclusion`, then publish the Human Resources role.
+
 ## 2026-11-12 — Phase 2: Human Resources content for payroll-compensation
 
 **Done**
