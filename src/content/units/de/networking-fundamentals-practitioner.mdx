@@ -1,0 +1,85 @@
+---
+id: networking-fundamentals-practitioner
+competency: networking-fundamentals
+level: practitioner
+title: "Subnetze, Gateways, DNS-Fehlersuche, VPN, Firewalls und Ports, VLANs und WLAN-Probleme"
+objectives:
+  - Subnetze und das Standardgateway erklären und beurteilen, ob zwei Geräte im selben Subnetz liegen.
+  - Probleme bei der Namensauflösung getrennt von Verbindungsproblemen untersuchen.
+  - Beschreiben, was ein VPN leistet und was nicht.
+  - Firewalls und Ports erklären und warum ein Dienst unerreichbar sein kann, obwohl das Netz funktioniert.
+  - Die Idee von VLANs beschreiben und gängige WLAN-Probleme eingrenzen.
+minutes: 30
+resources:
+  - wikipedia-de-ip-adresse
+  - wikipedia-de-domain-name-system
+  - wikipedia-de-osi-modell
+  - wikipedia-subnetwork
+  - wikipedia-virtual-private-network
+  - wikipedia-firewall-computing
+status: ai-draft
+sources:
+  - title: "Subnetwork"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Subnetwork
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Domain Name System"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Domain_Name_System
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Virtual private network"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Virtual_private_network
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Firewall (computing)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Firewall_(computing)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Auf Fortgeschrittenen-Niveau wird erwartet, dass du über "Neustart" hinausgehst und einen Fehler einer Ebene zuordnest: Adressierung, Namensauflösung, Filterung oder Funk. Eine saubere Diagnose spart dir und dem Team, das das Ticket übernimmt, Zeit.
+
+## Subnetze und das Standardgateway
+
+Ein **Subnetz** ist ein logischer Teil eines größeren IP-Netzes. Geräte im selben Subnetz erreichen sich direkt; für alles außerhalb senden sie den Verkehr an das **Standardgateway**, meist einen Router. Ein Subnetz wird durch einen Adressbereich und eine **Subnetzmaske** (oder Präfixlänge wie /24) beschrieben. Hat ein Gerät die falsche Maske oder das falsche Gateway, erreicht es womöglich einige Geräte, andere nicht, ein typisches "halb funktioniert"-Symptom. Zwei Geräte mit **derselben IP-Adresse** verursachen bei beiden sporadische Störungen.
+
+## DNS-Fehlersuche
+
+Trenne die Fragen: Erreicht das Gerät eine Adresse **per Nummer**, und löst es **Namen** auf? Funktioniert ein Ping auf eine IP-Adresse, der Website-Name aber nicht, schau auf DNS: Welchen DNS-Server nutzt der Client, ist er erreichbar, existiert der Eintrag, steckt eine alte Antwort im Zwischenspeicher? Werkzeuge wie nslookup oder dig zeigen, was ein DNS-Server liefert. Bedenke, dass ein geänderter Eintrag Zeit braucht, bis er alle Zwischenspeicher erreicht.
+
+## VPN
+
+Ein **virtuelles privates Netzwerk (VPN)** baut einen verschlüsselten Tunnel zwischen einem Gerät und einem anderen Netz auf, etwa dem Firmennetz, sodass Mitarbeitende im Homeoffice interne Ressourcen über das öffentliche Internet nutzen können. Es schützt den Verkehr auf dem Weg, macht aber ein kompromittiertes Gerät nicht sicher und ersetzt keine Anmeldekontrollen. Typische Probleme sind falsche Zugangsdaten, blockierte Verbindungen und interne Namen, die über den Tunnel nicht aufgelöst werden.
+
+## Firewalls und Ports
+
+Eine **Firewall** erlaubt oder blockiert Verkehr nach Regeln, zum Beispiel nach Adresse, Protokoll und **Port**. Ein Port ist eine Nummer, die einen Dienst auf einem Host kennzeichnet, sodass eine Adresse gleichzeitig Web und Mail anbieten kann. Ist ein Dienst unerreichbar, obwohl Ping funktioniert, kann eine Regel den Port blockieren. Ändere Regeln nur im vereinbarten Änderungsprozess und teste gezielt einen Port, statt "alles" zu öffnen.
+
+## VLANs
+
+Ein **VLAN** teilt eine physische Switch-Infrastruktur in mehrere getrennte logische Netze, zum Beispiel für Mitarbeitende, Gäste und Drucker. Es hält Broadcast-Verkehr getrennt und ist die Grundlage, um für verschiedene Gruppen unterschiedliche Regeln anzuwenden. Verkehr zwischen VLANs muss über einen Router oder eine Firewall laufen.
+
+## WLAN-Probleme
+
+Häufige Ursachen: schwaches Signal durch Entfernung oder Wände, viele Geräte an einem Access Point, Störungen durch Nachbarnetze oder andere Geräte und Roaming-Probleme, bei denen ein Gerät an einem entfernten Access Point hängen bleibt. Prüfe die Signalstärke dort, wo die Person sitzt, teste mit einem zweiten Gerät und vergleiche mit einer Kabelverbindung.
+
+## Praxisbeispiel
+
+Ein neuer Drucker im Finanzbüro ist für Laptops nicht erreichbar, aber ein Ping auf seine Adresse klappt aus dem IT-Raum. Du vergleichst die Adressen: Der Drucker hängt versehentlich im Gäste-VLAN, das die Firewall-Regeln vom Mitarbeitenden-Netz trennen. Du öffnest die Firewall nicht. Du stellst einen Änderungsantrag, den Port des Druckers in das Mitarbeitenden-VLAN zu verschieben, testest nach der Änderung und dokumentierst sie.
+
+## Kernpunkte
+
+- Subnetz, Maske und Gateway entscheiden, wer direkt erreichbar ist.
+- Erst per Nummer, dann per Name testen, um DNS einzugrenzen.
+- Ein VPN schützt den Verkehr unterwegs, nicht das Gerät selbst.
+- Firewalls filtern nach Regeln und Ports; VLANs trennen logische Netze.

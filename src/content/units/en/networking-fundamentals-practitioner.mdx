@@ -1,0 +1,85 @@
+---
+id: networking-fundamentals-practitioner
+competency: networking-fundamentals
+level: practitioner
+title: "Subnets, gateways, DNS troubleshooting, VPN, firewalls and ports, VLANs and Wi-Fi problems"
+objectives:
+  - Explain subnets and the default gateway and judge whether two devices are in the same subnet.
+  - Troubleshoot name resolution problems separately from connectivity problems.
+  - Describe what a VPN does and what it does not do.
+  - Explain firewalls and ports and why a service can be unreachable although the network works.
+  - Describe the idea of VLANs and diagnose common Wi-Fi problems.
+minutes: 30
+resources:
+  - wikipedia-subnetwork
+  - wikipedia-domain-name-system
+  - wikipedia-virtual-private-network
+  - wikipedia-firewall-computing
+  - wikipedia-osi-model
+  - wikipedia-de-ip-adresse
+status: ai-draft
+sources:
+  - title: "Subnetwork"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Subnetwork
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Domain Name System"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Domain_Name_System
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Virtual private network"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Virtual_private_network
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Firewall (computing)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Firewall_(computing)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+At the practitioner level you are expected to move past "restart it" and narrow a fault to a layer: addressing, name resolution, filtering or radio. A clean diagnosis saves time for you and for the team that takes over the ticket.
+
+## Subnets and the default gateway
+
+A **subnet** is a logical part of a larger IP network. Devices in the same subnet can reach each other directly; to reach anything outside, they send traffic to the **default gateway**, usually a router. A subnet is described by an address range and a **subnet mask** (or prefix length such as /24). If a device has the wrong mask or gateway, it may reach some devices but not others, a typical "half works" symptom. Two devices with the **same IP address** cause intermittent trouble for both.
+
+## DNS troubleshooting
+
+Separate the questions: can the device reach an address **by number**, and does it resolve **names**? If a ping to an IP address works but the website name fails, look at DNS: which DNS server does the client use, is it reachable, does the record exist, is an old answer cached? Tools such as nslookup or dig show what a DNS server returns. Remember that a changed record may take time to reach all caches.
+
+## VPN
+
+A **virtual private network (VPN)** creates an encrypted tunnel between a device and another network, such as the company network, so that remote staff can use internal resources over the public internet. It protects the traffic on the way, but it does not make a compromised device safe and it does not replace sign-in controls. Typical problems are wrong credentials, blocked connections, and internal names that do not resolve over the tunnel.
+
+## Firewalls and ports
+
+A **firewall** allows or blocks traffic according to rules, for example by address, protocol and **port**. A port is a number that identifies a service on a host, so that one address can offer web and mail at once. When a service is unreachable although ping works, a rule may block the port. Change rules only through the agreed change process, and test with a specific port check instead of opening "everything".
+
+## VLANs
+
+A **VLAN** splits one physical switch infrastructure into several separate logical networks, for example for staff, guests and printers. It keeps broadcast traffic apart and is a basis for applying different rules to different groups. Traffic between VLANs must pass a router or firewall.
+
+## Wi-Fi problems
+
+Common causes: weak signal because of distance or walls, many devices on one access point, interference from neighbouring networks or other devices, and roaming problems where a device clings to a distant access point. Check the signal strength where the user sits, test with a second device, and compare with a cabled connection.
+
+## Worked example
+
+A new printer in the finance office cannot be reached by laptops, but ping to its address works from the IT room. You compare addresses: the printer is in the guest VLAN by mistake, which the firewall rules separate from the staff network. You do not open the firewall. You raise a change request to move the printer's port into the staff VLAN, test after the change and document it.
+
+## Key takeaways
+
+- Subnet, mask and gateway decide who can be reached directly.
+- Test by number first, then by name, to isolate DNS.
+- A VPN protects traffic in transit, not the device itself.
+- Firewalls filter by rules and ports; VLANs separate logical networks.

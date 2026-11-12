@@ -1,0 +1,74 @@
+---
+id: networking-fundamentals-foundation
+competency: networking-fundamentals
+level: foundation
+title: "Wie Netzwerke Geräte verbinden: LAN, Internet, IP-Adressen, DNS und erste Verbindungsprüfungen"
+objectives:
+  - LAN, WAN und Internet unterscheiden und die Rolle von Router, Switch und Access Point benennen.
+  - Erklären, was eine IP-Adresse ist und was DHCP tut.
+  - In einfachen Worten beschreiben, was DNS tut.
+  - WLAN- und Kabelverbindungen vergleichen.
+  - Eine erste Verbindungsprüfung mit Link-LEDs, Ping und der Frage "Wer ist noch betroffen?" durchführen.
+minutes: 25
+resources:
+  - wikipedia-de-ip-adresse
+  - wikipedia-de-domain-name-system
+  - wikipedia-ip-address
+  - wikipedia-domain-name-system
+status: ai-draft
+sources:
+  - title: "IP-Adresse"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/IP-Adresse
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Domain Name System"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Domain_Name_System
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Fast jedes Arbeitsmittel braucht ein Netzwerk: E-Mail, gemeinsame Dateien, Videocalls, Webanwendungen und Drucker. Wenn "das Internet down ist", können Menschen nicht arbeiten, und die erste Meldung landet beim IT-Support. Wenn du die Grundbausteine verstehst, erkennst du schnell, ob ein Problem ein Gerät, einen Raum oder den ganzen Standort betrifft.
+
+## Die Bausteine
+
+- **LAN (lokales Netzwerk):** die Geräte in einem Gebäude oder Büro, die direkt miteinander kommunizieren.
+- **WAN (Weitverkehrsnetz):** ein Netzwerk, das Standorte über größere Entfernungen verbindet. Das **Internet** ist der weltweite Verbund von Netzen, der viele davon verbindet.
+- **Switch:** verbindet Geräte per Kabel im LAN und leitet Daten an den richtigen Anschluss weiter.
+- **Access Point:** verbindet Geräte per Funk (WLAN) mit dem kabelgebundenen LAN.
+- **Router:** verbindet unterschiedliche Netze, zum Beispiel das Büro-LAN mit dem Internet. In kleinen Büros vereint oft ein Gerät Router, Switch und Access Point.
+
+## IP-Adressen und DHCP
+
+Jedes Gerät in einem IP-Netz braucht eine **IP-Adresse**, eine Nummer, die es identifiziert, damit Daten zugestellt werden können. Adressen im lokalen Netz werden meist automatisch per **DHCP** (Dynamic Host Configuration Protocol) vergeben. Tritt ein Laptop dem Netz bei, fragt er nach einer Adresse, und der DHCP-Dienst antwortet mit einer, zusammen mit weiteren Einstellungen wie Gateway und DNS-Server. Funktioniert DHCP nicht, hat ein Gerät unter Umständen keine brauchbare Adresse und zeigt "verbunden, kein Internet".
+
+## DNS in einfachen Worten
+
+Menschen nutzen Namen wie die Domain einer Website, Computer nutzen Zahlen. Das **Domain Name System (DNS)** ist wie ein Telefonbuch, das den Namen in eine IP-Adresse übersetzt. Fällt DNS aus, lässt sich eine Website womöglich nicht über den Namen öffnen, obwohl das Netzwerk selbst funktioniert.
+
+## WLAN oder Kabel?
+
+Ein Kabel ist meist schneller und stabiler und leidet nicht unter Wänden oder Nachbarnetzen. WLAN ist bequem und für mobile Geräte nötig, aber seine Qualität hängt von Entfernung, Hindernissen und Störungen ab. Für einen Arbeitsplatz, an dem ein Videocall nicht abbrechen darf, ist ein Kabel eine gute Wahl.
+
+## Erste Verbindungsprüfungen
+
+1. **Schau auf die Link-LEDs** am Anschluss oder auf das Netzwerksymbol: Gibt es eine physische Verbindung?
+2. **Frage, wer noch betroffen ist.** Ein Gerät deutet auf dieses Gerät oder sein Kabel, mehrere Geräte in einem Raum auf einen Switch oder Access Point, alle auf den Router oder den Internetanschluss.
+3. **Nutze Ping.** Das Werkzeug Ping sendet eine kleine Testnachricht und meldet, ob eine Antwort zurückkommt. Pinge zuerst den Router, dann eine Adresse im Internet, dann einen Website-Namen. Wo die Kette abreißt, zeigt dir, wo du suchen musst.
+4. **Starte nur gezielt neu** und halte im Ticket fest, was du geändert hast.
+
+## Praxisbeispiel
+
+Eine Kollegin sagt: "Kein Internet." Ihr Laptop zeigt WLAN verbunden. Du fragst einen Kollegen am Nachbartisch: Sein Laptop funktioniert. Es ist also nicht das ganze Büro. Du pingst vom Laptop der Kollegin den Router: keine Antwort. Du prüfst ihre IP-Adresse: Sie liegt in einem ungewöhnlichen, selbst zugewiesenen Bereich statt im üblichen Büro-Bereich, was darauf hindeutet, dass sie nie eine Adresse per DHCP erhalten hat. Nachdem sie sich neu mit dem WLAN verbunden hat, bekommt sie eine Adresse, und alles funktioniert. Du dokumentierst Symptom, Prüfungen und Lösung.
+
+## Kernpunkte
+
+- LAN ist lokal, WAN verbindet Standorte, das Internet verbindet Netze weltweit.
+- Switch, Access Point und Router haben unterschiedliche Aufgaben, auch wenn ein Gerät alle drei übernimmt.
+- DHCP verteilt Adressen, DNS übersetzt Namen in Adressen.
+- Prüfe LEDs, vergleiche mit anderen Geräten und pinge Schritt für Schritt.

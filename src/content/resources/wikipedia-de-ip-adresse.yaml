@@ -1,0 +1,13 @@
+id: wikipedia-de-ip-adresse
+url: "https://de.wikipedia.org/wiki/IP-Adresse"
+title: "IP-Adresse"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 20
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-12
+mode: link
+competencies: [networking-fundamentals]
+levels: [foundation, practitioner]

@@ -1,5 +1,17 @@
 # Status
 
+## 2026-11-12 — Phase 2: IT Support content for networking-fundamentals
+
+**Done**
+- `identity-access-management` merged ([#25](https://github.com/fdragonfpsy/open-role-academy/pull/25)).
+- `networking-fundamentals`: 6 units (3 levels x en/de), 12 items, 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0).
+- Levels: foundation = LAN/WAN, devices, IP/DHCP/DNS in plain terms, basic connectivity checks; practitioner = subnets/gateways, DNS troubleshooting, VPN, firewalls and ports, Wi-Fi problems; advanced = segmentation and zero trust, monitoring, redundancy, documentation and change impact.
+- Note: in the item YAML the correct option is authored first; the site shuffles options deterministically per item id (`src/lib/shuffle.ts`), so learners do not see this.
+
+**Counts:** roles 4 (1 published, 3 draft) · competencies 38 · units 78 · items 156 · resources 96
+
+**Next:** `backup-recovery`, then `change-asset-management`, `scripting-automation`, then publish the IT Support role.
+
 ## 2026-11-12 — Phase 2: IT Support content for identity-access-management
 
 **Done**
