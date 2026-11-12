@@ -63,7 +63,7 @@ For each competency: ≥1 unit per required level (en + de), ≥6 items across d
   - [x] recruitment-selection
   - [x] personnel-administration
   - [x] hr-data-protection
-  - [ ] onboarding-offboarding
+  - [x] onboarding-offboarding
   - [ ] payroll-compensation
   - [ ] performance-feedback
   - [ ] learning-development

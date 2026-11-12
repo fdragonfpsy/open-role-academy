@@ -1,0 +1,13 @@
+id: wikipedia-exit-interview
+url: https://en.wikipedia.org/wiki/Exit_interview
+title: "Exit interview"
+provider: Wikipedia
+language: en
+format: article
+minutes: 8
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-12
+mode: link
+competencies: [onboarding-offboarding]
+levels: [practitioner, advanced]

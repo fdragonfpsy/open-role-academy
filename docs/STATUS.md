@@ -1,5 +1,17 @@
 # Status
 
+## 2026-11-12 — Phase 2: Human Resources content for onboarding-offboarding
+
+**Done**
+- `hr-data-protection` merged ([#44](https://github.com/fdragonfpsy/open-role-academy/pull/44)).
+- `onboarding-offboarding`: 6 units (3 levels x en/de), 12 items, 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0), several reused. No legal numbers or statistics (Wikipedia figures deliberately left out).
+- Levels: foundation = onboarding vs offboarding, preboarding and first-day checklist, buddy idea, respectful exits; practitioner = first-weeks plan, coordinating IT/facilities/manager, feedback loops, exit process (handover, access removal, equipment, reference concept, exit interview); advanced = improving the journey, knowledge transfer, difficult exits (involve legal/works council), data protection in onboarding/exit data, remote and multi-site consistency.
+- Review note for humans: keeping exit-interview notes out of the personnel file, remote-joiner tips, the self-measurement questions and "never share logins" are practitioner advice, not from a cited page. The reused resources' `competencies` lists were not extended to this competency.
+
+**Counts:** roles 4 (3 published, 1 draft) · competencies 38 · units 192 · items 384 · resources 229
+
+**Next:** `payroll-compensation`, then the remaining Human Resources competencies in roadmap order.
+
 ## 2026-11-12 — Phase 2: Human Resources content for hr-data-protection
 
 **Done**
