@@ -1,0 +1,88 @@
+---
+id: accounts-payable-practitioner
+competency: accounts-payable
+level: practitioner
+title: "Accounts payable in practice: two- and three-way matching, approval limits and four-eyes principle, payment runs, Skonto and cash timing, disputes and credit notes"
+objectives:
+  - "Explain two-way and three-way matching and when a tolerance rule is used."
+  - "Describe approval limits and the four-eyes principle in invoice approval."
+  - "Plan a payment run around due dates and cash discount deadlines."
+  - "Decide whether taking a cash discount (Skonto) is worthwhile."
+  - "Handle invoice disputes and credit notes correctly."
+minutes: 30
+resources:
+  - wikipedia-accounts-payable
+  - wikipedia-segregation-of-duties
+  - wikipedia-de-skonto
+status: ai-draft
+sources:
+  - title: "Accounts payable"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Accounts_payable
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Separation of duties"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Separation_of_duties
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Skonto"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Skonto
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Vier-Augen-Prinzip"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Vier-Augen-Prinzip
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Rechnung"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Rechnung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Matching: does the invoice fit what we ordered and received?
+
+The factual check of an invoice is often done by **matching**. In a **three-way match** the invoice is compared with the purchase order (what we ordered, at which price) and the goods receipt or packing slip (what actually arrived). If all three agree, the invoice can be paid. The simplest case is a **two-way match** between invoice and purchase order, which is used when there is no goods receipt, for example for some services.
+
+Three-way matching can slow payment down, so companies modify it: it may be limited to large-value invoices, or an invoice is accepted automatically if the received quantity is within a defined percentage of the ordered quantity (a **tolerance**). Your company defines the tolerance values; never invent your own.
+
+## Approval limits and the four-eyes principle
+
+Not everyone may approve every invoice. **Approval limits** link the amount of an invoice to a role: small amounts a team lead may approve, larger ones need a higher level. The **four-eyes principle** (German: Vier-Augen-Prinzip) means that certain steps are only completed when at least two people agree; the aim is to reduce errors and misuse. In AP the person who orders, the person who approves and the person who releases the payment should not all be the same. A common example is that the person who creates a new supplier is not the one who enters invoices for it.
+
+## Payment runs and cash timing
+
+Instead of paying each invoice individually, many companies use a **payment run**: at fixed dates the system selects all open invoices that are due (or will become due before the next run), creates the payments and sends them to the bank. A payment run is only as good as the data in it, so blocked invoices (disputes, missing approval) must be excluded.
+
+Timing matters in both directions. Paying earlier than needed reduces cash on hand. Paying after the due date can cost interest and damage the relationship.
+
+## Skonto: cash discount for fast payment
+
+A supplier may offer **Skonto**: a price reduction if the invoice is paid within a short period. A typical term reads "within 14 days 2 % Skonto, within 30 days net". It is in effect a financing benefit passed on from supplier to customer. Important rules: the Skonto base must be stated in the payment terms (sometimes only part of the amount), and if you deduct Skonto after the deadline, the supplier can claim the deducted amount back. The deadline counts when the payment is made, so schedule payment runs with the Skonto date in mind, not the net due date.
+
+## Disputes and credit notes
+
+If an invoice is wrong (wrong price, quantity not delivered, defective goods), do not pay silently and do not ignore it. **Block** the invoice in the system, document the reason, contact the buyer or requester and the supplier, and ask for a **credit note** (a document that reduces the amount owed) or a corrected invoice. Pay the undisputed amount only if your policy allows it. A credit note is booked against the original liability, so the open balance of the supplier is reduced. In everyday German speech "Gutschrift" is also used for a correction in favour of the buyer.
+
+## Worked example
+
+Illustration only; all amounts and terms are invented. The purchase order is for 100 items at 10 each. The goods receipt says 90 items arrived, the invoice says 100 items, 1,000. The three-way match fails on quantity. AP blocks the invoice and asks for a credit note of 100 for the missing items. After the credit note arrives, the amount owed is 900.
+
+For payment timing, assume terms "10 days 2 % Skonto, 30 days net" on 900. Paying within 10 days saves 18 (2 % of 900), so 882 is paid instead of 900. The company pays 20 days earlier for 18. Expressed as a simple annual rate that is roughly 37 % (18 / 882 × 365 / 20), which is likely higher than the company's financing costs, so taking the discount is probably worthwhile. Always compare with your own financing costs.
+
+## Key takeaways
+
+- Three-way match: invoice, purchase order and goods receipt agree; two-way match: invoice and purchase order.
+- Tolerances and large-value limits are company rules, not personal choices.
+- Approval limits and the four-eyes principle reduce errors and fraud.
+- A payment run bundles due items; blocked invoices must be excluded.
+- Skonto can be worth more than the money's alternative use; compare, and respect the deadline.
+- Disputed invoice: block, document, request credit note or correction.

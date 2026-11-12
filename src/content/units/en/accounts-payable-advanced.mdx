@@ -1,0 +1,93 @@
+---
+id: accounts-payable-advanced
+competency: accounts-payable
+level: advanced
+title: "Accounts payable controls: fraud red flags and callbacks, segregation of duties, accruals for unreceived invoices, process KPIs and e-invoicing"
+objectives:
+  - "Recognise red flags of invoice fraud such as changed bank details, urgency and impersonation."
+  - "Describe a verification callback and when it is required."
+  - "Apply segregation of duties to the AP process, including supplier master data."
+  - "Explain accruals for goods or services received but not yet invoiced."
+  - "Name useful AP process indicators and explain e-invoicing at concept level (EU/Germany)."
+minutes: 35
+resources:
+  - wikipedia-segregation-of-duties
+  - wikipedia-email-spoofing
+  - wikipedia-accounts-payable
+status: ai-draft
+sources:
+  - title: "Accounts payable"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Accounts_payable
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Separation of duties"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Separation_of_duties
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Email spoofing"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Email_spoofing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Electronic invoicing"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Electronic_invoicing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Elektronische Rechnung"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Elektronische_Rechnung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Fraud red flags
+
+AP pays out money, so it is a target. Common patterns are fake invoices, invoices for goods never ordered, and **requests to change a supplier's bank details**. Email makes impersonation easy: the original email protocols have no built-in sender authentication, so a message can appear to come from a supplier or from a manager while being forged. Spoofed emails are used to deceive companies into financial losses, and the same article describes cases of fraudulent payment requests sent in the name of a CEO.
+
+Treat these as red flags:
+
+- A change of bank details, especially by email or phone, close to a payment date.
+- **Urgency** and secrecy: "pay today", "do not tell anyone", "I am in a meeting, just do it".
+- A sender address that looks almost right.
+- An invoice that matches no order, or a new supplier with no history.
+- A payment request that bypasses the normal approval path, supposedly from senior management.
+
+## Verification callback
+
+A **callback** means confirming a change or request through a channel you already trust, not the one the request arrived on. Look up the phone number in the supplier master record or an earlier contract, not from the email signature, and speak to a known contact. Record who confirmed what. Your company's policy decides when a callback is mandatory; a bank detail change is the usual case. Do not release the payment before the check is documented.
+
+## Segregation of duties
+
+Segregation of duties (SoD) means that more than one person is needed for a task, to prevent fraud and errors. Business-critical duties can be grouped into authorisation, custody, record keeping and reconciliation, and ideally one person does not handle more than one of these. In AP this means: the person who maintains the supplier master data does not enter invoices; the person who enters invoices does not release payments; and the person who reconciles the supplier accounts is independent of both. A common control is that no single employee, not even the controller, can make a payment alone. Small teams use compensating controls, such as manager review of master data changes.
+
+## Accruals for unreceived invoices
+
+At period end, goods or services may have been received without an invoice arriving yet. The expense and the obligation already exist, so an **accrual** is booked (often called "goods received/invoice received", GR/IR). In German bookkeeping this is linked to the WE/RE clearing account. Use the goods receipt data and the purchase order price to estimate the amount, record the basis, and reverse the accrual when the invoice arrives, so the expense is not counted twice.
+
+## Process indicators and automation
+
+Useful indicators are chosen by your company; typical examples are the share of invoices paid on time, the share of invoices that pass matching without manual touch, the processing time per invoice, the number of blocked invoices and how long they stay blocked, and the share of Skonto opportunities used.
+
+**Electronic invoicing** means invoice data exchanged in a structured format that software can process, rather than only a picture or paper. It reduces manual data entry and makes automatic matching easier. In the EU this is supported by common standards (EN 16931). Germany (label: country-specific, rules change, check current guidance): since 1 January 2025 all domestic business recipients who are not small businesses must be able to receive e-invoices, with transitional periods for issuing them. Received e-invoices must be checked for validity; format errors, business-rule errors and content errors are distinguished. Fraud checks and disputes remain with people.
+
+## Worked example
+
+Illustration only; the supplier, amounts and dates are invented. On the 28th, AP receives an email from "the supplier" asking to use a new bank account for an open invoice of 12,000 due in two days, with a note that the matter is urgent. Red flags: bank change, urgency, close to payment date. AP does not reply to the email. The clerk calls the supplier's contact using the number stored in the master record. The contact says no change was requested. The invoice is paid to the existing account on time, and the incident is reported to IT security and the controller.
+
+At month end a delivery of 5,000 worth of materials has arrived but no invoice. AP books an accrual of 5,000 based on the goods receipt and purchase order, then reverses it when the invoice arrives next month.
+
+## Key takeaways
+
+- Bank detail changes, urgency and secrecy are classic fraud signals; email senders can be forged.
+- Verify via a known, independent channel (callback) and document it.
+- Segregate master data, invoice entry, payment release and reconciliation.
+- Accrue for goods or services received but not invoiced, and reverse when the invoice arrives.
+- Pick KPIs your company defines; e-invoicing supports automation, rules are country-specific.

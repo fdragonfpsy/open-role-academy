@@ -48,7 +48,7 @@ For each competency: ≥1 unit per required level (en + de), ≥6 items across d
   - [x] scripting-automation
 - [ ] Finance & Accounting content complete (sub-tasks below; publish the role when all are done; EU/Germany context, label it)
   - [x] bookkeeping-fundamentals
-  - [ ] accounts-payable
+  - [x] accounts-payable
   - [ ] accounts-receivable
   - [ ] reconciliation-closing
   - [ ] financial-statements-reporting

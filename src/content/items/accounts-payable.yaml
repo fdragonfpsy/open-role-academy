@@ -1,0 +1,290 @@
+competency: accounts-payable
+items:
+  - id: ap-f-liability
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "What is accounts payable?"
+      de: "Was sind Verbindlichkeiten aus Lieferungen und Leistungen (Kreditorenbuchhaltung)?"
+    options:
+      - en: "Money owed by the business to its suppliers, shown as a liability"
+        de: "Geld, das das Unternehmen seinen Lieferanten schuldet, ausgewiesen als Schuld"
+        correct: true
+      - en: "Money customers owe to the business"
+        de: "Geld, das Kunden dem Unternehmen schulden"
+        correct: false
+      - en: "Cash held in the company bank account"
+        de: "Bargeld auf dem Bankkonto des Unternehmens"
+        correct: false
+      - en: "The company's profit for the year"
+        de: "Der Jahresgewinn des Unternehmens"
+        correct: false
+    explanation:
+      en: "Accounts payable is money owed to suppliers and appears as a liability on the balance sheet. Money owed by customers is accounts receivable."
+      de: "Verbindlichkeiten aus Lieferungen und Leistungen sind Schulden gegenüber Lieferanten und stehen als Schuld in der Bilanz. Geld, das Kunden schulden, sind Forderungen."
+    source: https://en.wikipedia.org/wiki/Accounts_payable
+  - id: ap-f-checks
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "What is the difference between the formal and the factual check of an invoice?"
+      de: "Was unterscheidet die formelle von der sachlichen Rechnungsprüfung?"
+    options:
+      - en: "Formal: is the invoice complete and correct on its face; factual: is the content right, ordered and received"
+        de: "Formell: Ist die Rechnung äußerlich vollständig und korrekt; sachlich: Stimmt der Inhalt, wurde bestellt und geliefert"
+        correct: true
+      - en: "Formal is done by the supplier, factual by the bank"
+        de: "Die formelle Prüfung macht der Lieferant, die sachliche die Bank"
+        correct: false
+      - en: "Formal checks the payment date, factual checks the bank details"
+        de: "Formell wird das Zahlungsdatum geprüft, sachlich die Bankverbindung"
+        correct: false
+      - en: "There is no difference; both mean checking the total"
+        de: "Es gibt keinen Unterschied; beides bedeutet, die Summe zu prüfen"
+        correct: false
+    explanation:
+      en: "The formal check looks at completeness and correct presentation; the factual check asks whether we ordered and received what is billed and at the agreed price."
+      de: "Die formelle Prüfung betrifft Vollständigkeit und korrekte Darstellung; die sachliche Prüfung fragt, ob das Abgerechnete bestellt, geliefert und zum vereinbarten Preis berechnet wurde."
+    source: https://en.wikipedia.org/wiki/Invoice
+  - id: ap-f-flow
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "Which sequence describes the usual purchase-to-pay flow?"
+      de: "Welche Reihenfolge beschreibt den üblichen Ablauf vom Einkauf bis zur Zahlung?"
+    options:
+      - en: "Order, goods receipt, invoice, approval, recording, payment"
+        de: "Bestellung, Wareneingang, Rechnung, Freigabe, Buchung, Zahlung"
+        correct: true
+      - en: "Payment, invoice, order, goods receipt"
+        de: "Zahlung, Rechnung, Bestellung, Wareneingang"
+        correct: false
+      - en: "Invoice, payment, order, approval"
+        de: "Rechnung, Zahlung, Bestellung, Freigabe"
+        correct: false
+      - en: "Recording, order, payment, invoice"
+        de: "Buchung, Bestellung, Zahlung, Rechnung"
+        correct: false
+    explanation:
+      en: "A purchase starts with the order; goods arrive and are checked; the invoice is approved and recorded before it is paid."
+      de: "Ein Einkauf beginnt mit der Bestellung; die Ware kommt an und wird geprüft; die Rechnung wird freigegeben und gebucht, bevor sie bezahlt wird."
+    source: https://en.wikipedia.org/wiki/Accounts_payable
+  - id: ap-f-booking
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "A supplier invoice of 119 (net 100, VAT 19) for office supplies is recorded. Which entry is correct (illustration, VAT rate invented)?"
+      de: "Eine Lieferantenrechnung über 119 (netto 100, Umsatzsteuer 19) für Büromaterial wird gebucht. Welche Buchung ist richtig (Beispiel, Steuersatz erfunden)?"
+    options:
+      - en: "Debit office supplies 100 and input VAT 19, credit accounts payable 119"
+        de: "Soll Bürobedarf 100 und Vorsteuer 19, Haben Verbindlichkeiten 119"
+        correct: true
+      - en: "Debit accounts payable 119, credit bank 119"
+        de: "Soll Verbindlichkeiten 119, Haben Bank 119"
+        correct: false
+      - en: "Debit bank 119, credit office supplies 119"
+        de: "Soll Bank 119, Haben Bürobedarf 119"
+        correct: false
+      - en: "Debit office supplies 119, credit input VAT 119"
+        de: "Soll Bürobedarf 119, Haben Vorsteuer 119"
+        correct: false
+    explanation:
+      en: "Recording the invoice creates the expense, the input VAT and the liability. The debit total (119) equals the credit total (119). Paying the invoice later debits accounts payable and credits bank."
+      de: "Die Rechnungsbuchung erfasst Aufwand, Vorsteuer und Verbindlichkeit. Soll (119) und Haben (119) sind gleich. Die spätere Zahlung belastet die Verbindlichkeit im Soll und die Bank im Haben."
+    source: https://en.wikipedia.org/wiki/Accounts_payable
+  - id: ap-p-threeway
+    level: practitioner
+    difficulty: 1190
+    type: single
+    stem:
+      en: "In a three-way match, which documents are compared?"
+      de: "Welche Dokumente werden beim Drei-Wege-Abgleich verglichen?"
+    options:
+      - en: "Invoice, purchase order and goods receipt (packing slip)"
+        de: "Rechnung, Bestellung und Wareneingang (Lieferschein)"
+        correct: true
+      - en: "Invoice, bank statement and payroll list"
+        de: "Rechnung, Kontoauszug und Gehaltsliste"
+        correct: false
+      - en: "Invoice, contract and tax return"
+        de: "Rechnung, Vertrag und Steuererklärung"
+        correct: false
+      - en: "Invoice, reminder and credit note"
+        de: "Rechnung, Mahnung und Gutschrift"
+        correct: false
+    explanation:
+      en: "The three-way match compares what was ordered, what arrived and what was billed. Two-way matching compares only invoice and purchase order."
+      de: "Der Drei-Wege-Abgleich vergleicht Bestelltes, Geliefertes und Berechnetes. Der Zwei-Wege-Abgleich vergleicht nur Rechnung und Bestellung."
+    source: https://en.wikipedia.org/wiki/Accounts_payable
+  - id: ap-p-four-eyes
+    level: practitioner
+    difficulty: 1240
+    type: single
+    stem:
+      en: "What does the four-eyes principle mean in invoice approval?"
+      de: "Was bedeutet das Vier-Augen-Prinzip bei der Rechnungsfreigabe?"
+    options:
+      - en: "A step is completed only when at least two people agree, to reduce errors and misuse"
+        de: "Ein Schritt wird nur abgeschlossen, wenn mindestens zwei Personen zustimmen, um Fehler und Missbrauch zu senken"
+        correct: true
+      - en: "Every invoice is read twice by the same person"
+        de: "Jede Rechnung wird von derselben Person zweimal gelesen"
+        correct: false
+      - en: "Only invoices with two line items need approval"
+        de: "Nur Rechnungen mit zwei Positionen müssen freigegeben werden"
+        correct: false
+      - en: "The supplier must sign every invoice twice"
+        de: "Der Lieferant muss jede Rechnung zweimal unterschreiben"
+        correct: false
+    explanation:
+      en: "The principle is a preventive control: at least two people must agree before a step is completed. The aim is to reduce errors and misuse."
+      de: "Das Prinzip ist eine vorbeugende Kontrolle: Mindestens zwei Personen müssen zustimmen, bevor ein Schritt abgeschlossen wird. Ziel ist, Fehler und Missbrauch zu verringern."
+    source: https://de.wikipedia.org/wiki/Vier-Augen-Prinzip
+  - id: ap-p-skonto
+    level: practitioner
+    difficulty: 1290
+    type: single
+    stem:
+      en: "Terms: 14 days 2 % Skonto, 30 days net. The invoice is paid on day 20 and 2 % is deducted. What is the risk?"
+      de: "Bedingung: 14 Tage 2 % Skonto, 30 Tage netto. Die Rechnung wird an Tag 20 bezahlt und 2 % werden abgezogen. Was ist das Risiko?"
+    options:
+      - en: "The supplier can reclaim the deducted amount because the Skonto period has expired"
+        de: "Der Lieferant kann den abgezogenen Betrag zurückfordern, weil die Skontofrist abgelaufen ist"
+        correct: true
+      - en: "None; Skonto applies until the net due date"
+        de: "Keines; Skonto gilt bis zum Nettotermin"
+        correct: false
+      - en: "The invoice becomes void"
+        de: "Die Rechnung wird ungültig"
+        correct: false
+      - en: "The bank rejects the payment automatically"
+        de: "Die Bank lehnt die Zahlung automatisch ab"
+        correct: false
+    explanation:
+      en: "After the Skonto period the full amount is due. Deducting Skonto too late is an improper discount that the supplier can claim back."
+      de: "Nach Ablauf der Skontofrist ist der volle Betrag fällig. Ein zu spät abgezogenes Skonto ist ein unberechtigter Abzug, den der Lieferant zurückfordern kann."
+    source: https://de.wikipedia.org/wiki/Skonto
+  - id: ap-p-dispute
+    level: practitioner
+    difficulty: 1340
+    type: single
+    stem:
+      en: "An invoice bills 100 items but only 90 were received. What is the best action?"
+      de: "Eine Rechnung weist 100 Stück aus, geliefert wurden aber nur 90. Was ist die beste Vorgehensweise?"
+    options:
+      - en: "Block the invoice, document the difference and ask the supplier for a credit note or corrected invoice"
+        de: "Rechnung sperren, die Abweichung dokumentieren und beim Lieferanten eine Gutschrift oder korrigierte Rechnung anfordern"
+        correct: true
+      - en: "Pay the full amount and hope the supplier notices"
+        de: "Den vollen Betrag zahlen und hoffen, dass der Lieferant es bemerkt"
+        correct: false
+      - en: "Delete the invoice from the system"
+        de: "Die Rechnung im System löschen"
+        correct: false
+      - en: "Pay 90 percent without telling anyone"
+        de: "Stillschweigend 90 Prozent zahlen"
+        correct: false
+    explanation:
+      en: "A disputed invoice should be blocked and documented, and the difference cleared with the supplier through a credit note or correction. The open balance is then reduced."
+      de: "Eine strittige Rechnung wird gesperrt und dokumentiert; die Differenz wird mit dem Lieferanten per Gutschrift oder Korrektur geklärt. Danach sinkt der offene Saldo."
+    source: https://en.wikipedia.org/wiki/Invoice
+  - id: ap-a-callback
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "An email asks you to pay an open invoice to a new bank account and says it is urgent. What should you do first?"
+      de: "Eine E-Mail bittet dich, eine offene Rechnung auf ein neues Bankkonto zu zahlen, und nennt es dringend. Was tust du zuerst?"
+    options:
+      - en: "Verify by calling a known contact at a number from the supplier master record, and document it"
+        de: "Per Rückruf bei einer bekannten Kontaktperson unter einer Nummer aus dem Stammsatz prüfen und dokumentieren"
+        correct: true
+      - en: "Reply to the email and ask whether the change is real"
+        de: "Auf die E-Mail antworten und fragen, ob die Änderung echt ist"
+        correct: false
+      - en: "Call the number in the email signature"
+        de: "Die Nummer aus der E-Mail-Signatur anrufen"
+        correct: false
+      - en: "Pay quickly to avoid a late fee and check afterwards"
+        de: "Schnell zahlen, um Verzug zu vermeiden, und später prüfen"
+        correct: false
+    explanation:
+      en: "Email senders can be forged, so confirm through an independent channel you already trust. A number from the email itself could lead to the fraudster."
+      de: "E-Mail-Absender lassen sich fälschen, deshalb bestätigst du über einen unabhängigen, bereits vertrauten Kanal. Eine Nummer aus der E-Mail selbst kann zum Betrüger führen."
+    source: https://en.wikipedia.org/wiki/Email_spoofing
+  - id: ap-a-sod
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "Which setup best follows segregation of duties in accounts payable?"
+      de: "Welche Aufteilung entspricht der Funktionstrennung in der Kreditorenbuchhaltung am besten?"
+    options:
+      - en: "Different people maintain supplier master data, enter invoices and release payments"
+        de: "Verschiedene Personen pflegen Lieferantenstammdaten, erfassen Rechnungen und geben Zahlungen frei"
+        correct: true
+      - en: "One experienced person does everything to avoid mistakes"
+        de: "Eine erfahrene Person macht alles, um Fehler zu vermeiden"
+        correct: false
+      - en: "The same person creates suppliers and releases their payments"
+        de: "Dieselbe Person legt Lieferanten an und gibt deren Zahlungen frei"
+        correct: false
+      - en: "The controller may pay alone because of seniority"
+        de: "Die Leitung darf wegen ihres Ranges allein zahlen"
+        correct: false
+    explanation:
+      en: "Segregation of duties spreads authorisation, record keeping and payment across people so that no one can both create and pay a fake supplier alone."
+      de: "Funktionstrennung verteilt Genehmigung, Buchführung und Zahlung auf mehrere Personen, damit niemand allein einen falschen Lieferanten anlegen und bezahlen kann."
+    source: https://en.wikipedia.org/wiki/Separation_of_duties
+  - id: ap-a-accrual
+    level: advanced
+    difficulty: 1580
+    type: single
+    stem:
+      en: "At month end, goods worth 5,000 (illustration) have arrived but no invoice has. What is the correct treatment?"
+      de: "Zum Monatsende sind Waren im Wert von 5.000 (Beispiel) angekommen, aber es gibt keine Rechnung. Was ist richtig?"
+    options:
+      - en: "Book an accrual for 5,000 based on the goods receipt and reverse it when the invoice arrives"
+        de: "Eine Abgrenzung über 5.000 anhand des Wareneingangs buchen und bei Rechnungseingang auflösen"
+        correct: true
+      - en: "Ignore it until the invoice arrives next month"
+        de: "Ignorieren, bis die Rechnung im nächsten Monat eintrifft"
+        correct: false
+      - en: "Pay the supplier 5,000 without an invoice"
+        de: "Dem Lieferanten 5.000 ohne Rechnung zahlen"
+        correct: false
+      - en: "Book the expense twice to be safe"
+        de: "Den Aufwand zur Sicherheit doppelt buchen"
+        correct: false
+    explanation:
+      en: "Expense and obligation exist once the goods are received, so they are accrued. The accrual is reversed when the invoice is booked to avoid counting twice."
+      de: "Aufwand und Verpflichtung bestehen mit dem Wareneingang, deshalb wird abgegrenzt. Bei Rechnungsbuchung wird die Abgrenzung aufgelöst, damit nichts doppelt erfasst wird."
+    source: https://en.wikipedia.org/wiki/Accounts_payable
+  - id: ap-a-einvoice
+    level: advanced
+    difficulty: 1620
+    type: single
+    stem:
+      en: "Which statement about e-invoicing is accurate (Germany, check current rules)?"
+      de: "Welche Aussage zur E-Rechnung stimmt (Deutschland, aktuelle Regeln prüfen)?"
+    options:
+      - en: "An e-invoice is issued, sent and received in a structured format that software can process"
+        de: "Eine E-Rechnung wird in einem strukturierten Format ausgestellt, übermittelt und empfangen, das Software verarbeiten kann"
+        correct: true
+      - en: "It is any PDF sent by email"
+        de: "Es ist jedes per E-Mail versandte PDF"
+        correct: false
+      - en: "It removes the need to check invoices"
+        de: "Sie macht die Prüfung von Rechnungen überflüssig"
+        correct: false
+      - en: "It applies only to private consumers"
+        de: "Sie gilt nur für Privatpersonen"
+        correct: false
+    explanation:
+      en: "An e-invoice uses a structured electronic format, not just an image. Received e-invoices still have to be checked for validity, and rules differ by country."
+      de: "Eine E-Rechnung nutzt ein strukturiertes elektronisches Format, nicht nur ein Bild. Empfangene E-Rechnungen müssen weiterhin auf Ordnungsmäßigkeit geprüft werden, und die Regeln unterscheiden sich je Land."
+    source: https://de.wikipedia.org/wiki/Elektronische_Rechnung

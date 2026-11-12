@@ -1,0 +1,13 @@
+id: wikipedia-invoice
+url: https://en.wikipedia.org/wiki/Invoice
+title: "Invoice"
+provider: Wikipedia
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-12
+mode: link
+competencies: [accounts-payable]
+levels: [foundation, practitioner]
