@@ -52,6 +52,8 @@ Every resource is stored in `src/content/resources/<id>.yaml` with `license`, `l
 | wikipedia-de-logdatei, wikipedia-de-osi-modell, wikipedia-de-ursache-wirkungs-diagramm | Wikipedia (de) | CC BY-SA 4.0 | link | 2026-11-11 |
 | wikipedia-customer-support, wikipedia-plain-language, wikipedia-remote-desktop-software, wikipedia-conflict-resolution | Wikipedia (en) | CC BY-SA 4.0 | link | 2026-11-12 |
 | wikipedia-de-leichte-sprache, wikipedia-de-fernwartung, wikipedia-de-deeskalation | Wikipedia (de) | CC BY-SA 4.0 | link | 2026-11-12 |
+| wikipedia-operating-system, wikipedia-patch-computing, wikipedia-disk-encryption, wikipedia-mobile-device-management | Wikipedia (en) | CC BY-SA 4.0 | link | 2026-11-12 |
+| wikipedia-de-betriebssystem, wikipedia-de-patch-software, wikipedia-de-mobile-device-management | Wikipedia (de) | CC BY-SA 4.0 | link | 2026-11-12 |
 | openstax-principles-accounting-statements | OpenStax (*Principles of Accounting, Vol. 1*) | CC BY-NC-SA (page footer); no LLM ingestion without permission | link | 2026-11-11 |
 
 ## Framework references

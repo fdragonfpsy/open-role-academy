@@ -1,0 +1,78 @@
+---
+id: endpoint-management-advanced
+competency: endpoint-management
+level: advanced
+title: "Central endpoint management: rollout rings, compliance, drift and device lifecycle"
+objectives:
+  - Explain how central device management works and what it can and cannot enforce.
+  - Plan a rollout in rings with clear success criteria and a stop rule.
+  - Detect and handle non-compliance and configuration drift.
+  - Plan the device lifecycle up to secure retirement, including data wiping.
+minutes: 35
+resources:
+  - wikipedia-mobile-device-management
+  - wikipedia-disk-encryption
+  - wikipedia-patch-computing
+  - wikipedia-de-mobile-device-management
+  - bsi-it-grundschutz
+status: ai-draft
+sources:
+  - title: "Mobile device management"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Mobile_device_management
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Disk encryption"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Disk_encryption
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Patch (computing)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Patch_(computing)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Managing devices as a fleet
+
+Once there are hundreds of devices, manual work no longer scales and exceptions multiply. **Mobile device management (MDM)**, often called endpoint management when it also covers laptops, is the approach of administering devices centrally: a management service sends settings, applications and updates to enrolled devices and receives their status. Typical capabilities are enforcing a configuration, distributing software, installing patches, and remotely locking or wiping a lost device. The exact functions differ between products and operating systems; a good administrator checks what a given platform supports before promising a policy to the business.
+
+Treat configuration as **desired state**: you describe what a device should look like, and the system brings devices there. That description should be versioned and reviewed like code, so you know who changed what and can undo it.
+
+## Rollout rings
+
+Even tested changes can fail on real devices. A **ring-based rollout** limits the damage:
+
+1. **Ring 0:** the IT team itself.
+2. **Ring 1:** a small, varied pilot group, including different models and roles.
+3. **Ring 2:** a larger share of users.
+4. **Ring 3:** everyone else.
+
+Define up front what you measure between rings (for example support tickets, failed installations, boot problems), how long you wait, and a **stop rule**: who may halt the rollout and when. Keep business-critical groups out of the early rings, and plan a rollback.
+
+## Compliance and drift
+
+**Compliance** means a device meets the baseline: encrypted, locked, patched, supported operating system. **Drift** is the slow divergence of a device from its intended configuration, for example through manual changes, failed updates or local software. Management tools report compliance; your job is to act on it:
+
+- Decide what happens to non-compliant devices: a reminder first, then limited access to company resources, and clear communication to the user.
+- Find the cause of repeated non-compliance; it often shows a problem in the policy or the process, not in the user.
+- Review exceptions regularly and let them expire, otherwise they become the new normal.
+
+## Lifecycle and secure retirement
+
+A device has a lifecycle: planning and purchase, deployment, operation, and retirement. Plan replacement before support ends and security updates stop. At retirement the data must not leave with the device. Options depend on the storage and the sensitivity of the data. If the drive was encrypted, destroying or discarding the encryption key makes the data unreadable, which is the reason encryption helps at end of life too, but follow your organisation's data-erasure policy and recognised guidance such as the BSI for sensitive data. Record the wipe and the final destination (reuse, donation, recycling) in the asset list. Remove the device from the management service, so no stale entries remain.
+
+## Worked example
+
+Your company introduces a new security baseline that requires disk encryption on all laptops. You first apply it to ring 0, then to a pilot of 30 devices across departments. In the pilot, five laptops fail to encrypt because of an old firmware version. You pause, update the firmware via the management tool, and continue. During rollout, the compliance report shows 12 devices still not encrypted; you find that they have been offline for weeks and contact their users. Three months later, old laptops are retired: each is wiped according to the policy, the wipe is logged, and its entry is removed from management.
+
+## Key takeaways
+
+- Central management enforces desired state across the fleet; know the limits of each platform.
+- Roll out in rings with measurable criteria, a stop rule and a rollback plan.
+- Track compliance, investigate drift causes and make exceptions expire.
+- Plan the whole lifecycle, and wipe and document devices at retirement.

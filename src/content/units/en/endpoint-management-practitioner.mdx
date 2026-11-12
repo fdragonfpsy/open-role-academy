@@ -1,0 +1,84 @@
+---
+id: endpoint-management-practitioner
+competency: endpoint-management
+level: practitioner
+title: "Patch cycles, standard images, security baselines and device onboarding"
+objectives:
+  - Run a regular patch cycle with testing, scheduling and verification.
+  - Explain why standard images and a security baseline make devices consistent and safer.
+  - Apply the basic baseline settings (disk encryption, screen lock, limited admin rights).
+  - Handle onboarding and offboarding of devices in a traceable way.
+minutes: 30
+resources:
+  - wikipedia-patch-computing
+  - wikipedia-disk-encryption
+  - wikipedia-mobile-device-management
+  - wikipedia-de-patch-software
+  - bsi-it-grundschutz
+status: ai-draft
+sources:
+  - title: "Patch (computing)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Patch_(computing)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Disk encryption"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Disk_encryption
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Mobile device management"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Mobile_device_management
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## From single devices to a routine
+
+At foundation level you set up one device carefully. At practitioner level the goal is that *every* device is set up and maintained the same way, with little manual effort. Consistency makes problems easier to find and security easier to guarantee.
+
+## Patch cycles
+
+Patching works best as a routine rather than a reaction. A simple cycle:
+
+1. **Collect:** find out which updates are available for the operating system and applications.
+2. **Assess:** is the patch security-relevant? Is the vulnerability already being exploited? Urgent ones are handled faster.
+3. **Test:** try the patch on a small group of devices first, so that a faulty patch does not stop the whole company.
+4. **Deploy:** roll out at an agreed time and tell users about restarts.
+5. **Verify:** check that devices actually have the patch; report devices that were offline and still missing it.
+
+A **patch** can also cause problems, so keep a way back: know how to uninstall it or restore the device.
+
+## Standard images
+
+A **standard image** is a prepared copy of an operating system with the agreed settings and software, which is written onto new devices. Advantages: devices start identical, setup is fast, and support knows what to expect. The image must be kept current, otherwise every new device starts with outdated software. Many organisations also keep the image minimal and install additional software afterwards, so that one image fits many roles.
+
+## Security baseline
+
+A **security baseline** is a defined minimum set of settings that every device must have. Typical entries:
+
+- **Disk encryption**: the content of the drive is encrypted, so that a lost or stolen laptop does not expose its data. Store recovery keys safely, separate from the device.
+- **Screen lock**: the device locks automatically after a short idle time and requires a password or similar to unlock.
+- **Limited admin rights**: users work with a standard account. Administrator rights are used only when needed, because malware that runs under an administrator account can do far more damage.
+- Up-to-date operating system, active firewall and protection against malicious software.
+
+Public guidance such as the BSI IT-Grundschutz can serve as a reference for what to include.
+
+## Onboarding and offboarding
+
+**Onboarding:** the device is registered in the asset list, set up from the standard image, assigned to a named user, and handed over with a short introduction. **Offboarding:** when someone leaves or changes role, the device is collected, the accounts are disabled as agreed with the responsible team, data that belongs to the organisation is secured, and the device is wiped and prepared for reuse or retired. In both cases the asset list is updated, so you always know who has which device.
+
+## Worked example
+
+Patch Tuesday brings several updates. You mark one security update as urgent, install it first on ten test devices of the IT team, and check for problems over two days. Then you deploy it to everyone in the evening, with a restart notice. A week later your report shows 96 devices patched and four missing; you contact their users. In the same week, a laptop returns from a departed colleague: you note it as returned, wipe it, reinstall the standard image and mark it as available.
+
+## Key takeaways
+
+- Patching is a routine: collect, assess, test, deploy, verify.
+- Standard images give identical, quickly prepared devices; keep them current.
+- A baseline sets minimum settings: encryption, screen lock, standard accounts, updates.
+- On- and offboarding must be recorded so that device ownership is always known.

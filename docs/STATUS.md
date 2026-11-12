@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-12 — Phase 2: IT Support content for endpoint-management
+
+**Done**
+- `user-support-communication` merged ([#23](https://github.com/fdragonfpsy/open-role-academy/pull/23)).
+- `endpoint-management`: 6 units (3 levels x en/de), 12 items, 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0) plus 1 shared (BSI IT-Grundschutz).
+- Levels: foundation = OS basics, software install/updates, setup checklist; practitioner = patch cycles, standard images, security baselines, device onboarding/offboarding; advanced = centralised management (MDM), rollout rings, compliance/drift, lifecycle and secure retirement.
+
+**Counts:** roles 4 (1 published, 3 draft) · competencies 38 · units 66 · items 132 · resources 82
+
+**Next:** `identity-access-management`, then the remaining IT Support competencies in roadmap order.
+
 ## 2026-11-12 — Phase 2: IT Support content for user-support-communication
 
 **Done**

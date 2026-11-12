@@ -1,0 +1,290 @@
+competency: endpoint-management
+items:
+  - id: em-f-os-role
+    level: foundation
+    difficulty: 880
+    type: single
+    stem:
+      en: "What is the main job of an operating system?"
+      de: "Was ist die Hauptaufgabe eines Betriebssystems?"
+    options:
+      - en: "It manages the hardware and provides common services to programs."
+        de: "Es verwaltet die Hardware und stellt Programmen gemeinsame Dienste bereit."
+        correct: true
+      - en: "It protects the device from every kind of malware by itself."
+        de: "Es schützt das Gerät von sich aus vor jeder Art von Schadsoftware."
+        correct: false
+      - en: "It stores the user's files on the internet."
+        de: "Es speichert die Dateien der Nutzenden im Internet."
+        correct: false
+      - en: "It makes the screen brighter when the battery is full."
+        de: "Es macht den Bildschirm heller, wenn der Akku voll ist."
+        correct: false
+    explanation:
+      en: "The operating system starts the device, manages memory, storage and peripherals and offers services that programs use. Security tools and cloud storage are separate software."
+      de: "Das Betriebssystem startet das Gerät, verwaltet Speicher, Datenspeicher und Peripherie und bietet Dienste, die Programme nutzen. Sicherheitswerkzeuge und Cloud-Speicher sind separate Software."
+    source: https://en.wikipedia.org/wiki/Operating_system
+  - id: em-f-trusted-source
+    level: foundation
+    difficulty: 930
+    type: single
+    stem:
+      en: "A user asks you to install a PDF tool they found on a random download website. What is the best first step?"
+      de: "Eine Nutzerin bittet dich, ein PDF-Werkzeug zu installieren, das sie auf einer beliebigen Downloadseite gefunden hat. Was ist der beste erste Schritt?"
+    options:
+      - en: "Check whether the organisation's software catalogue already offers an approved PDF tool."
+        de: "Prüfen, ob der Software-Katalog der Organisation bereits ein freigegebenes PDF-Werkzeug anbietet."
+        correct: true
+      - en: "Install it, because the user needs it quickly."
+        de: "Es installieren, weil die Person es schnell braucht."
+        correct: false
+      - en: "Install it and disable the antivirus so it does not interfere."
+        de: "Es installieren und das Antivirenprogramm ausschalten, damit es nicht stört."
+        correct: false
+      - en: "Tell the user that PDF files cannot be opened on company devices."
+        de: "Der Person sagen, dass PDF-Dateien auf Firmengeräten nicht geöffnet werden können."
+        correct: false
+    explanation:
+      en: "Software should come from trusted sources, and approved tools are usually available in the catalogue. Unknown downloads can contain harmful code, and switching off protection makes it worse."
+      de: "Software sollte aus vertrauenswürdigen Quellen stammen, und freigegebene Werkzeuge gibt es meist im Katalog. Unbekannte Downloads können schädlichen Code enthalten, und das Abschalten des Schutzes verschlimmert es."
+    source: https://en.wikipedia.org/wiki/Operating_system
+  - id: em-f-patch-purpose
+    level: foundation
+    difficulty: 980
+    type: single
+    stem:
+      en: "Why should updates and patches be installed promptly?"
+      de: "Warum sollten Updates und Patches zeitnah installiert werden?"
+    options:
+      - en: "They often close known security gaps that attackers could use."
+        de: "Sie schließen oft bekannte Sicherheitslücken, die Angreifende ausnutzen könnten."
+        correct: true
+      - en: "They always make the device faster."
+        de: "Sie machen das Gerät immer schneller."
+        correct: false
+      - en: "They are only needed once a device is older than three years."
+        de: "Sie sind erst nötig, wenn ein Gerät älter als drei Jahre ist."
+        correct: false
+      - en: "They remove the need for passwords."
+        de: "Sie machen Passwörter überflüssig."
+        correct: false
+    explanation:
+      en: "A patch fixes errors and security gaps. Gaps that are already known and fixed are easy targets on unpatched devices. Patches do not guarantee speed and do not replace passwords."
+      de: "Ein Patch behebt Fehler und Sicherheitslücken. Bekannte und bereits behobene Lücken sind auf ungepatchten Geräten leichte Ziele. Patches garantieren keine Geschwindigkeit und ersetzen keine Passwörter."
+    source: https://en.wikipedia.org/wiki/Patch_(computing)
+  - id: em-f-peripheral-check
+    level: foundation
+    difficulty: 1030
+    type: single
+    stem:
+      en: "A user's external monitor shows nothing after connecting it to the docking station. Which check comes first?"
+      de: "Der externe Monitor einer Nutzerin bleibt nach dem Anschluss an die Dockingstation schwarz. Welche Prüfung kommt zuerst?"
+    options:
+      - en: "Check that the cable is seated, the monitor is switched on and the right input is selected."
+        de: "Prüfen, ob das Kabel fest sitzt, der Monitor eingeschaltet und der richtige Eingang gewählt ist."
+        correct: true
+      - en: "Reinstall the operating system."
+        de: "Das Betriebssystem neu installieren."
+        correct: false
+      - en: "Order a new docking station."
+        de: "Eine neue Dockingstation bestellen."
+        correct: false
+      - en: "Reset the user's password."
+        de: "Das Passwort der Person zurücksetzen."
+        correct: false
+    explanation:
+      en: "Start with the simple and cheap checks: cable, power and input selection, then whether the operating system detects the display. Drastic steps come only after simple causes are ruled out."
+      de: "Beginne mit einfachen und günstigen Prüfungen: Kabel, Stromversorgung und Eingangswahl, danach, ob das Betriebssystem den Bildschirm erkennt. Drastische Schritte kommen erst, wenn einfache Ursachen ausgeschlossen sind."
+    source: https://en.wikipedia.org/wiki/Operating_system
+  - id: em-p-patch-cycle-order
+    level: practitioner
+    difficulty: 1180
+    type: single
+    stem:
+      en: "Which order describes a sensible patch cycle?"
+      de: "Welche Reihenfolge beschreibt einen sinnvollen Patch-Zyklus?"
+    options:
+      - en: "Collect, assess, test on a small group, deploy, verify."
+        de: "Sammeln, bewerten, an kleiner Gruppe testen, verteilen, prüfen."
+        correct: true
+      - en: "Deploy to everyone, then test, then assess."
+        de: "An alle verteilen, dann testen, dann bewerten."
+        correct: false
+      - en: "Verify, deploy, collect, test."
+        de: "Prüfen, verteilen, sammeln, testen."
+        correct: false
+      - en: "Wait until users complain, then deploy."
+        de: "Warten, bis sich Nutzende beschweren, dann verteilen."
+        correct: false
+    explanation:
+      en: "Testing on a small group before deployment limits the damage of a faulty patch, and verification afterwards finds devices that missed it. Reacting only to complaints leaves known gaps open."
+      de: "Ein Test an einer kleinen Gruppe vor der Verteilung begrenzt den Schaden eines fehlerhaften Patches, und die Prüfung danach findet Geräte, die ihn verpasst haben. Nur auf Beschwerden zu reagieren lässt bekannte Lücken offen."
+    source: https://en.wikipedia.org/wiki/Patch_(computing)
+  - id: em-p-image-benefit
+    level: practitioner
+    difficulty: 1220
+    type: single
+    stem:
+      en: "What is the main benefit of a standard image for new devices?"
+      de: "Was ist der Hauptvorteil eines Standard-Images für neue Geräte?"
+    options:
+      - en: "Devices start with identical, agreed settings and software, and setup is fast."
+        de: "Geräte starten mit identischen, vereinbarten Einstellungen und Software, und die Einrichtung geht schnell."
+        correct: true
+      - en: "The image never needs to be updated."
+        de: "Das Image muss nie aktualisiert werden."
+        correct: false
+      - en: "Users can no longer have personal accounts."
+        de: "Nutzende können keine persönlichen Konten mehr haben."
+        correct: false
+      - en: "It replaces the need for patching."
+        de: "Es ersetzt das Patchen."
+        correct: false
+    explanation:
+      en: "An image gives consistency and speed. It must be kept current, otherwise new devices start with outdated software, and patching is still needed afterwards."
+      de: "Ein Image bringt Einheitlichkeit und Tempo. Es muss aktuell gehalten werden, sonst starten neue Geräte mit veralteter Software, und Patchen bleibt danach nötig."
+    source: https://en.wikipedia.org/wiki/Mobile_device_management
+  - id: em-p-baseline-admin
+    level: practitioner
+    difficulty: 1280
+    type: single
+    stem:
+      en: "Why do security baselines usually limit administrator rights for everyday work?"
+      de: "Warum schränken Sicherheits-Baselines Administratorrechte für die tägliche Arbeit meist ein?"
+    options:
+      - en: "Malware running under an administrator account can do far more damage."
+        de: "Schadsoftware, die unter einem Administratorkonto läuft, kann viel mehr Schaden anrichten."
+        correct: true
+      - en: "Administrator accounts cannot be used for email."
+        de: "Administratorkonten können nicht für E-Mail genutzt werden."
+        correct: false
+      - en: "Standard accounts are faster to log in with."
+        de: "Mit Standardkonten meldet man sich schneller an."
+        correct: false
+      - en: "It is required to enable disk encryption."
+        de: "Es ist nötig, um die Laufwerksverschlüsselung zu aktivieren."
+        correct: false
+    explanation:
+      en: "Working with a standard account limits what a mistake or malicious program can change. Administrator rights are used only for tasks that need them."
+      de: "Mit einem Standardkonto ist begrenzt, was ein Fehler oder ein schädliches Programm ändern kann. Administratorrechte werden nur für Aufgaben genutzt, die sie brauchen."
+    source: https://en.wikipedia.org/wiki/Disk_encryption
+  - id: em-p-offboarding
+    level: practitioner
+    difficulty: 1330
+    type: single
+    stem:
+      en: "An employee leaves the company and returns the laptop. Which set of steps is most appropriate?"
+      de: "Ein Mitarbeiter verlässt das Unternehmen und gibt den Laptop zurück. Welche Schritte sind am passendsten?"
+    options:
+      - en: "Record the return, secure company data, disable accounts as agreed, wipe the device and update the asset list."
+        de: "Rückgabe vermerken, Unternehmensdaten sichern, Konten wie vereinbart sperren, Gerät löschen und Inventarliste aktualisieren."
+        correct: true
+      - en: "Hand it to the next new colleague unchanged to save time."
+        de: "Es unverändert an die nächste neue Kollegin weitergeben, um Zeit zu sparen."
+        correct: false
+      - en: "Put it in a cupboard without a record."
+        de: "Es ohne Vermerk in einen Schrank legen."
+        correct: false
+      - en: "Only delete the desktop icons."
+        de: "Nur die Desktop-Symbole löschen."
+        correct: false
+    explanation:
+      en: "Offboarding must be traceable and protect data: the previous user's data and access must not carry over, and the asset list must always show where a device is."
+      de: "Offboarding muss nachvollziehbar sein und Daten schützen: Daten und Zugänge der bisherigen Person dürfen nicht übernommen werden, und die Inventarliste muss immer zeigen, wo ein Gerät ist."
+    source: https://en.wikipedia.org/wiki/Disk_encryption
+  - id: em-a-ring-rollout
+    level: advanced
+    difficulty: 1520
+    type: single
+    stem:
+      en: "Why is a configuration change rolled out in rings instead of to all devices at once?"
+      de: "Warum wird eine Konfigurationsänderung in Ringen statt auf alle Geräte gleichzeitig ausgerollt?"
+    options:
+      - en: "A problem is found on a small group first, which limits the damage and allows a stop."
+        de: "Ein Problem zeigt sich zuerst an einer kleinen Gruppe, was den Schaden begrenzt und einen Stopp erlaubt."
+        correct: true
+      - en: "Rings make the change install faster on every device."
+        de: "Ringe lassen die Änderung auf jedem Gerät schneller installieren."
+        correct: false
+      - en: "Rings remove the need to test the change."
+        de: "Ringe machen den Test der Änderung überflüssig."
+        correct: false
+      - en: "Only the first ring needs to be monitored."
+        de: "Nur der erste Ring muss beobachtet werden."
+        correct: false
+    explanation:
+      en: "Rings reduce the number of users affected by an unexpected failure. They work only with measurements between rings and a stop rule; they do not replace testing."
+      de: "Ringe verringern die Zahl der Nutzenden, die von einem unerwarteten Fehler betroffen sind. Sie wirken nur mit Messwerten zwischen den Ringen und einer Stoppregel; Tests ersetzen sie nicht."
+    source: https://en.wikipedia.org/wiki/Mobile_device_management
+  - id: em-a-drift
+    level: advanced
+    difficulty: 1570
+    type: single
+    stem:
+      en: "What is configuration drift?"
+      de: "Was ist Konfigurationsdrift?"
+    options:
+      - en: "The gradual divergence of a device from its intended configuration, for example through manual changes."
+        de: "Die schleichende Abweichung eines Geräts von der vorgesehenen Konfiguration, zum Beispiel durch manuelle Änderungen."
+        correct: true
+      - en: "A device moving between two offices."
+        de: "Ein Gerät, das zwischen zwei Büros wechselt."
+        correct: false
+      - en: "The loss of battery capacity over time."
+        de: "Der Verlust an Akkukapazität im Lauf der Zeit."
+        correct: false
+      - en: "A patch that installs twice."
+        de: "Ein Patch, der doppelt installiert wird."
+        correct: false
+    explanation:
+      en: "Drift means the actual state no longer matches the desired state. It is detected through compliance reports and corrected by re-applying the configuration and fixing the cause."
+      de: "Drift bedeutet, dass der tatsächliche Zustand nicht mehr dem Soll-Zustand entspricht. Man erkennt sie über Compliance-Berichte und behebt sie durch erneutes Anwenden der Konfiguration und Beseitigen der Ursache."
+    source: https://en.wikipedia.org/wiki/Mobile_device_management
+  - id: em-a-noncompliance
+    level: advanced
+    difficulty: 1530
+    type: single
+    stem:
+      en: "Several devices repeatedly fall out of compliance with the baseline. What is the best reaction?"
+      de: "Mehrere Geräte fallen wiederholt aus der Compliance der Baseline. Was ist die beste Reaktion?"
+    options:
+      - en: "Investigate the cause, which may be in the policy or process, and communicate clearly with the affected users."
+        de: "Die Ursache untersuchen, die in Richtlinie oder Prozess liegen kann, und klar mit den betroffenen Nutzenden kommunizieren."
+        correct: true
+      - en: "Grant permanent exceptions for all of them."
+        de: "Allen dauerhafte Ausnahmen gewähren."
+        correct: false
+      - en: "Ignore it, because the reports are only informational."
+        de: "Es ignorieren, weil die Berichte nur informativ sind."
+        correct: false
+      - en: "Remove the baseline requirement for everyone."
+        de: "Die Baseline-Vorgabe für alle streichen."
+        correct: false
+    explanation:
+      en: "Repeated non-compliance often points to a flaw in the policy or process, for example devices that are offline for long periods. Permanent exceptions or dropping the baseline make the fleet less secure."
+      de: "Wiederholte Nichtkonformität weist oft auf einen Mangel in Richtlinie oder Prozess hin, zum Beispiel Geräte, die lange offline sind. Dauerhafte Ausnahmen oder das Streichen der Baseline machen die Flotte unsicherer."
+    source: https://en.wikipedia.org/wiki/Mobile_device_management
+  - id: em-a-retirement
+    level: advanced
+    difficulty: 1610
+    type: single
+    stem:
+      en: "Which approach fits the secure retirement of a laptop with an encrypted drive?"
+      de: "Welches Vorgehen passt zur sicheren Ausmusterung eines Laptops mit verschlüsseltem Laufwerk?"
+    options:
+      - en: "Follow the data-erasure policy, wipe or destroy the key, record the wipe and remove the device from management and the asset list."
+        de: "Der Löschrichtlinie folgen, den Schlüssel löschen oder vernichten, die Löschung dokumentieren und das Gerät aus Verwaltung und Inventarliste entfernen."
+        correct: true
+      - en: "Donate it unchanged, since the drive is encrypted anyway."
+        de: "Es unverändert spenden, weil das Laufwerk ja verschlüsselt ist."
+        correct: false
+      - en: "Delete only the user profile."
+        de: "Nur das Benutzerprofil löschen."
+        correct: false
+      - en: "Keep the device enrolled indefinitely so it stays visible."
+        de: "Das Gerät unbegrenzt registriert lassen, damit es sichtbar bleibt."
+        correct: false
+    explanation:
+      en: "Encryption helps, since destroying the key makes data unreadable, but the process still needs a policy, documentation and cleanup of management and inventory entries. Deleting a profile does not wipe a device."
+      de: "Verschlüsselung hilft, denn das Vernichten des Schlüssels macht Daten unlesbar, aber der Prozess braucht trotzdem Richtlinie, Dokumentation und Bereinigung der Einträge in Verwaltung und Inventar. Das Löschen eines Profils löscht kein Gerät."
+    source: https://en.wikipedia.org/wiki/Disk_encryption
