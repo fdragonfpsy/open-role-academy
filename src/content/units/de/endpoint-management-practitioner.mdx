@@ -1,0 +1,84 @@
+---
+id: endpoint-management-practitioner
+competency: endpoint-management
+level: practitioner
+title: "Patch-Zyklen, Standard-Images, Sicherheitsvorgaben und Geräte-Onboarding"
+objectives:
+  - Einen regelmäßigen Patch-Zyklus mit Test, Terminplanung und Kontrolle durchführen.
+  - Erklären, warum Standard-Images und Sicherheitsvorgaben Geräte einheitlicher und sicherer machen.
+  - Die grundlegenden Einstellungen anwenden (Laufwerksverschlüsselung, Bildschirmsperre, eingeschränkte Administratorrechte).
+  - Onboarding und Offboarding von Geräten nachvollziehbar durchführen.
+minutes: 30
+resources:
+  - wikipedia-de-patch-software
+  - wikipedia-disk-encryption
+  - wikipedia-de-mobile-device-management
+  - bsi-it-grundschutz
+  - wikipedia-patch-computing
+status: ai-draft
+sources:
+  - title: "Patch (Software)"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Patch_(Software)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Disk encryption"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Disk_encryption
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Mobile Device Management"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Mobile_Device_Management
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Von einzelnen Geräten zur Routine
+
+Auf Grundlagen-Niveau richtest du ein Gerät sorgfältig ein. Auf diesem Niveau ist das Ziel, dass *jedes* Gerät mit wenig Handarbeit gleich eingerichtet und gepflegt wird. Einheitlichkeit macht Fehler leichter auffindbar und Sicherheit leichter zusicherbar.
+
+## Patch-Zyklen
+
+Patchen funktioniert am besten als Routine statt als Reaktion. Ein einfacher Zyklus:
+
+1. **Sammeln:** herausfinden, welche Updates für Betriebssystem und Anwendungen verfügbar sind.
+2. **Bewerten:** Ist der Patch sicherheitsrelevant? Wird die Schwachstelle bereits ausgenutzt? Dringende Patches werden schneller behandelt.
+3. **Testen:** den Patch zuerst auf einer kleinen Gruppe von Geräten ausprobieren, damit ein fehlerhafter Patch nicht das ganze Unternehmen lahmlegt.
+4. **Verteilen:** zu einem vereinbarten Zeitpunkt ausrollen und die Nutzenden über Neustarts informieren.
+5. **Prüfen:** kontrollieren, ob die Geräte den Patch tatsächlich haben; Geräte, die offline waren und ihn noch nicht haben, melden.
+
+Ein **Patch** kann auch Probleme verursachen, plane daher einen Rückweg ein: Du solltest wissen, wie man ihn deinstalliert oder das Gerät wiederherstellt.
+
+## Standard-Images
+
+Ein **Standard-Image** ist eine vorbereitete Kopie eines Betriebssystems mit den vereinbarten Einstellungen und Programmen, die auf neue Geräte geschrieben wird. Vorteile: Geräte starten identisch, die Einrichtung geht schnell, und der Support weiß, was ihn erwartet. Das Image muss aktuell gehalten werden, sonst starten alle neuen Geräte mit veralteter Software. Viele Organisationen halten das Image schlank und installieren weitere Software danach, damit ein Image für viele Rollen passt.
+
+## Sicherheitsvorgaben (Baseline)
+
+Eine **Sicherheits-Baseline** ist ein festgelegter Mindestsatz an Einstellungen, den jedes Gerät haben muss. Typische Punkte:
+
+- **Laufwerksverschlüsselung:** Der Inhalt des Laufwerks ist verschlüsselt, sodass ein verlorener oder gestohlener Laptop keine Daten preisgibt. Bewahre Wiederherstellungsschlüssel sicher und getrennt vom Gerät auf.
+- **Bildschirmsperre:** Das Gerät sperrt sich nach kurzer Inaktivität automatisch und verlangt zum Entsperren ein Passwort oder Ähnliches.
+- **Eingeschränkte Administratorrechte:** Nutzende arbeiten mit einem Standardkonto. Administratorrechte werden nur bei Bedarf genutzt, denn Schadsoftware, die unter einem Administratorkonto läuft, kann viel mehr Schaden anrichten.
+- Aktuelles Betriebssystem, aktive Firewall und Schutz vor Schadsoftware.
+
+Öffentliche Leitfäden wie der BSI IT-Grundschutz können als Referenz dienen, was in die Baseline gehört.
+
+## Onboarding und Offboarding
+
+**Onboarding:** Das Gerät wird in der Inventarliste erfasst, aus dem Standard-Image eingerichtet, einer namentlichen Person zugeordnet und mit einer kurzen Einführung übergeben. **Offboarding:** Wenn jemand das Unternehmen verlässt oder die Rolle wechselt, wird das Gerät eingesammelt, werden die Konten wie mit dem zuständigen Team vereinbart gesperrt, werden Daten der Organisation gesichert, und das Gerät wird gelöscht und für die Wiederverwendung vorbereitet oder ausgemustert. In beiden Fällen wird die Inventarliste aktualisiert, sodass du immer weißt, wer welches Gerät hat.
+
+## Praxisbeispiel
+
+Der Patchday bringt mehrere Updates. Du stufst ein Sicherheitsupdate als dringend ein, installierst es zuerst auf zehn Testgeräten des IT-Teams und beobachtest zwei Tage lang, ob Probleme auftreten. Dann verteilst du es abends an alle, mit Hinweis auf den Neustart. Eine Woche später zeigt dein Bericht 96 gepatchte Geräte und vier fehlende; du sprichst deren Nutzende an. In derselben Woche kommt der Laptop einer ausgeschiedenen Kollegin zurück: Du vermerkst die Rückgabe, löschst ihn, installierst das Standard-Image neu und markierst ihn als verfügbar.
+
+## Das Wichtigste in Kürze
+
+- Patchen ist eine Routine: sammeln, bewerten, testen, verteilen, prüfen.
+- Standard-Images liefern identische, schnell vorbereitete Geräte; halte sie aktuell.
+- Eine Baseline legt Mindesteinstellungen fest: Verschlüsselung, Bildschirmsperre, Standardkonten, Updates.
+- On- und Offboarding müssen dokumentiert werden, damit die Gerätezuordnung immer bekannt ist.

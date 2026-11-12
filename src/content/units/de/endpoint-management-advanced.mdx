@@ -1,0 +1,78 @@
+---
+id: endpoint-management-advanced
+competency: endpoint-management
+level: advanced
+title: "Zentrale Endgeräteverwaltung: Rollout-Ringe, Compliance, Drift und Gerätelebenszyklus"
+objectives:
+  - Erklären, wie zentrale Geräteverwaltung funktioniert und was sie durchsetzen kann und was nicht.
+  - Einen Rollout in Ringen mit klaren Erfolgskriterien und Stoppregel planen.
+  - Regelverstöße und Konfigurationsabweichungen (Drift) erkennen und behandeln.
+  - Den Gerätelebenszyklus bis zur sicheren Ausmusterung einschließlich Datenlöschung planen.
+minutes: 35
+resources:
+  - wikipedia-de-mobile-device-management
+  - wikipedia-disk-encryption
+  - wikipedia-de-patch-software
+  - wikipedia-mobile-device-management
+  - bsi-it-grundschutz
+status: ai-draft
+sources:
+  - title: "Mobile Device Management"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Mobile_Device_Management
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Disk encryption"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Disk_encryption
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Patch (Software)"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Patch_(Software)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Geräte als Flotte verwalten
+
+Ab mehreren hundert Geräten skaliert Handarbeit nicht mehr, und Ausnahmen häufen sich. **Mobile Device Management (MDM)**, oft Endpoint Management genannt, wenn es auch Laptops umfasst, bezeichnet die zentrale Verwaltung von Geräten: Ein Verwaltungsdienst schickt Einstellungen, Anwendungen und Updates an registrierte Geräte und erhält deren Status. Typische Funktionen sind das Durchsetzen einer Konfiguration, die Verteilung von Software, das Einspielen von Patches sowie das Sperren oder Löschen eines verlorenen Geräts aus der Ferne. Der genaue Funktionsumfang unterscheidet sich zwischen Produkten und Betriebssystemen; gute Administrierende prüfen, was eine Plattform unterstützt, bevor sie dem Unternehmen eine Richtlinie zusagen.
+
+Behandle Konfiguration als **Soll-Zustand**: Du beschreibst, wie ein Gerät aussehen soll, und das System bringt die Geräte dorthin. Diese Beschreibung sollte wie Code versioniert und geprüft werden, damit du weißt, wer was geändert hat, und es rückgängig machen kannst.
+
+## Rollout-Ringe
+
+Auch getestete Änderungen können auf echten Geräten scheitern. Ein **ringbasierter Rollout** begrenzt den Schaden:
+
+1. **Ring 0:** das IT-Team selbst.
+2. **Ring 1:** eine kleine, gemischte Pilotgruppe mit unterschiedlichen Modellen und Rollen.
+3. **Ring 2:** ein größerer Anteil der Nutzenden.
+4. **Ring 3:** alle übrigen.
+
+Lege vorab fest, was du zwischen den Ringen misst (zum Beispiel Tickets, fehlgeschlagene Installationen, Startprobleme), wie lange du wartest und welche **Stoppregel** gilt: Wer darf den Rollout anhalten, und wann? Halte geschäftskritische Gruppen aus den frühen Ringen heraus und plane einen Rückweg ein.
+
+## Compliance und Drift
+
+**Compliance** bedeutet, dass ein Gerät die Baseline erfüllt: verschlüsselt, gesperrt, gepatcht, unterstütztes Betriebssystem. **Drift** ist die schleichende Abweichung eines Geräts von der vorgesehenen Konfiguration, zum Beispiel durch manuelle Änderungen, fehlgeschlagene Updates oder lokale Software. Verwaltungswerkzeuge melden die Compliance; deine Aufgabe ist es, darauf zu reagieren:
+
+- Lege fest, was mit nicht konformen Geräten geschieht: zuerst eine Erinnerung, dann eingeschränkter Zugriff auf Unternehmensressourcen, und eine klare Kommunikation an die Nutzenden.
+- Finde die Ursache bei wiederholten Verstößen; oft zeigt sie ein Problem in Richtlinie oder Prozess, nicht bei der Person.
+- Prüfe Ausnahmen regelmäßig und lass sie auslaufen, sonst werden sie zum neuen Normalzustand.
+
+## Lebenszyklus und sichere Ausmusterung
+
+Ein Gerät hat einen Lebenszyklus: Planung und Beschaffung, Bereitstellung, Betrieb und Ausmusterung. Plane den Ersatz, bevor der Support endet und Sicherheitsupdates ausbleiben. Bei der Ausmusterung dürfen die Daten das Haus nicht mit dem Gerät verlassen. Die Möglichkeiten hängen vom Speichermedium und der Sensibilität der Daten ab. War das Laufwerk verschlüsselt, macht das Vernichten des Schlüssels die Daten unlesbar; deshalb hilft Verschlüsselung auch am Lebensende. Halte dich aber an die Löschrichtlinie deiner Organisation und an anerkannte Empfehlungen wie die des BSI für sensible Daten. Dokumentiere die Löschung und den Verbleib (Wiederverwendung, Spende, Recycling) in der Inventarliste. Entferne das Gerät aus dem Verwaltungsdienst, damit keine veralteten Einträge bleiben.
+
+## Praxisbeispiel
+
+Dein Unternehmen führt eine neue Sicherheits-Baseline ein, die Laufwerksverschlüsselung auf allen Laptops verlangt. Du wendest sie zuerst auf Ring 0 an, dann auf einen Pilot mit 30 Geräten aus verschiedenen Abteilungen. Im Pilot lassen sich fünf Laptops wegen einer alten Firmware-Version nicht verschlüsseln. Du pausierst, aktualisierst die Firmware über das Verwaltungswerkzeug und machst weiter. Während des Rollouts zeigt der Compliance-Bericht 12 weiterhin unverschlüsselte Geräte; du stellst fest, dass sie seit Wochen offline waren, und sprichst die Nutzenden an. Drei Monate später werden alte Laptops ausgemustert: Jeder wird gemäß Richtlinie gelöscht, die Löschung protokolliert und der Eintrag aus der Verwaltung entfernt.
+
+## Das Wichtigste in Kürze
+
+- Zentrale Verwaltung setzt den Soll-Zustand über die ganze Flotte durch; kenne die Grenzen jeder Plattform.
+- Rolle in Ringen aus, mit messbaren Kriterien, Stoppregel und Rückfallplan.
+- Verfolge die Compliance, untersuche Ursachen von Drift und lass Ausnahmen auslaufen.
+- Plane den gesamten Lebenszyklus und lösche und dokumentiere Geräte bei der Ausmusterung.

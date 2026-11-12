@@ -1,0 +1,13 @@
+id: wikipedia-de-mobile-device-management
+url: "https://de.wikipedia.org/wiki/Mobile_Device_Management"
+title: "Mobile Device Management"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-12
+mode: link
+competencies: [endpoint-management]
+levels: [practitioner, advanced]
