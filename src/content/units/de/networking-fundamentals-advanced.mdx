@@ -1,0 +1,77 @@
+---
+id: networking-fundamentals-advanced
+competency: networking-fundamentals
+level: advanced
+title: "Segmentierung und Zero Trust, Monitoring und Paketanalyse, Redundanz, Dokumentation und Änderungsauswirkungen"
+objectives:
+  - Netzwerksegmentierung entwerfen und die Idee von Zero Trust erklären.
+  - Monitoring und Paketanalyse beschreiben und sagen, wann welches geeignet ist.
+  - Single Points of Failure erkennen und Redundanz vorschlagen.
+  - Netzwerkdokumentation aktuell halten und für Auswirkungsanalysen nutzen.
+  - Auswirkungen und Rückfallplan einer Netzwerkänderung bewerten.
+minutes: 35
+resources:
+  - wikipedia-de-osi-modell
+  - wikipedia-subnetwork
+  - wikipedia-firewall-computing
+  - wikipedia-osi-model
+  - bsi-it-grundschutz
+status: ai-draft
+sources:
+  - title: "Subnetwork"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Subnetwork
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Firewall (computing)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Firewall_(computing)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "OSI-Modell"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/OSI-Modell
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Auf Experten-Niveau gestaltest du, wie das Netz gebaut und verändert wird, nicht nur, wie es repariert wird. Entscheidungen über Segmente, Redundanz und Dokumentation bestimmen, wie weit sich ein Fehler oder ein Angriff ausbreiten kann und wie schnell das Team sich erholt.
+
+## Segmentierung und Zero Trust
+
+**Segmentierung** teilt das Netz in Zonen mit kontrollierten Übergängen, zum Beispiel Mitarbeitende, Server, Gäste, Gebäudetechnik. Wird eine Zone kompromittiert, begrenzen Regeln zwischen den Zonen, wie weit sich Angreifende bewegen können. Die Idee von **Zero Trust** geht weiter: "Innerhalb" des Netzes zu sein reicht nicht für Vertrauen. Jede Anfrage wird anhand von Identität, Gerätezustand und Kontext geprüft, und der Zugriff wird auf das Nötige beschränkt. In der Praxis ergänzen sich Segmentierung und starke Identitätskontrollen. Beginne mit den wertvollsten und am stärksten exponierten Systemen, statt alles auf einmal umzubauen.
+
+## Monitoring und Paketanalyse
+
+**Monitoring** beobachtet Verfügbarkeit und Leistung über die Zeit: Ist eine Leitung aktiv, wie stark ist sie ausgelastet, wie lange dauern Antworten? Es zeigt Trends und alarmiert, bevor sich Nutzende melden. **Paketanalyse** zeichnet den tatsächlichen Verkehr auf und untersucht ihn; sie ist ein Detailwerkzeug, um ein konkretes Problem zu verstehen, etwa ein Protokoll, das beim Verbindungsaufbau scheitert. Da Pakete personenbezogene oder vertrauliche Daten enthalten können, zeichne nur auf, was nötig ist, nur wo es erlaubt ist, und beachte die Datenschutzregeln. Das Schichtenmodell OSI hilft zu entscheiden, auf welcher Ebene du suchst.
+
+## Redundanz
+
+Ein **Single Point of Failure** ist eine Komponente, bei deren Ausfall ein Dienst stoppt: ein Router, eine Anbindung, ein Switch, ein DNS-Server. Redundanz ergänzt einen zweiten Weg oder ein zweites Gerät, sodass der Dienst weiterläuft. Sie muss getestet werden, denn ungetestetes Failover funktioniert im Ernstfall oft nicht. Redundanz erhöht zudem die Komplexität; wäge sie gegen die geschäftlichen Folgen eines Ausfalls ab und stimme das Ziel mit den Service-Verantwortlichen ab.
+
+## Dokumentation und Änderungsauswirkungen
+
+Aktuelle Dokumentation, etwa Netzpläne, Adressplan, VLAN-Listen und Zweck der Firewall-Regeln, macht aus "ich glaube, das läuft dort durch" Fakten. Frage bei jeder Änderung:
+
+1. Welche Systeme, Segmente und Nutzenden hängen vom geänderten Teil ab?
+2. Welche Wirkung erwarten wir, und wie prüfen wir sie?
+3. Wie sieht der Rückfall aus, und wann entscheiden wir, ihn zu nutzen?
+4. Wer muss informiert werden, und wann ist das Wartungsfenster?
+
+Aktualisiere danach die Dokumentation in derselben Änderung. Veraltete Pläne sind ein eigenes Risiko.
+
+## Praxisbeispiel
+
+Der Standort hat eine Internetanbindung und einen zentralen Switch. Eine geplante Änderung ersetzt einen Firewall-Regelsatz. Du schaust in die Dokumentation und stellst fest, dass das Gäste-WLAN und ein Gebäudeleitsystem ein Segment teilen, was nicht beabsichtigt ist. Du schlägst vor, es in zwei Segmente mit Default-Deny-Regeln dazwischen zu trennen. Für die Änderung listest du betroffene Dienste auf, planst ein Abendfenster, sicherst die vorherige Konfiguration für den Rückfall und legst Testschritte fest. Danach aktualisierst du den Plan und hältst fest, dass die einzelne Anbindung ein akzeptiertes Risiko bleibt, bis das Budget für eine zweite Leitung vereinbart ist.
+
+## Kernpunkte
+
+- Segmentierung begrenzt die Ausbreitung; Zero Trust heißt: kein Vertrauen allein aus dem Standort.
+- Monitoring zeigt Trends; Paketanalyse erklärt konkrete Fehler und erfordert Sorgfalt mit Daten.
+- Single Points of Failure finden und Ausfallpfade testen.
+- Änderungsanalyse braucht Dokumentation, Verifikation und einen Rückfallplan.

@@ -1,0 +1,74 @@
+---
+id: networking-fundamentals-foundation
+competency: networking-fundamentals
+level: foundation
+title: "How networks connect devices: LAN, internet, IP addresses, DNS and first connectivity checks"
+objectives:
+  - Distinguish LAN, WAN and the internet, and name the role of router, switch and access point.
+  - Explain what an IP address is and what DHCP does.
+  - Describe in plain terms what DNS does.
+  - Compare Wi-Fi and cable connections.
+  - Run a first connectivity check using link lights, ping and the question "who else is affected?".
+minutes: 25
+resources:
+  - wikipedia-ip-address
+  - wikipedia-domain-name-system
+  - wikipedia-de-ip-adresse
+  - wikipedia-de-domain-name-system
+status: ai-draft
+sources:
+  - title: "IP address"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/IP_address
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Domain Name System"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Domain_Name_System
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+Almost every tool at work needs a network: email, shared files, video calls, web applications and printers. When "the internet is down", people cannot work, and the first message reaches IT support. If you understand the basic building blocks, you can quickly tell whether a problem affects one device, one room or the whole site.
+
+## The building blocks
+
+- **LAN (local area network):** the devices in one building or office that talk to each other directly.
+- **WAN (wide area network):** a network that connects locations over longer distances. The **internet** is the global network of networks that connects many of them.
+- **Switch:** connects devices by cable inside the LAN and passes data on to the right port.
+- **Access point:** connects devices by radio (Wi-Fi) to the wired LAN.
+- **Router:** connects different networks, for example the office LAN to the internet. In small offices one box often combines router, switch and access point.
+
+## IP addresses and DHCP
+
+Every device on an IP network needs an **IP address**, a number that identifies it so that data can be delivered. Addresses on the local network are usually handed out automatically by **DHCP** (Dynamic Host Configuration Protocol). When a laptop joins the network, it asks for an address and the DHCP service answers with one, together with other settings such as the gateway and DNS server. If DHCP does not work, a device may end up with no usable address and show "connected, no internet".
+
+## DNS in plain terms
+
+People use names such as a website's domain, computers use numbers. The **Domain Name System (DNS)** is like a phone book that translates the name into an IP address. If DNS fails, a website may not open by name even though the network itself works.
+
+## Wi-Fi or cable?
+
+Cable is usually faster and more stable and does not suffer from walls or neighbouring networks. Wi-Fi is convenient and needed for mobile devices, but its quality depends on distance, obstacles and interference. For a desk where a video call must not drop, a cable is a good choice.
+
+## First connectivity checks
+
+1. **Look at the link lights** on the port or the network icon: is there a physical connection?
+2. **Ask who else is affected.** One device points to that device or its cable, several devices in a room point to a switch or access point, everyone points to the router or the internet connection.
+3. **Use ping.** The ping tool sends a small test message and reports whether an answer comes back. Ping the router first, then an address on the internet, then a website name. Where the chain breaks tells you where to look.
+4. **Restart only with purpose,** and note what you changed in the ticket.
+
+## Worked example
+
+A colleague says: "No internet." Her laptop shows Wi-Fi connected. You ask a neighbour: his laptop works. So it is not the whole office. You ping the router from her laptop: no answer. You check her IP address: it starts with a strange self-assigned range instead of the usual office range, which suggests that she never received an address from DHCP. After she reconnects to the Wi-Fi, she receives an address and everything works. You record the symptom, the checks and the fix.
+
+## Key takeaways
+
+- LAN is local, WAN spans locations, the internet connects networks worldwide.
+- Switches, access points and routers have different jobs, even if one box does all three.
+- DHCP hands out addresses, DNS translates names into addresses.
+- Check lights, compare with other devices, and ping step by step.

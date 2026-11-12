@@ -1,0 +1,290 @@
+competency: networking-fundamentals
+items:
+  - id: nf-f-switch-router
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "What is the main job of a router in an office network?"
+      de: "Was ist die Hauptaufgabe eines Routers in einem Büronetzwerk?"
+    options:
+      - en: "It connects different networks, for example the office LAN and the internet."
+        de: "Er verbindet verschiedene Netze, zum Beispiel das Büro-LAN und das Internet."
+        correct: true
+      - en: "It translates every file into a different format."
+        de: "Er übersetzt jede Datei in ein anderes Format."
+        correct: false
+      - en: "It stores the users' passwords."
+        de: "Er speichert die Passwörter der Nutzenden."
+        correct: false
+      - en: "It replaces the need for IP addresses."
+        de: "Er macht IP-Adressen überflüssig."
+        correct: false
+    explanation:
+      en: "A switch connects devices inside one network, an access point adds radio access, and a router connects separate networks. Small devices often combine all three roles."
+      de: "Ein Switch verbindet Geräte innerhalb eines Netzes, ein Access Point ergänzt den Funkzugang, und ein Router verbindet getrennte Netze. Kleine Geräte vereinen oft alle drei Rollen."
+    source: https://en.wikipedia.org/wiki/IP_address
+  - id: nf-f-dhcp
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "What does DHCP do for a device that joins the network?"
+      de: "Was leistet DHCP für ein Gerät, das dem Netz beitritt?"
+    options:
+      - en: "It automatically assigns an IP address and related settings."
+        de: "Es weist automatisch eine IP-Adresse und zugehörige Einstellungen zu."
+        correct: true
+      - en: "It encrypts all traffic of the device."
+        de: "Es verschlüsselt den gesamten Verkehr des Geräts."
+        correct: false
+      - en: "It blocks websites that are not work related."
+        de: "Es blockiert Websites ohne Arbeitsbezug."
+        correct: false
+      - en: "It repairs the network cable."
+        de: "Es repariert das Netzwerkkabel."
+        correct: false
+    explanation:
+      en: "DHCP hands out addresses and settings such as gateway and DNS server so that nobody has to configure each device by hand."
+      de: "DHCP vergibt Adressen und Einstellungen wie Gateway und DNS-Server, damit niemand jedes Gerät von Hand einrichten muss."
+    source: https://en.wikipedia.org/wiki/IP_address
+  - id: nf-f-dns
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "A website does not open by its name, but it opens when you type its IP address. Which service is the most likely cause?"
+      de: "Eine Website öffnet sich nicht über ihren Namen, aber über ihre IP-Adresse. Welcher Dienst ist die wahrscheinlichste Ursache?"
+    options:
+      - en: "DNS, which translates names into IP addresses."
+        de: "DNS, das Namen in IP-Adressen übersetzt."
+        correct: true
+      - en: "The power supply of the switch."
+        de: "Das Netzteil des Switches."
+        correct: false
+      - en: "The monitor settings."
+        de: "Die Monitor-Einstellungen."
+        correct: false
+      - en: "The keyboard layout."
+        de: "Das Tastaturlayout."
+        correct: false
+    explanation:
+      en: "If the address works, the connection is fine. The missing step is the translation of the name, which is the job of DNS."
+      de: "Funktioniert die Adresse, ist die Verbindung in Ordnung. Es fehlt die Übersetzung des Namens, und die ist Aufgabe von DNS."
+    source: https://en.wikipedia.org/wiki/Domain_Name_System
+  - id: nf-f-first-check
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "One user reports no network. Which first step helps most to find out whether the problem is local to that device?"
+      de: "Eine Person meldet kein Netzwerk. Welcher erste Schritt hilft am meisten herauszufinden, ob das Problem nur dieses Gerät betrifft?"
+    options:
+      - en: "Check whether other devices nearby can connect."
+        de: "Prüfen, ob andere Geräte in der Nähe eine Verbindung haben."
+        correct: true
+      - en: "Reinstall the operating system."
+        de: "Das Betriebssystem neu installieren."
+        correct: false
+      - en: "Replace the router at once."
+        de: "Sofort den Router austauschen."
+        correct: false
+      - en: "Ask the user to try again tomorrow."
+        de: "Die Person bitten, es morgen erneut zu versuchen."
+        correct: false
+    explanation:
+      en: "Comparing with other devices separates a single-device fault from a problem with the access point, switch or uplink, before you change anything."
+      de: "Der Vergleich mit anderen Geräten trennt einen Einzelgerätefehler von einem Problem mit Access Point, Switch oder Anbindung, bevor du etwas veränderst."
+    source: https://en.wikipedia.org/wiki/IP_address
+  - id: nf-p-gateway
+    level: practitioner
+    difficulty: 1190
+    type: single
+    stem:
+      en: "A laptop can reach printers in its own subnet but nothing in other networks. Which setting is the most likely cause?"
+      de: "Ein Laptop erreicht Drucker im eigenen Subnetz, aber nichts in anderen Netzen. Welche Einstellung ist die wahrscheinlichste Ursache?"
+    options:
+      - en: "A wrong or missing default gateway."
+        de: "Ein falsches oder fehlendes Standardgateway."
+        correct: true
+      - en: "A too long hostname."
+        de: "Ein zu langer Hostname."
+        correct: false
+      - en: "An outdated screen resolution."
+        de: "Eine veraltete Bildschirmauflösung."
+        correct: false
+      - en: "A full recycle bin."
+        de: "Ein voller Papierkorb."
+        correct: false
+    explanation:
+      en: "Traffic to other networks is sent to the default gateway. Without a correct one, only the local subnet is reachable."
+      de: "Verkehr in andere Netze geht an das Standardgateway. Ohne ein korrektes ist nur das lokale Subnetz erreichbar."
+    source: https://en.wikipedia.org/wiki/Subnetwork
+  - id: nf-p-dns-ip
+    level: practitioner
+    difficulty: 1240
+    type: single
+    stem:
+      en: "Ping to an IP address works, ping to the matching name fails. What is the best next step?"
+      de: "Ping auf eine IP-Adresse klappt, Ping auf den passenden Namen schlägt fehl. Was ist der beste nächste Schritt?"
+    options:
+      - en: "Check which DNS server the client uses and test name resolution, for example with nslookup."
+        de: "Prüfen, welchen DNS-Server der Client nutzt, und die Namensauflösung testen, zum Beispiel mit nslookup."
+        correct: true
+      - en: "Replace the network cable."
+        de: "Das Netzwerkkabel ersetzen."
+        correct: false
+      - en: "Change the subnet mask of the client."
+        de: "Die Subnetzmaske des Clients ändern."
+        correct: false
+      - en: "Disable the firewall on all servers."
+        de: "Die Firewall auf allen Servern abschalten."
+        correct: false
+    explanation:
+      en: "Reaching the address by number shows that the path works. The fault lies in name resolution, so test DNS directly."
+      de: "Dass die Adresse per Nummer erreichbar ist, zeigt, dass der Weg funktioniert. Der Fehler liegt in der Namensauflösung, also teste DNS direkt."
+    source: https://en.wikipedia.org/wiki/Domain_Name_System
+  - id: nf-p-vpn
+    level: practitioner
+    difficulty: 1290
+    type: single
+    stem:
+      en: "What does a VPN protect, and what does it not do?"
+      de: "Was schützt ein VPN, und was leistet es nicht?"
+    options:
+      - en: "It protects traffic in transit through an encrypted tunnel, but it does not make an infected device safe."
+        de: "Es schützt den Verkehr auf dem Weg durch einen verschlüsselten Tunnel, macht aber ein infiziertes Gerät nicht sicher."
+        correct: true
+      - en: "It removes malware from the device."
+        de: "Es entfernt Schadsoftware vom Gerät."
+        correct: false
+      - en: "It makes sign-in with a password unnecessary."
+        de: "Es macht die Anmeldung mit Passwort überflüssig."
+        correct: false
+      - en: "It guarantees that every website is trustworthy."
+        de: "Es garantiert, dass jede Website vertrauenswürdig ist."
+        correct: false
+    explanation:
+      en: "A VPN secures the connection between the device and the target network. The state of the device and the sign-in controls still matter."
+      de: "Ein VPN sichert die Verbindung zwischen Gerät und Zielnetz. Der Zustand des Geräts und die Anmeldekontrollen bleiben wichtig."
+    source: https://en.wikipedia.org/wiki/Virtual_private_network
+  - id: nf-p-port
+    level: practitioner
+    difficulty: 1340
+    type: single
+    stem:
+      en: "A server answers ping, but its web service cannot be reached from the staff network. What is a plausible cause?"
+      de: "Ein Server antwortet auf Ping, sein Webdienst ist aber aus dem Mitarbeitenden-Netz nicht erreichbar. Was ist eine plausible Ursache?"
+    options:
+      - en: "A firewall rule blocks the service's port, or the service is not running."
+        de: "Eine Firewall-Regel blockiert den Port des Dienstes, oder der Dienst läuft nicht."
+        correct: true
+      - en: "Ping can never work when a server is online."
+        de: "Ping kann nie klappen, wenn ein Server online ist."
+        correct: false
+      - en: "The server has no IP address."
+        de: "Der Server hat keine IP-Adresse."
+        correct: false
+      - en: "The cable is unplugged."
+        de: "Das Kabel ist nicht eingesteckt."
+        correct: false
+    explanation:
+      en: "Ping shows the host is reachable. A service is reached through a port, so a blocking rule or a stopped service explains the symptom."
+      de: "Ping zeigt, dass der Host erreichbar ist. Ein Dienst wird über einen Port erreicht, daher erklären eine blockierende Regel oder ein gestoppter Dienst das Symptom."
+    source: https://en.wikipedia.org/wiki/Firewall_(computing)
+  - id: nf-a-segmentation
+    level: advanced
+    difficulty: 1520
+    type: single
+    stem:
+      en: "What is the main security benefit of network segmentation?"
+      de: "Was ist der wichtigste Sicherheitsvorteil der Netzwerksegmentierung?"
+    options:
+      - en: "A compromise in one zone is limited by rules between the zones."
+        de: "Eine Kompromittierung in einer Zone wird durch Regeln zwischen den Zonen begrenzt."
+        correct: true
+      - en: "It removes the need for patching."
+        de: "Es macht Patchen überflüssig."
+        correct: false
+      - en: "It makes all traffic faster in every case."
+        de: "Es macht jeden Verkehr in jedem Fall schneller."
+        correct: false
+      - en: "It prevents any device from being attacked."
+        de: "Es verhindert, dass irgendein Gerät angegriffen wird."
+        correct: false
+    explanation:
+      en: "Segmentation does not stop attacks, but it limits lateral movement. Patching and other controls remain necessary."
+      de: "Segmentierung stoppt keine Angriffe, begrenzt aber die seitliche Ausbreitung. Patchen und andere Maßnahmen bleiben nötig."
+    source: https://en.wikipedia.org/wiki/Subnetwork
+  - id: nf-a-zerotrust
+    level: advanced
+    difficulty: 1580
+    type: single
+    stem:
+      en: "Which statement best describes the idea of zero trust?"
+      de: "Welche Aussage beschreibt die Idee von Zero Trust am besten?"
+    options:
+      - en: "Access is decided per request based on identity, device state and context, not on being inside the network."
+        de: "Der Zugriff wird pro Anfrage anhand von Identität, Gerätezustand und Kontext entschieden, nicht dadurch, dass man im Netz ist."
+        correct: true
+      - en: "Everything inside the office network is trusted automatically."
+        de: "Alles im Büronetz wird automatisch vertraut."
+        correct: false
+      - en: "Nobody may use the network."
+        de: "Niemand darf das Netz nutzen."
+        correct: false
+      - en: "A firewall at the border is sufficient."
+        de: "Eine Firewall am Rand genügt."
+        correct: false
+    explanation:
+      en: "Zero trust removes implicit trust based on location and checks each request, while giving only the access that is needed."
+      de: "Zero Trust entfernt das implizite Vertrauen aufgrund des Standorts und prüft jede Anfrage, bei Zugriff nur im nötigen Umfang."
+    source: https://en.wikipedia.org/wiki/Firewall_(computing)
+  - id: nf-a-spof
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "A site has one internet uplink. How should the risk be handled?"
+      de: "Ein Standort hat nur eine Internetanbindung. Wie sollte das Risiko behandelt werden?"
+    options:
+      - en: "Identify it as a single point of failure and weigh a second path against the business impact, then test the failover."
+        de: "Als Single Point of Failure erkennen, einen zweiten Weg gegen die geschäftlichen Folgen abwägen und das Failover testen."
+        correct: true
+      - en: "Ignore it, because uplinks never fail."
+        de: "Ignorieren, weil Anbindungen nie ausfallen."
+        correct: false
+      - en: "Add redundancy but never test it."
+        de: "Redundanz ergänzen, aber nie testen."
+        correct: false
+      - en: "Remove the firewall to save load."
+        de: "Die Firewall entfernen, um Last zu sparen."
+        correct: false
+    explanation:
+      en: "Redundancy costs money and adds complexity, so it is justified by impact, and untested failover cannot be relied on."
+      de: "Redundanz kostet Geld und erhöht die Komplexität, wird also durch die Auswirkungen begründet, und ungetestetes Failover ist nicht verlässlich."
+    source: https://en.wikipedia.org/wiki/OSI_model
+  - id: nf-a-change
+    level: advanced
+    difficulty: 1620
+    type: single
+    stem:
+      en: "Which preparation is most important before changing a firewall rule set in production?"
+      de: "Welche Vorbereitung ist vor der Änderung eines Firewall-Regelsatzes im Betrieb am wichtigsten?"
+    options:
+      - en: "Know the dependent systems, define verification steps and have a tested rollback plan."
+        de: "Die abhängigen Systeme kennen, Prüfschritte festlegen und einen getesteten Rückfallplan haben."
+        correct: true
+      - en: "Apply the change without telling anyone to avoid panic."
+        de: "Die Änderung ohne Information anwenden, um Panik zu vermeiden."
+        correct: false
+      - en: "Delete the old documentation."
+        de: "Die alte Dokumentation löschen."
+        correct: false
+      - en: "Change several unrelated rules at once."
+        de: "Mehrere nicht zusammenhängende Regeln gleichzeitig ändern."
+        correct: false
+    explanation:
+      en: "Impact analysis, verification and rollback keep a faulty change from becoming a long outage."
+      de: "Auswirkungsanalyse, Prüfung und Rückfall verhindern, dass eine fehlerhafte Änderung zu einem langen Ausfall wird."
+    source: https://en.wikipedia.org/wiki/Firewall_(computing)

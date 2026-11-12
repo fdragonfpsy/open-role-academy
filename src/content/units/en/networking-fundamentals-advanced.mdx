@@ -1,0 +1,77 @@
+---
+id: networking-fundamentals-advanced
+competency: networking-fundamentals
+level: advanced
+title: "Segmentation and zero trust, monitoring and packet analysis, redundancy, documentation and change impact"
+objectives:
+  - Design network segmentation and explain the idea of zero trust.
+  - Describe monitoring and packet analysis and when each is appropriate.
+  - Identify single points of failure and propose redundancy.
+  - Keep network documentation current and use it for impact analysis.
+  - Assess the impact and rollback of a network change.
+minutes: 35
+resources:
+  - wikipedia-subnetwork
+  - wikipedia-firewall-computing
+  - wikipedia-osi-model
+  - wikipedia-de-osi-modell
+  - bsi-it-grundschutz
+status: ai-draft
+sources:
+  - title: "Subnetwork"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Subnetwork
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Firewall (computing)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Firewall_(computing)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "OSI model"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/OSI_model
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+At the advanced level you shape how the network is built and changed, not only how it is repaired. Decisions about segments, redundancy and documentation decide how far a fault or an attack can spread and how fast the team can recover.
+
+## Segmentation and zero trust
+
+**Segmentation** divides the network into zones with controlled paths between them, for example staff, servers, guests, building systems. If one zone is compromised, rules between zones limit how far an attacker can move. The idea of **zero trust** goes further: being "inside" the network is not enough to be trusted. Each request is checked based on identity, device state and context, and access is limited to what is needed. In practice, segmentation and strong identity controls complement each other. Start with the most valuable and most exposed systems rather than redesigning everything at once.
+
+## Monitoring and packet analysis
+
+**Monitoring** watches availability and performance over time: is a link up, how loaded is it, how long do answers take? It shows trends and raises alerts before users complain. **Packet analysis** captures and inspects the actual traffic and is a detailed tool for understanding a specific problem, such as a protocol that fails during setup. Because packets can contain personal or confidential data, capture only what is needed, only where authorised, and follow data protection rules. The layered OSI model helps to decide at which level to look.
+
+## Redundancy
+
+A **single point of failure** is a component whose failure stops a service: one router, one uplink, one switch, one DNS server. Redundancy adds a second path or device so that service continues. It must be tested, because untested failover often does not work when needed. Redundancy also adds complexity, so weigh it against the business impact of an outage and agree the target with the service owners.
+
+## Documentation and change impact
+
+Current documentation, such as network diagrams, address plans, VLAN lists and firewall rule purposes, turns "I think it goes through there" into facts. For every change, ask:
+
+1. Which systems, segments and users depend on the part being changed?
+2. What is the expected effect, and how will we verify it?
+3. What is the rollback, and when do we decide to use it?
+4. Who must be informed, and when is the maintenance window?
+
+Afterwards update the documentation in the same change. Outdated diagrams are a risk of their own.
+
+## Worked example
+
+The site has one internet uplink and one core switch. A planned change replaces a firewall rule set. You look at the documentation and find that the guest Wi-Fi and a building-control system share a segment, which is not intended. You propose splitting it into two segments with default-deny rules between them. For the change you list affected services, schedule an evening window, prepare the previous configuration for rollback and define test steps. Afterwards you update the diagram and record that the single uplink remains an accepted risk until budget for a second link is agreed.
+
+## Key takeaways
+
+- Segmentation limits spread; zero trust means no trust from location alone.
+- Monitoring shows trends; packet analysis explains specific faults and needs care with data.
+- Find and test around single points of failure.
+- Change impact analysis needs documentation, verification and a rollback plan.
