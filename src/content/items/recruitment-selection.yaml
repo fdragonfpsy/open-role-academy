@@ -1,0 +1,290 @@
+competency: recruitment-selection
+items:
+  - id: rs-f-process
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "Which description of the recruitment process matches the cited sources?"
+      de: "Welche Beschreibung des Einstellungsprozesses passt zu den zitierten Quellen?"
+    options:
+      - en: "An overall process of identifying, sourcing, screening, shortlisting, interviewing and hiring, which varies with employer and role"
+        de: "Ein Gesamtprozess aus Identifizieren, Ansprechen, Sichten, Vorauswählen, Interviewen und Einstellen, der je nach Arbeitgeber und Stelle variiert"
+        correct: true
+      - en: "A single interview after which the offer is made"
+        de: "Ein einziges Gespräch, nach dem das Angebot erfolgt"
+        correct: false
+      - en: "Only the writing and posting of a job ad"
+        de: "Nur das Schreiben und Veröffentlichen einer Stellenanzeige"
+        correct: false
+      - en: "A fixed legal procedure that is identical for every company"
+        de: "Ein gesetzlich festgelegtes Verfahren, das für jedes Unternehmen gleich ist"
+        correct: false
+    explanation:
+      en: "Recruitment covers several stages from identifying to hiring, and the process varies widely with employer, seniority and sector."
+      de: "Personalgewinnung umfasst mehrere Stufen vom Identifizieren bis zur Einstellung, und der Ablauf variiert stark nach Arbeitgeber, Seniorität und Branche."
+    source: https://en.wikipedia.org/wiki/Recruitment
+  - id: rs-f-documents
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Which document focuses on the characteristics a person needs to succeed in a role, weighted by relevance?"
+      de: "Welches Dokument konzentriert sich auf die Merkmale, die eine Person für den Erfolg in einer Stelle braucht, gewichtet nach Relevanz?"
+    options:
+      - en: "The requirement profile (Anforderungsprofil)"
+        de: "Das Anforderungsprofil"
+        correct: true
+      - en: "The job ad only"
+        de: "Nur die Stellenanzeige"
+        correct: false
+      - en: "The reporting line chart"
+        de: "Das Organigramm"
+        correct: false
+      - en: "The employment contract"
+        de: "Der Arbeitsvertrag"
+        correct: false
+    explanation:
+      en: "The requirement profile is the result of a requirements analysis and focuses on the characteristics of the person. The job description focuses on tasks and organisational placement."
+      de: "Das Anforderungsprofil ist das Ergebnis einer Anforderungsanalyse und richtet sich auf die Merkmale der Person. Die Stellenbeschreibung beschreibt Aufgaben und organisatorische Einordnung."
+    source: https://de.wikipedia.org/wiki/Anforderungsprofil
+  - id: rs-f-order
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "A manager asks you to place a job ad today, but nobody has defined what the role requires. What is the best order?"
+      de: "Eine Führungskraft bittet dich, heute eine Stellenanzeige zu schalten, aber niemand hat definiert, was die Stelle verlangt. Was ist die beste Reihenfolge?"
+    options:
+      - en: "Analyse the job, write a requirement profile, then draft the ad from it"
+        de: "Die Stelle analysieren, ein Anforderungsprofil schreiben und danach die Anzeige daraus ableiten"
+        correct: true
+      - en: "Publish a copy of an old ad and define criteria after the interviews"
+        de: "Eine alte Anzeige kopieren und Kriterien erst nach den Gesprächen festlegen"
+        correct: false
+      - en: "Wait for applications and then decide what to look for"
+        de: "Auf Bewerbungen warten und danach entscheiden, wonach man sucht"
+        correct: false
+      - en: "Copy the ad of a competitor without changes"
+        de: "Die Anzeige eines Wettbewerbers unverändert übernehmen"
+        correct: false
+    explanation:
+      en: "The profile comes from a job and requirements analysis. Defining it first gives you criteria to write the ad and to assess applications fairly."
+      de: "Das Profil entsteht aus einer Stellen- und Anforderungsanalyse. Wenn du es zuerst festlegst, hast du Kriterien für die Anzeige und die faire Bewertung der Bewerbungen."
+    source: https://de.wikipedia.org/wiki/Anforderungsprofil
+  - id: rs-f-fair-docs
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "A colleague wants to ask applicants about a private matter that has no obvious link to the job. What is the best HR response?"
+      de: "Ein Kollege möchte Bewerbende zu einem privaten Thema ohne erkennbaren Bezug zur Stelle befragen. Was ist die beste HR-Reaktion?"
+    options:
+      - en: "Check whether it relates to the job and ask the DPO or legal counsel before using such a question"
+        de: "Prüfen, ob es einen Bezug zur Stelle gibt, und vor der Nutzung die Datenschutzbeauftragten oder die Rechtsberatung fragen"
+        correct: true
+      - en: "Allow it because applicants can simply decline to answer"
+        de: "Zulassen, weil Bewerbende die Antwort ja verweigern können"
+        correct: false
+      - en: "Allow it if the manager feels strongly about it"
+        de: "Zulassen, wenn die Führungskraft es unbedingt will"
+        correct: false
+      - en: "Give a legal ruling yourself from memory"
+        de: "Selbst aus dem Gedächtnis eine rechtliche Bewertung abgeben"
+        correct: false
+    explanation:
+      en: "Criteria and questions should be relevant to the job. Which questions are allowed depends on current law and the case, and HR staff do not give legal advice."
+      de: "Kriterien und Fragen sollen einen Bezug zur Stelle haben. Welche Fragen zulässig sind, hängt vom aktuellen Recht und vom Fall ab, und Personalmitarbeitende geben keine Rechtsberatung."
+    source: https://en.wikipedia.org/wiki/Job_interview
+  - id: rs-p-ad
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "Which approach produces the most useful and inclusive job ad?"
+      de: "Welcher Ansatz führt zur nützlichsten und inklusivsten Stellenanzeige?"
+    options:
+      - en: "Describe the tasks and the job-relevant requirements, separate essential from nice to have, and state practical facts"
+        de: "Aufgaben und stellenbezogene Anforderungen beschreiben, Zwingendes von Wünschenswertem trennen und praktische Angaben nennen"
+        correct: true
+      - en: "Describe the ideal personality of the previous post holder"
+        de: "Die ideale Persönlichkeit der bisherigen Stelleninhaberin oder des bisherigen Stelleninhabers beschreiben"
+        correct: false
+      - en: "List as many requirements as possible to attract only strong candidates"
+        de: "So viele Anforderungen wie möglich auflisten, um nur starke Bewerbende anzuziehen"
+        correct: false
+      - en: "Keep the ad vague so nobody is excluded"
+        de: "Die Anzeige vage halten, damit niemand ausgeschlossen wird"
+        correct: false
+    explanation:
+      en: "An ad built from the profile tells candidates what the job involves and what is really required. Practical facts such as working hours and place of work help them decide."
+      de: "Eine aus dem Profil abgeleitete Anzeige sagt Bewerbenden, was die Stelle umfasst und was wirklich verlangt wird. Praktische Angaben wie Arbeitszeiten und Einsatzort helfen bei der Entscheidung."
+    source: https://de.wikipedia.org/wiki/Personalbeschaffung
+  - id: rs-p-channels
+    level: practitioner
+    difficulty: 1220
+    type: single
+    stem:
+      en: "Which statement about sourcing channels is supported by the cited sources?"
+      de: "Welche Aussage über Kanäle der Kandidatenansprache wird von den zitierten Quellen gestützt?"
+    options:
+      - en: "Relying only on employee referrals may reduce the diversity of the workforce"
+        de: "Sich nur auf Empfehlungen der Belegschaft zu stützen kann die Vielfalt der Belegschaft verringern"
+        correct: true
+      - en: "One channel is always best for every role"
+        de: "Ein Kanal ist für jede Stelle immer der beste"
+        correct: false
+      - en: "Internal recruitment never makes sense"
+        de: "Interne Besetzung ist nie sinnvoll"
+        correct: false
+      - en: "Employer branding makes sourcing unnecessary"
+        de: "Employer Branding macht Sourcing überflüssig"
+        correct: false
+    explanation:
+      en: "Referrals can improve fit, but sourcing only from existing networks may produce a homogeneous workforce. Use several channels and review who they reach."
+      de: "Empfehlungen können die Passung verbessern, doch eine Suche nur im bestehenden Umfeld kann zu einer homogenen Belegschaft führen. Nutze mehrere Kanäle und prüfe, wen sie erreichen."
+    source: https://en.wikipedia.org/wiki/Recruitment
+  - id: rs-p-screening
+    level: practitioner
+    difficulty: 1280
+    type: single
+    stem:
+      en: "You screen 40 applications. What is the fairest approach?"
+      de: "Du sichtest viele Bewerbungen. Was ist der fairste Ansatz?"
+    options:
+      - en: "Prepare a sheet with the essential criteria first and apply it to every application with notes on the evidence"
+        de: "Zuerst einen Bogen mit den zwingenden Kriterien vorbereiten und ihn mit Belegnotizen auf jede Bewerbung anwenden"
+        correct: true
+      - en: "Read the first ones carefully and skim the rest"
+        de: "Die ersten sorgfältig lesen und den Rest überfliegen"
+        correct: false
+      - en: "Pick the applications that feel most familiar"
+        de: "Die Bewerbungen auswählen, die sich am vertrautesten anfühlen"
+        correct: false
+      - en: "Decide on the criteria after seeing who applied"
+        de: "Die Kriterien erst festlegen, wenn man gesehen hat, wer sich beworben hat"
+        correct: false
+    explanation:
+      en: "Fixed criteria applied to every application make assessments comparable and explainable. The criteria come from the requirement profile."
+      de: "Feste Kriterien, die auf jede Bewerbung angewandt werden, machen Bewertungen vergleichbar und erklärbar. Die Kriterien stammen aus dem Anforderungsprofil."
+    source: https://de.wikipedia.org/wiki/Personalbeschaffung
+  - id: rs-p-structured
+    level: practitioner
+    difficulty: 1350
+    type: single
+    stem:
+      en: "Which set of elements best describes a structured interview according to the cited article?"
+      de: "Welche Elemente beschreiben laut zitiertem Artikel am besten ein strukturiertes Interview?"
+    options:
+      - en: "The same job-relevant questions for all candidates, each answer rated against an anchored scale, with notes"
+        de: "Dieselben stellenbezogenen Fragen für alle Bewerbenden, jede Antwort anhand einer verankerten Skala bewertet, mit Notizen"
+        correct: true
+      - en: "Free conversation with questions chosen on the spot and one overall impression at the end"
+        de: "Freies Gespräch mit spontan gewählten Fragen und einem Gesamteindruck am Ende"
+        correct: false
+      - en: "Different questions for each candidate so everyone can shine"
+        de: "Für jede Person andere Fragen, damit alle glänzen können"
+        correct: false
+      - en: "A written test replacing every conversation"
+        de: "Ein schriftlicher Test, der jedes Gespräch ersetzt"
+        correct: false
+    explanation:
+      en: "Structure means standardising content and evaluation: same questions, job relevance, per-answer ratings, anchored scales and notes."
+      de: "Struktur bedeutet, Inhalt und Bewertung zu standardisieren: gleiche Fragen, Stellenbezug, Bewertung je Antwort, verankerte Skalen und Notizen."
+    source: https://en.wikipedia.org/wiki/Job_interview
+  - id: rs-a-bias
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "Which statement about bias and structured interviews is consistent with the cited article?"
+      de: "Welche Aussage über Verzerrungen und strukturierte Interviews stimmt mit dem zitierten Artikel überein?"
+    options:
+      - en: "Structure is one possible way to decrease bias, but it should not be treated as a guarantee"
+        de: "Struktur ist eine Möglichkeit, Verzerrungen zu verringern, sollte aber nicht als Garantie gelten"
+        correct: true
+      - en: "Structured interviews remove all bias"
+        de: "Strukturierte Interviews beseitigen jede Verzerrung"
+        correct: false
+      - en: "Bias only occurs when interviewers dislike a candidate"
+        de: "Verzerrung tritt nur auf, wenn Interviewende jemanden nicht mögen"
+        correct: false
+      - en: "Bias is irrelevant if the interviewers are experienced"
+        de: "Verzerrung ist irrelevant, wenn die Interviewenden erfahren sind"
+        correct: false
+    explanation:
+      en: "The article names structured interviewing as one possible way to decrease bias; ratings can still be influenced by factors such as similarity or attractiveness."
+      de: "Der Artikel nennt strukturierte Interviews als eine Möglichkeit, Verzerrungen zu verringern; Bewertungen können dennoch von Faktoren wie Ähnlichkeit oder Attraktivität beeinflusst werden."
+    source: https://en.wikipedia.org/wiki/Job_interview
+  - id: rs-a-manager
+    level: advanced
+    difficulty: 1520
+    type: single
+    stem:
+      en: "Two finalists score similarly and the hiring manager prefers one because the person \"feels like a good fit\". What is the best next step?"
+      de: "Zwei Finalistinnen oder Finalisten liegen gleichauf, und die Führungskraft bevorzugt eine Person, weil sie \"gut passt\". Was ist der beste nächste Schritt?"
+    options:
+      - en: "Ask which criterion the impression relates to and compare the evidence per criterion, then record the reasons"
+        de: "Fragen, auf welches Kriterium sich der Eindruck bezieht, die Belege je Kriterium vergleichen und die Gründe festhalten"
+        correct: true
+      - en: "Follow the manager's feeling and skip the record"
+        de: "Dem Gefühl der Führungskraft folgen und die Dokumentation weglassen"
+        correct: false
+      - en: "Hire the person who interviewed last"
+        de: "Die Person einstellen, die zuletzt interviewt wurde"
+        correct: false
+      - en: "Add a new criterion that favours the preferred candidate"
+        de: "Ein neues Kriterium ergänzen, das die bevorzugte Person begünstigt"
+        correct: false
+    explanation:
+      en: "Tying the impression back to criteria and evidence reduces the risk of affinity-type distortions and gives you a record you can explain."
+      de: "Den Eindruck an Kriterien und Belege zurückzubinden verringert das Risiko von Verzerrungen wie dem Affinity Bias und liefert eine erklärbare Dokumentation."
+    source: https://de.wikipedia.org/wiki/Anforderungsprofil
+  - id: rs-a-data
+    level: advanced
+    difficulty: 1580
+    type: single
+    stem:
+      en: "A colleague asks how long rejected applicants' data may be kept. What is the best answer?"
+      de: "Ein Kollege fragt, wie lange die Daten abgelehnter Bewerbender gespeichert werden dürfen. Was ist die beste Antwort?"
+    options:
+      - en: "It depends on current law and company rules: ask the DPO or legal counsel and document the answer"
+        de: "Das hängt vom aktuellen Recht und von den Unternehmensregeln ab: die Datenschutzbeauftragten oder die Rechtsberatung fragen und die Antwort dokumentieren"
+        correct: true
+      - en: "Quote a period from memory"
+        de: "Eine Frist aus dem Gedächtnis nennen"
+        correct: false
+      - en: "Keep everything forever, just in case"
+        de: "Alles vorsorglich dauerhaft aufbewahren"
+        correct: false
+      - en: "Use the period of another company"
+        de: "Die Frist eines anderen Unternehmens übernehmen"
+        correct: false
+    explanation:
+      en: "Retention and information duties depend on current law and the case. HR staff do not give legal advice, so the DPO or legal counsel decides."
+      de: "Aufbewahrungs- und Informationspflichten hängen vom aktuellen Recht und vom Fall ab. Personalmitarbeitende geben keine Rechtsberatung, daher entscheiden die Datenschutzbeauftragten oder die Rechtsberatung."
+    source: https://de.wikipedia.org/wiki/Personalbeschaffung
+  - id: rs-a-measure
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "How should you use a measure such as time to fill?"
+      de: "Wie solltest du eine Kennzahl wie die Besetzungsdauer nutzen?"
+    options:
+      - en: "Define start and end points once and compare with your own earlier searches to find where candidates wait longest"
+        de: "Start- und Endpunkt einmal festlegen und mit eigenen früheren Besetzungen vergleichen, um zu sehen, wo Bewerbende am längsten warten"
+        correct: true
+      - en: "Compare it with a figure from the internet and aim to beat it"
+        de: "Mit einer Zahl aus dem Internet vergleichen und sie unterbieten wollen"
+        correct: false
+      - en: "Always shorten it, whatever happens to quality"
+        de: "Sie immer verkürzen, egal was mit der Qualität passiert"
+        correct: false
+      - en: "Change the definition every time so results look good"
+        de: "Die Definition jedes Mal ändern, damit die Ergebnisse gut aussehen"
+        correct: false
+    explanation:
+      en: "Consistent definitions and comparison with your own history make the measure meaningful; the cited article also notes that results of such efforts can be hard to measure."
+      de: "Einheitliche Definitionen und der Vergleich mit der eigenen Historie machen die Kennzahl aussagekräftig; der zitierte Artikel merkt außerdem an, dass der Ertrag solcher Maßnahmen schwer zu messen sein kann."
+    source: https://en.wikipedia.org/wiki/Employer_branding

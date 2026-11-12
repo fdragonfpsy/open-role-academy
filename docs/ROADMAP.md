@@ -60,7 +60,7 @@ For each competency: ≥1 unit per required level (en + de), ≥6 items across d
   - [x] financial-analysis-kpis
 - [ ] Human Resources content complete (sub-tasks below; publish the role when all are done; Germany/EU context, label it; no invented laws, deadlines or figures)
   - [x] employment-law-basics
-  - [ ] recruitment-selection
+  - [x] recruitment-selection
   - [ ] personnel-administration
   - [ ] hr-data-protection
   - [ ] onboarding-offboarding
