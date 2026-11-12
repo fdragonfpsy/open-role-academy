@@ -1,0 +1,290 @@
+competency: internal-controls-audit
+items:
+  - id: ica-f-sod
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "Which situation best shows a lack of segregation of duties?"
+      de: "Welche Situation zeigt am besten eine fehlende Funktionstrennung?"
+    options:
+      - en: "The same person enters a supplier invoice, releases the payment and posts the bank statement"
+        de: "Dieselbe Person erfasst eine Lieferantenrechnung, gibt die Zahlung frei und bucht den Kontoauszug"
+        correct: true
+      - en: "One person enters the invoice and a second person approves the payment"
+        de: "Eine Person erfasst die Rechnung und eine zweite Person genehmigt die Zahlung"
+        correct: false
+      - en: "A manager reviews a monthly report"
+        de: "Eine Führungskraft prüft einen Monatsbericht"
+        correct: false
+      - en: "A voucher is attached to every posting"
+        de: "Zu jeder Buchung ist ein Beleg angehängt"
+        correct: false
+    explanation:
+      en: "Segregation of duties means more than one person is needed to complete a task, so that authorisation, custody, record keeping and reconciliation are not all in one hand."
+      de: "Funktionstrennung heißt, dass mehr als eine Person für eine Aufgabe nötig ist, damit Genehmigung, Verwahrung, Aufzeichnung und Abstimmung nicht in einer Hand liegen."
+    source: https://en.wikipedia.org/wiki/Separation_of_duties
+  - id: ica-f-four-eyes
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "What is the purpose of the four-eyes principle?"
+      de: "Wozu dient das Vier-Augen-Prinzip?"
+    options:
+      - en: "A second, independent person checks to reduce the risk of errors and misuse"
+        de: "Eine zweite, unabhängige Person prüft, um das Risiko von Fehlern und Missbrauch zu senken"
+        correct: true
+      - en: "It makes sure every document is printed twice"
+        de: "Es stellt sicher, dass jedes Dokument zweimal ausgedruckt wird"
+        correct: false
+      - en: "It means two people may share one password"
+        de: "Es bedeutet, dass zwei Personen sich ein Passwort teilen dürfen"
+        correct: false
+      - en: "It replaces the need for any documentation"
+        de: "Es ersetzt jede Dokumentation"
+        correct: false
+    explanation:
+      en: "The four-eyes principle is a preventive control: certain actions need the agreeing decisions of at least two people, which lowers the risk of errors and misuse."
+      de: "Das Vier-Augen-Prinzip ist eine präventive Kontrolle: Bestimmte Vorgänge brauchen die gleichlautenden Entscheidungen von mindestens zwei Personen, was das Risiko von Fehlern und Missbrauch senkt."
+    source: https://de.wikipedia.org/wiki/Vier-Augen-Prinzip
+  - id: ica-f-voucher
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "Why should you attach the supporting voucher to a posting and note who did what and when?"
+      de: "Warum solltest du den Beleg an eine Buchung hängen und festhalten, wer was wann getan hat?"
+    options:
+      - en: "So that a knowledgeable third party can follow the transaction later"
+        de: "Damit eine sachkundige dritte Person den Vorgang später nachvollziehen kann"
+        correct: true
+      - en: "Because it makes the posting amount higher"
+        de: "Weil dadurch der Buchungsbetrag steigt"
+        correct: false
+      - en: "Only to fill the archive"
+        de: "Nur um das Archiv zu füllen"
+        correct: false
+      - en: "Because vouchers are needed only if an error has occurred"
+        de: "Weil Belege nur bei einem Fehler nötig sind"
+        correct: false
+    explanation:
+      en: "Documentation and an audit trail give documentary evidence of the sequence of activities, so others can reconstruct and check what happened."
+      de: "Dokumentation und Nachvollziehbarkeit liefern dokumentarische Belege über den Ablauf, sodass andere nachvollziehen und prüfen können, was geschehen ist."
+    source: https://en.wikipedia.org/wiki/Audit_trail
+  - id: ica-f-purpose
+    level: foundation
+    difficulty: 1050
+    type: multi
+    stem:
+      en: "Which objectives does internal control support? Select all that apply."
+      de: "Welche Ziele unterstützt interne Kontrolle? Wähle alle zutreffenden aus."
+    options:
+      - en: "Effective and efficient operations"
+        de: "Wirksame und wirtschaftliche Abläufe"
+        correct: true
+      - en: "Reliable financial reporting"
+        de: "Verlässliche Finanzberichterstattung"
+        correct: true
+      - en: "Compliance with laws, regulations and policies"
+        de: "Einhaltung von Gesetzen, Vorschriften und Richtlinien"
+        correct: true
+      - en: "A guarantee that no error will ever occur"
+        de: "Die Garantie, dass nie ein Fehler auftritt"
+        correct: false
+    explanation:
+      en: "Internal control gives reasonable, not absolute, assurance about operations, reporting and compliance."
+      de: "Interne Kontrolle bietet angemessene, keine absolute Sicherheit zu Abläufen, Berichterstattung und Regeleinhaltung."
+    source: https://en.wikipedia.org/wiki/Internal_control
+  - id: ica-p-preventive
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "Which control is a preventive control?"
+      de: "Welche Kontrolle ist eine präventive Kontrolle?"
+    options:
+      - en: "The system blocks a payment release above the user's approval limit"
+        de: "Das System sperrt eine Zahlungsfreigabe über der Freigabegrenze der Person"
+        correct: true
+      - en: "A weekly review finds duplicate payments after they were made"
+        de: "Eine wöchentliche Durchsicht findet Doppelzahlungen, nachdem sie erfolgt sind"
+        correct: false
+      - en: "An auditor reports on last year's errors"
+        de: "Eine Prüfung berichtet über Fehler des Vorjahres"
+        correct: false
+      - en: "A reconciliation uncovers a difference after month end"
+        de: "Eine Abstimmung deckt nach Monatsende eine Differenz auf"
+        correct: false
+    explanation:
+      en: "Preventive controls stop errors before they happen. The other options find problems after the fact, which makes them detective controls."
+      de: "Präventive Kontrollen verhindern Fehler, bevor sie entstehen. Die anderen Optionen finden Probleme im Nachhinein und sind damit detektive Kontrollen."
+    source: https://de.wikipedia.org/wiki/Internes_Kontrollsystem
+  - id: ica-p-matrix
+    level: practitioner
+    difficulty: 1250
+    type: multi
+    stem:
+      en: "Which information typically belongs in a row of a simple control matrix? Select all that apply."
+      de: "Welche Angaben gehören typischerweise in eine Zeile einer einfachen Kontrollmatrix? Wähle alle zutreffenden aus."
+    options:
+      - en: "The risk the control addresses"
+        de: "Das Risiko, dem die Kontrolle begegnet"
+        correct: true
+      - en: "Who performs the control and how often"
+        de: "Wer die Kontrolle durchführt und wie oft"
+        correct: true
+      - en: "Where the evidence is kept"
+        de: "Wo der Nachweis abgelegt wird"
+        correct: true
+      - en: "The private phone number of the auditor"
+        de: "Die private Telefonnummer der Prüfenden"
+        correct: false
+    explanation:
+      en: "A control matrix links risk, control, owner, frequency and evidence so that controls can be run and tested consistently."
+      de: "Eine Kontrollmatrix verbindet Risiko, Kontrolle, Verantwortliche, Häufigkeit und Nachweis, damit Kontrollen einheitlich durchgeführt und geprüft werden können."
+    source: https://de.wikipedia.org/wiki/Internes_Kontrollsystem
+  - id: ica-p-retention
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "How should you determine how long a type of business record must be kept?"
+      de: "Wie solltest du bestimmen, wie lange eine Art von Geschäftsunterlagen aufzubewahren ist?"
+    options:
+      - en: "Check the current rules of your country and your organisation's retention policy"
+        de: "Die aktuellen Vorschriften deines Landes und die Aufbewahrungsrichtlinie deiner Organisation prüfen"
+        correct: true
+      - en: "Use whatever period a colleague remembers"
+        de: "Den Zeitraum nehmen, an den sich jemand im Team erinnert"
+        correct: false
+      - en: "Keep everything for one year and then delete it"
+        de: "Alles ein Jahr aufbewahren und dann löschen"
+        correct: false
+      - en: "Retention periods are the same in every country"
+        de: "Aufbewahrungsfristen sind in jedem Land gleich"
+        correct: false
+    explanation:
+      en: "Retention periods come from binding rules, such as commercial and tax law, and from company policy. They differ by country and record type, so verify them."
+      de: "Aufbewahrungsfristen ergeben sich aus verbindlichen Regeln, etwa Handels- und Steuerrecht, und aus Unternehmensrichtlinien. Sie unterscheiden sich nach Land und Unterlagenart, deshalb prüfe sie."
+    source: https://de.wikipedia.org/wiki/Aufbewahrungsfrist
+  - id: ica-p-audit-request
+    level: practitioner
+    difficulty: 1350
+    type: single
+    stem:
+      en: "While preparing documents for an audit request you notice a supporting approval is missing. What is the best action?"
+      de: "Beim Zusammenstellen von Unterlagen für eine Prüfungsanfrage bemerkst du, dass eine Freigabe fehlt. Was ist die beste Reaktion?"
+    options:
+      - en: "Tell your manager, report the gap openly to the auditor and do not recreate the record"
+        de: "Deine Führungskraft informieren, die Lücke offen gegenüber den Prüfenden benennen und den Beleg nicht nachträglich erstellen"
+        correct: true
+      - en: "Create a back-dated approval so the file looks complete"
+        de: "Eine rückdatierte Freigabe erstellen, damit die Akte vollständig aussieht"
+        correct: false
+      - en: "Remove the item from the hand-over without telling anyone"
+        de: "Den Vorgang kommentarlos aus der Übergabe nehmen"
+        correct: false
+      - en: "Hand over everything in the archive, whether requested or not"
+        de: "Alles aus dem Archiv übergeben, ob angefordert oder nicht"
+        correct: false
+    explanation:
+      en: "Records must not be altered or recreated afterwards. Openly reporting the gap keeps the audit trail honest and lets the organisation decide on follow-up."
+      de: "Unterlagen dürfen nicht nachträglich verändert oder erstellt werden. Eine offene Meldung der Lücke hält die Nachvollziehbarkeit ehrlich und lässt die Organisation über das weitere Vorgehen entscheiden."
+    source: https://en.wikipedia.org/wiki/Audit_trail
+  - id: ica-a-design-op
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "A control is well designed on paper, but nobody performed it in the last three months. Which aspect is deficient?"
+      de: "Eine Kontrolle ist auf dem Papier gut gestaltet, wurde aber in den letzten drei Monaten von niemandem durchgeführt. Welcher Aspekt ist mangelhaft?"
+    options:
+      - en: "Operating effectiveness: the control was not actually performed"
+        de: "Wirksamkeit im Betrieb: die Kontrolle wurde nicht tatsächlich durchgeführt"
+        correct: true
+      - en: "Design: the control could never catch the problem"
+        de: "Ausgestaltung: die Kontrolle könnte das Problem nie erkennen"
+        correct: false
+      - en: "Nothing, because a documented control always works"
+        de: "Nichts, denn eine dokumentierte Kontrolle wirkt immer"
+        correct: false
+      - en: "Segregation of duties only"
+        de: "Ausschließlich die Funktionstrennung"
+        correct: false
+    explanation:
+      en: "Auditors assess whether controls are properly designed, implemented and working effectively. Here the design may be fine, but the control is not operating."
+      de: "Prüfende beurteilen, ob Kontrollen angemessen ausgestaltet, umgesetzt und wirksam sind. Hier mag die Ausgestaltung stimmen, aber die Kontrolle läuft nicht."
+    source: https://en.wikipedia.org/wiki/Internal_control
+  - id: ica-a-internal-audit
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "Which statement about internal audit is correct?"
+      de: "Welche Aussage zur Internen Revision ist richtig?"
+    options:
+      - en: "It is an independent, objective assurance and consulting activity and does not execute the audited activities"
+        de: "Sie ist eine unabhängige, objektive Prüfungs- und Beratungsaktivität und führt die geprüften Tätigkeiten nicht selbst aus"
+        correct: true
+      - en: "It is responsible for running the daily processes it audits"
+        de: "Sie ist für die tägliche Durchführung der Prozesse verantwortlich, die sie prüft"
+        correct: false
+      - en: "It replaces the need for management to maintain controls"
+        de: "Sie ersetzt die Pflicht des Managements, Kontrollen zu unterhalten"
+        correct: false
+      - en: "It only exists to approve payments"
+        de: "Sie dient nur dazu, Zahlungen freizugeben"
+        correct: false
+    explanation:
+      en: "Internal auditors advise management and the board and evaluate control, risk management and governance; running the activities stays with management."
+      de: "Interne Revisor*innen beraten Leitung und Aufsichtsgremium und bewerten Kontrolle, Risikomanagement und Unternehmensführung; die Durchführung bleibt bei der Leitung."
+    source: https://en.wikipedia.org/wiki/Internal_audit
+  - id: ica-a-finding
+    level: advanced
+    difficulty: 1600
+    type: multi
+    stem:
+      en: "Which elements make up an audit finding in the common '5 C's' structure? Select all that apply."
+      de: "Welche Elemente bilden eine Prüfungsfeststellung in der gängigen „5-C“-Struktur? Wähle alle zutreffenden aus."
+    options:
+      - en: "Condition: what was found"
+        de: "Condition: was festgestellt wurde"
+        correct: true
+      - en: "Criteria: the standard that was not met"
+        de: "Criteria: der Maßstab, der nicht erfüllt wurde"
+        correct: true
+      - en: "Corrective action agreed by management"
+        de: "Corrective action: die vom Management zugesagte Maßnahme"
+        correct: true
+      - en: "The auditor's personal opinion of the staff involved"
+        de: "Die persönliche Meinung der Prüfenden über die beteiligten Mitarbeitenden"
+        correct: false
+    explanation:
+      en: "A finding names condition, criteria, cause, consequence and corrective action. Personal opinions about staff are not part of that structure."
+      de: "Eine Feststellung nennt Condition, Criteria, Cause, Consequence und Corrective action. Persönliche Meinungen über Mitarbeitende gehören nicht zu dieser Struktur."
+    source: https://en.wikipedia.org/wiki/Internal_audit
+  - id: ica-a-evidence-access
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "Which evidence is generally strongest for proving who released a payment?"
+      de: "Welcher Nachweis ist im Allgemeinen am stärksten, um zu belegen, wer eine Zahlung freigegeben hat?"
+    options:
+      - en: "A system audit trail that normal users cannot change"
+        de: "Ein Systemprotokoll (Audit Trail), das normale Nutzende nicht ändern können"
+        correct: true
+      - en: "An undated screenshot sent by email"
+        de: "Ein undatierter Screenshot per E-Mail"
+        correct: false
+      - en: "A spreadsheet that anyone can edit"
+        de: "Eine Tabelle, die jede Person bearbeiten kann"
+        correct: false
+      - en: "A colleague's recollection a year later"
+        de: "Die Erinnerung einer Kollegin oder eines Kollegen ein Jahr später"
+        correct: false
+    explanation:
+      en: "An audit trail gives documentary evidence of activities and should not be stoppable or changeable by normal users, which makes it hard to tamper with."
+      de: "Ein Audit Trail liefert dokumentarische Belege über Aktivitäten und sollte von normalen Nutzenden weder gestoppt noch geändert werden können, daher ist er schwer zu manipulieren."
+    source: https://en.wikipedia.org/wiki/Audit_trail
