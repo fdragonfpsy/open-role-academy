@@ -2,6 +2,11 @@
 
 Format: date — decision — reason — alternatives considered.
 
+## 2026-11-12 — Evening/night-only work windows, weekly QA run, accounts planned (owner decisions)
+- **Decision:** No agent work 08:00–20:00 on any day (CLAUDE.md §11). A separate weekly QA run audits merged work and files `qa` issues (§13). Accounts (Supabase Auth + Postgres, EU) and a catalog move into Phase 3b, ahead of scaling to more roles.
+- **Reason:** The owner needs his usage during the day. A fresh-context reviewer catches errors the builder repeats. Accounts and a catalog are what turn the site into a usable learning platform; more roles are worth less without them.
+- **Alternatives:** A manager agent approving every PR (doubles usage and blocks automerge); accounts built on Cloudflare D1 with self-written auth (more security risk, still needs an email sender).
+
 ## 2026-11-12 — Time-boxed work windows instead of a usage-percentage rule (owner decision)
 - **Decision:** Runs work continuously inside fixed windows (CLAUDE.md §11): weekdays 20:00–23:45 only, weekends longer, Sunday stop before the 18:00 weekly reset. Model choice per task via subagents (§12).
 - **Reason:** The owner needs most of the weekly Pro usage for his own weekday work. The agent cannot read the plan's usage meter, so a rule like "use at most 14–20 % per weekday" cannot be enforced from inside a run; time windows are the enforceable proxy.
