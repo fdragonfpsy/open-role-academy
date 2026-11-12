@@ -61,15 +61,15 @@ For each competency: ≥1 unit per required level (en + de), ≥6 items across d
 
 ## Phase 3b — Catalog, accounts and profile
 
-**Paused by owner (2026-11-12):** only the catalog task is active. Skip every ⏸ task (accounts, auth, profile, sync) until the owner un-pauses it; do not build them behind a flag either. Planned design for later: real accounts with email + password, email confirmation and password reset; a short profile; a personal dashboard; a searchable catalog. Stack: Cloudflare Pages (site) + Supabase free tier (Auth + Postgres, EU region, Row Level Security). No credit card for anyone; no paid services.
+**Active again (owner decision 2026-11-12).** Design: real accounts with email + password, email confirmation and password reset; a short profile; a personal dashboard; a searchable catalog. Stack: Cloudflare Pages (site) + Supabase free tier (Auth + Postgres, EU region, Row Level Security). No credit card for anyone; no paid services.
 
 - [ ] Catalog: browse all published roles, competencies and units with filters (role, level, language) and full-text search via Pagefind (static, open source); works without an account
-- [ ] ⏸ Supabase schema as SQL migrations in `supabase/migrations/` (profiles, progress, item responses), RLS so every user can only read/write their own rows; account deletion and data export (GDPR Art. 15/17/20); no data model for employer names
-- [ ] ⏸ Auth UI (en/de): sign up, email confirmation, sign in, sign out, forgot/reset password, delete account; anonymous use keeps working with localStorage, and signing in offers to import local progress
-- [ ] ⏸ Profile onboarding (optional fields, data minimisation): role family, experience level, learning goal, weekly time budget, preferred language; no employer, no birth date
-- [ ] ⏸ Dashboard reads/writes progress from Supabase when signed in, localStorage otherwise
-- [ ] ⏸ Privacy policy and imprint updated for accounts (processors: Cloudflare, Supabase, email sender; legal bases; retention; rights); keep `{{…}}` placeholders for owner data
-- [ ] ⏸ **Blocked on owner:** email sender + domain decision, Supabase project, GitHub secrets for migrations (see `docs/BLOCKERS.md`). Until then, build everything above behind a feature flag that is off in production.
+- [ ] Supabase schema as SQL migrations in `supabase/migrations/` (applied by the owner via the Supabase SQL editor or GitHub integration until automated; note in STATUS which migration is pending) (profiles, progress, item responses), RLS so every user can only read/write their own rows; account deletion and data export (GDPR Art. 15/17/20); no data model for employer names
+- [ ] Auth UI (en/de): sign up, email confirmation, sign in, sign out, forgot/reset password, delete account; anonymous use keeps working with localStorage, and signing in offers to import local progress
+- [ ] Profile onboarding (optional fields, data minimisation): role family, experience level, learning goal, weekly time budget, preferred language; no employer, no birth date
+- [ ] Dashboard reads/writes progress from Supabase when signed in, localStorage otherwise
+- [ ] Privacy policy and imprint updated for accounts (processors: Cloudflare, Supabase, email sender; legal bases; retention; rights); keep `{{…}}` placeholders for owner data
+- [ ] Email sending is configured in Supabase via Brevo SMTP (free tier, 300/day, sender is a verified freemail address, no own domain). Expect some mail in spam: every screen that waits for an email shows a hint to check the spam folder. Also offer sign-in via email link (magic link) next to password sign-in. Do not change SMTP settings; they are owner-managed in the Supabase dashboard.
 
 ## Phase 4 — Scale to all role families
 
