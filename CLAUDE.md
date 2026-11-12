@@ -200,4 +200,4 @@ A separate weekly run reviews the builder's work with fresh context and steers t
 
 **Builder rule**: at the start of every run, fix open `qa` issues labeled `blocker` or `fix` before new roadmap work.
 
-**Models**: sonnet for review and measurement, opus only for disputed facts or engine logic (§12).
+**Models**: the weekly review runs on **opus** (medium effort) and does the review and judgement itself; do not delegate the review to sonnet subagents. Use **haiku** subagents only for mechanical work (link checks, counting PRs and commits, running checks). The nightly builder stays on sonnet (§12); a different model for the reviewer reduces shared blind spots.
