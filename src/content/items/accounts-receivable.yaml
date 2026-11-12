@@ -1,0 +1,290 @@
+competency: accounts-receivable
+items:
+  - id: ar-f-asset
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "What is accounts receivable?"
+      de: "Was sind Forderungen aus Lieferungen und Leistungen (Debitoren)?"
+    options:
+      - en: "Money customers owe the business for goods or services delivered on credit, shown as an asset"
+        de: "Geld, das Kundschaft dem Unternehmen für auf Rechnung gelieferte Waren oder Leistungen schuldet, ausgewiesen als Vermögenswert"
+        correct: true
+      - en: "Money the business owes to its suppliers"
+        de: "Geld, das das Unternehmen seinen Lieferanten schuldet"
+        correct: false
+      - en: "Cash already received from customers"
+        de: "Bargeld, das bereits von der Kundschaft eingegangen ist"
+        correct: false
+      - en: "The company's yearly profit"
+        de: "Der Jahresgewinn des Unternehmens"
+        correct: false
+    explanation:
+      en: "Accounts receivable is money owed by customers and is an asset on the balance sheet. Money owed to suppliers is accounts payable."
+      de: "Forderungen sind Geld, das Kundschaft schuldet, und ein Vermögenswert in der Bilanz. Geld, das Lieferanten zusteht, sind Verbindlichkeiten."
+    source: https://en.wikipedia.org/wiki/Accounts_receivable
+  - id: ar-f-flow
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Which sequence describes the usual order-to-cash flow?"
+      de: "Welche Reihenfolge beschreibt den üblichen Order-to-Cash-Ablauf?"
+    options:
+      - en: "Order, delivery, invoice, payment, posting and matching"
+        de: "Bestellung, Lieferung, Rechnung, Zahlung, Buchung und Zuordnung"
+        correct: true
+      - en: "Payment, order, invoice, delivery"
+        de: "Zahlung, Bestellung, Rechnung, Lieferung"
+        correct: false
+      - en: "Invoice, order, posting, delivery"
+        de: "Rechnung, Bestellung, Buchung, Lieferung"
+        correct: false
+      - en: "Delivery, posting, order, payment"
+        de: "Lieferung, Buchung, Bestellung, Zahlung"
+        correct: false
+    explanation:
+      en: "A sale starts with the order, is delivered, invoiced, paid, and the payment is posted and matched to the invoice."
+      de: "Ein Verkauf beginnt mit der Bestellung, wird geliefert, in Rechnung gestellt und bezahlt; die Zahlung wird gebucht und der Rechnung zugeordnet."
+    source: https://en.wikipedia.org/wiki/Accounts_receivable
+  - id: ar-f-invoice
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "Why should you check an invoice before sending it to the customer?"
+      de: "Warum solltest du eine Rechnung vor dem Versand an die Kundschaft prüfen?"
+    options:
+      - en: "An error usually delays payment until it is fixed"
+        de: "Ein Fehler verzögert die Zahlung in der Regel, bis er behoben ist"
+        correct: true
+      - en: "Invoices are never allowed to be corrected"
+        de: "Rechnungen dürfen nie korrigiert werden"
+        correct: false
+      - en: "The bank requires a check before every transfer"
+        de: "Die Bank verlangt vor jeder Überweisung eine Prüfung"
+        correct: false
+      - en: "The check replaces the payment terms"
+        de: "Die Prüfung ersetzt die Zahlungsbedingungen"
+        correct: false
+    explanation:
+      en: "Customers often hold back payment when an invoice contains errors. Correct customer, description, amounts and terms speed up payment. Required details differ by country."
+      de: "Kundschaft hält Zahlungen oft zurück, wenn eine Rechnung Fehler enthält. Richtige Angaben zu Kunde, Beschreibung, Beträgen und Bedingungen beschleunigen die Zahlung. Pflichtangaben unterscheiden sich je Land."
+    source: https://en.wikipedia.org/wiki/Invoice
+  - id: ar-f-openitem
+    level: foundation
+    difficulty: 1040
+    type: single
+    stem:
+      en: "What does an open items list show?"
+      de: "Was zeigt eine Offene-Posten-Liste?"
+    options:
+      - en: "Invoices that are not yet paid in full, with amounts and due dates"
+        de: "Rechnungen, die noch nicht vollständig bezahlt sind, mit Beträgen und Fälligkeiten"
+        correct: true
+      - en: "Only invoices that were paid last month"
+        de: "Nur Rechnungen, die im Vormonat bezahlt wurden"
+        correct: false
+      - en: "The company's bank balance"
+        de: "Den Kontostand des Unternehmens"
+        correct: false
+      - en: "All suppliers of the company"
+        de: "Alle Lieferanten des Unternehmens"
+        correct: false
+    explanation:
+      en: "An open item is an invoice not yet fully paid. The list helps you see what is unpaid and when it is due."
+      de: "Ein offener Posten ist eine noch nicht vollständig bezahlte Rechnung. Die Liste zeigt, was unbezahlt ist und wann es fällig wird."
+    source: https://de.wikipedia.org/wiki/Debitorenbuchhaltung
+  - id: ar-p-partial
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "A customer pays only part of an invoice. What do you do?"
+      de: "Eine Kundin zahlt nur einen Teil einer Rechnung. Was tust du?"
+    options:
+      - en: "Clear only the amount received, leave the rest open and find out why"
+        de: "Nur den eingegangenen Betrag ausgleichen, den Rest offen lassen und die Ursache klären"
+        correct: true
+      - en: "Close the whole invoice"
+        de: "Die ganze Rechnung schließen"
+        correct: false
+      - en: "Delete the invoice and issue a new one"
+        de: "Die Rechnung löschen und eine neue erstellen"
+        correct: false
+      - en: "Send the case straight to collections"
+        de: "Den Fall sofort ans Inkasso geben"
+        correct: false
+    explanation:
+      en: "A partial payment settles only its own amount. The remainder stays open until you know whether it is a dispute, a deduction or a mistake."
+      de: "Eine Teilzahlung gleicht nur ihren Betrag aus. Der Rest bleibt offen, bis klar ist, ob es ein Streitfall, ein Abzug oder ein Versehen ist."
+    source: https://en.wikipedia.org/wiki/Accounts_receivable
+  - id: ar-p-unref
+    level: practitioner
+    difficulty: 1220
+    type: single
+    stem:
+      en: "A payment arrives without a usable reference. What is the best approach?"
+      de: "Eine Zahlung geht ohne brauchbaren Verwendungszweck ein. Was ist das beste Vorgehen?"
+    options:
+      - en: "Post it to a clearing account, research via amount and sender, and ask the customer if needed"
+        de: "Auf ein Verrechnungskonto buchen, über Betrag und Absender recherchieren und bei Bedarf bei der Kundschaft nachfragen"
+        correct: true
+      - en: "Allocate it to the customer with the most open items"
+        de: "Dem Kunden mit den meisten offenen Posten zuordnen"
+        correct: false
+      - en: "Refund it immediately without checking"
+        de: "Sofort ohne Prüfung zurückzahlen"
+        correct: false
+      - en: "Ignore it until the customer complains"
+        de: "Ignorieren, bis die Kundschaft sich meldet"
+        correct: false
+    explanation:
+      en: "Never allocate on a guess. A clearing account keeps the money visible while you find the right item."
+      de: "Ordne nie auf Verdacht zu. Ein Verrechnungskonto hält das Geld sichtbar, bis du den richtigen Posten gefunden hast."
+    source: https://de.wikipedia.org/wiki/Debitorenbuchhaltung
+  - id: ar-p-dunning
+    level: practitioner
+    difficulty: 1280
+    type: single
+    stem:
+      en: "Which reminder is best for a first, slightly overdue invoice?"
+      de: "Welche Erinnerung passt am besten zu einer ersten, leicht überfälligen Rechnung?"
+    options:
+      - en: "A friendly, factual reminder with invoice number, amount, due date and an offer to help"
+        de: "Eine freundliche, sachliche Erinnerung mit Rechnungsnummer, Betrag, Fälligkeit und Hilfsangebot"
+        correct: true
+      - en: "A threat of legal action"
+        de: "Eine Androhung rechtlicher Schritte"
+        correct: false
+      - en: "No contact until three months have passed"
+        de: "Kein Kontakt, bis drei Monate vergangen sind"
+        correct: false
+      - en: "A public list of late customers"
+        de: "Eine öffentliche Liste säumiger Kundschaft"
+        correct: false
+    explanation:
+      en: "A friendly first reminder assumes an oversight and keeps the relationship intact. Levels, timing and fees depend on company policy and your country's rules."
+      de: "Eine freundliche erste Erinnerung geht von einem Versehen aus und erhält die Beziehung. Stufen, Fristen und Gebühren hängen von Unternehmensrichtlinie und den Regeln deines Landes ab."
+    source: https://en.wikipedia.org/wiki/Dunning_letter
+  - id: ar-p-credit
+    level: practitioner
+    difficulty: 1340
+    type: single
+    stem:
+      en: "A customer is right about a billing error. How should the receivable be corrected?"
+      de: "Eine Kundin hat bei einem Rechnungsfehler recht. Wie wird die Forderung korrigiert?"
+    options:
+      - en: "Issue a credit note that reduces or cancels the receivable"
+        de: "Eine Gutschrift erstellen, die die Forderung mindert oder aufhebt"
+        correct: true
+      - en: "Delete the original invoice from the system"
+        de: "Die ursprüngliche Rechnung aus dem System löschen"
+        correct: false
+      - en: "Ask the customer to overpay next time"
+        de: "Die Kundschaft bitten, beim nächsten Mal mehr zu zahlen"
+        correct: false
+      - en: "Leave the item open forever"
+        de: "Den Posten dauerhaft offen lassen"
+        correct: false
+    explanation:
+      en: "A credit note documents the correction and keeps the audit trail. Deleting invoices hides what happened."
+      de: "Eine Gutschrift dokumentiert die Korrektur und erhält die Nachvollziehbarkeit. Das Löschen von Rechnungen verschleiert den Vorgang."
+    source: https://de.wikipedia.org/wiki/Debitorenbuchhaltung
+  - id: ar-a-limit
+    level: advanced
+    difficulty: 1480
+    type: single
+    stem:
+      en: "What is a customer credit limit?"
+      de: "Was ist ein Kreditlimit für Kundschaft?"
+    options:
+      - en: "A cap on the open amount the company allows for that customer"
+        de: "Eine Obergrenze für den offenen Betrag, den das Unternehmen für diese Kundschaft zulässt"
+        correct: true
+      - en: "The maximum discount a customer may take"
+        de: "Der höchste Rabatt, den Kundschaft nutzen darf"
+        correct: false
+      - en: "The number of invoices per year"
+        de: "Die Zahl der Rechnungen pro Jahr"
+        correct: false
+      - en: "A bank's interest rate"
+        de: "Der Zinssatz einer Bank"
+        correct: false
+    explanation:
+      en: "A credit limit controls exposure to non-payment. It should follow a documented policy and be reviewed regularly."
+      de: "Ein Kreditlimit steuert das Ausfallrisiko. Es sollte einer dokumentierten Richtlinie folgen und regelmäßig überprüft werden."
+    source: https://en.wikipedia.org/wiki/Accounts_receivable
+  - id: ar-a-dso
+    level: advanced
+    difficulty: 1540
+    type: single
+    stem:
+      en: "What should you do before comparing DSO figures from two companies?"
+      de: "Was solltest du tun, bevor du DSO-Werte zweier Unternehmen vergleichst?"
+    options:
+      - en: "Check how each figure is defined and calculated"
+        de: "Prüfen, wie jeder Wert definiert und berechnet wurde"
+        correct: true
+      - en: "Assume the formula is always identical"
+        de: "Davon ausgehen, dass die Formel immer identisch ist"
+        correct: false
+      - en: "Ignore the period used"
+        de: "Den verwendeten Zeitraum ignorieren"
+        correct: false
+      - en: "Use DSO as the only measure of credit quality"
+        de: "DSO als einziges Maß für Kreditqualität nutzen"
+        correct: false
+    explanation:
+      en: "DSO is a measure of how long collection takes on average, but formulas and periods vary. Without a clear definition, comparisons mislead."
+      de: "DSO misst, wie lange das Einziehen im Durchschnitt dauert, doch Formeln und Zeiträume unterscheiden sich. Ohne klare Definition führen Vergleiche in die Irre."
+    source: https://en.wikipedia.org/wiki/Days_sales_outstanding
+  - id: ar-a-fake
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "A customer emails a screenshot claiming the transfer was made, and asks for the goods to be released. What is the right check?"
+      de: "Eine Kundin mailt einen Screenshot, die Überweisung sei erfolgt, und bittet um Freigabe der Ware. Was ist die richtige Prüfung?"
+    options:
+      - en: "Verify the payment on your own bank statement before releasing"
+        de: "Die Zahlung vor der Freigabe am eigenen Kontoauszug prüfen"
+        correct: true
+      - en: "Release the goods because the screenshot looks real"
+        de: "Die Ware freigeben, weil der Screenshot echt aussieht"
+        correct: false
+      - en: "Ask the customer to resend the screenshot"
+        de: "Die Kundschaft bitten, den Screenshot erneut zu senden"
+        correct: false
+      - en: "Trust the email sender name"
+        de: "Dem Absendernamen der E-Mail vertrauen"
+        correct: false
+    explanation:
+      en: "Screenshots and emails can be forged. Only your own bank record proves that money arrived."
+      de: "Screenshots und E-Mails lassen sich fälschen. Nur dein eigener Bankbeleg beweist, dass Geld eingegangen ist."
+    source: https://en.wikipedia.org/wiki/Separation_of_duties
+  - id: ar-a-handoff
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "What should be checked before handing a claim to a collection agency?"
+      de: "Was solltest du vor der Übergabe einer Forderung an ein Inkassounternehmen prüfen?"
+    options:
+      - en: "That the claim is undisputed and documented, and that sales knows"
+        de: "Dass die Forderung unstrittig und dokumentiert ist und der Vertrieb Bescheid weiß"
+        correct: true
+      - en: "Nothing; handoff should be done as early as possible"
+        de: "Nichts; die Übergabe sollte so früh wie möglich erfolgen"
+        correct: false
+      - en: "That the customer has not yet received any reminder"
+        de: "Dass die Kundschaft noch keine Mahnung erhalten hat"
+        correct: false
+      - en: "That the invoice number is short"
+        de: "Dass die Rechnungsnummer kurz ist"
+        correct: false
+    explanation:
+      en: "A disputed or poorly documented claim wastes effort and harms relationships. Debt collection is often regulated, so check your country's rules."
+      de: "Eine strittige oder schlecht dokumentierte Forderung kostet Aufwand und schadet Beziehungen. Inkasso ist oft reguliert; prüfe die Regeln deines Landes."
+    source: https://en.wikipedia.org/wiki/Debt_collection

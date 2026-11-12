@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-12 — Phase 2: Finance & Accounting content for accounts-receivable
+
+**Done**
+- `accounts-payable` merged ([#31](https://github.com/fdragonfpsy/open-role-academy/pull/31)).
+- `accounts-receivable`: 6 units (3 levels x en/de), 12 items, 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0), 3 reused. Amounts invented and labelled as illustration; no rates or statutory deadlines (units say "check your country's rules").
+- Levels: foundation = order-to-cash, correct invoices, posting payments, open items; practitioner = payment matching, aging list, dunning tone, disputes/credit notes; advanced = credit limits and risk, DSO, bad-debt allowance concept, collections handoff, fraud.
+
+**Counts:** roles 4 (2 published, 2 draft) · competencies 38 · units 114 · items 228 · resources 138
+
+**Next:** `reconciliation-closing`, then the remaining Finance & Accounting competencies in roadmap order.
+
 ## 2026-11-12 — Phase 2: Finance & Accounting content for accounts-payable
 
 **Done**
