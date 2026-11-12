@@ -1,5 +1,17 @@
 # Status
 
+## 2026-11-12 — Phase 2: Human Resources content for recruitment-selection
+
+**Done**
+- `employment-law-basics` merged ([#41](https://github.com/fdragonfpsy/open-role-academy/pull/41)).
+- `recruitment-selection`: 6 units (3 levels x en/de), 12 items, 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0). No legal numbers (no § or Art., retention periods or statistics); retention and data handling say to check current law, the DPO or legal counsel.
+- Levels: foundation = hiring process, requirement profile vs job ad, documenting; practitioner = inclusive job ads, sourcing, fair screening, structured interviews with a rubric; advanced = bias and structure, documented decisions, hiring managers, applicant data (concept), process measurement, candidate experience.
+- Review note for humans: "score before group discussion", the time-to-hire definition, inclusive-ad advice and the rubric tip are general practice or own wording, not from a cited page.
+
+**Counts:** roles 4 (3 published, 1 draft) · competencies 38 · units 174 · items 348 · resources 208
+
+**Next:** `personnel-administration`, then the remaining Human Resources competencies in roadmap order.
+
 ## 2026-11-12 — Phase 2: Human Resources started (employment-law-basics)
 
 **Done**
