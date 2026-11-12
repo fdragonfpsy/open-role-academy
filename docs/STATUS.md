@@ -1,5 +1,17 @@
 # Status
 
+## 2026-11-12 — Phase 2: Finance & Accounting content for internal-controls-audit
+
+**Done**
+- `budgeting-forecasting` merged ([#37](https://github.com/fdragonfpsy/open-role-academy/pull/37)).
+- `internal-controls-audit`: 6 units (3 levels x en/de), 12 items, 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0), 5 reused. No retention periods, § numbers or thresholds; retention text names only HGB and AO as the cited German page does; examples use invented amounts.
+- Levels: foundation = internal controls, segregation of duties, four-eyes, documentation; practitioner = preventive vs detective controls, control matrix idea, approval limits, retention concept, audit requests; advanced = control design/testing, internal vs external audit, findings and remediation, evidence quality, IT/access controls, fraud-risk awareness.
+- Review note for humans: fraud warning signs, control-matrix columns, audit-request steps and "never split a payment to stay under a limit" are general practice without a cited page.
+
+**Counts:** roles 4 (2 published, 2 draft) · competencies 38 · units 150 · items 300 · resources 180
+
+**Next:** `cost-accounting`, `financial-analysis-kpis`, then publish the Finance & Accounting role.
+
 ## 2026-11-12 — Phase 2: Finance & Accounting content for budgeting-forecasting
 
 **Done**

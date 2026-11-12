@@ -1,0 +1,99 @@
+---
+id: internal-controls-audit-advanced
+competency: internal-controls-audit
+level: advanced
+title: "Designing and testing controls: audit roles, findings and remediation, evidence quality, IT access controls and fraud-risk awareness"
+objectives:
+  - "Explain how a control is designed against an objective and how its design and operation are tested."
+  - "Distinguish the roles of internal and external audit."
+  - "Describe the elements of an audit finding and a remediation plan."
+  - "Judge the quality of audit evidence."
+  - "Explain access and change controls in finance systems and name fraud-risk warning signs."
+minutes: 35
+resources:
+  - wikipedia-internal-control
+  - wikipedia-internal-audit
+  - wikipedia-audit-trail
+  - wikipedia-role-based-access-control
+  - wikipedia-access-control
+status: ai-draft
+sources:
+  - title: "Internal control"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Internal_control
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Internal audit"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Internal_audit
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Audit trail"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Audit_trail
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Role-based access control"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Role-based_access_control
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Access control"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Access_control
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+Advanced practitioners lead topics: they decide which controls a process needs, check that controls really work and respond when an audit finds a gap. The Internal control article is a good map for this.
+
+## Control design and testing
+
+Start from the **objective**. The article gives an example: the objective "payments are made only for authorised products and services received" is supported by the procedure "the payable system compares the purchase order, receiving record and vendor invoice prior to authorising payment". It also describes control *precision*: a control that directly mitigates a risk is more precise than one with only an indirect effect, and several controls with different precision may together cover one risk. Auditors, it says, assess whether controls are properly **designed**, **implemented** and **working effectively**. Design asks "would this control catch the problem?"; operation asks "was it actually performed, every time?". Remember the limits: internal control gives reasonable, not absolute, assurance, and management may be able to override controls.
+
+## Internal and external audit
+
+Per the Internal audit article, internal auditing is an independent, objective assurance and consulting activity that helps evaluate and improve risk management, control and governance. Internal auditors are not responsible for executing company activities; they advise management and the board, and the function typically reports to the audit committee. According to the Internal control article, the external auditor tests the controls involved in financial reporting and is required to give an opinion on them for the organisations the article describes (public companies). Know who is asking before you answer: scope, independence and consequences differ.
+
+## Findings and remediation
+
+The Internal audit article describes findings with five elements, the "5 C's": condition (what was found), criteria (the standard not met), cause, consequence and corrective action (what management agrees to do and by when). It adds that follow-up on reported findings happens at appropriate intervals. As the process owner you contribute a realistic action plan with an owner and date, fix the cause and not only the symptom, and keep proof that the fix works.
+
+## Evidence quality
+
+Audit evidence is stronger when it is complete, traceable and hard to change after the fact. The Audit trail article states that an audit trail provides documentary evidence of the sequence of activities, and that normal users should not be able to stop or change the trail. A screenshot without date and source, or a spreadsheet anyone could edit, is weaker evidence than a system log or a signed, dated approval.
+
+## IT and access controls in finance systems
+
+The Internal control article lists IT general controls: security (restricting access to authorised personnel, for example by passwords and review of access logs) and change management (separating production and test, testing changes before acceptance). Role-based access control assigns permissions to roles, and users get roles; this supports segregation of duties because conflicting roles can be kept apart. Regularly review who holds which access.
+
+## Fraud-risk awareness
+
+Internal control plays an important role in detecting and preventing fraud. Warning signs are process-based rather than personal: one person controlling a whole process, controls that are regularly skipped, missing documents, or management overriding controls. Raise concerns through the channel your organisation provides.
+
+## Worked example
+
+Illustration only; all details are invented. An audit finds that two accountants can both create vendors and release payments.
+
+- Condition: 2 of 6 users hold both roles.
+- Criteria: company policy requires separate roles.
+- Cause: roles were granted for holiday cover and never removed.
+- Consequence: a vendor could be created and paid by one person.
+- Corrective action: remove one role, add a quarterly access review, owner: finance systems lead.
+
+Evidence for closure: the dated access report after the change and the first review record.
+
+## Key takeaways
+
+- Design controls from the objective; test both design and operation.
+- Internal audit advises and assures independently; external audit gives its opinion on reporting.
+- A good finding names condition, criteria, cause, consequence and corrective action.
+- Prefer evidence that is complete, dated, traceable and tamper-resistant.
+- Access and change controls in finance systems support segregation of duties; review them regularly.

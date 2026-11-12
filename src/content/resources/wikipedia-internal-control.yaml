@@ -1,0 +1,13 @@
+id: wikipedia-internal-control
+url: https://en.wikipedia.org/wiki/Internal_control
+title: "Internal control"
+provider: Wikipedia
+language: en
+format: article
+minutes: 20
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-12
+mode: link
+competencies: [internal-controls-audit]
+levels: [foundation, practitioner, advanced]
