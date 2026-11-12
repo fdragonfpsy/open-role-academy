@@ -56,7 +56,7 @@ For each competency: ≥1 unit per required level (en + de), ≥6 items across d
   - [x] cash-liquidity-management
   - [x] budgeting-forecasting
   - [x] internal-controls-audit
-  - [ ] cost-accounting
+  - [x] cost-accounting
   - [ ] financial-analysis-kpis
 - [ ] Human Resources content complete
 

@@ -1,0 +1,290 @@
+competency: cost-accounting
+items:
+  - id: ca-f-variable
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "Which of these costs typically behaves as a variable cost when output rises?"
+      de: "Welche dieser Kosten verhält sich bei steigender Produktion typischerweise variabel?"
+    options:
+      - en: "Raw materials used per unit produced"
+        de: "Je Stück verbrauchtes Rohmaterial"
+        correct: true
+      - en: "Monthly rent of the factory hall"
+        de: "Monatliche Miete der Fertigungshalle"
+        correct: false
+      - en: "Insurance premium for the building"
+        de: "Versicherungsprämie für das Gebäude"
+        correct: false
+      - en: "Interest on a loan"
+        de: "Zinsen auf ein Darlehen"
+        correct: false
+    explanation:
+      en: "Variable costs change with the quantity produced, like materials used per unit. Rent, insurance premiums and interest are typical fixed costs for a period."
+      de: "Variable Kosten verändern sich mit der Menge, wie das je Stück verbrauchte Material. Miete, Versicherungsprämien und Zinsen sind typische Fixkosten einer Periode."
+    source: https://en.wikipedia.org/wiki/Variable_cost
+  - id: ca-f-direct
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "A company wants to know the cost of product X. Which cost is a direct cost for product X?"
+      de: "Ein Unternehmen will die Kosten von Produkt X wissen. Welche Kostenart sind Einzelkosten für Produkt X?"
+    options:
+      - en: "Wood used only to make product X"
+        de: "Holz, das nur für Produkt X verbraucht wird"
+        correct: true
+      - en: "Rent of the building shared by all products"
+        de: "Miete des Gebäudes, das alle Produkte gemeinsam nutzen"
+        correct: false
+      - en: "Salary of the accounting department"
+        de: "Gehalt der Buchhaltungsabteilung"
+        correct: false
+      - en: "Electricity for the whole site"
+        de: "Strom für das gesamte Gelände"
+        correct: false
+    explanation:
+      en: "A direct cost can easily be traced to the cost object. Wood used only for product X can be; shared rent, administration and site-wide electricity are indirect costs (overheads)."
+      de: "Einzelkosten lassen sich dem Kostenträger direkt zurechnen. Holz nur für Produkt X geht das; gemeinsame Miete, Verwaltung und Strom für das ganze Gelände sind Gemeinkosten."
+    source: https://en.wikipedia.org/wiki/Cost_accounting
+  - id: ca-f-cost-centre
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "What is a cost centre?"
+      de: "Was ist eine Kostenstelle?"
+    options:
+      - en: "A department or activity to which costs are allocated, for example IT or the warehouse"
+        de: "Eine Abteilung oder Tätigkeit, der Kosten zugeordnet werden, zum Beispiel IT oder Lager"
+        correct: true
+      - en: "A product or service sold to customers"
+        de: "Ein an Kundschaft verkauftes Produkt oder eine Dienstleistung"
+        correct: false
+      - en: "A bank account for paying costs"
+        de: "Ein Bankkonto zur Bezahlung von Kosten"
+        correct: false
+      - en: "The total of all fixed costs"
+        de: "Die Summe aller Fixkosten"
+        correct: false
+    explanation:
+      en: "A cost centre shows where costs arise, for example a department. The product or service itself is the cost object (Kostenträger)."
+      de: "Eine Kostenstelle zeigt, wo Kosten entstehen, zum Beispiel eine Abteilung. Das Produkt oder die Dienstleistung selbst ist der Kostenträger."
+    source: https://en.wikipedia.org/wiki/Cost_centre
+  - id: ca-f-cost-object
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "Which of these is a cost object (Kostenträger)?"
+      de: "Was ist ein Kostenträger?"
+    options:
+      - en: "A product or service produced by the company"
+        de: "Ein vom Unternehmen hergestelltes Produkt oder eine Dienstleistung"
+        correct: true
+      - en: "The IT department"
+        de: "Die IT-Abteilung"
+        correct: false
+      - en: "Rent as a type of cost"
+        de: "Miete als Kostenart"
+        correct: false
+      - en: "The employee who books the costs"
+        de: "Die Person, die die Kosten bucht"
+        correct: false
+    explanation:
+      en: "Cost objects are the products or services whose cost you want to know. The IT department is a cost centre and rent is a cost type."
+      de: "Kostenträger sind die Produkte oder Dienstleistungen, deren Kosten man wissen will. Die IT-Abteilung ist eine Kostenstelle, Miete eine Kostenart."
+    source: https://de.wikipedia.org/wiki/Kostenträger
+  - id: ca-p-allocation
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "Overhead of 6,000 is allocated by floor area. Department X uses 200 square metres and department Y uses 100. How much is allocated to X?"
+      de: "Gemeinkosten von 6.000 werden nach Fläche umgelegt. Abteilung X nutzt 200 Quadratmeter, Abteilung Y 100. Wie viel wird X zugeordnet?"
+    options:
+      - en: "4,000"
+        de: "4.000"
+        correct: true
+      - en: "2,000"
+        de: "2.000"
+        correct: false
+      - en: "3,000"
+        de: "3.000"
+        correct: false
+      - en: "6,000"
+        de: "6.000"
+        correct: false
+    explanation:
+      en: "Rate = 6,000 / 300 = 20 per square metre. X receives 200 x 20 = 4,000 and Y receives 100 x 20 = 2,000."
+      de: "Satz = 6.000 / 300 = 20 je Quadratmeter. X erhält 200 x 20 = 4.000, Y erhält 100 x 20 = 2.000."
+    source: https://en.wikipedia.org/wiki/Cost_accounting
+  - id: ca-p-unit-cost
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "A product has direct costs of 10,000 and allocated overhead of 2,000 for 400 units. What is the unit cost?"
+      de: "Ein Produkt hat Einzelkosten von 10.000 und umgelegte Gemeinkosten von 2.000 bei 400 Stück. Wie hoch sind die Stückkosten?"
+    options:
+      - en: "30"
+        de: "30"
+        correct: true
+      - en: "25"
+        de: "25"
+        correct: false
+      - en: "5"
+        de: "5"
+        correct: false
+      - en: "35"
+        de: "35"
+        correct: false
+    explanation:
+      en: "Unit cost = (10,000 + 2,000) / 400 = 12,000 / 400 = 30. Using only direct costs gives 25, which leaves out the overhead."
+      de: "Stückkosten = (10.000 + 2.000) / 400 = 12.000 / 400 = 30. Nur die Einzelkosten ergäben 25 und lassen die Gemeinkosten aus."
+    source: https://en.wikipedia.org/wiki/Cost_accounting
+  - id: ca-p-cm
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "A product sells for 50 per unit. The variable cost is 32 per unit. What is the contribution margin per unit?"
+      de: "Ein Produkt wird für 50 je Stück verkauft. Die variablen Kosten betragen 32 je Stück. Wie hoch ist der Deckungsbeitrag je Stück?"
+    options:
+      - en: "18"
+        de: "18"
+        correct: true
+      - en: "32"
+        de: "32"
+        correct: false
+      - en: "82"
+        de: "82"
+        correct: false
+      - en: "50"
+        de: "50"
+        correct: false
+    explanation:
+      en: "Contribution margin per unit = price - variable cost per unit = 50 - 32 = 18. It is what each unit contributes to covering fixed costs."
+      de: "Deckungsbeitrag je Stück = Preis - variable Stückkosten = 50 - 32 = 18. Das ist der Beitrag jedes Stücks zur Deckung der Fixkosten."
+    source: https://en.wikipedia.org/wiki/Contribution_margin
+  - id: ca-p-breakeven
+    level: practitioner
+    difficulty: 1350
+    type: single
+    stem:
+      en: "Price is 50 per unit, variable cost is 32 per unit and fixed costs are 9,000 per month. How many units must be sold to break even?"
+      de: "Der Preis beträgt 50 je Stück, die variablen Kosten 32 je Stück und die Fixkosten 9.000 pro Monat. Wie viele Stück müssen verkauft werden, um die Gewinnschwelle zu erreichen?"
+    options:
+      - en: "500"
+        de: "500"
+        correct: true
+      - en: "250"
+        de: "250"
+        correct: false
+      - en: "180"
+        de: "180"
+        correct: false
+      - en: "9,000"
+        de: "9.000"
+        correct: false
+    explanation:
+      en: "Contribution margin = 50 - 32 = 18. Break-even quantity = 9,000 / 18 = 500 units. Dividing by the price (180) ignores the variable costs."
+      de: "Deckungsbeitrag = 50 - 32 = 18. Break-even-Menge = 9.000 / 18 = 500 Stück. Eine Division durch den Preis (180) ignoriert die variablen Kosten."
+    source: https://en.wikipedia.org/wiki/Contribution_margin
+  - id: ca-a-make-buy
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "A company can make 5,000 parts in-house at a variable cost of 7 each, or buy them for 9 each. Fixed costs, including depreciation on a machine already bought for 50,000, stay the same either way. What is the better choice?"
+      de: "Ein Unternehmen kann 5.000 Teile selbst fertigen (variable Kosten 7 je Teil) oder für 9 je Teil zukaufen. Die Fixkosten, einschließlich der Abschreibung auf eine bereits für 50.000 gekaufte Maschine, bleiben in beiden Fällen gleich. Was ist die bessere Wahl?"
+    options:
+      - en: "Make; it is cheaper by 10,000"
+        de: "Eigenfertigung; sie ist um 10.000 günstiger"
+        correct: true
+      - en: "Buy; it is cheaper by 10,000"
+        de: "Zukauf; er ist um 10.000 günstiger"
+        correct: false
+      - en: "Buy, because the machine cost 50,000"
+        de: "Zukauf, weil die Maschine 50.000 gekostet hat"
+        correct: false
+      - en: "Both cost the same"
+        de: "Beides kostet gleich viel"
+        correct: false
+    explanation:
+      en: "Only relevant costs count: making costs 5,000 x 7 = 35,000, buying costs 5,000 x 9 = 45,000, so making saves 10,000. The machine price is a sunk cost and the unchanged fixed costs do not differ between the options."
+      de: "Nur relevante Kosten zählen: Fertigung kostet 5.000 x 7 = 35.000, Zukauf 5.000 x 9 = 45.000, die Eigenfertigung spart also 10.000. Der Maschinenpreis sind versunkene Kosten, und die unveränderten Fixkosten unterscheiden die Optionen nicht."
+    source: https://en.wikipedia.org/wiki/Sunk_cost
+  - id: ca-a-cost-plus
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "The full unit cost is 40. Cost-plus pricing adds a markup of 25 percent on cost. What is the price?"
+      de: "Die vollen Stückkosten betragen 40. Bei der Zuschlagskalkulation wird ein Aufschlag von 25 Prozent auf die Kosten addiert. Wie hoch ist der Preis?"
+    options:
+      - en: "50"
+        de: "50"
+        correct: true
+      - en: "45"
+        de: "45"
+        correct: false
+      - en: "65"
+        de: "65"
+        correct: false
+      - en: "40"
+        de: "40"
+        correct: false
+    explanation:
+      en: "A markup on cost is 40 x 25% = 10, so the price is 40 + 10 = 50. Whether the market accepts that price is a separate question that cost-plus does not answer."
+      de: "Ein Aufschlag auf die Kosten beträgt 40 x 25 % = 10, der Preis also 40 + 10 = 50. Ob der Markt diesen Preis akzeptiert, ist eine eigene Frage, die die Zuschlagskalkulation nicht beantwortet."
+    source: https://en.wikipedia.org/wiki/Cost_accounting
+  - id: ca-a-abc
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "How does activity-based costing (ABC) assign overhead to products?"
+      de: "Wie ordnet die Prozesskostenrechnung (Activity-based Costing) Gemeinkosten den Produkten zu?"
+    options:
+      - en: "According to each product's actual consumption of activities"
+        de: "Nach dem tatsächlichen Verbrauch von Tätigkeiten durch das jeweilige Produkt"
+        correct: true
+      - en: "Equally to every product, regardless of use"
+        de: "Gleichmäßig auf jedes Produkt, unabhängig von der Nutzung"
+        correct: false
+      - en: "Only according to the selling price"
+        de: "Allein nach dem Verkaufspreis"
+        correct: false
+      - en: "It does not assign overhead at all"
+        de: "Sie ordnet Gemeinkosten gar nicht zu"
+        correct: false
+    explanation:
+      en: "ABC identifies activities and assigns each activity's cost to products according to their actual consumption, which turns more overhead into directly assigned cost."
+      de: "ABC identifiziert Tätigkeiten und ordnet deren Kosten den Produkten nach tatsächlichem Verbrauch zu, wodurch mehr Gemeinkosten direkt zugeordnet werden."
+    source: https://en.wikipedia.org/wiki/Activity-based_costing
+  - id: ca-a-cvp
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "Which simplifying assumption is typical for a basic break-even calculation?"
+      de: "Welche vereinfachende Annahme ist für eine einfache Break-even-Rechnung typisch?"
+    options:
+      - en: "Price and variable cost per unit stay constant over the range considered"
+        de: "Preis und variable Stückkosten bleiben im betrachteten Bereich konstant"
+        correct: true
+      - en: "Fixed costs never change, whatever the time horizon"
+        de: "Fixkosten ändern sich nie, egal wie lang der Zeitraum ist"
+        correct: false
+      - en: "Every unit produced is always sold at a different price"
+        de: "Jede produzierte Einheit wird immer zu einem anderen Preis verkauft"
+        correct: false
+      - en: "All costs are variable"
+        de: "Alle Kosten sind variabel"
+        correct: false
+    explanation:
+      en: "Basic break-even analysis splits costs into fixed and variable parts and assumes constant price and variable cost per unit. Treat the result as an estimate and test other values."
+      de: "Die einfache Break-even-Analyse teilt Kosten in fixe und variable Anteile und nimmt konstanten Preis und konstante variable Stückkosten an. Verstehe das Ergebnis als Schätzung und teste andere Werte."
+    source: https://en.wikipedia.org/wiki/Contribution_margin

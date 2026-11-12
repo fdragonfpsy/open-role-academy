@@ -1,5 +1,17 @@
 # Status
 
+## 2026-11-12 — Phase 2: Finance & Accounting content for cost-accounting
+
+**Done**
+- `internal-controls-audit` merged ([#38](https://github.com/fdragonfpsy/open-role-academy/pull/38)).
+- `cost-accounting`: 6 units (3 levels x en/de), 12 items (calculation items re-checked by hand), 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0), 3 reused. All amounts invented and labelled as illustration.
+- Levels: foundation = cost types, fixed/variable, direct/indirect, cost centres and objects; practitioner = overhead allocation, unit cost, contribution margin, break-even, cost reports; advanced = pricing support and its limits, make-or-buy with relevant vs sunk costs, activity-based costing concept, CVP limits.
+- Review note for humans: the cost-plus formula, CVP simplifications and cost-report contents are general definitions without a dedicated cited page.
+
+**Counts:** roles 4 (2 published, 2 draft) · competencies 38 · units 156 · items 312 · resources 187
+
+**Next:** `financial-analysis-kpis`, then publish the Finance & Accounting role.
+
 ## 2026-11-12 — Phase 2: Finance & Accounting content for internal-controls-audit
 
 **Done**
