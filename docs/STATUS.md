@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-12 — Phase 2: Finance & Accounting content for accounts-payable
+
+**Done**
+- `bookkeeping-fundamentals` merged ([#30](https://github.com/fdragonfpsy/open-role-academy/pull/30)).
+- `accounts-payable`: 6 units (3 levels x en/de), 12 items, 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0). Amounts are invented and labelled as illustration; country rules (Germany/EU) are labelled and kept general.
+- Levels: foundation = invoice-to-payment flow, formal vs factual check; practitioner = matching, approval limits, payment runs, discounts, disputes; advanced = fraud red flags and callbacks, segregation of duties, accruals, KPIs, e-invoicing concept.
+
+**Counts:** roles 4 (2 published, 2 draft) · competencies 38 · units 108 · items 216 · resources 131
+
+**Next:** `accounts-receivable`, then the remaining Finance & Accounting competencies in roadmap order.
+
 ## 2026-11-12 — Phase 2: Finance & Accounting started (bookkeeping-fundamentals)
 
 **Done**
