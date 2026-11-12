@@ -1,0 +1,95 @@
+---
+id: reconciliation-closing-advanced
+competency: reconciliation-closing
+level: advanced
+title: "Leading the close: root causes of recurring differences, materiality, review and sign-off, close acceleration, audit-ready documentation and reversing entries"
+objectives:
+  - "Find and remove root causes of recurring reconciliation differences."
+  - "Explain materiality as a concept for prioritising differences."
+  - "Design review and sign-off with segregation of duties."
+  - "Describe ways to accelerate and automate the close."
+  - "Explain reversing entries and audit-ready documentation."
+minutes: 30
+resources:
+  - wikipedia-root-cause-analysis
+  - wikipedia-segregation-of-duties
+  - wikipedia-adjusting-entry
+  - wikipedia-de-gob
+  - wikipedia-de-jahresabschluss
+status: ai-draft
+sources:
+  - title: "Root cause analysis"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Root_cause_analysis
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Separation of duties"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Separation_of_duties
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Adjusting entry"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Adjusting_entry
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Grundsätze ordnungsmäßiger Buchführung"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Grundsätze_ordnungsmäßiger_Buchführung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Jahresabschluss"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Jahresabschluss
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+When you lead or review the close, the aim shifts from clearing differences to preventing them. A close that needs the same corrections every month is slow and fragile. At this level you remove causes, decide what matters, and make sure the result stands up to a reviewer or auditor.
+
+## Root causes of recurring differences
+
+Treat a difference that comes back as a symptom. Use a root cause analysis: ask why repeatedly, group differences by cause and count them. Common causes are manual postings to control accounts, master data that differs between systems, interfaces that fail or run late, cut-off rules that are unclear, and different people applying different habits. Fix the cause (a rule, a system setting, a control) instead of correcting the symptom each month. Track the number and age of open differences as a simple quality measure.
+
+## Materiality
+
+Materiality is the idea that an item matters if leaving it out or getting it wrong could influence decisions of people who use the financial statements. In practice, teams agree thresholds for how much effort a difference deserves, and the company and its auditors set them; do not invent them yourself. Small differences may be cleared in bulk with a documented rule, but a small difference that points to a systematic error, or to possible fraud, is never trivial.
+
+## Review and sign-off
+
+Every reconciliation has a **preparer** and a **reviewer**; the reviewer is not the preparer. This is segregation of duties: no single person controls a transaction from start to finish. Sign-off states that the reconciliation is complete, differences are explained, and open items have owners. Reviewers check evidence, not just totals, and look at ageing of reconciling items.
+
+## Faster and more automated closing
+
+Closing can be accelerated by doing work earlier (continuous reconciliation during the month), by automated matching of bank and sub-ledger items with rules, by standard recurring accrual templates, and by removing steps that add no control. Automation should keep the audit trail; it shifts people from matching to investigating exceptions.
+
+## Reversing entries and audit-ready documentation
+
+A **reversing entry** cancels an adjusting entry at the start of the next period, so that the accrual does not stay on the books twice when the real invoice arrives. It keeps accrual handling simple and is often generated automatically. Audit-ready documentation means that each balance can be explained: a reconciliation, supporting evidence, who prepared and reviewed it and when. In Germany, bookkeeping must follow the Grundsätze ordnungsmäßiger Buchführung (GoB), which include traceability; your company's rules and advisers define the details.
+
+## Worked example
+
+Illustration only; the amounts are invented. At month end, an accrual of 800 is booked for a service received but not invoiced: debit expense 800, credit accrued liabilities 800. Next month the supplier invoices 800.
+
+| Step | Debit | Credit |
+|---|---|---|
+| Month end: accrual | Expense 800 | Accrued liabilities 800 |
+| Next month, day 1: reversal | Accrued liabilities 800 | Expense 800 |
+| Invoice arrives | Expense 800 | Accounts payable 800 |
+
+Without the reversal the expense would be counted twice. Had the same difference of this kind appeared three months in a row, the lead would ask why the accrual was missed and fix the process.
+
+## Key takeaways
+
+- Recurring differences point to causes; fix the cause, not the symptom.
+- Materiality guides effort, but thresholds are set by the company, and systematic errors always matter.
+- Preparer and reviewer must be different people.
+- Earlier work and automated matching speed up the close without losing the audit trail.
+- Reversing entries prevent double counting of accruals; documentation makes balances explainable.

@@ -50,7 +50,7 @@ For each competency: ≥1 unit per required level (en + de), ≥6 items across d
   - [x] bookkeeping-fundamentals
   - [x] accounts-payable
   - [x] accounts-receivable
-  - [ ] reconciliation-closing
+  - [x] reconciliation-closing
   - [ ] financial-statements-reporting
   - [ ] tax-basics
   - [ ] cash-liquidity-management
