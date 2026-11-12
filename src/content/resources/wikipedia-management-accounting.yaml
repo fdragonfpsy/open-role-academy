@@ -1,0 +1,13 @@
+id: wikipedia-management-accounting
+url: https://en.wikipedia.org/wiki/Management_accounting
+title: "Management accounting"
+provider: Wikipedia
+language: en
+format: article
+minutes: 20
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-12
+mode: link
+competencies: [financial-statements-reporting]
+levels: [practitioner, advanced]

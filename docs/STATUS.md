@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-12 — Phase 2: Finance & Accounting content for financial-statements-reporting
+
+**Done**
+- `reconciliation-closing` merged ([#33](https://github.com/fdragonfpsy/open-role-academy/pull/33)).
+- `financial-statements-reporting`: 6 units (3 levels x en/de), 12 items, 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0), 6 reused. HGB vs IFRS kept to what the cited pages state; amounts invented and labelled as illustration.
+- Levels: foundation = balance sheet, income statement, notes and how they relate; practitioner = reading statements, cash flow idea, HGB vs IFRS overview, basic management report; advanced = consistency and period comparison, reports for non-finance readers, disclosures, limits, review before release.
+
+**Counts:** roles 4 (2 published, 2 draft) · competencies 38 · units 126 · items 252 · resources 152
+
+**Next:** `tax-basics`, then the remaining Finance & Accounting competencies in roadmap order.
+
 ## 2026-11-12 — Phase 2: Finance & Accounting content for reconciliation-closing
 
 **Done**
