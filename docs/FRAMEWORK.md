@@ -60,7 +60,7 @@ The shared core track that every role builds on: digital and AI literacy, commun
 | Working with data | core | 2 | F | P | A | digital-ai-literacy |
 | Business and finance fundamentals | core | 3 | F | P | A | — |
 
-## Finance & Accounting (`finance-accounting`, role, draft)
+## Finance & Accounting (`finance-accounting`, role, published)
 
 Keep the books right and the money flowing: record transactions, manage payables and receivables, close periods, comply with tax rules and turn numbers into decisions.
 

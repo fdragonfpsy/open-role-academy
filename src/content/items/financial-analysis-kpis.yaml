@@ -1,0 +1,290 @@
+competency: financial-analysis-kpis
+items:
+  - id: fak-f-ratio
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "What is a financial ratio?"
+      de: "Was ist eine Kennzahl im Sinne einer Finanzkennzahl (Verhältniszahl)?"
+    options:
+      - en: "A statement of the relative size of two figures taken from a company's financial statements"
+        de: "Eine Aussage über die relative Größe zweier Zahlen aus dem Jahresabschluss eines Unternehmens"
+        correct: true
+      - en: "The total of all items on the income statement"
+        de: "Die Summe aller Posten der Gewinn- und Verlustrechnung"
+        correct: false
+      - en: "A legal limit on how much profit a company may report"
+        de: "Eine gesetzliche Grenze dafür, wie viel Gewinn ein Unternehmen ausweisen darf"
+        correct: false
+      - en: "The market price of one share"
+        de: "Der Marktpreis einer einzelnen Aktie"
+        correct: false
+    explanation:
+      en: "A financial ratio relates two figures from the financial statements, for example profit to revenue. It is not a total, a legal limit or a share price."
+      de: "Eine Finanzkennzahl setzt zwei Zahlen aus dem Jahresabschluss ins Verhältnis, zum Beispiel Gewinn zu Umsatz. Sie ist weder eine Summe noch eine gesetzliche Grenze noch ein Aktienkurs."
+    source: https://en.wikipedia.org/wiki/Financial_ratio
+  - id: fak-f-margin
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Net margin = net profit / revenue x 100. A company has revenue of 200,000 and net profit of 30,000. What is its net margin?"
+      de: "Umsatzrendite = Jahresüberschuss / Umsatz x 100. Ein Unternehmen hat 200.000 Umsatz und 30.000 Jahresüberschuss. Wie hoch ist die Umsatzrendite?"
+    options:
+      - en: "15 %"
+        de: "15 %"
+        correct: true
+      - en: "6,7 %"
+        de: "6,7 %"
+        correct: false
+      - en: "30 %"
+        de: "30 %"
+        correct: false
+      - en: "85 %"
+        de: "85 %"
+        correct: false
+    explanation:
+      en: "30,000 / 200,000 x 100 = 15%. 85% is the share of revenue that is not kept as profit, and 6.7 is the inverted ratio (revenue divided by profit); 30% does not follow from the given figures."
+      de: "30.000 / 200.000 x 100 = 15 %. 85 % ist der Anteil des Umsatzes, der nicht als Gewinn bleibt, und 6,7 ist der Kehrwert (Umsatz geteilt durch Gewinn); 30 % folgt nicht aus den Zahlen."
+    source: https://en.wikipedia.org/wiki/Profit_margin
+  - id: fak-f-current
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "Current ratio = current assets / current liabilities. Current assets are 90,000 and current liabilities are 60,000. What is the current ratio?"
+      de: "Liquiditätsgrad 3 = Umlaufvermögen / kurzfristige Verbindlichkeiten. Das Umlaufvermögen beträgt 90.000, die kurzfristigen Verbindlichkeiten 60.000. Wie hoch ist der Liquiditätsgrad 3?"
+    options:
+      - en: "1.5"
+        de: "1,5"
+        correct: true
+      - en: "0.67"
+        de: "0,67"
+        correct: false
+      - en: "30,000"
+        de: "30.000"
+        correct: false
+      - en: "0.15"
+        de: "0,15"
+        correct: false
+    explanation:
+      en: "90,000 / 60,000 = 1.5. The inverted fraction (0.67) answers a different question, and 30,000 is the difference in amounts, not a ratio."
+      de: "90.000 / 60.000 = 1,5. Der Kehrwert (0,67) beantwortet eine andere Frage, und 30.000 ist der Unterschied der Beträge, keine Verhältniszahl."
+    source: https://en.wikipedia.org/wiki/Current_ratio
+  - id: fak-f-equity
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "Equity ratio = equity / total assets x 100. Equity is 150,000 and total assets are 500,000. What is the equity ratio?"
+      de: "Eigenkapitalquote = Eigenkapital / Bilanzsumme x 100. Das Eigenkapital beträgt 150.000, die Bilanzsumme 500.000. Wie hoch ist die Eigenkapitalquote?"
+    options:
+      - en: "30 %"
+        de: "30 %"
+        correct: true
+      - en: "70 %"
+        de: "70 %"
+        correct: false
+      - en: "33.3 %"
+        de: "33,3 %"
+        correct: false
+      - en: "3.3 %"
+        de: "3,3 %"
+        correct: false
+    explanation:
+      en: "150,000 / 500,000 x 100 = 30%. The remaining 70% of the balance sheet total is financed by liabilities, not by equity."
+      de: "150.000 / 500.000 x 100 = 30 %. Die übrigen 70 % der Bilanzsumme sind durch Fremdkapital finanziert, nicht durch Eigenkapital."
+    source: https://en.wikipedia.org/wiki/Equity_ratio
+  - id: fak-p-gross
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "Gross margin = (revenue - cost of goods sold) / revenue x 100. Revenue is 800,000 and cost of goods sold is 480,000. What is the gross margin?"
+      de: "Rohertragsmarge = (Umsatz - Wareneinsatz) / Umsatz x 100. Der Umsatz beträgt 800.000, der Wareneinsatz 480.000. Wie hoch ist die Rohertragsmarge?"
+    options:
+      - en: "40 %"
+        de: "40 %"
+        correct: true
+      - en: "60 %"
+        de: "60 %"
+        correct: false
+      - en: "66.7 %"
+        de: "66,7 %"
+        correct: false
+      - en: "33.3 %"
+        de: "33,3 %"
+        correct: false
+    explanation:
+      en: "(800,000 - 480,000) / 800,000 x 100 = 320,000 / 800,000 x 100 = 40%. 60% is the cost share, and 66.7% would be a markup on cost (320,000 / 480,000), which uses a different base."
+      de: "(800.000 - 480.000) / 800.000 x 100 = 320.000 / 800.000 x 100 = 40 %. 60 % ist der Kostenanteil, und 66,7 % wäre ein Aufschlag auf die Kosten (320.000 / 480.000) mit anderer Bezugsgröße."
+    source: https://en.wikipedia.org/wiki/Profit_margin
+  - id: fak-p-quick
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "Quick ratio = (current assets - inventory) / current liabilities. Current assets are 250,000, of which inventory is 100,000, and current liabilities are 200,000. What is the quick ratio?"
+      de: "Liquiditätsgrad 2 = (Umlaufvermögen - Vorräte) / kurzfristige Verbindlichkeiten. Das Umlaufvermögen beträgt 250.000, davon Vorräte 100.000, die kurzfristigen Verbindlichkeiten 200.000. Wie hoch ist der Liquiditätsgrad 2?"
+    options:
+      - en: "0.75"
+        de: "0,75"
+        correct: true
+      - en: "1.25"
+        de: "1,25"
+        correct: false
+      - en: "0.5"
+        de: "0,5"
+        correct: false
+      - en: "1.75"
+        de: "1,75"
+        correct: false
+    explanation:
+      en: "(250,000 - 100,000) / 200,000 = 0.75. 1.25 is the current ratio, which does not exclude inventory."
+      de: "(250.000 - 100.000) / 200.000 = 0,75. 1,25 wäre der Liquiditätsgrad 3, der die Vorräte nicht ausschließt."
+    source: https://en.wikipedia.org/wiki/Current_ratio
+  - id: fak-p-roe
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "Return on equity = net income / average equity x 100, where average equity = (opening equity + closing equity) / 2. Net income is 48,000, opening equity 350,000, closing equity 450,000. What is the return on equity?"
+      de: "Eigenkapitalrentabilität = Jahresüberschuss / durchschnittliches Eigenkapital x 100, mit durchschnittlichem Eigenkapital = (Anfangswert + Endwert) / 2. Der Jahresüberschuss beträgt 48.000, das Eigenkapital zu Beginn 350.000, am Ende 450.000. Wie hoch ist die Eigenkapitalrentabilität?"
+    options:
+      - en: "12 %"
+        de: "12 %"
+        correct: true
+      - en: "10.7 %"
+        de: "10,7 %"
+        correct: false
+      - en: "13.7 %"
+        de: "13,7 %"
+        correct: false
+      - en: "10.5 %"
+        de: "10,5 %"
+        correct: false
+    explanation:
+      en: "Average equity is (350,000 + 450,000) / 2 = 400,000, so ROE = 48,000 / 400,000 x 100 = 12%. 10.7% uses closing equity and 13.7% uses opening equity; the stated formula uses the average."
+      de: "Das durchschnittliche Eigenkapital ist (350.000 + 450.000) / 2 = 400.000, also 48.000 / 400.000 x 100 = 12 %. 10,7 % nutzt den Endwert und 13,7 % den Anfangswert; die genannte Formel nutzt den Durchschnitt."
+    source: https://en.wikipedia.org/wiki/Return_on_equity
+  - id: fak-p-pitfall
+    level: practitioner
+    difficulty: 1350
+    type: single
+    stem:
+      en: "Your company reports a net margin of 10% and a peer company reports 14%. What should you do first before concluding that the peer is more profitable?"
+      de: "Dein Unternehmen weist eine Umsatzrendite von 10 % aus, ein Vergleichsunternehmen 14 %. Was solltest du zuerst tun, bevor du folgerst, dass das Vergleichsunternehmen profitabler ist?"
+    options:
+      - en: "Check that both figures use the same definition, period and accounting basis"
+        de: "Prüfen, ob beide Zahlen dieselbe Definition, Periode und Bilanzierungsgrundlage nutzen"
+        correct: true
+      - en: "Assume the higher figure is better and report it"
+        de: "Annehmen, dass die höhere Zahl besser ist, und sie melden"
+        correct: false
+      - en: "Calculate the average of the two and use it as a target"
+        de: "Den Mittelwert beider bilden und als Ziel verwenden"
+        correct: false
+      - en: "Ignore the difference because ratios cannot be compared"
+        de: "Den Unterschied ignorieren, weil Kennzahlen nicht vergleichbar sind"
+        correct: false
+    explanation:
+      en: "There is no international standard for calculating the figures in financial statements, and accounting methods differ, so ratios may not be directly comparable. Ratios can be compared once definition, period and basis are aligned."
+      de: "Es gibt keinen internationalen Standard für die Berechnung der Abschlusszahlen, und Bilanzierungsmethoden unterscheiden sich; Kennzahlen sind daher nicht ohne Weiteres vergleichbar. Nach Abgleich von Definition, Periode und Grundlage ist ein Vergleich möglich."
+    source: https://en.wikipedia.org/wiki/Financial_ratio
+  - id: fak-a-card
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "Which set of details makes a KPI definition on a dashboard complete enough that two colleagues compute the same number?"
+      de: "Welche Angaben machen eine KPI-Definition im Dashboard vollständig genug, dass zwei Kolleginnen oder Kollegen dieselbe Zahl berechnen?"
+    options:
+      - en: "Formula with unit and period, data source, owner and refresh rhythm"
+        de: "Formel mit Einheit und Periode, Datenquelle, verantwortliche Person und Aktualisierungsrhythmus"
+        correct: true
+      - en: "Only the name of the KPI and a colour"
+        de: "Nur der Name der KPI und eine Farbe"
+        correct: false
+      - en: "The target value and the chart type"
+        de: "Der Zielwert und der Diagrammtyp"
+        correct: false
+      - en: "The last value and the date it was shown"
+        de: "Der letzte Wert und das Datum der Anzeige"
+        correct: false
+    explanation:
+      en: "A clear definition, reliable data and appropriate interpretation make a KPI effective. Formula, source, owner and refresh rhythm remove ambiguity; a name, colour, target or last value does not."
+      de: "Eine klare Definition, verlässliche Daten und passende Interpretation machen eine KPI wirksam. Formel, Quelle, Verantwortliche und Aktualisierung beseitigen Mehrdeutigkeit; Name, Farbe, Ziel oder letzter Wert tun das nicht."
+    source: https://en.wikipedia.org/wiki/Key_performance_indicator
+  - id: fak-a-axis
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "A bar chart shows 98 and 102 on a value axis that starts at 96. Relative increase = (new - old) / old x 100. What is the true relative increase from 98 to 102, rounded to one decimal?"
+      de: "Ein Balkendiagramm zeigt 98 und 102 auf einer Wertachse, die bei 96 beginnt. Relativer Anstieg = (neu - alt) / alt x 100. Wie groß ist der tatsächliche relative Anstieg von 98 auf 102, auf eine Nachkommastelle gerundet?"
+    options:
+      - en: "4.1 %"
+        de: "4,1 %"
+        correct: true
+      - en: "3.9 %"
+        de: "3,9 %"
+        correct: false
+      - en: "4.0 %"
+        de: "4,0 %"
+        correct: false
+      - en: "200 %"
+        de: "200 %"
+        correct: false
+    explanation:
+      en: "(102 - 98) / 98 x 100 = 4.08%, about 4.1%. On the truncated axis the bars are 2 and 6 tall, so the second looks three times larger; this is why a truncated axis misleads."
+      de: "(102 - 98) / 98 x 100 = 4,08 %, etwa 4,1 %. Auf der gekürzten Achse sind die Balken 2 und 6 hoch, der zweite wirkt also dreimal so groß; deshalb führt eine gekürzte Achse in die Irre."
+    source: https://en.wikipedia.org/wiki/Misleading_graph
+  - id: fak-a-sowhat
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "Revenue rose from 1,000,000 to 1,200,000. Net profit fell from 100,000 to 96,000 (net margin = net profit / revenue). Which statement for a sales manager is correct and most useful?"
+      de: "Der Umsatz stieg von 1.000.000 auf 1.200.000. Der Jahresüberschuss sank von 100.000 auf 96.000 (Umsatzrendite = Jahresüberschuss / Umsatz). Welche Aussage für die Vertriebsleitung ist richtig und am nützlichsten?"
+    options:
+      - en: "Revenue grew but net margin fell from 10% to 8% and profit fell by 4,000; costs grew faster than revenue, so check discounts and costs before pushing more volume"
+        de: "Der Umsatz wuchs, aber die Umsatzrendite sank von 10 % auf 8 % und der Gewinn um 4.000; die Kosten wuchsen schneller als der Umsatz, prüfe daher Rabatte und Kosten, bevor mehr Menge verkauft wird"
+        correct: true
+      - en: "Revenue grew by 20%, so the year was clearly better"
+        de: "Der Umsatz wuchs um 20 %, das Jahr war also eindeutig besser"
+        correct: false
+      - en: "Net margin rose from 8% to 10%"
+        de: "Die Umsatzrendite stieg von 8 % auf 10 %"
+        correct: false
+      - en: "The ratios are not useful, so no message is possible"
+        de: "Die Kennzahlen sind nutzlos, daher ist keine Aussage möglich"
+        correct: false
+    explanation:
+      en: "96,000 / 1,200,000 = 8% versus 100,000 / 1,000,000 = 10%. A good message leads with the so-what, names the cause to check and says what to do, instead of listing numbers or celebrating revenue alone."
+      de: "96.000 / 1.200.000 = 8 % gegenüber 100.000 / 1.000.000 = 10 %. Eine gute Botschaft beginnt mit der Kernaussage, nennt die zu prüfende Ursache und eine Handlung, statt Zahlen aufzulisten oder nur den Umsatz zu feiern."
+    source: https://en.wikipedia.org/wiki/Key_performance_indicator
+  - id: fak-a-lagging
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "Which pair correctly names a lagging and a leading indicator?"
+      de: "Welches Paar nennt richtig einen nachlaufenden und einen vorlaufenden Indikator?"
+    options:
+      - en: "Annual revenue (lagging) and number of client proposals (leading)"
+        de: "Jahresumsatz (nachlaufend) und Anzahl der Kundenangebote (vorlaufend)"
+        correct: true
+      - en: "Number of client proposals (lagging) and annual revenue (leading)"
+        de: "Anzahl der Kundenangebote (nachlaufend) und Jahresumsatz (vorlaufend)"
+        correct: false
+      - en: "Annual revenue (leading) and year-end result (leading)"
+        de: "Jahresumsatz (vorlaufend) und Jahresergebnis (vorlaufend)"
+        correct: false
+      - en: "Both are lagging because all KPIs describe the past"
+        de: "Beide sind nachlaufend, weil alle KPIs die Vergangenheit beschreiben"
+        correct: false
+    explanation:
+      en: "Lagging indicators measure outcomes of past activity (annual revenue); leading indicators are drivers that influence future outcomes (client proposals). A balanced set avoids over-focus on lagging measures."
+      de: "Nachlaufende Indikatoren messen Ergebnisse vergangener Tätigkeit (Jahresumsatz); vorlaufende Indikatoren sind Treiber künftiger Ergebnisse (Kundenangebote). Ein ausgewogenes Set vermeidet die Überbetonung nachlaufender Größen."
+    source: https://en.wikipedia.org/wiki/Key_performance_indicator

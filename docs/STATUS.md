@@ -1,5 +1,17 @@
 # Status
 
+## 2026-11-12 — Phase 2: Finance & Accounting complete and published
+
+**Done**
+- `cost-accounting` merged ([#39](https://github.com/fdragonfpsy/open-role-academy/pull/39)).
+- `financial-analysis-kpis`: 6 units (3 levels x en/de), 12 items (arithmetic checked, formulas stated in stems), 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0). No benchmark thresholds (a quoted ROE range was removed). Amounts invented and labelled as illustration.
+- All 11 role-specific Finance & Accounting competencies now have units for all 3 levels (en/de), 12 items each and verified resources. Role `finance-accounting` is published (removed `status: draft`). Published roles: core-track, it-support-operations, finance-accounting.
+- Review note for humans: German Rohertragsmarge and Liquiditätsgrad 2/3 formulas (page not available), chart-truncation remark and ROE averaging advice are general knowledge without a cited page. Tax content (`tax-basics`) needs human tax review.
+
+**Counts:** roles 4 (3 published, 1 draft) · competencies 38 · units 162 · items 324 · resources 194
+
+**Next:** Human Resources content (split into per-competency sub-tasks first), then Phase 3 learner experience.
+
 ## 2026-11-12 — Phase 2: Finance & Accounting content for cost-accounting
 
 **Done**
