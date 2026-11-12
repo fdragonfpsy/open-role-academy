@@ -64,7 +64,7 @@ Digital & AI literacy · Communication & collaboration · Information security &
 ### 4.4 Competency framework rules
 - Each role: **8–12 role-specific competencies** plus the core track.
 - Each competency has: id, title (en/de), description (en/de), prerequisites, and a **target level per role level** (e.g. HR foundation needs `employment-law-basics` at foundation).
-- Anchor competencies to public frameworks where possible and store the reference: **ESCO** (EU skills/occupations taxonomy, multilingual) and **DigComp** (EU digital competence framework). Store the ESCO/DigComp URI in the competency's `frameworkRefs`. Do not use proprietary frameworks (e.g. SFIA) as a source of text.
+- Anchor competencies to public frameworks where possible and store the reference: **ESCO** (EU skills/occupations taxonomy, multilingual) and **DigComp 3.0** (EU digital competence framework, JRC, published November 2025: 5 competence areas, 21 competences, 4 proficiency levels Basic/Intermediate/Advanced/Highly advanced, AI competence integrated across all competences). Use only DigComp 3.0 names and numbering; never cite DigComp 2.2 names. Reference URI: https://joint-research-centre.ec.europa.eu/digcomp/digcomp-framework_en Store the ESCO/DigComp URI in the competency's `frameworkRefs`. Do not use proprietary frameworks (e.g. SFIA) as a source of text.
 
 ## 5. Data model (Zod schemas in `src/content/config.ts`)
 
@@ -147,3 +147,33 @@ OERSI (oersi.org, German OER search index), OpenStax, OpenLearn (Open University
 6. Open a pull request into `main` with label `automerge`. The `automerge` workflow merges it when CI is green. Do not wait for human review.
 7. If CI fails on your PR and you cannot fix it in this session: leave the PR open, remove the `automerge` label, describe the cause in the PR description, and add an entry to `docs/BLOCKERS.md` in the same PR. The next session starts by fixing open, failing `claude/*` PRs before picking new roadmap tasks.
 8. Stay within one session's budget: better one finished, tested slice than three half-built ones.
+
+## 11. Work windows and usage budget
+
+The owner runs this project on a Claude Pro plan and needs most of the weekly usage for his own work on weekdays. You cannot see the plan's usage meter, so time is the budget. All times are **Europe/Berlin** (`TZ=Europe/Berlin date`). Check the time before starting each new slice.
+
+| Day | Allowed work | No new slice after | Hard stop |
+|---|---|---|---|
+| Mon–Fri | only 20:00–24:00, never 08:00–20:00 | 23:15 | 23:45 |
+| Saturday | any time | start of run + 4h30 | start of run + 5h, latest 19:30 |
+| Sunday | any time before the weekly reset | 17:00 | 17:45 (the weekly limit resets at 18:00; do not eat into next week) |
+
+- Within the window, **work continuously**: after a slice is merged, take the next roadmap task. One slice per run is not the goal; finished, merged slices are.
+- If you hit a usage or rate limit, stop cleanly: make sure nothing half-done is pushed to `main`; push the current branch only if its checks pass.
+- If a run starts outside its allowed window (e.g. a delayed start), do nothing except a one-line note in the run output, and stop.
+
+## 12. Model choice and token efficiency
+
+Use the cheapest model that does a task well. The main session coordinates; delegate with subagents (Task/Agent tool with an explicit `model`) where it saves usage:
+
+| Work | Model |
+|---|---|
+| Mechanical: link and license checks, YAML formatting, renames, running checks, counting, simple fixes from a clear error | **haiku** |
+| Standard: unit texts, assessment items, en↔de translation and wording review, competency frameworks, docs | **sonnet** |
+| Hard: engine and architecture changes, tricky CI or build failures after one failed fix attempt, reviewing a whole role for quality | **opus**, sparingly |
+
+Token hygiene:
+- Read only the files a task needs; use `grep`/`head` instead of reading whole large files; never re-read a file you just wrote.
+- Give subagents a precise brief with file paths and acceptance criteria; ask them for short results, not file dumps.
+- Batch similar work (e.g. all items of one competency in one pass).
+- Keep run output terse: no long summaries in the session, the details belong in `docs/STATUS.md`.

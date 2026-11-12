@@ -15,8 +15,8 @@ prerequisites: []
 track: core
 frameworkRefs:
   - framework: DigComp
-    uri: https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en
-    label: "DigComp 2.2 — Competence area 2: Communication and collaboration (2.1 Interacting, 2.4 Collaborating through digital technologies, 2.5 Netiquette)"
+    uri: https://joint-research-centre.ec.europa.eu/digcomp/digcomp-framework_en
+    label: "DigComp 3.0 — Competence area 2: Communication and collaboration (2.1 Interacting through and with digital technologies, 2.4 Collaborating through digital technologies, 2.5 Digital behaviour)"
   - framework: ESCO
     uri: http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7
     label: communication

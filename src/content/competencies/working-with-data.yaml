@@ -15,8 +15,8 @@ prerequisites: [digital-ai-literacy]
 track: core
 frameworkRefs:
   - framework: DigComp
-    uri: https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en
-    label: "DigComp 2.2 — Competence area 1: Information and data literacy (1.3 Managing data, information and digital content)"
+    uri: https://joint-research-centre.ec.europa.eu/digcomp/digcomp-framework_en
+    label: "DigComp 3.0 — Competence area 1: Information search, evaluation and management (1.3 Managing information)"
   - framework: ESCO
     uri: http://data.europa.eu/esco/skill/1973c966-f236-40c9-b2d4-5d71a89019be
     label: use spreadsheets software
