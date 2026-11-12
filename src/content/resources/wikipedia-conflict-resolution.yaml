@@ -1,0 +1,13 @@
+id: wikipedia-conflict-resolution
+url: https://en.wikipedia.org/wiki/Conflict_resolution
+title: "Conflict resolution"
+provider: Wikipedia
+language: en
+format: article
+minutes: 20
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-12
+mode: link
+competencies: [user-support-communication]
+levels: [practitioner, advanced]

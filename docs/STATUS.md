@@ -1,5 +1,15 @@
 # Status
 
+## 2026-11-12 — Phase 2: IT Support content for user-support-communication
+
+**Done**
+- `user-support-communication`: 6 units (3 levels x en/de), 12 items, 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0) plus 4 shared resources.
+- Levels: foundation = good questions, plain language, polite ticket updates; practitioner = remote guidance, expectation management, frustrated users, how-to writing; advanced = escalation and major-incident communication, coaching, knowledge articles, feedback loops.
+
+**Counts:** roles 4 (1 published, 3 draft) · competencies 38 · units 60 · items 120 · resources 75
+
+**Next:** `endpoint-management`, then the remaining IT Support competencies in roadmap order.
+
 ## 2026-11-11 — Phase 2: IT Support content for troubleshooting-methods
 
 **Done**
