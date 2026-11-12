@@ -1,0 +1,13 @@
+id: wikipedia-de-leichte-sprache
+url: https://de.wikipedia.org/wiki/Leichte_Sprache
+title: "Leichte Sprache"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-12
+mode: link
+competencies: [user-support-communication]
+levels: [foundation, practitioner]

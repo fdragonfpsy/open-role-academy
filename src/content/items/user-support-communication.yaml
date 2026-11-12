@@ -1,0 +1,290 @@
+competency: user-support-communication
+items:
+  - id: usc-f-open-question
+    level: foundation
+    difficulty: 880
+    type: single
+    stem:
+      en: "A user says: \"My program is broken.\" Which first question best encourages them to describe what happens?"
+      de: "Eine Nutzerin sagt: „Mein Programm ist kaputt.“ Welche erste Frage regt sie am besten an, zu beschreiben, was passiert?"
+    options:
+      - en: "\"What were you trying to do when the problem appeared?\""
+        de: "„Was wolltest du tun, als das Problem auftrat?“"
+        correct: true
+      - en: "\"Did you restart it?\""
+        de: "„Hast du es neu gestartet?“"
+        correct: false
+      - en: "\"Why did you click on something you should not have?\""
+        de: "„Warum hast du auf etwas geklickt, auf das du nicht hättest klicken sollen?“"
+        correct: false
+      - en: "\"Is it the program or the computer, and which version is it, and since when?\""
+        de: "„Liegt es am Programm oder am Computer, welche Version ist es und seit wann?“"
+        correct: false
+    explanation:
+      en: "An open question invites the user to tell what happened in their own words and often reveals details you would not have asked about. A yes/no question closes the conversation, a blaming question puts the user on the defensive, and a stack of questions usually gets only one answer."
+      de: "Eine offene Frage lädt dazu ein, in eigenen Worten zu erzählen, und liefert oft Details, nach denen du nicht gefragt hättest. Eine Ja/Nein-Frage beendet das Gespräch, eine vorwurfsvolle Frage setzt die Person in die Defensive, und mehrere Fragen auf einmal bekommen meist nur eine Antwort."
+    source: https://en.wikipedia.org/wiki/Active_listening
+  - id: usc-f-plain-language
+    level: foundation
+    difficulty: 920
+    type: single
+    stem:
+      en: "Which instruction is best written in plain language for a non-technical user?"
+      de: "Welche Anweisung ist für Nutzende ohne technischen Hintergrund am besten in einfacher Sprache geschrieben?"
+    options:
+      - en: "\"1. Click the Wi-Fi symbol at the bottom right. 2. Choose the network \"Office\". 3. Type your usual password.\""
+        de: "„1. Klicke unten rechts auf das WLAN-Symbol. 2. Wähle das Netzwerk „Office“. 3. Gib dein gewohntes Passwort ein.“"
+        correct: true
+      - en: "\"Re-authenticate against the wireless infrastructure using your domain credentials.\""
+        de: "„Authentifiziere dich erneut an der WLAN-Infrastruktur mit deinen Domänenanmeldedaten.“"
+        correct: false
+      - en: "\"You should have connected to the right network in the first place.\""
+        de: "„Du hättest dich von Anfang an mit dem richtigen Netzwerk verbinden sollen.“"
+        correct: false
+      - en: "\"Just do the usual Wi-Fi thing.\""
+        de: "„Mach einfach das übliche WLAN-Ding.“"
+        correct: false
+    explanation:
+      en: "Plain language uses the user's words, one action per numbered step, and no blame. The jargon version is hard to follow, the blaming version offers no help, and the vague version cannot be acted on."
+      de: "Einfache Sprache nutzt die Wörter der Nutzenden, eine Handlung pro nummeriertem Schritt und keine Schuldzuweisung. Die Jargon-Version ist schwer zu befolgen, die vorwurfsvolle hilft nicht, und die vage Version lässt sich nicht umsetzen."
+    source: https://en.wikipedia.org/wiki/Plain_language
+  - id: usc-f-ticket-update
+    level: foundation
+    difficulty: 980
+    type: multi
+    stem:
+      en: "Which elements belong in a good ticket update to a user?"
+      de: "Welche Elemente gehören in ein gutes Ticket-Update an Nutzende?"
+    options:
+      - en: "What you found or did so far"
+        de: "Was du bisher herausgefunden oder getan hast"
+        correct: true
+      - en: "What it means for the user, for example whether they can keep working"
+        de: "Was es für die Person bedeutet, zum Beispiel ob sie weiterarbeiten kann"
+        correct: true
+      - en: "The next step and an honest time frame"
+        de: "Der nächste Schritt und ein ehrlicher Zeitrahmen"
+        correct: true
+      - en: "Raw system output pasted without explanation"
+        de: "Rohe Systemausgaben ohne Erklärung"
+        correct: false
+    explanation:
+      en: "A good update says where things stand, what it means for the user and what happens next and when. Pasted system output without explanation is hard for most users to understand."
+      de: "Ein gutes Update sagt, wo es steht, was es für die Person bedeutet und wie es wann weitergeht. Eingefügte Systemausgaben ohne Erklärung sind für die meisten Nutzenden schwer verständlich."
+    source: https://en.wikipedia.org/wiki/Customer_support
+  - id: usc-f-restate
+    level: foundation
+    difficulty: 1030
+    type: single
+    stem:
+      en: "A user explains a long, confusing problem. What is the most helpful next step before you start working on it?"
+      de: "Eine Nutzerin schildert ein langes, verworrenes Problem. Was ist der hilfreichste nächste Schritt, bevor du mit der Arbeit beginnst?"
+    options:
+      - en: "Restate the problem in your own words and ask whether you understood it correctly"
+        de: "Das Problem mit eigenen Worten wiedergeben und fragen, ob du es richtig verstanden hast"
+        correct: true
+      - en: "Start fixing the first thing you thought of while the user is still talking"
+        de: "Sofort mit der ersten Idee loslegen, während die Person noch spricht"
+        correct: false
+      - en: "Tell the user to write it all again in a shorter form"
+        de: "Der Person sagen, sie solle alles kürzer noch einmal aufschreiben"
+        correct: false
+      - en: "Close the ticket as unclear"
+        de: "Das Ticket als unklar schließen"
+        correct: false
+    explanation:
+      en: "Restating is a core technique of active listening. It shows that you listened and lets the user correct misunderstandings early, before time is spent on the wrong problem."
+      de: "Das Wiedergeben mit eigenen Worten ist eine Kerntechnik des aktiven Zuhörens. Es zeigt, dass du zugehört hast, und lässt Missverständnisse früh korrigieren, bevor Zeit mit dem falschen Problem verloren geht."
+    source: https://en.wikipedia.org/wiki/Active_listening
+  - id: usc-p-remote-consent
+    level: practitioner
+    difficulty: 1180
+    type: single
+    stem:
+      en: "Before you connect to a user's computer with remote desktop software, what should you do?"
+      de: "Was solltest du tun, bevor du dich per Fernwartungssoftware mit dem Computer einer Nutzerin verbindest?"
+    options:
+      - en: "Ask for consent, say what you will do and ask the user to close private content"
+        de: "Um Zustimmung bitten, sagen, was du tun wirst, und darum bitten, private Inhalte zu schließen"
+        correct: true
+      - en: "Connect right away to save time, since the user opened the ticket"
+        de: "Sofort verbinden, um Zeit zu sparen, schließlich hat die Person das Ticket eröffnet"
+        correct: false
+      - en: "Connect silently and explain afterwards"
+        de: "Ohne Ankündigung verbinden und hinterher erklären"
+        correct: false
+      - en: "Ask the user to share their password so you can sign in as them"
+        de: "Die Person bitten, dir ihr Passwort zu nennen, damit du dich als sie anmelden kannst"
+        correct: false
+    explanation:
+      en: "Remote access shows you everything on the screen, so it depends on trust. Ask permission, announce what you will do and give the user the chance to close confidential content. Never ask for or use a user's password."
+      de: "Fernzugriff zeigt dir alles auf dem Bildschirm und beruht deshalb auf Vertrauen. Hole Zustimmung ein, kündige an, was du tun wirst, und gib der Person die Möglichkeit, vertrauliche Inhalte zu schließen. Frage nie nach dem Passwort einer Person und nutze es nie."
+    source: https://en.wikipedia.org/wiki/Remote_desktop_software
+  - id: usc-p-phone-steps
+    level: practitioner
+    difficulty: 1220
+    type: single
+    stem:
+      en: "You guide a user by phone through a settings dialog. Which approach works best?"
+      de: "Du leitest eine Nutzerin am Telefon durch einen Einstellungsdialog. Welches Vorgehen funktioniert am besten?"
+    options:
+      - en: "Give one step at a time, name things as they appear on the user's screen and confirm the result before the next step"
+        de: "Einen Schritt nach dem anderen geben, Dinge so benennen, wie sie auf dem Bildschirm der Person erscheinen, und das Ergebnis vor dem nächsten Schritt bestätigen lassen"
+        correct: true
+      - en: "Read out all ten steps at once so the call is short"
+        de: "Alle zehn Schritte auf einmal vorlesen, damit das Gespräch kurz bleibt"
+        correct: false
+      - en: "Use the internal names of the menus, since they are the correct ones"
+        de: "Die internen Bezeichnungen der Menüs verwenden, da sie die richtigen sind"
+        correct: false
+      - en: "Stay silent while the user searches, so as not to distract them"
+        de: "Schweigen, während die Person sucht, um sie nicht abzulenken"
+        correct: false
+    explanation:
+      en: "One step at a time with confirmation keeps you and the user looking at the same thing and catches misunderstandings immediately. Using the words on the user's screen avoids confusion."
+      de: "Ein Schritt nach dem anderen mit Rückmeldung sorgt dafür, dass ihr auf dasselbe schaut, und deckt Missverständnisse sofort auf. Die Wörter vom Bildschirm der Person zu nutzen, vermeidet Verwirrung."
+    source: https://en.wikipedia.org/wiki/Remote_desktop_software
+  - id: usc-p-expectations
+    level: practitioner
+    difficulty: 1280
+    type: multi
+    stem:
+      en: "A user asks when their problem will be solved, and you are not sure. Which responses manage expectations well?"
+      de: "Ein Nutzer fragt, wann sein Problem gelöst ist, und du bist unsicher. Welche Antworten steuern die Erwartungen gut?"
+    options:
+      - en: "\"I do not know yet. I will update you by 3 pm at the latest.\""
+        de: "„Das weiß ich noch nicht. Ich melde mich spätestens um 15 Uhr bei dir.“"
+        correct: true
+      - en: "Naming a workaround the user can use in the meantime"
+        de: "Eine Übergangslösung nennen, die der Nutzer in der Zwischenzeit verwenden kann"
+        correct: true
+      - en: "\"It will be done in an hour\", although you have no basis for that"
+        de: "„In einer Stunde ist es erledigt“, obwohl du dafür keine Grundlage hast"
+        correct: false
+      - en: "Saying nothing until you have the solution"
+        de: "Nichts sagen, bis du die Lösung hast"
+        correct: false
+    explanation:
+      en: "Honest uncertainty combined with a named next contact time and a workaround gives the user something to plan with. An unfounded promise that is then missed damages trust more than an honest \"not yet known\", and silence leaves the user guessing."
+      de: "Ehrliche Unsicherheit zusammen mit einem genannten nächsten Kontaktzeitpunkt und einer Übergangslösung gibt dem Nutzer etwas zum Planen. Eine unbegründete Zusage, die dann verfehlt wird, schadet dem Vertrauen mehr als ein ehrliches „noch nicht bekannt“, und Schweigen lässt den Nutzer rätseln."
+    source: https://en.wikipedia.org/wiki/Customer_support
+  - id: usc-p-frustrated
+    level: practitioner
+    difficulty: 1330
+    type: single
+    stem:
+      en: "A user is shouting that IT is useless because the VPN failed before an important meeting. What is the best first response?"
+      de: "Eine Nutzerin schimpft, die IT sei nutzlos, weil das VPN vor einem wichtigen Termin ausgefallen ist. Was ist die beste erste Reaktion?"
+    options:
+      - en: "Let them finish, acknowledge the impact (\"that is stressful before a meeting\") and then say what you will do now"
+        de: "Sie ausreden lassen, die Auswirkung anerkennen („Das ist vor einem Termin stressig“) und dann sagen, was du jetzt tust"
+        correct: true
+      - en: "Explain that the VPN is not your team's responsibility and the user should have reported it earlier"
+        de: "Erklären, dass das VPN nicht in der Verantwortung deines Teams liegt und sie es früher hätte melden sollen"
+        correct: false
+      - en: "Raise your voice to match theirs so you are taken seriously"
+        de: "Lauter werden, um ernst genommen zu werden"
+        correct: false
+      - en: "End the call and ask the user to call back when calm"
+        de: "Das Gespräch beenden und bitten, sich wieder zu melden, wenn sie ruhiger ist"
+        correct: false
+    explanation:
+      en: "Upset people usually react to the situation, not to you. Listening, acknowledging the effect and moving to a concrete action de-escalates. Arguing about blame or matching the volume escalates; ending the call is only appropriate if the person becomes abusive and your policy says so."
+      de: "Aufgebrachte Menschen reagieren meist auf die Situation, nicht auf dich. Zuhören, die Auswirkung anerkennen und zu einer konkreten Handlung wechseln, deeskaliert. Streit über Schuld oder gleiche Lautstärke eskaliert; das Gespräch zu beenden ist nur angemessen, wenn die Person beleidigend wird und eure Richtlinie das vorsieht."
+    source: https://en.wikipedia.org/wiki/Conflict_resolution
+  - id: usc-a-escalation
+    level: advanced
+    difficulty: 1520
+    type: multi
+    stem:
+      en: "You escalate a ticket to second-level support. Which items make the hand-over effective?"
+      de: "Du eskalierst ein Ticket an den Second-Level-Support. Welche Angaben machen die Übergabe wirksam?"
+    options:
+      - en: "A short summary of who is affected and what they cannot do"
+        de: "Eine kurze Zusammenfassung, wer betroffen ist und was nicht möglich ist"
+        correct: true
+      - en: "What was tried, with times and results, including what did not help"
+        de: "Was versucht wurde, mit Zeiten und Ergebnissen, auch was nicht geholfen hat"
+        correct: true
+      - en: "What the user has already been told"
+        de: "Was den Nutzenden bereits gesagt wurde"
+        correct: true
+      - en: "Only the words \"please take over\""
+        de: "Nur die Worte „bitte übernehmen“"
+        correct: false
+    explanation:
+      en: "The next person should be able to continue without asking the user again. A summary, the steps already taken and the messages already sent make that possible; a bare request forces them to start over."
+      de: "Die nächste Person soll weiterarbeiten können, ohne die Nutzenden erneut zu fragen. Eine Zusammenfassung, die bisherigen Schritte und die bereits gesendeten Nachrichten ermöglichen das; eine bloße Bitte zwingt zum Neustart."
+    source: https://en.wikipedia.org/wiki/Incident_management_(ITSM)
+  - id: usc-a-major-incident
+    level: advanced
+    difficulty: 1570
+    type: single
+    stem:
+      en: "Email is down company-wide and the cause is still unknown. Which communication approach is best?"
+      de: "Die E-Mail ist unternehmensweit ausgefallen und die Ursache ist noch unbekannt. Welcher Kommunikationsansatz ist am besten?"
+    options:
+      - en: "Send a first message early (\"we are aware and investigating\"), announce the time of the next update and keep to it even without news"
+        de: "Früh eine erste Nachricht senden („Wir kennen das Problem und untersuchen es“), den Zeitpunkt des nächsten Updates nennen und ihn auch ohne Neuigkeiten einhalten"
+        correct: true
+      - en: "Wait until the cause is confirmed so you only share facts"
+        de: "Warten, bis die Ursache bestätigt ist, damit nur Fakten mitgeteilt werden"
+        correct: false
+      - en: "Name the probable culprit so people know who to blame"
+        de: "Den wahrscheinlichen Verursacher nennen, damit klar ist, wer schuld ist"
+        correct: false
+      - en: "Let each service desk agent answer in their own words"
+        de: "Jede Service-Desk-Mitarbeitende in eigenen Worten antworten lassen"
+        correct: false
+    explanation:
+      en: "An early acknowledgement and a fixed update cadence reduce the flood of individual enquiries. Waiting for certainty leaves users uninformed, speculation about causes or blame can be wrong and harmful, and a single source of truth keeps answers consistent."
+      de: "Eine frühe Bestätigung und ein fester Update-Takt verringern die Flut an Einzelanfragen. Auf Gewissheit zu warten lässt Nutzende uninformiert, Spekulationen über Ursachen oder Schuld können falsch und schädlich sein, und eine einzige verlässliche Quelle hält die Antworten einheitlich."
+    source: https://en.wikipedia.org/wiki/Incident_management_(ITSM)
+  - id: usc-a-knowledge-article
+    level: advanced
+    difficulty: 1530
+    type: single
+    stem:
+      en: "Which practice keeps a knowledge base article useful over time?"
+      de: "Welche Praxis hält einen Wissensartikel langfristig nützlich?"
+    options:
+      - en: "Assign an owner and a review date, and write it from the user's symptom and search words"
+        de: "Eine verantwortliche Person und ein Prüfdatum festlegen und ihn aus Sicht des Symptoms und der Suchwörter der Nutzenden schreiben"
+        correct: true
+      - en: "Write it once in detailed technical terms and never touch it again"
+        de: "Ihn einmal in ausführlicher Fachsprache schreiben und nie wieder anfassen"
+        correct: false
+      - en: "Title it with the internal root cause so only experts find it"
+        de: "Ihn mit der internen Grundursache betiteln, damit nur Fachleute ihn finden"
+        correct: false
+      - en: "Keep every old version visible so users can compare them"
+        de: "Jede alte Version sichtbar lassen, damit Nutzende sie vergleichen können"
+        correct: false
+    explanation:
+      en: "Users search by what they see, not by the internal cause. Articles go stale when systems change, so an owner and a review date keep them current. Outdated versions left visible mislead readers."
+      de: "Nutzende suchen nach dem, was sie sehen, nicht nach der internen Ursache. Artikel veralten, wenn sich Systeme ändern; eine verantwortliche Person und ein Prüfdatum halten sie aktuell. Sichtbar gelassene veraltete Versionen führen Lesende in die Irre."
+    source: https://en.wikipedia.org/wiki/Knowledge_base
+  - id: usc-a-feedback
+    level: advanced
+    difficulty: 1610
+    type: single
+    stem:
+      en: "Survey comments show that many users \"did not know where to look for news\" during outages. What is the best response from a feedback-loop perspective?"
+      de: "Umfragekommentare zeigen, dass viele Nutzende bei Störungen „nicht wussten, wo sie Neuigkeiten finden“. Was ist aus Sicht einer Feedback-Schleife die beste Reaktion?"
+    options:
+      - en: "Change one thing, such as linking the status page from the sign-in page, and check whether the comments improve"
+        de: "Eine Sache ändern, etwa die Statusseite auf der Anmeldeseite verlinken, und prüfen, ob sich die Kommentare verbessern"
+        correct: true
+      - en: "Ignore it, since free-text comments are not measurable"
+        de: "Ignorieren, da Freitextkommentare nicht messbar sind"
+        correct: false
+      - en: "Find out which agent users mean and give them a warning"
+        de: "Herausfinden, welche Mitarbeitenden gemeint sind, und sie verwarnen"
+        correct: false
+      - en: "Send a long all-staff email explaining where outage news is posted, once, and consider the matter closed"
+        de: "Einmalig eine lange Rundmail an alle schicken, wo Störungsmeldungen stehen, und die Sache als erledigt betrachten"
+        correct: false
+    explanation:
+      en: "A feedback loop turns a pattern in comments into a targeted change and then checks the effect. Blaming individuals ignores the systemic gap, and a one-off email without follow-up does not show whether anything improved."
+      de: "Eine Feedback-Schleife macht aus einem Muster in Kommentaren eine gezielte Änderung und prüft danach die Wirkung. Einzelne zu beschuldigen übersieht die systemische Lücke, und eine einmalige Mail ohne Nachverfolgung zeigt nicht, ob sich etwas verbessert hat."
+    source: https://en.wikipedia.org/wiki/Customer_support
