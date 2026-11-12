@@ -1,0 +1,13 @@
+id: wikipedia-knowledge-transfer
+url: https://en.wikipedia.org/wiki/Knowledge_transfer
+title: "Knowledge transfer"
+provider: Wikipedia
+language: en
+format: article
+minutes: 12
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-12
+mode: link
+competencies: [onboarding-offboarding]
+levels: [advanced]

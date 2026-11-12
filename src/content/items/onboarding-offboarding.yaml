@@ -1,0 +1,290 @@
+competency: onboarding-offboarding
+items:
+  - id: oo-f-onoff
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "What best describes the difference between onboarding and offboarding?"
+      de: "Was beschreibt den Unterschied zwischen Onboarding und Offboarding am besten?"
+    options:
+      - en: "Onboarding supports people joining the company; offboarding is the designed process when someone leaves"
+        de: "Onboarding unterstützt Menschen beim Eintritt; Offboarding ist der gestaltete Prozess, wenn jemand das Unternehmen verlässt"
+        correct: true
+      - en: "Onboarding is only for managers; offboarding is only for interns"
+        de: "Onboarding gilt nur für Führungskräfte; Offboarding nur für Praktikant:innen"
+        correct: false
+      - en: "They are the same process with two names"
+        de: "Es ist derselbe Prozess mit zwei Namen"
+        correct: false
+      - en: "Offboarding happens before the contract is signed"
+        de: "Offboarding findet vor Vertragsabschluss statt"
+        correct: false
+    explanation:
+      en: "Onboarding covers integrating new employees; offboarding is the separation process when an employee leaves."
+      de: "Onboarding umfasst die Eingliederung neuer Mitarbeitender; Offboarding ist der Trennungsprozess beim Ausscheiden."
+    source: https://de.wikipedia.org/wiki/Onboarding
+  - id: oo-f-checklist
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Which set belongs on a first-day checklist?"
+      de: "Welche Zusammenstellung gehört auf eine Checkliste für den ersten Tag?"
+    options:
+      - en: "Only the date of the first performance review"
+        de: "Nur der Termin der ersten Leistungsbeurteilung"
+        correct: false
+      - en: "Documents, equipment, access and a welcome"
+        de: "Unterlagen, Ausstattung, Zugänge und ein Willkommen"
+        correct: true
+      - en: "Only the canteen menu"
+        de: "Nur der Speiseplan der Kantine"
+        correct: false
+      - en: "The reasons why the previous employee left"
+        de: "Die Gründe, warum die vorherige Person gegangen ist"
+        correct: false
+    explanation:
+      en: "A first-day checklist makes sure paperwork, tools, access and a personal welcome are ready before the person arrives."
+      de: "Eine Checkliste für den ersten Tag stellt sicher, dass Unterlagen, Arbeitsmittel, Zugänge und ein persönliches Willkommen bereit sind, bevor die Person kommt."
+    source: https://en.wikipedia.org/wiki/Onboarding
+  - id: oo-f-buddy
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "What is a buddy in onboarding?"
+      de: "Was ist ein Buddy im Onboarding?"
+    options:
+      - en: "The person who decides on the newcomer's pay"
+        de: "Die Person, die über das Gehalt der neuen Person entscheidet"
+        correct: false
+      - en: "An external lawyer assigned to every newcomer"
+        de: "Ein:e externe:r Anwält:in für jede neue Person"
+        correct: false
+      - en: "A colleague who answers everyday questions and explains unwritten rules, without being the line manager"
+        de: "Ein:e Kolleg:in, die oder der Alltagsfragen beantwortet und ungeschriebene Regeln erklärt, ohne Führungskraft zu sein"
+        correct: true
+      - en: "A person who assesses the newcomer's performance"
+        de: "Eine Person, die die Leistung der neuen Person beurteilt"
+        correct: false
+    explanation:
+      en: "A buddy supports integration with everyday answers. The manager stays responsible for tasks and assessment."
+      de: "Ein Buddy unterstützt die Integration mit Antworten auf Alltagsfragen. Die Führungskraft bleibt für Aufgaben und Beurteilung verantwortlich."
+    source: https://de.wikipedia.org/wiki/Einarbeitung
+  - id: oo-f-exit
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "A colleague is leaving. Which approach fits a respectful exit?"
+      de: "Eine Kollegin oder ein Kollege verlässt das Unternehmen. Welches Vorgehen passt zu einem respektvollen Austritt?"
+    options:
+      - en: "Cut off access without telling anyone and avoid contact"
+        de: "Zugänge ohne Information beenden und jeden Kontakt vermeiden"
+        correct: false
+      - en: "Ask the person to hand over equipment informally to whoever is nearby"
+        de: "Die Person bitten, Geräte formlos irgendwem in der Nähe zu geben"
+        correct: false
+      - en: "Skip any thanks to keep the process short"
+        de: "Jeden Dank weglassen, um den Prozess kurz zu halten"
+        correct: false
+      - en: "Communicate who does what, return equipment and end access in an orderly way, and treat the person with dignity"
+        de: "Klar kommunizieren, wer was tut, Geräte und Zugänge geordnet zurücknehmen und die Person würdevoll behandeln"
+        correct: true
+    explanation:
+      en: "The offboarding article recommends treating offboarding as a positive experience and acknowledging contributions, with orderly return of property and access removal."
+      de: "Der Offboarding-Artikel empfiehlt, Offboarding als positive Erfahrung zu gestalten und Beiträge anzuerkennen, mit geordneter Rückgabe und Entzug der Zugänge."
+    source: https://en.wikipedia.org/wiki/Employee_offboarding
+  - id: oo-p-plan
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "Which element belongs in a good first-weeks plan?"
+      de: "Welches Element gehört in einen guten Plan für die ersten Wochen?"
+    options:
+      - en: "Goals per stage, named people and topics, and check-ins agreed with the newcomer"
+        de: "Ziele je Abschnitt, benannte Personen und Themen sowie mit der neuen Person abgestimmte Check-ins"
+        correct: true
+      - en: "A list of tasks without any order or contact person"
+        de: "Eine Aufgabenliste ohne Reihenfolge und Ansprechperson"
+        correct: false
+      - en: "Only the legal notice period of the contract"
+        de: "Nur die rechtliche Kündigungsfrist des Vertrags"
+        correct: false
+      - en: "A plan that the newcomer never sees"
+        de: "Ein Plan, den die neue Person nie sieht"
+        correct: false
+    explanation:
+      en: "The article on Einarbeitung says the plan sets the order of tasks, time sections and criteria, and should be worked out together with the newcomer."
+      de: "Der Artikel zur Einarbeitung sagt, der Plan enthalte Reihenfolge, Zeitabschnitte und Kriterien und solle gemeinsam mit der neuen Person erarbeitet werden."
+    source: https://de.wikipedia.org/wiki/Einarbeitung
+  - id: oo-p-coord
+    level: practitioner
+    difficulty: 1220
+    type: single
+    stem:
+      en: "Three days before a start, the laptop and accounts are still not ready. What is the best coordination practice?"
+      de: "Drei Tage vor dem Start sind Laptop und Konten noch nicht bereit. Was ist die beste Koordinationspraxis?"
+    options:
+      - en: "Wait and see whether the newcomer complains on day one"
+        de: "Abwarten, ob sich die neue Person am ersten Tag beschwert"
+        correct: false
+      - en: "Keep one tracked list of who does what by when relative to the start date, and follow up with IT and the manager"
+        de: "Eine nachverfolgte Liste führen, wer was bis wann erledigt, bezogen auf das Startdatum, und bei IT und Führungskraft nachfassen"
+        correct: true
+      - en: "Give the newcomer a colleague's login to use meanwhile"
+        de: "Der neuen Person vorübergehend das Login einer Kollegin oder eines Kollegen geben"
+        correct: false
+      - en: "Cancel the start date without informing anyone"
+        de: "Den Starttermin absagen, ohne jemanden zu informieren"
+        correct: false
+    explanation:
+      en: "A single tracked list with owners and dates makes gaps visible early. Sharing logins is never an acceptable shortcut for access."
+      de: "Eine einzige nachverfolgte Liste mit Verantwortlichen und Terminen macht Lücken früh sichtbar. Geteilte Logins sind nie eine akzeptable Abkürzung für Zugänge."
+    source: https://en.wikipedia.org/wiki/Access_control
+  - id: oo-p-exit
+    level: practitioner
+    difficulty: 1280
+    type: single
+    stem:
+      en: "Which set best describes the practical parts of an exit process?"
+      de: "Welche Zusammenstellung beschreibt die praktischen Teile eines Austrittsprozesses am besten?"
+    options:
+      - en: "Only a farewell party"
+        de: "Nur eine Abschiedsfeier"
+        correct: false
+      - en: "Only deleting the person's emails immediately"
+        de: "Nur das sofortige Löschen der E-Mails der Person"
+        correct: false
+      - en: "Handover of open tasks, ending access, return of equipment and handling of the reference request according to rules"
+        de: "Übergabe offener Aufgaben, Entzug der Zugänge, Rückgabe der Geräte und Umgang mit der Zeugnisanfrage nach den Regeln"
+        correct: true
+      - en: "Only a signature on an empty form"
+        de: "Nur eine Unterschrift auf einem leeren Formular"
+        correct: false
+    explanation:
+      en: "The offboarding articles list knowledge handover, return of property, ending access and administrative paperwork as typical parts."
+      de: "Die Offboarding-Artikel nennen Wissensübergabe, Rückgabe von Eigentum, Beenden von Zugängen und Verwaltungsunterlagen als typische Teile."
+    source: https://en.wikipedia.org/wiki/Employee_offboarding
+  - id: oo-p-exitint
+    level: practitioner
+    difficulty: 1350
+    type: single
+    stem:
+      en: "Which practice fits an exit interview?"
+      de: "Welche Praxis passt zu einem Austrittsgespräch?"
+    options:
+      - en: "Make it compulsory and argue against every criticism"
+        de: "Verpflichtend machen und jeder Kritik widersprechen"
+        correct: false
+      - en: "Let the person's direct manager always conduct it, even if the manager is the reason for leaving"
+        de: "Immer die direkte Führungskraft führen lassen, auch wenn sie der Grund für das Gehen ist"
+        correct: false
+      - en: "Share all comments with named quotes in the team chat"
+        de: "Alle Kommentare mit Namen im Team-Chat teilen"
+        correct: false
+      - en: "Offer it voluntarily, explain how feedback is used, listen without defending and keep it confidential"
+        de: "Freiwillig anbieten, erklären, wie das Feedback genutzt wird, zuhören ohne sich zu verteidigen und vertraulich behandeln"
+        correct: true
+    explanation:
+      en: "The exit-interview article notes that people may not be candid if the interviewer is part of the reason for leaving. Choose a suitable interviewer and handle notes confidentially."
+      de: "Der Artikel zum Exit interview weist darauf hin, dass Ausscheidende nicht offen sein müssen, wenn die interviewende Person zum Grund des Gehens gehört. Wähle eine passende Person und behandle Notizen vertraulich."
+    source: https://en.wikipedia.org/wiki/Exit_interview
+  - id: oo-a-feedback
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "Exit-interview notes from a small team allow readers to identify one person. What is the best handling?"
+      de: "Notizen aus Austrittsgesprächen eines kleinen Teams lassen eine Person erkennen. Was ist der beste Umgang?"
+    options:
+      - en: "Summarise themes in aggregated form, restrict access to the notes and check retention with the DPO"
+        de: "Themen zusammengefasst darstellen, den Zugriff auf die Notizen beschränken und die Aufbewahrung mit der oder dem DSB klären"
+        correct: true
+      - en: "Send the full notes with names to all managers"
+        de: "Die vollständigen Notizen mit Namen an alle Führungskräfte senden"
+        correct: false
+      - en: "Publish quotes on the intranet to show openness"
+        de: "Zitate im Intranet veröffentlichen, um Offenheit zu zeigen"
+        correct: false
+      - en: "Keep them in an open shared folder for convenience"
+        de: "Sie der Einfachheit halber in einem offenen Ordner ablegen"
+        correct: false
+    explanation:
+      en: "Employee data should only be processed as far as necessary. Aggregation and restricted access protect people; the DPO helps with retention questions."
+      de: "Beschäftigtendaten dürfen nur verarbeitet werden, soweit es erforderlich ist. Zusammenfassen und beschränkter Zugriff schützen Menschen; die oder der DSB hilft bei Aufbewahrungsfragen."
+    source: https://de.wikipedia.org/wiki/Arbeitnehmerdatenschutz
+  - id: oo-a-measure
+    level: advanced
+    difficulty: 1520
+    type: single
+    stem:
+      en: "You want to know whether your onboarding works. Which approach avoids inventing benchmarks?"
+      de: "Du willst wissen, ob dein Onboarding funktioniert. Welcher Ansatz vermeidet erfundene Vergleichswerte?"
+    options:
+      - en: "Adopt a number you read somewhere as the target without a source"
+        de: "Eine irgendwo gelesene Zahl ohne Quelle als Ziel übernehmen"
+        correct: false
+      - en: "Define your own yes/no process questions per case, track them over time and investigate patterns"
+        de: "Eigene Ja-Nein-Prozessfragen je Fall definieren, im Zeitverlauf verfolgen und Muster untersuchen"
+        correct: true
+      - en: "Declare the process good because nobody complained"
+        de: "Den Prozess für gut erklären, weil sich niemand beschwert hat"
+        correct: false
+      - en: "Compare your result with an unnamed 'industry average'"
+        de: "Dein Ergebnis mit einem nicht benannten 'Branchendurchschnitt' vergleichen"
+        correct: false
+    explanation:
+      en: "Comparing a process with itself over time is traceable and needs no external number; unsourced benchmarks mislead."
+      de: "Der Vergleich eines Prozesses mit sich selbst im Zeitverlauf ist nachvollziehbar und braucht keine externe Zahl; Vergleichswerte ohne Quelle führen in die Irre."
+    source: https://de.wikipedia.org/wiki/Onboarding
+  - id: oo-a-difficult
+    level: advanced
+    difficulty: 1580
+    type: single
+    stem:
+      en: "A conflict-driven exit is planned. What is the right role for HR?"
+      de: "Ein konfliktbedingter Austritt ist geplant. Was ist die richtige Rolle der HR?"
+    options:
+      - en: "Decide the legal route alone to be quick"
+        de: "Den rechtlichen Weg allein entscheiden, um schnell zu sein"
+        correct: false
+      - en: "Promise the person a particular outcome"
+        de: "Der Person ein bestimmtes Ergebnis zusagen"
+        correct: false
+      - en: "Stay factual, document facts neutrally, involve the HR lead, legal counsel and, where rules require, the works council, and keep the person's dignity"
+        de: "Sachlich bleiben, Fakten neutral dokumentieren, HR-Leitung, rechtliche Beratung und, wo Regeln es verlangen, den Betriebsrat einbeziehen und die Würde der Person wahren"
+        correct: true
+      - en: "Avoid the works council so the case stays secret"
+        de: "Den Betriebsrat meiden, damit der Fall geheim bleibt"
+        correct: false
+    explanation:
+      en: "HR does not give legal advice. The Betriebsrat article describes participation in personnel matters such as dismissals; what applies depends on rules and the case."
+      de: "HR gibt keine Rechtsberatung. Der Betriebsrat-Artikel beschreibt die Beteiligung bei Personalmaßnahmen wie Kündigungen; was gilt, hängt von Regeln und Einzelfall ab."
+    source: https://de.wikipedia.org/wiki/Betriebsrat
+  - id: oo-a-knowledge
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "A key person leaves. Which plan for knowledge transfer is best?"
+      de: "Eine Schlüsselperson verlässt das Unternehmen. Welcher Plan für den Wissenstransfer ist am besten?"
+    options:
+      - en: "Ask for a one-page summary on the last day only"
+        de: "Erst am letzten Tag eine einseitige Zusammenfassung verlangen"
+        correct: false
+      - en: "Rely on the leaver's memory after they have left"
+        de: "Sich auf das Gedächtnis der Person nach ihrem Weggang verlassen"
+        correct: false
+      - en: "Assume all knowledge can be written down in one document"
+        de: "Annehmen, dass sich alles Wissen in einem Dokument festhalten lässt"
+        correct: false
+      - en: "Document procedures, contacts and file locations, and plan shadowing or joint work for knowledge learned by doing, with a named recipient"
+        de: "Abläufe, Kontakte und Ablageorte dokumentieren und für Erfahrungswissen Mitlaufen oder gemeinsame Arbeit mit benannter Nachfolge einplanen"
+        correct: true
+    explanation:
+      en: "The offboarding article suggests ongoing documentation; the knowledge-transfer article distinguishes facts from practical skills, which need practice and time to pass on."
+      de: "Der Offboarding-Artikel empfiehlt laufende Dokumentation; der Artikel zu Knowledge transfer unterscheidet Fakten von praktischen Fähigkeiten, deren Weitergabe Übung und Zeit braucht."
+    source: https://en.wikipedia.org/wiki/Knowledge_transfer
