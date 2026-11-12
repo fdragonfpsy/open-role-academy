@@ -1,0 +1,13 @@
+id: wikipedia-european-union-value-added-tax
+url: https://en.wikipedia.org/wiki/European_Union_value_added_tax
+title: "European Union value added tax"
+provider: Wikipedia
+language: en
+format: article
+minutes: 20
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-12
+mode: link
+competencies: [tax-basics]
+levels: [practitioner, advanced]
