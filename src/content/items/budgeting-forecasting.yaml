@@ -1,0 +1,290 @@
+competency: budgeting-forecasting
+items:
+  - id: bf-f-budget-forecast
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "Which statement best describes the difference between a budget and a forecast?"
+      de: "Welche Aussage beschreibt den Unterschied zwischen Budget und Forecast am besten?"
+    options:
+      - en: "A budget is a fixed-term plan; a forecast is a flexible, updated estimate"
+        de: "Ein Budget ist ein zeitlich fester Plan, ein Forecast eine flexible, aktualisierte Schätzung"
+        correct: true
+      - en: "A budget is what actually happened; a forecast is the plan"
+        de: "Ein Budget zeigt, was tatsächlich passiert ist; ein Forecast ist der Plan"
+        correct: false
+      - en: "They are the same thing and are always identical"
+        de: "Beides ist dasselbe und immer identisch"
+        correct: false
+      - en: "A forecast is only used for personal finances"
+        de: "Ein Forecast wird nur für private Finanzen genutzt"
+        correct: false
+    explanation:
+      en: "Budgets are fixed-term financial plans for resource allocation and control; forecasts estimate future performance and can be updated as circumstances change."
+      de: "Budgets sind zeitlich feste Finanzpläne für Ressourcenzuteilung und Kontrolle; Forecasts schätzen die künftige Entwicklung und können bei veränderten Umständen angepasst werden."
+    source: https://en.wikipedia.org/wiki/Forecasting
+  - id: bf-f-expense-line
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Which of these is an expense line in a budget?"
+      de: "Welche dieser Positionen ist eine Aufwandsposition in einem Budget?"
+    options:
+      - en: "Product sales"
+        de: "Produktverkäufe"
+        correct: false
+      - en: "Rent"
+        de: "Miete"
+        correct: true
+      - en: "Fees received from customers"
+        de: "Von Kundschaft erhaltene Gebühren"
+        correct: false
+      - en: "Expected revenue"
+        de: "Erwarteter Umsatz"
+        correct: false
+    explanation:
+      en: "Expense lines show expected costs such as rent, salaries or software. Sales, fees and revenue are income lines."
+      de: "Aufwandspositionen zeigen erwartete Kosten wie Miete, Gehälter oder Software. Verkäufe, Gebühren und Umsatz sind Ertragspositionen."
+    source: https://en.wikipedia.org/wiki/Budget
+  - id: bf-f-variance-def
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "What is a variance in budgeting?"
+      de: "Was ist eine Abweichung in der Budgetierung?"
+    options:
+      - en: "The difference between the budgeted amount and the actual amount"
+        de: "Die Differenz zwischen dem budgetierten und dem tatsächlichen Betrag"
+        correct: true
+      - en: "The total of all expense lines"
+        de: "Die Summe aller Aufwandspositionen"
+        correct: false
+      - en: "The budget for the next year"
+        de: "Das Budget für das nächste Jahr"
+        correct: false
+      - en: "A mistake in the accounting system"
+        de: "Ein Fehler im Buchhaltungssystem"
+        correct: false
+    explanation:
+      en: "A variance is the difference between a budgeted or planned amount and the actual amount; it can be computed for costs and revenues."
+      de: "Eine Abweichung ist die Differenz zwischen einem budgetierten oder geplanten und dem tatsächlichen Betrag; sie lässt sich für Kosten und Erlöse bestimmen."
+    source: https://en.wikipedia.org/wiki/Variance_(accounting)
+  - id: bf-f-last-year
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "You build a budget from last year's actuals. What should you do with each adjustment, such as an expected salary increase?"
+      de: "Du erstellst ein Budget aus den Vorjahres-Istwerten. Was solltest du mit jeder Anpassung tun, etwa einer erwarteten Gehaltserhöhung?"
+    options:
+      - en: "Apply it silently so the file stays tidy"
+        de: "Sie stillschweigend einrechnen, damit die Datei aufgeräumt bleibt"
+        correct: false
+      - en: "Write it down as a named assumption"
+        de: "Sie als benannte Annahme festhalten"
+        correct: true
+      - en: "Ignore it, because only last year counts"
+        de: "Sie ignorieren, weil nur das Vorjahr zählt"
+        correct: false
+      - en: "Wait until the actuals show the real number"
+        de: "Warten, bis die Istwerte die echte Zahl zeigen"
+        correct: false
+    explanation:
+      en: "Documented assumptions let others check and update the budget. Copying last year without questioning it only repeats last year."
+      de: "Dokumentierte Annahmen erlauben anderen, das Budget zu prüfen und zu aktualisieren. Das Vorjahr ungeprüft fortzuschreiben wiederholt nur das Vorjahr."
+    source: https://en.wikipedia.org/wiki/Budget
+  - id: bf-p-fav-cost
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "A cost line has a budget of 5,000 and an actual of 4,700. How is this variance classified?"
+      de: "Eine Kostenposition hat ein Budget von 5.000 und ein Ist von 4.700. Wie ist diese Abweichung einzuordnen?"
+    options:
+      - en: "Adverse, because the actual is lower"
+        de: "Ungünstig, weil das Ist niedriger ist"
+        correct: false
+      - en: "Favourable, because costs were lower than planned"
+        de: "Günstig, weil die Kosten niedriger waren als geplant"
+        correct: true
+      - en: "Neither, because it is below 10%"
+        de: "Weder noch, weil sie unter 10 % liegt"
+        correct: false
+      - en: "Favourable only if revenue also rose"
+        de: "Nur günstig, wenn auch der Umsatz stieg"
+        correct: false
+    explanation:
+      en: "A variance is favourable when the result is better than planned. For a cost line, spending less than budget is better."
+      de: "Eine Abweichung ist günstig, wenn das Ergebnis besser ist als geplant. Bei einer Kostenposition ist weniger Ausgabe als budgetiert besser."
+    source: https://en.wikipedia.org/wiki/Variance_(accounting)
+  - id: bf-p-assumptions
+    level: practitioner
+    difficulty: 1220
+    type: single
+    stem:
+      en: "Why keep a separate assumptions sheet in a budget file?"
+      de: "Warum führt man in einer Budgetdatei ein eigenes Annahmenblatt?"
+    options:
+      - en: "To make the file look longer"
+        de: "Damit die Datei umfangreicher aussieht"
+        correct: false
+      - en: "So changes can be made in one place and variances traced to their assumption"
+        de: "Damit Änderungen an einer Stelle erfolgen und Abweichungen auf ihre Annahme zurückgeführt werden können"
+        correct: true
+      - en: "Because formulas must not refer to other sheets"
+        de: "Weil Formeln nicht auf andere Blätter verweisen dürfen"
+        correct: false
+      - en: "To hide the numbers from budget owners"
+        de: "Um die Zahlen vor Budgetverantwortlichen zu verbergen"
+        correct: false
+    explanation:
+      en: "Traceable assumptions (value, owner, source, date) let you update one cell and check whether a variance came from the assumption or from execution."
+      de: "Nachvollziehbare Annahmen (Wert, Zuständigkeit, Quelle, Datum) erlauben es, eine Zelle anzupassen und zu prüfen, ob eine Abweichung aus der Annahme oder der Umsetzung stammt."
+    source: https://de.wikipedia.org/wiki/Soll-Ist-Vergleich
+  - id: bf-p-rolling
+    level: practitioner
+    difficulty: 1290
+    type: single
+    stem:
+      en: "What is the basic idea of a rolling forecast?"
+      de: "Was ist die Grundidee eines rollierenden Forecasts?"
+    options:
+      - en: "The outlook is updated at regular intervals and a new period is added so the horizon stays constant"
+        de: "Die Vorausschau wird regelmäßig aktualisiert und eine neue Periode angefügt, sodass der Horizont gleich bleibt"
+        correct: true
+      - en: "The budget is rewritten every day from zero"
+        de: "Das Budget wird täglich bei null neu geschrieben"
+        correct: false
+      - en: "Past actuals are deleted once they are booked"
+        de: "Vergangene Istwerte werden gelöscht, sobald sie gebucht sind"
+        correct: false
+      - en: "The forecast is fixed for the full year and never changed"
+        de: "Der Forecast ist für das ganze Jahr fix und wird nie geändert"
+        correct: false
+    explanation:
+      en: "A rolling forecast keeps a constant horizon by adding a period as one closes. Forecasts allow flexibility, while the budget remains the agreed reference."
+      de: "Ein rollierender Forecast hält den Horizont konstant, indem er eine Periode anfügt, sobald eine abgeschlossen ist. Forecasts erlauben Flexibilität, das Budget bleibt die vereinbarte Referenz."
+    source: https://en.wikipedia.org/wiki/Forecasting
+  - id: bf-p-hygiene
+    level: practitioner
+    difficulty: 1340
+    type: single
+    stem:
+      en: "Which practice is part of good spreadsheet hygiene for a budget file?"
+      de: "Welche Praxis gehört zu sauberer Tabellenarbeit bei einer Budgetdatei?"
+    options:
+      - en: "Typing the growth rate directly into each formula"
+        de: "Die Wachstumsrate direkt in jede Formel einzutippen"
+        correct: false
+      - en: "Using different formulas within one row to fit each month"
+        de: "Innerhalb einer Zeile je Monat andere Formeln zu verwenden"
+        correct: false
+      - en: "Keeping inputs separate and adding check cells for totals"
+        de: "Eingaben getrennt zu halten und Kontrollzellen für Summen einzubauen"
+        correct: true
+      - en: "Overwriting the approved budget when plans change"
+        de: "Das genehmigte Budget bei Planänderungen zu überschreiben"
+        correct: false
+    explanation:
+      en: "Separating inputs from calculations, avoiding hard-coded numbers and adding checks make errors easier to find. The approved budget stays the reference."
+      de: "Eingaben von Berechnungen zu trennen, fest eingetippte Zahlen zu vermeiden und Kontrollen einzubauen macht Fehler leichter findbar. Das genehmigte Budget bleibt die Referenz."
+    source: https://de.wikipedia.org/wiki/Budgetierung
+  - id: bf-a-price-volume
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "Budget: 200 units at 10. Actual: 180 units at 11. What is the volume effect, calculated at the budgeted price?"
+      de: "Budget: 200 Stück zu 10. Ist: 180 Stück zu 11. Wie hoch ist der Mengeneffekt, berechnet zum Planpreis?"
+    options:
+      - en: "-200"
+        de: "-200"
+        correct: true
+      - en: "+180"
+        de: "+180"
+        correct: false
+      - en: "-20"
+        de: "-20"
+        correct: false
+      - en: "+200"
+        de: "+200"
+        correct: false
+    explanation:
+      en: "Volume effect = (180 - 200) x 10 = -200. The price effect is (11 - 10) x 180 = +180, so the total variance is 1,980 - 2,000 = -20."
+      de: "Mengeneffekt = (180 - 200) x 10 = -200. Der Preiseffekt ist (11 - 10) x 180 = +180, die Gesamtabweichung also 1.980 - 2.000 = -20."
+    source: https://en.wikipedia.org/wiki/Variance_(accounting)
+  - id: bf-a-sensitivity
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "What does a sensitivity analysis on a budget model typically do?"
+      de: "Was leistet eine Sensitivitätsanalyse an einem Budgetmodell typischerweise?"
+    options:
+      - en: "It changes one assumption by a stated amount to see how the result moves"
+        de: "Sie ändert eine Annahme um einen festgelegten Betrag, um die Wirkung auf das Ergebnis zu sehen"
+        correct: true
+      - en: "It replaces the budget with last year's actuals"
+        de: "Sie ersetzt das Budget durch die Vorjahres-Istwerte"
+        correct: false
+      - en: "It proves that the forecast is correct"
+        de: "Sie beweist, dass der Forecast richtig ist"
+        correct: false
+      - en: "It removes all uncertain assumptions from the model"
+        de: "Sie entfernt alle unsicheren Annahmen aus dem Modell"
+        correct: false
+    explanation:
+      en: "Sensitivity analysis studies how uncertainty in a model's output relates to uncertainty in its inputs. Scenarios, by contrast, change several assumptions together as a coherent story."
+      de: "Die Sensitivitätsanalyse untersucht, wie Unsicherheit im Ergebnis eines Modells mit Unsicherheit in den Eingaben zusammenhängt. Szenarien dagegen ändern mehrere Annahmen gemeinsam als stimmige Geschichte."
+    source: https://en.wikipedia.org/wiki/Sensitivity_analysis
+  - id: bf-a-bias
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "Forecast errors (actual minus forecast) for four months are +40, +25, +35, +30. What does this pattern suggest?"
+      de: "Die Prognosefehler (Ist minus Prognose) für vier Monate sind +40, +25, +35, +30. Was legt dieses Muster nahe?"
+    options:
+      - en: "The forecast is unbiased because the errors are small"
+        de: "Die Prognose ist unverzerrt, weil die Fehler klein sind"
+        correct: false
+      - en: "The forecast is systematically too low, so assumptions should be reviewed"
+        de: "Die Prognose ist systematisch zu niedrig, die Annahmen sollten geprüft werden"
+        correct: true
+      - en: "The forecast is systematically too high"
+        de: "Die Prognose ist systematisch zu hoch"
+        correct: false
+      - en: "Forecast errors cannot be reviewed"
+        de: "Prognosefehler lassen sich nicht auswerten"
+        correct: false
+    explanation:
+      en: "Error = actual - forecast. Positive errors every month mean the actual keeps exceeding the forecast. If the mean error is not near zero, the forecast is biased and the assumptions should be reviewed."
+      de: "Fehler = Ist - Prognose. Jeden Monat positive Fehler heißen, dass das Ist die Prognose ständig übertrifft. Weicht der mittlere Fehler von null ab, ist die Prognose verzerrt und die Annahmen sollten geprüft werden."
+    source: https://en.wikipedia.org/wiki/Forecasting
+  - id: bf-a-communicate
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "Which is the best way to report a cost variance to a non-finance manager?"
+      de: "Welche Darstellung ist die beste, um einem Nicht-Finanzmanager eine Kostenabweichung zu berichten?"
+    options:
+      - en: "(A) 400 on line 4711"
+        de: "(A) 400 auf Zeile 4711"
+        correct: false
+      - en: "Costs were 400 above plan because of travel; we will review bookings next month"
+        de: "Die Kosten lagen 400 über Plan wegen Reisen; wir prüfen die Buchungen im nächsten Monat"
+        correct: true
+      - en: "Send the complete ledger and let the manager find the cause"
+        de: "Das komplette Hauptbuch senden, die Ursache soll die Führungskraft selbst finden"
+        correct: false
+      - en: "Wait until the year end to mention it"
+        de: "Bis zum Jahresende warten, bevor man es erwähnt"
+        correct: false
+    explanation:
+      en: "Lead with the message, the number, the cause and the next step, in plain words. Avoid jargon, sign codes and data dumps."
+      de: "Beginne mit Kernaussage, Zahl, Ursache und nächstem Schritt in einfachen Worten. Vermeide Jargon, Vorzeichenkürzel und Datenhalden."
+    source: https://de.wikipedia.org/wiki/Soll-Ist-Vergleich

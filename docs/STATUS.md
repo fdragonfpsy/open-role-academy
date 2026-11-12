@@ -1,5 +1,17 @@
 # Status
 
+## 2026-11-12 — Phase 2: Finance & Accounting content for budgeting-forecasting
+
+**Done**
+- `cash-liquidity-management` merged ([#36](https://github.com/fdragonfpsy/open-role-academy/pull/36)).
+- `budgeting-forecasting`: 6 units (3 levels x en/de), 12 items, 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0), 4 reused. Amounts invented and labelled as illustration.
+- Levels: foundation = budget vs forecast, plan vs actual; practitioner = budgets with owners, assumptions, variances, rolling forecast idea, spreadsheet hygiene; advanced = variance drivers, scenarios/sensitivity, forecast accuracy, process design side effects, communicating variances.
+- Review note for humans: rolling forecast definition, price/volume/mix for sales, top-down/bottom-up steps in the en units, sign-convention advice and the "practice insight" on sandbagging are general knowledge without a dedicated cited page.
+
+**Counts:** roles 4 (2 published, 2 draft) · competencies 38 · units 144 · items 288 · resources 173
+
+**Next:** `internal-controls-audit`, then `cost-accounting`, `financial-analysis-kpis`, then publish the Finance & Accounting role.
+
 ## 2026-11-12 — Phase 2: Finance & Accounting content for cash-liquidity-management
 
 **Done**
