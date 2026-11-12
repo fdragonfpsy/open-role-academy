@@ -1,0 +1,88 @@
+---
+id: scripting-automation-advanced
+competency: scripting-automation
+level: advanced
+title: "Nachhaltige Automatisierung: wiederverwendbare Werkzeuge, Dokumentation, Review und Tests, minimale Rechte, Entscheidung was automatisiert wird und langfristige Pflege"
+objectives:
+  - Einmalige Skripte zu wiederverwendbaren, dokumentierten Werkzeugen weiterentwickeln.
+  - Skripte vor dem produktiven Einsatz prüfen lassen und testen.
+  - Das Prinzip der minimalen Rechte auf Automatisierungskonten anwenden.
+  - Entscheiden, was automatisiert werden sollte und was nicht.
+  - Die Pflege von Automatisierung über die Zeit planen.
+minutes: 35
+resources:
+  - wikipedia-de-versionsverwaltung
+  - wikipedia-de-rollenbasierte-zugriffskontrolle
+  - wikipedia-de-cron
+  - wikipedia-version-control
+  - wikipedia-idempotence
+status: ai-draft
+sources:
+  - title: "Versionsverwaltung"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Versionsverwaltung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Rollenbasierte Zugriffskontrolle"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Rollenbasierte_Zugriffskontrolle
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Idempotence"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Idempotence
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Das nützliche Skript einer einzelnen Person wird zum Risiko, sobald das Team davon abhängt: Niemand sonst versteht es, es läuft mit viel zu vielen Rechten, es bricht nach einem Systemupdate unbemerkt und die Autorin oder der Autor ist längst woanders. Auf Expertenniveau besteht deine Aufgabe nicht nur darin, Automatisierung zu schreiben, sondern sie **wiederverwendbar, prüfbar, sicher und wartbar** zu machen.
+
+## Wiederverwendbare Werkzeuge und Dokumentation
+
+- **Kleine Funktionen, klare Namen.** Teile ein langes Skript in Funktionen, die jeweils eine Sache tun, damit sie wiederverwendet und einzeln getestet werden können.
+- **Gemeinsame Module.** Lege wiederkehrende Hilfen wie Protokollierung, Parameterprüfung und Wiederholungslogik an einer Stelle ab, die alle Skripte nutzen, statt sie zu kopieren.
+- **Eine kurze README je Werkzeug:** Zweck, Eingaben und Parameter, was es verändert, benötigte Berechtigungen, wie man einen Probelauf startet, wie man das Protokoll liest, wer verantwortlich ist und bekannte Grenzen.
+- **Beispiele.** Ein funktionierender Beispielbefehl sagt mehr als eine Seite Fließtext.
+
+## Code-Review und Tests
+
+Behandle Skripte wie jeden anderen Code, der die Produktion verändert. **Eine zweite Person prüft** jede Änderung, bevor sie übernommen wird: Tut sie, was die Beschreibung sagt? Was passiert bei fehlerhaften Eingaben oder wenn ein Schritt scheitert? Könnte mehr gelöscht oder geändert werden als beabsichtigt? Die Versionsverwaltung macht das möglich, weil sie genau zeigt, was sich geändert hat.
+
+Teste auf mehreren Ebenen: Prüfe kleine Funktionen mit bekannten Eingaben und erwarteten Ergebnissen, lasse das ganze Skript in einer Testumgebung laufen, die der Produktion ähnelt, und führe es vor dem ersten echten Lauf als Probelauf gegen reale Daten aus. Bewahre Testfälle für bereits behobene Fehler auf, damit sie nicht wiederkehren.
+
+## Minimale Rechte für Automatisierungskonten
+
+Ein Automatisierungskonto sollte **nur die Rechte haben, die die Aufgabe braucht, und nur auf den Systemen, die es berührt**. Nutze ein Konto pro Zweck statt eines mächtigen gemeinsamen Kontos, damit ein Leck oder ein Fehler begrenzte Folgen hat und die Protokolle zeigen, welche Automatisierung was getan hat. Bevorzuge kurzlebige oder widerrufbare Zugangsdaten, halte sie aus Skripten und Repositories heraus, prüfe die Rechte regelmäßig und entferne sie, wenn die Automatisierung außer Betrieb geht. Das folgt den allgemeinen Ideen der Zugriffskontrolle und der rollenbasierten Zugriffskontrolle.
+
+## Entscheiden, was automatisiert wird und was nicht
+
+Automatisierung kostet Zeit beim Bauen, Prüfen und Pflegen. Frage dich:
+
+- Wie oft läuft die Aufgabe, und wie lange dauert sie von Hand?
+- Sind die Schritte stabil und regelbasiert oder braucht es Urteilsvermögen?
+- Wie schlimm ist ein Fehler, und lässt er sich rückgängig machen? Folgenreiche, nicht umkehrbare Aktionen brauchen zusätzliche Sicherungen wie einen Freigabeschritt oder einen Probelauf-Bericht.
+- Ist der Prozess selbst in Ordnung? Einen schlechten Prozess zu automatisieren liefert nur schneller schlechte Ergebnisse. Vereinfache oder korrigiere zuerst.
+- Gibt es bereits ein unterstütztes Werkzeug dafür?
+
+Manchmal ist die richtige Antwort eine Checkliste statt eines Skripts.
+
+## Automatisierung langfristig pflegen
+
+Systeme ändern sich, deshalb veraltet Automatisierung. Halte für jede Automatisierung eine **verantwortliche Person** und eine Vertretung fest, führe ein Verzeichnis, was wo und wann läuft, und überwache geplante Läufe, damit Fehler auffallen. Gehe die Liste regelmäßig durch: Aktualisiere, was noch wichtig ist, ersetze, was fragil ist, und **schalte ab**, was niemand mehr braucht, samt Konto und Zeitplan. Notiere die Versionen der Werkzeuge und Sprachen, von denen ein Skript abhängt, und teste nach Updates erneut.
+
+## Beispiel aus der Praxis
+
+Ein Team hat zwölf leicht unterschiedliche Kopien eines „Offboarding“-Skripts. Du führst sie zu einem Werkzeug mit Parametern und Probelauf-Modus zusammen, verlegst die gemeinsame Protokollierung in ein Modul und schreibst eine halbe Seite README. Jede Änderung durchläuft ein Review in der Versionsverwaltung. Das Werkzeug läuft unter einem eigenen Konto, das Konten einer Verzeichnisgruppe deaktivieren, aber weder anlegen noch löschen darf. Weil Deaktivieren umkehrbar ist, automatisierst du es vollständig; das Löschen von Daten bleibt ein manueller Schritt mit Freigabe. Eine verantwortliche Person und eine Vertretung sind benannt, eine monatliche Erinnerung prüft das Protokoll, und ändert ein Plattform-Update einen Befehl, schlägt ein Test in der Testumgebung fehl, bevor die Produktion betroffen ist.
+
+## Wichtige Erkenntnisse
+
+- Mache Skripte mit Funktionen, gemeinsamen Modulen und einer kurzen README wiederverwendbar.
+- Lass jede Änderung prüfen und teste auf mehreren Ebenen, auch mit Probeläufen.
+- Gib jeder Automatisierung ein eigenes Konto mit minimalen Rechten.
+- Automatisiere stabile, regelbasierte, umkehrbare Aufgaben; sichere riskante Schritte durch Freigabe ab.
+- Benenne Verantwortliche, überwache Läufe und schalte nicht mehr benötigte Automatisierung ab.

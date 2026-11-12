@@ -1,0 +1,88 @@
+---
+id: scripting-automation-advanced
+competency: scripting-automation
+level: advanced
+title: "Sustainable automation: reusable tooling, documentation, review and testing, least privilege, deciding what to automate and long-term maintenance"
+objectives:
+  - Turn one-off scripts into reusable, documented tools.
+  - Review and test scripts before they go live.
+  - Apply least privilege to automation accounts.
+  - Decide what should and should not be automated.
+  - Plan the maintenance of automation over time.
+minutes: 35
+resources:
+  - wikipedia-version-control
+  - wikipedia-idempotence
+  - wikipedia-cron
+  - wikipedia-access-control
+  - wikipedia-de-versionsverwaltung
+status: ai-draft
+sources:
+  - title: "Version control"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Version_control
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Access control"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Access_control
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Idempotence"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Idempotence
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+A single person's useful script becomes a risk once the team depends on it: nobody else understands it, it runs with far too many rights, it breaks silently after a system update, and the author has moved on. At advanced level your job is not only to write automation but to make it **reusable, reviewable, safe and maintainable**.
+
+## Reusable tooling and documentation
+
+- **Small functions, clear names.** Split a long script into functions that each do one thing, so they can be reused and tested separately.
+- **Shared modules.** Put common helpers, such as logging, argument checks and retry logic, in one place that all scripts use instead of copying them.
+- **A short README per tool:** purpose, inputs and parameters, what it changes, required permissions, how to run a dry run, how to read the log, who owns it, and known limits.
+- **Examples.** One working example command tells a reader more than a page of prose.
+
+## Code review and testing
+
+Treat scripts like any other code that changes production. A **second person reviews** every change before it is merged: Does it do what the description says? What happens on bad input or when a step fails? Could it delete or change more than intended? Version control makes this possible by showing exactly what changed.
+
+Test at several levels: check small functions with known inputs and expected outputs; run the whole script in a test environment that resembles production; and run it in dry-run mode against real data before the first live run. Keep test cases for bugs you have already fixed so they do not return.
+
+## Least privilege for automation accounts
+
+An automation account should have **only the rights the task needs, on only the systems it touches**, and nothing more. Use one account per purpose rather than one powerful shared account, so that a leak or a bug has limited reach and logs show which automation did what. Prefer short-lived or revocable credentials, keep them out of scripts and repositories, review the account's rights regularly and remove them when the automation is retired. This follows the general ideas of access control and role-based access.
+
+## Deciding what (not) to automate
+
+Automation costs time to build, review and maintain. Ask:
+
+- How often does the task run, and how much time does it take by hand?
+- Are the steps stable and rule-based, or do they need judgement?
+- How bad is a mistake, and can it be undone? High-impact, irreversible actions need extra safeguards such as an approval step or a dry-run report.
+- Is the process itself sound? Automating a bad process only produces bad results faster. Fix or simplify first.
+- Is there already a supported tool that does this?
+
+Sometimes the right answer is a checklist, not a script.
+
+## Maintaining automation over time
+
+Systems change, so automation decays. Record an **owner** and a backup person for every automation, keep an inventory of what runs where and when, and monitor scheduled runs so that failure is noticed. Review the list regularly: update what still matters, replace what is fragile, and **retire** what nobody needs, including the account and the schedule. Note the versions of the tools and languages a script depends on, and re-test after updates.
+
+## Worked example
+
+A team has twelve slightly different copies of an "offboarding" script. You merge them into one tool with parameters and a dry-run mode, move the shared logging into a module, and write a half-page README. Each change goes through review in version control. The tool runs under a dedicated account that can disable accounts in one directory group but cannot create or delete them. Because disabling is reversible, you automate it fully; deleting data stays a manual step with an approval. An owner and a deputy are named, a monthly reminder checks the log, and when a platform update changes a command, a test in the test environment fails before production is affected.
+
+## Key takeaways
+
+- Make scripts reusable with functions, shared modules and a short README.
+- Review every change and test at several levels, including dry runs.
+- Give each automation its own account with least privilege.
+- Automate stable, rule-based, reversible tasks; keep high-risk steps behind approval.
+- Assign owners, monitor runs and retire automation nobody needs.
