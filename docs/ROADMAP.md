@@ -46,7 +46,7 @@ For each competency: ≥1 unit per required level (en + de), ≥6 items across d
   - [x] backup-recovery
   - [x] change-asset-management
   - [x] scripting-automation
-- [ ] Finance & Accounting content complete (sub-tasks below; publish the role when all are done; EU/Germany context, label it)
+- [x] Finance & Accounting content complete (sub-tasks below; publish the role when all are done; EU/Germany context, label it)
   - [x] bookkeeping-fundamentals
   - [x] accounts-payable
   - [x] accounts-receivable
@@ -57,7 +57,7 @@ For each competency: ≥1 unit per required level (en + de), ≥6 items across d
   - [x] budgeting-forecasting
   - [x] internal-controls-audit
   - [x] cost-accounting
-  - [ ] financial-analysis-kpis
+  - [x] financial-analysis-kpis
 - [ ] Human Resources content complete
 
 ## Phase 3 — Learner experience

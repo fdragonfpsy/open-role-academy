@@ -1,0 +1,13 @@
+id: wikipedia-de-kennzahl
+url: "https://de.wikipedia.org/wiki/Kennzahl"
+title: "Kennzahl"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 20
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-12
+mode: link
+competencies: [financial-analysis-kpis]
+levels: [foundation, practitioner, advanced]
