@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-12 — Phase 2: IT Support content for change-asset-management
+
+**Done**
+- `backup-recovery` merged ([#27](https://github.com/fdragonfpsy/open-role-academy/pull/27)).
+- `change-asset-management`: 6 units (3 levels x en/de), 12 items, 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0) plus 2 shared. ITIL is described only via Wikipedia.
+- Levels: foundation = controlled change flow, asset inventory and lifecycle; practitioner = change types, risk/impact, rollback, CMDB basics, licence tracking; advanced = approval governance, change calendars, post-implementation review, audit readiness, CMDB data quality.
+
+**Counts:** roles 4 (1 published, 3 draft) · competencies 38 · units 90 · items 180 · resources 110
+
+**Next:** `scripting-automation`, then publish the IT Support role.
+
 ## 2026-11-12 — Phase 2: IT Support content for backup-recovery
 
 **Done**

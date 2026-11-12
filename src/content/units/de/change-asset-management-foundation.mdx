@@ -1,0 +1,83 @@
+---
+id: change-asset-management-foundation
+competency: change-asset-management
+level: foundation
+title: "Kontrollierte Änderungen und ein bekannter Bestand: Antrag, Freigabe, Umsetzung, Nachbetrachtung und der Lebenszyklus von Assets"
+objectives:
+  - Erklären, warum Änderungen an IT-Systemen kontrolliert werden müssen.
+  - Den grundlegenden Change-Ablauf vom Antrag bis zur Nachbetrachtung beschreiben.
+  - Erklären, was ein Asset-Inventar erfasst und warum es wichtig ist.
+  - Asset-Tags und einen eindeutigen Datensatz pro Gerät verwenden.
+  - Die Phasen eines einfachen Asset-Lebenszyklus nennen.
+minutes: 25
+resources:
+  - wikipedia-de-change-management-itil
+  - wikipedia-de-it-service-management
+  - wikipedia-change-management-itsm
+  - wikipedia-it-asset-management
+status: ai-draft
+sources:
+  - title: "Change Management (ITIL)"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Change_Management_(ITIL)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "IT-Service-Management"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/IT-Service-Management
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Die meisten IT-Ausfälle entstehen nicht, weil Hardware von selbst kaputtgeht, sondern weil jemand etwas geändert hat: eine Einstellung, ein Update, ein neues Gerät im Netzwerk. Weiß niemand, was wann und von wem geändert wurde, dauert die Ursachensuche viel länger. **Change-Kontrolle** bedeutet: Änderungen werden beantragt, von einer zweiten Person geprüft, terminiert und dokumentiert. **Asset-Management** beantwortet eine zweite Grundfrage: Was besitzen wir, wer hat es und wo ist es?
+
+## Warum Änderungen kontrolliert werden müssen
+
+Eine unkontrollierte Änderung kann einen Dienst für viele Menschen stören, mit einer anderen gleichzeitigen Änderung kollidieren und hinterlässt keine Spur. Eine kontrollierte Änderung hat einen Grund, eine verantwortliche Person, einen Plan und einen Eintrag. Das ist keine Bürokratie um ihrer selbst willen: Es schützt die Nutzenden und auch dich, denn du kannst zeigen, was vereinbart war.
+
+## Der grundlegende Change-Ablauf
+
+1. **Antrag:** Jemand beschreibt, was sich ändern soll und warum.
+2. **Freigabe:** Eine Person mit der passenden Befugnis prüft den Antrag und sagt Ja, Nein oder „noch nicht". Bei riskanten Änderungen sollte nicht allein die antragstellende Person freigeben.
+3. **Umsetzung:** Die Änderung wird wie geplant zum vereinbarten Zeitpunkt durchgeführt, jeder Schritt wird notiert.
+4. **Nachbetrachtung:** Nach der Änderung prüfst du, ob sie funktioniert und nichts anderes kaputtgegangen ist, und schließt den Eintrag mit den Erkenntnissen ab.
+
+Organisationen verwenden unterschiedliche Namen und Werkzeuge für diese Schritte. Die Ideen sind allgemein in den Wikipedia-Artikeln zum Change Management im IT-Service-Management beschrieben.
+
+## Grundlagen des Asset-Inventars
+
+Ein **Asset** ist etwas von Wert, um das sich die IT kümmert: ein Laptop, ein Server, ein Telefon, eine Software-Lizenz. Ein **Inventar** ist die Liste dieser Assets. Erfasse zu jedem Asset mindestens:
+
+- **Was:** Typ, Modell, Seriennummer.
+- **Wer:** die nutzende oder verantwortliche Person.
+- **Wo:** Standort oder „im Lager".
+- **Status:** zum Beispiel in Nutzung, auf Lager, in Reparatur, ausgemustert.
+
+Ein Inventar ist nur nützlich, wenn es stimmt. Aktualisiere es jedes Mal, wenn ein Gerät ausgegeben, versetzt, repariert oder zurückgegeben wird.
+
+## Asset-Tags
+
+Ein **Asset-Tag** ist eine eindeutige Kennzeichnung, oft ein Aufkleber mit Nummer oder Barcode, der am Gerät befestigt ist und zu genau einem Datensatz im Inventar passt. Verwende ein Tag pro Gerät und vergib Nummern nie doppelt. Mit dem Tag findet jede Person den richtigen Datensatz in Sekunden, auch wenn sich der Name der nutzenden Person ändert.
+
+## Ein einfacher Lebenszyklus
+
+- **Beschaffen:** Der Artikel wird beantragt, freigegeben und gekauft.
+- **Bereitstellen:** Er wird konfiguriert, mit Tag versehen, erfasst und an eine nutzende Person übergeben.
+- **Betreiben:** Updates, Reparaturen und Umzüge werden dokumentiert.
+- **Ausmustern:** Daten werden gelöscht, das Gerät wird außer Betrieb genommen und entsorgt oder recycelt, der Datensatz wird mit Datum abgeschlossen.
+
+## Praxisbeispiel
+
+Eine Kollegin bittet um einen zweiten Monitor. Du legst im Ticketsystem einen Antrag an, die Teamleitung gibt ihn frei. Du nimmst einen Monitor aus dem Lager, trägst sein Asset-Tag im Ticket ein und änderst seinen Datensatz von „auf Lager" auf „in Nutzung" mit Name und Arbeitsplatz. Später bittest du die Kollegin, die Funktion zu bestätigen, und schließt das Ticket. Wenn sie Monate später das Unternehmen verlässt, zeigt dir das Tag sofort, welchen Monitor du einsammeln und wieder ins Lager legen musst.
+
+## Wichtigste Erkenntnisse
+
+- Kontrollierte Änderungen haben Antrag, Freigabe, Umsetzung und Nachbetrachtung, alles dokumentiert.
+- Kontrolle schützt Nutzende vor vermeidbaren Ausfällen und liefert eine Spur für die Fehlersuche.
+- Ein Inventar erfasst, was ein Asset ist, wer es hat, wo es ist und welchen Status es hat.
+- Ein eindeutiges Tag pro Gerät verbindet das physische Gerät mit seinem Datensatz.
+- Der Lebenszyklus lautet beschaffen, bereitstellen, betreiben, ausmustern; aktualisiere den Datensatz in jeder Phase.

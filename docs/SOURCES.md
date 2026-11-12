@@ -60,6 +60,8 @@ Every resource is stored in `src/content/resources/<id>.yaml` with `license`, `l
 | wikipedia-de-ip-adresse, wikipedia-de-domain-name-system | Wikipedia (de) | CC BY-SA 4.0 | link | 2026-11-12 |
 | wikipedia-backup, wikipedia-disaster-recovery, wikipedia-recovery-point-objective, wikipedia-raid | Wikipedia (en) | CC BY-SA 4.0 | link | 2026-11-12 |
 | wikipedia-de-datensicherung, wikipedia-de-disaster-recovery, wikipedia-de-raid | Wikipedia (de) | CC BY-SA 4.0 | link | 2026-11-12 |
+| wikipedia-it-asset-management, wikipedia-configuration-management-database, wikipedia-software-license, wikipedia-release-management | Wikipedia (en) | CC BY-SA 4.0 | link | 2026-11-12 |
+| wikipedia-de-configuration-management-database, wikipedia-de-lizenzmanagement, wikipedia-de-change-management-itil | Wikipedia (de) | CC BY-SA 4.0 | link | 2026-11-12 |
 | openstax-principles-accounting-statements | OpenStax (*Principles of Accounting, Vol. 1*) | CC BY-NC-SA (page footer); no LLM ingestion without permission | link | 2026-11-11 |
 
 ## Framework references

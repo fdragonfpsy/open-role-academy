@@ -1,0 +1,290 @@
+competency: change-asset-management
+items:
+  - id: cam-f-why
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "Why should changes to IT systems be controlled?"
+      de: "Warum sollten Änderungen an IT-Systemen kontrolliert werden?"
+    options:
+      - en: "To reduce avoidable outages and keep a record of what was changed"
+        de: "Um vermeidbare Ausfälle zu verringern und festzuhalten, was geändert wurde"
+        correct: true
+      - en: "To make sure no change is ever made"
+        de: "Um sicherzustellen, dass nie etwas geändert wird"
+        correct: false
+      - en: "To give the requester sole authority over every change"
+        de: "Um der antragstellenden Person die alleinige Entscheidung über jede Änderung zu geben"
+        correct: false
+      - en: "To avoid having to test anything"
+        de: "Um nichts testen zu müssen"
+        correct: false
+    explanation:
+      en: "Control means changes are reviewed, planned and recorded, which prevents many outages and makes troubleshooting faster."
+      de: "Kontrolle bedeutet, dass Änderungen geprüft, geplant und dokumentiert werden; das verhindert viele Ausfälle und beschleunigt die Fehlersuche."
+    source: https://en.wikipedia.org/wiki/Change_management_(ITSM)
+  - id: cam-f-flow
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Which order describes the basic change flow?"
+      de: "Welche Reihenfolge beschreibt den grundlegenden Change-Ablauf?"
+    options:
+      - en: "Request, approve, implement, review"
+        de: "Antrag, Freigabe, Umsetzung, Nachbetrachtung"
+        correct: true
+      - en: "Implement, request, review, approve"
+        de: "Umsetzung, Antrag, Nachbetrachtung, Freigabe"
+        correct: false
+      - en: "Approve, review, request, implement"
+        de: "Freigabe, Nachbetrachtung, Antrag, Umsetzung"
+        correct: false
+      - en: "Review, implement, approve, request"
+        de: "Nachbetrachtung, Umsetzung, Freigabe, Antrag"
+        correct: false
+    explanation:
+      en: "A change is first requested, then approved, then implemented as planned and finally reviewed."
+      de: "Eine Änderung wird zuerst beantragt, dann freigegeben, danach wie geplant umgesetzt und zuletzt nachbetrachtet."
+    source: https://en.wikipedia.org/wiki/Change_management_(ITSM)
+  - id: cam-f-inventory
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "Which set of details belongs in a basic asset inventory record?"
+      de: "Welche Angaben gehören in einen grundlegenden Inventardatensatz?"
+    options:
+      - en: "Type and serial number, user or owner, location, status"
+        de: "Typ und Seriennummer, nutzende oder verantwortliche Person, Standort, Status"
+        correct: true
+      - en: "Only the purchase price"
+        de: "Nur der Kaufpreis"
+        correct: false
+      - en: "Only the colour of the device"
+        de: "Nur die Farbe des Geräts"
+        correct: false
+      - en: "Only the name of the supplier's sales contact"
+        de: "Nur der Name der Vertriebskontaktperson des Lieferunternehmens"
+        correct: false
+    explanation:
+      en: "A useful record says what the asset is, who has it, where it is and what state it is in."
+      de: "Ein nützlicher Datensatz sagt, was das Asset ist, wer es hat, wo es ist und in welchem Zustand es sich befindet."
+    source: https://en.wikipedia.org/wiki/IT_asset_management
+  - id: cam-f-lifecycle
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "What should happen to a device's record when the device is retired?"
+      de: "Was sollte mit dem Datensatz eines Geräts passieren, wenn es ausgemustert wird?"
+    options:
+      - en: "It is updated and closed with the date, after data has been wiped"
+        de: "Er wird aktualisiert und mit Datum abgeschlossen, nachdem die Daten gelöscht wurden"
+        correct: true
+      - en: "It is deleted without a trace"
+        de: "Er wird spurlos gelöscht"
+        correct: false
+      - en: "It stays as 'in use' so the count looks right"
+        de: "Er bleibt auf 'in Nutzung', damit die Zahl stimmt"
+        correct: false
+      - en: "Its tag number is given to the next new device"
+        de: "Seine Tag-Nummer wird dem nächsten neuen Gerät gegeben"
+        correct: false
+    explanation:
+      en: "Retirement is a lifecycle step: wipe data, take the device out of use and close the record with the date. Tag numbers should never be reused."
+      de: "Die Ausmusterung ist ein Lebenszyklusschritt: Daten löschen, Gerät außer Betrieb nehmen und den Datensatz mit Datum abschließen. Tag-Nummern sollten nie wiederverwendet werden."
+    source: https://en.wikipedia.org/wiki/IT_asset_management
+  - id: cam-p-types
+    level: practitioner
+    difficulty: 1190
+    type: single
+    stem:
+      en: "What characterises a standard change in general terms?"
+      de: "Was kennzeichnet eine Standardänderung in allgemeinen Begriffen?"
+    options:
+      - en: "Low risk, repeatable, with a pre-agreed procedure"
+        de: "Geringes Risiko, wiederholbar, mit vorab vereinbartem Verfahren"
+        correct: true
+      - en: "It always needs a full board meeting"
+        de: "Sie braucht immer eine volle Gremiensitzung"
+        correct: false
+      - en: "It is never recorded"
+        de: "Sie wird nie dokumentiert"
+        correct: false
+      - en: "It is only used when a service is down"
+        de: "Sie wird nur genutzt, wenn ein Dienst ausgefallen ist"
+        correct: false
+    explanation:
+      en: "Standard changes are well understood and can be approved in advance; they are still recorded."
+      de: "Standardänderungen sind gut verstanden und können vorab genehmigt werden; sie werden trotzdem dokumentiert."
+    source: https://en.wikipedia.org/wiki/Change_management_(ITSM)
+  - id: cam-p-risk
+    level: practitioner
+    difficulty: 1240
+    type: single
+    stem:
+      en: "Which change should receive the more careful impact assessment?"
+      de: "Welche Änderung sollte sorgfältiger auf ihre Auswirkungen bewertet werden?"
+    options:
+      - en: "A change to the authentication service that many applications depend on"
+        de: "Eine Änderung am Authentifizierungsdienst, von dem viele Anwendungen abhängen"
+        correct: true
+      - en: "A new wallpaper on one test laptop"
+        de: "Ein neues Hintergrundbild auf einem Testlaptop"
+        correct: false
+      - en: "Renaming a single unused test file"
+        de: "Das Umbenennen einer einzelnen ungenutzten Testdatei"
+        correct: false
+      - en: "Both equally, since all changes have the same impact"
+        de: "Beide gleich, da alle Änderungen dieselbe Auswirkung haben"
+        correct: false
+    explanation:
+      en: "Impact depends on who and what depends on the system; shared services have a wider impact."
+      de: "Die Auswirkung hängt davon ab, wer und was vom System abhängt; gemeinsam genutzte Dienste haben eine größere Reichweite."
+    source: https://en.wikipedia.org/wiki/Change_management_(ITSM)
+  - id: cam-p-rollback
+    level: practitioner
+    difficulty: 1290
+    type: single
+    stem:
+      en: "What belongs in a good rollback plan?"
+      de: "Was gehört in einen guten Rückfallplan?"
+    options:
+      - en: "A trigger, the steps, a responsible person and an estimated duration, prepared before the change"
+        de: "Ein Auslöser, die Schritte, eine verantwortliche Person und eine geschätzte Dauer, vorbereitet vor der Änderung"
+        correct: true
+      - en: "Only the sentence 'we will see what happens'"
+        de: "Nur der Satz 'wir sehen dann, was passiert'"
+        correct: false
+      - en: "A plan written after the change has failed"
+        de: "Ein Plan, der nach dem Scheitern der Änderung geschrieben wird"
+        correct: false
+      - en: "A list of users to blame"
+        de: "Eine Liste von Personen, denen man die Schuld gibt"
+        correct: false
+    explanation:
+      en: "A rollback plan must be ready and checked in advance, otherwise it cannot help when something fails."
+      de: "Ein Rückfallplan muss vorab bereit und geprüft sein, sonst hilft er nicht, wenn etwas schiefgeht."
+    source: https://en.wikipedia.org/wiki/Change_management_(ITSM)
+  - id: cam-p-cmdb
+    level: practitioner
+    difficulty: 1340
+    type: single
+    stem:
+      en: "What is the main benefit of recording relationships between configuration items in a CMDB?"
+      de: "Was ist der Hauptnutzen der Erfassung von Beziehungen zwischen Konfigurationselementen in einer CMDB?"
+    options:
+      - en: "It shows which services are affected when one item is changed"
+        de: "Sie zeigt, welche Dienste betroffen sind, wenn ein Element geändert wird"
+        correct: true
+      - en: "It makes devices faster"
+        de: "Sie macht Geräte schneller"
+        correct: false
+      - en: "It replaces the need for approval"
+        de: "Sie ersetzt die Notwendigkeit einer Freigabe"
+        correct: false
+      - en: "It automatically buys new licences"
+        de: "Sie kauft automatisch neue Lizenzen"
+        correct: false
+    explanation:
+      en: "Relationships such as 'application runs on server' make the impact of a change visible."
+      de: "Beziehungen wie 'Anwendung läuft auf Server' machen die Auswirkung einer Änderung sichtbar."
+    source: https://en.wikipedia.org/wiki/Configuration_management_database
+  - id: cam-a-governance
+    level: advanced
+    difficulty: 1520
+    type: single
+    stem:
+      en: "How should approval effort be matched to risk?"
+      de: "Wie sollte der Freigabeaufwand dem Risiko angepasst werden?"
+    options:
+      - en: "Pre-approved standard changes need no meeting; high-risk changes get a prepared review by those with authority and knowledge"
+        de: "Vorab genehmigte Standardänderungen brauchen keine Sitzung; riskante Änderungen erhalten eine vorbereitete Prüfung durch Personen mit Befugnis und Wissen"
+        correct: true
+      - en: "Every change, however small, goes to the same large board"
+        de: "Jede Änderung, auch die kleinste, geht an dasselbe große Gremium"
+        correct: false
+      - en: "No change is ever reviewed to save time"
+        de: "Keine Änderung wird je geprüft, um Zeit zu sparen"
+        correct: false
+      - en: "Only the requester approves, always"
+        de: "Immer gibt nur die antragstellende Person frei"
+        correct: false
+    explanation:
+      en: "Proportionate governance saves effort on routine work and focuses review where harm could be greatest."
+      de: "Verhältnismäßige Steuerung spart Aufwand bei Routinearbeit und konzentriert die Prüfung dort, wo der Schaden am größten sein könnte."
+    source: https://en.wikipedia.org/wiki/Change_management_(ITSM)
+  - id: cam-a-calendar
+    level: advanced
+    difficulty: 1580
+    type: single
+    stem:
+      en: "What is a change calendar mainly used for?"
+      de: "Wofür wird ein Change-Kalender hauptsächlich genutzt?"
+    options:
+      - en: "Spotting conflicts between planned changes, maintenance windows and freeze periods"
+        de: "Konflikte zwischen geplanten Änderungen, Wartungsfenstern und Sperrzeiten zu erkennen"
+        correct: true
+      - en: "Recording birthdays of the team"
+        de: "Geburtstage des Teams zu erfassen"
+        correct: false
+      - en: "Replacing the rollback plan"
+        de: "Den Rückfallplan zu ersetzen"
+        correct: false
+      - en: "Counting licences"
+        de: "Lizenzen zu zählen"
+        correct: false
+    explanation:
+      en: "Seeing all planned work in one place lets you move or combine changes before they collide."
+      de: "Alle geplante Arbeit an einem Ort zu sehen, erlaubt es, Änderungen zu verschieben oder zu bündeln, bevor sie kollidieren."
+    source: https://en.wikipedia.org/wiki/Release_management
+  - id: cam-a-pir
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "What is the best outcome of a post-implementation review of a failed change?"
+      de: "Was ist das beste Ergebnis einer Nachbetrachtung einer gescheiterten Änderung?"
+    options:
+      - en: "Concrete, recorded improvements to the process, found without blaming individuals"
+        de: "Konkrete, dokumentierte Verbesserungen am Prozess, ohne Einzelnen die Schuld zu geben"
+        correct: true
+      - en: "Naming the person to blame"
+        de: "Die schuldige Person zu benennen"
+        correct: false
+      - en: "Hiding the failure from the record"
+        de: "Das Scheitern aus dem Eintrag herauszuhalten"
+        correct: false
+      - en: "Skipping reviews in the future"
+        de: "Künftig auf Nachbetrachtungen zu verzichten"
+        correct: false
+    explanation:
+      en: "Reviews exist to learn: findings become improvements such as a better checklist or a new standard change."
+      de: "Nachbetrachtungen dienen dem Lernen: Erkenntnisse werden zu Verbesserungen wie einer besseren Checkliste oder einer neuen Standardänderung."
+    source: https://en.wikipedia.org/wiki/Change_management_(ITSM)
+  - id: cam-a-quality
+    level: advanced
+    difficulty: 1620
+    type: single
+    stem:
+      en: "Which measure best keeps CMDB data accurate over time?"
+      de: "Welche Maßnahme hält CMDB-Daten langfristig am besten korrekt?"
+    options:
+      - en: "Named data owners, updates through the change process and regular comparison with discovered reality"
+        de: "Benannte Datenverantwortliche, Aktualisierung über den Change-Prozess und regelmäßiger Abgleich mit der erkannten Realität"
+        correct: true
+      - en: "Recording as many attributes as possible for every item"
+        de: "Möglichst viele Attribute für jedes Element zu erfassen"
+        correct: false
+      - en: "Updating the CMDB once and never again"
+        de: "Die CMDB einmal zu aktualisieren und nie wieder"
+        correct: false
+      - en: "Trusting memory instead of records"
+        de: "Dem Gedächtnis statt Aufzeichnungen zu vertrauen"
+        correct: false
+    explanation:
+      en: "Accuracy comes from defined scope, ownership, updating as part of changes, and checking against reality."
+      de: "Genauigkeit entsteht durch definierten Umfang, Verantwortlichkeit, Aktualisierung als Teil von Changes und Abgleich mit der Realität."
+    source: https://en.wikipedia.org/wiki/Configuration_management_database

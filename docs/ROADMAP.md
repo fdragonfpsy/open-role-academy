@@ -44,7 +44,7 @@ For each competency: ≥1 unit per required level (en + de), ≥6 items across d
   - [x] identity-access-management
   - [x] networking-fundamentals
   - [x] backup-recovery
-  - [ ] change-asset-management
+  - [x] change-asset-management
   - [ ] scripting-automation
 - [ ] Finance & Accounting content complete
 - [ ] Human Resources content complete
