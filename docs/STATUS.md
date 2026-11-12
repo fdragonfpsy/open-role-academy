@@ -1,5 +1,17 @@
 # Status
 
+## 2026-11-12 — Phase 2: Human Resources started (employment-law-basics)
+
+**Done**
+- Finance & Accounting published ([#40](https://github.com/fdragonfpsy/open-role-academy/pull/40)).
+- Split "Human Resources content complete" into 11 per-competency sub-tasks (ROADMAP). The role stays `draft` until all are done.
+- `employment-law-basics` (Germany/EU): 6 units (3 levels x en/de), 12 items, 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0). Concepts only: no day counts, § or Art. numbers, thresholds or court decisions; every unit says HR staff do not give legal advice.
+- Review note for humans (legal content, needs human legal review before leaving `ai-draft`): the "when to involve counsel" list is a rule of thumb, labelled "not a legal test"; "write terms down and check current documentation duties" is advice; Kündigungsschutz and AGG are only named as listed on the Arbeitsrecht page.
+
+**Counts:** roles 4 (3 published, 1 draft) · competencies 38 · units 168 · items 336 · resources 201
+
+**Next:** `recruitment-selection`, then the remaining Human Resources competencies in roadmap order.
+
 ## 2026-11-12 — Phase 2: Finance & Accounting complete and published
 
 **Done**

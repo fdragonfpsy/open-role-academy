@@ -1,0 +1,13 @@
+id: wikipedia-de-betriebsrat
+url: https://de.wikipedia.org/wiki/Betriebsrat
+title: "Betriebsrat"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 25
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-12
+mode: link
+competencies: [employment-law-basics]
+levels: [practitioner, advanced]
