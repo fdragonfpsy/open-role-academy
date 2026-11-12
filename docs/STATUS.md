@@ -1,5 +1,17 @@
 # Status
 
+## 2026-11-12 — Phase 2: Human Resources content for payroll-compensation
+
+**Done**
+- `onboarding-offboarding` merged ([#45](https://github.com/fdragonfpsy/open-role-academy/pull/45)).
+- `payroll-compensation` (Germany): 6 units (3 levels x en/de), 12 items, 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0), several reused. No tax or contribution rates, ceilings, deadlines or § numbers; worked examples use invented round figures and "example amount" labels; statutory deductions are only named.
+- Levels: foundation = gross to net, payslip sections, payroll data needs, confidentiality; practitioner = HR-to-payroll data flow, cut-off discipline, common errors, benefits and variable pay, corrections; advanced = reconciling payroll with HR and finance, pay structures and grading, pay transparency principles, providers and tax advisors, controls, pay-data protection.
+- Review notes for humans (payroll is high-risk, needs human payroll/tax review before leaving `ai-draft`): collective agreement, four-eyes, audit trail, access control, DPO and GDPR pages were cited generically for definitions without being read in full (rate-limited); the English unit bodies run about 807-823 words including example, takeaways and resources (guideline is 800, not enforced by the validator) — trim in review.
+
+**Counts:** roles 4 (3 published, 1 draft) · competencies 38 · units 198 · items 396 · resources 236
+
+**Next:** `performance-feedback`, then `learning-development`, `employee-relations-conflict`, `health-safety-wellbeing`, `diversity-inclusion`, then publish the Human Resources role.
+
 ## 2026-11-12 — Phase 2: Human Resources content for onboarding-offboarding
 
 **Done**

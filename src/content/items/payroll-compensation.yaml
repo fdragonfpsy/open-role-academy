@@ -1,0 +1,290 @@
+competency: payroll-compensation
+items:
+  - id: pc-f-gross-net
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "A payslip shows gross pay of 2500 units and total deductions of 600 units. What is the net pay?"
+      de: "Eine Entgeltabrechnung zeigt ein Bruttoentgelt von 2500 Einheiten und Abzüge von insgesamt 600 Einheiten. Wie hoch ist das Nettoentgelt?"
+    options:
+      - en: "1900 units"
+        de: "1900 Einheiten"
+        correct: true
+      - en: "3100 units"
+        de: "3100 Einheiten"
+        correct: false
+      - en: "2500 units"
+        de: "2500 Einheiten"
+        correct: false
+      - en: "600 units"
+        de: "600 Einheiten"
+        correct: false
+    explanation:
+      en: "Net pay is gross pay minus deductions: 2500 - 600 = 1900."
+      de: "Netto ist Brutto minus Abzüge: 2500 - 600 = 1900."
+    source: https://en.wikipedia.org/wiki/Payroll
+  - id: pc-f-deductions
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Which two categories of statutory deductions between gross and net pay are named for Germany in this unit?"
+      de: "Welche zwei Gruppen gesetzlicher Abzüge zwischen Brutto und Netto werden in dieser Einheit für Deutschland genannt?"
+    options:
+      - en: "Income tax and social insurance contributions"
+        de: "Lohnsteuer und Sozialversicherungsbeiträge"
+        correct: true
+      - en: "Rent and electricity costs"
+        de: "Miete und Stromkosten"
+        correct: false
+      - en: "Training costs and travel costs"
+        de: "Weiterbildungs- und Reisekosten"
+        correct: false
+      - en: "Recruiting costs and office supplies"
+        de: "Recruitingkosten und Büromaterial"
+        correct: false
+    explanation:
+      en: "The cited German pages describe the calculation of income tax (and church tax) and social insurance contributions as core tasks of the pay statement."
+      de: "Die zitierten deutschen Seiten nennen die Berechnung von Lohn- und Kirchensteuer sowie Sozialversicherungsbeiträgen als Kernaufgaben der Entgeltabrechnung."
+    source: https://de.wikipedia.org/wiki/Entgeltabrechnung
+  - id: pc-f-data
+    level: foundation
+    difficulty: 980
+    type: single
+    stem:
+      en: "A new colleague starts on the first of the month, but nobody tells payroll before the cut-off. What is the most likely consequence?"
+      de: "Eine neue Kollegin beginnt am Monatsersten, aber niemand informiert die Entgeltabrechnung vor dem Stichtag. Was ist die wahrscheinlichste Folge?"
+    options:
+      - en: "The payslip is wrong or missing and a correction is needed"
+        de: "Die Abrechnung ist falsch oder fehlt und eine Korrektur ist nötig"
+        correct: true
+      - en: "Payroll guesses the correct data on its own"
+        de: "Die Entgeltabrechnung errät die richtigen Daten selbst"
+        correct: false
+      - en: "Nothing, because late data never matters"
+        de: "Nichts, denn späte Daten spielen nie eine Rolle"
+        correct: false
+      - en: "The cut-off date is automatically moved"
+        de: "Der Stichtag wird automatisch verschoben"
+        correct: false
+    explanation:
+      en: "Payroll can only calculate what it is told; data that arrives after the cut-off set by the company or provider normally leads to a correction."
+      de: "Die Abrechnung kann nur berechnen, was sie weiß; Daten nach dem vom Unternehmen oder Dienstleister festgelegten Stichtag führen in der Regel zu einer Korrektur."
+    source: https://en.wikipedia.org/wiki/Payroll
+  - id: pc-f-confidential
+    level: foundation
+    difficulty: 1020
+    type: single
+    stem:
+      en: "A colleague from another team asks you in the canteen how much a named employee earns. What is the right response?"
+      de: "Ein Kollege aus einem anderen Team fragt dich in der Kantine, wie viel eine namentlich genannte Person verdient. Was ist die richtige Reaktion?"
+    options:
+      - en: "Decline: pay data is confidential and shared only on a need-to-know basis"
+        de: "Ablehnen: Entgeltdaten sind vertraulich und werden nur nach Bedarf weitergegeben"
+        correct: true
+      - en: "Tell him, since you are in HR"
+        de: "Es ihm sagen, du bist ja in HR"
+        correct: false
+      - en: "Tell him but ask him to keep it secret"
+        de: "Es ihm sagen und ihn bitten, es für sich zu behalten"
+        correct: false
+      - en: "Send the payslip by chat"
+        de: "Die Abrechnung per Chat schicken"
+        correct: false
+    explanation:
+      en: "Pay data is personal data; only people who need it for their task may receive it."
+      de: "Entgeltdaten sind personenbezogene Daten; nur wer sie für seine Aufgabe braucht, darf sie erhalten."
+    source: https://de.wikipedia.org/wiki/Arbeitnehmerdatenschutz
+  - id: pc-p-flow
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "Which four kinds of people events does HR typically pass to payroll?"
+      de: "Welche vier Arten von Personalereignissen gibt HR typischerweise an die Entgeltabrechnung weiter?"
+    options:
+      - en: "Hires, changes, absences and leavers"
+        de: "Eintritte, Änderungen, Abwesenheiten und Austritte"
+        correct: true
+      - en: "Birthdays, hobbies, lunch orders and parking"
+        de: "Geburtstage, Hobbys, Essensbestellungen und Parkplätze"
+        correct: false
+      - en: "Job ads, interviews, offers and rejections"
+        de: "Stellenanzeigen, Vorstellungsgespräche, Angebote und Absagen"
+        correct: false
+      - en: "Only hires"
+        de: "Nur Eintritte"
+        correct: false
+    explanation:
+      en: "These four event types change what must be paid and are the core of the HR-to-payroll data flow."
+      de: "Diese vier Ereignisarten verändern, was gezahlt werden muss, und bilden den Kern des Datenflusses von HR zur Entgeltabrechnung."
+    source: https://de.wikipedia.org/wiki/Entgeltabrechnung
+  - id: pc-p-cutoff
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "A pay change is agreed two days after the cut-off. What is the best action?"
+      de: "Eine Entgeltänderung wird zwei Tage nach dem Stichtag vereinbart. Was ist die beste Maßnahme?"
+    options:
+      - en: "Tell payroll at once, record the reason and agree how it is handled (next run or correction)"
+        de: "Die Abrechnung sofort informieren, den Grund festhalten und klären, wie der Fall behandelt wird (nächster Lauf oder Korrektur)"
+        correct: true
+      - en: "Promise the employee the new amount in the current run"
+        de: "Der beschäftigten Person den neuen Betrag im laufenden Lauf zusagen"
+        correct: false
+      - en: "Say nothing and hope payroll notices"
+        de: "Nichts sagen und hoffen, dass die Abrechnung es merkt"
+        correct: false
+      - en: "Change the figure in the payslip by hand"
+        de: "Den Betrag auf der Abrechnung von Hand ändern"
+        correct: false
+    explanation:
+      en: "The cut-off is set by the company or provider; late changes are reported at once and handled in a defined way, never as an off-system promise."
+      de: "Der Stichtag wird vom Unternehmen oder Dienstleister festgelegt; späte Änderungen werden sofort gemeldet und geregelt behandelt, nie als Zusage außerhalb des Systems."
+    source: https://en.wikipedia.org/wiki/Payroll
+  - id: pc-p-check
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "Which check best catches a leaver who is still paid in the next run?"
+      de: "Welche Kontrolle fängt am besten eine ausgeschiedene Person ab, die im nächsten Lauf noch bezahlt wird?"
+    options:
+      - en: "Comparing the HR leaver list with the people in the run before the cut-off"
+        de: "Die HR-Austrittsliste vor dem Stichtag mit den Personen im Lauf abgleichen"
+        correct: true
+      - en: "Reading the payslip only after payment"
+        de: "Die Abrechnung erst nach der Zahlung lesen"
+        correct: false
+      - en: "Waiting for the employee to complain"
+        de: "Abwarten, bis sich die Person meldet"
+        correct: false
+      - en: "Deleting the leaver's HR record"
+        de: "Den HR-Datensatz der Person löschen"
+        correct: false
+    explanation:
+      en: "A comparison with the HR records before the cut-off is a preventive plausibility check; the other options act too late or destroy information."
+      de: "Der Abgleich mit den HR-Unterlagen vor dem Stichtag ist eine vorbeugende Plausibilitätsprüfung; die anderen Optionen kommen zu spät oder vernichten Informationen."
+    source: https://de.wikipedia.org/wiki/Entgeltabrechnung
+  - id: pc-p-correction
+    level: practitioner
+    difficulty: 1350
+    type: single
+    stem:
+      en: "Which sequence describes a traceable correction of a payroll error?"
+      de: "Welche Reihenfolge beschreibt eine nachvollziehbare Korrektur eines Abrechnungsfehlers?"
+    options:
+      - en: "Log the case, find the cause at the source, let payroll correct it in the system, inform the person, record the fix"
+        de: "Den Fall erfassen, die Ursache an der Quelle suchen, die Abrechnung im System korrigieren lassen, die Person informieren, die Korrektur festhalten"
+        correct: true
+      - en: "Pay the difference in cash and tell no one"
+        de: "Die Differenz bar zahlen und niemandem etwas sagen"
+        correct: false
+      - en: "Correct the HR record only and ignore payroll"
+        de: "Nur den HR-Datensatz korrigieren und die Abrechnung ignorieren"
+        correct: false
+      - en: "Wait for the annual audit"
+        de: "Auf die Jahresprüfung warten"
+        correct: false
+    explanation:
+      en: "A correction is logged, fixed at the source, executed in the system, communicated and recorded, so that it can be traced later."
+      de: "Eine Korrektur wird erfasst, an der Quelle behoben, im System ausgeführt, kommuniziert und festgehalten, damit sie später nachvollziehbar ist."
+    source: https://en.wikipedia.org/wiki/Payroll
+  - id: pc-a-recon
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "In a reconciliation, payroll shows total gross pay of 80000 units and finance shows 77000 units booked as personnel cost. What is the best first step?"
+      de: "Bei einer Abstimmung zeigt die Abrechnung ein Gesamtbrutto von 80000 Einheiten und das Finanzwesen 77000 gebuchte Einheiten Personalkosten. Was ist der beste erste Schritt?"
+    options:
+      - en: "Trace the 3000 units difference to its source (timing, accruals, corrections, data errors) and fix it there"
+        de: "Die Differenz von 3000 Einheiten bis zur Quelle verfolgen (Zeitpunkt, Abgrenzungen, Korrekturen, Datenfehler) und dort beheben"
+        correct: true
+      - en: "Book 3000 units to any account so the totals match"
+        de: "3000 Einheiten auf ein beliebiges Konto buchen, damit die Summen passen"
+        correct: false
+      - en: "Ignore it because it is below 5 percent"
+        de: "Ignorieren, weil sie unter 5 Prozent liegt"
+        correct: false
+      - en: "Reduce the payroll figure by 3000 units"
+        de: "Den Abrechnungswert um 3000 Einheiten senken"
+        correct: false
+    explanation:
+      en: "Differences between payroll and the booked personnel costs are explained, not smoothed over; the cause is fixed where it arises."
+      de: "Differenzen zwischen Abrechnung und gebuchten Personalkosten werden erklärt, nicht überdeckt; die Ursache wird dort behoben, wo sie entsteht."
+    source: https://de.wikipedia.org/wiki/Entgeltabrechnung
+  - id: pc-a-grading
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "What is the idea of job grading (Arbeitsbewertung)?"
+      de: "Was ist die Idee der Arbeitsbewertung?"
+    options:
+      - en: "Jobs are rated against comparable criteria so that pay differences can be explained; grading attaches to the job, not the person"
+        de: "Tätigkeiten werden nach vergleichbaren Kriterien bewertet, damit Entgeltunterschiede erklärbar sind; die Bewertung bezieht sich auf die Tätigkeit, nicht auf die Person"
+        correct: true
+      - en: "Each person is graded by their manager's mood"
+        de: "Jede Person wird nach Laune der Führungskraft eingestuft"
+        correct: false
+      - en: "All jobs always receive identical pay"
+        de: "Alle Tätigkeiten erhalten immer identisches Entgelt"
+        correct: false
+      - en: "Grading is only about job titles, never about requirements"
+        de: "Die Bewertung betrifft nur Stellenbezeichnungen, nie Anforderungen"
+        correct: false
+    explanation:
+      en: "The German article describes procedures that determine the value of a job as the main parameter of pay differentiation, aiming at approximately fair pay."
+      de: "Der deutsche Artikel beschreibt Verfahren, die den Arbeitswert einer Tätigkeit als Hauptparameter der Entgeltdifferenzierung bestimmen, mit dem Ziel annähernd gerechten Entgelts."
+    source: https://de.wikipedia.org/wiki/Arbeitsbewertung
+  - id: pc-a-outsource
+    level: advanced
+    difficulty: 1580
+    type: single
+    stem:
+      en: "A company outsources payroll to a provider. Which statement is correct?"
+      de: "Ein Unternehmen lagert die Abrechnung an einen Dienstleister aus. Welche Aussage stimmt?"
+    options:
+      - en: "The work moves to the provider, but the company stays responsible for delivering correct data, checking results and protecting pay data"
+        de: "Die Arbeit geht an den Dienstleister, aber das Unternehmen bleibt verantwortlich für richtige Daten, die Prüfung der Ergebnisse und den Schutz der Entgeltdaten"
+        correct: true
+      - en: "The company has no further duties"
+        de: "Das Unternehmen hat keine weiteren Pflichten"
+        correct: false
+      - en: "Cut-off dates no longer matter"
+        de: "Stichtage spielen keine Rolle mehr"
+        correct: false
+      - en: "The provider can see pay data without any agreement"
+        de: "Der Dienstleister darf Entgeltdaten ohne Vereinbarung einsehen"
+        correct: false
+    explanation:
+      en: "Outsourcing moves the work, not the responsibility; roles, deadlines, checks and data protection are agreed in writing."
+      de: "Auslagern verlagert die Arbeit, nicht die Verantwortung; Rollen, Stichtage, Prüfungen und Datenschutz werden schriftlich vereinbart."
+    source: https://en.wikipedia.org/wiki/Payroll
+  - id: pc-a-controls
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "Someone asks you to change an employee's bank details for the next pay run by email. Which control is most appropriate?"
+      de: "Jemand bittet dich per E-Mail, die Bankdaten einer beschäftigten Person für den nächsten Abrechnungslauf zu ändern. Welche Kontrolle ist am passendsten?"
+    options:
+      - en: "Verify the request through a known channel and apply a four-eyes check, leaving an audit trail"
+        de: "Die Anfrage über einen bekannten Kanal verifizieren und eine Vier-Augen-Kontrolle anwenden, mit Prüfspur"
+        correct: true
+      - en: "Change it immediately to be helpful"
+        de: "Sofort ändern, um hilfsbereit zu sein"
+        correct: false
+      - en: "Forward the email to the whole HR team"
+        de: "Die E-Mail an das ganze HR-Team weiterleiten"
+        correct: false
+      - en: "Change it only in the HR system and not tell payroll"
+        de: "Nur im HR-System ändern und die Abrechnung nicht informieren"
+        correct: false
+    explanation:
+      en: "Bank detail changes are a classic risk of error and misuse; the four-eyes principle and an audit trail reduce that risk."
+      de: "Änderungen von Bankdaten sind ein klassisches Risiko für Fehler und Missbrauch; Vier-Augen-Prinzip und Prüfspur senken dieses Risiko."
+    source: https://de.wikipedia.org/wiki/Vier-Augen-Prinzip
