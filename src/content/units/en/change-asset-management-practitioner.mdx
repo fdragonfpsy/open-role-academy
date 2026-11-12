@@ -1,0 +1,84 @@
+---
+id: change-asset-management-practitioner
+competency: change-asset-management
+level: practitioner
+title: "Change types, risk assessment, rollback plans, maintenance windows, CMDB basics and software licence tracking"
+objectives:
+  - Distinguish standard, normal and emergency changes in general terms.
+  - Assess the risk and impact of a change.
+  - Write a rollback plan and choose a suitable maintenance window.
+  - Explain what a CMDB stores and how configuration items relate.
+  - Track software licences against actual use.
+minutes: 30
+resources:
+  - wikipedia-change-management-itsm
+  - wikipedia-configuration-management-database
+  - wikipedia-software-license
+  - wikipedia-de-configuration-management-database
+  - wikipedia-de-lizenzmanagement
+status: ai-draft
+sources:
+  - title: "Change management (ITSM)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Change_management_(ITSM)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Configuration management database"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Configuration_management_database
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Software license"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Software_license
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+When you work independently, you decide how much process a change needs. Too little, and a small mistake takes down a service. Too much, and people work around the process. This unit gives you tools to fit the effort to the risk, and to keep the records that support changes: the configuration database and the licence overview.
+
+## Change types
+
+Many organisations sort changes into three generic types. Names and details vary between organisations and tools.
+
+- **Standard change:** low risk, well understood and repeatable, with a pre-agreed procedure, for example installing an approved application on a laptop. It can be approved in advance and then simply recorded.
+- **Normal change:** needs an individual assessment and approval before it is scheduled, for example replacing a switch.
+- **Emergency change:** needed urgently to restore service or close a serious security hole. It is approved by a faster route, but it must still be recorded and reviewed afterwards.
+
+## Risk and impact assessment
+
+Ask two questions. **Impact:** if this goes wrong, who and what is affected, and for how long? **Likelihood:** how probable is a problem, given how often we have done this and how well we have tested it? A change that touches a shared system such as authentication or the network has a higher impact than one that touches a single laptop. Write the assessment down and include dependencies: which services need this system to run?
+
+## Rollback plans
+
+A **rollback plan** says how to return to the previous working state if the change fails. It should state the trigger (for example "if the test in step 5 fails"), the steps, the person responsible and how long it takes. Prepare it before the change: take a backup or snapshot, keep the old version of the software or configuration, and check that the rollback is possible. Some changes cannot be reversed; for those, say so in the request and ask for a more careful review.
+
+## Maintenance windows
+
+A **maintenance window** is an agreed time in which planned work may interrupt a service. Choose a time when the fewest people are affected, announce it in advance, and leave enough time for testing and a possible rollback. Check that no other change is planned at the same time.
+
+## CMDB basics
+
+A **configuration management database (CMDB)** stores **configuration items (CIs)**, such as servers, applications and services, together with their attributes and the **relationships** between them: an application runs on a server, a service depends on a database. With these relationships you can answer the impact question quickly: which services are affected if this server is changed?
+
+## Software licence tracking
+
+Software licences have terms: how many users or devices, what kind of use, how long. Keep a record of what you own (licence type, quantity, term, renewal date, who holds the proof of purchase) and compare it with what is actually installed or used. Unused licences can be reclaimed; missing ones are a compliance risk. Read the licence terms of each product rather than assuming, because models differ.
+
+## Worked example
+
+You plan to upgrade the database server behind the invoice application. You classify it as a normal change and open a request. Using the CMDB you see that two other applications also use the server, so you list their owners as affected. You schedule a Sunday morning window, take a snapshot beforehand and write the rollback plan: if the application test fails, restore the snapshot, which takes the time you measured earlier. The approver asks for the owners' agreement, you announce the window, carry out the upgrade, test, and update the CMDB record with the new version.
+
+## Key takeaways
+
+- Standard, normal and emergency changes need different amounts of process, but all are recorded.
+- Assess impact and likelihood in writing and include dependencies.
+- A rollback plan has a trigger, steps, an owner and a time estimate and is prepared before the change.
+- Choose and announce a maintenance window that avoids clashes.
+- A CMDB records configuration items and their relationships, which makes impact visible.
+- Compare licences owned with licences used and read the licence terms.

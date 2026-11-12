@@ -1,0 +1,83 @@
+---
+id: change-asset-management-foundation
+competency: change-asset-management
+level: foundation
+title: "Controlled changes and a known inventory: request, approve, implement, review, and the asset lifecycle"
+objectives:
+  - Explain why changes to IT systems need control.
+  - Describe the basic change flow from request to review.
+  - Explain what an asset inventory records and why it matters.
+  - Use asset tags and a unique record per device.
+  - Name the stages of a simple asset lifecycle.
+minutes: 25
+resources:
+  - wikipedia-change-management-itsm
+  - wikipedia-it-asset-management
+  - wikipedia-de-change-management-itil
+  - wikipedia-de-it-service-management
+status: ai-draft
+sources:
+  - title: "Change management (ITSM)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Change_management_(ITSM)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "IT asset management"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/IT_asset_management
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+Most IT outages do not come from hardware that breaks by itself. They come from something somebody changed: a setting, an update, a new device on the network. If nobody knows what was changed, when and by whom, finding the cause takes much longer. **Change control** means that changes are requested, looked at by someone else, scheduled and recorded. **Asset management** answers a second basic question: what do we own, who has it and where is it?
+
+## Why changes need control
+
+An uncontrolled change can break a service for many people, can clash with another change made at the same time, and leaves no trail. A controlled change has a reason, an owner, a plan and a record. This is not bureaucracy for its own sake: it protects users and also protects you, because you can show what was agreed.
+
+## The basic change flow
+
+1. **Request:** someone describes what should change and why.
+2. **Approve:** a person with the right authority checks the request and says yes, no or "not yet". The requester should not be the only one to approve a risky change.
+3. **Implement:** the change is carried out as planned, at an agreed time, and every step is noted.
+4. **Review:** after the change, you check that it worked, that nothing else broke, and you close the record with what you learned.
+
+Different organisations use different names and tools for these steps. The ideas are described in general terms in the Wikipedia articles on change management in IT service management.
+
+## Asset inventory basics
+
+An **asset** is something of value that IT looks after: a laptop, a server, a phone, a software licence. An **inventory** is the list of these assets. For each asset record at least:
+
+- **What:** type, model, serial number.
+- **Who:** the user or owner responsible for it.
+- **Where:** location, or "in storage".
+- **Status:** for example in use, in stock, in repair, retired.
+
+An inventory is only useful if it is correct. Update it every time a device is handed out, moved, repaired or returned.
+
+## Asset tags
+
+An **asset tag** is a unique label, often a sticker with a number or barcode, fixed to the device and matching one record in the inventory. Use one tag per device and never reuse a number. The tag lets anyone find the right record in seconds, even when the user name changes.
+
+## A simple lifecycle
+
+- **Procure:** the item is requested, approved and bought.
+- **Deploy:** it is configured, tagged, recorded and handed to a user.
+- **Maintain:** updates, repairs and moves are recorded.
+- **Retire:** data is wiped, the device is taken out of use and disposed of or recycled, and the record is closed with the date.
+
+## Worked example
+
+A user asks for a second monitor. You create a request in the ticket system, and the team lead approves it. You pick a monitor from stock, note its asset tag in the ticket and change its record from "in stock" to "in use" with the user name and desk location. Later you ask the user to confirm that it works and close the ticket. Months later, when the user leaves, the tag tells you immediately which monitor to collect and put back into stock.
+
+## Key takeaways
+
+- Controlled changes have a request, an approval, an implementation and a review, all recorded.
+- Control protects users from avoidable outages and gives a trail for troubleshooting.
+- An inventory records what an asset is, who has it, where it is and its status.
+- One unique tag per device links the physical item to its record.
+- The lifecycle is procure, deploy, maintain, retire; update the record at every step.

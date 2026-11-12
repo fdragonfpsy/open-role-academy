@@ -1,0 +1,80 @@
+---
+id: change-asset-management-advanced
+competency: change-asset-management
+level: advanced
+title: "Governance and audit readiness: approval bodies, change calendars, post-implementation review, lifecycle cost and CMDB data quality"
+objectives:
+  - Design approval governance that matches risk.
+  - Use a change calendar to find and resolve conflicts.
+  - Run a post-implementation review that leads to improvements.
+  - Consider cost and compliance across the asset lifecycle.
+  - Prepare for audits and keep CMDB data accurate.
+minutes: 35
+resources:
+  - wikipedia-change-management-itsm
+  - wikipedia-release-management
+  - wikipedia-it-asset-management
+  - wikipedia-configuration-management-database
+  - wikipedia-de-lizenzmanagement
+status: ai-draft
+sources:
+  - title: "Change management (ITSM)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Change_management_(ITSM)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "IT asset management"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/IT_asset_management
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Configuration management database"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Configuration_management_database
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+At this level you are responsible for how change and asset processes work for a whole team or organisation. The task is to keep them proportionate: strict enough to prevent harm and to satisfy auditors, light enough that people use them. The ideas below are described generally; the Wikipedia articles on ITSM change management show how frameworks name them.
+
+## Approval governance
+
+Match the approver to the risk. Pre-approved standard changes need no meeting. Normal changes go to a person or group with the authority and the knowledge to judge them. A **change advisory board (CAB)** is one common form: representatives from operations, security, the business and others who review significant changes. Keep it small and prepared, give it complete information in advance, and let it focus on high-risk changes. Define who may approve emergency changes and make sure they are reviewed afterwards. Separate duties where possible so that the person who requests a high-risk change is not its only approver.
+
+## Change calendars and conflicts
+
+A **change calendar** shows all planned changes, maintenance windows and freeze periods, such as month-end closing or a major business event. Before approval, check for conflicts: two changes to the same system, changes to systems that depend on each other, or work that needs the same people. Resolve conflicts by moving or combining changes, not by hoping. Release management, described in the Wikipedia article, bundles related changes into planned releases.
+
+## Post-implementation review
+
+After a significant change, hold a short review: did it achieve its goal, was there an incident, did the rollback plan work if used, did the time estimate hold, what should we do differently? Record results in the change record and turn findings into concrete improvements, for example a new standard change or a better checklist. Review failed and emergency changes in particular, in a blameless way.
+
+## Asset lifecycle cost and compliance
+
+Total cost includes more than the purchase price: support, maintenance, licences, power, replacement and secure disposal. Use lifecycle data to plan renewals and to retire assets before they become a risk. Compliance covers licence terms, data deletion at retirement, and rules your organisation must follow, for example on data protection in the EU. Involve the responsible specialists; do not interpret legal questions alone.
+
+## Audit readiness
+
+Auditors ask for evidence: that changes were approved before implementation, that the approver was authorised, that tests and results are recorded, and that licences match use. Being audit-ready means these records exist as a by-product of normal work, are findable and are consistent. Sample your own records regularly and correct gaps.
+
+## CMDB data quality
+
+A CMDB that is wrong is worse than none, because people trust it. Define which CIs and attributes you need and no more. Name an owner for each data set, update records through the change process, and use automatic discovery or reconciliation where available to compare the CMDB with reality. Measure quality, for example the share of records with an owner, and fix systematic causes rather than single entries.
+
+## Worked example
+
+Before an audit you sample ten recent changes. In two, the approval was recorded after the work, and in one the rollback plan is missing. You find that the ticket form allowed saving without an approver. You adjust the form, add a mandatory field, review the three cases with their owners and write up the lessons. At the same time you compare the licence overview with discovery data and find unused licences you can reclaim at renewal. For the audit you prepare a short description of the process and the sample results.
+
+## Key takeaways
+
+- Match approval effort to risk; keep the advisory body small, informed and focused.
+- A change calendar reveals conflicts and freeze periods before approval.
+- Post-implementation reviews turn experience into process improvements.
+- Lifecycle cost and compliance go beyond the purchase price.
+- Audit readiness means evidence is created during normal work.
+- CMDB quality needs defined scope, owners, update through change and regular comparison with reality.

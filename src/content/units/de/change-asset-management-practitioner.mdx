@@ -1,0 +1,84 @@
+---
+id: change-asset-management-practitioner
+competency: change-asset-management
+level: practitioner
+title: "Change-Arten, Risikobewertung, Rückfallpläne, Wartungsfenster, CMDB-Grundlagen und Lizenzverfolgung"
+objectives:
+  - Standard-, normale und Notfalländerungen in allgemeinen Begriffen unterscheiden.
+  - Risiko und Auswirkung einer Änderung bewerten.
+  - Einen Rückfallplan schreiben und ein geeignetes Wartungsfenster wählen.
+  - Erklären, was eine CMDB speichert und wie Konfigurationselemente zusammenhängen.
+  - Software-Lizenzen mit der tatsächlichen Nutzung abgleichen.
+minutes: 30
+resources:
+  - wikipedia-de-change-management-itil
+  - wikipedia-de-configuration-management-database
+  - wikipedia-de-lizenzmanagement
+  - wikipedia-configuration-management-database
+  - wikipedia-software-license
+status: ai-draft
+sources:
+  - title: "Change Management (ITIL)"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Change_Management_(ITIL)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Configuration Management Database"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Configuration_Management_Database
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Lizenzmanagement"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Lizenzmanagement
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Wenn du selbstständig arbeitest, entscheidest du, wie viel Prozess eine Änderung braucht. Zu wenig, und ein kleiner Fehler legt einen Dienst lahm. Zu viel, und Menschen umgehen den Prozess. Diese Einheit gibt dir Werkzeuge, den Aufwand am Risiko auszurichten, und die Unterlagen, die Änderungen stützen: die Konfigurationsdatenbank und die Lizenzübersicht.
+
+## Change-Arten
+
+Viele Organisationen ordnen Änderungen drei allgemeinen Arten zu. Namen und Details unterscheiden sich je nach Organisation und Werkzeug.
+
+- **Standardänderung:** geringes Risiko, gut verstanden und wiederholbar, mit vorab vereinbartem Verfahren, zum Beispiel die Installation einer freigegebenen Anwendung auf einem Laptop. Sie kann vorab genehmigt und dann nur dokumentiert werden.
+- **Normale Änderung:** braucht vor der Terminierung eine individuelle Bewertung und Freigabe, zum Beispiel der Austausch eines Switches.
+- **Notfalländerung:** dringend nötig, um einen Dienst wiederherzustellen oder eine ernste Sicherheitslücke zu schließen. Sie wird auf einem schnelleren Weg freigegeben, muss aber trotzdem dokumentiert und anschließend überprüft werden.
+
+## Risiko- und Auswirkungsbewertung
+
+Stelle zwei Fragen. **Auswirkung:** Wer und was ist betroffen, wenn es schiefgeht, und wie lange? **Wahrscheinlichkeit:** Wie wahrscheinlich ist ein Problem, wenn man bedenkt, wie oft wir das schon gemacht und wie gut wir es getestet haben? Eine Änderung an einem gemeinsam genutzten System wie Authentifizierung oder Netzwerk hat größere Auswirkungen als eine an einem einzelnen Laptop. Schreibe die Bewertung auf und nenne Abhängigkeiten: Welche Dienste brauchen dieses System?
+
+## Rückfallpläne
+
+Ein **Rückfallplan** (Rollback-Plan) beschreibt, wie man in den vorherigen funktionierenden Zustand zurückkehrt, wenn die Änderung scheitert. Er nennt den Auslöser (zum Beispiel „wenn der Test in Schritt 5 fehlschlägt"), die Schritte, die verantwortliche Person und die Dauer. Bereite ihn vor der Änderung vor: Erstelle eine Sicherung oder einen Snapshot, behalte die alte Version der Software oder Konfiguration und prüfe, ob der Rückweg möglich ist. Manche Änderungen lassen sich nicht rückgängig machen; benenne das im Antrag und bitte um eine sorgfältigere Prüfung.
+
+## Wartungsfenster
+
+Ein **Wartungsfenster** ist ein vereinbarter Zeitraum, in dem geplante Arbeiten einen Dienst unterbrechen dürfen. Wähle eine Zeit, in der möglichst wenige Menschen betroffen sind, kündige sie rechtzeitig an und plane genug Zeit für Tests und einen möglichen Rückfall ein. Prüfe, dass zur selben Zeit keine andere Änderung geplant ist.
+
+## CMDB-Grundlagen
+
+Eine **Configuration Management Database (CMDB)** speichert **Konfigurationselemente (CIs)** wie Server, Anwendungen und Dienste mit ihren Attributen und den **Beziehungen** zwischen ihnen: Eine Anwendung läuft auf einem Server, ein Dienst hängt von einer Datenbank ab. Mit diesen Beziehungen beantwortest du die Auswirkungsfrage schnell: Welche Dienste sind betroffen, wenn dieser Server geändert wird?
+
+## Verfolgung von Software-Lizenzen
+
+Software-Lizenzen haben Bedingungen: wie viele Nutzende oder Geräte, welche Art der Nutzung, wie lange. Führe eine Übersicht darüber, was ihr besitzt (Lizenzart, Menge, Laufzeit, Verlängerungsdatum, Ablageort des Kaufnachweises), und gleiche sie mit dem ab, was tatsächlich installiert oder in Nutzung ist. Ungenutzte Lizenzen kannst du zurückgeben; fehlende sind ein Compliance-Risiko. Lies die Lizenzbedingungen jedes Produkts, statt sie anzunehmen, denn die Modelle unterscheiden sich.
+
+## Praxisbeispiel
+
+Du planst ein Upgrade des Datenbankservers hinter der Rechnungsanwendung. Du stufst es als normale Änderung ein und legst einen Antrag an. In der CMDB siehst du, dass zwei weitere Anwendungen den Server nutzen, und führst deren Verantwortliche als Betroffene auf. Du planst ein Wartungsfenster am Sonntagmorgen, erstellst vorher einen Snapshot und schreibst den Rückfallplan: Schlägt der Anwendungstest fehl, wird der Snapshot zurückgespielt, was die zuvor gemessene Zeit dauert. Die freigebende Person bittet um das Einverständnis der Verantwortlichen, du kündigst das Fenster an, führst das Upgrade durch, testest und aktualisierst den CMDB-Eintrag mit der neuen Version.
+
+## Wichtigste Erkenntnisse
+
+- Standard-, normale und Notfalländerungen brauchen unterschiedlich viel Prozess, aber alle werden dokumentiert.
+- Bewerte Auswirkung und Wahrscheinlichkeit schriftlich und nenne Abhängigkeiten.
+- Ein Rückfallplan hat Auslöser, Schritte, verantwortliche Person und Zeitschätzung und entsteht vor der Änderung.
+- Wähle und kündige ein Wartungsfenster an, das Kollisionen vermeidet.
+- Eine CMDB erfasst Konfigurationselemente und ihre Beziehungen und macht Auswirkungen sichtbar.
+- Gleiche vorhandene Lizenzen mit genutzten ab und lies die Lizenzbedingungen.

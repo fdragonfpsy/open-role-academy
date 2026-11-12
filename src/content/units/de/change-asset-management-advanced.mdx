@@ -1,0 +1,80 @@
+---
+id: change-asset-management-advanced
+competency: change-asset-management
+level: advanced
+title: "Steuerung und Prüfungsbereitschaft: Freigabegremien, Change-Kalender, Nachbetrachtung, Lebenszykluskosten und CMDB-Datenqualität"
+objectives:
+  - Eine Freigabesteuerung gestalten, die zum Risiko passt.
+  - Mit einem Change-Kalender Konflikte finden und lösen.
+  - Eine Nachbetrachtung durchführen, die zu Verbesserungen führt.
+  - Kosten und Compliance über den Asset-Lebenszyklus berücksichtigen.
+  - Sich auf Audits vorbereiten und CMDB-Daten korrekt halten.
+minutes: 35
+resources:
+  - wikipedia-de-change-management-itil
+  - wikipedia-de-configuration-management-database
+  - wikipedia-de-lizenzmanagement
+  - wikipedia-release-management
+  - wikipedia-it-asset-management
+status: ai-draft
+sources:
+  - title: "Change Management (ITIL)"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Change_Management_(ITIL)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Configuration Management Database"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Configuration_Management_Database
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Lizenzmanagement"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Lizenzmanagement
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Auf dieser Stufe bist du dafür verantwortlich, wie Change- und Asset-Prozesse für ein ganzes Team oder eine Organisation funktionieren. Die Aufgabe: sie verhältnismäßig halten, streng genug, um Schaden zu verhindern und Prüfende zufriedenzustellen, und leicht genug, damit Menschen sie nutzen. Die folgenden Ideen sind allgemein beschrieben; die Wikipedia-Artikel zum Change Management zeigen, wie Rahmenwerke sie benennen.
+
+## Freigabesteuerung
+
+Passe die freigebende Stelle dem Risiko an. Vorab genehmigte Standardänderungen brauchen keine Sitzung. Normale Änderungen gehen an eine Person oder Gruppe mit Befugnis und Wissen, sie zu beurteilen. Ein **Change Advisory Board (CAB)** ist eine verbreitete Form: Vertretungen aus Betrieb, Sicherheit, Fachbereichen und weiteren Bereichen prüfen bedeutende Änderungen. Halte es klein und vorbereitet, gib ihm vorab vollständige Informationen und lass es sich auf Änderungen mit hohem Risiko konzentrieren. Lege fest, wer Notfalländerungen freigeben darf, und stelle sicher, dass sie anschließend überprüft werden. Trenne Aufgaben, wo möglich, sodass die antragstellende Person einer Änderung mit hohem Risiko nicht allein freigibt.
+
+## Change-Kalender und Konflikte
+
+Ein **Change-Kalender** zeigt alle geplanten Änderungen, Wartungsfenster und Sperrzeiten, etwa den Monatsabschluss oder ein wichtiges Geschäftsereignis. Prüfe vor der Freigabe auf Konflikte: zwei Änderungen am selben System, Änderungen an voneinander abhängigen Systemen oder Arbeiten, die dieselben Personen brauchen. Löse Konflikte, indem du Änderungen verschiebst oder bündelst, nicht indem du hoffst. Das Release-Management, das im Wikipedia-Artikel beschrieben ist, bündelt zusammengehörige Änderungen zu geplanten Releases.
+
+## Nachbetrachtung
+
+Halte nach einer bedeutenden Änderung eine kurze Auswertung: Wurde das Ziel erreicht, gab es einen Incident, hat der Rückfallplan funktioniert, falls er genutzt wurde, hat die Zeitschätzung gestimmt, was machen wir künftig anders? Halte die Ergebnisse im Change-Eintrag fest und mache aus Erkenntnissen konkrete Verbesserungen, zum Beispiel eine neue Standardänderung oder eine bessere Checkliste. Werte insbesondere gescheiterte und Notfalländerungen aus, und zwar ohne Schuldzuweisung.
+
+## Lebenszykluskosten und Compliance von Assets
+
+Die Gesamtkosten umfassen mehr als den Kaufpreis: Support, Wartung, Lizenzen, Strom, Ersatz und sichere Entsorgung. Nutze Lebenszyklusdaten, um Erneuerungen zu planen und Assets auszumustern, bevor sie ein Risiko werden. Compliance umfasst Lizenzbedingungen, Datenlöschung bei der Ausmusterung und Vorgaben, die deine Organisation einhalten muss, zum Beispiel zum Datenschutz in der EU. Beziehe die zuständigen Fachleute ein; werte rechtliche Fragen nicht allein aus.
+
+## Prüfungsbereitschaft
+
+Prüfende verlangen Nachweise: dass Änderungen vor der Umsetzung freigegeben wurden, dass die freigebende Person befugt war, dass Tests und Ergebnisse dokumentiert sind und dass Lizenzen zur Nutzung passen. Prüfungsbereit sein heißt: Diese Unterlagen entstehen als Nebenprodukt der normalen Arbeit, sind auffindbar und konsistent. Ziehe regelmäßig Stichproben in deinen eigenen Unterlagen und schließe Lücken.
+
+## CMDB-Datenqualität
+
+Eine falsche CMDB ist schlimmer als keine, weil Menschen ihr vertrauen. Lege fest, welche CIs und Attribute du brauchst, und nicht mehr. Benenne für jeden Datenbestand eine verantwortliche Person, aktualisiere Einträge über den Change-Prozess und nutze automatische Erkennung oder Abgleich, wo verfügbar, um die CMDB mit der Realität zu vergleichen. Miss die Qualität, zum Beispiel den Anteil der Einträge mit verantwortlicher Person, und behebe systematische Ursachen statt einzelner Einträge.
+
+## Praxisbeispiel
+
+Vor einem Audit ziehst du eine Stichprobe von zehn aktuellen Änderungen. Bei zweien wurde die Freigabe nach der Arbeit eingetragen, bei einer fehlt der Rückfallplan. Du stellst fest, dass das Ticketformular das Speichern ohne freigebende Person erlaubte. Du passt das Formular an, ergänzt ein Pflichtfeld, besprichst die drei Fälle mit den Verantwortlichen und hältst die Erkenntnisse fest. Zugleich vergleichst du die Lizenzübersicht mit den Erkennungsdaten und findest ungenutzte Lizenzen, die du bei der Verlängerung zurückgeben kannst. Für das Audit bereitest du eine kurze Beschreibung des Prozesses und der Stichprobenergebnisse vor.
+
+## Wichtigste Erkenntnisse
+
+- Passe den Freigabeaufwand dem Risiko an; halte das Beratungsgremium klein, informiert und fokussiert.
+- Ein Change-Kalender zeigt Konflikte und Sperrzeiten vor der Freigabe.
+- Nachbetrachtungen machen aus Erfahrung Prozessverbesserungen.
+- Lebenszykluskosten und Compliance gehen über den Kaufpreis hinaus.
+- Prüfungsbereitschaft heißt: Nachweise entstehen in der normalen Arbeit.
+- CMDB-Qualität braucht definierten Umfang, Verantwortliche, Aktualisierung über Changes und regelmäßigen Abgleich mit der Realität.

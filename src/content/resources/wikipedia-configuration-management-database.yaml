@@ -1,0 +1,13 @@
+id: wikipedia-configuration-management-database
+url: "https://en.wikipedia.org/wiki/Configuration_management_database"
+title: "Configuration management database"
+provider: Wikipedia
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-12
+mode: link
+competencies: [change-asset-management]
+levels: [practitioner, advanced]
