@@ -73,7 +73,7 @@ For each competency: ≥1 unit per required level (en + de), ≥6 items across d
 
 ## Phase 3 — Learner experience
 
-- [ ] Landing page (en/de): what it is, how it works, roles overview, "AI-generated, not yet reviewed" transparency note
+- [x] Landing page (en/de): what it is, how it works, roles overview, "AI-generated, not yet reviewed" transparency note
 - [ ] Onboarding flow (role, level, language) + placement check UI
 - [ ] Learning path view + unit page with resources, attribution block and mastery check
 - [ ] Dashboard: competency radar or bars (current vs target), next unit, review queue, export/import
