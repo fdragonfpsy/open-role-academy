@@ -1,0 +1,290 @@
+competency: health-safety-wellbeing
+items:
+  - id: hsw-f-scope
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "Which best describes the scope of occupational safety and health?"
+      de: "Was beschreibt den Umfang des Arbeitsschutzes am besten?"
+    options:
+      - en: "Safety, health and welfare of people at work, including work design and mental strain"
+        de: "Sicherheit, Gesundheit und Wohlergehen bei der Arbeit, einschließlich Arbeitsgestaltung und psychischer Belastung"
+        correct: true
+      - en: "Only wearing protective helmets"
+        de: "Ausschließlich das Tragen von Schutzhelmen"
+        correct: false
+      - en: "Only company sports offers"
+        de: "Ausschließlich betriebliche Sportangebote"
+        correct: false
+      - en: "Only fire exit signs"
+        de: "Ausschließlich Fluchtwegschilder"
+        correct: false
+    explanation:
+      en: "It covers prevention of accidents and health damage in a broad sense, including how work is organised and psychological strain."
+      de: "Er umfasst Vorbeugung von Unfällen und Gesundheitsschäden im weiten Sinne, auch Arbeitsorganisation und psychische Belastung."
+    source: https://en.wikipedia.org/wiki/Occupational_safety_and_health
+  - id: hsw-f-hazard
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "What is a hazard?"
+      de: "Was ist eine Gefährdung?"
+    options:
+      - en: "A report form"
+        de: "Ein Meldeformular"
+        correct: false
+      - en: "Something that can cause harm, such as a loose cable across a walkway"
+        de: "Etwas, das Schaden verursachen kann, etwa ein loses Kabel im Gang"
+        correct: true
+      - en: "The exact chance that harm happens"
+        de: "Die genaue Wahrscheinlichkeit, dass ein Schaden eintritt"
+        correct: false
+      - en: "A completed safety training"
+        de: "Eine abgeschlossene Sicherheitsunterweisung"
+        correct: false
+    explanation:
+      en: "A hazard is a potential source of harm; a risk adds likelihood and severity."
+      de: "Eine Gefährdung ist eine mögliche Schadensquelle; ein Risiko ergänzt Wahrscheinlichkeit und Schwere."
+    source: https://en.wikipedia.org/wiki/Risk_assessment
+  - id: hsw-f-report
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "A colleague tells you a power strip gets hot. What is the best first step?"
+      de: "Eine Kollegin sagt dir, dass eine Steckdosenleiste heiß wird. Was ist der beste erste Schritt?"
+    options:
+      - en: "Decide alone that it is harmless"
+        de: "Allein entscheiden, dass es harmlos ist"
+        correct: false
+      - en: "Discuss it only in the team chat"
+        de: "Es nur im Team-Chat besprechen"
+        correct: false
+      - en: "Note the facts and report it the same day to the responsible person"
+        de: "Fakten notieren und noch am selben Tag der zuständigen Person melden"
+        correct: true
+      - en: "Wait to see if it happens again"
+        de: "Abwarten, ob es noch einmal passiert"
+        correct: false
+    explanation:
+      en: "Prompt reporting to the responsible person lets qualified people assess and act; you should not judge danger alone."
+      de: "Eine schnelle Meldung an die zuständige Person ermöglicht Bewertung und Handeln durch Fachleute; du beurteilst die Gefahr nicht allein."
+    source: https://en.wikipedia.org/wiki/Occupational_safety_and_health
+  - id: hsw-f-psych
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "Which is an example of a psychological hazard at work?"
+      de: "Was ist ein Beispiel für eine psychische Gefährdung bei der Arbeit?"
+    options:
+      - en: "A well-lit corridor"
+        de: "Ein gut beleuchteter Flur"
+        correct: false
+      - en: "An adjustable chair"
+        de: "Ein verstellbarer Stuhl"
+        correct: false
+      - en: "A clearly marked fire exit"
+        de: "Ein klar markierter Fluchtweg"
+        correct: false
+      - en: "Very high demands combined with little control and little support"
+        de: "Sehr hohe Anforderungen bei wenig Handlungsspielraum und wenig Unterstützung"
+        correct: true
+    explanation:
+      en: "Demands, control and support are typical stress factors at work."
+      de: "Anforderungen, Handlungsspielraum und Unterstützung sind typische Stressfaktoren bei der Arbeit."
+    source: https://en.wikipedia.org/wiki/Occupational_stress
+  - id: hsw-p-steps
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "Which order fits a basic risk assessment?"
+      de: "Welche Reihenfolge passt zu einer einfachen Gefährdungsbeurteilung?"
+    options:
+      - en: "Identify hazards, rate risk, decide measures, implement, check effect, document"
+        de: "Gefährdungen erkennen, Risiko bewerten, Maßnahmen festlegen, umsetzen, Wirkung prüfen, dokumentieren"
+        correct: true
+      - en: "Document, then identify hazards, then rate risk"
+        de: "Dokumentieren, dann Gefährdungen erkennen, dann Risiko bewerten"
+        correct: false
+      - en: "Choose measures first, then look for hazards"
+        de: "Zuerst Maßnahmen wählen, dann Gefährdungen suchen"
+        correct: false
+      - en: "Rate risk only after an accident"
+        de: "Risiko erst nach einem Unfall bewerten"
+        correct: false
+    explanation:
+      en: "Assessment starts with finding hazards and ends with checking and recording whether measures work."
+      de: "Die Beurteilung beginnt mit dem Erkennen von Gefährdungen und endet mit Wirkungsprüfung und Dokumentation."
+    source: https://en.wikipedia.org/wiki/Risk_assessment
+  - id: hsw-p-hierarchy
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "Which measure is generally preferred according to the hierarchy of hazard controls?"
+      de: "Welche Maßnahme wird nach der Maßnahmenhierarchie grundsätzlich bevorzugt?"
+    options:
+      - en: "Waiting for a complaint"
+        de: "Auf eine Beschwerde warten"
+        correct: false
+      - en: "Eliminating the hazard"
+        de: "Die Gefährdung beseitigen"
+        correct: true
+      - en: "Asking everyone to be more careful"
+        de: "Alle zu mehr Vorsicht auffordern"
+        correct: false
+      - en: "Relying only on personal protective equipment"
+        de: "Sich nur auf persönliche Schutzausrüstung verlassen"
+        correct: false
+    explanation:
+      en: "Elimination is most effective; personal protective equipment is the last line of defence."
+      de: "Beseitigen wirkt am stärksten; persönliche Schutzausrüstung ist die letzte Verteidigungslinie."
+    source: https://en.wikipedia.org/wiki/Hierarchy_of_hazard_controls
+  - id: hsw-p-psych-level
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "In an assessment of psychological stress factors, what do you mainly examine?"
+      de: "Was untersuchst du bei der Beurteilung psychischer Belastung vor allem?"
+    options:
+      - en: "Private life of employees"
+        de: "Das Privatleben der Beschäftigten"
+        correct: false
+      - en: "Only who is absent most"
+        de: "Nur, wer am häufigsten fehlt"
+        correct: false
+      - en: "The work itself: tasks, time pressure, control, support and cooperation"
+        de: "Die Arbeit selbst: Aufgaben, Zeitdruck, Handlungsspielraum, Unterstützung und Zusammenarbeit"
+        correct: true
+      - en: "The personality of each employee"
+        de: "Die Persönlichkeit jeder einzelnen Person"
+        correct: false
+    explanation:
+      en: "The assessment looks at working conditions, not individual traits, and leads to changes in work design."
+      de: "Die Beurteilung betrachtet Arbeitsbedingungen, nicht Eigenschaften Einzelner, und führt zu Änderungen der Arbeitsgestaltung."
+    source: https://en.wikipedia.org/wiki/Occupational_stress
+  - id: hsw-p-bem
+    level: practitioner
+    difficulty: 1350
+    type: single
+    stem:
+      en: "What is the right stance toward a structured return-to-work process after long illness?"
+      de: "Welche Haltung passt zu einem strukturierten Wiedereingliederungsprozess nach langer Krankheit?"
+    options:
+      - en: "Demand the full diagnosis from the employee"
+        de: "Die vollständige Diagnose von den Beschäftigten verlangen"
+        correct: false
+      - en: "Share the case openly in the team"
+        de: "Den Fall offen im Team besprechen"
+        correct: false
+      - en: "Use it to prepare a dismissal"
+        de: "Ihn nutzen, um eine Kündigung vorzubereiten"
+        correct: false
+      - en: "Offer it respectfully, keep medical details with the employee and aim for workable adjustments"
+        de: "Respektvoll anbieten, medizinische Details bei den Beschäftigten lassen und tragfähige Anpassungen anstreben"
+        correct: true
+    explanation:
+      en: "Such a process supports return, is participatory and treats health data as sensitive. Check current law for details."
+      de: "Ein solcher Prozess unterstützt die Rückkehr, ist beteiligungsorientiert und behandelt Gesundheitsdaten sensibel. Details im aktuellen Recht prüfen."
+    source: https://de.wikipedia.org/wiki/Betriebliches_Eingliederungsmanagement
+  - id: hsw-a-program
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "A team has permanent understaffing and high stress. What is the strongest response?"
+      de: "Ein Team hat dauerhaft zu wenig Personal und hohen Stress. Was ist die stärkste Reaktion?"
+    options:
+      - en: "Change the work design, for example workload or staffing, and use programmes only as a supplement"
+        de: "Die Arbeitsgestaltung ändern, etwa Arbeitsmenge oder Besetzung, und Programme nur ergänzend nutzen"
+        correct: true
+      - en: "Offer a yoga class and stop there"
+        de: "Einen Yogakurs anbieten und es dabei belassen"
+        correct: false
+      - en: "Tell people to manage their stress"
+        de: "Den Leuten sagen, sie sollen ihren Stress managen"
+        correct: false
+      - en: "Ignore it until absence rises"
+        de: "Es ignorieren, bis die Fehlzeiten steigen"
+        correct: false
+    explanation:
+      en: "Wellbeing offers help but do not offset harmful conditions; changing the work is more effective."
+      de: "Gesundheitsangebote helfen, gleichen aber schädliche Bedingungen nicht aus; die Arbeit zu verändern wirkt stärker."
+    source: https://en.wikipedia.org/wiki/Hierarchy_of_hazard_controls
+  - id: hsw-a-indicator
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "Absence rose in one department. How should you use this indicator?"
+      de: "In einer Abteilung sind die Fehlzeiten gestiegen. Wie nutzt du diese Kennzahl?"
+    options:
+      - en: "As a basis to rate individual performance"
+        de: "Als Grundlage zur Beurteilung der individuellen Leistung"
+        correct: false
+      - en: "As a question to investigate with the team and experts, reporting only aggregated results"
+        de: "Als Frage, die du mit Team und Fachleuten untersuchst, und nur aggregiert berichtest"
+        correct: true
+      - en: "As proof that the manager is at fault"
+        de: "Als Beweis, dass die Führungskraft schuld ist"
+        correct: false
+      - en: "To list who was ill and why"
+        de: "Um aufzulisten, wer warum krank war"
+        correct: false
+    explanation:
+      en: "Absence has many causes; indicators prompt inquiry and must protect privacy."
+      de: "Fehlzeiten haben viele Ursachen; Kennzahlen regen Untersuchung an und müssen die Privatsphäre schützen."
+    source: https://en.wikipedia.org/wiki/Occupational_stress
+  - id: hsw-a-sensitive
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "An employee seems severely distressed and mentions possible burnout. What is appropriate?"
+      de: "Eine Mitarbeiterin wirkt stark belastet und erwähnt möglichen Burnout. Was ist angemessen?"
+    options:
+      - en: "Tell the team so they can help"
+        de: "Das Team informieren, damit es hilft"
+        correct: false
+      - en: "Promise to keep it secret from everyone in all cases"
+        de: "Zusagen, es unter allen Umständen vor allen geheim zu halten"
+        correct: false
+      - en: "Listen neutrally, point to professional support and agree on a follow-up without diagnosing"
+        de: "Neutral zuhören, auf professionelle Hilfe verweisen und ein Nachgespräch vereinbaren, ohne zu diagnostizieren"
+        correct: true
+      - en: "Give a diagnosis yourself"
+        de: "Selbst eine Diagnose stellen"
+        correct: false
+    explanation:
+      en: "HR is not a medical service: stay neutral, signpost help, follow up and handle sensitive data carefully."
+      de: "Der Personalbereich ist kein medizinischer Dienst: neutral bleiben, auf Hilfe verweisen, nachfassen und sensible Daten sorgfältig behandeln."
+    source: https://en.wikipedia.org/wiki/Occupational_burnout
+  - id: hsw-a-system
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "What best marks a mature prevention approach?"
+      de: "Was kennzeichnet einen reifen Präventionsansatz am besten?"
+    options:
+      - en: "Running separate one-off campaigns without follow-up"
+        de: "Einzelne Aktionen ohne Nachverfolgung durchführen"
+        correct: false
+      - en: "Reacting only after accidents"
+        de: "Nur nach Unfällen reagieren"
+        correct: false
+      - en: "Leaving all topics to individual employees"
+        de: "Alle Themen den einzelnen Beschäftigten überlassen"
+        correct: false
+      - en: "Linking risk assessment, work design, support offers and return-to-work with clear roles"
+        de: "Gefährdungsbeurteilung, Arbeitsgestaltung, Unterstützungsangebote und Wiedereingliederung mit klaren Rollen verbinden"
+        correct: true
+    explanation:
+      en: "Prevention works as a system where assessment results lead to measures, support and follow-up."
+      de: "Prävention wirkt als System, in dem Beurteilungsergebnisse zu Maßnahmen, Unterstützung und Nachverfolgung führen."
+    source: https://en.wikipedia.org/wiki/Occupational_safety_and_health

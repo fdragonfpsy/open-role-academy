@@ -1,0 +1,13 @@
+id: wikipedia-occupational-safety-and-health
+url: https://en.wikipedia.org/wiki/Occupational_safety_and_health
+title: "Occupational safety and health"
+provider: Wikipedia
+language: en
+format: article
+minutes: 20
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-13
+mode: link
+competencies: [health-safety-wellbeing]
+levels: [foundation, practitioner]

@@ -68,7 +68,7 @@ For each competency: ≥1 unit per required level (en + de), ≥6 items across d
   - [x] performance-feedback
   - [x] learning-development
   - [x] employee-relations-conflict
-  - [ ] health-safety-wellbeing
+  - [x] health-safety-wellbeing
   - [ ] diversity-inclusion
 
 ## Phase 3 — Learner experience
