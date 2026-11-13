@@ -1,0 +1,13 @@
+id: wikipedia-de-barrierefreiheit
+url: https://de.wikipedia.org/wiki/Barrierefreiheit
+title: "Barrierefreiheit"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 20
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-13
+mode: link
+competencies: [diversity-inclusion]
+levels: [practitioner, advanced]

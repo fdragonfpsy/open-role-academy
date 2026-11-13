@@ -1,0 +1,13 @@
+id: wikipedia-implicit-stereotype
+url: https://en.wikipedia.org/wiki/Implicit_stereotype
+title: "Implicit stereotype"
+provider: Wikipedia
+language: en
+format: article
+minutes: 20
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-13
+mode: link
+competencies: [diversity-inclusion]
+levels: [foundation, practitioner]

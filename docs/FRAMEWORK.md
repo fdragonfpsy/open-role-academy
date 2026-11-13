@@ -84,7 +84,7 @@ Keep the books right and the money flowing: record transactions, manage payables
 | Financial analysis and KPIs | role | 3 | — | F | P | financial-statements-reporting, working-with-data |
 | Self-organisation and project basics | core | 3 | F | P | P | — |
 
-## Human Resources (`human-resources`, role, draft)
+## Human Resources (`human-resources`, role, published)
 
 Find, develop and support people: recruit and onboard employees, run fair and lawful HR processes, advise managers and employees, and protect personal data.
 
