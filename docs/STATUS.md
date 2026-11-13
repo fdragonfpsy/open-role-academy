@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-13 — Phase 2: Human Resources content for learning-development
+
+**Done**
+- `learning-development`: 6 units (3 levels x en/de, ai-draft), 12 items (4 per level), 7 new link-only resources (Wikipedia en/de, CC BY-SA 4.0, verified 2026-11-13).
+- Kirkpatrick Wikipedia URL returned 404 and was left out; Kirkpatrick levels and 70:20:10 appear only as labelled practice insight (70:20:10 as a rule of thumb, not a finding).
+- Stale branch `claude/admiring-mayer-dn6uyq` (troubleshooting-methods) is superseded by main and can be deleted.
+
+**Counts:** roles 4 (3 published, 1 draft) · competencies 38 · units 210 · items 420 · resources 250
+
+**Next:** HR `employee-relations-conflict`, `health-safety-wellbeing`, `diversity-inclusion`, then publish the role.
+
 ## 2026-11-12 — Phase 2: Human Resources content for performance-feedback
 
 **Done**

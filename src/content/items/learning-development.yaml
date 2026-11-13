@@ -1,0 +1,290 @@
+competency: learning-development
+items:
+  - id: ld-f-meaning
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "What is the main idea of learning and development (L&D) in a company?"
+      de: "Was ist die Grundidee von Personalentwicklung in einem Unternehmen?"
+    options:
+      - en: "Helping people gain knowledge and skills for current and future work"
+        de: "Menschen helfen, Wissen und Fähigkeiten für aktuelle und künftige Arbeit zu erwerben"
+        correct: true
+      - en: "Calculating salaries"
+        de: "Gehälter berechnen"
+        correct: false
+      - en: "Recording working hours"
+        de: "Arbeitszeiten erfassen"
+        correct: false
+      - en: "Replacing all jobs with software"
+        de: "Alle Stellen durch Software ersetzen"
+        correct: false
+    explanation:
+      en: "L&D covers activities that help employees acquire knowledge and skills for their job and later roles."
+      de: "Personalentwicklung umfasst Maßnahmen, mit denen Beschäftigte Wissen und Fähigkeiten für ihre Aufgabe und spätere Rollen erwerben."
+    source: https://en.wikipedia.org/wiki/Training_and_development
+  - id: ld-f-onthejob
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Which is an example of on-the-job learning?"
+      de: "Was ist ein Beispiel für Lernen im Arbeitsalltag (on the job)?"
+    options:
+      - en: "Shadowing a colleague and then doing the task with support"
+        de: "Eine Kollegin begleiten und die Aufgabe dann mit Unterstützung selbst ausführen"
+        correct: true
+      - en: "Reading a legal text without any task"
+        de: "Einen Rechtstext ohne Aufgabenbezug lesen"
+        correct: false
+      - en: "Waiting until a course is offered"
+        de: "Warten, bis ein Seminar angeboten wird"
+        correct: false
+      - en: "Archiving old files"
+        de: "Alte Akten archivieren"
+        correct: false
+    explanation:
+      en: "On-the-job learning happens while doing real work, with support."
+      de: "Lernen im Arbeitsalltag geschieht bei echter Arbeit mit Unterstützung."
+    source: https://en.wikipedia.org/wiki/Training_and_development
+  - id: ld-f-need
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "Several people ask the same question about a new tool. What does this most likely indicate?"
+      de: "Mehrere Personen stellen dieselbe Frage zu einem neuen Werkzeug. Worauf deutet das am ehesten hin?"
+    options:
+      - en: "A possible training need worth looking into"
+        de: "Ein möglicher Weiterbildungsbedarf, den man prüfen sollte"
+        correct: true
+      - en: "That the tool must be removed immediately"
+        de: "Dass das Werkzeug sofort entfernt werden muss"
+        correct: false
+      - en: "That nobody should be asked"
+        de: "Dass niemand gefragt werden sollte"
+        correct: false
+      - en: "That a full-day course is always required"
+        de: "Dass immer ein ganztägiges Seminar nötig ist"
+        correct: false
+    explanation:
+      en: "Repeated questions are evidence of a gap. Check the cause first; the right measure can be small, such as a short guide."
+      de: "Wiederholte Fragen sind ein Hinweis auf eine Lücke. Prüfe zuerst die Ursache; die passende Maßnahme kann klein sein, etwa eine Kurzanleitung."
+    source: https://en.wikipedia.org/wiki/Needs_assessment
+  - id: ld-f-lms
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "What is a learning management system (LMS)?"
+      de: "Was ist ein Lernmanagementsystem (LMS)?"
+    options:
+      - en: "Software that offers learning content and tracks learning"
+        de: "Software, die Lerninhalte bereitstellt und den Lernstand erfasst"
+        correct: true
+      - en: "A payroll program"
+        de: "Ein Programm zur Entgeltabrechnung"
+        correct: false
+      - en: "A type of mentoring relationship"
+        de: "Eine Form der Mentoring-Beziehung"
+        correct: false
+      - en: "A legal contract"
+        de: "Ein Rechtsvertrag"
+        correct: false
+    explanation:
+      en: "An LMS is a software platform for delivering, managing and tracking learning content."
+      de: "Ein LMS ist eine Softwareplattform, um Lerninhalte bereitzustellen, zu verwalten und zu verfolgen."
+    source: https://en.wikipedia.org/wiki/Learning_management_system
+  - id: ld-p-objective
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "Which learning objective is best formulated?"
+      de: "Welches Lernziel ist am besten formuliert?"
+    options:
+      - en: "Learners can create a monthly report using the new template"
+        de: "Lernende können einen Monatsbericht mit der neuen Vorlage erstellen"
+        correct: true
+      - en: "Learners understand reporting"
+        de: "Lernende verstehen das Berichtswesen"
+        correct: false
+      - en: "Learners know about templates"
+        de: "Lernende wissen etwas über Vorlagen"
+        correct: false
+      - en: "Learners appreciate reports"
+        de: "Lernende schätzen Berichte"
+        correct: false
+    explanation:
+      en: "Good objectives describe observable behaviour, which also shows how to test and evaluate."
+      de: "Gute Ziele beschreiben beobachtbares Verhalten; das zeigt auch, wie man testet und auswertet."
+    source: https://en.wikipedia.org/wiki/Instructional_design
+  - id: ld-p-levels
+    level: practitioner
+    difficulty: 1220
+    type: single
+    stem:
+      en: "A manager checks six weeks after a workshop whether staff now apply the method at work. Which evaluation level is this?"
+      de: "Eine Führungskraft prüft sechs Wochen nach einem Workshop, ob Mitarbeitende die Methode bei der Arbeit anwenden. Welche Evaluationsebene ist das?"
+    options:
+      - en: "Behaviour"
+        de: "Verhalten"
+        correct: true
+      - en: "Reaction"
+        de: "Reaktion"
+        correct: false
+      - en: "Learning"
+        de: "Lernen"
+        correct: false
+      - en: "Catering"
+        de: "Verpflegung"
+        correct: false
+    explanation:
+      en: "In the four-level model, applying learning at work is the behaviour level. Reaction is satisfaction, learning is knowledge or skill gained, results are team or organisation effects."
+      de: "Im Vier-Ebenen-Modell ist die Anwendung bei der Arbeit die Verhaltensebene. Reaktion ist Zufriedenheit, Lernen ist gewonnenes Wissen oder Können, Ergebnisse sind Wirkungen auf Team oder Organisation."
+    source: https://de.wikipedia.org/wiki/Bildungscontrolling
+  - id: ld-p-cause
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "A manager asks for training because errors keep happening. Analysis shows the process description is unclear. What is the best next step?"
+      de: "Eine Führungskraft fordert eine Schulung, weil immer wieder Fehler passieren. Die Analyse zeigt, dass die Prozessbeschreibung unklar ist. Was ist der beste nächste Schritt?"
+    options:
+      - en: "Clarify the process first; training alone will not fix the cause"
+        de: "Zuerst den Prozess klären; eine Schulung allein behebt die Ursache nicht"
+        correct: true
+      - en: "Book a course anyway"
+        de: "Trotzdem ein Seminar buchen"
+        correct: false
+      - en: "Ignore the errors"
+        de: "Die Fehler ignorieren"
+        correct: false
+      - en: "Blame the participants"
+        de: "Den Teilnehmenden die Schuld geben"
+        correct: false
+    explanation:
+      en: "Needs analysis looks for causes. Not every problem is a training problem; unclear processes need process fixes."
+      de: "Eine Bedarfsanalyse sucht Ursachen. Nicht jedes Problem ist ein Schulungsproblem; unklare Prozesse brauchen Prozessänderungen."
+    source: https://en.wikipedia.org/wiki/Needs_assessment
+  - id: ld-p-lmsdata
+    level: practitioner
+    difficulty: 1350
+    type: single
+    stem:
+      en: "Before introducing an LMS that records individual learning progress, what should you do?"
+      de: "Was solltest du tun, bevor ein LMS eingeführt wird, das den individuellen Lernfortschritt erfasst?"
+    options:
+      - en: "Involve the data protection officer and, where applicable, the works council, and define purpose and access"
+        de: "Datenschutzbeauftragte und gegebenenfalls den Betriebsrat einbeziehen sowie Zweck und Zugriff festlegen"
+        correct: true
+      - en: "Publish everyone's results to the whole company"
+        de: "Die Ergebnisse aller im ganzen Unternehmen veröffentlichen"
+        correct: false
+      - en: "Nothing, learning data is not personal data"
+        de: "Nichts, Lerndaten sind keine personenbezogenen Daten"
+        correct: false
+      - en: "Keep the data forever just in case"
+        de: "Die Daten vorsorglich für immer speichern"
+        correct: false
+    explanation:
+      en: "Records of individual learning are employee data. Define purpose, access and retention, and involve the right bodies; check current law."
+      de: "Aufzeichnungen über individuelles Lernen sind Beschäftigtendaten. Lege Zweck, Zugriff und Aufbewahrung fest, beziehe die zuständigen Stellen ein und prüfe das aktuelle Recht."
+    source: https://en.wikipedia.org/wiki/Learning_management_system
+  - id: ld-a-702010
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "How should the 70:20:10 idea be used?"
+      de: "Wie sollte die 70:20:10-Idee genutzt werden?"
+    options:
+      - en: "As a prompt to combine courses with on-the-job and social learning, not as a precise measured law"
+        de: "Als Denkanstoß, Seminare mit arbeitsplatznahem und sozialem Lernen zu kombinieren, nicht als exakt gemessenes Gesetz"
+        correct: true
+      - en: "As proof that courses never work"
+        de: "Als Beweis, dass Seminare nie wirken"
+        correct: false
+      - en: "As a legal requirement for every company"
+        de: "Als gesetzliche Pflicht für jedes Unternehmen"
+        correct: false
+      - en: "As an exact budget split that must always be used"
+        de: "Als exakte Budgetaufteilung, die immer gelten muss"
+        correct: false
+    explanation:
+      en: "The ratio is a rule of thumb, not a precise finding for every context. Its useful message is that courses alone rarely change work."
+      de: "Das Verhältnis ist eine Faustregel, kein exakter Befund für jeden Kontext. Nützlich ist die Botschaft, dass Seminare allein die Arbeit selten verändern."
+    source: https://en.wikipedia.org/wiki/Training_and_development
+  - id: ld-a-roi
+    level: advanced
+    difficulty: 1520
+    type: single
+    stem:
+      en: "A director asks for the exact return on investment of a leadership programme. You cannot support a precise figure. What is the best response?"
+      de: "Eine Geschäftsleiterin verlangt die genaue Rentabilität eines Führungskräfteprogramms. Du kannst keine genaue Zahl belegen. Was ist die beste Antwort?"
+    options:
+      - en: "Report evidence on all evaluation levels, name the comparison used and state the limits of attribution"
+        de: "Belege auf allen Evaluationsebenen berichten, den verwendeten Vergleich nennen und die Grenzen der Zuordnung darlegen"
+        correct: true
+      - en: "Invent a plausible percentage"
+        de: "Einen plausiblen Prozentsatz erfinden"
+        correct: false
+      - en: "Copy a figure from another company"
+        de: "Eine Zahl von einem anderen Unternehmen übernehmen"
+        correct: false
+      - en: "Refuse to report anything"
+        de: "Jede Auskunft verweigern"
+        correct: false
+    explanation:
+      en: "Business results have many causes. Honest reporting shows what is known and what is not; invented figures damage trust."
+      de: "Geschäftsergebnisse haben viele Ursachen. Ehrliches Berichten zeigt, was bekannt ist und was nicht; erfundene Zahlen schaden dem Vertrauen."
+    source: https://de.wikipedia.org/wiki/Bildungscontrolling
+  - id: ld-a-strategy
+    level: advanced
+    difficulty: 1580
+    type: single
+    stem:
+      en: "Which approach best links the L&D plan to strategy?"
+      de: "Welcher Ansatz verknüpft den Entwicklungsplan am besten mit der Strategie?"
+    options:
+      - en: "Derive needed capabilities from strategic questions, compare with the current skill picture, then prioritise by impact and urgency"
+        de: "Nötige Fähigkeiten aus strategischen Fragen ableiten, mit dem aktuellen Kompetenzbild vergleichen und dann nach Wirkung und Dringlichkeit priorisieren"
+        correct: true
+      - en: "Offer every course available on the market"
+        de: "Jedes am Markt verfügbare Seminar anbieten"
+        correct: false
+      - en: "Buy the cheapest courses first"
+        de: "Zuerst die billigsten Seminare einkaufen"
+        correct: false
+      - en: "Let each employee pick anything without a plan"
+        de: "Jede Person ohne Plan beliebig wählen lassen"
+        correct: false
+    explanation:
+      en: "Development measures should serve company goals. Prioritising by impact and urgency avoids a scattered offer."
+      de: "Entwicklungsmaßnahmen sollen den Unternehmenszielen dienen. Priorisierung nach Wirkung und Dringlichkeit vermeidet ein zersplittertes Angebot."
+    source: https://de.wikipedia.org/wiki/Personalentwicklung
+  - id: ld-a-lmsuse
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "An LMS holds individual quiz scores. A manager wants to use them for appraisal ratings. What is the sound position?"
+      de: "Ein LMS enthält individuelle Quiz-Ergebnisse. Eine Führungskraft will sie für Beurteilungen nutzen. Welche Haltung ist sinnvoll?"
+    options:
+      - en: "Only if purpose and use were clearly agreed beforehand and are lawful; otherwise show managers only completion"
+        de: "Nur wenn Zweck und Nutzung vorher klar vereinbart und zulässig sind; sonst zeigen Führungskräften nur den Abschluss"
+        correct: true
+      - en: "Always allowed, because the manager owns the data"
+        de: "Immer erlaubt, weil die Führungskraft die Daten besitzt"
+        correct: false
+      - en: "Allowed if nobody notices"
+        de: "Erlaubt, wenn es niemand merkt"
+        correct: false
+      - en: "Required by every LMS"
+        de: "Von jedem LMS vorgeschrieben"
+        correct: false
+    explanation:
+      en: "Learning data is employee data tied to a purpose. Use beyond that purpose needs agreement and a lawful basis; check current law and involve the data protection officer."
+      de: "Lerndaten sind an einen Zweck gebundene Beschäftigtendaten. Eine darüber hinausgehende Nutzung braucht Vereinbarung und Rechtsgrundlage; prüfe das aktuelle Recht und beziehe die Datenschutzbeauftragte ein."
+    source: https://en.wikipedia.org/wiki/Learning_management_system

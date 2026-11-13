@@ -66,7 +66,7 @@ For each competency: ≥1 unit per required level (en + de), ≥6 items across d
   - [x] onboarding-offboarding
   - [x] payroll-compensation
   - [x] performance-feedback
-  - [ ] learning-development
+  - [x] learning-development
   - [ ] employee-relations-conflict
   - [ ] health-safety-wellbeing
   - [ ] diversity-inclusion
