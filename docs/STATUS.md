@@ -1,5 +1,13 @@
 # Status
 
+## 2026-11-13 — Phase 2: Human Resources content for health-safety-wellbeing
+
+**Done**
+- `health-safety-wellbeing`: 6 units (en/de, ai-draft), 12 items, 8 new link-only Wikipedia resources (URLs verified 200).
+- Review note: definitions attributed to articles (hazard, risk, stress factors, hazard controls, return-to-work support) were written without fetching the pages; QA should check them.
+
+**Next:** HR `diversity-inclusion`, then publish the role.
+
 ## 2026-11-13 — Phase 2: Human Resources content for employee-relations-conflict
 
 **Done**
