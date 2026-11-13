@@ -1,0 +1,13 @@
+id: wikipedia-mentorship
+url: https://en.wikipedia.org/wiki/Mentorship
+title: "Mentorship"
+provider: Wikipedia
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-13
+mode: link
+competencies: [learning-development]
+levels: [foundation, practitioner, advanced]
