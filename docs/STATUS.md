@@ -1,5 +1,13 @@
 # Status
 
+## 2026-11-13 — Phase 3: landing page ticked
+
+**Done**
+- Landing page (en/de) already implemented in `HomePage.astro` (intro, how it works, privacy note, published roles list, AI-draft transparency note); ticked in ROADMAP after all checks passed.
+- Run summary: HR content finished and role published (#48–#51); stale branch `claude/admiring-mayer-dn6uyq` is superseded and can be deleted.
+
+**Next:** Phase 3 — verify/finish onboarding + placement UI, learning path view, dashboard (these exist as islands; need browser verification and gap review), then accessibility and mobile passes.
+
 ## 2026-11-13 — Phase 2: Human Resources complete and published
 
 **Done**
