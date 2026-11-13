@@ -1,0 +1,13 @@
+id: wikipedia-diversity-business
+url: https://en.wikipedia.org/wiki/Diversity_(business)
+title: "Diversity (business)"
+provider: Wikipedia
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-13
+mode: link
+competencies: [diversity-inclusion]
+levels: [foundation, practitioner, advanced]

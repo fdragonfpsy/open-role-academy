@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-13 — Phase 2: Human Resources complete and published
+
+**Done**
+- `diversity-inclusion`: 6 units (en/de, ai-draft), 12 items, 8 new link-only Wikipedia resources (URLs verified 200); AGG mentioned only generally (based on the German Wikipedia intro); 4 existing resources tagged.
+- Role `human-resources` set to `published` (coverage now enforced, 0 errors); `docs/FRAMEWORK.md` regenerated.
+- Earlier this run: learning-development (#48), employee-relations-conflict (#49), health-safety-wellbeing (#50).
+
+**Counts:** roles 4 (4 published) · competencies 38 · units 228 · items 456 · resources 273
+
+**Next:** Phase 2 roadmap item after HR (see ROADMAP).
+
 ## 2026-11-13 — Phase 2: Human Resources content for health-safety-wellbeing
 
 **Done**

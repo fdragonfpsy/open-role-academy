@@ -1,6 +1,6 @@
 id: human-resources
 kind: role
-status: draft
+status: published
 title:
   en: Human Resources
   de: Personalwesen (HR)

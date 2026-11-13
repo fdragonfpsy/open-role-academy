@@ -58,7 +58,7 @@ For each competency: ≥1 unit per required level (en + de), ≥6 items across d
   - [x] internal-controls-audit
   - [x] cost-accounting
   - [x] financial-analysis-kpis
-- [ ] Human Resources content complete (sub-tasks below; publish the role when all are done; Germany/EU context, label it; no invented laws, deadlines or figures)
+- [x] Human Resources content complete (sub-tasks below; publish the role when all are done; Germany/EU context, label it; no invented laws, deadlines or figures)
   - [x] employment-law-basics
   - [x] recruitment-selection
   - [x] personnel-administration
@@ -69,7 +69,7 @@ For each competency: ≥1 unit per required level (en + de), ≥6 items across d
   - [x] learning-development
   - [x] employee-relations-conflict
   - [x] health-safety-wellbeing
-  - [ ] diversity-inclusion
+  - [x] diversity-inclusion
 
 ## Phase 3 — Learner experience
 

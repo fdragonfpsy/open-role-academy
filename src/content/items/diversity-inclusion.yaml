@@ -1,0 +1,290 @@
+competency: diversity-inclusion
+items:
+  - id: di-f-meaning
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "Which statement best distinguishes diversity from inclusion?"
+      de: "Welche Aussage unterscheidet Vielfalt und Inklusion am besten?"
+    options:
+      - en: "Diversity describes who is in the organisation; inclusion describes whether people can take part and be heard"
+        de: "Vielfalt beschreibt, wer in der Organisation ist; Inklusion, ob Menschen mitwirken und gehört werden können"
+        correct: true
+      - en: "They mean exactly the same thing"
+        de: "Beides bedeutet genau dasselbe"
+        correct: false
+      - en: "Diversity is about pay, inclusion is about holidays"
+        de: "Vielfalt betrifft die Vergütung, Inklusion den Urlaub"
+        correct: false
+      - en: "Inclusion is only about hiring more people"
+        de: "Inklusion bedeutet nur, mehr Personen einzustellen"
+        correct: false
+    explanation:
+      en: "A diverse workforce does not automatically feel included; inclusion is about participation and voice."
+      de: "Eine vielfältige Belegschaft fühlt sich nicht automatisch einbezogen; Inklusion betrifft Teilhabe und Mitsprache."
+    source: https://en.wikipedia.org/wiki/Diversity_(business)
+  - id: di-f-agg-grounds
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "In the German context, which grounds does the AGG generally address?"
+      de: "Welche Gründe adressiert das AGG im deutschen Kontext allgemein?"
+    options:
+      - en: "Disadvantage based on, for example, sex, age, disability, religion or belief, ethnic origin and sexual identity"
+        de: "Benachteiligung etwa wegen Geschlecht, Alter, Behinderung, Religion oder Weltanschauung, ethnischer Herkunft und sexueller Identität"
+        correct: true
+      - en: "Only disadvantage because of the employee's salary"
+        de: "Nur Benachteiligung wegen der Höhe des Gehalts"
+        correct: false
+      - en: "Only disadvantage because of the length of service"
+        de: "Nur Benachteiligung wegen der Dauer der Betriebszugehörigkeit"
+        correct: false
+      - en: "Only disagreements about working hours"
+        de: "Nur Meinungsverschiedenheiten über Arbeitszeiten"
+        correct: false
+    explanation:
+      en: "The AGG aims to prevent and remove disadvantage on these kinds of grounds. Details and remedies are matters for current law and legal counsel."
+      de: "Das AGG soll Benachteiligungen aus solchen Gründen verhindern und beseitigen. Details und Rechtsfolgen sind eine Frage des aktuellen Rechts und der Rechtsberatung."
+    source: https://de.wikipedia.org/wiki/Allgemeines_Gleichbehandlungsgesetz
+  - id: di-f-bias
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "What is an unconscious (implicit) bias?"
+      de: "Was ist eine unbewusste (implizite) Verzerrung?"
+    options:
+      - en: "A learned association that can influence behaviour even if the person consciously rejects stereotypes"
+        de: "Eine erlernte Assoziation, die Verhalten beeinflussen kann, auch wenn die Person Stereotype bewusst ablehnt"
+        correct: true
+      - en: "A deliberate decision to treat people unfairly"
+        de: "Eine bewusste Entscheidung, Menschen unfair zu behandeln"
+        correct: false
+      - en: "A written company policy"
+        de: "Eine schriftliche Unternehmensrichtlinie"
+        correct: false
+      - en: "A mistake that only happens in large companies"
+        de: "Ein Fehler, der nur in großen Unternehmen passiert"
+        correct: false
+    explanation:
+      en: "Implicit biases operate without conscious intention, which is why structure in processes helps more than good intentions alone."
+      de: "Implizite Verzerrungen wirken ohne bewusste Absicht; deshalb helfen Strukturen im Prozess mehr als gute Absichten allein."
+    source: https://en.wikipedia.org/wiki/Implicit_stereotype
+  - id: di-f-decision
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "A hiring manager wants to reject a candidate because of an assumption about their family plans. What is the best first step for HR?"
+      de: "Eine Führungskraft will eine Kandidatin wegen einer Annahme über ihre Familienplanung ablehnen. Was ist der beste erste Schritt für HR?"
+    options:
+      - en: "Point out that decisions must rest on job-related criteria and involve legal counsel if needed"
+        de: "Darauf hinweisen, dass Entscheidungen auf berufsbezogenen Kriterien beruhen müssen, und bei Bedarf die Rechtsberatung einbeziehen"
+        correct: true
+      - en: "Agree quietly to avoid conflict"
+        de: "Stillschweigend zustimmen, um Konflikte zu vermeiden"
+        correct: false
+      - en: "Ask the candidate about her family plans directly"
+        de: "Die Kandidatin direkt nach ihrer Familienplanung fragen"
+        correct: false
+      - en: "Ignore it because it is only an opinion"
+        de: "Es ignorieren, da es nur eine Meinung ist"
+        correct: false
+    explanation:
+      en: "Assumptions about protected characteristics are not job-related. HR keeps the focus on agreed criteria and escalates legal questions."
+      de: "Annahmen über geschützte Merkmale sind nicht berufsbezogen. HR lenkt den Blick auf vereinbarte Kriterien und gibt Rechtsfragen weiter."
+    source: https://de.wikipedia.org/wiki/Allgemeines_Gleichbehandlungsgesetz
+  - id: di-p-structure
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "Which change most reduces the room for bias in interviews?"
+      de: "Welche Änderung verringert den Raum für Verzerrungen in Interviews am meisten?"
+    options:
+      - en: "Same core questions, criteria set in advance and independent scoring"
+        de: "Dieselben Kernfragen, vorab festgelegte Kriterien und unabhängige Bewertung"
+        correct: true
+      - en: "Choosing questions spontaneously for each candidate"
+        de: "Fragen für jede Person spontan wählen"
+        correct: false
+      - en: "Letting the most senior person decide first"
+        de: "Die ranghöchste Person zuerst entscheiden lassen"
+        correct: false
+      - en: "Relying on first impressions"
+        de: "Sich auf den ersten Eindruck verlassen"
+        correct: false
+    explanation:
+      en: "Structured interviews make candidates comparable and limit the effect of impressions and associations."
+      de: "Strukturierte Interviews machen Kandidierende vergleichbar und begrenzen die Wirkung von Eindrücken und Assoziationen."
+    source: https://en.wikipedia.org/wiki/Job_interview
+  - id: di-p-access
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "What does accessibility, as opposed to general usability, focus on?"
+      de: "Worauf zielt Barrierefreiheit im Unterschied zu allgemeiner Gebrauchstauglichkeit?"
+    options:
+      - en: "That disabled people can use products, services and environments, directly or with assistive technology"
+        de: "Dass Menschen mit Behinderung Produkte, Dienste und Umgebungen direkt oder mit Hilfsmitteln nutzen können"
+        correct: true
+      - en: "That a product is attractive"
+        de: "Dass ein Produkt attraktiv ist"
+        correct: false
+      - en: "That a product is cheap"
+        de: "Dass ein Produkt günstig ist"
+        correct: false
+      - en: "That a product is only available in one language"
+        de: "Dass ein Produkt nur in einer Sprache verfügbar ist"
+        correct: false
+    explanation:
+      en: "Accessibility ensures barrier-free use, including with assistive technology such as screen readers."
+      de: "Barrierefreiheit stellt hindernisfreie Nutzung sicher, auch mit Hilfsmitteln wie Screenreadern."
+    source: https://en.wikipedia.org/wiki/Accessibility
+  - id: di-p-adjust
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "An employee asks for a workplace adjustment. What is the best approach?"
+      de: "Eine beschäftigte Person bittet um eine Anpassung am Arbeitsplatz. Was ist der beste Ansatz?"
+    options:
+      - en: "Focus on what is needed to do the work, record only what is necessary and restrict access"
+        de: "Auf das konzentrieren, was für die Arbeit nötig ist, nur das Notwendige festhalten und den Zugriff beschränken"
+        correct: true
+      - en: "Ask for the full medical history first"
+        de: "Zuerst nach der vollständigen Krankengeschichte fragen"
+        correct: false
+      - en: "Share the request with the whole team so everyone understands"
+        de: "Die Bitte mit dem ganzen Team teilen, damit alle sie verstehen"
+        correct: false
+      - en: "Refuse until the person proves the need in writing to everyone"
+        de: "Ablehnen, bis die Person den Bedarf allen gegenüber schriftlich belegt"
+        correct: false
+    explanation:
+      en: "Health information is sensitive; collect and share the minimum and involve the responsible experts."
+      de: "Gesundheitsinformationen sind sensibel; erhebe und teile das Minimum und beziehe die zuständigen Fachleute ein."
+    source: https://de.wikipedia.org/wiki/Barrierefreiheit
+  - id: di-p-funnel
+    level: practitioner
+    difficulty: 1350
+    type: single
+    stem:
+      en: "Applicants from one group repeatedly drop out at the same selection step. What should HR do first?"
+      de: "Bewerbende einer Gruppe scheiden wiederholt im selben Auswahlschritt aus. Was sollte HR zuerst tun?"
+    options:
+      - en: "Review that step for barriers or bias, using aggregated data"
+        de: "Diesen Schritt mit aggregierten Daten auf Hürden oder Verzerrungen prüfen"
+        correct: true
+      - en: "Assume the applicants are less qualified"
+        de: "Annehmen, dass die Bewerbenden weniger qualifiziert sind"
+        correct: false
+      - en: "Remove the step silently without checking why"
+        de: "Den Schritt kommentarlos streichen, ohne die Ursache zu prüfen"
+        correct: false
+      - en: "Publish the names of those who dropped out"
+        de: "Die Namen der Ausgeschiedenen veröffentlichen"
+        correct: false
+    explanation:
+      en: "A pattern is a question: check whether the step contains barriers or bias, and protect individuals by using aggregated data."
+      de: "Ein Muster ist eine Frage: Prüfe, ob der Schritt Hürden oder Verzerrungen enthält, und schütze Einzelne durch aggregierte Daten."
+    source: https://en.wikipedia.org/wiki/Implicit_stereotype
+  - id: di-a-equal-rules
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "Why can equal rules still lead to unequal opportunities?"
+      de: "Warum können gleiche Regeln dennoch zu ungleichen Chancen führen?"
+    options:
+      - en: "Because people start from different positions and are not equally able to use the same opportunity"
+        de: "Weil Menschen von unterschiedlichen Ausgangslagen starten und dieselbe Gelegenheit nicht gleich gut nutzen können"
+        correct: true
+      - en: "Because rules never matter"
+        de: "Weil Regeln nie eine Rolle spielen"
+        correct: false
+      - en: "Because everyone gets the same outcome"
+        de: "Weil alle dasselbe Ergebnis erhalten"
+        correct: false
+      - en: "Because unequal treatment is always intended"
+        de: "Weil Ungleichbehandlung immer beabsichtigt ist"
+        correct: false
+    explanation:
+      en: "This is why strategies look at outcomes and at support that gives fair chances, not only at identical rules."
+      de: "Deshalb betrachten Strategien Ergebnisse und Unterstützung für faire Chancen, nicht nur identische Regeln."
+    source: https://en.wikipedia.org/wiki/Equal_opportunity
+  - id: di-a-measure
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "Which approach to measuring inclusion fits best with privacy and fair interpretation?"
+      de: "Welcher Ansatz zur Messung von Inklusion passt am besten zu Datenschutz und fairer Deutung?"
+    options:
+      - en: "Aggregated results with a minimum group size, treated as questions to investigate"
+        de: "Aggregierte Ergebnisse mit Mindestgruppengröße, verstanden als Fragen zur Untersuchung"
+        correct: true
+      - en: "Results for groups of two people, treated as proof of cause"
+        de: "Ergebnisse für Gruppen von zwei Personen, verstanden als Ursachenbeweis"
+        correct: false
+      - en: "Individual protected data in a shared spreadsheet"
+        de: "Individuelle Daten zu geschützten Merkmalen in einer geteilten Tabelle"
+        correct: false
+      - en: "No measurement, because numbers are never useful"
+        de: "Keine Messung, weil Zahlen nie nützlich sind"
+        correct: false
+    explanation:
+      en: "Small groups can expose individuals, and gaps in numbers do not prove their cause. Involve data protection, legal counsel and employee representatives before collecting data."
+      de: "Kleine Gruppen können Einzelne erkennbar machen, und Lücken in Zahlen beweisen ihre Ursache nicht. Beziehe vor einer Erhebung Datenschutz, Rechtsberatung und Interessenvertretung ein."
+    source: https://en.wikipedia.org/wiki/Diversity_(business)
+  - id: di-a-network
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "What condition most improves the value of an employee network or resource group?"
+      de: "Welche Bedingung steigert den Wert eines Mitarbeitendennetzwerks am meisten?"
+    options:
+      - en: "Voluntary participation and leaders who act on the concerns raised"
+        de: "Freiwillige Teilnahme und Führungskräfte, die auf geäußerte Anliegen reagieren"
+        correct: true
+      - en: "Requiring members to speak for their whole group"
+        de: "Mitglieder verpflichten, für ihre ganze Gruppe zu sprechen"
+        correct: false
+      - en: "Meeting only outside working hours with no leadership contact"
+        de: "Nur außerhalb der Arbeitszeit treffen, ohne Kontakt zur Leitung"
+        correct: false
+      - en: "Using the network instead of changing any processes"
+        de: "Das Netzwerk statt Prozessänderungen einsetzen"
+        correct: false
+    explanation:
+      en: "Networks support voice and development, but without action by leaders and voluntary participation they become symbolic or a burden."
+      de: "Netzwerke stärken Stimme und Entwicklung; ohne Handeln der Führung und freiwillige Teilnahme werden sie symbolisch oder zur Last."
+    source: https://en.wikipedia.org/wiki/Employee_resource_group
+  - id: di-a-culture
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "Employee surveys show low trust that raising concerns has consequences. Which response is most effective?"
+      de: "Mitarbeitendenbefragungen zeigen geringes Vertrauen, dass Anliegen Folgen haben. Welche Reaktion ist am wirksamsten?"
+    options:
+      - en: "Agree with leaders on a visible response process for concerns, strengthen safe speaking-up and review after the next cycle"
+        de: "Mit der Führung einen sichtbaren Umgang mit Anliegen vereinbaren, sicheres Ansprechen stärken und nach dem nächsten Zyklus prüfen"
+        correct: true
+      - en: "Run a single awareness day and consider the topic closed"
+        de: "Einen einzelnen Aktionstag veranstalten und das Thema als erledigt betrachten"
+        correct: false
+      - en: "Stop surveying to avoid bad results"
+        de: "Befragungen einstellen, um schlechte Ergebnisse zu vermeiden"
+        correct: false
+      - en: "Identify who answered critically"
+        de: "Herausfinden, wer kritisch geantwortet hat"
+        correct: false
+    explanation:
+      en: "Culture changes through consistent action and psychological safety, not one-off events, and confidentiality of survey answers must be protected."
+      de: "Kultur verändert sich durch konsequentes Handeln und psychologische Sicherheit, nicht durch einmalige Aktionen; die Vertraulichkeit der Antworten muss geschützt bleiben."
+    source: https://en.wikipedia.org/wiki/Psychological_safety
