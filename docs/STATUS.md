@@ -1,5 +1,12 @@
 # Status
 
+## 2026-11-13 — Phase 2: Human Resources content for employee-relations-conflict
+
+**Done**
+- `employee-relations-conflict`: 6 units (en/de, ai-draft), 12 items, 7 new link-only Wikipedia resources (3 existing reused and tagged); German Wikipedia "Mediation" URL 404, dropped.
+
+**Next:** HR `health-safety-wellbeing`, `diversity-inclusion`, then publish the role.
+
 ## 2026-11-13 — Phase 2: Human Resources content for learning-development
 
 **Done**

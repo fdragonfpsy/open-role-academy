@@ -1,0 +1,290 @@
+competency: employee-relations-conflict
+items:
+  - id: erc-f-meaning
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "What best describes a workplace conflict?"
+      de: "Was beschreibt einen Konflikt am Arbeitsplatz am besten?"
+    options:
+      - en: "Discord caused by opposing needs, values or interests that affects work"
+        de: "Uneinigkeit durch gegensätzliche Bedürfnisse, Werte oder Interessen, die die Arbeit berührt"
+        correct: true
+      - en: "Any difference of opinion, however small"
+        de: "Jede noch so kleine Meinungsverschiedenheit"
+        correct: false
+      - en: "A planned team workshop"
+        de: "Ein geplanter Team-Workshop"
+        correct: false
+      - en: "A fixed salary dispute only"
+        de: "Ausschließlich ein Streit um das feste Gehalt"
+        correct: false
+    explanation:
+      en: "A conflict arises from actual or perceived opposition of needs, values or interests and affects work or relations."
+      de: "Ein Konflikt entsteht aus tatsächlich oder vermeintlich gegensätzlichen Bedürfnissen, Werten oder Interessen und berührt Arbeit oder Beziehungen."
+    source: https://en.wikipedia.org/wiki/Workplace_conflict
+  - id: erc-f-fact
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Which statement is a fact rather than a judgement?"
+      de: "Welche Aussage ist ein Fakt und kein Urteil?"
+    options:
+      - en: "\"The report arrived two days after the agreed date.\""
+        de: "\"Der Bericht kam zwei Tage nach dem vereinbarten Termin.\""
+        correct: true
+      - en: "\"He is lazy.\""
+        de: "\"Er ist faul.\""
+        correct: false
+      - en: "\"She never cares.\""
+        de: "\"Sie interessiert sich nie.\""
+        correct: false
+      - en: "\"They are impossible to work with.\""
+        de: "\"Mit denen kann man nicht arbeiten.\""
+        correct: false
+    explanation:
+      en: "Observable, verifiable statements are facts. Labels about a person are judgements and escalate conflicts."
+      de: "Beobachtbare, überprüfbare Aussagen sind Fakten. Zuschreibungen über eine Person sind Urteile und verschärfen Konflikte."
+    source: https://en.wikipedia.org/wiki/Workplace_conflict
+  - id: erc-f-listening
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "Which is an example of active listening?"
+      de: "Was ist ein Beispiel für aktives Zuhören?"
+    options:
+      - en: "Paraphrasing: \"So you feel the tasks were reassigned without asking you?\""
+        de: "Zusammenfassen: \"Du hast also das Gefühl, die Aufgaben wurden ohne Rücksprache verteilt?\""
+        correct: true
+      - en: "Interrupting to give your solution"
+        de: "Unterbrechen, um deine Lösung zu nennen"
+        correct: false
+      - en: "Checking your phone while the person speaks"
+        de: "Aufs Handy schauen, während die Person spricht"
+        correct: false
+      - en: "Telling the person to calm down"
+        de: "Der Person sagen, sie solle sich beruhigen"
+        correct: false
+    explanation:
+      en: "Active listening means giving full attention and showing understanding, for example by paraphrasing."
+      de: "Aktives Zuhören heißt, volle Aufmerksamkeit zu geben und Verständnis zu zeigen, zum Beispiel durch Zusammenfassen."
+    source: https://en.wikipedia.org/wiki/Active_listening
+  - id: erc-f-escalate
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "An employee tells you in confidence about harassment by a colleague. What do you do?"
+      de: "Eine Mitarbeitende erzählt dir vertraulich von Belästigung durch einen Kollegen. Was tust du?"
+    options:
+      - en: "Listen, note facts and involve the responsible person; do not promise absolute secrecy"
+        de: "Zuhören, Fakten notieren und die zuständige Stelle einbeziehen; keine absolute Verschwiegenheit versprechen"
+        correct: true
+      - en: "Promise absolute secrecy and do nothing"
+        de: "Absolute Verschwiegenheit versprechen und nichts tun"
+        correct: false
+      - en: "Confront the colleague alone and punish him"
+        de: "Den Kollegen allein zur Rede stellen und bestrafen"
+        correct: false
+      - en: "Tell the whole team to be careful"
+        de: "Dem ganzen Team Vorsicht empfehlen"
+        correct: false
+    explanation:
+      en: "Serious matters such as harassment need the responsible person or procedure. You cannot promise secrecy that conflicts with duties to act."
+      de: "Ernste Themen wie Belästigung gehören in die zuständige Stelle oder das zuständige Verfahren. Du kannst keine Verschwiegenheit zusagen, die Handlungspflichten widerspricht."
+    source: https://en.wikipedia.org/wiki/Workplace_conflict
+  - id: erc-p-steps
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "Which is a sensible first step when an employee files a complaint?"
+      de: "Was ist ein sinnvoller erster Schritt, wenn eine Mitarbeitende eine Beschwerde einreicht?"
+    options:
+      - en: "Acknowledge it and explain next steps and timeline"
+        de: "Den Eingang bestätigen und nächste Schritte und Zeitplan erklären"
+        correct: true
+      - en: "Decide the outcome immediately"
+        de: "Sofort das Ergebnis festlegen"
+        correct: false
+      - en: "Ignore it until the person asks again"
+        de: "Sie ignorieren, bis die Person nachfragt"
+        correct: false
+      - en: "Share it with the whole department"
+        de: "Sie in der ganzen Abteilung bekannt machen"
+        correct: false
+    explanation:
+      en: "A fair procedure starts by acknowledging the complaint and making next steps clear."
+      de: "Ein faires Verfahren beginnt damit, den Eingang zu bestätigen und die nächsten Schritte klar zu machen."
+    source: https://en.wikipedia.org/wiki/Grievance_(labour)
+  - id: erc-p-mediation
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "What is the role of a mediator?"
+      de: "Welche Rolle hat eine Mediatorin oder ein Mediator?"
+    options:
+      - en: "A neutral person who helps the parties find their own agreement"
+        de: "Eine neutrale Person, die den Beteiligten hilft, selbst eine Einigung zu finden"
+        correct: true
+      - en: "A judge who decides who is right"
+        de: "Eine Richterin, die entscheidet, wer recht hat"
+        correct: false
+      - en: "The advocate of the weaker party"
+        de: "Die Fürsprecherin der schwächeren Seite"
+        correct: false
+      - en: "The manager of one party"
+        de: "Die Führungskraft einer Seite"
+        correct: false
+    explanation:
+      en: "A mediator facilitates the process but does not decide the outcome; participation is generally voluntary."
+      de: "Die Mediation unterstützt den Prozess, entscheidet aber nicht über das Ergebnis; die Teilnahme ist grundsätzlich freiwillig."
+    source: https://en.wikipedia.org/wiki/Mediation
+  - id: erc-p-question
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "Which question is the best open, non-leading question in a fact-finding talk?"
+      de: "Welche Frage ist in einem Klärungsgespräch die beste offene, nicht suggestive Frage?"
+    options:
+      - en: "\"What happened in the meeting?\""
+        de: "\"Was ist in der Besprechung passiert?\""
+        correct: true
+      - en: "\"He shouted at you, didn't he?\""
+        de: "\"Er hat dich angeschrien, oder?\""
+        correct: false
+      - en: "\"You agree that she was unfair, right?\""
+        de: "\"Du stimmst zu, dass sie unfair war, oder?\""
+        correct: false
+      - en: "\"Why are you always complaining?\""
+        de: "\"Warum beschwerst du dich ständig?\""
+        correct: false
+    explanation:
+      en: "Open questions invite the person's own account. Leading questions push the answer and weaken a fair fact-finding."
+      de: "Offene Fragen laden zur eigenen Schilderung ein. Suggestivfragen lenken die Antwort und schwächen eine faire Klärung."
+    source: https://en.wikipedia.org/wiki/Grievance_(labour)
+  - id: erc-p-unsuitable
+    level: practitioner
+    difficulty: 1350
+    type: single
+    stem:
+      en: "In which case is mediation usually unsuitable?"
+      de: "In welchem Fall ist Mediation in der Regel ungeeignet?"
+    options:
+      - en: "Threats or violence by one party against the other"
+        de: "Drohungen oder Gewalt einer Seite gegen die andere"
+        correct: true
+      - en: "Disagreement about how to split a shared task"
+        de: "Uneinigkeit über die Aufteilung einer gemeinsamen Aufgabe"
+        correct: false
+      - en: "Poor communication between two colleagues"
+        de: "Schlechte Kommunikation zwischen zwei Kollegen"
+        correct: false
+      - en: "Different working styles in a team"
+        de: "Unterschiedliche Arbeitsstile in einem Team"
+        correct: false
+    explanation:
+      en: "Mediation works for relationship and communication issues between roughly equal parties; threats, violence or violations need other, formal handling."
+      de: "Mediation hilft bei Beziehungs- und Kommunikationsthemen zwischen etwa gleichstarken Beteiligten; Drohungen, Gewalt oder Verstöße brauchen andere, formale Bearbeitung."
+    source: https://en.wikipedia.org/wiki/Mediation
+  - id: erc-a-staged
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "Why should a staged conflict system include a way to bypass a stage?"
+      de: "Warum sollte ein gestuftes Konfliktsystem einen Weg zum Überspringen einer Stufe enthalten?"
+    options:
+      - en: "The manager may be involved or the matter may be serious"
+        de: "Die Führungskraft kann beteiligt oder die Sache ernst sein"
+        correct: true
+      - en: "To make the process shorter for every case"
+        de: "Um den Prozess für jeden Fall zu verkürzen"
+        correct: false
+      - en: "To avoid documenting cases"
+        de: "Um Fälle nicht dokumentieren zu müssen"
+        correct: false
+      - en: "To keep employees from using it"
+        de: "Damit Beschäftigte es nicht nutzen"
+        correct: false
+    explanation:
+      en: "If the first contact is part of the problem or the issue is serious, people need another route to reach HR or a complaints office."
+      de: "Ist die erste Anlaufstelle Teil des Problems oder die Sache ernst, brauchen Menschen einen anderen Weg zur Personalabteilung oder Beschwerdestelle."
+    source: https://de.wikipedia.org/wiki/Konfliktmanagement
+  - id: erc-a-works
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "What is the general role of a works council compared with HR?"
+      de: "Was ist die allgemeine Rolle eines Betriebsrats im Vergleich zur Personalabteilung?"
+    options:
+      - en: "It represents employees; HR represents the employer"
+        de: "Er vertritt die Beschäftigten; die Personalabteilung vertritt den Arbeitgeber"
+        correct: true
+      - en: "It is a department of HR"
+        de: "Er ist eine Abteilung der Personalabteilung"
+        correct: false
+      - en: "It replaces all managers"
+        de: "Er ersetzt alle Führungskräfte"
+        correct: false
+      - en: "It decides on all dismissals alone"
+        de: "Er entscheidet allein über alle Kündigungen"
+        correct: false
+    explanation:
+      en: "Works councils represent employees in a workplace. Clear roles on both sides support constructive cooperation."
+      de: "Betriebsräte vertreten Beschäftigte im Betrieb. Klare Rollen auf beiden Seiten unterstützen konstruktive Zusammenarbeit."
+    source: https://en.wikipedia.org/wiki/Works_council
+  - id: erc-a-allegation
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "A report alleges discrimination. Which approach fits best?"
+      de: "Eine Meldung wirft Diskriminierung vor. Welcher Ansatz passt am besten?"
+    options:
+      - en: "Use a formal procedure with legal advice; the employer must act, so do not leave it to voluntary mediation alone"
+        de: "Ein formales Verfahren mit Rechtsberatung nutzen; der Arbeitgeber muss handeln, daher nicht allein der freiwilligen Mediation überlassen"
+        correct: true
+      - en: "Ask both sides to mediate and close the case"
+        de: "Beide Seiten zur Mediation bitten und den Fall schließen"
+        correct: false
+      - en: "Wait to see whether it happens again"
+        de: "Abwarten, ob es noch einmal passiert"
+        correct: false
+      - en: "Move the reporting person to another team without asking"
+        de: "Die meldende Person ohne Rückfrage in ein anderes Team versetzen"
+        correct: false
+    explanation:
+      en: "Serious allegations create duties for the employer. Mediation can supplement but not replace proper handling; moving the reporter unasked risks retaliation."
+      de: "Ernste Vorwürfe lösen Pflichten des Arbeitgebers aus. Mediation kann ergänzen, aber nicht ordentliche Bearbeitung ersetzen; ein ungefragtes Versetzen der meldenden Person birgt das Risiko einer Benachteiligung."
+    source: https://en.wikipedia.org/wiki/Employee_relations
+  - id: erc-a-pattern
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "Three complaints concern the same area. How do you use this pattern appropriately?"
+      de: "Drei Beschwerden betreffen denselben Bereich. Wie nutzt du dieses Muster angemessen?"
+    options:
+      - en: "Analyse it in anonymised form for causes and prevention, not to expose individuals"
+        de: "Anonymisiert auf Ursachen und Prävention auswerten, nicht um Einzelne bloßzustellen"
+        correct: true
+      - en: "Publish the names of all complainants"
+        de: "Die Namen aller Beschwerdeführenden veröffentlichen"
+        correct: false
+      - en: "Treat each as an unrelated case and do nothing more"
+        de: "Jeden als unabhängigen Fall behandeln und nichts weiter tun"
+        correct: false
+      - en: "Use the case files to rate employees in appraisals"
+        de: "Die Fallakten für Beurteilungen der Mitarbeitenden nutzen"
+        correct: false
+    explanation:
+      en: "Aggregated, anonymised patterns support prevention such as training. Case data should not be used beyond its purpose and must not identify individuals in small groups."
+      de: "Aggregierte, anonymisierte Muster unterstützen Prävention, etwa durch Schulungen. Falldaten dürfen nicht über ihren Zweck hinaus genutzt werden und in kleinen Gruppen nicht Einzelne erkennbar machen."
+    source: https://en.wikipedia.org/wiki/Employee_relations
