@@ -149,24 +149,24 @@ items:
     difficulty: 1280
     type: single
     stem:
-      en: "A manager asks you to use time-recording data to rank employees by productivity. What is the best response?"
-      de: "Eine Führungskraft bittet dich, Zeiterfassungsdaten zu nutzen, um Beschäftigte nach Produktivität zu ordnen. Was ist die beste Reaktion?"
+      en: "A manager asks you to use time-recording data to rank employees by productivity (Germany). What is the best response?"
+      de: "Eine Führungskraft bittet dich, Zeiterfassungsdaten zu nutzen, um Beschäftigte nach Produktivität zu ordnen (Deutschland). Was ist die beste Reaktion?"
     options:
-      - en: "Clarify the purpose and ask your DPO and works council first; the source says such further evaluation is not permissible without explicit consent"
-        de: "Zweck klären und zuerst Datenschutzbeauftragte und Betriebsrat fragen; laut Quelle ist eine solche weitergehende Auswertung ohne ausdrückliche Zustimmung nicht zulässig"
+      - en: "Clarify the purpose and involve the DPO and the works council before any evaluation"
+        de: "Zweck klären und vor jeder Auswertung Datenschutzbeauftragte und Betriebsrat einbeziehen"
         correct: true
-      - en: "Do it, because time data is company data"
-        de: "Es tun, denn Zeitdaten sind Unternehmensdaten"
+      - en: "Do it, because the company already holds the time data lawfully"
+        de: "Es tun, weil das Unternehmen die Zeitdaten ohnehin rechtmäßig erfasst"
         correct: false
-      - en: "Do it but share the ranking only verbally"
-        de: "Es tun, aber das Ranking nur mündlich weitergeben"
+      - en: "Do it, but share the ranking only with the manager"
+        de: "Es tun, das Ranking aber nur der Führungskraft geben"
         correct: false
-      - en: "Delete the unflattering records first"
-        de: "Zuerst die unvorteilhaften Datensätze löschen"
+      - en: "Do it after removing names, then pass the list on"
+        de: "Es tun, nachdem die Namen entfernt wurden, und die Liste weitergeben"
         correct: false
     explanation:
-      en: "The article describes that systems recording presence are usual in Germany and that further calculation combined with productivity checks is not permissible without explicit consent; deleting recorded data would also damage its authenticity."
-      de: "Der Artikel beschreibt, dass in Deutschland Systeme zur Anwesenheitserfassung üblich sind und eine weitergehende Berechnung mit Produktivitätsprüfung ohne ausdrückliche Zustimmung nicht zulässig ist; das Löschen erfasster Daten würde außerdem deren Authentizität beschädigen."
+      en: "Using time data for a new purpose such as performance comparison is a change of purpose with data-protection and, in Germany, works-council implications. Lawfully holding the data does not cover a new use, and a ranking meant to judge individuals cannot simply be anonymised. HR does not decide whether it is allowed: the DPO, the works council and legal counsel do."
+      de: "Zeitdaten für einen neuen Zweck wie einen Leistungsvergleich zu nutzen, ist eine Zweckänderung mit Folgen für den Datenschutz und, in Deutschland, für die Mitbestimmung des Betriebsrats. Dass die Daten rechtmäßig erfasst werden, deckt keine neue Nutzung, und ein Ranking zur Beurteilung einzelner Personen lässt sich nicht einfach anonymisieren. Ob es zulässig ist, entscheidet nicht HR, sondern Datenschutzbeauftragte, Betriebsrat und Rechtsberatung."
     source: https://de.wikipedia.org/wiki/Zeiterfassung
   - id: pa-p-reference
     level: practitioner
