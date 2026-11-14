@@ -222,6 +222,19 @@ describe('content validator', () => {
     expect(messages(b)).toMatch(/in the future/);
   });
 
+  it('warns when the correct option is too often the uniquely longest', () => {
+    const cueWarnings = (b: ContentBundle) =>
+      validateContent(b, { today: TODAY }).filter((i) => i.level === 'warning' && /uniquely longest/.test(i.message));
+    const b = validBundle();
+    for (const item of d(b.items[0]!.data).items) item.options = [
+      { en: 'The correct and much longer answer', de: 'x', correct: true },
+      { en: 'Short', de: 'y', correct: false },
+    ];
+    expect(cueWarnings(b)).toHaveLength(1);
+    for (const item of d(b.items[0]!.data).items) item.options[1].en = 'An incorrect answer of greater length';
+    expect(cueWarnings(b)).toHaveLength(0);
+  });
+
   it('warns when a competency has no framework reference', () => {
     const b = validBundle();
     const warnings = validateContent(b, { today: TODAY }).filter((i) => i.level === 'warning');

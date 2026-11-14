@@ -22,6 +22,9 @@ export const MIN_ITEMS_PER_LEVEL = 2;
 export const UNIT_WORDS_MIN = 300;
 export const UNIT_WORDS_MAX = 800;
 export const LICENSE_MAX_AGE_DAYS = 180;
+/** Warn when more than this share of a competency's single-choice items has the correct option as the uniquely longest (en). */
+export const LONGEST_CORRECT_MAX_SHARE = 0.5;
+export const LONGEST_CORRECT_MIN_ITEMS = 4;
 
 export interface ValidateOptions {
   /** ISO date used for "verified in the future" / "older than 180 days" checks. */
@@ -50,6 +53,14 @@ function parseAll<T>(files: RawFile[], schema: z.ZodType<T>, issues: Issue[]): {
         issues.push({ level: 'error', file: f.file, message: `schema: ${issue.path.join('.') || '(root)'}: ${issue.message}` });
   }
   return out;
+}
+
+/** True if the (single) correct option is strictly longer (en) than every incorrect option. */
+export function correctIsUniquelyLongest(options: readonly { en: string; correct: boolean }[]): boolean {
+  const correct = options.filter((o) => o.correct);
+  if (correct.length !== 1) return false;
+  const others = options.filter((o) => !o.correct).map((o) => o.en.length);
+  return others.length > 0 && correct[0]!.en.length > Math.max(...others);
 }
 
 function fileStem(file: string): string {
@@ -145,6 +156,15 @@ export function validateContent(bundle: ContentBundle, opts: ValidateOptions): I
       if (!difficultyMatchesLevel(item.difficulty, item.level))
         err(file, `${item.id}: difficulty ${item.difficulty} outside the ${item.level} range`);
     }
+    // Answer cueing: test-wise learners pick the longest option. Warn (do not fail) when that wins too often.
+    const singles = data.items.filter((i) => i.type === 'single');
+    const cued = singles.filter((i) => correctIsUniquelyLongest(i.options)).length;
+    if (singles.length >= LONGEST_CORRECT_MIN_ITEMS && cued / singles.length > LONGEST_CORRECT_MAX_SHARE)
+      warn(
+        file,
+        `${cued}/${singles.length} single-choice items have the correct option as the uniquely longest (en); ` +
+          `rewrite options so length gives no clue (max ${Math.round(LONGEST_CORRECT_MAX_SHARE * 100)}%)`,
+      );
   }
 
   // Units: refs, en/de parity, attribution, length
