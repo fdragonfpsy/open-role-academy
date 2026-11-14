@@ -28,6 +28,7 @@ Work top to bottom. Tick a box only when the task is done **and** all checks pas
 ## Phase 2 — Content for core + pilot roles
 
 For each competency: ≥1 unit per required level (en + de), ≥6 items across difficulties, 2–4 verified resources.
+Item and resource quality (added by weekly review 2026-11-14, applies to all new content incl. Phase 4): distractors are plausible misconceptions, not jokes or obvious misconduct; option lengths balanced (no `uniquely longest` warning from `npm run validate:content`); advanced items need judgement between defensible options; ≥1 non-Wikipedia resource per competency where an open/free one exists; legal/tax statements cite primary sources (e.g. gesetze-im-internet.de), not only Wikipedia; unit text explains in its own voice instead of "the article says".
 - [x] Core track content complete (sub-tasks below; tick when all are done)
   - [x] information-security-basics (Phase 0 demo slice)
   - [x] digital-ai-literacy
@@ -70,11 +71,16 @@ For each competency: ≥1 unit per required level (en + de), ≥6 items across d
   - [x] employee-relations-conflict
   - [x] health-safety-wellbeing
   - [x] diversity-inclusion
+- [ ] Content quality pass (weekly review 2026-11-14; issues #53 distractors/length cue, #56 resource mix, #57 unit voice). One batch per session; tick a batch when the `uniquely longest` warning is gone for all its competencies and each has ≥1 non-Wikipedia resource:
+  - [ ] Core track (6 competencies)
+  - [ ] IT Support & Operations (10)
+  - [ ] Finance & Accounting (11)
+  - [ ] Human Resources (11)
 
 ## Phase 3 — Learner experience
 
 - [x] Landing page (en/de): what it is, how it works, roles overview, "AI-generated, not yet reviewed" transparency note
-- [ ] Onboarding flow (role, level, language) + placement check UI
+- [ ] Onboarding flow (role, level, language) + placement check UI — acceptance: verified in a real browser (Playwright, pre-installed) for en and de, keyboard-only run-through works, placement stops at the 15-question budget
 - [ ] Learning path view + unit page with resources, attribution block and mastery check
 - [ ] Dashboard: competency radar or bars (current vs target), next unit, review queue, export/import
 - [ ] Accessibility pass (keyboard, contrast, screen reader labels) + Lighthouse ≥ 90 on all categories

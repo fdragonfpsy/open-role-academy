@@ -2,6 +2,11 @@
 
 Format: date — decision — reason — alternatives considered.
 
+## 2026-11-14 — Answer-length cue is a validator warning, and a quality pass comes before the rest of Phase 3 (weekly review)
+- **Decision:** `validate:content` warns when more than 50% of a competency's single-choice items have the correct option as the uniquely longest (en). ROADMAP gets a per-role "Content quality pass" ahead of the remaining Phase 3 tasks.
+- **Reason:** 87% of single-choice items are cued by length, so placement and mastery overrate learners. Fixing it before the learner UI and before Phase 4 keeps the pattern from spreading to 10 more roles.
+- **Alternatives:** Make it an error. Rejected: that would turn CI red on `main` at once and block all work. Promote it to an error once the quality pass is done. A second alternative was to leave it to maintenance. Rejected: the problem affects the core adaptive function.
+
 ## 2026-11-12 — Accounts via Supabase Auth + Brevo SMTP, no own domain (owner decision)
 - **Decision:** Email/password sign-up with confirmation, password reset and email-link sign-in, sent through Brevo's free SMTP from a verified freemail sender.
 - **Reason:** No free domain was acceptable to the owner; Supabase's built-in mailer only reaches project team members; Brevo's free tier needs no domain and no credit card.
