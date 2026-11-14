@@ -150,7 +150,7 @@ items:
     type: single
     stem:
       en: "You screen 40 applications. What is the fairest approach?"
-      de: "Du sichtest viele Bewerbungen. Was ist der fairste Ansatz?"
+      de: "Du sichtest 40 Bewerbungen. Was ist der fairste Ansatz?"
     options:
       - en: "Prepare a sheet with the essential criteria first and apply it to every application with notes on the evidence"
         de: "Zuerst einen Bogen mit den zwingenden Kriterien vorbereiten und ihn mit Belegnotizen auf jede Bewerbung anwenden"
