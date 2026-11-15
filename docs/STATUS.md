@@ -1,5 +1,15 @@
 # Status
 
+## 2026-11-15 — QA fixes (#58, #55)
+
+**Done**
+- #58: removed the unverified "except small businesses" detail from the e-invoice receiving rule (en/de accounts-payable-advanced); text now points to current BMF guidance. Adding the BMF page as a resource is still open (host not reachable for verification).
+- #55 parts 1-2: German "Mischung der Indikatorarten" section added, takeaways aligned, financial-analysis-kpis-foundation (de) brought to parity (863 vs 858 words).
+
+**Next:** content quality pass (#53, #56, #57), starting with the Core track batch; Phase 3 UI verification.
+
+**Counts:** roles 4 · competencies 38 · units 228 · items 456 · resources 273
+
 ## 2026-11-13 — Phase 3: landing page ticked
 
 **Done**
