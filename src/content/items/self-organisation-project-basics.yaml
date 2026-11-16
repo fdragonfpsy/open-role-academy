@@ -17,8 +17,8 @@ items:
       - en: "Delete it from your list"
         de: "Von der Liste streichen"
         correct: false
-      - en: "Wait until it becomes urgent"
-        de: "Warten, bis sie dringend wird"
+      - en: "Wait until it becomes urgent, because only urgent tasks deserve your attention"
+        de: "Warten, bis sie dringend wird, weil nur dringende Aufgaben deine Aufmerksamkeit verdienen"
         correct: false
     explanation:
       en: "Important but not urgent tasks are scheduled. If you wait until they become urgent, you work under avoidable pressure; urgent and important tasks are the ones you do immediately."
@@ -38,8 +38,8 @@ items:
       - en: "Be faster with e-mails"
         de: "Schneller bei E-Mails werden"
         correct: false
-      - en: "Answer every e-mail perfectly from now on"
-        de: "Ab sofort jede E-Mail perfekt beantworten"
+      - en: "Answer every e-mail perfectly and immediately from now on, whatever else is on your plate that day"
+        de: "Ab sofort jede E-Mail perfekt und sofort beantworten, egal was an dem Tag sonst noch ansteht"
         correct: false
       - en: "Improve customer service at some point"
         de: "Irgendwann den Kundenservice verbessern"
@@ -83,8 +83,8 @@ items:
       - en: "Clarify the expected result and deadline, then note it as a concrete task"
         de: "Erwartetes Ergebnis und Frist klären und es dann als konkrete Aufgabe notieren"
         correct: true
-      - en: "Start working on whatever seems most interesting"
-        de: "Mit dem anfangen, was am interessantesten erscheint"
+      - en: "Start working on whatever seems most interesting or urgent to you and assume the rest will be clarified later"
+        de: "Mit dem anfangen, was dir am interessantesten oder dringendsten erscheint, und davon ausgehen, dass sich der Rest später klärt"
         correct: false
       - en: "Wait until the manager asks again"
         de: "Warten, bis die Führungskraft noch einmal fragt"
@@ -107,8 +107,8 @@ items:
       - en: "Introducing a new ticket system for the service team by the end of the year"
         de: "Bis Jahresende ein neues Ticketsystem für das Serviceteam einführen"
         correct: true
-      - en: "Answering customer e-mails every day"
-        de: "Täglich Kunden-E-Mails beantworten"
+      - en: "Answering customer e-mails every day, as quickly and as thoroughly as the customers expect"
+        de: "Täglich Kunden-E-Mails beantworten, so schnell und so gründlich, wie die Kundschaft es erwartet"
         correct: false
       - en: "Booking the monthly invoices"
         de: "Die monatlichen Rechnungen buchen"
@@ -131,8 +131,8 @@ items:
       - en: "The person ultimately answerable for the result, who signs off the work"
         de: "Die Person, die letztlich für das Ergebnis geradesteht und die Arbeit abnimmt"
         correct: true
-      - en: "Everyone who should receive status updates"
-        de: "Alle, die Statusinformationen erhalten sollen"
+      - en: "Everyone who should receive status updates, so that they stay informed and can step in when something goes wrong"
+        de: "Alle, die Statusinformationen erhalten sollen, damit sie informiert bleiben und eingreifen können, wenn etwas schiefgeht"
         correct: false
       - en: "Experts who are asked for their opinion"
         de: "Fachleute, deren Meinung eingeholt wird"
@@ -158,8 +158,8 @@ items:
       - en: "Add more columns to the board"
         de: "Mehr Spalten auf dem Board ergänzen"
         correct: false
-      - en: "Start even more tasks so that something finishes"
-        de: "Noch mehr Aufgaben beginnen, damit irgendetwas fertig wird"
+      - en: "Start even more tasks in parallel so that at least something finishes by the end of the week"
+        de: "Noch mehr Aufgaben parallel beginnen, damit bis Ende der Woche wenigstens irgendetwas fertig wird"
         correct: false
       - en: "Hide the board so the team is not stressed"
         de: "Das Board ausblenden, damit das Team nicht gestresst ist"
@@ -227,8 +227,8 @@ items:
       - en: "When requirements are uncertain and early feedback from users can change the solution"
         de: "Wenn die Anforderungen unsicher sind und frühes Feedback von Nutzenden die Lösung verändern kann"
         correct: true
-      - en: "When requirements are fixed by law and cannot change"
-        de: "Wenn Anforderungen gesetzlich festgelegt sind und sich nicht ändern können"
+      - en: "When requirements are fixed by law and cannot change, and the full scope and sequence are known in advance"
+        de: "Wenn Anforderungen gesetzlich festgelegt sind und sich nicht ändern können und Umfang und Reihenfolge von Anfang an feststehen"
         correct: false
       - en: "When nobody has time to talk to users"
         de: "Wenn niemand Zeit hat, mit Nutzenden zu sprechen"
@@ -254,8 +254,8 @@ items:
       - en: "To show the organisation chart of the company"
         de: "Das Organigramm des Unternehmens darzustellen"
         correct: false
-      - en: "To record the working hours of each team member"
-        de: "Die Arbeitszeiten jedes Teammitglieds zu erfassen"
+      - en: "To record the working hours of each team member so that payroll and overtime can be calculated accurately"
+        de: "Die Arbeitszeiten jedes Teammitglieds zu erfassen, damit Gehalt und Überstunden genau berechnet werden können"
         correct: false
       - en: "To replace the project budget"
         de: "Das Projektbudget zu ersetzen"
@@ -275,8 +275,8 @@ items:
       - en: "Run a lessons-learned session with the team, document causes and concrete changes, and share them with future projects"
         de: "Mit dem Team eine Lessons-Learned-Runde durchführen, Ursachen und konkrete Änderungen dokumentieren und für künftige Projekte bereitstellen"
         correct: true
-      - en: "Find the person responsible for the delay and name them in the final report"
-        de: "Die für den Verzug verantwortliche Person finden und im Abschlussbericht nennen"
+      - en: "Find the person responsible for the delay and name them in the final report, so that everyone knows who caused it"
+        de: "Die für den Verzug verantwortliche Person finden und im Abschlussbericht nennen, damit alle wissen, wer ihn verursacht hat"
         correct: false
       - en: "Close the project quickly and move on"
         de: "Das Projekt schnell abschließen und weitermachen"

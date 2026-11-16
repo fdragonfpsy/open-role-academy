@@ -60,8 +60,8 @@ items:
       - en: "If one service is breached, attackers cannot use the stolen password to get into your other accounts."
         de: "Wird ein Dienst gehackt, können Angreifende das gestohlene Passwort nicht für deine anderen Konten nutzen."
         correct: true
-      - en: "Because services delete accounts that share a password with another service."
-        de: "Weil Dienste Konten löschen, deren Passwort auch bei einem anderen Dienst genutzt wird."
+      - en: "Because services automatically delete accounts that share a password with another service, which would lock you out of both."
+        de: "Weil Dienste Konten, deren Passwort auch bei einem anderen Dienst genutzt wird, automatisch löschen und du dann bei beiden ausgesperrt wärst."
         correct: false
       - en: "Because long passwords are only allowed once per person."
         de: "Weil lange Passwörter pro Person nur einmal erlaubt sind."
@@ -84,8 +84,8 @@ items:
       - en: "A second, independent proof of identity, e.g. a code from an app or a hardware key, in addition to the password"
         de: "Einen zweiten, unabhängigen Nachweis der Identität, z. B. einen Code aus einer App oder einen Hardware-Schlüssel, zusätzlich zum Passwort"
         correct: true
-      - en: "A second password that is typed in twice"
-        de: "Ein zweites Passwort, das zweimal eingegeben wird"
+      - en: "A second password that is typed in twice, so that typing mistakes in the first password are caught before login"
+        de: "Ein zweites Passwort, das zweimal eingegeben wird, damit Tippfehler beim ersten Passwort vor der Anmeldung auffallen"
         correct: false
       - en: "Encryption of the password on the screen"
         de: "Eine Verschlüsselung des Passworts auf dem Bildschirm"
@@ -133,8 +133,8 @@ items:
       - en: "Verify the request through a separate, known channel (e.g. call the known phone number) and report it to IT security."
         de: "Die Anfrage über einen separaten, bekannten Kanal prüfen (z. B. die bekannte Telefonnummer anrufen) und an die IT-Sicherheit melden."
         correct: true
-      - en: "Reply to the e-mail and ask whether it is genuine."
-        de: "Auf die E-Mail antworten und fragen, ob sie echt ist."
+      - en: "Reply to the e-mail and ask the sender to confirm that the request is genuine before you carry out the transfer, since the answer will show whether it is real."
+        de: "Auf die E-Mail antworten und die absendende Person bitten zu bestätigen, dass die Anfrage echt ist, bevor du die Überweisung ausführst, denn die Antwort zeigt, ob sie echt ist."
         correct: false
       - en: "Make the transfer, because the request comes from management."
         de: "Die Überweisung ausführen, weil die Anfrage von der Geschäftsführung kommt."
@@ -181,8 +181,8 @@ items:
       - en: "A regularly tested backup kept separately (offline or otherwise not writable by normal accounts)"
         de: "Eine regelmäßig getestete Sicherung, die getrennt aufbewahrt wird (offline oder für normale Konten nicht beschreibbar)"
         correct: true
-      - en: "A copy of the files in another folder on the same drive"
-        de: "Eine Kopie der Dateien in einem anderen Ordner auf demselben Laufwerk"
+      - en: "A copy of the files in another folder on the same drive, so that a deleted or damaged original can be restored quickly"
+        de: "Eine Kopie der Dateien in einem anderen Ordner auf demselben Laufwerk, damit ein gelöschtes oder beschädigtes Original schnell wiederhergestellt werden kann"
         correct: false
       - en: "A sync folder that mirrors every change immediately"
         de: "Ein Sync-Ordner, der jede Änderung sofort spiegelt"
@@ -206,8 +206,8 @@ items:
       - en: "From the likelihood of a threat exploiting a vulnerability and the impact if it happens"
         de: "Aus der Wahrscheinlichkeit, dass eine Bedrohung eine Schwachstelle ausnutzt, und dem Schaden, falls es passiert"
         correct: true
-      - en: "From the number of security tools that are installed"
-        de: "Aus der Anzahl installierter Sicherheitswerkzeuge"
+      - en: "From the number of security tools that are installed, since more tools always mean a lower overall risk"
+        de: "Aus der Anzahl installierter Sicherheitswerkzeuge, da mehr Werkzeuge immer ein geringeres Gesamtrisiko bedeuten"
         correct: false
       - en: "Only from the cost of the affected hardware"
         de: "Nur aus den Kosten der betroffenen Hardware"
@@ -230,8 +230,8 @@ items:
       - en: "To manage information security systematically and continuously — responsibilities, risk assessment, controls, review and improvement"
         de: "Informationssicherheit systematisch und dauerhaft zu steuern – Verantwortlichkeiten, Risikobewertung, Maßnahmen, Überprüfung und Verbesserung"
         correct: true
-      - en: "To replace firewalls and antivirus software"
-        de: "Firewalls und Virenschutz zu ersetzen"
+      - en: "To replace firewalls and antivirus software, because a management system makes technical protection measures unnecessary in the organisation"
+        de: "Firewalls und Virenschutz zu ersetzen, weil ein Managementsystem technische Schutzmaßnahmen in der Organisation überflüssig macht"
         correct: false
       - en: "To guarantee that no security incident will ever occur"
         de: "Zu garantieren, dass nie ein Sicherheitsvorfall eintritt"

@@ -36,8 +36,8 @@ items:
       - en: "It produces likely continuations of text, based on patterns learned from large amounts of training text."
         de: "Es erzeugt wahrscheinliche Fortsetzungen von Text auf Basis von Mustern, die es aus großen Mengen Trainingstext gelernt hat."
         correct: true
-      - en: "It looks up every answer in a verified database of facts."
-        de: "Es schlägt jede Antwort in einer geprüften Faktendatenbank nach."
+      - en: "It looks up every answer in a verified database of facts and only returns statements that editors have fact-checked."
+        de: "Es schlägt jede Antwort in einer geprüften Faktendatenbank nach und gibt nur Aussagen zurück, die Redaktionen faktengeprüft haben."
         correct: false
       - en: "A human expert writes each answer in real time."
         de: "Eine Fachperson schreibt jede Antwort in Echtzeit."
@@ -63,8 +63,8 @@ items:
       - en: "Nothing — a confident tone shows that the answer is correct"
         de: "Nichts – ein selbstsicherer Ton zeigt, dass die Antwort stimmt"
         correct: false
-      - en: "Ask the chatbot whether it is sure and trust its reply"
-        de: "Den Chatbot fragen, ob er sicher ist, und seiner Antwort vertrauen"
+      - en: "Ask the chatbot whether it is sure, and trust its reply if it confirms the answer again"
+        de: "Den Chatbot fragen, ob er sicher ist, und seiner Antwort vertrauen, wenn er sie noch einmal bestätigt"
         correct: false
       - en: "Only use the answer if it is longer than one paragraph"
         de: "Die Antwort nur verwenden, wenn sie länger als ein Absatz ist"
@@ -84,8 +84,8 @@ items:
       - en: "Do not paste the personal data; remove it or summarise yourself, and follow the company's AI policy"
         de: "Die personenbezogenen Daten nicht einfügen; sie entfernen oder selbst zusammenfassen und die KI-Richtlinie des Unternehmens befolgen"
         correct: true
-      - en: "Paste it — the chatbot deletes everything after the conversation anyway"
-        de: "Einfügen – der Chatbot löscht ohnehin alles nach dem Gespräch"
+      - en: "Paste it — the chatbot deletes everything after the conversation anyway, so no personal data can be stored or reused"
+        de: "Einfügen – der Chatbot löscht ohnehin alles nach dem Gespräch, deshalb kann nichts Personenbezogenes gespeichert oder weiterverwendet werden"
         correct: false
       - en: "Paste it, but only from your private device"
         de: "Einfügen, aber nur vom privaten Gerät aus"
@@ -139,8 +139,8 @@ items:
       - en: "AI tools cannot read PDF files."
         de: "KI-Werkzeuge können keine PDF-Dateien lesen."
         correct: false
-      - en: "There is no risk because a computer is always neutral."
-        de: "Es gibt kein Risiko, weil ein Computer immer neutral ist."
+      - en: "There is no risk because a computer applies the same rules to everyone and is therefore always neutral and objective."
+        de: "Es gibt kein Risiko, weil ein Computer für alle dieselben Regeln anwendet und deshalb immer neutral und objektiv ist."
         correct: false
     explanation:
       en: AI systems learn from data that can contain historical bias. In decisions about people this can lead to unfair outcomes, so human oversight, testing and the company's rules (and data protection law) matter.
@@ -184,8 +184,8 @@ items:
       - en: "Add the date and the word \"final\" to every file name"
         de: "Jedem Dateinamen das Datum und das Wort „final“ hinzufügen"
         correct: false
-      - en: "Each person keeps their own copy on their desktop"
-        de: "Jede Person behält ihre eigene Kopie auf dem Desktop"
+      - en: "Each person keeps their own copy on their desktop and sends the changed file to the others by e-mail when ready"
+        de: "Jede Person behält ihre eigene Kopie auf dem Desktop und schickt die geänderte Datei per E-Mail an die anderen, wenn sie fertig ist"
         correct: false
       - en: "Print the file after every change"
         de: "Die Datei nach jeder Änderung ausdrucken"
@@ -230,8 +230,8 @@ items:
       - en: "The EU's DigComp framework with its competence areas and proficiency levels"
         de: "Das DigComp-Rahmenwerk der EU mit seinen Kompetenzbereichen und Kompetenzstufen"
         correct: true
-      - en: "The feature list of the office software the team currently uses"
-        de: "Die Funktionsliste der Office-Software, die das Team derzeit nutzt"
+      - en: "The feature list of the office software the team currently uses, as published by the vendor in its documentation"
+        de: "Die Funktionsliste der Office-Software, die das Team derzeit nutzt, wie sie der Hersteller in seiner Dokumentation veröffentlicht"
         correct: false
       - en: "The number of apps installed on each laptop"
         de: "Die Anzahl der auf jedem Laptop installierten Apps"
@@ -278,8 +278,8 @@ items:
       - en: "Clear rules on approved tools, which data may be entered, when results must be checked and who is responsible"
         de: "Klare Regeln zu freigegebenen Werkzeugen, welche Daten eingegeben werden dürfen, wann Ergebnisse geprüft werden müssen und wer verantwortlich ist"
         correct: true
-      - en: "A list of the most impressive things AI can do"
-        de: "Eine Liste der beeindruckendsten Dinge, die KI kann"
+      - en: "A list of the most impressive things AI can do, so that employees know what to try first and feel motivated"
+        de: "Eine Liste der beeindruckendsten Dinge, die KI kann, damit Beschäftigte wissen, was sie zuerst ausprobieren, und motiviert sind"
         correct: false
       - en: "A ban on talking about AI at work"
         de: "Ein Verbot, bei der Arbeit über KI zu sprechen"

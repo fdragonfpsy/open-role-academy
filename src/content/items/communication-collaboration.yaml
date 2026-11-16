@@ -12,8 +12,8 @@ items:
       - en: "\"So if I understand you correctly, the parts arrived but the paperwork is missing — is that right?\""
         de: "„Wenn ich dich richtig verstehe, sind die Teile da, aber die Papiere fehlen – stimmt das?“"
         correct: true
-      - en: "\"That happens all the time, don't worry.\""
-        de: "„Das passiert ständig, mach dir keine Sorgen.“"
+      - en: "\"That happens all the time with this kind of delivery, so don't worry about it too much — we will sort it out later.\""
+        de: "„Das passiert bei solchen Lieferungen ständig, mach dir deshalb nicht zu viele Sorgen – das klären wir später.“"
         correct: false
       - en: "\"I had a much worse problem last week …\""
         de: "„Ich hatte letzte Woche ein viel schlimmeres Problem …“"
@@ -60,8 +60,8 @@ items:
       - en: "A phone call (followed by a short written note in the ticket)"
         de: "Ein Anruf (danach eine kurze schriftliche Notiz im Ticket)"
         correct: true
-      - en: "A long e-mail"
-        de: "Eine lange E-Mail"
+      - en: "A long, detailed e-mail to the whole team, so that everyone has the information in writing"
+        de: "Eine lange, ausführliche E-Mail an das ganze Team, damit alle die Information schriftlich haben"
         correct: false
       - en: "A comment in a shared document"
         de: "Ein Kommentar in einem gemeinsamen Dokument"
@@ -84,8 +84,8 @@ items:
       - en: "\"In today's meeting you presented the figures without the comparison to last year, so the team could not judge the trend. Could you add it next time?\""
         de: "„Im heutigen Meeting hast du die Zahlen ohne Vorjahresvergleich gezeigt, deshalb konnte das Team den Trend nicht einschätzen. Kannst du ihn nächstes Mal ergänzen?“"
         correct: true
-      - en: "\"Your presentations are always a bit chaotic.\""
-        de: "„Deine Präsentationen sind immer etwas chaotisch.“"
+      - en: "\"Your presentations are always a bit chaotic and the team often cannot follow your line of argument, so please structure them better.\""
+        de: "„Deine Präsentationen sind immer etwas chaotisch und das Team kann deiner Argumentation oft nicht folgen, bitte strukturiere sie besser.“"
         correct: false
       - en: "\"Great job!\""
         de: "„Super gemacht!“"
@@ -136,8 +136,8 @@ items:
       - en: "Everyone sends their edited copy by e-mail to the whole team"
         de: "Alle schicken ihre bearbeitete Kopie per E-Mail an das ganze Team"
         correct: false
-      - en: "Wait until everyone can join a call at the same time, however long it takes"
-        de: "Warten, bis alle gleichzeitig an einem Call teilnehmen können, egal wie lange es dauert"
+      - en: "Wait until everyone can join a call at the same time, however long it takes, so that nobody is left out of the discussion"
+        de: "Warten, bis alle gleichzeitig an einem Call teilnehmen können, egal wie lange es dauert, damit niemand von der Diskussion ausgeschlossen wird"
         correct: false
       - en: "The person who replies first decides alone without telling the others"
         de: "Wer zuerst antwortet, entscheidet allein, ohne die anderen zu informieren"
@@ -160,8 +160,8 @@ items:
       - en: "Repeat your proposal louder until she gives up"
         de: "Den eigenen Vorschlag lauter wiederholen, bis sie aufgibt"
         correct: false
-      - en: "Drop your proposal immediately to avoid conflict"
-        de: "Den Vorschlag sofort fallen lassen, um Konflikte zu vermeiden"
+      - en: "Drop your proposal immediately to avoid conflict, because a smooth relationship matters more than the result"
+        de: "Den Vorschlag sofort fallen lassen, um Konflikte zu vermeiden, weil eine reibungslose Beziehung wichtiger ist als das Ergebnis"
         correct: false
       - en: "Complain about her to the team afterwards"
         de: "Sich danach beim Team über sie beschweren"
@@ -181,8 +181,8 @@ items:
       - en: "Listen, ask clarifying questions and thank the person before deciding what to change"
         de: "Zuhören, klärende Fragen stellen und dich bedanken, bevor du entscheidest, was du änderst"
         correct: true
-      - en: "Explain immediately why the feedback is wrong"
-        de: "Sofort erklären, warum das Feedback falsch ist"
+      - en: "Explain immediately and in detail why the feedback is wrong and which facts the other person has overlooked"
+        de: "Sofort und ausführlich erklären, warum das Feedback falsch ist und welche Fakten die andere Person übersehen hat"
         correct: false
       - en: "Agree with everything to end the conversation quickly"
         de: "Allem zustimmen, um das Gespräch schnell zu beenden"
@@ -206,8 +206,8 @@ items:
       - en: "Members believe they will not be punished or humiliated for speaking up with ideas, questions, concerns or mistakes"
         de: "Die Mitglieder sind überzeugt, dass sie nicht bestraft oder bloßgestellt werden, wenn sie Ideen, Fragen, Bedenken oder Fehler ansprechen"
         correct: true
-      - en: "Nobody ever disagrees with anyone"
-        de: "Niemand widerspricht jemals jemandem"
+      - en: "Nobody ever disagrees with anyone, because open disagreement is seen as a sign of disloyalty"
+        de: "Niemand widerspricht jemals jemandem, weil offener Widerspruch als Zeichen von Illoyalität gilt"
         correct: false
       - en: "Performance problems are never addressed"
         de: "Leistungsprobleme werden nie angesprochen"
@@ -281,8 +281,8 @@ items:
       - en: "Decide which department is right and announce it by e-mail"
         de: "Entscheiden, welche Abteilung recht hat, und es per E-Mail verkünden"
         correct: false
-      - en: "Wait until the conflict resolves itself"
-        de: "Warten, bis sich der Konflikt von selbst löst"
+      - en: "Wait until the conflict resolves itself, since involving management would only make it worse"
+        de: "Warten, bis sich der Konflikt von selbst löst, da ein Einbeziehen der Führung ihn nur verschlimmern würde"
         correct: false
       - en: "Talk to each department separately and tell each that the other is at fault"
         de: "Mit jeder Abteilung einzeln sprechen und jeder sagen, die andere sei schuld"
