@@ -1,0 +1,14 @@
+id: wikibooks-project-management
+url: https://en.wikibooks.org/wiki/Project_Management
+title: "Project Management (Wikibooks)"
+provider: Wikibooks
+language: en
+format: book
+minutes: 30
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-16
+mode: link
+competencies: [self-organisation-project-basics]
+levels: [foundation, practitioner]
+note: Page footer states Creative Commons Attribution-ShareAlike (CC BY-SA 4.0 link found on the page). Short book index; linked only.
