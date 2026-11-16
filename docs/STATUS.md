@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-16 — Content quality pass: core track
+
+**Done**
+- Core track items (5 files): options rewritten (en/de) so the correct answer is no longer the uniquely longest in most items; `uniquely longest` warnings gone for the core track (35 → 30 warnings overall).
+- `self-organisation-project-basics` was the only core competency without a non-Wikipedia resource: added `wikibooks-project-management` (CC BY-SA 4.0, link only, verified 2026-11-16).
+- Roadmap: core-track quality batch ticked. Issues #53/#56/#57 stay open until the IT, Finance and HR batches are done. #54, #55, #58 were already fixed by merged PRs (#60, #61); not closed here (no issue-write step in this run).
+
+**Counts:** roles 3 (+draft IT) · resources 274 · tests 59
+
+**Next:** quality batch IT Support & Operations (10), then Finance (11), HR (11).
+
 ## 2026-11-15 — QA fixes (#58, #55)
 
 **Done**

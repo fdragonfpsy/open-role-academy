@@ -11,11 +11,11 @@ items:
       - en: "Revenue is 500,000 euros and profit is 40,000 euros"
         de: "Der Umsatz beträgt 500.000 Euro, der Gewinn 40.000 Euro"
         correct: true
-      - en: "Profit is 500,000 euros"
-        de: "Der Gewinn beträgt 500.000 Euro"
+      - en: "Profit is 500,000 euros, because profit is what customers pay for the goods sold"
+        de: "Der Gewinn beträgt 500.000 Euro, denn Gewinn ist das, was Kundschaft für die verkauften Waren bezahlt"
         correct: false
-      - en: "Revenue is 40,000 euros"
-        de: "Der Umsatz beträgt 40.000 Euro"
+      - en: "Revenue is 40,000 euros, because revenue is what remains after the costs are deducted"
+        de: "Der Umsatz beträgt 40.000 Euro, denn Umsatz ist das, was nach Abzug der Kosten übrig bleibt"
         correct: false
       - en: "Profit is 960,000 euros"
         de: "Der Gewinn beträgt 960.000 Euro"
@@ -83,8 +83,8 @@ items:
       - en: "Satisfied customers buy again and cancel less, which protects revenue; efficient handling keeps costs down"
         de: "Zufriedene Kundschaft kauft wieder und kündigt seltener, das sichert Umsatz; effiziente Bearbeitung hält die Kosten niedrig"
         correct: true
-      - en: "Not at all — only sales affects the result"
-        de: "Gar nicht – nur der Vertrieb beeinflusst das Ergebnis"
+      - en: "Not at all — only sales affects the result, because customer service only causes costs and never protects revenue"
+        de: "Gar nicht – nur der Vertrieb beeinflusst das Ergebnis, weil der Kundenservice nur Kosten verursacht und nie Umsatz sichert"
         correct: false
       - en: "Only through the price of the office furniture"
         de: "Nur über den Preis der Büromöbel"
@@ -113,8 +113,8 @@ items:
       - en: "The balance sheet only lists the bank balance"
         de: "Die Bilanz listet nur den Kontostand"
         correct: false
-      - en: "The income statement is only needed for tax purposes, the balance sheet only for banks"
-        de: "Die GuV braucht man nur für Steuern, die Bilanz nur für Banken"
+      - en: "The income statement is only needed for tax purposes and the balance sheet only for banks, so ordinary managers and team leads never need to read either of them"
+        de: "Die GuV braucht man nur für Steuern und die Bilanz nur für Banken, deshalb müssen normale Führungskräfte und Teamleitungen keine von beiden jemals lesen"
         correct: false
     explanation:
       en: "The income statement is a period view (how much profit or loss?), the balance sheet a snapshot (what does the company own and owe on the reporting date?)."
@@ -227,8 +227,8 @@ items:
       - en: "Dropping it would reduce total profit, because its contribution margin helps to cover fixed costs"
         de: "Die Einstellung würde den Gesamtgewinn verringern, weil ihr Deckungsbeitrag hilft, die Fixkosten zu decken"
         correct: true
-      - en: "Dropping it always increases profit because it shows a loss"
-        de: "Die Einstellung erhöht immer den Gewinn, weil sie einen Verlust zeigt"
+      - en: "Dropping it always increases profit, because a product that shows a loss after cost allocation must be destroying value"
+        de: "Die Einstellung erhöht immer den Gewinn, weil ein Produkt, das nach der Kostenzuordnung einen Verlust zeigt, Wert vernichten muss"
         correct: false
       - en: "Contribution margins are irrelevant for such decisions"
         de: "Deckungsbeiträge sind für solche Entscheidungen irrelevant"
@@ -278,8 +278,8 @@ items:
       - en: "Too much cash, because sales are growing"
         de: "Zu viel Liquidität, weil der Umsatz wächst"
         correct: false
-      - en: "No risk, because growth always improves liquidity"
-        de: "Kein Risiko, weil Wachstum die Liquidität immer verbessert"
+      - en: "No risk, because every additional sale brings cash into the company and therefore always improves liquidity"
+        de: "Kein Risiko, weil jeder zusätzliche Verkauf Geld ins Unternehmen bringt und die Liquidität deshalb immer verbessert"
         correct: false
       - en: "Only a tax risk"
         de: "Nur ein steuerliches Risiko"
