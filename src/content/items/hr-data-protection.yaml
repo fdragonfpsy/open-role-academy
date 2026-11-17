@@ -56,17 +56,17 @@ items:
       en: "A colleague from another department asks you for a list of employees' salaries 'out of interest'. What is the best response?"
       de: "Eine Kollegin aus einer anderen Abteilung bittet dich „aus Interesse“ um eine Liste der Gehälter der Beschäftigten. Was ist die beste Reaktion?"
     options:
-      - en: "Decline, because the request does not follow need-to-know, and point her to the HR lead or DPO if there is a work reason"
-        de: "Ablehnen, weil die Anfrage nicht dem Need-to-know entspricht, und bei dienstlichem Grund auf die HR-Leitung oder den DSB verweisen"
+      - en: "Decline, because the request does not follow need-to-know, and point her to the HR lead or DPO"
+        de: "Ablehnen, weil die Anfrage dem Need-to-know-Prinzip nicht entspricht, und sie an HR-Leitung oder Datenschutzbeauftragte verweisen"
         correct: true
-      - en: "Send the list, since she works for the same company"
-        de: "Die Liste senden, da sie im selben Unternehmen arbeitet"
+      - en: "Send the list, since she works for the same company and colleagues are expected to trust one another"
+        de: "Die Liste schicken, da sie im selben Unternehmen arbeitet und Kolleginnen und Kollegen einander vertrauen sollen"
         correct: false
-      - en: "Send only half of the list"
-        de: "Nur die Hälfte der Liste senden"
+      - en: "Send only the half of the list that covers her own team, because that part is closest to her work"
+        de: "Nur die Hälfte der Liste schicken, die ihr eigenes Team betrifft, weil dieser Teil ihrer Arbeit am nächsten liegt"
         correct: false
-      - en: "Read the numbers out loud in the canteen"
-        de: "Die Zahlen in der Kantine vorlesen"
+      - en: "Read out the numbers in person so that no written copy exists which could later be forwarded"
+        de: "Die Zahlen mündlich vorlesen, damit keine schriftliche Kopie existiert, die später weitergeleitet werden könnte"
         correct: false
     explanation:
       en: "Confidential HR data is shared only with people who need it for their task. Belonging to the same company is not a reason."
@@ -152,17 +152,17 @@ items:
       en: "Which handling of an employee's sick-note diagnosis is most appropriate?"
       de: "Welcher Umgang mit der Diagnose auf der Krankmeldung einer beschäftigten Person ist am angemessensten?"
     options:
-      - en: "Collect only what a documented process requires, restrict access to the few who need it, and ask the DPO about new uses"
-        de: "Nur erheben, was ein dokumentierter Prozess verlangt, den Zugriff auf wenige beschränken und bei neuen Nutzungen den DSB fragen"
+      - en: "Collect only what a documented process requires, restrict access to those who need it, and ask the DPO about new uses"
+        de: "Nur erheben, was ein dokumentierter Prozess verlangt, den Zugriff auf die Nötigen beschränken und bei neuen Verwendungen die Datenschutzbeauftragten fragen"
         correct: true
-      - en: "Add it to the shared team calendar for transparency"
-        de: "Im gemeinsamen Teamkalender eintragen, um transparent zu sein"
+      - en: "Add it to the shared team calendar for transparency, so that colleagues can plan around the absence"
+        de: "In den gemeinsamen Teamkalender eintragen, um Transparenz zu schaffen und die Planung der Abwesenheit zu erleichtern"
         correct: false
-      - en: "Email it to all managers in the department"
-        de: "Per E-Mail an alle Führungskräfte der Abteilung senden"
+      - en: "Email it to all managers in the department so that they can judge whether the absence is justified"
+        de: "An alle Führungskräfte der Abteilung mailen, damit sie beurteilen können, ob die Abwesenheit berechtigt ist"
         correct: false
-      - en: "Store it in a public folder"
-        de: "In einem öffentlichen Ordner ablegen"
+      - en: "Store it in a shared folder that any employee can open, so that payroll finds it quickly when needed"
+        de: "In einem Ordner ablegen, den alle Beschäftigten öffnen können, damit die Entgeltabrechnung es bei Bedarf schnell findet"
         correct: false
     explanation:
       en: "Health data is a special category and needs extra care: minimal collection, restricted access and DPO involvement for any new use."
@@ -177,16 +177,16 @@ items:
       de: "Eine ehemalige beschäftigte Person fragt schriftlich, welche Daten du über sie hast. Was ist der richtige erste Schritt?"
     options:
       - en: "Log the date of receipt and route the request to the DPO immediately, without promising anything"
-        de: "Das Eingangsdatum festhalten und die Anfrage sofort an den DSB leiten, ohne etwas zu versprechen"
+        de: "Eingangsdatum festhalten und die Anfrage sofort an die Datenschutzbeauftragten weiterleiten, ohne etwas zuzusagen"
         correct: true
-      - en: "Ignore it, because the person has left"
-        de: "Ignorieren, weil die Person ausgeschieden ist"
+      - en: "Ignore it, because the person has left and the employment relationship has ended, so no rights remain"
+        de: "Ignorieren, weil die Person ausgeschieden ist und das Arbeitsverhältnis endet, sodass keine Rechte mehr bestehen"
         correct: false
-      - en: "Send everything you find right away"
-        de: "Sofort alles senden, was du findest"
+      - en: "Send everything you find right away, including notes about other employees that mention the person"
+        de: "Sofort alles schicken, was sich findet, auch Notizen über andere Beschäftigte, die die Person erwähnen"
         correct: false
-      - en: "Tell them it will be answered within a specific number of days you recall"
-        de: "Mitteilen, dass innerhalb einer bestimmten Anzahl Tage geantwortet wird, an die du dich erinnerst"
+      - en: "Tell them it will be answered within a specific number of days you recall, without checking the deadline"
+        de: "Ihr mitteilen, dass innerhalb einer bestimmten Zahl von Tagen geantwortet wird, an die du dich erinnerst, ohne die Frist zu prüfen"
         correct: false
     explanation:
       en: "Access requests are a data subject right. HR routes them to the DPO or process owner; whether and how to answer depends on current law and the case, so do not promise anything."
@@ -201,16 +201,16 @@ items:
       de: "Ein neues Bewerbungsportal ist geplant. Wann sollte der DSB einbezogen werden?"
     options:
       - en: "At the design stage, before go-live, so purpose, data set, access and deletion are defined up front"
-        de: "In der Entwurfsphase, vor dem Start, damit Zweck, Datenumfang, Zugriff und Löschung vorab festgelegt werden"
+        de: "In der Entwurfsphase vor dem Livegang, damit Zweck, Datenumfang, Zugriff und Löschung vorab festgelegt werden"
         correct: true
-      - en: "Only after the first complaint"
-        de: "Erst nach der ersten Beschwerde"
+      - en: "Only after the first complaint, because before that there is nothing concrete for the DPO to assess"
+        de: "Erst nach der ersten Beschwerde, weil die Datenschutzbeauftragten vorher nichts Konkretes bewerten können"
         correct: false
-      - en: "Never, because software vendors handle it"
-        de: "Nie, weil die Softwareanbieter das erledigen"
+      - en: "Never, because software vendors handle data protection for their customers as part of the product"
+        de: "Nie, weil Softwareanbieter den Datenschutz für ihre Kunden im Rahmen des Produkts übernehmen"
         correct: false
-      - en: "Only when the portal is switched off"
-        de: "Erst, wenn das Portal abgeschaltet wird"
+      - en: "Only shortly before go-live, once the project team has finished the technical work and the settings"
+        de: "Erst kurz vor dem Livegang, wenn das Projektteam die technische Arbeit und die Einstellungen abgeschlossen hat"
         correct: false
     explanation:
       en: "Privacy by design means taking privacy into account throughout the process, proactively rather than after problems appear."
@@ -224,17 +224,17 @@ items:
       en: "Your company uses external HR software that processes employee data on its behalf. Which statement fits best?"
       de: "Dein Unternehmen nutzt externe HR-Software, die Beschäftigtendaten in seinem Auftrag verarbeitet. Welche Aussage passt am besten?"
     options:
-      - en: "The company stays accountable; involve the DPO and procurement and make sure agreed terms and tool settings match"
-        de: "Das Unternehmen bleibt verantwortlich; DSB und Einkauf einbeziehen und sicherstellen, dass vereinbarte Bedingungen und Toolkonfiguration zusammenpassen"
+      - en: "The company stays accountable; involve the DPO and procurement and check that terms and tool settings match"
+        de: "Das Unternehmen bleibt verantwortlich; Datenschutzbeauftragte und Einkauf einbinden und prüfen, ob Vertragsbedingungen und Toolkonfiguration passen"
         correct: true
-      - en: "Responsibility passes completely to the vendor"
-        de: "Die Verantwortung geht vollständig auf den Anbieter über"
+      - en: "Responsibility passes completely to the vendor, because the vendor operates the software and stores the data"
+        de: "Die Verantwortung geht vollständig auf den Anbieter über, weil er die Software betreibt und die Daten speichert"
         correct: false
-      - en: "No review is needed if the vendor is well known"
-        de: "Eine Prüfung ist unnötig, wenn der Anbieter bekannt ist"
+      - en: "No review is needed if the vendor is well known and widely used by other large companies in the sector"
+        de: "Eine Prüfung ist nicht nötig, wenn der Anbieter bekannt ist und von anderen großen Unternehmen der Branche genutzt wird"
         correct: false
-      - en: "HR staff should draft the legal terms alone"
-        de: "HR-Mitarbeitende sollten die rechtlichen Bedingungen allein entwerfen"
+      - en: "HR staff should draft the legal terms alone, since they know best which employee data the tool will process"
+        de: "Die HR-Mitarbeitenden sollten die rechtlichen Bedingungen allein entwerfen, da sie am besten wissen, welche Daten das Tool verarbeitet"
         correct: false
     explanation:
       en: "The controller remains responsible and must be able to demonstrate compliance even when a processor does the work."
@@ -249,16 +249,16 @@ items:
       de: "Du hast versehentlich eine Tabelle mit Beschäftigtendaten an eine falsche externe Adresse gemailt. Was ist die beste Handlung?"
     options:
       - en: "Escalate immediately to the DPO and IT security per the company process and document the facts"
-        de: "Sofort nach Unternehmensprozess an DSB und IT-Sicherheit eskalieren und die Fakten dokumentieren"
+        de: "Sofort gemäß Unternehmensprozess an Datenschutzbeauftragte und IT-Sicherheit eskalieren und die Fakten dokumentieren"
         correct: true
-      - en: "Wait a few days to see whether anything happens"
-        de: "Ein paar Tage abwarten, ob etwas passiert"
+      - en: "Wait a few days to see whether anything happens, since the recipient may simply delete the message"
+        de: "Ein paar Tage abwarten, ob etwas passiert, da die empfangende Person die Nachricht vielleicht einfach löscht"
         correct: false
-      - en: "Contact the authority yourself before telling anyone internally"
-        de: "Zuerst selbst die Behörde kontaktieren, bevor du intern jemanden informierst"
+      - en: "Contact the supervisory authority yourself before telling anyone internally, so that the deadline is met"
+        de: "Die Aufsichtsbehörde selbst kontaktieren, bevor intern jemand informiert wird, damit die Frist eingehalten wird"
         correct: false
-      - en: "Say nothing to avoid trouble"
-        de: "Nichts sagen, um Ärger zu vermeiden"
+      - en: "Quietly ask the recipient to delete it and consider the matter closed if they confirm by reply"
+        de: "Die empfangende Person still bitten, die Nachricht zu löschen, und die Sache als erledigt ansehen, wenn sie antwortet"
         correct: false
     explanation:
       en: "Breach handling starts with immediate internal escalation; the DPO and management decide on external steps based on current law. Honest, factual documentation helps containment."
@@ -272,17 +272,17 @@ items:
       en: "A manager asks you to activate software that logs employees' computer activity. What is the most appropriate response?"
       de: "Eine Führungskraft bittet dich, eine Software zu aktivieren, die die Computeraktivität von Beschäftigten protokolliert. Was ist die angemessenste Reaktion?"
     options:
-      - en: "Do not activate it; document the purpose and bring in the DPO and, where applicable, the works council before any decision"
-        de: "Nicht aktivieren; den Zweck festhalten und vor jeder Entscheidung den DSB und gegebenenfalls den Betriebsrat einbeziehen"
+      - en: "Do not activate it; document the purpose and involve the DPO and, where applicable, the works council first"
+        de: "Nicht aktivieren; den Zweck dokumentieren und zuerst Datenschutzbeauftragte und gegebenenfalls Betriebsrat einbeziehen"
         correct: true
-      - en: "Activate it quietly, since managers decide"
-        de: "Heimlich aktivieren, da Führungskräfte entscheiden"
+      - en: "Activate it quietly, since managers decide how work is organised and what tools are used in their team"
+        de: "Still aktivieren, da Führungskräfte entscheiden, wie die Arbeit organisiert wird und welche Tools im Team genutzt werden"
         correct: false
-      - en: "Activate it for a trial week without informing anyone"
-        de: "Für eine Probewoche aktivieren, ohne jemanden zu informieren"
+      - en: "Activate it for a trial week without informing anyone, to see first whether the data is useful at all"
+        de: "Für eine Testwoche aktivieren, ohne jemanden zu informieren, um zunächst zu sehen, ob die Daten überhaupt nützlich sind"
         correct: false
-      - en: "Activate it if the vendor says it is compliant"
-        de: "Aktivieren, wenn der Anbieter sagt, es sei konform"
+      - en: "Activate it if the vendor says it is compliant, since the vendor knows the legal rules for its own product"
+        de: "Aktivieren, wenn der Anbieter Konformität zusagt, da er die rechtlichen Regeln für sein eigenes Produkt kennt"
         correct: false
     explanation:
       en: "Monitoring at the workplace is a high-caution topic where national rules and collective agreements may apply; the DPO and works council need to be involved before implementation."

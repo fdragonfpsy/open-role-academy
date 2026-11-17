@@ -9,16 +9,16 @@ items:
       de: "Was beschreibt einen Konflikt am Arbeitsplatz am besten?"
     options:
       - en: "Discord caused by opposing needs, values or interests that affects work"
-        de: "Uneinigkeit durch gegensätzliche Bedürfnisse, Werte oder Interessen, die die Arbeit berührt"
+        de: "Uneinigkeit durch gegensätzliche Bedürfnisse, Werte oder Interessen, die sich auf die Arbeit auswirkt"
         correct: true
-      - en: "Any difference of opinion, however small"
-        de: "Jede noch so kleine Meinungsverschiedenheit"
+      - en: "Any difference of opinion between colleagues, however small and however quickly it is settled"
+        de: "Jede Meinungsverschiedenheit zwischen Kolleginnen und Kollegen, wie klein sie auch ist und wie schnell sie beigelegt wird"
         correct: false
-      - en: "A planned team workshop"
-        de: "Ein geplanter Team-Workshop"
+      - en: "A planned team workshop in which colleagues discuss their roles and responsibilities openly"
+        de: "Ein geplanter Team-Workshop, in dem Kolleginnen und Kollegen offen über Rollen und Verantwortlichkeiten sprechen"
         correct: false
-      - en: "A fixed salary dispute only"
-        de: "Ausschließlich ein Streit um das feste Gehalt"
+      - en: "A dispute about a fixed salary only, which is settled between the employee and payroll"
+        de: "Ausschließlich ein Streit über ein festes Gehalt, der zwischen der beschäftigten Person und der Entgeltabrechnung geklärt wird"
         correct: false
     explanation:
       en: "A conflict arises from actual or perceived opposition of needs, values or interests and affects work or relations."
@@ -33,16 +33,16 @@ items:
       de: "Welche Aussage ist ein Fakt und kein Urteil?"
     options:
       - en: "\"The report arrived two days after the agreed date.\""
-        de: "\"Der Bericht kam zwei Tage nach dem vereinbarten Termin.\""
+        de: "\"Der Bericht kam zwei Tage nach dem vereinbarten Termin an.\""
         correct: true
-      - en: "\"He is lazy.\""
-        de: "\"Er ist faul.\""
+      - en: "\"He is lazy, and everyone in the team knows that he never really tries.\""
+        de: "\"Er ist faul, und alle im Team wissen, dass er sich nie wirklich anstrengt.\""
         correct: false
-      - en: "\"She never cares.\""
-        de: "\"Sie interessiert sich nie.\""
+      - en: "\"She never cares about the deadlines of the others in the team.\""
+        de: "\"Ihr sind die Termine der anderen im Team nie wichtig.\""
         correct: false
-      - en: "\"They are impossible to work with.\""
-        de: "\"Mit denen kann man nicht arbeiten.\""
+      - en: "\"They are impossible to work with, and that has been obvious since the start.\""
+        de: "\"Mit ihnen ist es unmöglich zusammenzuarbeiten, das war von Anfang an klar.\""
         correct: false
     explanation:
       en: "Observable, verifiable statements are facts. Labels about a person are judgements and escalate conflicts."
@@ -57,16 +57,16 @@ items:
       de: "Was ist ein Beispiel für aktives Zuhören?"
     options:
       - en: "Paraphrasing: \"So you feel the tasks were reassigned without asking you?\""
-        de: "Zusammenfassen: \"Du hast also das Gefühl, die Aufgaben wurden ohne Rücksprache verteilt?\""
+        de: "Paraphrasieren: \"Du hast also das Gefühl, dass die Aufgaben neu verteilt wurden, ohne dich zu fragen?\""
         correct: true
-      - en: "Interrupting to give your solution"
-        de: "Unterbrechen, um deine Lösung zu nennen"
+      - en: "Interrupting early to give your own solution, so that the person does not need to explain everything"
+        de: "Früh unterbrechen und die eigene Lösung nennen, damit die Person nicht alles erklären muss"
         correct: false
-      - en: "Checking your phone while the person speaks"
-        de: "Aufs Handy schauen, während die Person spricht"
+      - en: "Checking your phone while the person speaks, so that you can handle urgent messages at the same time"
+        de: "Während die Person spricht aufs Handy schauen, um dringende Nachrichten gleichzeitig zu bearbeiten"
         correct: false
-      - en: "Telling the person to calm down"
-        de: "Der Person sagen, sie solle sich beruhigen"
+      - en: "Telling the person to calm down and not to take the matter so seriously before they finish their account"
+        de: "Der Person sagen, sie solle sich beruhigen und die Sache nicht so ernst nehmen, noch bevor sie ihre Schilderung beendet hat"
         correct: false
     explanation:
       en: "Active listening means giving full attention and showing understanding, for example by paraphrasing."
@@ -81,16 +81,16 @@ items:
       de: "Eine Mitarbeitende erzählt dir vertraulich von Belästigung durch einen Kollegen. Was tust du?"
     options:
       - en: "Listen, note facts and involve the responsible person; do not promise absolute secrecy"
-        de: "Zuhören, Fakten notieren und die zuständige Stelle einbeziehen; keine absolute Verschwiegenheit versprechen"
+        de: "Zuhören, Fakten notieren und die zuständige Stelle einbinden; keine absolute Verschwiegenheit zusagen"
         correct: true
-      - en: "Promise absolute secrecy and do nothing"
-        de: "Absolute Verschwiegenheit versprechen und nichts tun"
+      - en: "Promise absolute secrecy and do nothing further, so that the employee keeps trust in the conversation"
+        de: "Absolute Verschwiegenheit zusagen und nichts weiter tun, damit die beschäftigte Person ihr Vertrauen in das Gespräch behält"
         correct: false
-      - en: "Confront the colleague alone and punish him"
-        de: "Den Kollegen allein zur Rede stellen und bestrafen"
+      - en: "Confront the colleague alone and punish him at once, so that the behaviour stops without a long process"
+        de: "Den Kollegen allein zur Rede stellen und sofort bestrafen, damit das Verhalten ohne langes Verfahren aufhört"
         correct: false
-      - en: "Tell the whole team to be careful"
-        de: "Dem ganzen Team Vorsicht empfehlen"
+      - en: "Tell the whole team to be careful with their behaviour, without naming the person or the incident"
+        de: "Dem ganzen Team sagen, es solle auf sein Verhalten achten, ohne die Person oder den Vorfall zu nennen"
         correct: false
     explanation:
       en: "Serious matters such as harassment need the responsible person or procedure. You cannot promise secrecy that conflicts with duties to act."
@@ -105,16 +105,16 @@ items:
       de: "Was ist ein sinnvoller erster Schritt, wenn eine Mitarbeitende eine Beschwerde einreicht?"
     options:
       - en: "Acknowledge it and explain next steps and timeline"
-        de: "Den Eingang bestätigen und nächste Schritte und Zeitplan erklären"
+        de: "Den Eingang bestätigen und die nächsten Schritte samt Zeitplan erklären"
         correct: true
-      - en: "Decide the outcome immediately"
-        de: "Sofort das Ergebnis festlegen"
+      - en: "Decide the outcome immediately, so that the person knows quickly what will happen with the complaint"
+        de: "Das Ergebnis sofort entscheiden, damit die Person schnell weiß, was mit der Beschwerde geschieht"
         correct: false
-      - en: "Ignore it until the person asks again"
-        de: "Sie ignorieren, bis die Person nachfragt"
+      - en: "Ignore it until the person asks again, which shows whether the matter is really important to them"
+        de: "Sie ignorieren, bis die Person nachfragt, was zeigt, ob ihr die Sache wirklich wichtig ist"
         correct: false
-      - en: "Share it with the whole department"
-        de: "Sie in der ganzen Abteilung bekannt machen"
+      - en: "Share it with the whole department, so that all colleagues can give their view on the matter"
+        de: "Sie mit der ganzen Abteilung teilen, damit alle Kolleginnen und Kollegen ihre Sicht dazu äußern können"
         correct: false
     explanation:
       en: "A fair procedure starts by acknowledging the complaint and making next steps clear."
@@ -129,16 +129,16 @@ items:
       de: "Welche Rolle hat eine Mediatorin oder ein Mediator?"
     options:
       - en: "A neutral person who helps the parties find their own agreement"
-        de: "Eine neutrale Person, die den Beteiligten hilft, selbst eine Einigung zu finden"
+        de: "Eine neutrale Person, die den Parteien hilft, selbst eine Einigung zu finden"
         correct: true
-      - en: "A judge who decides who is right"
-        de: "Eine Richterin, die entscheidet, wer recht hat"
+      - en: "A judge who listens to both sides and decides who is right and who is wrong in the dispute"
+        de: "Eine Richterin oder ein Richter, die oder der beide Seiten anhört und entscheidet, wer im Streit recht hat"
         correct: false
-      - en: "The advocate of the weaker party"
-        de: "Die Fürsprecherin der schwächeren Seite"
+      - en: "The advocate of the weaker party, who argues for that party's interests during the sessions"
+        de: "Die Fürsprecherin oder der Fürsprecher der schwächeren Partei, die oder der deren Interessen in den Sitzungen vertritt"
         correct: false
-      - en: "The manager of one party"
-        de: "Die Führungskraft einer Seite"
+      - en: "The manager of one of the parties, who knows the background of the dispute from daily work"
+        de: "Die Führungskraft einer der Parteien, die den Hintergrund des Streits aus der täglichen Arbeit kennt"
         correct: false
     explanation:
       en: "A mediator facilitates the process but does not decide the outcome; participation is generally voluntary."
@@ -201,16 +201,16 @@ items:
       de: "Warum sollte ein gestuftes Konfliktsystem einen Weg zum Überspringen einer Stufe enthalten?"
     options:
       - en: "The manager may be involved or the matter may be serious"
-        de: "Die Führungskraft kann beteiligt oder die Sache ernst sein"
+        de: "Die Führungskraft kann beteiligt sein oder der Fall kann schwerwiegend sein"
         correct: true
-      - en: "To make the process shorter for every case"
-        de: "Um den Prozess für jeden Fall zu verkürzen"
+      - en: "To make the process shorter for every case, so that cases are always settled at the highest level"
+        de: "Um den Prozess für jeden Fall zu verkürzen, damit Fälle immer auf der höchsten Ebene entschieden werden"
         correct: false
-      - en: "To avoid documenting cases"
-        de: "Um Fälle nicht dokumentieren zu müssen"
+      - en: "To avoid documenting cases, because documentation is only needed when all stages are completed"
+        de: "Um die Dokumentation von Fällen zu vermeiden, weil sie nur nötig ist, wenn alle Stufen durchlaufen wurden"
         correct: false
-      - en: "To keep employees from using it"
-        de: "Damit Beschäftigte es nicht nutzen"
+      - en: "To keep employees from using it, because a complicated system discourages most complaints"
+        de: "Um Beschäftigte von der Nutzung abzuhalten, weil ein kompliziertes System die meisten Beschwerden verhindert"
         correct: false
     explanation:
       en: "If the first contact is part of the problem or the issue is serious, people need another route to reach HR or a complaints office."
@@ -225,16 +225,16 @@ items:
       de: "Was ist die allgemeine Rolle eines Betriebsrats im Vergleich zur Personalabteilung?"
     options:
       - en: "It represents employees; HR represents the employer"
-        de: "Er vertritt die Beschäftigten; die Personalabteilung vertritt den Arbeitgeber"
+        de: "Er vertritt die Beschäftigten; HR vertritt den Arbeitgeber"
         correct: true
-      - en: "It is a department of HR"
-        de: "Er ist eine Abteilung der Personalabteilung"
+      - en: "It is a department of HR that supports the managers in the personnel planning of the company"
+        de: "Er ist eine Abteilung des HR, die Führungskräfte bei der Personalplanung des Unternehmens unterstützt"
         correct: false
-      - en: "It replaces all managers"
-        de: "Er ersetzt alle Führungskräfte"
+      - en: "It replaces all managers in decisions that concern working hours and the organisation of work"
+        de: "Er ersetzt alle Führungskräfte bei Entscheidungen zu Arbeitszeit und Arbeitsorganisation"
         correct: false
-      - en: "It decides on all dismissals alone"
-        de: "Er entscheidet allein über alle Kündigungen"
+      - en: "It decides on all dismissals alone, without the employer having a say in the outcome of the case"
+        de: "Er entscheidet allein über alle Kündigungen, ohne dass der Arbeitgeber bei dem Ergebnis mitreden kann"
         correct: false
     explanation:
       en: "Works councils represent employees in a workplace. Clear roles on both sides support constructive cooperation."
@@ -273,16 +273,16 @@ items:
       de: "Drei Beschwerden betreffen denselben Bereich. Wie nutzt du dieses Muster angemessen?"
     options:
       - en: "Analyse it in anonymised form for causes and prevention, not to expose individuals"
-        de: "Anonymisiert auf Ursachen und Prävention auswerten, nicht um Einzelne bloßzustellen"
+        de: "In anonymisierter Form auf Ursachen und Vorbeugung analysieren, nicht um Einzelne bloßzustellen"
         correct: true
-      - en: "Publish the names of all complainants"
-        de: "Die Namen aller Beschwerdeführenden veröffentlichen"
+      - en: "Publish the names of all complainants so that the department understands where the problem comes from"
+        de: "Die Namen aller Beschwerdeführenden veröffentlichen, damit die Abteilung versteht, woher das Problem kommt"
         correct: false
-      - en: "Treat each as an unrelated case and do nothing more"
-        de: "Jeden als unabhängigen Fall behandeln und nichts weiter tun"
+      - en: "Treat each as an unrelated case and do nothing more, since every complaint has its own history and facts"
+        de: "Jede als unabhängigen Fall behandeln und nichts weiter tun, da jede Beschwerde ihre eigene Vorgeschichte und Fakten hat"
         correct: false
-      - en: "Use the case files to rate employees in appraisals"
-        de: "Die Fallakten für Beurteilungen der Mitarbeitenden nutzen"
+      - en: "Use the case files to rate employees in appraisals, since they show how people behave under pressure"
+        de: "Die Fallakten zur Bewertung von Beschäftigten in Beurteilungen nutzen, da sie zeigen, wie Menschen unter Druck handeln"
         correct: false
     explanation:
       en: "Aggregated, anonymised patterns support prevention such as training. Case data should not be used beyond its purpose and must not identify individuals in small groups."

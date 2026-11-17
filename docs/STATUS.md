@@ -1,5 +1,17 @@
 # Status
 
+## 2026-11-17 — Content quality pass: Human Resources (batch complete)
+
+**Done**
+- HR items (11 files): options rewritten en/de; `uniquely longest` warnings now 0 across the project.
+- 9 new OpenStax (Organizational Behavior / Principles of Management) resources, CC BY-NC-SA, link only, verified 2026-11-17. Chapter bodies are JS-rendered, so topic fit rests on titles/slugs; a human should spot-check `openstax-pom-hrm-introduction` and `openstax-ob-reward-systems` (US-centric).
+- Earlier today: IT (#63) and Finance (#64) batches merged.
+- Known gaps: no German/EU primary source added for employment-law-basics, health-safety-wellbeing, hr-data-protection; Finance/IT gaps listed in the entries below. New resources not yet in unit `resources[]`.
+
+**Counts:** roles 4 · competencies 38 · units 228 · items 456 · resources 297 · tests 59
+
+**Next:** list the new resources in unit `resources[]` frontmatter, re-sample unit voice (#57); then Phase 3 UI verification (onboarding + placement in Playwright). Issues #53/#56/#57 can be closed once the above gaps are accepted.
+
 ## 2026-11-17 — Content quality pass: Finance & Accounting
 
 **Done**

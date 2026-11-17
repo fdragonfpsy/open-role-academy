@@ -8,17 +8,17 @@ items:
       en: "What best describes a performance appraisal?"
       de: "Was beschreibt eine Leistungsbeurteilung am besten?"
     options:
-      - en: "A periodic process in which an employee's job performance is documented and evaluated, often by the manager"
-        de: "Ein regelmäßiger Prozess, in dem die Arbeitsleistung von Beschäftigten dokumentiert und bewertet wird, häufig durch die Führungskraft"
+      - en: "A periodic process in which job performance is documented and evaluated, often by the manager"
+        de: "Ein regelmäßiger Prozess, in dem die Arbeitsleistung dokumentiert und bewertet wird, oft durch die Führungskraft"
         correct: true
-      - en: "A one-off decision about whether to hire someone"
-        de: "Eine einmalige Entscheidung darüber, ob jemand eingestellt wird"
+      - en: "A one-off decision by the hiring manager about whether to hire someone after the interviews have ended"
+        de: "Eine einmalige Entscheidung der Führungskraft, ob nach den Interviews jemand eingestellt wird"
         correct: false
-      - en: "A list of tasks that nobody needs to discuss"
-        de: "Eine Aufgabenliste, die niemand besprechen muss"
+      - en: "A list of tasks handed over to the employee at the start of the year that nobody needs to discuss later"
+        de: "Eine Liste von Aufgaben, die zu Jahresbeginn übergeben wird und über die später niemand sprechen muss"
         correct: false
-      - en: "A payroll calculation"
-        de: "Eine Entgeltabrechnung"
+      - en: "A payroll calculation that converts hours worked and the agreed rate into the monthly gross pay"
+        de: "Eine Entgeltberechnung, die geleistete Stunden und den vereinbarten Satz in das monatliche Bruttoentgelt umrechnet"
         correct: false
     explanation:
       en: "A performance appraisal is a periodic process in which job performance is documented and evaluated, most often by the immediate manager."
@@ -32,17 +32,17 @@ items:
       en: "Which of these is a goal rather than a task?"
       de: "Welche der folgenden Aussagen ist ein Ziel und keine Aufgabe?"
     options:
-      - en: "Send the monthly report"
-        de: "Den Monatsbericht versenden"
+      - en: "Send the monthly report to the managers"
+        de: "Den Monatsbericht an die Führungskräfte senden"
         correct: false
       - en: "Managers receive reliable figures by the fifth working day"
         de: "Führungskräfte erhalten bis zum fünften Arbeitstag verlässliche Zahlen"
         correct: true
-      - en: "Book a meeting room"
-        de: "Einen Besprechungsraum buchen"
+      - en: "Book a meeting room for the team workshop"
+        de: "Einen Besprechungsraum für den Team-Workshop buchen"
         correct: false
-      - en: "Update the spreadsheet"
-        de: "Die Tabelle aktualisieren"
+      - en: "Update the spreadsheet with the latest data"
+        de: "Die Tabelle mit den neuesten Daten aktualisieren"
         correct: false
     explanation:
       en: "A goal describes a desired future state or result; the other options are pieces of work to do."
@@ -56,17 +56,17 @@ items:
       en: "Which feedback is specific, timely and focused on behaviour?"
       de: "Welches Feedback ist konkret, zeitnah und verhaltensbezogen?"
     options:
-      - en: "\"You are careless.\""
-        de: "\"Du bist schlampig.\""
+      - en: "\"You are careless, and this is not the first time that your work has been full of mistakes.\""
+        de: "\"Du bist unsorgfältig, und das ist nicht das erste Mal, dass deine Arbeit voller Fehler ist.\""
         correct: false
       - en: "\"In today's meeting you gave the status only when asked. Please tell the team early about delays.\""
-        de: "\"Im heutigen Meeting hast du den Stand erst auf Nachfrage genannt. Bitte sag dem Team früh Bescheid, wenn sich etwas verzögert.\""
+        de: "\"In der heutigen Besprechung hast du den Stand nur auf Nachfrage genannt. Bitte informiere das Team früh über Verzögerungen.\""
         correct: true
-      - en: "\"Your attitude is a problem, as always.\""
-        de: "\"Deine Einstellung ist wie immer ein Problem.\""
+      - en: "\"Your attitude is a problem, as always, and everyone in the team has noticed it by now.\""
+        de: "\"Deine Einstellung ist wie immer ein Problem, und das ist inzwischen allen im Team aufgefallen.\""
         correct: false
-      - en: "\"We will talk about this at the end of the year.\""
-        de: "\"Darüber sprechen wir am Jahresende.\""
+      - en: "\"We will talk about this at the end of the year, when all the points can be discussed together.\""
+        de: "\"Darüber sprechen wir am Jahresende, wenn alle Punkte gemeinsam besprochen werden können.\""
         correct: false
     explanation:
       en: "Useful feedback names a concrete situation and observable behaviour, comes soon after, and says what is wanted. Judgments about character and long waits do not help."
@@ -80,17 +80,17 @@ items:
       en: "Which practice supports a fair appraisal?"
       de: "Welche Praxis unterstützt eine faire Beurteilung?"
     options:
-      - en: "Different criteria for each person, chosen after the fact"
-        de: "Für jede Person andere Kriterien, die erst im Nachhinein gewählt werden"
+      - en: "Different criteria for each person, chosen after the fact to match the impression the manager has formed"
+        de: "Für jede Person andere Kriterien, die nachträglich passend zum Eindruck der Führungskraft gewählt werden"
         correct: false
       - en: "Uniform, transparent criteria and a clearly defined scale for everyone"
-        de: "Einheitliche, transparente Kriterien und ein klar definierter Maßstab für alle"
+        de: "Einheitliche, transparente Kriterien und eine klar definierte Skala für alle"
         correct: true
-      - en: "Keeping the criteria secret from employees"
-        de: "Die Kriterien vor den Beschäftigten geheim halten"
+      - en: "Keeping the criteria secret from employees so that nobody can adapt their behaviour to the rating"
+        de: "Die Kriterien vor den Beschäftigten geheim halten, damit niemand sein Verhalten auf die Bewertung ausrichtet"
         correct: false
-      - en: "Judging only the most recent week"
-        de: "Nur die letzte Woche beurteilen"
+      - en: "Judging only the most recent week, because it shows the current performance most accurately"
+        de: "Nur die letzte Woche beurteilen, weil sie die aktuelle Leistung am genauesten zeigt"
         correct: false
     explanation:
       en: "Uniform and transparent criteria, a clear scale and the same standards for all make appraisals fairer and easier to accept."
@@ -104,17 +104,17 @@ items:
       en: "Which goal best meets SMART-style criteria?"
       de: "Welches Ziel erfüllt SMART-ähnliche Kriterien am besten?"
     options:
-      - en: "Be better at reporting"
-        de: "Besser im Berichtswesen werden"
+      - en: "Be better at reporting and show more commitment to the quality of the monthly figures"
+        de: "Besser im Berichtswesen werden und mehr Engagement für die Qualität der Monatszahlen zeigen"
         correct: false
       - en: "Deliver the monthly report to finance by the agreed date in the next three cycles"
-        de: "Den Monatsbericht in den nächsten drei Zyklen zum vereinbarten Termin an das Controlling liefern"
+        de: "Den Monatsbericht in den nächsten drei Zyklen zum vereinbarten Termin an das Finanzwesen liefern"
         correct: true
-      - en: "Try hard"
-        de: "Sich anstrengen"
+      - en: "Try hard to improve over the coming year and show visible effort in all areas of the job"
+        de: "Sich im kommenden Jahr sehr anstrengen und in allen Bereichen der Arbeit sichtbaren Einsatz zeigen"
         correct: false
-      - en: "Do everything perfectly"
-        de: "Alles perfekt machen"
+      - en: "Do everything perfectly in every task of the department, without any mistakes at any time"
+        de: "Jede Aufgabe der Abteilung perfekt erledigen, ohne zu irgendeinem Zeitpunkt Fehler zu machen"
         correct: false
     explanation:
       en: "The goal is specific, measurable, has an owner and a time frame; the others are vague. SMART is a checklist, not a guarantee."
@@ -152,17 +152,17 @@ items:
       en: "A manager drafts: \"You were rude in the call.\" How do you coach them using situation, behaviour, impact?"
       de: "Eine Führungskraft formuliert: \"Du warst im Gespräch unhöflich.\" Wie coachst du sie mit Situation, Verhalten, Wirkung?"
     options:
-      - en: "Keep the wording; it is short and clear"
-        de: "Die Formulierung beibehalten; sie ist kurz und klar"
+      - en: "Keep the wording as it is, because it is short and clear, and the other person will understand it"
+        de: "Die Formulierung beibehalten, weil sie kurz und klar ist und die andere Person sie verstehen wird"
         correct: false
       - en: "Name the call, describe what was said or done, explain the effect, then ask for the other person's view"
-        de: "Das Gespräch nennen, beschreiben, was gesagt oder getan wurde, die Wirkung erklären und dann nach der Sicht der Person fragen"
+        de: "Den Anruf benennen, beschreiben, was gesagt oder getan wurde, die Wirkung erklären und nach der Sicht der anderen Person fragen"
         correct: true
-      - en: "Add more adjectives about the person's character"
-        de: "Weitere Adjektive über den Charakter der Person ergänzen"
+      - en: "Add more adjectives about the person's character, so that the seriousness of the problem becomes clear"
+        de: "Mehr Adjektive zum Charakter der Person ergänzen, damit der Ernst des Problems deutlich wird"
         correct: false
-      - en: "Delay the feedback until the annual review"
-        de: "Das Feedback bis zum Jahresgespräch aufschieben"
+      - en: "Delay the feedback until the annual review, when the manager can address all behaviours together"
+        de: "Das Feedback bis zum Jahresgespräch aufschieben, wenn die Führungskraft alle Verhaltensweisen gemeinsam ansprechen kann"
         correct: false
     explanation:
       en: "Situation, behaviour, impact is one common model: replace judgments with observable facts, state the effect and invite a response."
@@ -177,16 +177,16 @@ items:
       de: "Welcher Schritt hilft in einem schwierigen Feedbackgespräch am meisten?"
     options:
       - en: "Prepare examples, state the purpose, listen, and agree a written next step with a follow-up date"
-        de: "Beispiele vorbereiten, den Zweck nennen, zuhören und einen schriftlichen nächsten Schritt mit Folgetermin vereinbaren"
+        de: "Beispiele vorbereiten, den Zweck nennen, zuhören und einen schriftlichen nächsten Schritt mit Nachfasstermin vereinbaren"
         correct: true
-      - en: "Speak quickly so the other person cannot respond"
-        de: "Schnell sprechen, damit die Person nicht antworten kann"
+      - en: "Speak quickly and without pauses, so the other person cannot respond with objections or excuses"
+        de: "Schnell und ohne Pausen sprechen, damit die andere Person nicht mit Einwänden oder Ausreden antworten kann"
         correct: false
-      - en: "Avoid examples to keep it friendly"
-        de: "Beispiele vermeiden, um freundlich zu bleiben"
+      - en: "Avoid concrete examples to keep the atmosphere friendly and to prevent the person from feeling attacked"
+        de: "Konkrete Beispiele vermeiden, damit die Stimmung freundlich bleibt und die Person sich nicht angegriffen fühlt"
         correct: false
-      - en: "Record nothing so there is no dispute"
-        de: "Nichts festhalten, damit es keinen Streit gibt"
+      - en: "Record nothing at all, so that there is no later dispute about what was said or agreed in the room"
+        de: "Nichts festhalten, damit es später keinen Streit darüber gibt, was im Raum gesagt oder vereinbart wurde"
         correct: false
     explanation:
       en: "Preparation with concrete examples, active listening and a clear next step make the conversation fair and useful; documenting agreements protects all parties."
@@ -224,17 +224,17 @@ items:
       en: "Which measure is a sensible practice for reducing rating bias?"
       de: "Welche Maßnahme ist eine sinnvolle Praxis, um Beurteilungsfehler zu verringern?"
     options:
-      - en: "Let each manager use private criteria"
-        de: "Jede Führungskraft eigene, private Kriterien nutzen lassen"
+      - en: "Let each manager use private criteria, because they know their own team and its work best"
+        de: "Jede Führungskraft private Kriterien verwenden lassen, weil sie das eigene Team und dessen Arbeit am besten kennt"
         correct: false
-      - en: "Ask for concrete evidence from the whole period and hold a calibration discussion using the same criteria"
-        de: "Konkrete Belege aus dem ganzen Zeitraum verlangen und eine Kalibrierung anhand derselben Kriterien durchführen"
+      - en: "Ask for concrete evidence from the whole period and hold a calibration discussion on the same criteria"
+        de: "Konkrete Belege aus dem gesamten Zeitraum verlangen und eine Kalibrierungsrunde anhand derselben Kriterien führen"
         correct: true
-      - en: "Base ratings on the manager's memory of last week"
-        de: "Bewertungen auf die Erinnerung der Führungskraft an die letzte Woche stützen"
+      - en: "Base ratings on the manager's memory of last week, because recent events are the most reliable"
+        de: "Bewertungen auf die Erinnerung der Führungskraft an die letzte Woche stützen, weil jüngste Ereignisse am verlässlichsten sind"
         correct: false
-      - en: "Remove all documentation"
-        de: "Jegliche Dokumentation abschaffen"
+      - en: "Remove all documentation, because written notes only add to the pressure and increase disputes"
+        de: "Jede Dokumentation abschaffen, weil schriftliche Notizen nur den Druck erhöhen und Streit verstärken"
         correct: false
     explanation:
       en: "Evidence from the whole period, shared criteria and calibration are practice insights that reduce, but do not remove, bias such as recency."
@@ -248,17 +248,17 @@ items:
       en: "You want to introduce a new tool that stores appraisal results. What is a sound first step?"
       de: "Du möchtest ein neues Tool einführen, das Beurteilungsergebnisse speichert. Was ist ein vernünftiger erster Schritt?"
     options:
-      - en: "Upload all records and decide on access later"
-        de: "Alle Unterlagen hochladen und den Zugriff später klären"
+      - en: "Upload all records right away and decide on access later, once the tool is running smoothly in daily use"
+        de: "Alle Datensätze sofort hochladen und den Zugriff später festlegen, sobald das Tool im Alltag reibungslos läuft"
         correct: false
-      - en: "Check with the data protection officer and your company rules on what is collected, who has access and how long it is kept"
-        de: "Mit den Datenschutzbeauftragten und euren Regeln klären, was erhoben wird, wer Zugriff hat und wie lange es aufbewahrt wird"
+      - en: "Check with the DPO and company rules what is collected, who has access and how long it is kept"
+        de: "Mit den Datenschutzbeauftragten und den betrieblichen Regeln klären, was erhoben wird, wer Zugriff hat und wie lange gespeichert wird"
         correct: true
-      - en: "Give every employee access to all records"
-        de: "Allen Beschäftigten Zugriff auf alle Unterlagen geben"
+      - en: "Give every employee access to all records, because transparency builds trust in the appraisal process"
+        de: "Allen Beschäftigten Zugriff auf alle Datensätze geben, weil Transparenz Vertrauen in den Beurteilungsprozess schafft"
         correct: false
-      - en: "Keep the tool secret from the works council"
-        de: "Das Tool vor dem Betriebsrat geheim halten"
+      - en: "Keep the tool secret from the works council until it has proved its value in a pilot with real data"
+        de: "Das Tool vor dem Betriebsrat geheim halten, bis es sich in einer Pilotphase mit echten Daten bewährt hat"
         correct: false
     explanation:
       en: "Appraisal records are personal data. Check with the data protection officer and the applicable rules, including the works council where relevant, before collecting and storing them."
@@ -272,17 +272,17 @@ items:
       en: "After an appraisal cycle, Team X gave everyone the same middle rating. What is the best response?"
       de: "Nach einem Beurteilungszyklus hat Team X allen dieselbe mittlere Bewertung gegeben. Was ist die beste Reaktion?"
     options:
-      - en: "Accuse the manager of dishonesty"
-        de: "Die Führungskraft der Unehrlichkeit bezichtigen"
+      - en: "Accuse the manager of dishonesty in front of the other managers, so that the problem is addressed openly"
+        de: "Der Führungskraft vor den anderen Führungskräften Unehrlichkeit vorwerfen, damit das Problem offen angesprochen wird"
         correct: false
-      - en: "Treat it as a reason to ask questions: discuss concrete examples against shared criteria and note what to improve next cycle"
-        de: "Es als Anlass zum Nachfragen sehen: konkrete Beispiele anhand gemeinsamer Kriterien besprechen und notieren, was im nächsten Zyklus verbessert wird"
+      - en: "Treat it as a reason to ask questions: discuss concrete examples against shared criteria and note what to improve"
+        de: "Als Anlass für Fragen nehmen: konkrete Beispiele anhand gemeinsamer Kriterien besprechen und Verbesserungen festhalten"
         correct: true
-      - en: "Ignore it; patterns never matter"
-        de: "Ignorieren; Muster spielen nie eine Rolle"
+      - en: "Ignore it, because patterns in a single team never matter for the quality of the overall appraisal process"
+        de: "Ignorieren, weil Muster in einem einzelnen Team für die Qualität des gesamten Beurteilungsprozesses nie eine Rolle spielen"
         correct: false
-      - en: "Compare with an invented industry average"
-        de: "Mit einem erfundenen Branchendurchschnitt vergleichen"
+      - en: "Compare with an invented industry average, and tell the manager that the team deviates from that figure"
+        de: "Mit einem erfundenen Branchendurchschnitt vergleichen und der Führungskraft sagen, dass das Team von dieser Zahl abweicht"
         correct: false
     explanation:
       en: "A pattern such as all-middle ratings (central tendency) is a prompt for questions, not proof of a mistake. Use evidence and shared criteria rather than invented benchmarks."

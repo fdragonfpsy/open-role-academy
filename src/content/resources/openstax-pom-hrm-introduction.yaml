@@ -1,0 +1,14 @@
+id: openstax-pom-hrm-introduction
+url: https://openstax.org/books/principles-management/pages/11-1-an-introduction-to-human-resource-management
+title: "Principles of Management, 11.1: An Introduction to Human Resource Management"
+provider: OpenStax
+language: en
+format: book
+minutes: 25
+license: CC-BY-NC-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+licenseVerifiedOn: 2026-11-17
+mode: link
+competencies: [recruitment-selection, personnel-administration, onboarding-offboarding]
+levels: [foundation]
+note: Book page states "This book uses the Creative Commons Attribution-NonCommercial-ShareAlike License" (NC → link only). Mainly US context; use for concepts, not German law.

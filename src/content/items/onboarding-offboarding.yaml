@@ -9,16 +9,16 @@ items:
       de: "Was beschreibt den Unterschied zwischen Onboarding und Offboarding am besten?"
     options:
       - en: "Onboarding supports people joining the company; offboarding is the designed process when someone leaves"
-        de: "Onboarding unterstützt Menschen beim Eintritt; Offboarding ist der gestaltete Prozess, wenn jemand das Unternehmen verlässt"
+        de: "Onboarding unterstützt Menschen beim Einstieg ins Unternehmen; Offboarding ist der gestaltete Prozess beim Ausscheiden"
         correct: true
-      - en: "Onboarding is only for managers; offboarding is only for interns"
-        de: "Onboarding gilt nur für Führungskräfte; Offboarding nur für Praktikant:innen"
+      - en: "Onboarding is only for managers joining the company; offboarding is only for interns finishing a placement"
+        de: "Onboarding gibt es nur für neue Führungskräfte; Offboarding nur für Praktikantinnen und Praktikanten am Ende ihres Einsatzes"
         correct: false
       - en: "They are the same process with two names"
         de: "Es ist derselbe Prozess mit zwei Namen"
         correct: false
-      - en: "Offboarding happens before the contract is signed"
-        de: "Offboarding findet vor Vertragsabschluss statt"
+      - en: "Offboarding happens before the contract is signed, as part of the candidate's decision to accept or decline"
+        de: "Offboarding findet vor der Vertragsunterzeichnung statt, als Teil der Entscheidung der Kandidatin oder des Kandidaten"
         correct: false
     explanation:
       en: "Onboarding covers integrating new employees; offboarding is the separation process when an employee leaves."
@@ -56,17 +56,17 @@ items:
       en: "What is a buddy in onboarding?"
       de: "Was ist ein Buddy im Onboarding?"
     options:
-      - en: "The person who decides on the newcomer's pay"
-        de: "Die Person, die über das Gehalt der neuen Person entscheidet"
+      - en: "The person who decides on the newcomer's pay and confirms the contract after the probation period"
+        de: "Die Person, die über das Gehalt der neuen Kraft entscheidet und den Vertrag nach der Probezeit bestätigt"
         correct: false
-      - en: "An external lawyer assigned to every newcomer"
-        de: "Ein:e externe:r Anwält:in für jede neue Person"
+      - en: "An external lawyer assigned to every newcomer to explain the contract and the employee's rights"
+        de: "Eine externe Anwältin oder ein externer Anwalt, die oder der jeder neuen Kraft zugeteilt wird, um Vertrag und Rechte zu erklären"
         correct: false
-      - en: "A colleague who answers everyday questions and explains unwritten rules, without being the line manager"
-        de: "Ein:e Kolleg:in, die oder der Alltagsfragen beantwortet und ungeschriebene Regeln erklärt, ohne Führungskraft zu sein"
+      - en: "A colleague who answers everyday questions and explains unwritten rules, but is not the line manager"
+        de: "Eine Kollegin oder ein Kollege, die oder der Alltagsfragen beantwortet und ungeschriebene Regeln erklärt, aber nicht die Führungskraft ist"
         correct: true
-      - en: "A person who assesses the newcomer's performance"
-        de: "Eine Person, die die Leistung der neuen Person beurteilt"
+      - en: "A person who assesses the newcomer's performance and reports the results regularly to the management"
+        de: "Eine Person, die die Leistung der neuen Kraft beurteilt und die Ergebnisse regelmäßig an die Leitung meldet"
         correct: false
     explanation:
       en: "A buddy supports integration with everyday answers. The manager stays responsible for tasks and assessment."
@@ -80,17 +80,17 @@ items:
       en: "A colleague is leaving. Which approach fits a respectful exit?"
       de: "Eine Kollegin oder ein Kollege verlässt das Unternehmen. Welches Vorgehen passt zu einem respektvollen Austritt?"
     options:
-      - en: "Cut off access without telling anyone and avoid contact"
-        de: "Zugänge ohne Information beenden und jeden Kontakt vermeiden"
+      - en: "Cut off access without telling anyone and avoid contact, so that the person cannot cause any trouble"
+        de: "Zugänge kappen, ohne jemanden zu informieren, und Kontakt vermeiden, damit die Person keinen Ärger machen kann"
         correct: false
-      - en: "Ask the person to hand over equipment informally to whoever is nearby"
-        de: "Die Person bitten, Geräte formlos irgendwem in der Nähe zu geben"
+      - en: "Ask the person to hand over equipment informally to whoever is nearby on the last day of work"
+        de: "Die Person bitten, am letzten Arbeitstag Geräte informell an die nächstbeste Person zu übergeben"
         correct: false
-      - en: "Skip any thanks to keep the process short"
-        de: "Jeden Dank weglassen, um den Prozess kurz zu halten"
+      - en: "Skip any thanks and farewell to keep the process short and avoid awkward moments for the team"
+        de: "Dank und Verabschiedung auslassen, um den Prozess kurz zu halten und unangenehme Momente fürs Team zu vermeiden"
         correct: false
-      - en: "Communicate who does what, return equipment and end access in an orderly way, and treat the person with dignity"
-        de: "Klar kommunizieren, wer was tut, Geräte und Zugänge geordnet zurücknehmen und die Person würdevoll behandeln"
+      - en: "Communicate who does what, return equipment, end access in an orderly way and treat the person with dignity"
+        de: "Klar kommunizieren, wer was tut, Geräte zurücknehmen, Zugänge geordnet beenden und die Person mit Würde behandeln"
         correct: true
     explanation:
       en: "The offboarding article recommends treating offboarding as a positive experience and acknowledging contributions, with orderly return of property and access removal."
@@ -128,17 +128,17 @@ items:
       en: "Three days before a start, the laptop and accounts are still not ready. What is the best coordination practice?"
       de: "Drei Tage vor dem Start sind Laptop und Konten noch nicht bereit. Was ist die beste Koordinationspraxis?"
     options:
-      - en: "Wait and see whether the newcomer complains on day one"
-        de: "Abwarten, ob sich die neue Person am ersten Tag beschwert"
+      - en: "Wait and see whether the newcomer complains on day one, then react to the specific problems that appear"
+        de: "Abwarten, ob sich die neue Kraft am ersten Tag beschwert, und dann auf die konkreten Probleme reagieren"
         correct: false
-      - en: "Keep one tracked list of who does what by when relative to the start date, and follow up with IT and the manager"
-        de: "Eine nachverfolgte Liste führen, wer was bis wann erledigt, bezogen auf das Startdatum, und bei IT und Führungskraft nachfassen"
+      - en: "Keep one tracked list of who does what by when and follow up with IT and the manager"
+        de: "Eine nachverfolgte Liste führen, wer was bis wann erledigt, und bei IT und Führungskraft nachfassen"
         correct: true
-      - en: "Give the newcomer a colleague's login to use meanwhile"
-        de: "Der neuen Person vorübergehend das Login einer Kollegin oder eines Kollegen geben"
+      - en: "Give the newcomer a colleague's login to use meanwhile, so that work can begin on the first day"
+        de: "Der neuen Kraft vorübergehend den Zugang einer Kollegin oder eines Kollegen geben, damit am ersten Tag gearbeitet werden kann"
         correct: false
-      - en: "Cancel the start date without informing anyone"
-        de: "Den Starttermin absagen, ohne jemanden zu informieren"
+      - en: "Cancel the start date without informing anyone, and rebook it once the equipment has arrived"
+        de: "Den Starttermin absagen, ohne jemanden zu informieren, und ihn neu ansetzen, sobald die Geräte eingetroffen sind"
         correct: false
     explanation:
       en: "A single tracked list with owners and dates makes gaps visible early. Sharing logins is never an acceptable shortcut for access."
@@ -152,17 +152,17 @@ items:
       en: "Which set best describes the practical parts of an exit process?"
       de: "Welche Zusammenstellung beschreibt die praktischen Teile eines Austrittsprozesses am besten?"
     options:
-      - en: "Only a farewell party"
-        de: "Nur eine Abschiedsfeier"
+      - en: "Only a farewell party, because the personal goodbye is what the team and the leaver remember most"
+        de: "Nur eine Abschiedsfeier, weil der persönliche Abschied dem Team und der scheidenden Person am meisten im Gedächtnis bleibt"
         correct: false
-      - en: "Only deleting the person's emails immediately"
-        de: "Nur das sofortige Löschen der E-Mails der Person"
+      - en: "Only deleting the person's emails and files immediately, so that no data remains in the company"
+        de: "Nur das sofortige Löschen der E-Mails und Dateien der Person, damit keine Daten im Unternehmen verbleiben"
         correct: false
-      - en: "Handover of open tasks, ending access, return of equipment and handling of the reference request according to rules"
-        de: "Übergabe offener Aufgaben, Entzug der Zugänge, Rückgabe der Geräte und Umgang mit der Zeugnisanfrage nach den Regeln"
+      - en: "Handover of open tasks, ending access, return of equipment and handling of the reference request per the rules"
+        de: "Übergabe offener Aufgaben, Beenden der Zugänge, Rückgabe der Geräte und Umgang mit der Zeugnisanfrage nach den Regeln"
         correct: true
-      - en: "Only a signature on an empty form"
-        de: "Nur eine Unterschrift auf einem leeren Formular"
+      - en: "Only a signature on a form that confirms the end of employment, with no further steps or follow-up"
+        de: "Nur eine Unterschrift auf einem Formular, das das Ende der Beschäftigung bestätigt, ohne weitere Schritte oder Nachverfolgung"
         correct: false
     explanation:
       en: "The offboarding articles list knowledge handover, return of property, ending access and administrative paperwork as typical parts."
@@ -201,16 +201,16 @@ items:
       de: "Notizen aus Austrittsgesprächen eines kleinen Teams lassen eine Person erkennen. Was ist der beste Umgang?"
     options:
       - en: "Summarise themes in aggregated form, restrict access to the notes and check retention with the DPO"
-        de: "Themen zusammengefasst darstellen, den Zugriff auf die Notizen beschränken und die Aufbewahrung mit der oder dem DSB klären"
+        de: "Themen aggregiert zusammenfassen, den Zugriff auf die Notizen beschränken und die Aufbewahrung mit den Datenschutzbeauftragten klären"
         correct: true
-      - en: "Send the full notes with names to all managers"
-        de: "Die vollständigen Notizen mit Namen an alle Führungskräfte senden"
+      - en: "Send the full notes with names to all managers, so that each manager can act on the feedback directly"
+        de: "Die vollständigen Notizen mit Namen an alle Führungskräfte senden, damit jede Führungskraft direkt handeln kann"
         correct: false
-      - en: "Publish quotes on the intranet to show openness"
-        de: "Zitate im Intranet veröffentlichen, um Offenheit zu zeigen"
+      - en: "Publish selected quotes on the intranet to show openness and encourage other employees to share feedback"
+        de: "Ausgewählte Zitate im Intranet veröffentlichen, um Offenheit zu zeigen und andere zu Rückmeldungen zu ermutigen"
         correct: false
-      - en: "Keep them in an open shared folder for convenience"
-        de: "Sie der Einfachheit halber in einem offenen Ordner ablegen"
+      - en: "Keep them in an open shared folder for convenience, so that interested managers can read them at any time"
+        de: "Sie aus Bequemlichkeit in einem offenen Ordner ablegen, damit interessierte Führungskräfte sie jederzeit lesen können"
         correct: false
     explanation:
       en: "Employee data should only be processed as far as necessary. Aggregation and restricted access protect people; the DPO helps with retention questions."
@@ -248,17 +248,17 @@ items:
       en: "A conflict-driven exit is planned. What is the right role for HR?"
       de: "Ein konfliktbedingter Austritt ist geplant. Was ist die richtige Rolle der HR?"
     options:
-      - en: "Decide the legal route alone to be quick"
-        de: "Den rechtlichen Weg allein entscheiden, um schnell zu sein"
+      - en: "Decide the legal route alone to be quick, because involving others would only delay the process further"
+        de: "Den rechtlichen Weg allein entscheiden, um schnell zu sein, da das Einbeziehen anderer den Prozess nur verzögern würde"
         correct: false
-      - en: "Promise the person a particular outcome"
-        de: "Der Person ein bestimmtes Ergebnis zusagen"
+      - en: "Promise the person a particular outcome early on, to calm the situation and reach agreement faster"
+        de: "Der Person früh ein bestimmtes Ergebnis zusagen, um die Lage zu beruhigen und schneller zu einer Einigung zu kommen"
         correct: false
-      - en: "Stay factual, document facts neutrally, involve the HR lead, legal counsel and, where rules require, the works council, and keep the person's dignity"
-        de: "Sachlich bleiben, Fakten neutral dokumentieren, HR-Leitung, rechtliche Beratung und, wo Regeln es verlangen, den Betriebsrat einbeziehen und die Würde der Person wahren"
+      - en: "Stay factual, document neutrally, involve the HR lead, counsel and, where required, the works council"
+        de: "Sachlich bleiben, neutral dokumentieren, HR-Leitung, Rechtsberatung und, wo vorgeschrieben, den Betriebsrat einbinden"
         correct: true
-      - en: "Avoid the works council so the case stays secret"
-        de: "Den Betriebsrat meiden, damit der Fall geheim bleibt"
+      - en: "Avoid the works council so the case stays secret and the person is protected from gossip in the company"
+        de: "Den Betriebsrat meiden, damit der Fall geheim bleibt und die Person vor Gerede im Unternehmen geschützt ist"
         correct: false
     explanation:
       en: "HR does not give legal advice. The Betriebsrat article describes participation in personnel matters such as dismissals; what applies depends on rules and the case."
@@ -272,17 +272,17 @@ items:
       en: "A key person leaves. Which plan for knowledge transfer is best?"
       de: "Eine Schlüsselperson verlässt das Unternehmen. Welcher Plan für den Wissenstransfer ist am besten?"
     options:
-      - en: "Ask for a one-page summary on the last day only"
-        de: "Erst am letzten Tag eine einseitige Zusammenfassung verlangen"
+      - en: "Ask for a one-page summary on the last day only, when the person has the best overview of everything"
+        de: "Nur am letzten Tag um eine einseitige Zusammenfassung bitten, wenn die Person den besten Überblick über alles hat"
         correct: false
-      - en: "Rely on the leaver's memory after they have left"
-        de: "Sich auf das Gedächtnis der Person nach ihrem Weggang verlassen"
+      - en: "Rely on the leaver's memory after they have left, by calling them whenever a question comes up"
+        de: "Sich auf das Gedächtnis der ausgeschiedenen Person verlassen und sie anrufen, sobald eine Frage auftaucht"
         correct: false
-      - en: "Assume all knowledge can be written down in one document"
-        de: "Annehmen, dass sich alles Wissen in einem Dokument festhalten lässt"
+      - en: "Assume all knowledge can be written down in a single document, which the successor then simply reads"
+        de: "Annehmen, dass sich alles Wissen in einem einzigen Dokument festhalten lässt, das die Nachfolge dann einfach liest"
         correct: false
-      - en: "Document procedures, contacts and file locations, and plan shadowing or joint work for knowledge learned by doing, with a named recipient"
-        de: "Abläufe, Kontakte und Ablageorte dokumentieren und für Erfahrungswissen Mitlaufen oder gemeinsame Arbeit mit benannter Nachfolge einplanen"
+      - en: "Document procedures, contacts and file locations, and plan shadowing for knowledge learned by doing"
+        de: "Verfahren, Kontakte und Ablageorte dokumentieren und für Erfahrungswissen eine Hospitation einplanen"
         correct: true
     explanation:
       en: "The offboarding article suggests ongoing documentation; the knowledge-transfer article distinguishes facts from practical skills, which need practice and time to pass on."

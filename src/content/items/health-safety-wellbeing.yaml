@@ -9,16 +9,16 @@ items:
       de: "Was beschreibt den Umfang des Arbeitsschutzes am besten?"
     options:
       - en: "Safety, health and welfare of people at work, including work design and mental strain"
-        de: "Sicherheit, Gesundheit und Wohlergehen bei der Arbeit, einschließlich Arbeitsgestaltung und psychischer Belastung"
+        de: "Sicherheit, Gesundheit und Wohlbefinden der Menschen bei der Arbeit, einschließlich Arbeitsgestaltung und psychischer Belastung"
         correct: true
-      - en: "Only wearing protective helmets"
-        de: "Ausschließlich das Tragen von Schutzhelmen"
+      - en: "Only wearing protective helmets and other personal equipment on construction sites and in workshops"
+        de: "Nur das Tragen von Schutzhelmen und anderer persönlicher Ausrüstung auf Baustellen und in Werkstätten"
         correct: false
-      - en: "Only company sports offers"
-        de: "Ausschließlich betriebliche Sportangebote"
+      - en: "Only company sports offers and health days that employees can book during their free time"
+        de: "Nur betriebliche Sportangebote und Gesundheitstage, die Beschäftigte in ihrer Freizeit buchen können"
         correct: false
-      - en: "Only fire exit signs"
-        de: "Ausschließlich Fluchtwegschilder"
+      - en: "Only fire exit signs, extinguishers and the yearly evacuation drill that is held in the building"
+        de: "Nur Fluchtwegschilder, Feuerlöscher und die jährliche Räumungsübung im Gebäude"
         correct: false
     explanation:
       en: "It covers prevention of accidents and health damage in a broad sense, including how work is organised and psychological strain."
@@ -32,17 +32,17 @@ items:
       en: "What is a hazard?"
       de: "Was ist eine Gefährdung?"
     options:
-      - en: "A report form"
-        de: "Ein Meldeformular"
+      - en: "A report form that employees fill in when they want to tell the safety officer about an incident"
+        de: "Ein Meldeformular, das Beschäftigte ausfüllen, wenn sie der Sicherheitsfachkraft einen Vorfall mitteilen wollen"
         correct: false
       - en: "Something that can cause harm, such as a loose cable across a walkway"
-        de: "Etwas, das Schaden verursachen kann, etwa ein loses Kabel im Gang"
+        de: "Etwas, das Schaden verursachen kann, etwa ein loses Kabel quer über einem Gehweg"
         correct: true
-      - en: "The exact chance that harm happens"
-        de: "Die genaue Wahrscheinlichkeit, dass ein Schaden eintritt"
+      - en: "The exact chance that harm happens, which is expressed as a number between zero and one hundred percent"
+        de: "Die genaue Wahrscheinlichkeit, dass ein Schaden eintritt, ausgedrückt als Zahl zwischen null und hundert Prozent"
         correct: false
-      - en: "A completed safety training"
-        de: "Eine abgeschlossene Sicherheitsunterweisung"
+      - en: "A completed safety training that an employee has passed and that is recorded in the learning system"
+        de: "Eine abgeschlossene Sicherheitsschulung, die eine beschäftigte Person bestanden hat und die im Lernsystem erfasst ist"
         correct: false
     explanation:
       en: "A hazard is a potential source of harm; a risk adds likelihood and severity."
@@ -56,17 +56,17 @@ items:
       en: "A colleague tells you a power strip gets hot. What is the best first step?"
       de: "Eine Kollegin sagt dir, dass eine Steckdosenleiste heiß wird. Was ist der beste erste Schritt?"
     options:
-      - en: "Decide alone that it is harmless"
-        de: "Allein entscheiden, dass es harmlos ist"
+      - en: "Decide alone that it is harmless, since power strips often get warm when several devices are plugged in"
+        de: "Allein entscheiden, dass es harmlos ist, da Steckdosenleisten oft warm werden, wenn mehrere Geräte angeschlossen sind"
         correct: false
-      - en: "Discuss it only in the team chat"
-        de: "Es nur im Team-Chat besprechen"
+      - en: "Discuss it only in the team chat and wait for someone with electrical knowledge to answer there"
+        de: "Es nur im Team-Chat besprechen und warten, bis dort jemand mit elektrotechnischem Wissen antwortet"
         correct: false
       - en: "Note the facts and report it the same day to the responsible person"
-        de: "Fakten notieren und noch am selben Tag der zuständigen Person melden"
+        de: "Die Fakten notieren und es noch am selben Tag der zuständigen Person melden"
         correct: true
-      - en: "Wait to see if it happens again"
-        de: "Abwarten, ob es noch einmal passiert"
+      - en: "Wait to see if it happens again before bothering anyone, since a single event may be a coincidence"
+        de: "Abwarten, ob es noch einmal passiert, bevor jemand belästigt wird, da ein einzelnes Ereignis Zufall sein kann"
         correct: false
     explanation:
       en: "Prompt reporting to the responsible person lets qualified people assess and act; you should not judge danger alone."
@@ -80,17 +80,17 @@ items:
       en: "Which is an example of a psychological hazard at work?"
       de: "Was ist ein Beispiel für eine psychische Gefährdung bei der Arbeit?"
     options:
-      - en: "A well-lit corridor"
-        de: "Ein gut beleuchteter Flur"
+      - en: "A well-lit corridor with enough daylight and no obstacles on the way to the meeting rooms"
+        de: "Ein gut beleuchteter Flur mit ausreichend Tageslicht und ohne Hindernisse auf dem Weg zu den Besprechungsräumen"
         correct: false
-      - en: "An adjustable chair"
-        de: "Ein verstellbarer Stuhl"
+      - en: "An adjustable chair that the employee can set to the right height for the desk and the screen"
+        de: "Ein verstellbarer Stuhl, den die beschäftigte Person auf die richtige Höhe für Tisch und Bildschirm einstellen kann"
         correct: false
-      - en: "A clearly marked fire exit"
-        de: "Ein klar markierter Fluchtweg"
+      - en: "A clearly marked fire exit that is kept free and can be reached quickly from every workplace"
+        de: "Ein deutlich gekennzeichneter Notausgang, der freigehalten wird und von jedem Arbeitsplatz schnell erreichbar ist"
         correct: false
       - en: "Very high demands combined with little control and little support"
-        de: "Sehr hohe Anforderungen bei wenig Handlungsspielraum und wenig Unterstützung"
+        de: "Sehr hohe Anforderungen bei geringem Handlungsspielraum und geringer Unterstützung"
         correct: true
     explanation:
       en: "Demands, control and support are typical stress factors at work."
@@ -176,17 +176,17 @@ items:
       en: "What is the right stance toward a structured return-to-work process after long illness?"
       de: "Welche Haltung passt zu einem strukturierten Wiedereingliederungsprozess nach langer Krankheit?"
     options:
-      - en: "Demand the full diagnosis from the employee"
-        de: "Die vollständige Diagnose von den Beschäftigten verlangen"
+      - en: "Demand the full diagnosis from the employee, so that HR can plan the adjustments on a medical basis"
+        de: "Die vollständige Diagnose von der beschäftigten Person verlangen, damit HR die Anpassungen medizinisch fundiert planen kann"
         correct: false
-      - en: "Share the case openly in the team"
-        de: "Den Fall offen im Team besprechen"
+      - en: "Share the case openly in the team, so that colleagues understand why tasks are being redistributed"
+        de: "Den Fall offen im Team teilen, damit Kolleginnen und Kollegen verstehen, warum Aufgaben neu verteilt werden"
         correct: false
-      - en: "Use it to prepare a dismissal"
-        de: "Ihn nutzen, um eine Kündigung vorzubereiten"
+      - en: "Use it to prepare a dismissal, since the documented absences show whether the person can still work"
+        de: "Es zur Vorbereitung einer Kündigung nutzen, da die dokumentierten Fehlzeiten zeigen, ob die Person noch arbeiten kann"
         correct: false
       - en: "Offer it respectfully, keep medical details with the employee and aim for workable adjustments"
-        de: "Respektvoll anbieten, medizinische Details bei den Beschäftigten lassen und tragfähige Anpassungen anstreben"
+        de: "Respektvoll anbieten, medizinische Details bei der beschäftigten Person belassen und praktikable Anpassungen anstreben"
         correct: true
     explanation:
       en: "Such a process supports return, is participatory and treats health data as sensitive. Check current law for details."
@@ -203,14 +203,14 @@ items:
       - en: "Change the work design, for example workload or staffing, and use programmes only as a supplement"
         de: "Die Arbeitsgestaltung ändern, etwa Arbeitsmenge oder Besetzung, und Programme nur ergänzend nutzen"
         correct: true
-      - en: "Offer a yoga class and stop there"
-        de: "Einen Yogakurs anbieten und es dabei belassen"
+      - en: "Offer a yoga class and a stress workshop and stop there, as these are visible and popular with staff"
+        de: "Einen Yogakurs und einen Stress-Workshop anbieten und es dabei belassen, da sie sichtbar und bei Beschäftigten beliebt sind"
         correct: false
-      - en: "Tell people to manage their stress"
-        de: "Den Leuten sagen, sie sollen ihren Stress managen"
+      - en: "Tell people to manage their stress better through breaks, sleep and time management on their own"
+        de: "Den Leuten sagen, sie sollten ihren Stress durch Pausen, Schlaf und Zeitmanagement selbst besser bewältigen"
         correct: false
-      - en: "Ignore it until absence rises"
-        de: "Es ignorieren, bis die Fehlzeiten steigen"
+      - en: "Ignore it until absence rises, because only then is there clear evidence that action is really needed"
+        de: "Es ignorieren, bis die Fehlzeiten steigen, weil erst dann klare Belege dafür vorliegen, dass Handeln nötig ist"
         correct: false
     explanation:
       en: "Wellbeing offers help but do not offset harmful conditions; changing the work is more effective."
@@ -248,17 +248,17 @@ items:
       en: "An employee seems severely distressed and mentions possible burnout. What is appropriate?"
       de: "Eine Mitarbeiterin wirkt stark belastet und erwähnt möglichen Burnout. Was ist angemessen?"
     options:
-      - en: "Tell the team so they can help"
-        de: "Das Team informieren, damit es hilft"
+      - en: "Tell the team so they can help and take some of the workload off the person in the coming weeks"
+        de: "Dem Team Bescheid geben, damit es helfen und der Person in den nächsten Wochen Arbeit abnehmen kann"
         correct: false
-      - en: "Promise to keep it secret from everyone in all cases"
-        de: "Zusagen, es unter allen Umständen vor allen geheim zu halten"
+      - en: "Promise to keep it secret from everyone in all cases, even if there is an acute danger to the person"
+        de: "Zusagen, es in jedem Fall vor allen geheim zu halten, auch bei akuter Gefahr für die Person"
         correct: false
       - en: "Listen neutrally, point to professional support and agree on a follow-up without diagnosing"
-        de: "Neutral zuhören, auf professionelle Hilfe verweisen und ein Nachgespräch vereinbaren, ohne zu diagnostizieren"
+        de: "Neutral zuhören, auf professionelle Hilfe hinweisen und ein Folgegespräch vereinbaren, ohne zu diagnostizieren"
         correct: true
-      - en: "Give a diagnosis yourself"
-        de: "Selbst eine Diagnose stellen"
+      - en: "Give a diagnosis yourself based on your experience, so that the person knows quickly what the problem is"
+        de: "Selbst eine Diagnose stellen, gestützt auf die eigene Erfahrung, damit die Person schnell weiß, was das Problem ist"
         correct: false
     explanation:
       en: "HR is not a medical service: stay neutral, signpost help, follow up and handle sensitive data carefully."
@@ -272,14 +272,14 @@ items:
       en: "What best marks a mature prevention approach?"
       de: "Was kennzeichnet einen reifen Präventionsansatz am besten?"
     options:
-      - en: "Running separate one-off campaigns without follow-up"
-        de: "Einzelne Aktionen ohne Nachverfolgung durchführen"
+      - en: "Running separate one-off campaigns without follow-up, so that each topic gets its own visible launch"
+        de: "Getrennte einmalige Kampagnen ohne Nachverfolgung durchführen, damit jedes Thema einen eigenen sichtbaren Start erhält"
         correct: false
-      - en: "Reacting only after accidents"
-        de: "Nur nach Unfällen reagieren"
+      - en: "Reacting only after accidents, when the causes are clear and the need for action is easy to justify"
+        de: "Nur nach Unfällen reagieren, wenn die Ursachen klar sind und die Notwendigkeit zu handeln leicht zu begründen ist"
         correct: false
-      - en: "Leaving all topics to individual employees"
-        de: "Alle Themen den einzelnen Beschäftigten überlassen"
+      - en: "Leaving all topics to individual employees, who know their own situation better than any central unit"
+        de: "Alle Themen den einzelnen Beschäftigten überlassen, die ihre eigene Situation besser kennen als jede zentrale Stelle"
         correct: false
       - en: "Linking risk assessment, work design, support offers and return-to-work with clear roles"
         de: "Gefährdungsbeurteilung, Arbeitsgestaltung, Unterstützungsangebote und Wiedereingliederung mit klaren Rollen verbinden"

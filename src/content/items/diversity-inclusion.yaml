@@ -8,17 +8,17 @@ items:
       en: "Which statement best distinguishes diversity from inclusion?"
       de: "Welche Aussage unterscheidet Vielfalt und Inklusion am besten?"
     options:
-      - en: "Diversity describes who is in the organisation; inclusion describes whether people can take part and be heard"
-        de: "Vielfalt beschreibt, wer in der Organisation ist; Inklusion, ob Menschen mitwirken und gehört werden können"
+      - en: "Diversity is who is in the organisation; inclusion is whether people can take part and be heard"
+        de: "Vielfalt ist, wer in der Organisation ist; Inklusion ist, ob Menschen teilhaben und gehört werden können"
         correct: true
-      - en: "They mean exactly the same thing"
-        de: "Beides bedeutet genau dasselbe"
+      - en: "They mean exactly the same thing, so a company that counts diverse staff is automatically inclusive"
+        de: "Sie bedeuten genau dasselbe, daher ist ein Unternehmen, das vielfältige Beschäftigte zählt, automatisch inklusiv"
         correct: false
-      - en: "Diversity is about pay, inclusion is about holidays"
-        de: "Vielfalt betrifft die Vergütung, Inklusion den Urlaub"
+      - en: "Diversity is about pay and grading, while inclusion is only about holidays and working time models"
+        de: "Vielfalt betrifft Entgelt und Eingruppierung, Inklusion nur Urlaub und Arbeitszeitmodelle"
         correct: false
-      - en: "Inclusion is only about hiring more people"
-        de: "Inklusion bedeutet nur, mehr Personen einzustellen"
+      - en: "Inclusion is only about hiring more people from underrepresented groups, with no link to daily work"
+        de: "Inklusion bedeutet nur, mehr Menschen aus unterrepräsentierten Gruppen einzustellen, ohne Bezug zum Arbeitsalltag"
         correct: false
     explanation:
       en: "A diverse workforce does not automatically feel included; inclusion is about participation and voice."
@@ -32,17 +32,17 @@ items:
       en: "In the German context, which grounds does the AGG generally address?"
       de: "Welche Gründe adressiert das AGG im deutschen Kontext allgemein?"
     options:
-      - en: "Disadvantage based on, for example, sex, age, disability, religion or belief, ethnic origin and sexual identity"
-        de: "Benachteiligung etwa wegen Geschlecht, Alter, Behinderung, Religion oder Weltanschauung, ethnischer Herkunft und sexueller Identität"
+      - en: "Disadvantage based on, for example, sex, age, disability, religion, ethnic origin and sexual identity"
+        de: "Benachteiligung etwa wegen Geschlecht, Alter, Behinderung, Religion, ethnischer Herkunft und sexueller Identität"
         correct: true
-      - en: "Only disadvantage because of the employee's salary"
-        de: "Nur Benachteiligung wegen der Höhe des Gehalts"
+      - en: "Only disadvantage because of the employee's salary level, compared with colleagues who do similar work"
+        de: "Nur Benachteiligung wegen der Gehaltshöhe im Vergleich zu Kolleginnen und Kollegen mit ähnlicher Tätigkeit"
         correct: false
-      - en: "Only disadvantage because of the length of service"
-        de: "Nur Benachteiligung wegen der Dauer der Betriebszugehörigkeit"
+      - en: "Only disadvantage because of the length of service, so that long-serving staff are not treated worse"
+        de: "Nur Benachteiligung wegen der Betriebszugehörigkeit, damit langjährig Beschäftigte nicht schlechter behandelt werden"
         correct: false
-      - en: "Only disagreements about working hours"
-        de: "Nur Meinungsverschiedenheiten über Arbeitszeiten"
+      - en: "Only disagreements about working hours and shift plans between employees and their direct managers"
+        de: "Nur Meinungsverschiedenheiten über Arbeitszeiten und Schichtpläne zwischen Beschäftigten und ihren direkten Führungskräften"
         correct: false
     explanation:
       en: "The AGG aims to prevent and remove disadvantage on these kinds of grounds. Details and remedies are matters for current law and legal counsel."
@@ -56,17 +56,17 @@ items:
       en: "What is an unconscious (implicit) bias?"
       de: "Was ist eine unbewusste (implizite) Verzerrung?"
     options:
-      - en: "A learned association that can influence behaviour even if the person consciously rejects stereotypes"
-        de: "Eine erlernte Assoziation, die Verhalten beeinflussen kann, auch wenn die Person Stereotype bewusst ablehnt"
+      - en: "A learned association that can influence behaviour even when stereotypes are rejected consciously"
+        de: "Eine erlernte Assoziation, die Verhalten auch dann beeinflussen kann, wenn Stereotype bewusst abgelehnt werden"
         correct: true
-      - en: "A deliberate decision to treat people unfairly"
-        de: "Eine bewusste Entscheidung, Menschen unfair zu behandeln"
+      - en: "A deliberate decision to treat people unfairly, which the person is fully aware of and can explain"
+        de: "Eine bewusste Entscheidung, Menschen unfair zu behandeln, der sich die Person voll bewusst ist und die sie erklären kann"
         correct: false
-      - en: "A written company policy"
-        de: "Eine schriftliche Unternehmensrichtlinie"
+      - en: "A written company policy that sets out which groups of people should be preferred in decisions"
+        de: "Eine schriftliche Unternehmensrichtlinie, die festlegt, welche Personengruppen bei Entscheidungen bevorzugt werden"
         correct: false
-      - en: "A mistake that only happens in large companies"
-        de: "Ein Fehler, der nur in großen Unternehmen passiert"
+      - en: "A mistake that only happens in large companies with many departments and long decision chains"
+        de: "Ein Fehler, der nur in großen Unternehmen mit vielen Abteilungen und langen Entscheidungswegen vorkommt"
         correct: false
     explanation:
       en: "Implicit biases operate without conscious intention, which is why structure in processes helps more than good intentions alone."
@@ -81,16 +81,16 @@ items:
       de: "Eine Führungskraft will eine Kandidatin wegen einer Annahme über ihre Familienplanung ablehnen. Was ist der beste erste Schritt für HR?"
     options:
       - en: "Point out that decisions must rest on job-related criteria and involve legal counsel if needed"
-        de: "Darauf hinweisen, dass Entscheidungen auf berufsbezogenen Kriterien beruhen müssen, und bei Bedarf die Rechtsberatung einbeziehen"
+        de: "Darauf hinweisen, dass Entscheidungen auf stellenbezogenen Kriterien beruhen müssen, und bei Bedarf Rechtsberatung einbeziehen"
         correct: true
-      - en: "Agree quietly to avoid conflict"
-        de: "Stillschweigend zustimmen, um Konflikte zu vermeiden"
+      - en: "Agree quietly to avoid conflict, since the manager carries the responsibility for the final decision"
+        de: "Stillschweigend zustimmen, um Konflikte zu vermeiden, da die Führungskraft die Verantwortung für die Entscheidung trägt"
         correct: false
-      - en: "Ask the candidate about her family plans directly"
-        de: "Die Kandidatin direkt nach ihrer Familienplanung fragen"
+      - en: "Ask the candidate about her family plans directly, so that the assumption can be checked before deciding"
+        de: "Die Bewerberin direkt nach ihrer Familienplanung fragen, damit die Annahme vor der Entscheidung überprüft werden kann"
         correct: false
-      - en: "Ignore it because it is only an opinion"
-        de: "Es ignorieren, da es nur eine Meinung ist"
+      - en: "Ignore it because it is only an opinion and the hiring manager has not yet taken any decision"
+        de: "Es ignorieren, weil es nur eine Meinung ist und die Führungskraft noch keine Entscheidung getroffen hat"
         correct: false
     explanation:
       en: "Assumptions about protected characteristics are not job-related. HR keeps the focus on agreed criteria and escalates legal questions."
@@ -105,16 +105,16 @@ items:
       de: "Welche Änderung verringert den Raum für Verzerrungen in Interviews am meisten?"
     options:
       - en: "Same core questions, criteria set in advance and independent scoring"
-        de: "Dieselben Kernfragen, vorab festgelegte Kriterien und unabhängige Bewertung"
+        de: "Gleiche Kernfragen, vorab festgelegte Kriterien und unabhängige Bewertung"
         correct: true
-      - en: "Choosing questions spontaneously for each candidate"
-        de: "Fragen für jede Person spontan wählen"
+      - en: "Choosing questions spontaneously for each candidate, so that the conversation feels natural and relaxed"
+        de: "Fragen für jede Person spontan wählen, damit das Gespräch natürlich und entspannt wirkt"
         correct: false
-      - en: "Letting the most senior person decide first"
-        de: "Die ranghöchste Person zuerst entscheiden lassen"
+      - en: "Letting the most senior person decide first, so that the panel can follow an experienced judgement"
+        de: "Die ranghöchste Person zuerst entscheiden lassen, damit das Gremium einer erfahrenen Einschätzung folgen kann"
         correct: false
-      - en: "Relying on first impressions"
-        de: "Sich auf den ersten Eindruck verlassen"
+      - en: "Relying on first impressions in the opening minutes, which experienced interviewers can read reliably"
+        de: "Sich auf den ersten Eindruck in den ersten Minuten verlassen, den erfahrene Interviewende zuverlässig deuten können"
         correct: false
     explanation:
       en: "Structured interviews make candidates comparable and limit the effect of impressions and associations."
@@ -128,17 +128,17 @@ items:
       en: "What does accessibility, as opposed to general usability, focus on?"
       de: "Worauf zielt Barrierefreiheit im Unterschied zu allgemeiner Gebrauchstauglichkeit?"
     options:
-      - en: "That disabled people can use products, services and environments, directly or with assistive technology"
-        de: "Dass Menschen mit Behinderung Produkte, Dienste und Umgebungen direkt oder mit Hilfsmitteln nutzen können"
+      - en: "That disabled people can use products and services, directly or with assistive technology"
+        de: "Dass Menschen mit Behinderungen Produkte und Dienste direkt oder mit Hilfstechnik nutzen können"
         correct: true
-      - en: "That a product is attractive"
-        de: "Dass ein Produkt attraktiv ist"
+      - en: "That a product is attractive and modern, so that it appeals to as many people as possible visually"
+        de: "Dass ein Produkt attraktiv und modern ist, damit es optisch möglichst viele Menschen anspricht"
         correct: false
-      - en: "That a product is cheap"
-        de: "Dass ein Produkt günstig ist"
+      - en: "That a product is cheap enough for people on low incomes, so that cost is no barrier to its use"
+        de: "Dass ein Produkt günstig genug für Menschen mit geringem Einkommen ist, damit Kosten keine Hürde für die Nutzung sind"
         correct: false
-      - en: "That a product is only available in one language"
-        de: "Dass ein Produkt nur in einer Sprache verfügbar ist"
+      - en: "That a product is only available in one language, so that the instructions stay simple and consistent"
+        de: "Dass ein Produkt nur in einer Sprache verfügbar ist, damit die Anleitungen einfach und einheitlich bleiben"
         correct: false
     explanation:
       en: "Accessibility ensures barrier-free use, including with assistive technology such as screen readers."
@@ -177,16 +177,16 @@ items:
       de: "Bewerbende einer Gruppe scheiden wiederholt im selben Auswahlschritt aus. Was sollte HR zuerst tun?"
     options:
       - en: "Review that step for barriers or bias, using aggregated data"
-        de: "Diesen Schritt mit aggregierten Daten auf Hürden oder Verzerrungen prüfen"
+        de: "Diesen Schritt auf Hürden oder Verzerrung prüfen und dabei aggregierte Daten nutzen"
         correct: true
-      - en: "Assume the applicants are less qualified"
-        de: "Annehmen, dass die Bewerbenden weniger qualifiziert sind"
+      - en: "Assume the applicants are less qualified, since they did not manage to pass the selection step"
+        de: "Annehmen, dass die Bewerbenden weniger qualifiziert sind, da sie den Auswahlschritt nicht bestanden haben"
         correct: false
-      - en: "Remove the step silently without checking why"
-        de: "Den Schritt kommentarlos streichen, ohne die Ursache zu prüfen"
+      - en: "Remove the step silently without checking why, so that fewer applicants drop out in the future"
+        de: "Den Schritt still entfernen, ohne die Gründe zu prüfen, damit künftig weniger Bewerbende abspringen"
         correct: false
-      - en: "Publish the names of those who dropped out"
-        de: "Die Namen der Ausgeschiedenen veröffentlichen"
+      - en: "Publish the names of those who dropped out, so that the hiring managers can contact them directly"
+        de: "Die Namen der Abgesprungenen veröffentlichen, damit die Führungskräfte sie direkt kontaktieren können"
         correct: false
     explanation:
       en: "A pattern is a question: check whether the step contains barriers or bias, and protect individuals by using aggregated data."
@@ -200,17 +200,17 @@ items:
       en: "Why can equal rules still lead to unequal opportunities?"
       de: "Warum können gleiche Regeln dennoch zu ungleichen Chancen führen?"
     options:
-      - en: "Because people start from different positions and are not equally able to use the same opportunity"
-        de: "Weil Menschen von unterschiedlichen Ausgangslagen starten und dieselbe Gelegenheit nicht gleich gut nutzen können"
+      - en: "Because people start from different positions and cannot all use the same opportunity equally"
+        de: "Weil Menschen von unterschiedlichen Ausgangslagen starten und dieselbe Chance nicht gleich gut nutzen können"
         correct: true
-      - en: "Because rules never matter"
-        de: "Weil Regeln nie eine Rolle spielen"
+      - en: "Because rules never matter for outcomes, which depend only on individual effort and talent"
+        de: "Weil Regeln für Ergebnisse nie eine Rolle spielen, die nur von individuellem Einsatz und Talent abhängen"
         correct: false
-      - en: "Because everyone gets the same outcome"
-        de: "Weil alle dasselbe Ergebnis erhalten"
+      - en: "Because everyone gets the same outcome whatever they do, which removes the incentive to perform"
+        de: "Weil alle unabhängig von ihrem Tun dasselbe Ergebnis erhalten, was den Leistungsanreiz beseitigt"
         correct: false
-      - en: "Because unequal treatment is always intended"
-        de: "Weil Ungleichbehandlung immer beabsichtigt ist"
+      - en: "Because unequal treatment is always intended by those who write the rules and apply them in practice"
+        de: "Weil ungleiche Behandlung immer von denen beabsichtigt ist, die die Regeln schreiben und in der Praxis anwenden"
         correct: false
     explanation:
       en: "This is why strategies look at outcomes and at support that gives fair chances, not only at identical rules."
