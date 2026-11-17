@@ -1,5 +1,25 @@
 # Status
 
+## 2026-11-17 — Phase 4: Marketing content batch 2 (brand-messaging, content-marketing-copywriting, digital-channels-seo-sem)
+
+**Done**
+- 18 unit files (9 en + 9 de, `status: ai-draft`): the three competencies at foundation, practitioner and advanced (all targets require advanced). Original text, worked example labelled as invented illustration, key takeaways, `sources[]`. Own working methods (message hierarchy, funnel mapping, intent types, "remove the brand name" test, claims register) are labelled as such in the text. SEO is kept to stable principles (relevance, crawlability, intent); no ranking-factor claims.
+- 36 items, 12 per competency (4 per level; multi-select: 4 brand, 3 content, 3 digital); distractors written as plausible misconceptions; no `uniquely longest` warning.
+- 7 new resources (all `mode: link`, `licenseVerifiedOn: 2026-11-17`, HTTP 200): OpenStax Principles of Marketing 9.5, 9.6, 13.3, 16.3 (CC BY-NC-SA); Wikipedia en Brand, de Content-Marketing, de Suchmaschinenoptimierung (CC BY-SA footer checked). Re-tagged existing: EUR-Lex UCPD en/de (brand-messaging, content-marketing-copywriting), EUR-Lex GDPR (digital-channels-seo-sem), de Positionierung (brand-messaging). Every competency has an OpenStax or EUR-Lex (non-Wikipedia) and a German-language resource.
+- Marketing stays `status: draft`.
+
+**Reviewer to-dos**
+- Check OpenStax claims: 9.5 (brand definition, Keller's four levels, positioning bases, name criteria), 9.6 (page only opened, loyalty/metrics not used in detail), 13.3 (IMC), 16.3 (traffic sources, paid/organic search, conversions, bounce rate; the page's "40 percent" target was deliberately not used).
+- Check UCPD statements: Annex I point 11 (advertorial) and Art. 7(2) (commercial intent) were read on EUR-Lex; Art. 6 is cited only generally. The German UWG could not be fetched; units refer to it only via the German Wikipedia Content-Marketing article and say "ask legal counsel".
+- The SEO units rely on the German Wikipedia SEO article (crawler/indexer, SEM as superset, on-/off-page, search-engine spamming, markets differ). The on-/off-page definitions in the practitioner unit paraphrase the section structure; verify. Google's own SEO guide could not be reached through the proxy, so no vendor source is cited.
+- GDPR Art. 5 principles used at topic level in the digital units (lawfulness, purpose limitation, data minimisation); no ePrivacy/cookie-law detail written.
+- Judgement items worth a second opinion: bm-a-claims, cm-a-disclose, cm-a-test, dc-a-attrib, dc-a-mix.
+- German wording of all 9 DE units (du-form, gender-inclusive where natural).
+
+**Counts:** roles 6 (1 draft) · competencies 58 · units 318 · items 652 · resources 365
+
+**Next:** Marketing content: social-media-community, email-marketing-automation, campaign-planning-budgeting.
+
 ## 2026-11-17 — Phase 4: Marketing content batch 1 (fundamentals-strategy, market-customer-research, segmentation-targeting-positioning)
 
 **Done**

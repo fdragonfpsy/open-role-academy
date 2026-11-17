@@ -1,0 +1,314 @@
+competency: digital-channels-seo-sem
+items:
+  - id: dc-f-sources
+    level: foundation
+    difficulty: 900
+    type: multi
+    stem:
+      en: "Which of these are traffic sources named by OpenStax? Select all that apply."
+      de: "Welche dieser Quellen nennt OpenStax als Traffic-Quellen? Wähle alle zutreffenden aus."
+    options:
+      - en: "Organic search"
+        de: "Organische Suche"
+        correct: true
+      - en: "Paid search"
+        de: "Bezahlte Suche"
+        correct: true
+      - en: "Email"
+        de: "E-Mail"
+        correct: true
+      - en: "Printed catalogues"
+        de: "Gedruckte Kataloge"
+        correct: false
+    explanation:
+      en: "OpenStax lists social media, email, paid search, organic search, paid social and affiliates as traffic sources. Printed catalogues are not an online traffic source tracked by link code."
+      de: "OpenStax nennt soziale Medien, E-Mail, bezahlte Suche, organische Suche, bezahltes Social Media und Affiliates als Traffic-Quellen. Gedruckte Kataloge sind keine Online-Quelle, die per Link-Code erfasst wird."
+    source: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
+  - id: dc-f-organic
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "What is organic search?"
+      de: "Was ist organische Suche?"
+    options:
+      - en: "The unpaid list of results chosen by the search engine's algorithms"
+        de: "Die unbezahlte Ergebnisliste, die Algorithmen der Suchmaschine auswählen"
+        correct: true
+      - en: "The sponsored ads that appear at the top or bottom of the results page"
+        de: "Die gesponserten Anzeigen, die oben oder unten auf der Ergebnisseite erscheinen"
+        correct: false
+      - en: "Search terms that only contain natural words"
+        de: "Suchbegriffe, die nur natürliche Wörter enthalten"
+        correct: false
+      - en: "A search that only works on mobile phones"
+        de: "Eine Suche, die nur auf Mobiltelefonen funktioniert"
+        correct: false
+    explanation:
+      en: "OpenStax describes organic search as the listing of results that have not been paid for; algorithms deliver results relevant to the search terms. Sponsored ads at the top are paid search."
+      de: "OpenStax beschreibt organische Suche als Ergebnisliste ohne Bezahlung; Algorithmen liefern für die Suchbegriffe relevante Ergebnisse. Gesponserte Anzeigen oben sind bezahlte Suche."
+    source: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
+  - id: dc-f-seo
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "Which statement about SEO matches the German Wikipedia definition?"
+      de: "Welche Aussage zu SEO entspricht der Definition im deutschen Wikipedia-Artikel?"
+    options:
+      - en: "It raises visibility in unpaid results and excludes bought advertising"
+        de: "Sie erhöht die Sichtbarkeit in unbezahlten Ergebnissen und schließt gekaufte Werbung aus"
+        correct: true
+      - en: "It means buying ad positions in the results auction and paying per click"
+        de: "Sie bedeutet, Anzeigenplätze in der Ergebnisauktion zu kaufen und pro Klick zu zahlen"
+        correct: false
+      - en: "It is another word for sending marketing emails"
+        de: "Sie ist ein anderes Wort für den Versand von Marketing-E-Mails"
+        correct: false
+      - en: "It guarantees a first position for a chosen term"
+        de: "Sie garantiert für einen gewählten Begriff den ersten Platz"
+        correct: false
+    explanation:
+      en: "The article defines SEO as measures raising the visibility of a website in a web search engine, improving unpaid results and excluding direct traffic and bought advertising. It offers no guarantee of positions."
+      de: "Der Artikel definiert SEO als Maßnahmen zur Erhöhung der Sichtbarkeit einer Website in einer Websuchmaschine, die unbezahlte Ergebnisse verbessern und direkten Traffic sowie gekaufte Werbung ausschließen. Platzgarantien gibt es nicht."
+    source: https://de.wikipedia.org/wiki/Suchmaschinenoptimierung
+  - id: dc-f-crawl
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "A page cannot be loaded by the search engine's crawler. What follows?"
+      de: "Eine Seite kann vom Crawler der Suchmaschine nicht geladen werden. Was folgt daraus?"
+    options:
+      - en: "It cannot be indexed and so cannot be listed"
+        de: "Sie kann nicht indexiert und damit nicht gelistet werden"
+        correct: true
+      - en: "It will be listed first because it is rare"
+        de: "Sie wird zuerst gelistet, weil sie selten ist"
+        correct: false
+      - en: "It is automatically turned into a paid ad"
+        de: "Sie wird automatisch in eine bezahlte Anzeige umgewandelt"
+        correct: false
+      - en: "Nothing, because search engines guess its content"
+        de: "Nichts, denn Suchmaschinen erraten ihren Inhalt"
+        correct: false
+    explanation:
+      en: "The article describes that a crawler loads the page and an indexer catalogues its words and links. Without loading there is nothing to index or list."
+      de: "Der Artikel beschreibt, dass ein Crawler die Seite lädt und ein Indexer Wörter und Links katalogisiert. Ohne Laden gibt es nichts zu indexieren oder zu listen."
+    source: https://de.wikipedia.org/wiki/Suchmaschinenoptimierung
+  - id: dc-p-intent
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "Someone searches 'best accounting software for small teams'. Which page type fits the intent best?"
+      de: "Jemand sucht „beste Buchhaltungssoftware für kleine Teams“. Welcher Seitentyp passt am besten zur Intention?"
+    options:
+      - en: "A comparison page that helps choose between options"
+        de: "Eine Vergleichsseite, die bei der Auswahl hilft"
+        correct: true
+      - en: "A page about the company's founding history"
+        de: "Eine Seite über die Gründungsgeschichte des Unternehmens"
+        correct: false
+      - en: "A login page for existing customers"
+        de: "Eine Anmeldeseite für Bestandskundschaft"
+        correct: false
+      - en: "A press release about a new office"
+        de: "Eine Pressemitteilung über ein neues Büro"
+        correct: false
+    explanation:
+      en: "The phrase signals a compare intent. A page that helps compare options serves it, while the other pages ignore what the person wants to do."
+      de: "Die Formulierung signalisiert eine Vergleichsabsicht. Eine Seite, die beim Vergleichen hilft, bedient sie, die anderen ignorieren, was die Person vorhat."
+    source: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
+  - id: dc-p-onoff
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "Which activity is on-page optimisation?"
+      de: "Welche Tätigkeit ist Onpage-Optimierung?"
+    options:
+      - en: "Improving the headline and text of a page so it answers the query"
+        de: "Überschrift und Text einer Seite verbessern, damit sie die Anfrage beantworten"
+        correct: true
+      - en: "Waiting and hoping that other websites will link to your page on their own"
+        de: "Abwarten und hoffen, dass andere Websites von selbst auf deine Seite verlinken"
+        correct: false
+      - en: "Buying a sponsored position in the results auction"
+        de: "Eine gesponserte Position in der Ergebnisauktion kaufen"
+        correct: false
+      - en: "Sending a newsletter to existing subscribers"
+        de: "Einen Newsletter an bestehende Abonnent:innen senden"
+        correct: false
+    explanation:
+      en: "On-page work concerns the site itself, including its texts. Links from other sites are off-page, paid positions are paid search and newsletters are email."
+      de: "Onpage-Arbeit betrifft die Website selbst einschließlich ihrer Texte. Links anderer Seiten sind Offpage, bezahlte Plätze sind bezahlte Suche und Newsletter sind E-Mail."
+    source: https://de.wikipedia.org/wiki/Suchmaschinenoptimierung
+  - id: dc-p-landing
+    level: practitioner
+    difficulty: 1250
+    type: multi
+    stem:
+      en: "An ad for 'Excel course for beginners' leads to a general course overview, and many visitors leave. Which fixes are sensible? Select all that apply."
+      de: "Eine Anzeige für „Excel-Kurs für Einsteiger“ führt auf eine allgemeine Kursübersicht, viele Besuchende gehen. Welche Maßnahmen sind sinnvoll? Wähle alle zutreffenden aus."
+    options:
+      - en: "Create a landing page for exactly that course"
+        de: "Eine Landingpage genau für diesen Kurs erstellen"
+        correct: true
+      - en: "Repeat the ad headline on the landing page"
+        de: "Die Überschrift der Anzeige auf der Landingpage wiederholen"
+        correct: true
+      - en: "Compare conversions per source after a set period"
+        de: "Nach einem festen Zeitraum die Conversions je Quelle vergleichen"
+        correct: true
+      - en: "Hide the sign-up step to keep the page tidy"
+        de: "Den Anmeldeschritt verstecken, damit die Seite aufgeräumt wirkt"
+        correct: false
+    explanation:
+      en: "The page should repeat the ad's promise and give a clear next step. Measuring per source shows whether the fix worked. Hiding the sign-up step removes the very action you want."
+      de: "Die Seite sollte das Versprechen der Anzeige aufgreifen und einen klaren nächsten Schritt bieten. Die Messung je Quelle zeigt, ob die Maßnahme wirkte. Den Anmeldeschritt zu verstecken, entfernt genau die gewünschte Handlung."
+    source: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
+  - id: dc-p-metrics
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "Many visits arrive from paid search but almost none convert. What does reading the metrics together suggest?"
+      de: "Viele Besuche kommen über bezahlte Suche, kaum jemand konvertiert. Was legt das gemeinsame Lesen der Kennzahlen nahe?"
+    options:
+      - en: "Source and page may not match; check ad promise and landing page"
+        de: "Quelle und Seite passen womöglich nicht; Anzeigenversprechen und Landingpage prüfen"
+        correct: true
+      - en: "The campaign is a success because traffic is high"
+        de: "Die Kampagne ist ein Erfolg, weil der Traffic hoch ist"
+        correct: false
+      - en: "Conversions are irrelevant for paid campaigns"
+        de: "Conversions sind für bezahlte Kampagnen unerheblich"
+        correct: false
+      - en: "The search engine blocked the website"
+        de: "Die Suchmaschine hat die Website gesperrt"
+        correct: false
+    explanation:
+      en: "Traffic alone shows reach. With few conversions and high costs, the likely cause is a mismatch between the search term, the ad and the page. Check these before spending more."
+      de: "Traffic allein zeigt Reichweite. Bei wenigen Conversions und hohen Kosten ist ein Missverhältnis zwischen Suchbegriff, Anzeige und Seite wahrscheinlich. Prüfe das, bevor du mehr ausgibst."
+    source: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
+  - id: dc-a-promise
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "An agency guarantees 'first place on Google in three months'. What is the best assessment?"
+      de: "Eine Agentur garantiert „Platz eins bei Google in drei Monaten“. Was ist die beste Einschätzung?"
+    options:
+      - en: "Be sceptical: the algorithm is not controlled by the agency"
+        de: "Skeptisch sein: Der Algorithmus liegt nicht in der Hand der Agentur"
+        correct: true
+      - en: "Accept it, since specialised agencies know the ranking algorithm in full detail"
+        de: "Annehmen, da spezialisierte Agenturen den Ranking-Algorithmus bis ins Detail kennen"
+        correct: false
+      - en: "Accept it if the price is low enough"
+        de: "Annehmen, wenn der Preis niedrig genug ist"
+        correct: false
+      - en: "Decline paid search forever as a result"
+        de: "Daraufhin für immer auf bezahlte Suche verzichten"
+        correct: false
+    explanation:
+      en: "Search engines set and change their rankings; the German article also describes manipulation as breaking search engine rules. Ask for the method and the measures of success instead of a guarantee."
+      de: "Suchmaschinen legen ihre Rankings fest und ändern sie; der deutsche Artikel beschreibt Manipulation zudem als Verstoß gegen Suchmaschinenregeln. Frage nach Methode und Erfolgsmaßen statt nach einer Garantie."
+    source: https://de.wikipedia.org/wiki/Suchmaschinenoptimierung
+  - id: dc-a-spam
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "What does the German Wikipedia article call methods that push irrelevant pages into top positions?"
+      de: "Wie nennt der deutsche Wikipedia-Artikel Methoden, die nicht relevante Seiten auf vordere Plätze bringen?"
+    options:
+      - en: "Search-engine spamming, which violates search engine rules"
+        de: "Suchmaschinen-Spamming, das gegen Suchmaschinenregeln verstößt"
+        correct: true
+      - en: "Standard on-page optimisation accepted everywhere"
+        de: "Übliche Onpage-Optimierung, die überall akzeptiert wird"
+        correct: false
+      - en: "Integrated marketing communications"
+        de: "Integrierte Marketingkommunikation"
+        correct: false
+      - en: "Organic search by definition"
+        de: "Organische Suche per Definition"
+        correct: false
+    explanation:
+      en: "The article says such methods are called search-engine spamming and violate the rules search engines set to protect their results from manipulation. Legitimate optimisation makes pages more relevant."
+      de: "Der Artikel nennt solche Methoden Suchmaschinen-Spamming; sie verstoßen gegen Regeln, die Suchmaschinen zum Schutz ihrer Ergebnisse vor Manipulation aufstellen. Legitime Optimierung macht Seiten relevanter."
+    source: https://de.wikipedia.org/wiki/Suchmaschinenoptimierung
+  - id: dc-a-attrib
+    level: advanced
+    difficulty: 1550
+    type: multi
+    stem:
+      en: "Which statements about reading conversions and bounce rate are sound? Select all that apply."
+      de: "Welche Aussagen zum Lesen von Conversions und Absprungrate sind stichhaltig? Wähle alle zutreffenden aus."
+    options:
+      - en: "A bounce on a contact page can still be a success"
+        de: "Ein Absprung auf einer Kontaktseite kann dennoch ein Erfolg sein"
+        correct: true
+      - en: "Channels overlap, so credit rules are conventions"
+        de: "Kanäle überschneiden sich, daher sind Zuschreibungsregeln Konventionen"
+        correct: true
+      - en: "High bounce rates can signal page issues such as slow loading"
+        de: "Hohe Absprungraten können Seitenprobleme wie langsames Laden anzeigen"
+        correct: true
+      - en: "A low bounce rate alone proves the page sells well"
+        de: "Eine niedrige Absprungrate allein beweist, dass die Seite gut verkauft"
+        correct: false
+    explanation:
+      en: "Metrics need context: purpose of the page, overlapping sources and technical issues. A low bounce rate says visitors continued, not that they bought."
+      de: "Kennzahlen brauchen Kontext: Zweck der Seite, überlappende Quellen und technische Probleme. Eine niedrige Absprungrate sagt, dass Besuchende weitergingen, nicht dass sie kauften."
+    source: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
+  - id: dc-a-privacy
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "A team wants to add a new tracking tool 'just in case'. Which response follows the GDPR principles in Article 5?"
+      de: "Ein Team will ein neues Tracking-Werkzeug „für alle Fälle“ einbauen. Welche Reaktion folgt den Grundsätzen aus Artikel 5 DSGVO?"
+    options:
+      - en: "Define the question first, collect only needed data, ask the privacy contact"
+        de: "Zuerst die Frage festlegen, nur nötige Daten erheben, Datenschutzansprechperson fragen"
+        correct: true
+      - en: "Install it right away, because more data always leads to better decisions later"
+        de: "Sofort einbauen, denn mehr Daten führen später immer zu besseren Entscheidungen"
+        correct: false
+      - en: "Install it and ask visitors later whether they mind"
+        de: "Einbauen und Besuchende später fragen, ob es stört"
+        correct: false
+      - en: "Use it only on the pages that get the most visits"
+        de: "Es nur auf den meistbesuchten Seiten nutzen"
+        correct: false
+    explanation:
+      en: "Article 5 sets principles such as lawfulness, purpose limitation and data minimisation. A tool installed 'just in case' has no defined purpose. The decision belongs with the privacy contact, so ask before collecting."
+      de: "Artikel 5 enthält Grundsätze wie Rechtmäßigkeit, Zweckbindung und Datenminimierung. Ein Werkzeug „für alle Fälle“ hat keinen festgelegten Zweck. Die Entscheidung gehört zur Datenschutzansprechperson, daher vor dem Erheben fragen."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+  - id: dc-a-mix
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "A new product needs demand data within weeks, and long-term visibility too. Which plan follows the unit's decision rule?"
+      de: "Ein neues Produkt braucht binnen Wochen Nachfragedaten und langfristig Sichtbarkeit. Welcher Plan folgt der Entscheidungsregel der Einheit?"
+    options:
+      - en: "Test messages with small paid search, invest in content where interest shows"
+        de: "Botschaften mit kleiner bezahlter Suche testen, in Inhalte investieren, wo Interesse zeigt"
+        correct: true
+      - en: "Put the whole budget into organic content and wait a full year for results to appear"
+        de: "Das ganze Budget in organische Inhalte stecken und ein volles Jahr auf Ergebnisse warten"
+        correct: false
+      - en: "Spend everything on paid search and stop when budget ends"
+        de: "Alles in bezahlte Suche stecken und aufhören, wenn das Budget endet"
+        correct: false
+      - en: "Avoid measuring so the team is not distracted"
+        de: "Auf Messung verzichten, damit das Team nicht abgelenkt wird"
+        correct: false
+    explanation:
+      en: "Paid search can start quickly and gives early feedback on demand and messages, while organic visibility builds lasting value over time. Compare cost per conversion and record assumptions."
+      de: "Bezahlte Suche startet schnell und liefert früh Rückmeldung zu Nachfrage und Botschaften, organische Sichtbarkeit baut über die Zeit dauerhaften Wert auf. Vergleiche die Kosten pro Conversion und halte Annahmen fest."
+    source: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing

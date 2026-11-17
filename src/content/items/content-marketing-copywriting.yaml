@@ -1,0 +1,290 @@
+competency: content-marketing-copywriting
+items:
+  - id: cm-f-def
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "How does the German Wikipedia article distinguish content marketing from advertising?"
+      de: "Wie grenzt der deutsche Wikipedia-Artikel Content-Marketing von Werbung ab?"
+    options:
+      - en: "Content marketing offers useful information or entertainment first"
+        de: "Content-Marketing bietet zuerst nützliche Informationen oder Unterhaltung"
+        correct: true
+      - en: "Content marketing is advertising that is simply placed on more channels"
+        de: "Content-Marketing ist Werbung, die einfach auf mehr Kanälen platziert wird"
+        correct: false
+      - en: "Content marketing avoids mentioning the company at all times"
+        de: "Content-Marketing vermeidet es, das Unternehmen jemals zu nennen"
+        correct: false
+      - en: "Content marketing is only used by large companies with editors"
+        de: "Content-Marketing nutzen nur große Unternehmen mit Redaktion"
+        correct: false
+    explanation:
+      en: "The article says content marketing does not put the company's positive image first but offers useful information or entertainment, and shows competence through the content. It does not forbid mentioning the company and is not restricted to large firms."
+      de: "Der Artikel sagt, Content-Marketing stellt nicht die positive Darstellung des Unternehmens in den Mittelpunkt, sondern bietet nützliche Informationen oder Unterhaltung und zeigt Kompetenz durch den Inhalt. Es verbietet die Nennung des Unternehmens nicht und ist nicht auf Großunternehmen beschränkt."
+    source: https://de.wikipedia.org/wiki/Content-Marketing
+  - id: cm-f-three
+    level: foundation
+    difficulty: 950
+    type: multi
+    stem:
+      en: "Which questions should you answer before writing a piece of copy? Select all that apply."
+      de: "Welche Fragen solltest du vor dem Schreiben eines Textes beantworten? Wähle alle zutreffenden aus."
+    options:
+      - en: "Who reads it and what do they already know?"
+        de: "Wer liest ihn und was weiß die Person schon?"
+        correct: true
+      - en: "What one goal should the text have?"
+        de: "Welches eine Ziel soll der Text haben?"
+        correct: true
+      - en: "What is the next step for the reader?"
+        de: "Was ist der nächste Schritt für Lesende?"
+        correct: true
+      - en: "How many adjectives can we fit into the headline?"
+        de: "Wie viele Adjektive passen in die Überschrift?"
+        correct: false
+    explanation:
+      en: "Audience, one goal and one next step give the text direction. Counting adjectives does nothing for the reader."
+      de: "Zielgruppe, ein Ziel und ein nächster Schritt geben dem Text Richtung. Adjektive zu zählen hilft Lesenden nicht."
+    source: https://de.wikipedia.org/wiki/Content-Marketing
+  - id: cm-f-headline
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "Which headline best says what the reader gets?"
+      de: "Welche Überschrift sagt am besten, was Lesende bekommen?"
+    options:
+      - en: "Documents you need for your tax return: a checklist"
+        de: "Diese Unterlagen brauchst du für deine Steuererklärung: eine Checkliste"
+        correct: true
+      - en: "Our firm: experience, expertise and excellence since 1998"
+        de: "Unsere Kanzlei: Erfahrung, Kompetenz und Exzellenz seit 1998"
+        correct: false
+      - en: "Welcome to the new website of our tax advice office"
+        de: "Willkommen auf der neuen Website unserer Steuerberatung"
+        correct: false
+      - en: "Tax law is changing: things are getting more complicated"
+        de: "Steuerrecht im Wandel: Es wird immer komplizierter"
+        correct: false
+    explanation:
+      en: "A useful headline names the result for the reader. The other options talk about the firm, announce a website or only describe a vague trend without a benefit."
+      de: "Eine nützliche Überschrift nennt das Ergebnis für Lesende. Die anderen sprechen über die Kanzlei, kündigen eine Website an oder beschreiben nur einen vagen Trend ohne Nutzen."
+    source: https://de.wikipedia.org/wiki/Content-Marketing
+  - id: cm-f-imc
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "What does OpenStax mean by integrated marketing communications?"
+      de: "Was meint OpenStax mit integrierter Marketingkommunikation?"
+    options:
+      - en: "Using several promotion methods to send the same message"
+        de: "Mehrere Werbemittel nutzen, um dieselbe Botschaft zu senden"
+        correct: true
+      - en: "Sending a different message through each promotion method"
+        de: "Über jedes Werbemittel eine andere Botschaft senden"
+        correct: false
+      - en: "Combining all marketing staff into a single department"
+        de: "Alle Marketingbeschäftigten in einer Abteilung zusammenfassen"
+        correct: false
+      - en: "Using only one channel to reduce complexity"
+        de: "Nur einen Kanal nutzen, um Komplexität zu verringern"
+        correct: false
+    explanation:
+      en: "IMC means using various forms of the promotion mix to send the same message to the target audience. The aim is consistency across different channels."
+      de: "IMC bedeutet, verschiedene Formen des Promotion-Mix zu nutzen, um dieselbe Botschaft an die Zielgruppe zu senden. Ziel ist Konsistenz über verschiedene Kanäle."
+    source: https://openstax.org/books/principles-marketing/pages/13-3-integrated-marketing-communications
+  - id: cm-p-topics
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "Where should content topics primarily come from according to the unit's working rule?"
+      de: "Woher sollten Content-Themen nach der Arbeitsregel der Einheit vor allem kommen?"
+    options:
+      - en: "Real audience questions from support, sales and search terms"
+        de: "Echte Fragen der Zielgruppe aus Support, Vertrieb und Suchbegriffen"
+        correct: true
+      - en: "The topics that management and the product team find most interesting internally"
+        de: "Die Themen, die Geschäftsleitung und Produktteam intern am spannendsten finden"
+        correct: false
+      - en: "The topics competitors published most recently"
+        de: "Die Themen, die Wettbewerber zuletzt veröffentlicht haben"
+        correct: false
+      - en: "Whatever is easiest for the writers to produce"
+        de: "Das, was Schreibenden am leichtesten fällt"
+        correct: false
+    explanation:
+      en: "Topics from recurring audience questions match what people look for. Internal wishes, copying competitors or ease of production rarely do."
+      de: "Themen aus wiederkehrenden Fragen der Zielgruppe passen zu dem, was Menschen suchen. Interne Wünsche, Nachahmung oder einfache Produktion tun das selten."
+    source: https://de.wikipedia.org/wiki/Content-Marketing
+  - id: cm-p-funnel
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "A beginner guide ends with 'Buy now, today only!'. What is the main problem?"
+      de: "Ein Einsteigerratgeber endet mit „Jetzt kaufen, nur heute!“. Was ist das Hauptproblem?"
+    options:
+      - en: "The call to action does not fit the awareness stage of the reader"
+        de: "Die Handlungsaufforderung passt nicht zur Aufmerksamkeitsphase der Lesenden"
+        correct: true
+      - en: "Guides should never contain a call to action of any kind, even a mild one"
+        de: "Ratgeber sollten niemals eine Handlungsaufforderung enthalten, nicht einmal eine sanfte"
+        correct: false
+      - en: "The guide is too short to appear in search results"
+        de: "Der Ratgeber ist zu kurz, um in Suchergebnissen zu erscheinen"
+        correct: false
+      - en: "Sales funnels do not apply to written content"
+        de: "Sales Funnels gelten nicht für geschriebene Inhalte"
+        correct: false
+    explanation:
+      en: "Each piece needs a next step that fits its stage. A beginner is still gathering knowledge; a hard sales call feels pushy. A softer step such as a checklist or newsletter fits better."
+      de: "Jeder Inhalt braucht einen nächsten Schritt, der zu seiner Phase passt. Einsteiger:innen sammeln noch Wissen; ein harter Verkaufsaufruf wirkt aufdringlich. Ein weicherer Schritt wie Checkliste oder Newsletter passt besser."
+    source: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
+  - id: cm-p-structure
+    level: practitioner
+    difficulty: 1250
+    type: multi
+    stem:
+      en: "Which practices support a scannable text? Select all that apply."
+      de: "Welche Praktiken unterstützen einen überfliegbaren Text? Wähle alle zutreffenden aus."
+    options:
+      - en: "Put the most important point first"
+        de: "Das Wichtigste nach vorn stellen"
+        correct: true
+      - en: "Use subheadings with one idea per section"
+        de: "Zwischenüberschriften mit je einem Gedanken nutzen"
+        correct: true
+      - en: "End with one clear call to action"
+        de: "Mit einer klaren Handlungsaufforderung enden"
+        correct: true
+      - en: "Place the key message in the last paragraph only"
+        de: "Die Kernaussage nur im letzten Absatz platzieren"
+        correct: false
+    explanation:
+      en: "Many readers scan, so the key point must come early and the structure must be visible. Hiding the key message in the last paragraph means many never see it."
+      de: "Viele Menschen überfliegen Texte, daher muss die Kernaussage früh kommen und die Struktur sichtbar sein. Steht die Kernaussage nur im letzten Absatz, sehen viele sie nie."
+    source: https://de.wikipedia.org/wiki/Content-Marketing
+  - id: cm-p-metric
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "A decision-stage product page has many visits but few conversions. What is the best next step?"
+      de: "Eine Produktseite der Entscheidungsphase hat viele Besuche, aber wenige Conversions. Was ist der beste nächste Schritt?"
+    options:
+      - en: "Check traffic by source and page issues such as loading time"
+        de: "Traffic nach Quelle und Seitenprobleme wie Ladezeit prüfen"
+        correct: true
+      - en: "Write ten more awareness articles on unrelated topics"
+        de: "Zehn weitere Aufmerksamkeitsartikel zu fremden Themen schreiben"
+        correct: false
+      - en: "Delete the page because traffic is clearly worthless"
+        de: "Die Seite löschen, da der Traffic offensichtlich wertlos ist"
+        correct: false
+      - en: "Raise the price to attract a more serious audience"
+        de: "Den Preis erhöhen, um ernsthaftere Kundschaft anzuziehen"
+        correct: false
+    explanation:
+      en: "OpenStax lists traffic by source, conversions and bounce rate as metrics and notes that page issues such as loading time can raise bounce rates. Diagnose first, then change one thing at a time."
+      de: "OpenStax nennt Traffic nach Quelle, Conversions und Absprungrate als Kennzahlen und weist darauf hin, dass Seitenprobleme wie Ladezeit die Absprungrate erhöhen können. Erst diagnostizieren, dann jeweils eine Sache ändern."
+    source: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
+  - id: cm-a-disclose
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "A trader pays a portal for an article that looks editorial and is not marked as paid. Which EU text addresses this?"
+      de: "Ein Unternehmen bezahlt ein Portal für einen redaktionell wirkenden Artikel, der nicht als bezahlt markiert ist. Welcher EU-Text regelt das?"
+    options:
+      - en: "Annex I, point 11 of Directive 2005/29/EC on advertorials"
+        de: "Anhang I Nummer 11 der Richtlinie 2005/29/EG zu Advertorials"
+        correct: true
+      - en: "Article 21 of the GDPR on the right to object"
+        de: "Artikel 21 DSGVO zum Widerspruchsrecht"
+        correct: false
+      - en: "The DigComp framework on digital competence"
+        de: "Der DigComp-Rahmen zur digitalen Kompetenz"
+        correct: false
+      - en: "No rule applies as long as the article is accurate"
+        de: "Keine Regel gilt, solange der Artikel zutreffend ist"
+        correct: false
+    explanation:
+      en: "Annex I point 11 lists using editorial content to promote a product, paid for by the trader without making that clear, as always unfair. Accuracy of the text does not remove the disclosure duty. This concerns business-to-consumer dealings."
+      de: "Anhang I Nummer 11 führt auf, redaktionelle Inhalte zur Verkaufsförderung einzusetzen, für die der Unternehmer bezahlt hat, ohne das klarzumachen, als stets unlauter. Die Richtigkeit des Textes hebt die Kennzeichnungspflicht nicht auf. Es geht um Geschäfte mit Verbraucher:innen."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32005L0029
+  - id: cm-a-test
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "You remove the brand name from a draft and it becomes useless. What does the 'remove the brand name' test indicate?"
+      de: "Du streichst den Markennamen aus einem Entwurf, und er wird nutzlos. Was zeigt der Test „Markennamen streichen“?"
+    options:
+      - en: "The piece is disguised advertising and should be labelled as such"
+        de: "Der Beitrag ist getarnte Werbung und sollte als solche gekennzeichnet werden"
+        correct: true
+      - en: "The piece is perfect content marketing for awareness"
+        de: "Der Beitrag ist perfektes Content-Marketing für die Aufmerksamkeit"
+        correct: false
+      - en: "The brand name should be repeated in every sentence to strengthen recall"
+        de: "Der Markenname sollte in jedem Satz wiederholt werden, damit er besser hängen bleibt"
+        correct: false
+      - en: "The piece needs more keywords for search engines"
+        de: "Der Beitrag braucht mehr Schlüsselwörter für Suchmaschinen"
+        correct: false
+    explanation:
+      en: "If nothing useful is left without the brand, the piece mainly promotes. It should be planned and labelled as advertising rather than presented as neutral information."
+      de: "Bleibt ohne die Marke nichts Nützliches, bewirbt der Beitrag vor allem. Er sollte als Werbung geplant und gekennzeichnet werden, statt als neutrale Information zu erscheinen."
+    source: https://de.wikipedia.org/wiki/Content-Marketing
+  - id: cm-a-claims
+    level: advanced
+    difficulty: 1550
+    type: multi
+    stem:
+      en: "Which entries belong in a claims register? Select all that apply."
+      de: "Welche Angaben gehören in ein Aussagenregister? Wähle alle zutreffenden aus."
+    options:
+      - en: "The wording of each factual claim in the copy"
+        de: "Der Wortlaut jeder Tatsachenaussage im Text"
+        correct: true
+      - en: "A source or evidence for each claim"
+        de: "Eine Quelle oder ein Beleg für jede Aussage"
+        correct: true
+      - en: "A named owner who can answer questions"
+        de: "Eine benannte verantwortliche Person, die Fragen beantworten kann"
+        correct: true
+      - en: "Invented numbers that make the claim sound stronger"
+        de: "Erfundene Zahlen, die die Aussage stärker klingen lassen"
+        correct: false
+    explanation:
+      en: "A register links each testable claim to evidence and an owner so it can be proven or dropped. Invented numbers defeat its purpose and risk misleading readers."
+      de: "Ein Register verbindet jede prüfbare Aussage mit Beleg und Verantwortlichen, damit sie belegt oder gestrichen werden kann. Erfundene Zahlen widersprechen seinem Zweck und können Lesende in die Irre führen."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32005L0029
+  - id: cm-a-ai
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "A writer drafts an article with an AI assistant. Which review is most appropriate before publication?"
+      de: "Eine Texterin entwirft einen Artikel mit einem KI-Assistenten. Welche Prüfung ist vor der Veröffentlichung am angemessensten?"
+    options:
+      - en: "A human checks facts, claims and tone against the guide"
+        de: "Ein Mensch prüft Fakten, Aussagen und Ton gegen den Leitfaden"
+        correct: true
+      - en: "No review is needed if the text reads fluently"
+        de: "Keine Prüfung nötig, wenn der Text flüssig klingt"
+        correct: false
+      - en: "Only a spell check, since facts are always correct"
+        de: "Nur eine Rechtschreibprüfung, da Fakten immer stimmen"
+        correct: false
+      - en: "A second AI tool checks it and makes the final call"
+        de: "Ein zweites KI-Werkzeug prüft und entscheidet endgültig"
+        correct: false
+    explanation:
+      en: "AI can produce errors that read fluently, so people remain responsible for facts, claims and tone. Fluency is not evidence, and delegating the final decision to another tool does not remove the accountability."
+      de: "KI kann Fehler erzeugen, die flüssig klingen, daher bleiben Menschen für Fakten, Aussagen und Ton verantwortlich. Flüssigkeit ist kein Beleg, und die Letztentscheidung an ein anderes Werkzeug abzugeben, nimmt die Verantwortung nicht ab."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32005L0029
