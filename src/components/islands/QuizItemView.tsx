@@ -1,4 +1,4 @@
-import { useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'preact/hooks';
 import type { Lang } from '../../config/site';
 import { t } from '../../i18n';
 import type { QuizItem } from '../../lib/types';
@@ -17,6 +17,8 @@ interface Props {
 export function QuizItemView({ lang, item, index, total, onDone, isLast }: Props) {
   const [selected, setSelected] = useState<number[]>([]);
   const [checked, setChecked] = useState(false);
+  const stemRef = useRef<HTMLParagraphElement>(null);
+  const submitRef = useRef<HTMLButtonElement>(null);
   const multi = item.type === 'multi';
   const correctSet = item.options.map((o, i) => (o.correct ? i : -1)).filter((i) => i >= 0);
   const isCorrect =
@@ -27,6 +29,12 @@ export function QuizItemView({ lang, item, index, total, onDone, isLast }: Props
     if (multi) setSelected(selected.includes(i) ? selected.filter((s) => s !== i) : [...selected, i]);
     else setSelected([i]);
   };
+
+  // Focus management: new question -> stem; answer checked -> action button (disabled inputs would drop focus to <body>).
+  useEffect(() => stemRef.current?.focus(), []);
+  useEffect(() => {
+    if (checked) submitRef.current?.focus();
+  }, [checked]);
 
   const name = `q-${item.id}`;
   return (
@@ -43,7 +51,7 @@ export function QuizItemView({ lang, item, index, total, onDone, isLast }: Props
           {t(lang, 'quiz.question')} {index + 1} {t(lang, 'quiz.of')} {total} ·{' '}
           {multi ? t(lang, 'quiz.selectAll') : t(lang, 'quiz.selectOne')}
         </legend>
-        <p class="mb-4 text-lg font-medium">{item.stem}</p>
+        <p ref={stemRef} tabIndex={-1} class="mb-4 text-lg font-medium">{item.stem}</p>
         <div class="space-y-2">
           {item.options.map((o, i) => {
             const id = `${name}-${i}`;
@@ -74,6 +82,7 @@ export function QuizItemView({ lang, item, index, total, onDone, isLast }: Props
         </div>
       )}
       <button
+        ref={submitRef}
         type="submit"
         disabled={selected.length === 0}
         class="mt-4 rounded bg-blue-800 px-4 py-2 font-semibold text-white disabled:opacity-50"

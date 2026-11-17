@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'preact/hooks';
+import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import type { Lang } from '../../config/site';
 import {
   LEVELS,
@@ -35,7 +35,13 @@ export default function Onboarding({ lang, roles, items }: Props) {
   const [last, setLast] = useState<{ item: QuizItem; correct: boolean } | undefined>();
   const [asked, setAsked] = useState(0);
 
+  const doneRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => setHasExisting(loadState() !== null), []);
+  // Focus management: move focus to the result panel when placement ends.
+  useEffect(() => {
+    if (phase.kind === 'done') doneRef.current?.focus();
+  }, [phase.kind]);
 
   const role = roles.find((r) => r.id === roleId);
   // Placement plan: competencies with a target at the chosen level, within the question budget.
@@ -113,7 +119,7 @@ export default function Onboarding({ lang, roles, items }: Props) {
 
   if (phase.kind === 'done' || !state) {
     return (
-      <div class="rounded-lg border border-green-700 bg-green-50 p-5" role="status">
+      <div ref={doneRef} tabIndex={-1} class="rounded-lg border border-green-700 bg-green-50 p-5" role="status">
         <p class="mb-3 font-semibold">{t(lang, 'placement.done')}</p>
         <a class="inline-block rounded bg-blue-800 px-4 py-2 font-semibold text-white" href={localizePath(lang, '/dashboard')}>
           {t(lang, 'placement.toDashboard')}
