@@ -78,8 +78,11 @@ async function fakeSupabase(ctx, calls, mode) {
     }
     if (u.pathname === '/auth/v1/user') return json(route, 200, user);
     if (u.pathname === '/auth/v1/logout') return json(route, 204, {});
-    if (u.pathname === '/rest/v1/profiles' && req.method() === 'GET')
-      return json(route, 200, mode.profileExists ? [{ id: UID }] : []);
+    if (u.pathname === '/rest/v1/profiles' && req.method() === 'GET') {
+      const row = mode.profile ?? (mode.profileExists ? { id: UID } : null);
+      const single = (req.headers().accept ?? '').includes('vnd.pgrst.object');
+      return json(route, 200, single ? row : row ? [row] : []);
+    }
     if (u.pathname.startsWith('/rest/v1/') && req.method() === 'POST') return json(route, 201, []);
     if (u.pathname === '/rest/v1/rpc/export_my_data') return json(route, 200, { user_id: UID, progress: [], exported_at: 'now' });
     if (u.pathname === '/rest/v1/rpc/delete_my_account') return json(route, 204, {});
@@ -92,12 +95,18 @@ const T = {
     emailReq: 'Enter your email address.', emailBad: 'does not look valid', pwShort: 'at least 10 characters', consent: 'confirm that you have read the privacy policy',
     mismatch: 'do not match', wrong: 'Email address or password is wrong.', spam: 'check your spam folder', signUpLink: 'Create an account', magicLink: 'Sign in with an email link instead',
     forgotLink: 'Forgot your password?', deleteWord: 'DELETE', deleteErr: 'Type the confirmation word', deleted: 'were deleted', changed: 'password was changed', importYes: 'Import progress', importDone: 'Progress imported',
+    pTitle: 'Your learning profile', pSet: 'Set up profile', pEdit: 'Edit profile', pSkip: 'Skip for now', pSave: 'Save profile', pSaved: 'Profile saved.',
+    pMinutesErr: 'whole minutes between 0 and 10080', pGoalErr: 'too long', pMinimal: 'name, employer or date of birth', pCount: '5 of 500 characters', pLegendLevel: 'Experience level', pLegendLang: 'Preferred language',
+    pRoleTitle: 'Human Resources', pLevelTitle: 'Advanced', pMinutesSummary: '120 min per week', pLangTitle: 'Deutsch', pEmpty: 'Not set',
     export: 'Download my data', signOut: 'Sign out', signedOut: 'You are signed out.', nav: 'Account',
   },
   de: {
     emailReq: 'Gib deine E-Mail-Adresse ein.', emailBad: 'nicht gültig', pwShort: 'mindestens 10 Zeichen', consent: 'Datenschutzerklärung gelesen',
     mismatch: 'nicht überein', wrong: 'E-Mail-Adresse oder Passwort ist falsch.', spam: 'Spam-Ordner', signUpLink: 'Konto erstellen', magicLink: 'Stattdessen mit E-Mail-Link anmelden',
     forgotLink: 'Passwort vergessen?', deleteWord: 'LÖSCHEN', deleteErr: 'Bestätigungswort', deleted: 'wurden gelöscht', changed: 'Passwort wurde geändert', importYes: 'Fortschritt übernehmen', importDone: 'Fortschritt in dein Konto übernommen',
+    pTitle: 'Dein Lernprofil', pSet: 'Profil einrichten', pEdit: 'Profil bearbeiten', pSkip: 'Vorerst überspringen', pSave: 'Profil speichern', pSaved: 'Profil gespeichert.',
+    pMinutesErr: 'ganze Minuten zwischen 0 und 10080', pGoalErr: 'zu lang', pMinimal: 'Namen, Arbeitgeber oder Geburtsdatum', pCount: '5 von 500 Zeichen', pLegendLevel: 'Erfahrungsniveau', pLegendLang: 'Bevorzugte Sprache',
+    pRoleTitle: 'Personalwesen (HR)', pLevelTitle: 'Experte', pMinutesSummary: '120 Min. pro Woche', pLangTitle: 'Deutsch', pEmpty: 'Nicht angegeben',
     export: 'Meine Daten herunterladen', signOut: 'Abmelden', signedOut: 'Du bist abgemeldet.', nav: 'Konto',
   },
 };
@@ -119,7 +128,7 @@ async function tabTo(page, pred, what, arg) {
 const alertText = (page) => page.locator('#auth-error').innerText();
 const statusText = (page) => page.locator('[role=status]').first().innerText();
 
-async function newPage(browser, lang, { mode = {}, seed = false } = {}) {
+async function newPage(browser, _lang, { mode = {}, seed = false } = {}) {
   const ctx = await browser.newContext({ acceptDownloads: true });
   const calls = [];
   const errors = [];
@@ -268,6 +277,98 @@ async function run(browser, lang) {
     await page.getByRole('button', { name: t.signOut }).click();
     await page.waitForSelector('form');
     check((await statusText(page)).includes(t.signedOut), `${tag} sign out returns to the sign-in form`);
+    await ctx.close();
+  }
+
+  // ---- profile onboarding: first sign-in without a profile row
+  {
+    const { ctx, page, calls, errors } = await newPage(browser, lang);
+    const writes = () => calls.filter((c) => c.key === 'POST /rest/v1/profiles');
+    await page.goto(`${BASE}${prefix}/account`);
+    await page.waitForSelector('form');
+    await page.fill('#auth-email', 'learner@example.org');
+    await page.fill('#auth-password', 'correct-password-123');
+    await page.click('button[type=submit]');
+    await page.locator('#profile-role').waitFor();
+    check(true, `${tag} profile: form is shown after first sign-in without a profile`);
+    const sec = page.locator('section[aria-labelledby=profile-h]');
+    check((await sec.innerText()).includes(t.pTitle) && (await sec.innerText()).includes(t.pMinimal), `${tag} profile: states what is stored and that no name/employer/birth date is asked`);
+    check((await page.locator('#profile-role').count()) === 1 && (await page.locator('label[for=profile-role]').count()) === 1 && (await page.locator('label[for=profile-goal]').count()) === 1 && (await page.locator('label[for=profile-minutes]').count()) === 1, `${tag} profile: select, textarea and number input have labels`);
+    const legends = await page.locator('section[aria-labelledby=profile-h] fieldset > legend').allInnerTexts();
+    check(legends.includes(t.pLegendLevel) && legends.includes(t.pLegendLang), `${tag} profile: radio groups use fieldset/legend`);
+    const opts = await page.locator('#profile-role option').evaluateAll((os) => os.map((o) => o.value));
+    check(opts[0] === '' && opts.includes('it-support-operations') && opts.includes('human-resources') && opts.every((v) => v === '' || /^[a-z0-9-]+$/.test(v)), `${tag} profile: role options come from published roles (${opts.length - 1})`);
+    check((await page.locator('#profile-lang-' + lang).isChecked()) && (await page.locator('#profile-level-none').isChecked()), `${tag} profile: defaults are page language and no level`);
+    const small = await page.evaluate(() =>
+      [...document.querySelectorAll('section[aria-labelledby=profile-h] button, section[aria-labelledby=profile-h] select, section[aria-labelledby=profile-h] input[type=number], section[aria-labelledby=profile-h] label.py-2')].filter((e) => e.getBoundingClientRect().height < 44).map((e) => e.outerHTML.slice(0, 60)));
+    check(small.length === 0, `${tag} profile: controls and labels are at least 44px high${small.length ? ': ' + small.join(' | ') : ''}`);
+
+    // counter + validation: nothing is sent for invalid input
+    await page.fill('#profile-goal', 'Hello');
+    check((await page.locator('#profile-goal-count').innerText()) === t.pCount, `${tag} profile: character counter updates`);
+    await page.fill('#profile-minutes', '10081');
+    await page.getByRole('button', { name: t.pSave }).click();
+    check((await page.locator('#profile-weeklyMinutes-err').innerText()).includes(t.pMinutesErr), `${tag} profile: minutes out of range shows error`);
+    check(await page.evaluate(() => document.activeElement?.id === 'profile-minutes'), `${tag} profile: focus moves to the first invalid field`);
+    check((await page.locator('#profile-minutes').getAttribute('aria-invalid')) === 'true', `${tag} profile: invalid field has aria-invalid`);
+    await page.fill('#profile-minutes', '120');
+    await page.fill('#profile-goal', 'x'.repeat(501));
+    await page.getByRole('button', { name: t.pSave }).click();
+    check((await page.locator('#profile-goal-err').innerText()).includes(t.pGoalErr), `${tag} profile: goal over 500 characters shows error`);
+    check(writes().length === 0, `${tag} profile: invalid input sends nothing`);
+
+    // skip -> collapsed, nothing written, setup button, survives reload
+    await page.getByRole('button', { name: t.pSkip }).click();
+    await page.getByRole('button', { name: t.pSet }).waitFor();
+    check(writes().length === 0 && (await page.locator('#profile-role').count()) === 0, `${tag} profile: skipping writes nothing and collapses the form`);
+    await page.waitForFunction(() => document.activeElement?.id === 'profile-h');
+    check(true, `${tag} profile: focus returns to the profile heading after skip`);
+
+    // fill and save
+    await page.getByRole('button', { name: t.pSet }).click();
+    await page.selectOption('#profile-role', 'human-resources');
+    await page.check('#profile-level-advanced');
+    await page.fill('#profile-goal', 'Lead better 1:1s');
+    await page.fill('#profile-minutes', '');
+    await page.getByRole('button', { name: '120' }).click();
+    await page.check('#profile-lang-de');
+    await page.getByRole('button', { name: t.pSave }).click();
+    await page.getByText(t.pSaved).waitFor();
+    check(writes().length === 1, `${tag} profile: exactly one upsert on save`);
+    const body = JSON.parse(writes()[0].body);
+    check(JSON.stringify(Object.keys(body).sort()) === JSON.stringify(['experience_level', 'id', 'learning_goal', 'preferred_language', 'role_family', 'weekly_minutes']), `${tag} profile: payload has only the allowed fields (${Object.keys(body).join(',')})`);
+    check(body.id === UID && body.role_family === 'human-resources' && body.experience_level === 'advanced' && body.learning_goal === 'Lead better 1:1s' && body.weekly_minutes === 120 && body.preferred_language === 'de', `${tag} profile: payload values`);
+    check(!('placement_done' in body), `${tag} profile: payload never touches placement_done`);
+    const sum = await sec.innerText();
+    check([t.pRoleTitle, t.pLevelTitle, 'Lead better 1:1s', t.pMinutesSummary, t.pLangTitle].every((x) => sum.includes(x)) && (await page.locator('#profile-role').count()) === 0, `${tag} profile: saved summary is shown`);
+    check((await statusText(page)).includes(t.pSaved), `${tag} profile: "saved" is announced in the status region`);
+
+    // edit later: prefilled, clearing fields sends nulls
+    await page.getByRole('button', { name: t.pEdit }).click();
+    check((await page.inputValue('#profile-role')) === 'human-resources' && (await page.locator('#profile-level-advanced').isChecked()) && (await page.inputValue('#profile-minutes')) === '120', `${tag} profile: edit form is prefilled`);
+    await page.fill('#profile-goal', '');
+    await page.fill('#profile-minutes', '');
+    await page.check('#profile-level-none');
+    await page.selectOption('#profile-role', '');
+    await page.getByRole('button', { name: t.pSave }).click();
+    await page.waitForFunction(() => !document.querySelector('#profile-role'));
+    const body2 = JSON.parse(writes()[1].body);
+    check(body2.role_family === null && body2.experience_level === null && body2.learning_goal === null && body2.weekly_minutes === null && body2.preferred_language === 'de' && Object.keys(body2).length === 6, `${tag} profile: edit clears optional fields with null`);
+    check((await sec.innerText()).includes(t.pEmpty), `${tag} profile: cleared fields show as not set`);
+    check(errors.length === 0, `${tag} profile: no console errors${errors.length ? ' ' + errors.join(' | ') : ''}`);
+    await ctx.close();
+  }
+  // ---- profile exists: summary only, no form, no import offer
+  {
+    const profile = { id: UID, role_family: 'human-resources', experience_level: 'advanced', learning_goal: 'Lead better 1:1s', weekly_minutes: 120, preferred_language: 'de' };
+    const { ctx, page, calls } = await newPage(browser, lang, { mode: { profile }, seed: true });
+    await page.goto(`${BASE}${prefix}/account`);
+    await page.fill('#auth-email', 'learner@example.org');
+    await page.fill('#auth-password', 'correct-password-123');
+    await page.click('button[type=submit]');
+    await page.getByRole('button', { name: t.pEdit }).waitFor();
+    check((await page.locator('#profile-role').count()) === 0 && (await page.locator('section[aria-labelledby=profile-h]').innerText()).includes(t.pMinutesSummary), `${tag} profile: existing profile is shown, form stays closed`);
+    check(!calls.some((c) => c.key === 'POST /rest/v1/profiles'), `${tag} profile: nothing written when only viewing`);
     await ctx.close();
   }
 

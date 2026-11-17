@@ -1,5 +1,18 @@
 # Status
 
+## 2026-11-17 — Phase 3b: Profile onboarding (behind flag, off)
+
+**Done**
+- Account island (`/account`, `/de/account`): after sign-in, if the account has no `profiles` row, a short skippable profile form is shown; afterwards a summary with "Edit profile". Fields (all optional): role family (select of published roles, passed from content), experience level (radio, same labels/hints as onboarding), learning goal (textarea, max 500 chars, live counter), weekly minutes (number 0-10080 + presets 30/60/120/300), preferred language (en/de radio). Visible note on what is stored and why (no name/employer/birth date). Save = one upsert on `profiles` (RLS own row); clearing a field writes null. `placement_done` is never part of the payload.
+- Pure logic in `src/lib/profile.ts` (validate, form <-> row, column whitelist `PROFILE_COLUMNS`); tests in `tests/auth.test.ts` (tests now 88). Strings `profile.*` en/de (parity tested). a11y: labels, fieldset/legend, per-field errors with `aria-invalid` + focus on first invalid field, status region announces "saved", focus returns to the profile heading, 44px targets.
+- `tests-e2e/auth.e2e.mjs` extended (en + de, fake backend): form shown on first sign-in, validation sends nothing, skip writes nothing, save payload has exactly the 6 allowed keys, edit prefill, clear -> nulls, existing profile -> summary only. Default build still free of account code (checks pass). All checks, `npm run e2e` and the auth e2e pass locally.
+- **Not verified against a real Supabase project** (fake backend only). Flag stays off; privacy policy not yet updated.
+- Known limits: if a learner saves a profile before using the "import local progress" offer, the offer no longer applies (the import only runs for accounts without a profile row). Skipping is remembered per browser (localStorage), not in the account. `npm run lint` also scans a leftover `dist-auth-test/` after a flag-on build (delete it first; pre-existing, gitignored).
+
+**Counts:** roles 4 · competencies 38 · units 228 · items 456 · resources 297 · tests 88
+
+**Next:** dashboard sync with Supabase, privacy/imprint for accounts, magic-link/spam notes.
+
 ## 2026-11-17 — Phase 3b: Auth UI (behind flag, off)
 
 **Done**
