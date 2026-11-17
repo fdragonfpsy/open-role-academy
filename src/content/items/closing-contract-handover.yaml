@@ -1,0 +1,290 @@
+competency: closing-contract-handover
+items:
+  - id: cch-f-signal
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "Which customer question is a typical buying signal?"
+      de: "Welche Kundenfrage ist ein typisches Kaufsignal?"
+    options:
+      - en: "\"Could you send the general company brochure again?\""
+        de: "„Könnt ihr die allgemeine Firmenbroschüre noch einmal schicken?“"
+        correct: false
+      - en: "\"When could you deliver, if we decided this week?\""
+        de: "„Wann könntet ihr liefern, wenn wir uns diese Woche entscheiden?“"
+        correct: true
+      - en: "\"Who else in my industry uses a product like this?\""
+        de: "„Wer in meiner Branche nutzt noch ein solches Produkt?“"
+        correct: false
+      - en: "\"May I think about it and call you in six months?\""
+        de: "„Darf ich darüber nachdenken und mich in sechs Monaten melden?“"
+        correct: false
+    explanation:
+      en: "Questions about delivery, price details, contract length or support show that the customer is already imagining ownership. They are a cue to ask for the decision."
+      de: "Fragen zu Lieferung, Preisdetails, Laufzeit oder Support zeigen, dass die Kundschaft sich den Besitz schon vorstellt. Sie sind der Anlass, nach der Entscheidung zu fragen."
+    source: https://openstax.org/books/principles-marketing/pages/15-3-steps-in-the-personal-selling-process
+  - id: cch-f-trial
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "What is a trial close?"
+      de: "Was ist eine Probeabschlussfrage?"
+    options:
+      - en: "A soft question that tests whether the customer is ready to decide"
+        de: "Eine vorsichtige Frage, die prüft, ob die Kundschaft entscheidungsbereit ist"
+        correct: true
+      - en: "A short free trial of the product before the customer pays"
+        de: "Eine kurze kostenlose Testphase des Produkts, bevor die Kundschaft zahlt"
+        correct: false
+      - en: "A contract with a shorter term than the customer asked for"
+        de: "Ein Vertrag mit kürzerer Laufzeit, als die Kundschaft verlangt hat"
+        correct: false
+      - en: "A closing attempt that is repeated until the customer gives in"
+        de: "Ein Abschlussversuch, der wiederholt wird, bis die Kundschaft nachgibt"
+        correct: false
+    explanation:
+      en: "A trial close such as \"Does this fit your rollout plan?\" checks readiness without forcing a decision. It is not a product trial and not repeated pressure."
+      de: "Eine Probeabschlussfrage wie „Passt das zu eurem Rollout-Plan?“ prüft die Bereitschaft, ohne eine Entscheidung zu erzwingen. Sie ist weder ein Produkttest noch wiederholter Druck."
+    source: https://openstax.org/books/principles-marketing/pages/15-3-steps-in-the-personal-selling-process
+  - id: cch-f-check
+    level: foundation
+    difficulty: 1000
+    type: multi
+    stem:
+      en: "Which details should you check on an order form before it is signed? Select all that apply."
+      de: "Welche Angaben solltest du auf einem Bestellformular vor der Unterschrift prüfen? Wähle alle zutreffenden aus."
+    options:
+      - en: "The customer's legal name and the agreed quantity"
+        de: "Den rechtlichen Namen der Kundschaft und die vereinbarte Menge"
+        correct: true
+      - en: "Price, term and the agreed start date"
+        de: "Preis, Laufzeit und den vereinbarten Starttermin"
+        correct: true
+      - en: "Whether the customer's logo matches your brand colours"
+        de: "Ob das Logo der Kundschaft zu deinen Markenfarben passt"
+        correct: false
+      - en: "Whether the order is a good topic for a press release"
+        de: "Ob die Bestellung ein gutes Thema für eine Pressemitteilung ist"
+        correct: false
+    explanation:
+      en: "The form must state who buys what, for how much, for how long and from when. Branding and publicity are not part of whether the agreement is complete."
+      de: "Das Formular muss festhalten, wer was für wie viel, wie lange und ab wann kauft. Markenwirkung und Öffentlichkeitsarbeit gehören nicht dazu, ob die Vereinbarung vollständig ist."
+    source: https://en.wikipedia.org/wiki/Contract
+  - id: cch-f-promise
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "In the meeting you promised training within the first month. What should you do?"
+      de: "Im Termin hast du eine Schulung im ersten Monat versprochen. Was solltest du tun?"
+    options:
+      - en: "Put the promise into the order form or remove it from the conversation"
+        de: "Die Zusage ins Bestellformular aufnehmen oder aus dem Gespräch zurücknehmen"
+        correct: true
+      - en: "Rely on your notes, because delivery will remember it"
+        de: "Dich auf deine Notizen verlassen, weil die Umsetzung sich schon erinnern wird"
+        correct: false
+      - en: "Leave it out of the document so the contract stays simple"
+        de: "Sie weglassen, damit der Vertrag einfach bleibt"
+        correct: false
+      - en: "Mention it again after signing, when the customer has calmed down"
+        de: "Sie nach der Unterschrift noch einmal erwähnen, wenn die Kundschaft sich beruhigt hat"
+        correct: false
+    explanation:
+      en: "What is not in the document is easily forgotten or disputed. Either write the promise down or correct it before signing, so both sides share one version."
+      de: "Was nicht im Dokument steht, wird leicht vergessen oder bestritten. Schreibe die Zusage auf oder korrigiere sie vor der Unterschrift, damit beide Seiten dieselbe Fassung kennen."
+    source: https://en.wikipedia.org/wiki/Contract
+  - id: cch-p-deviation
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "A customer asks for a liability limit that is outside your standard terms. What is the right step?"
+      de: "Eine Kundschaft verlangt eine Haftungsgrenze außerhalb deiner Standardbedingungen. Was ist der richtige Schritt?"
+    options:
+      - en: "Send the request, reason and deal value to legal before you reply"
+        de: "Wunsch, Begründung und Auftragswert an die Rechtsabteilung geben, bevor du antwortest"
+        correct: true
+      - en: "Agree on it verbally and ask legal to tidy up the wording later"
+        de: "Mündlich zustimmen und die Rechtsabteilung den Wortlaut später glätten lassen"
+        correct: false
+      - en: "Decline at once, because every change to standard terms is forbidden"
+        de: "Sofort ablehnen, weil jede Änderung der Standardbedingungen verboten ist"
+        correct: false
+      - en: "Accept it if the deal is large enough to justify the extra risk"
+        de: "Annehmen, wenn das Geschäft groß genug ist, um das Zusatzrisiko zu rechtfertigen"
+        correct: false
+    explanation:
+      en: "Liability terms are a legal and management topic. Sellers route them with context, so the decision is informed. Neither a verbal promise nor a blanket no is right."
+      de: "Haftungsregelungen sind ein Thema für Recht und Management. Verkaufende leiten sie mit Kontext weiter, damit die Entscheidung fundiert ist. Weder eine mündliche Zusage noch ein pauschales Nein ist richtig."
+    source: https://en.wikipedia.org/wiki/Contract
+  - id: cch-p-signer
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "Your champion loved the demo and wants to \"sign tomorrow\". What is the best check?"
+      de: "Dein Fürsprecher war von der Demo begeistert und will „morgen unterschreiben“. Was ist die beste Prüfung?"
+    options:
+      - en: "Ask who is authorised to sign and which approvals are still needed"
+        de: "Fragen, wer zeichnungsberechtigt ist und welche Freigaben noch fehlen"
+        correct: true
+      - en: "Send the order form to everyone in the customer's address book"
+        de: "Das Bestellformular an alle Personen im Adressbuch der Kundschaft senden"
+        correct: false
+      - en: "Wait until the customer's quarter ends before sending anything"
+        de: "Warten, bis das Quartal der Kundschaft endet, bevor du etwas sendest"
+        correct: false
+      - en: "Prepare the handover first and ask about signing authority later"
+        de: "Zuerst die Übergabe vorbereiten und später nach der Zeichnungsbefugnis fragen"
+        correct: false
+    explanation:
+      en: "Enthusiasm does not equal authority. Asking early about signatories and approvals avoids a stalled signature at the end."
+      de: "Begeisterung ist keine Befugnis. Die frühe Frage nach Unterzeichnenden und Freigaben verhindert eine ins Stocken geratene Unterschrift am Ende."
+    source: https://en.wikipedia.org/wiki/Contract
+  - id: cch-p-close
+    level: practitioner
+    difficulty: 1300
+    type: multi
+    stem:
+      en: "Which closing approaches stay fair? Select all that apply."
+      de: "Welche Abschlussansätze bleiben fair? Wähle alle zutreffenden aus."
+    options:
+      - en: "Recap the agreed value, then ask for the decision"
+        de: "Den vereinbarten Nutzen zusammenfassen und dann um die Entscheidung bitten"
+        correct: true
+      - en: "Offer two real options, such as annual or quarterly billing"
+        de: "Zwei echte Optionen anbieten, etwa jährliche oder vierteljährliche Abrechnung"
+        correct: true
+      - en: "Say the price rises tomorrow, although no rise is planned"
+        de: "Sagen, der Preis steige morgen, obwohl keine Erhöhung geplant ist"
+        correct: false
+      - en: "Claim that only two licences remain, to speed up the decision"
+        de: "Behaupten, es seien nur noch zwei Lizenzen übrig, um die Entscheidung zu beschleunigen"
+        correct: false
+    explanation:
+      en: "Recaps and genuine alternatives help the customer decide. False scarcity and invented deadlines are pressure tactics that damage trust and can create legal risk."
+      de: "Zusammenfassungen und echte Alternativen helfen bei der Entscheidung. Falsche Knappheit und erfundene Fristen sind Druckmittel, die dem Vertrauen schaden und rechtliche Risiken schaffen können."
+    source: https://openstax.org/books/principles-marketing/pages/15-3-steps-in-the-personal-selling-process
+  - id: cch-p-handover
+    level: practitioner
+    difficulty: 1350
+    type: multi
+    stem:
+      en: "Which items belong in a handover note for a larger deal? Select all that apply."
+      de: "Welche Punkte gehören in eine Übergabenotiz bei einem größeren Auftrag? Wähle alle zutreffenden aus."
+    options:
+      - en: "The customer's goals and success criteria"
+        de: "Die Ziele und Erfolgskriterien der Kundschaft"
+        correct: true
+      - en: "Special terms and risks, such as an expected feature out of scope"
+        de: "Sonderbedingungen und Risiken, etwa ein erwartetes Merkmal außerhalb des Umfangs"
+        correct: true
+      - en: "Your private opinion about the customer's personality"
+        de: "Deine private Meinung über die Persönlichkeit der Kundschaft"
+        correct: false
+      - en: "The commission you will earn on the deal"
+        de: "Die Provision, die du für den Auftrag erhältst"
+        correct: false
+    explanation:
+      en: "Delivery needs facts that prevent surprises: goals, scope, special terms and risks. Personal opinions and your commission do not help the customer or the team."
+      de: "Die Umsetzung braucht Fakten, die Überraschungen verhindern: Ziele, Umfang, Sonderbedingungen und Risiken. Persönliche Meinungen und deine Provision helfen weder der Kundschaft noch dem Team."
+    source: https://en.wikipedia.org/wiki/Contract
+  - id: cch-a-gap
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "Procurement demands a go-live date delivery says is impossible. What is the best judgement?"
+      de: "Der Einkauf verlangt einen Go-live-Termin, den die Umsetzung für unmöglich hält. Was ist das beste Urteil?"
+    options:
+      - en: "Reshape the deal, for example with phases, before you sign"
+        de: "Das Geschäft umbauen, etwa mit Phasen, bevor du unterschreibst"
+        correct: true
+      - en: "Sign now and let delivery find a way to catch up later"
+        de: "Jetzt unterschreiben und die Umsetzung später einen Weg finden lassen"
+        correct: false
+      - en: "Sign, but remove the date from the contract and keep it verbal"
+        de: "Unterschreiben, aber das Datum aus dem Vertrag nehmen und mündlich halten"
+        correct: false
+      - en: "Reject the deal at once, because customers never accept phases"
+        de: "Das Geschäft sofort ablehnen, weil Kundschaft nie Phasen akzeptiert"
+        correct: false
+    explanation:
+      en: "A signed promise that cannot be delivered becomes a dispute. Reshaping scope or timing with delivery and legal closes the promise gap before signature."
+      de: "Ein unterschriebenes Versprechen, das nicht lieferbar ist, wird zum Streit. Das Umbauen von Umfang oder Termin mit Umsetzung und Recht schließt die Versprechenslücke vor der Unterschrift."
+    source: https://en.wikipedia.org/wiki/Contract
+  - id: cch-a-plan
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "What makes a signature plan more reliable than the statement \"we are close\"?"
+      de: "Was macht einen Unterschriftsplan verlässlicher als die Aussage „wir sind kurz davor“?"
+    options:
+      - en: "It lists each approval with an owner, a date and evidence"
+        de: "Er führt jede Freigabe mit Verantwortlichen, Datum und Nachweis auf"
+        correct: true
+      - en: "It shows a higher closing probability to please management"
+        de: "Er zeigt eine höhere Abschlusswahrscheinlichkeit, um das Management zufriedenzustellen"
+        correct: false
+      - en: "It leaves out steps the customer has not mentioned yet"
+        de: "Er lässt Schritte aus, die die Kundschaft noch nicht erwähnt hat"
+        correct: false
+      - en: "It is written only once and never changed, so it stays clean"
+        de: "Er wird nur einmal geschrieben und nie geändert, damit er sauber bleibt"
+        correct: false
+    explanation:
+      en: "Owners, dates and evidence turn a feeling into checkable facts, which also improve the forecast. A plan must be kept up to date and cover the customer's actual approval path."
+      de: "Verantwortliche, Termine und Nachweise machen aus einem Gefühl prüfbare Fakten, die auch den Forecast verbessern. Ein Plan muss aktuell gehalten werden und den tatsächlichen Freigabeweg der Kundschaft abdecken."
+    source: https://openstax.org/books/principles-marketing/pages/15-3-steps-in-the-personal-selling-process
+  - id: cch-a-changes
+    level: advanced
+    difficulty: 1600
+    type: multi
+    stem:
+      en: "During negotiation with procurement and legal, which practices protect you? Select all that apply."
+      de: "Welche Vorgehensweisen schützen dich in der Verhandlung mit Einkauf und Recht? Wähle alle zutreffenden aus."
+    options:
+      - en: "Record every agreed change so the final document matches your notes"
+        de: "Jede vereinbarte Änderung festhalten, damit das Enddokument zu deinen Notizen passt"
+        correct: true
+      - en: "Send liability and data protection topics to your legal team"
+        de: "Haftungs- und Datenschutzthemen an deine Rechtsabteilung geben"
+        correct: true
+      - en: "Agree to wording you do not understand to keep the pace"
+        de: "Wortlaut zustimmen, den du nicht verstehst, um das Tempo zu halten"
+        correct: false
+      - en: "Settle open points by email only and skip the contract text"
+        de: "Offene Punkte nur per E-Mail klären und den Vertragstext auslassen"
+        correct: false
+    explanation:
+      en: "A complete record and legal review prevent contradictions and unwanted risk. Agreeing to wording you do not understand, or leaving changes outside the document, creates disputes later."
+      de: "Eine vollständige Dokumentation und rechtliche Prüfung verhindern Widersprüche und ungewollte Risiken. Wortlaut ohne Verständnis oder Änderungen außerhalb des Dokuments führen später zu Streit."
+    source: https://en.wikipedia.org/wiki/Contract
+  - id: cch-a-kickoff
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "After signature, a customer's expectation differs from the contract scope. What closes the gap best?"
+      de: "Nach der Unterschrift weicht eine Erwartung der Kundschaft vom Vertragsumfang ab. Was schließt die Lücke am besten?"
+    options:
+      - en: "A kick-off with sales, delivery and sponsor, plus a written amendment"
+        de: "Ein Kick-off mit Vertrieb, Umsetzung und Sponsor sowie ein schriftlicher Nachtrag"
+        correct: true
+      - en: "Delivering the extra feature quietly so nobody complains"
+        de: "Das zusätzliche Merkmal stillschweigend liefern, damit sich niemand beschwert"
+        correct: false
+      - en: "Pointing to the contract and ending the conversation"
+        de: "Auf den Vertrag verweisen und das Gespräch beenden"
+        correct: false
+      - en: "Updating only the internal CRM note about the expectation"
+        de: "Nur die interne CRM-Notiz zur Erwartung aktualisieren"
+        correct: false
+    explanation:
+      en: "A joint kick-off makes assumptions visible, and a written amendment records any agreed change. Quiet extras set a precedent; stonewalling harms the relationship; an internal note alone does not align the customer."
+      de: "Ein gemeinsamer Kick-off macht Annahmen sichtbar, und ein schriftlicher Nachtrag hält jede vereinbarte Änderung fest. Stille Extras schaffen Präzedenzfälle, Abblocken schadet der Beziehung, und eine interne Notiz allein bringt die Kundschaft nicht auf denselben Stand."
+    source: https://en.wikipedia.org/wiki/Contract

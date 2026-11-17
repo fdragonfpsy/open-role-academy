@@ -1,0 +1,81 @@
+---
+id: crm-sales-data-forecasting-practitioner
+competency: crm-sales-data-forecasting
+level: practitioner
+title: "Pipeline reviews, forecasting and data quality"
+objectives:
+  - "Explain how a sales forecast is built from pipeline data."
+  - "Use stage conversion, deal age and coverage to judge pipeline health."
+  - "Fix data-quality problems that distort the forecast."
+minutes: 25
+resources:
+  - wikipedia-customer-relationship-management
+  - wikipedia-sales-operations
+  - wikipedia-forecasting
+  - openstax-marketing-sales-force-management
+  - eurlex-gdpr-regulation-2016-679
+status: ai-draft
+sources:
+  - title: "Customer relationship management"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Customer_relationship_management
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Sales operations"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Sales_operations
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Forecasting"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Forecasting
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Principles of Marketing, 15.4: Management of the Sales Force"
+    author: OpenStax
+    url: https://openstax.org/books/principles-marketing/pages/15-4-management-of-the-sales-force
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+  - title: "Regulation (EU) 2016/679 (General Data Protection Regulation)"
+    author: European Union
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+    license: free-access
+    licenseUrl: https://eur-lex.europa.eu/content/legal-notice/legal-notice.html
+    usage: cited
+---
+
+## Why this matters
+
+Management plans hiring, stock and cash on the sales forecast. Wikipedia defines forecasting as making predictions based on past and present data; in sales, the data is your CRM. If the CRM is wrong, the forecast is wrong, however clever the method.
+
+## From pipeline to forecast
+
+The simplest method weights each open deal by the probability of its stage and adds the results. The probabilities should come from your own history: of all deals that reached stage X in past quarters, how many were won? Other inputs: the deal's expected close date, age compared with the typical cycle, the number of contacts involved and whether a next step is booked. Many teams also let sellers give a **commit** or **best case** call per deal. Compare the forecast with the result each period and note the error; consistent over-forecasting points to optimistic stage definitions or sandbagging in the other direction.
+
+## Pipeline health
+
+Useful indicators are: **coverage** (open pipeline value compared with target; the needed ratio depends on your win rate), **stage conversion**, **average cycle length**, **deals without a next step**, **deals with a close date in the past** and the share of pipeline created in the current period. The OpenStax sales-force chapter lists the share of time spent on selling and on updating the CRM among typical productivity metrics, a reminder that data entry is a cost to keep small. Sales operations teams, as described in the Wikipedia article on sales operations, support sales metrics, forecasting and administration.
+
+## Data quality
+
+Common problems: stale close dates, deals stuck in one stage, missing values, duplicates, unclear stage definitions. Counter them with simple rules: required fields at each stage, entry criteria (for example "Proposal sent" requires a quote document), a weekly cleanup of overdue deals and a clear definition for each stage. Review the pipeline in a regular meeting with specific questions: what changed, what is the next step, what could stop the deal.
+
+## Data protection in analysis
+
+Reports and exports containing personal data are covered by the GDPR principles on EUR-Lex (Art. 5(1)): purpose limitation, data minimisation and storage limitation. Use aggregated numbers for forecasts, share exports only with authorised colleagues, and delete personal data no longer needed according to company policy.
+
+## Worked example
+
+Illustration only; invented numbers. Historical data: of deals at "Proposal", 40 percent were won; at "Negotiation", 70 percent. You have deals worth 100,000 at Proposal and 50,000 at Negotiation. Weighted forecast: 40,000 plus 35,000 equals 75,000. In the review you find that deals worth 30,000 at Proposal have no activity for 60 days and an old close date. You mark them for cleanup or contact. The honest forecast is lower; the team plans on that and sets actions to build new pipeline.
+
+## Key takeaways
+
+- A forecast is only as good as the CRM data behind it.
+- Use your own history for stage probabilities and compare forecast with result.
+- Watch coverage, conversion, cycle length and deals without next steps.
+- Define stages clearly and clean up overdue deals regularly.
+- Use aggregated data and respect GDPR principles in exports.

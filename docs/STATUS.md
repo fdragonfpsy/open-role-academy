@@ -1,5 +1,18 @@
 # Status
 
+## 2026-11-17 — Phase 4: Sales content batch 3 (closing-contract-handover, account-management-upselling, crm-sales-data-forecasting)
+
+**Done**
+- 14 unit files (7 en + 7 de, `status: ai-draft`, original text with worked example, takeaways, `sources[]`): closing-contract-handover at foundation/practitioner/advanced; account-management-upselling and crm-sales-data-forecasting at foundation/practitioner only (role targets stop there). 36 items (12 per competency, 4 per level for closing, 6 per level for the other two; single and multi, difficulty per section 7.2, no `uniquely longest` warning, distractors written as plausible misconceptions).
+- 10 new resources (all `mode: link`, `licenseVerifiedOn: 2026-11-17`, HTTP 200 checked): OpenStax Principles of Marketing 1.6 (CRM) and 15.4 (sales force management), both CC BY-NC-SA (link only); Wikipedia pages on contract (en, de Vertrag), CRM, sales operations, upselling, cross-selling, customer retention. Existing `openstax-marketing-selling-process`, `wikipedia-forecasting` and the EUR-Lex GDPR resource now also tagged for the new competencies.
+- Legal statements: GDPR Art. 5(1) principles (read on EUR-Lex via curl; Art. 15 and 17 only as rights named at topic level). Contract law stays at topic level (EU/Germany labelled, referred to legal teams); no paragraphs, deadlines or rates stated. Numbers in worked examples are invented and labelled.
+- Open limitation: German CRM and Key-Account Wikipedia pages are flagged as poorly sourced, so they were not used; German units rely on the English resources plus de Vertrag. Sales role stays `status: draft`.
+- Checks: lint, typecheck, tests, validate:content (0 errors), build.
+
+**Counts:** roles 5 (1 draft) · competencies 48 · units 276 · items 565 · resources 326
+
+**Next:** Sales content: sales-ethics-compliance; then publish the role and run the content quality pass for Sales.
+
 ## 2026-11-17 — Phase 4: Sales content batch 2 (solution-presentation-demo, objection-handling-negotiation, proposals-quoting-pricing-basics)
 
 **Done**
