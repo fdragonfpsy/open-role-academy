@@ -8,7 +8,7 @@ export const de: Record<UiKey, string> = {
   'nav.dashboard': 'Dashboard',
   'nav.skip': 'Zum Hauptinhalt springen',
   'lang.switch': 'English',
-  'lang.switchLabel': 'Sprache auf Englisch umstellen',
+  'lang.switchLabel': 'English: Sprache auf Englisch umstellen',
   'footer.code': 'Code lizenziert unter',
   'footer.content': 'Eigene Inhalte lizenziert unter',
   'footer.imprint': 'Impressum',

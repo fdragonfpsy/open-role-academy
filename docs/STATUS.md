@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-17 — Phase 3: accessibility pass + Lighthouse
+
+**Done**
+- Lighthouse 12.8.2 (run outside the repo) on 12 pages (home, start, dashboard, unit, privacy, imprint; en + de): a11y 100, best-practices 100, SEO 100, performance 98–100. Before: SEO 90 (hreflang, label-content-name-mismatch).
+- Fixes: absolute canonical + hreflang (self + alternate) in `BaseLayout.astro`; language-switch `aria-label` now starts with its visible text (en/de).
+- e2e scripts (placement, unit, dashboard) still pass.
+
+**Not covered:** dynamic island states (Lighthouse audits initial load only), manual screen-reader test, WCAG 2.2 target size / focus appearance beyond radios, other unit pages.
+
+**Next:** mobile layout pass, then launch checklist (`docs/LAUNCH.md`), then Phase 3b catalog (Pagefind).
+
 ## 2026-11-17 — Phase 3: dashboard
 
 **Done**

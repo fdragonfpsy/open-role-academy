@@ -6,7 +6,7 @@ export const en = {
   'nav.dashboard': 'Dashboard',
   'nav.skip': 'Skip to main content',
   'lang.switch': 'Deutsch',
-  'lang.switchLabel': 'Switch language to German',
+  'lang.switchLabel': 'Deutsch: switch language to German',
   'footer.code': 'Code licensed under',
   'footer.content': 'Original content licensed under',
   'footer.imprint': 'Imprint',
