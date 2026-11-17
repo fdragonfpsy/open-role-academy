@@ -1,0 +1,290 @@
+competency: objection-handling-negotiation
+items:
+  - id: ohn-f-nature
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "A customer says, \"This is too expensive.\" What is the best way to see this?"
+      de: "Eine Kundin sagt: „Das ist zu teuer.“ Wie sieht man das am besten?"
+    options:
+      - en: "As a final rejection, so the seller should thank the customer and leave"
+        de: "Als endgültige Ablehnung, die Verkaufsperson sollte sich bedanken und gehen"
+        correct: false
+      - en: "As a personal attack on the seller that should be answered firmly"
+        de: "Als persönlichen Angriff auf die Verkaufsperson, den man bestimmt beantworten sollte"
+        correct: false
+      - en: "As information about a concern that is worth clarifying with a question"
+        de: "Als Information über eine Sorge, die man mit einer Frage klären sollte"
+        correct: true
+      - en: "As a bargaining trick that should be ignored until the customer stops"
+        de: "Als Verhandlungstrick, den man ignorieren sollte, bis die Kundschaft aufhört"
+        correct: false
+    explanation:
+      en: "An objection usually points to a missing piece of information or value. Asking what lies behind it shows what the customer needs to decide."
+      de: "Ein Einwand verweist meist auf fehlende Information oder fehlenden Wert. Die Frage nach dem Hintergrund zeigt, was die Kundschaft für ihre Entscheidung braucht."
+    source: https://openstax.org/books/principles-marketing/pages/15-3-steps-in-the-personal-selling-process
+  - id: ohn-f-seq
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Which sequence is a good basic way to handle an objection?"
+      de: "Welche Abfolge ist ein guter Grundansatz für den Umgang mit einem Einwand?"
+    options:
+      - en: "Respond at once, repeat the main benefit, then ask the customer to sign"
+        de: "Sofort antworten, den Hauptnutzen wiederholen, dann um Unterschrift bitten"
+        correct: false
+      - en: "Listen, clarify the real concern, respond to it, then confirm it was answered"
+        de: "Zuhören, die eigentliche Sorge klären, darauf antworten, dann die Beantwortung bestätigen lassen"
+        correct: true
+      - en: "Offer a discount, wait for the reaction, then explain why it was needed"
+        de: "Rabatt anbieten, die Reaktion abwarten, dann erklären, warum er nötig war"
+        correct: false
+      - en: "Agree with everything, change the topic, then return to it in a week"
+        de: "Allem zustimmen, das Thema wechseln und in einer Woche darauf zurückkommen"
+        correct: false
+    explanation:
+      en: "Clarifying before answering avoids solving the wrong problem. Confirming at the end checks that the concern is really addressed."
+      de: "Klären vor dem Antworten verhindert, dass du das falsche Problem löst. Das Bestätigen am Ende prüft, ob die Sorge wirklich beantwortet ist."
+    source: https://openstax.org/books/principles-marketing/pages/15-3-steps-in-the-personal-selling-process
+  - id: ohn-f-int
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "A buyer demands ten percent off, because the budget is fixed this quarter. What is the buyer's interest?"
+      de: "Ein Einkäufer fordert zehn Prozent Nachlass, weil das Budget in diesem Quartal fest ist. Was ist sein Interesse?"
+    options:
+      - en: "Staying within the fixed budget for this quarter"
+        de: "Im festen Budget dieses Quartals zu bleiben"
+        correct: true
+      - en: "Getting exactly ten percent off the list price"
+        de: "Genau zehn Prozent Nachlass auf den Listenpreis zu bekommen"
+        correct: false
+      - en: "Proving to the seller that the buyer is hard to convince"
+        de: "Dem Verkäufer zu beweisen, dass der Einkäufer schwer zu überzeugen ist"
+        correct: false
+      - en: "Buying from the competitor who has the lowest price"
+        de: "Beim Wettbewerber mit dem niedrigsten Preis zu kaufen"
+        correct: false
+    explanation:
+      en: "The ten percent is the position; the fixed budget is the interest. Knowing the interest opens other options, such as a lower first-year fee or a smaller scope."
+      de: "Die zehn Prozent sind die Position, das feste Budget ist das Interesse. Wer das Interesse kennt, findet weitere Optionen, etwa eine niedrigere Gebühr im ersten Jahr oder einen kleineren Umfang."
+    source: https://en.wikipedia.org/wiki/Negotiation
+  - id: ohn-f-fair
+    level: foundation
+    difficulty: 1050
+    type: multi
+    stem:
+      en: "Which behaviours are fair when answering objections? Select all that apply."
+      de: "Welches Verhalten ist beim Umgang mit Einwänden fair? Wähle alle zutreffenden aus."
+    options:
+      - en: "Admit a limitation of the product when the customer asks about it"
+        de: "Eine Grenze des Produkts zugeben, wenn die Kundschaft danach fragt"
+        correct: true
+      - en: "Offer a reference or trial that supports your statement"
+        de: "Eine Referenz oder einen Test anbieten, der deine Aussage stützt"
+        correct: true
+      - en: "Invent a deadline so the customer decides faster than planned"
+        de: "Eine Frist erfinden, damit die Kundschaft schneller entscheidet als geplant"
+        correct: false
+      - en: "Say a competing offer exists without having one"
+        de: "Behaupten, es gebe ein Konkurrenzangebot, ohne eines zu haben"
+        correct: false
+    explanation:
+      en: "Honest limits and verifiable proof build trust. Invented deadlines and offers are pressure tactics that damage trust and can be unfair or unlawful."
+      de: "Ehrliche Grenzen und überprüfbare Belege schaffen Vertrauen. Erfundene Fristen und Angebote sind Druckmittel, die dem Vertrauen schaden und unfair oder rechtswidrig sein können."
+    source: https://openstax.org/books/principles-marketing/pages/15-3-steps-in-the-personal-selling-process
+  - id: ohn-p-batna
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "What is your BATNA in a negotiation?"
+      de: "Was ist deine BATNA in einer Verhandlung?"
+    options:
+      - en: "The lowest price your company has ever accepted from a customer"
+        de: "Der niedrigste Preis, den dein Unternehmen je von einer Kundschaft akzeptiert hat"
+        correct: false
+      - en: "Your best option if the negotiation ends without a deal"
+        de: "Deine beste Option, wenn die Verhandlung ohne Einigung endet"
+        correct: true
+      - en: "The first offer you make, which you expect to be countered"
+        de: "Dein erstes Angebot, bei dem du mit einem Gegenangebot rechnest"
+        correct: false
+      - en: "The point at which the customer is ready to sign right away"
+        de: "Der Punkt, an dem die Kundschaft sofort bereit ist zu unterschreiben"
+        correct: false
+    explanation:
+      en: "BATNA stands for best alternative to a negotiated agreement. It is the standard against which you judge any offer; it is not a price list item or an opening move."
+      de: "BATNA steht für beste Alternative zu einer ausgehandelten Vereinbarung. Sie ist der Maßstab, an dem du jedes Angebot misst; sie ist weder eine Preislisten-Angabe noch ein Eröffnungszug."
+    source: https://en.wikipedia.org/wiki/Best_alternative_to_a_negotiated_agreement
+  - id: ohn-p-trade
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "A customer asks for free training on top of the agreed offer. Which response applies a good concession rule?"
+      de: "Eine Kundin verlangt zusätzlich zum vereinbarten Angebot eine kostenlose Schulung. Welche Antwort wendet eine gute Konzessionsregel an?"
+    options:
+      - en: "\"Yes, I can include it if you extend the contract term to three years.\""
+        de: "„Ja, die kann ich dazunehmen, wenn Sie die Laufzeit auf drei Jahre verlängern.“"
+        correct: true
+      - en: "\"Of course, I will include it, and the customer need not give anything.\""
+        de: "„Natürlich nehme ich sie dazu, und die Kundschaft muss nichts geben.“"
+        correct: false
+      - en: "\"No, and I will not discuss any other terms with you today.\""
+        de: "„Nein, und über andere Bedingungen spreche ich heute nicht mehr mit Ihnen.“"
+        correct: false
+      - en: "\"Maybe later, once the order has been signed and the invoice is paid.\""
+        de: "„Vielleicht später, wenn die Bestellung unterschrieben und die Rechnung bezahlt ist.“"
+        correct: false
+    explanation:
+      en: "An \"if... then\" trade ties each concession to something in return. A free gift teaches the customer to keep asking; a flat refusal ignores possible mutual gain."
+      de: "Ein „wenn... dann“-Tausch bindet jedes Zugeständnis an eine Gegenleistung. Ein Geschenk lehrt die Kundschaft, weiter zu fragen; ein pauschales Nein ignoriert mögliche beiderseitige Vorteile."
+    source: https://en.wikipedia.org/wiki/Negotiation
+  - id: ohn-p-stall
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "A buyer says, \"We need to think about it.\" Which follow-up helps tell a real objection from stalling?"
+      de: "Ein Einkäufer sagt: „Wir müssen darüber nachdenken.“ Welche Nachfrage hilft, einen echten Einwand von Hinhalten zu unterscheiden?"
+    options:
+      - en: "\"If we solve the price point, is there anything else holding you back?\""
+        de: "„Wenn wir den Preispunkt lösen, hält Sie dann noch etwas zurück?“"
+        correct: true
+      - en: "\"Everyone thinks about it, so I will call you every day this week.\""
+        de: "„Alle überlegen, deshalb rufe ich Sie diese Woche jeden Tag an.“"
+        correct: false
+      - en: "\"Our offer ends tonight, so you have to decide before then.\""
+        de: "„Unser Angebot endet heute Abend, Sie müssen sich vorher entscheiden.“"
+        correct: false
+      - en: "\"Fine, I will remove the offer from the system and close the file.\""
+        de: "„In Ordnung, ich nehme das Angebot aus dem System und schließe die Akte.“"
+        correct: false
+    explanation:
+      en: "A question that isolates the concern shows whether a concrete reason exists. Daily calls, invented deadlines or closing the file do not reveal the reason."
+      de: "Eine Frage, die die Sorge isoliert, zeigt, ob es einen konkreten Grund gibt. Tägliche Anrufe, erfundene Fristen oder das Schließen der Akte decken den Grund nicht auf."
+    source: https://openstax.org/books/principles-marketing/pages/15-3-steps-in-the-personal-selling-process
+  - id: ohn-p-princ
+    level: practitioner
+    difficulty: 1150
+    type: multi
+    stem:
+      en: "Which are principles of principled (Harvard) negotiation? Select all that apply."
+      de: "Welche gehören zu den Grundsätzen des sachbezogenen Verhandelns (Harvard-Konzept)? Wähle alle zutreffenden aus."
+    options:
+      - en: "Focus on interests, not positions"
+        de: "Auf Interessen konzentrieren, nicht auf Positionen"
+        correct: true
+      - en: "Develop options for mutual gain"
+        de: "Optionen zum beiderseitigen Vorteil entwickeln"
+        correct: true
+      - en: "Insist on objective criteria for the outcome"
+        de: "Auf objektiven Beurteilungskriterien für das Ergebnis bestehen"
+        correct: true
+      - en: "Start with an extreme demand and never move from it"
+        de: "Mit einer extremen Forderung starten und nie davon abrücken"
+        correct: false
+    explanation:
+      en: "The concept also separates people from the issues. An extreme, fixed demand is positional bargaining, which the approach is designed to avoid."
+      de: "Das Konzept trennt außerdem Menschen und Sachfragen. Eine extreme, starre Forderung ist Positionsfeilschen, das der Ansatz gerade vermeiden will."
+    source: https://de.wikipedia.org/wiki/Harvard-Konzept
+  - id: ohn-a-multi
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "In a multi-issue negotiation you care most about contract term, the customer cares most about payment terms. What is the best approach?"
+      de: "In einer Verhandlung mit mehreren Themen ist dir die Laufzeit am wichtigsten, der Kundschaft die Zahlungsbedingungen. Was ist der beste Ansatz?"
+    options:
+      - en: "Trade them: flexible payment terms for a longer term"
+        de: "Tauschen: flexible Zahlungsbedingungen gegen längere Laufzeit"
+        correct: true
+      - en: "Negotiate each issue separately and lose at least one of them"
+        de: "Jedes Thema einzeln verhandeln und mindestens eines davon verlieren"
+        correct: false
+      - en: "Hide your priority so the customer cannot use it against you"
+        de: "Deine Priorität verbergen, damit die Kundschaft sie nicht gegen dich nutzt"
+        correct: false
+      - en: "Insist on the same priority for both sides to keep it simple"
+        de: "Auf dieselbe Priorität für beide Seiten bestehen, um es einfach zu halten"
+        correct: false
+    explanation:
+      en: "Different priorities create room for mutual gain: each side gives what costs little and receives what matters. Hiding or equalising priorities wastes that room."
+      de: "Unterschiedliche Prioritäten schaffen Spielraum für beiderseitigen Nutzen: Jede Seite gibt, was wenig kostet, und erhält, was ihr wichtig ist. Verbergen oder Gleichsetzen verschenkt diesen Spielraum."
+    source: https://de.wikipedia.org/wiki/Harvard-Konzept
+  - id: ohn-a-claim
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "A buyer says a competitor offers the same for less. What is the most professional reaction?"
+      de: "Ein Einkäufer sagt, ein Wettbewerber biete dasselbe günstiger an. Was ist die professionellste Reaktion?"
+    options:
+      - en: "Match the lower price at once to avoid losing the deal"
+        de: "Den niedrigeren Preis sofort mitgehen, um den Deal nicht zu verlieren"
+        correct: false
+      - en: "Accuse the buyer of bluffing and threaten to end the talks"
+        de: "Dem Einkäufer Bluffen vorwerfen und mit Abbruch der Gespräche drohen"
+        correct: false
+      - en: "Ask what the offer includes and compare scope, service and total cost"
+        de: "Fragen, was das Angebot enthält, und Umfang, Service und Gesamtkosten vergleichen"
+        correct: true
+      - en: "Say you do not discuss competitors, and repeat your original price"
+        de: "Sagen, dass du nicht über Wettbewerber sprichst, und deinen Preis wiederholen"
+        correct: false
+    explanation:
+      en: "Claims about alternatives are hard to evaluate and may distort the buyer's real interests. Testing them with questions is better than caving in or accusing."
+      de: "Aussagen über Alternativen sind schwer zu bewerten und können die wahren Interessen verzerren. Sie mit Fragen zu prüfen ist besser als einzuknicken oder zu beschuldigen."
+    source: https://en.wikipedia.org/wiki/Best_alternative_to_a_negotiated_agreement
+  - id: ohn-a-tactic
+    level: advanced
+    difficulty: 1600
+    type: multi
+    stem:
+      en: "Which responses fit a buyer who adds a large new demand at the last minute? Select all that apply."
+      de: "Welche Reaktionen passen zu einem Einkäufer, der in letzter Minute eine große neue Forderung stellt? Wähle alle zutreffenden aus."
+    options:
+      - en: "Name it calmly and ask what is behind the new demand"
+        de: "Es ruhig benennen und fragen, was hinter der neuen Forderung steckt"
+        correct: true
+      - en: "Ask for time to check it internally before answering"
+        de: "Um Zeit bitten, um es intern zu prüfen, bevor du antwortest"
+        correct: true
+      - en: "Link it to something in return or reopen the earlier package"
+        de: "Es an eine Gegenleistung knüpfen oder das frühere Paket wieder öffnen"
+        correct: true
+      - en: "Accept it silently, since the deal is nearly done"
+        de: "Es stillschweigend akzeptieren, da der Deal fast fertig ist"
+        correct: false
+    explanation:
+      en: "Last-minute demands exploit the pressure of an almost finished deal. Calm questions, time and a trade restore balance; silent acceptance rewards the tactic."
+      de: "Forderungen in letzter Minute nutzen den Druck eines fast fertigen Deals. Ruhige Fragen, Zeit und ein Tausch stellen das Gleichgewicht wieder her; stilles Akzeptieren belohnt die Taktik."
+    source: https://en.wikipedia.org/wiki/Negotiation
+  - id: ohn-a-walk
+    level: advanced
+    difficulty: 1520
+    type: single
+    stem:
+      en: "The customer's final terms fall below the walk-away point you agreed with your manager. What do you do?"
+      de: "Die endgültigen Bedingungen der Kundschaft liegen unter der mit deiner Führungskraft vereinbarten Ausstiegsgrenze. Was tust du?"
+    options:
+      - en: "Accept, because any signed deal is better than none"
+        de: "Annehmen, denn jeder unterschriebene Deal ist besser als keiner"
+        correct: false
+      - en: "Decline or escalate with options, instead of agreeing on your own"
+        de: "Ablehnen oder mit Optionen eskalieren, statt allein zuzustimmen"
+        correct: true
+      - en: "Agree verbally and hope that the terms can be fixed after signature"
+        de: "Mündlich zustimmen und hoffen, dass sich die Bedingungen nach der Unterschrift korrigieren lassen"
+        correct: false
+      - en: "Reduce your own price further until the customer is happy"
+        de: "Deinen Preis weiter senken, bis die Kundschaft zufrieden ist"
+        correct: false
+    explanation:
+      en: "The walk-away point defines where no deal is better than this deal. Below it, you decline or ask the person with authority; hoping to repair terms later is a risk to your company."
+      de: "Die Ausstiegsgrenze legt fest, ab wann kein Deal besser ist als dieser. Darunter lehnst du ab oder fragst die befugte Person; später Bedingungen reparieren zu wollen, ist ein Risiko für dein Unternehmen."
+    source: https://en.wikipedia.org/wiki/Best_alternative_to_a_negotiated_agreement

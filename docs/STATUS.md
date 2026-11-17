@@ -1,5 +1,18 @@
 # Status
 
+## 2026-11-17 — Phase 4: Sales content batch 2 (solution-presentation-demo, objection-handling-negotiation, proposals-quoting-pricing-basics)
+
+**Done**
+- 16 unit files (8 en + 8 de, `status: ai-draft`, original text with worked example, takeaways, `sources[]`): foundation/practitioner/advanced for presentation and negotiation; foundation/practitioner only for proposals-quoting-pricing-basics (role targets stop at practitioner). 37 items (12 + 12 + 13), single and multi, difficulty per section 7.2, no `uniquely longest` warning, distractors written as plausible misconceptions.
+- 8 new resources (all `mode: link`, `licenseVerifiedOn: 2026-11-17`, HTTP 200 checked): Wikipedia pages on negotiation, BATNA, product demonstration, value-based pricing, cost-plus pricing, request for quotation, plus German Harvard-Konzept and Preispolitik. `openstax-marketing-selling-process` (15.3, CC BY-NC-SA, link) now also tagged for the two new competencies.
+- Pricing is at topic level only: VAT is mentioned as a separate quote line with rate and mandatory details deferred to finance/legal; no rates, paragraphs or deadlines. Numbers in examples are invented and labelled.
+- Open limitation: the OpenStax pricing chapter pages could not be resolved (404 on guessed URLs), so pricing has no non-Wikipedia resource. Sales role stays `status: draft`.
+- Checks: lint, typecheck, tests (109), validate:content (0 errors), build all pass.
+
+**Counts:** roles 5 (1 draft) · competencies 48 · units 262 · items 529 · resources 317 · tests 109
+
+**Next:** Sales content batch 3 (closing-contract-handover, account-management-upselling, crm-sales-data-forecasting).
+
 ## 2026-11-17 — Phase 4: Sales content batch 1 (sales-process-pipeline, prospecting-lead-qualification, discovery-needs-analysis)
 
 **Done**

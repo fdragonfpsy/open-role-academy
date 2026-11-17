@@ -1,0 +1,290 @@
+competency: solution-presentation-demo
+items:
+  - id: spd-f-benefit
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "A customer said that evening tills take too long to close. Which statement is a benefit for this customer?"
+      de: "Eine Kundin sagte, der abendliche Kassenabschluss dauere zu lange. Welche Aussage ist ein Nutzen für diese Kundin?"
+    options:
+      - en: "Our system has a report module with twelve layouts for every team"
+        de: "Unser System hat ein Berichtsmodul mit zwölf Layouts für jedes Team"
+        correct: false
+      - en: "The closing report totals each till, so nobody has to recount"
+        de: "Der Abschlussbericht summiert jede Kasse, niemand muss neu zählen"
+        correct: true
+      - en: "Our software is used by many companies in your region and sector"
+        de: "Unsere Software wird von vielen Unternehmen in deiner Region und Branche genutzt"
+        correct: false
+      - en: "The report can be exported to several common file formats"
+        de: "Der Bericht lässt sich in mehrere gängige Dateiformate exportieren"
+        correct: false
+    explanation:
+      en: "A benefit connects what the product does to the problem this customer named. The other options describe a feature, a reference or a technical option, none of which answers the stated complaint."
+      de: "Ein Nutzen verbindet das, was das Produkt tut, mit dem Problem, das diese Kundin genannt hat. Die anderen Optionen beschreiben Merkmal, Referenz oder technische Möglichkeit, keine beantwortet die genannte Beschwerde."
+    source: https://openstax.org/books/principles-marketing/pages/15-3-steps-in-the-personal-selling-process
+  - id: spd-f-before
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "When should a solution presentation normally take place?"
+      de: "Wann findet eine Lösungspräsentation normalerweise statt?"
+    options:
+      - en: "Right at the first contact, so the customer sees everything early"
+        de: "Direkt beim ersten Kontakt, damit die Kundschaft früh alles sieht"
+        correct: false
+      - en: "After the discovery conversation, based on the needs you learned"
+        de: "Nach dem Bedarfsgespräch, aufbauend auf den erkannten Bedarfen"
+        correct: true
+      - en: "Only after the customer has signed an order and paid the invoice"
+        de: "Erst nachdem die Kundschaft bestellt und die Rechnung bezahlt hat"
+        correct: false
+      - en: "Whenever the customer asks for a price, regardless of the earlier steps"
+        de: "Immer wenn die Kundschaft nach dem Preis fragt, unabhängig von den früheren Schritten"
+        correct: false
+    explanation:
+      en: "The presentation is built on needs uncovered earlier. Without discovery you would show features at random."
+      de: "Die Präsentation baut auf zuvor erkannten Bedarfen auf. Ohne Bedarfsanalyse würdest du Merkmale zufällig zeigen."
+    source: https://openstax.org/books/principles-marketing/pages/15-3-steps-in-the-personal-selling-process
+  - id: spd-f-structure
+    level: foundation
+    difficulty: 1000
+    type: multi
+    stem:
+      en: "Which elements belong in a short, well-structured presentation? Select all that apply."
+      de: "Welche Elemente gehören in eine kurze, gut strukturierte Präsentation? Wähle alle zutreffenden aus."
+    options:
+      - en: "An opening that confirms the goals and the time available"
+        de: "Ein Einstieg, der die Ziele und die verfügbare Zeit bestätigt"
+        correct: true
+      - en: "A check whether each shown point fits what the customer needs"
+        de: "Eine Prüfung, ob jeder gezeigte Punkt zum Bedarf der Kundschaft passt"
+        correct: true
+      - en: "A closing with an agreed next step, owner and date"
+        de: "Ein Abschluss mit vereinbartem nächsten Schritt, Zuständigkeit und Datum"
+        correct: true
+      - en: "A complete tour of every function in the order of the menu"
+        de: "Eine vollständige Tour durch jede Funktion in der Reihenfolge des Menüs"
+        correct: false
+    explanation:
+      en: "Open, show with checks, close with a next step. A full menu tour loses the customer's needs among the features."
+      de: "Einstieg, Zeigen mit Rückfragen, Abschluss mit nächstem Schritt. Eine Tour durch das ganze Menü lässt die Bedarfe der Kundschaft zwischen den Funktionen untergehen."
+    source: https://en.wikipedia.org/wiki/Product_demonstration
+  - id: spd-f-prep
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "You present online in ten minutes. Which preparation is the most useful?"
+      de: "Du präsentierst in zehn Minuten online. Welche Vorbereitung ist am nützlichsten?"
+    options:
+      - en: "Test connection, screen sharing and demo data, and know your fallback"
+        de: "Verbindung, Freigabe und Demodaten testen und deinen Plan B kennen"
+        correct: true
+      - en: "Add as many extra slides as possible in case someone asks about them"
+        de: "So viele zusätzliche Folien wie möglich ergänzen, falls jemand danach fragt"
+        correct: false
+      - en: "Learn the full text by heart so that you never look at the screen"
+        de: "Den vollständigen Text auswendig lernen, damit du nie auf den Bildschirm schaust"
+        correct: false
+      - en: "Open every product area in advance and decide the order during the demo"
+        de: "Jeden Produktbereich vorab öffnen und die Reihenfolge erst in der Demo festlegen"
+        correct: false
+    explanation:
+      en: "Technical failures are the most common basic problem, so test and plan a fallback. Extra slides, memorised text and an improvised order do not protect the demo."
+      de: "Technische Ausfälle sind das häufigste Grundproblem, also teste und plane einen Plan B. Zusatzfolien, auswendig gelernter Text und eine improvisierte Reihenfolge schützen die Demo nicht."
+    source: https://en.wikipedia.org/wiki/Product_demonstration
+  - id: spd-p-criteria
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "Why agree success criteria with the customer before a demo?"
+      de: "Warum vereinbart man vor einer Demo Erfolgskriterien mit der Kundschaft?"
+    options:
+      - en: "So the customer cannot change their mind after seeing the product"
+        de: "Damit die Kundschaft ihre Meinung nach dem Sehen des Produkts nicht ändern kann"
+        correct: false
+      - en: "So the demo is judged against the customer's needs and leads to a decision"
+        de: "Damit die Demo an den Bedarfen der Kundschaft gemessen wird und zu einer Entscheidung führt"
+        correct: true
+      - en: "So that you can shorten the demo to the features you like best"
+        de: "Damit du die Demo auf die Funktionen kürzen kannst, die dir am besten gefallen"
+        correct: false
+      - en: "So the customer's technical team does not have to attend the session"
+        de: "Damit das technische Team der Kundschaft nicht an der Sitzung teilnehmen muss"
+        correct: false
+    explanation:
+      en: "Agreed criteria turn a demo into evidence that can be checked at the end. They do not bind the customer to buy."
+      de: "Vereinbarte Kriterien machen die Demo zu einem Beleg, den man am Ende prüfen kann. Sie verpflichten die Kundschaft nicht zum Kauf."
+    source: https://openstax.org/books/principles-marketing/pages/15-3-steps-in-the-personal-selling-process
+  - id: spd-p-room
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "An accountant, two coordinators and a manager attend. The accountant stays silent. What is the best approach?"
+      de: "Eine Buchhalterin, zwei Koordinierende und eine Leitung nehmen teil. Die Buchhalterin schweigt. Was ist der beste Ansatz?"
+    options:
+      - en: "Skip her topic, since she asked no questions and likely has no interest"
+        de: "Ihr Thema auslassen, da sie keine Fragen stellte und vermutlich kein Interesse hat"
+        correct: false
+      - en: "Show the export for her use case and ask directly what she needs from it"
+        de: "Den Export für ihren Anwendungsfall zeigen und sie direkt fragen, was sie daraus braucht"
+        correct: true
+      - en: "Only talk to the manager, because only the manager makes decisions"
+        de: "Nur mit der Leitung sprechen, weil nur sie Entscheidungen trifft"
+        correct: false
+      - en: "Repeat the coordinators' part more slowly in case she did not follow"
+        de: "Den Teil für die Koordinierenden langsamer wiederholen, falls sie nicht folgen konnte"
+        correct: false
+    explanation:
+      en: "Each role judges differently. A silent participant may hold a criterion that decides the deal, so address it and ask."
+      de: "Jede Rolle bewertet anders. Eine schweigende Person kann ein Kriterium tragen, das den Deal entscheidet; sprich es an und frage nach."
+    source: https://openstax.org/books/principles-marketing/pages/15-3-steps-in-the-personal-selling-process
+  - id: spd-p-gap
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "During the demo a customer asks for a function you do not have. What do you do?"
+      de: "Während der Demo fragt die Kundschaft nach einer Funktion, die ihr nicht habt. Was tust du?"
+    options:
+      - en: "Say it does not exist, describe the workaround and promise a dated answer"
+        de: "Sagen, dass es sie nicht gibt, den Umweg beschreiben und eine Antwort mit Datum versprechen"
+        correct: true
+      - en: "Say it is coming soon, to keep the mood positive until the deal is signed"
+        de: "Sagen, dass sie bald kommt, um die Stimmung bis zur Unterschrift positiv zu halten"
+        correct: false
+      - en: "Change the subject and hope the customer does not come back to it"
+        de: "Das Thema wechseln und hoffen, dass die Kundschaft nicht darauf zurückkommt"
+        correct: false
+      - en: "Show an unfinished prototype as if it were available to every customer"
+        de: "Einen unfertigen Prototyp zeigen, als wäre er für alle Kunden verfügbar"
+        correct: false
+    explanation:
+      en: "Honest answers protect trust and avoid claims that could later be held against your company. A workaround and a dated follow-up keep the conversation useful."
+      de: "Ehrliche Antworten schützen das Vertrauen und vermeiden Aussagen, die später gegen dein Unternehmen verwendet werden könnten. Ein Umweg und eine Rückmeldung mit Datum halten das Gespräch nützlich."
+    source: https://en.wikipedia.org/wiki/Product_demonstration
+  - id: spd-p-next
+    level: practitioner
+    difficulty: 1150
+    type: multi
+    stem:
+      en: "Which are strong ways to end a demo? Select all that apply."
+      de: "Was sind starke Wege, eine Demo zu beenden? Wähle alle zutreffenden aus."
+    options:
+      - en: "Check each agreed success criterion with the customer"
+        de: "Jedes vereinbarte Erfolgskriterium gemeinsam mit der Kundschaft prüfen"
+        correct: true
+      - en: "Agree a dated step such as a trial with named users"
+        de: "Einen datierten Schritt vereinbaren, etwa eine Testphase mit benannten Nutzenden"
+        correct: true
+      - en: "Note open questions and say who answers them by when"
+        de: "Offene Fragen festhalten und sagen, wer sie bis wann beantwortet"
+        correct: true
+      - en: "Thank everyone and wait for the customer to get back to you"
+        de: "Allen danken und abwarten, bis sich die Kundschaft meldet"
+        correct: false
+    explanation:
+      en: "A demo should end with checked criteria and a dated next step. Waiting passively leaves the process to chance."
+      de: "Eine Demo sollte mit geprüften Kriterien und einem datierten nächsten Schritt enden. Passives Abwarten überlässt den Prozess dem Zufall."
+    source: https://openstax.org/books/principles-marketing/pages/15-3-steps-in-the-personal-selling-process
+  - id: spd-a-matrix
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "A buying group has security, usability and cost concerns held by different people. What is the most effective evidence plan?"
+      de: "Eine Einkaufsgruppe hat Sicherheits-, Bedienbarkeits- und Kostenbedenken bei verschiedenen Personen. Was ist der wirksamste Belegplan?"
+    options:
+      - en: "One long demo of every feature, shown the same way to everyone"
+        de: "Eine lange Demo jeder Funktion, für alle gleich gezeigt"
+        correct: false
+      - en: "A fitting format per concern: questionnaire, live demo, priced pilot"
+        de: "Ein passendes Format je Bedenken: Fragebogen, Live-Demo, bepreister Pilot"
+        correct: true
+      - en: "A price discount for the whole group, offered before the concerns are known"
+        de: "Ein Preisnachlass für die ganze Gruppe, angeboten bevor die Bedenken bekannt sind"
+        correct: false
+      - en: "A written statement that all concerns are unfounded, signed by the sales team"
+        de: "Eine schriftliche Erklärung, dass alle Bedenken unbegründet sind, unterschrieben vom Vertrieb"
+        correct: false
+    explanation:
+      en: "Different criteria need different kinds of evidence. One generic demo satisfies none of them fully, and dismissing or buying off a concern does not resolve it."
+      de: "Verschiedene Kriterien brauchen verschiedene Belege. Eine generische Demo erfüllt keines vollständig, und Bedenken abzutun oder mit Rabatt zu überdecken löst sie nicht."
+    source: https://openstax.org/books/principles-marketing/pages/15-3-steps-in-the-personal-selling-process
+  - id: spd-a-pilot
+    level: advanced
+    difficulty: 1550
+    type: multi
+    stem:
+      en: "Which points should be agreed in writing before a pilot starts? Select all that apply."
+      de: "Welche Punkte sollten vor dem Start eines Piloten schriftlich vereinbart werden? Wähle alle zutreffenden aus."
+    options:
+      - en: "Scope, duration and who takes part on both sides"
+        de: "Umfang, Dauer und wer auf beiden Seiten teilnimmt"
+        correct: true
+      - en: "Measures that define success and what happens if they are missed"
+        de: "Kennzahlen, die den Erfolg definieren, und was passiert, wenn sie verfehlt werden"
+        correct: true
+      - en: "How data is handled, including any personal data, and for what purpose"
+        de: "Wie mit Daten umgegangen wird, auch mit personenbezogenen, und zu welchem Zweck"
+        correct: true
+      - en: "A guaranteed contract after the pilot, whatever the results show"
+        de: "Ein garantierter Vertrag nach dem Piloten, was auch immer die Ergebnisse zeigen"
+        correct: false
+    explanation:
+      en: "Clear scope, measures and data handling keep the pilot fair and decidable. A guaranteed contract regardless of results defeats the purpose of a pilot."
+      de: "Klarer Umfang, Kennzahlen und Datenumgang halten den Piloten fair und entscheidbar. Ein garantierter Vertrag unabhängig von den Ergebnissen widerspricht dem Zweck eines Piloten."
+    source: https://openstax.org/books/principles-marketing/pages/15-3-steps-in-the-personal-selling-process
+  - id: spd-a-roadmap
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "To close a deal faster, your colleague wants to tell the customer that a missing feature is \"included\" because it is on the roadmap. How do you respond?"
+      de: "Um einen Deal schneller abzuschließen, will ein Kollege der Kundschaft sagen, eine fehlende Funktion sei „enthalten“, weil sie auf der Roadmap steht. Wie reagierst du?"
+    options:
+      - en: "Agree, as long as the roadmap entry has a rough target quarter"
+        de: "Zustimmen, solange der Roadmap-Eintrag ein grobes Zielquartal hat"
+        correct: false
+      - en: "Say it is only a plan, not a promise, and check company rules"
+        de: "Sagen, dass es nur ein Plan ist, keine Zusage, und die Unternehmensregeln prüfen"
+        correct: true
+      - en: "Tell the customer only if they ask about the feature in writing"
+        de: "Es der Kundschaft nur sagen, wenn sie schriftlich nach der Funktion fragt"
+        correct: false
+      - en: "Leave it unmentioned, since the customer will see it in the product soon"
+        de: "Es unerwähnt lassen, da die Kundschaft es bald im Produkt sehen wird"
+        correct: false
+    explanation:
+      en: "A plan is not a feature. Presenting it as available misleads the customer and exposes your company. Say it is planned without a guarantee and follow internal rules."
+      de: "Ein Plan ist keine Funktion. Ihn als verfügbar darzustellen täuscht die Kundschaft und gefährdet dein Unternehmen. Sage, dass es geplant ist, ohne Garantie, und halte dich an interne Regeln."
+    source: https://en.wikipedia.org/wiki/Product_demonstration
+  - id: spd-a-fail
+    level: advanced
+    difficulty: 1520
+    type: single
+    stem:
+      en: "Your live demo fails in front of the buying group. Which response best protects trust?"
+      de: "Deine Live-Demo scheitert vor der Einkaufsgruppe. Welche Reaktion schützt das Vertrauen am besten?"
+    options:
+      - en: "Name the problem briefly, switch to your fallback and follow up the same day"
+        de: "Das Problem kurz benennen, zum Plan B wechseln und noch am selben Tag nachfassen"
+        correct: true
+      - en: "Blame the customer's network and ask them to fix it before you continue"
+        de: "Dem Netzwerk der Kundschaft die Schuld geben und sie bitten, es zu beheben, bevor du fortfährst"
+        correct: false
+      - en: "Keep trying the same steps in silence until the demo eventually works"
+        de: "Schweigend dieselben Schritte wiederholen, bis die Demo schließlich funktioniert"
+        correct: false
+      - en: "Cancel the session and send a price list so that the meeting is not wasted"
+        de: "Die Sitzung abbrechen und eine Preisliste schicken, damit das Treffen nicht umsonst war"
+        correct: false
+    explanation:
+      en: "Customers judge how you handle problems. A short, calm explanation and a prompt follow-up show reliability; blame or silence do not."
+      de: "Kundschaft bewertet, wie du mit Problemen umgehst. Eine kurze, ruhige Erklärung und zügiges Nachfassen zeigen Verlässlichkeit; Schuldzuweisung oder Schweigen nicht."
+    source: https://en.wikipedia.org/wiki/Product_demonstration

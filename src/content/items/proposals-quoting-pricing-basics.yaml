@@ -1,0 +1,314 @@
+competency: proposals-quoting-pricing-basics
+items:
+  - id: pqp-f-contents
+    level: foundation
+    difficulty: 900
+    type: multi
+    stem:
+      en: "Which details normally belong on a quote? Select all that apply."
+      de: "Welche Angaben gehören normalerweise in ein Angebot? Wähle alle zutreffenden aus."
+    options:
+      - en: "Items or services with quantities and prices"
+        de: "Artikel oder Leistungen mit Mengen und Preisen"
+        correct: true
+      - en: "How long the quote stays valid"
+        de: "Wie lange das Angebot gültig bleibt"
+        correct: true
+      - en: "Delivery and payment terms"
+        de: "Liefer- und Zahlungsbedingungen"
+        correct: true
+      - en: "Your internal cost and the margin on the deal"
+        de: "Deine internen Kosten und die Marge am Geschäft"
+        correct: false
+    explanation:
+      en: "A quote tells the customer what they get, for how much and on what terms. Internal cost and margin are confidential and not part of it."
+      de: "Ein Angebot sagt der Kundschaft, was sie wofür und zu welchen Bedingungen bekommt. Interne Kosten und Marge sind vertraulich und gehören nicht hinein."
+    source: https://de.wikipedia.org/wiki/Preispolitik
+  - id: pqp-f-costplus
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "A unit costs 80 and the seller adds a markup of 25 percent of the cost. What is the price?"
+      de: "Eine Einheit kostet 80, die Verkaufsperson schlägt 25 Prozent der Kosten als Aufschlag auf. Wie hoch ist der Preis?"
+    options:
+      - en: "105"
+        de: "105"
+        correct: false
+      - en: "100"
+        de: "100"
+        correct: true
+      - en: "120"
+        de: "120"
+        correct: false
+      - en: "125"
+        de: "125"
+        correct: false
+    explanation:
+      en: "25 percent of 80 is 20, so the price is 100. This is cost-plus pricing: a fixed percentage added to the unit cost."
+      de: "25 Prozent von 80 sind 20, der Preis beträgt also 100. Das ist Cost-plus-Preisbildung: ein fester Prozentsatz auf die Stückkosten."
+    source: https://en.wikipedia.org/wiki/Cost-plus_pricing
+  - id: pqp-f-margin
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "Price 100, cost 80. What is the margin (profit as a share of the price)?"
+      de: "Preis 100, Kosten 80. Wie hoch ist die Marge (Gewinn als Anteil am Preis)?"
+    options:
+      - en: "20 percent"
+        de: "20 Prozent"
+        correct: true
+      - en: "25 percent"
+        de: "25 Prozent"
+        correct: false
+      - en: "80 percent"
+        de: "80 Prozent"
+        correct: false
+      - en: "120 percent"
+        de: "120 Prozent"
+        correct: false
+    explanation:
+      en: "Profit is 20, and 20 divided by 100 is 20 percent. 25 percent would be the markup (profit divided by cost)."
+      de: "Der Gewinn beträgt 20, und 20 geteilt durch 100 sind 20 Prozent. 25 Prozent wäre der Aufschlag (Gewinn geteilt durch Kosten)."
+    source: https://en.wikipedia.org/wiki/Cost-plus_pricing
+  - id: pqp-f-vbp
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "What is the starting point of value-based pricing?"
+      de: "Was ist der Ausgangspunkt der nutzenorientierten Preisbildung (Value-based pricing)?"
+    options:
+      - en: "The unit cost of production, to which a percentage is added"
+        de: "Die Herstellkosten pro Einheit, auf die ein Prozentsatz aufgeschlagen wird"
+        correct: false
+      - en: "The lowest price a competitor currently charges in the market"
+        de: "Der niedrigste Preis, den ein Wettbewerber derzeit am Markt verlangt"
+        correct: false
+      - en: "The value the customer perceives or can expect from the offer"
+        de: "Der Wert, den die Kundschaft im Angebot wahrnimmt oder erwarten kann"
+        correct: true
+      - en: "The price that was charged to the previous customer last year"
+        de: "Der Preis, der der vorherigen Kundschaft im letzten Jahr berechnet wurde"
+        correct: false
+    explanation:
+      en: "Value-based pricing sets the price by the perceived or estimated value to the customer, not by production cost."
+      de: "Die nutzenorientierte Preisbildung setzt den Preis nach dem wahrgenommenen oder geschätzten Wert für die Kundschaft an, nicht nach den Herstellkosten."
+    source: https://en.wikipedia.org/wiki/Value-based_pricing
+  - id: pqp-f-tax
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "A colleague asks which VAT rate to put on a quote for a German business customer. What is the best step?"
+      de: "Ein Kollege fragt, welchen Umsatzsteuersatz er in ein Angebot für ein deutsches Unternehmen schreiben soll. Was ist der beste Schritt?"
+    options:
+      - en: "Use the rate from a similar quote you remember from a past deal"
+        de: "Den Satz aus einem ähnlichen Angebot nehmen, an das man sich erinnert"
+        correct: false
+      - en: "Leave the tax line out and let the customer work it out"
+        de: "Die Steuerzeile weglassen und die Kundschaft selbst rechnen lassen"
+        correct: false
+      - en: "Ask the finance team, who know the rate and the required details"
+        de: "Das Finanzteam fragen, das den Satz und die nötigen Angaben kennt"
+        correct: true
+      - en: "Use the highest rate that you know, to be on the safe side"
+        de: "Den höchsten bekannten Satz nehmen, um auf der sicheren Seite zu sein"
+        correct: false
+    explanation:
+      en: "Tax details depend on the case and can change. Finance owns them. Guessing, omitting or choosing the highest rate can produce a wrong quote."
+      de: "Steuerliche Angaben hängen vom Fall ab und können sich ändern. Die Finanzabteilung ist dafür zuständig. Raten, Weglassen oder der höchste Satz können ein falsches Angebot ergeben."
+    source: https://de.wikipedia.org/wiki/Preispolitik
+  - id: pqp-p-discount
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "Price 100, cost 80. You give a ten percent discount. What happens to the profit?"
+      de: "Preis 100, Kosten 80. Du gewährst zehn Prozent Rabatt. Was passiert mit dem Gewinn?"
+    options:
+      - en: "It falls by ten percent, from 20 to 18"
+        de: "Er sinkt um zehn Prozent, von 20 auf 18"
+        correct: false
+      - en: "It falls by half, from 20 to 10"
+        de: "Er halbiert sich, von 20 auf 10"
+        correct: true
+      - en: "It stays at 20, because the cost has not changed"
+        de: "Er bleibt bei 20, weil sich die Kosten nicht geändert haben"
+        correct: false
+      - en: "It falls to zero, as the discount equals the margin"
+        de: "Er sinkt auf null, da der Rabatt der Marge entspricht"
+        correct: false
+    explanation:
+      en: "The new price is 90, the cost stays 80, so profit is 10. A small price cut can remove a large share of profit."
+      de: "Der neue Preis beträgt 90, die Kosten bleiben 80, der Gewinn also 10. Eine kleine Preissenkung kann einen großen Teil des Gewinns beseitigen."
+    source: https://en.wikipedia.org/wiki/Cost-plus_pricing
+  - id: pqp-p-options
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "Why offer two or three clearly different options in a proposal?"
+      de: "Warum bietet man in einem Angebot zwei oder drei klar unterschiedliche Optionen an?"
+    options:
+      - en: "The customer can choose a scope instead of only bargaining over price"
+        de: "Die Kundschaft kann einen Umfang wählen, statt nur über den Preis zu verhandeln"
+        correct: true
+      - en: "The customer will always take the most expensive option offered"
+        de: "Die Kundschaft nimmt immer die teuerste angebotene Option"
+        correct: false
+      - en: "A longer document makes the offer look more professional to buyers"
+        de: "Ein längeres Dokument lässt das Angebot auf Einkäufer professioneller wirken"
+        correct: false
+      - en: "The seller no longer needs to explain the differences or recommend one"
+        de: "Die Verkaufsperson muss Unterschiede nicht erklären oder eine empfehlen"
+        correct: false
+    explanation:
+      en: "Options shift the conversation from price to fit. They still need clear differences and a recommendation with a reason."
+      de: "Optionen verlagern das Gespräch vom Preis zur Passung. Sie brauchen trotzdem klare Unterschiede und eine begründete Empfehlung."
+    source: https://en.wikipedia.org/wiki/Value-based_pricing
+  - id: pqp-p-value
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "In discovery a customer estimates that manual work costs them eight hours a week. How should you use this in the proposal?"
+      de: "In der Bedarfsanalyse schätzt eine Kundin, dass manuelle Arbeit sie acht Stunden pro Woche kostet. Wie nutzt du das im Angebot?"
+    options:
+      - en: "State it as a guaranteed saving, as it supports a higher price"
+        de: "Als garantierte Einsparung nennen, da das einen höheren Preis stützt"
+        correct: false
+      - en: "Leave it out, because customers do not like to see their own figures"
+        de: "Weglassen, weil Kundschaft ihre eigenen Zahlen nicht gern sieht"
+        correct: false
+      - en: "Show it as the customer's estimate with its basis, and compare to the price"
+        de: "Als Schätzung der Kundschaft mit Grundlage zeigen und mit dem Preis vergleichen"
+        correct: true
+      - en: "Replace it with an industry figure that you believe is more impressive"
+        de: "Durch eine Branchenzahl ersetzen, die du für beeindruckender hältst"
+        correct: false
+    explanation:
+      en: "A value argument is credible when it rests on the customer's own, marked estimate. Guarantees or borrowed figures you cannot support mislead the customer."
+      de: "Ein Wertargument überzeugt, wenn es auf der eigenen, gekennzeichneten Schätzung der Kundschaft beruht. Garantien oder fremde Zahlen, die du nicht belegen kannst, führen die Kundschaft in die Irre."
+    source: https://en.wikipedia.org/wiki/Value-based_pricing
+  - id: pqp-p-approval
+    level: practitioner
+    difficulty: 1350
+    type: single
+    stem:
+      en: "A customer asks for 15 percent off, and your limit is ten percent. What is the correct approach?"
+      de: "Eine Kundin verlangt 15 Prozent Nachlass, deine Grenze liegt bei zehn Prozent. Was ist das richtige Vorgehen?"
+    options:
+      - en: "Write 15 percent on the quote and ask for approval after it is sent"
+        de: "15 Prozent ins Angebot schreiben und die Freigabe nach dem Versand einholen"
+        correct: false
+      - en: "Offer ten percent with a condition, or get approval before promising more"
+        de: "Zehn Prozent mit Bedingung anbieten oder vor weiteren Zusagen die Freigabe holen"
+        correct: true
+      - en: "Split the order in two so that each part stays under your limit"
+        de: "Die Bestellung in zwei Teile splitten, damit jeder unter deiner Grenze bleibt"
+        correct: false
+      - en: "Agree verbally to 15 percent and fix the number after signature"
+        de: "Mündlich 15 Prozent zusagen und die Zahl nach der Unterschrift korrigieren"
+        correct: false
+    explanation:
+      en: "Approval comes before the promise. Splitting orders to bypass limits or correcting after signature breaks internal control and trust."
+      de: "Die Freigabe kommt vor der Zusage. Bestellungen aufzuteilen, um Grenzen zu umgehen, oder nach der Unterschrift zu korrigieren, verletzt interne Kontrolle und Vertrauen."
+    source: https://de.wikipedia.org/wiki/Preispolitik
+  - id: pqp-p-rfq
+    level: practitioner
+    difficulty: 1300
+    type: multi
+    stem:
+      en: "A customer sends a formal request for quotation. Which steps are sensible? Select all that apply."
+      de: "Ein Kunde schickt eine formelle Preisanfrage. Welche Schritte sind sinnvoll? Wähle alle zutreffenden aus."
+    options:
+      - en: "Decide first whether the bid is realistic and worth making"
+        de: "Zuerst entscheiden, ob ein Angebot realistisch ist und sich lohnt"
+        correct: true
+      - en: "Respond in the requested format and by the stated deadline"
+        de: "Im verlangten Format und zur genannten Frist antworten"
+        correct: true
+      - en: "Ask clarifying questions within the time allowed"
+        de: "Innerhalb der erlaubten Zeit Rückfragen stellen"
+        correct: true
+      - en: "Send your standard brochure instead of the requested data"
+        de: "Statt der verlangten Angaben die Standardbroschüre schicken"
+        correct: false
+    explanation:
+      en: "An RfQ asks for specific information in a defined process. Ignoring the format usually removes you from consideration."
+      de: "Eine Preisanfrage verlangt bestimmte Angaben in einem festgelegten Ablauf. Das Format zu ignorieren führt meist zum Ausscheiden."
+    source: https://en.wikipedia.org/wiki/Request_for_quotation
+  - id: pqp-p-floor
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "How do cost and margin help when you use value-based pricing?"
+      de: "Wie helfen Kosten und Marge, wenn du nutzenorientiert Preise bildest?"
+    options:
+      - en: "They define the price, because value is only a sales argument"
+        de: "Sie legen den Preis fest, weil Wert nur ein Verkaufsargument ist"
+        correct: false
+      - en: "They show your floor, below which a deal stops making sense"
+        de: "Sie zeigen deine Untergrenze, ab der ein Deal keinen Sinn mehr ergibt"
+        correct: true
+      - en: "They tell you which price the customer will certainly accept"
+        de: "Sie sagen dir, welchen Preis die Kundschaft sicher akzeptiert"
+        correct: false
+      - en: "They are not needed once the customer has named a benefit"
+        de: "Sie werden nicht gebraucht, sobald die Kundschaft einen Nutzen genannt hat"
+        correct: false
+    explanation:
+      en: "Value and market give the range; cost and margin give the floor. Both views matter in practice."
+      de: "Wert und Markt geben den Rahmen, Kosten und Marge die Untergrenze. In der Praxis zählen beide Sichtweisen."
+    source: https://en.wikipedia.org/wiki/Cost-plus_pricing
+  - id: pqp-p-markup
+    level: practitioner
+    difficulty: 1280
+    type: single
+    stem:
+      en: "A seller wants a 25 percent margin on price. The unit cost is 75. What price is needed?"
+      de: "Eine Verkaufsperson will 25 Prozent Marge auf den Preis. Die Stückkosten betragen 75. Welcher Preis ist nötig?"
+    options:
+      - en: "93.75"
+        de: "93,75"
+        correct: false
+      - en: "100"
+        de: "100"
+        correct: true
+      - en: "105"
+        de: "105"
+        correct: false
+      - en: "125"
+        de: "125"
+        correct: false
+    explanation:
+      en: "With a 25 percent margin, cost is 75 percent of the price, so price = 75 / 0.75 = 100. Adding 25 percent of cost would give 93.75 and a lower margin."
+      de: "Bei 25 Prozent Marge machen die Kosten 75 Prozent des Preises aus, also Preis = 75 / 0,75 = 100. 25 Prozent Aufschlag auf die Kosten ergäbe 93,75 und eine niedrigere Marge."
+    source: https://en.wikipedia.org/wiki/Cost-plus_pricing
+  - id: pqp-p-terms
+    level: practitioner
+    difficulty: 1220
+    type: single
+    stem:
+      en: "Which element on a quote protects you if the customer reacts months later?"
+      de: "Welches Element in einem Angebot schützt dich, wenn die Kundschaft erst Monate später reagiert?"
+    options:
+      - en: "A validity period after which the quoted price and terms expire"
+        de: "Eine Gültigkeitsfrist, nach der Preis und Bedingungen verfallen"
+        correct: true
+      - en: "A longer list of product features at the end of the document"
+        de: "Eine längere Liste von Produktmerkmalen am Ende des Dokuments"
+        correct: false
+      - en: "A personal note from the seller to the customer's manager"
+        de: "Eine persönliche Notiz der Verkaufsperson an die Leitung der Kundschaft"
+        correct: false
+      - en: "The customer's own internal budget figure from discovery"
+        de: "Die interne Budgetzahl der Kundschaft aus der Bedarfsanalyse"
+        correct: false
+    explanation:
+      en: "Prices and availability change, so a quote states how long it stays valid. The exact legal effect of quotes is a question for legal."
+      de: "Preise und Verfügbarkeit ändern sich, daher nennt ein Angebot seine Gültigkeitsdauer. Die genaue rechtliche Wirkung von Angeboten ist eine Frage für das Recht."
+    source: https://de.wikipedia.org/wiki/Preispolitik
