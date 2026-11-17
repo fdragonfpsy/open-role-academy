@@ -6,46 +6,56 @@ Targets per **role level** (the learner's self-rated level): F = Foundation, P =
 
 ## Overview: role × competency
 
-| Competency | Track | core-track | finance-accounting | human-resources | it-support-operations |
-|---|---|---|---|---|---|
-| Business and finance fundamentals | core | F/P/A | P/A/A | F/F/P | —/F/F |
-| Communication and collaboration | core | F/P/A | F/P/P | F/P/A | F/P/P |
-| Digital and AI literacy | core | F/P/A | F/P/P | F/P/P | F/P/A |
-| Information security basics | core | F/P/A | F/P/P | F/P/P | P/A/A |
-| Self-organisation and project basics | core | F/P/A | F/P/P | F/P/P | F/P/P |
-| Working with data | core | F/P/A | F/P/A | F/F/P | F/F/P |
-| Accounts payable | role |  | F/P/A |  |  |
-| Accounts receivable and credit management | role |  | F/P/A |  |  |
-| Backup and recovery | role |  |  |  | F/P/P |
-| Bookkeeping fundamentals | role |  | F/P/A |  |  |
-| Budgeting and forecasting | role |  | —/F/P |  |  |
-| Cash and liquidity management | role |  | F/P/A |  |  |
-| Change and IT asset management | role |  |  |  | —/F/P |
-| Cost accounting | role |  | F/P/A |  |  |
-| Diversity, equity and inclusion | role |  |  | F/P/A |  |
-| Employee relations and conflict resolution | role |  |  | —/F/P |  |
-| Employment law basics (Germany/EU) | role |  |  | F/P/A |  |
-| Endpoint and workplace device management | role |  |  |  | F/P/A |
-| Financial analysis and KPIs | role |  | —/F/P |  |  |
-| Financial statements and reporting | role |  | F/P/A |  |  |
-| Occupational health, safety and well-being | role |  |  | F/F/P |  |
-| Data protection in HR (GDPR) | role |  |  | F/P/A |  |
-| Identity and access management | role |  |  |  | F/P/A |
-| Incident and request handling | role |  |  |  | F/P/A |
-| Internal controls and audit readiness | role |  | —/F/P |  |  |
-| IT service management basics | role |  |  |  | F/P/A |
-| Learning and development | role |  |  | F/P/A |  |
-| Networking fundamentals | role |  |  |  | F/P/A |
-| Onboarding and offboarding | role |  |  | F/P/A |  |
-| Payroll and compensation basics (Germany) | role |  |  | F/P/P |  |
-| Performance management and feedback | role |  |  | —/F/P |  |
-| Personnel administration | role |  |  | F/P/A |  |
-| Reconciliation and period-end closing | role |  | F/P/A |  |  |
-| Recruitment and selection | role |  |  | F/P/A |  |
-| Scripting and automation basics | role |  |  |  | —/F/P |
-| Business tax basics (Germany/EU) | role |  | F/P/A |  |  |
-| Structured troubleshooting | role |  |  |  | F/P/A |
-| User-oriented support communication | role |  |  |  | F/P/A |
+| Competency | Track | core-track | finance-accounting | human-resources | it-support-operations | sales |
+|---|---|---|---|---|---|---|
+| Business and finance fundamentals | core | F/P/A | P/A/A | F/F/P | —/F/F | —/F/F |
+| Communication and collaboration | core | F/P/A | F/P/P | F/P/A | F/P/P | F/P/A |
+| Digital and AI literacy | core | F/P/A | F/P/P | F/P/P | F/P/A | F/P/A |
+| Information security basics | core | F/P/A | F/P/P | F/P/P | P/A/A | P/A/A |
+| Self-organisation and project basics | core | F/P/A | F/P/P | F/P/P | F/P/P | F/P/P |
+| Working with data | core | F/P/A | F/P/A | F/F/P | F/F/P | F/F/P |
+| Account management and upselling | role |  |  |  |  | —/F/P |
+| Accounts payable | role |  | F/P/A |  |  |  |
+| Accounts receivable and credit management | role |  | F/P/A |  |  |  |
+| Backup and recovery | role |  |  |  | F/P/P |  |
+| Bookkeeping fundamentals | role |  | F/P/A |  |  |  |
+| Budgeting and forecasting | role |  | —/F/P |  |  |  |
+| Cash and liquidity management | role |  | F/P/A |  |  |  |
+| Change and IT asset management | role |  |  |  | —/F/P |  |
+| Closing, contract and handover | role |  |  |  |  | F/P/A |
+| Cost accounting | role |  | F/P/A |  |  |  |
+| CRM, sales data and forecasting | role |  |  |  |  | F/P/P |
+| Discovery and needs analysis | role |  |  |  |  | F/P/A |
+| Diversity, equity and inclusion | role |  |  | F/P/A |  |  |
+| Employee relations and conflict resolution | role |  |  | —/F/P |  |  |
+| Employment law basics (Germany/EU) | role |  |  | F/P/A |  |  |
+| Endpoint and workplace device management | role |  |  |  | F/P/A |  |
+| Financial analysis and KPIs | role |  | —/F/P |  |  |  |
+| Financial statements and reporting | role |  | F/P/A |  |  |  |
+| Occupational health, safety and well-being | role |  |  | F/F/P |  |  |
+| Data protection in HR (GDPR) | role |  |  | F/P/A |  |  |
+| Identity and access management | role |  |  |  | F/P/A |  |
+| Incident and request handling | role |  |  |  | F/P/A |  |
+| Internal controls and audit readiness | role |  | —/F/P |  |  |  |
+| IT service management basics | role |  |  |  | F/P/A |  |
+| Learning and development | role |  |  | F/P/A |  |  |
+| Networking fundamentals | role |  |  |  | F/P/A |  |
+| Objection handling and negotiation | role |  |  |  |  | F/P/A |
+| Onboarding and offboarding | role |  |  | F/P/A |  |  |
+| Payroll and compensation basics (Germany) | role |  |  | F/P/P |  |  |
+| Performance management and feedback | role |  |  | —/F/P |  |  |
+| Personnel administration | role |  |  | F/P/A |  |  |
+| Proposals, quoting and pricing basics | role |  |  |  |  | —/F/P |
+| Prospecting and lead qualification | role |  |  |  |  | F/P/A |
+| Reconciliation and period-end closing | role |  | F/P/A |  |  |  |
+| Recruitment and selection | role |  |  | F/P/A |  |  |
+| Sales ethics and compliance (Germany/EU) | role |  |  |  |  | F/P/A |
+| Sales process and pipeline | role |  |  |  |  | F/P/A |
+| Scripting and automation basics | role |  |  |  | —/F/P |  |
+| Solution presentation and demo | role |  |  |  |  | F/P/A |
+| Business tax basics (Germany/EU) | role |  | F/P/A |  |  |  |
+| Structured troubleshooting | role |  |  |  | F/P/A |  |
+| User-oriented support communication | role |  |  |  | F/P/A |  |
 
 ## Core skills for every role (`core-track`, core, published)
 
@@ -128,5 +138,28 @@ Keep people productive and IT running: handle incidents and requests, troublesho
 | Business and finance fundamentals | core | 3 | — | F | F | — |
 | Change and IT asset management | role | 3 | — | F | P | it-service-management |
 | Scripting and automation basics | role | 3 | — | F | P | troubleshooting-methods |
+| Self-organisation and project basics | core | 3 | F | P | P | — |
+| Working with data | core | 3 | F | F | P | digital-ai-literacy |
+
+## Sales (`sales`, role, draft)
+
+Win and grow customers: find and qualify prospects, understand their needs, present solutions, negotiate and close deals fairly, look after accounts and keep sales data and forecasts reliable.
+
+| Competency | Track | Priority | Foundation | Practitioner | Advanced | Prerequisites |
+|---|---|---|---|---|---|---|
+| Communication and collaboration | core | 1 | F | P | A | — |
+| Discovery and needs analysis | role | 1 | F | P | A | prospecting-lead-qualification |
+| Information security basics | core | 1 | P | A | A | digital-ai-literacy |
+| Prospecting and lead qualification | role | 1 | F | P | A | sales-process-pipeline |
+| Sales ethics and compliance (Germany/EU) | role | 1 | F | P | A | information-security-basics |
+| Sales process and pipeline | role | 1 | F | P | A | — |
+| Solution presentation and demo | role | 1 | F | P | A | discovery-needs-analysis |
+| Account management and upselling | role | 2 | — | F | P | closing-contract-handover |
+| Closing, contract and handover | role | 2 | F | P | A | objection-handling-negotiation, proposals-quoting-pricing-basics |
+| CRM, sales data and forecasting | role | 2 | F | P | P | sales-process-pipeline, working-with-data |
+| Digital and AI literacy | core | 2 | F | P | A | — |
+| Objection handling and negotiation | role | 2 | F | P | A | solution-presentation-demo |
+| Proposals, quoting and pricing basics | role | 2 | — | F | P | solution-presentation-demo, business-finance-fundamentals |
+| Business and finance fundamentals | core | 3 | — | F | F | — |
 | Self-organisation and project basics | core | 3 | F | P | P | — |
 | Working with data | core | 3 | F | F | P | digital-ai-literacy |

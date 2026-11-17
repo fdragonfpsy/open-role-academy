@@ -191,3 +191,8 @@ Format: date — decision — reason — alternatives considered.
 ## 2026-11-17 — Privacy policy for accounts: flag-gated separate text; imprint unchanged
 - Decision: the account privacy text lives in its own component and replaces the current text only when `accountsEnabled` is true; the default text is untouched, so the live site stays accurate. Legal bases: Art. 6(1)(b) for account functions, 6(1)(f) for logs; the sign-up checkbox is only a notice confirmation, not consent. Transfers phrased cautiously ("may involve group companies or sub-processors outside the EU/EEA, safeguards per the providers' DPAs/SCCs"); owner verifies details (hint in `docs/LAUNCH.md`). Home page privacy line also switches with the flag.
 - Imprint: no change. A German Impressum (§ 5 DDG) must state provider identity and contact; accounts add no new imprint duty. Alternatives: edit the one text in place (would make the live site claim processing that does not happen), a runtime toggle (not allowed: build-time flag only).
+
+## 2026-11-17 — Sales framework: 10 competencies, draft status
+- Decision: Sales role added as `status: draft` with 10 role competencies; CRM data hygiene and forecasting/metrics merged into `crm-sales-data-forecasting`. ESCO refs only for URIs verified via the ESCO API (matching label); none for sales-process beyond two verified ones, and no DigComp refs.
+- Reason: draft keeps coverage unenforced and the role hidden until content exists; 10 stays within the 8-12 rule and the batch size of content sessions.
+- Alternatives: 11 competencies with a separate forecasting one (larger content load), publishing early (would fail coverage validation).

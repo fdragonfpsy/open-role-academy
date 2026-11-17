@@ -1,0 +1,18 @@
+id: solution-presentation-demo
+title:
+  en: Solution presentation and demo
+  de: Lösungspräsentation und Demo
+description:
+  en: >-
+    Present products and services in terms of customer benefit: structure a persuasive presentation, tailor a demo to the identified needs, argue with facts and references, and handle questions confidently.
+  de: >-
+    Produkte und Dienstleistungen nutzenorientiert präsentieren: eine überzeugende Präsentation aufbauen, eine Demo auf den ermittelten Bedarf zuschneiden, mit Fakten und Referenzen argumentieren und Rückfragen sicher beantworten.
+prerequisites: [discovery-needs-analysis]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/0c0488b3-fca5-4deb-865b-8dc605c3d909
+    label: sales argumentation
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/de7b8c6c-9ed4-4776-924c-4265dd1d9cde
+    label: demonstrate products' features

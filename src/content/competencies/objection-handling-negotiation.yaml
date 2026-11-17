@@ -1,0 +1,15 @@
+id: objection-handling-negotiation
+title:
+  en: Objection handling and negotiation
+  de: Einwandbehandlung und Verhandlung
+description:
+  en: >-
+    Recognise the reasons behind objections, respond constructively, prepare negotiations (interests, alternatives, limits), trade concessions deliberately and reach agreements that work for both sides.
+  de: >-
+    Die Gründe hinter Einwänden erkennen, konstruktiv reagieren, Verhandlungen vorbereiten (Interessen, Alternativen, Grenzen), Zugeständnisse bewusst abwägen und Vereinbarungen erzielen, die für beide Seiten tragfähig sind.
+prerequisites: [solution-presentation-demo]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/71152876-b629-4a99-b9ea-0f25a0d07e4e
+    label: negotiate sales contracts

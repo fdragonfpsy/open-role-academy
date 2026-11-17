@@ -1,0 +1,21 @@
+id: account-management-upselling
+title:
+  en: Account management and upselling
+  de: Kundenbetreuung und Zusatzverkauf
+description:
+  en: >-
+    Build long-term customer relationships: plan account development, follow up after the sale, identify upsell and cross-sell opportunities, handle complaints and renewals, and keep customers successful.
+  de: >-
+    Langfristige Kundenbeziehungen aufbauen: Kundenentwicklung planen, nach dem Verkauf nachfassen, Chancen für Upselling und Cross-Selling erkennen, Beschwerden und Vertragsverlängerungen handhaben und Kundschaft zum Erfolg führen.
+prerequisites: [closing-contract-handover]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/2239694b-771a-4586-8b54-2794e361a9ae
+    label: maintain relationship with customers
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/306a1555-9fa2-47af-b996-a0a8833cbe81
+    label: upsell products
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/debb8d81-ed7f-447d-853a-5d107fda6fcf
+    label: provide customer follow-up services

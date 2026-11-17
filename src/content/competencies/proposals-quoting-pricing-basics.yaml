@@ -1,0 +1,15 @@
+id: proposals-quoting-pricing-basics
+title:
+  en: Proposals, quoting and pricing basics
+  de: Angebote, Kalkulation und Preisgrundlagen
+description:
+  en: >-
+    Prepare clear, complete proposals and quotes, understand the basics of pricing (costs, margin, discounts, value-based vs. cost-based pricing) and know when pricing decisions need approval.
+  de: >-
+    Klare, vollständige Angebote erstellen, die Grundlagen der Preisgestaltung verstehen (Kosten, Marge, Rabatte, wert- und kostenorientierte Preise) und wissen, wann Preisentscheidungen freigegeben werden müssen.
+prerequisites: [solution-presentation-demo, business-finance-fundamentals]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/1c460d2d-90c6-4fc9-ad49-febb6e15605a
+    label: pricing strategies

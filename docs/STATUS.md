@@ -1,5 +1,18 @@
 # Status
 
+## 2026-11-17 — Phase 4: Sales framework (draft, no content yet)
+
+**Done**
+- `src/content/roles/sales.yaml` (`status: draft`, en/de) with 10 role competencies plus the 6 core-track competencies; 10 new `src/content/competencies/*.yaml` (en/de, prerequisites acyclic, `track: role`). Targets progress foundation -> advanced; account-management and proposals/pricing start at practitioner/foundation.
+- ESCO refs only where verified against the ESCO API (URI resolves, label matches); no DigComp refs added. Legal topics (UWG, consumer protection, GDPR contact data) described at topic level only.
+- `docs/FRAMEWORK.md` regenerated. Validator: 0 errors; the draft role gives a warning (coverage not checked, hidden in UI) as designed.
+- Merged two competencies planned separately (CRM data hygiene and forecasting/metrics) into `crm-sales-data-forecasting` to stay at 10.
+- Roadmap: Brevo/spam-hint/magic-link line ticked (done in the auth UI; SMTP owner-managed).
+
+**Counts:** roles 5 (1 draft) · competencies 48 · units 228 · items 456 · resources 297 · tests 109
+
+**Next:** Sales content in batches of 3 competencies (see ROADMAP), then publish.
+
 ## 2026-11-17 — Phase 3b: Privacy policy for accounts (behind flag, off)
 
 **Done**

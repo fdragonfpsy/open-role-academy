@@ -1,0 +1,18 @@
+id: crm-sales-data-forecasting
+title:
+  en: CRM, sales data and forecasting
+  de: CRM, Vertriebsdaten und Forecast
+description:
+  en: >-
+    Use a CRM system consistently with clean, current data; read core sales metrics (conversion rates, pipeline coverage, cycle length, win rate) and build a realistic sales forecast from the pipeline.
+  de: >-
+    Ein CRM-System konsequent mit sauberen, aktuellen Daten nutzen, zentrale Vertriebskennzahlen (Konversionsrate, Pipeline-Abdeckung, Verkaufszyklus, Abschlussquote) lesen und aus der Pipeline einen realistischen Forecast ableiten.
+prerequisites: [sales-process-pipeline, working-with-data]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/9889b795-d755-41b2-8afd-2e3c87a65a38
+    label: use customer relationship management software
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/2dd6ecdf-8a08-438b-8b4b-e0374f7b523b
+    label: carry out sales analysis

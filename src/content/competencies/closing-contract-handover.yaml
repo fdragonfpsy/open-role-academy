@@ -1,0 +1,15 @@
+id: closing-contract-handover
+title:
+  en: Closing, contract and handover
+  de: Abschluss, Vertrag und Übergabe
+description:
+  en: >-
+    Recognise buying signals, ask for the decision, close deals, coordinate contract terms and approvals with legal and finance, and hand the customer over cleanly to delivery or support.
+  de: >-
+    Kaufsignale erkennen, die Entscheidung einfordern, Abschlüsse erzielen, Vertragsbedingungen und Freigaben mit Recht und Finanzen abstimmen und die Kundschaft sauber an Lieferung oder Support übergeben.
+prerequisites: [objection-handling-negotiation, proposals-quoting-pricing-basics]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/92721092-fe7c-4689-96bd-4f02385bc0e7
+    label: manage contracts

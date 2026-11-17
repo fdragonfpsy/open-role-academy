@@ -1,0 +1,18 @@
+id: sales-process-pipeline
+title:
+  en: Sales process and pipeline
+  de: Vertriebsprozess und Pipeline
+description:
+  en: >-
+    Understand the stages of a sales process, how a pipeline is structured, which criteria move a deal to the next stage, and how to set sales goals and plan activities to reach them.
+  de: >-
+    Die Phasen eines Vertriebsprozesses, den Aufbau einer Pipeline und die Kriterien für den Übergang eines Deals in die nächste Phase verstehen sowie Verkaufsziele setzen und Aktivitäten planen, um sie zu erreichen.
+prerequisites: []
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/e7219848-a27a-4bf4-8775-d367707be7c9
+    label: sales strategies
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/cbdce1f8-affe-4013-a519-283fa8ec1f6e
+    label: set sales goals

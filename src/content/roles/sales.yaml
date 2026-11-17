@@ -1,0 +1,65 @@
+id: sales
+kind: role
+status: draft
+title:
+  en: Sales
+  de: Vertrieb
+summary:
+  en: >-
+    Win and grow customers: find and qualify prospects, understand their needs, present solutions,
+    negotiate and close deals fairly, look after accounts and keep sales data and forecasts reliable.
+  de: >-
+    Kundschaft gewinnen und ausbauen: Interessierte finden und qualifizieren, ihren Bedarf verstehen,
+    Lösungen präsentieren, fair verhandeln und abschließen, Kundenbeziehungen pflegen sowie
+    Vertriebsdaten und Forecasts verlässlich halten.
+competencies:
+  # role-specific
+  - id: sales-process-pipeline
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: prospecting-lead-qualification
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: discovery-needs-analysis
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: solution-presentation-demo
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: objection-handling-negotiation
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: proposals-quoting-pricing-basics
+    priority: 2
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  - id: closing-contract-handover
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: account-management-upselling
+    priority: 2
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  - id: crm-sales-data-forecasting
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: sales-ethics-compliance
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  # core track
+  - id: information-security-basics
+    priority: 1
+    targets: { foundation: practitioner, practitioner: advanced, advanced: advanced }
+  - id: digital-ai-literacy
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: communication-collaboration
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: working-with-data
+    priority: 3
+    targets: { foundation: foundation, practitioner: foundation, advanced: practitioner }
+  - id: self-organisation-project-basics
+    priority: 3
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: business-finance-fundamentals
+    priority: 3
+    targets: { foundation: null, practitioner: foundation, advanced: foundation }

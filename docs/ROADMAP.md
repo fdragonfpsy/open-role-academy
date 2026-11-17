@@ -97,12 +97,17 @@ Item and resource quality (added by weekly review 2026-11-14, applies to all new
 - [x] Profile onboarding (optional fields, data minimisation): role family, experience level, learning goal, weekly time budget, preferred language; no employer, no birth date
 - [x] Dashboard reads/writes progress from Supabase when signed in, localStorage otherwise
 - [x] Privacy policy and imprint updated for accounts (processors: Cloudflare, Supabase, email sender; legal bases; retention; rights); keep `{{…}}` placeholders for owner data
-- [ ] Email sending is configured in Supabase via Brevo SMTP (free tier, 300/day, sender is a verified freemail address, no own domain). Expect some mail in spam: every screen that waits for an email shows a hint to check the spam folder. Also offer sign-in via email link (magic link) next to password sign-in. Do not change SMTP settings; they are owner-managed in the Supabase dashboard.
+- [x] Email sending is configured in Supabase via Brevo SMTP (free tier, 300/day, sender is a verified freemail address, no own domain). Expect some mail in spam: every screen that waits for an email shows a hint to check the spam folder. Also offer sign-in via email link (magic link) next to password sign-in. Do not change SMTP settings; they are owner-managed in the Supabase dashboard.
 
 ## Phase 4 — Scale to all role families
 
 One role per task, in the order of CLAUDE.md §4.3. Each task = framework + content + validation passing.
-- [ ] Sales
+- [ ] Sales (framework + content; publish the role when all content is done; EU/Germany context, label it; no invented laws or figures)
+  - [x] framework (role + 10 competencies, `status: draft`)
+  - [ ] content: sales-process-pipeline, prospecting-lead-qualification, discovery-needs-analysis
+  - [ ] content: solution-presentation-demo, objection-handling-negotiation, proposals-quoting-pricing-basics
+  - [ ] content: closing-contract-handover, account-management-upselling, crm-sales-data-forecasting
+  - [ ] content: sales-ethics-compliance; then set `status: published` and run the content quality pass for Sales
 - [ ] Marketing
 - [ ] Customer Service
 - [ ] Project Management
