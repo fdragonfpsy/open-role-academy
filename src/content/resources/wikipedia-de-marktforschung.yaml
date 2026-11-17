@@ -1,0 +1,13 @@
+id: wikipedia-de-marktforschung
+url: https://de.wikipedia.org/wiki/Marktforschung
+title: "Marktforschung"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-17
+mode: link
+competencies: [market-customer-research]
+levels: [foundation, practitioner, advanced]

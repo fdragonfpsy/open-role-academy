@@ -1,0 +1,314 @@
+competency: segmentation-targeting-positioning
+items:
+  - id: stp-f-order
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "Which order describes the STP model?"
+      de: "Welche Reihenfolge beschreibt das STP-Modell?"
+    options:
+      - en: "Pricing, targeting, promotion"
+        de: "Preisgestaltung, Zielgruppenwahl, Kommunikation"
+        correct: false
+      - en: "Positioning, segmenting, targeting"
+        de: "Positionierung, Segmentierung, Zielgruppenwahl"
+        correct: false
+      - en: "Segmenting, targeting, positioning"
+        de: "Segmentierung, Zielgruppenwahl, Positionierung"
+        correct: true
+      - en: "Targeting, testing, promoting"
+        de: "Zielgruppenwahl, Testen, Bewerben"
+        correct: false
+    explanation:
+      en: "STP stands for segmenting the market, targeting the segments you want to serve, and positioning the offer for them. The steps build on each other in this order."
+      de: "STP steht für das Segmentieren des Marktes, die Wahl der Zielgruppen, die du bedienen willst, und das Positionieren des Angebots für sie. Die Schritte bauen in dieser Reihenfolge aufeinander auf."
+    source: https://openstax.org/books/principles-marketing/pages/5-6-product-positioning
+  - id: stp-f-basis
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "A shop divides its customers into people who buy weekly, monthly and rarely. Which kind of segmentation is this?"
+      de: "Ein Geschäft teilt seine Kundschaft in Menschen, die wöchentlich, monatlich und selten kaufen. Welche Art von Segmentierung ist das?"
+    options:
+      - en: "Geographic segmentation, because the customers live nearby"
+        de: "Geografische Segmentierung, weil die Kundschaft in der Nähe wohnt"
+        correct: false
+      - en: "Demographic segmentation, because the customers are people"
+        de: "Demografische Segmentierung, weil die Kundschaft aus Menschen besteht"
+        correct: false
+      - en: "Psychographic segmentation, because the habits show motives"
+        de: "Psychografische Segmentierung, weil die Gewohnheiten Motive zeigen"
+        correct: false
+      - en: "Behavioural segmentation, based on how often they buy"
+        de: "Verhaltensbezogene Segmentierung, nach der Kaufhäufigkeit"
+        correct: true
+    explanation:
+      en: "Behavioural segmentation groups people by what they do, such as purchase frequency or usage. Psychographic segments describe why people choose, based on values or attitudes."
+      de: "Verhaltensbezogene Segmentierung gruppiert Menschen nach dem, was sie tun, etwa Kaufhäufigkeit oder Nutzung. Psychografische Segmente beschreiben, warum Menschen wählen, auf Basis von Werten oder Einstellungen."
+    source: https://openstax.org/books/principles-marketing/pages/5-1-market-segmentation-and-consumer-markets
+  - id: stp-f-audience
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "A toy is used by children but bought by their parents. What does OpenStax say about target market and target audience here?"
+      de: "Ein Spielzeug wird von Kindern genutzt, aber von deren Eltern gekauft. Was sagt OpenStax hier zu Zielmarkt und Zielgruppe der Ansprache?"
+    options:
+      - en: "They can differ: the parents who buy are the audience to address"
+        de: "Sie können sich unterscheiden: Die kaufenden Eltern sind die anzusprechende Zielgruppe"
+        correct: true
+      - en: "They are the same thing, so only the children are to be addressed"
+        de: "Sie sind dasselbe, also sind nur die Kinder anzusprechen"
+        correct: false
+      - en: "The audience is always larger than the target market overall"
+        de: "Die angesprochene Gruppe ist immer größer als der Zielmarkt insgesamt"
+        correct: false
+      - en: "Neither matters if the toy is priced low enough to sell well"
+        de: "Keines von beiden zählt, wenn das Spielzeug günstig genug ist"
+        correct: false
+    explanation:
+      en: "OpenStax notes that the target audience is narrower and refers to those you expect to actually purchase. The users and the buyers can be different people, and messages should reach the buyers."
+      de: "OpenStax merkt an, dass die angesprochene Zielgruppe enger ist und sich auf die bezieht, von denen du den tatsächlichen Kauf erwartest. Nutzende und Kaufende können verschiedene Personen sein, und Botschaften sollten die Kaufenden erreichen."
+    source: https://openstax.org/books/principles-marketing/pages/5-5-selecting-target-markets
+  - id: stp-f-describe
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "Which description of a target group is the most useful for planning marketing?"
+      de: "Welche Beschreibung einer Zielgruppe ist für die Marketingplanung am nützlichsten?"
+    options:
+      - en: "Everyone who might ever be interested in what we sell"
+        de: "Alle, die sich jemals für unser Angebot interessieren könnten"
+        correct: false
+      - en: "Remote workers who stay two hours and need reliable Wi-Fi"
+        de: "Remote-Arbeitende, die zwei Stunden bleiben und verlässliches WLAN brauchen"
+        correct: true
+      - en: "Women between 25 and 45 who have a regular income"
+        de: "Frauen zwischen 25 und 45 mit regelmäßigem Einkommen"
+        correct: false
+      - en: "People who like good coffee and a pleasant atmosphere"
+        de: "Menschen, die guten Kaffee und eine angenehme Atmosphäre mögen"
+        correct: false
+    explanation:
+      en: "A useful description tells you who they are, what they need and where to reach them. 'Everyone' is not a target group, and broad traits such as age and income or general likes describe almost every customer of a café."
+      de: "Eine nützliche Beschreibung sagt dir, wer sie sind, was sie brauchen und wo du sie erreichst. „Alle“ ist keine Zielgruppe, und breite Merkmale wie Alter, Einkommen oder allgemeine Vorlieben beschreiben fast jede Café-Kundschaft."
+    source: https://openstax.org/books/principles-marketing/pages/5-1-market-segmentation-and-consumer-markets
+  - id: stp-p-adams
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "A segment cannot be sized because no data exists about how many people belong to it. Which ADAMS criterion is missing?"
+      de: "Ein Segment lässt sich nicht beziffern, weil es keine Daten gibt, wie viele Menschen dazugehören. Welches ADAMS-Kriterium fehlt?"
+    options:
+      - en: "Measurable"
+        de: "Messbar (measurable)"
+        correct: true
+      - en: "Accessible"
+        de: "Erreichbar (accessible)"
+        correct: false
+      - en: "Differentiable"
+        de: "Unterscheidbar (differentiable)"
+        correct: false
+      - en: "Actionable"
+        de: "Umsetzbar (actionable)"
+        correct: false
+    explanation:
+      en: "Measurable means you can estimate the segment's size in sales value or number of customers. Accessible refers to reaching them at affordable cost, differentiable to being distinct from other segments."
+      de: "Messbar bedeutet, dass du die Größe des Segments in Umsatz oder Kundenzahl schätzen kannst. Erreichbar bezieht sich auf bezahlbare Erreichbarkeit, unterscheidbar auf die Abgrenzung von anderen Segmenten."
+    source: https://openstax.org/books/principles-marketing/pages/5-4-essential-factors-in-effective-market-segmentation
+  - id: stp-p-strategy
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "A small company with limited resources chooses one segment and builds one marketing mix for it. Which targeting approach is this?"
+      de: "Ein kleines Unternehmen mit begrenzten Ressourcen wählt ein Segment und entwickelt dafür einen Marketing-Mix. Welcher Targeting-Ansatz ist das?"
+    options:
+      - en: "Undifferentiated marketing"
+        de: "Undifferenziertes Marketing"
+        correct: false
+      - en: "Differentiated marketing"
+        de: "Differenziertes Marketing"
+        correct: false
+      - en: "Concentrated (niche) marketing"
+        de: "Konzentriertes (Nischen-)Marketing"
+        correct: true
+      - en: "Mass marketing with several mixes"
+        de: "Massenmarketing mit mehreren Mixen"
+        correct: false
+    explanation:
+      en: "OpenStax calls the focus on a single segment with a single mix concentrated marketing. Undifferentiated marketing uses one mix for the whole market, differentiated marketing separate mixes for several segments."
+      de: "OpenStax nennt die Konzentration auf ein einzelnes Segment mit einem Mix konzentriertes Marketing. Undifferenziertes Marketing nutzt einen Mix für den ganzen Markt, differenziertes Marketing getrennte Mixe für mehrere Segmente."
+    source: https://openstax.org/books/principles-marketing/pages/5-5-selecting-target-markets
+  - id: stp-p-persona
+    level: practitioner
+    difficulty: 1250
+    type: multi
+    stem:
+      en: "Which practices make a buyer persona more reliable? Select all that apply."
+      de: "Welche Praktiken machen eine Buyer Persona verlässlicher? Wähle alle zutreffenden aus."
+    options:
+      - en: "Base it on interview notes, support tickets and sales data"
+        de: "Sie auf Interviewnotizen, Support-Tickets und Verkaufsdaten stützen"
+        correct: true
+      - en: "Mark which details are assumptions and check them later"
+        de: "Kennzeichnen, welche Details Annahmen sind, und sie später prüfen"
+        correct: true
+      - en: "Write it in a workshop from the team's own experience only"
+        de: "Sie im Workshop allein aus der Erfahrung des Teams schreiben"
+        correct: false
+      - en: "Add a private life story so that the persona feels real"
+        de: "Eine private Lebensgeschichte ergänzen, damit die Persona echt wirkt"
+        correct: false
+    explanation:
+      en: "A persona is semi-fictional, so it needs evidence behind it and open assumptions. A purely workshop-based persona mirrors the team's beliefs, and decorative stories add no decision-relevant information."
+      de: "Eine Persona ist halbfiktiv, sie braucht also Belege und offene Annahmen. Eine reine Workshop-Persona spiegelt die Überzeugungen des Teams, und dekorative Geschichten liefern keine entscheidungsrelevante Information."
+    source: https://openstax.org/books/principles-marketing/pages/5-5-selecting-target-markets
+  - id: stp-p-statement
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "Which positioning statement is the strongest?"
+      de: "Welche Positionierungsaussage ist die stärkste?"
+    options:
+      - en: "We are the best and most innovative app on the market today"
+        de: "Wir sind die beste und innovativste App auf dem Markt"
+        correct: false
+      - en: "For nurses with irregular shifts, a ten-minute exam practice app, unlike general apps because each exercise uses care vocabulary"
+        de: "Für Pflegekräfte mit unregelmäßigen Schichten eine Prüfungs-App für zehn Minuten, anders als allgemeine Apps, weil jede Übung Pflegevokabular nutzt"
+        correct: true
+      - en: "Our app helps all learners everywhere to reach their goals faster"
+        de: "Unsere App hilft allen Lernenden überall, ihre Ziele schneller zu erreichen"
+        correct: false
+      - en: "A modern and exciting learning experience with great design"
+        de: "Ein modernes, aufregendes Lernerlebnis mit großartigem Design"
+        correct: false
+    explanation:
+      en: "A strong statement names the target, the need, the benefit, the alternative and a reason to believe. The others use vague superlatives that no customer could verify."
+      de: "Eine starke Aussage nennt Zielgruppe, Bedürfnis, Nutzen, Alternative und einen Beleg. Die anderen nutzen vage Superlative, die keine Kundschaft prüfen könnte."
+    source: https://openstax.org/books/principles-marketing/pages/5-6-product-positioning
+  - id: stp-a-veto
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "A segment scores high on size and need, but your firm has no way to reach it affordably. What is the best conclusion?"
+      de: "Ein Segment erzielt hohe Werte bei Größe und Bedarf, aber dein Unternehmen kann es nicht bezahlbar erreichen. Was ist der beste Schluss?"
+    options:
+      - en: "Select it anyway, since size and need outweigh the reach problem"
+        de: "Es trotzdem wählen, weil Größe und Bedarf das Reichweitenproblem überwiegen"
+        correct: false
+      - en: "Treat the reach problem as a veto and look at other segments"
+        de: "Das Reichweitenproblem als Veto behandeln und andere Segmente prüfen"
+        correct: true
+      - en: "Average all scores and select it if the average is high enough"
+        de: "Alle Werte mitteln und es wählen, wenn der Durchschnitt hoch genug ist"
+        correct: false
+      - en: "Pick the segment through mass advertising to cover everyone"
+        de: "Das Segment mit Massenwerbung wählen, um alle abzudecken"
+        correct: false
+    explanation:
+      en: "A segment must be accessible to be actionable. Averaging hides a deal-breaker, and mass advertising spends the budget on people who are not in the segment."
+      de: "Ein Segment muss erreichbar sein, um umsetzbar zu sein. Mitteln verdeckt einen Ausschlussgrund, und Massenwerbung gibt das Budget für Menschen aus, die nicht zum Segment gehören."
+    source: https://openstax.org/books/principles-marketing/pages/5-4-essential-factors-in-effective-market-segmentation
+  - id: stp-a-h2h
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "When does head-to-head positioning against a competitor make most sense?"
+      de: "Wann ist direkte Positionierung gegen einen Wettbewerber am sinnvollsten?"
+    options:
+      - en: "When you can beat it on an attribute that matters and prove it"
+        de: "Wenn du ihn bei einer wichtigen Eigenschaft schlagen und das belegen kannst"
+        correct: true
+      - en: "When the competitor is smaller and has fewer customers than you"
+        de: "Wenn der Wettbewerber kleiner ist und weniger Kundschaft hat als du"
+        correct: false
+      - en: "When your product is cheaper in at least one of your markets"
+        de: "Wenn dein Produkt in mindestens einem deiner Märkte günstiger ist"
+        correct: false
+      - en: "When you do not know what customers value in the category"
+        de: "Wenn du nicht weißt, was Kundschaft in der Kategorie wichtig ist"
+        correct: false
+    explanation:
+      en: "Head-to-head means competing on similar attributes, so it only works if you are verifiably better on something customers care about. Size, a price gap in one market or ignorance of customer values do not give that."
+      de: "Direkter Vergleich bedeutet Wettbewerb bei ähnlichen Eigenschaften, er funktioniert also nur, wenn du bei etwas, das der Kundschaft wichtig ist, nachweislich besser bist. Größe, ein Preisvorteil in einem Markt oder Unkenntnis der Kundenwerte geben das nicht her."
+    source: https://openstax.org/books/principles-marketing/pages/5-6-product-positioning
+  - id: stp-a-test
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "How should a positioning statement be checked before a launch?"
+      de: "Wie sollte eine Positionierungsaussage vor einem Start geprüft werden?"
+    options:
+      - en: "Have the marketing team vote for its favourite version internally"
+        de: "Das Marketingteam intern über die Lieblingsversion abstimmen lassen"
+        correct: false
+      - en: "Show alternatives to the target group and ask what they understand"
+        de: "Der Zielgruppe Alternativen zeigen und fragen, was sie verstehen"
+        correct: true
+      - en: "Choose the version that has the most appealing words in it"
+        de: "Die Version wählen, die die ansprechendsten Wörter enthält"
+        correct: false
+      - en: "Wait for the sales results and adjust the statement afterwards"
+        de: "Die Verkaufsergebnisse abwarten und die Aussage danach anpassen"
+        correct: false
+    explanation:
+      en: "Positioning is a perception in the target group's mind, so it must be tested with that group. Internal votes reflect the team's view, and waiting for sales results spends budget before learning."
+      de: "Positionierung ist eine Wahrnehmung in den Köpfen der Zielgruppe, daher muss sie mit dieser Gruppe getestet werden. Interne Abstimmungen spiegeln die Sicht des Teams, und das Abwarten der Verkaufsergebnisse gibt Budget aus, bevor man lernt."
+    source: https://de.wikipedia.org/wiki/Positionierung_(Marketing)
+  - id: stp-a-fair
+    level: advanced
+    difficulty: 1600
+    type: multi
+    stem:
+      en: "Which practices help keep segmentation and targeting fair? Select all that apply."
+      de: "Welche Praktiken helfen, Segmentierung und Targeting fair zu halten? Wähle alle zutreffenden aus."
+    options:
+      - en: "Tie persona details to needs and behaviour, not to stereotypes"
+        de: "Persona-Details an Bedürfnisse und Verhalten binden, nicht an Stereotype"
+        correct: true
+      - en: "Involve the legal or data protection contact for personal-data targeting"
+        de: "Bei Targeting mit personenbezogenen Daten die Rechts- oder Datenschutzansprechperson einbeziehen"
+        correct: true
+      - en: "Target people in vulnerable situations because they respond best"
+        de: "Menschen in verletzlichen Situationen ansprechen, weil sie am besten reagieren"
+        correct: false
+      - en: "Assume that age alone tells you how people use technology"
+        de: "Annehmen, dass das Alter allein zeigt, wie Menschen Technik nutzen"
+        correct: false
+    explanation:
+      en: "Segments simplify people. Needs-based details, legal checks for personal-data use in the EU and care with vulnerable groups reduce harm; age-based assumptions and exploiting vulnerability do the opposite."
+      de: "Segmente vereinfachen Menschen. Bedürfnisbasierte Details, rechtliche Prüfung bei Nutzung personenbezogener Daten in der EU und Sorgfalt bei verletzlichen Gruppen verringern Schaden; altersbasierte Annahmen und das Ausnutzen von Verletzlichkeit bewirken das Gegenteil."
+    source: https://openstax.org/books/principles-marketing/pages/5-5-selecting-target-markets
+  - id: stp-a-micro
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "A firm with three possible segments has a small budget and strong know-how in only one of them. Which approach is the best fit?"
+      de: "Eine Firma mit drei möglichen Segmenten hat ein kleines Budget und starkes Know-how nur in einem davon. Welcher Ansatz passt am besten?"
+    options:
+      - en: "Concentrate on the segment in which it has strong know-how"
+        de: "Sich auf das Segment mit starkem Know-how konzentrieren"
+        correct: true
+      - en: "Serve all three segments with one common marketing message"
+        de: "Alle drei Segmente mit einer gemeinsamen Marketingbotschaft bedienen"
+        correct: false
+      - en: "Build three separate offers at once and split the budget evenly"
+        de: "Drei getrennte Angebote gleichzeitig aufbauen und das Budget gleich verteilen"
+        correct: false
+      - en: "Choose the segment where competitors are the most numerous"
+        de: "Das Segment mit den meisten Wettbewerbern wählen"
+        correct: false
+    explanation:
+      en: "OpenStax describes concentrated marketing as a smart choice for companies with limited resources that might be stretched thin in several segments. A shared message fits none of them well, and an even split gives each too little."
+      de: "OpenStax beschreibt konzentriertes Marketing als kluge Wahl für Unternehmen mit begrenzten Ressourcen, die sich in mehreren Segmenten verzetteln könnten. Eine gemeinsame Botschaft passt keinem richtig, und eine gleiche Aufteilung gibt jedem zu wenig."
+    source: https://openstax.org/books/principles-marketing/pages/5-5-selecting-target-markets
