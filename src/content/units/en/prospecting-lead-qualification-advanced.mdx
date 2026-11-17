@@ -1,0 +1,72 @@
+---
+id: prospecting-lead-qualification-advanced
+competency: prospecting-lead-qualification
+level: advanced
+title: "Qualification models under uncertainty: scoring judgement, bias and the cost of a wrong call"
+objectives:
+  - "Weigh the cost of false positives and false negatives when setting qualification thresholds."
+  - "Validate a scoring model against won and lost deals and refine it."
+  - "Align marketing and sales on shared lead definitions."
+  - "Recognise bias and privacy implications of profiling in lead scoring."
+minutes: 30
+resources:
+  - wikipedia-lead-scoring
+  - wikipedia-de-lead-management
+  - openstax-marketing-b2b-buying-process
+  - eurlex-gdpr-regulation-2016-679
+status: ai-draft
+sources:
+  - title: "Lead scoring"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Lead_scoring
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Lead Management"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Lead_Management
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Principles of Marketing, 4.4: Stages in the B2B Buying Process"
+    author: OpenStax
+    url: https://openstax.org/books/principles-marketing/pages/4-4-stages-in-the-b2b-buying-process
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+  - title: "Regulation (EU) 2016/679 (General Data Protection Regulation)"
+    author: European Union
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+    usage: cited
+---
+
+## Why this matters
+
+At advanced level the question is no longer how to score leads but whether the scoring is any good, and what it costs when it is wrong. The Lead scoring article describes scoring as ranking prospects by perceived value so that the receiving function engages them in priority order. A model is a hypothesis about what makes a lead valuable. It deserves the same testing as any other hypothesis. Figures below are invented.
+
+## Two kinds of error
+
+A **false positive** is a lead the model rates highly that does not buy; it wastes seller time and breeds distrust in marketing leads. A **false negative** is a good lead that was rated low and ignored; it costs revenue you never see. Which error is more expensive depends on context: with few, large deals, missing one is costly, so thresholds should be lower; with many small deals and scarce seller time, higher thresholds are sensible. State the trade-off explicitly rather than copying a threshold from another company.
+
+## Validating the model
+
+Compare scores at the time of qualification with outcomes: group won and lost deals by score band and check whether win rates rise with the score. If they do not, the criteria are not predictive. Beware small samples: ten deals in a band prove little. Also watch for survivorship: if only high-scored leads are worked, you cannot learn whether low scores would have converted. Practice insight: work a small random sample of lower-scored leads to test the model.
+
+## Shared definitions
+
+The German article on Lead Management describes the hand-over from marketing's lead process to sales as the interface between the two. Disputes arise when marketing and sales mean different things by "qualified". Write down the definition, the hand-over criteria and the feedback loop: sales states why a lead was rejected, using a short list of reason codes, and marketing adapts. Agree who owns each stage so that no lead falls between teams.
+
+## Bias, profiling and data
+
+Scores built on behaviour and demographics can encode bias, for example by ranking down contacts from smaller or less well-documented companies although they fit. Check segments for unexplained gaps. Scoring based on profiling is also personal-data processing. The GDPR text on direct marketing (Art. 21(2)) explicitly covers profiling to the extent it relates to such marketing, so a person's objection extends to it. Check with data-protection experts whether your scoring and data sources are justified and documented, and keep the data minimal.
+
+## Worked example
+
+Marketing sends 200 leads per month, sales rejects half as "not ready". You agree reason codes (no need, no authority, wrong size, no timing). After three months, 60 percent of rejections are "no timing" because the score rewards downloads but ignores contract end dates. You add a timing question to the form and weight it. Rejections for timing fall, and you keep a 5 percent random sample of low-scored leads to see whether you are missing buyers.
+
+## Key takeaways
+
+- A scoring model is a hypothesis: test it against won and lost deals.
+- Choose thresholds by weighing the cost of false positives and false negatives.
+- Agree written lead definitions and feedback loops between marketing and sales.
+- Check scoring for bias and treat profiling as data processing that needs justification.
