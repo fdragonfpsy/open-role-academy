@@ -1,0 +1,290 @@
+competency: brand-messaging
+items:
+  - id: bm-f-brand
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "Which statement fits how OpenStax describes a brand?"
+      de: "Welche Aussage passt dazu, wie OpenStax eine Marke beschreibt?"
+    options:
+      - en: "A brand is an intangible asset with tangible value"
+        de: "Eine Marke ist ein immaterieller Wert mit greifbarem Nutzen"
+        correct: true
+      - en: "A brand is the logo and colour palette of a company"
+        de: "Eine Marke ist das Logo und die Farbpalette eines Unternehmens"
+        correct: false
+      - en: "A brand is whatever the marketing team decides it is"
+        de: "Eine Marke ist, was das Marketingteam dazu erklärt"
+        correct: false
+      - en: "A brand is the legal registration of a company name"
+        de: "Eine Marke ist die rechtliche Eintragung eines Firmennamens"
+        correct: false
+    explanation:
+      en: "OpenStax calls a brand an intangible asset with tangible value, a feeling formed by promotion efforts and by what customers make of it. Logo and palette are parts of it, and the team cannot simply decide the result."
+      de: "OpenStax nennt eine Marke einen immateriellen Wert mit greifbarem Nutzen, ein Gefühl aus Werbeanstrengungen und dem, was Kundschaft daraus macht. Logo und Palette sind Teile davon, und das Team kann das Ergebnis nicht einfach festlegen."
+    source: https://openstax.org/books/principles-marketing/pages/9-5-branding-and-brand-development
+  - id: bm-f-parts
+    level: foundation
+    difficulty: 950
+    type: multi
+    stem:
+      en: "Which of these are assets that help shape a brand? Select all that apply."
+      de: "Welche dieser Dinge sind Bausteine, die eine Marke prägen? Wähle alle zutreffenden aus."
+    options:
+      - en: "The brand name"
+        de: "Der Markenname"
+        correct: true
+      - en: "The brand mark, for example a logo"
+        de: "Das Markenzeichen, zum Beispiel ein Logo"
+        correct: true
+      - en: "The brand positioning"
+        de: "Die Markenpositionierung"
+        correct: true
+      - en: "The internal org chart of the company"
+        de: "Das interne Organigramm des Unternehmens"
+        correct: false
+    explanation:
+      en: "OpenStax names brand name, brand mark and brand positioning as assets that influence the feeling about a brand. An internal org chart is not visible to customers and does not shape the brand."
+      de: "OpenStax nennt Markenname, Markenzeichen und Positionierung als Bausteine, die das Gefühl zur Marke beeinflussen. Ein internes Organigramm sehen Kunden nicht, es prägt die Marke nicht."
+    source: https://openstax.org/books/principles-marketing/pages/9-5-branding-and-brand-development
+  - id: bm-f-consistent
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "A company uses a different core message on each channel. What is the most likely problem?"
+      de: "Ein Unternehmen nutzt auf jedem Kanal eine andere Kernbotschaft. Was ist das wahrscheinlichste Problem?"
+    options:
+      - en: "Customers become confused about what the brand stands for"
+        de: "Kundschaft wird unsicher, wofür die Marke steht"
+        correct: true
+      - en: "Search engines delete the website from their index"
+        de: "Suchmaschinen löschen die Website aus ihrem Index"
+        correct: false
+      - en: "The brand automatically gains more loyal customers"
+        de: "Die Marke gewinnt automatisch mehr treue Kundschaft"
+        correct: false
+      - en: "Every channel will reach a completely different audience"
+        de: "Jeder Kanal erreicht ein völlig anderes Publikum"
+        correct: false
+    explanation:
+      en: "OpenStax says that without an integrated approach messages become disjointed and consumers do not know what to do. Search engines do not remove sites for inconsistent messaging, and loyalty does not increase automatically."
+      de: "OpenStax sagt, ohne integrierten Ansatz wirken Botschaften unzusammenhängend, und Menschen wissen nicht, was sie tun sollen. Suchmaschinen löschen Seiten nicht wegen uneinheitlicher Botschaften, und Loyalität steigt nicht automatisch."
+    source: https://openstax.org/books/principles-marketing/pages/13-3-integrated-marketing-communications
+  - id: bm-f-message
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "Which is the best brand message for a small bakery?"
+      de: "Welche ist die beste Markenbotschaft für eine kleine Bäckerei?"
+    options:
+      - en: "Fresh craft bread, baked every morning in your neighbourhood"
+        de: "Frisches Handwerksbrot, jeden Morgen in deinem Viertel gebacken"
+        correct: true
+      - en: "We are the number one bakery with the best quality worldwide"
+        de: "Wir sind die Bäckerei Nummer eins mit der besten Qualität weltweit"
+        correct: false
+      - en: "Our company was founded to provide products to customers"
+        de: "Unser Unternehmen wurde gegründet, um Kundschaft Produkte zu bieten"
+        correct: false
+      - en: "Bread, rolls, cake, coffee, sandwiches, salads and catering"
+        de: "Brot, Brötchen, Kuchen, Kaffee, Belegtes, Salate und Catering"
+        correct: false
+    explanation:
+      en: "A good message says what is offered, for whom and why it matters, in plain words. The superlative cannot be proven, the founding statement says nothing useful and the list names products, not a message."
+      de: "Eine gute Botschaft sagt schlicht, was angeboten wird, für wen und warum es wichtig ist. Der Superlativ ist nicht belegbar, die Gründungsaussage sagt nichts Nützliches, und die Liste nennt Produkte statt einer Botschaft."
+    source: https://openstax.org/books/principles-marketing/pages/9-5-branding-and-brand-development
+  - id: bm-p-bases
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "According to OpenStax, which positioning basis is the most robust because it connects to personal beliefs?"
+      de: "Welche Positionierungsgrundlage ist laut OpenStax die belastbarste, weil sie an persönliche Überzeugungen anknüpft?"
+    options:
+      - en: "Positioning on values"
+        de: "Positionierung über Werte"
+        correct: true
+      - en: "Positioning on a single attribute"
+        de: "Positionierung über ein einzelnes Attribut"
+        correct: false
+      - en: "Positioning on the lowest price"
+        de: "Positionierung über den niedrigsten Preis"
+        correct: false
+      - en: "Positioning on the age of the company"
+        de: "Positionierung über das Alter des Unternehmens"
+        correct: false
+    explanation:
+      en: "OpenStax says values-based positioning is the most robust because it links to personal beliefs. Attribute positioning is easily replicated by competitors. Price and company age are not positioning bases that OpenStax names here."
+      de: "OpenStax nennt wertebasierte Positionierung die belastbarste, weil sie an persönliche Überzeugungen anknüpft. Attributpositionierung ist für Wettbewerber leicht kopierbar. Preis und Firmenalter nennt OpenStax hier nicht als Grundlagen."
+    source: https://openstax.org/books/principles-marketing/pages/9-5-branding-and-brand-development
+  - id: bm-p-hierarchy
+    level: practitioner
+    difficulty: 1200
+    type: multi
+    stem:
+      en: "Which elements belong in a message hierarchy as described in the unit? Select all that apply."
+      de: "Welche Elemente gehören in eine Botschaftshierarchie, wie sie die Einheit beschreibt? Wähle alle zutreffenden aus."
+    options:
+      - en: "One core promise for the whole audience"
+        de: "Ein Kernversprechen für die gesamte Zielgruppe"
+        correct: true
+      - en: "Supporting messages, each with proof"
+        de: "Stützende Botschaften, jeweils mit Beleg"
+        correct: true
+      - en: "Variants of the promise for each target group"
+        de: "Varianten des Versprechens für jede Zielgruppe"
+        correct: true
+      - en: "A new unrelated claim for every campaign"
+        de: "Eine neue, unabhängige Aussage für jede Kampagne"
+        correct: false
+    explanation:
+      en: "The hierarchy has three layers: promise, proof and audience variants. A new unrelated claim per campaign is exactly what the hierarchy is meant to prevent."
+      de: "Die Hierarchie hat drei Ebenen: Versprechen, Beleg und Zielgruppenvarianten. Eine neue, unabhängige Aussage je Kampagne soll die Hierarchie gerade verhindern."
+    source: https://openstax.org/books/principles-marketing/pages/13-3-integrated-marketing-communications
+  - id: bm-p-name
+    level: practitioner
+    difficulty: 1250
+    type: multi
+    stem:
+      en: "Which criteria does OpenStax give for a strong brand name? Select all that apply."
+      de: "Welche Kriterien nennt OpenStax für einen starken Markennamen? Wähle alle zutreffenden aus."
+    options:
+      - en: "It helps consumers see the benefit of the brand"
+        de: "Er hilft der Kundschaft, den Nutzen der Marke zu erkennen"
+        correct: true
+      - en: "It translates effectively into other languages"
+        de: "Er lässt sich gut in andere Sprachen übertragen"
+        correct: true
+      - en: "It is unique to that product"
+        de: "Er gehört eindeutig zu diesem Produkt"
+        correct: true
+      - en: "It is as similar as possible to the market leader's name"
+        de: "Er ist dem Namen des Marktführers so ähnlich wie möglich"
+        correct: false
+    explanation:
+      en: "OpenStax lists feeling, benefit, translation and uniqueness. A name close to the market leader's would blur the brand and may cause confusion, which trademarks are meant to prevent."
+      de: "OpenStax nennt Gefühl, Nutzen, Übertragbarkeit und Eindeutigkeit. Ein Name nahe am Marktführer würde die Marke verwischen und Verwechslung auslösen, was Markenrechte gerade verhindern sollen."
+    source: https://openstax.org/books/principles-marketing/pages/9-5-branding-and-brand-development
+  - id: bm-p-attribute
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "A competitor copies your 'fast delivery' claim within a week. What does this show about attribute positioning?"
+      de: "Ein Wettbewerber kopiert deine Aussage „schnelle Lieferung“ innerhalb einer Woche. Was zeigt das über Attributpositionierung?"
+    options:
+      - en: "It is easy to replicate, so it differentiates weakly"
+        de: "Sie ist leicht zu kopieren und differenziert daher kaum"
+        correct: true
+      - en: "It proves your brand has become the market leader"
+        de: "Es beweist, dass deine Marke Marktführer geworden ist"
+        correct: false
+      - en: "It means the claim was legally protected"
+        de: "Es bedeutet, dass die Aussage rechtlich geschützt war"
+        correct: false
+      - en: "It means customers no longer care about delivery"
+        de: "Es bedeutet, dass Lieferung Kundschaft nicht mehr interessiert"
+        correct: false
+    explanation:
+      en: "OpenStax warns that positioning on one attribute is easily replicated by competitors. Copying says nothing about market leadership, legal protection of the claim or customer interest."
+      de: "OpenStax warnt, dass Positionierung über ein Attribut für Wettbewerber leicht zu kopieren ist. Kopieren sagt nichts über Marktführerschaft, rechtlichen Schutz der Aussage oder Kundeninteresse."
+    source: https://openstax.org/books/principles-marketing/pages/9-5-branding-and-brand-development
+  - id: bm-a-keller
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "Customers recognise your brand but cannot say how it differs from others. At which level of Keller's model is the gap?"
+      de: "Kundschaft erkennt deine Marke, kann aber nicht sagen, wodurch sie sich unterscheidet. Auf welcher Ebene von Kellers Modell liegt die Lücke?"
+    options:
+      - en: "Meaning, about performance and needs it meets"
+        de: "Bedeutung, also Leistung und erfüllte Bedürfnisse"
+        correct: true
+      - en: "Identity, because nobody knows the brand name"
+        de: "Identität, weil niemand den Markennamen kennt"
+        correct: false
+      - en: "Resonance, because customers are too loyal"
+        de: "Resonanz, weil die Kundschaft zu treu ist"
+        correct: false
+      - en: "Brand valuation, because the balance sheet is wrong"
+        de: "Markenbewertung, weil die Bilanz falsch ist"
+        correct: false
+    explanation:
+      en: "Recognition shows that identity works. Not knowing the difference points to the meaning level: how the brand performs and what needs it meets. Resonance comes at the top and presupposes the lower levels."
+      de: "Wiedererkennung zeigt, dass die Identität funktioniert. Fehlendes Wissen über den Unterschied verweist auf die Bedeutungsebene: Leistung und erfüllte Bedürfnisse. Resonanz steht oben und setzt die unteren Ebenen voraus."
+    source: https://openstax.org/books/principles-marketing/pages/9-5-branding-and-brand-development
+  - id: bm-a-equity
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "A manager wants one 'brand score' to report to the board. What is the best response based on OpenStax?"
+      de: "Eine Führungskraft will einen einzigen „Markenscore“ an die Geschäftsleitung berichten. Was ist die beste Reaktion nach OpenStax?"
+    options:
+      - en: "Combine several indicators and state that no single measure exists"
+        de: "Mehrere Indikatoren kombinieren und sagen, dass es kein einzelnes Maß gibt"
+        correct: true
+      - en: "Use revenue alone, since it is the only objective measure"
+        de: "Nur den Umsatz nutzen, da er das einzige objektive Maß ist"
+        correct: false
+      - en: "Use the number of social media followers as the score"
+        de: "Die Zahl der Social-Media-Follower als Score nutzen"
+        correct: false
+      - en: "Refuse to report anything about brand value"
+        de: "Jede Aussage zum Markenwert verweigern"
+        correct: false
+    explanation:
+      en: "OpenStax says there is no singular measure of brand value; valuation is subjective and may use visibility, loyalty and perception along with financial measures. Revenue alone or followers alone are incomplete, and refusing helps nobody."
+      de: "OpenStax sagt, es gibt kein einzelnes Maß für den Markenwert; die Bewertung ist subjektiv und kann Sichtbarkeit, Loyalität und Wahrnehmung neben Finanzzahlen nutzen. Umsatz oder Follower allein sind unvollständig, und Verweigern hilft niemandem."
+    source: https://openstax.org/books/principles-marketing/pages/9-5-branding-and-brand-development
+  - id: bm-a-claims
+    level: advanced
+    difficulty: 1550
+    type: multi
+    stem:
+      en: "A tea brand plans the claim 'the best tea in Europe'. Which responses are sound? Select all that apply."
+      de: "Eine Teemarke plant die Aussage „der beste Tee Europas“. Welche Reaktionen sind vernünftig? Wähle alle zutreffenden aus."
+    options:
+      - en: "Ask what evidence exists, since consumers can test factual claims"
+        de: "Nach Belegen fragen, da Verbraucher:innen Tatsachenaussagen prüfen können"
+        correct: true
+      - en: "Replace it with a documented fact such as the origin"
+        de: "Sie durch eine belegte Tatsache wie die Herkunft ersetzen"
+        correct: true
+      - en: "Involve legal counsel about misleading practices"
+        de: "Die Rechtsberatung zu irreführenden Praktiken einbeziehen"
+        correct: true
+      - en: "Keep it, because superlatives are always allowed"
+        de: "Sie behalten, weil Superlative immer erlaubt sind"
+        correct: false
+    explanation:
+      en: "Directive 2005/29/EC prohibits misleading commercial practices towards consumers. A comparative or factual-sounding claim without evidence is risky; the safe route is evidence or a documented fact. Superlatives are not automatically allowed."
+      de: "Die Richtlinie 2005/29/EG verbietet irreführende Geschäftspraktiken gegenüber Verbraucher:innen. Eine vergleichende oder tatsächlich klingende Aussage ohne Beleg ist riskant; sicher sind Beleg oder eine dokumentierte Tatsache. Superlative sind nicht automatisch erlaubt."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32005L0029
+  - id: bm-a-adapt
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "You launch a campaign in a new language market. Which approach follows the unit's rule?"
+      de: "Du startest eine Kampagne in einem neuen Sprachmarkt. Welcher Ansatz folgt der Regel der Einheit?"
+    options:
+      - en: "Keep promise and proof, adapt tone and examples, check with local speakers"
+        de: "Versprechen und Beleg behalten, Ton und Beispiele anpassen, mit lokal Sprechenden prüfen"
+        correct: true
+      - en: "Translate every word literally to keep it identical"
+        de: "Jedes Wort wörtlich übersetzen, damit alles identisch bleibt"
+        correct: false
+      - en: "Write a completely new brand for each market"
+        de: "Für jeden Markt eine völlig neue Marke entwickeln"
+        correct: false
+      - en: "Drop the proof points because they will not translate"
+        de: "Die Belege weglassen, weil sie sich nicht übertragen lassen"
+        correct: false
+    explanation:
+      en: "Promise and proof should stay fixed, while expression adapts to the market and is validated locally. Literal translation can miss meaning, and a new brand per market loses the consistency that builds equity."
+      de: "Versprechen und Beleg bleiben fest, der Ausdruck wird je Markt angepasst und lokal geprüft. Wörtliche Übersetzung kann Bedeutung verfehlen, und eine neue Marke je Markt verliert die Konsistenz, die Markenwert aufbaut."
+    source: https://openstax.org/books/principles-marketing/pages/9-5-branding-and-brand-development
