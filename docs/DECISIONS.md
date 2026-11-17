@@ -155,3 +155,14 @@ Format: date — decision — reason — alternatives considered.
 - Decision: add `pagefind` (exact version 1.6.0, devDependency) and run `pagefind --site dist` after `astro build`. Only unit pages of published roles carry `data-pagefind-body`; the mastery check is `data-pagefind-ignore`. The search island imports `/pagefind/pagefind.js` (same origin) and uses its own accessible markup. Filters (role, level) are a Preact island over server-rendered data; language is implicit from the route.
 - Reason: static, open source (MIT), no backend, no cookies, no third-party requests, per-language indexes from `<html lang>`; roadmap requires it. Only a build-time tool, nothing heavy at runtime.
 - Alternatives: Lunr/MiniSearch with a hand-built index (more code, no language handling); hosted search (violates $0 / no third-party constraints).
+
+
+## 2026-11-17 — Supabase schema design (migration 20261117210000)
+- Decision: tables `profiles`, `progress`, `item_responses`, `completed_units` in `public`. `progress` stores rating, `correct_by_level` (jsonb with the three level keys) and `answered`; `answeredItems` is derived from `item_responses`. `item_responses` holds one row per (user, item): latest answer plus Leitner `box`/`due_on` (mirrors the engine's `ReviewCard`), instead of an append-only log. `completed_units` and `profiles.placement_done` are added because the engine's `LearnerState` needs them to round-trip. Role id and self level of the engine state map to `profiles.role_family` / `experience_level`.
+- Reason: smallest model that reproduces the export/import state exactly; data minimisation (no history log, no employer, name or birth date); no calibration data needed in Phase 1.
+- Alternatives: append-only response log (more personal data, more storage, not needed by the engine); one jsonb blob per user (no constraints, harder RLS-level validation).
+
+## 2026-11-17 — RLS, grants and GDPR functions
+- Decision: RLS on all tables with per-operation policies `to authenticated` using `(select auth.uid())`; explicit grants to `authenticated` only, `anon`/`public` revoked. `export_my_data()` is security invoker (RLS applies); `delete_my_account()` is security definer with `search_path = ''`, deletes only the caller's `auth.users` row and relies on `on delete cascade`. Migrations are applied by the owner; the repo contains no keys. A static Vitest test enforces these rules for every migration.
+- Reason: least privilege, new tables are not auto-exposed to the Data API, GDPR Art. 15/17/20 without a backend or service-role key.
+- Alternatives: Edge Function for deletion (needs service-role key and deployment); views for export (no gain over a function).
