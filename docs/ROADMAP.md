@@ -74,7 +74,7 @@ Item and resource quality (added by weekly review 2026-11-14, applies to all new
 - [ ] Content quality pass (weekly review 2026-11-14; issues #53 distractors/length cue, #56 resource mix, #57 unit voice). One batch per session; tick a batch when the `uniquely longest` warning is gone for all its competencies and each has ≥1 non-Wikipedia resource:
   - [x] Core track (6 competencies)
   - [x] IT Support & Operations (10) (exception: it-service-management has no non-Wikipedia resource yet)
-  - [ ] Finance & Accounting (11)
+  - [x] Finance & Accounting (11) (exceptions: 6 competencies without non-Wikipedia resource, see STATUS)
   - [ ] Human Resources (11)
 
 ## Phase 3 — Learner experience

@@ -8,11 +8,11 @@ items:
       en: "What is the main purpose of reconciling two sets of accounting records?"
       de: "Was ist der Hauptzweck, zwei Buchhaltungsdatenbestände abzustimmen?"
     options:
-      - en: "To confirm the records agree and to find errors or missing entries early"
+      - en: "To confirm that records agree and to find errors or missing entries early"
         de: "Zu bestätigen, dass die Daten übereinstimmen, und Fehler oder fehlende Buchungen früh zu finden"
         correct: true
-      - en: "To increase the company's profit"
-        de: "Den Gewinn des Unternehmens zu erhöhen"
+      - en: "To adjust reported profit so that actual results match the budget set for the period"
+        de: "Den ausgewiesenen Gewinn anzupassen, damit die Ist-Werte zum Budget der Periode passen"
         correct: false
       - en: "To delete old transactions"
         de: "Alte Buchungen zu löschen"
@@ -35,8 +35,8 @@ items:
       - en: "A timing difference (outstanding item) that clears on its own"
         de: "Eine zeitliche Differenz (offener Posten), die sich von selbst auflöst"
         correct: true
-      - en: "A bank error that must be reversed immediately"
-        de: "Ein Bankfehler, der sofort storniert werden muss"
+      - en: "A bank error, because every payment you post should appear on the statement the same day"
+        de: "Ein Bankfehler, weil jede gebuchte Zahlung am selben Tag auf dem Auszug erscheinen müsste"
         correct: false
       - en: "Revenue for the period"
         de: "Ein Ertrag der Periode"
@@ -56,11 +56,11 @@ items:
       en: "Bank charges appear on the statement but are not yet in your books. What do you do?"
       de: "Bankgebühren stehen auf dem Kontoauszug, aber noch nicht in deinen Büchern. Was tust du?"
     options:
-      - en: "Post them in your books, because they are real transactions you had not recorded"
+      - en: "Post them, because they are real transactions you had not yet recorded"
         de: "Du buchst sie in deinen Büchern, weil es echte, noch nicht erfasste Vorgänge sind"
         correct: true
-      - en: "Ignore them as a timing difference"
-        de: "Du ignorierst sie als zeitliche Differenz"
+      - en: "Ignore them, treating them as a timing difference that will clear on its own"
+        de: "Du ignorierst sie und behandelst sie als zeitliche Differenz, die sich von selbst auflöst"
         correct: false
       - en: "Ask the bank to remove them from the statement"
         de: "Du bittest die Bank, sie vom Auszug zu entfernen"
@@ -83,8 +83,8 @@ items:
       - en: "It records the expense in December, when it was incurred"
         de: "Sie erfasst den Aufwand im Dezember, wenn er entstanden ist"
         correct: true
-      - en: "It records the expense only in January, when it is paid"
-        de: "Sie erfasst den Aufwand erst im Januar, wenn bezahlt wird"
+      - en: "It records the expense only in January, when the invoice arrives and is paid"
+        de: "Sie erfasst den Aufwand erst im Januar, wenn die Rechnung eintrifft und bezahlt wird"
         correct: false
       - en: "It records no expense at all"
         de: "Sie erfasst gar keinen Aufwand"
@@ -104,11 +104,11 @@ items:
       en: "At period end, the open items of the accounts receivable sub-ledger total 50,000 and the control account in the general ledger shows 48,000. What is the correct first step?"
       de: "Zum Periodenende ergeben die offenen Posten der Debitorenbuchhaltung 50.000, das Sammelkonto im Hauptbuch zeigt 48.000. Was ist der richtige erste Schritt?"
     options:
-      - en: "Investigate the 2,000 difference, for example manual postings to the control account or wrong-period postings"
-        de: "Die Differenz von 2.000 klären, zum Beispiel manuelle Buchungen auf das Sammelkonto oder Buchungen in der falschen Periode"
+      - en: "Investigate the 2,000 difference, e.g. manual postings to the control account"
+        de: "Die Differenz von 2.000 klären, z. B. manuelle Buchungen auf das Sammelkonto"
         correct: true
-      - en: "Adjust the sub-ledger so it matches the control account"
-        de: "Das Nebenbuch anpassen, damit es zum Sammelkonto passt"
+      - en: "Adjust the sub-ledger by 2,000 so it matches the control account, since the ledger is the leading record"
+        de: "Das Nebenbuch um 2.000 anpassen, damit es zum Sammelkonto passt, da das Hauptbuch führend ist"
         correct: false
       - en: "Post the difference to revenue"
         de: "Die Differenz als Ertrag buchen"
@@ -128,11 +128,11 @@ items:
       en: "A company pays 600 in November for rent of the following month. What is the correct treatment at the November closing?"
       de: "Ein Unternehmen zahlt im November 600 Miete für den Folgemonat. Wie ist das beim Novemberabschluss richtig?"
     options:
-      - en: "Defer it: show it as a prepaid expense (asset) and expense it in the following month"
-        de: "Abgrenzen: als aktiven Rechnungsabgrenzungsposten (Vermögen) zeigen und im Folgemonat als Aufwand erfassen"
+      - en: "Defer it: show a prepaid expense (asset) and expense it in the following month"
+        de: "Abgrenzen: als aktiven Rechnungsabgrenzungsposten zeigen und im Folgemonat als Aufwand erfassen"
         correct: true
-      - en: "Expense the full 600 in November"
-        de: "Die vollen 600 im November als Aufwand erfassen"
+      - en: "Expense the full 600 in November, since the cash left the bank in that month and the books follow payment"
+        de: "Die vollen 600 im November als Aufwand erfassen, da das Geld in diesem Monat abfloss und die Bücher der Zahlung folgen"
         correct: false
       - en: "Record it as revenue"
         de: "Als Ertrag erfassen"
@@ -179,8 +179,8 @@ items:
       - en: "Date, preparer, both balances, each difference with explanation, action and owner"
         de: "Datum, Ersteller, beide Salden, jede Differenz mit Erklärung, Maßnahme und Verantwortlichem"
         correct: true
-      - en: "Only the final total"
-        de: "Nur die Endsumme"
+      - en: "Only the final total and a signature, since the reviewer can recalculate the rest alone"
+        de: "Nur die Endsumme und eine Unterschrift, da die prüfende Person den Rest selbst nachrechnen kann"
         correct: false
       - en: "A verbal confirmation"
         de: "Eine mündliche Bestätigung"
@@ -203,8 +203,8 @@ items:
       - en: "Do a root cause analysis and fix the cause, for example the interface or the rule"
         de: "Eine Ursachenanalyse durchführen und die Ursache beheben, zum Beispiel Schnittstelle oder Regel"
         correct: true
-      - en: "Keep correcting it manually, it is quick"
-        de: "Weiter manuell korrigieren, das geht schnell"
+      - en: "Keep correcting it manually each month, since the manual fix is quick, documented in the checklist, and the cause is only cosmetic"
+        de: "Weiter jeden Monat manuell korrigieren, da die Korrektur schnell geht, in der Checkliste steht und die Ursache nur kosmetisch ist"
         correct: false
       - en: "Write the difference off without documentation"
         de: "Die Differenz ohne Dokumentation ausbuchen"
@@ -227,8 +227,8 @@ items:
       - en: "Do not treat it as trivial only because of its size; investigate the pattern"
         de: "Sie nicht allein wegen ihrer Größe als unwichtig behandeln; das Muster untersuchen"
         correct: true
-      - en: "Ignore it, because small amounts never matter"
-        de: "Ignorieren, weil kleine Beträge nie wichtig sind"
+      - en: "Ignore it, because amounts below the materiality threshold never need to be investigated"
+        de: "Ignorieren, weil Beträge unterhalb der Wesentlichkeitsgrenze nie untersucht werden müssen"
         correct: false
       - en: "Set your own personal threshold and skip it"
         de: "Eine eigene Schwelle festlegen und sie überspringen"
@@ -251,8 +251,8 @@ items:
       - en: "A person other than the preparer, for segregation of duties"
         de: "Eine andere Person als die erstellende, wegen der Funktionstrennung"
         correct: true
-      - en: "The preparer, because they know the details best"
-        de: "Die erstellende Person, weil sie die Details am besten kennt"
+      - en: "The preparer, because they know the details best and can explain every difference"
+        de: "Die erstellende Person, weil sie die Details am besten kennt und jede Differenz erklären kann"
         correct: false
       - en: "No one, if the totals agree"
         de: "Niemand, wenn die Summen stimmen"
@@ -275,8 +275,8 @@ items:
       - en: "So the expense is not counted twice when the real invoice is posted"
         de: "Damit der Aufwand nicht doppelt erfasst wird, wenn die echte Rechnung gebucht wird"
         correct: true
-      - en: "To increase the expense in the new period"
-        de: "Um den Aufwand der neuen Periode zu erhöhen"
+      - en: "To move the expense into the new period, so that monthly results look smoother"
+        de: "Um den Aufwand in die neue Periode zu verschieben, damit die Monatsergebnisse glatter wirken"
         correct: false
       - en: "To hide the original entry"
         de: "Um die ursprüngliche Buchung zu verbergen"

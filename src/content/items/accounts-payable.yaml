@@ -11,8 +11,8 @@ items:
       - en: "Money owed by the business to its suppliers, shown as a liability"
         de: "Geld, das das Unternehmen seinen Lieferanten schuldet, ausgewiesen als Schuld"
         correct: true
-      - en: "Money customers owe to the business"
-        de: "Geld, das Kunden dem Unternehmen schulden"
+      - en: "Money customers owe to the business for goods already delivered, shown as an asset"
+        de: "Geld, das Kunden dem Unternehmen für bereits gelieferte Waren schulden, ausgewiesen als Vermögenswert"
         correct: false
       - en: "Cash held in the company bank account"
         de: "Bargeld auf dem Bankkonto des Unternehmens"
@@ -32,14 +32,14 @@ items:
       en: "What is the difference between the formal and the factual check of an invoice?"
       de: "Was unterscheidet die formelle von der sachlichen Rechnungsprüfung?"
     options:
-      - en: "Formal: is the invoice complete and correct on its face; factual: is the content right, ordered and received"
-        de: "Formell: Ist die Rechnung äußerlich vollständig und korrekt; sachlich: Stimmt der Inhalt, wurde bestellt und geliefert"
+      - en: "Formal: complete and correct on its face; factual: content right, ordered and received"
+        de: "Formell: äußerlich vollständig und korrekt; sachlich: Inhalt stimmt, wurde bestellt und geliefert"
         correct: true
       - en: "Formal is done by the supplier, factual by the bank"
         de: "Die formelle Prüfung macht der Lieferant, die sachliche die Bank"
         correct: false
-      - en: "Formal checks the payment date, factual checks the bank details"
-        de: "Formell wird das Zahlungsdatum geprüft, sachlich die Bankverbindung"
+      - en: "Formal checks the payment date and terms; factual checks the supplier's bank details and the total"
+        de: "Formell werden Zahlungsdatum und -bedingungen geprüft; sachlich die Bankverbindung des Lieferanten und die Summe"
         correct: false
       - en: "There is no difference; both mean checking the total"
         de: "Es gibt keinen Unterschied; beides bedeutet, die Summe zu prüfen"
@@ -80,8 +80,8 @@ items:
       en: "A supplier invoice of 119 (net 100, VAT 19) for office supplies is recorded. Which entry is correct (illustration, VAT rate invented)?"
       de: "Eine Lieferantenrechnung über 119 (netto 100, Umsatzsteuer 19) für Büromaterial wird gebucht. Welche Buchung ist richtig (Beispiel, Steuersatz erfunden)?"
     options:
-      - en: "Debit office supplies 100 and input VAT 19, credit accounts payable 119"
-        de: "Soll Bürobedarf 100 und Vorsteuer 19, Haben Verbindlichkeiten 119"
+      - en: "Debit office supplies 100 and input VAT 19; credit payables 119"
+        de: "Soll Bürobedarf 100 und Vorsteuer 19; Haben Verbindlichkeiten 119"
         correct: true
       - en: "Debit accounts payable 119, credit bank 119"
         de: "Soll Verbindlichkeiten 119, Haben Bank 119"
@@ -89,8 +89,8 @@ items:
       - en: "Debit bank 119, credit office supplies 119"
         de: "Soll Bank 119, Haben Bürobedarf 119"
         correct: false
-      - en: "Debit office supplies 119, credit input VAT 119"
-        de: "Soll Bürobedarf 119, Haben Vorsteuer 119"
+      - en: "Debit office supplies 119 and input VAT 19, credit accounts payable 138"
+        de: "Soll Bürobedarf 119 und Vorsteuer 19, Haben Verbindlichkeiten 138"
         correct: false
     explanation:
       en: "Recording the invoice creates the expense, the input VAT and the liability. The debit total (119) equals the credit total (119). Paying the invoice later debits accounts payable and credits bank."
@@ -128,11 +128,11 @@ items:
       en: "What does the four-eyes principle mean in invoice approval?"
       de: "Was bedeutet das Vier-Augen-Prinzip bei der Rechnungsfreigabe?"
     options:
-      - en: "A step is completed only when at least two people agree, to reduce errors and misuse"
-        de: "Ein Schritt wird nur abgeschlossen, wenn mindestens zwei Personen zustimmen, um Fehler und Missbrauch zu senken"
+      - en: "A step is completed only when at least two people agree, reducing errors and misuse"
+        de: "Ein Schritt wird nur abgeschlossen, wenn mindestens zwei Personen zustimmen, was Fehler und Missbrauch senkt"
         correct: true
-      - en: "Every invoice is read twice by the same person"
-        de: "Jede Rechnung wird von derselben Person zweimal gelesen"
+      - en: "Every invoice is read twice by the same person, so that typing errors are caught before payment"
+        de: "Jede Rechnung wird von derselben Person zweimal gelesen, damit Tippfehler vor der Zahlung auffallen"
         correct: false
       - en: "Only invoices with two line items need approval"
         de: "Nur Rechnungen mit zwei Positionen müssen freigegeben werden"
@@ -155,8 +155,8 @@ items:
       - en: "The supplier can reclaim the deducted amount because the Skonto period has expired"
         de: "Der Lieferant kann den abgezogenen Betrag zurückfordern, weil die Skontofrist abgelaufen ist"
         correct: true
-      - en: "None; Skonto applies until the net due date"
-        de: "Keines; Skonto gilt bis zum Nettotermin"
+      - en: "None; Skonto applies until the net due date, because the invoice is still within its payment term"
+        de: "Keines; Skonto gilt bis zum Nettotermin, da die Rechnung noch innerhalb des Zahlungsziels liegt"
         correct: false
       - en: "The invoice becomes void"
         de: "Die Rechnung wird ungültig"
@@ -176,11 +176,11 @@ items:
       en: "An invoice bills 100 items but only 90 were received. What is the best action?"
       de: "Eine Rechnung weist 100 Stück aus, geliefert wurden aber nur 90. Was ist die beste Vorgehensweise?"
     options:
-      - en: "Block the invoice, document the difference and ask the supplier for a credit note or corrected invoice"
-        de: "Rechnung sperren, die Abweichung dokumentieren und beim Lieferanten eine Gutschrift oder korrigierte Rechnung anfordern"
+      - en: "Block the invoice, document the difference and request a credit note or corrected invoice"
+        de: "Rechnung sperren, die Abweichung dokumentieren und eine Gutschrift oder korrigierte Rechnung anfordern"
         correct: true
-      - en: "Pay the full amount and hope the supplier notices"
-        de: "Den vollen Betrag zahlen und hoffen, dass der Lieferant es bemerkt"
+      - en: "Pay the full amount now and reclaim the 10 missing items from the supplier later through a credit note"
+        de: "Den vollen Betrag jetzt zahlen und die 10 fehlenden Stück später über eine Gutschrift vom Lieferanten zurückholen"
         correct: false
       - en: "Delete the invoice from the system"
         de: "Die Rechnung im System löschen"
@@ -203,8 +203,8 @@ items:
       - en: "Verify by calling a known contact at a number from the supplier master record, and document it"
         de: "Per Rückruf bei einer bekannten Kontaktperson unter einer Nummer aus dem Stammsatz prüfen und dokumentieren"
         correct: true
-      - en: "Reply to the email and ask whether the change is real"
-        de: "Auf die E-Mail antworten und fragen, ob die Änderung echt ist"
+      - en: "Reply to the email and ask the sender to confirm in writing that the bank account change is genuine"
+        de: "Auf die E-Mail antworten und den Absender bitten, die Änderung der Bankverbindung schriftlich zu bestätigen"
         correct: false
       - en: "Call the number in the email signature"
         de: "Die Nummer aus der E-Mail-Signatur anrufen"
@@ -227,8 +227,8 @@ items:
       - en: "Different people maintain supplier master data, enter invoices and release payments"
         de: "Verschiedene Personen pflegen Lieferantenstammdaten, erfassen Rechnungen und geben Zahlungen frei"
         correct: true
-      - en: "One experienced person does everything to avoid mistakes"
-        de: "Eine erfahrene Person macht alles, um Fehler zu vermeiden"
+      - en: "One experienced person does everything, which avoids hand-over mistakes and speeds up payment runs"
+        de: "Eine erfahrene Person macht alles, das vermeidet Übergabefehler und beschleunigt Zahlläufe"
         correct: false
       - en: "The same person creates suppliers and releases their payments"
         de: "Dieselbe Person legt Lieferanten an und gibt deren Zahlungen frei"
@@ -251,8 +251,8 @@ items:
       - en: "Book an accrual for 5,000 based on the goods receipt and reverse it when the invoice arrives"
         de: "Eine Abgrenzung über 5.000 anhand des Wareneingangs buchen und bei Rechnungseingang auflösen"
         correct: true
-      - en: "Ignore it until the invoice arrives next month"
-        de: "Ignorieren, bis die Rechnung im nächsten Monat eintrifft"
+      - en: "Wait until the invoice arrives next month, because an expense is only recorded once an invoice exists"
+        de: "Warten, bis die Rechnung im nächsten Monat eintrifft, weil Aufwand erst mit vorliegender Rechnung gebucht wird"
         correct: false
       - en: "Pay the supplier 5,000 without an invoice"
         de: "Dem Lieferanten 5.000 ohne Rechnung zahlen"
@@ -272,11 +272,11 @@ items:
       en: "Which statement about e-invoicing is accurate (Germany, check current rules)?"
       de: "Welche Aussage zur E-Rechnung stimmt (Deutschland, aktuelle Regeln prüfen)?"
     options:
-      - en: "An e-invoice is issued, sent and received in a structured format that software can process"
-        de: "Eine E-Rechnung wird in einem strukturierten Format ausgestellt, übermittelt und empfangen, das Software verarbeiten kann"
+      - en: "An e-invoice is issued, sent and received in a structured, software-processable format"
+        de: "Eine E-Rechnung wird in einem strukturierten, maschinenlesbaren Format ausgestellt, übermittelt und empfangen"
         correct: true
-      - en: "It is any PDF sent by email"
-        de: "Es ist jedes per E-Mail versandte PDF"
+      - en: "It is any invoice sent electronically, including a PDF by email, as long as the recipient can open it"
+        de: "Sie ist jede elektronisch versandte Rechnung, auch ein PDF per E-Mail, solange der Empfänger sie öffnen kann"
         correct: false
       - en: "It removes the need to check invoices"
         de: "Sie macht die Prüfung von Rechnungen überflüssig"

@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-17 — Content quality pass: Finance & Accounting
+
+**Done**
+- Finance items (9 files): options rewritten en/de; `uniquely longest` warnings gone for all Finance competencies (20 → 11, only HR left).
+- 5 new OpenStax Principles of Accounting resources (CC BY-NC-SA, link only, verified 2026-11-17).
+- Gaps: no non-Wikipedia resource yet for accounts-payable, tax-basics, cash-liquidity-management, budgeting-forecasting, financial-statements-reporting, financial-analysis-kpis (gesetze-im-internet.de unreachable via proxy). German wording of shortened correct answers may be slightly longer than English: worth a de review. New resources not yet in unit `resources[]`.
+
+**Counts:** roles 4 · competencies 38 · units 228 · items 456 · resources 288 · tests 59
+
+**Next:** HR (11) quality batch.
+
 ## 2026-11-17 — Content quality pass: IT Support & Operations
 
 **Done**

@@ -11,8 +11,8 @@ items:
       - en: "The left and the right side of an account"
         de: "Die linke und die rechte Seite eines Kontos"
         correct: true
-      - en: "Good and bad transactions"
-        de: "Gute und schlechte Geschäftsvorfälle"
+      - en: "Increases and decreases of the bank balance, as shown on the statement"
+        de: "Zu- und Abnahmen des Kontostands, wie sie auf dem Kontoauszug stehen"
         correct: false
       - en: "Money owed to and by the bank card"
         de: "Geld, das einer Bankkarte geschuldet wird"
@@ -32,8 +32,8 @@ items:
       en: "What is the basic rule of double-entry bookkeeping?"
       de: "Was ist die Grundregel der doppelten Buchführung?"
     options:
-      - en: "Every transaction is entered once, in the most important account"
-        de: "Jeder Geschäftsvorfall wird einmal im wichtigsten Konto erfasst"
+      - en: "Every transaction is entered once, in the most important account, and the totals are checked at year end"
+        de: "Jeder Geschäftsvorfall wird einmal im wichtigsten Konto erfasst, die Summen werden zum Jahresende geprüft"
         correct: false
       - en: "Every transaction is entered in at least two accounts and debits equal credits"
         de: "Jeder Geschäftsvorfall wird auf mindestens zwei Konten erfasst und Soll und Haben sind gleich"
@@ -65,8 +65,8 @@ items:
       - en: "It is evidence for the entry, showing who, what, when and how much"
         de: "Er ist der Nachweis für die Buchung und zeigt, wer, was, wann und wie viel"
         correct: true
-      - en: "It is only needed when the amount is large"
-        de: "Er wird nur bei hohen Beträgen benötigt"
+      - en: "It is only needed for amounts above a company-set limit; smaller ones can be booked without"
+        de: "Er wird nur für Beträge über einer unternehmensinternen Grenze benötigt; kleinere lassen sich ohne buchen"
         correct: false
     explanation:
       en: "The receipt is the document behind the entry. Without evidence, an entry is only a claim."
@@ -104,11 +104,11 @@ items:
       en: "Why does a company use a chart of accounts?"
       de: "Warum nutzt ein Unternehmen einen Kontenrahmen bzw. Kontenplan?"
     options:
-      - en: "To make sure similar transactions are booked to the same accounts so reports are comparable"
-        de: "Damit gleichartige Vorfälle auf dieselben Konten gebucht werden und Auswertungen vergleichbar sind"
+      - en: "So similar transactions are booked to the same accounts and reports stay comparable"
+        de: "Damit gleichartige Vorfälle auf dieselben Konten gebucht werden und Auswertungen vergleichbar bleiben"
         correct: true
-      - en: "To avoid keeping receipts"
-        de: "Um keine Belege aufbewahren zu müssen"
+      - en: "To replace receipts, because the account number already describes every transaction in full"
+        de: "Um Belege zu ersetzen, da die Kontonummer jeden Vorfall bereits vollständig beschreibt"
         correct: false
       - en: "To replace the trial balance"
         de: "Um die Saldenliste zu ersetzen"
@@ -128,8 +128,8 @@ items:
       en: "Which error would a balanced trial balance NOT reveal?"
       de: "Welchen Fehler zeigt eine ausgeglichene Saldenliste NICHT?"
     options:
-      - en: "A debit amount recorded without a matching credit"
-        de: "Ein Sollbetrag ohne passenden Habenbetrag"
+      - en: "A debit amount recorded without any matching credit, for example a forgotten second leg"
+        de: "Ein Sollbetrag ohne passenden Habenbetrag, zum Beispiel ein vergessener zweiter Buchungsteil"
         correct: false
       - en: "A purchase booked to the wrong expense account, with correct amounts on both sides"
         de: "Ein Einkauf auf das falsche Aufwandskonto, bei richtigen Beträgen auf beiden Seiten"
@@ -179,11 +179,11 @@ items:
       - en: "Delete the original entry from the journal"
         de: "Die ursprüngliche Buchung aus dem Journal löschen"
         correct: false
-      - en: "Overwrite the old amounts without a note"
-        de: "Die alten Beträge ohne Vermerk überschreiben"
+      - en: "Overwrite the wrong account in the original entry so the books show only the correct final result"
+        de: "Das falsche Konto in der ursprünglichen Buchung überschreiben, damit die Bücher nur das richtige Endergebnis zeigen"
         correct: false
-      - en: "Post a correcting entry that reverses the wrong one and book the right one, with explanation"
-        de: "Eine Korrekturbuchung erfassen, die die falsche umkehrt, und die richtige buchen, mit Erläuterung"
+      - en: "Post a correcting entry that reverses the wrong one and books the right one, with a note"
+        de: "Eine Korrekturbuchung erfassen, die die falsche umkehrt und die richtige bucht, mit Vermerk"
         correct: true
       - en: "Leave it and mention it at year end"
         de: "Es belassen und am Jahresende erwähnen"
@@ -203,8 +203,8 @@ items:
       - en: "Three months are expense; nine months are carried forward as a prepaid expense"
         de: "Drei Monate sind Aufwand; neun Monate werden als Rechnungsabgrenzung vorgetragen"
         correct: true
-      - en: "The whole amount is expense this year"
-        de: "Der gesamte Betrag ist Aufwand in diesem Jahr"
+      - en: "The whole amount is expense this year, because the cash left the account this year"
+        de: "Der gesamte Betrag ist Aufwand in diesem Jahr, weil das Geld in diesem Jahr abgeflossen ist"
         correct: false
       - en: "The whole amount is expense next year"
         de: "Der gesamte Betrag ist Aufwand im nächsten Jahr"
@@ -224,8 +224,8 @@ items:
       en: "The customer sub-ledger total differs from the receivables control account in the general ledger. What is the most sensible first step?"
       de: "Die Summe des Kundennebenbuchs weicht vom Forderungssammelkonto im Hauptbuch ab. Was ist der sinnvollste erste Schritt?"
     options:
-      - en: "Adjust the control account to match without investigation"
-        de: "Das Sammelkonto ohne Prüfung angleichen"
+      - en: "Adjust the control account to match the sub-ledger, since the sub-ledger holds the detail"
+        de: "Das Sammelkonto an das Nebenbuch angleichen, da das Nebenbuch die Einzelheiten enthält"
         correct: false
       - en: "Ignore it if the trial balance is balanced"
         de: "Es ignorieren, wenn die Saldenliste ausgeglichen ist"
@@ -248,8 +248,8 @@ items:
       en: "Which practice best supports an audit trail?"
       de: "Welche Praxis unterstützt einen Prüfpfad am besten?"
     options:
-      - en: "Changing entries in place so the books look tidy"
-        de: "Buchungen direkt ändern, damit die Bücher aufgeräumt wirken"
+      - en: "Correcting entries in place so the books stay tidy and readers see only final values, with no clutter"
+        de: "Buchungen direkt korrigieren, damit die Bücher übersichtlich bleiben und nur Endwerte zeigen, ohne Durcheinander"
         correct: false
       - en: "Keeping receipts linked to entries and recording who changed what and when, without deleting"
         de: "Belege mit Buchungen verknüpft halten und festhalten, wer wann was geändert hat, ohne zu löschen"
@@ -272,8 +272,8 @@ items:
       en: "A team wants to automate account assignment in accounting software with rules. Which approach is best?"
       de: "Ein Team will die Kontenzuordnung in der Buchhaltungssoftware mit Regeln automatisieren. Welcher Ansatz ist am besten?"
     options:
-      - en: "Enable all rules at once and stop reviewing"
-        de: "Alle Regeln gleichzeitig aktivieren und nicht mehr prüfen"
+      - en: "Enable all rules at once to save time, and stop reviewing individual postings afterwards"
+        de: "Alle Regeln gleichzeitig aktivieren, um Zeit zu sparen, und Einzelbuchungen danach nicht mehr prüfen"
         correct: false
       - en: "Let every user edit rules"
         de: "Jede:r Nutzer:in darf Regeln ändern"
@@ -281,7 +281,7 @@ items:
       - en: "Turn off the audit trail to speed things up"
         de: "Den Prüfpfad abschalten, um zu beschleunigen"
         correct: false
-      - en: "Document and test rules on a sample, restrict who can change them and review exceptions"
+      - en: "Document and test rules on a sample, limit who can change them and review exceptions"
         de: "Regeln dokumentieren und an einer Stichprobe testen, Änderungsrechte begrenzen und Ausnahmen prüfen"
         correct: true
     explanation:
