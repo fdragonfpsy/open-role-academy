@@ -9,6 +9,6 @@ license: CC-BY-NC-SA-4.0
 licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
 licenseVerifiedOn: 2026-11-17
 mode: link
-competencies: [crm-sales-data-forecasting, account-management-upselling]
-levels: [foundation, practitioner]
-note: 'Book page states "Creative Commons Attribution-NonCommercial-ShareAlike License" (NC -> link only). Mainly US context; sales productivity metrics, customer satisfaction objectives.'
+competencies: [crm-sales-data-forecasting, account-management-upselling, sales-ethics-compliance]
+levels: [foundation, practitioner, advanced]
+note: 'Book page states "Creative Commons Attribution-NonCommercial-ShareAlike License" (NC -> link only). Mainly US context; sales productivity metrics, customer satisfaction objectives. Read on 2026-11-17 for sales-ethics-compliance: compensation structures; commission-only structure noted as risk of aggressive practices.'

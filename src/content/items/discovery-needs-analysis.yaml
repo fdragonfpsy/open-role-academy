@@ -128,17 +128,17 @@ items:
       en: "Why should the customer, not the seller, put numbers on the impact of a problem?"
       de: "Warum sollte die Kundschaft und nicht die Verkaufsperson die Auswirkung eines Problems beziffern?"
     options:
-      - en: "Because sellers are legally not permitted to calculate the value of any problem without the customer's prior written approval"
-        de: "Weil Verkaufspersonen rechtlich den Wert eines Problems nie berechnen dürfen ohne vorherige schriftliche Zustimmung der Kundschaft"
+      - en: "Because naming a figure commits the customer psychologically and makes it harder for them to walk away"
+        de: "Weil das Nennen einer Zahl die Kundschaft innerlich bindet und ihr den Ausstieg erschwert"
         correct: false
       - en: "Because figures the customer names are credible to them and can be used in the business case"
         de: "Weil Zahlen, die die Kundschaft nennt, für sie glaubwürdig sind und im Business Case verwendet werden können"
         correct: true
-      - en: "Because it shortens the conversation so that the seller can present more slides"
-        de: "Weil es das Gespräch verkürzt und die Verkaufsperson mehr Folien zeigen kann"
+      - en: "Because discovery should only collect facts, and any figures belong in the proposal stage"
+        de: "Weil Discovery nur Fakten sammeln soll und Zahlen erst in die Angebotsphase gehören"
         correct: false
-      - en: "Because customers always overstate costs, which helps to justify a higher price"
-        de: "Weil Kundschaft Kosten immer übertreibt, was einen höheren Preis rechtfertigt"
+      - en: "Because the customer's figures are exact, so nobody needs to ask how they were worked out"
+        de: "Weil die Zahlen der Kundschaft exakt sind und niemand fragen muss, wie sie ermittelt wurden"
         correct: false
     explanation:
       en: "A value case built on the customer's own numbers carries weight in their decision; invented figures do not."
@@ -203,14 +203,14 @@ items:
       - en: "Surface the conflict openly and ask the customer how they will weigh the criteria"
         de: "Den Konflikt offen ansprechen und fragen, wie die Kundschaft die Kriterien gewichtet"
         correct: true
-      - en: "Back the person you get along with best and adapt the proposal to them alone until the customer finally gives in"
-        de: "Die Person unterstützen, mit der du dich am besten verstehst, und das Angebot nur auf sie zuschneiden, bis die Kundschaft schließlich nachgibt"
+      - en: "Align the proposal with finance as budget holder and ask operations and IT to accept the trade-offs"
+        de: "Das Angebot an der Finanzabteilung als Budgetverantwortlicher ausrichten und Betrieb und IT um Akzeptanz der Kompromisse bitten"
         correct: false
-      - en: "Promise that your solution is fastest, cheapest and safest, so nobody objects"
-        de: "Versprechen, dass deine Lösung am schnellsten, günstigsten und sichersten ist, damit niemand widerspricht"
+      - en: "Design a middle option that is fairly fast, fairly cheap and fairly safe, and present it without discussion"
+        de: "Eine mittlere Option entwerfen, die recht schnell, recht günstig und recht sicher ist, und ohne Diskussion vorlegen"
         correct: false
-      - en: "Wait until the three groups agree among themselves and then submit an offer"
-        de: "Abwarten, bis die drei Gruppen sich einig sind, und dann ein Angebot abgeben"
+      - en: "Ask the sponsor to settle the conflict internally and return with one set of requirements"
+        de: "Die fördernde Person bitten, den Konflikt intern zu klären und mit einheitlichen Anforderungen zurückzukommen"
         correct: false
     explanation:
       en: "Each group holds legitimate criteria. Making trade-offs visible helps the customer decide and avoids promises you cannot keep."

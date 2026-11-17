@@ -275,11 +275,11 @@ items:
       - en: "Force the small orders through all stages used for the large projects to keep reporting simple"
         de: "Die kleinen Bestellungen durch alle Phasen der großen Projekte zwingen, um das Reporting einfach zu halten"
         correct: false
-      - en: "Let each person define personal stages so that nothing is imposed on them"
-        de: "Jede Person eigene Phasen definieren lassen, damit ihr nichts aufgezwungen wird"
+      - en: "Run two separate pipelines with unrelated stage names and report them independently"
+        de: "Zwei getrennte Pipelines mit unabhängigen Phasennamen betreiben und getrennt berichten"
         correct: false
-      - en: "Drop the process for large projects since every project is unique anyway"
-        de: "Den Prozess für große Projekte streichen, da ohnehin jedes Projekt einzigartig ist"
+      - en: "Reduce every deal to one stage called Open plus a won or lost flag to keep it simple"
+        de: "Jeden Deal auf eine Phase „Offen“ plus Gewonnen-/Verloren-Kennzeichen reduzieren, um es einfach zu halten"
         correct: false
       - en: "Keep shared stage names but add separate playbooks and criteria per deal type"
         de: "Gemeinsame Phasennamen behalten, aber getrennte Playbooks und Kriterien je Dealtyp ergänzen"

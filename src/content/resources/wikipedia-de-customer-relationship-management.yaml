@@ -1,0 +1,14 @@
+id: wikipedia-de-customer-relationship-management
+url: https://de.wikipedia.org/wiki/Customer-Relationship-Management
+title: "Customer-Relationship-Management"
+provider: Wikipedia
+language: de
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-17
+mode: link
+competencies: [crm-sales-data-forecasting]
+levels: [foundation, practitioner]
+note: 'Page fetched (200) on 2026-11-17; footer states Creative Commons "Namensnennung - Weitergabe unter gleichen Bedingungen". Link only; no passages reproduced. Sections: Ziele, Prozesse, Komponenten, CRM-Systeme, Kritik.'

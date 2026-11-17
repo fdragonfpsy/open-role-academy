@@ -141,7 +141,7 @@ Keep people productive and IT running: handle incidents and requests, troublesho
 | Self-organisation and project basics | core | 3 | F | P | P | — |
 | Working with data | core | 3 | F | F | P | digital-ai-literacy |
 
-## Sales (`sales`, role, draft)
+## Sales (`sales`, role, published)
 
 Win and grow customers: find and qualify prospects, understand their needs, present solutions, negotiate and close deals fairly, look after accounts and keep sales data and forecasts reliable.
 
