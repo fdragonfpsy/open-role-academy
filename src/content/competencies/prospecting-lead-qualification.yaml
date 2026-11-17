@@ -1,0 +1,15 @@
+id: prospecting-lead-qualification
+title:
+  en: Prospecting and lead qualification
+  de: Neukundengewinnung und Lead-Qualifizierung
+description:
+  en: >-
+    Identify and approach potential customers through suitable channels, research accounts and contacts, and qualify leads with clear criteria (need, budget, decision process, timing) to focus effort on the best opportunities.
+  de: >-
+    Potenzielle Kundschaft über geeignete Kanäle finden und ansprechen, Unternehmen und Ansprechpersonen recherchieren und Leads anhand klarer Kriterien (Bedarf, Budget, Entscheidungsprozess, Zeitpunkt) qualifizieren, um den Aufwand auf die besten Chancen zu konzentrieren.
+prerequisites: [sales-process-pipeline]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/6d97bf55-6fb6-4795-8282-3ef915ae0bb8
+    label: prospect new customers

@@ -1,0 +1,18 @@
+id: sales-ethics-compliance
+title:
+  en: Sales ethics and compliance (Germany/EU)
+  de: Vertriebsethik und Compliance (Deutschland/EU)
+description:
+  en: >-
+    Sell fairly and lawfully in Germany and the EU: honest claims, fair commercial practices (UWG), consumer protection basics, handling contact data under the GDPR for B2B and B2C outreach, and avoiding conflicts of interest and improper benefits — and knowing when to involve legal or compliance.
+  de: >-
+    In Deutschland und der EU fair und rechtmäßig verkaufen: ehrliche Aussagen, lauterer Wettbewerb (UWG), Grundlagen des Verbraucherschutzes, Umgang mit Kontaktdaten nach DSGVO bei B2B- und B2C-Ansprache sowie Vermeidung von Interessenkonflikten und unzulässigen Vorteilen – und wissen, wann Recht oder Compliance einzubinden sind.
+prerequisites: [information-security-basics]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/7ae62140-fe02-4ee3-a0c5-fb5668a2870d
+    label: consumer protection
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/ce5598ec-5ca4-4f3e-92a2-c55c90ce6038
+    label: competition law

@@ -1,0 +1,18 @@
+id: discovery-needs-analysis
+title:
+  en: Discovery and needs analysis
+  de: Bedarfsanalyse und Gesprächsführung
+description:
+  en: >-
+    Prepare and run discovery conversations: ask open and probing questions, listen actively, uncover the customer's goals, problems and decision criteria, and summarise needs so that a solution can be matched to them.
+  de: >-
+    Bedarfsgespräche vorbereiten und führen: offene und vertiefende Fragen stellen, aktiv zuhören, Ziele, Probleme und Entscheidungskriterien der Kundschaft herausarbeiten und den Bedarf zusammenfassen, damit eine passende Lösung entwickelt werden kann.
+prerequisites: [prospecting-lead-qualification]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/68698869-c13c-4563-adc7-118b7644f45d
+    label: identify customer's needs
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/b7c8f418-08d5-45d6-b697-ab26c6ecbfb4
+    label: ensure client orientation
