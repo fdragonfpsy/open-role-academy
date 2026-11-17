@@ -82,7 +82,7 @@ Item and resource quality (added by weekly review 2026-11-14, applies to all new
 - [x] Landing page (en/de): what it is, how it works, roles overview, "AI-generated, not yet reviewed" transparency note
 - [x] Onboarding flow (role, level, language) + placement check UI — acceptance: verified in a real browser (Playwright, pre-installed) for en and de, keyboard-only run-through works, placement stops at the 15-question budget
 - [x] Learning path view + unit page with resources, attribution block and mastery check
-- [ ] Dashboard: competency radar or bars (current vs target), next unit, review queue, export/import
+- [x] Dashboard: competency radar or bars (current vs target), next unit, review queue, export/import
 - [ ] Accessibility pass (keyboard, contrast, screen reader labels) + Lighthouse ≥ 90 on all categories
 - [ ] Mobile layout pass
 - [ ] **Launch checklist** in `docs/LAUNCH.md` (what the human must fill in: Impressum data, contact email, Cloudflare Pages project) — then mark the site ready

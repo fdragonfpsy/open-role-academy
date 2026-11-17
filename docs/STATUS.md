@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-17 — Phase 3: dashboard
+
+**Done**
+- Dashboard already had bars (role=meter, text values), next unit, path, Leitner review queue, export/import, reset. Added: localized import errors (invalid JSON, wrong format, unknown role) with progress untouched on failure; "Targets reached X / Y" summary; status messages after review/reset.
+- New keyboard-only e2e `tests-e2e/dashboard.e2e.mjs` (en + de): accessible bars, review practice, export/import round-trip, invalid import errors.
+- Ticked: dashboard. Bars chosen over radar (see roadmap wording "radar or bars").
+
+**Gaps:** reset uses `window.confirm` and is not covered by e2e; review items with unknown ids are silently skipped; Supabase sync is Phase 3b.
+
+**Next:** accessibility pass (contrast, screen reader, Lighthouse ≥ 90) and mobile layout pass.
+
 ## 2026-11-17 — Phase 3: learning path + unit page
 
 **Done**
