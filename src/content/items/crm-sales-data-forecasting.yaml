@@ -1,0 +1,290 @@
+competency: crm-sales-data-forecasting
+items:
+  - id: crm-f-what
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "What is a CRM system mainly used for in sales?"
+      de: "Wofür wird ein CRM-System im Vertrieb hauptsächlich genutzt?"
+    options:
+      - en: "To track, manage and analyse customer interactions in one shared place"
+        de: "Um Kundeninteraktionen an einem gemeinsamen Ort zu erfassen, zu steuern und zu analysieren"
+        correct: true
+      - en: "To replace the accounting system for invoices and tax filing"
+        de: "Um die Buchhaltung für Rechnungen und Steuererklärungen zu ersetzen"
+        correct: false
+      - en: "To send identical mass emails to every contact in the database"
+        de: "Um identische Massenmails an alle Kontakte der Datenbank zu senden"
+        correct: false
+      - en: "To store passwords of the customer's employees for quick access"
+        de: "Um Passwörter der Beschäftigten der Kundschaft für schnellen Zugriff zu speichern"
+        correct: false
+    explanation:
+      en: "CRM is described as the means through which companies track, manage and analyse customer interactions. It does not replace accounting and is not a password store."
+      de: "CRM wird beschrieben als die Mittel, mit denen Unternehmen Kundeninteraktionen erfassen, steuern und analysieren. Es ersetzt nicht die Buchhaltung und ist kein Passwortspeicher."
+    source: https://openstax.org/books/principles-marketing/pages/1-6-customer-relationship-management-crm
+  - id: crm-f-dup
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Before creating a new company record, what should you do?"
+      de: "Was solltest du tun, bevor du einen neuen Unternehmensdatensatz anlegst?"
+    options:
+      - en: "Search for an existing record to avoid a duplicate"
+        de: "Nach einem bestehenden Datensatz suchen, um eine Dublette zu vermeiden"
+        correct: true
+      - en: "Create it at once, because duplicates are merged automatically"
+        de: "Sofort anlegen, weil Dubletten automatisch zusammengeführt werden"
+        correct: false
+      - en: "Ask the customer to enter their own data into the CRM"
+        de: "Die Kundschaft bitten, ihre Daten selbst ins CRM einzutragen"
+        correct: false
+      - en: "Wait until the deal is won before entering any company"
+        de: "Warten, bis der Deal gewonnen ist, bevor du ein Unternehmen einträgst"
+        correct: false
+    explanation:
+      en: "Duplicates split history across records and distort reports. A quick search first keeps one clean record per company."
+      de: "Dubletten verteilen die Historie auf mehrere Datensätze und verzerren Berichte. Eine kurze Suche vorab hält einen sauberen Datensatz je Unternehmen."
+    source: https://openstax.org/books/principles-marketing/pages/1-6-customer-relationship-management-crm
+  - id: crm-f-next
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "Why should every open deal have a next step with a date?"
+      de: "Warum sollte jeder offene Deal einen nächsten Schritt mit Datum haben?"
+    options:
+      - en: "It shows the deal is actively moving and can be followed up"
+        de: "Er zeigt, dass der Deal aktiv vorankommt und nachverfolgt werden kann"
+        correct: true
+      - en: "It lets the CRM close the deal automatically on that date"
+        de: "Er lässt das CRM den Deal an diesem Datum automatisch abschließen"
+        correct: false
+      - en: "It allows managers to judge how much time you spend in meetings"
+        de: "Er erlaubt Führungskräften zu beurteilen, wie viel Zeit du in Terminen verbringst"
+        correct: false
+      - en: "It is needed only for deals above a very high value"
+        de: "Er ist nur für Deals mit sehr hohem Wert nötig"
+        correct: false
+    explanation:
+      en: "Without a next step, deals stall silently and the forecast gets less reliable. The date makes follow-up visible to you and your team."
+      de: "Ohne nächsten Schritt bleiben Deals unbemerkt liegen, und der Forecast wird unzuverlässiger. Das Datum macht das Nachfassen für dich und dein Team sichtbar."
+    source: https://openstax.org/books/principles-marketing/pages/15-4-management-of-the-sales-force
+  - id: crm-f-gdpr
+    level: foundation
+    difficulty: 1050
+    type: multi
+    stem:
+      en: "Which habits fit the GDPR principles for CRM data? Select all that apply."
+      de: "Welche Gewohnheiten passen zu den DSGVO-Grundsätzen für CRM-Daten? Wähle alle zutreffenden aus."
+    options:
+      - en: "Store only the personal data you need for the sales purpose"
+        de: "Nur die personenbezogenen Daten speichern, die du für den Vertriebszweck brauchst"
+        correct: true
+      - en: "Correct data that you notice is wrong or out of date"
+        de: "Daten korrigieren, bei denen du Fehler oder Veraltetes bemerkst"
+        correct: true
+      - en: "Copy the contact list into a private spreadsheet for convenience"
+        de: "Die Kontaktliste zur Bequemlichkeit in eine private Tabelle kopieren"
+        correct: false
+      - en: "Keep every record forever in case it becomes useful"
+        de: "Jeden Datensatz für immer aufbewahren, falls er nützlich wird"
+        correct: false
+    explanation:
+      en: "Article 5(1) names data minimisation, accuracy, storage limitation and security. Private copies weaken security, and keeping data forever conflicts with storage limitation."
+      de: "Artikel 5 Absatz 1 nennt Datenminimierung, Richtigkeit, Speicherbegrenzung und Sicherheit. Private Kopien schwächen die Sicherheit, und unbegrenztes Aufbewahren widerspricht der Speicherbegrenzung."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+  - id: crm-f-request
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "A contact asks you to delete all data you hold about them. What do you do?"
+      de: "Ein Kontakt bittet dich, alle über ihn gespeicherten Daten zu löschen. Was tust du?"
+    options:
+      - en: "Pass the request to your data protection contact promptly"
+        de: "Die Anfrage zeitnah an deine Datenschutzansprechperson weitergeben"
+        correct: true
+      - en: "Delete your own notes and tell nobody else about the request"
+        de: "Nur deine eigenen Notizen löschen und niemandem von der Anfrage berichten"
+        correct: false
+      - en: "Reply that data in a CRM cannot ever be deleted"
+        de: "Antworten, dass Daten in einem CRM nie gelöscht werden können"
+        correct: false
+      - en: "Ignore it unless the contact repeats it in writing twice"
+        de: "Sie ignorieren, außer der Kontakt wiederholt sie zweimal schriftlich"
+        correct: false
+    explanation:
+      en: "The GDPR gives people rights such as access and erasure, and the company must handle them. Sellers route the request to the responsible contact instead of deciding alone."
+      de: "Die DSGVO gibt Menschen Rechte wie Auskunft und Löschung, und das Unternehmen muss sie bearbeiten. Verkaufende leiten die Anfrage an die zuständige Stelle weiter, statt allein zu entscheiden."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+  - id: crm-f-notes
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "Which CRM note is appropriate?"
+      de: "Welche CRM-Notiz ist angemessen?"
+    options:
+      - en: "\"Needs reporting for three teams; wants a quote by Friday\""
+        de: "„Braucht Reporting für drei Teams; wünscht Angebot bis Freitag“"
+        correct: true
+      - en: "\"Difficult person, probably gets divorced soon, avoid him\""
+        de: "„Schwieriger Typ, lässt sich wohl bald scheiden, besser meiden“"
+        correct: false
+      - en: "\"Seems old, probably cannot handle modern tools\""
+        de: "„Wirkt alt, kommt mit modernen Werkzeugen wohl nicht klar“"
+        correct: false
+      - en: "\"Mood bad today because of a family problem he mentioned\""
+        de: "„Heute schlecht gelaunt wegen eines Familienproblems, das er erwähnte“"
+        correct: false
+    explanation:
+      en: "Notes should be factual and related to the sales purpose, because customers may ask what is stored about them. Personal speculation and private details do not belong in a CRM."
+      de: "Notizen sollen sachlich sein und zum Vertriebszweck passen, weil Kundschaft fragen kann, was über sie gespeichert ist. Persönliche Mutmaßungen und private Details gehören nicht ins CRM."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+  - id: crm-p-weight
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "Deals worth 100,000 at a stage where 40 percent were won historically. What is the weighted value?"
+      de: "Deals im Wert von 100.000 in einer Phase, in der historisch 40 Prozent gewonnen wurden. Wie hoch ist der gewichtete Wert?"
+    options:
+      - en: "40,000"
+        de: "40.000"
+        correct: true
+      - en: "60,000"
+        de: "60.000"
+        correct: false
+      - en: "100,000"
+        de: "100.000"
+        correct: false
+      - en: "140,000"
+        de: "140.000"
+        correct: false
+    explanation:
+      en: "Weighted value is deal value times the stage probability: 100,000 times 0.4 equals 40,000. The other numbers use the wrong share, ignore the weighting or add instead of multiply."
+      de: "Der gewichtete Wert ist Dealwert mal Phasenwahrscheinlichkeit: 100.000 mal 0,4 ergibt 40.000. Die anderen Zahlen nutzen den falschen Anteil, ignorieren die Gewichtung oder addieren statt zu multiplizieren."
+    source: https://en.wikipedia.org/wiki/Forecasting
+  - id: crm-p-prob
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "Where should stage probabilities for a forecast come from?"
+      de: "Woher sollten die Phasenwahrscheinlichkeiten für einen Forecast stammen?"
+    options:
+      - en: "From your own history of deals that reached each stage"
+        de: "Aus der eigenen Historie der Deals, die die jeweilige Phase erreichten"
+        correct: true
+      - en: "From the most optimistic seller in the team"
+        de: "Von der optimistischsten Verkaufsperson im Team"
+        correct: false
+      - en: "From the default values in the CRM, whatever your history says"
+        de: "Aus den Standardwerten des CRM, unabhängig von deiner Historie"
+        correct: false
+      - en: "From a number that reaches the target, set at the start of the year"
+        de: "Aus einer Zahl, die das Ziel erreicht, zu Jahresbeginn festgelegt"
+        correct: false
+    explanation:
+      en: "Forecasting uses past data to predict. Your own win rates per stage reflect your market and process; defaults, optimism or target-driven numbers do not."
+      de: "Forecasting nutzt vergangene Daten zur Vorhersage. Eigene Gewinnquoten je Phase spiegeln deinen Markt und Prozess wider; Standardwerte, Optimismus oder zielgetriebene Zahlen tun das nicht."
+    source: https://en.wikipedia.org/wiki/Forecasting
+  - id: crm-p-health
+    level: practitioner
+    difficulty: 1300
+    type: multi
+    stem:
+      en: "Which indicators help to judge pipeline health? Select all that apply."
+      de: "Welche Indikatoren helfen, die Pipeline-Gesundheit zu beurteilen? Wähle alle zutreffenden aus."
+    options:
+      - en: "Pipeline coverage compared with the target"
+        de: "Pipeline-Abdeckung im Vergleich zum Ziel"
+        correct: true
+      - en: "Deals without a next step or with a past close date"
+        de: "Deals ohne nächsten Schritt oder mit Abschlussdatum in der Vergangenheit"
+        correct: true
+      - en: "The number of contacts in the CRM, regardless of deals"
+        de: "Die Zahl der Kontakte im CRM, unabhängig von Deals"
+        correct: false
+      - en: "How many emails sellers write per day, regardless of results"
+        de: "Wie viele E-Mails Verkaufende pro Tag schreiben, unabhängig vom Ergebnis"
+        correct: false
+    explanation:
+      en: "Coverage, conversion, cycle length and overdue or stuck deals tell how reliable the pipeline is. Raw contact counts and email volume measure activity, not deal health."
+      de: "Abdeckung, Konversion, Zyklusdauer und überfällige oder festhängende Deals zeigen, wie verlässlich die Pipeline ist. Reine Kontaktzahlen und E-Mail-Mengen messen Aktivität, nicht Deal-Gesundheit."
+    source: https://en.wikipedia.org/wiki/Sales_operations
+  - id: crm-p-stage
+    level: practitioner
+    difficulty: 1350
+    type: single
+    stem:
+      en: "Many deals sit in \"Proposal sent\" for months with no activity. What is the best response?"
+      de: "Viele Deals liegen monatelang in „Angebot gesendet“ ohne Aktivität. Was ist die beste Reaktion?"
+    options:
+      - en: "Contact the customers, then update or close the deals and review the stage rules"
+        de: "Die Kundschaft kontaktieren, dann Deals aktualisieren oder schließen und die Phasenregeln prüfen"
+        correct: true
+      - en: "Leave them in place, because they inflate coverage for the target"
+        de: "Sie belassen, weil sie die Abdeckung für das Ziel aufblähen"
+        correct: false
+      - en: "Raise the stage probability so the forecast reflects the effort"
+        de: "Die Phasenwahrscheinlichkeit erhöhen, damit der Forecast den Aufwand abbildet"
+        correct: false
+      - en: "Delete all of them without telling the sellers or the manager"
+        de: "Alle löschen, ohne die Verkaufenden oder die Führungskraft zu informieren"
+        correct: false
+    explanation:
+      en: "Stale deals distort coverage and forecast. Follow up, update or close them honestly, and check whether entry criteria for the stage are clear. Inflating numbers or silent deletion hides the problem."
+      de: "Veraltete Deals verzerren Abdeckung und Forecast. Fasse nach, aktualisiere oder schließe sie ehrlich und prüfe, ob die Eintrittskriterien der Phase klar sind. Aufgeblähte Zahlen oder stilles Löschen verbergen das Problem."
+    source: https://en.wikipedia.org/wiki/Sales_operations
+  - id: crm-p-export
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "You need to share pipeline numbers with another department. What fits the GDPR principles best?"
+      de: "Du musst Pipeline-Zahlen mit einer anderen Abteilung teilen. Was passt am besten zu den DSGVO-Grundsätzen?"
+    options:
+      - en: "Share aggregated figures and only the personal data that is needed"
+        de: "Aggregierte Zahlen teilen und nur die personenbezogenen Daten, die nötig sind"
+        correct: true
+      - en: "Send the full export with all contact details to the whole company"
+        de: "Den vollständigen Export mit allen Kontaktdaten an das ganze Unternehmen senden"
+        correct: false
+      - en: "Upload the export to a free online tool for faster charts"
+        de: "Den Export in ein kostenloses Online-Werkzeug hochladen, um schneller Diagramme zu erhalten"
+        correct: false
+      - en: "Keep the export on your laptop indefinitely for future requests"
+        de: "Den Export unbegrenzt auf deinem Laptop für künftige Anfragen behalten"
+        correct: false
+    explanation:
+      en: "Data minimisation and storage limitation (Art. 5(1)) favour aggregated, purpose-limited sharing. Wide distribution, unvetted tools and indefinite copies add avoidable risk."
+      de: "Datenminimierung und Speicherbegrenzung (Art. 5 Abs. 1) sprechen für aggregiertes, zweckgebundenes Teilen. Breite Verteilung, ungeprüfte Werkzeuge und unbegrenzte Kopien schaffen vermeidbare Risiken."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+  - id: crm-p-error
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "Your forecast was above the actual result in each of the last four quarters. What is the most useful conclusion?"
+      de: "Dein Forecast lag in den letzten vier Quartalen jeweils über dem tatsächlichen Ergebnis. Was ist die nützlichste Schlussfolgerung?"
+    options:
+      - en: "Stage definitions or probabilities are probably too optimistic"
+        de: "Phasendefinitionen oder Wahrscheinlichkeiten sind vermutlich zu optimistisch"
+        correct: true
+      - en: "The pattern is random and needs no action"
+        de: "Das Muster ist Zufall und erfordert keine Maßnahme"
+        correct: false
+      - en: "The customers are at fault for deciding too slowly"
+        de: "Die Kundschaft ist schuld, weil sie zu langsam entscheidet"
+        correct: false
+      - en: "The CRM should be replaced by a spreadsheet"
+        de: "Das CRM sollte durch eine Tabelle ersetzt werden"
+        correct: false
+    explanation:
+      en: "A consistent bias in one direction points to a systematic cause, such as optimistic stage criteria. Comparing forecast with outcome each period lets you correct it."
+      de: "Eine gleichbleibende Abweichung in eine Richtung deutet auf eine systematische Ursache hin, etwa zu optimistische Phasenkriterien. Der Vergleich von Forecast und Ergebnis je Periode erlaubt es, sie zu korrigieren."
+    source: https://en.wikipedia.org/wiki/Forecasting

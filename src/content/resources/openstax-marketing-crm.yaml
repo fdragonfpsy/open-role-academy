@@ -1,0 +1,14 @@
+id: openstax-marketing-crm
+url: https://openstax.org/books/principles-marketing/pages/1-6-customer-relationship-management-crm
+title: "Principles of Marketing, 1.6: Customer Relationship Management (CRM)"
+provider: OpenStax
+language: en
+format: book
+minutes: 20
+license: CC-BY-NC-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+licenseVerifiedOn: 2026-11-17
+mode: link
+competencies: [crm-sales-data-forecasting, account-management-upselling]
+levels: [foundation, practitioner]
+note: 'Book page states "Creative Commons Attribution-NonCommercial-ShareAlike License" (NC -> link only). Read on 2026-11-17: defines CRM, operational/analytical/collaborative CRM, retention vs acquisition cost.'

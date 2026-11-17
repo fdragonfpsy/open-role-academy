@@ -1,0 +1,290 @@
+competency: account-management-upselling
+items:
+  - id: amu-f-why
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "Why do companies invest in looking after existing customers?"
+      de: "Warum investieren Unternehmen in die Betreuung bestehender Kundschaft?"
+    options:
+      - en: "Keeping a loyal customer is typically easier and cheaper than winning a new one"
+        de: "Eine loyale Kundschaft zu halten ist meist einfacher und günstiger, als eine neue zu gewinnen"
+        correct: true
+      - en: "New customers can never be won once a company has an existing base"
+        de: "Neue Kundschaft lässt sich nicht mehr gewinnen, sobald ein Bestand vorhanden ist"
+        correct: false
+      - en: "Existing customers accept any price increase without comparing offers"
+        de: "Bestandskundschaft akzeptiert jede Preiserhöhung, ohne Angebote zu vergleichen"
+        correct: false
+      - en: "Sales teams are paid only for existing customers, not for new ones"
+        de: "Vertriebsteams werden nur für Bestandskundschaft bezahlt, nicht für neue"
+        correct: false
+    explanation:
+      en: "The CRM chapter states that retaining a loyal customer is typically easier and less expensive than acquiring one. This does not mean new business stops, and customers still compare offers."
+      de: "Das CRM-Kapitel hält fest, dass die Bindung einer loyalen Kundschaft in der Regel einfacher und günstiger ist als die Neugewinnung. Das heißt nicht, dass das Neugeschäft endet, und Kundschaft vergleicht weiterhin Angebote."
+    source: https://openstax.org/books/principles-marketing/pages/1-6-customer-relationship-management-crm
+  - id: amu-f-def
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Which statement describes cross-selling correctly?"
+      de: "Welche Aussage beschreibt Cross-Selling richtig?"
+    options:
+      - en: "Selling an additional product or service to an existing customer"
+        de: "Einer bestehenden Kundschaft ein zusätzliches Produkt oder eine Leistung verkaufen"
+        correct: true
+      - en: "Selling the same product to two customers at once at a lower price"
+        de: "Dasselbe Produkt zwei Kundschaften gleichzeitig zu einem niedrigeren Preis verkaufen"
+        correct: false
+      - en: "Passing a customer to a competitor when you cannot serve them"
+        de: "Eine Kundschaft an die Konkurrenz weitergeben, wenn du sie nicht bedienen kannst"
+        correct: false
+      - en: "Selling only the cheapest version of a product to every customer"
+        de: "Jeder Kundschaft nur die günstigste Version eines Produkts verkaufen"
+        correct: false
+    explanation:
+      en: "Cross-selling adds a different product or service to what the customer already buys. Upselling, by contrast, moves the customer to a more expensive item or upgrade."
+      de: "Cross-Selling ergänzt zu dem, was die Kundschaft schon kauft, ein anderes Produkt oder eine andere Leistung. Upselling dagegen führt die Kundschaft zu einem teureren Artikel oder Upgrade."
+    source: https://en.wikipedia.org/wiki/Cross-selling
+  - id: amu-f-up
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "A customer on a five-user plan says four colleagues are waiting for access. What is the most helpful response?"
+      de: "Eine Kundschaft im Tarif für fünf Nutzende sagt, vier Kolleg:innen warten auf Zugang. Was ist die hilfreichste Reaktion?"
+    options:
+      - en: "Ask how many people will use it and compare suitable plans"
+        de: "Fragen, wie viele Personen es nutzen werden, und passende Tarife vergleichen"
+        correct: true
+      - en: "Offer the largest plan available, whatever the team size is"
+        de: "Den größten verfügbaren Tarif anbieten, egal wie groß das Team ist"
+        correct: false
+      - en: "Say nothing until the contract renews next year"
+        de: "Nichts sagen, bis der Vertrag im nächsten Jahr verlängert wird"
+        correct: false
+      - en: "Tell the colleagues to share one login to save money"
+        de: "Den Kolleg:innen raten, sich einen Zugang zu teilen, um Geld zu sparen"
+        correct: false
+    explanation:
+      en: "A real need is visible, so a fitting offer helps. First clarify the size, then compare plans. Oversized offers ignore the need; login sharing may break the terms and security rules."
+      de: "Ein echter Bedarf ist sichtbar, also hilft ein passendes Angebot. Kläre erst die Größe, dann vergleiche Tarife. Überdimensionierte Angebote ignorieren den Bedarf; geteilte Zugänge können gegen Bedingungen und Sicherheitsregeln verstoßen."
+    source: https://en.wikipedia.org/wiki/Upselling
+  - id: amu-f-contact
+    level: foundation
+    difficulty: 1050
+    type: multi
+    stem:
+      en: "Which are good reasons to contact an existing customer? Select all that apply."
+      de: "Was sind gute Anlässe, eine bestehende Kundschaft zu kontaktieren? Wähle alle zutreffenden aus."
+    options:
+      - en: "Check how the first weeks after the start went"
+        de: "Nachfragen, wie die ersten Wochen nach dem Start liefen"
+        correct: true
+      - en: "Inform them about a change that affects their use"
+        de: "Über eine Änderung informieren, die ihre Nutzung betrifft"
+        correct: true
+      - en: "Ask again and again whether they want to buy more"
+        de: "Immer wieder fragen, ob sie mehr kaufen möchten"
+        correct: false
+      - en: "Call only to report your own sales target"
+        de: "Nur anrufen, um dein eigenes Verkaufsziel zu nennen"
+        correct: false
+    explanation:
+      en: "Contact with a useful reason builds the relationship. Repeated buy-more questions and talk about your own target teach customers to ignore you."
+      de: "Kontakt mit nützlichem Anlass stärkt die Beziehung. Wiederholte Mehr-kaufen-Fragen und Gespräche über dein eigenes Ziel bringen Kundschaft dazu, dich zu ignorieren."
+    source: https://openstax.org/books/principles-marketing/pages/15-3-steps-in-the-personal-selling-process
+  - id: amu-f-problem
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "A customer reports a problem with delivery. What is the best first move?"
+      de: "Eine Kundschaft meldet ein Problem mit der Lieferung. Was ist der beste erste Schritt?"
+    options:
+      - en: "Reply quickly, take ownership and involve the right colleague"
+        de: "Schnell antworten, Verantwortung übernehmen und die richtige Kollegin einbeziehen"
+        correct: true
+      - en: "Explain why the problem is not your department's responsibility"
+        de: "Erklären, warum das Problem nicht in der Verantwortung deiner Abteilung liegt"
+        correct: false
+      - en: "Wait to see whether the customer raises it again"
+        de: "Abwarten, ob die Kundschaft es erneut anspricht"
+        correct: false
+      - en: "Offer a new product so the customer forgets the problem"
+        de: "Ein neues Produkt anbieten, damit die Kundschaft das Problem vergisst"
+        correct: false
+    explanation:
+      en: "Customers who report problems still want the relationship to work. Quick ownership and a report back often strengthen trust; deflecting or distracting damages it."
+      de: "Kundschaft, die Probleme meldet, will weiter, dass die Beziehung funktioniert. Schnelle Verantwortung und eine Rückmeldung stärken oft das Vertrauen; Abwälzen oder Ablenken beschädigt es."
+    source: https://openstax.org/books/principles-marketing/pages/1-6-customer-relationship-management-crm
+  - id: amu-f-crm
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "After a customer call, where should you record what you learned?"
+      de: "Wo solltest du nach einem Kundengespräch festhalten, was du erfahren hast?"
+    options:
+      - en: "In the CRM, so colleagues see the current status"
+        de: "Im CRM, damit Kolleg:innen den aktuellen Stand sehen"
+        correct: true
+      - en: "In a private notebook only you can read"
+        de: "In einem privaten Notizbuch, das nur du lesen kannst"
+        correct: false
+      - en: "Only in your memory, to keep the data protected"
+        de: "Nur in deinem Gedächtnis, damit die Daten geschützt bleiben"
+        correct: false
+      - en: "In a chat group with people outside the account team"
+        de: "In einer Chatgruppe mit Personen außerhalb des Kundenteams"
+        correct: false
+    explanation:
+      en: "The CRM is the shared memory of the team. Private notes and memory are lost when someone is away, and open chat groups spread customer data beyond those who need it."
+      de: "Das CRM ist das gemeinsame Gedächtnis des Teams. Private Notizen und Erinnerung gehen verloren, wenn jemand fehlt, und offene Chatgruppen verbreiten Kundendaten über den nötigen Kreis hinaus."
+    source: https://openstax.org/books/principles-marketing/pages/1-6-customer-relationship-management-crm
+  - id: amu-p-plan
+    level: practitioner
+    difficulty: 1200
+    type: multi
+    stem:
+      en: "Which elements belong in an account plan? Select all that apply."
+      de: "Welche Elemente gehören in einen Account-Plan? Wähle alle zutreffenden aus."
+    options:
+      - en: "The customer's goals and what they use today"
+        de: "Die Ziele der Kundschaft und was sie heute nutzt"
+        correct: true
+      - en: "The people involved, with open issues and next steps"
+        de: "Die beteiligten Personen mit offenen Themen und nächsten Schritten"
+        correct: true
+      - en: "A list of the customer's private social media posts"
+        de: "Eine Liste der privaten Social-Media-Beiträge der Kundschaft"
+        correct: false
+      - en: "Your colleagues' commission rates for the account"
+        de: "Die Provisionssätze deiner Kolleg:innen für das Konto"
+        correct: false
+    explanation:
+      en: "An account plan collects business-relevant facts and actions. Private posts are not needed for the purpose and raise data protection concerns; commission rates do not help the customer relationship."
+      de: "Ein Account-Plan sammelt geschäftsrelevante Fakten und Maßnahmen. Private Beiträge sind für den Zweck nicht nötig und werfen Datenschutzfragen auf; Provisionssätze helfen der Kundenbeziehung nicht."
+    source: https://openstax.org/books/principles-marketing/pages/1-6-customer-relationship-management-crm
+  - id: amu-p-up
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "Which offer is upselling rather than cross-selling?"
+      de: "Welches Angebot ist Upselling und kein Cross-Selling?"
+    options:
+      - en: "Moving a customer from the standard plan to a premium plan"
+        de: "Eine Kundschaft vom Standard-Tarif in einen Premium-Tarif führen"
+        correct: true
+      - en: "Adding a training package to a licence the customer already has"
+        de: "Ein Schulungspaket zu einer bereits vorhandenen Lizenz ergänzen"
+        correct: false
+      - en: "Selling a separate analytics product to the same customer"
+        de: "Der gleichen Kundschaft ein separates Analyseprodukt verkaufen"
+        correct: false
+      - en: "Offering a reference call to another prospect in the industry"
+        de: "Einer anderen Interessentin in der Branche ein Referenzgespräch anbieten"
+        correct: false
+    explanation:
+      en: "Upselling moves the customer to a more expensive item or upgrade. Adding a different product or service, such as training or analytics, is cross-selling."
+      de: "Upselling führt die Kundschaft zu einem teureren Artikel oder Upgrade. Ein anderes Produkt oder eine andere Leistung, etwa Schulung oder Analyse, zu ergänzen ist Cross-Selling."
+    source: https://en.wikipedia.org/wiki/Upselling
+  - id: amu-p-churn
+    level: practitioner
+    difficulty: 1300
+    type: multi
+    stem:
+      en: "Which signals suggest a customer may leave? Select all that apply."
+      de: "Welche Signale deuten darauf hin, dass eine Kundschaft gehen könnte? Wähle alle zutreffenden aus."
+    options:
+      - en: "Usage has been falling for several weeks"
+        de: "Die Nutzung sinkt seit mehreren Wochen"
+        correct: true
+      - en: "The sponsor left and support tickets remain unresolved"
+        de: "Der Sponsor ist gegangen und Supportfälle bleiben ungelöst"
+        correct: true
+      - en: "The customer asks for a quick call about new features"
+        de: "Die Kundschaft bittet um ein kurzes Gespräch zu neuen Funktionen"
+        correct: false
+      - en: "The customer pays invoices on the due date as usual"
+        de: "Die Kundschaft zahlt Rechnungen wie gewohnt zum Fälligkeitstag"
+        correct: false
+    explanation:
+      en: "Falling usage, lost sponsors and unresolved issues are typical warning signs. Interest in features and normal payment behaviour point to a healthy relationship."
+      de: "Sinkende Nutzung, verlorene Sponsoren und ungelöste Themen sind typische Warnzeichen. Interesse an Funktionen und normales Zahlungsverhalten sprechen für eine gesunde Beziehung."
+    source: https://en.wikipedia.org/wiki/Customer_retention
+  - id: amu-p-renew
+    level: practitioner
+    difficulty: 1350
+    type: single
+    stem:
+      en: "When should the renewal conversation start?"
+      de: "Wann sollte das Verlängerungsgespräch beginnen?"
+    options:
+      - en: "Well before the term ends, with a review of the value delivered"
+        de: "Deutlich vor Laufzeitende, mit einem Rückblick auf den gelieferten Nutzen"
+        correct: true
+      - en: "On the last day, so the customer has no time to compare offers"
+        de: "Am letzten Tag, damit die Kundschaft keine Zeit hat, Angebote zu vergleichen"
+        correct: false
+      - en: "Only if the customer asks, as silence means the contract renews"
+        de: "Nur auf Anfrage der Kundschaft, denn Schweigen bedeutet Verlängerung"
+        correct: false
+      - en: "After the term ends, once the customer has felt the loss"
+        de: "Nach Laufzeitende, wenn die Kundschaft den Verlust gespürt hat"
+        correct: false
+    explanation:
+      en: "Early conversations leave time to fix issues and adjust the offer. Relying on silence or on time pressure harms trust and hides risks until it is too late."
+      de: "Frühe Gespräche lassen Zeit, Probleme zu lösen und das Angebot anzupassen. Das Verlassen auf Schweigen oder Zeitdruck schadet dem Vertrauen und verbirgt Risiken, bis es zu spät ist."
+    source: https://en.wikipedia.org/wiki/Customer_retention
+  - id: amu-p-fair
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "A renewal includes an automatic extension and a price change. How do you handle this fairly?"
+      de: "Eine Verlängerung enthält eine automatische Verlängerung und eine Preisänderung. Wie gehst du fair damit um?"
+    options:
+      - en: "State both plainly in the offer and check unclear terms with legal"
+        de: "Beides im Angebot klar nennen und unklare Bedingungen mit der Rechtsabteilung prüfen"
+        correct: true
+      - en: "Mention them only if the customer notices and asks about them"
+        de: "Sie nur erwähnen, wenn die Kundschaft sie bemerkt und danach fragt"
+        correct: false
+      - en: "Put them in the smallest print so the offer reads shorter"
+        de: "Sie ins Kleingedruckte setzen, damit das Angebot kürzer wirkt"
+        correct: false
+      - en: "Skip the price change in writing and agree on it by phone"
+        de: "Die Preisänderung nicht schriftlich nennen, sondern telefonisch vereinbaren"
+        correct: false
+    explanation:
+      en: "Open communication of renewal terms protects trust and avoids disputes. Hiding terms or avoiding a written record creates risk for both sides."
+      de: "Offene Kommunikation der Verlängerungsbedingungen schützt das Vertrauen und vermeidet Streit. Verstecken oder fehlende Schriftform schafft Risiken für beide Seiten."
+    source: https://en.wikipedia.org/wiki/Customer_retention
+  - id: amu-p-cross
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "Another department of an existing customer asks about your product. What is a sensible cross-sell step?"
+      de: "Eine andere Abteilung einer bestehenden Kundschaft fragt nach deinem Produkt. Was ist ein sinnvoller Cross-Selling-Schritt?"
+    options:
+      - en: "Offer a small pilot for that department, based on its stated needs"
+        de: "Der Abteilung einen kleinen Pilot anbieten, basierend auf ihrem genannten Bedarf"
+        correct: true
+      - en: "Wait until the current contract expires before replying"
+        de: "Mit der Antwort warten, bis der aktuelle Vertrag ausläuft"
+        correct: false
+      - en: "Send the whole price list to every employee of the customer"
+        de: "Die gesamte Preisliste an alle Beschäftigten der Kundschaft schicken"
+        correct: false
+      - en: "Quote a full company-wide rollout before asking about needs"
+        de: "Einen unternehmensweiten Rollout anbieten, bevor du nach dem Bedarf fragst"
+        correct: false
+    explanation:
+      en: "A pilot tied to a stated need lowers risk and shows value. Delay loses the opportunity; mass mailings and oversized quotes ignore what the department actually needs."
+      de: "Ein Pilot, der an einen genannten Bedarf anknüpft, senkt das Risiko und zeigt Nutzen. Warten verspielt die Chance; Massenmails und überdimensionierte Angebote ignorieren, was die Abteilung wirklich braucht."
+    source: https://en.wikipedia.org/wiki/Cross-selling
