@@ -6,5 +6,6 @@ export const supabaseConfig = {
   url: 'https://bbyyjrmgmbiscdswufla.supabase.co',
   publishableKey: 'sb_publishable_XCyTUGhvlJIIbC1TgM3I5A_5VFGLzuZ',
   // Accounts stay hidden in production until email sending works (see docs/BLOCKERS.md).
-  accountsEnabled: false,
+  // Default false. Tests may build with PUBLIC_ACCOUNTS_ENABLED=true (build-time only, never a runtime switch).
+  accountsEnabled: (import.meta.env?.PUBLIC_ACCOUNTS_ENABLED as string | undefined) === 'true',
 } as const;

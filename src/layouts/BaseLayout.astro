@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { site, type Lang } from '../config/site';
+import { supabaseConfig } from '../config/supabase';
 import { alternatePath, localizePath, t } from '../i18n';
 
 interface Props {
@@ -38,6 +39,13 @@ const path = Astro.url.pathname.replace(/\/$/, '') || '/';
         <a href={localizePath(lang, '/dashboard')} class="text-blue-800 underline-offset-4 hover:underline">
           {t(lang, 'nav.dashboard')}
         </a>
+        {
+          supabaseConfig.accountsEnabled && (
+            <a href={localizePath(lang, '/account')} class="inline-block py-2 text-blue-800 underline-offset-4 hover:underline">
+              {t(lang, 'nav.account')}
+            </a>
+          )
+        }
         <a
           href={alternatePath(path, other)}
           hreflang={other}

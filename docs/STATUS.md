@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-17 — Phase 3b: Auth UI (behind flag, off)
+
+**Done**
+- `/account` and `/de/account` (Preact island `AccountPanel`): sign up (consent note + checkbox, min 10 chars), "check your inbox - also check your spam folder" on every waiting screen (sign-up, magic link, reset), password sign-in, magic-link sign-in, forgot/set-new-password (recovery redirect handled on the same page), sign out, export my data (`export_my_data` -> JSON), delete account (typed word DELETE/LÖSCHEN, `delete_my_account`), offer to import local progress (one-time upsert via `stateToRows`; skipped if a profile already exists). Dashboard reads/writes are NOT wired (next task).
+- Flag: `accountsEnabled` stays false; build-time override `PUBLIC_ACCOUNTS_ENABLED=true`. When off, the account routes are not injected (`astro.config.mjs`), no header link, no supabase-js chunk in `dist/`. supabase-js 2.119.0 is loaded dynamically only inside the island and only when a session/email-link is present or a form is submitted.
+- Pure helpers `src/lib/auth.ts` (validation, error mapping, hints) and `src/lib/progress-rows.ts` (state <-> rows), tests in `tests/auth.test.ts`. E2E `tests-e2e/auth.e2e.mjs` (fake Supabase via Playwright routes; not in CI, not in `npm run e2e`).
+- **Not verified against a real Supabase project** (no real calls by design): real email links, real error codes/shapes, RLS on the import upserts, SMTP/spam behaviour. Privacy policy is NOT updated (separate roadmap task); keep the flag off until it is.
+- Note: auth UI strings are part of the shared i18n tables and therefore appear in the default JS bundle (unused when disabled).
+
+**Next:** profile onboarding, dashboard sync, privacy/imprint for accounts.
+
 ## 2026-11-17 — Fix flaky dashboard e2e
 
 **Done**
