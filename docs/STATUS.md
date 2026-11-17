@@ -1,5 +1,13 @@
 # Status
 
+## 2026-11-17 — Fix flaky dashboard e2e
+
+**Done**
+- Root cause: test race. `QuizItemView` focuses the question stem in a mount effect; Tab pressed before it ran got pulled back to the stem. Test now waits for focus on the stem. 12 consecutive loops of all 5 e2e scripts pass. App unchanged.
+- Possible follow-up: `placement.e2e.mjs` (~line 108) has the same pattern (did not fail).
+
+**Next:** Auth UI (en/de) behind `accountsEnabled: false`.
+
 ## 2026-11-17 — Phase 3b: Supabase schema migration
 
 **Done**

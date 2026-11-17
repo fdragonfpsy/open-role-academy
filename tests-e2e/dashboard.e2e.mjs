@@ -78,9 +78,13 @@ async function run(browser, lang, dir) {
   await tabTo(page, () => document.activeElement?.tagName === 'BUTTON' && !!document.activeElement.closest('section[aria-labelledby=review-title]'), 'review start button');
   await page.keyboard.press('Enter');
   await page.waitForSelector('fieldset');
+  // QuizItemView moves focus to the stem in a mount effect; Tab only after that, or the effect steals focus back.
+  await page.waitForFunction(() => document.activeElement?.tagName === 'P' && !!document.activeElement.closest('fieldset'));
   check(true, `${tag} review item shown`);
   await tabTo(page, () => document.activeElement?.name?.startsWith('q-'), 'review answer input');
   await page.keyboard.press('Space');
+  // Implicit submission (Enter) is blocked while the submit button is disabled; wait for the re-render that enables it.
+  await page.waitForSelector('fieldset ~ button[type=submit]:not([disabled]), form > button[type=submit]:not([disabled])');
   await page.keyboard.press('Enter');
   await page.waitForSelector('[role=status][aria-live=polite]');
   await tabTo(page, () => document.activeElement?.type === 'submit', 'review next button');
