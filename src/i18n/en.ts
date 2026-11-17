@@ -23,6 +23,7 @@ export const en = {
   'home.step3': 'Follow your personal learning path, unit by unit.',
   'home.step4': 'Prove mastery with short checks; reviews keep it fresh.',
   'home.privacy': 'Your progress stays in your browser. No cookies, no tracking, no account.',
+  'home.privacyAccounts': 'Your progress stays in your browser unless you choose to create an account. No cookies, no tracking.',
   'home.roles': 'Available tracks',
   'home.transparency':
     'All learning units and questions are currently AI-generated drafts and have not yet been reviewed by a human. They cite their sources; please check important facts.',

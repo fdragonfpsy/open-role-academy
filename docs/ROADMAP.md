@@ -96,7 +96,7 @@ Item and resource quality (added by weekly review 2026-11-14, applies to all new
 - [x] Auth UI (en/de, behind `accountsEnabled`=false; verified with a fake backend only): sign up, email confirmation, sign in, sign out, forgot/reset password, delete account; anonymous use keeps working with localStorage, and signing in offers to import local progress
 - [x] Profile onboarding (optional fields, data minimisation): role family, experience level, learning goal, weekly time budget, preferred language; no employer, no birth date
 - [x] Dashboard reads/writes progress from Supabase when signed in, localStorage otherwise
-- [ ] Privacy policy and imprint updated for accounts (processors: Cloudflare, Supabase, email sender; legal bases; retention; rights); keep `{{…}}` placeholders for owner data
+- [x] Privacy policy and imprint updated for accounts (processors: Cloudflare, Supabase, email sender; legal bases; retention; rights); keep `{{…}}` placeholders for owner data
 - [ ] Email sending is configured in Supabase via Brevo SMTP (free tier, 300/day, sender is a verified freemail address, no own domain). Expect some mail in spam: every screen that waits for an email shows a hint to check the spam folder. Also offer sign-in via email link (magic link) next to password sign-in. Do not change SMTP settings; they are owner-managed in the Supabase dashboard.
 
 ## Phase 4 — Scale to all role families

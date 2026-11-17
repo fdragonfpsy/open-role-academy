@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import type { Lang } from '../../config/site';
 import { localizePath, t } from '../../i18n';
+import { supabaseConfig } from '../../config/supabase';
 import { getRoles } from '../../lib/content';
 interface Props {
   lang: Lang;
@@ -23,7 +24,7 @@ const roles = await getRoles(lang);
     <li>{t(lang, 'home.step3')}</li>
     <li>{t(lang, 'home.step4')}</li>
   </ol>
-  <p class="mt-4">{t(lang, 'home.privacy')}</p>
+  <p class="mt-4">{t(lang, supabaseConfig.accountsEnabled ? 'home.privacyAccounts' : 'home.privacy')}</p>
   <h2 class="mt-10 mb-3 text-2xl font-semibold">{t(lang, 'home.roles')}</h2>
   <ul class="space-y-3">
     {

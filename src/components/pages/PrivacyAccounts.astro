@@ -1,0 +1,276 @@
+---
+// Privacy policy body used ONLY when accounts are enabled (supabaseConfig.accountsEnabled).
+// The default (accounts off) text stays in PrivacyPage.astro. Placeholders are filled by the owner (CLAUDE.md §9).
+import type { Lang } from '../../config/site';
+import { site } from '../../config/site';
+import { STORAGE_KEY } from '../../lib/storage';
+interface Props {
+  lang: Lang;
+  owner: string;
+  address: string;
+  email: string;
+}
+const { lang, owner, address, email } = Astro.props;
+const cfPrivacy = 'https://www.cloudflare.com/privacypolicy/';
+const sbPrivacy = 'https://supabase.com/privacy';
+const brevoPrivacy = 'https://www.brevo.com/legal/privacypolicy/';
+---
+
+{
+  lang === 'de' ? (
+    <div class="space-y-4" data-privacy="accounts">
+      <h2 class="text-xl font-semibold">1. Verantwortliche Stelle</h2>
+      <p>
+        {owner}, {address}, E-Mail: {email}
+      </p>
+      <h2 class="text-xl font-semibold">2. Kurzfassung</h2>
+      <ul class="list-disc pl-6">
+        <li>Du kannst {site.name} ohne Konto nutzen. Dann bleibt dein Lernfortschritt nur in deinem Browser (localStorage).</li>
+        <li>
+          Optional kannst du ein Konto anlegen (E-Mail und Passwort), um deinen Fortschritt geräteübergreifend zu speichern. Dann
+          werden deine Daten in einer Datenbank bei Supabase (Region EU) gespeichert.
+        </li>
+        <li>Keine Cookies, kein Tracking, keine Analyse-Dienste, keine Werbung, kein Verkauf und keine Weitergabe zu eigenen Zwecken Dritter.</li>
+        <li>Du kannst deine Daten jederzeit im Konto exportieren und das Konto samt aller Daten selbst löschen.</li>
+      </ul>
+      <h2 class="text-xl font-semibold">3. Hosting und Server-Logs</h2>
+      <p>
+        {site.name} wird als statische Website über Cloudflare Pages (Cloudflare, Inc.) ausgeliefert. Beim Aufruf der Seiten
+        verarbeitet Cloudflare technisch notwendige Verbindungsdaten, insbesondere deine IP-Adresse, Datum und Uhrzeit des
+        Abrufs, die aufgerufene Adresse und Angaben zu Browser und Betriebssystem, um die Website auszuliefern und vor
+        Angriffen zu schützen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem sicheren und
+        funktionsfähigen Angebot). Weitere Informationen: <a class="underline" href={cfPrivacy}>Datenschutzhinweise von Cloudflare</a>.
+        Wir selbst werten diese Logs nicht aus. Cloudflare handelt hierbei als Auftragsverarbeiter (Art. 28 DSGVO).
+      </p>
+      <h2 class="text-xl font-semibold">4. Nutzung ohne Konto: Speicherung im Browser (localStorage)</h2>
+      <p>
+        Deine Rolle, dein Niveau, deine Antworten und dein Lernstand werden unter dem Schlüssel <code>{STORAGE_KEY}</code>{' '}
+        lokal in deinem Browser gespeichert. Ohne Konto verlassen diese Daten dein Gerät nicht. Du kannst sie jederzeit im
+        Dashboard exportieren, importieren oder löschen, oder über die Einstellungen deines Browsers entfernen.
+      </p>
+      <h2 class="text-xl font-semibold">5. Nutzung mit Konto: welche Daten verarbeitet werden</h2>
+      <p>Wenn du ein Konto anlegst und dich anmeldest, verarbeiten wir folgende Daten:</p>
+      <ul class="list-disc pl-6">
+        <li>
+          <strong>Zugangsdaten:</strong> deine E-Mail-Adresse und dein Passwort. Das Passwort wird nicht im Klartext, sondern
+          nur als Hash von Supabase Auth gespeichert. Dazu kommen technische Kontodaten wie Zeitpunkt der Registrierung, der
+          E-Mail-Bestätigung und der letzten Anmeldung.
+        </li>
+        <li>
+          <strong>Profil (alle Angaben freiwillig):</strong> Rollenfamilie, Erfahrungsniveau, Lernziel (Freitext, höchstens 500
+          Zeichen), wöchentliches Zeitbudget, bevorzugte Sprache und ob der Einstufungstest abgeschlossen ist. Wir speichern
+          keinen Namen, keinen Arbeitgeber und kein Geburtsdatum. Bitte schreibe keine personenbezogenen Daten in das Lernziel.
+        </li>
+        <li>
+          <strong>Lernstand:</strong> je Kompetenz deine geschätzte Fähigkeit und die Anzahl richtiger Antworten, je Frage
+          deine letzte Antwort mit Zeitpunkt und dem Stand der Wiederholungsplanung, sowie die abgeschlossenen Lerneinheiten.
+        </li>
+        <li>
+          <strong>Sitzung im Browser:</strong> nach der Anmeldung speichert dein Browser ein Sitzungs-Token im localStorage
+          (Schlüssel beginnt mit <code>sb-</code>), damit du angemeldet bleibst. Außerdem speichert der Browser einen
+          Synchronisationsvermerk (<code>open-role-academy.sync.v1</code>). Beides ist für die von dir gewünschte Funktion
+          technisch erforderlich. Es werden keine Cookies gesetzt.
+        </li>
+        <li>
+          <strong>E-Mails:</strong> für Bestätigungs-, Anmelde-Link- und Passwort-zurücksetzen-Mails wird deine E-Mail-Adresse
+          an unseren E-Mail-Versanddienst übergeben (siehe Abschnitt 7). Andere E-Mails (Werbung, Newsletter) versenden wir nicht.
+        </li>
+      </ul>
+      <h2 class="text-xl font-semibold">6. Zwecke und Rechtsgrundlagen</h2>
+      <ul class="list-disc pl-6">
+        <li>
+          Anlegen und Betrieb deines Kontos, Anmeldung, Speichern und Abgleichen deines Lernstands zwischen Geräten,
+          Wiederherstellung des Zugangs: Art. 6 Abs. 1 lit. b DSGVO (Erfüllung des Nutzungsvertrags über die Konto-Funktionen).
+        </li>
+        <li>
+          Auslieferung der Website und Schutz vor Angriffen (Server-Logs): Art. 6 Abs. 1 lit. f DSGVO.
+        </li>
+        <li>
+          Das Häkchen bei der Registrierung bestätigt, dass du diese Datenschutzerklärung gelesen hast. Es ist keine
+          Einwilligung, auf die wir die Verarbeitung stützen.
+        </li>
+      </ul>
+      <p>
+        Es gibt keine automatisierten Entscheidungen im Sinne von Art. 22 DSGVO und kein Profiling zu Werbezwecken. Die Auswahl
+        deiner nächsten Lerneinheit berechnet ausschließlich ein festes, deterministisches Programm in deinem Browser anhand
+        deines Lernstands; es wird zur Laufzeit keine KI eingesetzt und es wird nichts verkauft oder zu fremden Zwecken weitergegeben.
+      </p>
+      <h2 class="text-xl font-semibold">7. Empfänger und Auftragsverarbeiter</h2>
+      <ul class="list-disc pl-6">
+        <li>
+          <strong>Cloudflare, Inc. (Cloudflare Pages):</strong> Hosting der statischen Website, siehe Abschnitt 3.
+        </li>
+        <li>
+          <strong>Supabase:</strong> Authentifizierung und Datenbank für Konto, Profil und Lernstand. Das Projekt läuft in der
+          Region EU. Weitere Informationen: <a class="underline" href={sbPrivacy}>Datenschutzhinweise von Supabase</a>.
+        </li>
+        <li>
+          <strong>Brevo (E-Mail-Versand per SMTP):</strong> Zustellung der Bestätigungs-, Anmelde-Link- und
+          Passwort-zurücksetzen-Mails. Dabei verarbeitet Brevo deine E-Mail-Adresse und den Inhalt der jeweiligen Mail. Weitere
+          Informationen: <a class="underline" href={brevoPrivacy}>Datenschutzhinweise von Brevo</a>.
+        </li>
+      </ul>
+      <p>
+        Mit diesen Dienstleistern bestehen bzw. gelten Auftragsverarbeitungsverträge nach Art. 28 DSGVO. Die Dienstleister
+        können Konzerngesellschaften oder Unterauftragnehmer außerhalb der EU/des EWR einsetzen. In diesem Fall erfolgt die
+        Übermittlung nach Art. 44 ff. DSGVO auf Grundlage der von den Anbietern vorgesehenen Garantien, etwa
+        Standardvertragsklauseln. Details findest du in den verlinkten Datenschutzhinweisen der Anbieter.
+      </p>
+      <h2 class="text-xl font-semibold">8. Speicherdauer</h2>
+      <ul class="list-disc pl-6">
+        <li>
+          Kontodaten (Zugangsdaten, Profil, Lernstand) speichern wir, bis du dein Konto löschst. Die Löschung auf der
+          Konto-Seite entfernt dein Konto und alle zugehörigen Daten in der Datenbank sofort und vollständig (kaskadierend).
+        </li>
+        <li>
+          Server-Logs bei Cloudflare und technische Protokolle bei Supabase und Brevo (z. B. Zustellprotokolle für E-Mails)
+          werden nach den jeweiligen Fristen der Anbieter gelöscht; darauf haben wir nur begrenzten Einfluss.
+        </li>
+        <li>Daten in deinem Browser (localStorage) bleiben, bis du sie löschst. Abmelden entfernt die Sitzung.</li>
+      </ul>
+      <h2 class="text-xl font-semibold">9. Cookies und externe Inhalte</h2>
+      <p>
+        Wir setzen keine Cookies und binden keine Inhalte Dritter ein, die Cookies setzen. Lernressourcen anderer Anbieter
+        sind nur verlinkt; erst wenn du einem Link folgst, gelten die Datenschutzbestimmungen des jeweiligen Anbieters.
+      </p>
+      <h2 class="text-xl font-semibold">10. Deine Rechte</h2>
+      <p>
+        Du hast nach der DSGVO das Recht auf Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der
+        Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21) sowie das Recht auf Beschwerde bei
+        einer Datenschutz-Aufsichtsbehörde (Art. 77).
+      </p>
+      <ul class="list-disc pl-6">
+        <li>Auskunft und Datenübertragbarkeit: Auf der Konto-Seite kannst du deine gespeicherten Daten als JSON exportieren.</li>
+        <li>Löschung: Auf der Konto-Seite kannst du dein Konto samt aller Daten selbst löschen.</li>
+        <li>Berichtigung: Dein Profil kannst du auf der Konto-Seite jederzeit ändern.</li>
+        <li>Alle anderen Anliegen: schreibe an {email}.</li>
+      </ul>
+    </div>
+  ) : (
+    <div class="space-y-4" data-privacy="accounts">
+      <h2 class="text-xl font-semibold">1. Controller</h2>
+      <p>
+        {owner}, {address}, email: {email}
+      </p>
+      <h2 class="text-xl font-semibold">2. Summary</h2>
+      <ul class="list-disc pl-6">
+        <li>You can use {site.name} without an account. Then your learning progress stays only in your browser (localStorage).</li>
+        <li>
+          Optionally you can create an account (email and password) to keep your progress across devices. Your data is then
+          stored in a database at Supabase (EU region).
+        </li>
+        <li>No cookies, no tracking, no analytics services, no advertising, no sale of data and no sharing for third parties' own purposes.</li>
+        <li>You can export your data at any time in your account and delete the account with all its data yourself.</li>
+      </ul>
+      <h2 class="text-xl font-semibold">3. Hosting and server logs</h2>
+      <p>
+        {site.name} is delivered as a static website via Cloudflare Pages (Cloudflare, Inc.). When you visit the pages,
+        Cloudflare processes technically necessary connection data, in particular your IP address, date and time of the
+        request, the requested address and information about your browser and operating system, in order to deliver the
+        website and protect it against attacks. The legal basis is Art. 6(1)(f) GDPR (legitimate interest in a secure and
+        working service). More information: <a class="underline" href={cfPrivacy}>Cloudflare privacy policy</a>. We do not
+        analyse these logs ourselves. Cloudflare acts as a processor (Art. 28 GDPR).
+      </p>
+      <h2 class="text-xl font-semibold">4. Use without an account: storage in your browser (localStorage)</h2>
+      <p>
+        Your role, level, answers and learning progress are stored locally in your browser under the key{' '}
+        <code>{STORAGE_KEY}</code>. Without an account this data does not leave your device. You can export, import or delete it
+        at any time on the dashboard, or remove it via your browser settings.
+      </p>
+      <h2 class="text-xl font-semibold">5. Use with an account: what data is processed</h2>
+      <p>If you create an account and sign in, we process the following data:</p>
+      <ul class="list-disc pl-6">
+        <li>
+          <strong>Credentials:</strong> your email address and your password. The password is not stored in plain text; Supabase
+          Auth keeps only a hash. In addition there is technical account data such as the time of registration, of email
+          confirmation and of your last sign-in.
+        </li>
+        <li>
+          <strong>Profile (all fields optional):</strong> role family, experience level, learning goal (free text, at most 500
+          characters), weekly time budget, preferred language and whether the placement check is finished. We do not store a
+          name, employer or date of birth. Please do not put personal data into the learning goal.
+        </li>
+        <li>
+          <strong>Learning progress:</strong> per competency your estimated ability and the number of correct answers, per item
+          your latest answer with its time and review-schedule state, and the units you completed.
+        </li>
+        <li>
+          <strong>Session in your browser:</strong> after signing in, your browser keeps a session token in localStorage (the
+          key starts with <code>sb-</code>) so that you stay signed in. The browser also keeps a sync marker (
+          <code>open-role-academy.sync.v1</code>). Both are strictly necessary for the function you asked for. No cookies are set.
+        </li>
+        <li>
+          <strong>Emails:</strong> for confirmation, sign-in link and password reset emails, your email address is passed to our
+          email delivery provider (see section 7). We do not send any other emails (no marketing, no newsletter).
+        </li>
+      </ul>
+      <h2 class="text-xl font-semibold">6. Purposes and legal bases</h2>
+      <ul class="list-disc pl-6">
+        <li>
+          Creating and running your account, signing in, storing and syncing your progress between devices, restoring access:
+          Art. 6(1)(b) GDPR (performance of the agreement on using the account features).
+        </li>
+        <li>Delivering the website and protecting it against attacks (server logs): Art. 6(1)(f) GDPR.</li>
+        <li>
+          The checkbox at sign-up confirms that you have read this privacy policy. It is not a consent on which we base the
+          processing.
+        </li>
+      </ul>
+      <p>
+        There are no automated decisions within the meaning of Art. 22 GDPR and no profiling for advertising. Your next
+        learning unit is calculated only by a fixed, deterministic program in your browser from your learning progress; no AI
+        is used at runtime, and nothing is sold or shared for others' own purposes.
+      </p>
+      <h2 class="text-xl font-semibold">7. Recipients and processors</h2>
+      <ul class="list-disc pl-6">
+        <li>
+          <strong>Cloudflare, Inc. (Cloudflare Pages):</strong> hosting of the static website, see section 3.
+        </li>
+        <li>
+          <strong>Supabase:</strong> authentication and database for account, profile and learning progress. The project runs
+          in the EU region. More information: <a class="underline" href={sbPrivacy}>Supabase privacy policy</a>.
+        </li>
+        <li>
+          <strong>Brevo (email delivery via SMTP):</strong> delivery of confirmation, sign-in link and password reset emails.
+          Brevo processes your email address and the content of the respective email. More information:{' '}
+          <a class="underline" href={brevoPrivacy}>Brevo privacy policy</a>.
+        </li>
+      </ul>
+      <p>
+        Data processing agreements under Art. 28 GDPR exist or apply with these providers. The providers may use group
+        companies or sub-processors outside the EU/EEA. In that case the transfer takes place under Art. 44 et seq. GDPR on the
+        basis of the safeguards the providers rely on, such as standard contractual clauses. Details are in the providers'
+        privacy policies linked above.
+      </p>
+      <h2 class="text-xl font-semibold">8. Retention</h2>
+      <ul class="list-disc pl-6">
+        <li>
+          We keep account data (credentials, profile, learning progress) until you delete your account. Deleting it on the
+          account page removes your account and all associated data in the database immediately and completely (by cascade).
+        </li>
+        <li>
+          Server logs at Cloudflare and technical logs at Supabase and Brevo (for example email delivery logs) are deleted
+          according to those providers' own retention periods; we have only limited influence on these.
+        </li>
+        <li>Data in your browser (localStorage) stays until you delete it. Signing out removes the session.</li>
+      </ul>
+      <h2 class="text-xl font-semibold">9. Cookies and external content</h2>
+      <p>
+        We do not set cookies and do not embed third-party content that sets cookies. Learning resources from other providers
+        are only linked; once you follow a link, that provider's privacy policy applies.
+      </p>
+      <h2 class="text-xl font-semibold">10. Your rights</h2>
+      <p>
+        Under the GDPR you have the right of access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction of
+        processing (Art. 18), data portability (Art. 20) and objection (Art. 21), and the right to lodge a complaint with a
+        data protection supervisory authority (Art. 77).
+      </p>
+      <ul class="list-disc pl-6">
+        <li>Access and portability: on the account page you can export your stored data as JSON.</li>
+        <li>Erasure: on the account page you can delete your account and all its data yourself.</li>
+        <li>Rectification: you can change your profile on the account page at any time.</li>
+        <li>Anything else: write to {email}.</li>
+      </ul>
+    </div>
+  )
+}

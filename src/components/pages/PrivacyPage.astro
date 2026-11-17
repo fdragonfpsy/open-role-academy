@@ -4,6 +4,8 @@ import type { Lang } from '../../config/site';
 import { site } from '../../config/site';
 import { t } from '../../i18n';
 import { STORAGE_KEY } from '../../lib/storage';
+import { supabaseConfig } from '../../config/supabase';
+import PrivacyAccounts from './PrivacyAccounts.astro';
 interface Props {
   lang: Lang;
 }
@@ -19,7 +21,9 @@ const cfPrivacy = 'https://www.cloudflare.com/privacypolicy/';
   <h1 class="mb-4 text-2xl font-bold sm:text-3xl">{t(lang, 'footer.privacy')}</h1>
   <p class="mb-6 rounded border border-amber-700 bg-amber-50 p-3 text-sm">{t(lang, 'legal.placeholderNote')}</p>
   {
-    lang === 'de' ? (
+    supabaseConfig.accountsEnabled ? (
+      <PrivacyAccounts lang={lang} owner={owner} address={address} email={email} />
+    ) : lang === 'de' ? (
       <div class="space-y-4">
         <h2 class="text-xl font-semibold">1. Verantwortliche Stelle</h2>
         <p>

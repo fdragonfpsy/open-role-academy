@@ -1,5 +1,15 @@
 # Status
 
+## 2026-11-17 — Phase 3b: Privacy policy for accounts (behind flag, off)
+
+**Done**
+- `src/components/pages/PrivacyAccounts.astro` (en/de): full account privacy text, rendered by `PrivacyPage.astro` only when `accountsEnabled` is true. Covers data processed (credentials/hash, optional profile, progress, item responses, completed units, session token and sync marker in localStorage, no cookies), purposes and legal bases (Art. 6(1)(b), 6(1)(f)), processors (Cloudflare, Supabase EU, Brevo), cautious transfer wording (Art. 44 ff.), retention, rights (Art. 15-21, 77) with in-app export/delete, no profiling/automated decisions/AI at runtime.
+- Default build: privacy pages byte-identical to before (verified by diff); flag-on build shows the account sections. Home page privacy line has a flag-on variant (`home.privacyAccounts`) because "no account" would be wrong with accounts on.
+- Imprint unchanged (see DECISIONS). `docs/LAUNCH.md`: new section "Before enabling accounts".
+- Still a draft: a lawyer/DPO should review it (processor roles, DPAs, transfer mechanisms, email-log retention, whether the sign-up checkbox wording is right). Not verified against the real providers' current documents.
+
+**Next:** Brevo/magic-link verification with the real project (owner), then Phase 4 roles.
+
 ## 2026-11-17 — Phase 3b: Dashboard sync (behind flag, off)
 
 **Done**
