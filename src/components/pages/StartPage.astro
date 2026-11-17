@@ -13,6 +13,6 @@ const items = await getQuizItems(lang);
 ---
 
 <BaseLayout lang={lang} title={t(lang, 'start.title')}>
-  <h1 class="mb-6 text-3xl font-bold">{t(lang, 'start.title')}</h1>
+  <h1 class="mb-6 text-2xl font-bold sm:text-3xl">{t(lang, 'start.title')}</h1>
   <Onboarding client:load lang={lang} roles={roles} items={items} />
 </BaseLayout>

@@ -17,6 +17,6 @@ const [roles, competencies, units, items] = await Promise.all([
 ---
 
 <BaseLayout lang={lang} title={t(lang, 'dashboard.title')}>
-  <h1 class="mb-6 text-3xl font-bold">{t(lang, 'dashboard.title')}</h1>
+  <h1 class="mb-6 text-2xl font-bold sm:text-3xl">{t(lang, 'dashboard.title')}</h1>
   <Dashboard client:load lang={lang} roles={roles} competencies={competencies} units={units} items={items} />
 </BaseLayout>

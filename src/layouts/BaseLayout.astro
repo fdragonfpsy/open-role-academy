@@ -26,7 +26,7 @@ const path = Astro.url.pathname.replace(/\/$/, '') || '/';
     <link rel="alternate" hreflang={lang} href={new URL(path, Astro.site).href} />
     <link rel="alternate" hreflang={other} href={new URL(alternatePath(path, other), Astro.site).href} />
   </head>
-  <body class="flex min-h-screen flex-col bg-slate-50 text-slate-900">
+  <body class="break-words flex min-h-screen flex-col bg-slate-50 text-slate-900">
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:bg-white focus:p-2">
       {t(lang, 'nav.skip')}
     </a>
@@ -57,9 +57,9 @@ const path = Astro.url.pathname.replace(/\/$/, '') || '/';
           {t(lang, 'footer.code')} <a class="underline" href={site.codeLicense.url}>{site.codeLicense.id}</a> ·{" "}
           {t(lang, 'footer.content')} <a class="underline" href={site.contentLicense.url}>{site.contentLicense.id}</a>
         </span>
-        <a class="underline" href={localizePath(lang, '/imprint')}>{t(lang, 'footer.imprint')}</a>
-        <a class="underline" href={localizePath(lang, '/privacy')}>{t(lang, 'footer.privacy')}</a>
-        <a class="underline" href={site.repoUrl}>{t(lang, 'footer.source')}</a>
+        <a class="inline-block py-2 underline" href={localizePath(lang, '/imprint')}>{t(lang, 'footer.imprint')}</a>
+        <a class="inline-block py-2 underline" href={localizePath(lang, '/privacy')}>{t(lang, 'footer.privacy')}</a>
+        <a class="inline-block py-2 underline" href={site.repoUrl}>{t(lang, 'footer.source')}</a>
       </div>
     </footer>
   </body>

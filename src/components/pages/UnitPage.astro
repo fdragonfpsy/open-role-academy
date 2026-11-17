@@ -28,7 +28,7 @@ const items = (await getQuizItems(lang)).filter((i) => i.competency === unit.com
       {unit.minutes}
       {t(lang, 'unit.minutes')}
     </p>
-    <h1 class="mt-1 mb-3 text-3xl font-bold">{unit.title}</h1>
+    <h1 class="mt-1 mb-3 text-2xl font-bold sm:text-3xl">{unit.title}</h1>
     {unit.status === 'ai-draft' && <AiDraftBadge lang={lang} />}
     <section class="mt-6 rounded border border-slate-300 bg-white p-4" aria-labelledby="objectives">
       <h2 id="objectives" class="mb-2 font-semibold">{t(lang, 'unit.objectives')}</h2>

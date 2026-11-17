@@ -1,5 +1,15 @@
 # Status
 
+## 2026-11-17 — Phase 3: mobile layout pass
+
+**Done**
+- Checked home, start, placement, dashboard, unit, privacy, imprint (en + de) at 320px, iPhone 13, Pixel 5. Fixed: German unit h1 overflow (47px sideways scroll), footer link height, button min height 44px, table/pre overflow in unit body.
+- New `tests-e2e/mobile.e2e.mjs` (overflow + target sizes), part of `npm run e2e`.
+
+**Unverified:** real devices, landscape, 200% zoom, post-answer placement states, other unit pages.
+
+**Next:** launch checklist `docs/LAUNCH.md` (last Phase 3 item), then Phase 3b catalog (Pagefind).
+
 ## 2026-11-17 — Phase 3: accessibility pass + Lighthouse
 
 **Done**

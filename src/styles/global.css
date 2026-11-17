@@ -27,3 +27,13 @@
 .prose-unit code {
   @apply rounded bg-slate-200 px-1 font-mono text-sm;
 }
+.prose-unit pre {
+  @apply mb-4 overflow-x-auto rounded bg-slate-100 p-3 text-sm;
+}
+.prose-unit table {
+  @apply mb-4 block max-w-full overflow-x-auto text-sm;
+}
+.prose-unit th,
+.prose-unit td {
+  @apply border border-slate-300 px-2 py-1 text-left;
+}
