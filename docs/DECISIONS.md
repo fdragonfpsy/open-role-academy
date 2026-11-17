@@ -137,3 +137,9 @@ Format: date — decision — reason — alternatives considered.
 - **Decision:** German Wikipedia has no general article on IT troubleshooting ("Fehlersuche" does not exist; "Fehleranalyse" is a generic article about the notion of an error). The German units therefore link to the German articles *Logdatei*, *OSI-Modell*, *5-Why-Methode* and *Ursache-Wirkungs-Diagramm* and additionally to the English *Troubleshooting* article. Resource URLs use the canonical article title (*Ursache-Wirkungs-Diagramm*), not the redirect *Ishikawa-Diagramm*.
 - **Reason:** Link only to pages that match the unit's topic; canonical URLs avoid redirect noise in the link check.
 - **Alternatives:** Link the generic *Fehleranalyse* article (off-topic); omit German resources for the foundation level (worse for German learners).
+
+
+## 2026-11-17 — Language selection via header switcher
+- Decision: onboarding form has no language control; language comes from the route (`/` vs `/de/`) via the header switcher.
+- Reason: Astro i18n routing makes the URL the single source of truth; a second control would conflict.
+- Alternatives: language radio in the form that redirects (redundant).

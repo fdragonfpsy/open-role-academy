@@ -1,5 +1,15 @@
 # Status
 
+## 2026-11-17 — Phase 3: onboarding + placement verified in browser
+
+**Done**
+- Playwright run (keyboard only, en + de): role/level selection, placement ends at exactly 15 questions, result → dashboard, no console errors, no cross-language strings. Script: `tests-e2e/placement.e2e.mjs` (`npm run e2e`, not in CI; needs a running preview server).
+- Fixed focus loss in `QuizItemView` (after checking an answer) and `Onboarding` (result panel).
+- Not covered: skip-placement path, multi-select items, `MasteryCheck` result focus, contrast audit, screen reader.
+- Decision: language is chosen through the header switcher (route-based i18n), not inside the onboarding form.
+
+**Next:** learning path view + unit page with mastery check (verify `MasteryCheck` in browser, add focus handling), then dashboard.
+
 ## 2026-11-17 — Content quality pass: Human Resources (batch complete)
 
 **Done**
