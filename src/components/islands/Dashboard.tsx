@@ -40,15 +40,30 @@ export default function Dashboard({ lang, roles, competencies, units, items }: P
   }, []);
 
   const onImport = async (e: Event) => {
-    const file = (e.currentTarget as HTMLInputElement).files?.[0];
+    const input = e.currentTarget as HTMLInputElement;
+    const file = input.files?.[0];
     if (!file) return;
     try {
-      const imported = importProgress(await file.text());
+      const text = await file.text();
+      try {
+        JSON.parse(text);
+      } catch {
+        throw new Error(t(lang, 'dashboard.importInvalidJson'));
+      }
+      let imported: LearnerState;
+      try {
+        imported = importProgress(text);
+      } catch {
+        throw new Error(t(lang, 'dashboard.importInvalidFile'));
+      }
+      if (!roles.some((r) => r.id === imported.roleId)) throw new Error(t(lang, 'dashboard.importUnknownRole'));
       saveState(imported);
       setState(imported);
       setMessage(t(lang, 'dashboard.importOk'));
     } catch (err) {
       setMessage(`${t(lang, 'dashboard.importError')}: ${(err as Error).message}`);
+    } finally {
+      input.value = '';
     }
   };
 
@@ -96,6 +111,7 @@ export default function Dashboard({ lang, roles, competencies, units, items }: P
   };
 
   const next = path[0];
+  const reached = gaps.filter((g) => g.levelGap === 0).length;
   return (
     <div class="space-y-8">
       <section aria-labelledby="next-title" class="rounded-lg border border-blue-800 bg-blue-50 p-5">
@@ -110,7 +126,10 @@ export default function Dashboard({ lang, roles, competencies, units, items }: P
       </section>
 
       <section aria-labelledby="comp-title">
-        <h2 id="comp-title" class="mb-3 text-lg font-semibold">{t(lang, 'dashboard.competencies')}</h2>
+        <h2 id="comp-title" class="mb-1 text-lg font-semibold">{t(lang, 'dashboard.competencies')}</h2>
+        <p class="mb-3 text-sm text-slate-700" data-testid="progress">
+          {t(lang, 'dashboard.progress')}: {reached} / {gaps.length}
+        </p>
         <ul class="space-y-4">
           {gaps.map((g) => {
             const current = levelRank(g.mastered);
@@ -180,8 +199,10 @@ export default function Dashboard({ lang, roles, competencies, units, items }: P
               const nextState = recordAnswer(state, { item, correct, phase: 'review', today });
               saveState(nextState);
               setState(nextState);
-              if (reviewIndex + 1 >= reviewing.length) setReviewing(null);
-              else setReviewIndex(reviewIndex + 1);
+              if (reviewIndex + 1 >= reviewing.length) {
+                setReviewing(null);
+                setMessage(t(lang, 'dashboard.reviewsDone'));
+              } else setReviewIndex(reviewIndex + 1);
             }}
           />
         ) : due.length === 0 ? (
@@ -223,6 +244,7 @@ export default function Dashboard({ lang, roles, competencies, units, items }: P
               if (window.confirm(t(lang, 'dashboard.resetConfirm'))) {
                 clearState();
                 setState(null);
+                setMessage(t(lang, 'dashboard.reset.done'));
               }
             }}
           >
