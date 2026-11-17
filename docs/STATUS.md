@@ -1,5 +1,13 @@
 # Status
 
+## 2026-11-17 — Phase 3b: Supabase schema migration
+
+**Done**
+- `supabase/migrations/20261117210000_init_profiles_progress.sql`: `profiles`, `progress`, `item_responses`, `completed_units`; RLS on all tables, policies `to authenticated` with `(select auth.uid())`, explicit grants (none to anon), `export_my_data()` (GDPR Art. 15/20) and `delete_my_account()` (Art. 17, cascade). No employer/name/birth date. `supabase/README.md` + RLS checklist; static test `tests/supabase-migrations.test.ts` (tests now 66).
+- **PENDING (owner):** migration `20261117210000_init_profiles_progress.sql` is not applied. Apply via Supabase SQL editor or GitHub integration. SQL was never run against a database; run `supabase/tests/rls_checklist.md` after applying.
+
+**Next:** fix flaky dashboard e2e; Auth UI behind `accountsEnabled` flag.
+
 ## 2026-11-17 — Phase 3b: catalog + Pagefind search
 
 **Done**
