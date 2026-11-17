@@ -12,9 +12,11 @@ import {
   type Level,
 } from '../../engine';
 import { localizePath, t } from '../../i18n';
-import { loadState, saveState, todayIso } from '../../lib/storage';
+import { todayIso } from '../../lib/storage';
+import { useProgress } from '../../lib/use-progress';
 import type { QuizItem, RoleView } from '../../lib/types';
 import { QuizItemView } from './QuizItemView';
+import { SyncStatus } from './SyncStatus';
 
 interface Props {
   lang: Lang;
@@ -29,7 +31,8 @@ export default function Onboarding({ lang, roles, items }: Props) {
   const [level, setLevel] = useState<Level>('foundation');
   const [phase, setPhase] = useState<Phase>({ kind: 'setup' });
   const [state, setState] = useState<LearnerState | null>(null);
-  const [hasExisting, setHasExisting] = useState(false);
+  const progress = useProgress(lang);
+  const hasExisting = progress.state !== null;
   const [compIndex, setCompIndex] = useState(0);
   const [inComp, setInComp] = useState(0);
   const [last, setLast] = useState<{ item: QuizItem; correct: boolean } | undefined>();
@@ -37,7 +40,6 @@ export default function Onboarding({ lang, roles, items }: Props) {
 
   const doneRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => setHasExisting(loadState() !== null), []);
   // Focus management: move focus to the result panel when placement ends.
   useEffect(() => {
     if (phase.kind === 'done') doneRef.current?.focus();
@@ -58,7 +60,7 @@ export default function Onboarding({ lang, roles, items }: Props) {
     const fresh = createLearnerState(role, level, new Date());
     if (skip || placementComps.length === 0) {
       const done = finishPlacement(fresh);
-      saveState(done);
+      progress.save(done);
       setState(done);
       setPhase({ kind: 'done' });
       return;
@@ -124,6 +126,7 @@ export default function Onboarding({ lang, roles, items }: Props) {
         <a class="inline-block rounded bg-blue-800 min-h-11 px-4 py-2 font-semibold text-white" href={localizePath(lang, '/dashboard')}>
           {t(lang, 'placement.toDashboard')}
         </a>
+        <SyncStatus lang={lang} status={progress.status} onRetry={progress.retry} />
       </div>
     );
   }
@@ -148,7 +151,7 @@ export default function Onboarding({ lang, roles, items }: Props) {
       return;
     }
     const done = finishPlacement(next);
-    saveState(done);
+    progress.save(done);
     setState(done);
     setPhase({ kind: 'done' });
   };

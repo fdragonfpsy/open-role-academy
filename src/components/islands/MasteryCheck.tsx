@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
 import type { Lang } from '../../config/site';
-import { isLevelMastered, markUnitCompleted, recordAnswer, selectMasteryItems, type LearnerState, type Level } from '../../engine';
+import { isLevelMastered, markUnitCompleted, recordAnswer, selectMasteryItems, type Level } from '../../engine';
 import { localizePath, t } from '../../i18n';
-import { loadState, saveState, todayIso } from '../../lib/storage';
+import { todayIso } from '../../lib/storage';
+import { useProgress } from '../../lib/use-progress';
 import type { QuizItem } from '../../lib/types';
 import { QuizItemView } from './QuizItemView';
+import { SyncStatus } from './SyncStatus';
 
 interface Props {
   lang: Lang;
@@ -15,8 +17,7 @@ interface Props {
 }
 
 export default function MasteryCheck({ lang, unitId, competency, level, items }: Props) {
-  const [state, setState] = useState<LearnerState | null>(null);
-  const [loaded, setLoaded] = useState(false);
+  const { state, loaded, save, retry, status } = useProgress(lang);
   const [queue, setQueue] = useState<QuizItem[] | null>(null);
   const [index, setIndex] = useState(0);
   const [result, setResult] = useState<boolean | null>(null);
@@ -25,11 +26,6 @@ export default function MasteryCheck({ lang, unitId, competency, level, items }:
   useEffect(() => {
     if (result !== null) resultRef.current?.focus();
   }, [result]);
-
-  useEffect(() => {
-    setState(loadState());
-    setLoaded(true);
-  }, []);
 
   if (!loaded) return null;
   if (!state) {
@@ -50,6 +46,7 @@ export default function MasteryCheck({ lang, unitId, competency, level, items }:
         <a class="inline-block rounded bg-blue-800 min-h-11 px-4 py-2 font-semibold text-white" href={localizePath(lang, '/dashboard')}>
           {t(lang, 'placement.toDashboard')}
         </a>
+        <SyncStatus lang={lang} status={status} onRetry={retry} />
       </div>
     );
   }
@@ -88,8 +85,7 @@ export default function MasteryCheck({ lang, unitId, competency, level, items }:
         } else {
           setIndex(index + 1);
         }
-        saveState(next);
-        setState(next);
+        save(next);
       }}
     />
   );
