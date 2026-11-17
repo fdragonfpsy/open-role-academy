@@ -56,6 +56,9 @@ async function pagesFor(ctx, lang, tag) {
   const S = (s) => `${tag.replace(/\W+/g, '')}-${lang}-${s}`;
   await page.goto(`${BASE}${p}/`);
   await audit(page, L('home'), S('home'));
+  await page.goto(`${BASE}${p}/catalog`);
+  await page.waitForSelector('#filter-role');
+  await audit(page, L('catalog'), S('catalog'));
   await page.goto(`${BASE}${p}/start`);
   await page.waitForSelector('form input[type=radio]');
   await audit(page, L('start'), S('start'));

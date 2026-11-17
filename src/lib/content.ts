@@ -1,7 +1,7 @@
 import { getCollection } from 'astro:content';
 import type { Lang } from '../config/site';
 import { seededShuffle } from './shuffle';
-import type { CompetencyView, QuizItem, RoleView, UnitView } from './types';
+import type { CatalogData, CompetencyView, QuizItem, RoleView, UnitView } from './types';
 
 export async function getRoles(lang: Lang): Promise<RoleView[]> {
   const roles = await getCollection('roles', (r) => r.data.status === 'published');
@@ -45,4 +45,40 @@ export async function getQuizItems(lang: Lang): Promise<QuizItem[]> {
       explanation: i.explanation[lang],
     })),
   );
+}
+
+/** Published roles and the competencies and units they use (draft roles stay hidden). */
+export async function getCatalog(lang: Lang): Promise<CatalogData> {
+  const [roles, competencies, units] = await Promise.all([
+    getRoles(lang),
+    getCollection('competencies'),
+    getCollection('units', (u) => u.id.startsWith(`${lang}/`)),
+  ]);
+  const rolesOf = (competency: string) =>
+    roles.filter((r) => r.competencies.some((c) => c.id === competency)).map((r) => r.id);
+  return {
+    roles: roles.map((r) => ({ id: r.id, title: r.title, summary: r.summary })),
+    competencies: competencies
+      .map(({ data }) => ({
+        id: data.id,
+        title: data.title[lang],
+        description: data.description[lang],
+        track: data.track,
+        roleIds: rolesOf(data.id),
+      }))
+      .filter((c) => c.roleIds.length > 0)
+      .sort((a, b) => a.title.localeCompare(b.title, lang)),
+    units: units
+      .map(({ data }) => ({
+        id: data.id,
+        competency: data.competency,
+        level: data.level,
+        title: data.title,
+        minutes: data.minutes,
+        status: data.status,
+        roleIds: rolesOf(data.competency),
+      }))
+      .filter((u) => u.roleIds.length > 0)
+      .sort((a, b) => a.title.localeCompare(b.title, lang)),
+  };
 }

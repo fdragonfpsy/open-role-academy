@@ -34,6 +34,7 @@ const path = Astro.url.pathname.replace(/\/$/, '') || '/';
       <nav class="mx-auto flex max-w-4xl flex-wrap items-center gap-4 px-4 py-3" aria-label="Main">
         <a href={localizePath(lang, '/')} class="mr-auto text-lg font-bold text-blue-900">{site.name}</a>
         <a href={localizePath(lang, '/start')} class="text-blue-800 underline-offset-4 hover:underline">{t(lang, 'nav.start')}</a>
+        <a href={localizePath(lang, '/catalog')} class="text-blue-800 underline-offset-4 hover:underline">{t(lang, 'nav.catalog')}</a>
         <a href={localizePath(lang, '/dashboard')} class="text-blue-800 underline-offset-4 hover:underline">
           {t(lang, 'nav.dashboard')}
         </a>
