@@ -68,7 +68,7 @@ export default function Dashboard({ lang, roles, competencies, units, items }: P
   };
 
   const importControl = (
-    <label class="inline-block cursor-pointer rounded border border-blue-800 px-4 py-2 font-semibold text-blue-800">
+    <label class="inline-block cursor-pointer rounded border border-blue-800 min-h-11 px-4 py-2 font-semibold text-blue-800">
       {t(lang, 'dashboard.import')}
       <input type="file" accept="application/json,.json" class="sr-only" onChange={onImport} />
     </label>
@@ -80,7 +80,7 @@ export default function Dashboard({ lang, roles, competencies, units, items }: P
       <div class="space-y-4">
         <p>{t(lang, 'dashboard.empty')}</p>
         <div class="flex flex-wrap gap-3">
-          <a class="rounded bg-blue-800 px-4 py-2 font-semibold text-white" href={localizePath(lang, '/start')}>
+          <a class="inline-block rounded bg-blue-800 min-h-11 px-4 py-2 font-semibold text-white" href={localizePath(lang, '/start')}>
             {t(lang, 'nav.start')}
           </a>
           {importControl}
@@ -218,7 +218,7 @@ export default function Dashboard({ lang, roles, competencies, units, items }: P
             </ul>
             <button
               type="button"
-              class="rounded bg-blue-800 px-4 py-2 font-semibold text-white"
+              class="rounded bg-blue-800 min-h-11 px-4 py-2 font-semibold text-white"
               onClick={() => {
                 setReviewing(due.map((c) => items.find((i) => i.id === c.itemId)).filter((i): i is QuizItem => !!i));
                 setReviewIndex(0);
@@ -233,13 +233,13 @@ export default function Dashboard({ lang, roles, competencies, units, items }: P
       <section class="space-y-3 border-t border-slate-300 pt-6">
         <p class="text-sm text-slate-700">{t(lang, 'dashboard.storage')}</p>
         <div class="flex flex-wrap gap-3">
-          <button type="button" class="rounded border border-blue-800 px-4 py-2 font-semibold text-blue-800" onClick={download}>
+          <button type="button" class="rounded border border-blue-800 min-h-11 px-4 py-2 font-semibold text-blue-800" onClick={download}>
             {t(lang, 'dashboard.export')}
           </button>
           {importControl}
           <button
             type="button"
-            class="rounded border border-red-800 px-4 py-2 font-semibold text-red-800"
+            class="rounded border border-red-800 min-h-11 px-4 py-2 font-semibold text-red-800"
             onClick={() => {
               if (window.confirm(t(lang, 'dashboard.resetConfirm'))) {
                 clearState();

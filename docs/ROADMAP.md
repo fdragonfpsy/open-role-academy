@@ -84,7 +84,7 @@ Item and resource quality (added by weekly review 2026-11-14, applies to all new
 - [x] Learning path view + unit page with resources, attribution block and mastery check
 - [x] Dashboard: competency radar or bars (current vs target), next unit, review queue, export/import
 - [x] Accessibility pass (keyboard, contrast, screen reader labels) + Lighthouse ≥ 90 on all categories
-- [ ] Mobile layout pass
+- [x] Mobile layout pass
 - [ ] **Launch checklist** in `docs/LAUNCH.md` (what the human must fill in: Impressum data, contact email, Cloudflare Pages project) — then mark the site ready
 
 ## Phase 3b — Catalog, accounts and profile

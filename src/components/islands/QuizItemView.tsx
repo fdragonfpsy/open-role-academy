@@ -85,7 +85,7 @@ export function QuizItemView({ lang, item, index, total, onDone, isLast }: Props
         ref={submitRef}
         type="submit"
         disabled={selected.length === 0}
-        class="mt-4 rounded bg-blue-800 px-4 py-2 font-semibold text-white disabled:opacity-50"
+        class="mt-4 rounded bg-blue-800 min-h-11 px-4 py-2 font-semibold text-white disabled:opacity-50"
       >
         {!checked ? t(lang, 'quiz.check') : isLast ? t(lang, 'quiz.finish') : t(lang, 'quiz.next')}
       </button>

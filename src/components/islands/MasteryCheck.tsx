@@ -47,7 +47,7 @@ export default function MasteryCheck({ lang, unitId, competency, level, items }:
     return (
       <div ref={resultRef} tabIndex={-1} role="status" class={`rounded-lg border p-5 ${result ? 'border-green-700 bg-green-50' : 'border-amber-600 bg-amber-50'}`}>
         <p class="mb-3 font-semibold">{result ? t(lang, 'mastery.passed') : t(lang, 'mastery.failed')}</p>
-        <a class="inline-block rounded bg-blue-800 px-4 py-2 font-semibold text-white" href={localizePath(lang, '/dashboard')}>
+        <a class="inline-block rounded bg-blue-800 min-h-11 px-4 py-2 font-semibold text-white" href={localizePath(lang, '/dashboard')}>
           {t(lang, 'placement.toDashboard')}
         </a>
       </div>
@@ -58,7 +58,7 @@ export default function MasteryCheck({ lang, unitId, competency, level, items }:
     return (
       <button
         type="button"
-        class="rounded bg-blue-800 px-4 py-2 font-semibold text-white"
+        class="rounded bg-blue-800 min-h-11 px-4 py-2 font-semibold text-white"
         onClick={() => {
           const selected = selectMasteryItems(items, level, state.competencies[competency]) as QuizItem[];
           setQueue(selected);

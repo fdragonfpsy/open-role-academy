@@ -106,10 +106,10 @@ export default function Onboarding({ lang, roles, items }: Props) {
           </div>
         </fieldset>
         <div class="flex flex-wrap gap-3">
-          <button type="submit" class="rounded bg-blue-800 px-4 py-2 font-semibold text-white">
+          <button type="submit" class="rounded bg-blue-800 min-h-11 px-4 py-2 font-semibold text-white">
             {t(lang, 'start.begin')}
           </button>
-          <button type="button" class="rounded border border-blue-800 px-4 py-2 font-semibold text-blue-800" onClick={() => begin(true)}>
+          <button type="button" class="rounded border border-blue-800 min-h-11 px-4 py-2 font-semibold text-blue-800" onClick={() => begin(true)}>
             {t(lang, 'start.skip')}
           </button>
         </div>
@@ -121,7 +121,7 @@ export default function Onboarding({ lang, roles, items }: Props) {
     return (
       <div ref={doneRef} tabIndex={-1} class="rounded-lg border border-green-700 bg-green-50 p-5" role="status">
         <p class="mb-3 font-semibold">{t(lang, 'placement.done')}</p>
-        <a class="inline-block rounded bg-blue-800 px-4 py-2 font-semibold text-white" href={localizePath(lang, '/dashboard')}>
+        <a class="inline-block rounded bg-blue-800 min-h-11 px-4 py-2 font-semibold text-white" href={localizePath(lang, '/dashboard')}>
           {t(lang, 'placement.toDashboard')}
         </a>
       </div>

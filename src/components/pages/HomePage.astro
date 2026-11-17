@@ -11,7 +11,7 @@ const roles = await getRoles(lang);
 ---
 
 <BaseLayout lang={lang}>
-  <h1 class="mb-4 text-3xl font-bold">{t(lang, 'home.title')}</h1>
+  <h1 class="mb-4 text-2xl font-bold sm:text-3xl">{t(lang, 'home.title')}</h1>
   <p class="mb-6 text-lg">{t(lang, 'home.intro')}</p>
   <a href={localizePath(lang, '/start')} class="inline-block rounded bg-blue-800 px-5 py-3 font-semibold text-white">
     {t(lang, 'nav.start')}
