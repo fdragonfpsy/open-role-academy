@@ -131,14 +131,14 @@ items:
       - en: "\"Needs reporting for three teams; wants a quote by Friday\""
         de: "„Braucht Reporting für drei Teams; wünscht Angebot bis Freitag“"
         correct: true
-      - en: "\"Difficult person, probably gets divorced soon, avoid him\""
-        de: "„Schwieriger Typ, lässt sich wohl bald scheiden, besser meiden“"
+      - en: "\"Mentioned sick leave after surgery; call again after he recovers\""
+        de: "„Erwähnte Krankschreibung nach einer Operation; nach der Genesung erneut anrufen“"
         correct: false
-      - en: "\"Seems old, probably cannot handle modern tools\""
-        de: "„Wirkt alt, kommt mit modernen Werkzeugen wohl nicht klar“"
+      - en: "\"Over 55, so probably prefers phone calls to the online portal\""
+        de: "„Über 55, bevorzugt daher wohl Anrufe statt des Online-Portals“"
         correct: false
-      - en: "\"Mood bad today because of a family problem he mentioned\""
-        de: "„Heute schlecht gelaunt wegen eines Familienproblems, das er erwähnte“"
+      - en: "\"Worried about rumoured layoffs, so his job may be at risk\""
+        de: "„Sorgt sich wegen Gerüchten über Entlassungen, sein Job wackelt wohl“"
         correct: false
     explanation:
       en: "Notes should be factual and related to the sales purpose, because customers may ask what is stored about them. Personal speculation and private details do not belong in a CRM."
@@ -161,12 +161,12 @@ items:
       - en: "100,000"
         de: "100.000"
         correct: false
-      - en: "140,000"
-        de: "140.000"
+      - en: "250,000"
+        de: "250.000"
         correct: false
     explanation:
-      en: "Weighted value is deal value times the stage probability: 100,000 times 0.4 equals 40,000. The other numbers use the wrong share, ignore the weighting or add instead of multiply."
-      de: "Der gewichtete Wert ist Dealwert mal Phasenwahrscheinlichkeit: 100.000 mal 0,4 ergibt 40.000. Die anderen Zahlen nutzen den falschen Anteil, ignorieren die Gewichtung oder addieren statt zu multiplizieren."
+      en: "Weighted value is deal value times the stage probability: 100,000 times 0.4 equals 40,000. The other numbers use the complementary share (60 percent), ignore the weighting or divide by the probability instead of multiplying."
+      de: "Der gewichtete Wert ist Dealwert mal Phasenwahrscheinlichkeit: 100.000 mal 0,4 ergibt 40.000. Die anderen Zahlen nutzen den Gegenanteil (60 Prozent), ignorieren die Gewichtung oder teilen durch die Wahrscheinlichkeit statt zu multiplizieren."
     source: https://en.wikipedia.org/wiki/Forecasting
   - id: crm-p-prob
     level: practitioner
@@ -275,14 +275,14 @@ items:
       - en: "Stage definitions or probabilities are probably too optimistic"
         de: "Phasendefinitionen oder Wahrscheinlichkeiten sind vermutlich zu optimistisch"
         correct: true
-      - en: "The pattern is random and needs no action"
-        de: "Das Muster ist Zufall und erfordert keine Maßnahme"
+      - en: "Four quarters is too little data, so keep the method and wait a year"
+        de: "Vier Quartale sind zu wenig Daten, also Methode beibehalten und ein Jahr warten"
         correct: false
-      - en: "The customers are at fault for deciding too slowly"
-        de: "Die Kundschaft ist schuld, weil sie zu langsam entscheidet"
+      - en: "The team needs more pipeline coverage, so push everyone to log more deals"
+        de: "Das Team braucht mehr Pipeline-Abdeckung, also alle zum Erfassen weiterer Deals drängen"
         correct: false
-      - en: "The CRM should be replaced by a spreadsheet"
-        de: "Das CRM sollte durch eine Tabelle ersetzt werden"
+      - en: "Close dates are entered too late, so move every close date a month earlier"
+        de: "Abschlussdaten werden zu spät erfasst, also jedes Abschlussdatum einen Monat vorziehen"
         correct: false
     explanation:
       en: "A consistent bias in one direction points to a systematic cause, such as optimistic stage criteria. Comparing forecast with outcome each period lets you correct it."

@@ -1,5 +1,26 @@
 # Status
 
+## 2026-11-17 — Phase 4: Sales content batch 4 (sales-ethics-compliance), quality pass, Sales published
+
+**Done**
+- 6 unit files (3 en + 3 de, `status: ai-draft`, EU/Germany labelled, worked example, takeaways, `sources[]`): sales-ethics-compliance at foundation/practitioner/advanced. 13 items (4 foundation, 5 practitioner, 4 advanced; one multi), distractors as plausible misconceptions, no `uniquely longest` warning.
+- 6 new ethics/pricing resources (all `mode: link`, `licenseVerifiedOn: 2026-11-17`, HTTP 200 checked): EUR-Lex Directive 2005/29/EC (en and de, free-access), OpenStax 4.5 Ethical Issues in B2B Marketing and 12.3 Pricing Policy (CC BY-NC-SA), German Wikipedia UWG and Korruption (CC BY-SA). Existing GDPR and OpenStax 15.4 resources now also tagged for the ethics competency.
+- Legal statements: only EUR-Lex texts actually read via curl: UCPD Art. 3, 5-9 and Annex I points 5-7, GDPR Art. 21(2)-(4) (Art. 15 only as right named). gesetze-im-internet.de (UWG, StGB) was still unreachable via the proxy, so the UWG and German criminal-law bribery offences are mentioned at topic level only, citing the German Wikipedia overviews; no section numbers stated in learner-facing text. The UCPD applies to consumers only, which units and items say.
+- Quality pass Sales: the OpenStax pricing chapter was found via the page's embedded TOC (12.3) and added to both proposals units, so every Sales competency now has a non-Wikipedia resource. German-language resources added where the German units had none (Wikipedia de: Customer-Relationship-Management, Kundenbindung, Verhandlung, Verkaufsgespräch; all CC BY-SA footer verified) for solution-presentation-demo, closing foundation, objection-handling foundation, account-management and CRM units.
+- Reviewer-flagged items rewritten with plausible misconceptions (en+de): crm-p-error, crm-f-notes, crm-p-weight, dna-p-impact, dna-a-conflict, spp-a-standard.
+- Sales set to `status: published`; `validate:content` passes with 0 errors and 0 warnings with coverage rules enforced. `docs/FRAMEWORK.md` regenerated.
+- Checks: lint, typecheck, tests, validate:content, build all pass.
+
+**Reviewer to-dos**
+- Check the UCPD summaries against Art. 5-9 / Annex I and the German wording of the DE units.
+- Confirm items sec-a-pilot and sec-a-claim have exactly one defensible best answer (judgement items).
+- When gesetze-im-internet.de is reachable, add UWG sections and the business-dealing bribery offence from the primary source.
+- Sanity-check difficulty ordering of the new items.
+
+**Counts:** roles 5 (0 draft) · competencies 48 · units 282 · items 578 · resources 336
+
+**Next:** next unchecked Phase 4 role in `docs/ROADMAP.md`.
+
 ## 2026-11-17 — Phase 4: Sales content batch 3 (closing-contract-handover, account-management-upselling, crm-sales-data-forecasting)
 
 **Done**

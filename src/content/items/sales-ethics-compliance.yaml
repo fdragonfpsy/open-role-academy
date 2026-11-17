@@ -1,0 +1,314 @@
+competency: sales-ethics-compliance
+items:
+  - id: sec-f-roadmap
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "A prospect asks whether your product connects to their accounting tool. The connection is only planned for next year. What do you say?"
+      de: "Ein Interessent fragt, ob dein Produkt sich mit seinem Buchhaltungswerkzeug verbindet. Die Anbindung ist erst für nächstes Jahr geplant. Was sagst du?"
+    options:
+      - en: "It is planned but not available yet, and I will not promise a date I cannot confirm"
+        de: "Sie ist geplant, aber noch nicht verfügbar, und ich sage kein Datum zu, das ich nicht bestätigen kann"
+        correct: true
+      - en: "Yes, it connects, because the product team will surely deliver it before the contract starts"
+        de: "Ja, sie verbindet sich, denn das Produktteam liefert sie sicher vor Vertragsbeginn"
+        correct: false
+      - en: "It works through a workaround, without mentioning that it needs a manual export every time"
+        de: "Es geht über einen Umweg, ohne zu erwähnen, dass jedes Mal ein manueller Export nötig ist"
+        correct: false
+      - en: "I am not sure, so let me show you the features we already have instead"
+        de: "Ich bin nicht sicher, daher zeige ich dir lieber die Funktionen, die wir schon haben"
+        correct: false
+    explanation:
+      en: "Say what is planned and what is available. A confident yes that may turn out false and an answer that leaves out a material limit both mislead. Evasion avoids the question the customer needs answered. EU law on unfair practices covers consumers, but the honesty principle holds for every customer."
+      de: "Sage, was geplant und was verfügbar ist. Ein sicheres Ja, das sich als falsch erweisen kann, und eine Antwort, die eine wesentliche Einschränkung weglässt, führen beide in die Irre. Ausweichen umgeht die Frage, die die Kundschaft beantwortet haben muss. Das EU-Recht gegen unlautere Praktiken betrifft Verbrauchende, der Grundsatz der Ehrlichkeit gilt aber für alle Kundschaft."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32005L0029
+  - id: sec-f-deadline
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Which statement about a time limit is acceptable when selling to consumers?"
+      de: "Welche Aussage zu einer Frist ist beim Verkauf an Verbrauchende zulässig?"
+    options:
+      - en: "\"This price applies until our spring campaign ends on the 30th\", when it really does end then"
+        de: "„Dieser Preis gilt, bis unsere Frühjahrsaktion am 30. endet“, wenn sie dann wirklich endet"
+        correct: true
+      - en: "\"This price is only available today\", although the same price will be offered again tomorrow"
+        de: "„Dieser Preis gilt nur heute“, obwohl derselbe Preis morgen wieder angeboten wird"
+        correct: false
+      - en: "\"Another customer is about to take this offer\", although no other customer has asked"
+        de: "„Eine andere Kundin nimmt dieses Angebot gleich“, obwohl niemand sonst angefragt hat"
+        correct: false
+      - en: "\"Only two units are left\", although the warehouse holds plenty of stock"
+        de: "„Nur noch zwei Stück verfügbar“, obwohl das Lager reichlich Bestand hat"
+        correct: false
+    explanation:
+      en: "A deadline is fine when it is true. Falsely stating that an offer is available only for a very limited time, to force a quick decision, is on the EU directive's list of practices that are always unfair towards consumers."
+      de: "Eine Frist ist in Ordnung, wenn sie stimmt. Die falsche Behauptung, ein Angebot gebe es nur sehr kurze Zeit, um eine schnelle Entscheidung zu erzwingen, steht auf der Liste der EU-Richtlinie mit Praktiken, die gegenüber Verbrauchenden stets unlauter sind."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32005L0029
+  - id: sec-f-gift
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "You want to send an expensive gift basket to a buyer who is about to decide on your offer. What should you do first?"
+      de: "Du möchtest einem Einkäufer, der sich bald über dein Angebot entscheidet, einen teuren Geschenkkorb schicken. Was tust du zuerst?"
+    options:
+      - en: "Check the gift and hospitality policy and ask compliance if it is unclear"
+        de: "Die Richtlinie zu Geschenken und Einladungen prüfen und bei Unklarheit Compliance fragen"
+        correct: true
+      - en: "Send it to the buyer's home address, so that it counts as private rather than business"
+        de: "Es an die Privatadresse des Einkäufers schicken, damit es privat statt geschäftlich zählt"
+        correct: false
+      - en: "Send it to the buyer's manager instead, so that the actual decider is not given a gift"
+        de: "Es stattdessen an die Führungskraft des Einkäufers schicken, damit die entscheidende Person nichts erhält"
+        correct: false
+      - en: "Send it, because small gestures are normal in a good customer relationship"
+        de: "Es schicken, denn kleine Gesten gehören zu einer guten Kundenbeziehung"
+        correct: false
+    explanation:
+      en: "Gifts around a pending decision can look like influence. Rerouting them to a home address or a colleague does not change that. The company policy and compliance decide before you give anything."
+      de: "Geschenke rund um eine anstehende Entscheidung können wie Einflussnahme wirken. Sie an eine Privatadresse oder eine andere Person umzuleiten ändert daran nichts. Die Unternehmensrichtlinie und Compliance entscheiden, bevor du etwas gibst."
+    source: https://openstax.org/books/principles-marketing/pages/4-5-ethical-issues-in-b2b-marketing
+  - id: sec-f-optout
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "A person replies to your marketing email: \"Please stop contacting me.\" What do you do with their personal data?"
+      de: "Eine Person antwortet auf deine Werbemail: „Bitte kontaktieren Sie mich nicht mehr.“ Was tust du mit ihren personenbezogenen Daten?"
+    options:
+      - en: "Stop using it for marketing and record the objection in the CRM so no team contacts them"
+        de: "Sie nicht mehr für Werbung nutzen und den Widerspruch im CRM erfassen, damit kein Team sie kontaktiert"
+        correct: true
+      - en: "Finish the planned three-email sequence to the end, and only then stop contacting the person"
+        de: "Die geplante Abfolge von drei Mails zu Ende führen und dann die Person nicht mehr kontaktieren"
+        correct: false
+      - en: "Call once to confirm that the person really wants to stop receiving any offers from us"
+        de: "Einmal anrufen, um zu bestätigen, dass die Person wirklich keine Angebote mehr erhalten möchte"
+        correct: false
+      - en: "Keep contacting the person, but only about products they have not been shown before"
+        de: "Die Person weiter kontaktieren, aber nur zu Produkten, die sie noch nicht kennt"
+        correct: false
+    explanation:
+      en: "Where personal data are processed for direct marketing and the person objects, the data must no longer be processed for that purpose (GDPR Art. 21(2) and (3)). A final sequence, a confirmation call or a different product are all further marketing contact."
+      de: "Werden personenbezogene Daten für Direktwerbung verarbeitet und die Person widerspricht, dürfen sie dafür nicht mehr verarbeitet werden (DSGVO Art. 21 Abs. 2 und 3). Eine letzte Abfolge, ein Bestätigungsanruf oder ein anderes Produkt sind weiterer Werbekontakt."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+  - id: sec-p-omission
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "A consumer quote shows a low monthly price. The 24-month minimum term and a set-up fee appear only in a footnote on the last page. What is the best assessment?"
+      de: "Ein Angebot für Verbrauchende nennt einen niedrigen Monatspreis. Die Mindestlaufzeit von 24 Monaten und eine Einrichtungsgebühr stehen nur in einer Fußnote auf der letzten Seite. Was ist die beste Einschätzung?"
+    options:
+      - en: "Material information is shown in an unclear way, which can make the offer a misleading omission"
+        de: "Wesentliche Informationen sind unklar dargestellt, was das Angebot zu einer irreführenden Unterlassung machen kann"
+        correct: true
+      - en: "The offer is fine, because every figure in it is correct and the footnote is part of the document"
+        de: "Das Angebot ist in Ordnung, denn jede Zahl darin stimmt und die Fußnote ist Teil des Dokuments"
+        correct: false
+      - en: "It is only a problem if the customer later cancels and complains about the term or the fee"
+        de: "Es ist nur ein Problem, wenn die Kundschaft später kündigt und sich über Laufzeit oder Gebühr beschwert"
+        correct: false
+      - en: "It is only a problem if the set-up fee is higher than the first monthly payment"
+        de: "Es ist nur ein Problem, wenn die Einrichtungsgebühr höher ist als die erste Monatszahlung"
+        correct: false
+    explanation:
+      en: "The directive treats it as a misleading omission when material information is hidden or given in an unclear or untimely way (Art. 7). Correct figures do not cure a presentation that deceives overall (Art. 6). Whether a particular case breaches the rules is for legal to decide."
+      de: "Die Richtlinie wertet es als irreführende Unterlassung, wenn wesentliche Informationen versteckt oder unklar oder zu spät gegeben werden (Art. 7). Richtige Zahlen heilen keine Darstellung, die insgesamt täuscht (Art. 6). Ob ein konkreter Fall gegen die Regeln verstößt, entscheidet die Rechtsabteilung."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32005L0029
+  - id: sec-p-aggressive
+    level: practitioner
+    difficulty: 1250
+    type: multi
+    stem:
+      en: "Which practices can point to aggressive selling to consumers? Select all that apply."
+      de: "Welche Praktiken können auf aggressiven Verkauf an Verbrauchende hindeuten? Wähle alle zutreffenden aus."
+    options:
+      - en: "Placing disproportionate non-contractual hurdles in the way of a customer who wants to terminate"
+        de: "Unverhältnismäßige außervertragliche Hürden aufstellen, wenn Kundschaft kündigen möchte"
+        correct: true
+      - en: "Threatening an action, such as legal steps, that cannot legally be taken"
+        de: "Mit einer Maßnahme drohen, etwa rechtlichen Schritten, die rechtlich nicht ergriffen werden dürfen"
+        correct: true
+      - en: "Sending a requested quote and one follow-up email a week later"
+        de: "Ein angefordertes Angebot und eine Nachfass-Mail eine Woche später senden"
+        correct: false
+      - en: "Telling a customer truthfully that a promotion ends on a stated date"
+        de: "Der Kundschaft wahrheitsgemäß sagen, dass eine Aktion an einem genannten Datum endet"
+        correct: false
+    explanation:
+      en: "Art. 9 lists, among other factors, onerous or disproportionate non-contractual barriers to ending a contract and threats of action that cannot legally be taken. A requested quote with a single follow-up and a true deadline are ordinary selling."
+      de: "Art. 9 nennt unter anderem unverhältnismäßige außervertragliche Hürden bei der Vertragsbeendigung und Drohungen mit Maßnahmen, die rechtlich nicht ergriffen werden dürfen. Ein angefordertes Angebot mit einmaligem Nachfassen und eine wahre Frist sind normales Verkaufen."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32005L0029
+  - id: sec-p-list
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "A colleague wants to email a purchased list of 5,000 named business contacts. What is the best first step?"
+      de: "Ein Kollege möchte eine gekaufte Liste mit 5.000 namentlich bekannten Geschäftskontakten anschreiben. Was ist der beste erste Schritt?"
+    options:
+      - en: "Ask legal or the data protection contact whether, and on what basis, the list may be used"
+        de: "Recht oder die Datenschutzstelle fragen, ob und auf welcher Grundlage die Liste genutzt werden darf"
+        correct: true
+      - en: "Rely on the vendor's written statement that the list is GDPR-compliant and start the campaign"
+        de: "Sich auf die Aussage des Anbieters verlassen, die Liste sei DSGVO-konform, und die Kampagne starten"
+        correct: false
+      - en: "Send a test mailing to 50 contacts first and continue with the full list if nobody objects"
+        de: "Zuerst eine Testsendung an 50 Kontakte schicken und weitermachen, wenn niemand widerspricht"
+        correct: false
+      - en: "Remove the contacts known to be consumers and mail everyone else on the list at once"
+        de: "Bekannte Verbrauchende entfernen und alle anderen sofort anschreiben"
+        correct: false
+    explanation:
+      en: "Where the data came from and what basis exists for using it must be checked before use. A vendor's claim, a silent test group or a consumer/business split does not replace that check. Legal or the data protection contact decides."
+      de: "Herkunft der Daten und Grundlage für ihre Nutzung müssen vor der Verwendung geprüft werden. Aussage eines Anbieters, stille Testgruppe oder Trennung nach Verbrauchenden und Geschäftskontakten ersetzen diese Prüfung nicht. Recht oder die Datenschutzstelle entscheidet."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+  - id: sec-p-crossteam
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "Two weeks after a contact unsubscribed from a campaign, a rep in another team wants to call that person about a different product. What is right?"
+      de: "Zwei Wochen nachdem sich ein Kontakt von einer Kampagne abgemeldet hat, will ein Vertriebler aus einem anderen Team die Person wegen eines anderen Produkts anrufen. Was ist richtig?"
+    options:
+      - en: "Do not use the data for marketing contact; the objection must apply across teams and products"
+        de: "Die Daten nicht für Werbekontakt nutzen; der Widerspruch muss teams- und produktübergreifend gelten"
+        correct: true
+      - en: "Call, because the unsubscribe only applied to the one campaign that the person received"
+        de: "Anrufen, denn die Abmeldung betraf nur die Kampagne, die versendet wurde"
+        correct: false
+      - en: "Call after the rep's manager has approved it, since managers may override opt-outs"
+        de: "Anrufen, nachdem die Führungskraft zugestimmt hat, da sie Abmeldungen aufheben darf"
+        correct: false
+      - en: "Call, but keep the call short and offer to remove the contact if the person asks for it"
+        de: "Anrufen, aber kurz halten und anbieten, den Kontakt zu löschen, falls er das wünscht"
+        correct: false
+    explanation:
+      en: "After an objection to direct marketing the data may no longer be processed for that purpose (Art. 21(3)). The article does not limit this to one campaign or product, and a manager's approval cannot replace the person's right."
+      de: "Nach einem Widerspruch gegen Direktwerbung dürfen die Daten dafür nicht mehr verarbeitet werden (Art. 21 Abs. 3). Der Artikel beschränkt das nicht auf eine Kampagne oder ein Produkt, und die Zustimmung einer Führungskraft ersetzt das Recht der Person nicht."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+  - id: sec-p-conflict
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "Your cousin runs a firm that your customer might hire as a subcontractor in a deal you lead. What should you do?"
+      de: "Dein Cousin führt eine Firma, die deine Kundschaft in einem von dir geführten Geschäft als Subunternehmen beauftragen könnte. Was tust du?"
+    options:
+      - en: "Disclose the relationship to your manager or compliance before the selection is made"
+        de: "Die Verwandtschaft gegenüber deiner Führungskraft oder Compliance offenlegen, bevor die Auswahl erfolgt"
+        correct: true
+      - en: "Do nothing special, because you will earn no commission on the subcontractor's work here"
+        de: "Nichts Besonderes tun, da du an der Arbeit des Subunternehmens keine Provision erhältst"
+        correct: false
+      - en: "Recommend the firm, but only at a price that you consider fair compared with other firms"
+        de: "Die Firma empfehlen, aber nur zu einem Preis, den du im Vergleich für fair hältst"
+        correct: false
+      - en: "Keep it private, since family relationships are not a business matter"
+        de: "Es privat halten, denn familiäre Beziehungen sind keine geschäftliche Angelegenheit"
+        correct: false
+    explanation:
+      en: "A conflict exists when a personal interest could influence professional judgement, whether or not you earn money from it. Early disclosure lets others decide and protects you; concealment is the real problem."
+      de: "Ein Konflikt besteht, wenn ein persönliches Interesse das berufliche Urteil beeinflussen könnte, unabhängig davon, ob du daran verdienst. Frühe Offenlegung lässt andere entscheiden und schützt dich; das Verschweigen ist das eigentliche Problem."
+    source: https://openstax.org/books/principles-marketing/pages/4-5-ethical-issues-in-b2b-marketing
+  - id: sec-a-pilot
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "During a tender evaluation, a prospect asks for a 12-month free pilot and hints that its team would enjoy an expensive hospitality event. What is the best approach?"
+      de: "Während einer Ausschreibungsbewertung bittet ein Interessent um einen zwölfmonatigen kostenlosen Pilot und deutet an, sein Team würde eine aufwendige Einladung schätzen. Was ist der beste Ansatz?"
+    options:
+      - en: "Treat the pilot as a commercial term on written terms and let compliance decide on the event first"
+        de: "Den Pilot als kommerzielle Bedingung zu schriftlichen Konditionen behandeln und Compliance zuerst über die Einladung entscheiden lassen"
+        correct: true
+      - en: "Approve both quietly now and tell compliance after the tender closes to avoid delays"
+        de: "Beides jetzt still genehmigen und Compliance nach Ende der Ausschreibung informieren, um Verzögerungen zu vermeiden"
+        correct: false
+      - en: "Decline both, because any contact with a prospect during an evaluation is forbidden"
+        de: "Beides ablehnen, denn jeder Kontakt mit Interessenten während einer Bewertung ist verboten"
+        correct: false
+      - en: "Accept the event for your own team, paid personally, so that the company is not involved"
+        de: "Die Einladung für dein Team annehmen und privat bezahlen, damit das Unternehmen nicht beteiligt ist"
+        correct: false
+    explanation:
+      en: "During an evaluation, hospitality carries more risk, so compliance should decide before you reply. Pilot terms are a normal commercial matter if documented. Hidden approvals and private payment avoid oversight, and a blanket ban on contact is neither required nor practical."
+      de: "Während einer Bewertung trägt Bewirtung mehr Risiko, deshalb soll Compliance vor deiner Antwort entscheiden. Pilotbedingungen sind eine normale kommerzielle Frage, wenn sie dokumentiert sind. Heimliche Freigaben und private Bezahlung umgehen die Kontrolle, und ein pauschales Kontaktverbot ist weder gefordert noch praktikabel."
+    source: https://openstax.org/books/principles-marketing/pages/4-5-ethical-issues-in-b2b-marketing
+  - id: sec-a-claim
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "A script for consumers and business customers says \"saves a third of your costs\", but the evidence covers only the best installations. What is the most defensible action?"
+      de: "Ein Skript für Verbrauchende und Geschäftskundschaft sagt „spart ein Drittel Ihrer Kosten“, die Belege decken aber nur die besten Installationen ab. Was ist die vertretbarste Maßnahme?"
+    options:
+      - en: "Reword the claim to what the evidence supports for everyone and have legal review it"
+        de: "Die Aussage für alle auf das begrenzen, was die Belege stützen, und von Recht prüfen lassen"
+        correct: true
+      - en: "Keep the claim and add \"results may vary\" at the end of the document in small print"
+        de: "Die Aussage behalten und am Ende des Dokuments im Kleingedruckten „Ergebnisse können abweichen“ ergänzen"
+        correct: false
+      - en: "Keep the claim, because exaggerated statements are always acceptable in advertising"
+        de: "Die Aussage behalten, denn übertriebene Aussagen sind in der Werbung immer zulässig"
+        correct: false
+      - en: "Keep it for business customers and change it only for consumers, where the directive applies"
+        de: "Sie für Geschäftskundschaft behalten und nur für Verbrauchende ändern, für die die Richtlinie gilt"
+        correct: false
+    explanation:
+      en: "A concrete savings figure is not an obvious exaggeration, and small print does not repair an overall misleading presentation (Art. 6). The directive covers consumers, but other rules can apply to business customers, so one script for both should meet the stricter standard."
+      de: "Eine konkrete Einsparzahl ist keine offensichtliche Übertreibung, und Kleingedrucktes heilt keine insgesamt irreführende Darstellung (Art. 6). Die Richtlinie betrifft Verbrauchende, für Geschäftskundschaft können aber andere Regeln gelten, daher soll ein gemeinsames Skript den strengeren Maßstab erfüllen."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32005L0029
+  - id: sec-a-access
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "A customer asks in writing what personal data your CRM holds about them. A sales manager suggests answering from the account owner's own notes. What is the best response?"
+      de: "Eine Kundin fragt schriftlich, welche personenbezogenen Daten dein CRM über sie enthält. Ein Vertriebsleiter schlägt vor, aus den eigenen Notizen der Kundenbetreuung zu antworten. Was ist die beste Reaktion?"
+    options:
+      - en: "Forward the request at once to the data protection contact and do not answer from notes alone"
+        de: "Die Anfrage sofort an die Datenschutzstelle weiterleiten und nicht allein aus Notizen antworten"
+        correct: true
+      - en: "Reply yourself with a printout of the CRM record, since you know this customer best of all"
+        de: "Selbst mit einem Ausdruck des CRM-Datensatzes antworten, da du die Kundin am besten kennst"
+        correct: false
+      - en: "Wait for a second request, because a first request is often only a test of the company"
+        de: "Auf eine zweite Anfrage warten, denn eine erste ist oft nur ein Test"
+        correct: false
+      - en: "Delete critical remarks about the customer first, so that nothing awkward gets disclosed"
+        de: "Zuerst kritische Bemerkungen über die Kundin löschen, damit nichts Unangenehmes offengelegt wird"
+        correct: false
+    explanation:
+      en: "Access requests belong with the data protection contact (the right of access is Art. 15). Sales notes alone are not a reliable answer, delay is risky and altering records afterwards is itself a serious problem."
+      de: "Auskunftsanfragen gehören zur Datenschutzstelle (das Auskunftsrecht steht in Art. 15). Vertriebsnotizen allein sind keine verlässliche Antwort, Abwarten ist riskant und das nachträgliche Verändern von Aufzeichnungen ist selbst ein ernstes Problem."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+  - id: sec-a-incentive
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "Bonuses are paid on bookings only, and some reps push heavy discounts and unsuitable multi-year deals. Which change reduces ethical risk most?"
+      de: "Boni werden nur auf Abschlüsse gezahlt, und manche Vertriebsleute drängen auf hohe Rabatte und unpassende Mehrjahresverträge. Welche Änderung senkt das ethische Risiko am meisten?"
+    options:
+      - en: "Add quality measures such as retention and complaints and review deals with unusual discounts"
+        de: "Qualitätsmaße wie Kundenbindung und Beschwerden ergänzen und Deals mit ungewöhnlichen Rabatten prüfen"
+        correct: true
+      - en: "Raise the quotas further, so that reps have no time left over for any borderline deals"
+        de: "Die Quoten erhöhen, damit den Vertriebsleuten keine Zeit für Grenzfälle bleibt"
+        correct: false
+      - en: "Have all reps sign an annual ethics statement, and keep the bonus plan itself unchanged"
+        de: "Alle jährlich eine Ethikerklärung unterschreiben lassen und den Bonusplan unverändert lassen"
+        correct: false
+      - en: "Remove all variable pay from the plan so that nobody is tempted by bonuses any more"
+        de: "Jede variable Vergütung streichen, damit niemand mehr durch Boni verführt wird"
+        correct: false
+    explanation:
+      en: "Commission-based pay motivates but can lead to aggressive practices. Balancing bookings with retention and complaint measures and reviewing unusual discounts addresses the cause. A statement alone does not change incentives, and a salary-only plan has its own weakness: little motivation to sell."
+      de: "Provisionsbasierte Vergütung motiviert, kann aber zu aggressiven Praktiken führen. Abschlüsse mit Kennzahlen zu Kundenbindung und Beschwerden auszubalancieren und ungewöhnliche Rabatte zu prüfen, setzt an der Ursache an. Eine Erklärung allein ändert keine Anreize, und ein reines Gehaltsmodell hat eine eigene Schwäche: wenig Anreiz zum Verkaufen."
+    source: https://openstax.org/books/principles-marketing/pages/15-4-management-of-the-sales-force
