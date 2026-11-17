@@ -143,3 +143,9 @@ Format: date — decision — reason — alternatives considered.
 - Decision: onboarding form has no language control; language comes from the route (`/` vs `/de/`) via the header switcher.
 - Reason: Astro i18n routing makes the URL the single source of truth; a second control would conflict.
 - Alternatives: language radio in the form that redirects (redundant).
+
+
+## 2026-11-17 — Learning path lives on the dashboard
+- Decision: no separate path page; the ordered path and next unit are shown on the dashboard.
+- Reason: avoids duplicate views of the same engine output; meets the roadmap acceptance.
+- Alternatives: dedicated /path page (can be added if the dashboard gets crowded).

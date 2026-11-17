@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'preact/hooks';
 import type { Lang } from '../../config/site';
 import { isLevelMastered, markUnitCompleted, recordAnswer, selectMasteryItems, type LearnerState, type Level } from '../../engine';
 import { localizePath, t } from '../../i18n';
@@ -21,6 +21,11 @@ export default function MasteryCheck({ lang, unitId, competency, level, items }:
   const [index, setIndex] = useState(0);
   const [result, setResult] = useState<boolean | null>(null);
 
+  const resultRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (result !== null) resultRef.current?.focus();
+  }, [result]);
+
   useEffect(() => {
     setState(loadState());
     setLoaded(true);
@@ -40,7 +45,7 @@ export default function MasteryCheck({ lang, unitId, competency, level, items }:
 
   if (result !== null) {
     return (
-      <div role="status" class={`rounded-lg border p-5 ${result ? 'border-green-700 bg-green-50' : 'border-amber-600 bg-amber-50'}`}>
+      <div ref={resultRef} tabIndex={-1} role="status" class={`rounded-lg border p-5 ${result ? 'border-green-700 bg-green-50' : 'border-amber-600 bg-amber-50'}`}>
         <p class="mb-3 font-semibold">{result ? t(lang, 'mastery.passed') : t(lang, 'mastery.failed')}</p>
         <a class="inline-block rounded bg-blue-800 px-4 py-2 font-semibold text-white" href={localizePath(lang, '/dashboard')}>
           {t(lang, 'placement.toDashboard')}

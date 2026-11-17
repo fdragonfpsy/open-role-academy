@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-17 — Phase 3: learning path + unit page
+
+**Done**
+- Unit page resources now show type, format, language, minutes, provider (as author), source host, license link and "changes made"; source blocks show author/changes. No iframes (link-only everywhere).
+- `MasteryCheck` result panel takes focus; new keyboard-only e2e `tests-e2e/unit.e2e.mjs` (en + de): skip placement → recommended unit → attribution + AI-draft label → mastery check → ratings updated on dashboard.
+- Learning path stays on the dashboard (no separate page); see DECISIONS.
+
+**Gaps:** mastery result has no link to the next unit; resources lack a real `author` field; embed rendering untested (no open-licensed embed resources yet); e2e checks rating change, not path recomputation (covered by engine tests).
+
+**Next:** Dashboard task (radar/bars, review queue, export/import verification), then accessibility and mobile passes.
+
 ## 2026-11-17 — Phase 3: onboarding + placement verified in browser
 
 **Done**
