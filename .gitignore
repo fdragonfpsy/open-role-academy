@@ -6,3 +6,4 @@ dist/
 .env
 .env.*
 reports/
+dist-auth-test/
