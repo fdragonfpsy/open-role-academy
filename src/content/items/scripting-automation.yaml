@@ -8,17 +8,17 @@ items:
       en: "What is a script?"
       de: "Was ist ein Skript?"
     options:
-      - en: "A text file with a list of commands that an interpreter runs one after another"
+      - en: "A text file with commands that an interpreter runs one after another"
         de: "Eine Textdatei mit einer Liste von Befehlen, die ein Interpreter nacheinander ausführt"
         correct: true
-      - en: "A program that can only be used with a graphical interface"
-        de: "Ein Programm, das sich nur mit einer grafischen Oberfläche verwenden lässt"
+      - en: "A program that can only be used with a graphical interface, with buttons and menus for every action"
+        de: "Ein Programm, das nur über eine grafische Oberfläche mit Schaltflächen und Menüs für jede Aktion nutzbar ist"
         correct: false
-      - en: "A hardware device that repeats tasks"
-        de: "Ein Hardwaregerät, das Aufgaben wiederholt"
+      - en: "A hardware device that repeats tasks, such as a robot arm or a printer with an automatic feeder"
+        de: "Ein Hardwaregerät, das Aufgaben wiederholt, etwa ein Roboterarm oder ein Drucker mit automatischem Einzug"
         correct: false
-      - en: "A password stored for later use"
-        de: "Ein Passwort, das für später gespeichert wird"
+      - en: "A saved password or key that a program uses later, so that the user does not have to enter it again"
+        de: "Ein gespeichertes Passwort oder ein Schlüssel, den ein Programm später nutzt, damit niemand ihn erneut eingeben muss"
         correct: false
     explanation:
       en: "A script saves commands you could type by hand so that they run the same way every time."
@@ -56,17 +56,17 @@ items:
       en: "You received a script that deletes old files. What should you do first?"
       de: "Du hast ein Skript erhalten, das alte Dateien löscht. Was tust du zuerst?"
     options:
-      - en: "Run it on all real data to save time"
+      - en: "Run it on a small test sample or in dry-run mode after reading it"
         de: "Es sofort auf allen echten Daten ausführen, um Zeit zu sparen"
         correct: false
-      - en: "Run it on a small test sample or in dry-run mode after reading it"
-        de: "Es lesen und dann an einer kleinen Testprobe oder im Probelauf ausführen"
+      - en: "Run it on all real data to save time, since the script's author would not have shared a faulty tool"
+        de: "Es mit allen echten Daten ausführen, um Zeit zu sparen, da der Autor kein fehlerhaftes Werkzeug weitergegeben hätte"
         correct: true
-      - en: "Send it to colleagues without reading it"
-        de: "Es an Kolleg:innen weiterleiten, ohne es zu lesen"
+      - en: "Send it to colleagues without reading it, because more people running it will quickly reveal any errors"
+        de: "Es ungelesen an Kolleginnen und Kollegen schicken, weil mehr Ausführende Fehler schnell sichtbar machen"
         correct: false
-      - en: "Add your admin password to it so it runs without prompts"
-        de: "Dein Administratorpasswort eintragen, damit es ohne Nachfrage läuft"
+      - en: "Add your admin password to it so it runs without prompts, which avoids interruptions during the deletion"
+        de: "Dein Admin-Passwort eintragen, damit es ohne Rückfragen läuft und die Löschung nicht unterbrochen wird"
         correct: false
     explanation:
       en: "Read the script and test on a safe sample first; a dry run shows what would happen without changing anything."
@@ -104,17 +104,17 @@ items:
       en: "Why use a parameter instead of writing a server name directly into a script?"
       de: "Warum einen Parameter nutzen, statt einen Servernamen fest ins Skript zu schreiben?"
     options:
-      - en: "Parameters make the script run faster"
+      - en: "The same script can be used for different targets without editing the code"
         de: "Parameter machen das Skript schneller"
         correct: false
-      - en: "The same script can be used for different targets without editing the code"
-        de: "Dasselbe Skript lässt sich für verschiedene Ziele nutzen, ohne den Code zu ändern"
+      - en: "Parameters make the script run faster, because the interpreter can skip reading the fixed values"
+        de: "Parameter machen das Skript schneller, weil der Interpreter die festen Werte nicht einlesen muss"
         correct: true
-      - en: "Parameters remove the need for testing"
-        de: "Parameter machen Tests überflüssig"
+      - en: "Parameters remove the need for testing, since the input is always checked by the scripting language"
+        de: "Parameter machen Tests überflüssig, da die Eingabe stets von der Skriptsprache geprüft wird"
         correct: false
-      - en: "Hard-coded values are not allowed in any language"
-        de: "Fest eingebaute Werte sind in keiner Sprache erlaubt"
+      - en: "Hard-coded values are not allowed in any scripting language, so the script would not start otherwise"
+        de: "Fest eingetragene Werte sind in keiner Skriptsprache erlaubt, sonst würde das Skript nicht starten"
         correct: false
     explanation:
       en: "Parameters keep values outside the code, which makes scripts reusable and reduces editing mistakes."
@@ -179,14 +179,14 @@ items:
       - en: "A history of changes and the ability to return to a working version"
         de: "Ein Änderungsverlauf und die Möglichkeit, zu einer funktionierenden Version zurückzukehren"
         correct: true
-      - en: "The scripts no longer need testing"
-        de: "Die Skripte müssen nicht mehr getestet werden"
+      - en: "The scripts no longer need testing, because the system checks every saved version for errors"
+        de: "Die Skripte müssen nicht mehr getestet werden, weil das System jede gespeicherte Version auf Fehler prüft"
         correct: false
-      - en: "Passwords in scripts become safe"
-        de: "Passwörter in Skripten werden dadurch sicher"
+      - en: "Passwords written in scripts become safe, because the repository is only readable for the team"
+        de: "Passwörter in Skripten werden sicher, weil das Repository nur für das Team lesbar ist"
         correct: false
-      - en: "The scripts run automatically at night"
-        de: "Die Skripte laufen automatisch nachts"
+      - en: "The scripts run automatically every night, because the repository schedules each stored script itself"
+        de: "Die Skripte laufen jede Nacht automatisch, weil das Repository jedes gespeicherte Skript selbst einplant"
         correct: false
     explanation:
       en: "Version control records who changed what and why and lets you roll back; it does not replace testing or secure secrets."
@@ -224,17 +224,17 @@ items:
       en: "What is the main purpose of having a second person review a script change before it goes live?"
       de: "Was ist der Hauptzweck, eine Skriptänderung vor dem Produktivgang von einer zweiten Person prüfen zu lassen?"
     options:
-      - en: "To spread blame if something goes wrong"
+      - en: "To catch mistakes and unintended effects that the author overlooked"
         de: "Um die Schuld zu verteilen, falls etwas schiefgeht"
         correct: false
-      - en: "To catch mistakes and unintended effects that the author overlooked"
-        de: "Um Fehler und unbeabsichtigte Wirkungen zu finden, die der Autor oder die Autorin übersehen hat"
+      - en: "To spread the blame between two people if something goes wrong, so that nobody is held solely responsible"
+        de: "Um die Schuld auf zwei Personen zu verteilen, falls etwas schiefgeht, damit niemand allein verantwortlich ist"
         correct: true
-      - en: "To make the script run faster"
-        de: "Um das Skript schneller zu machen"
+      - en: "To make the script run faster, since a second person usually finds shorter ways to write the same logic"
+        de: "Um das Skript zu beschleunigen, da eine zweite Person meist kürzere Wege findet, dieselbe Logik zu schreiben"
         correct: false
-      - en: "To avoid writing documentation"
-        de: "Um keine Dokumentation schreiben zu müssen"
+      - en: "To avoid writing documentation, since a reviewer who understood the code can explain it to others later"
+        de: "Um auf Dokumentation zu verzichten, da eine prüfende Person, die den Code verstanden hat, ihn später erklären kann"
         correct: false
     explanation:
       en: "A fresh pair of eyes finds missing error handling, wrong assumptions and risky side effects before they reach production."
@@ -272,17 +272,17 @@ items:
       en: "A scheduled script written by a colleague who left still runs nightly, but nobody knows what depends on it. What is the best approach?"
       de: "Ein geplantes Skript einer ausgeschiedenen Kollegin läuft weiter jede Nacht, aber niemand weiß, was davon abhängt. Was ist der beste Ansatz?"
     options:
-      - en: "Delete it immediately to remove the risk"
+      - en: "Assign an owner, document purpose and permissions, then keep, fix or retire it deliberately"
         de: "Es sofort löschen, um das Risiko zu beseitigen"
         correct: false
-      - en: "Assign an owner, document purpose and permissions, then keep, fix or retire it deliberately"
-        de: "Eine verantwortliche Person benennen, Zweck und Rechte dokumentieren und es dann bewusst behalten, reparieren oder abschalten"
+      - en: "Delete it immediately to remove the risk, since an unowned script is more dangerous than any outage"
+        de: "Sofort löschen, um das Risiko zu beseitigen, da ein Skript ohne Verantwortliche gefährlicher ist als jeder Ausfall"
         correct: true
-      - en: "Leave it unchanged forever because it works"
-        de: "Es für immer unverändert lassen, weil es funktioniert"
+      - en: "Leave it unchanged forever because it works, and touch it only when it eventually stops running by itself"
+        de: "Für immer unverändert lassen, weil es funktioniert, und erst eingreifen, wenn es von selbst nicht mehr läuft"
         correct: false
-      - en: "Give its account more rights so it cannot fail"
-        de: "Seinem Konto mehr Rechte geben, damit es nicht scheitern kann"
+      - en: "Give its account more rights so that it cannot fail because of missing permissions in the future"
+        de: "Dem zugehörigen Konto mehr Rechte geben, damit es künftig nicht an fehlenden Berechtigungen scheitert"
         correct: false
     explanation:
       en: "Orphaned automation needs an owner and documentation; then you can decide to keep, repair or retire it, including its account and schedule."

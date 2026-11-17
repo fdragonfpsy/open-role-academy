@@ -56,17 +56,17 @@ items:
       en: "You cannot solve a ticket today because a spare part is missing. What should you do?"
       de: "Du kannst ein Ticket heute nicht lösen, weil ein Ersatzteil fehlt. Was solltest du tun?"
     options:
-      - en: "Tell the user the reason and the expected date, offer a workaround if possible, and note it in the ticket"
-        de: "Dem Nutzer Grund und voraussichtlichen Termin mitteilen, wenn möglich einen Workaround anbieten und alles im Ticket vermerken"
+      - en: "Tell the user the reason and expected date, offer a workaround if possible, and note it in the ticket"
+        de: "Der Person den Grund und den voraussichtlichen Termin nennen, wenn möglich einen Workaround anbieten und es im Ticket vermerken"
         correct: true
-      - en: "Say nothing until the part arrives"
-        de: "Nichts sagen, bis das Teil da ist"
+      - en: "Say nothing until the part arrives, so that the user is not disturbed by news that may change again"
+        de: "Nichts sagen, bis das Teil eintrifft, damit die Person nicht durch Neuigkeiten gestört wird, die sich wieder ändern können"
         correct: false
-      - en: "Close the ticket and ask the user to open a new one later"
-        de: "Das Ticket schließen und den Nutzer bitten, später ein neues zu öffnen"
+      - en: "Close the ticket and ask the user to open a new one when the part has arrived and work can continue"
+        de: "Das Ticket schließen und die Person bitten, ein neues zu öffnen, sobald das Teil da ist und weitergearbeitet werden kann"
         correct: false
-      - en: "Set the ticket to \"solved\" so the SLA is met"
-        de: "Das Ticket auf „gelöst“ setzen, damit das SLA eingehalten wird"
+      - en: "Set the ticket to \"solved\" so that the SLA is met, and reopen it once the missing part is delivered"
+        de: "Das Ticket auf „gelöst“ setzen, damit das SLA erfüllt ist, und es wieder öffnen, sobald das fehlende Teil geliefert wurde"
         correct: false
     explanation:
       en: "Users can live with delays if they know why and when. Proactive updates and workarounds reduce frustration and follow-up calls; closing or faking the status hides the real situation."
@@ -80,17 +80,17 @@ items:
       en: "When is the right moment to close an incident ticket?"
       de: "Wann ist der richtige Zeitpunkt, ein Incident-Ticket zu schließen?"
     options:
-      - en: "When the service works again, the user has confirmed it (or a defined period has passed) and the resolution is documented"
-        de: "Wenn der Service wieder funktioniert, der Nutzer das bestätigt hat (oder eine festgelegte Frist verstrichen ist) und die Lösung dokumentiert ist"
+      - en: "When the service works again, the user has confirmed it (or a set period has passed) and the fix is documented"
+        de: "Wenn der Service wieder funktioniert, die Person es bestätigt hat (oder eine festgelegte Frist verstrichen ist) und die Lösung dokumentiert ist"
         correct: true
-      - en: "As soon as you have sent the first reply"
-        de: "Sobald du die erste Antwort geschickt hast"
+      - en: "As soon as you have sent your first reply, because the user now knows that the ticket has been seen"
+        de: "Sobald du die erste Antwort gesendet hast, weil die Person nun weiß, dass das Ticket gesehen wurde"
         correct: false
-      - en: "When the ticket is older than one week"
-        de: "Wenn das Ticket älter als eine Woche ist"
+      - en: "When the ticket is older than a week, because old tickets distort the statistics of the whole team"
+        de: "Wenn das Ticket älter als eine Woche ist, weil alte Tickets die Statistik des gesamten Teams verzerren"
         correct: false
-      - en: "When you think the problem might be solved"
-        de: "Wenn du glaubst, dass das Problem vielleicht gelöst ist"
+      - en: "When you believe that the problem might be solved, because the user can always open a new ticket later"
+        de: "Wenn du glaubst, dass das Problem gelöst sein könnte, weil die Person später jederzeit ein neues Ticket öffnen kann"
         correct: false
     explanation:
       en: "A clean closure confirms that service is restored and records what fixed it. The documented resolution helps colleagues with similar incidents later."
@@ -105,16 +105,16 @@ items:
       de: "Du arbeitest seit 30 Minuten ohne Fortschritt an einer Störung; sie braucht Datenbankwissen, und die SLA-Lösungszeit ist gefährdet. Was tust du?"
     options:
       - en: "Escalate to the database team with a complete ticket (symptoms, steps tried, impact) and inform the user"
-        de: "An das Datenbankteam eskalieren – mit vollständigem Ticket (Symptome, bisherige Schritte, Auswirkung) – und den Nutzer informieren"
+        de: "Mit einem vollständigen Ticket (Symptome, bisherige Schritte, Auswirkung) an das Datenbankteam eskalieren und die Person informieren"
         correct: true
-      - en: "Keep trying alone so nobody notices"
-        de: "Allein weiterprobieren, damit es niemand merkt"
+      - en: "Keep trying alone for the rest of the day, so that the team sees that the first-line staff can solve things"
+        de: "Den Rest des Tages allein weiterprobieren, damit das Team sieht, dass der First Level Dinge lösen kann"
         correct: false
-      - en: "Forward the ticket without any notes"
-        de: "Das Ticket ohne Notizen weiterleiten"
+      - en: "Forward the ticket to the database team right away without notes, since the specialists will ask what they need"
+        de: "Das Ticket sofort ohne Notizen an das Datenbankteam weiterleiten, da die Fachleute nachfragen, was sie brauchen"
         correct: false
-      - en: "Ask the user to contact the database team directly"
-        de: "Den Nutzer bitten, sich direkt an das Datenbankteam zu wenden"
+      - en: "Ask the user to contact the database team directly, since they can describe the symptoms best themselves"
+        de: "Die Person bitten, das Datenbankteam direkt zu kontaktieren, da sie die Symptome selbst am besten beschreiben kann"
         correct: false
     explanation:
       en: "Timely escalation with complete information is part of good incident handling. It prevents SLA breaches and avoids that the next team starts from zero."
@@ -129,16 +129,16 @@ items:
       de: "Innerhalb von zehn Minuten melden 25 Nutzende, dass sie sich nicht mit dem VPN verbinden können. Wie sollte der Service Desk die Tickets behandeln?"
     options:
       - en: "Create one main incident, link the user tickets to it and inform all affected users centrally"
-        de: "Einen Haupt-Incident anlegen, die Tickets der Nutzenden damit verknüpfen und alle Betroffenen zentral informieren"
+        de: "Einen Hauptincident anlegen, die Nutzertickets damit verknüpfen und alle Betroffenen zentral informieren"
         correct: true
-      - en: "Work on all 25 tickets separately in parallel"
-        de: "Alle 25 Tickets getrennt und parallel bearbeiten"
+      - en: "Work on all 25 tickets separately and in parallel, so that every user receives an individual answer"
+        de: "Alle 25 Tickets getrennt und parallel bearbeiten, damit jede Person eine individuelle Antwort erhält"
         correct: false
-      - en: "Delete the duplicate tickets without telling the users"
-        de: "Die doppelten Tickets löschen, ohne die Nutzenden zu informieren"
+      - en: "Delete the duplicate tickets without telling the users, so that the queue and the statistics stay clean"
+        de: "Die doppelten Tickets löschen, ohne die Nutzenden zu informieren, damit Warteschlange und Statistik sauber bleiben"
         correct: false
-      - en: "Wait until the users stop calling"
-        de: "Warten, bis die Nutzenden aufhören anzurufen"
+      - en: "Wait until the calls stop and handle the VPN tickets afterwards, since a mass fault usually fixes itself"
+        de: "Abwarten, bis die Anrufe aufhören, und die VPN-Tickets danach bearbeiten, da sich ein Massenfehler meist von selbst löst"
         correct: false
     explanation:
       en: "Linking related tickets to one main incident focuses the technical work, keeps communication consistent and still lets every user receive the resolution."
@@ -153,16 +153,16 @@ items:
       de: "Dasselbe Druckertreiber-Problem wird immer wieder von verschiedenen Kolleginnen und Kollegen gelöst, jedes Mal von vorn. Was hilft am meisten?"
     options:
       - en: "Write a short knowledge-base article with symptoms and solution and link it in future tickets"
-        de: "Einen kurzen Wissensdatenbank-Artikel mit Symptomen und Lösung schreiben und in künftigen Tickets verlinken"
+        de: "Einen kurzen Wissensartikel mit Symptomen und Lösung schreiben und in künftigen Tickets verlinken"
         correct: true
-      - en: "Rely on the most experienced colleague remembering it"
-        de: "Darauf vertrauen, dass sich die erfahrenste Kollegin daran erinnert"
+      - en: "Rely on the most experienced colleague, who remembers the fix and can pass it on whenever it is needed"
+        de: "Sich auf die erfahrenste Kollegin verlassen, die die Lösung kennt und sie bei Bedarf weitergeben kann"
         correct: false
-      - en: "Send an e-mail to the team once"
-        de: "Einmal eine E-Mail ans Team schicken"
+      - en: "Send an e-mail with the fix to the whole team once, so that everybody has it in their own mailbox"
+        de: "Einmalig eine E-Mail mit der Lösung an das ganze Team senden, damit alle sie im eigenen Postfach haben"
         correct: false
-      - en: "Stop supporting printers"
-        de: "Drucker nicht mehr unterstützen"
+      - en: "Ask the vendor to change the driver and stop supporting this printer model until the update is released"
+        de: "Den Hersteller bitten, den Treiber zu ändern, und dieses Druckermodell bis zum Update nicht mehr unterstützen"
         correct: false
     explanation:
       en: "A knowledge base stores reusable solutions so the whole team — and sometimes users via self-service — can solve known issues quickly and consistently."
@@ -177,16 +177,16 @@ items:
       de: "Dieselbe Störung tritt jeden Montagmorgen auf und wird immer durch einen Neustart behoben. Was ist der professionelle nächste Schritt?"
     options:
       - en: "Open a problem record to analyse the root cause, while continuing to restore service with the workaround"
-        de: "Einen Problem-Datensatz zur Ursachenanalyse anlegen und den Service bis dahin weiter mit dem Workaround wiederherstellen"
+        de: "Einen Problem-Datensatz zur Ursachenanalyse anlegen und den Service weiterhin mit dem Workaround wiederherstellen"
         correct: true
-      - en: "Keep restarting every Monday — it works"
-        de: "Weiter jeden Montag neu starten – es funktioniert ja"
+      - en: "Keep restarting every Monday, since the restart works reliably and a deeper analysis would cost more time"
+        de: "Jeden Montag weiter neu starten, da der Neustart zuverlässig funktioniert und eine tiefere Analyse mehr Zeit kostet"
         correct: false
-      - en: "Schedule a permanent daily restart without telling anyone"
-        de: "Ohne Absprache einen dauerhaften täglichen Neustart einplanen"
+      - en: "Schedule an automatic restart every night and do not mention it, so that the incident never appears again"
+        de: "Einen automatischen nächtlichen Neustart einrichten und nichts davon erwähnen, damit der Incident nie wieder auftritt"
         correct: false
-      - en: "Ask users not to work on Mondays"
-        de: "Die Nutzenden bitten, montags nicht zu arbeiten"
+      - en: "Ask users to wait for the system to warm up on Monday mornings, because that is how it has always behaved"
+        de: "Die Nutzenden bitten, montags morgens zu warten, bis das System warmgelaufen ist, weil es sich schon immer so verhält"
         correct: false
     explanation:
       en: "Recurring incidents point to an underlying problem. Root cause analysis aims to remove the cause, while the workaround limits the impact in the meantime."
@@ -200,17 +200,17 @@ items:
       en: "Your team uses the \"five whys\" for root cause analysis. Which statement is correct?"
       de: "Dein Team nutzt die „5-Why-Methode“ zur Ursachenanalyse. Welche Aussage ist richtig?"
     options:
-      - en: "It is a simple iterative questioning technique; critics note that it can stop at symptoms, so complex cases may need more structured methods"
-        de: "Sie ist eine einfache iterative Fragetechnik; Kritiker merken an, dass sie bei Symptomen stehen bleiben kann – komplexe Fälle brauchen daher eventuell strukturiertere Methoden"
+      - en: "It is a simple iterative questioning technique; it can stop at symptoms, so complex cases may need more structured methods"
+        de: "Es ist eine einfache iterative Fragetechnik; sie kann bei Symptomen stehen bleiben, daher brauchen komplexe Fälle ggf. strukturiertere Methoden"
         correct: true
-      - en: "Exactly five questions always find the single true cause"
-        de: "Genau fünf Fragen finden immer die eine wahre Ursache"
+      - en: "Exactly five questions always find the single true cause, because five steps cover every chain of causes"
+        de: "Genau fünf Fragen finden immer die eine wahre Ursache, weil fünf Schritte jede Ursachenkette abdecken"
         correct: false
-      - en: "It is used to assign blame to a person"
-        de: "Sie dient dazu, einer Person die Schuld zuzuweisen"
+      - en: "It is used mainly to find out which person made the error, so that the right colleague can be retrained"
+        de: "Es dient vor allem dazu, herauszufinden, welche Person den Fehler gemacht hat, damit sie nachgeschult werden kann"
         correct: false
-      - en: "It replaces the need to collect any data"
-        de: "Sie macht das Sammeln von Daten überflüssig"
+      - en: "It replaces the need to collect data, because the answers of the team to each question are accepted as facts"
+        de: "Es ersetzt die Datensammlung, weil die Antworten des Teams auf jede Frage als Tatsachen akzeptiert werden"
         correct: false
     explanation:
       en: "The five whys repeat \"why?\" to trace a problem back to a cause. Its depth is arbitrary and it may miss multiple causes, so use it with data and, for complex incidents, with more structured analysis."
@@ -249,16 +249,16 @@ items:
       de: "Die Ticketkategorien in deinem Tool sind auf 140 Optionen angewachsen, und in 40 % der Fälle wählen die Bearbeitenden „Sonstiges“. Was ist die beste Lösung?"
     options:
       - en: "Redesign a small, clear category set based on what reports and routing actually need, and review it regularly"
-        de: "Ein kleines, klares Kategorienset entwerfen, das sich daran orientiert, was Berichte und Zuweisung wirklich brauchen, und es regelmäßig überprüfen"
+        de: "Ein kleines, klares Kategorieset entwerfen, das sich an Bedarf von Reporting und Routing orientiert, und es regelmäßig überprüfen"
         correct: true
-      - en: "Add 60 more categories so every case fits"
-        de: "60 weitere Kategorien ergänzen, damit jeder Fall passt"
+      - en: "Add 60 more categories, so that every kind of case fits and fewer agents need to choose \"Other\""
+        de: "60 weitere Kategorien hinzufügen, damit jeder Fall passt und weniger Servicekräfte „Sonstiges“ wählen müssen"
         correct: false
-      - en: "Remove all categories"
-        de: "Alle Kategorien entfernen"
+      - en: "Remove categories altogether and rely on free-text descriptions that agents write for each single ticket"
+        de: "Kategorien ganz abschaffen und sich auf Freitextbeschreibungen verlassen, die Servicekräfte für jedes Ticket schreiben"
         correct: false
-      - en: "Forbid the use of \"Other\" without changing anything else"
-        de: "„Sonstiges“ verbieten, ohne sonst etwas zu ändern"
+      - en: "Forbid the use of \"Other\" and require a specific category, while keeping the long list of 140 as it is"
+        de: "Die Nutzung von „Sonstiges“ verbieten und eine konkrete Kategorie verlangen, die lange Liste mit 140 aber beibehalten"
         correct: false
     explanation:
       en: "Categories exist to route tickets and to find patterns. Too many options lead to random choices and useless data; a small, purposeful set with regular review gives reliable reports."
@@ -272,17 +272,17 @@ items:
       en: "The ticket backlog has doubled in two months. What should you analyse first?"
       de: "Der Ticket-Rückstand hat sich in zwei Monaten verdoppelt. Was solltest du zuerst analysieren?"
     options:
-      - en: "Incoming versus resolved tickets by category and team, to find whether demand rose or capacity fell, and which recurring issues drive it"
-        de: "Eingehende gegenüber gelösten Tickets nach Kategorie und Team – um zu sehen, ob die Nachfrage gestiegen oder die Kapazität gesunken ist und welche wiederkehrenden Themen treiben"
+      - en: "Compare incoming and resolved tickets by category and team to see whether demand rose or capacity fell"
+        de: "Eingehende und gelöste Tickets nach Kategorie und Team vergleichen, um zu sehen, ob die Nachfrage stieg oder die Kapazität sank"
         correct: true
-      - en: "Which agent is the slowest, to discipline them"
-        de: "Wer am langsamsten arbeitet, um die Person abzumahnen"
+      - en: "Which agent is the slowest, so that the team lead can discuss performance with that person first"
+        de: "Welche Servicekraft am langsamsten ist, damit die Teamleitung zuerst mit ihr über die Leistung sprechen kann"
         correct: false
-      - en: "Nothing — close all tickets older than 30 days"
-        de: "Nichts – alle Tickets schließen, die älter als 30 Tage sind"
+      - en: "Which tickets are older than 30 days, because closing them quickly reduces the backlog most efficiently"
+        de: "Welche Tickets älter als 30 Tage sind, weil deren schnelles Schließen den Rückstau am effizientesten abbaut"
         correct: false
-      - en: "Only the oldest single ticket"
-        de: "Nur das älteste einzelne Ticket"
+      - en: "Only the oldest single ticket, because it shows best why the whole backlog has built up so far"
+        de: "Nur das älteste einzelne Ticket, weil es am besten zeigt, warum der gesamte Rückstau entstanden ist"
         correct: false
     explanation:
       en: "A growing backlog is a flow problem. Comparing inflow and outflow by category shows whether to reduce demand (e.g. fix recurring causes, self-service) or add capacity. Mass-closing tickets hides the problem."

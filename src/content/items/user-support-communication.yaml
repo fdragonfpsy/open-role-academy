@@ -32,17 +32,17 @@ items:
       en: "Which instruction is best written in plain language for a non-technical user?"
       de: "Welche Anweisung ist für Nutzende ohne technischen Hintergrund am besten in einfacher Sprache geschrieben?"
     options:
-      - en: "\"1. Click the Wi-Fi symbol at the bottom right. 2. Choose the network \"Office\". 3. Type your usual password.\""
-        de: "„1. Klicke unten rechts auf das WLAN-Symbol. 2. Wähle das Netzwerk „Office“. 3. Gib dein gewohntes Passwort ein.“"
+      - en: "\"1. Click the Wi-Fi symbol at the bottom right. 2. Choose \"Office\". 3. Type your usual password.\""
+        de: "„1. Klicke unten rechts auf das WLAN-Symbol. 2. Wähle „Office“. 3. Gib dein gewohntes Passwort ein.“"
         correct: true
-      - en: "\"Re-authenticate against the wireless infrastructure using your domain credentials.\""
-        de: "„Authentifiziere dich erneut an der WLAN-Infrastruktur mit deinen Domänenanmeldedaten.“"
+      - en: "\"Re-authenticate against the wireless infrastructure using your domain credentials and the corporate certificate.\""
+        de: "„Authentifiziere dich erneut an der WLAN-Infrastruktur mit deinen Domänenanmeldedaten und dem Unternehmenszertifikat.“"
         correct: false
-      - en: "\"You should have connected to the right network in the first place.\""
-        de: "„Du hättest dich von Anfang an mit dem richtigen Netzwerk verbinden sollen.“"
+      - en: "\"Wi-Fi problems usually come from choosing the wrong network, so please check the network name more carefully next time.\""
+        de: "„WLAN-Probleme entstehen meist durch die Wahl des falschen Netzwerks, also achte beim nächsten Mal genauer auf den Netzwerknamen.“"
         correct: false
-      - en: "\"Just do the usual Wi-Fi thing.\""
-        de: "„Mach einfach das übliche WLAN-Ding.“"
+      - en: "\"Open the network settings, look for the usual Wi-Fi option and enter whatever the company password is these days.\""
+        de: "„Öffne die Netzwerkeinstellungen, suche die übliche WLAN-Option und gib das Firmenpasswort ein, das gerade gilt.“"
         correct: false
     explanation:
       en: "Plain language uses the user's words, one action per numbered step, and no blame. The jargon version is hard to follow, the blaming version offers no help, and the vague version cannot be acted on."
@@ -81,16 +81,16 @@ items:
       de: "Eine Nutzerin schildert ein langes, verworrenes Problem. Was ist der hilfreichste nächste Schritt, bevor du mit der Arbeit beginnst?"
     options:
       - en: "Restate the problem in your own words and ask whether you understood it correctly"
-        de: "Das Problem mit eigenen Worten wiedergeben und fragen, ob du es richtig verstanden hast"
+        de: "Das Problem mit eigenen Worten wiedergeben und nachfragen, ob du es richtig verstanden hast"
         correct: true
-      - en: "Start fixing the first thing you thought of while the user is still talking"
-        de: "Sofort mit der ersten Idee loslegen, während die Person noch spricht"
+      - en: "Start fixing the first thing that comes to mind while the user keeps explaining, to save everyone's time"
+        de: "Sofort mit dem beginnen, was dir als Erstes einfällt, während die Person weiter erklärt, um allen Zeit zu sparen"
         correct: false
-      - en: "Tell the user to write it all again in a shorter form"
-        de: "Der Person sagen, sie solle alles kürzer noch einmal aufschreiben"
+      - en: "Ask the user to write everything down again in a shorter form and to send it as a new ticket"
+        de: "Die Person bitten, alles in kürzerer Form noch einmal aufzuschreiben und als neues Ticket zu senden"
         correct: false
-      - en: "Close the ticket as unclear"
-        de: "Das Ticket als unklar schließen"
+      - en: "Record the user's wording unchanged in the ticket and pass it on to a specialist team without asking"
+        de: "Den Wortlaut der Person unverändert im Ticket festhalten und ohne Nachfrage an ein Fachteam weitergeben"
         correct: false
     explanation:
       en: "Restating is a core technique of active listening. It shows that you listened and lets the user correct misunderstandings early, before time is spent on the wrong problem."
@@ -105,16 +105,16 @@ items:
       de: "Was solltest du tun, bevor du dich per Fernwartungssoftware mit dem Computer einer Nutzerin verbindest?"
     options:
       - en: "Ask for consent, say what you will do and ask the user to close private content"
-        de: "Um Zustimmung bitten, sagen, was du tun wirst, und darum bitten, private Inhalte zu schließen"
+        de: "Um Zustimmung bitten, sagen, was du tun wirst, und die Person bitten, private Inhalte zu schließen"
         correct: true
-      - en: "Connect right away to save time, since the user opened the ticket"
-        de: "Sofort verbinden, um Zeit zu sparen, schließlich hat die Person das Ticket eröffnet"
+      - en: "Connect right away to save time, since opening the ticket already counts as permission for every action"
+        de: "Sofort verbinden, um Zeit zu sparen, da das Öffnen des Tickets bereits als Erlaubnis für jede Handlung gilt"
         correct: false
-      - en: "Connect silently and explain afterwards"
-        de: "Ohne Ankündigung verbinden und hinterher erklären"
+      - en: "Connect silently while the user is away from the desk, so that nothing interrupts their work or yours"
+        de: "Still verbinden, während die Person nicht am Platz ist, damit weder ihre noch deine Arbeit unterbrochen wird"
         correct: false
-      - en: "Ask the user to share their password so you can sign in as them"
-        de: "Die Person bitten, dir ihr Passwort zu nennen, damit du dich als sie anmelden kannst"
+      - en: "Ask the user to share their password so you can sign in as them and test things exactly as they see them"
+        de: "Die Person um ihr Passwort bitten, um sich als sie anzumelden und Dinge genau so zu testen, wie sie sie sieht"
         correct: false
     explanation:
       en: "Remote access shows you everything on the screen, so it depends on trust. Ask permission, announce what you will do and give the user the chance to close confidential content. Never ask for or use a user's password."
@@ -128,17 +128,17 @@ items:
       en: "You guide a user by phone through a settings dialog. Which approach works best?"
       de: "Du leitest eine Nutzerin am Telefon durch einen Einstellungsdialog. Welches Vorgehen funktioniert am besten?"
     options:
-      - en: "Give one step at a time, name things as they appear on the user's screen and confirm the result before the next step"
-        de: "Einen Schritt nach dem anderen geben, Dinge so benennen, wie sie auf dem Bildschirm der Person erscheinen, und das Ergebnis vor dem nächsten Schritt bestätigen lassen"
+      - en: "Give one step at a time, name things as they appear on the user's screen and confirm each result"
+        de: "Einen Schritt nach dem anderen geben, Dinge so benennen, wie sie auf dem Bildschirm erscheinen, und jedes Ergebnis bestätigen lassen"
         correct: true
-      - en: "Read out all ten steps at once so the call is short"
-        de: "Alle zehn Schritte auf einmal vorlesen, damit das Gespräch kurz bleibt"
+      - en: "Read out all ten steps at once so that the call is short and the user can work through them alone"
+        de: "Alle zehn Schritte auf einmal vorlesen, damit der Anruf kurz bleibt und die Person sie allein abarbeiten kann"
         correct: false
-      - en: "Use the internal names of the menus, since they are the correct ones"
-        de: "Die internen Bezeichnungen der Menüs verwenden, da sie die richtigen sind"
+      - en: "Use the internal names of the menus, since these are the correct ones and avoid any later confusion"
+        de: "Die internen Menübezeichnungen verwenden, da sie die korrekten sind und späteren Verwechslungen vorbeugen"
         correct: false
-      - en: "Stay silent while the user searches, so as not to distract them"
-        de: "Schweigen, während die Person sucht, um sie nicht abzulenken"
+      - en: "Stay silent while the user searches, so as not to distract them, and wait until they say they are done"
+        de: "Schweigen, während die Person sucht, um sie nicht abzulenken, und warten, bis sie sagt, dass sie fertig ist"
         correct: false
     explanation:
       en: "One step at a time with confirmation keeps you and the user looking at the same thing and catches misunderstandings immediately. Using the words on the user's screen avoids confusion."
@@ -176,17 +176,17 @@ items:
       en: "A user is shouting that IT is useless because the VPN failed before an important meeting. What is the best first response?"
       de: "Eine Nutzerin schimpft, die IT sei nutzlos, weil das VPN vor einem wichtigen Termin ausgefallen ist. Was ist die beste erste Reaktion?"
     options:
-      - en: "Let them finish, acknowledge the impact (\"that is stressful before a meeting\") and then say what you will do now"
-        de: "Sie ausreden lassen, die Auswirkung anerkennen („Das ist vor einem Termin stressig“) und dann sagen, was du jetzt tust"
+      - en: "Let them finish, acknowledge the impact (\"stressful before a meeting\") and say what you will do now"
+        de: "Sie ausreden lassen, die Auswirkung anerkennen („stressig vor einem Termin“) und sagen, was du jetzt tust"
         correct: true
       - en: "Explain that the VPN is not your team's responsibility and the user should have reported it earlier"
-        de: "Erklären, dass das VPN nicht in der Verantwortung deines Teams liegt und sie es früher hätte melden sollen"
+        de: "Erklären, dass das VPN nicht in der Verantwortung deines Teams liegt und die Person es früher hätte melden sollen"
         correct: false
-      - en: "Raise your voice to match theirs so you are taken seriously"
-        de: "Lauter werden, um ernst genommen zu werden"
+      - en: "Match their tone and volume firmly, so that they realise you take the matter as seriously as they do"
+        de: "Ihren Ton und ihre Lautstärke bestimmt aufgreifen, damit die Person merkt, dass du die Sache genauso ernst nimmst"
         correct: false
-      - en: "End the call and ask the user to call back when calm"
-        de: "Das Gespräch beenden und bitten, sich wieder zu melden, wenn sie ruhiger ist"
+      - en: "End the call politely and ask the user to call back when calm, since nothing can be solved in this mood"
+        de: "Das Gespräch höflich beenden und bitten, später ruhiger anzurufen, da sich in dieser Stimmung nichts lösen lässt"
         correct: false
     explanation:
       en: "Upset people usually react to the situation, not to you. Listening, acknowledging the effect and moving to a concrete action de-escalates. Arguing about blame or matching the volume escalates; ending the call is only appropriate if the person becomes abusive and your policy says so."
@@ -224,17 +224,17 @@ items:
       en: "Email is down company-wide and the cause is still unknown. Which communication approach is best?"
       de: "Die E-Mail ist unternehmensweit ausgefallen und die Ursache ist noch unbekannt. Welcher Kommunikationsansatz ist am besten?"
     options:
-      - en: "Send a first message early (\"we are aware and investigating\"), announce the time of the next update and keep to it even without news"
-        de: "Früh eine erste Nachricht senden („Wir kennen das Problem und untersuchen es“), den Zeitpunkt des nächsten Updates nennen und ihn auch ohne Neuigkeiten einhalten"
+      - en: "Send an early message (\"we are aware and investigating\"), announce the next update time and keep to it"
+        de: "Früh eine Meldung senden („wir wissen Bescheid und untersuchen“), den Zeitpunkt des nächsten Updates nennen und ihn einhalten"
         correct: true
-      - en: "Wait until the cause is confirmed so you only share facts"
-        de: "Warten, bis die Ursache bestätigt ist, damit nur Fakten mitgeteilt werden"
+      - en: "Wait until the cause is confirmed so that you only ever share facts and avoid having to correct a message later"
+        de: "Warten, bis die Ursache bestätigt ist, damit nur Fakten weitergegeben werden und keine Meldung später korrigiert werden muss"
         correct: false
-      - en: "Name the probable culprit so people know who to blame"
-        de: "Den wahrscheinlichen Verursacher nennen, damit klar ist, wer schuld ist"
+      - en: "Name the probable culprit early so that people know where to direct their questions and who should fix it"
+        de: "Den wahrscheinlichen Verursacher früh nennen, damit klar ist, wohin sich Fragen richten und wer es beheben soll"
         correct: false
-      - en: "Let each service desk agent answer in their own words"
-        de: "Jede Service-Desk-Mitarbeitende in eigenen Worten antworten lassen"
+      - en: "Let each service desk agent answer in their own words, so that every user gets a personal and flexible reply"
+        de: "Jede Servicekraft in eigenen Worten antworten lassen, damit alle Nutzenden eine persönliche und flexible Antwort erhalten"
         correct: false
     explanation:
       en: "An early acknowledgement and a fixed update cadence reduce the flood of individual enquiries. Waiting for certainty leaves users uninformed, speculation about causes or blame can be wrong and harmful, and a single source of truth keeps answers consistent."
@@ -249,16 +249,16 @@ items:
       de: "Welche Praxis hält einen Wissensartikel langfristig nützlich?"
     options:
       - en: "Assign an owner and a review date, and write it from the user's symptom and search words"
-        de: "Eine verantwortliche Person und ein Prüfdatum festlegen und ihn aus Sicht des Symptoms und der Suchwörter der Nutzenden schreiben"
+        de: "Eine verantwortliche Person und ein Prüfdatum festlegen und den Artikel aus Symptomen und Suchbegriffen der Nutzenden schreiben"
         correct: true
-      - en: "Write it once in detailed technical terms and never touch it again"
-        de: "Ihn einmal in ausführlicher Fachsprache schreiben und nie wieder anfassen"
+      - en: "Write it once in precise technical terms, then lock it so that nobody can introduce errors later"
+        de: "Ihn einmal in präzisen Fachbegriffen schreiben und dann sperren, damit später niemand Fehler einbringen kann"
         correct: false
-      - en: "Title it with the internal root cause so only experts find it"
-        de: "Ihn mit der internen Grundursache betiteln, damit nur Fachleute ihn finden"
+      - en: "Title it with the internal root cause, so that the expert who needs it can find the exact fault quickly"
+        de: "Ihn mit der internen Grundursache betiteln, damit die Fachperson den genauen Fehler schnell findet"
         correct: false
-      - en: "Keep every old version visible so users can compare them"
-        de: "Jede alte Version sichtbar lassen, damit Nutzende sie vergleichen können"
+      - en: "Keep every old version visible next to the current one, so that users can compare what changed over time"
+        de: "Jede alte Version neben der aktuellen sichtbar lassen, damit Nutzende vergleichen können, was sich geändert hat"
         correct: false
     explanation:
       en: "Users search by what they see, not by the internal cause. Articles go stale when systems change, so an owner and a review date keep them current. Outdated versions left visible mislead readers."
@@ -272,17 +272,17 @@ items:
       en: "Survey comments show that many users \"did not know where to look for news\" during outages. What is the best response from a feedback-loop perspective?"
       de: "Umfragekommentare zeigen, dass viele Nutzende bei Störungen „nicht wussten, wo sie Neuigkeiten finden“. Was ist aus Sicht einer Feedback-Schleife die beste Reaktion?"
     options:
-      - en: "Change one thing, such as linking the status page from the sign-in page, and check whether the comments improve"
-        de: "Eine Sache ändern, etwa die Statusseite auf der Anmeldeseite verlinken, und prüfen, ob sich die Kommentare verbessern"
+      - en: "Change one thing, such as linking the status page from the sign-in page, and check whether comments improve"
+        de: "Eine Sache ändern, etwa die Statusseite von der Anmeldeseite aus verlinken, und prüfen, ob sich die Kommentare verbessern"
         correct: true
-      - en: "Ignore it, since free-text comments are not measurable"
-        de: "Ignorieren, da Freitextkommentare nicht messbar sind"
+      - en: "Ignore it for now, because free-text comments are anecdotal and not measurable, and wait for the next survey score"
+        de: "Vorerst ignorieren, da Freitextkommentare anekdotisch und nicht messbar sind, und den nächsten Umfragewert abwarten"
         correct: false
-      - en: "Find out which agent users mean and give them a warning"
-        de: "Herausfinden, welche Mitarbeitenden gemeint sind, und sie verwarnen"
+      - en: "Find out which agents the users mean and give them a warning, since the missing information is their failure"
+        de: "Herausfinden, welche Servicekräfte gemeint sind, und sie verwarnen, da die fehlende Information ihr Versäumnis ist"
         correct: false
       - en: "Send a long all-staff email explaining where outage news is posted, once, and consider the matter closed"
-        de: "Einmalig eine lange Rundmail an alle schicken, wo Störungsmeldungen stehen, und die Sache als erledigt betrachten"
+        de: "Einmalig eine lange E-Mail an alle senden, die erklärt, wo Störungsmeldungen stehen, und die Sache als erledigt betrachten"
         correct: false
     explanation:
       en: "A feedback loop turns a pattern in comments into a targeted change and then checks the effect. Blaming individuals ignores the systemic gap, and a one-off email without follow-up does not show whether anything improved."

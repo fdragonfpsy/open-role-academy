@@ -1,0 +1,14 @@
+id: mslearn-windows-client-troubleshooting
+url: "https://learn.microsoft.com/en-us/troubleshoot/windows-client/welcome-windows-client"
+title: "Windows client troubleshooting documentation"
+provider: Microsoft Learn
+language: en
+format: article
+minutes: 20
+license: free-access
+licenseUrl: https://learn.microsoft.com/en-us/legal/termsofuse
+licenseVerifiedOn: 2026-11-17
+mode: link
+competencies: [troubleshooting-methods, endpoint-management]
+levels: [foundation, practitioner]
+note: "Vendor documentation, free to access; no open license verified, so link only."

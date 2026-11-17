@@ -1,0 +1,14 @@
+id: wikibooks-bash-scripting
+url: "https://en.wikibooks.org/wiki/Bash_Shell_Scripting"
+title: "Bash Shell Scripting"
+provider: Wikibooks
+language: en
+format: book
+minutes: 45
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-17
+mode: link
+competencies: [scripting-automation]
+levels: [foundation, practitioner]
+note: "Open textbook; CC BY-SA 4.0 stated in the page footer."

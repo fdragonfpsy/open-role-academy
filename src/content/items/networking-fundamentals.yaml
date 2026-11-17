@@ -11,14 +11,14 @@ items:
       - en: "It connects different networks, for example the office LAN and the internet."
         de: "Er verbindet verschiedene Netze, zum Beispiel das Büro-LAN und das Internet."
         correct: true
-      - en: "It translates every file into a different format."
-        de: "Er übersetzt jede Datei in ein anderes Format."
+      - en: "It translates every file that is sent into a format that the receiving device can open."
+        de: "Es übersetzt jede gesendete Datei in ein Format, das das empfangende Gerät öffnen kann."
         correct: false
-      - en: "It stores the users' passwords."
-        de: "Er speichert die Passwörter der Nutzenden."
+      - en: "It stores the passwords of all users and checks them whenever someone signs in to a computer."
+        de: "Es speichert die Passwörter aller Nutzenden und prüft sie, wenn sich jemand an einem Computer anmeldet."
         correct: false
-      - en: "It replaces the need for IP addresses."
-        de: "Er macht IP-Adressen überflüssig."
+      - en: "It gives every device on the local network its own name, so that IP addresses are no longer needed."
+        de: "Es gibt jedem Gerät im lokalen Netz einen eigenen Namen, sodass IP-Adressen nicht mehr nötig sind."
         correct: false
     explanation:
       en: "A switch connects devices inside one network, an access point adds radio access, and a router connects separate networks. Small devices often combine all three roles."
@@ -35,14 +35,14 @@ items:
       - en: "It automatically assigns an IP address and related settings."
         de: "Es weist automatisch eine IP-Adresse und zugehörige Einstellungen zu."
         correct: true
-      - en: "It encrypts all traffic of the device."
-        de: "Es verschlüsselt den gesamten Verkehr des Geräts."
+      - en: "It encrypts all traffic of the device so that nobody on the network can read what is sent."
+        de: "Es verschlüsselt den gesamten Datenverkehr des Geräts, sodass niemand im Netz mitlesen kann."
         correct: false
-      - en: "It blocks websites that are not work related."
-        de: "Es blockiert Websites ohne Arbeitsbezug."
+      - en: "It blocks websites that are not work related, based on a list kept by the network team."
+        de: "Es sperrt nicht arbeitsbezogene Websites anhand einer Liste, die das Netzwerkteam pflegt."
         correct: false
-      - en: "It repairs the network cable."
-        de: "Es repariert das Netzwerkkabel."
+      - en: "It translates the names of websites into addresses, so that the user can type names in the browser."
+        de: "Es übersetzt die Namen von Websites in Adressen, damit Nutzende im Browser Namen eingeben können."
         correct: false
     explanation:
       en: "DHCP hands out addresses and settings such as gateway and DNS server so that nobody has to configure each device by hand."
@@ -107,14 +107,14 @@ items:
       - en: "A wrong or missing default gateway."
         de: "Ein falsches oder fehlendes Standardgateway."
         correct: true
-      - en: "A too long hostname."
-        de: "Ein zu langer Hostname."
+      - en: "A hostname that is too long, so the laptop cannot be addressed from other networks."
+        de: "Ein zu langer Hostname, sodass der Laptop aus anderen Netzen nicht angesprochen werden kann."
         correct: false
-      - en: "An outdated screen resolution."
-        de: "Eine veraltete Bildschirmauflösung."
+      - en: "A DNS server that is slow to answer, so that remote names take a long time to resolve."
+        de: "Ein DNS-Server, der langsam antwortet, sodass entfernte Namen lange zur Auflösung brauchen."
         correct: false
-      - en: "A full recycle bin."
-        de: "Ein voller Papierkorb."
+      - en: "An outdated driver for the wireless adapter, which only allows connections to nearby devices."
+        de: "Ein veralteter Treiber des WLAN-Adapters, der nur Verbindungen zu nahen Geräten zulässt."
         correct: false
     explanation:
       en: "Traffic to other networks is sent to the default gateway. Without a correct one, only the local subnet is reachable."
@@ -129,16 +129,16 @@ items:
       de: "Ping auf eine IP-Adresse klappt, Ping auf den passenden Namen schlägt fehl. Was ist der beste nächste Schritt?"
     options:
       - en: "Check which DNS server the client uses and test name resolution, for example with nslookup."
-        de: "Prüfen, welchen DNS-Server der Client nutzt, und die Namensauflösung testen, zum Beispiel mit nslookup."
+        de: "Prüfen, welchen DNS-Server der Client nutzt, und die Namensauflösung testen, z. B. mit nslookup."
         correct: true
-      - en: "Replace the network cable."
-        de: "Das Netzwerkkabel ersetzen."
+      - en: "Replace the network cable, because a cable fault typically lets only some kinds of requests fail."
+        de: "Das Netzwerkkabel ersetzen, weil ein Kabelfehler typischerweise nur bestimmte Anfragen scheitern lässt."
         correct: false
-      - en: "Change the subnet mask of the client."
-        de: "Die Subnetzmaske des Clients ändern."
+      - en: "Change the subnet mask of the client, since a wrong mask lets name lookups fail but pings succeed."
+        de: "Die Subnetzmaske des Clients ändern, da eine falsche Maske Namensabfragen scheitern, Pings aber gelingen lässt."
         correct: false
-      - en: "Disable the firewall on all servers."
-        de: "Die Firewall auf allen Servern abschalten."
+      - en: "Disable the firewall on all servers, so that the name-based request is no longer blocked anywhere."
+        de: "Die Firewall auf allen Servern abschalten, damit die namensbasierte Anfrage nirgends mehr blockiert wird."
         correct: false
     explanation:
       en: "Reaching the address by number shows that the path works. The fault lies in name resolution, so test DNS directly."
@@ -152,17 +152,17 @@ items:
       en: "What does a VPN protect, and what does it not do?"
       de: "Was schützt ein VPN, und was leistet es nicht?"
     options:
-      - en: "It protects traffic in transit through an encrypted tunnel, but it does not make an infected device safe."
-        de: "Es schützt den Verkehr auf dem Weg durch einen verschlüsselten Tunnel, macht aber ein infiziertes Gerät nicht sicher."
+      - en: "It protects traffic in transit with an encrypted tunnel, but does not make an infected device safe."
+        de: "Es schützt Daten auf dem Transportweg durch einen verschlüsselten Tunnel, macht ein infiziertes Gerät aber nicht sicher."
         correct: true
-      - en: "It removes malware from the device."
-        de: "Es entfernt Schadsoftware vom Gerät."
+      - en: "It removes malware from the device, because all traffic is scanned before it enters the tunnel."
+        de: "Es entfernt Schadsoftware vom Gerät, weil der gesamte Datenverkehr vor dem Tunnel geprüft wird."
         correct: false
-      - en: "It makes sign-in with a password unnecessary."
-        de: "Es macht die Anmeldung mit Passwort überflüssig."
+      - en: "It makes sign-in with a password unnecessary, because the tunnel already proves who the user is."
+        de: "Es macht die Anmeldung mit Passwort überflüssig, weil der Tunnel bereits belegt, wer die Person ist."
         correct: false
-      - en: "It guarantees that every website is trustworthy."
-        de: "Es garantiert, dass jede Website vertrauenswürdig ist."
+      - en: "It guarantees that every website reached through the tunnel is trustworthy and free of harmful content."
+        de: "Es garantiert, dass jede über den Tunnel erreichte Website vertrauenswürdig und frei von schädlichen Inhalten ist."
         correct: false
     explanation:
       en: "A VPN secures the connection between the device and the target network. The state of the device and the sign-in controls still matter."
@@ -179,14 +179,14 @@ items:
       - en: "A firewall rule blocks the service's port, or the service is not running."
         de: "Eine Firewall-Regel blockiert den Port des Dienstes, oder der Dienst läuft nicht."
         correct: true
-      - en: "Ping can never work when a server is online."
-        de: "Ping kann nie klappen, wenn ein Server online ist."
+      - en: "Ping can never work while a server is online, so the result shows the server is already faulty."
+        de: "Ping kann bei einem laufenden Server nie funktionieren, daher zeigt das Ergebnis einen Serverfehler."
         correct: false
-      - en: "The server has no IP address."
-        de: "Der Server hat keine IP-Adresse."
+      - en: "The server has no IP address, so it cannot be reached by any kind of request from the staff network."
+        de: "Der Server hat keine IP-Adresse, daher ist er aus dem Mitarbeiternetz mit keiner Anfrage erreichbar."
         correct: false
-      - en: "The cable is unplugged."
-        de: "Das Kabel ist nicht eingesteckt."
+      - en: "The network cable of the server is unplugged, which would stop the web service but not the ping."
+        de: "Das Netzwerkkabel des Servers ist gezogen, was den Webdienst, aber nicht den Ping stoppen würde."
         correct: false
     explanation:
       en: "Ping shows the host is reachable. A service is reached through a port, so a blocking rule or a stopped service explains the symptom."
@@ -203,14 +203,14 @@ items:
       - en: "A compromise in one zone is limited by rules between the zones."
         de: "Eine Kompromittierung in einer Zone wird durch Regeln zwischen den Zonen begrenzt."
         correct: true
-      - en: "It removes the need for patching."
-        de: "Es macht Patchen überflüssig."
+      - en: "It removes the need for patching, because separated zones cannot be reached by outside attackers."
+        de: "Es macht Patchen überflüssig, weil getrennte Zonen für Angreifende von außen nicht erreichbar sind."
         correct: false
-      - en: "It makes all traffic faster in every case."
-        de: "Es macht jeden Verkehr in jedem Fall schneller."
+      - en: "It makes all traffic faster in every case, because each zone has its own bandwidth and fewer devices."
+        de: "Es beschleunigt jeden Datenverkehr, weil jede Zone eigene Bandbreite und weniger Geräte hat."
         correct: false
-      - en: "It prevents any device from being attacked."
-        de: "Es verhindert, dass irgendein Gerät angegriffen wird."
+      - en: "It prevents any device from being attacked, because zones are invisible from the other zones."
+        de: "Es verhindert, dass irgendein Gerät angegriffen wird, weil Zonen für andere Zonen unsichtbar sind."
         correct: false
     explanation:
       en: "Segmentation does not stop attacks, but it limits lateral movement. Patching and other controls remain necessary."
@@ -224,17 +224,17 @@ items:
       en: "Which statement best describes the idea of zero trust?"
       de: "Welche Aussage beschreibt die Idee von Zero Trust am besten?"
     options:
-      - en: "Access is decided per request based on identity, device state and context, not on being inside the network."
-        de: "Der Zugriff wird pro Anfrage anhand von Identität, Gerätezustand und Kontext entschieden, nicht dadurch, dass man im Netz ist."
+      - en: "Access is decided per request from identity, device state and context, not from network location."
+        de: "Zugriff wird pro Anfrage anhand von Identität, Gerätezustand und Kontext entschieden, nicht anhand des Netzstandorts."
         correct: true
-      - en: "Everything inside the office network is trusted automatically."
-        de: "Alles im Büronetz wird automatisch vertraut."
+      - en: "Everything inside the office network is trusted automatically, while all outside access is verified."
+        de: "Alles im Büronetz wird automatisch vertraut, während jeder Zugriff von außen geprüft wird."
         correct: false
-      - en: "Nobody may use the network."
-        de: "Niemand darf das Netz nutzen."
+      - en: "Nobody may use the network until each user has signed a policy that confirms they are trustworthy."
+        de: "Niemand darf das Netz nutzen, bevor jede Person eine Richtlinie unterschrieben hat, die ihre Vertrauenswürdigkeit bestätigt."
         correct: false
-      - en: "A firewall at the border is sufficient."
-        de: "Eine Firewall am Rand genügt."
+      - en: "A strong firewall at the border is sufficient, as long as it is configured and monitored carefully."
+        de: "Eine starke Firewall am Netzrand genügt, solange sie sorgfältig konfiguriert und überwacht wird."
         correct: false
     explanation:
       en: "Zero trust removes implicit trust based on location and checks each request, while giving only the access that is needed."
@@ -248,17 +248,17 @@ items:
       en: "A site has one internet uplink. How should the risk be handled?"
       de: "Ein Standort hat nur eine Internetanbindung. Wie sollte das Risiko behandelt werden?"
     options:
-      - en: "Identify it as a single point of failure and weigh a second path against the business impact, then test the failover."
-        de: "Als Single Point of Failure erkennen, einen zweiten Weg gegen die geschäftlichen Folgen abwägen und das Failover testen."
+      - en: "Identify it as a single point of failure, weigh a second path against business impact, and test failover."
+        de: "Es als Single Point of Failure erkennen, einen zweiten Pfad gegen die geschäftlichen Auswirkungen abwägen und den Failover testen."
         correct: true
-      - en: "Ignore it, because uplinks never fail."
-        de: "Ignorieren, weil Anbindungen nie ausfallen."
+      - en: "Buy a second uplink from the same provider at once, because redundancy is always worth its cost."
+        de: "Sofort einen zweiten Anschluss beim selben Anbieter kaufen, weil sich Redundanz immer lohnt."
         correct: false
-      - en: "Add redundancy but never test it."
-        de: "Redundanz ergänzen, aber nie testen."
+      - en: "Accept the risk permanently, because the provider's contract already covers any outage of the uplink."
+        de: "Das Risiko dauerhaft akzeptieren, weil der Vertrag mit dem Anbieter jeden Ausfall des Anschlusses abdeckt."
         correct: false
-      - en: "Remove the firewall to save load."
-        de: "Die Firewall entfernen, um Last zu sparen."
+      - en: "Add a backup uplink and document it, but skip failover tests so that production is never disturbed."
+        de: "Einen Ersatzanschluss einrichten und dokumentieren, aber Failover-Tests auslassen, damit der Betrieb nie gestört wird."
         correct: false
     explanation:
       en: "Redundancy costs money and adds complexity, so it is justified by impact, and untested failover cannot be relied on."
@@ -275,14 +275,14 @@ items:
       - en: "Know the dependent systems, define verification steps and have a tested rollback plan."
         de: "Die abhängigen Systeme kennen, Prüfschritte festlegen und einen getesteten Rückfallplan haben."
         correct: true
-      - en: "Apply the change without telling anyone to avoid panic."
-        de: "Die Änderung ohne Information anwenden, um Panik zu vermeiden."
+      - en: "Apply the change quietly outside working hours, so that no user notices anything and nobody panics."
+        de: "Die Änderung unauffällig außerhalb der Arbeitszeit durchführen, damit niemand etwas bemerkt und keine Panik entsteht."
         correct: false
-      - en: "Delete the old documentation."
-        de: "Die alte Dokumentation löschen."
+      - en: "Delete the old documentation first, so that nobody follows outdated rules after the change is done."
+        de: "Zuerst die alte Dokumentation löschen, damit nach der Änderung niemand veralteten Regeln folgt."
         correct: false
-      - en: "Change several unrelated rules at once."
-        de: "Mehrere nicht zusammenhängende Regeln gleichzeitig ändern."
+      - en: "Bundle several unrelated rule changes into one window, so that the risk of disruption is taken only once."
+        de: "Mehrere unabhängige Regeländerungen in einem Zeitfenster bündeln, damit das Störungsrisiko nur einmal eingegangen wird."
         correct: false
     explanation:
       en: "Impact analysis, verification and rollback keep a faulty change from becoming a long outage."
