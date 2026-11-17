@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CatalogBrowser from '../islands/CatalogBrowser';
+import CatalogSearch from '../islands/CatalogSearch';
+import type { Lang } from '../../config/site';
+import { alternatePath, t } from '../../i18n';
+import { getCatalog } from '../../lib/content';
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const other: Lang = lang === 'en' ? 'de' : 'en';
+const catalog = await getCatalog(lang);
+---
+
+<BaseLayout lang={lang} title={t(lang, 'catalog.title')}>
+  <h1 class="mb-3 text-2xl font-bold sm:text-3xl">{t(lang, 'catalog.title')}</h1>
+  <p class="mb-2">{t(lang, 'catalog.intro')}</p>
+  <p class="mb-6">
+    <a class="inline-block py-2 underline" href={alternatePath(Astro.url.pathname.replace(/\/$/, '') || '/', other)} hreflang={other} lang={other} aria-label={t(lang, 'catalog.otherLangLabel')}>
+      {t(lang, 'catalog.otherLang')}
+    </a>
+  </p>
+  <CatalogSearch client:load lang={lang} />
+  <CatalogBrowser client:load lang={lang} catalog={catalog} />
+</BaseLayout>

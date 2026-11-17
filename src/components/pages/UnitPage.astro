@@ -5,7 +5,7 @@ import AiDraftBadge from '../AiDraftBadge.astro';
 import MasteryCheck from '../islands/MasteryCheck';
 import type { Lang } from '../../config/site';
 import { t } from '../../i18n';
-import { getQuizItems } from '../../lib/content';
+import { getQuizItems, getRoles } from '../../lib/content';
 interface Props {
   lang: Lang;
   entry: CollectionEntry<'units'>;
@@ -18,11 +18,12 @@ const allResources = await getCollection('resources');
 const resources = unit.resources
   .map((id) => allResources.find((r) => r.data.id === id)?.data)
   .filter((r) => r !== undefined);
+const indexed = (await getRoles(lang)).some((r) => r.competencies.some((c) => c.id === unit.competency));
 const items = (await getQuizItems(lang)).filter((i) => i.competency === unit.competency);
 ---
 
 <BaseLayout lang={lang} title={unit.title}>
-  <article>
+  <article data-pagefind-body={indexed ? '' : undefined}>
     <p class="text-sm text-slate-700">
       {t(lang, 'unit.competency')}: {competency?.data.title[lang]} · {t(lang, 'unit.level')}: {t(lang, `level.${unit.level}`)} ·
       {unit.minutes}
@@ -78,7 +79,7 @@ const items = (await getQuizItems(lang)).filter((i) => i.competency === unit.com
         </section>
       )
     }
-    <section class="mt-10" aria-labelledby="mastery">
+    <section class="mt-10" aria-labelledby="mastery" data-pagefind-ignore>
       <h2 id="mastery" class="mb-3 text-xl font-semibold">{t(lang, 'mastery.title')}</h2>
       <MasteryCheck client:load lang={lang} unitId={unit.id} competency={unit.competency} level={unit.level} items={items} />
     </section>

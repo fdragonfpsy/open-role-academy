@@ -149,3 +149,9 @@ Format: date — decision — reason — alternatives considered.
 - Decision: no separate path page; the ordered path and next unit are shown on the dashboard.
 - Reason: avoids duplicate views of the same engine output; meets the roadmap acceptance.
 - Alternatives: dedicated /path page (can be added if the dashboard gets crowded).
+
+
+## 2026-11-17 — Catalog search with Pagefind
+- Decision: add `pagefind` (exact version 1.6.0, devDependency) and run `pagefind --site dist` after `astro build`. Only unit pages of published roles carry `data-pagefind-body`; the mastery check is `data-pagefind-ignore`. The search island imports `/pagefind/pagefind.js` (same origin) and uses its own accessible markup. Filters (role, level) are a Preact island over server-rendered data; language is implicit from the route.
+- Reason: static, open source (MIT), no backend, no cookies, no third-party requests, per-language indexes from `<html lang>`; roadmap requires it. Only a build-time tool, nothing heavy at runtime.
+- Alternatives: Lunr/MiniSearch with a hand-built index (more code, no language handling); hosted search (violates $0 / no third-party constraints).

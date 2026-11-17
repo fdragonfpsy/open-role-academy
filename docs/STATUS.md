@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-17 — Phase 3b: catalog + Pagefind search
+
+**Done**
+- `/catalog` and `/de/catalog`: published roles, competencies and units with role/level filters (labelled selects, live count) and Pagefind full-text search (same-origin, no third-party requests). Pagefind 1.6.0 added as devDependency (build = `astro build && pagefind --site dist`); header nav link; e2e `tests-e2e/catalog.e2e.mjs`; mobile e2e covers catalog.
+- Caveats: search needs a built site (not in `astro dev`); without JS the filters/search do nothing; no Pagefind filters/sorts yet.
+- **Flaky test:** `tests-e2e/dashboard.e2e.mjs` failed in 3 of 5 runs at the review-flow `waitForSelector('[role=status][aria-live=polite]')` (passed earlier today in PR #68). Not in CI; investigate next (possible race in Dashboard review status).
+
+**Counts:** roles 4 · competencies 38 · units 228 · items 456 · resources 297 · tests 59
+
+**Next:** fix the flaky dashboard e2e, then Supabase schema migrations (Phase 3b).
+
 ## 2026-11-17 — Phase 3 complete: launch checklist
 
 **Done**

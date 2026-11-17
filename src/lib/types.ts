@@ -26,3 +26,22 @@ export interface UnitView {
   title: string;
   minutes: number;
 }
+
+export interface CatalogCompetency {
+  id: string;
+  title: string;
+  description: string;
+  track: 'core' | 'role';
+  roleIds: string[];
+}
+
+export interface CatalogUnit extends UnitView {
+  status: 'ai-draft' | 'reviewed';
+  roleIds: string[];
+}
+
+export interface CatalogData {
+  roles: { id: string; title: string; summary: string }[];
+  competencies: CatalogCompetency[];
+  units: CatalogUnit[];
+}
