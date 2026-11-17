@@ -1,0 +1,290 @@
+competency: prospecting-lead-qualification
+items:
+  - id: plq-f-purpose
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "What is the main purpose of qualifying a lead?"
+      de: "Was ist der Hauptzweck, einen Lead zu qualifizieren?"
+    options:
+      - en: "To decide whether the lead fits the offer and deserves sales effort"
+        de: "Zu entscheiden, ob der Lead zum Angebot passt und Vertriebsaufwand verdient"
+        correct: true
+      - en: "To get the lead to sign a contract as fast as possible in the first call"
+        de: "Den Lead im ersten Gespräch möglichst schnell zur Vertragsunterschrift zu bringen"
+        correct: false
+      - en: "To collect as much personal information as possible for later marketing use"
+        de: "Möglichst viele persönliche Informationen für spätere Marketingzwecke zu sammeln"
+        correct: false
+      - en: "To increase the number of contacts that are stored in the company database"
+        de: "Die Zahl der in der Unternehmensdatenbank gespeicherten Kontakte zu erhöhen"
+        correct: false
+    explanation:
+      en: "Qualification reduces a list of leads to those that fit and are likely to be receptive, so that effort goes where it can pay off."
+      de: "Qualifizierung verkleinert eine Leadliste auf jene, die passen und voraussichtlich aufgeschlossen sind, damit der Aufwand dort ankommt, wo er sich lohnen kann."
+    source: https://openstax.org/books/principles-marketing/pages/15-3-steps-in-the-personal-selling-process
+  - id: plq-f-bant
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "What does BANT stand for?"
+      de: "Wofür steht BANT?"
+    options:
+      - en: "Brand, Audience, Network, Territory"
+        de: "Marke (Brand), Zielgruppe (Audience), Netzwerk (Network), Gebiet (Territory)"
+        correct: false
+      - en: "Budget, Authority, Need, Timeline"
+        de: "Budget, Entscheidungsbefugnis (Authority), Bedarf (Need), Zeitplan (Timeline)"
+        correct: true
+      - en: "Buyer, Agreement, Negotiation, Transfer"
+        de: "Käufer (Buyer), Vereinbarung (Agreement), Verhandlung (Negotiation), Übergabe (Transfer)"
+        correct: false
+      - en: "Benefit, Advantage, Novelty, Trust"
+        de: "Nutzen (Benefit), Vorteil (Advantage), Neuheit (Novelty), Vertrauen (Trust)"
+        correct: false
+    explanation:
+      en: "BANT is a qualification checklist: budget, authority, need and timeline."
+      de: "BANT ist eine Qualifizierungs-Checkliste: Budget, Entscheidungsbefugnis, Bedarf und Zeitplan."
+    source: https://en.wikipedia.org/wiki/Sales_process_engineering
+  - id: plq-f-sources
+    level: foundation
+    difficulty: 1000
+    type: multi
+    stem:
+      en: "Which of these are common sources of leads? Select all that apply."
+      de: "Welche davon sind gängige Quellen für Leads? Wähle alle zutreffenden aus."
+    options:
+      - en: "Personal referrals from existing customers or partners"
+        de: "Persönliche Empfehlungen von Bestandskundschaft oder Partnern"
+        correct: true
+      - en: "Trade shows and other events where interested people leave details"
+        de: "Messen und andere Veranstaltungen, bei denen Interessierte ihre Daten hinterlassen"
+        correct: true
+      - en: "Contact forms and downloads on the company website"
+        de: "Kontaktformulare und Downloads auf der Unternehmenswebsite"
+        correct: true
+      - en: "The internal payroll records of the company's own employees"
+        de: "Die internen Gehaltsabrechnungsdaten der eigenen Beschäftigten"
+        correct: false
+    explanation:
+      en: "Referrals, events and web forms are typical lead sources. Payroll records are internal data for another purpose and are not a lead source."
+      de: "Empfehlungen, Events und Webformulare sind typische Lead-Quellen. Gehaltsdaten sind interne Daten für einen anderen Zweck und keine Lead-Quelle."
+    source: https://en.wikipedia.org/wiki/Lead_generation
+  - id: plq-f-disqualify
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "After one call you learn that a contact has no need for your offer and none is expected. What is the best action?"
+      de: "Nach einem Gespräch erfährst du, dass ein Kontakt keinen Bedarf an deinem Angebot hat und auch keiner zu erwarten ist. Was ist die beste Maßnahme?"
+    options:
+      - en: "Keep calling every week until the person finally agrees to a meeting"
+        de: "Jede Woche weiter anrufen, bis die Person schließlich einem Termin zustimmt"
+        correct: false
+      - en: "Delete the notes so the CRM does not show an unsuccessful conversation"
+        de: "Die Notizen löschen, damit das CRM kein erfolgloses Gespräch zeigt"
+        correct: false
+      - en: "Keep the lead at the top of the pipeline because the contact was friendly"
+        de: "Den Lead ganz oben in der Pipeline lassen, weil der Kontakt freundlich war"
+        correct: false
+      - en: "Note the reason, close the lead politely and use your time on better fits"
+        de: "Den Grund notieren, den Lead freundlich schließen und die Zeit für besser passende nutzen"
+        correct: true
+    explanation:
+      en: "Disqualifying is a good outcome: it frees time and keeps the data honest. A note with the reason helps colleagues."
+      de: "Disqualifizieren ist ein gutes Ergebnis: Es schafft Zeit und hält die Daten ehrlich. Eine Notiz mit Grund hilft Kolleginnen und Kollegen."
+    source: https://en.wikipedia.org/wiki/Sales_process_engineering
+  - id: plq-p-icp
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "What is the best basis for defining an ideal customer profile?"
+      de: "Was ist die beste Grundlage, um ein ideales Kundenprofil zu definieren?"
+    options:
+      - en: "Shared traits of customers you won and kept, written as testable criteria"
+        de: "Gemeinsame Merkmale gewonnener und gehaltener Kundschaft, formuliert als überprüfbare Kriterien"
+        correct: true
+      - en: "The company types that the sales team personally finds most interesting"
+        de: "Die Unternehmensarten, die das Vertriebsteam persönlich am interessantesten findet"
+        correct: false
+      - en: "The largest companies in the region, regardless of whether they bought"
+        de: "Die größten Unternehmen der Region, unabhängig davon, ob sie gekauft haben"
+        correct: false
+      - en: "A copy of the profile that a competitor shows on its public website"
+        de: "Eine Kopie des Profils, das ein Wettbewerber auf seiner öffentlichen Website zeigt"
+        correct: false
+    explanation:
+      en: "An ICP should come from evidence about who actually buys and stays; testable criteria make ratings consistent."
+      de: "Ein ICP sollte aus Belegen darüber stammen, wer tatsächlich kauft und bleibt; überprüfbare Kriterien machen Bewertungen einheitlich."
+    source: https://en.wikipedia.org/wiki/Lead_generation
+  - id: plq-p-score
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "In lead scoring, what is the difference between explicit and implicit data?"
+      de: "Was unterscheidet beim Lead-Scoring explizite von impliziten Daten?"
+    options:
+      - en: "Explicit data are always public; implicit data are always paid for from a data provider"
+        de: "Explizite Daten sind immer öffentlich; implizite Daten werden immer bei einem Datenanbieter gekauft"
+        correct: false
+      - en: "Explicit data describe the lead (such as industry or job title); implicit data come from behaviour"
+        de: "Explizite Daten beschreiben den Lead (etwa Branche oder Position); implizite Daten stammen aus dem Verhalten"
+        correct: true
+      - en: "Explicit data are about the product; implicit data are about the price of the product"
+        de: "Explizite Daten betreffen das Produkt; implizite Daten betreffen den Preis des Produkts"
+        correct: false
+      - en: "Explicit data come from sales staff; implicit data come from the finance department"
+        de: "Explizite Daten stammen vom Vertrieb; implizite Daten stammen aus der Finanzabteilung"
+        correct: false
+    explanation:
+      en: "Explicit data (size, industry, title, location) describe fit; implicit data (visits, downloads, clicks) show interest."
+      de: "Explizite Daten (Größe, Branche, Position, Ort) beschreiben die Passung; implizite Daten (Besuche, Downloads, Klicks) zeigen Interesse."
+    source: https://en.wikipedia.org/wiki/Lead_scoring
+  - id: plq-p-gdpr
+    level: practitioner
+    difficulty: 1250
+    type: multi
+    stem:
+      en: "Which statements about direct marketing under the EU GDPR (Art. 21) are correct? Select all that apply."
+      de: "Welche Aussagen zu Direktwerbung nach der EU-DSGVO (Art. 21) sind richtig? Wähle alle zutreffenden aus."
+    options:
+      - en: "The person can object at any time to processing for direct marketing"
+        de: "Die Person kann der Verarbeitung für Direktwerbung jederzeit widersprechen"
+        correct: true
+      - en: "After an objection, the data may no longer be processed for that purpose"
+        de: "Nach einem Widerspruch dürfen die Daten für diesen Zweck nicht mehr verarbeitet werden"
+        correct: true
+      - en: "The right to object must be brought to attention at the latest at first contact"
+        de: "Auf das Widerspruchsrecht muss spätestens beim ersten Kontakt hingewiesen werden"
+        correct: true
+      - en: "An objection only counts if it is sent by registered post to the company"
+        de: "Ein Widerspruch zählt nur, wenn er per Einschreiben an das Unternehmen geschickt wird"
+        correct: false
+    explanation:
+      en: "Art. 21(2) to (4) give the right to object at any time, stop processing after an objection and require explicit information at the latest at first communication. No registered post is required by those paragraphs."
+      de: "Art. 21 Abs. 2 bis 4 geben das Recht auf jederzeitigen Widerspruch, verlangen das Ende der Verarbeitung nach Widerspruch und ausdrückliche Information spätestens bei der ersten Kommunikation. Ein Einschreiben verlangen diese Absätze nicht."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+  - id: plq-p-research
+    level: practitioner
+    difficulty: 1350
+    type: single
+    stem:
+      en: "A lead scores high on interest (several pricing-page visits) but you know little else. What is the most sensible next step?"
+      de: "Ein Lead hat einen hohen Interessenwert (mehrere Besuche der Preisseite), aber du weißt sonst wenig. Was ist der sinnvollste nächste Schritt?"
+    options:
+      - en: "Send the same standard offer that you send to every new contact right away"
+        de: "Sofort das gleiche Standardangebot senden, das alle neuen Kontakte bekommen"
+        correct: false
+      - en: "Wait for the lead to call so that you do not seem too pushy to them"
+        de: "Abwarten, bis der Lead anruft, damit du nicht zu aufdringlich wirkst"
+        correct: false
+      - en: "Mark the lead as won because interest data show a strong buying intent"
+        de: "Den Lead als gewonnen markieren, weil die Interessendaten eine starke Kaufabsicht zeigen"
+        correct: false
+      - en: "Research the company and contact first, then reach out with a relevant, specific message"
+        de: "Unternehmen und Kontaktperson recherchieren und dann mit einer relevanten, konkreten Nachricht Kontakt aufnehmen"
+        correct: true
+    explanation:
+      en: "Interest shows activity, not fit. A short pre-approach (who decides, what do they use, any trigger event) makes the first contact relevant. Also check which contact channels are allowed."
+      de: "Interesse zeigt Aktivität, nicht Passung. Eine kurze Recherche (wer entscheidet, was wird genutzt, gibt es einen Auslöser) macht den Erstkontakt relevant. Prüfe auch, welche Kontaktwege erlaubt sind."
+    source: https://openstax.org/books/principles-marketing/pages/15-3-steps-in-the-personal-selling-process
+  - id: plq-a-errors
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "For few, large deals and plenty of seller time, how should you set the lead-contact threshold?"
+      de: "Wie solltest du bei wenigen großen Deals und reichlich Verkaufszeit die Schwelle zur Kontaktaufnahme setzen?"
+    options:
+      - en: "Lower, because missing a good lead (false negative) costs more than a wasted call"
+        de: "Niedriger, weil ein verpasster guter Lead (falsch negativ) mehr kostet als ein verschwendeter Anruf"
+        correct: true
+      - en: "Higher, because every unqualified call is a failure that the team must avoid"
+        de: "Höher, weil jeder unqualifizierte Anruf ein Misserfolg ist, den das Team vermeiden muss"
+        correct: false
+      - en: "Identical to another company, because thresholds are universal industry standards"
+        de: "Identisch mit einem anderen Unternehmen, weil Schwellen universelle Branchenstandards sind"
+        correct: false
+      - en: "Removed entirely, because scoring can never be relevant for large deals"
+        de: "Ganz entfernt, weil Scoring bei großen Deals nie relevant sein kann"
+        correct: false
+    explanation:
+      en: "The right threshold depends on the cost of each error. With few, valuable deals and spare capacity, a missed lead is costlier than an extra call."
+      de: "Die richtige Schwelle hängt von den Kosten jedes Fehlers ab. Bei wenigen, wertvollen Deals und freier Kapazität ist ein verpasster Lead teurer als ein zusätzlicher Anruf."
+    source: https://en.wikipedia.org/wiki/Lead_scoring
+  - id: plq-a-validate
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "Won deals show no higher win rate in high score bands than in low ones. What is the most reasonable conclusion?"
+      de: "Gewonnene Deals zeigen in hohen Score-Bändern keine höhere Abschlussquote als in niedrigen. Was ist die vernünftigste Schlussfolgerung?"
+    options:
+      - en: "The scoring is correct and the sales team is simply not working the leads well"
+        de: "Das Scoring ist korrekt, und das Vertriebsteam bearbeitet die Leads einfach schlecht"
+        correct: false
+      - en: "The criteria are probably not predictive, so revise them after checking sample size"
+        de: "Die Kriterien sind wohl nicht aussagekräftig, also überarbeiten, nachdem du die Stichprobengröße geprüft hast"
+        correct: true
+      - en: "The score is predictive, but only for leads that have never been contacted"
+        de: "Der Score ist aussagekräftig, aber nur für Leads, die nie kontaktiert wurden"
+        correct: false
+      - en: "Scores should be raised across all bands until the outcome looks different"
+        de: "Die Scores sollten in allen Bändern angehoben werden, bis das Ergebnis anders aussieht"
+        correct: false
+    explanation:
+      en: "A score is a hypothesis. If outcomes do not rise with the score, the criteria need rethinking; first check that bands hold enough deals to say anything."
+      de: "Ein Score ist eine Hypothese. Steigen die Ergebnisse nicht mit dem Score, müssen die Kriterien überdacht werden; prüfe zuerst, ob die Bänder genug Deals für eine Aussage enthalten."
+    source: https://en.wikipedia.org/wiki/Lead_scoring
+  - id: plq-a-sample
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "Only high-scored leads are worked. How can you learn whether low scores would have converted?"
+      de: "Nur hoch bewertete Leads werden bearbeitet. Wie kannst du erfahren, ob niedrig bewertete konvertiert hätten?"
+    options:
+      - en: "Remove all leads below the threshold from the CRM to keep data clean"
+        de: "Alle Leads unter der Schwelle aus dem CRM entfernen, um die Daten sauber zu halten"
+        correct: false
+      - en: "Assume they would not have converted, since the model scored them low"
+        de: "Annehmen, dass sie nicht konvertiert hätten, da das Modell sie niedrig bewertet hat"
+        correct: false
+      - en: "Work a small random sample of low-scored leads and compare outcomes"
+        de: "Eine kleine Zufallsstichprobe niedrig bewerteter Leads bearbeiten und die Ergebnisse vergleichen"
+        correct: true
+      - en: "Double the score of every lead that sales has already rejected once"
+        de: "Den Score jedes Leads verdoppeln, den der Vertrieb schon einmal abgelehnt hat"
+        correct: false
+    explanation:
+      en: "Without a sample from the ignored group you cannot test the model. A small random sample reveals missed buyers."
+      de: "Ohne Stichprobe aus der ignorierten Gruppe lässt sich das Modell nicht prüfen. Eine kleine Zufallsstichprobe deckt verpasste Kaufende auf."
+    source: https://en.wikipedia.org/wiki/Lead_scoring
+  - id: plq-a-profiling
+    level: advanced
+    difficulty: 1650
+    type: multi
+    stem:
+      en: "Which measures are sound when building behaviour-based lead scoring in the EU? Select all that apply."
+      de: "Welche Maßnahmen sind beim Aufbau eines verhaltensbasierten Lead-Scorings in der EU sinnvoll? Wähle alle zutreffenden aus."
+    options:
+      - en: "Check scoring segments for unexplained gaps that may encode bias"
+        de: "Scoring-Segmente auf unerklärte Lücken prüfen, die Verzerrungen enthalten könnten"
+        correct: true
+      - en: "Clarify with data-protection experts whether the profiling is justified and documented"
+        de: "Mit Datenschutzfachleuten klären, ob das Profiling gerechtfertigt und dokumentiert ist"
+        correct: true
+      - en: "Treat an objection to direct marketing as covering related profiling too"
+        de: "Einen Widerspruch gegen Direktwerbung auch auf damit verbundenes Profiling beziehen"
+        correct: true
+      - en: "Collect every available data point first and decide later what it is used for"
+        de: "Zuerst jeden verfügbaren Datenpunkt sammeln und später entscheiden, wofür er genutzt wird"
+        correct: false
+    explanation:
+      en: "Art. 21(2) covers profiling related to direct marketing. Bias checks and documented justification are sound practice; collecting everything without purpose contradicts data minimisation."
+      de: "Art. 21 Abs. 2 erfasst Profiling im Zusammenhang mit Direktwerbung. Verzerrungsprüfungen und dokumentierte Begründung sind gute Praxis; alles ohne Zweck zu sammeln widerspricht der Datenminimierung."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679

@@ -1,5 +1,17 @@
 # Status
 
+## 2026-11-17 — Phase 4: Sales content batch 1 (sales-process-pipeline, prospecting-lead-qualification, discovery-needs-analysis)
+
+**Done**
+- 3 competencies x 3 levels, en and de: 18 unit files (`status: ai-draft`, original text with worked example and takeaways, `sources[]`), 36 items (12 per competency, 4 per level, single and multi, difficulty per section 7.2, correct option position varied, no `uniquely longest` warning), 12 new resources (all `mode: link`, `licenseVerifiedOn: 2026-11-17`).
+- Non-Wikipedia resources: OpenStax Principles of Marketing (15.3, 1.5, 4.4; CC BY-NC-SA, link only) and the GDPR text on EUR-Lex (`free-access`, link only; Art. 21(2)-(4) and recital 47 read on the page). Existing active-listening resources (en/de) now also tagged `discovery-needs-analysis`.
+- Legal statements: only GDPR Art. 21 (cited from EUR-Lex). Germany's UWG rules on unsolicited advertising are only named and referred to legal advice because gesetze-im-internet.de was unreachable from the build proxy; no UWG details stated.
+- Sales role stays `status: draft`. Checks: lint, typecheck, tests (109), validate:content (0 errors), build all pass.
+
+**Counts:** roles 5 (1 draft) · competencies 48 · units 246 · items 492 · resources 309 · tests 109
+
+**Next:** Sales content batch 2 (solution-presentation-demo, objection-handling-negotiation, proposals-quoting-pricing-basics).
+
 ## 2026-11-17 — Phase 4: Sales framework (draft, no content yet)
 
 **Done**

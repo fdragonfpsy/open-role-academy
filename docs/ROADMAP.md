@@ -104,7 +104,7 @@ Item and resource quality (added by weekly review 2026-11-14, applies to all new
 One role per task, in the order of CLAUDE.md §4.3. Each task = framework + content + validation passing.
 - [ ] Sales (framework + content; publish the role when all content is done; EU/Germany context, label it; no invented laws or figures)
   - [x] framework (role + 10 competencies, `status: draft`)
-  - [ ] content: sales-process-pipeline, prospecting-lead-qualification, discovery-needs-analysis
+  - [x] content: sales-process-pipeline, prospecting-lead-qualification, discovery-needs-analysis
   - [ ] content: solution-presentation-demo, objection-handling-negotiation, proposals-quoting-pricing-basics
   - [ ] content: closing-contract-handover, account-management-upselling, crm-sales-data-forecasting
   - [ ] content: sales-ethics-compliance; then set `status: published` and run the content quality pass for Sales

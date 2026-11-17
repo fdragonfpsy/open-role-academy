@@ -1,0 +1,290 @@
+competency: discovery-needs-analysis
+items:
+  - id: dna-f-open
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "Which question is an open question?"
+      de: "Welche Frage ist eine offene Frage?"
+    options:
+      - en: "How do you handle returns today, and where does it cause trouble?"
+        de: "Wie gehen Sie heute mit Retouren um, und wo macht das Schwierigkeiten?"
+        correct: true
+      - en: "Do you currently process returns by hand in your warehouse office?"
+        de: "Bearbeiten Sie Retouren derzeit von Hand im Lagerbüro?"
+        correct: false
+      - en: "Is the return rate in your shop higher than ten percent each month?"
+        de: "Liegt die Retourenquote in Ihrem Shop jeden Monat über zehn Prozent?"
+        correct: false
+      - en: "Would you prefer to receive our offer by e-mail or by post?"
+        de: "Möchten Sie unser Angebot lieber per E-Mail oder per Post erhalten?"
+        correct: false
+    explanation:
+      en: "Open questions start with words like how, what or why and invite explanation; the others can be answered with yes, no or a choice."
+      de: "Offene Fragen beginnen mit Wörtern wie wie, was oder warum und laden zum Erklären ein; die anderen lassen sich mit Ja, Nein oder einer Auswahl beantworten."
+    source: https://de.wikipedia.org/wiki/Fragetechnik
+  - id: dna-f-purpose
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "What is the main aim of a discovery conversation?"
+      de: "Was ist das Hauptziel eines Bedarfsgesprächs?"
+    options:
+      - en: "To present all product features in the shortest possible time to the customer"
+        de: "Alle Produktmerkmale in kürzestmöglicher Zeit vor der Kundschaft zu präsentieren"
+        correct: false
+      - en: "To understand the customer's situation and needs before suggesting a solution"
+        de: "Die Situation und den Bedarf der Kundschaft zu verstehen, bevor man eine Lösung vorschlägt"
+        correct: true
+      - en: "To get a verbal commitment to buy before the customer has seen any offer"
+        de: "Eine mündliche Kaufzusage zu erhalten, bevor die Kundschaft ein Angebot gesehen hat"
+        correct: false
+      - en: "To find out which competitors the customer dislikes and why they dislike them"
+        de: "Herauszufinden, welche Wettbewerber die Kundschaft nicht mag und warum"
+        correct: false
+    explanation:
+      en: "Discovery comes before the pitch. The seller mainly asks and listens to learn what the customer needs."
+      de: "Die Bedarfsanalyse kommt vor dem Pitch. Die Verkaufsperson fragt und hört vor allem zu, um den Bedarf zu verstehen."
+    source: https://openstax.org/books/principles-marketing/pages/15-3-steps-in-the-personal-selling-process
+  - id: dna-f-real
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "A customer asks for an \"inexpensive\" hybrid car. What should the seller do first?"
+      de: "Ein Kunde fragt nach einem „günstigen“ Hybridauto. Was sollte die Verkaufsperson zuerst tun?"
+    options:
+      - en: "Show the cheapest model in stock, since the customer asked for a low price without asking any further questions"
+        de: "Das günstigste Modell im Bestand zeigen, da die Kundschaft nach niedrigem Preis fragte, ohne weitere Fragen zu stellen"
+        correct: false
+      - en: "Explain that hybrid cars are expensive and suggest a petrol car instead"
+        de: "Erklären, dass Hybridautos teuer sind, und stattdessen einen Benziner vorschlagen"
+        correct: false
+      - en: "Ask what \"inexpensive\" means: purchase price, running costs or monthly payment"
+        de: "Fragen, was „günstig“ bedeutet: Kaufpreis, Betriebskosten oder Monatsrate"
+        correct: true
+      - en: "Say that all prices are on the website and ask the customer to check there"
+        de: "Sagen, dass alle Preise auf der Website stehen, und die Kundschaft bitten, dort nachzusehen"
+        correct: false
+    explanation:
+      en: "A stated need is broad and open to interpretation. A probing question reveals the real need behind it."
+      de: "Ein geäußerter Bedarf ist weit gefasst und interpretierbar. Eine vertiefende Frage deckt den echten Bedarf dahinter auf."
+    source: https://openstax.org/books/principles-marketing/pages/1-5-determining-consumer-needs-and-wants
+  - id: dna-f-listen
+    level: foundation
+    difficulty: 1050
+    type: multi
+    stem:
+      en: "Which behaviours show active listening in a discovery call? Select all that apply."
+      de: "Welche Verhaltensweisen zeigen aktives Zuhören in einem Bedarfsgespräch? Wähle alle zutreffenden aus."
+    options:
+      - en: "Letting the customer finish before you respond"
+        de: "Die Kundschaft ausreden lassen, bevor du antwortest"
+        correct: true
+      - en: "Repeating the key point in your own words to check you understood"
+        de: "Den Kernpunkt mit eigenen Worten wiederholen, um zu prüfen, ob du ihn verstanden hast"
+        correct: true
+      - en: "Preparing your next question while the customer is still talking"
+        de: "Schon die nächste Frage vorbereiten, während die Kundschaft noch spricht"
+        correct: false
+      - en: "Summarising the needs at the end and asking whether it is right"
+        de: "Am Ende den Bedarf zusammenfassen und fragen, ob es stimmt"
+        correct: true
+    explanation:
+      en: "Letting people finish, paraphrasing and summarising show that you follow. Planning your next question means you stop listening."
+      de: "Ausreden lassen, Paraphrasieren und Zusammenfassen zeigen, dass du folgst. Wer die nächste Frage plant, hört nicht mehr zu."
+    source: https://en.wikipedia.org/wiki/Active_listening
+  - id: dna-p-path
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "Which sequence of probing questions follows situation, problem, impact, desired outcome?"
+      de: "Welche Abfolge vertiefender Fragen folgt dem Muster Situation, Problem, Auswirkung, Zielzustand?"
+    options:
+      - en: "\"How do you do X now?\", \"Where does that go wrong?\", \"What does it cost you?\", \"What would success look like?\""
+        de: "„Wie machen Sie X heute?“, „Wo geht dabei etwas schief?“, „Was kostet Sie das?“, „Wie sähe Erfolg aus?“"
+        correct: true
+      - en: "\"What would success look like?\", \"How do you do X now?\", \"Where does that go wrong?\", \"Can I send an offer?\""
+        de: "„Wie sähe Erfolg aus?“, „Wie machen Sie X heute?“, „Wo geht dabei etwas schief?“, „Darf ich ein Angebot senden?“"
+        correct: false
+      - en: "\"Can I send an offer?\", \"What does it cost you?\", \"How do you do X now?\", \"Where does that go wrong?\""
+        de: "„Darf ich ein Angebot senden?“, „Was kostet Sie das?“, „Wie machen Sie X heute?“, „Wo geht dabei etwas schief?“"
+        correct: false
+      - en: "\"Where does that go wrong?\", \"Can I send an offer?\", \"What would success look like?\", \"How do you do X now?\""
+        de: "„Wo geht dabei etwas schief?“, „Darf ich ein Angebot senden?“, „Wie sähe Erfolg aus?“, „Wie machen Sie X heute?“"
+        correct: false
+    explanation:
+      en: "The path moves from the present state to the consequences and then to the wished-for result, and only then to a proposal."
+      de: "Der Pfad geht vom Ist-Zustand zu den Folgen und dann zum gewünschten Ergebnis, und erst danach zu einem Vorschlag."
+    source: https://openstax.org/books/principles-marketing/pages/1-5-determining-consumer-needs-and-wants
+  - id: dna-p-impact
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "Why should the customer, not the seller, put numbers on the impact of a problem?"
+      de: "Warum sollte die Kundschaft und nicht die Verkaufsperson die Auswirkung eines Problems beziffern?"
+    options:
+      - en: "Because sellers are legally not permitted to calculate the value of any problem without the customer's prior written approval"
+        de: "Weil Verkaufspersonen rechtlich den Wert eines Problems nie berechnen dürfen ohne vorherige schriftliche Zustimmung der Kundschaft"
+        correct: false
+      - en: "Because figures the customer names are credible to them and can be used in the business case"
+        de: "Weil Zahlen, die die Kundschaft nennt, für sie glaubwürdig sind und im Business Case verwendet werden können"
+        correct: true
+      - en: "Because it shortens the conversation so that the seller can present more slides"
+        de: "Weil es das Gespräch verkürzt und die Verkaufsperson mehr Folien zeigen kann"
+        correct: false
+      - en: "Because customers always overstate costs, which helps to justify a higher price"
+        de: "Weil Kundschaft Kosten immer übertreibt, was einen höheren Preis rechtfertigt"
+        correct: false
+    explanation:
+      en: "A value case built on the customer's own numbers carries weight in their decision; invented figures do not."
+      de: "Ein Nutzenargument auf Basis der eigenen Zahlen der Kundschaft hat Gewicht bei deren Entscheidung; erfundene Zahlen nicht."
+    source: https://openstax.org/books/principles-marketing/pages/4-4-stages-in-the-b2b-buying-process
+  - id: dna-p-buying
+    level: practitioner
+    difficulty: 1250
+    type: multi
+    stem:
+      en: "Which questions help you map a business customer's decision process? Select all that apply."
+      de: "Welche Fragen helfen, den Entscheidungsprozess eines Geschäftskunden zu erfassen? Wähle alle zutreffenden aus."
+    options:
+      - en: "\"Who else will be involved in the decision?\""
+        de: "„Wer ist noch an der Entscheidung beteiligt?“"
+        correct: true
+      - en: "\"What steps come before a decision is made?\""
+        de: "„Welche Schritte gehen einer Entscheidung voraus?“"
+        correct: true
+      - en: "\"What must a solution do for you to say yes?\""
+        de: "„Was muss eine Lösung leisten, damit Sie zusagen?“"
+        correct: true
+      - en: "\"Would you agree that our product is the best on the market?\""
+        de: "„Stimmen Sie zu, dass unser Produkt das beste am Markt ist?“"
+        correct: false
+    explanation:
+      en: "The first three uncover people, process and criteria. The last is a leading question that tells you nothing about the customer's decision."
+      de: "Die ersten drei decken Personen, Prozess und Kriterien auf. Die letzte ist eine Suggestivfrage, die nichts über die Entscheidung der Kundschaft verrät."
+    source: https://openstax.org/books/principles-marketing/pages/4-4-stages-in-the-b2b-buying-process
+  - id: dna-p-notes
+    level: practitioner
+    difficulty: 1350
+    type: single
+    stem:
+      en: "What belongs in CRM notes after a discovery call?"
+      de: "Was gehört nach einem Bedarfsgespräch in die CRM-Notizen?"
+    options:
+      - en: "A word-for-word transcript of the call including remarks about private life and every remark about the weather"
+        de: "Ein Wortprotokoll des Gesprächs einschließlich Bemerkungen über das Privatleben und jeder Bemerkung zum Wetter"
+        correct: false
+      - en: "Only the deal value, as everything else is better kept in the seller's memory"
+        de: "Nur der Dealwert, da alles andere besser im Gedächtnis der Verkaufsperson bleibt"
+        correct: false
+      - en: "Nothing at all, as long as the seller sends a friendly e-mail afterwards"
+        de: "Gar nichts, solange die Verkaufsperson danach eine freundliche E-Mail sendet"
+        correct: false
+      - en: "Needs, decision criteria, process, stakeholders and next step; personal remarks only if business-relevant"
+        de: "Bedarfe, Entscheidungskriterien, Prozess, Beteiligte und nächster Schritt; persönliche Bemerkungen nur, wenn geschäftlich relevant"
+        correct: true
+    explanation:
+      en: "Notes should capture what the opportunity needs and be limited to what is necessary (data minimisation). Colleagues must be able to continue from them."
+      de: "Notizen sollen festhalten, was die Opportunity braucht, und auf das Nötige beschränkt sein (Datenminimierung). Kolleginnen und Kollegen müssen daran anknüpfen können."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+  - id: dna-a-conflict
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "Operations wants speed, finance wants low cost and IT wants low risk. What is the best move?"
+      de: "Der Betrieb will Tempo, die Finanzabteilung niedrige Kosten, die IT geringes Risiko. Was ist der beste Schritt?"
+    options:
+      - en: "Surface the conflict openly and ask the customer how they will weigh the criteria"
+        de: "Den Konflikt offen ansprechen und fragen, wie die Kundschaft die Kriterien gewichtet"
+        correct: true
+      - en: "Back the person you get along with best and adapt the proposal to them alone until the customer finally gives in"
+        de: "Die Person unterstützen, mit der du dich am besten verstehst, und das Angebot nur auf sie zuschneiden, bis die Kundschaft schließlich nachgibt"
+        correct: false
+      - en: "Promise that your solution is fastest, cheapest and safest, so nobody objects"
+        de: "Versprechen, dass deine Lösung am schnellsten, günstigsten und sichersten ist, damit niemand widerspricht"
+        correct: false
+      - en: "Wait until the three groups agree among themselves and then submit an offer"
+        de: "Abwarten, bis die drei Gruppen sich einig sind, und dann ein Angebot abgeben"
+        correct: false
+    explanation:
+      en: "Each group holds legitimate criteria. Making trade-offs visible helps the customer decide and avoids promises you cannot keep."
+      de: "Jede Gruppe hat berechtigte Kriterien. Abwägungen sichtbar zu machen hilft der Kundschaft bei der Entscheidung und vermeidet Versprechen, die du nicht halten kannst."
+    source: https://openstax.org/books/principles-marketing/pages/4-4-stages-in-the-b2b-buying-process
+  - id: dna-a-manip
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "Discovery reveals that a buyer wants a premium product mainly for status. Which approach is most defensible?"
+      de: "Die Bedarfsanalyse zeigt, dass ein Käufer ein Premiumprodukt vor allem wegen des Status will. Welcher Ansatz ist am vertretbarsten?"
+    options:
+      - en: "Stress how others will judge him if he picks a cheaper option to raise the sale, whatever the final price is"
+        de: "Betonen, wie andere ihn beurteilen, wenn er eine günstigere Option wählt, um den Verkauf zu steigern, egal wie hoch der Endpreis ist"
+        correct: false
+      - en: "Ask openly what success means to them and match options to it without exploiting insecurities"
+        de: "Offen fragen, was Erfolg für ihn bedeutet, und Optionen darauf abstimmen, ohne Unsicherheiten auszunutzen"
+        correct: true
+      - en: "Ignore the motive completely because personal reasons never matter in selling"
+        de: "Das Motiv komplett ignorieren, da persönliche Gründe im Verkauf nie eine Rolle spielen"
+        correct: false
+      - en: "Mention the motive to his colleagues so that they can help to persuade him"
+        de: "Das Motiv seinen Kollegen mitteilen, damit sie helfen können, ihn zu überzeugen"
+        correct: false
+    explanation:
+      en: "Understanding motives is legitimate; exploiting them is manipulation. A test: could you say aloud what you are doing, in front of the customer? Disclosing his motive to colleagues would also breach trust."
+      de: "Motive zu verstehen ist legitim; sie auszunutzen ist Manipulation. Ein Test: Könntest du vor der Kundschaft laut sagen, was du tust? Sein Motiv Kollegen mitzuteilen würde außerdem Vertrauen brechen."
+    source: https://openstax.org/books/principles-marketing/pages/1-5-determining-consumer-needs-and-wants
+  - id: dna-a-assume
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "A customer says \"We need more licences\". What is the best response in discovery?"
+      de: "Eine Kundin sagt: „Wir brauchen mehr Lizenzen.“ Was ist die beste Reaktion in der Bedarfsanalyse?"
+    options:
+      - en: "Tell her she is wrong and that fewer licences would be enough for her team"
+        de: "Ihr sagen, dass sie falsch liegt und weniger Lizenzen für ihr Team genügen würden"
+        correct: false
+      - en: "Quote the price of fifty additional licences immediately to save her time"
+        de: "Sofort den Preis für fünfzig zusätzliche Lizenzen nennen, um ihr Zeit zu sparen"
+        correct: false
+      - en: "Ask what happens when a colleague wants access and how often it occurs"
+        de: "Fragen, was passiert, wenn eine Kollegin Zugriff will, und wie oft das vorkommt"
+        correct: true
+      - en: "Ask \"You would agree that sharing logins is risky, wouldn't you?\""
+        de: "Fragen: „Sie stimmen doch zu, dass das Teilen von Zugangsdaten riskant ist, oder?“"
+        correct: false
+    explanation:
+      en: "A neutral, concrete question tests the assumption and reveals the real need. Contradicting her, quoting at once or using a leading question each close the conversation too early."
+      de: "Eine neutrale, konkrete Frage prüft die Annahme und deckt den echten Bedarf auf. Widersprechen, sofort Preise nennen oder eine Suggestivfrage stellen beenden das Gespräch jeweils zu früh."
+    source: https://openstax.org/books/principles-marketing/pages/1-5-determining-consumer-needs-and-wants
+  - id: dna-a-nofit
+    level: advanced
+    difficulty: 1650
+    type: multi
+    stem:
+      en: "Discovery shows the customer would gain more from a different solution. Which actions are defensible? Select all that apply."
+      de: "Die Bedarfsanalyse zeigt, dass die Kundschaft mit einer anderen Lösung besser fährt. Welche Maßnahmen sind vertretbar? Wähle alle zutreffenden aus."
+    options:
+      - en: "Say so openly and qualify the deal out"
+        de: "Das offen sagen und den Deal aussortieren"
+        correct: true
+      - en: "Offer a smaller, better-fitting option from your range if one exists"
+        de: "Eine kleinere, besser passende Option aus deinem Sortiment anbieten, falls es sie gibt"
+        correct: true
+      - en: "Record the reason in the CRM so that colleagues can learn from it"
+        de: "Den Grund im CRM festhalten, damit Kolleginnen und Kollegen daraus lernen können"
+        correct: true
+      - en: "Present your standard solution anyway and hope the customer will not notice"
+        de: "Trotzdem die Standardlösung präsentieren und hoffen, dass die Kundschaft es nicht merkt"
+        correct: false
+    explanation:
+      en: "Honesty protects trust and your time, and may lead to referrals later. Selling a poor fit hoping it goes unnoticed harms the relationship and the data."
+      de: "Ehrlichkeit schützt Vertrauen und deine Zeit und führt womöglich später zu Empfehlungen. Eine schlecht passende Lösung zu verkaufen und auf Unachtsamkeit zu hoffen schadet der Beziehung und den Daten."
+    source: https://openstax.org/books/principles-marketing/pages/1-5-determining-consumer-needs-and-wants

@@ -1,0 +1,290 @@
+competency: sales-process-pipeline
+items:
+  - id: spp-f-pipeline
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "What does a sales pipeline show?"
+      de: "Was zeigt eine Vertriebspipeline?"
+    options:
+      - en: "All open deals sorted by the stage they are currently in"
+        de: "Alle offenen Deals, sortiert nach der Phase, in der sie sich gerade befinden"
+        correct: true
+      - en: "The list of products that your company is allowed to sell to customers"
+        de: "Die Liste der Produkte, die dein Unternehmen an Kundschaft verkaufen darf"
+        correct: false
+      - en: "The total number of calls that each salesperson made in the last week"
+        de: "Die Gesamtzahl der Anrufe, die jede Verkaufsperson in der letzten Woche geführt hat"
+        correct: false
+      - en: "The invoices that customers have already received and paid on time"
+        de: "Die Rechnungen, die Kundschaft bereits erhalten und pünktlich bezahlt hat"
+        correct: false
+    explanation:
+      en: "A pipeline lists deals by stage, usually with value and expected close date, so you can see what needs attention."
+      de: "Eine Pipeline listet Deals nach Phase, meist mit Wert und erwartetem Abschlussdatum, damit du siehst, was Aufmerksamkeit braucht."
+    source: https://en.wikipedia.org/wiki/Sales_process_engineering
+  - id: spp-f-order
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Which order of steps matches the seven-step selling process described by OpenStax?"
+      de: "Welche Reihenfolge entspricht dem Sieben-Schritte-Verkaufsprozess, den OpenStax beschreibt?"
+    options:
+      - en: "Presentation, prospecting, closing, approach, pre-approach, follow-up, handling objections"
+        de: "Präsentation, Prospecting, Abschluss, Approach, Pre-Approach, Nachbetreuung, Einwandbehandlung"
+        correct: false
+      - en: "Prospecting, pre-approach, approach, presentation, handling objections, closing, follow-up"
+        de: "Prospecting, Pre-Approach, Approach, Präsentation, Einwandbehandlung, Abschluss, Nachbetreuung"
+        correct: true
+      - en: "Approach, closing, presentation, pre-approach, prospecting, handling objections, follow-up"
+        de: "Approach, Abschluss, Präsentation, Pre-Approach, Prospecting, Einwandbehandlung, Nachbetreuung"
+        correct: false
+      - en: "Pre-approach, prospecting, handling objections, approach, presentation, follow-up, closing"
+        de: "Pre-Approach, Prospecting, Einwandbehandlung, Approach, Präsentation, Nachbetreuung, Abschluss"
+        correct: false
+    explanation:
+      en: "The model starts with finding and qualifying prospects, researches them, makes contact, presents, handles objections, asks for the order and follows up."
+      de: "Das Modell beginnt mit Finden und Qualifizieren, recherchiert, nimmt Kontakt auf, präsentiert, behandelt Einwände, fragt nach dem Auftrag und betreut nach."
+    source: https://openstax.org/books/principles-marketing/pages/15-3-steps-in-the-personal-selling-process
+  - id: spp-f-nextstep
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "Which CRM entry is the best next step for a deal after a first conversation?"
+      de: "Welcher CRM-Eintrag ist nach einem ersten Gespräch der beste nächste Schritt für einen Deal?"
+    options:
+      - en: "Stay in touch with the customer and see how things develop over time"
+        de: "Mit der Kundschaft in Kontakt bleiben und schauen, wie sich die Dinge mit der Zeit entwickeln"
+        correct: false
+      - en: "Wait until the customer contacts us again once they have made a decision"
+        de: "Abwarten, bis die Kundschaft sich wieder meldet, sobald sie eine Entscheidung getroffen hat"
+        correct: false
+      - en: "Send the offer on Thursday and call on Monday to ask who decides"
+        de: "Am Donnerstag das Angebot senden und am Montag anrufen, um zu fragen, wer entscheidet"
+        correct: true
+      - en: "Remember to follow up whenever there is some free time during the week"
+        de: "Daran denken, nachzufassen, sobald im Lauf der Woche etwas freie Zeit ist"
+        correct: false
+    explanation:
+      en: "A concrete action with a date keeps the deal moving and visible; vague entries let deals disappear."
+      de: "Eine konkrete Handlung mit Datum hält den Deal in Bewegung und sichtbar; vage Einträge lassen Deals verschwinden."
+    source: https://en.wikipedia.org/wiki/Sales_process_engineering
+  - id: spp-f-states
+    level: foundation
+    difficulty: 1050
+    type: multi
+    stem:
+      en: "Which statements about leads, opportunities and customers are correct? Select all that apply."
+      de: "Welche Aussagen zu Leads, Opportunities und Kundschaft sind richtig? Wähle alle zutreffenden aus."
+    options:
+      - en: "A lead is a contact that might need the offer but is not yet a deal"
+        de: "Ein Lead ist ein Kontakt, der das Angebot brauchen könnte, aber noch kein Deal ist"
+        correct: true
+      - en: "A deal is in exactly one stage of the pipeline at any given time"
+        de: "Ein Deal befindet sich zu jedem Zeitpunkt in genau einer Phase der Pipeline"
+        correct: true
+      - en: "After the customer has bought, the sales process is completely finished"
+        de: "Nachdem die Kundschaft gekauft hat, ist der Vertriebsprozess vollständig abgeschlossen"
+        correct: false
+      - en: "Follow-up and after-sales service can be part of the sales process"
+        de: "Nachbetreuung und Kundendienst können Teil des Vertriebsprozesses sein"
+        correct: true
+    explanation:
+      en: "Follow-up, service and complaints belong to the process; a deal sits in one stage; a lead is only a possible buyer."
+      de: "Nachbetreuung, Service und Beschwerden gehören zum Prozess; ein Deal liegt in einer Phase; ein Lead ist nur ein möglicher Kaufender."
+    source: https://de.wikipedia.org/wiki/Vertriebsprozess
+  - id: spp-p-exit
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "Which exit criterion for the stage \"proposal sent\" is best?"
+      de: "Welches Austrittskriterium für die Phase „Angebot gesendet“ ist am besten?"
+    options:
+      - en: "The customer has described requirements and agreed to receive an offer"
+        de: "Die Kundschaft hat Anforderungen beschrieben und zugestimmt, ein Angebot zu erhalten"
+        correct: true
+      - en: "The seller feels positive about the deal after the last meeting and expects the customer to reply soon"
+        de: "Die Verkaufsperson fühlt sich nach dem letzten Termin positiv gestimmt über den Deal und erwartet, dass die Kundschaft bald antwortet"
+        correct: false
+      - en: "The deal value is above the average value of the other open deals"
+        de: "Der Dealwert liegt über dem Durchschnittswert der anderen offenen Deals"
+        correct: false
+      - en: "The deal has been open for longer than thirty days in the pipeline"
+        de: "Der Deal ist länger als dreißig Tage in der Pipeline offen"
+        correct: false
+    explanation:
+      en: "Good criteria describe something the customer can confirm; feelings, value and age say nothing about the buyer's commitment."
+      de: "Gute Kriterien beschreiben etwas, das die Kundschaft bestätigen kann; Gefühl, Wert und Alter sagen nichts über die Verbindlichkeit der Kundenseite."
+    source: https://en.wikipedia.org/wiki/Sales_process_engineering
+  - id: spp-p-backward
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "Your goal is 40,000 EUR new revenue, the average deal is 5,000 EUR and one in four proposals is won. How many proposals do you need roughly?"
+      de: "Dein Ziel sind 40.000 EUR Neuumsatz, der durchschnittliche Deal beträgt 5.000 EUR und jedes vierte Angebot wird gewonnen. Wie viele Angebote brauchst du etwa?"
+    options:
+      - en: "About 8 proposals, because 40,000 divided by 5,000 gives eight"
+        de: "Etwa 8 Angebote, denn 40.000 geteilt durch 5.000 ergibt acht"
+        correct: false
+      - en: "About 32 proposals, because eight won deals at one in four need 32"
+        de: "Etwa 32 Angebote, denn acht gewonnene Deals bei einer Quote von eins zu vier brauchen 32"
+        correct: true
+      - en: "About 16 proposals, because one in four means half as many again"
+        de: "Etwa 16 Angebote, denn eins zu vier bedeutet die Hälfte mehr"
+        correct: false
+      - en: "About 160 proposals, because 40,000 divided by 250 per proposal"
+        de: "Etwa 160 Angebote, denn 40.000 geteilt durch 250 je Angebot"
+        correct: false
+    explanation:
+      en: "Eight deals are needed (40,000 / 5,000). With a win rate of 25 percent you need 8 / 0.25 = 32 proposals."
+      de: "Es braucht acht Deals (40.000 / 5.000). Bei 25 Prozent Abschlussquote brauchst du 8 / 0,25 = 32 Angebote."
+    source: https://en.wikipedia.org/wiki/Sales_process_engineering
+  - id: spp-p-stalled
+    level: practitioner
+    difficulty: 1250
+    type: multi
+    stem:
+      en: "A deal has stayed in \"proposal sent\" far longer than usual. Which actions are sensible? Select all that apply."
+      de: "Ein Deal liegt viel länger als üblich in „Angebot gesendet“. Welche Maßnahmen sind sinnvoll? Wähle alle zutreffenden aus."
+    options:
+      - en: "Ask the contact for the next step on their side and a date"
+        de: "Die Kontaktperson nach dem nächsten Schritt auf ihrer Seite und einem Datum fragen"
+        correct: true
+      - en: "Check whether the need is still real and who else is involved"
+        de: "Prüfen, ob der Bedarf noch echt ist und wer sonst beteiligt ist"
+        correct: true
+      - en: "Move the deal to \"negotiation\" so the forecast looks healthier"
+        de: "Den Deal auf „Verhandlung“ setzen, damit der Forecast gesünder aussieht"
+        correct: false
+      - en: "Close it as lost with a reason if there is no response after a final message"
+        de: "Ihn mit Grund als verloren schließen, wenn nach einer letzten Nachricht keine Antwort kommt"
+        correct: true
+    explanation:
+      en: "Re-qualify, agree dates or close honestly. Moving a deal forward without evidence distorts the pipeline."
+      de: "Neu qualifizieren, Termine vereinbaren oder ehrlich schließen. Einen Deal ohne Beleg nach vorn zu schieben verzerrt die Pipeline."
+    source: https://en.wikipedia.org/wiki/Sales_process_engineering
+  - id: spp-p-buyer
+    level: practitioner
+    difficulty: 1350
+    type: single
+    stem:
+      en: "A business customer is still writing the technical specification. What fits the buying process best?"
+      de: "Ein Geschäftskunde schreibt noch an der technischen Spezifikation. Was passt am besten zum Kaufprozess?"
+    options:
+      - en: "Send a full offer immediately so that you are ahead of every other supplier"
+        de: "Sofort ein vollständiges Angebot senden, damit du allen anderen Anbietern voraus bist"
+        correct: false
+      - en: "Ask the customer to skip the specification and go straight to signing a contract, which saves everyone time"
+        de: "Die Kundschaft bitten, die Spezifikation zu überspringen und gleich einen Vertrag zu unterschreiben, was allen Zeit spart"
+        correct: false
+      - en: "Move the deal to \"won\" because the customer is already working on the topic"
+        de: "Den Deal auf „gewonnen“ setzen, weil die Kundschaft schon an dem Thema arbeitet"
+        correct: false
+      - en: "Help clarify requirements and offer to review the specification, and hold the formal offer back"
+        de: "Bei der Klärung der Anforderungen helfen, die Spezifikation gegenzulesen anbieten und das förmliche Angebot zurückhalten"
+        correct: true
+    explanation:
+      en: "In the B2B buying process, specification precedes supplier search and proposal solicitation; supporting the buyer at the right stage builds trust, and a premature offer may not fit."
+      de: "Im B2B-Kaufprozess folgen Lieferantensuche und Angebotseinholung auf die Spezifikation; Unterstützung zur richtigen Zeit schafft Vertrauen, ein verfrühtes Angebot passt womöglich nicht."
+    source: https://openstax.org/books/principles-marketing/pages/4-4-stages-in-the-b2b-buying-process
+  - id: spp-a-coverage
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "Win rate on qualified opportunities is 25 percent. What pipeline do you roughly need for a 200,000 EUR target, ignoring timing?"
+      de: "Die Abschlussquote bei qualifizierten Opportunities liegt bei 25 Prozent. Welche Pipeline brauchst du grob für ein Ziel von 200.000 EUR, ohne Timing?"
+    options:
+      - en: "About 800,000 EUR of qualified pipeline, derived from your own win rate"
+        de: "Etwa 800.000 EUR qualifizierte Pipeline, abgeleitet aus deiner eigenen Abschlussquote"
+        correct: true
+      - en: "About 200,000 EUR, since the target equals the value you need to fill, so no extra pipeline is needed"
+        de: "Etwa 200.000 EUR, da das Ziel dem Wert entspricht, den du füllen musst, sodass keine zusätzliche Pipeline nötig ist"
+        correct: false
+      - en: "About 500,000 EUR, because a fixed ratio of 2.5 applies to every team"
+        de: "Etwa 500.000 EUR, weil für jedes Team ein festes Verhältnis von 2,5 gilt"
+        correct: false
+      - en: "About 50,000 EUR, because 25 percent of the target is enough"
+        de: "Etwa 50.000 EUR, weil 25 Prozent des Ziels genügen"
+        correct: false
+    explanation:
+      en: "Coverage is target divided by win rate: 200,000 / 0.25 = 800,000. Fixed ratios from other teams are only a starting guess."
+      de: "Abdeckung ist Ziel geteilt durch Abschlussquote: 200.000 / 0,25 = 800.000. Feste Verhältnisse anderer Teams sind nur eine Startannahme."
+    source: https://en.wikipedia.org/wiki/Sales_process_engineering
+  - id: spp-a-inflation
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "Reps move deals forward early to look good. Which response best addresses the cause?"
+      de: "Verkaufspersonen schieben Deals früh nach vorn, um gut dazustehen. Welche Reaktion geht die Ursache am besten an?"
+    options:
+      - en: "Remove the stages from the CRM so that nobody can move a deal too early"
+        de: "Die Phasen aus dem CRM entfernen, damit niemand einen Deal zu früh verschieben kann"
+        correct: false
+      - en: "Define evidence-based exit criteria and spot-check the evidence in deal reviews"
+        de: "Belegbasierte Austrittskriterien festlegen und die Belege in Deal-Reviews stichprobenartig prüfen"
+        correct: true
+      - en: "Publicly rank people by the number of deals they moved this month to create some healthy competition"
+        de: "Personen öffentlich nach der Zahl der in diesem Monat verschobenen Deals ranken, um gesunden Wettbewerb zu erzeugen"
+        correct: false
+      - en: "Ask managers to reduce each forecast by a fixed percentage every quarter"
+        de: "Führungskräfte bitten, jeden Forecast jedes Quartal um einen festen Prozentsatz zu kürzen"
+        correct: false
+    explanation:
+      en: "Stage inflation is fed by vague criteria and incentives. Evidence-based criteria and checks make inflation visible; blanket cuts or rankings treat symptoms or worsen them."
+      de: "Phaseninflation entsteht durch vage Kriterien und Anreize. Belegbasierte Kriterien und Prüfungen machen sie sichtbar; pauschale Kürzungen oder Rankings behandeln Symptome oder verschlimmern sie."
+    source: https://en.wikipedia.org/wiki/Sales_process_engineering
+  - id: spp-a-metrics
+    level: advanced
+    difficulty: 1600
+    type: multi
+    stem:
+      en: "Which pairings of a metric and a decision it informs are sensible? Select all that apply."
+      de: "Welche Paarungen aus Kennzahl und der dadurch gestützten Entscheidung sind sinnvoll? Wähle alle zutreffenden aus."
+    options:
+      - en: "Win rate by lead source: where to invest more prospecting effort"
+        de: "Abschlussquote nach Lead-Quelle: wohin mehr Aufwand für die Neukundengewinnung fließen sollte"
+        correct: true
+      - en: "Time in stage: which stage needs coaching or clearer exit criteria"
+        de: "Verweildauer je Phase: welche Phase Coaching oder klarere Austrittskriterien braucht"
+        correct: true
+      - en: "Number of calls per day alone: who should receive the sales bonus"
+        de: "Anzahl der Anrufe pro Tag allein: wer den Vertriebsbonus erhalten sollte"
+        correct: false
+      - en: "Stage-to-stage conversion: where deals leak out of the process"
+        de: "Konversion von Phase zu Phase: wo Deals aus dem Prozess herausfallen"
+        correct: true
+    explanation:
+      en: "Metrics are useful when tied to a decision. Activity counts alone invite gaming and say nothing about outcomes."
+      de: "Kennzahlen sind nützlich, wenn sie an eine Entscheidung gebunden sind. Aktivitätszahlen allein laden zum Tuning ein und sagen nichts über Ergebnisse."
+    source: https://en.wikipedia.org/wiki/Sales_process_engineering
+  - id: spp-a-standard
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "A team sells both small repeat orders and large multi-stakeholder projects with one process. What is the most defensible change?"
+      de: "Ein Team verkauft kleine Wiederholbestellungen und große Projekte mit vielen Beteiligten mit einem Prozess. Was ist die vertretbarste Änderung?"
+    options:
+      - en: "Force the small orders through all stages used for the large projects to keep reporting simple"
+        de: "Die kleinen Bestellungen durch alle Phasen der großen Projekte zwingen, um das Reporting einfach zu halten"
+        correct: false
+      - en: "Let each person define personal stages so that nothing is imposed on them"
+        de: "Jede Person eigene Phasen definieren lassen, damit ihr nichts aufgezwungen wird"
+        correct: false
+      - en: "Drop the process for large projects since every project is unique anyway"
+        de: "Den Prozess für große Projekte streichen, da ohnehin jedes Projekt einzigartig ist"
+        correct: false
+      - en: "Keep shared stage names but add separate playbooks and criteria per deal type"
+        de: "Gemeinsame Phasennamen behalten, aber getrennte Playbooks und Kriterien je Dealtyp ergänzen"
+        correct: true
+    explanation:
+      en: "Shared language keeps reporting and handovers workable, while criteria differ by deal type, as simple re-buys skip stages that new purchases need."
+      de: "Gemeinsame Sprache hält Berichte und Übergaben handhabbar, während Kriterien je Dealtyp verschieden sind, da einfache Wiederholkäufe Stufen überspringen, die Neukäufe brauchen."
+    source: https://openstax.org/books/principles-marketing/pages/4-4-stages-in-the-b2b-buying-process
