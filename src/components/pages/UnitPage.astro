@@ -47,8 +47,10 @@ const items = (await getQuizItems(lang)).filter((i) => i.competency === unit.com
                 {r.title}
               </a>{' '}
               <span class="text-sm text-slate-700">
-                ({t(lang, 'unit.linkOnly')}, {r.provider}, {r.language.toUpperCase()}, {r.minutes} {t(lang, 'unit.minutes')}) ·{' '}
-                {t(lang, 'unit.license')}: <a class="underline" href={r.licenseUrl}>{r.license}</a>
+                ({r.mode === 'embed' ? t(lang, 'unit.openLink') : t(lang, 'unit.linkOnly')}, {r.format}, {r.language.toUpperCase()}, {r.minutes}{' '}
+                {t(lang, 'unit.minutes')}) · {t(lang, 'unit.author')}: {r.provider} · {t(lang, 'unit.source')}:{' '}
+                <a class="underline" href={r.url} rel="noopener noreferrer">{new URL(r.url).hostname}</a> · {t(lang, 'unit.license')}:{' '}
+                <a class="underline" href={r.licenseUrl} rel="noopener noreferrer">{r.license}</a> · {t(lang, 'unit.changes')}: {t(lang, 'unit.noChanges')}
               </span>
             </li>
           ))
@@ -63,13 +65,13 @@ const items = (await getQuizItems(lang)).filter((i) => i.competency === unit.com
             {unit.sources.map((s) => (
               <li>
                 <a class="underline" href={s.url}>{s.title}</a>
-                {s.author && <span> — {s.author}</span>}
+                {s.author && <span> — {t(lang, 'unit.author')}: {s.author}</span>}
                 {s.license && (
                   <span>
                     {' '}· {s.licenseUrl ? <a class="underline" href={s.licenseUrl}>{s.license}</a> : s.license}
                   </span>
                 )}
-                {s.changes && <span> · {s.changes}</span>}
+                <span> · {t(lang, 'unit.changes')}: {s.changes ?? t(lang, 'unit.noChanges')}</span>
               </li>
             ))}
           </ul>
