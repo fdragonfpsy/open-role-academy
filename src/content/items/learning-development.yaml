@@ -9,16 +9,16 @@ items:
       de: "Was ist die Grundidee von Personalentwicklung in einem Unternehmen?"
     options:
       - en: "Helping people gain knowledge and skills for current and future work"
-        de: "Menschen helfen, Wissen und Fähigkeiten für aktuelle und künftige Arbeit zu erwerben"
+        de: "Menschen dabei unterstützen, Wissen und Fähigkeiten für aktuelle und künftige Aufgaben aufzubauen"
         correct: true
-      - en: "Calculating salaries"
-        de: "Gehälter berechnen"
+      - en: "Calculating salaries and benefits so that every employee is paid correctly and on time each month"
+        de: "Gehälter und Zusatzleistungen berechnen, damit alle Beschäftigten jeden Monat korrekt und pünktlich bezahlt werden"
         correct: false
-      - en: "Recording working hours"
-        de: "Arbeitszeiten erfassen"
+      - en: "Recording working hours and absences so that attendance can be reported to management"
+        de: "Arbeitszeiten und Abwesenheiten erfassen, damit die Anwesenheit an die Leitung berichtet werden kann"
         correct: false
-      - en: "Replacing all jobs with software"
-        de: "Alle Stellen durch Software ersetzen"
+      - en: "Replacing all jobs with software so that no further employee training is needed in the company"
+        de: "Alle Stellen durch Software ersetzen, sodass im Unternehmen keine Qualifizierung von Beschäftigten mehr nötig ist"
         correct: false
     explanation:
       en: "L&D covers activities that help employees acquire knowledge and skills for their job and later roles."
@@ -33,16 +33,16 @@ items:
       de: "Was ist ein Beispiel für Lernen im Arbeitsalltag (on the job)?"
     options:
       - en: "Shadowing a colleague and then doing the task with support"
-        de: "Eine Kollegin begleiten und die Aufgabe dann mit Unterstützung selbst ausführen"
+        de: "Einer Kollegin oder einem Kollegen über die Schulter schauen und die Aufgabe dann mit Unterstützung selbst ausführen"
         correct: true
-      - en: "Reading a legal text without any task"
-        de: "Einen Rechtstext ohne Aufgabenbezug lesen"
+      - en: "Reading a legal text on a topic without having any related task to apply it to afterwards"
+        de: "Einen Gesetzestext zu einem Thema lesen, ohne danach eine passende Aufgabe zu haben, in der man ihn anwendet"
         correct: false
-      - en: "Waiting until a course is offered"
-        de: "Warten, bis ein Seminar angeboten wird"
+      - en: "Waiting until the next external course is offered and then attending it away from the workplace"
+        de: "Warten, bis der nächste externe Kurs angeboten wird, und ihn dann abseits des Arbeitsplatzes besuchen"
         correct: false
-      - en: "Archiving old files"
-        de: "Alte Akten archivieren"
+      - en: "Archiving old files in the basement for a few days, with no link to any skill needed in the job"
+        de: "Einige Tage lang alte Akten im Keller archivieren, ohne Bezug zu einer im Job benötigten Fähigkeit"
         correct: false
     explanation:
       en: "On-the-job learning happens while doing real work, with support."
@@ -81,16 +81,16 @@ items:
       de: "Was ist ein Lernmanagementsystem (LMS)?"
     options:
       - en: "Software that offers learning content and tracks learning"
-        de: "Software, die Lerninhalte bereitstellt und den Lernstand erfasst"
+        de: "Software, die Lerninhalte bereitstellt und Lernfortschritte verfolgt"
         correct: true
-      - en: "A payroll program"
-        de: "Ein Programm zur Entgeltabrechnung"
+      - en: "A payroll program that calculates salaries, taxes and social insurance contributions each month"
+        de: "Ein Abrechnungsprogramm, das monatlich Gehälter, Steuern und Sozialabgaben berechnet"
         correct: false
-      - en: "A type of mentoring relationship"
-        de: "Eine Form der Mentoring-Beziehung"
+      - en: "A type of mentoring relationship in which a senior employee advises a junior colleague over time"
+        de: "Eine Form der Mentoring-Beziehung, in der eine erfahrene Person eine jüngere Kollegin oder einen jüngeren Kollegen langfristig berät"
         correct: false
-      - en: "A legal contract"
-        de: "Ein Rechtsvertrag"
+      - en: "A legal contract between the employer and the employee that regulates further training duties"
+        de: "Ein Rechtsvertrag zwischen Arbeitgeber und Beschäftigten, der Pflichten zur Weiterbildung regelt"
         correct: false
     explanation:
       en: "An LMS is a software platform for delivering, managing and tracking learning content."
@@ -105,16 +105,16 @@ items:
       de: "Welches Lernziel ist am besten formuliert?"
     options:
       - en: "Learners can create a monthly report using the new template"
-        de: "Lernende können einen Monatsbericht mit der neuen Vorlage erstellen"
+        de: "Lernende können mit der neuen Vorlage einen Monatsbericht erstellen"
         correct: true
-      - en: "Learners understand reporting"
-        de: "Lernende verstehen das Berichtswesen"
+      - en: "Learners understand reporting and the main ideas behind the way the finance department works"
+        de: "Lernende verstehen das Berichtswesen und die Grundgedanken hinter der Arbeitsweise der Finanzabteilung"
         correct: false
-      - en: "Learners know about templates"
-        de: "Lernende wissen etwas über Vorlagen"
+      - en: "Learners know about templates and the different formats that are used in the company's documents"
+        de: "Lernende kennen Vorlagen und die verschiedenen Formate, die in den Dokumenten des Unternehmens genutzt werden"
         correct: false
-      - en: "Learners appreciate reports"
-        de: "Lernende schätzen Berichte"
+      - en: "Learners appreciate reports and see the value that good reporting brings to the whole organisation"
+        de: "Lernende schätzen Berichte und erkennen den Wert, den gutes Berichtswesen für die ganze Organisation hat"
         correct: false
     explanation:
       en: "Good objectives describe observable behaviour, which also shows how to test and evaluate."
@@ -153,16 +153,16 @@ items:
       de: "Eine Führungskraft fordert eine Schulung, weil immer wieder Fehler passieren. Die Analyse zeigt, dass die Prozessbeschreibung unklar ist. Was ist der beste nächste Schritt?"
     options:
       - en: "Clarify the process first; training alone will not fix the cause"
-        de: "Zuerst den Prozess klären; eine Schulung allein behebt die Ursache nicht"
+        de: "Zuerst den Prozess klären; Schulung allein behebt die Ursache nicht"
         correct: true
-      - en: "Book a course anyway"
-        de: "Trotzdem ein Seminar buchen"
+      - en: "Book a course anyway, because training always helps and shows that the problem is taken seriously"
+        de: "Trotzdem einen Kurs buchen, weil Schulung immer hilft und zeigt, dass das Problem ernst genommen wird"
         correct: false
-      - en: "Ignore the errors"
-        de: "Die Fehler ignorieren"
+      - en: "Ignore the errors, because they will disappear by themselves once people have gained more experience"
+        de: "Die Fehler ignorieren, weil sie von selbst verschwinden, sobald die Leute mehr Erfahrung gesammelt haben"
         correct: false
-      - en: "Blame the participants"
-        de: "Den Teilnehmenden die Schuld geben"
+      - en: "Blame the participants and make them repeat the course until their error rates have fallen"
+        de: "Die Teilnehmenden verantwortlich machen und den Kurs wiederholen lassen, bis die Fehlerquoten gesunken sind"
         correct: false
     explanation:
       en: "Needs analysis looks for causes. Not every problem is a training problem; unclear processes need process fixes."
@@ -176,17 +176,17 @@ items:
       en: "Before introducing an LMS that records individual learning progress, what should you do?"
       de: "Was solltest du tun, bevor ein LMS eingeführt wird, das den individuellen Lernfortschritt erfasst?"
     options:
-      - en: "Involve the data protection officer and, where applicable, the works council, and define purpose and access"
-        de: "Datenschutzbeauftragte und gegebenenfalls den Betriebsrat einbeziehen sowie Zweck und Zugriff festlegen"
+      - en: "Involve the DPO and, where applicable, the works council, and define purpose and access"
+        de: "Datenschutzbeauftragte und gegebenenfalls Betriebsrat einbeziehen sowie Zweck und Zugriff festlegen"
         correct: true
-      - en: "Publish everyone's results to the whole company"
-        de: "Die Ergebnisse aller im ganzen Unternehmen veröffentlichen"
+      - en: "Publish everyone's results to the whole company to motivate people through friendly competition"
+        de: "Die Ergebnisse aller im ganzen Unternehmen veröffentlichen, um Menschen durch freundlichen Wettbewerb zu motivieren"
         correct: false
-      - en: "Nothing, learning data is not personal data"
-        de: "Nichts, Lerndaten sind keine personenbezogenen Daten"
+      - en: "Nothing, because learning data is not personal data as long as no names appear in the reports"
+        de: "Nichts, denn Lerndaten sind keine personenbezogenen Daten, solange in den Berichten keine Namen stehen"
         correct: false
-      - en: "Keep the data forever just in case"
-        de: "Die Daten vorsorglich für immer speichern"
+      - en: "Keep the data forever just in case it is needed for a later analysis or a dispute about training"
+        de: "Die Daten für immer aufbewahren, falls sie für eine spätere Auswertung oder einen Streit über Schulungen gebraucht werden"
         correct: false
     explanation:
       en: "Records of individual learning are employee data. Define purpose, access and retention, and involve the right bodies; check current law."
@@ -227,14 +227,14 @@ items:
       - en: "Report evidence on all evaluation levels, name the comparison used and state the limits of attribution"
         de: "Belege auf allen Evaluationsebenen berichten, den verwendeten Vergleich nennen und die Grenzen der Zuordnung darlegen"
         correct: true
-      - en: "Invent a plausible percentage"
-        de: "Einen plausiblen Prozentsatz erfinden"
+      - en: "Invent a plausible percentage so that the director receives a clear figure for the planning meeting"
+        de: "Einen plausiblen Prozentsatz erfinden, damit die Direktion für die Planungsrunde eine klare Zahl erhält"
         correct: false
-      - en: "Copy a figure from another company"
-        de: "Eine Zahl von einem anderen Unternehmen übernehmen"
+      - en: "Copy a figure from another company's published programme, because similar programmes should deliver similar returns"
+        de: "Eine Zahl aus dem veröffentlichten Programm eines anderen Unternehmens übernehmen, da ähnliche Programme ähnliche Erträge bringen sollten"
         correct: false
-      - en: "Refuse to report anything"
-        de: "Jede Auskunft verweigern"
+      - en: "Refuse to report anything until a complete and exact calculation is possible for the whole programme"
+        de: "Nichts berichten, bis eine vollständige und exakte Berechnung für das gesamte Programm möglich ist"
         correct: false
     explanation:
       en: "Business results have many causes. Honest reporting shows what is known and what is not; invented figures damage trust."
@@ -248,17 +248,17 @@ items:
       en: "Which approach best links the L&D plan to strategy?"
       de: "Welcher Ansatz verknüpft den Entwicklungsplan am besten mit der Strategie?"
     options:
-      - en: "Derive needed capabilities from strategic questions, compare with the current skill picture, then prioritise by impact and urgency"
-        de: "Nötige Fähigkeiten aus strategischen Fragen ableiten, mit dem aktuellen Kompetenzbild vergleichen und dann nach Wirkung und Dringlichkeit priorisieren"
+      - en: "Derive needed capabilities from strategic questions, compare with the current skill picture, then prioritise by impact"
+        de: "Benötigte Fähigkeiten aus strategischen Fragen ableiten, mit dem aktuellen Kompetenzbild vergleichen und nach Wirkung priorisieren"
         correct: true
-      - en: "Offer every course available on the market"
-        de: "Jedes am Markt verfügbare Seminar anbieten"
+      - en: "Offer every course available on the market, so that employees can choose whatever suits them best"
+        de: "Jeden am Markt verfügbaren Kurs anbieten, damit die Beschäftigten wählen können, was am besten zu ihnen passt"
         correct: false
-      - en: "Buy the cheapest courses first"
-        de: "Zuerst die billigsten Seminare einkaufen"
+      - en: "Buy the cheapest courses first, because a low price per participant keeps the training budget under control"
+        de: "Zuerst die günstigsten Kurse kaufen, weil ein niedriger Preis pro Teilnehmenden das Weiterbildungsbudget im Griff hält"
         correct: false
-      - en: "Let each employee pick anything without a plan"
-        de: "Jede Person ohne Plan beliebig wählen lassen"
+      - en: "Let each employee pick anything without a plan, because personal interest is the best driver of learning"
+        de: "Jede beschäftigte Person ohne Plan frei wählen lassen, weil persönliches Interesse der beste Antrieb zum Lernen ist"
         correct: false
     explanation:
       en: "Development measures should serve company goals. Prioritising by impact and urgency avoids a scattered offer."

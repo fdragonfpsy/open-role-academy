@@ -11,14 +11,14 @@ items:
       - en: "The rules are spread over several sources, such as EU law, statutes, collective agreements, works agreements and contracts"
         de: "Die Regeln sind auf mehrere Quellen verteilt, etwa EU-Recht, Gesetze, Tarifverträge, Betriebsvereinbarungen und Verträge"
         correct: true
-      - en: "A single labour code contains all rules"
-        de: "Ein einziges Arbeitsgesetzbuch enthält alle Regeln"
+      - en: "A single labour code contains all rules, and statutes, collective agreements and works agreements only repeat its content"
+        de: "Ein einziges Arbeitsgesetzbuch enthält alle Regeln, und Gesetze, Tarifverträge und Betriebsvereinbarungen wiederholen nur dessen Inhalt"
         correct: false
       - en: "Only the individual contract matters"
         de: "Nur der Einzelvertrag zählt"
         correct: false
-      - en: "Only EU law applies to employment relationships"
-        de: "Nur EU-Recht gilt für Arbeitsverhältnisse"
+      - en: "Only EU law applies to employment relationships, because national statutes, collective agreements and contracts cannot add anything to it"
+        de: "Nur EU-Recht gilt für Arbeitsverhältnisse, weil nationale Gesetze, Tarifverträge und Verträge nichts hinzufügen können"
         correct: false
     explanation:
       en: "Germany has no single, unified labour code. Employment rules come from several layers, and which ones apply depends on the case."
@@ -32,14 +32,14 @@ items:
       en: "What is the difference between individual and collective labour law?"
       de: "Was unterscheidet individuelles und kollektives Arbeitsrecht?"
     options:
-      - en: "Individual labour law concerns the relationship between employee and employer, collective labour law the relationship involving unions and employee representatives"
-        de: "Das Individualarbeitsrecht betrifft das Verhältnis zwischen Arbeitnehmenden und Arbeitgeber, das kollektive Arbeitsrecht das Verhältnis mit Gewerkschaften und Arbeitnehmervertretungen"
+      - en: "Individual law concerns the employee-employer relationship; collective law concerns unions and employee representatives"
+        de: "Das Individualarbeitsrecht betrifft das Verhältnis zwischen Arbeitnehmenden und Arbeitgeber, das kollektive Arbeitsrecht Gewerkschaften und Arbeitnehmervertretungen"
         correct: true
-      - en: "Individual labour law applies only to managers, collective labour law to all other staff"
+      - en: "Individual labour law applies only to managers and executives, while collective labour law covers all other staff"
         de: "Das Individualarbeitsrecht gilt nur für Führungskräfte, das kollektive Arbeitsrecht für alle anderen Beschäftigten"
         correct: false
-      - en: "Individual labour law is national, collective labour law is always international"
-        de: "Das Individualarbeitsrecht ist national, das kollektive Arbeitsrecht immer international"
+      - en: "Individual labour law is purely national, whereas collective labour law is always international"
+        de: "Das Individualarbeitsrecht ist rein national, das kollektive Arbeitsrecht immer international"
         correct: false
       - en: "There is no difference; the terms are synonyms"
         de: "Es gibt keinen Unterschied; die Begriffe sind Synonyme"
@@ -56,17 +56,17 @@ items:
       en: "A colleague says: \"Without a signed paper there is no employment contract.\" What is the best HR response?"
       de: "Ein Kollege sagt: \"Ohne unterschriebenes Papier gibt es keinen Arbeitsvertrag.\" Was ist die beste HR-Reaktion?"
     options:
-      - en: "Explain that under German law an employment contract can also be concluded orally, so terms should be documented and the current documentation duties checked"
-        de: "Erklären, dass ein Arbeitsvertrag nach deutschem Recht auch mündlich geschlossen werden kann, weshalb die Bedingungen dokumentiert und die aktuellen Dokumentationspflichten geprüft werden sollten"
+      - en: "Explain that an employment contract can also be concluded orally under German law, so terms should be documented and the documentation duties checked"
+        de: "Erklären, dass ein Arbeitsvertrag nach deutschem Recht auch mündlich geschlossen werden kann, weshalb die Bedingungen dokumentiert und die Dokumentationspflichten geprüft werden sollten"
         correct: true
-      - en: "Agree, because only written contracts are valid"
-        de: "Zustimmen, weil nur schriftliche Verträge gültig sind"
+      - en: "Agree, because under German law only a written and signed contract is valid and creates obligations for either side"
+        de: "Zustimmen, weil nach deutschem Recht nur ein schriftlicher, unterschriebener Vertrag gültig ist und Pflichten für beide Seiten begründet"
         correct: false
-      - en: "Say that employment contracts are always unwritten"
-        de: "Sagen, dass Arbeitsverträge immer mündlich sind"
+      - en: "Say that employment contracts are always unwritten and that no document needs to be kept in the personnel file"
+        de: "Sagen, dass Arbeitsverträge immer mündlich sind und kein Dokument in der Personalakte aufbewahrt werden muss"
         correct: false
-      - en: "Tell the employee that no obligations exist until a paper is signed"
-        de: "Der beschäftigten Person sagen, dass keine Pflichten bestehen, bis ein Papier unterschrieben ist"
+      - en: "Tell the employee that no obligations such as pay or working time exist until a paper has been signed"
+        de: "Der beschäftigten Person sagen, dass Pflichten wie Vergütung oder Arbeitszeit erst bestehen, wenn ein Papier unterschrieben wurde"
         correct: false
     explanation:
       en: "The form of an employment contract is generally free in Germany, so an oral agreement can create one. Written documentation is still good practice, and statutory documentation duties should be checked in the current text."
@@ -105,16 +105,16 @@ items:
       de: "Du entwirfst ein neues Schichtmodell. Wo suchst du in Deutschland die Grenzen der Arbeitszeit?"
     options:
       - en: "In the current working time statute and any applicable collective agreement"
-        de: "Im aktuellen Arbeitszeitgesetz und in einem gegebenenfalls geltenden Tarifvertrag"
+        de: "Im aktuellen Arbeitszeitgesetz und in einem gegebenenfalls anwendbaren Tarifvertrag"
         correct: true
-      - en: "In the memory of long-serving colleagues"
-        de: "In der Erinnerung langjähriger Kolleg:innen"
+      - en: "In the memory of long-serving colleagues, since established habits define the legal limits"
+        de: "Im Gedächtnis langjähriger Kolleginnen und Kollegen, da gewachsene Gewohnheiten die rechtlichen Grenzen bestimmen"
         correct: false
-      - en: "Only in the company's own shift planning software"
-        de: "Nur in der betrieblichen Schichtplanungssoftware"
+      - en: "Only in the settings of the company's shift planning software, which decide what is allowed"
+        de: "Nur in den Einstellungen der Schichtplanungssoftware des Unternehmens, die festlegen, was erlaubt ist"
         correct: false
-      - en: "Nowhere; working time is not regulated"
-        de: "Nirgends; Arbeitszeit ist nicht geregelt"
+      - en: "Nowhere, because working time is left entirely to the agreement between manager and employee"
+        de: "Nirgends, weil die Arbeitszeit vollständig der Vereinbarung zwischen Führungskraft und Beschäftigten überlassen ist"
         correct: false
     explanation:
       en: "Working time is regulated by law, and collective agreements can add rules. Limits must be taken from the current texts, not from memory or software defaults."
@@ -128,17 +128,17 @@ items:
       en: "Which statement about the German Part-Time and Fixed-Term Employment Act is correct?"
       de: "Welche Aussage über das deutsche Teilzeit- und Befristungsgesetz ist richtig?"
     options:
-      - en: "It regulates part-time and fixed-term work, implements EU directives and aims to prevent discrimination of these groups"
-        de: "Es regelt Teilzeit und Befristung, setzt EU-Richtlinien um und will die Diskriminierung dieser Gruppen verhindern"
+      - en: "It regulates part-time and fixed-term work, implements EU directives and aims to prevent discrimination"
+        de: "Es regelt Teilzeit und Befristung, setzt EU-Richtlinien um und soll Diskriminierung verhindern"
         correct: true
-      - en: "It only applies to managers"
-        de: "Es gilt nur für Führungskräfte"
+      - en: "It only applies to managers and executives who negotiate individual working time models"
+        de: "Es gilt nur für Führungskräfte, die individuelle Arbeitszeitmodelle verhandeln"
         correct: false
-      - en: "It forbids all fixed-term contracts"
-        de: "Es verbietet alle befristeten Verträge"
+      - en: "It forbids all fixed-term contracts and requires every employee to be hired permanently"
+        de: "Es verbietet alle befristeten Verträge und verlangt, dass alle unbefristet eingestellt werden"
         correct: false
-      - en: "It regulates only the payroll tax of part-time staff"
-        de: "Es regelt nur die Lohnsteuer von Teilzeitkräften"
+      - en: "It regulates only the payroll tax and social contribution treatment of part-time staff"
+        de: "Es regelt nur die Lohnsteuer und die Sozialversicherungsbehandlung von Teilzeitbeschäftigten"
         correct: false
     explanation:
       en: "The act sets the conditions for fixed-term contracts, promotes part-time work and aims to prevent disadvantage of part-time and fixed-term employees. It implements EU directives."
@@ -152,17 +152,17 @@ items:
       en: "Before drafting a works agreement on a topic, you notice that a collective agreement also covers this topic. What is the sensible next step?"
       de: "Bevor du eine Betriebsvereinbarung zu einem Thema entwirfst, merkst du, dass auch ein Tarifvertrag dieses Thema regelt. Was ist der sinnvolle nächste Schritt?"
     options:
-      - en: "Check whether the collective agreement applies and whether it limits or opens up works agreements on this topic, and ask legal counsel if unclear"
-        de: "Prüfen, ob der Tarifvertrag gilt und ob er Betriebsvereinbarungen zu diesem Thema begrenzt oder zulässt, und bei Unklarheit die Rechtsberatung fragen"
+      - en: "Check whether the collective agreement applies and whether it limits or opens up works agreements on this topic; ask legal counsel if unclear"
+        de: "Prüfen, ob der Tarifvertrag gilt und ob er Betriebsvereinbarungen zu dem Thema begrenzt oder zulässt; bei Unklarheit Rechtsberatung fragen"
         correct: true
-      - en: "Proceed, because works agreements always override collective agreements"
-        de: "Fortfahren, weil Betriebsvereinbarungen Tarifverträge immer verdrängen"
+      - en: "Proceed with the draft, because works agreements always override collective agreements on the same topic"
+        de: "Mit dem Entwurf fortfahren, weil Betriebsvereinbarungen Tarifverträge zum selben Thema immer verdrängen"
         correct: false
-      - en: "Ignore the collective agreement, because it only concerns unions"
-        de: "Den Tarifvertrag ignorieren, weil er nur Gewerkschaften betrifft"
+      - en: "Ignore the collective agreement, because it only concerns unions and not the employer and its employees"
+        de: "Den Tarifvertrag ignorieren, weil er nur Gewerkschaften und nicht Arbeitgeber und Beschäftigte betrifft"
         correct: false
-      - en: "Delete the topic from the draft without discussing it with anyone"
-        de: "Das Thema ohne Rücksprache aus dem Entwurf streichen"
+      - en: "Delete the topic from the draft without discussing it with the works council or anyone else"
+        de: "Das Thema aus dem Entwurf streichen, ohne es mit dem Betriebsrat oder jemand anderem zu besprechen"
         correct: false
     explanation:
       en: "A collective agreement can limit what works agreements may regulate unless it explicitly allows supplementary rules. Check applicability and wording and involve counsel if in doubt."
@@ -200,17 +200,17 @@ items:
       en: "An individual contract contains a term that is more favourable for the employee than a works agreement on the same matter. According to the favourability principle, which usually takes precedence?"
       de: "Ein Einzelvertrag enthält eine für die beschäftigte Person günstigere Regelung als eine Betriebsvereinbarung zum selben Thema. Was geht nach dem Günstigkeitsprinzip in der Regel vor?"
     options:
-      - en: "The more favourable individual term"
-        de: "Die günstigere Einzelregelung"
+      - en: "The more favourable individual term, as a general principle"
+        de: "Die für die beschäftigte Person günstigere einzelvertragliche Regelung, als Grundsatz"
         correct: true
-      - en: "The works agreement, always"
-        de: "Immer die Betriebsvereinbarung"
+      - en: "The works agreement, because collective rules always prevail over individual terms"
+        de: "Die Betriebsvereinbarung, weil kollektive Regeln stets Vorrang vor einzelvertraglichen haben"
         correct: false
-      - en: "Whichever was signed last, regardless of content"
-        de: "Was zuletzt unterschrieben wurde, unabhängig vom Inhalt"
+      - en: "Whichever was signed last, regardless of its content or the persons concerned"
+        de: "Was zuletzt unterschrieben wurde, unabhängig von Inhalt und Betroffenen"
         correct: false
-      - en: "Neither; both become void"
-        de: "Keine von beiden; beide werden unwirksam"
+      - en: "Neither; both become void and the statutory default applies instead"
+        de: "Keine von beiden; beide werden unwirksam und die gesetzliche Grundregel gilt stattdessen"
         correct: false
     explanation:
       en: "Works agreements have binding effect for employees, but individually agreed terms that are more favourable for the employee take precedence. Edge cases belong to legal counsel."
@@ -248,17 +248,17 @@ items:
       en: "Which documentation of an HR decision best supports equal treatment and later review?"
       de: "Welche Dokumentation einer HR-Entscheidung unterstützt Gleichbehandlung und spätere Überprüfung am besten?"
     options:
-      - en: "Objective facts, the rules relied on with version, who decided, who was informed, and the reasons"
-        de: "Sachliche Fakten, die herangezogenen Regeln mit Fassung, wer entschieden hat, wer informiert wurde und die Gründe"
+      - en: "Objective facts, the rules relied on, who decided, who was informed, and the reasons"
+        de: "Objektive Fakten, die herangezogenen Regeln, wer entschieden hat, wer informiert wurde, und die Gründe"
         correct: true
-      - en: "A short note saying \"approved\""
-        de: "Ein kurzer Vermerk \"genehmigt\""
+      - en: "A short note saying only \"approved\", to keep the file lean and avoid disclosing details"
+        de: "Ein kurzer Vermerk \"genehmigt\", damit die Akte schlank bleibt und keine Details offengelegt werden"
         correct: false
-      - en: "Personal impressions of the employee's character"
-        de: "Persönliche Eindrücke vom Charakter der Person"
+      - en: "Personal impressions of the employee's character, since they explain the decision best"
+        de: "Persönliche Eindrücke zum Charakter der beschäftigten Person, da sie die Entscheidung am besten erklären"
         correct: false
-      - en: "No record, to avoid creating evidence"
-        de: "Keine Aufzeichnung, um keine Beweise zu schaffen"
+      - en: "No record at all, to avoid creating evidence that could be used later"
+        de: "Gar keine Aufzeichnung, um keine Beweise zu schaffen, die später verwendet werden könnten"
         correct: false
     explanation:
       en: "Objective, complete records let you show that comparable cases were handled consistently. Speculation and missing records weaken your position and the employee's."
@@ -272,17 +272,17 @@ items:
       en: "Your HR contract template was last reviewed some time ago. Employment statutes in Germany are amended from time to time. What is the best practice?"
       de: "Deine HR-Vertragsvorlage wurde vor einiger Zeit zuletzt geprüft. Arbeitsrechtliche Gesetze in Deutschland werden von Zeit zu Zeit geändert. Was ist Best Practice?"
     options:
-      - en: "Review templates regularly against current official texts and legal counsel's updates, and log the date of each check"
-        de: "Vorlagen regelmäßig anhand aktueller amtlicher Texte und Hinweisen der Rechtsberatung prüfen und das Datum jeder Prüfung festhalten"
+      - en: "Review templates regularly against current official texts and legal counsel's updates, and log the check date"
+        de: "Vorlagen regelmäßig anhand aktueller amtlicher Texte und Hinweise der Rechtsberatung prüfen und das Prüfdatum festhalten"
         correct: true
-      - en: "Keep the template unchanged because law never changes"
-        de: "Die Vorlage unverändert lassen, weil sich Recht nie ändert"
+      - en: "Keep the template unchanged, because law rarely changes and a stable template is easier to apply consistently"
+        de: "Die Vorlage unverändert lassen, weil sich Recht selten ändert und eine stabile Vorlage einheitlicher anwendbar ist"
         correct: false
-      - en: "Update the template only when an employee complains"
-        de: "Die Vorlage nur ändern, wenn sich jemand beschwert"
+      - en: "Update the template only when an employee complains or a dispute arises about a specific clause"
+        de: "Die Vorlage nur ändern, wenn sich jemand beschwert oder ein Streit über eine bestimmte Klausel entsteht"
         correct: false
-      - en: "Copy a template from another company without checking"
-        de: "Eine Vorlage eines anderen Unternehmens ungeprüft übernehmen"
+      - en: "Copy a template from another company that looks current, without checking it against the law"
+        de: "Eine aktuell wirkende Vorlage eines anderen Unternehmens übernehmen, ohne sie am Recht zu prüfen"
         correct: false
     explanation:
       en: "Statutes such as the Works Constitution Act have been revised several times, so templates need regular review against current sources, with a record of when they were checked."

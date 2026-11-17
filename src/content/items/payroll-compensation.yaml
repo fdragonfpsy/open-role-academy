@@ -57,16 +57,16 @@ items:
       de: "Eine neue Kollegin beginnt am Monatsersten, aber niemand informiert die Entgeltabrechnung vor dem Stichtag. Was ist die wahrscheinlichste Folge?"
     options:
       - en: "The payslip is wrong or missing and a correction is needed"
-        de: "Die Abrechnung ist falsch oder fehlt und eine Korrektur ist nötig"
+        de: "Die Abrechnung ist falsch oder fehlt und eine Korrektur wird nötig"
         correct: true
-      - en: "Payroll guesses the correct data on its own"
-        de: "Die Entgeltabrechnung errät die richtigen Daten selbst"
+      - en: "Payroll guesses the correct data on its own from the previous month and the contract template"
+        de: "Die Entgeltabrechnung errät die richtigen Daten selbst anhand des Vormonats und der Vertragsvorlage"
         correct: false
-      - en: "Nothing, because late data never matters"
-        de: "Nichts, denn späte Daten spielen nie eine Rolle"
+      - en: "Nothing happens, because late data never matters as long as it reaches payroll sometime that month"
+        de: "Es passiert nichts, weil verspätete Daten nie eine Rolle spielen, solange sie im selben Monat bei der Abrechnung ankommen"
         correct: false
-      - en: "The cut-off date is automatically moved"
-        de: "Der Stichtag wird automatisch verschoben"
+      - en: "The cut-off date is automatically moved for the new colleague so that the first payslip is still correct"
+        de: "Der Stichtag wird für die neue Kollegin oder den neuen Kollegen automatisch verschoben, sodass die erste Abrechnung trotzdem stimmt"
         correct: false
     explanation:
       en: "Payroll can only calculate what it is told; data that arrives after the cut-off set by the company or provider normally leads to a correction."
@@ -81,16 +81,16 @@ items:
       de: "Ein Kollege aus einem anderen Team fragt dich in der Kantine, wie viel eine namentlich genannte Person verdient. Was ist die richtige Reaktion?"
     options:
       - en: "Decline: pay data is confidential and shared only on a need-to-know basis"
-        de: "Ablehnen: Entgeltdaten sind vertraulich und werden nur nach Bedarf weitergegeben"
+        de: "Ablehnen: Entgeltdaten sind vertraulich und werden nur nach Need-to-know weitergegeben"
         correct: true
-      - en: "Tell him, since you are in HR"
-        de: "Es ihm sagen, du bist ja in HR"
+      - en: "Tell him, since you work in HR and the colleague is part of the same company and knows the team well"
+        de: "Es ihm sagen, da du im HR arbeitest und der Kollege zum selben Unternehmen gehört und das Team gut kennt"
         correct: false
-      - en: "Tell him but ask him to keep it secret"
-        de: "Es ihm sagen und ihn bitten, es für sich zu behalten"
+      - en: "Tell him but ask him to keep it secret, because he promises not to pass the number on to anyone"
+        de: "Es ihm sagen, ihn aber bitten, es geheim zu halten, weil er verspricht, die Zahl nicht weiterzugeben"
         correct: false
-      - en: "Send the payslip by chat"
-        de: "Die Abrechnung per Chat schicken"
+      - en: "Send the payslip by chat so that he can see the exact figures himself and the matter is settled quickly"
+        de: "Die Gehaltsabrechnung per Chat schicken, damit er die genauen Zahlen selbst sehen kann und die Sache schnell erledigt ist"
         correct: false
     explanation:
       en: "Pay data is personal data; only people who need it for their task may receive it."
@@ -129,16 +129,16 @@ items:
       de: "Eine Entgeltänderung wird zwei Tage nach dem Stichtag vereinbart. Was ist die beste Maßnahme?"
     options:
       - en: "Tell payroll at once, record the reason and agree how it is handled (next run or correction)"
-        de: "Die Abrechnung sofort informieren, den Grund festhalten und klären, wie der Fall behandelt wird (nächster Lauf oder Korrektur)"
+        de: "Die Entgeltabrechnung sofort informieren, den Grund festhalten und die Behandlung vereinbaren (nächster Lauf oder Korrektur)"
         correct: true
-      - en: "Promise the employee the new amount in the current run"
-        de: "Der beschäftigten Person den neuen Betrag im laufenden Lauf zusagen"
+      - en: "Promise the employee the new amount in the current run, because the agreement is already made and valid"
+        de: "Der beschäftigten Person den neuen Betrag im laufenden Lauf zusagen, weil die Vereinbarung schon getroffen und gültig ist"
         correct: false
-      - en: "Say nothing and hope payroll notices"
-        de: "Nichts sagen und hoffen, dass die Abrechnung es merkt"
+      - en: "Say nothing and hope payroll notices the change by itself when it checks the master data next month"
+        de: "Nichts sagen und hoffen, dass die Entgeltabrechnung die Änderung bei der nächsten Stammdatenprüfung von selbst bemerkt"
         correct: false
-      - en: "Change the figure in the payslip by hand"
-        de: "Den Betrag auf der Abrechnung von Hand ändern"
+      - en: "Change the figure in the payslip by hand after the run, so that the employee receives the correct amount"
+        de: "Den Betrag nach dem Lauf von Hand auf der Abrechnung ändern, damit die beschäftigte Person den richtigen Betrag erhält"
         correct: false
     explanation:
       en: "The cut-off is set by the company or provider; late changes are reported at once and handled in a defined way, never as an off-system promise."
@@ -153,16 +153,16 @@ items:
       de: "Welche Kontrolle fängt am besten eine ausgeschiedene Person ab, die im nächsten Lauf noch bezahlt wird?"
     options:
       - en: "Comparing the HR leaver list with the people in the run before the cut-off"
-        de: "Die HR-Austrittsliste vor dem Stichtag mit den Personen im Lauf abgleichen"
+        de: "Die HR-Austrittsliste vor dem Stichtag mit den Personen im Abrechnungslauf abgleichen"
         correct: true
-      - en: "Reading the payslip only after payment"
-        de: "Die Abrechnung erst nach der Zahlung lesen"
+      - en: "Reading the payslip only after payment, when the employee has received it and could report a mistake"
+        de: "Die Abrechnung erst nach der Zahlung lesen, wenn die beschäftigte Person sie erhalten hat und einen Fehler melden könnte"
         correct: false
-      - en: "Waiting for the employee to complain"
-        de: "Abwarten, bis sich die Person meldet"
+      - en: "Waiting for the former employee to complain or return the money once the account shows the extra payment"
+        de: "Abwarten, bis sich die ausgeschiedene Person beschwert oder das Geld zurückzahlt, wenn das Konto die zusätzliche Zahlung zeigt"
         correct: false
-      - en: "Deleting the leaver's HR record"
-        de: "Den HR-Datensatz der Person löschen"
+      - en: "Deleting the leaver's HR record right after the last day, so that payroll can no longer find the person"
+        de: "Den HR-Datensatz der ausgeschiedenen Person direkt nach dem letzten Tag löschen, damit die Abrechnung sie nicht mehr findet"
         correct: false
     explanation:
       en: "A comparison with the HR records before the cut-off is a preventive plausibility check; the other options act too late or destroy information."
@@ -177,16 +177,16 @@ items:
       de: "Welche Reihenfolge beschreibt eine nachvollziehbare Korrektur eines Abrechnungsfehlers?"
     options:
       - en: "Log the case, find the cause at the source, let payroll correct it in the system, inform the person, record the fix"
-        de: "Den Fall erfassen, die Ursache an der Quelle suchen, die Abrechnung im System korrigieren lassen, die Person informieren, die Korrektur festhalten"
+        de: "Den Fall protokollieren, die Ursache an der Quelle finden, die Abrechnung im System korrigieren lassen, die Person informieren, die Korrektur festhalten"
         correct: true
-      - en: "Pay the difference in cash and tell no one"
-        de: "Die Differenz bar zahlen und niemandem etwas sagen"
+      - en: "Pay the difference in cash without a record and tell no one, so that the employee is satisfied quickly"
+        de: "Die Differenz bar ohne Beleg zahlen und niemandem etwas sagen, damit die beschäftigte Person schnell zufrieden ist"
         correct: false
-      - en: "Correct the HR record only and ignore payroll"
-        de: "Nur den HR-Datensatz korrigieren und die Abrechnung ignorieren"
+      - en: "Correct the HR record only and ignore payroll, since the next run will pick up the new data on its own"
+        de: "Nur den HR-Datensatz korrigieren und die Abrechnung nicht beachten, da der nächste Lauf die neuen Daten von selbst übernimmt"
         correct: false
-      - en: "Wait for the annual audit"
-        de: "Auf die Jahresprüfung warten"
+      - en: "Wait for the annual audit, where the error will be found and corrected together with all other findings"
+        de: "Auf die Jahresprüfung warten, bei der der Fehler gefunden und zusammen mit allen anderen Feststellungen korrigiert wird"
         correct: false
     explanation:
       en: "A correction is logged, fixed at the source, executed in the system, communicated and recorded, so that it can be traced later."
@@ -201,16 +201,16 @@ items:
       de: "Bei einer Abstimmung zeigt die Abrechnung ein Gesamtbrutto von 80000 Einheiten und das Finanzwesen 77000 gebuchte Einheiten Personalkosten. Was ist der beste erste Schritt?"
     options:
       - en: "Trace the 3000 units difference to its source (timing, accruals, corrections, data errors) and fix it there"
-        de: "Die Differenz von 3000 Einheiten bis zur Quelle verfolgen (Zeitpunkt, Abgrenzungen, Korrekturen, Datenfehler) und dort beheben"
+        de: "Die Differenz von 3000 Einheiten bis zur Quelle verfolgen (Zeitpunkt, Abgrenzung, Korrekturen, Datenfehler) und dort beheben"
         correct: true
-      - en: "Book 3000 units to any account so the totals match"
-        de: "3000 Einheiten auf ein beliebiges Konto buchen, damit die Summen passen"
+      - en: "Book the 3000 units to any suitable account so that the totals match and the closing can continue on time"
+        de: "Die 3000 Einheiten auf ein passendes Konto buchen, damit die Summen stimmen und der Abschluss pünktlich weitergeht"
         correct: false
-      - en: "Ignore it because it is below 5 percent"
-        de: "Ignorieren, weil sie unter 5 Prozent liegt"
+      - en: "Ignore it because the difference is below five percent, which is normally accepted as a tolerance"
+        de: "Ignorieren, weil die Differenz unter fünf Prozent liegt, was üblicherweise als Toleranz akzeptiert wird"
         correct: false
-      - en: "Reduce the payroll figure by 3000 units"
-        de: "Den Abrechnungswert um 3000 Einheiten senken"
+      - en: "Reduce the payroll figure by 3000 units in the report so that it agrees with the finance ledger"
+        de: "Die Abrechnungszahl im Bericht um 3000 Einheiten senken, damit sie mit dem Finanzbuch übereinstimmt"
         correct: false
     explanation:
       en: "Differences between payroll and the booked personnel costs are explained, not smoothed over; the cause is fixed where it arises."
@@ -224,17 +224,17 @@ items:
       en: "What is the idea of job grading (Arbeitsbewertung)?"
       de: "Was ist die Idee der Arbeitsbewertung?"
     options:
-      - en: "Jobs are rated against comparable criteria so that pay differences can be explained; grading attaches to the job, not the person"
-        de: "Tätigkeiten werden nach vergleichbaren Kriterien bewertet, damit Entgeltunterschiede erklärbar sind; die Bewertung bezieht sich auf die Tätigkeit, nicht auf die Person"
+      - en: "Jobs are rated against comparable criteria so pay differences can be explained; grading attaches to the job, not the person"
+        de: "Stellen werden nach vergleichbaren Kriterien bewertet, damit Entgeltunterschiede erklärbar sind; die Bewertung gilt der Stelle, nicht der Person"
         correct: true
-      - en: "Each person is graded by their manager's mood"
-        de: "Jede Person wird nach Laune der Führungskraft eingestuft"
+      - en: "Each person is graded by their manager according to the impression they made in the past months"
+        de: "Jede Person wird von ihrer Führungskraft nach dem Eindruck der letzten Monate eingestuft"
         correct: false
-      - en: "All jobs always receive identical pay"
-        de: "Alle Tätigkeiten erhalten immer identisches Entgelt"
+      - en: "All jobs always receive identical pay, because grading removes every difference between roles"
+        de: "Alle Stellen erhalten immer identisches Entgelt, weil die Bewertung jeden Unterschied zwischen Rollen aufhebt"
         correct: false
-      - en: "Grading is only about job titles, never about requirements"
-        de: "Die Bewertung betrifft nur Stellenbezeichnungen, nie Anforderungen"
+      - en: "Grading is only about job titles and the order of the organisation chart, never about the requirements of the job"
+        de: "Bewertung betrifft nur Stellenbezeichnungen und die Reihenfolge im Organigramm, nie die Anforderungen der Stelle"
         correct: false
     explanation:
       en: "The German article describes procedures that determine the value of a job as the main parameter of pay differentiation, aiming at approximately fair pay."
@@ -248,17 +248,17 @@ items:
       en: "A company outsources payroll to a provider. Which statement is correct?"
       de: "Ein Unternehmen lagert die Abrechnung an einen Dienstleister aus. Welche Aussage stimmt?"
     options:
-      - en: "The work moves to the provider, but the company stays responsible for delivering correct data, checking results and protecting pay data"
-        de: "Die Arbeit geht an den Dienstleister, aber das Unternehmen bleibt verantwortlich für richtige Daten, die Prüfung der Ergebnisse und den Schutz der Entgeltdaten"
+      - en: "The work moves to the provider, but the company stays responsible for correct data, checking results and protecting pay data"
+        de: "Die Arbeit geht an den Dienstleister, aber das Unternehmen bleibt verantwortlich für korrekte Daten, Ergebniskontrolle und Schutz der Entgeltdaten"
         correct: true
-      - en: "The company has no further duties"
-        de: "Das Unternehmen hat keine weiteren Pflichten"
+      - en: "The company has no further duties once the contract with the provider is signed and the first run is done"
+        de: "Das Unternehmen hat keine weiteren Pflichten, sobald der Vertrag mit dem Dienstleister unterschrieben und der erste Lauf erledigt ist"
         correct: false
-      - en: "Cut-off dates no longer matter"
-        de: "Stichtage spielen keine Rolle mehr"
+      - en: "Cut-off dates no longer matter, because the provider adapts to whatever data the company sends it later"
+        de: "Stichtage spielen keine Rolle mehr, weil sich der Dienstleister nach den Daten richtet, die das Unternehmen später schickt"
         correct: false
-      - en: "The provider can see pay data without any agreement"
-        de: "Der Dienstleister darf Entgeltdaten ohne Vereinbarung einsehen"
+      - en: "The provider can see all pay data without any agreement, because it performs the calculation as a service"
+        de: "Der Dienstleister darf alle Entgeltdaten ohne Vereinbarung einsehen, weil er die Berechnung als Service erbringt"
         correct: false
     explanation:
       en: "Outsourcing moves the work, not the responsibility; roles, deadlines, checks and data protection are agreed in writing."
@@ -273,16 +273,16 @@ items:
       de: "Jemand bittet dich per E-Mail, die Bankdaten einer beschäftigten Person für den nächsten Abrechnungslauf zu ändern. Welche Kontrolle ist am passendsten?"
     options:
       - en: "Verify the request through a known channel and apply a four-eyes check, leaving an audit trail"
-        de: "Die Anfrage über einen bekannten Kanal verifizieren und eine Vier-Augen-Kontrolle anwenden, mit Prüfspur"
+        de: "Die Anfrage über einen bekannten Kanal verifizieren, das Vier-Augen-Prinzip anwenden und eine Nachvollziehbarkeit sichern"
         correct: true
-      - en: "Change it immediately to be helpful"
-        de: "Sofort ändern, um hilfsbereit zu sein"
+      - en: "Change it immediately to be helpful, because the email comes from a company address and looks genuine"
+        de: "Sofort ändern, um hilfsbereit zu sein, weil die E-Mail von einer Firmenadresse stammt und echt wirkt"
         correct: false
-      - en: "Forward the email to the whole HR team"
-        de: "Die E-Mail an das ganze HR-Team weiterleiten"
+      - en: "Forward the email to the whole HR team and let whoever has time first make the change in the system"
+        de: "Die E-Mail an das ganze HR-Team weiterleiten und die Änderung von der Person im System durchführen lassen, die zuerst Zeit hat"
         correct: false
-      - en: "Change it only in the HR system and not tell payroll"
-        de: "Nur im HR-System ändern und die Abrechnung nicht informieren"
+      - en: "Change it only in the HR system and not tell payroll, since payroll reads the master data on its own"
+        de: "Nur im HR-System ändern und die Abrechnung nicht informieren, da diese die Stammdaten selbst ausliest"
         correct: false
     explanation:
       en: "Bank detail changes are a classic risk of error and misuse; the four-eyes principle and an audit trail reduce that risk."
