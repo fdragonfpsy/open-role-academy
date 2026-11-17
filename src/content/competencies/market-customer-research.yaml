@@ -1,0 +1,18 @@
+id: market-customer-research
+title:
+  en: Market and customer research
+  de: Markt- und Kundenforschung
+description:
+  en: >-
+    Find out what the market and customers need: define research questions, use desk and primary research (surveys, interviews), read competitor and trend information, and turn findings into usable insights.
+  de: >-
+    Herausfinden, was Markt und Kundschaft brauchen: Forschungsfragen formulieren, Sekundär- und Primärforschung (Umfragen, Interviews) nutzen, Wettbewerbs- und Trendinformationen auswerten und Erkenntnisse nutzbar machen.
+prerequisites: [marketing-fundamentals-strategy]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/8770350e-746f-4adb-9556-18ca68104be6
+    label: market research
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/b011c8b4-76e1-4bbc-8bb9-1d205e7b618a
+    label: market analysis

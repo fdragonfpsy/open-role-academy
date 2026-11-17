@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-17 — Phase 4: Marketing framework (draft, no content yet)
+
+**Done**
+- `src/content/roles/marketing.yaml` (`status: draft`, en/de) with 10 role competencies plus the 6 core-track ones; 10 new `src/content/competencies/*.yaml` (en/de, `track: role`, prerequisites acyclic, existing ids only). Campaign-planning-budgeting starts at practitioner/foundation; social media caps at practitioner.
+- 19 ESCO refs, each verified against the ESCO API (HTTP 200, preferred label equals stored label); no DigComp refs. Email-marketing consent (GDPR/ePrivacy/UWG) described at topic level only.
+- `docs/FRAMEWORK.md` regenerated. lint, typecheck, tests, validate:content (0 errors; draft-role warning as designed) and build pass.
+
+**Counts:** roles 6 (1 draft) · competencies 58 · units 282 · items 578 · resources 336
+
+**Next:** this run's window ends here; Marketing content in batches of 3 competencies (see ROADMAP), then publish.
+
 ## 2026-11-17 — Phase 4: Sales content batch 4 (sales-ethics-compliance), quality pass, Sales published
 
 **Done**

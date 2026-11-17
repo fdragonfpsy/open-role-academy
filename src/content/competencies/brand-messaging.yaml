@@ -1,0 +1,18 @@
+id: brand-messaging
+title:
+  en: Brand and messaging
+  de: Marke und Botschaften
+description:
+  en: >-
+    Describe what a brand stands for: brand identity, tone of voice, value proposition and key messages, and keep them consistent across channels and materials.
+  de: >-
+    Beschreiben, wofür eine Marke steht: Markenidentität, Tonalität, Nutzenversprechen und Kernbotschaften – und diese über Kanäle und Materialien hinweg konsistent halten.
+prerequisites: [segmentation-targeting-positioning]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/754690ad-6207-4e1c-9df7-9a2b58afa587
+    label: define brand identity
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/9242ad54-dc3d-41b3-9cfe-142fa8582511
+    label: brand marketing techniques

@@ -1,0 +1,18 @@
+id: digital-channels-seo-sem
+title:
+  en: Digital channels, SEO and SEM
+  de: Digitale Kanäle, SEO und SEM
+description:
+  en: >-
+    Use the main digital channels: website basics, search engine optimisation (SEO), paid search and display advertising (SEM), landing pages and conversion basics.
+  de: >-
+    Die wichtigsten digitalen Kanäle nutzen: Website-Grundlagen, Suchmaschinenoptimierung (SEO), bezahlte Suchmaschinen- und Display-Werbung (SEM), Landingpages und Grundlagen der Conversion.
+prerequisites: [content-marketing-copywriting]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/43dfbe7f-9e10-4871-b171-e5076737b4cf
+    label: digital marketing techniques
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/a0bf9b9d-e53f-418c-a839-5d99eff718fe
+    label: conduct search engine optimisation

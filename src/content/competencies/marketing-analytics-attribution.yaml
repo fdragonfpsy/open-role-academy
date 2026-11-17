@@ -1,0 +1,15 @@
+id: marketing-analytics-attribution
+title:
+  en: Marketing analytics and attribution
+  de: Marketing-Analytics und Attribution
+description:
+  en: >-
+    Measure marketing performance: choose KPIs, read channel and funnel reports, run simple A/B tests, understand attribution and its limits, and report results with sensible, privacy-aware measurement.
+  de: >-
+    Marketingleistung messen: KPIs auswählen, Kanal- und Funnel-Berichte lesen, einfache A/B-Tests durchführen, Attribution und ihre Grenzen verstehen und Ergebnisse mit sinnvoller, datenschutzbewusster Messung berichten.
+prerequisites: [digital-channels-seo-sem, working-with-data]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/683bc3e3-6ec1-4ad2-8d62-d0ac1fabbe76
+    label: use analytics for commercial purposes

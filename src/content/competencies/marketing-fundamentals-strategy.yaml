@@ -1,0 +1,21 @@
+id: marketing-fundamentals-strategy
+title:
+  en: Marketing fundamentals and strategy
+  de: Marketing-Grundlagen und -Strategie
+description:
+  en: >-
+    Understand what marketing does in a company: the marketing mix, how marketing goals follow from business goals, and how a simple marketing strategy and plan are put together and implemented.
+  de: >-
+    Verstehen, welche Aufgabe Marketing im Unternehmen hat: Marketing-Mix, Ableitung von Marketingzielen aus Unternehmenszielen sowie Aufbau und Umsetzung einer einfachen Marketingstrategie und eines Marketingplans.
+prerequisites: []
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/de03f4fd-c147-4477-a048-7109e5ba2d6f
+    label: marketing principles
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/08fd2839-670c-4f16-8024-97437f2035ab
+    label: plan marketing strategy
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/13e2378e-0d10-450d-843a-b3592575826e
+    label: implement marketing strategies

@@ -1,0 +1,18 @@
+id: campaign-planning-budgeting
+title:
+  en: Campaign planning and budgeting
+  de: Kampagnenplanung und Budgetierung
+description:
+  en: >-
+    Plan a marketing campaign end to end: objectives and KPIs, channel mix, timeline and responsibilities, working with agencies, and creating and tracking a marketing budget.
+  de: >-
+    Eine Marketingkampagne von Anfang bis Ende planen: Ziele und KPIs, Kanalmix, Zeitplan und Verantwortlichkeiten, Zusammenarbeit mit Agenturen sowie Erstellung und Verfolgung eines Marketingbudgets.
+prerequisites: [marketing-fundamentals-strategy]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/9c6e951f-aa88-4890-983d-e7a6ee49f5bb
+    label: plan marketing campaign
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/660060e4-c418-4049-836b-beade5f8a4a8
+    label: create annual marketing budget
