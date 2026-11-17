@@ -1,5 +1,15 @@
 # Status
 
+## 2026-11-17 — Phase 3 complete: launch checklist
+
+**Done**
+- `docs/LAUNCH.md`: owner steps (Impressum/privacy placeholders, Cloudflare Pages setup), pre-launch verification list, known limits. Phase 3 is complete; the site is ready except for the owner-only steps.
+- Run summary: quality batches IT/Finance/HR (#63–#65), onboarding+placement e2e (#66), unit page (#67), dashboard (#68), accessibility (#69), mobile (#70).
+
+**Counts:** roles 4 · competencies 38 · units 228 · items 456 · resources 297 · tests 59
+
+**Next:** Phase 3b — catalog with Pagefind search.
+
 ## 2026-11-17 — Phase 3: mobile layout pass
 
 **Done**
