@@ -105,7 +105,7 @@ One role per task, in the order of CLAUDE.md §4.3. Each task = framework + cont
 - [ ] Sales (framework + content; publish the role when all content is done; EU/Germany context, label it; no invented laws or figures)
   - [x] framework (role + 10 competencies, `status: draft`)
   - [x] content: sales-process-pipeline, prospecting-lead-qualification, discovery-needs-analysis
-  - [ ] content: solution-presentation-demo, objection-handling-negotiation, proposals-quoting-pricing-basics
+  - [x] content: solution-presentation-demo, objection-handling-negotiation, proposals-quoting-pricing-basics
   - [ ] content: closing-contract-handover, account-management-upselling, crm-sales-data-forecasting
   - [ ] content: sales-ethics-compliance; then set `status: published` and run the content quality pass for Sales
 - [ ] Marketing
