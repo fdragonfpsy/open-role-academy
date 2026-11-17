@@ -1,0 +1,290 @@
+competency: marketing-fundamentals-strategy
+items:
+  - id: mfs-f-4ps
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "Which four elements make up the classic marketing mix?"
+      de: "Aus welchen vier Elementen besteht der klassische Marketing-Mix?"
+    options:
+      - en: "Product, people, process and profit"
+        de: "Produkt, Personal, Prozess und Profit"
+        correct: false
+      - en: "Product, price, place and promotion"
+        de: "Produkt, Preis, Distribution und Kommunikation"
+        correct: true
+      - en: "Planning, pricing, packaging and positioning"
+        de: "Planung, Preisgestaltung, Verpackung und Positionierung"
+        correct: false
+      - en: "Purpose, publicity, performance and policy"
+        de: "Zweck, Öffentlichkeit, Leistung und Richtlinien"
+        correct: false
+    explanation:
+      en: "The marketing mix is also called the four Ps: product, price, place and promotion. The other lists mix in terms that sound similar but are not the standard model."
+      de: "Der Marketing-Mix heißt auch die vier Ps: Product, Price, Place und Promotion (Produkt-, Preis-, Distributions- und Kommunikationspolitik). Die anderen Listen klingen ähnlich, sind aber nicht das Standardmodell."
+    source: https://openstax.org/books/principles-marketing/pages/1-2-the-marketing-mix-and-the-4ps-of-marketing
+  - id: mfs-f-place
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "A company decides to sell through its own web shop and two partner retailers. Which P of the marketing mix is this?"
+      de: "Ein Unternehmen entscheidet, über den eigenen Webshop und zwei Partnerhändler zu verkaufen. Welches P des Marketing-Mix ist das?"
+    options:
+      - en: "Promotion, because it makes the product known"
+        de: "Promotion (Kommunikation), weil es das Produkt bekannt macht"
+        correct: false
+      - en: "Product, because the goods are changed"
+        de: "Product (Produkt), weil die Ware verändert wird"
+        correct: false
+      - en: "Price, because retailers take a margin"
+        de: "Price (Preis), weil Händler eine Marge erhalten"
+        correct: false
+      - en: "Place, because it decides where customers can buy"
+        de: "Place (Distribution), weil es festlegt, wo Kundschaft kaufen kann"
+        correct: true
+    explanation:
+      en: "Place covers where and how the product can be bought. Retail margins affect price, but the decision about sales channels itself is a place decision."
+      de: "Place (Distribution) betrifft, wo und wie man das Produkt kaufen kann. Händlermargen beeinflussen den Preis, die Entscheidung über Vertriebskanäle selbst ist aber eine Distributionsentscheidung."
+    source: https://openstax.org/books/principles-marketing/pages/1-2-the-marketing-mix-and-the-4ps-of-marketing
+  - id: mfs-f-goal
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "Which marketing goal is formulated best?"
+      de: "Welches Marketingziel ist am besten formuliert?"
+    options:
+      - en: "Reach 500 newsletter sign-ups by 30 June, counted in the mailing tool"
+        de: "Bis 30. Juni 500 Newsletter-Anmeldungen erreichen, gezählt im Mailing-Tool"
+        correct: true
+      - en: "Improve the image of the company considerably over the coming year"
+        de: "Das Image des Unternehmens im kommenden Jahr deutlich verbessern"
+        correct: false
+      - en: "Be more visible on social media than before and keep growing steadily"
+        de: "Auf Social Media sichtbarer sein als zuvor und stetig weiter wachsen"
+        correct: false
+      - en: "Run more advertising so that as many people as possible hear about us"
+        de: "Mehr werben, damit möglichst viele Menschen von uns hören"
+        correct: false
+    explanation:
+      en: "A usable goal has a number, a date and a measure. The other goals sound positive but cannot be checked, so nobody can say whether they were reached."
+      de: "Ein brauchbares Ziel hat Zahl, Termin und Messweise. Die anderen Ziele klingen gut, lassen sich aber nicht prüfen, also kann niemand sagen, ob sie erreicht wurden."
+    source: https://openstax.org/books/principles-marketing/pages/1-2-the-marketing-mix-and-the-4ps-of-marketing
+  - id: mfs-f-advertising
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "Which statement about marketing and advertising is correct?"
+      de: "Welche Aussage zu Marketing und Werbung ist richtig?"
+    options:
+      - en: "Marketing is just a modern word for advertising"
+        de: "Marketing ist nur ein modernes Wort für Werbung"
+        correct: false
+      - en: "Advertising decides product and price, marketing only the message"
+        de: "Werbung entscheidet über Produkt und Preis, Marketing nur über die Botschaft"
+        correct: false
+      - en: "Advertising is one tool within promotion, which is one of the four Ps"
+        de: "Werbung ist ein Werkzeug innerhalb der Kommunikation, einem der vier Ps"
+        correct: true
+      - en: "Marketing begins once the product is finished and ready to be sold"
+        de: "Marketing beginnt, sobald das Produkt fertig und verkaufsbereit ist"
+        correct: false
+    explanation:
+      en: "Advertising is paid communication and belongs to promotion. Marketing is broader and starts earlier, with understanding customers and shaping product, price and place."
+      de: "Werbung ist bezahlte Kommunikation und gehört zur Kommunikationspolitik. Marketing ist breiter und beginnt früher, nämlich beim Verstehen der Kundschaft und beim Gestalten von Produkt, Preis und Distribution."
+    source: https://openstax.org/books/principles-marketing/pages/1-2-the-marketing-mix-and-the-4ps-of-marketing
+  - id: mfs-p-swot-ext
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "In a SWOT analysis of a software company, which item is an external factor?"
+      de: "Welcher Punkt ist in einer SWOT-Analyse eines Softwareunternehmens ein externer Faktor?"
+    options:
+      - en: "Our support answers enquiries within one working day"
+        de: "Unser Support beantwortet Anfragen innerhalb eines Werktags"
+        correct: false
+      - en: "Our website offers few examples of customer results"
+        de: "Unsere Website bietet wenige Beispiele für Kundenergebnisse"
+        correct: false
+      - en: "Our onboarding call is praised by many customers"
+        de: "Unser Onboarding-Gespräch wird von vielen Kunden gelobt"
+        correct: false
+      - en: "A larger vendor starts offering a free entry plan"
+        de: "Ein größerer Anbieter startet einen kostenlosen Einstiegstarif"
+        correct: true
+    explanation:
+      en: "Strengths and weaknesses are inside the company; opportunities and threats come from outside. A competitor's new free plan is an external threat."
+      de: "Stärken und Schwächen liegen im Unternehmen; Chancen und Risiken kommen von außen. Der neue kostenlose Tarif eines Wettbewerbers ist ein externes Risiko."
+    source: https://en.wikipedia.org/wiki/SWOT_analysis
+  - id: mfs-p-swot-use
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "What turns a SWOT analysis into something you can act on?"
+      de: "Was macht aus einer SWOT-Analyse etwas, mit dem du handeln kannst?"
+    options:
+      - en: "Filling each of the four boxes with as many points as possible"
+        de: "Jedes der vier Felder mit möglichst vielen Punkten füllen"
+        correct: false
+      - en: "Combining strengths with opportunities and weaknesses with threats to form options"
+        de: "Stärken mit Chancen und Schwächen mit Risiken zu Optionen verknüpfen"
+        correct: true
+      - en: "Giving every point a score and averaging them into one number"
+        de: "Jedem Punkt eine Punktzahl geben und zu einer Zahl mitteln"
+        correct: false
+      - en: "Concentrating on the box that has the longest list of entries"
+        de: "Sich auf das Feld mit der längsten Liste konzentrieren"
+        correct: false
+    explanation:
+      en: "The analysis becomes useful when you ask which strength can seize which opportunity and which weakness exposes you to which threat. Length of lists or an averaged score does not say what to do."
+      de: "Nützlich wird die Analyse, wenn du fragst, welche Stärke welche Chance nutzen kann und welche Schwäche dich welchem Risiko aussetzt. Listenlänge oder ein Durchschnittswert sagen nicht, was zu tun ist."
+    source: https://en.wikipedia.org/wiki/SWOT_analysis
+  - id: mfs-p-plan
+    level: practitioner
+    difficulty: 1250
+    type: multi
+    stem:
+      en: "Which statements about a marketing plan are correct? Select all that apply."
+      de: "Welche Aussagen zu einem Marketingplan sind richtig? Wähle alle zutreffenden aus."
+    options:
+      - en: "Objectives should have a number, a date and a way of measuring"
+        de: "Ziele sollten Zahl, Termin und Messweise haben"
+        correct: true
+      - en: "Actions should be assigned to owners with deadlines and budget"
+        de: "Maßnahmen sollten Verantwortlichen mit Terminen und Budget zugewiesen sein"
+        correct: true
+      - en: "OpenStax says that every plan must follow one fixed structure"
+        de: "OpenStax sagt, dass jeder Plan einer festen Struktur folgen muss"
+        correct: false
+      - en: "Once approved, the plan should stay unchanged for the whole year"
+        de: "Nach der Freigabe sollte der Plan das ganze Jahr unverändert bleiben"
+        correct: false
+    explanation:
+      en: "A plan turns strategy into measurable objectives and assigned actions. OpenStax notes that there is little agreement on one structure, and a plan should be checked against metrics and adjusted."
+      de: "Ein Plan übersetzt Strategie in messbare Ziele und zugewiesene Maßnahmen. OpenStax merkt an, dass es wenig Einigkeit über eine einzige Struktur gibt, und ein Plan sollte anhand von Kennzahlen geprüft und angepasst werden."
+    source: https://openstax.org/books/principles-marketing/pages/2-3-purpose-and-structure-of-the-marketing-plan
+  - id: mfs-p-objective
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "The business goal is more revenue from existing customers. Which marketing objective follows best?"
+      de: "Das Unternehmensziel ist mehr Umsatz mit Bestandskundschaft. Welches Marketingziel folgt daraus am besten?"
+    options:
+      - en: "Send more newsletters than our competitors send"
+        de: "Mehr Newsletter versenden als unsere Wettbewerber"
+        correct: false
+      - en: "Become the best-known brand in our region soon"
+        de: "In unserer Region bald die bekannteste Marke werden"
+        correct: false
+      - en: "Raise the repeat-purchase rate by a stated number of points by December, measured in the shop system"
+        de: "Die Wiederkaufrate bis Dezember um eine festgelegte Zahl an Punkten steigern, gemessen im Shopsystem"
+        correct: true
+      - en: "Publish a social media post every working day of the year"
+        de: "An jedem Arbeitstag des Jahres einen Social-Media-Beitrag veröffentlichen"
+        correct: false
+    explanation:
+      en: "The objective must connect to the business goal and be measurable. Newsletter volume, awareness or posting frequency are activities or indirect aims that do not show whether existing customers buy more."
+      de: "Das Ziel muss mit dem Unternehmensziel verbunden und messbar sein. Newsletter-Menge, Bekanntheit oder Posting-Häufigkeit sind Aktivitäten oder indirekte Ziele und zeigen nicht, ob Bestandskundschaft mehr kauft."
+    source: https://openstax.org/books/principles-marketing/pages/2-3-purpose-and-structure-of-the-marketing-plan
+  - id: mfs-a-coherence
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "A brand's strategy is to be the trusted premium choice. Which planned action conflicts most with it?"
+      de: "Die Strategie einer Marke lautet, die vertrauenswürdige Premiumwahl zu sein. Welche geplante Maßnahme widerspricht ihr am stärksten?"
+    options:
+      - en: "Publishing independent test results for the products"
+        de: "Unabhängige Testergebnisse zu den Produkten veröffentlichen"
+        correct: false
+      - en: "Offering a longer warranty than the competitors do"
+        de: "Eine längere Garantie als die Wettbewerber anbieten"
+        correct: false
+      - en: "Training service staff to give better advice by phone"
+        de: "Servicepersonal für bessere telefonische Beratung schulen"
+        correct: false
+      - en: "Showing permanent discount banners on every channel"
+        de: "Dauerhaft Rabattbanner auf jedem Kanal zeigen"
+        correct: true
+    explanation:
+      en: "Strategy and mix must agree. Constant discounting signals a price-led offer and undermines a premium position, while evidence, warranty and advice support it."
+      de: "Strategie und Mix müssen zusammenpassen. Dauerhafte Rabatte signalisieren ein preisgetriebenes Angebot und untergraben eine Premiumposition, während Belege, Garantie und Beratung sie stützen."
+    source: https://de.wikipedia.org/wiki/Marketingstrategie
+  - id: mfs-a-rule
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "A report shows cost per lead every month, but nothing ever changes. What is the most useful improvement?"
+      de: "Ein Bericht zeigt jeden Monat die Kosten pro Lead, aber nie ändert sich etwas. Was ist die nützlichste Verbesserung?"
+    options:
+      - en: "Add many more metrics to the dashboard so that nothing is missed"
+        de: "Viele weitere Kennzahlen ins Dashboard aufnehmen, damit nichts übersehen wird"
+        correct: false
+      - en: "Agree in advance which result will stop or change the channel"
+        de: "Vorab vereinbaren, bei welchem Ergebnis der Kanal gestoppt oder geändert wird"
+        correct: true
+      - en: "Report the figure every day instead of once a month"
+        de: "Die Zahl täglich statt einmal im Monat berichten"
+        correct: false
+      - en: "Compare only with last year's figures to avoid disputes"
+        de: "Nur mit den Vorjahreszahlen vergleichen, um Streit zu vermeiden"
+        correct: false
+    explanation:
+      en: "A metric helps steering only if it is linked to a decision rule. More metrics or higher reporting frequency add information, but without a rule nobody knows what to do with it."
+      de: "Eine Kennzahl hilft nur beim Steuern, wenn sie mit einer Entscheidungsregel verknüpft ist. Mehr Kennzahlen oder häufigeres Berichten liefern Information, aber ohne Regel weiß niemand, was daraus folgt."
+    source: https://openstax.org/books/principles-marketing/pages/2-3-purpose-and-structure-of-the-marketing-plan
+  - id: mfs-a-tradeoff
+    level: advanced
+    difficulty: 1600
+    type: multi
+    stem:
+      en: "Which statements about budget trade-offs are sound? Select all that apply."
+      de: "Welche Aussagen zu Budget-Zielkonflikten sind stimmig? Wähle alle zutreffenden aus."
+    options:
+      - en: "Recording the assumption behind a choice lets you judge later whether plan or assumption failed"
+        de: "Die Annahme hinter einer Entscheidung festzuhalten zeigt später, ob Plan oder Annahme versagt hat"
+        correct: true
+      - en: "Saying openly what you will not do is part of a strategy"
+        de: "Offen zu sagen, was man nicht tun wird, gehört zu einer Strategie"
+        correct: true
+      - en: "Splitting the budget evenly across all options removes the risk of a wrong choice"
+        de: "Das Budget gleichmäßig auf alle Optionen zu verteilen beseitigt das Risiko einer Fehlentscheidung"
+        correct: false
+      - en: "Sign-ups as a leading indicator can fully replace revenue as an outcome measure"
+        de: "Anmeldungen als Frühindikator können Umsatz als Ergebnisgröße vollständig ersetzen"
+        correct: false
+    explanation:
+      en: "Choices need written assumptions and explicit exclusions. An even split avoids deciding rather than reducing risk, and leading indicators predict but do not replace outcomes."
+      de: "Entscheidungen brauchen festgehaltene Annahmen und ausdrückliche Ausschlüsse. Eine gleichmäßige Verteilung vermeidet die Entscheidung, statt Risiko zu senken, und Frühindikatoren sagen voraus, ersetzen aber keine Ergebnisse."
+    source: https://openstax.org/books/principles-marketing/pages/2-2-the-role-of-marketing-in-the-strategic-planning-process
+  - id: mfs-a-units
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "A company runs two business units in very different markets. What does OpenStax suggest for strategic planning?"
+      de: "Ein Unternehmen führt zwei Geschäftseinheiten in sehr unterschiedlichen Märkten. Was empfiehlt OpenStax für die strategische Planung?"
+    options:
+      - en: "Use one joint plan so that the brand looks consistent in every market"
+        de: "Einen gemeinsamen Plan nutzen, damit die Marke in jedem Markt einheitlich wirkt"
+        correct: false
+      - en: "Plan the unit with most revenue and let the others copy its plan"
+        de: "Die umsatzstärkste Einheit planen und die anderen deren Plan übernehmen lassen"
+        correct: false
+      - en: "Let each unit set its own goals without reference to company goals"
+        de: "Jede Einheit eigene Ziele ohne Bezug zu den Unternehmenszielen setzen lassen"
+        correct: false
+      - en: "Plan each unit separately because their markets differ, within company goals"
+        de: "Jede Einheit getrennt planen, weil sich die Märkte unterscheiden, im Rahmen der Unternehmensziele"
+        correct: true
+    explanation:
+      en: "OpenStax notes that strategic business units usually develop their own objectives and plans because their markets differ. They still report to the parent company, so they work within its overall goals."
+      de: "OpenStax weist darauf hin, dass strategische Geschäftseinheiten meist eigene Ziele und Pläne entwickeln, weil sich ihre Märkte unterscheiden. Sie berichten weiter an die Muttergesellschaft und arbeiten daher im Rahmen deren Gesamtziele."
+    source: https://openstax.org/books/principles-marketing/pages/2-2-the-role-of-marketing-in-the-strategic-planning-process

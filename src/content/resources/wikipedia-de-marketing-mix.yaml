@@ -1,0 +1,13 @@
+id: wikipedia-de-marketing-mix
+url: https://de.wikipedia.org/wiki/Marketing-Mix
+title: "Marketing-Mix"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-17
+mode: link
+competencies: [marketing-fundamentals-strategy]
+levels: [foundation, practitioner]

@@ -1,5 +1,24 @@
 # Status
 
+## 2026-11-17 — Phase 4: Marketing content batch 1 (fundamentals-strategy, market-customer-research, segmentation-targeting-positioning)
+
+**Done**
+- 18 unit files (9 en + 9 de, `status: ai-draft`): the three competencies at foundation, practitioner and advanced (all three role targets require advanced). Original text, worked example labelled as invented illustration, key takeaways, `sources[]`, EU/Germany context labelled (GDPR Art. 5(1) principles only at topic level in the research units; no invented laws or figures).
+- 37 items: marketing-fundamentals-strategy 13, market-customer-research 12, segmentation-targeting-positioning 12 (4 per level, 5 at advanced for fundamentals; 5 multi-select items in total; distractors written as plausible misconceptions, no `uniquely longest` warning).
+- 22 new resources (all `mode: link`, `licenseVerifiedOn: 2026-11-17`, HTTP 200 checked): 9 OpenStax Principles of Marketing chapters (1.2, 2.2, 2.3, 5.1, 5.4, 5.5, 5.6, 6.2, 6.3; CC BY-NC-SA, link only; URLs from the TOC embedded in the openstax.org page) and 13 Wikipedia pages (8 en, 5 de, CC BY-SA footer checked, no "insufficiently sourced" banner). Existing OpenStax 1.5 and the EUR-Lex GDPR resource now also tagged for market-customer-research. Every competency has OpenStax (non-Wikipedia) and German-language Wikipedia resources.
+- Marketing stays `status: draft`. Checks: lint, typecheck, tests, validate:content (0 errors; only the draft-role warning), build pass.
+
+**Reviewer to-dos**
+- Check OpenStax claims against the chapters: 1.2 (4Ps), 2.2 (SWOT, SBUs), 2.3 (no agreed plan structure, 12 elements), 5.4 (ADAMS), 5.5 (four target strategies, personas), 5.6 (head-to-head vs differentiation, statements), 6.3 (primary/secondary, four research types).
+- Wikipedia claims are general (survey methodology, persona origin in UX, SWOT); spot-check them and the German Marktforschung and Marketingstrategie wording used in the units.
+- Judgement items worth a second opinion: mfs-a-coherence, mfs-a-units, mcr-a-causal, stp-a-veto, stp-a-micro, stp-p-statement (correct option is the longest there).
+- The units mention the OpenStax chapter 2.4 (metrics) and 5.7 (ethics) by title only; not read in full. No resource entries for them yet.
+- German wording of all 9 DE units (du-form, gender-inclusive where natural).
+
+**Counts:** roles 6 (1 draft) · competencies 58 · units 300 · items 615 · resources 358
+
+**Next:** Marketing content: brand-messaging, content-marketing-copywriting, digital-channels-seo-sem.
+
 ## 2026-11-17 — Phase 4: Marketing framework (draft, no content yet)
 
 **Done**

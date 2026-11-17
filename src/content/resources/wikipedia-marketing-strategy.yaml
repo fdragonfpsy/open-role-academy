@@ -1,0 +1,13 @@
+id: wikipedia-marketing-strategy
+url: https://en.wikipedia.org/wiki/Marketing_strategy
+title: "Marketing strategy"
+provider: Wikipedia
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-17
+mode: link
+competencies: [marketing-fundamentals-strategy]
+levels: [practitioner, advanced]

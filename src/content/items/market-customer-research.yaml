@@ -1,0 +1,290 @@
+competency: market-customer-research
+items:
+  - id: mcr-f-question
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "Which is the best research question for a web shop whose visitors often leave before checkout?"
+      de: "Welche ist die beste Forschungsfrage für einen Webshop, dessen Besuchende oft vor dem Bezahlen abspringen?"
+    options:
+      - en: "Why do first-time visitors leave before checkout, and what would keep them?"
+        de: "Warum verlassen Erstbesuchende den Shop vor dem Bezahlen, und was würde sie halten?"
+        correct: true
+      - en: "What do customers think of us in general, and how do they see the market overall?"
+        de: "Was denkt die Kundschaft allgemein über uns, und wie sieht sie den Markt insgesamt?"
+        correct: false
+      - en: "How many people visited our website during the last twelve months?"
+        de: "Wie viele Menschen haben unsere Website in den letzten zwölf Monaten besucht?"
+        correct: false
+      - en: "Which competitor has the most followers on its social media pages?"
+        de: "Welcher Wettbewerber hat die meisten Follower auf seinen Social-Media-Seiten?"
+        correct: false
+    explanation:
+      en: "A good research question is specific and tied to a decision. The other questions may produce interesting facts, but none of them tells you what to change at the checkout."
+      de: "Eine gute Forschungsfrage ist konkret und an eine Entscheidung gebunden. Die anderen Fragen liefern vielleicht interessante Fakten, aber keine sagt dir, was am Bezahlvorgang zu ändern ist."
+    source: https://openstax.org/books/principles-marketing/pages/6-3-steps-in-a-successful-marketing-research-plan
+  - id: mcr-f-primary
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "A company analyses its own sales records from last year to plan a new range. What kind of data is this?"
+      de: "Ein Unternehmen wertet die eigenen Verkaufsdaten des Vorjahres aus, um ein neues Sortiment zu planen. Um welche Art Daten handelt es sich?"
+    options:
+      - en: "Primary data, because it belongs to the company"
+        de: "Primärdaten, weil sie dem Unternehmen gehören"
+        correct: false
+      - en: "Secondary data, collected earlier for another purpose"
+        de: "Sekundärdaten, die früher für einen anderen Zweck erhoben wurden"
+        correct: true
+      - en: "Qualitative data, because sales records describe customer opinions"
+        de: "Qualitative Daten, weil Verkaufsdaten Kundenmeinungen beschreiben"
+        correct: false
+      - en: "Experimental data, because the sales were observed over time"
+        de: "Experimentelle Daten, weil die Verkäufe über die Zeit beobachtet wurden"
+        correct: false
+    explanation:
+      en: "Primary data is collected for the current question. Internal sales records were created for another purpose, so they are internal secondary data. Numbers of sales are quantitative, not opinions."
+      de: "Primärdaten werden für die aktuelle Frage erhoben. Interne Verkaufsdaten entstanden für einen anderen Zweck und sind daher interne Sekundärdaten. Verkaufszahlen sind quantitativ und keine Meinungen."
+    source: https://openstax.org/books/principles-marketing/pages/6-3-steps-in-a-successful-marketing-research-plan
+  - id: mcr-f-order
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "What is usually a sensible first step before collecting new data from customers?"
+      de: "Was ist vor dem Erheben neuer Daten bei der Kundschaft meist ein sinnvoller erster Schritt?"
+    options:
+      - en: "Send a long survey to the whole customer list at once"
+        de: "Eine lange Umfrage sofort an die gesamte Kundenliste senden"
+        correct: false
+      - en: "Buy an expensive industry report whatever the question is"
+        de: "Einen teuren Branchenbericht kaufen, egal wie die Frage lautet"
+        correct: false
+      - en: "Check what existing internal and public data already says"
+        de: "Prüfen, was vorhandene interne und öffentliche Daten bereits aussagen"
+        correct: true
+      - en: "Pick a research method first and define the question later"
+        de: "Zuerst eine Methode wählen und die Frage später definieren"
+        correct: false
+    explanation:
+      en: "Existing data is usually cheaper and faster, and it shows what is still unknown. Only then is it worth spending time and customers' attention on new research."
+      de: "Vorhandene Daten sind meist günstiger und schneller und zeigen, was noch unbekannt ist. Erst dann lohnt es sich, Zeit und Aufmerksamkeit der Kundschaft für neue Forschung aufzuwenden."
+    source: https://openstax.org/books/principles-marketing/pages/6-3-steps-in-a-successful-marketing-research-plan
+  - id: mcr-f-secondary
+    level: foundation
+    difficulty: 1050
+    type: multi
+    stem:
+      en: "Which statements about secondary data are correct? Select all that apply."
+      de: "Welche Aussagen zu Sekundärdaten sind richtig? Wähle alle zutreffenden aus."
+    options:
+      - en: "It is generally cheaper and faster to obtain than primary data"
+        de: "Sie ist in der Regel günstiger und schneller zu beschaffen als Primärdaten"
+        correct: true
+      - en: "It can be outdated or may not match the research question"
+        de: "Sie kann veraltet sein oder nicht zur Forschungsfrage passen"
+        correct: true
+      - en: "Competitors cannot get it, so it gives a unique advantage"
+        de: "Wettbewerber können sie nicht bekommen, daher verschafft sie einen einzigartigen Vorteil"
+        correct: false
+      - en: "It is always more reliable than data that you collect yourself"
+        de: "Sie ist immer verlässlicher als selbst erhobene Daten"
+        correct: false
+    explanation:
+      en: "OpenStax lists low cost and quick access as strengths, and possible mismatch, age and availability to competitors as weaknesses. Reliability depends on the source, not on the data type."
+      de: "OpenStax nennt geringe Kosten und schnellen Zugriff als Stärken und mögliche Unpassung, Alter und Verfügbarkeit für Wettbewerber als Schwächen. Verlässlichkeit hängt von der Quelle ab, nicht von der Datenart."
+    source: https://openstax.org/books/principles-marketing/pages/6-3-steps-in-a-successful-marketing-research-plan
+  - id: mcr-p-method
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "You do not yet know which reasons customers have for cancelling. Which method fits best at first?"
+      de: "Du weißt noch nicht, welche Gründe Kundschaft für Kündigungen hat. Welche Methode passt zunächst am besten?"
+    options:
+      - en: "A large survey with fixed answer options sent to all of our customers"
+        de: "Eine große Umfrage mit festen Antwortoptionen an die gesamte Kundschaft"
+        correct: false
+      - en: "A few interviews with former customers to explore the reasons"
+        de: "Einige Interviews mit ehemaliger Kundschaft, um die Gründe zu erkunden"
+        correct: true
+      - en: "An A/B test of two versions of the cancellation page"
+        de: "Ein A/B-Test von zwei Versionen der Kündigungsseite"
+        correct: false
+      - en: "Counting the cancellations in the last quarter by month"
+        de: "Die Kündigungen des letzten Quartals nach Monat zählen"
+        correct: false
+    explanation:
+      en: "When you do not know what matters, exploratory qualitative research finds the themes. A survey with fixed options only works once you know which options to offer."
+      de: "Wenn du nicht weißt, was wichtig ist, findet explorative qualitative Forschung die Themen. Eine Umfrage mit festen Optionen funktioniert erst, wenn du weißt, welche Optionen du anbieten sollst."
+    source: https://openstax.org/books/principles-marketing/pages/6-3-steps-in-a-successful-marketing-research-plan
+  - id: mcr-p-question
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "Which survey question is best written?"
+      de: "Welche Umfragefrage ist am besten formuliert?"
+    options:
+      - en: "How satisfied are you with our price and our speed of delivery?"
+        de: "Wie zufrieden bist du mit unserem Preis und der Lieferschnelligkeit?"
+        correct: false
+      - en: "How much do you enjoy our excellent customer service this year?"
+        de: "Wie sehr gefällt dir unser hervorragender Kundenservice in diesem Jahr?"
+        correct: false
+      - en: "Do you never find our website difficult to use?"
+        de: "Findest du unsere Website nie schwierig zu bedienen?"
+        correct: false
+      - en: "How satisfied are you with the delivery time of your order?"
+        de: "Wie zufrieden bist du mit der Lieferzeit deiner Bestellung?"
+        correct: true
+    explanation:
+      en: "Ask about one thing in neutral words. The first option mixes two topics, the second is leading ('excellent'), and the third uses a confusing double negative."
+      de: "Frage in neutralen Worten nach einer Sache. Die erste Option vermischt zwei Themen, die zweite ist suggestiv („hervorragend“), die dritte nutzt eine verwirrende doppelte Verneinung."
+    source: https://en.wikipedia.org/wiki/Survey_methodology
+  - id: mcr-p-sample
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "A satisfaction survey is sent to all customers, but only the most active customers reply. What is the main risk?"
+      de: "Eine Zufriedenheitsumfrage geht an alle Kundschaft, aber nur sehr aktive Kundschaft antwortet. Was ist das Hauptrisiko?"
+    options:
+      - en: "The results describe the repliers and may not hold for all customers"
+        de: "Die Ergebnisse beschreiben die Antwortenden und gelten womöglich nicht für alle"
+        correct: true
+      - en: "The survey is invalid, because a valid survey needs a reply from every single customer"
+        de: "Die Umfrage ist ungültig, weil eine gültige Umfrage von jeder einzelnen Person eine Antwort braucht"
+        correct: false
+      - en: "The data become qualitative, so no numbers may be reported"
+        de: "Die Daten werden qualitativ, daher dürfen keine Zahlen berichtet werden"
+        correct: false
+      - en: "The results are automatically correct because the group is large"
+        de: "Die Ergebnisse sind automatisch richtig, weil die Gruppe groß ist"
+        correct: false
+    explanation:
+      en: "Who answers matters. If repliers differ from non-repliers, results are biased. You can still use them as indications if you state the limits clearly."
+      de: "Es kommt darauf an, wer antwortet. Unterscheiden sich Antwortende von Nichtantwortenden, sind die Ergebnisse verzerrt. Als Hinweise sind sie weiter nutzbar, wenn du die Grenzen klar benennst."
+    source: https://en.wikipedia.org/wiki/Survey_methodology
+  - id: mcr-p-gdpr
+    level: practitioner
+    difficulty: 1300
+    type: multi
+    stem:
+      en: "You plan a customer survey in the EU. Which approaches fit the GDPR principles of purpose limitation and data minimisation? Select all that apply."
+      de: "Du planst eine Kundenumfrage in der EU. Welche Vorgehensweisen passen zu den DSGVO-Grundsätzen Zweckbindung und Datenminimierung? Wähle alle zutreffenden aus."
+    options:
+      - en: "Run the survey anonymously if you do not need to identify people"
+        de: "Die Umfrage anonym durchführen, wenn du Personen nicht identifizieren musst"
+        correct: true
+      - en: "State the purpose and retention period if you do collect contact details"
+        de: "Zweck und Speicherdauer nennen, wenn du doch Kontaktdaten erhebst"
+        correct: true
+      - en: "Collect birth date and address too, in case they are useful later"
+        de: "Auch Geburtsdatum und Adresse erheben, falls sie später nützlich sind"
+        correct: false
+      - en: "Reuse the answers for unrelated advertising since you hold them now"
+        de: "Die Antworten für unabhängige Werbung nutzen, da du sie nun hast"
+        correct: false
+    explanation:
+      en: "Article 5(1) of the GDPR requires collection for specified purposes and limits data to what is necessary. Collecting 'just in case' or reusing for unrelated purposes goes against this. Ask your data protection contact before launch."
+      de: "Artikel 5 Absatz 1 DSGVO verlangt Erhebung für festgelegte Zwecke und beschränkt Daten auf das Notwendige. Erheben „auf Vorrat“ oder Weiterverwenden für fremde Zwecke widerspricht dem. Frage vor dem Start deine Datenschutzansprechperson."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+  - id: mcr-a-decision
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "What should you define before starting fieldwork for a research project?"
+      de: "Was solltest du vor Beginn der Feldarbeit eines Forschungsprojekts festlegen?"
+    options:
+      - en: "The result that would change your decision and the decision itself"
+        de: "Die Entscheidung selbst und das Ergebnis, das sie ändern würde"
+        correct: true
+      - en: "The longest possible questionnaire, so that every topic is covered"
+        de: "Den längstmöglichen Fragebogen, damit jedes Thema abgedeckt ist"
+        correct: false
+      - en: "The layout of the final presentation including all its charts"
+        de: "Das Layout der Abschlusspräsentation samt aller Diagramme"
+        correct: false
+      - en: "The conclusion that the research is meant to confirm for the team"
+        de: "Den Schluss, den die Forschung für das Team bestätigen soll"
+        correct: false
+    explanation:
+      en: "Research should serve a decision. If you know which result would change your choice, you can pick the cheapest design that can deliver it. Starting from a desired conclusion produces confirmation, not insight."
+      de: "Forschung soll eine Entscheidung stützen. Wenn du weißt, welches Ergebnis deine Wahl ändern würde, kannst du das günstigste Design wählen, das es liefern kann. Der Start bei einem gewünschten Schluss erzeugt Bestätigung, keine Erkenntnis."
+    source: https://openstax.org/books/principles-marketing/pages/6-3-steps-in-a-successful-marketing-research-plan
+  - id: mcr-a-causal
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "Newsletter openers buy more than non-openers. Which conclusion is justified without further evidence?"
+      de: "Newsletter-Öffnende kaufen mehr als Nicht-Öffnende. Welcher Schluss ist ohne weitere Belege gerechtfertigt?"
+    options:
+      - en: "The newsletter causes the extra purchases, so send it more often"
+        de: "Der Newsletter verursacht die Mehrkäufe, also öfter senden"
+        correct: false
+      - en: "Opening the newsletter is associated with buying more; cause is open"
+        de: "Das Öffnen hängt mit mehr Käufen zusammen; die Ursache ist offen"
+        correct: true
+      - en: "The newsletter has no effect, because the groups differ in behaviour"
+        de: "Der Newsletter hat keine Wirkung, weil sich die Gruppen im Verhalten unterscheiden"
+        correct: false
+      - en: "Non-openers should be removed because they never buy anything"
+        de: "Nicht-Öffnende sollten entfernt werden, weil sie nie etwas kaufen"
+        correct: false
+    explanation:
+      en: "Interested customers may open more and buy more regardless of the newsletter. An association does not show cause or absence of effect. An experiment with randomly assigned groups would test causality."
+      de: "Interessierte Kundschaft öffnet vielleicht mehr und kauft ohnehin mehr. Ein Zusammenhang zeigt weder Ursache noch fehlende Wirkung. Ein Experiment mit zufällig zugeteilten Gruppen würde Kausalität prüfen."
+    source: https://openstax.org/books/principles-marketing/pages/6-3-steps-in-a-successful-marketing-research-plan
+  - id: mcr-a-triangulate
+    level: advanced
+    difficulty: 1600
+    type: multi
+    stem:
+      en: "Your interviews and your sales data point in different directions. Which reactions are sensible? Select all that apply."
+      de: "Deine Interviews und deine Verkaufsdaten weisen in verschiedene Richtungen. Welche Reaktionen sind sinnvoll? Wähle alle zutreffenden aus."
+    options:
+      - en: "Ask what each source can see and what it cannot see"
+        de: "Fragen, was jede Quelle sehen kann und was nicht"
+        correct: true
+      - en: "Report the conflict and your confidence in the findings"
+        de: "Den Widerspruch und deine Sicherheit bei den Befunden berichten"
+        correct: true
+      - en: "Drop the source that disagrees with the leadership's view"
+        de: "Die Quelle weglassen, die der Sicht der Führung widerspricht"
+        correct: false
+      - en: "Average the two results into one figure for the report"
+        de: "Beide Ergebnisse zu einer Zahl für den Bericht mitteln"
+        correct: false
+    explanation:
+      en: "Disagreement between sources is information: people may say one thing and do another, or the sample may differ. Dropping or averaging hides this, while naming limits and confidence helps the decision."
+      de: "Widerspruch zwischen Quellen ist Information: Menschen sagen womöglich das eine und tun das andere, oder die Stichprobe unterscheidet sich. Weglassen oder Mitteln verbirgt das, während das Benennen von Grenzen und Sicherheit der Entscheidung hilft."
+    source: https://openstax.org/books/principles-marketing/pages/6-3-steps-in-a-successful-marketing-research-plan
+  - id: mcr-a-compet
+    level: advanced
+    difficulty: 1650
+    type: single
+    stem:
+      en: "How should competitor information be gathered for a market analysis?"
+      de: "Wie sollten Wettbewerbsinformationen für eine Marktanalyse beschafft werden?"
+    options:
+      - en: "From public sources such as websites, reports and published prices"
+        de: "Aus öffentlichen Quellen wie Websites, Berichten und veröffentlichten Preisen"
+        correct: true
+      - en: "By posing as a customer in order to obtain the competitor's confidential price lists"
+        de: "Indem man sich als Kunde ausgibt, um die vertraulichen Preislisten des Wettbewerbers zu erhalten"
+        correct: false
+      - en: "By asking a former employee of the competitor for internal plans"
+        de: "Indem man eine frühere Mitarbeiterin des Wettbewerbers nach internen Plänen fragt"
+        correct: false
+      - en: "By copying the competitor's customer list from a shared document"
+        de: "Indem man die Kundenliste des Wettbewerbers aus einem geteilten Dokument kopiert"
+        correct: false
+    explanation:
+      en: "Public sources are the sound basis for competitor research. Obtaining confidential material by deception or from insiders is unethical and can create legal risk; consult your legal contact if unsure."
+      de: "Öffentliche Quellen sind die solide Grundlage der Wettbewerbsforschung. Vertrauliches durch Täuschung oder von Insidern zu beschaffen ist unethisch und kann rechtliche Risiken bergen; frage bei Unsicherheit deine Rechtsansprechperson."
+    source: https://de.wikipedia.org/wiki/Marktforschung
