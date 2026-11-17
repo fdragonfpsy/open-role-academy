@@ -22,7 +22,9 @@ const path = Astro.url.pathname.replace(/\/$/, '') || '/';
     <title>{fullTitle}</title>
     <meta name="description" content={description ?? t(lang, 'site.tagline')} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="alternate" hreflang={other} href={alternatePath(path, other)} />
+    <link rel="canonical" href={new URL(path, Astro.site).href} />
+    <link rel="alternate" hreflang={lang} href={new URL(path, Astro.site).href} />
+    <link rel="alternate" hreflang={other} href={new URL(alternatePath(path, other), Astro.site).href} />
   </head>
   <body class="flex min-h-screen flex-col bg-slate-50 text-slate-900">
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:bg-white focus:p-2">
