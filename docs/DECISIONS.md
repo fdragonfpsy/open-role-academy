@@ -187,3 +187,7 @@ Format: date — decision — reason — alternatives considered.
 - Reason: anonymous use must always work; no data loss across devices; per-row timestamps for progress cannot be trusted locally, answer counts are monotonic.
 - Alternatives: last-write-wins on the whole state (loses data), a local per-competency change log (more storage and code), auto-upload of local data on sign-in (bypasses the consent step of the import offer).
 
+
+## 2026-11-17 — Privacy policy for accounts: flag-gated separate text; imprint unchanged
+- Decision: the account privacy text lives in its own component and replaces the current text only when `accountsEnabled` is true; the default text is untouched, so the live site stays accurate. Legal bases: Art. 6(1)(b) for account functions, 6(1)(f) for logs; the sign-up checkbox is only a notice confirmation, not consent. Transfers phrased cautiously ("may involve group companies or sub-processors outside the EU/EEA, safeguards per the providers' DPAs/SCCs"); owner verifies details (hint in `docs/LAUNCH.md`). Home page privacy line also switches with the flag.
+- Imprint: no change. A German Impressum (§ 5 DDG) must state provider identity and contact; accounts add no new imprint duty. Alternatives: edit the one text in place (would make the live site claim processing that does not happen), a runtime toggle (not allowed: build-time flag only).

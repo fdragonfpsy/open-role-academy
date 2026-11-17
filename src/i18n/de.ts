@@ -25,6 +25,7 @@ export const de: Record<UiKey, string> = {
   'home.step3': 'Folge deinem persönlichen Lernpfad, Einheit für Einheit.',
   'home.step4': 'Zeig dein Können in kurzen Checks; Wiederholungen festigen es.',
   'home.privacy': 'Dein Fortschritt bleibt in deinem Browser. Keine Cookies, kein Tracking, kein Konto.',
+  'home.privacyAccounts': 'Dein Fortschritt bleibt in deinem Browser, außer du legst freiwillig ein Konto an. Keine Cookies, kein Tracking.',
   'home.roles': 'Verfügbare Lernbereiche',
   'home.transparency':
     'Alle Lerneinheiten und Fragen sind derzeit KI-generierte Entwürfe und wurden noch nicht von einem Menschen geprüft. Sie nennen ihre Quellen; bitte prüfe wichtige Fakten.',
