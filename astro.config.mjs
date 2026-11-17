@@ -30,5 +30,6 @@ export default defineConfig({
     defaultLocale: 'en',
     routing: { prefixDefaultLocale: false },
   },
-  vite: { plugins: [tailwindcss()] },
+  // `__ACCOUNTS_ENABLED__` lets the bundler drop the progress-sync code path entirely when accounts are off.
+  vite: { plugins: [tailwindcss()], define: { __ACCOUNTS_ENABLED__: JSON.stringify(accountsEnabled) } },
 });

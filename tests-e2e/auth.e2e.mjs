@@ -78,6 +78,9 @@ async function fakeSupabase(ctx, calls, mode) {
     }
     if (u.pathname === '/auth/v1/user') return json(route, 200, user);
     if (u.pathname === '/auth/v1/logout') return json(route, 204, {});
+    if (mode.offline && u.pathname.startsWith('/rest/v1/')) return route.abort('failed');
+    const table = u.pathname.replace('/rest/v1/', '');
+    if (['progress', 'item_responses', 'completed_units'].includes(table) && req.method() === 'GET') return json(route, 200, mode.remote?.[table] ?? []);
     if (u.pathname === '/rest/v1/profiles' && req.method() === 'GET') {
       const row = mode.profile ?? (mode.profileExists ? { id: UID } : null);
       const single = (req.headers().accept ?? '').includes('vnd.pgrst.object');
@@ -98,7 +101,7 @@ const T = {
     pTitle: 'Your learning profile', pSet: 'Set up profile', pEdit: 'Edit profile', pSkip: 'Skip for now', pSave: 'Save profile', pSaved: 'Profile saved.',
     pMinutesErr: 'whole minutes between 0 and 10080', pGoalErr: 'too long', pMinimal: 'name, employer or date of birth', pCount: '5 of 500 characters', pLegendLevel: 'Experience level', pLegendLang: 'Preferred language',
     pRoleTitle: 'Human Resources', pLevelTitle: 'Advanced', pMinutesSummary: '120 min per week', pLangTitle: 'Deutsch', pEmpty: 'Not set',
-    export: 'Download my data', signOut: 'Sign out', signedOut: 'You are signed out.', nav: 'Account',
+    export: 'Download my data', masteryStart: 'Start mastery check', syncSynced: 'Progress synced with your account.', syncPending: 'will sync later', syncFailed: 'Sync failed', syncRetry: 'Try again', signOut: 'Sign out', signedOut: 'You are signed out.', nav: 'Account',
   },
   de: {
     emailReq: 'Gib deine E-Mail-Adresse ein.', emailBad: 'nicht gültig', pwShort: 'mindestens 10 Zeichen', consent: 'Datenschutzerklärung gelesen',
@@ -107,12 +110,12 @@ const T = {
     pTitle: 'Dein Lernprofil', pSet: 'Profil einrichten', pEdit: 'Profil bearbeiten', pSkip: 'Vorerst überspringen', pSave: 'Profil speichern', pSaved: 'Profil gespeichert.',
     pMinutesErr: 'ganze Minuten zwischen 0 und 10080', pGoalErr: 'zu lang', pMinimal: 'Namen, Arbeitgeber oder Geburtsdatum', pCount: '5 von 500 Zeichen', pLegendLevel: 'Erfahrungsniveau', pLegendLang: 'Bevorzugte Sprache',
     pRoleTitle: 'Personalwesen (HR)', pLevelTitle: 'Experte', pMinutesSummary: '120 Min. pro Woche', pLangTitle: 'Deutsch', pEmpty: 'Nicht angegeben',
-    export: 'Meine Daten herunterladen', signOut: 'Abmelden', signedOut: 'Du bist abgemeldet.', nav: 'Konto',
+    export: 'Meine Daten herunterladen', masteryStart: 'Lernstandscheck starten', syncSynced: 'Fortschritt mit deinem Konto abgeglichen.', syncPending: 'später abgeglichen', syncFailed: 'Abgleich fehlgeschlagen', syncRetry: 'Erneut versuchen', signOut: 'Abmelden', signedOut: 'Du bist abgemeldet.', nav: 'Konto',
   },
 };
 
 const LOCAL = {
-  version: 1, roleId: 'it-support', selfLevel: 'foundation', createdAt: '2026-11-01T10:00:00.000Z', placementDone: true,
+  version: 1, roleId: 'it-support-operations', selfLevel: 'foundation', createdAt: '2026-11-01T10:00:00.000Z', placementDone: true,
   competencies: { 'information-security-basics': { rating: 1010, correctByLevel: { foundation: 1, practitioner: 0, advanced: 0 }, answered: 1, answeredItems: ['isb-f-cia-confidentiality'] } },
   reviews: {}, completedUnits: [],
 };
@@ -128,7 +131,8 @@ async function tabTo(page, pred, what, arg) {
 const alertText = (page) => page.locator('#auth-error').innerText();
 const statusText = (page) => page.locator('[role=status]').first().innerText();
 
-async function newPage(browser, _lang, { mode = {}, seed = false } = {}) {
+const SESSION_KEY = 'sb-bbyyjrmgmbiscdswufla-auth-token';
+async function newPage(browser, _lang, { mode = {}, seed = false, signedIn = false } = {}) {
   const ctx = await browser.newContext({ acceptDownloads: true });
   const calls = [];
   const errors = [];
@@ -138,8 +142,27 @@ async function newPage(browser, _lang, { mode = {}, seed = false } = {}) {
   page.on('console', (m) => m.type() === 'error' && !/Failed to load resource/.test(m.text()) && errors.push(m.text()));
   page.on('pageerror', (e) => errors.push(String(e)));
   page.on('request', (r) => /\/_astro\/dist\.[^/]*\.js/.test(r.url()) && chunks.push(r.url()));
+  if (signedIn) await ctx.addInitScript(([k, v]) => localStorage.setItem(k, v), [SESSION_KEY, JSON.stringify(session())]);
   if (seed) await ctx.addInitScript(([k, v]) => { if (!localStorage.getItem(k)) localStorage.setItem(k, v); }, [KEY, JSON.stringify(LOCAL)]);
   return { ctx, page, calls, errors, chunks };
+}
+
+
+const UNIT = 'information-security-basics-foundation';
+/** Run the unit's mastery check by mouse until the result panel shows. */
+async function answerMastery(page) {
+  const start = page.locator('#mastery ~ * button, section[aria-labelledby=mastery] button').first();
+  await start.waitFor();
+  await start.click();
+  for (let i = 0; i < 8 && !(await page.locator('[role=status][tabindex="-1"]').count()); i++) {
+    await page.waitForSelector('fieldset, [role=status][tabindex="-1"]');
+    if (!(await page.locator('fieldset').count())) break;
+    await page.locator('fieldset input').first().check();
+    await page.locator('button[type=submit]').click();
+    await page.waitForSelector('[role=status][aria-live=polite]');
+    await page.locator('button[type=submit]').click();
+  }
+  await page.waitForSelector('[role=status][tabindex="-1"]');
 }
 
 async function run(browser, lang) {
@@ -246,7 +269,7 @@ async function run(browser, lang) {
     await page.getByRole('button', { name: t.importYes }).click();
     await page.getByText(t.importDone).waitFor();
     const prof = calls.find((c) => c.key === 'POST /rest/v1/profiles');
-    check(!!prof && prof.body.includes('"role_family":"it-support"') && prof.body.includes(UID), `${tag} import: profile row mapped from local state`);
+    check(!!prof && prof.body.includes('"role_family":"it-support-operations"') && prof.body.includes(UID), `${tag} import: profile row mapped from local state`);
     check(calls.some((c) => c.key === 'POST /rest/v1/progress') && calls.some((c) => c.key === 'POST /rest/v1/item_responses'), `${tag} import: progress and item rows written`);
     check((await page.evaluate((k) => localStorage.getItem(k), KEY)) === JSON.stringify(LOCAL), `${tag} import: local progress unchanged`);
     check(!calls.some((c) => /rest\/v1\/(progress|item_responses)/.test(c.key) && c.key.startsWith('GET')), `${tag} no dashboard sync reads`);
@@ -369,6 +392,87 @@ async function run(browser, lang) {
     await page.getByRole('button', { name: t.pEdit }).waitFor();
     check((await page.locator('#profile-role').count()) === 0 && (await page.locator('section[aria-labelledby=profile-h]').innerText()).includes(t.pMinutesSummary), `${tag} profile: existing profile is shown, form stays closed`);
     check(!calls.some((c) => c.key === 'POST /rest/v1/profiles'), `${tag} profile: nothing written when only viewing`);
+    await ctx.close();
+  }
+
+  // ---- dashboard sync: anonymous, signed in (remote load, write-through, offline)
+  {
+    // anonymous: dashboard + mastery check make no Supabase request and load no supabase-js
+    const { ctx, page, calls, chunks } = await newPage(browser, lang, { seed: true });
+    await page.goto(`${BASE}${prefix}/dashboard`);
+    await page.waitForSelector('[data-testid=progress]');
+    check(calls.length === 0 && chunks.length === 0, `${tag} sync: anonymous dashboard makes no Supabase request and loads no supabase-js`);
+    check((await page.locator('[data-testid=sync-status]').count()) === 0, `${tag} sync: anonymous dashboard shows no sync status`);
+    await page.goto(`${BASE}${prefix}/units/${UNIT}`);
+    await answerMastery(page);
+    check(calls.length === 0 && chunks.length === 0, `${tag} sync: anonymous mastery check makes no Supabase request`);
+    check(!(await page.evaluate(() => localStorage.getItem('open-role-academy.sync.v1'))), `${tag} sync: anonymous use leaves no sync metadata`);
+    await ctx.close();
+  }
+  const remote = {
+    progress: [{ competency_id: 'information-security-basics', rating: '1333.00', correct_by_level: { foundation: 4, practitioner: 0, advanced: 0 }, answered: 4 }],
+    item_responses: [{ item_id: 'isb-f-remote-item', competency_id: 'information-security-basics', box: 1, due_on: '2026-12-01' }],
+    completed_units: [{ unit_id: 'information-security-basics-foundation' }],
+  };
+  const remoteProfile = { id: UID, role_family: 'it-support-operations', experience_level: 'foundation', placement_done: true, created_at: '2026-11-01T10:00:00.000Z', updated_at: '2026-11-05T00:00:00.000Z' };
+  {
+    const mode = { profile: remoteProfile, remote };
+    const { ctx, page, calls, errors } = await newPage(browser, lang, { mode, seed: true, signedIn: true });
+    const writes = () => calls.filter((c) => c.key.startsWith('POST /rest/v1/') && !c.key.includes('rpc'));
+    await page.goto(`${BASE}${prefix}/dashboard`);
+    await page.waitForSelector('[data-testid=progress]');
+    check((await page.locator('main').innerText()).includes('1333'), `${tag} sync: signed-in dashboard shows the remote rating (1333)`);
+    await page.getByText(t.syncSynced).waitFor();
+    check(true, `${tag} sync: status "${t.syncSynced}" shown`);
+    const cached = JSON.parse(await page.evaluate((k) => localStorage.getItem(k), KEY));
+    check(cached.competencies['information-security-basics'].answered === 4 && cached.competencies['information-security-basics'].answeredItems.includes('isb-f-cia-confidentiality') && cached.completedUnits.includes('information-security-basics-foundation'), `${tag} sync: remote merged into the local cache without dropping local items`);
+    check(calls.some((c) => c.key === 'GET /rest/v1/progress') && writes().length === 0, `${tag} sync: remote read, nothing written when nothing changed`);
+
+    // mastery check -> write-through upserts
+    await page.goto(`${BASE}${prefix}/units/${UNIT}`);
+    await answerMastery(page);
+    await page.getByText(t.syncSynced).waitFor();
+    await page.waitForFunction(() => document.querySelector('[data-testid=sync-status]')?.getAttribute('data-status') === 'synced');
+    const up = (tbl) => calls.filter((c) => c.key === `POST /rest/v1/${tbl}`);
+    check(up('progress').length >= 1 && up('item_responses').length >= 1, `${tag} sync: mastery check upserts progress and item rows`);
+    check(JSON.parse(up('progress')[0].body).every((r) => r.user_id === UID), `${tag} sync: upserted rows belong to the signed-in user`);
+    check(up('profiles').length === 0, `${tag} sync: unchanged profile is not rewritten`);
+    check(!writes().some((c) => /service_role|secret/i.test(c.body)), `${tag} sync: no secrets in payloads`);
+    check(errors.length === 0, `${tag} sync: no console errors${errors.length ? ' ' + errors.join(' | ') : ''}`);
+    await ctx.close();
+  }
+  {
+    // offline: local write works, status says it will sync later, data kept, retry works
+    const mode = { profile: remoteProfile, remote, offline: false };
+    const { ctx, page, calls } = await newPage(browser, lang, { mode, seed: true, signedIn: true });
+    await page.goto(`${BASE}${prefix}/units/${UNIT}`);
+    await page.getByRole('button', { name: t.masteryStart }).waitFor();
+    mode.offline = true;
+    await answerMastery(page);
+    await page.getByText(t.syncPending).waitFor();
+    check(true, `${tag} sync: offline shows "will sync later"`);
+    const before = JSON.parse(await page.evaluate((k) => localStorage.getItem(k), KEY));
+    check(before.completedUnits.includes(UNIT) && JSON.parse(await page.evaluate(() => localStorage.getItem('open-role-academy.sync.v1'))).pending === true, `${tag} sync: offline result kept locally and marked pending`);
+    await page.goto(`${BASE}${prefix}/dashboard`);
+    await page.waitForSelector('[data-testid=progress]');
+    await page.getByText(t.syncPending).waitFor();
+    check((await page.locator('main').innerText()).includes('Rating') || (await page.locator('main').innerText()).includes('Wertung'), `${tag} sync: dashboard falls back to the local copy when offline`);
+    const nPosts = calls.filter((c) => c.key.startsWith('POST /rest/v1/progress')).length;
+    mode.offline = false;
+    await page.getByRole('button', { name: t.syncRetry }).click();
+    await page.getByText(t.syncSynced).waitFor();
+    check(calls.filter((c) => c.key.startsWith('POST /rest/v1/progress')).length > nPosts, `${tag} sync: retry after reconnect uploads the pending changes`);
+    await ctx.close();
+  }
+  {
+    // server rejection: failed status, still usable
+    const mode = { profile: remoteProfile, remote };
+    const { ctx, page } = await newPage(browser, lang, { mode, seed: true, signedIn: true });
+    await ctx.route(/\.supabase\.co\/rest\/v1\/progress/, (route) => route.request().method() === 'POST' ? json(route, 403, { code: '42501', message: 'new row violates row-level security policy' }) : route.fallback());
+    await page.goto(`${BASE}${prefix}/units/${UNIT}`);
+    await answerMastery(page);
+    await page.getByText(t.syncFailed).waitFor();
+    check(true, `${tag} sync: server rejection shows "sync failed" and keeps the local copy`);
     await ctx.close();
   }
 

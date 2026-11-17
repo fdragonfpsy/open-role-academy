@@ -1,5 +1,20 @@
 # Status
 
+## 2026-11-17 — Phase 3b: Dashboard sync (behind flag, off)
+
+**Done**
+- One storage path for all islands: `useProgress` -> `src/lib/progress-store.ts`. Anonymous (no stored session, or flag off): localStorage exactly as before, no network, no metadata. Signed in: localStorage is the cache, account rows (profile, progress, item_responses, completed_units) are read and merged on load, every change is written through (debounced, only changed rows upserted, never deletes). Wired into Dashboard (incl. review answers, import), MasteryCheck and Onboarding/placement.
+- Pure logic with tests (`src/lib/progress-merge.ts`, `tests/progress-sync.test.ts`; tests now 109): merge policy (see DECISIONS), row diff, error classification, store controller with a fake account (offline, rejection, pending-after-reload, other-account cache, clear).
+- Non-blocking status (en/de, `role=status`): synced / syncing / "will sync later" (offline) / "sync failed", with a retry button; retried automatically on `online`. Shown on dashboard, after the mastery check and after placement; hidden for anonymous learners.
+- Default build unchanged: remote code sits behind the vite constant `__ACCOUNTS_ENABLED__` (no sync chunk, no supabase-js in `dist/`; default-build assertions pass).
+- `tests-e2e/auth.e2e.mjs` extended (en + de, fake backend): anonymous dashboard/mastery make no Supabase request, signed-in dashboard loads remote progress, mastery check upserts, offline shows the status and falls back to the local copy then retries, server rejection shows "failed". All checks, `npm run e2e` and the auth e2e pass locally.
+- **Not verified against a real Supabase project** (fake backend only; real PostgREST paging/row limits, upsert conflict behaviour and RLS are untested). Flag stays off; privacy policy not yet updated.
+- Known limits: local-only progress is uploaded on the next change, not on sign-in (the account page's import offer remains); role switch keeps other competencies' progress from the account (union); `item_responses.correct` is still best effort; the dashboard reset only clears this browser.
+
+**Counts:** roles 4 · competencies 38 · units 228 · items 456 · resources 297 · tests 109
+
+**Next:** privacy policy and imprint for accounts, magic-link/spam notes (already in UI), then Phase 4 roles.
+
 ## 2026-11-17 — Phase 3b: Profile onboarding (behind flag, off)
 
 **Done**

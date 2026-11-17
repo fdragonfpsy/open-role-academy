@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useState } from 'preact/hooks';
 import type { Lang } from '../../config/site';
 import {
   LEVELS,
@@ -13,9 +13,11 @@ import {
   type Level,
 } from '../../engine';
 import { localizePath, t } from '../../i18n';
-import { clearState, loadState, saveState, todayIso } from '../../lib/storage';
+import { todayIso } from '../../lib/storage';
+import { useProgress } from '../../lib/use-progress';
 import type { CompetencyView, QuizItem, RoleView, UnitView } from '../../lib/types';
 import { QuizItemView } from './QuizItemView';
+import { SyncStatus } from './SyncStatus';
 
 interface Props {
   lang: Lang;
@@ -28,16 +30,10 @@ interface Props {
 const levelLabel = (lang: Lang, level: Level | null) => (level ? t(lang, `level.${level}`) : t(lang, 'level.none'));
 
 export default function Dashboard({ lang, roles, competencies, units, items }: Props) {
-  const [state, setState] = useState<LearnerState | null>(null);
-  const [loaded, setLoaded] = useState(false);
+  const { state, loaded, save, clear, retry, status } = useProgress(lang);
   const [message, setMessage] = useState('');
   const [reviewing, setReviewing] = useState<QuizItem[] | null>(null);
   const [reviewIndex, setReviewIndex] = useState(0);
-
-  useEffect(() => {
-    setState(loadState());
-    setLoaded(true);
-  }, []);
 
   const onImport = async (e: Event) => {
     const input = e.currentTarget as HTMLInputElement;
@@ -57,8 +53,7 @@ export default function Dashboard({ lang, roles, competencies, units, items }: P
         throw new Error(t(lang, 'dashboard.importInvalidFile'));
       }
       if (!roles.some((r) => r.id === imported.roleId)) throw new Error(t(lang, 'dashboard.importUnknownRole'));
-      saveState(imported);
-      setState(imported);
+      save(imported);
       setMessage(t(lang, 'dashboard.importOk'));
     } catch (err) {
       setMessage(`${t(lang, 'dashboard.importError')}: ${(err as Error).message}`);
@@ -197,8 +192,7 @@ export default function Dashboard({ lang, roles, competencies, units, items }: P
             onDone={(correct) => {
               const item = reviewing[reviewIndex]!;
               const nextState = recordAnswer(state, { item, correct, phase: 'review', today });
-              saveState(nextState);
-              setState(nextState);
+              save(nextState);
               if (reviewIndex + 1 >= reviewing.length) {
                 setReviewing(null);
                 setMessage(t(lang, 'dashboard.reviewsDone'));
@@ -232,6 +226,7 @@ export default function Dashboard({ lang, roles, competencies, units, items }: P
 
       <section class="space-y-3 border-t border-slate-300 pt-6">
         <p class="text-sm text-slate-700">{t(lang, 'dashboard.storage')}</p>
+        <SyncStatus lang={lang} status={status} onRetry={retry} />
         <div class="flex flex-wrap gap-3">
           <button type="button" class="rounded border border-blue-800 min-h-11 px-4 py-2 font-semibold text-blue-800" onClick={download}>
             {t(lang, 'dashboard.export')}
@@ -242,9 +237,8 @@ export default function Dashboard({ lang, roles, competencies, units, items }: P
             class="rounded border border-red-800 min-h-11 px-4 py-2 font-semibold text-red-800"
             onClick={() => {
               if (window.confirm(t(lang, 'dashboard.resetConfirm'))) {
-                clearState();
-                setState(null);
-                setMessage(t(lang, 'dashboard.reset.done'));
+                clear();
+                setMessage(t(lang, status === 'local' ? 'dashboard.reset.done' : 'sync.resetKept'));
               }
             }}
           >
