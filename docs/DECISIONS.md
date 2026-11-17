@@ -2,6 +2,11 @@
 
 Format: date — decision — reason — alternatives considered.
 
+## 2026-11-17 — Profile form: scope and placement
+- **Decision:** The profile form lives inside the account island; role options are passed from content at build time; skipping is remembered in localStorage per user id; the upsert payload is a fixed column whitelist (`PROFILE_COLUMNS`) without `placement_done`. Preferred language always has a value (column is NOT NULL, default = page language); all other fields may stay empty (null).
+- **Reason:** Data minimisation and no new route or dependency; a partial upsert leaves `placement_done` and `created_at` untouched.
+- **Alternatives:** Separate onboarding page (more code, extra route); storing the skip flag in the database (collects more data for no benefit). Limitation accepted: saving a profile first makes the one-time local-progress import offer unavailable.
+
 ## 2026-11-14 — Answer-length cue is a validator warning, and a quality pass comes before the rest of Phase 3 (weekly review)
 - **Decision:** `validate:content` warns when more than 50% of a competency's single-choice items have the correct option as the uniquely longest (en). ROADMAP gets a per-role "Content quality pass" ahead of the remaining Phase 3 tasks.
 - **Reason:** 87% of single-choice items are cued by length, so placement and mastery overrate learners. Fixing it before the learner UI and before Phase 4 keeps the pattern from spreading to 10 more roles.

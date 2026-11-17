@@ -2,6 +2,7 @@ import type { ComponentChildren } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
 import type { SupabaseClient } from '@supabase/supabase-js';
 import type { Lang } from '../../config/site';
+import { LEVELS } from '../../engine';
 import { supabaseConfig } from '../../config/supabase';
 import { localizePath, t, type UiKey } from '../../i18n';
 import {
@@ -16,12 +17,28 @@ import {
   validatePassword,
   validateSignInPassword,
 } from '../../lib/auth';
+import {
+  GOAL_MAX,
+  MINUTES_MAX,
+  MINUTES_PRESETS,
+  PROFILE_SELECT,
+  emptyProfileForm,
+  formToPatch,
+  goalLength,
+  rowToForm,
+  validateProfile,
+  type ProfileErrors,
+  type ProfileField,
+  type ProfileForm,
+} from '../../lib/profile';
 import { stateToRows } from '../../lib/progress-rows';
 import { loadState } from '../../lib/storage';
 import { getSupabase } from '../../lib/supabase-client';
 
 interface Props {
   lang: Lang;
+  /** Published roles (id + localized title) for the profile's role family select. */
+  roles: { id: string; title: string }[];
 }
 
 type View = 'loading' | 'signin' | 'magic' | 'signup' | 'forgot' | 'sent' | 'recovery' | 'account' | 'deleted';
@@ -42,6 +59,7 @@ const input = 'mt-1 block min-h-11 w-full rounded border border-slate-500 bg-whi
 
 const fmt = (s: string, vars: Record<string, string>) => s.replace(/\{(\w+)\}/g, (_, k: string) => vars[k] ?? '');
 const dismissKey = (uid: string) => `open-role-academy.import-dismissed.${uid}`;
+const skipKey = (uid: string) => `open-role-academy.profile-skipped.${uid}`;
 
 function storageKeys(): string[] {
   try {
@@ -60,6 +78,21 @@ function dismissed(uid: string): boolean {
 function remember(uid: string): void {
   try {
     localStorage.setItem(dismissKey(uid), '1');
+  } catch {
+    /* per-viewer convenience only */
+  }
+}
+
+function flag(key: string): boolean {
+  try {
+    return localStorage.getItem(key) === '1';
+  } catch {
+    return false;
+  }
+}
+function setFlag(key: string): void {
+  try {
+    localStorage.setItem(key, '1');
   } catch {
     /* per-viewer convenience only */
   }
@@ -100,7 +133,7 @@ function Field(props: {
   );
 }
 
-export default function AccountPanel({ lang }: Props) {
+export default function AccountPanel({ lang, roles }: Props) {
   const [view, setView] = useState<View>('loading');
   const [sentKind, setSentKind] = useState<SentKind>('signUp');
   const [user, setUser] = useState<User | null>(null);
@@ -114,6 +147,13 @@ export default function AccountPanel({ lang }: Props) {
   const [busy, setBusy] = useState(false);
   const [offer, setOffer] = useState(false);
   const [confirmText, setConfirmText] = useState('');
+  // Profile: `saved` is what the database holds (null = no row yet); `draft` is the form being edited.
+  const [saved, setSaved] = useState<ProfileForm | null>(null);
+  const [profileLoaded, setProfileLoaded] = useState(false);
+  const [editing, setEditing] = useState(false);
+  const [draft, setDraft] = useState<ProfileForm>(() => emptyProfileForm(lang));
+  const [profileErrors, setProfileErrors] = useState<ProfileErrors>({});
+  const profileHeadingRef = useRef<HTMLHeadingElement>(null);
   const headingRef = useRef<HTMLHeadingElement>(null);
   const listening = useRef(false);
   const firstView = useRef(true);
@@ -189,17 +229,31 @@ export default function AccountPanel({ lang }: Props) {
     })();
   }, []);
 
-  // Offer to import local progress once per account that has no profile yet.
+  // Load the profile row once per signed-in user. No row yet: show the (skippable) profile form and,
+  // if this browser holds progress, the one-time import offer.
   useEffect(() => {
-    if (!user || dismissed(user.id) || !loadState()) return;
+    if (!user) {
+      setProfileLoaded(false);
+      setSaved(null);
+      setEditing(false);
+      return;
+    }
     let cancelled = false;
     void (async () => {
       try {
         const sb = await getSupabase();
-        const { data, error: err } = await sb.from('profiles').select('id').eq('id', user.id).maybeSingle();
-        if (!cancelled && !err && !data) setOffer(true);
+        const { data, error: err } = await sb.from('profiles').select(PROFILE_SELECT).eq('id', user.id).maybeSingle();
+        if (cancelled || err) return;
+        const form = data ? rowToForm(data as unknown as Record<string, unknown>, lang) : null;
+        setSaved(form);
+        setDraft(form ?? emptyProfileForm(lang));
+        setProfileLoaded(true);
+        if (!data) {
+          setEditing(!flag(skipKey(user.id)));
+          if (!dismissed(user.id) && loadState()) setOffer(true);
+        }
       } catch {
-        /* no offer if the check fails */
+        /* no profile UI if the check fails */
       }
     })();
     return () => {
@@ -325,6 +379,7 @@ export default function AccountPanel({ lang }: Props) {
           return;
         }
         const rows = stateToRows(local, user.id, lang);
+        const importedProfile = rowToForm(rows.profile, lang);
         const steps = [
           await sb.from('profiles').upsert(rows.profile),
           await sb.from('progress').upsert(rows.progress, { onConflict: 'user_id,competency_id' }),
@@ -334,6 +389,9 @@ export default function AccountPanel({ lang }: Props) {
         if (steps.some((s) => s.error)) throw new Error('import');
         remember(user.id);
         setOffer(false);
+        setSaved(importedProfile);
+        setDraft(importedProfile);
+        setEditing(false);
         setInfo(t(lang, 'auth.import.done'));
       } catch {
         fail('auth.import.failed' as UiKey);
@@ -355,6 +413,53 @@ export default function AccountPanel({ lang }: Props) {
       URL.revokeObjectURL(url);
       setInfo(t(lang, 'auth.export.done'));
     });
+
+  const setField = <K extends keyof ProfileForm>(k: K, v: ProfileForm[K]) => setDraft((d) => ({ ...d, [k]: v }));
+  const fieldIds: Record<ProfileField, string> = {
+    roleFamily: 'profile-role',
+    level: 'profile-level-none',
+    goal: 'profile-goal',
+    weeklyMinutes: 'profile-minutes',
+    language: 'profile-lang-en',
+  };
+  const openProfile = () => {
+    setDraft(saved ?? emptyProfileForm(lang));
+    setProfileErrors({});
+    setError(null);
+    setInfo('');
+    setEditing(true);
+    setTimeout(() => profileHeadingRef.current?.focus(), 0);
+  };
+  const closeProfile = () => {
+    setEditing(false);
+    setProfileErrors({});
+    setTimeout(() => profileHeadingRef.current?.focus(), 0);
+  };
+  const onProfileSkip = () => {
+    if (user) setFlag(skipKey(user.id));
+    closeProfile();
+  };
+  const onProfileSave = (e: Event) => {
+    e.preventDefault();
+    if (!user) return;
+    const errs = validateProfile(draft, roles.map((r) => r.id));
+    setProfileErrors(errs);
+    const first = (Object.keys(errs) as ProfileField[])[0];
+    if (first) {
+      document.getElementById(fieldIds[first])?.focus();
+      return;
+    }
+    const uid = user.id;
+    const snapshot = draft;
+    void run(async (sb) => {
+      const { error: err } = await sb.from('profiles').upsert(formToPatch(snapshot, uid));
+      if (err) return fail('profile.err.save');
+      setSaved(snapshot);
+      setEditing(false);
+      setInfo(t(lang, 'profile.saved'));
+      setTimeout(() => profileHeadingRef.current?.focus(), 0);
+    });
+  };
 
   const onDelete = (e: Event) => {
     e.preventDefault();
@@ -393,6 +498,161 @@ export default function AccountPanel({ lang }: Props) {
     <form noValidate onSubmit={onSubmit} class="space-y-4">
       {children}
     </form>
+  );
+
+  const levelLabel = (l: string) => t(lang, `level.${l}` as UiKey);
+  const fieldError = (f: ProfileField) =>
+    profileErrors[f] ? (
+      <p id={`profile-${f}-err`} class="mt-1 text-red-900">
+        {t(lang, profileErrors[f] as UiKey)}
+      </p>
+    ) : null;
+  const describedBy = (f: ProfileField, extra = '') => `${extra}${profileErrors[f] ? `profile-${f}-err` : ''}`.trim() || undefined;
+  const radio = (name: string, id: string, value: string, checked: boolean, label: string, hint: string | undefined, onPick: () => void, invalid: boolean) => (
+    <div class="flex items-start gap-3">
+      <input id={id} type="radio" name={name} value={value} checked={checked} aria-invalid={invalid ? 'true' : undefined} class="mt-2.5 h-6 w-6 shrink-0" onChange={onPick} />
+      <label for={id} class="min-h-11 py-2">
+        {label}
+        {hint && <span class="block text-sm text-slate-700">{hint}</span>}
+      </label>
+    </div>
+  );
+
+  const profileSection = () => (
+    <section class="mb-6 rounded border border-slate-400 p-4" aria-labelledby="profile-h">
+      <h3 id="profile-h" ref={profileHeadingRef} tabIndex={-1} class="mb-2 text-lg font-semibold outline-none focus:underline">
+        {t(lang, 'profile.title')}
+      </h3>
+      {editing ? (
+        <form noValidate onSubmit={onProfileSave} class="space-y-5" aria-describedby="profile-minimal">
+          <p>{t(lang, 'profile.intro')}</p>
+          <p id="profile-minimal" class="rounded border border-slate-400 bg-slate-50 p-3 text-sm">
+            {t(lang, 'profile.minimal')}
+          </p>
+          <div>
+            <label for="profile-role" class="block font-medium">
+              {t(lang, 'profile.role')}
+            </label>
+            <select
+              id="profile-role"
+              name="profile-role"
+              class={input}
+              value={draft.roleFamily}
+              aria-invalid={profileErrors.roleFamily ? 'true' : undefined}
+              aria-describedby={describedBy('roleFamily')}
+              onChange={(e) => setField('roleFamily', (e.currentTarget as HTMLSelectElement).value)}
+            >
+              <option value="">{t(lang, 'profile.role.none')}</option>
+              {roles.map((r) => (
+                <option key={r.id} value={r.id} selected={draft.roleFamily === r.id}>
+                  {r.title}
+                </option>
+              ))}
+            </select>
+            {fieldError('roleFamily')}
+          </div>
+          <fieldset aria-describedby={describedBy('level')}>
+            <legend class="font-medium">{t(lang, 'profile.level')}</legend>
+            {radio('profile-level', 'profile-level-none', '', draft.level === '', t(lang, 'profile.level.none'), undefined, () => setField('level', ''), !!profileErrors.level)}
+            {LEVELS.map((l) =>
+              radio('profile-level', `profile-level-${l}`, l, draft.level === l, levelLabel(l), t(lang, `level.${l}.hint` as UiKey), () => setField('level', l), !!profileErrors.level),
+            )}
+            {fieldError('level')}
+          </fieldset>
+          <div>
+            <label for="profile-goal" class="block font-medium">
+              {t(lang, 'profile.goal')}
+            </label>
+            <p id="profile-goal-hint" class="text-sm text-slate-700">
+              {t(lang, 'profile.goal.hint')}
+            </p>
+            <textarea
+              id="profile-goal"
+              name="profile-goal"
+              rows={4}
+              class={`${input} min-h-24`}
+              value={draft.goal}
+              aria-invalid={profileErrors.goal ? 'true' : undefined}
+              aria-describedby={describedBy('goal', 'profile-goal-hint profile-goal-count ')}
+              onInput={(e) => setField('goal', (e.currentTarget as HTMLTextAreaElement).value)}
+            />
+            <p id="profile-goal-count" class={`mt-1 text-sm ${goalLength(draft.goal.trim()) > GOAL_MAX ? 'font-semibold text-red-900' : 'text-slate-700'}`}>
+              {fmt(t(lang, 'profile.goal.count'), { n: String(goalLength(draft.goal)), max: String(GOAL_MAX) })}
+            </p>
+            {fieldError('goal')}
+          </div>
+          <div>
+            <label for="profile-minutes" class="block font-medium">
+              {t(lang, 'profile.minutes')}
+            </label>
+            <input
+              id="profile-minutes"
+              name="profile-minutes"
+              type="number"
+              inputMode="numeric"
+              min={0}
+              max={MINUTES_MAX}
+              step={1}
+              class={input}
+              value={draft.weeklyMinutes}
+              aria-invalid={profileErrors.weeklyMinutes ? 'true' : undefined}
+              aria-describedby={describedBy('weeklyMinutes', 'profile-minutes-hint ')}
+              onInput={(e) => setField('weeklyMinutes', (e.currentTarget as HTMLInputElement).value)}
+            />
+            <p id="profile-minutes-hint" class="mt-1 text-sm text-slate-700">
+              {t(lang, 'profile.minutes.hint')}
+            </p>
+            <div class="mt-1 flex flex-wrap gap-2">
+              {MINUTES_PRESETS.map((n) => (
+                <button key={n} type="button" class={btnSecondary} aria-pressed={draft.weeklyMinutes === String(n)} onClick={() => setField('weeklyMinutes', String(n))}>
+                  {fmt(t(lang, 'profile.minutes.preset'), { n: String(n) })}
+                </button>
+              ))}
+            </div>
+            {fieldError('weeklyMinutes')}
+          </div>
+          <fieldset aria-describedby={describedBy('language')}>
+            <legend class="font-medium">{t(lang, 'profile.language')}</legend>
+            {radio('profile-lang', 'profile-lang-en', 'en', draft.language === 'en', t(lang, 'profile.lang.en'), undefined, () => setField('language', 'en'), !!profileErrors.language)}
+            {radio('profile-lang', 'profile-lang-de', 'de', draft.language === 'de', t(lang, 'profile.lang.de'), undefined, () => setField('language', 'de'), !!profileErrors.language)}
+            {fieldError('language')}
+          </fieldset>
+          <div class="flex flex-wrap gap-3">
+            {submit('profile.save')}
+            {saved ? (
+              <button type="button" class={btnSecondary} disabled={busy} onClick={closeProfile}>
+                {t(lang, 'profile.cancel')}
+              </button>
+            ) : (
+              <button type="button" class={btnSecondary} disabled={busy} onClick={onProfileSkip}>
+                {t(lang, 'profile.skip')}
+              </button>
+            )}
+          </div>
+        </form>
+      ) : (
+        <>
+          {saved && (
+            <dl class="mb-3 grid gap-x-4 gap-y-1 sm:grid-cols-[max-content_1fr]">
+              <dt class="font-medium">{t(lang, 'profile.role')}</dt>
+              <dd>{roles.find((r) => r.id === saved.roleFamily)?.title ?? t(lang, 'profile.summary.empty')}</dd>
+              <dt class="font-medium">{t(lang, 'profile.level')}</dt>
+              <dd>{saved.level ? levelLabel(saved.level) : t(lang, 'profile.summary.empty')}</dd>
+              <dt class="font-medium">{t(lang, 'profile.goal')}</dt>
+              <dd class="whitespace-pre-line break-words">{saved.goal || t(lang, 'profile.summary.empty')}</dd>
+              <dt class="font-medium">{t(lang, 'profile.minutes')}</dt>
+              <dd>{saved.weeklyMinutes !== '' ? fmt(t(lang, 'profile.summary.minutes'), { n: saved.weeklyMinutes }) : t(lang, 'profile.summary.empty')}</dd>
+              <dt class="font-medium">{t(lang, 'profile.language')}</dt>
+              <dd>{t(lang, `profile.lang.${saved.language}` as UiKey)}</dd>
+            </dl>
+          )}
+          <p class="mb-3 text-sm">{t(lang, 'profile.minimal')}</p>
+          <button type="button" class={btnSecondary} disabled={busy} onClick={openProfile}>
+            {t(lang, saved ? 'profile.edit' : 'profile.setup')}
+          </button>
+        </>
+      )}
+    </section>
   );
 
   let body: ComponentChildren;
@@ -530,6 +790,7 @@ export default function AccountPanel({ lang }: Props) {
             </div>
           </section>
         )}
+        {profileLoaded && profileSection()}
         <section class="mb-6" aria-labelledby="auth-export-h">
           <h3 id="auth-export-h" class="mb-2 text-lg font-semibold">
             {t(lang, 'auth.export.title')}

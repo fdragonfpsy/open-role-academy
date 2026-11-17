@@ -14,6 +14,14 @@ import {
   validatePassword,
   validateSignInPassword,
 } from '../src/lib/auth';
+import {
+  GOAL_MAX,
+  PROFILE_COLUMNS,
+  emptyProfileForm,
+  formToPatch,
+  rowToForm,
+  validateProfile,
+} from '../src/lib/profile';
 import { rowsToState, stateToRows, type StoredRows } from '../src/lib/progress-rows';
 import { exportProgress, importProgress, type LearnerState } from '../src/engine';
 
@@ -168,5 +176,46 @@ describe('accounts flag', () => {
     expect(readFileSync('src/lib/supabase-client.ts', 'utf8')).toMatch(/import\('@supabase\/supabase-js'\)/);
     const pkg = JSON.parse(readFileSync('package.json', 'utf8')) as { dependencies: Record<string, string> };
     expect(pkg.dependencies['@supabase/supabase-js']).toMatch(/^\d+\.\d+\.\d+$/);
+  });
+});
+
+describe('profile form helpers', () => {
+  const roles = ['it-support', 'hr'];
+  const base = emptyProfileForm('en');
+  it('accepts an empty profile (all fields optional)', () => {
+    expect(validateProfile(base, roles)).toEqual({});
+    expect(formToPatch(base, 'u1')).toEqual({
+      id: 'u1', role_family: null, experience_level: null, learning_goal: null, weekly_minutes: null, preferred_language: 'en',
+    });
+  });
+  it('maps a full form to exactly the allowed columns', () => {
+    const patch = formToPatch({ roleFamily: 'hr', level: 'advanced', goal: '  Lead better  ', weeklyMinutes: ' 120 ', language: 'de' }, 'u1');
+    expect(patch).toEqual({ id: 'u1', role_family: 'hr', experience_level: 'advanced', learning_goal: 'Lead better', weekly_minutes: 120, preferred_language: 'de' });
+    expect(Object.keys(patch).sort()).toEqual([...PROFILE_COLUMNS].sort());
+    expect(PROFILE_COLUMNS).not.toContain('placement_done');
+  });
+  it('validates role, level, goal length, minutes, language', () => {
+    expect(validateProfile({ ...base, roleFamily: 'unknown' }, roles).roleFamily).toBe('profile.err.role');
+    expect(validateProfile({ ...base, level: 'expert' as never }, roles).level).toBe('profile.err.level');
+    expect(validateProfile({ ...base, goal: 'x'.repeat(GOAL_MAX) }, roles)).toEqual({});
+    expect(validateProfile({ ...base, goal: 'x'.repeat(GOAL_MAX + 1) }, roles).goal).toBe('profile.err.goalLong');
+    expect(validateProfile({ ...base, goal: '😀'.repeat(GOAL_MAX) }, roles)).toEqual({});
+    for (const bad of ['-1', '10081', '1.5', 'abc', '1e3', '99999999']) {
+      expect(validateProfile({ ...base, weeklyMinutes: bad }, roles).weeklyMinutes).toBe('profile.err.minutes');
+    }
+    for (const ok of ['0', '10080', '90']) expect(validateProfile({ ...base, weeklyMinutes: ok }, roles)).toEqual({});
+    expect(validateProfile({ ...base, language: 'fr' as never }, roles).language).toBe('profile.err.language');
+  });
+  it('round-trips and distrusts stored values', () => {
+    const form = { roleFamily: 'it-support', level: 'practitioner', goal: 'Goal', weeklyMinutes: '0', language: 'de' } as const;
+    expect(rowToForm({ ...formToPatch(form, 'u1') }, 'en')).toEqual(form);
+    expect(rowToForm(null, 'de')).toEqual(emptyProfileForm('de'));
+    expect(rowToForm({ role_family: 'Bad Role!', experience_level: 'x', weekly_minutes: 99999, preferred_language: 'fr' }, 'en')).toEqual(emptyProfileForm('en'));
+  });
+  it('has en/de strings for every profile key (parity)', () => {
+    const keys = Object.keys(en).filter((k) => k.startsWith('profile.'));
+    expect(keys.length).toBeGreaterThan(20);
+    for (const k of keys) expect((de as Record<string, string>)[k], k).toBeTruthy();
+    expect(Object.keys(de).filter((k) => k.startsWith('profile.')).sort()).toEqual(keys.sort());
   });
 });

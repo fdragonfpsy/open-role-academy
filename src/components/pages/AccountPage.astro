@@ -3,15 +3,17 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import AccountPanel from '../islands/AccountPanel';
 import type { Lang } from '../../config/site';
 import { t } from '../../i18n';
+import { getRoles } from '../../lib/content';
 interface Props {
   lang: Lang;
 }
 const { lang } = Astro.props;
+const roles = (await getRoles(lang)).map(({ id, title }) => ({ id, title }));
 ---
 
 <BaseLayout lang={lang} title={t(lang, 'account.title')}>
   <h1 class="mb-2 text-2xl font-bold sm:text-3xl">{t(lang, 'account.title')}</h1>
   <p class="mb-6 max-w-xl">{t(lang, 'account.intro')}</p>
-  <AccountPanel client:only="preact" lang={lang} />
+  <AccountPanel client:only="preact" lang={lang} roles={roles} />
   <noscript><p>{t(lang, 'account.noscript')}</p></noscript>
 </BaseLayout>
