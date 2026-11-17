@@ -11,8 +11,8 @@ items:
       - en: "Profit is recorded when earned, but cash arrives and leaves at different times"
         de: "Der Gewinn wird erfasst, wenn er entsteht, Geld fließt aber zu anderen Zeitpunkten"
         correct: true
-      - en: "Profit and cash are always identical"
-        de: "Gewinn und Cash sind immer identisch"
+      - en: "Profit already equals cash received, but the company spends the profit on assets before year end"
+        de: "Der Gewinn entspricht bereits dem Zahlungseingang, aber das Unternehmen gibt ihn vor Jahresende für Anlagen aus"
         correct: false
       - en: "Profitable companies never pay suppliers"
         de: "Profitable Unternehmen zahlen nie Lieferanten"
@@ -56,11 +56,11 @@ items:
       en: "How is a simple daily cash position built?"
       de: "Wie entsteht eine einfache tägliche Liquiditätsposition?"
     options:
-      - en: "Start from the bank balances, add expected inflows and subtract payments that are certain"
+      - en: "Start from bank balances, add expected inflows and subtract payments that are certain"
         de: "Von den Kontoständen ausgehen, erwartete Eingänge addieren und sichere Zahlungen abziehen"
         correct: true
-      - en: "Take last year's profit and divide by 365"
-        de: "Den Vorjahresgewinn nehmen und durch 365 teilen"
+      - en: "Take last year's profit and divide by 365 to get an average daily amount of available cash"
+        de: "Den Vorjahresgewinn nehmen und durch 365 teilen, um einen durchschnittlichen verfügbaren Tagesbetrag zu erhalten"
         correct: false
       - en: "Count only the invoices sent this month"
         de: "Nur die in diesem Monat gestellten Rechnungen zählen"
@@ -83,8 +83,8 @@ items:
       - en: "Reconcile the bank statement with your records to find the differences"
         de: "Kontoauszug und Aufzeichnungen abgleichen, um die Differenzen zu finden"
         correct: true
-      - en: "Ignore the bank and use your records"
-        de: "Die Bank ignorieren und mit den eigenen Aufzeichnungen weiterarbeiten"
+      - en: "Ignore the difference and keep using your own records, as they are usually more current"
+        de: "Die Differenz ignorieren und mit den eigenen Aufzeichnungen weiterarbeiten, da sie meist aktueller sind"
         correct: false
       - en: "Pay all open invoices at once"
         de: "Alle offenen Rechnungen sofort bezahlen"
@@ -107,8 +107,8 @@ items:
       - en: "The plan is updated regularly: the past week is replaced by actuals and a new week is added"
         de: "Der Plan wird regelmäßig fortgeschrieben: Die vergangene Woche wird durch Ist-Werte ersetzt und eine neue Woche ergänzt"
         correct: true
-      - en: "The plan is made once and never changed"
-        de: "Der Plan wird einmal erstellt und nie geändert"
+      - en: "The plan is made once for the full year and kept unchanged so results can be compared against it"
+        de: "Der Plan wird einmal für das ganze Jahr erstellt und unverändert gelassen, damit Ergebnisse daran gemessen werden können"
         correct: false
       - en: "The plan only covers the past"
         de: "Der Plan betrifft nur die Vergangenheit"
@@ -131,8 +131,8 @@ items:
       - en: "Current assets minus current liabilities"
         de: "Umlaufvermögen minus kurzfristige Verbindlichkeiten"
         correct: true
-      - en: "Revenue minus expenses"
-        de: "Erträge minus Aufwendungen"
+      - en: "Cash on hand minus the loans due this year, ignoring receivables and inventory"
+        de: "Kassenbestand minus die in diesem Jahr fälligen Kredite, ohne Forderungen und Vorräte"
         correct: false
       - en: "Total assets plus equity"
         de: "Gesamtvermögen plus Eigenkapital"
@@ -176,11 +176,11 @@ items:
       en: "A supplier offers a discount for payment within a short period. How should you decide whether to take it?"
       de: "Ein Lieferant bietet für Zahlung innerhalb einer kurzen Frist einen Preisnachlass. Wie entscheidest du, ob du ihn nutzt?"
     options:
-      - en: "Compare the saving with your own financing costs and schedule the payment before the discount deadline"
+      - en: "Compare the saving with your financing costs and plan the payment before the discount deadline"
         de: "Die Ersparnis mit den eigenen Finanzierungskosten vergleichen und die Zahlung vor Ablauf der Skontofrist einplanen"
         correct: true
-      - en: "Always take it without checking cash"
-        de: "Immer nutzen, ohne die Liquidität zu prüfen"
+      - en: "Always take it, because a discount is always a risk-free gain regardless of the current cash position"
+        de: "Immer nutzen, weil ein Skonto stets ein risikoloser Gewinn ist, unabhängig von der aktuellen Liquidität"
         correct: false
       - en: "Never take it"
         de: "Nie nutzen"
@@ -203,8 +203,8 @@ items:
       - en: "Find the causes of the variance and improve the forecast inputs"
         de: "Die Ursachen der Abweichung finden und die Prognose-Eingangsdaten verbessern"
         correct: true
-      - en: "Change the forecast to match actuals and say nothing"
-        de: "Die Prognose an die Ist-Werte anpassen und nichts sagen"
+      - en: "Overwrite the forecast with the actuals so the variance disappears and the report looks clean"
+        de: "Die Prognose mit den Ist-Werten überschreiben, damit die Abweichung verschwindet und der Bericht sauber aussieht"
         correct: false
       - en: "Stop forecasting"
         de: "Die Prognose einstellen"
@@ -227,8 +227,8 @@ items:
       - en: "It may strain supplier relationships and is not always sustainable"
         de: "Es kann Lieferantenbeziehungen belasten und ist nicht immer tragfähig"
         correct: true
-      - en: "It always improves profit"
-        de: "Es verbessert immer den Gewinn"
+      - en: "It permanently improves profit, since the paid-later amount is booked as lower expense"
+        de: "Es verbessert dauerhaft den Gewinn, da der später gezahlte Betrag als geringerer Aufwand gebucht wird"
         correct: false
       - en: "It has no downside"
         de: "Es hat keinen Nachteil"
@@ -248,11 +248,11 @@ items:
       en: "A message supposedly from the CEO asks for an urgent payment to a new account and not to tell anyone. What do you do?"
       de: "Eine Nachricht, angeblich von der Geschäftsführung, verlangt eine dringende Zahlung auf ein neues Konto und Geheimhaltung. Was tust du?"
     options:
-      - en: "Do not pay; verify through a known channel and follow the dual authorisation process"
+      - en: "Do not pay; verify via a known channel and follow the dual authorisation process"
         de: "Nicht zahlen; über einen bekannten Kanal prüfen und den Zwei-Personen-Freigabeprozess einhalten"
         correct: true
-      - en: "Pay quickly and check later"
-        de: "Schnell zahlen und später prüfen"
+      - en: "Pay quickly because the CEO has the authority to override controls, and file the message afterwards"
+        de: "Schnell zahlen, weil die Geschäftsführung Kontrollen übersteuern darf, und die Nachricht danach ablegen"
         correct: false
       - en: "Reply to the sender to ask"
         de: "Dem Absender antworten und nachfragen"
@@ -278,8 +278,8 @@ items:
       - en: "One person prepares and releases"
         de: "Eine Person bereitet vor und gibt frei"
         correct: false
-      - en: "The person who changes bank details also releases payments"
-        de: "Wer Bankdaten ändert, gibt auch Zahlungen frei"
+      - en: "The person who changes bank details also releases payments, as they know the supplier best"
+        de: "Wer Bankdaten ändert, gibt auch Zahlungen frei, da er den Lieferanten am besten kennt"
         correct: false
       - en: "The payment needs no approval below any amount"
         de: "Zahlungen brauchen unabhängig vom Betrag keine Freigabe"

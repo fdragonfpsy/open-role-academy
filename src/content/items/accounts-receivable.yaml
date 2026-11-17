@@ -8,11 +8,11 @@ items:
       en: "What is accounts receivable?"
       de: "Was sind Forderungen aus Lieferungen und Leistungen (Debitoren)?"
     options:
-      - en: "Money customers owe the business for goods or services delivered on credit, shown as an asset"
-        de: "Geld, das Kundschaft dem Unternehmen für auf Rechnung gelieferte Waren oder Leistungen schuldet, ausgewiesen als Vermögenswert"
+      - en: "Money customers owe for goods or services delivered on credit, shown as an asset"
+        de: "Geld, das Kundschaft für auf Rechnung gelieferte Waren oder Leistungen schuldet, ausgewiesen als Vermögenswert"
         correct: true
-      - en: "Money the business owes to its suppliers"
-        de: "Geld, das das Unternehmen seinen Lieferanten schuldet"
+      - en: "Money the business owes to its suppliers for goods received, shown as a liability"
+        de: "Geld, das das Unternehmen seinen Lieferanten für erhaltene Waren schuldet, ausgewiesen als Schuld"
         correct: false
       - en: "Cash already received from customers"
         de: "Bargeld, das bereits von der Kundschaft eingegangen ist"
@@ -38,8 +38,8 @@ items:
       - en: "Payment, order, invoice, delivery"
         de: "Zahlung, Bestellung, Rechnung, Lieferung"
         correct: false
-      - en: "Invoice, order, posting, delivery"
-        de: "Rechnung, Bestellung, Buchung, Lieferung"
+      - en: "Delivery, order, invoice, payment, posting and matching"
+        de: "Lieferung, Bestellung, Rechnung, Zahlung, Buchung und Zuordnung"
         correct: false
       - en: "Delivery, posting, order, payment"
         de: "Lieferung, Buchung, Bestellung, Zahlung"
@@ -62,8 +62,8 @@ items:
       - en: "Invoices are never allowed to be corrected"
         de: "Rechnungen dürfen nie korrigiert werden"
         correct: false
-      - en: "The bank requires a check before every transfer"
-        de: "Die Bank verlangt vor jeder Überweisung eine Prüfung"
+      - en: "Customers' banks refuse transfers whenever an invoice contains a formatting error"
+        de: "Banken der Kundschaft lehnen Überweisungen ab, sobald eine Rechnung einen Formatfehler enthält"
         correct: false
       - en: "The check replaces the payment terms"
         de: "Die Prüfung ersetzt die Zahlungsbedingungen"
@@ -83,8 +83,8 @@ items:
       - en: "Invoices that are not yet paid in full, with amounts and due dates"
         de: "Rechnungen, die noch nicht vollständig bezahlt sind, mit Beträgen und Fälligkeiten"
         correct: true
-      - en: "Only invoices that were paid last month"
-        de: "Nur Rechnungen, die im Vormonat bezahlt wurden"
+      - en: "Only invoices that were paid last month, with the payment date and the bank used"
+        de: "Nur Rechnungen, die im Vormonat bezahlt wurden, mit Zahlungsdatum und genutzter Bank"
         correct: false
       - en: "The company's bank balance"
         de: "Den Kontostand des Unternehmens"
@@ -107,8 +107,8 @@ items:
       - en: "Clear only the amount received, leave the rest open and find out why"
         de: "Nur den eingegangenen Betrag ausgleichen, den Rest offen lassen und die Ursache klären"
         correct: true
-      - en: "Close the whole invoice"
-        de: "Die ganze Rechnung schließen"
+      - en: "Close the whole invoice, since the customer has shown willingness to pay and the rest is minor"
+        de: "Die ganze Rechnung schließen, da die Kundschaft Zahlungswillen gezeigt hat und der Rest geringfügig ist"
         correct: false
       - en: "Delete the invoice and issue a new one"
         de: "Die Rechnung löschen und eine neue erstellen"
@@ -128,11 +128,11 @@ items:
       en: "A payment arrives without a usable reference. What is the best approach?"
       de: "Eine Zahlung geht ohne brauchbaren Verwendungszweck ein. Was ist das beste Vorgehen?"
     options:
-      - en: "Post it to a clearing account, research via amount and sender, and ask the customer if needed"
-        de: "Auf ein Verrechnungskonto buchen, über Betrag und Absender recherchieren und bei Bedarf bei der Kundschaft nachfragen"
+      - en: "Park it on a clearing account, research amount and sender, and ask the customer if needed"
+        de: "Auf ein Verrechnungskonto buchen, Betrag und Absender recherchieren und bei Bedarf nachfragen"
         correct: true
-      - en: "Allocate it to the customer with the most open items"
-        de: "Dem Kunden mit den meisten offenen Posten zuordnen"
+      - en: "Allocate it to the customer with the most open items, since that customer is statistically the most likely payer"
+        de: "Dem Kunden mit den meisten offenen Posten zuordnen, da dieser statistisch am ehesten der Zahler ist"
         correct: false
       - en: "Refund it immediately without checking"
         de: "Sofort ohne Prüfung zurückzahlen"
@@ -155,8 +155,8 @@ items:
       - en: "A friendly, factual reminder with invoice number, amount, due date and an offer to help"
         de: "Eine freundliche, sachliche Erinnerung mit Rechnungsnummer, Betrag, Fälligkeit und Hilfsangebot"
         correct: true
-      - en: "A threat of legal action"
-        de: "Eine Androhung rechtlicher Schritte"
+      - en: "A formal notice threatening legal action, so the customer takes the overdue invoice seriously"
+        de: "Eine förmliche Mitteilung mit Androhung rechtlicher Schritte, damit die Kundschaft die überfällige Rechnung ernst nimmt"
         correct: false
       - en: "No contact until three months have passed"
         de: "Kein Kontakt, bis drei Monate vergangen sind"
@@ -179,8 +179,8 @@ items:
       - en: "Issue a credit note that reduces or cancels the receivable"
         de: "Eine Gutschrift erstellen, die die Forderung mindert oder aufhebt"
         correct: true
-      - en: "Delete the original invoice from the system"
-        de: "Die ursprüngliche Rechnung aus dem System löschen"
+      - en: "Delete the original invoice from the system and issue a new one with the right amount"
+        de: "Die ursprüngliche Rechnung aus dem System löschen und eine neue mit dem richtigen Betrag erstellen"
         correct: false
       - en: "Ask the customer to overpay next time"
         de: "Die Kundschaft bitten, beim nächsten Mal mehr zu zahlen"
@@ -203,8 +203,8 @@ items:
       - en: "A cap on the open amount the company allows for that customer"
         de: "Eine Obergrenze für den offenen Betrag, den das Unternehmen für diese Kundschaft zulässt"
         correct: true
-      - en: "The maximum discount a customer may take"
-        de: "Der höchste Rabatt, den Kundschaft nutzen darf"
+      - en: "The maximum cash discount a customer may deduct when paying within the discount period"
+        de: "Der höchste Skonto, den Kundschaft bei Zahlung innerhalb der Skontofrist abziehen darf"
         correct: false
       - en: "The number of invoices per year"
         de: "Die Zahl der Rechnungen pro Jahr"
@@ -233,8 +233,8 @@ items:
       - en: "Ignore the period used"
         de: "Den verwendeten Zeitraum ignorieren"
         correct: false
-      - en: "Use DSO as the only measure of credit quality"
-        de: "DSO als einziges Maß für Kreditqualität nutzen"
+      - en: "Use DSO as the single measure of credit quality, since it covers all risk"
+        de: "DSO als einziges Maß für Kreditqualität nutzen, da es alle Risiken abdeckt"
         correct: false
     explanation:
       en: "DSO is a measure of how long collection takes on average, but formulas and periods vary. Without a clear definition, comparisons mislead."

@@ -35,8 +35,8 @@ items:
       - en: "The balance sheet is a snapshot at one date; the income statement covers a period"
         de: "Die Bilanz ist eine Momentaufnahme zu einem Stichtag; die GuV umfasst einen Zeitraum"
         correct: true
-      - en: "The balance sheet covers a period; the income statement is a snapshot"
-        de: "Die Bilanz umfasst einen Zeitraum; die GuV ist eine Momentaufnahme"
+      - en: "The balance sheet covers a period of flows; the income statement is a snapshot at the reporting date"
+        de: "Die Bilanz umfasst einen Zeitraum mit Bewegungen; die GuV ist eine Momentaufnahme zum Stichtag"
         correct: false
       - en: "Both show only a single date"
         de: "Beide zeigen nur einen einzelnen Stichtag"
@@ -83,8 +83,8 @@ items:
       - en: "It increases equity (after any owner contributions and withdrawals)"
         de: "Er erhöht das Eigenkapital (nach Einlagen und Entnahmen der Eigentümer)"
         correct: true
-      - en: "It reduces the liabilities by the same amount"
-        de: "Er verringert die Schulden um denselben Betrag"
+      - en: "It reduces liabilities by the same amount, because profit is used to repay debt first"
+        de: "Er verringert die Schulden um denselben Betrag, weil Gewinn zuerst zur Schuldentilgung dient"
         correct: false
       - en: "It has no effect on the balance sheet"
         de: "Er hat keine Auswirkung auf die Bilanz"
@@ -107,8 +107,8 @@ items:
       - en: "Operating, investing and financing activities"
         de: "Laufende Geschäftstätigkeit, Investitionstätigkeit und Finanzierungstätigkeit"
         correct: true
-      - en: "Assets, liabilities and equity"
-        de: "Vermögen, Schulden und Eigenkapital"
+      - en: "Current assets, fixed assets and liabilities, as in the balance sheet"
+        de: "Umlaufvermögen, Anlagevermögen und Schulden wie in der Bilanz"
         correct: false
       - en: "Revenue, expenses and profit"
         de: "Erträge, Aufwendungen und Gewinn"
@@ -152,11 +152,11 @@ items:
       en: "According to the cited sources, what is the main difference in purpose between traditional German HGB statements and IFRS statements?"
       de: "Was ist laut den zitierten Quellen der wesentliche Zweckunterschied zwischen traditionellen HGB-Abschlüssen und IFRS-Abschlüssen?"
     options:
-      - en: "HGB emphasises creditor protection; IFRS serves an information function for users such as capital-market investors"
+      - en: "HGB emphasises creditor protection; IFRS serves an information function for capital-market users"
         de: "Das HGB betont den Gläubigerschutz; IFRS dienen der Information von Adressaten wie Kapitalmarktinvestoren"
         correct: true
-      - en: "HGB serves only investors; IFRS serves only tax authorities"
-        de: "Das HGB dient nur Investoren; IFRS dienen nur den Finanzbehörden"
+      - en: "HGB serves mainly investors and the capital market; IFRS serves mainly the tax authorities and creditors"
+        de: "Das HGB dient vor allem Investoren und dem Kapitalmarkt; IFRS dienen vor allem Finanzbehörden und Gläubigern"
         correct: false
       - en: "There is no difference in purpose"
         de: "Es gibt keinen Zweckunterschied"
@@ -176,11 +176,11 @@ items:
       en: "Under the HGB, how does the management report (Lagebericht) relate to the annual financial statements?"
       de: "Wie steht der Lagebericht nach HGB zum Jahresabschluss?"
     options:
-      - en: "It accompanies the Jahresabschluss for medium-sized and large corporations but is not part of it"
+      - en: "It accompanies the Jahresabschluss of medium-sized and large corporations but is not part of it"
         de: "Er begleitet den Jahresabschluss mittelgroßer und großer Kapitalgesellschaften, ist aber nicht Teil davon"
         correct: true
-      - en: "It is the first component of the Jahresabschluss for every company"
-        de: "Er ist für jedes Unternehmen der erste Bestandteil des Jahresabschlusses"
+      - en: "It is the first component of the Jahresabschluss and must be prepared by every company, whatever its size"
+        de: "Er ist der erste Bestandteil des Jahresabschlusses und von jedem Unternehmen unabhängig von der Größe aufzustellen"
         correct: false
       - en: "It replaces the balance sheet"
         de: "Er ersetzt die Bilanz"
@@ -206,8 +206,8 @@ items:
       - en: "Offsetting is always required"
         de: "Verrechnung ist immer vorgeschrieben"
         correct: false
-      - en: "Offsetting is allowed whenever it simplifies the layout"
-        de: "Verrechnung ist immer erlaubt, wenn sie die Darstellung vereinfacht"
+      - en: "Offsetting is allowed whenever the same counterparty is involved, since the net position is what matters"
+        de: "Verrechnung ist immer erlaubt, wenn dieselbe Gegenpartei beteiligt ist, da es auf die Nettoposition ankommt"
         correct: false
       - en: "Offsetting is only allowed in the notes"
         de: "Verrechnung ist nur im Anhang erlaubt"
@@ -224,11 +224,11 @@ items:
       en: "Before commenting that an expense line grew sharply, you learn that 1,000 was reclassified into that line this year. What should you do?"
       de: "Bevor du kommentierst, dass ein Aufwandsposten stark gestiegen ist, erfährst du, dass in diesem Jahr 1.000 in diesen Posten umgegliedert wurden. Was tust du?"
     options:
-      - en: "Restate or flag the prior-year figure so the comparison is on the same basis, and say so"
+      - en: "Restate or flag the prior-year figure so the comparison is like for like, and say so"
         de: "Den Vorjahreswert anpassen oder kennzeichnen, damit der Vergleich auf gleicher Grundlage steht, und das benennen"
         correct: true
-      - en: "Compare with the old prior-year figure and ignore the reclassification"
-        de: "Mit dem alten Vorjahreswert vergleichen und die Umgliederung ignorieren"
+      - en: "Compare with the old prior-year figure as published, since published numbers must never be touched"
+        de: "Mit dem veröffentlichten alten Vorjahreswert vergleichen, da veröffentlichte Zahlen nie angetastet werden dürfen"
         correct: false
       - en: "Delete the prior-year column"
         de: "Die Vorjahresspalte löschen"

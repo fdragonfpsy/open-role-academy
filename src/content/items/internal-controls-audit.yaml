@@ -8,11 +8,11 @@ items:
       en: "Which situation best shows a lack of segregation of duties?"
       de: "Welche Situation zeigt am besten eine fehlende Funktionstrennung?"
     options:
-      - en: "The same person enters a supplier invoice, releases the payment and posts the bank statement"
+      - en: "The same person enters a supplier invoice, releases the payment and books the bank statement"
         de: "Dieselbe Person erfasst eine Lieferantenrechnung, gibt die Zahlung frei und bucht den Kontoauszug"
         correct: true
-      - en: "One person enters the invoice and a second person approves the payment"
-        de: "Eine Person erfasst die Rechnung und eine zweite Person genehmigt die Zahlung"
+      - en: "One person enters the invoice, a second person approves the payment, and a third person reconciles the bank"
+        de: "Eine Person erfasst die Rechnung, eine zweite genehmigt die Zahlung und eine dritte stimmt das Bankkonto ab"
         correct: false
       - en: "A manager reviews a monthly report"
         de: "Eine Führungskraft prüft einen Monatsbericht"
@@ -35,8 +35,8 @@ items:
       - en: "A second, independent person checks to reduce the risk of errors and misuse"
         de: "Eine zweite, unabhängige Person prüft, um das Risiko von Fehlern und Missbrauch zu senken"
         correct: true
-      - en: "It makes sure every document is printed twice"
-        de: "Es stellt sicher, dass jedes Dokument zweimal ausgedruckt wird"
+      - en: "It makes sure every document is read twice by the same person who prepared it, to catch typos"
+        de: "Es stellt sicher, dass jedes Dokument von der erstellenden Person selbst zweimal gelesen wird, um Tippfehler zu finden"
         correct: false
       - en: "It means two people may share one password"
         de: "Es bedeutet, dass zwei Personen sich ein Passwort teilen dürfen"
@@ -65,8 +65,8 @@ items:
       - en: "Only to fill the archive"
         de: "Nur um das Archiv zu füllen"
         correct: false
-      - en: "Because vouchers are needed only if an error has occurred"
-        de: "Weil Belege nur bei einem Fehler nötig sind"
+      - en: "Because vouchers are only needed once an error or an audit query has occurred and must be found"
+        de: "Weil Belege erst bei einem Fehler oder einer Prüfungsanfrage gebraucht werden und dann auffindbar sein müssen"
         correct: false
     explanation:
       en: "Documentation and an audit trail give documentary evidence of the sequence of activities, so others can reconstruct and check what happened."
@@ -107,8 +107,8 @@ items:
       - en: "The system blocks a payment release above the user's approval limit"
         de: "Das System sperrt eine Zahlungsfreigabe über der Freigabegrenze der Person"
         correct: true
-      - en: "A weekly review finds duplicate payments after they were made"
-        de: "Eine wöchentliche Durchsicht findet Doppelzahlungen, nachdem sie erfolgt sind"
+      - en: "A weekly review that finds duplicate payments and reverses them before the supplier has cashed them"
+        de: "Eine wöchentliche Durchsicht findet Doppelzahlungen und holt sie zurück, bevor der Lieferant sie verbucht hat"
         correct: false
       - en: "An auditor reports on last year's errors"
         de: "Eine Prüfung berichtet über Fehler des Vorjahres"
@@ -158,8 +158,8 @@ items:
       - en: "Use whatever period a colleague remembers"
         de: "Den Zeitraum nehmen, an den sich jemand im Team erinnert"
         correct: false
-      - en: "Keep everything for one year and then delete it"
-        de: "Alles ein Jahr aufbewahren und dann löschen"
+      - en: "Keep everything for one year and then delete it, to limit storage costs and data protection risk"
+        de: "Alles ein Jahr aufbewahren und dann löschen, um Speicherkosten und Datenschutzrisiken zu begrenzen"
         correct: false
       - en: "Retention periods are the same in every country"
         de: "Aufbewahrungsfristen sind in jedem Land gleich"
@@ -179,8 +179,8 @@ items:
       - en: "Tell your manager, report the gap openly to the auditor and do not recreate the record"
         de: "Deine Führungskraft informieren, die Lücke offen gegenüber den Prüfenden benennen und den Beleg nicht nachträglich erstellen"
         correct: true
-      - en: "Create a back-dated approval so the file looks complete"
-        de: "Eine rückdatierte Freigabe erstellen, damit die Akte vollständig aussieht"
+      - en: "Ask the approver to sign a back-dated approval now so the file is complete and the audit runs smoothly"
+        de: "Die genehmigende Person bitten, jetzt eine rückdatierte Freigabe zu unterschreiben, damit die Akte vollständig ist und die Prüfung reibungslos läuft"
         correct: false
       - en: "Remove the item from the hand-over without telling anyone"
         de: "Den Vorgang kommentarlos aus der Übergabe nehmen"
@@ -203,8 +203,8 @@ items:
       - en: "Operating effectiveness: the control was not actually performed"
         de: "Wirksamkeit im Betrieb: die Kontrolle wurde nicht tatsächlich durchgeführt"
         correct: true
-      - en: "Design: the control could never catch the problem"
-        de: "Ausgestaltung: die Kontrolle könnte das Problem nie erkennen"
+      - en: "Design: the control is documented but its steps could never catch the problem it targets"
+        de: "Ausgestaltung: die Kontrolle ist dokumentiert, ihre Schritte könnten das Zielproblem aber nie erkennen"
         correct: false
       - en: "Nothing, because a documented control always works"
         de: "Nichts, denn eine dokumentierte Kontrolle wirkt immer"
@@ -224,11 +224,11 @@ items:
       en: "Which statement about internal audit is correct?"
       de: "Welche Aussage zur Internen Revision ist richtig?"
     options:
-      - en: "It is an independent, objective assurance and consulting activity and does not execute the audited activities"
+      - en: "An independent, objective assurance and consulting activity that does not run the audited activities"
         de: "Sie ist eine unabhängige, objektive Prüfungs- und Beratungsaktivität und führt die geprüften Tätigkeiten nicht selbst aus"
         correct: true
-      - en: "It is responsible for running the daily processes it audits"
-        de: "Sie ist für die tägliche Durchführung der Prozesse verantwortlich, die sie prüft"
+      - en: "It is responsible for running and improving the daily processes it audits, so that it can fix findings itself"
+        de: "Sie ist für Durchführung und Verbesserung der täglichen Prozesse verantwortlich, die sie prüft, damit sie Feststellungen selbst beheben kann"
         correct: false
       - en: "It replaces the need for management to maintain controls"
         de: "Sie ersetzt die Pflicht des Managements, Kontrollen zu unterhalten"

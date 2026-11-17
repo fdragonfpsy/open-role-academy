@@ -11,8 +11,8 @@ items:
       - en: "A budget is a fixed-term plan; a forecast is a flexible, updated estimate"
         de: "Ein Budget ist ein zeitlich fester Plan, ein Forecast eine flexible, aktualisierte Schätzung"
         correct: true
-      - en: "A budget is what actually happened; a forecast is the plan"
-        de: "Ein Budget zeigt, was tatsächlich passiert ist; ein Forecast ist der Plan"
+      - en: "A budget records what actually happened in the period; a forecast is the plan set before it started"
+        de: "Ein Budget hält fest, was in der Periode tatsächlich passiert ist; ein Forecast ist der vorab festgelegte Plan"
         correct: false
       - en: "They are the same thing and are always identical"
         de: "Beides ist dasselbe und immer identisch"
@@ -59,8 +59,8 @@ items:
       - en: "The difference between the budgeted amount and the actual amount"
         de: "Die Differenz zwischen dem budgetierten und dem tatsächlichen Betrag"
         correct: true
-      - en: "The total of all expense lines"
-        de: "Die Summe aller Aufwandspositionen"
+      - en: "The total of all expense lines, compared with the total of all income lines"
+        de: "Die Summe aller Aufwandspositionen im Vergleich zur Summe aller Ertragspositionen"
         correct: false
       - en: "The budget for the next year"
         de: "Das Budget für das nächste Jahr"
@@ -152,11 +152,11 @@ items:
       en: "What is the basic idea of a rolling forecast?"
       de: "Was ist die Grundidee eines rollierenden Forecasts?"
     options:
-      - en: "The outlook is updated at regular intervals and a new period is added so the horizon stays constant"
+      - en: "The outlook is updated regularly and a new period is added so the horizon stays constant"
         de: "Die Vorausschau wird regelmäßig aktualisiert und eine neue Periode angefügt, sodass der Horizont gleich bleibt"
         correct: true
-      - en: "The budget is rewritten every day from zero"
-        de: "Das Budget wird täglich bei null neu geschrieben"
+      - en: "The budget is rewritten from zero at every update, ignoring the previous version and past actuals"
+        de: "Das Budget wird bei jeder Aktualisierung bei null neu geschrieben, ohne die Vorversion und Ist-Werte zu beachten"
         correct: false
       - en: "Past actuals are deleted once they are booked"
         de: "Vergangene Istwerte werden gelöscht, sobald sie gebucht sind"
@@ -230,8 +230,8 @@ items:
       - en: "It replaces the budget with last year's actuals"
         de: "Sie ersetzt das Budget durch die Vorjahres-Istwerte"
         correct: false
-      - en: "It proves that the forecast is correct"
-        de: "Sie beweist, dass der Forecast richtig ist"
+      - en: "It proves that the forecast is correct by testing it against many extreme assumptions"
+        de: "Sie beweist, dass der Forecast richtig ist, indem sie ihn gegen viele extreme Annahmen testet"
         correct: false
       - en: "It removes all uncertain assumptions from the model"
         de: "Sie entfernt alle unsicheren Annahmen aus dem Modell"
