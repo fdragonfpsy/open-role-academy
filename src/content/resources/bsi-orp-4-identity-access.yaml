@@ -1,0 +1,14 @@
+id: bsi-orp-4-identity-access
+url: "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/IT-GS-Kompendium_Einzel_PDFs_2023/02_ORP_Organisation_und_Personal/ORP_4_Identitaets_und_Berechtigungsmanagement_Editon_2023.pdf?__blob=publicationFile&v=3"
+title: "ORP.4 Identitäts- und Berechtigungsmanagement"
+provider: Federal Office for Information Security (BSI)
+language: de
+format: article
+minutes: 25
+license: free-access
+licenseUrl: https://www.bsi.bund.de/DE/Service/Impressum/impressum_node.html
+licenseVerifiedOn: 2026-11-17
+mode: link
+competencies: [identity-access-management]
+levels: [practitioner, advanced]
+note: "Official BSI IT-Grundschutz building block (PDF, German, Edition 2023), free to access; no open license stated, so link only."

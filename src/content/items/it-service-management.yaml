@@ -8,17 +8,17 @@ items:
       en: "What is the core idea of IT service management (ITSM)?"
       de: "Was ist der Grundgedanke des IT-Service-Managements (ITSM)?"
     options:
-      - en: "IT is delivered and managed as services that meet customer needs, with defined processes and continual improvement"
-        de: "IT wird als Services erbracht und gesteuert, die Bedürfnisse der Kundschaft erfüllen – mit festgelegten Prozessen und kontinuierlicher Verbesserung"
+      - en: "IT is delivered as services that meet customer needs, with defined processes and continual improvement"
+        de: "IT wird als Service erbracht, der Kundenbedürfnisse erfüllt – mit festgelegten Prozessen und kontinuierlicher Verbesserung"
         correct: true
-      - en: "IT staff should only fix hardware"
-        de: "IT-Beschäftigte sollen nur Hardware reparieren"
+      - en: "IT is mainly a cost centre that keeps hardware running and should be kept as small as possible"
+        de: "IT ist vor allem eine Kostenstelle, die Hardware am Laufen hält und möglichst klein gehalten werden sollte"
         correct: false
-      - en: "Every user should solve IT problems on their own"
-        de: "Alle Nutzenden sollen IT-Probleme selbst lösen"
+      - en: "IT is a set of tools, and the tool vendor decides which processes the organisation should follow"
+        de: "IT ist eine Sammlung von Werkzeugen, und der Hersteller bestimmt, welchen Prozessen die Organisation folgt"
         correct: false
-      - en: "IT should buy as much software as possible"
-        de: "Die IT soll möglichst viel Software kaufen"
+      - en: "IT work is organised by technology (servers, networks, apps) so that every team optimises its own area"
+        de: "IT-Arbeit wird nach Technologie (Server, Netze, Anwendungen) gegliedert, damit jedes Team seinen eigenen Bereich optimiert"
         correct: false
     explanation:
       en: "ITSM is the set of activities to design, deliver, operate and control IT services for customers, with a process approach that focuses on customer needs and continual improvement."
@@ -56,17 +56,17 @@ items:
       en: "What is the main role of a service desk?"
       de: "Was ist die Hauptaufgabe eines Service Desks?"
     options:
-      - en: "A single point of contact for users to report incidents and make requests, and to receive updates"
+      - en: "A single point of contact where users report incidents, make requests and get updates"
         de: "Eine zentrale Anlaufstelle, an der Nutzende Störungen melden, Anfragen stellen und Rückmeldungen erhalten"
         correct: true
-      - en: "Writing all of the company's software"
-        de: "Die gesamte Software des Unternehmens zu schreiben"
+      - en: "A team that decides which IT projects the company funds and approves each year's IT budget"
+        de: "Ein Team, das entscheidet, welche IT-Projekte das Unternehmen finanziert, und das jährliche IT-Budget freigibt"
         correct: false
-      - en: "Approving the IT budget"
-        de: "Das IT-Budget zu genehmigen"
+      - en: "The group of specialists who develop and maintain the company's in-house business applications"
+        de: "Die Gruppe von Fachleuten, die die unternehmensinternen Geschäftsanwendungen entwickelt und pflegt"
         correct: false
-      - en: "Only selling hardware to customers"
-        de: "Nur Hardware an Kundschaft zu verkaufen"
+      - en: "A procurement office that buys and delivers hardware and software for all departments"
+        de: "Eine Beschaffungsstelle, die Hard- und Software für alle Abteilungen einkauft und ausliefert"
         correct: false
     explanation:
       en: "The service desk is the single point of contact between users and IT. It records, routes and follows up incidents and requests, and keeps users informed."
@@ -104,17 +104,17 @@ items:
       en: "A business application is down. You know a workaround that restores it, but the root cause is still unknown. What is the goal of incident management now?"
       de: "Eine Geschäftsanwendung ist ausgefallen. Du kennst einen Workaround, der sie wiederherstellt, aber die Ursache ist noch unbekannt. Was ist jetzt das Ziel des Incident-Managements?"
     options:
-      - en: "Restore normal service as quickly as possible — apply the workaround and hand over root-cause analysis"
-        de: "Den normalen Betrieb so schnell wie möglich wiederherstellen – Workaround anwenden und die Ursachenanalyse übergeben"
+      - en: "Restore service quickly with the workaround and leave root-cause analysis to problem management"
+        de: "Den Service schnell mit dem Workaround wiederherstellen und die Ursachenanalyse dem Problem Management überlassen"
         correct: true
-      - en: "Keep the service down until the root cause is fully understood"
-        de: "Den Service abgeschaltet lassen, bis die Ursache vollständig verstanden ist"
+      - en: "Keep the service down until the root cause is fully understood, so that the same fault cannot return later"
+        de: "Den Service ausgeschaltet lassen, bis die Ursache vollständig verstanden ist, damit der Fehler später nicht wiederkehrt"
         correct: false
-      - en: "Close the ticket without informing users"
-        de: "Das Ticket schließen, ohne die Nutzenden zu informieren"
+      - en: "Close the ticket at once because a workaround means the incident is permanently resolved"
+        de: "Das Ticket sofort schließen, weil ein Workaround den Incident dauerhaft behebt"
         correct: false
-      - en: "Reinstall all systems in the company"
-        de: "Alle Systeme im Unternehmen neu installieren"
+      - en: "Test the workaround on a few users for several weeks before offering it to everyone affected"
+        de: "Den Workaround mehrere Wochen an wenigen Nutzenden testen, bevor er allen Betroffenen angeboten wird"
         correct: false
     explanation:
       en: "Incident management aims to restore normal service operation (within the SLA) as quickly as possible. Finding and removing the underlying cause is a separate activity, typically called problem management."
@@ -128,17 +128,17 @@ items:
       en: "Why should changes to production systems go through a defined change process?"
       de: "Warum sollten Änderungen an Produktivsystemen einen festgelegten Change-Prozess durchlaufen?"
     options:
-      - en: "To assess risks, plan and approve changes and be able to roll back, so that changes do not cause new incidents"
-        de: "Um Risiken zu bewerten, Änderungen zu planen und freizugeben und zurückrollen zu können, damit Änderungen keine neuen Störungen verursachen"
+      - en: "To assess risk, plan, approve and prepare a rollback, so changes do not cause new incidents"
+        de: "Um Risiken zu bewerten, Änderungen zu planen, freizugeben und einen Rückweg vorzubereiten, damit keine neuen Störungen entstehen"
         correct: true
-      - en: "Because changes are forbidden in IT"
-        de: "Weil Änderungen in der IT verboten sind"
+      - en: "To document each change after it was made, so that auditors can later see what was done to the system"
+        de: "Um jede Änderung nachträglich zu dokumentieren, damit Prüfende später sehen können, was am System gemacht wurde"
         correct: false
-      - en: "To make changes as slow as possible"
-        de: "Um Änderungen möglichst langsam zu machen"
+      - en: "Because only large projects carry risk; routine changes to production systems never cause incidents"
+        de: "Weil nur große Projekte Risiken bergen; Routineänderungen an Produktivsystemen verursachen nie Störungen"
         correct: false
-      - en: "Only to create paperwork for audits"
-        de: "Nur um Papier für Prüfungen zu erzeugen"
+      - en: "So that the person making the change alone decides when to do it and whether anyone is informed"
+        de: "Damit die Person, die die Änderung durchführt, allein entscheidet, wann sie umgesetzt wird und ob jemand informiert wird"
         correct: false
     explanation:
       en: "Many incidents are caused by changes. A change process balances speed and risk: assess, approve, plan, test, implement with a back-out plan, and review."
@@ -152,17 +152,17 @@ items:
       en: "Users keep asking the service desk what IT can provide and how long it takes. What helps most?"
       de: "Nutzende fragen beim Service Desk ständig, was die IT anbietet und wie lange es dauert. Was hilft am meisten?"
     options:
-      - en: "A service catalogue that describes the available services, how to request them and the expected delivery times"
-        de: "Ein Servicekatalog, der die verfügbaren Services, den Weg zur Anfrage und die erwarteten Bereitstellungszeiten beschreibt"
+      - en: "A service catalogue listing available services, how to request them and expected delivery times"
+        de: "Ein Servicekatalog mit den verfügbaren Services, dem Anfrageweg und den erwarteten Lieferzeiten"
         correct: true
-      - en: "Answering each question individually by phone"
-        de: "Jede Frage einzeln am Telefon beantworten"
+      - en: "A detailed monthly report of all tickets, sent to every user so they can look up answers themselves"
+        de: "Ein ausführlicher Monatsbericht aller Tickets an alle Nutzenden, damit sie Antworten selbst nachlesen können"
         correct: false
-      - en: "Telling users to ask colleagues"
-        de: "Nutzende bitten, Kolleginnen und Kollegen zu fragen"
+      - en: "A longer phone queue message that explains the opening hours and the names of all support staff"
+        de: "Eine längere Ansage in der Telefonwarteschleife mit Öffnungszeiten und den Namen aller Support-Mitarbeitenden"
         correct: false
-      - en: "Publishing the IT team's holiday plan"
-        de: "Den Urlaubsplan des IT-Teams veröffentlichen"
+      - en: "A shared mailbox where users can send any IT wish and receive an answer when time allows"
+        de: "Ein gemeinsames Postfach, in das Nutzende jeden IT-Wunsch senden und bei Gelegenheit eine Antwort erhalten"
         correct: false
     explanation:
       en: "A service catalogue makes services and their conditions transparent and enables standardised, often self-service requests — fewer questions, clearer expectations."
@@ -224,17 +224,17 @@ items:
       en: "You lead the service desk. Which approach to continual improvement is most effective?"
       de: "Du leitest den Service Desk. Welcher Ansatz zur kontinuierlichen Verbesserung ist am wirksamsten?"
     options:
-      - en: "Regularly review data (top incident categories, SLA trends, user feedback), pick a few improvements, implement them and measure the effect"
-        de: "Regelmäßig Daten auswerten (häufigste Störungskategorien, SLA-Trends, Rückmeldungen der Nutzenden), wenige Verbesserungen auswählen, umsetzen und die Wirkung messen"
+      - en: "Review data such as top categories, SLA trends and feedback, pick a few improvements and measure the effect"
+        de: "Daten wie häufigste Kategorien, SLA-Trends und Feedback auswerten, wenige Verbesserungen auswählen und die Wirkung messen"
         correct: true
-      - en: "Launch a large transformation programme once every five years"
-        de: "Alle fünf Jahre ein großes Transformationsprogramm starten"
+      - en: "Buy a modern ITSM platform that promises automatic improvements, and rely on its dashboards to show what to fix"
+        de: "Eine moderne ITSM-Plattform kaufen, die automatische Verbesserungen verspricht, und sich auf deren Dashboards verlassen, um Handlungsbedarf zu erkennen"
         correct: false
-      - en: "Wait for management to tell the team what to improve"
-        de: "Warten, bis das Management sagt, was zu verbessern ist"
+      - en: "Let each agent improve whatever annoys them most, since they know the daily work better than any report does"
+        de: "Jede Servicekraft verbessern lassen, was sie am meisten stört, da sie die tägliche Arbeit besser kennt als jeder Bericht"
         correct: false
-      - en: "Add more fields to the ticket form every month"
-        de: "Jeden Monat mehr Felder ins Ticketformular aufnehmen"
+      - en: "Run an annual satisfaction survey and implement every request mentioned in it, starting with the most frequent"
+        de: "Einmal jährlich eine Zufriedenheitsumfrage durchführen und alle genannten Wünsche umsetzen, beginnend mit dem häufigsten"
         correct: false
     explanation:
       en: "Continual improvement works in small, measured cycles based on data and feedback. This keeps improvements aligned with customer needs."
@@ -248,17 +248,17 @@ items:
       en: "You negotiate a new SLA with a business department. What makes it a good agreement?"
       de: "Du verhandelst ein neues SLA mit einem Fachbereich. Was macht es zu einer guten Vereinbarung?"
     options:
-      - en: "Targets that reflect the business impact of the service, are measurable and achievable, with agreed reporting and review"
-        de: "Zielwerte, die die geschäftliche Bedeutung des Service abbilden, messbar und erreichbar sind, mit vereinbartem Reporting und Überprüfung"
+      - en: "Targets that reflect business impact, are measurable and achievable, with agreed reporting and a review cycle"
+        de: "Ziele, die die geschäftliche Auswirkung widerspiegeln, messbar und erreichbar sind – mit vereinbartem Reporting und Überprüfungsrhythmus"
         correct: true
-      - en: "The strictest possible targets for every service, regardless of cost"
-        de: "Möglichst strenge Zielwerte für jeden Service, unabhängig von den Kosten"
+      - en: "The strictest possible targets for every service, so that the business is always protected, whatever the cost to IT"
+        de: "Die strengstmöglichen Ziele für jeden Service, damit das Geschäft stets geschützt ist – egal, was es die IT kostet"
         correct: false
-      - en: "Vague wording so that no target can be missed"
-        de: "Vage Formulierungen, damit kein Ziel verfehlt werden kann"
+      - en: "Targets copied from another company's SLA, because they have already been proven to work in practice elsewhere"
+        de: "Ziele aus dem SLA eines anderen Unternehmens, weil sie sich anderswo bereits in der Praxis bewährt haben"
         correct: false
-      - en: "Targets that IT measures but never shares"
-        de: "Zielwerte, die die IT misst, aber nie teilt"
+      - en: "Targets set by IT alone, based on what the team already achieves today, and reported once a year to the department"
+        de: "Ziele, die allein die IT festlegt – orientiert an dem, was das Team heute schon erreicht – und die einmal jährlich der Fachabteilung gemeldet werden"
         correct: false
     explanation:
       en: "Good SLAs balance business needs and cost, use measurable targets and include reporting and regular reviews. Over-ambitious or vague targets both damage trust."

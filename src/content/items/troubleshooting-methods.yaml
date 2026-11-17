@@ -8,17 +8,17 @@ items:
       en: "Which ticket description gives the best starting point for troubleshooting?"
       de: "Welche Ticketbeschreibung ist der beste Ausgangspunkt für die Fehlersuche?"
     options:
-      - en: "\"Printing from the spreadsheet program to the 2nd-floor printer produces nothing since this morning's update; printing from the browser works.\""
-        de: "„Drucken aus der Tabellenkalkulation auf den Drucker im 2. Stock liefert seit dem Update heute Morgen nichts; aus dem Browser klappt es.“"
+      - en: "\"Printing from the spreadsheet program to the 2nd-floor printer fails since this morning's update; browser printing works.\""
+        de: "„Drucken aus der Tabellenkalkulation auf den Drucker im 2. Stock schlägt seit dem heutigen Update fehl; Drucken aus dem Browser funktioniert.“"
         correct: true
-      - en: "\"Printer broken.\""
-        de: "„Drucker kaputt.“"
+      - en: "\"Printer broken, please fix it as soon as possible because it is urgent and many people are waiting.\""
+        de: "„Drucker kaputt, bitte so schnell wie möglich beheben, weil es dringend ist und viele Leute warten.“"
         correct: false
-      - en: "\"Printing has been annoying for a while.\""
-        de: "„Drucken nervt schon länger.“"
+      - en: "\"Printing has been annoying for a while now and nobody seems to take care of the problem at all.\""
+        de: "„Das Drucken nervt schon seit einer Weile und niemand scheint sich um das Problem zu kümmern.“"
         correct: false
-      - en: "\"Please buy a new printer.\""
-        de: "„Bitte einen neuen Drucker kaufen.“"
+      - en: "\"Please buy a new printer for our floor, because the old one is slow and has caused trouble before.\""
+        de: "„Bitte kauft einen neuen Drucker für unsere Etage, weil der alte langsam ist und schon früher Ärger gemacht hat.“"
         correct: false
     explanation:
       en: "A useful description states the expected vs. actual behaviour, since when, what changed and what still works. The comparison (browser works) already narrows down the cause."
@@ -32,17 +32,17 @@ items:
       en: "You suspect three possible causes for a problem. Why should you test them by changing one thing at a time?"
       de: "Du vermutest drei mögliche Ursachen für ein Problem. Warum solltest du sie prüfen, indem du immer nur eine Sache änderst?"
     options:
-      - en: "So you know which change actually solved the problem and can undo changes that did not help"
-        de: "Damit du weißt, welche Änderung das Problem tatsächlich gelöst hat, und Änderungen, die nicht geholfen haben, rückgängig machen kannst"
+      - en: "So you know which change solved the problem and can undo changes that did not help"
+        de: "Damit du weißt, welche Änderung das Problem gelöst hat, und wirkungslose Änderungen rückgängig machen kannst"
         correct: true
-      - en: "Because changing several things at once is forbidden by law"
-        de: "Weil es gesetzlich verboten ist, mehrere Dinge gleichzeitig zu ändern"
+      - en: "Because changing several things at once is forbidden by the change rules of every organisation"
+        de: "Weil das gleichzeitige Ändern mehrerer Dinge durch die Änderungsregeln jeder Organisation verboten ist"
         correct: false
-      - en: "Because it always takes less time than changing everything at once"
-        de: "Weil es immer weniger Zeit braucht, als alles auf einmal zu ändern"
+      - en: "Because it always takes less time than changing everything at once and then testing the result"
+        de: "Weil es immer weniger Zeit kostet, als alles gleichzeitig zu ändern und dann das Ergebnis zu testen"
         correct: false
-      - en: "So that the ticket stays open longer"
-        de: "Damit das Ticket länger offen bleibt"
+      - en: "So that the ticket stays open long enough for the user to confirm every single step you tried"
+        de: "Damit das Ticket lange genug offen bleibt, damit die Person jeden einzelnen Schritt bestätigen kann"
         correct: false
     explanation:
       en: "If several changes are made at once and the problem disappears, nobody knows which one helped — and unnecessary changes may cause new problems. One change at a time keeps cause and effect clear."
@@ -83,14 +83,14 @@ items:
       - en: "When the user confirms the original task works again, and the fix is documented"
         de: "Wenn die Person bestätigt, dass die ursprüngliche Aufgabe wieder funktioniert, und die Lösung dokumentiert ist"
         correct: true
-      - en: "As soon as you have made the change"
-        de: "Sobald du die Änderung vorgenommen hast"
+      - en: "As soon as you have made the change, because the setting you adjusted was the most likely cause"
+        de: "Sobald du die Änderung vorgenommen hast, weil die angepasste Einstellung die wahrscheinlichste Ursache war"
         correct: false
-      - en: "When the device restarts without an error message"
-        de: "Wenn das Gerät ohne Fehlermeldung neu startet"
+      - en: "When the device restarts without an error message, because the startup then shows that all is well"
+        de: "Wenn das Gerät ohne Fehlermeldung neu startet, weil der Start dann zeigt, dass alles in Ordnung ist"
         correct: false
-      - en: "When no new ticket arrives within one hour"
-        de: "Wenn innerhalb einer Stunde kein neues Ticket eingeht"
+      - en: "When no new ticket arrives from the user within an hour, because silence means that it works"
+        de: "Wenn innerhalb einer Stunde kein neues Ticket der Person eingeht, weil Schweigen bedeutet, dass es funktioniert"
         correct: false
     explanation:
       en: "Troubleshooting ends with confirmation that the system works again for its original purpose. Only the user can confirm that their task works; documentation helps the next person with the same issue."
@@ -107,14 +107,14 @@ items:
       - en: "The basic network connection works; focus on name resolution (e.g. DNS)"
         de: "Die grundlegende Netzwerkverbindung funktioniert; konzentriere dich auf die Namensauflösung (z. B. DNS)"
         correct: true
-      - en: "The network cable is most likely defective"
-        de: "Das Netzwerkkabel ist höchstwahrscheinlich defekt"
+      - en: "The network cable is most likely defective, so it should be replaced before any further analysis"
+        de: "Das Netzwerkkabel ist höchstwahrscheinlich defekt und sollte vor jeder weiteren Analyse getauscht werden"
         correct: false
-      - en: "The file server is switched off"
-        de: "Der Dateiserver ist ausgeschaltet"
+      - en: "The file server is switched off, because a server that is on would be reachable by its name too"
+        de: "Der Dateiserver ist ausgeschaltet, denn ein laufender Server wäre auch über seinen Namen erreichbar"
         correct: false
-      - en: "Nothing — the test was useless"
-        de: "Nichts – der Test war nutzlos"
+      - en: "Nothing, because the test with the IP address does not say anything about the name-based access"
+        de: "Nichts, da der Test mit der IP-Adresse nichts über den namensbasierten Zugriff aussagt"
         correct: false
     explanation:
       en: "Reaching the server by IP proves that the lower layers (cable, addressing, routing) and the server itself work. The fault must lie in translating the name to the address. One test has ruled out half of the possibilities."
@@ -155,14 +155,14 @@ items:
       - en: "In the user's account or profile (e.g. permissions, settings)"
         de: "Im Konto oder Profil der Person (z. B. Berechtigungen, Einstellungen)"
         correct: true
-      - en: "In the hardware of the devices"
-        de: "In der Hardware der Geräte"
+      - en: "In the hardware of the devices, since the same user works on several machines and uses them intensively"
+        de: "In der Hardware der Geräte, da die Person an mehreren Geräten arbeitet und sie intensiv nutzt"
         correct: false
-      - en: "In the building's power supply"
-        de: "In der Stromversorgung des Gebäudes"
+      - en: "In the network or power supply of the building, which can affect individual users more than others"
+        de: "Im Netz oder in der Stromversorgung des Gebäudes, was einzelne Nutzende stärker treffen kann als andere"
         correct: false
-      - en: "In the monitor settings of one device"
-        de: "In den Monitoreinstellungen eines Geräts"
+      - en: "In the operating system of the devices, which must be reinstalled before the user can work again"
+        de: "Im Betriebssystem der Geräte, das neu installiert werden muss, bevor die Person wieder arbeiten kann"
         correct: false
     explanation:
       en: "Comparing with working cases asks \"what is different?\". The devices work for others, so they are ruled out; the one constant factor is the user's account or profile."
@@ -177,16 +177,16 @@ items:
       de: "Du hast die drei Lösungen ausprobiert, die diese Art von Fehler normalerweise beheben, und keine hat funktioniert. Was ist der beste nächste Schritt?"
     options:
       - en: "Switch to a structured search: follow the path of the data through the system and test where it breaks"
-        de: "Zu einer strukturierten Suche wechseln: dem Weg der Daten durch das System folgen und testen, wo er abbricht"
+        de: "Auf eine strukturierte Suche wechseln: den Weg der Daten durch das System verfolgen und testen, wo er abbricht"
         correct: true
-      - en: "Keep trying further fixes from internet forums until one works"
-        de: "Weitere Lösungen aus Internetforen ausprobieren, bis eine funktioniert"
+      - en: "Keep trying further fixes from internet forums until one works, since others have seen the same error"
+        de: "Weitere Lösungen aus Internetforen ausprobieren, bis eine funktioniert, da andere denselben Fehler schon hatten"
         correct: false
-      - en: "Close the ticket as \"cannot be reproduced\""
-        de: "Das Ticket als „nicht reproduzierbar“ schließen"
+      - en: "Close the ticket as \"cannot be reproduced\", because the usual fixes were tried without any success"
+        de: "Das Ticket als „nicht reproduzierbar“ schließen, weil die üblichen Lösungen ohne Erfolg versucht wurden"
         correct: false
-      - en: "Reinstall the operating system right away"
-        de: "Sofort das Betriebssystem neu installieren"
+      - en: "Reinstall the operating system right away, since it removes every possible software cause at once"
+        de: "Sofort das Betriebssystem neu installieren, da dies jede mögliche Softwareursache auf einmal beseitigt"
         correct: false
     explanation:
       en: "Experience-based (symptomatic) reasoning is fast but fails for unfamiliar problems. Then a topographic strategy — using knowledge of how the system is built to isolate the faulty part — is more reliable than guessing on."
@@ -201,16 +201,16 @@ items:
       de: "Eine Anwendung war langsam, weil die Festplatte voll war; Logdateien werden nie rotiert, und der Speicherplatz wird nicht überwacht. Welche Aussage beschreibt die Grundursache?"
     options:
       - en: "Log files are never rotated and nobody monitors disk space"
-        de: "Logdateien werden nie rotiert, und niemand überwacht den Speicherplatz"
+        de: "Logdateien werden nie rotiert und niemand überwacht den Speicherplatz"
         correct: true
-      - en: "The application was slow"
-        de: "Die Anwendung war langsam"
+      - en: "The application was slow, which is what the user reported and what the ticket describes as the problem"
+        de: "Die Anwendung war langsam, was die Person gemeldet hat und das Ticket als Problem beschreibt"
         correct: false
-      - en: "The disk was full"
-        de: "Die Festplatte war voll"
+      - en: "The disk was full, which made the application slow and finally caused it to stop working altogether"
+        de: "Die Festplatte war voll, was die Anwendung langsam machte und schließlich zum Stillstand brachte"
         correct: false
-      - en: "A user complained"
-        de: "Eine Person hat sich beschwert"
+      - en: "A large amount of log data was written during the last week, which used up the remaining free space"
+        de: "In der letzten Woche wurden viele Logdaten geschrieben, die den verbleibenden freien Speicher aufbrauchten"
         correct: false
     explanation:
       en: "\"Slow\" is the symptom and \"disk full\" the immediate cause. The root cause is the condition that allowed it — removing it prevents recurrence; freeing disk space only restores service."
@@ -227,14 +227,14 @@ items:
       - en: "About 4, because each test halves the remaining candidates"
         de: "Etwa 4, weil jeder Test die verbleibenden Kandidaten halbiert"
         correct: true
-      - en: "16, one per change"
-        de: "16, eine pro Änderung"
+      - en: "16, one test per recorded change, because each change has to be checked on its own to be sure"
+        de: "16, ein Test pro Änderung, weil jede Änderung einzeln geprüft werden muss, um sicher zu sein"
         correct: false
-      - en: "8, half of the changes"
-        de: "8, die Hälfte der Änderungen"
+      - en: "8, half of the changes, because the first test only rules out the changes after the middle one"
+        de: "8, die Hälfte der Änderungen, weil der erste Test nur die Änderungen nach der mittleren ausschließt"
         correct: false
-      - en: "It cannot be determined without testing every change"
-        de: "Das lässt sich nicht bestimmen, ohne jede Änderung zu testen"
+      - en: "It cannot be determined without testing every change, because the failure might depend on a combination"
+        de: "Das lässt sich nicht bestimmen, ohne jede Änderung zu testen, weil der Fehler von einer Kombination abhängen könnte"
         correct: false
     explanation:
       en: "Bisection works like binary search: 16 → 8 → 4 → 2 → 1 candidates, so about four tests suffice. This only works if changes are recorded and the failure can be tested reliably."
@@ -272,17 +272,17 @@ items:
       en: "After yesterday's update, a service fails. A colleague says: \"It's obviously the update,\" and only searches for evidence supporting this. What is the best response?"
       de: "Nach dem gestrigen Update fällt ein Dienst aus. Ein Kollege sagt: „Das ist offensichtlich das Update“, und sucht nur nach Belegen dafür. Was ist die beste Reaktion?"
     options:
-      - en: "Treat the update as a strong suspect, but also ask what would disprove it and check whether it explains all symptoms"
+      - en: "Treat the update as a strong suspect, but also ask what would disprove it and check that it explains all symptoms"
         de: "Das Update als starken Verdächtigen behandeln, aber auch fragen, was es widerlegen würde, und prüfen, ob es alle Symptome erklärt"
         correct: true
-      - en: "Roll back the update and close the case without further checks"
-        de: "Das Update zurücknehmen und den Fall ohne weitere Prüfung schließen"
+      - en: "Roll back the update and close the case without further checks, since the quickest fix is the best one"
+        de: "Das Update zurückrollen und den Fall ohne weitere Prüfung schließen, da die schnellste Lösung die beste ist"
         correct: false
-      - en: "Ignore the update completely, because recent changes are never the cause"
-        de: "Das Update komplett ignorieren, weil jüngste Änderungen nie die Ursache sind"
+      - en: "Ignore the update completely and look elsewhere, because recent changes are very rarely the cause of faults"
+        de: "Das Update völlig ignorieren und woanders suchen, weil kürzliche Änderungen nur selten die Ursache von Fehlern sind"
         correct: false
-      - en: "Find out who installed the update and hold that person responsible"
-        de: "Herausfinden, wer das Update installiert hat, und diese Person verantwortlich machen"
+      - en: "Find out who installed the update and ask that person to explain, since individual accountability speeds up the fix"
+        de: "Herausfinden, wer das Update installiert hat, und diese Person um eine Erklärung bitten, da persönliche Verantwortung die Lösung beschleunigt"
         correct: false
     explanation:
       en: "Recent changes are good suspects, but looking only for confirming evidence (confirmation bias) can hide the real cause. Seek disconfirming evidence, check that the explanation covers every symptom, and keep reviews blameless."

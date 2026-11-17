@@ -1,0 +1,14 @@
+id: bsi-der-2-1-incident-handling
+url: "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/IT-GS-Kompendium_Einzel_PDFs_2023/05_DER_Detektion_und_Reaktion/DER_2_1_Behandlung_von_Sicherheitsvorfaellen_Edition_2023.pdf?__blob=publicationFile&v=3"
+title: "DER.2.1 Behandlung von Sicherheitsvorfällen"
+provider: Federal Office for Information Security (BSI)
+language: de
+format: article
+minutes: 25
+license: free-access
+licenseUrl: https://www.bsi.bund.de/DE/Service/Impressum/impressum_node.html
+licenseVerifiedOn: 2026-11-17
+mode: link
+competencies: [incident-request-handling]
+levels: [practitioner, advanced]
+note: "Official BSI IT-Grundschutz building block (PDF, German, Edition 2023), free to access; no open license stated, so link only."

@@ -1,0 +1,14 @@
+id: bsi-sys-2-1-client
+url: "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/IT-GS-Kompendium_Einzel_PDFs_2023/07_SYS_IT_Systeme/SYS_2_1_Allgemeiner_Client_Edition_2023.pdf?__blob=publicationFile&v=3"
+title: "SYS.2.1 Allgemeiner Client"
+provider: Federal Office for Information Security (BSI)
+language: de
+format: article
+minutes: 25
+license: free-access
+licenseUrl: https://www.bsi.bund.de/DE/Service/Impressum/impressum_node.html
+licenseVerifiedOn: 2026-11-17
+mode: link
+competencies: [endpoint-management]
+levels: [practitioner, advanced]
+note: "Official BSI IT-Grundschutz building block (PDF, German, Edition 2023), free to access; no open license stated, so link only."

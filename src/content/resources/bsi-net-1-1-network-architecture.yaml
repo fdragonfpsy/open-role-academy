@@ -1,0 +1,14 @@
+id: bsi-net-1-1-network-architecture
+url: "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/IT-GS-Kompendium_Einzel_PDFs_2023/09_NET_Netze_und_Kommunikation/NET_1_1_Netzarchitektur_und_design_Edition_2023.pdf?__blob=publicationFile&v=3"
+title: "NET.1.1 Netzarchitektur und -design"
+provider: Federal Office for Information Security (BSI)
+language: de
+format: article
+minutes: 30
+license: free-access
+licenseUrl: https://www.bsi.bund.de/DE/Service/Impressum/impressum_node.html
+licenseVerifiedOn: 2026-11-17
+mode: link
+competencies: [networking-fundamentals]
+levels: [practitioner, advanced]
+note: "Official BSI IT-Grundschutz building block (PDF, German, Edition 2023), free to access; no open license stated, so link only."

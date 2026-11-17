@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-17 — Content quality pass: IT Support & Operations
+
+**Done**
+- IT items (10 files): options rewritten en/de; `uniquely longest` warnings gone for all 10 IT competencies (30 → 20 warnings overall).
+- 9 new resources (BSI IT-Grundschutz modules, Wikibooks Bash scripting / technical writing, MS Learn Windows troubleshooting; all link-only, verified 2026-11-17).
+- Gap: `it-service-management` still has no non-Wikipedia resource (no verifiable open one reachable). New resources are not yet listed in unit `resources[]` frontmatter.
+
+**Counts:** roles 4 · competencies 38 · units 228 · items 456 · resources 283 · tests 59
+
+**Next:** Finance (11) quality batch, then HR (11); close #53/#56/#57 afterwards.
+
 ## 2026-11-16 — Content quality pass: core track
 
 **Done**

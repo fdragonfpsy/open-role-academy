@@ -11,14 +11,14 @@ items:
       - en: "To reduce avoidable outages and keep a record of what was changed"
         de: "Um vermeidbare Ausfälle zu verringern und festzuhalten, was geändert wurde"
         correct: true
-      - en: "To make sure no change is ever made"
-        de: "Um sicherzustellen, dass nie etwas geändert wird"
+      - en: "To make sure that changes are made only by managers, so that technical staff never touch live systems"
+        de: "Um sicherzustellen, dass nur Führungskräfte Änderungen vornehmen, sodass technisches Personal nie an Livesystemen arbeitet"
         correct: false
-      - en: "To give the requester sole authority over every change"
-        de: "Um der antragstellenden Person die alleinige Entscheidung über jede Änderung zu geben"
+      - en: "To give the requester sole authority over every change, because they know best what they need"
+        de: "Um der anfragenden Person die alleinige Entscheidung über jede Änderung zu geben, weil sie am besten weiß, was sie braucht"
         correct: false
-      - en: "To avoid having to test anything"
-        de: "Um nichts testen zu müssen"
+      - en: "To avoid having to test anything, since an approved change is considered safe by definition"
+        de: "Um nichts testen zu müssen, da eine genehmigte Änderung per Definition als sicher gilt"
         correct: false
     explanation:
       en: "Control means changes are reviewed, planned and recorded, which prevents many outages and makes troubleshooting faster."
@@ -83,14 +83,14 @@ items:
       - en: "It is updated and closed with the date, after data has been wiped"
         de: "Er wird aktualisiert und mit Datum abgeschlossen, nachdem die Daten gelöscht wurden"
         correct: true
-      - en: "It is deleted without a trace"
-        de: "Er wird spurlos gelöscht"
+      - en: "It is deleted without a trace, so that the inventory only ever lists devices that are in use today"
+        de: "Er wird spurlos gelöscht, damit das Inventar nur Geräte aufführt, die heute im Einsatz sind"
         correct: false
-      - en: "It stays as 'in use' so the count looks right"
-        de: "Er bleibt auf 'in Nutzung', damit die Zahl stimmt"
+      - en: "It stays as 'in use' so that the count of devices in the inventory still looks right for the audit"
+        de: "Er bleibt auf „in Nutzung“, damit die Anzahl der Geräte im Inventar für die Prüfung weiter stimmt"
         correct: false
-      - en: "Its tag number is given to the next new device"
-        de: "Seine Tag-Nummer wird dem nächsten neuen Gerät gegeben"
+      - en: "It is handed on with the tag number to the next new device, which saves the cost of new labels"
+        de: "Er wird samt Inventarnummer an das nächste neue Gerät weitergegeben, was die Kosten neuer Etiketten spart"
         correct: false
     explanation:
       en: "Retirement is a lifecycle step: wipe data, take the device out of use and close the record with the date. Tag numbers should never be reused."
@@ -107,14 +107,14 @@ items:
       - en: "Low risk, repeatable, with a pre-agreed procedure"
         de: "Geringes Risiko, wiederholbar, mit vorab vereinbartem Verfahren"
         correct: true
-      - en: "It always needs a full board meeting"
-        de: "Sie braucht immer eine volle Gremiensitzung"
+      - en: "It always needs a full board meeting, because even a routine change must be approved in person"
+        de: "Sie braucht immer eine volle Gremiensitzung, weil auch eine Routineänderung persönlich genehmigt werden muss"
         correct: false
-      - en: "It is never recorded"
-        de: "Sie wird nie dokumentiert"
+      - en: "It is never recorded, because routine work is considered part of normal operations and not a change"
+        de: "Sie wird nie erfasst, weil Routinearbeit als normaler Betrieb und nicht als Änderung gilt"
         correct: false
-      - en: "It is only used when a service is down"
-        de: "Sie wird nur genutzt, wenn ein Dienst ausgefallen ist"
+      - en: "It is used only while a service is down, to restore operation as fast as possible with no approval"
+        de: "Sie wird nur bei ausgefallenem Service genutzt, um den Betrieb ohne Freigabe schnellstmöglich wiederherzustellen"
         correct: false
     explanation:
       en: "Standard changes are well understood and can be approved in advance; they are still recorded."
@@ -131,14 +131,14 @@ items:
       - en: "A change to the authentication service that many applications depend on"
         de: "Eine Änderung am Authentifizierungsdienst, von dem viele Anwendungen abhängen"
         correct: true
-      - en: "A new wallpaper on one test laptop"
-        de: "Ein neues Hintergrundbild auf einem Testlaptop"
+      - en: "A new wallpaper on one test laptop, because users will notice it immediately on their screens"
+        de: "Ein neues Hintergrundbild auf einem Testlaptop, weil Nutzende es sofort auf ihrem Bildschirm bemerken"
         correct: false
-      - en: "Renaming a single unused test file"
-        de: "Das Umbenennen einer einzelnen ungenutzten Testdatei"
+      - en: "Renaming a single unused test file, because file changes can never be undone once they are saved"
+        de: "Das Umbenennen einer einzelnen ungenutzten Testdatei, weil Dateiänderungen nach dem Speichern nie rückgängig gemacht werden können"
         correct: false
-      - en: "Both equally, since all changes have the same impact"
-        de: "Beide gleich, da alle Änderungen dieselbe Auswirkung haben"
+      - en: "Both equally, since all changes have the same impact on the services that depend on the systems"
+        de: "Beide gleich, da alle Änderungen dieselben Auswirkungen auf die abhängigen Services haben"
         correct: false
     explanation:
       en: "Impact depends on who and what depends on the system; shared services have a wider impact."
@@ -152,17 +152,17 @@ items:
       en: "What belongs in a good rollback plan?"
       de: "Was gehört in einen guten Rückfallplan?"
     options:
-      - en: "A trigger, the steps, a responsible person and an estimated duration, prepared before the change"
-        de: "Ein Auslöser, die Schritte, eine verantwortliche Person und eine geschätzte Dauer, vorbereitet vor der Änderung"
+      - en: "A trigger, the steps, an owner and an estimated duration, prepared before the change"
+        de: "Ein Auslöser, die Schritte, eine verantwortliche Person und eine geschätzte Dauer – vor der Änderung vorbereitet"
         correct: true
-      - en: "Only the sentence 'we will see what happens'"
-        de: "Nur der Satz 'wir sehen dann, was passiert'"
+      - en: "Only a short note that the team will decide on the day how to react if something goes wrong"
+        de: "Nur ein kurzer Vermerk, dass das Team am Tag selbst entscheidet, wie es reagiert, falls etwas schiefgeht"
         correct: false
-      - en: "A plan written after the change has failed"
-        de: "Ein Plan, der nach dem Scheitern der Änderung geschrieben wird"
+      - en: "A plan written after the change has failed, based on what the team remembers about the old state"
+        de: "Ein Plan, der nach dem Scheitern der Änderung geschrieben wird, auf Basis dessen, was das Team vom alten Zustand weiß"
         correct: false
-      - en: "A list of users to blame"
-        de: "Eine Liste von Personen, denen man die Schuld gibt"
+      - en: "A list of the users who are affected, so that they can be asked to repeat their work after the change"
+        de: "Eine Liste der betroffenen Nutzenden, damit sie nach der Änderung gebeten werden können, ihre Arbeit zu wiederholen"
         correct: false
     explanation:
       en: "A rollback plan must be ready and checked in advance, otherwise it cannot help when something fails."
@@ -200,17 +200,17 @@ items:
       en: "How should approval effort be matched to risk?"
       de: "Wie sollte der Freigabeaufwand dem Risiko angepasst werden?"
     options:
-      - en: "Pre-approved standard changes need no meeting; high-risk changes get a prepared review by those with authority and knowledge"
-        de: "Vorab genehmigte Standardänderungen brauchen keine Sitzung; riskante Änderungen erhalten eine vorbereitete Prüfung durch Personen mit Befugnis und Wissen"
+      - en: "Pre-approved standard changes need no meeting; high-risk changes get a prepared review by those with authority"
+        de: "Vorab genehmigte Standardänderungen brauchen keine Sitzung; Hochrisiko-Änderungen erhalten eine vorbereitete Prüfung durch Befugte und Fachkundige"
         correct: true
-      - en: "Every change, however small, goes to the same large board"
-        de: "Jede Änderung, auch die kleinste, geht an dasselbe große Gremium"
+      - en: "Every change, however small, goes to the same large board, so that all decisions are made consistently"
+        de: "Jede Änderung, auch die kleinste, geht an dasselbe große Gremium, damit alle Entscheidungen einheitlich getroffen werden"
         correct: false
-      - en: "No change is ever reviewed to save time"
-        de: "Keine Änderung wird je geprüft, um Zeit zu sparen"
+      - en: "Changes are reviewed only after they were made, so that approval never delays urgent technical work"
+        de: "Änderungen werden nur nachträglich geprüft, damit die Freigabe dringende technische Arbeit nie verzögert"
         correct: false
-      - en: "Only the requester approves, always"
-        de: "Immer gibt nur die antragstellende Person frei"
+      - en: "Only the requester approves, always, because the requester carries the business responsibility for the outcome"
+        de: "Es genehmigt immer nur die anfragende Person, weil sie die fachliche Verantwortung für das Ergebnis trägt"
         correct: false
     explanation:
       en: "Proportionate governance saves effort on routine work and focuses review where harm could be greatest."
@@ -251,14 +251,14 @@ items:
       - en: "Concrete, recorded improvements to the process, found without blaming individuals"
         de: "Konkrete, dokumentierte Verbesserungen am Prozess, ohne Einzelnen die Schuld zu geben"
         correct: true
-      - en: "Naming the person to blame"
-        de: "Die schuldige Person zu benennen"
+      - en: "A clear name of the person who made the error, so that they receive targeted training and supervision"
+        de: "Der Name der Person, die den Fehler gemacht hat, damit sie gezielte Schulung und Aufsicht erhält"
         correct: false
-      - en: "Hiding the failure from the record"
-        de: "Das Scheitern aus dem Eintrag herauszuhalten"
+      - en: "A short summary that leaves out the failure, so that the change record stays clean for later audits"
+        de: "Eine kurze Zusammenfassung ohne das Scheitern, damit der Änderungsdatensatz für spätere Audits sauber bleibt"
         correct: false
-      - en: "Skipping reviews in the future"
-        de: "Künftig auf Nachbetrachtungen zu verzichten"
+      - en: "A decision to skip such reviews in the future, because they cost time and the change is already over"
+        de: "Die Entscheidung, solche Reviews künftig auszulassen, weil sie Zeit kosten und die Änderung schon vorbei ist"
         correct: false
     explanation:
       en: "Reviews exist to learn: findings become improvements such as a better checklist or a new standard change."
@@ -273,16 +273,16 @@ items:
       de: "Welche Maßnahme hält CMDB-Daten langfristig am besten korrekt?"
     options:
       - en: "Named data owners, updates through the change process and regular comparison with discovered reality"
-        de: "Benannte Datenverantwortliche, Aktualisierung über den Change-Prozess und regelmäßiger Abgleich mit der erkannten Realität"
+        de: "Benannte Datenverantwortliche, Aktualisierung über den Änderungsprozess und regelmäßiger Abgleich mit der automatisch erkannten Realität"
         correct: true
-      - en: "Recording as many attributes as possible for every item"
-        de: "Möglichst viele Attribute für jedes Element zu erfassen"
+      - en: "Recording as many attributes as possible for every item, so that no question can ever go unanswered"
+        de: "So viele Attribute wie möglich für jedes Objekt erfassen, damit keine Frage je unbeantwortet bleibt"
         correct: false
-      - en: "Updating the CMDB once and never again"
-        de: "Die CMDB einmal zu aktualisieren und nie wieder"
+      - en: "Loading the data once from a trusted source and then relying on the original import for the future"
+        de: "Die Daten einmal aus einer vertrauenswürdigen Quelle laden und sich künftig auf den ursprünglichen Import verlassen"
         correct: false
-      - en: "Trusting memory instead of records"
-        de: "Dem Gedächtnis statt Aufzeichnungen zu vertrauen"
+      - en: "Letting every team edit any record freely at any time, so that the data is always as current as possible"
+        de: "Jedem Team erlauben, jederzeit jeden Eintrag frei zu bearbeiten, damit die Daten stets so aktuell wie möglich sind"
         correct: false
     explanation:
       en: "Accuracy comes from defined scope, ownership, updating as part of changes, and checking against reality."

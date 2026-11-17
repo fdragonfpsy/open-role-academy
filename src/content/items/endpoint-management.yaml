@@ -11,14 +11,14 @@ items:
       - en: "It manages the hardware and provides common services to programs."
         de: "Es verwaltet die Hardware und stellt Programmen gemeinsame Dienste bereit."
         correct: true
-      - en: "It protects the device from every kind of malware by itself."
-        de: "Es schützt das Gerät von sich aus vor jeder Art von Schadsoftware."
+      - en: "It protects the device from every kind of malware without any further software."
+        de: "Es schützt das Gerät ohne weitere Software vor jeder Art von Schadprogrammen."
         correct: false
-      - en: "It stores the user's files on the internet."
-        de: "Es speichert die Dateien der Nutzenden im Internet."
+      - en: "It connects the device to the internet and stores all of the user's files there."
+        de: "Es verbindet das Gerät mit dem Internet und speichert dort alle Dateien der Nutzenden."
         correct: false
-      - en: "It makes the screen brighter when the battery is full."
-        de: "Es macht den Bildschirm heller, wenn der Akku voll ist."
+      - en: "It provides the programs for office work, such as word processing and e-mail."
+        de: "Es liefert die Programme für die Büroarbeit, etwa Textverarbeitung und E-Mail."
         correct: false
     explanation:
       en: "The operating system starts the device, manages memory, storage and peripherals and offers services that programs use. Security tools and cloud storage are separate software."
@@ -80,17 +80,17 @@ items:
       en: "A user's external monitor shows nothing after connecting it to the docking station. Which check comes first?"
       de: "Der externe Monitor einer Nutzerin bleibt nach dem Anschluss an die Dockingstation schwarz. Welche Prüfung kommt zuerst?"
     options:
-      - en: "Check that the cable is seated, the monitor is switched on and the right input is selected."
-        de: "Prüfen, ob das Kabel fest sitzt, der Monitor eingeschaltet und der richtige Eingang gewählt ist."
+      - en: "Check that the cable is seated, the monitor is on and the right input is selected."
+        de: "Prüfen, ob das Kabel fest steckt, der Monitor eingeschaltet und der richtige Eingang gewählt ist."
         correct: true
-      - en: "Reinstall the operating system."
-        de: "Das Betriebssystem neu installieren."
+      - en: "Reinstall the operating system, because display problems usually come from corrupted system files."
+        de: "Das Betriebssystem neu installieren, weil Anzeigeprobleme meist von beschädigten Systemdateien kommen."
         correct: false
-      - en: "Order a new docking station."
-        de: "Eine neue Dockingstation bestellen."
+      - en: "Order a new docking station, since a dock that shows nothing is most likely defective."
+        de: "Eine neue Dockingstation bestellen, da eine Dockingstation ohne Bild meist defekt ist."
         correct: false
-      - en: "Reset the user's password."
-        de: "Das Passwort der Person zurücksetzen."
+      - en: "Update the graphics driver first, because an outdated driver is the usual cause of such faults."
+        de: "Zuerst den Grafiktreiber aktualisieren, weil ein veralteter Treiber die übliche Ursache solcher Fehler ist."
         correct: false
     explanation:
       en: "Start with the simple and cheap checks: cable, power and input selection, then whether the operating system detects the display. Drastic steps come only after simple causes are ruled out."
@@ -131,14 +131,14 @@ items:
       - en: "Devices start with identical, agreed settings and software, and setup is fast."
         de: "Geräte starten mit identischen, vereinbarten Einstellungen und Software, und die Einrichtung geht schnell."
         correct: true
-      - en: "The image never needs to be updated."
-        de: "Das Image muss nie aktualisiert werden."
+      - en: "The image never needs maintenance, because every device keeps the same state for its whole life."
+        de: "Das Image braucht keine Pflege, weil jedes Gerät seinen Zustand über die gesamte Lebensdauer behält."
         correct: false
-      - en: "Users can no longer have personal accounts."
-        de: "Nutzende können keine persönlichen Konten mehr haben."
+      - en: "Each user gets a fully individual setup, because the image adapts itself to personal preferences."
+        de: "Jede Person erhält ein vollständig individuelles Setup, weil sich das Image an persönliche Vorlieben anpasst."
         correct: false
-      - en: "It replaces the need for patching."
-        de: "Es ersetzt das Patchen."
+      - en: "It replaces regular patching, because everything installed from the image is automatically current."
+        de: "Es ersetzt das regelmäßige Patchen, weil alles, was aus dem Image installiert wird, automatisch aktuell ist."
         correct: false
     explanation:
       en: "An image gives consistency and speed. It must be kept current, otherwise new devices start with outdated software, and patching is still needed afterwards."
@@ -155,14 +155,14 @@ items:
       - en: "Malware running under an administrator account can do far more damage."
         de: "Schadsoftware, die unter einem Administratorkonto läuft, kann viel mehr Schaden anrichten."
         correct: true
-      - en: "Administrator accounts cannot be used for email."
-        de: "Administratorkonten können nicht für E-Mail genutzt werden."
+      - en: "Administrator accounts cannot be used for email and web browsing, so the baseline blocks them."
+        de: "Administratorkonten können nicht für E-Mail und Surfen genutzt werden, daher sperrt die Baseline sie."
         correct: false
-      - en: "Standard accounts are faster to log in with."
-        de: "Mit Standardkonten meldet man sich schneller an."
+      - en: "Standard accounts sign in faster and use less memory, which improves performance on older devices."
+        de: "Standardkonten melden sich schneller an und brauchen weniger Speicher, was ältere Geräte beschleunigt."
         correct: false
-      - en: "It is required to enable disk encryption."
-        de: "Es ist nötig, um die Laufwerksverschlüsselung zu aktivieren."
+      - en: "Disk encryption can only be enabled by standard accounts, so administrators must be restricted first."
+        de: "Die Laufwerksverschlüsselung kann nur von Standardkonten aktiviert werden, daher müssen Administrierende zuerst eingeschränkt werden."
         correct: false
     explanation:
       en: "Working with a standard account limits what a mistake or malicious program can change. Administrator rights are used only for tasks that need them."
@@ -176,17 +176,17 @@ items:
       en: "An employee leaves the company and returns the laptop. Which set of steps is most appropriate?"
       de: "Ein Mitarbeiter verlässt das Unternehmen und gibt den Laptop zurück. Welche Schritte sind am passendsten?"
     options:
-      - en: "Record the return, secure company data, disable accounts as agreed, wipe the device and update the asset list."
-        de: "Rückgabe vermerken, Unternehmensdaten sichern, Konten wie vereinbart sperren, Gerät löschen und Inventarliste aktualisieren."
+      - en: "Record the return, secure company data, disable accounts, wipe the device and update the asset list."
+        de: "Die Rückgabe erfassen, Firmendaten sichern, Konten sperren, das Gerät löschen und die Asset-Liste aktualisieren."
         correct: true
-      - en: "Hand it to the next new colleague unchanged to save time."
-        de: "Es unverändert an die nächste neue Kollegin weitergeben, um Zeit zu sparen."
+      - en: "Hand it to the next new colleague unchanged to save time, since the data of the former user is harmless."
+        de: "Es unverändert an die nächste neue Kollegin weitergeben, um Zeit zu sparen, da die Daten der früheren Person harmlos sind."
         correct: false
-      - en: "Put it in a cupboard without a record."
-        de: "Es ohne Vermerk in einen Schrank legen."
+      - en: "Store it in a cupboard until a replacement is needed and only then decide what to do with it and its data."
+        de: "Es im Schrank lagern, bis Ersatz gebraucht wird, und erst dann über Gerät und Daten entscheiden."
         correct: false
-      - en: "Only delete the desktop icons."
-        de: "Nur die Desktop-Symbole löschen."
+      - en: "Delete the user's files and desktop icons and keep the device in use with the existing settings and accounts."
+        de: "Dateien und Desktop-Symbole der Person löschen und das Gerät mit den bestehenden Einstellungen und Konten weiterverwenden."
         correct: false
     explanation:
       en: "Offboarding must be traceable and protect data: the previous user's data and access must not carry over, and the asset list must always show where a device is."
@@ -203,14 +203,14 @@ items:
       - en: "A problem is found on a small group first, which limits the damage and allows a stop."
         de: "Ein Problem zeigt sich zuerst an einer kleinen Gruppe, was den Schaden begrenzt und einen Stopp erlaubt."
         correct: true
-      - en: "Rings make the change install faster on every device."
-        de: "Ringe lassen die Änderung auf jedem Gerät schneller installieren."
+      - en: "Rings make the change install faster, because each ring downloads it in parallel to the others."
+        de: "Ringe lassen die Änderung schneller installieren, weil jeder Ring sie parallel zu den anderen herunterlädt."
         correct: false
-      - en: "Rings remove the need to test the change."
-        de: "Ringe machen den Test der Änderung überflüssig."
+      - en: "Rings remove the need for testing, because later rings automatically copy the result of the first ring."
+        de: "Ringe machen Tests überflüssig, weil spätere Ringe das Ergebnis des ersten Rings automatisch übernehmen."
         correct: false
-      - en: "Only the first ring needs to be monitored."
-        de: "Nur der erste Ring muss beobachtet werden."
+      - en: "Only the first ring needs monitoring, because devices in later rings are certain to behave in the same way."
+        de: "Nur der erste Ring muss überwacht werden, weil sich Geräte in späteren Ringen sicher gleich verhalten."
         correct: false
     explanation:
       en: "Rings reduce the number of users affected by an unexpected failure. They work only with measurements between rings and a stop rule; they do not replace testing."
@@ -227,14 +227,14 @@ items:
       - en: "The gradual divergence of a device from its intended configuration, for example through manual changes."
         de: "Die schleichende Abweichung eines Geräts von der vorgesehenen Konfiguration, zum Beispiel durch manuelle Änderungen."
         correct: true
-      - en: "A device moving between two offices."
-        de: "Ein Gerät, das zwischen zwei Büros wechselt."
+      - en: "The slow loss of performance of a device as its storage fills up and its hardware ages over several years."
+        de: "Der schleichende Leistungsverlust eines Geräts, wenn sich der Speicher füllt und die Hardware über Jahre altert."
         correct: false
-      - en: "The loss of battery capacity over time."
-        de: "Der Verlust an Akkukapazität im Lauf der Zeit."
+      - en: "The movement of a device between offices or networks, which leaves its management record out of date."
+        de: "Der Wechsel eines Geräts zwischen Büros oder Netzen, wodurch sein Verwaltungseintrag veraltet."
         correct: false
-      - en: "A patch that installs twice."
-        de: "Ein Patch, der doppelt installiert wird."
+      - en: "A patch that is installed twice because the deployment tool reports an incorrect status for the device."
+        de: "Ein Patch, der doppelt installiert wird, weil das Verteilwerkzeug einen falschen Status des Geräts meldet."
         correct: false
     explanation:
       en: "Drift means the actual state no longer matches the desired state. It is detected through compliance reports and corrected by re-applying the configuration and fixing the cause."
@@ -248,17 +248,17 @@ items:
       en: "Several devices repeatedly fall out of compliance with the baseline. What is the best reaction?"
       de: "Mehrere Geräte fallen wiederholt aus der Compliance der Baseline. Was ist die beste Reaktion?"
     options:
-      - en: "Investigate the cause, which may be in the policy or process, and communicate clearly with the affected users."
-        de: "Die Ursache untersuchen, die in Richtlinie oder Prozess liegen kann, und klar mit den betroffenen Nutzenden kommunizieren."
+      - en: "Investigate the cause, which may be in the policy or process, and talk with the affected users."
+        de: "Die Ursache untersuchen, die auch in Richtlinie oder Prozess liegen kann, und mit den betroffenen Nutzenden sprechen."
         correct: true
-      - en: "Grant permanent exceptions for all of them."
-        de: "Allen dauerhafte Ausnahmen gewähren."
+      - en: "Grant permanent exceptions for all of them, because repeated deviations show the baseline is unrealistic."
+        de: "Allen dauerhafte Ausnahmen gewähren, da wiederholte Abweichungen zeigen, dass die Baseline unrealistisch ist."
         correct: false
-      - en: "Ignore it, because the reports are only informational."
-        de: "Es ignorieren, weil die Berichte nur informativ sind."
+      - en: "Treat it as purely informational and wait, because compliance reports only matter before an audit."
+        de: "Es als rein informativ behandeln und abwarten, da Compliance-Berichte nur vor einem Audit zählen."
         correct: false
-      - en: "Remove the baseline requirement for everyone."
-        de: "Die Baseline-Vorgabe für alle streichen."
+      - en: "Block the affected devices from the network at once and let the users contact the service desk themselves."
+        de: "Die betroffenen Geräte sofort vom Netz sperren und die Nutzenden selbst den Service Desk kontaktieren lassen."
         correct: false
     explanation:
       en: "Repeated non-compliance often points to a flaw in the policy or process, for example devices that are offline for long periods. Permanent exceptions or dropping the baseline make the fleet less secure."
@@ -272,17 +272,17 @@ items:
       en: "Which approach fits the secure retirement of a laptop with an encrypted drive?"
       de: "Welches Vorgehen passt zur sicheren Ausmusterung eines Laptops mit verschlüsseltem Laufwerk?"
     options:
-      - en: "Follow the data-erasure policy, wipe or destroy the key, record the wipe and remove the device from management and the asset list."
-        de: "Der Löschrichtlinie folgen, den Schlüssel löschen oder vernichten, die Löschung dokumentieren und das Gerät aus Verwaltung und Inventarliste entfernen."
+      - en: "Follow the data-erasure policy, wipe or destroy the key, record it and remove the device from management and assets."
+        de: "Die Löschrichtlinie befolgen, den Schlüssel löschen oder zerstören, dies dokumentieren und das Gerät aus Verwaltung und Asset-Liste entfernen."
         correct: true
-      - en: "Donate it unchanged, since the drive is encrypted anyway."
-        de: "Es unverändert spenden, weil das Laufwerk ja verschlüsselt ist."
+      - en: "Donate it unchanged, since the drive is encrypted anyway and the data cannot be read by anyone else later."
+        de: "Es unverändert spenden, da das Laufwerk ohnehin verschlüsselt ist und die Daten später niemand lesen kann."
         correct: false
-      - en: "Delete only the user profile."
-        de: "Nur das Benutzerprofil löschen."
+      - en: "Delete only the user profile and reinstall the operating system, then pass the device on to a new owner."
+        de: "Nur das Benutzerprofil löschen, das Betriebssystem neu installieren und das Gerät an neue Besitzende weitergeben."
         correct: false
-      - en: "Keep the device enrolled indefinitely so it stays visible."
-        de: "Das Gerät unbegrenzt registriert lassen, damit es sichtbar bleibt."
+      - en: "Keep the device enrolled indefinitely so that it stays visible in the management console and in reports."
+        de: "Das Gerät unbegrenzt eingebunden lassen, damit es in der Verwaltungskonsole und in Berichten sichtbar bleibt."
         correct: false
     explanation:
       en: "Encryption helps, since destroying the key makes data unreadable, but the process still needs a policy, documentation and cleanup of management and inventory entries. Deleting a profile does not wipe a device."

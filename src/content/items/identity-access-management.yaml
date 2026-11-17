@@ -11,14 +11,14 @@ items:
       - en: "Actions can be traced to one person, and access can be removed when that person leaves."
         de: "Handlungen lassen sich einer Person zuordnen, und der Zugriff kann entfernt werden, wenn sie geht."
         correct: true
-      - en: "It makes the sign-in faster for everybody."
-        de: "Es macht die Anmeldung für alle schneller."
+      - en: "Sign-in becomes faster for everybody, because shared accounts always need an extra verification step."
+        de: "Die Anmeldung wird für alle schneller, weil geteilte Konten immer einen zusätzlichen Bestätigungsschritt brauchen."
         correct: false
-      - en: "It removes the need for passwords."
-        de: "Es macht Passwörter überflüssig."
+      - en: "Passwords are no longer needed, because the system recognises each person from their account name alone."
+        de: "Passwörter sind nicht mehr nötig, weil das System jede Person allein am Kontonamen erkennt."
         correct: false
-      - en: "It saves licence costs in every case."
-        de: "Es spart in jedem Fall Lizenzkosten."
+      - en: "It always saves licence costs, because each person's account is billed only for the hours it is used."
+        de: "Es spart immer Lizenzkosten, weil jedes Konto nur für die Stunden berechnet wird, in denen es genutzt wird."
         correct: false
     explanation:
       en: "With shared accounts nobody can tell who did what, and removing one person's access means changing the secret for everyone. Individual accounts keep actions traceable and access manageable."
@@ -35,14 +35,14 @@ items:
       - en: "Users can have a long, unique password for every service without memorising them all."
         de: "Nutzende können für jeden Dienst ein langes, einmaliges Passwort haben, ohne sich alle zu merken."
         correct: true
-      - en: "It makes it safe to use the same password everywhere."
-        de: "Er macht es sicher, überall dasselbe Passwort zu verwenden."
+      - en: "It makes it safe to reuse one strong password everywhere, because the manager encrypts it in each service."
+        de: "Es macht die Wiederverwendung eines starken Passworts überall sicher, weil der Manager es in jedem Dienst verschlüsselt."
         correct: false
-      - en: "It replaces the need for multi-factor authentication."
-        de: "Er ersetzt die Notwendigkeit der Mehr-Faktor-Authentisierung."
+      - en: "It replaces multi-factor authentication, because the vault itself already proves who is signing in."
+        de: "Er ersetzt die Mehrfaktor-Authentifizierung, weil der Tresor selbst bereits nachweist, wer sich anmeldet."
         correct: false
-      - en: "It lets colleagues share one common password."
-        de: "Er erlaubt Kolleginnen und Kollegen, ein gemeinsames Passwort zu teilen."
+      - en: "It lets all colleagues use one common team password, which is then changed less often and more safely."
+        de: "Er erlaubt allen Kolleginnen und Kollegen ein gemeinsames Team-Passwort, das seltener und dafür sicherer geändert wird."
         correct: false
     explanation:
       en: "Unique passwords stop one leak from opening many accounts, and a manager removes the burden of remembering them. It complements MFA and does not replace it."
@@ -80,17 +80,17 @@ items:
       en: "An unknown caller says they are an executive in a hurry and asks you to reset their password and read it out over the phone. What do you do?"
       de: "Ein unbekannter Anrufer gibt sich als eilige Führungskraft aus und bittet dich, das Passwort zurückzusetzen und es am Telefon vorzulesen. Was tust du?"
     options:
-      - en: "Verify identity by the agreed method, for example a call-back to the number in the directory, before any reset."
-        de: "Du prüfst die Identität nach dem vereinbarten Verfahren, etwa mit einem Rückruf an die im Verzeichnis hinterlegte Nummer, bevor du etwas zurücksetzt."
+      - en: "Verify identity by the agreed method, e.g. a call-back to the number in the directory, before any reset."
+        de: "Die Identität nach dem vereinbarten Verfahren prüfen, z. B. per Rückruf an die Nummer im Verzeichnis, bevor etwas zurückgesetzt wird."
         correct: true
-      - en: "Reset it immediately because executives have priority."
-        de: "Du setzt es sofort zurück, weil Führungskräfte Vorrang haben."
+      - en: "Reset it immediately, because executives have priority and any delay would hurt the business more than a risk would."
+        de: "Sofort zurücksetzen, weil Führungskräfte Vorrang haben und eine Verzögerung dem Geschäft mehr schadet als ein Risiko."
         correct: false
-      - en: "Reset it and tell the caller the old password too."
-        de: "Du setzt es zurück und nennst auch das alte Passwort."
+      - en: "Reset it and also tell the caller the old password, so that they can check whether it matches their records."
+        de: "Zurücksetzen und der anrufenden Person auch das alte Passwort nennen, damit sie prüfen kann, ob es zu ihren Unterlagen passt."
         correct: false
-      - en: "Ask the caller to confirm by giving their own phone number and use that."
-        de: "Du lässt dir eine eigene Telefonnummer nennen und nutzt diese zur Bestätigung."
+      - en: "Ask the caller to confirm their own phone number and name, then reset the password and read it out over this call."
+        de: "Die anrufende Person Telefonnummer und Namen bestätigen lassen, dann das Passwort zurücksetzen und es in diesem Gespräch vorlesen."
         correct: false
     explanation:
       en: "Urgency and rank are common pressure tactics. A call-back to a number you already trust, or another agreed method, protects the account. A number supplied by the caller proves nothing."
@@ -104,17 +104,17 @@ items:
       en: "Why is it better to grant access to a shared folder via a group than to individual users?"
       de: "Warum ist es besser, Zugriff auf ein gemeinsames Laufwerk über eine Gruppe statt an einzelne Nutzende zu vergeben?"
     options:
-      - en: "Changes of role only need a change of membership, and you can see who has access."
+      - en: "A role change only needs a change of membership, and you can see who has access."
         de: "Bei Rollenwechseln genügt eine Änderung der Mitgliedschaft, und man sieht, wer Zugriff hat."
         correct: true
-      - en: "Groups cannot be audited."
-        de: "Gruppen lassen sich nicht prüfen."
+      - en: "Groups cannot be audited, so they hide which individual user has which right, which is good for privacy."
+        de: "Gruppen lassen sich nicht prüfen, sie verbergen also, wer welches Recht hat, was dem Datenschutz dient."
         correct: false
-      - en: "Individual rights are always faster to review."
-        de: "Einzelrechte sind immer schneller zu prüfen."
+      - en: "Individual rights are always faster to review, because each user's rights are listed in one place."
+        de: "Einzelrechte lassen sich immer schneller prüfen, weil die Rechte jeder Person an einer Stelle aufgelistet sind."
         correct: false
-      - en: "Groups give everyone administrator rights."
-        de: "Gruppen geben allen Administratorrechte."
+      - en: "Groups automatically give every member administrator rights, which removes the need for further requests."
+        de: "Gruppen geben jedem Mitglied automatisch Administratorrechte, wodurch weitere Anfragen entfallen."
         correct: false
     explanation:
       en: "Group-based assignment makes joiners and movers easier and keeps access visible. Individual exceptions are easy to forget and hard to find later."
@@ -152,17 +152,17 @@ items:
       en: "A colleague asks you, in the hallway, to add them to the payroll group. What is the correct handling?"
       de: "Ein Kollege bittet dich auf dem Flur, ihn in die Gehaltsabrechnungs-Gruppe aufzunehmen. Wie gehst du richtig vor?"
     options:
-      - en: "Ask for a ticket and get approval from the resource owner or manager, then grant and document it."
-        de: "Du bittest um ein Ticket und holst die Genehmigung der verantwortlichen Person oder Führungskraft ein, vergibst den Zugriff dann und dokumentierst ihn."
+      - en: "Ask for a ticket and approval from the resource owner or manager, then grant and document it."
+        de: "Ein Ticket verlangen, die Freigabe der Ressourcen-Verantwortlichen oder der Führungskraft einholen, dann gewähren und dokumentieren."
         correct: true
-      - en: "Add them, because they are a colleague you know."
-        de: "Du nimmst ihn auf, weil du ihn als Kollegen kennst."
+      - en: "Add them right away, because you know them as a colleague and refusing would damage the working relationship."
+        de: "Sofort hinzufügen, weil du die Person als Kollegin kennst und eine Ablehnung die Zusammenarbeit belasten würde."
         correct: false
-      - en: "Add them temporarily and only record it if someone asks."
-        de: "Du nimmst ihn vorübergehend auf und dokumentierst es nur auf Nachfrage."
+      - en: "Add them temporarily and only record the change in the ticket system if someone asks about it later."
+        de: "Vorübergehend hinzufügen und die Änderung nur dann im Ticketsystem erfassen, wenn später jemand danach fragt."
         correct: false
-      - en: "Approve it yourself since you manage the group technically."
-        de: "Du genehmigst es selbst, weil du die Gruppe technisch verwaltest."
+      - en: "Approve it yourself, since you manage the group technically and therefore know best who should be in it."
+        de: "Selbst freigeben, da du die Gruppe technisch verwaltest und daher am besten weißt, wer hineingehört."
         correct: false
     explanation:
       en: "Access needs an accountable approver and a record. Technical ability to change a group is not the same as the authority to decide who may have access."
@@ -201,16 +201,16 @@ items:
       de: "Bei einer Berechtigungsprüfung antwortet eine prüfende Person nicht bis zur Frist. Wie gehst du am besten damit um?"
     options:
       - en: "Escalate it, and do not treat silence as approval."
-        de: "Du eskalierst es und wertest Schweigen nicht als Zustimmung."
+        de: "Eskalieren und Schweigen nicht als Zustimmung werten."
         correct: true
-      - en: "Treat silence as approval and keep all access."
-        de: "Du wertest Schweigen als Zustimmung und lässt alle Zugriffe bestehen."
+      - en: "Treat silence as approval and keep all access, because removing access might interrupt the team's work."
+        de: "Schweigen als Zustimmung werten und den gesamten Zugriff behalten, weil ein Entzug die Arbeit des Teams unterbrechen könnte."
         correct: false
-      - en: "Remove all access of the reviewer's team immediately without notice."
-        de: "Du entziehst sofort und ohne Ankündigung den gesamten Zugriff des Teams der prüfenden Person."
+      - en: "Remove all access of the reviewer's team immediately without notice, so that the deadline has consequences."
+        de: "Sofort und ohne Vorankündigung den gesamten Zugriff des Teams der prüfenden Person entziehen, damit die Frist Folgen hat."
         correct: false
-      - en: "Skip the review and run it again next year."
-        de: "Du überspringst die Prüfung und führst sie nächstes Jahr erneut durch."
+      - en: "Skip this review and run it again next year, since a single missed deadline does not change the risk picture."
+        de: "Diese Prüfung auslassen und nächstes Jahr erneut durchführen, da eine versäumte Frist das Risikobild nicht ändert."
         correct: false
     explanation:
       en: "A review only works if decisions are made. Silence is escalated according to the process, so that missing answers do not turn into automatic approval."
@@ -227,14 +227,14 @@ items:
       - en: "Separate accounts, limited duration with approval, strong authentication and logging."
         de: "Getrennte Konten, befristete Vergabe mit Genehmigung, starke Authentisierung und Protokollierung."
         correct: true
-      - en: "One shared administrator account for the whole team, with a simple password."
-        de: "Ein gemeinsames Administratorkonto für das ganze Team mit einfachem Passwort."
+      - en: "One shared administrator account for the whole team, with a long password kept in a sealed envelope."
+        de: "Ein gemeinsames Administratorkonto für das ganze Team, dessen langes Passwort in einem versiegelten Umschlag liegt."
         correct: false
-      - en: "Permanent administrator rights for everyone in IT for convenience."
-        de: "Dauerhafte Administratorrechte für alle in der IT aus Bequemlichkeit."
+      - en: "Permanent administrator rights for all IT staff on their daily accounts, so that nobody waits for approvals."
+        de: "Dauerhafte Administratorrechte für alle IT-Beschäftigten auf ihren Alltagskonten, damit niemand auf Freigaben warten muss."
         correct: false
-      - en: "Using the administrator account for daily mail and browsing."
-        de: "Das Administratorkonto für tägliche E-Mails und zum Surfen nutzen."
+      - en: "Using the administrator account for daily mail and browsing, so that all actions appear under one identity."
+        de: "Das Administratorkonto auch für tägliche Mails und Surfen nutzen, damit alle Handlungen unter einer Identität erscheinen."
         correct: false
     explanation:
       en: "Privileged access carries the highest risk, so it is separated, limited in time, strongly authenticated and logged. Shared or permanent accounts remove traceability and widen exposure."
@@ -251,14 +251,14 @@ items:
       - en: "Segregation of duties."
         de: "Funktionstrennung."
         correct: true
-      - en: "Single sign-on."
-        de: "Single Sign-on."
+      - en: "The principle that every person should sign in only once per day for all of the company's applications."
+        de: "Der Grundsatz, dass sich jede Person pro Tag nur einmal für alle Anwendungen des Unternehmens anmelden soll."
         correct: false
-      - en: "Password rotation."
-        de: "Passwortwechsel."
+      - en: "The principle that passwords must be changed by their owners on a fixed schedule, whatever the risk."
+        de: "Der Grundsatz, dass Passwörter von ihren Besitzenden nach festem Zeitplan geändert werden müssen, unabhängig vom Risiko."
         correct: false
-      - en: "Account lockout."
-        de: "Kontosperre."
+      - en: "The principle that accounts are locked after a number of failed sign-in attempts to stop guessing attacks."
+        de: "Der Grundsatz, dass Konten nach mehreren fehlgeschlagenen Anmeldeversuchen gesperrt werden, um Ratenangriffe zu stoppen."
         correct: false
     explanation:
       en: "Segregation of duties means no one person completes a critical process alone. Combining entry and approval allows errors or fraud to go unnoticed."
@@ -275,14 +275,14 @@ items:
       - en: "It is complete for important events and protected against changes by the people it records."
         de: "Er ist für wichtige Ereignisse vollständig und vor Änderungen durch die Protokollierten geschützt."
         correct: true
-      - en: "It is editable by every administrator to correct mistakes."
-        de: "Er ist von jedem Administrator editierbar, um Fehler zu korrigieren."
+      - en: "It can be edited by every administrator, so that mistakes in the log can be corrected quickly and cleanly."
+        de: "Es kann von jeder Administration bearbeitet werden, damit Fehler im Protokoll schnell und sauber korrigiert werden können."
         correct: false
-      - en: "It records only successful sign-ins."
-        de: "Er erfasst nur erfolgreiche Anmeldungen."
+      - en: "It records only successful sign-ins, which keeps the volume small enough for people to read it in full."
+        de: "Es erfasst nur erfolgreiche Anmeldungen, damit das Volumen klein genug bleibt, um es vollständig zu lesen."
         correct: false
-      - en: "It is deleted after each review to protect privacy."
-        de: "Er wird nach jeder Prüfung gelöscht, um die Privatsphäre zu schützen."
+      - en: "It is deleted after every review, to protect the privacy of the people whose changes were recorded."
+        de: "Es wird nach jeder Prüfung gelöscht, um die Privatsphäre der Personen zu schützen, deren Änderungen erfasst wurden."
         correct: false
     explanation:
       en: "A trail that can be altered by those it monitors, or that misses key events, cannot serve as evidence. Retention and read access should follow policy and data protection rules."
