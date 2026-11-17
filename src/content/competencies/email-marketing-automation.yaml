@@ -1,0 +1,15 @@
+id: email-marketing-automation
+title:
+  en: Email marketing and automation (Germany/EU)
+  de: E-Mail-Marketing und Automatisierung (Deutschland/EU)
+description:
+  en: >-
+    Plan and send email campaigns and automated flows: list building, segmentation, subject lines and content, testing, and the consent requirements for marketing email in the EU and Germany (GDPR, ePrivacy, UWG) at topic level, including opt-in, unsubscribe and when to involve legal or the data protection officer.
+  de: >-
+    E-Mail-Kampagnen und automatisierte Strecken planen und versenden: Listenaufbau, Segmentierung, Betreffzeilen und Inhalte, Tests sowie die Einwilligungsanforderungen für Werbe-E-Mails in der EU und in Deutschland (DSGVO, ePrivacy, UWG) auf Themenebene, einschließlich Opt-in, Abmeldung und wann Recht oder Datenschutzbeauftragte einzubinden sind.
+prerequisites: [content-marketing-copywriting, information-security-basics]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/36931cb7-ca3f-4be1-8428-f38eefc8e1ed
+    label: execute email marketing

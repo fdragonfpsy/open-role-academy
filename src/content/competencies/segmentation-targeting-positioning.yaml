@@ -1,0 +1,18 @@
+id: segmentation-targeting-positioning
+title:
+  en: Segmentation, targeting and positioning
+  de: Segmentierung, Zielgruppenauswahl und Positionierung
+description:
+  en: >-
+    Divide a market into meaningful segments, choose target groups, describe them with personas, and position an offer clearly against alternatives.
+  de: >-
+    Einen Markt in sinnvolle Segmente einteilen, Zielgruppen auswählen, sie mit Personas beschreiben und ein Angebot gegenüber Alternativen klar positionieren.
+prerequisites: [market-customer-research]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/136e0cab-0b19-48f7-9086-745d615f416b
+    label: customer segmentation
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/6a2c391b-1fcd-4f10-8827-5d1cb4a4d9ad
+    label: set brand positioning

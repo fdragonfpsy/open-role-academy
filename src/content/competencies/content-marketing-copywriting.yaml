@@ -1,0 +1,18 @@
+id: content-marketing-copywriting
+title:
+  en: Content marketing and copywriting
+  de: Content-Marketing und Texten
+description:
+  en: >-
+    Plan and create useful content for a target group: content goals and calendar, formats along the customer journey, clear persuasive copy, and a review step for accuracy and claims.
+  de: >-
+    Nützliche Inhalte für eine Zielgruppe planen und erstellen: Content-Ziele und Redaktionsplan, Formate entlang der Customer Journey, klare überzeugende Texte und eine Prüfung auf Richtigkeit und Aussagen.
+prerequisites: [brand-messaging]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/b0560439-14eb-41d1-aa53-1938efc24123
+    label: content marketing strategy
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/ce592b28-4467-4908-b2e6-64bbe18da631
+    label: perform copywriting

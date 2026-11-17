@@ -1,0 +1,18 @@
+id: social-media-community
+title:
+  en: Social media and community management
+  de: Social Media und Community-Management
+description:
+  en: >-
+    Run organic and paid social media presence: choose platforms for a target group, plan posts, engage with the community, handle criticism and crises calmly, and respect platform and legal rules at topic level.
+  de: >-
+    Organische und bezahlte Social-Media-Präsenz betreiben: Plattformen passend zur Zielgruppe wählen, Beiträge planen, mit der Community interagieren, Kritik und Krisen besonnen handhaben und Plattform- und Rechtsregeln auf Themenebene beachten.
+prerequisites: [content-marketing-copywriting]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/64e09849-a7db-4d6b-a932-66264420eb97
+    label: apply social media marketing
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/509909a2-4a8f-4ead-8ad0-968df63b77cc
+    label: social media marketing techniques

@@ -196,3 +196,8 @@ Format: date — decision — reason — alternatives considered.
 - Decision: Sales role added as `status: draft` with 10 role competencies; CRM data hygiene and forecasting/metrics merged into `crm-sales-data-forecasting`. ESCO refs only for URIs verified via the ESCO API (matching label); none for sales-process beyond two verified ones, and no DigComp refs.
 - Reason: draft keeps coverage unenforced and the role hidden until content exists; 10 stays within the 8-12 rule and the batch size of content sessions.
 - Alternatives: 11 competencies with a separate forecasting one (larger content load), publishing early (would fail coverage validation).
+
+## 2026-11-17 — Marketing framework: 10 competencies, draft status
+- Decision: Marketing role added as `status: draft` with 10 role competencies (strategy, research, segmentation/positioning, brand, content/copywriting, digital channels/SEO/SEM, social media, email marketing, campaign planning/budgeting, analytics/attribution). Email marketing is labelled Germany/EU and covers GDPR/ePrivacy/UWG consent at topic level only. 19 ESCO refs, each checked against the ESCO API (HTTP 200, preferred label equals stored label); no DigComp refs. Prerequisites form a chain through existing ids, acyclic.
+- Reason: same pattern as Sales; draft keeps coverage unenforced and the role hidden until content exists.
+- Alternatives: separate competencies for PR/events and pricing (exceeds 10, pricing already covered in Sales and business basics), publishing early (fails coverage validation).
