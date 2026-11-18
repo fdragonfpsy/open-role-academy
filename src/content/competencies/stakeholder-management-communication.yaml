@@ -1,0 +1,18 @@
+id: stakeholder-management-communication
+title:
+  en: Stakeholder management and project communication
+  de: Stakeholder-Management und Projektkommunikation
+description:
+  en: >-
+    Identify stakeholders and their interests and influence, plan communication, run effective meetings, report status clearly, manage expectations and negotiate agreements.
+  de: >-
+    Stakeholder mit ihren Interessen und ihrem Einfluss identifizieren, Kommunikation planen, wirksame Meetings leiten, Status klar berichten, Erwartungen steuern und Vereinbarungen aushandeln.
+prerequisites: [project-initiation-business-case, communication-collaboration]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/999286f1-22d9-4950-9422-89bd45265a5f
+    label: maintain relationships with stakeholders
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/87de6e49-ca1c-42a4-8751-5ff0b991966b
+    label: negotiate with stakeholders

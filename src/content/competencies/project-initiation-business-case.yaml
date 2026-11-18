@@ -1,0 +1,18 @@
+id: project-initiation-business-case
+title:
+  en: Project initiation and business case
+  de: Projektinitiierung und Business Case
+description:
+  en: >-
+    Turn an idea into a well-defined project: clarify the problem and objectives, assess options, benefits, costs and feasibility, write a simple business case and project charter, and name the sponsor and decision criteria.
+  de: >-
+    Aus einer Idee ein klar definiertes Projekt machen: Problem und Ziele klären, Optionen, Nutzen, Kosten und Machbarkeit bewerten, einen einfachen Business Case und einen Projektauftrag formulieren sowie Auftraggebende und Entscheidungskriterien benennen.
+prerequisites: [self-organisation-project-basics, business-finance-fundamentals]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/a4bbd0d9-a6be-4472-b05d-291e60cf6b4b
+    label: develop business case
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/408fcc8e-d4e6-43e7-ab27-b617a1dced98
+    label: analyse business objectives
