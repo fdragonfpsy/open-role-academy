@@ -1,0 +1,14 @@
+id: wikipedia-de-rahmenvertrag
+url: https://de.wikipedia.org/wiki/Rahmenvertrag
+title: "Rahmenvertrag"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies: [tendering-rfx-contracting, purchase-order-invoice-management]
+levels: [foundation, practitioner]
+note: "Footer states CC BY-SA (Namensnennung - Weitergabe unter gleichen Bedingungen); no maintenance banner; read 2026-11-18. Link only. Read intro and Inhalt: framework contract regulates only the general conditions, later individual contracts refer to it; typical content (delivery and payment terms, quality, duration, notice, prices)."

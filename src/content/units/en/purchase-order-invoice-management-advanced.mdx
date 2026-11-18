@@ -1,0 +1,98 @@
+---
+id: purchase-order-invoice-management-advanced
+competency: purchase-order-invoice-management
+level: advanced
+title: "Controls, indicators and process design for orders and invoices"
+objectives:
+  - "Design preventive controls for orders, master data and payments."
+  - "Define and read indicators such as PO compliance, touchless rate and discount capture."
+  - "Find the root cause behind recurring blocked invoices."
+  - "Treat a request to change bank details as a fraud risk."
+minutes: 25
+resources:
+  - wikipedia-de-vier-augen-prinzip
+  - openstax-principles-accounting-internal-control
+  - openstax-fin-accounting-internal-controls-purpose
+  - wikipedia-purchase-to-pay
+  - wikipedia-de-skonto
+  - wikipedia-de-kreditorenbuchhaltung
+  - wikipedia-de-zahlungsbedingungen
+status: ai-draft
+sources:
+  - title: "Vier-Augen-Prinzip"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Vier-Augen-Prinzip
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Principles of Accounting, Volume 1, 8.2: Define and Explain Internal Controls and Their Purpose within an Organization"
+    author: OpenStax
+    url: https://openstax.org/books/principles-financial-accounting/pages/8-2-define-and-explain-internal-controls-and-their-purpose-within-an-organization
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+  - title: "Purchase-to-pay"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Purchase-to-pay
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Kreditorenbuchhaltung"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Kreditorenbuchhaltung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Skonto"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Skonto
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Zahlungsbedingungen"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Zahlungsbedingungen
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+At advanced level the question changes from "is this invoice correct?" to "does the process catch errors and misuse, and is it efficient?". A formal purchase-to-pay process exists to avoid waste and fraud. Internal controls are the formal policies and procedures that manage risk and reduce fraud; a well-designed system does not remove the risk of loss but lowers it.
+
+## Preventive controls (our own set)
+
+- Separate duties: ordering, goods receipt, supplier master data and payment release are done by different people; critical steps follow the four-eyes principle.
+- Master data: changes to supplier records, especially bank details, are made by a different person than payments and are logged.
+- Approval limits: orders above a limit need a second approval, set by your company.
+- System blocks: the system rejects duplicate invoice numbers and blocks invoices without a matching order.
+- Regular review: sample paid invoices and analyse exceptions each month.
+
+## Indicators (our own definitions)
+
+- PO compliance: share of invoiced spend whose purchase order existed before the invoice date.
+- Touchless rate: share of invoices matched and released without manual intervention.
+- Discount capture: discounts taken divided by discounts offered.
+- Exception rate by cause: how many invoices are blocked, and why.
+
+Read indicators together. A high touchless rate is not good if tolerances are so wide that errors pass.
+
+## Root causes
+
+Count blocked invoices by cause before you fix single cases. If most are price differences, check price master data and contract prices in the system. If most are missing receipts, the problem is in the warehouse or with service confirmation, not in accounts payable. Share the figures with purchasing and accounts payable, since payment terms and skonto also depend on how fast invoices are cleared. Paying early to capture a discount of 2 percent for 16 days is worth roughly 47 percent a year (our simple calculation), but only for correct invoices.
+
+## Bank detail changes
+
+A request to change a supplier's bank account is a classic fraud pattern. Do not act on an email alone. Check by calling a number already stored in your master data, not one from the request, and have a second person approve the change.
+
+## Worked example
+
+Illustration only; invented figures. In one month the company posts 1,200 invoices, of which 780 pass untouched: a touchless rate of 65 percent. Of 4.0 million euros spend, 3.4 million had a purchase order beforehand: PO compliance 85 percent. Of 60 offered discounts, 42 were taken: capture rate 70 percent. The 18 missed discounts mostly sit in invoices blocked for price differences. The team traces them to outdated prices in the master data of two suppliers, corrects the data, and the next month the blocks for price drop. The team also reviews the tolerance so that the touchless rate rises without letting real errors through.
+
+## Key takeaways
+
+- Preventive controls such as separated duties, logged master data changes and approval limits matter more than checking after payment.
+- Define each indicator in writing, and read them together, not alone.
+- Analyse blocked invoices by cause and fix the cause, not the single case.
+- Verify bank detail changes through a known contact and a second approver.

@@ -1,5 +1,23 @@
 # Status
 
+## 2026-11-18 — Phase 4: Procurement content batch 2 (tendering-rfx-contracting, negotiation-supplier-relationships, purchase-order-invoice-management)
+
+**Done**
+- 16 unit files (8 en + 8 de, `status: ai-draft`): tendering at foundation/practitioner, negotiation and PO/invoice at all three levels (role targets). Own methods (three-way match, tolerance/KPI/escalation rules) labelled "our own"; examples and figures (incl. 6% interest rate) invented and labelled; arithmetic hand-checked. No thresholds or section numbers in the units.
+- 36 items (12 per competency, 4 per level, 3 multi each); longest-option check clean.
+- 14 new link-only resources (`licenseVerifiedOn: 2026-11-18`, HTTP 200): 11 Wikipedia (en RFP, en Tendering, 9 de; CC BY-SA), EUR-Lex Directive 2014/24/EU en/de (free-access), OpenStax Organizational Behavior 14.3 and Financial Accounting 8.2 (CC BY-NC-SA). 14 existing resources re-tagged (plus one unrequested tag on an internal-controls resource).
+- Role stays `status: draft`; the missing-ESCO warning on strategic-sourcing remains.
+
+**Reviewer to-dos**
+- German EUR-Lex text: only the most-economically-advantageous-tender recital checked in German; equal treatment, procedure choice, life-cycle costing rest on the English text.
+- Own methods with no source read: three-way match definition, tolerance, KPI and escalation rules. Check against pages: Harvard principles/BATNA (de), OpenStax OB 14.3/14.4, Skonto and Zahlungsbedingungen wording, Bestellung as an offer, Kaufvertrag formfree (intros only read).
+- Judgement items: tr-a-keep, tr-a-tie. German wording of the 8 DE units.
+- OpenStax Business Law contract chapters are US-law only and were skipped.
+
+**Counts:** roles 9 (1 draft) · competencies 88 · units 478 · items 1012 · resources 474
+
+**Next:** Procurement content: inventory-warehouse-management, logistics-transport-planning, supply-chain-planning-demand.
+
 ## 2026-11-18 — Phase 4: Procurement content batch 1 (procurement-fundamentals-p2p, strategic-sourcing-category-management, supplier-selection-evaluation)
 
 **Done**

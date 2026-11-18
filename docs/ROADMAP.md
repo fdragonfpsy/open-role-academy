@@ -129,7 +129,7 @@ One role per task, in the order of CLAUDE.md §4.3. Each task = framework + cont
 - [ ] Procurement & Supply Chain (framework + content; publish the role when all content is done; EU/Germany context, label it; no proprietary framework text)
   - [x] framework (role + 10 competencies, `status: draft`)
   - [x] content: procurement-fundamentals-p2p, strategic-sourcing-category-management, supplier-selection-evaluation
-  - [ ] content: tendering-rfx-contracting, negotiation-supplier-relationships, purchase-order-invoice-management
+  - [x] content: tendering-rfx-contracting, negotiation-supplier-relationships, purchase-order-invoice-management
   - [ ] content: inventory-warehouse-management, logistics-transport-planning, supply-chain-planning-demand
   - [ ] content: supply-chain-risk-sustainability; then `status: published` and quality pass
 - [ ] Data & Analytics

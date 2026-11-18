@@ -1,0 +1,14 @@
+id: wikipedia-tendering
+url: https://en.wikipedia.org/wiki/Tendering
+title: "Tendering"
+provider: Wikipedia
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies: [tendering-rfx-contracting]
+levels: [foundation, practitioner]
+note: "Footer states CC BY-SA; no maintenance banner; read 2026-11-18. Link only. Read: definition, open vs restricted vs sole-source tenders, pre-qualification questionnaires, tender validity date, evaluation methods (lowest price, most economically advantageous tender). Legal-case sections (Canada, New Zealand) not used."
