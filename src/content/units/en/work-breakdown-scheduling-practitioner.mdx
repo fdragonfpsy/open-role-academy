@@ -1,0 +1,84 @@
+---
+id: work-breakdown-scheduling-practitioner
+competency: work-breakdown-scheduling
+level: practitioner
+title: "Dependencies, estimates and the critical path"
+objectives:
+  - "Record dependencies between activities."
+  - "Estimate with ranges instead of single numbers."
+  - "Find the critical path and the buffer of other activities."
+  - "Explain what to do when a critical activity slips."
+minutes: 20
+resources:
+  - wikipedia-de-netzplantechnik
+  - wikipedia-de-kritischer-pfad
+  - wikipedia-pert
+  - wikipedia-work-breakdown-structure
+  - wikipedia-de-gantt-diagramm
+status: ai-draft
+sources:
+  - title: "Netzplantechnik"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Netzplantechnik
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Methode des kritischen Pfades"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Kritischer_Pfad
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Program evaluation and review technique"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Program_evaluation_and_review_technique
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Work breakdown structure"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Work_breakdown_structure
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Gantt-Diagramm"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Gantt-Diagramm
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+A bar chart that puts tasks next to each other looks like a plan but does not say which task blocks which. Dependencies and the critical path tell you where a delay hurts the end date and where it does not.
+
+## Dependencies
+
+A network plan describes how activities follow one another in time. Activities are nodes, and arrows show the order. The usual relation is end-to-start: B can begin when A has ended. Network plans also describe start-to-start, end-to-end and start-to-end relations. Note why each dependency exists: a real constraint (the walls must be dry before painting) is different from a preference (we usually do A first), and only the first must stay.
+
+## Estimating
+
+Effort is the work in person-days; duration is the elapsed calendar time. They differ: two days of effort can take a week if the person works on three things. PERT, a technique from the late 1950s, allows three time estimates per activity: optimistic, expected and pessimistic, and so it incorporates uncertainty. Our own habit: ask for a range, and ask what would make it the high number. Our own preference: let the people who will do the work estimate, and compare with similar earlier work.
+
+## Critical path
+
+The idea behind network plans is that a few activities forming the longest path through the network determine the duration of the whole project. These are the critical activities, and the sequence of them is the critical path. If they are recognised early, countermeasures can start early, and management can focus on them. Non-critical activities have buffer time: each activity has an earliest possible and a latest permitted position, and the difference is the buffer. They can be rescheduled without moving the end date, up to their buffer.
+
+## Computing it by hand (our own steps)
+
+- Write each activity with its duration and predecessors.
+- Forward pass: the earliest finish of an activity is its earliest start plus its duration; a successor starts at the latest earliest finish of its predecessors.
+- The project duration is the latest earliest finish.
+- Backward pass from the end gives the latest times; the difference is the buffer.
+
+## Worked example
+
+Illustration only; invented numbers. Two paths lead to "Go-live" (1 day). Path 1: A "Order hardware" (2 days), C "Install" (3 days). Path 2: B "Write training" (4 days), D "Run training" (2 days). Path 1 takes 2 + 3 = 5 days, path 2 takes 4 + 2 = 6 days, so path 2 is critical and the project takes 7 days including go-live. Path 1 has one day of buffer. If hardware delivery slips by one day, nothing changes; if the training text slips by one day, go-live moves by one day. The lead therefore watches B and D closely.
+
+## Key takeaways
+
+- Record why a dependency exists; only real constraints must stay.
+- Estimate with ranges and ask the people doing the work.
+- The critical path is the longest chain; delay there moves the end date.
+- Non-critical activities have buffer that you can use to re-plan.

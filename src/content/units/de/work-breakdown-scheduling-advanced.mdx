@@ -1,0 +1,85 @@
+---
+id: work-breakdown-scheduling-advanced
+competency: work-breakdown-scheduling
+level: advanced
+title: "Terminsteuerung: Meilensteine, Puffer, Trends und Neuplanung"
+objectives:
+  - "Mit der Meilensteintrendanalyse den Endtermin prognostizieren."
+  - "Entscheiden, wo Puffer liegen und wem sie gehören."
+  - "Fortschritt an fertigen Ergebnissen messen, nicht am verbrauchten Aufwand."
+  - "Mit einer Basisplanung und einer klaren Regel neu planen."
+minutes: 30
+resources:
+  - wikipedia-de-meilenstein
+  - wikipedia-de-gantt-diagramm
+  - wikipedia-de-kritischer-pfad
+  - wikipedia-pert
+  - wikipedia-de-projektstrukturplan
+status: ai-draft
+sources:
+  - title: "Meilenstein (Projektmanagement)"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Meilenstein_(Projektmanagement)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Gantt-Diagramm"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Gantt-Diagramm
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Methode des kritischen Pfades"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Kritischer_Pfad
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Program evaluation and review technique"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Program_evaluation_and_review_technique
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Projektstrukturplan"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Projektstrukturplan
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Jeder Terminplan ist am Tag nach seiner Erstellung in irgendeinem Detail falsch. Ein gesteuertes Projekt unterscheidet sich von einem überraschten dadurch, ob du die Abweichung früh bemerkst, ihre Ursache verstehst und mit einer Entscheidung statt mit Hoffnung reagierst.
+
+## Meilensteintrendanalyse
+
+Meilensteine teilen das Projekt in Etappen mit überprüfbaren Zwischenzielen und unterstützen die Überwachung des Fortschritts. Die Meilensteintrendanalyse versucht, aus der zeitlichen Verschiebung von Meilensteinen eine Prognose für den Projektendtermin abzuleiten. Unsere eigene Anwendung: In jeder Statusrunde den aktuellen Prognosetermin jedes kommenden Meilensteins notieren und den Verlauf aufbewahren. Ein Meilenstein, der bei jedem Treffen um denselben Schritt später rückt, deutet auf ein systematisches Problem bei Schätzungen oder Kapazität, das ein einzelner neuer Termin verbirgt. Eine Reihe gleichbleibender Termine heißt: Der Plan hält.
+
+## Das Diagramm kritisch lesen
+
+Ein Balkenplan zeigt die Dauer gut, bildet Abhängigkeiten aber nur zeitbezogen ab und kennzeichnet Puffer in der Regel nicht. Deshalb kann ein Balkenplan allein verbergen, dass eine Aktivität kritisch ist. Auch der beste Detaillierungsgrad ist eine Entscheidung: Das Zusammenfassen von Aktivitäten zu Phasen macht das Diagramm deutlich übersichtlicher. Unsere eigene Praxis: das Abhängigkeitsnetz (oder wenigstens eine Vorgängerliste) als Quelle der Wahrheit führen und den Balkenplan zur Kommunikation nutzen.
+
+## Puffer (unsere eigene Sicht)
+
+Puffer gibt es im Netzplan dort, wo Aktivitäten nicht kritisch sind; der kritische Pfad hat keinen. Verführerisch ist es, jede Schätzung aufzupolstern. Unsere eigene Empfehlung ist eine andere: Schätzungen ehrlich halten, einen ausdrücklichen Puffer vor wichtigen Meilensteinen einplanen und ihm eine benannte Person zuordnen, die entscheidet, wann er genutzt wird. Bei unsicheren Aufgaben zeigen Dreipunktschätzungen (optimistisch, erwartet, pessimistisch), wie breit die Unsicherheit ist und wo ein Puffer zählt.
+
+## Fortschritt messen
+
+„80 % fertig“ lässt sich schwer prüfen. Unsere eigene Regel: Fortschritt nur über fertige Arbeitspakete melden, die ihre Ergebnisbeschreibung erfüllen, plus eine frische Restschätzung für die offenen. Weil der Projektstrukturplan die gemeinsame Basis für Termine, Ressourcen und Kosten ist, lassen sich mit denselben Paketen Terminstand und Ausgaben vergleichen.
+
+## Basisplanung und Neuplanung
+
+Lege eine Basisplanung fest, wenn der Plan freigegeben wird, und behalte sie, damit du die Differenz zwischen Plan und Prognose zeigen kannst. Unsere eigene Regel zum Neuplanen: neu planen, wenn die Prognose eines Meilensteins über eine vereinbarte Toleranz hinausgeht oder wenn sich der kritische Pfad ändert, und den neuen Plan mit Optionen zur Auftraggeberin bringen (Kapazität erhöhen, Umfang reduzieren, Termin verschieben).
+
+## Praxisbeispiel
+
+Nur zur Veranschaulichung; erfundenes Unternehmen. Ein Projekt hat den Meilenstein „Pilot bereit“ für den 1. September geplant. Die Prognose lautete in Woche 1 den 1. September, in Woche 2 den 8. September, in Woche 3 den 15. September. Eine einzelne Woche beunruhigt niemanden, doch die Projektleiterin sieht den gleichmäßigen Schritt von einer Woche pro Woche und forscht nach: Die Testumgebung steht nur jede Woche zur Hälfte zur Verfügung. Sie bringt drei Optionen zum Auftraggeber: eine zweite Umgebung, die Berichtsfunktion streichen oder ein neuer Termin am 6. Oktober. Der Auftraggeber wählt die zweite Umgebung, und die Basisplanung bleibt als Referenz bestehen.
+
+## Wichtigste Erkenntnisse
+
+- Verfolge Meilensteinprognosen über die Zeit; ein gleichmäßiger Drift ist ein systematisches Problem.
+- Nutze das Netz für die Logik und den Balkenplan für die Kommunikation.
+- Halte Schätzungen ehrlich und plane ausdrückliche Puffer mit Verantwortung vor wichtigen Meilensteinen.
+- Melde Fortschritt über fertige Ergebnisse und plane nach einer klaren Regel neu.

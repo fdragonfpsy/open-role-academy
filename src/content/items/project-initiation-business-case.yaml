@@ -1,0 +1,290 @@
+competency: project-initiation-business-case
+items:
+  - id: pibc-f-project
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "What makes an undertaking a project rather than daily operations?"
+      de: "Was macht ein Vorhaben zu einem Projekt statt zum laufenden Betrieb?"
+    options:
+      - en: "It is a one-off undertaking with a goal and limits such as time and resources"
+        de: "Es ist ein einmaliges Vorhaben mit Ziel und Grenzen wie Zeit und Ressourcen"
+        correct: true
+      - en: "It takes longer than one month to finish, however many people work on it"
+        de: "Es dauert länger als einen Monat bis zur Fertigstellung, egal wie viele Personen daran arbeiten"
+        correct: false
+      - en: "It involves people from more than one department, which makes it too complex for daily operations"
+        de: "Es sind Personen aus mehr als einer Abteilung beteiligt, was es für den Betrieb zu komplex macht"
+        correct: false
+      - en: "It is repeated in the same way every week or month"
+        de: "Es wird jede Woche oder jeden Monat auf dieselbe Weise wiederholt"
+        correct: false
+    explanation:
+      en: "A project is goal-directed and one-off, with limits such as time, resources and quality. Duration and the number of departments do not define it, and repetition is typical of operations."
+      de: "Ein Projekt ist zielgerichtet und einmalig, mit Grenzen wie Zeit, Ressourcen und Qualität. Dauer und Zahl der Abteilungen definieren es nicht, und Wiederholung ist typisch für den Betrieb."
+    source: https://de.wikipedia.org/wiki/Projekt
+  - id: pibc-f-goal
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Which statement is the best project goal?"
+      de: "Welche Aussage ist das beste Projektziel?"
+    options:
+      - en: "Introduce a modern digital timesheet solution in all departments of the company soon"
+        de: "Bald in allen Abteilungen des Unternehmens eine moderne digitale Zeiterfassungslösung einführen"
+        correct: false
+      - en: "Improve our timesheet process soon"
+        de: "Unseren Zeiterfassungsprozess bald verbessern"
+        correct: false
+      - en: "All timesheets are entered digitally by the 3rd working day from 1 April"
+        de: "Alle Stundenzettel sind ab 1. April bis zum 3. Arbeitstag digital erfasst"
+        correct: true
+      - en: "Make the team happier with digital tools"
+        de: "Das Team mit digitalen Werkzeugen glücklicher machen"
+        correct: false
+    explanation:
+      en: "A goal should be checkable: it has a measurable result and a date. \"Introduce a solution\" names a solution, not a goal, and \"soon\" or \"happier\" cannot be verified."
+      de: "Ein Ziel soll überprüfbar sein: mit messbarem Ergebnis und Datum. „Eine Lösung einführen“ nennt eine Lösung, kein Ziel, und „bald“ oder „glücklicher“ lässt sich nicht prüfen."
+    source: https://de.wikipedia.org/wiki/Projekt
+  - id: pibc-f-contents
+    level: foundation
+    difficulty: 1000
+    type: multi
+    stem:
+      en: "Which elements belong in a business case? Select all that apply."
+      de: "Welche Elemente gehören in einen Business Case? Wähle alle zutreffenden aus."
+    options:
+      - en: "The expected costs and the main risks"
+        de: "Die erwarteten Kosten und die wichtigsten Risiken"
+        correct: true
+      - en: "The options considered, including doing nothing"
+        de: "Die geprüften Optionen, auch das Nichtstun"
+        correct: true
+      - en: "A finished task list with every work package assigned"
+        de: "Eine fertige Aufgabenliste mit allen zugewiesenen Arbeitspaketen"
+        correct: false
+      - en: "The background and the expected benefits"
+        de: "Die Ausgangslage und der erwartete Nutzen"
+        correct: true
+    explanation:
+      en: "A formal business case covers background, benefits, options (with the do-nothing option), costs and risks. A detailed task list belongs to planning after the decision to start."
+      de: "Ein formaler Business Case umfasst Ausgangslage, Nutzen, Optionen (mit der Option „nichts tun“), Kosten und Risiken. Eine detaillierte Aufgabenliste gehört zur Planung nach der Startentscheidung."
+    source: https://en.wikipedia.org/wiki/Business_case
+  - id: pibc-f-donothing
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "Why should a business case include the option of doing nothing?"
+      de: "Warum sollte ein Business Case die Option „nichts tun“ enthalten?"
+    options:
+      - en: "It guarantees that one of the other options gets approved by the sponsor in the end"
+        de: "Es garantiert, dass am Ende eine der anderen Optionen von der Auftraggeberin freigegeben wird"
+        correct: false
+      - en: "It shows the costs and risks of leaving things as they are, a baseline for the other options"
+        de: "Es zeigt Kosten und Risiken des unveränderten Zustands als Maßstab für die anderen Optionen"
+        correct: true
+      - en: "It lets the sponsor reject the project without reading the rest"
+        de: "Es erlaubt der Auftraggeberin, das Projekt abzulehnen, ohne den Rest zu lesen"
+        correct: false
+      - en: "It removes the need to estimate costs for the other options"
+        de: "Es macht Kostenschätzungen für die anderen Optionen überflüssig"
+        correct: false
+    explanation:
+      en: "Doing nothing has costs and risks too. Making them visible gives the other options something to be compared against."
+      de: "Auch Nichtstun hat Kosten und Risiken. Sie sichtbar zu machen, gibt den anderen Optionen einen Vergleichsmaßstab."
+    source: https://en.wikipedia.org/wiki/Business_case
+  - id: pibc-p-cba
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "How are benefits and costs expressed in a classic cost-benefit analysis?"
+      de: "Wie werden Nutzen und Kosten in einer klassischen Kosten-Nutzen-Analyse ausgedrückt?"
+    options:
+      - en: "In money, adjusted for the time value of money"
+        de: "In Geld, bereinigt um den Zeitwert des Geldes"
+        correct: true
+      - en: "As points from one to ten, without any money values"
+        de: "Als Punkte von eins bis zehn, ganz ohne Geldwerte"
+        correct: false
+      - en: "As the number of stakeholders who support each option"
+        de: "Als Anzahl der Stakeholder, die jede Option unterstützen"
+        correct: false
+      - en: "As the price of the cheapest quote received, whatever benefit the option brings"
+        de: "Als Preis des günstigsten eingegangenen Angebots, unabhängig vom Nutzen der Option"
+        correct: false
+    explanation:
+      en: "In the classic form, benefits and costs are measured in money and made comparable over time. Point scores and head counts are other tools; the cheapest quote ignores benefit."
+      de: "In der klassischen Form werden Nutzen und Kosten in Geld gemessen und über die Zeit vergleichbar gemacht. Punktwerte und Zählungen sind andere Werkzeuge; das billigste Angebot ignoriert den Nutzen."
+    source: https://en.wikipedia.org/wiki/Cost%E2%80%93benefit_analysis
+  - id: pibc-p-feasibility
+    level: practitioner
+    difficulty: 1200
+    type: multi
+    stem:
+      en: "Our four feasibility checks are technical, organisational, financial and time. Which questions belong to them? Select all that apply."
+      de: "Unsere vier Machbarkeitsprüfungen sind technisch, organisatorisch, finanziell und zeitlich. Welche Fragen gehören dazu? Wähle alle zutreffenden aus."
+    options:
+      - en: "Will the people whose work changes support it?"
+        de: "Unterstützen die Menschen, deren Arbeit sich ändert, das Vorhaben?"
+        correct: true
+      - en: "Does the project name sound modern enough?"
+        de: "Klingt der Projektname modern genug?"
+        correct: false
+      - en: "Can it be built or bought with what we know?"
+        de: "Lässt es sich mit unserem Wissen bauen oder kaufen?"
+        correct: true
+      - en: "Does the deadline allow for the work and approvals?"
+        de: "Lässt der Termin Raum für die Arbeit und Freigaben?"
+        correct: true
+    explanation:
+      en: "Technical, organisational and time questions are part of the checks. The name of a project says nothing about whether it can be done."
+      de: "Technische, organisatorische und zeitliche Fragen gehören zu den Prüfungen. Der Name eines Projekts sagt nichts darüber, ob es machbar ist."
+    source: https://en.wikipedia.org/wiki/Business_case
+  - id: pibc-p-order
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "What is the main function of a project order?"
+      de: "Was ist die Hauptfunktion eines Projektauftrags?"
+    options:
+      - en: "It lists every task of the project with dates and so replaces the schedule completely"
+        de: "Er listet jede Aufgabe des Projekts mit Terminen auf und ersetzt so den Terminplan vollständig"
+        correct: false
+      - en: "It is a legally standardised form that is identical in all organisations"
+        de: "Er ist ein rechtlich normiertes Formular, das in allen Organisationen gleich ist"
+        correct: false
+      - en: "It formally confirms the project exists and usually names the lead and releases the budget"
+        de: "Er bestätigt formell, dass das Projekt existiert, und benennt meist die Leitung und gibt das Budget frei"
+        correct: true
+      - en: "It records the lessons learned after the project ends"
+        de: "Er hält die Erkenntnisse nach Projektende fest"
+        correct: false
+    explanation:
+      en: "The order is the formal start: signed by higher management, usually naming the project lead and releasing the budget. Its contents are not standardised and it is not the schedule."
+      de: "Der Auftrag ist der formelle Start: von höherer Führungsebene unterschrieben, meist mit Benennung der Projektleitung und Budgetfreigabe. Seine Inhalte sind nicht normiert, und er ist nicht der Terminplan."
+    source: https://de.wikipedia.org/wiki/Projektauftrag
+  - id: pibc-p-intangible
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "One option promises better staff morale, which nobody can measure today. How should the business case treat this benefit?"
+      de: "Eine Option verspricht bessere Stimmung im Team, die heute niemand messen kann. Wie behandelt der Business Case diesen Nutzen?"
+    options:
+      - en: "Convert it to euros with any figure so that the table has one currency"
+        de: "Mit irgendeiner Zahl in Euro umrechnen, damit die Tabelle eine Währung hat"
+        correct: false
+      - en: "Drop it, because only benefits that can be measured count in a business case at all"
+        de: "Streichen, weil nur messbarer Nutzen überhaupt in einen Business Case gehört"
+        correct: false
+      - en: "Count it at double weight to make up for the missing number"
+        de: "Doppelt gewichten, um die fehlende Zahl auszugleichen"
+        correct: false
+      - en: "List it separately, say who would notice it and how, and let the sponsor weigh it"
+        de: "Getrennt aufführen, sagen, wer es bemerken würde und woran, und die Gewichtung der Auftraggeberin überlassen"
+        correct: true
+    explanation:
+      en: "A compelling business case captures quantifiable and non-quantifiable characteristics. An invented euro value or a bonus weight hides the uncertainty; the sponsor should see it."
+      de: "Ein überzeugender Business Case erfasst quantifizierbare und nicht quantifizierbare Merkmale. Ein erfundener Eurowert oder ein Bonusgewicht verbirgt die Unsicherheit; die Auftraggeberin soll sie sehen."
+    source: https://en.wikipedia.org/wiki/Business_case
+  - id: pibc-a-conflict
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "You find that your project's goal works against the efficiency goal of another department. What is the best step?"
+      de: "Du stellst fest, dass das Ziel deines Projekts dem Effizienzziel einer anderen Abteilung entgegenläuft. Was ist der beste Schritt?"
+    options:
+      - en: "Leave it out, because the sponsor's goal always wins and the other team can adapt later"
+        de: "Weglassen, weil das Ziel der Auftraggeberin immer gewinnt und das andere Team sich später anpassen kann"
+        correct: false
+      - en: "Reword the goal until nobody objects"
+        de: "Das Ziel umformulieren, bis niemand mehr widerspricht"
+        correct: false
+      - en: "Wait until the project starts to see whether it matters"
+        de: "Abwarten, ob es nach Projektstart eine Rolle spielt"
+        correct: false
+      - en: "Name the conflict in the business case and agree with the sponsor how to resolve it"
+        de: "Den Konflikt im Business Case benennen und mit der Auftraggeberin klären, wie er gelöst wird"
+        correct: true
+    explanation:
+      en: "Units in one organisation can pursue goals that conflict, and managers have to integrate them. Hiding the conflict or blurring the goal only moves the problem into the project."
+      de: "Einheiten einer Organisation können Ziele verfolgen, die sich widersprechen, und Führungskräfte müssen sie zusammenführen. Den Konflikt zu verbergen oder das Ziel zu verwässern, verlagert das Problem nur ins Projekt."
+    source: https://openstax.org/books/principles-management/pages/17-4-goals-or-outcome-statements
+  - id: pibc-a-sensitivity
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "Which assumption in a business case deserves a test before approval?"
+      de: "Welche Annahme in einem Business Case verdient vor der Freigabe einen Test?"
+    options:
+      - en: "The one with the largest euro value in the table, because it moves the total most"
+        de: "Die mit dem größten Eurowert in der Tabelle, weil sie die Summe am stärksten bewegt"
+        correct: false
+      - en: "The one the sponsor is most confident about"
+        de: "Die, bei der sich die Auftraggeberin am sichersten ist"
+        correct: false
+      - en: "The one that is easiest to measure"
+        de: "Die, die sich am leichtesten messen lässt"
+        correct: false
+      - en: "The one that flips the decision when moved within its range"
+        de: "Die, die die Entscheidung kippt, wenn man sie innerhalb ihrer Spanne verschiebt"
+        correct: true
+    explanation:
+      en: "Our own method gives each assumption a range and changes one at a time. The assumption that changes the decision is where a test pays off; size, confidence or measurability alone do not tell you that."
+      de: "Unsere eigene Methode gibt jeder Annahme eine Spanne und ändert immer nur eine. Die Annahme, die die Entscheidung ändert, ist der Ort, an dem sich ein Test lohnt; Größe, Sicherheit oder Messbarkeit allein sagen das nicht."
+    source: https://en.wikipedia.org/wiki/Business_case
+  - id: pibc-a-stages
+    level: advanced
+    difficulty: 1550
+    type: multi
+    stem:
+      en: "Which elements make a stage decision sound? Select all that apply."
+      de: "Welche Elemente machen eine Stufenentscheidung belastbar? Wähle alle zutreffenden aus."
+    options:
+      - en: "A fixed, small budget for the first stage"
+        de: "Ein festes, kleines Budget für die erste Stufe"
+        correct: true
+      - en: "The full budget released up front so the team is not slowed down"
+        de: "Das gesamte Budget vorab freigegeben, damit das Team nicht gebremst wird"
+        correct: false
+      - en: "A criterion and a date written into the project order"
+        de: "Ein Kriterium und ein Termin, im Projektauftrag festgehalten"
+        correct: true
+      - en: "A learning question the first stage must answer"
+        de: "Eine Lernfrage, die die erste Stufe beantworten muss"
+        correct: true
+    explanation:
+      en: "Stages keep a case revisable: small budget, a clear question and criteria with a date. Releasing everything up front removes the point of deciding in stages."
+      de: "Stufen halten einen Business Case überprüfbar: kleines Budget, klare Frage und Kriterien mit Termin. Alles vorab freizugeben nimmt der Stufenentscheidung den Sinn."
+    source: https://de.wikipedia.org/wiki/Projektauftrag
+  - id: pibc-a-disputed
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "Stakeholders disagree on goals and the environment is uncertain. What is the most sensible way to start?"
+      de: "Die Stakeholder sind sich über die Ziele uneinig, und das Umfeld ist unsicher. Was ist der sinnvollste Start?"
+    options:
+      - en: "A short exploratory stage with a clear learning question and an agreed direction"
+        de: "Eine kurze Erkundungsstufe mit klarer Lernfrage und vereinbarter Richtung"
+        correct: true
+      - en: "A detailed 18-month plan, so that everyone is forced to agree"
+        de: "Ein detaillierter Plan über 18 Monate, damit sich alle einigen müssen"
+        correct: false
+      - en: "Adopt the goal of the highest-ranking person and proceed"
+        de: "Das Ziel der ranghöchsten Person übernehmen und loslegen"
+        correct: false
+      - en: "Postpone the project until all parties agree on exact goals"
+        de: "Das Projekt verschieben, bis sich alle auf genaue Ziele einigen"
+        correct: false
+    explanation:
+      en: "When people cannot agree on goals or the environment is uncertain, planning by direction with a small first stage fits. A detailed plan pretends certainty, and waiting for full agreement may never end."
+      de: "Wenn sich Menschen nicht auf Ziele einigen können oder das Umfeld unsicher ist, passt Planung nach Richtung mit kleiner erster Stufe. Ein detaillierter Plan täuscht Sicherheit vor, und das Warten auf volle Einigkeit kann endlos dauern."
+    source: https://openstax.org/books/principles-management/pages/17-2-the-planning-process

@@ -1,0 +1,290 @@
+competency: work-breakdown-scheduling
+items:
+  - id: wbs-f-package
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "What is a work package in a work breakdown structure?"
+      de: "Was ist ein Arbeitspaket in einem Projektstrukturplan?"
+    options:
+      - en: "A summary of all project costs, broken down by month and by team"
+        de: "Eine Zusammenfassung aller Projektkosten, aufgeschlüsselt nach Monat und Team"
+        correct: false
+      - en: "An element on the second level that will be divided further"
+        de: "Ein Element auf der zweiten Ebene, das weiter unterteilt wird"
+        correct: false
+      - en: "An element on the lowest level that is not divided further"
+        de: "Ein Element auf der untersten Ebene, das nicht weiter unterteilt wird"
+        correct: true
+      - en: "A meeting where the team agrees on the schedule"
+        de: "Eine Besprechung, in der das Team den Terminplan abstimmt"
+        correct: false
+    explanation:
+      en: "Sub-tasks are divided further; work packages are the lowest level of the structure."
+      de: "Teilaufgaben werden weiter unterteilt; Arbeitspakete bilden die unterste Ebene der Struktur."
+    source: https://de.wikipedia.org/wiki/Projektstrukturplan
+  - id: wbs-f-basis
+    level: foundation
+    difficulty: 950
+    type: multi
+    stem:
+      en: "A work breakdown structure is the basis for which later planning steps? Select all that apply."
+      de: "Für welche späteren Planungsschritte ist der Projektstrukturplan die Grundlage? Wähle alle zutreffenden aus."
+    options:
+      - en: "Schedule planning"
+        de: "Terminplanung"
+        correct: true
+      - en: "Cost planning"
+        de: "Kostenplanung"
+        correct: true
+      - en: "Choosing the project sponsor"
+        de: "Auswahl der Auftraggebenden"
+        correct: false
+      - en: "Resource planning"
+        de: "Ressourcenplanung"
+        correct: true
+    explanation:
+      en: "The structure feeds schedule, resource and cost planning, and risk management. Choosing a sponsor comes before the breakdown."
+      de: "Die Struktur speist Termin-, Ressourcen- und Kostenplanung sowie das Risikomanagement. Die Wahl der Auftraggebenden kommt vor der Gliederung."
+    source: https://de.wikipedia.org/wiki/Projektstrukturplan
+  - id: wbs-f-bar
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "In a bar chart (Gantt chart), what does a longer bar show?"
+      de: "Was zeigt ein längerer Balken in einem Balkenplan (Gantt-Diagramm)?"
+    options:
+      - en: "A higher priority of the activity"
+        de: "Eine höhere Priorität der Aktivität"
+        correct: false
+      - en: "More people assigned to the activity"
+        de: "Mehr Personen, die der Aktivität zugeordnet sind"
+        correct: false
+      - en: "A longer duration of the activity"
+        de: "Eine längere Dauer der Aktivität"
+        correct: true
+      - en: "Higher costs of the activity"
+        de: "Höhere Kosten der Aktivität"
+        correct: false
+    explanation:
+      en: "The bar length on the time axis shows duration. Priority, people and cost are not encoded by length."
+      de: "Die Balkenlänge auf der Zeitachse zeigt die Dauer. Priorität, Personen und Kosten werden nicht durch die Länge abgebildet."
+    source: https://de.wikipedia.org/wiki/Gantt-Diagramm
+  - id: wbs-f-milestone
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "Which milestone is best formulated?"
+      de: "Welcher Meilenstein ist am besten formuliert?"
+    options:
+      - en: "The team is about 70 % through the IT work and expects to finish in time"
+        de: "Das Team hat etwa 70 % der IT-Arbeit geschafft und erwartet, rechtzeitig fertig zu werden"
+        correct: false
+      - en: "Everyone works hard during May"
+        de: "Alle arbeiten im Mai hart"
+        correct: false
+      - en: "IT ready: every desk can print and call, checked on 20 May"
+        de: "IT bereit: Jeder Arbeitsplatz kann drucken und telefonieren, geprüft am 20. Mai"
+        correct: true
+      - en: "A weekly status meeting on Fridays"
+        de: "Eine wöchentliche Statusrunde freitags"
+        correct: false
+    explanation:
+      en: "A milestone is an event with checkable criteria agreed in advance. Percentages, effort and routine meetings are not checkable events."
+      de: "Ein Meilenstein ist ein Ereignis mit vorab vereinbarten, prüfbaren Kriterien. Prozentwerte, Einsatz und Routinetermine sind keine prüfbaren Ereignisse."
+    source: https://de.wikipedia.org/wiki/Meilenstein_(Projektmanagement)
+  - id: wbs-p-critical
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "What is the critical path?"
+      de: "Was ist der kritische Pfad?"
+    options:
+      - en: "The path containing the most expensive and most important activities"
+        de: "Der Pfad mit den teuersten und wichtigsten Aktivitäten"
+        correct: false
+      - en: "The path with the most people involved"
+        de: "Der Pfad mit den meisten beteiligten Personen"
+        correct: false
+      - en: "The shortest path through the network, since it is the first to reach the final milestone"
+        de: "Der kürzeste Pfad durch das Netz, weil er als Erster den Schlussmeilenstein erreicht"
+        correct: false
+      - en: "The longest chain of dependent activities, which determines the project duration"
+        de: "Die längste Kette abhängiger Aktivitäten, die die Projektdauer bestimmt"
+        correct: true
+    explanation:
+      en: "The longest path decides the end date; a delay on it moves the end date. Cost or head count do not define criticality."
+      de: "Der längste Pfad bestimmt den Endtermin; Verzug darauf verschiebt den Endtermin. Kosten oder Personenzahl definieren keine Kritikalität."
+    source: https://de.wikipedia.org/wiki/Netzplantechnik
+  - id: wbs-p-compute
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "Path 1: A (3 days) then C (2 days). Path 2: B (4 days) then D (2 days). Both end at the same final milestone. Which statement is correct?"
+      de: "Pfad 1: A (3 Tage), dann C (2 Tage). Pfad 2: B (4 Tage), dann D (2 Tage). Beide enden am selben Schlussmeilenstein. Welche Aussage stimmt?"
+    options:
+      - en: "B and D are critical; A and C have one day of buffer"
+        de: "B und D sind kritisch; A und C haben einen Tag Puffer"
+        correct: true
+      - en: "A and C are critical; B and D have one day of buffer"
+        de: "A und C sind kritisch; B und D haben einen Tag Puffer"
+        correct: false
+      - en: "All four are critical, because both paths lead to the end"
+        de: "Alle vier sind kritisch, weil beide Pfade zum Ende führen"
+        correct: false
+      - en: "B and D are critical; A and C have two days of buffer"
+        de: "B und D sind kritisch; A und C haben zwei Tage Puffer"
+        correct: false
+    explanation:
+      en: "Path 1 takes 5 days, path 2 takes 6 days. The longer path is critical, and the shorter one has the difference, one day, as buffer."
+      de: "Pfad 1 dauert 5 Tage, Pfad 2 dauert 6 Tage. Der längere Pfad ist kritisch, und der kürzere hat die Differenz, einen Tag, als Puffer."
+    source: https://de.wikipedia.org/wiki/Kritischer_Pfad
+  - id: wbs-p-effort
+    level: practitioner
+    difficulty: 1250
+    type: multi
+    stem:
+      en: "Which statements about effort and duration are correct? Select all that apply."
+      de: "Welche Aussagen zu Aufwand und Dauer stimmen? Wähle alle zutreffenden aus."
+    options:
+      - en: "Effort is the work in person-days"
+        de: "Aufwand ist die Arbeit in Personentagen"
+        correct: true
+      - en: "Duration is always effort divided by eight hours"
+        de: "Dauer ist immer Aufwand geteilt durch acht Stunden"
+        correct: false
+      - en: "Duration is the elapsed calendar time"
+        de: "Dauer ist die vergangene Kalenderzeit"
+        correct: true
+      - en: "Two days of effort can take a week if the person has other tasks"
+        de: "Zwei Tage Aufwand können eine Woche dauern, wenn die Person andere Aufgaben hat"
+        correct: true
+    explanation:
+      en: "Effort and duration differ because people share their time. There is no fixed conversion between them."
+      de: "Aufwand und Dauer unterscheiden sich, weil Menschen ihre Zeit teilen. Es gibt keine feste Umrechnung."
+    source: https://en.wikipedia.org/wiki/Program_evaluation_and_review_technique
+  - id: wbs-p-dependency
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "Which dependency should you challenge when you try to shorten the schedule?"
+      de: "Welche Abhängigkeit solltest du hinterfragen, wenn du den Terminplan verkürzen willst?"
+    options:
+      - en: "Training can only be run after the training text exists"
+        de: "Die Schulung kann erst stattfinden, wenn der Schulungstext vorliegt"
+        correct: false
+      - en: "Go-live can only happen after the hardware is installed"
+        de: "Der Go-live kann erst nach der Hardwareinstallation stattfinden"
+        correct: false
+      - en: "We usually do A before B, though nothing prevents doing them in parallel"
+        de: "Wir machen meist erst A, dann B, obwohl nichts dagegen spricht, sie parallel zu machen"
+        correct: true
+      - en: "Paint can only be applied after the walls are dry"
+        de: "Farbe kann erst aufgetragen werden, wenn die Wände trocken sind"
+        correct: false
+    explanation:
+      en: "A habit is a preference, not a constraint, and can be dropped. The other three are real constraints that must stay."
+      de: "Eine Gewohnheit ist eine Vorliebe, keine Bedingung, und kann entfallen. Die anderen drei sind echte Bedingungen, die bleiben müssen."
+    source: https://de.wikipedia.org/wiki/Netzplantechnik
+  - id: wbs-a-trend
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "A milestone forecast moves one week later at every weekly meeting. What does this most likely indicate and what should you do?"
+      de: "Die Prognose eines Meilensteins rückt in jeder Wochenrunde um eine Woche nach hinten. Worauf deutet das am ehesten hin, und was tust du?"
+    options:
+      - en: "A systematic problem such as capacity or estimates; find the cause and bring options"
+        de: "Ein systematisches Problem wie Kapazität oder Schätzungen; Ursache suchen und Optionen vorlegen"
+        correct: true
+      - en: "Normal noise; wait until the delay exceeds one month"
+        de: "Normales Rauschen; abwarten, bis die Verzögerung einen Monat überschreitet"
+        correct: false
+      - en: "A reporting issue; reset the milestone to the original date and ask for more effort"
+        de: "Ein Meldeproblem; den Meilenstein auf das ursprüngliche Datum zurücksetzen und mehr Einsatz verlangen"
+        correct: false
+      - en: "A problem with the milestone itself; remove it so it cannot be late"
+        de: "Ein Problem des Meilensteins selbst; ihn streichen, damit er nicht zu spät sein kann"
+        correct: false
+    explanation:
+      en: "Milestone trend analysis reads a steady drift as a systematic cause. Waiting, resetting the date or deleting the milestone hides the signal."
+      de: "Die Meilensteintrendanalyse liest einen gleichmäßigen Drift als systematische Ursache. Abwarten, Datum zurücksetzen oder Meilenstein löschen verbirgt das Signal."
+    source: https://de.wikipedia.org/wiki/Meilenstein_(Projektmanagement)
+  - id: wbs-a-buffer
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "Which approach to buffers is the most defensible?"
+      de: "Welcher Umgang mit Puffern ist am besten vertretbar?"
+    options:
+      - en: "Add 25 % to every task estimate so that nobody is late"
+        de: "Jede Aufgabenschätzung um 25 % erhöhen, damit niemand zu spät ist"
+        correct: false
+      - en: "Never plan any buffer, because buffers only encourage people to delay their work"
+        de: "Nie Puffer einplanen, weil Puffer Menschen nur dazu verleiten, ihre Arbeit zu verzögern"
+        correct: false
+      - en: "Let each task owner keep a private buffer"
+        de: "Jede Aufgabenverantwortliche einen privaten Puffer halten lassen"
+        correct: false
+      - en: "Keep estimates honest and place an explicit buffer with a named owner before key milestones"
+        de: "Schätzungen ehrlich halten und vor wichtigen Meilensteinen einen ausdrücklichen Puffer mit benannter Verantwortung einplanen"
+        correct: true
+    explanation:
+      en: "Honest estimates plus one visible, owned buffer give control. Padding everything or private buffers hide where the slack is, and no buffer ignores uncertainty."
+      de: "Ehrliche Schätzungen plus ein sichtbarer Puffer mit Verantwortung geben Kontrolle. Überall aufpolstern oder private Puffer verbergen, wo die Reserve liegt, und gar kein Puffer ignoriert Unsicherheit."
+    source: https://en.wikipedia.org/wiki/Program_evaluation_and_review_technique
+  - id: wbs-a-progress
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "A work package has been reported as \"80 % done\" for three weeks. What is the best way to report progress?"
+      de: "Ein Arbeitspaket wird seit drei Wochen als „zu 80 % fertig“ gemeldet. Was ist die beste Art, Fortschritt zu melden?"
+    options:
+      - en: "Accept the percentage as given, because the team that does the work knows best"
+        de: "Den Prozentwert so übernehmen, weil das Team, das die Arbeit macht, es am besten weiß"
+        correct: false
+      - en: "Count only finished packages that meet their result description, plus a fresh estimate to complete for open ones"
+        de: "Nur fertige Pakete zählen, die ihre Ergebnisbeschreibung erfüllen, plus eine frische Restschätzung für offene"
+        correct: true
+      - en: "Compare hours spent with hours planned"
+        de: "Geleistete Stunden mit geplanten Stunden vergleichen"
+        correct: false
+      - en: "Ask for a daily report from each person"
+        de: "Von jeder Person einen täglichen Bericht verlangen"
+        correct: false
+    explanation:
+      en: "Percentages are hard to verify and effort spent says little about results. Finished packages checked against their description, plus a fresh estimate to complete, are verifiable."
+      de: "Prozentwerte lassen sich schwer prüfen, und verbrauchter Aufwand sagt wenig über Ergebnisse. Fertige, an der Beschreibung geprüfte Pakete plus frische Restschätzung sind überprüfbar."
+    source: https://de.wikipedia.org/wiki/Projektstrukturplan
+  - id: wbs-a-replan
+    level: advanced
+    difficulty: 1600
+    type: multi
+    stem:
+      en: "Which events should trigger a re-plan under our own rule? Select all that apply."
+      de: "Welche Ereignisse sollten nach unserer eigenen Regel eine Neuplanung auslösen? Wähle alle zutreffenden aus."
+    options:
+      - en: "A milestone forecast moves beyond the agreed tolerance"
+        de: "Die Prognose eines Meilensteins überschreitet die vereinbarte Toleranz"
+        correct: true
+      - en: "A task inside its buffer finishes one day late"
+        de: "Eine Aufgabe innerhalb ihres Puffers wird einen Tag zu spät fertig"
+        correct: false
+      - en: "The critical path changes"
+        de: "Der kritische Pfad ändert sich"
+        correct: true
+      - en: "A scope change that affects the critical path is approved"
+        de: "Eine Umfangsänderung mit Wirkung auf den kritischen Pfad wird freigegeben"
+        correct: true
+    explanation:
+      en: "Tolerance breaches, a changed critical path and approved changes on it call for re-planning. A late task that still sits within its buffer does not move the end date."
+      de: "Toleranzüberschreitungen, ein veränderter kritischer Pfad und freigegebene Änderungen darauf erfordern eine Neuplanung. Eine verspätete Aufgabe innerhalb ihres Puffers verschiebt den Endtermin nicht."
+    source: https://de.wikipedia.org/wiki/Kritischer_Pfad

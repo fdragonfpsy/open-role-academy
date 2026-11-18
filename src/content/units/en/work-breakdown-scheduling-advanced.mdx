@@ -1,0 +1,85 @@
+---
+id: work-breakdown-scheduling-advanced
+competency: work-breakdown-scheduling
+level: advanced
+title: "Schedule control: milestones, buffers, trends and re-planning"
+objectives:
+  - "Use milestone trend analysis to forecast the end date."
+  - "Decide where to place buffers and who owns them."
+  - "Measure progress by finished results, not by effort spent."
+  - "Re-plan with a baseline and a clear rule for when to re-plan."
+minutes: 30
+resources:
+  - wikipedia-de-meilenstein
+  - wikipedia-de-gantt-diagramm
+  - wikipedia-de-kritischer-pfad
+  - wikipedia-pert
+  - wikipedia-de-projektstrukturplan
+status: ai-draft
+sources:
+  - title: "Meilenstein (Projektmanagement)"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Meilenstein_(Projektmanagement)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Gantt-Diagramm"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Gantt-Diagramm
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Methode des kritischen Pfades"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Kritischer_Pfad
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Program evaluation and review technique"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Program_evaluation_and_review_technique
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Projektstrukturplan"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Projektstrukturplan
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+Every schedule is wrong in some detail the day after it is made. What separates a controlled project from a surprised one is whether you notice the drift early, understand where it comes from and respond with a decision instead of hope.
+
+## Milestone trend analysis
+
+Milestones divide the project into stages with checkable interim goals, and they support monitoring progress. Milestone trend analysis tries to derive a forecast for the project end date from how milestone dates shift over time. Our own way to use it: at every status meeting, write down the current forecast date for each upcoming milestone and keep the history. A milestone that moves later by the same step at each meeting signals a systematic problem with estimates or capacity, which a single new date hides. A series of dates that stays level means the plan is holding.
+
+## Reading the chart critically
+
+A bar chart shows duration well, but it shows dependencies only as timing and usually does not mark buffers. Therefore a bar chart alone can hide that an activity is critical. The best level of detail is a choice too: summarising activities to phases makes the chart much clearer. Our own practice: keep the dependency network (or at least a list of predecessors) as the source of truth and use the bar chart for communication.
+
+## Buffers (our own view)
+
+Buffer exists on the network where activities are not critical; the critical path has none. A common temptation is to pad every estimate. Our own recommendation is different: keep estimates honest, put one explicit buffer before important milestones, and give it a named owner who decides when it is used. With uncertain tasks, three-point estimates (optimistic, expected, pessimistic) show how wide the uncertainty is, and where a buffer matters.
+
+## Measuring progress
+
+"80 % done" is hard to verify. Our own rule: report progress only through finished work packages that meet their result description, plus a fresh estimate to complete for the open ones. Because the work breakdown is the common base for schedule, resources and cost, the same packages let you compare schedule status with spend.
+
+## Baseline and re-planning
+
+Fix a baseline when the plan is approved and keep it, so that you can show the difference between plan and forecast. Our own rule for re-planning: re-plan when a milestone forecast moves beyond an agreed tolerance or when the critical path changes, and take the new plan to the sponsor with options (add capacity, reduce scope, move the date).
+
+## Worked example
+
+Illustration only; invented company. A project has a milestone "pilot ready" planned for 1 September. The forecast was 1 September in week 1, 8 September in week 2, 15 September in week 3. Nobody is alarmed by a single week, but the lead sees the steady step of one week per week and investigates: the test environment is only available half of each week. She brings three options to the sponsor: a second environment, cutting the reporting feature, or a new date of 6 October. The sponsor chooses the second environment, and the baseline stays as a reference.
+
+## Key takeaways
+
+- Track milestone forecasts over time; a steady drift is a systematic problem.
+- Use the network for logic and the bar chart for communication.
+- Keep estimates honest and put explicit, owned buffers before key milestones.
+- Report progress through finished results and re-plan by a clear rule.

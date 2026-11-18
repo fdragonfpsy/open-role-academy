@@ -1,0 +1,87 @@
+---
+id: scope-requirements-management-advanced
+competency: scope-requirements-management
+level: advanced
+title: "Controlling scope: traceability, change requests and trade-offs"
+objectives:
+  - "Explain the typical causes of scope creep and where to act on each."
+  - "Keep requirements traceable from need to deliverable to test."
+  - "Run a change request with an impact assessment and a clear decision."
+  - "Negotiate trade-offs between scope, time and cost without silent compromises."
+minutes: 30
+resources:
+  - wikipedia-scope-creep
+  - wikipedia-de-anforderungsmanagement
+  - wikipedia-de-pflichtenheft
+  - wikipedia-moscow-method
+  - wikibooks-pmbok-scope-management
+status: ai-draft
+sources:
+  - title: "Scope creep"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Scope_creep
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Anforderungsmanagement"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Anforderungsmanagement
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Pflichtenheft"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Pflichtenheft
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "MoSCoW method"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/MoSCoW_method
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Project Management/PMBOK/Scope Management (Wikibooks)"
+    author: Wikibooks contributors
+    url: https://en.wikibooks.org/wiki/Project_Management/PMBOK/Scope_Management
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+No scope statement survives contact with reality unchanged. Customers learn what they want, the environment shifts, and the team discovers hidden work. The advanced skill is not to prevent change but to make every change a visible, priced decision.
+
+## Where creep comes from
+
+Scope creep is continuous or uncontrolled growth in a project's scope after it has started. Typical causes are a poorly defined scope, vague or complex documents that people interpret differently, failure to capture all requirements from all stakeholders, a lack of standard project management practice, and the addition of features nobody asked for. It cannot be entirely prevented, so the practical approach is to manage it once noticed. If well managed, it can even improve the product. Our own mapping of causes to actions: vague scope leads to a sharper scope statement, missed stakeholders to a stakeholder walk-through before sign-off, and gold-plating to a team rule that extras need a request too.
+
+## Traceability
+
+Traceability means you can follow a requirement from its origin through the deliverable to the test that checks it, and back. Requirements management lists it among the quality criteria and treats verification and validation of requirements as part of the discipline. Our own minimal table has one row per requirement: ID, source, priority, deliverable, acceptance check, status. When a change arrives, the table shows at once what it touches.
+
+## Change request (our own process)
+
+- Record the request: who, what need, why now.
+- Assess impact: effort, schedule, cost, risk, and which other requirements move.
+- Offer options: do it, do it later, swap for something of equal size, decline.
+- Decide: the sponsor or change board decides, and the decision is logged.
+- Update: scope statement, plan and traceability table.
+
+Not every request needs a board. Our own threshold: changes within a pre-agreed small effort go to the project lead, larger ones to the sponsor.
+
+## Negotiating trade-offs
+
+When someone says "just add it", turn the conversation into options. If the deadline is fixed, something of equal size leaves, which is what a Must, Should, Could, Won't list is for. If the scope is fixed, the date or budget moves. Silent compromises, such as skipping tests, are not an option; they hide the trade-off and move the cost to later. In customer-supplier settings, the written answer of the supplier that the customer accepted is the baseline against which change is measured.
+
+## Worked example
+
+Illustration only; invented company. Halfway through a reporting project, a department head asks for an additional dashboard. The project lead logs it, estimates 8 working days and shows the effect: the go-live moves from 30 June to 14 July or the planned export function leaves, which is a Should. The sponsor decides to drop the export, logs the decision and the table is updated. Two weeks later nobody argues about why the export is missing.
+
+## Key takeaways
+
+- Creep has identifiable causes; act on each cause.
+- Keep a traceability table so the impact of a change is visible.
+- Every change gets an impact assessment, options and a logged decision.
+- Trade-offs are made openly, never silently through reduced quality.

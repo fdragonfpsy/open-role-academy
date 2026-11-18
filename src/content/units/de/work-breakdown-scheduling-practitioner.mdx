@@ -1,0 +1,84 @@
+---
+id: work-breakdown-scheduling-practitioner
+competency: work-breakdown-scheduling
+level: practitioner
+title: "Abhängigkeiten, Schätzungen und der kritische Pfad"
+objectives:
+  - "Abhängigkeiten zwischen Aktivitäten festhalten."
+  - "Mit Spannen statt mit Einzelwerten schätzen."
+  - "Den kritischen Pfad und die Puffer der übrigen Aktivitäten finden."
+  - "Erklären, was zu tun ist, wenn eine kritische Aktivität rutscht."
+minutes: 20
+resources:
+  - wikipedia-de-netzplantechnik
+  - wikipedia-de-kritischer-pfad
+  - wikipedia-pert
+  - wikipedia-work-breakdown-structure
+  - wikipedia-de-gantt-diagramm
+status: ai-draft
+sources:
+  - title: "Netzplantechnik"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Netzplantechnik
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Methode des kritischen Pfades"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Kritischer_Pfad
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Program evaluation and review technique"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Program_evaluation_and_review_technique
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Work breakdown structure"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Work_breakdown_structure
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Gantt-Diagramm"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Gantt-Diagramm
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Ein Balkenplan, der Aufgaben nebeneinanderstellt, sieht aus wie ein Plan, sagt aber nicht, welche Aufgabe welche blockiert. Abhängigkeiten und der kritische Pfad zeigen dir, wo eine Verzögerung den Endtermin trifft und wo nicht.
+
+## Abhängigkeiten
+
+Ein Netzplan beschreibt, wie Aktivitäten zeitlich aufeinander folgen. Aktivitäten sind Knoten, Pfeile zeigen die Reihenfolge. Die übliche Beziehung ist Ende-Anfang: B kann beginnen, wenn A beendet ist. Netzpläne kennen auch Anfang-Anfang-, Ende-Ende- und Anfang-Ende-Beziehungen. Notiere, warum jede Abhängigkeit besteht: Eine echte Bedingung (die Wände müssen trocken sein, bevor gestrichen wird) unterscheidet sich von einer Vorliebe (wir machen meist erst A), und nur die erste muss bleiben.
+
+## Schätzen
+
+Aufwand ist die Arbeit in Personentagen; Dauer ist die vergangene Kalenderzeit. Beide unterscheiden sich: Zwei Tage Aufwand können eine Woche dauern, wenn die Person an drei Dingen arbeitet. PERT, eine Technik aus den späten 1950er-Jahren, erlaubt drei Zeitschätzungen je Aktivität: optimistisch, erwartet und pessimistisch, und bezieht damit Unsicherheit ein. Unsere eigene Gewohnheit: nach einer Spanne fragen und danach, was die hohe Zahl auslösen würde. Unsere eigene Präferenz: Die Menschen, die die Arbeit tun werden, schätzen, und das Ergebnis wird mit ähnlicher früherer Arbeit verglichen.
+
+## Kritischer Pfad
+
+Die Idee hinter Netzplänen: Wenige Aktivitäten, die den längsten Pfad durch das Netz bilden, bestimmen die Dauer des gesamten Projekts. Das sind die kritischen Aktivitäten, ihre Abfolge ist der kritische Pfad. Werden sie früh erkannt, können früh Gegenmaßnahmen beginnen, und das Management kann sich auf sie konzentrieren. Unkritische Aktivitäten haben Pufferzeit: Jede Aktivität hat eine früheste mögliche und eine späteste erlaubte Lage, und die Differenz ist der Puffer. Sie können innerhalb ihres Puffers umgeplant werden, ohne den Endtermin zu verschieben.
+
+## Von Hand rechnen (unsere eigenen Schritte)
+
+- Jede Aktivität mit Dauer und Vorgängern aufschreiben.
+- Vorwärtsrechnung: Das früheste Ende einer Aktivität ist ihr frühester Start plus Dauer; ein Nachfolger startet beim spätesten der frühesten Enden seiner Vorgänger.
+- Die Projektdauer ist das späteste der frühesten Enden.
+- Die Rückwärtsrechnung vom Ende liefert die spätesten Zeiten; die Differenz ist der Puffer.
+
+## Praxisbeispiel
+
+Nur zur Veranschaulichung; erfundene Zahlen. Zwei Pfade führen zu „Go-live“ (1 Tag). Pfad 1: A „Hardware bestellen“ (2 Tage), C „Installieren“ (3 Tage). Pfad 2: B „Schulung schreiben“ (4 Tage), D „Schulung durchführen“ (2 Tage). Pfad 1 dauert 2 + 3 = 5 Tage, Pfad 2 dauert 4 + 2 = 6 Tage, also ist Pfad 2 kritisch, und das Projekt dauert mit dem Go-live 7 Tage. Pfad 1 hat einen Tag Puffer. Verzögert sich die Hardwarelieferung um einen Tag, ändert sich nichts; verzögert sich der Schulungstext um einen Tag, verschiebt sich der Go-live um einen Tag. Die Projektleiterin beobachtet deshalb B und D genau.
+
+## Wichtigste Erkenntnisse
+
+- Halte fest, warum eine Abhängigkeit besteht; nur echte Bedingungen müssen bleiben.
+- Schätze mit Spannen und frage die Menschen, die die Arbeit tun.
+- Der kritische Pfad ist die längste Kette; Verzug dort verschiebt den Endtermin.
+- Unkritische Aktivitäten haben Puffer, den du zum Umplanen nutzen kannst.

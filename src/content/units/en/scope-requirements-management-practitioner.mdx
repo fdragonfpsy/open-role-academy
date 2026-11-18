@@ -1,0 +1,81 @@
+---
+id: scope-requirements-management-practitioner
+competency: scope-requirements-management
+level: practitioner
+title: "Requirements that can be tested: criteria, priorities and sources"
+objectives:
+  - "Write requirements with acceptance criteria that can be verified."
+  - "Spot weak wording that hides ambiguity."
+  - "Prioritise with Must, Should, Could and Won't."
+  - "Collect requirements from several stakeholder groups."
+minutes: 20
+resources:
+  - wikipedia-de-anforderungsmanagement
+  - wikipedia-moscow-method
+  - wikipedia-de-pflichtenheft
+  - wikipedia-scope-project-management
+status: ai-draft
+sources:
+  - title: "Anforderungsmanagement"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Anforderungsmanagement
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "MoSCoW method"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/MoSCoW_method
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Pflichtenheft"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Pflichtenheft
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Scope (project management)"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Scope_(project_management)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+"The system must be fast" cannot be accepted or rejected. A requirement that cannot be checked will be argued about at handover. Your task as a practitioner is to turn wishes into statements that two people read the same way.
+
+## Quality of a requirement
+
+Requirements management aims at a shared understanding between customer and supplier. Quality criteria for requirements documentation include being understandable, unambiguous, traceable, free of contradictions, complete, and verifiable and testable. Good practice is short sentences and avoiding vague words such as "faster". A requirement should also state how its fulfilment can be checked, through verification, test or acceptance criteria.
+
+## A requirement format (our own)
+
+Our own four-part format:
+
+- Who: the role that needs it.
+- Needs: the capability, without naming the solution.
+- So that: the benefit, so that you can judge alternatives.
+- Accepted when: a check with a number, a date or a yes/no observation.
+
+"Staff need to find the leave policy quickly" becomes: "Employees need to find the leave policy so that they do not ask HR. Accepted when five test users find it in under 30 seconds."
+
+## Prioritising with MoSCoW
+
+MoSCoW is a prioritisation technique that creates a common understanding with stakeholders about how important each requirement is. Must have: critical for success of the current delivery, and if one is missing the delivery counts as failed. Should have: important but not necessary for this delivery. Could have: desirable but not necessary. Won't have: agreed to be left out this time. It is often used with a fixed deadline, so that Should and Could items are the first to go when time is short. Our own rule: no more than about half the effort on Musts, or there is no room to manoeuvre.
+
+## Sources and documents
+
+Collect requirements from every group that uses, pays for, operates or is affected by the result, and ask for examples of daily work rather than for feature lists. In customer-supplier settings, the customer describes what is needed, and the supplier answers with a document describing how it will be solved; the work should start only after the customer accepts that answer. A good habit in that answer is to state explicitly which cases are included and which are excluded.
+
+## Worked example
+
+Illustration only; invented company. For an intranet search project, three requirements arrive: "fast search", "find forms", "mobile". The practitioner rewrites them. Fast search becomes "results in under two seconds for 95 % of test queries". Find forms becomes "the ten most-used forms appear on the first results page". Mobile is split: reading on a phone is a Should, filling forms on a phone a Could. The sponsor agrees, and the Won't list contains "search in attachments".
+
+## Key takeaways
+
+- Every requirement needs a way to check it.
+- Replace vague words with numbers or observable behaviour.
+- Use Must, Should, Could and Won't to agree on priorities openly.
+- Ask all stakeholder groups, and write what is excluded too.
