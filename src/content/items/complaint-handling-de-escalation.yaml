@@ -1,0 +1,290 @@
+competency: complaint-handling-de-escalation
+items:
+  - id: chd-f-chance
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "Why is a customer complaint described as a second chance?"
+      de: "Warum gilt eine Kundenbeschwerde als zweite Chance?"
+    options:
+      - en: "Many dissatisfied customers leave silently, so a complaint lets you fix the problem and keep them"
+        de: "Viele unzufriedene Kunden wenden sich still ab, daher kannst du mit einer Beschwerde das Problem lösen und sie halten"
+        correct: true
+      - en: "Complaints show that the customer will certainly buy again and no further effort is needed to keep them"
+        de: "Beschwerden zeigen, dass die Kundschaft sicher wieder kauft und es keinen weiteren Aufwand braucht, sie zu halten"
+        correct: false
+      - en: "Complaints let the company avoid refunds"
+        de: "Beschwerden erlauben es dem Unternehmen, Erstattungen zu vermeiden"
+        correct: false
+      - en: "A complaint always means the product is faulty"
+        de: "Eine Beschwerde bedeutet immer, dass das Produkt fehlerhaft ist"
+        correct: false
+    explanation:
+      en: "Experience suggests most unhappy customers turn away without contact. A complaint gives you information and an opportunity to restore satisfaction. It does not guarantee loyalty, and the cause may be service rather than product."
+      de: "Erfahrungsgemäß wenden sich die meisten unzufriedenen Kundinnen und Kunden ohne weiteren Kontakt ab. Eine Beschwerde liefert Informationen und die Chance, Zufriedenheit wiederherzustellen. Sie garantiert keine Treue, und die Ursache kann im Service statt im Produkt liegen."
+    source: https://de.wikipedia.org/wiki/Beschwerdemanagement
+  - id: chd-f-steps
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "A customer says the parcel arrived late. Which first reply fits the four steps acknowledge, clarify, offer, confirm?"
+      de: "Eine Kundin sagt, das Paket sei zu spät gekommen. Welche erste Antwort passt zu den vier Schritten anerkennen, klären, anbieten, bestätigen?"
+    options:
+      - en: "\"Delays happen; the carrier is responsible for this.\""
+        de: "„Verspätungen kommen vor; dafür ist der Paketdienst zuständig.“"
+        correct: false
+      - en: "\"Please read our delivery terms on our website.\""
+        de: "„Bitte lies unsere Lieferbedingungen auf der Website.“"
+        correct: false
+      - en: "\"We will send you a voucher.\""
+        de: "„Wir schicken dir einen Gutschein.“"
+        correct: false
+      - en: "\"Thank you for telling us. Could you give me your order number? Then I will check and write to you by tomorrow.\""
+        de: "„Danke für den Hinweis. Kannst du mir deine Bestellnummer nennen? Dann prüfe ich und schreibe dir bis morgen.“"
+        correct: true
+    explanation:
+      en: "The correct reply acknowledges, asks for facts and gives a next step with a time. The others defend, deflect or offer a remedy before the facts are known."
+      de: "Die richtige Antwort erkennt an, fragt Fakten ab und nennt einen nächsten Schritt mit Zeitpunkt. Die anderen verteidigen, lenken ab oder bieten eine Lösung an, bevor die Fakten bekannt sind."
+    source: https://de.wikipedia.org/wiki/Beschwerdemanagement
+  - id: chd-f-calm
+    level: foundation
+    difficulty: 1000
+    type: multi
+    stem:
+      en: "Which behaviours help to calm an upset customer? Select all that apply."
+      de: "Welche Verhaltensweisen helfen, eine verärgerte Person zu beruhigen? Wähle alle zutreffenden aus."
+    options:
+      - en: "Avoiding negatively loaded words"
+        de: "Negativ besetzte Wörter vermeiden"
+        correct: true
+      - en: "Explaining at once why the customer is wrong"
+        de: "Sofort erklären, warum die Kundschaft im Unrecht ist"
+        correct: false
+      - en: "Active listening without interrupting"
+        de: "Aktives Zuhören, ohne zu unterbrechen"
+        correct: true
+      - en: "Calm, non-aggressive wording"
+        de: "Ruhige, nicht-aggressive Wortwahl"
+        correct: true
+    explanation:
+      en: "Non-aggressive wording, active listening and avoiding loaded words are named de-escalation measures. Arguing about who is right before you know the facts tends to raise the tension."
+      de: "Nicht-aggressive Wortwahl, aktives Zuhören und der Verzicht auf negativ besetzte Wörter gelten als deeskalierend. Darüber zu streiten, wer recht hat, bevor die Fakten bekannt sind, steigert meist die Spannung."
+    source: https://de.wikipedia.org/wiki/Deeskalation
+  - id: chd-f-record
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "Why should you record a complaint completely in the case?"
+      de: "Warum solltest du eine Beschwerde vollständig im Fall festhalten?"
+    options:
+      - en: "Only to meet an audit rule, not for the work itself"
+        de: "Nur, um eine Prüfvorgabe zu erfüllen, nicht für die Arbeit selbst"
+        correct: false
+      - en: "So colleagues can continue without asking the customer again, and the data can be analysed later"
+        de: "Damit Kolleginnen und Kollegen ohne erneute Rückfrage weiterarbeiten können und die Daten später auswertbar sind"
+        correct: true
+      - en: "Because the record proves the customer was wrong"
+        de: "Weil die Dokumentation belegt, dass die Kundschaft im Unrecht war"
+        correct: false
+      - en: "Because complaints must be kept secret from other teams so that nobody compares cases and finds patterns"
+        de: "Weil Beschwerden vor anderen Teams geheim bleiben müssen, damit niemand Fälle vergleicht und Muster findet"
+        correct: false
+    explanation:
+      en: "Complete records avoid repeat questions and feed the later evaluation of what goes wrong most often. A record is a working tool, not evidence against the customer."
+      de: "Vollständige Aufzeichnungen vermeiden Rückfragen und speisen die spätere Auswertung, was am häufigsten schiefgeht. Eine Dokumentation ist ein Arbeitsmittel, kein Beweis gegen die Kundschaft."
+    source: https://de.wikipedia.org/wiki/Beschwerdemanagement
+  - id: chd-p-listen
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "A customer says: \"Nobody ever tells me anything!\" Which reply uses active listening?"
+      de: "Ein Kunde sagt: „Mir sagt nie jemand etwas!“ Welche Antwort nutzt aktives Zuhören?"
+    options:
+      - en: "\"So you have not received any updates about your order, and that is frustrating. Let me check what happened.\""
+        de: "„Sie haben also keine Neuigkeiten zu Ihrer Bestellung erhalten, und das ist ärgerlich. Ich prüfe, was passiert ist.“"
+        correct: true
+      - en: "\"That is not true; we sent you an email last week.\""
+        de: "„Das stimmt nicht; wir haben Ihnen letzte Woche eine E-Mail geschickt.“"
+        correct: false
+      - en: "\"Please calm down.\""
+        de: "„Bitte beruhigen Sie sich.“"
+        correct: false
+      - en: "\"I understand how you feel, everyone is upset about this.\""
+        de: "„Ich verstehe, wie es Ihnen geht; alle sind darüber verärgert.“"
+        correct: false
+    explanation:
+      en: "Active listening restates the core in your own words and moves to action. Contradicting, telling someone to calm down or claiming to know their feelings usually raises the tension."
+      de: "Aktives Zuhören gibt den Kern mit eigenen Worten wieder und geht zur Handlung über. Widersprechen, zur Ruhe auffordern oder zu behaupten, man kenne die Gefühle, steigert meist die Spannung."
+    source: https://de.wikipedia.org/wiki/Deeskalation
+  - id: chd-p-styles
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "A customer demands a refund you may not grant, but the real problem is a missing spare part. What is the best way to handle the conflict?"
+      de: "Ein Kunde verlangt eine Erstattung, die du nicht gewähren darfst, das eigentliche Problem ist aber ein fehlendes Ersatzteil. Was ist der beste Umgang mit dem Konflikt?"
+    options:
+      - en: "Yield and grant the refund to end the discussion"
+        de: "Nachgeben und die Erstattung gewähren, um die Diskussion zu beenden"
+        correct: false
+      - en: "Avoid the subject until the customer stops asking"
+        de: "Das Thema meiden, bis die Kundschaft nicht mehr fragt"
+        correct: false
+      - en: "Insist on the policy as written and end the contact so the discussion does not continue"
+        de: "Auf der Richtlinie wie geschrieben bestehen und den Kontakt beenden, damit die Diskussion nicht weitergeht"
+        correct: false
+      - en: "Look for the core need together and solve the spare-part problem cooperatively"
+        de: "Gemeinsam den Kern des Bedürfnisses suchen und das Ersatzteilproblem kooperativ lösen"
+        correct: true
+    explanation:
+      en: "A conflict is solved only when its core is found and worked on. Yielding, avoiding or insisting each leave the need unaddressed, and yielding here also exceeds your authority."
+      de: "Ein Konflikt ist erst gelöst, wenn sein Kern gefunden und bearbeitet wurde. Nachgeben, Meiden oder Beharren lassen das Bedürfnis unbeachtet, und Nachgeben überschreitet hier zudem deine Befugnis."
+    source: https://de.wikipedia.org/wiki/Deeskalation
+  - id: chd-p-remedy
+    level: practitioner
+    difficulty: 1250
+    type: multi
+    stem:
+      en: "Which of these are remedies you can offer within your authority, if your company allows them? Select all that apply."
+      de: "Welche dieser Lösungen kannst du im Rahmen deiner Befugnis anbieten, sofern dein Unternehmen sie erlaubt? Wähle alle zutreffenden aus."
+    options:
+      - en: "A clear next step with a date"
+        de: "Ein klarer nächster Schritt mit Datum"
+        correct: true
+      - en: "A binding statement on the customer's legal rights in this case"
+        de: "Eine verbindliche Aussage zu den Rechten der Kundschaft in diesem Fall"
+        correct: false
+      - en: "An apology that names what went wrong"
+        de: "Eine Entschuldigung, die benennt, was schiefgelaufen ist"
+        correct: true
+      - en: "A replacement or repair under the warranty process"
+        de: "Ersatz oder Reparatur im Gewährleistungsprozess"
+        correct: true
+    explanation:
+      en: "Responses can be material (warranty fulfilment) or non-material (apology). Whether a legal claim exists in a specific case is a question for legal counsel, not for the agent."
+      de: "Reaktionen können materiell (Gewährleistung) oder immateriell (Entschuldigung) sein. Ob im Einzelfall ein Rechtsanspruch besteht, ist eine Frage für die Rechtsberatung, nicht für die Mitarbeitenden."
+    source: https://de.wikipedia.org/wiki/Beschwerdemanagement
+  - id: chd-p-reply
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "Which written reply follows the pattern: name the issue, own what is ours, state the next step with a date?"
+      de: "Welche schriftliche Antwort folgt dem Muster: Anliegen benennen, Eigenes einräumen, nächsten Schritt mit Datum nennen?"
+    options:
+      - en: "\"Please be patient; our team is very busy at this time.\""
+        de: "„Bitte hab Geduld; unser Team hat gerade sehr viel zu tun.“"
+        correct: false
+      - en: "\"You were charged twice, and that was our error. I have asked accounting to refund the second charge and will confirm by Friday.\""
+        de: "„Dir wurde zweimal abgebucht, und das war unser Fehler. Ich habe die Buchhaltung um Erstattung der zweiten Abbuchung gebeten und bestätige dir das bis Freitag.“"
+        correct: true
+      - en: "\"We apologise for any inconvenience and will look into the matter.\""
+        de: "„Wir entschuldigen uns für etwaige Unannehmlichkeiten und prüfen die Angelegenheit.“"
+        correct: false
+      - en: "\"Double charges can happen because banks process payments in different ways.\""
+        de: "„Doppelte Abbuchungen können vorkommen, weil Banken Zahlungen unterschiedlich verarbeiten.“"
+        correct: false
+    explanation:
+      en: "Only the first reply names the issue, admits the error and gives a dated next step. The others are generic, shift blame or give no commitment."
+      de: "Nur die erste Antwort benennt das Anliegen, räumt den Fehler ein und nennt einen datierten nächsten Schritt. Die anderen sind allgemein, schieben die Schuld weg oder verpflichten zu nichts."
+    source: https://openstax.org/books/principles-marketing/pages/11-3-the-gap-model-of-service-quality
+  - id: chd-a-indirect
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "What is the purpose of the indirect complaint management process?"
+      de: "Was ist der Zweck des indirekten Beschwerdemanagementprozesses?"
+    options:
+      - en: "Evaluating, controlling and reporting complaints inside the company so causes can be removed"
+        de: "Beschwerden im Unternehmen auswerten, steuern und berichten, damit Ursachen beseitigt werden können"
+        correct: true
+      - en: "Replying to customers faster than the direct process"
+        de: "Kundschaft schneller antworten als im direkten Prozess"
+        correct: false
+      - en: "Reducing the number of complaints that customers can submit"
+        de: "Die Zahl der Beschwerden zu verringern, die Kundschaft einreichen kann"
+        correct: false
+      - en: "Handling only those complaints that involve a legal claim"
+        de: "Nur Beschwerden mit rechtlichem Anspruch zu bearbeiten"
+        correct: false
+    explanation:
+      en: "The direct process deals with the customer; the indirect one evaluates complaint volume and causes, controls tasks and costs and reports to decision makers. Its aim is learning, not suppressing complaints."
+      de: "Der direkte Prozess betrifft die Kundschaft; der indirekte wertet Menge und Ursachen aus, steuert Aufgaben und Kosten und berichtet an Entscheidende. Sein Ziel ist Lernen, nicht das Unterdrücken von Beschwerden."
+    source: https://de.wikipedia.org/wiki/Beschwerdemanagement
+  - id: chd-a-evidence
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "A team has few complaints and concludes customers are satisfied. Which question challenges that conclusion best?"
+      de: "Ein Team hat wenige Beschwerden und schließt daraus, dass die Kundschaft zufrieden ist. Welche Frage stellt diesen Schluss am besten infrage?"
+    options:
+      - en: "How quickly and how politely do we answer the few complaints that we do get from customers?"
+        de: "Wie schnell und wie höflich beantworten wir die wenigen Beschwerden, die wir von Kundschaft bekommen?"
+        correct: false
+      - en: "How polite is the wording of the complaints?"
+        de: "Wie höflich sind die Beschwerden formuliert?"
+        correct: false
+      - en: "How many agents handle complaints?"
+        de: "Wie viele Mitarbeitende bearbeiten Beschwerden?"
+        correct: false
+      - en: "How much of customers' dissatisfaction actually reaches us as complaints?"
+        de: "Welcher Teil der Unzufriedenheit erreicht uns überhaupt als Beschwerde?"
+        correct: true
+    explanation:
+      en: "Many unhappy customers leave without complaining, so a low count may mean poor channels or silent churn. Evidence controlling asks what share of dissatisfaction is voiced at all."
+      de: "Viele unzufriedene Kunden gehen, ohne sich zu beschweren, daher kann eine niedrige Zahl auf schlechte Kanäle oder stille Abwanderung hindeuten. Das Evidenz-Controlling fragt, welcher Anteil der Unzufriedenheit überhaupt geäußert wird."
+    source: https://de.wikipedia.org/wiki/Beschwerdemanagement
+  - id: chd-a-goodwill
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "A customer asks for a goodwill voucher after a justified but minor delay. It is not covered by your rules. What is the most defensible decision?"
+      de: "Eine Kundin bittet nach einer berechtigten, aber kleinen Verzögerung um einen Kulanzgutschein. Er ist von deinen Regeln nicht gedeckt. Was ist die vertretbarste Entscheidung?"
+    options:
+      - en: "Refuse and close the case without further offer"
+        de: "Ablehnen und den Fall ohne weiteres Angebot schließen"
+        correct: false
+      - en: "Grant it but not record it, to avoid precedent"
+        de: "Ihn gewähren, aber nicht dokumentieren, um keinen Präzedenzfall zu schaffen"
+        correct: false
+      - en: "Offer what is within your limits, explain why, and pass the voucher request to a decision maker"
+        de: "Das anbieten, was in deinem Rahmen liegt, den Grund erklären und die Gutscheinfrage an eine entscheidende Stelle geben"
+        correct: true
+      - en: "Grant the voucher at once to avoid a bad review and keep the customer from posting about the delay in public"
+        de: "Den Gutschein sofort gewähren, um eine schlechte Bewertung zu vermeiden und zu verhindern, dass die Kundin öffentlich über die Verzögerung schreibt"
+        correct: false
+    explanation:
+      en: "Goodwill should fix the need, be fair to others in the same situation and stay within decision limits. Granting outside limits, hiding it or refusing without an alternative each fail one of these tests."
+      de: "Kulanz soll den Bedarf lösen, anderen in gleicher Lage gegenüber fair sein und im Entscheidungsrahmen bleiben. Gewähren außerhalb des Rahmens, Verheimlichen oder Ablehnen ohne Alternative scheitern jeweils an einem dieser Tests."
+    source: https://openstax.org/books/principles-marketing/pages/11-3-the-gap-model-of-service-quality
+  - id: chd-a-escalate
+    level: advanced
+    difficulty: 1600
+    type: multi
+    stem:
+      en: "Which situations call for early escalation rather than handling alone? Select all that apply."
+      de: "Welche Situationen verlangen eine frühe Eskalation statt Bearbeitung allein? Wähle alle zutreffenden aus."
+    options:
+      - en: "The customer asked the same question twice during one call"
+        de: "Die Kundschaft hat im Gespräch dieselbe Frage zweimal gestellt"
+        correct: false
+      - en: "A customer threatens legal action"
+        de: "Die Kundschaft droht mit rechtlichen Schritten"
+        correct: true
+      - en: "The same problem has already failed to be fixed twice"
+        de: "Dasselbe Problem wurde schon zweimal nicht behoben"
+        correct: true
+      - en: "The case needs a refund above your approval limit"
+        de: "Der Fall braucht eine Erstattung über deiner Freigabegrenze"
+        correct: true
+    explanation:
+      en: "Thresholds such as legal threats, repeated failure and missing authority justify escalation. A repeated question in one call is a sign of unclear explanation, not a trigger for escalation."
+      de: "Schwellen wie rechtliche Drohung, wiederholtes Scheitern und fehlende Befugnis rechtfertigen Eskalation. Eine wiederholte Frage im Gespräch deutet auf eine unklare Erklärung, nicht auf einen Eskalationsanlass."
+    source: https://en.wikipedia.org/wiki/Customer_support

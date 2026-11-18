@@ -1,0 +1,290 @@
+competency: ticketing-knowledge-base
+items:
+  - id: tkb-f-ticket
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "What is a ticket in a customer service system?"
+      de: "Was ist ein Ticket in einem Kundenservice-System?"
+    options:
+      - en: "A record of one customer issue that can be categorised, assigned and tracked until resolved"
+        de: "Ein Datensatz zu einem Kundenanliegen, der kategorisiert, zugewiesen und bis zur Lösung verfolgt werden kann"
+        correct: true
+      - en: "An entry pass that customers need to show before they are allowed to call the service hotline during opening hours"
+        de: "Eine Eintrittskarte, die Kundschaft vorzeigen muss, bevor sie während der Öffnungszeiten die Service-Hotline anrufen darf"
+        correct: false
+      - en: "A discount voucher given for a long wait"
+        de: "Ein Rabattgutschein für eine lange Wartezeit"
+        correct: false
+      - en: "A weekly report of all complaints"
+        de: "Ein Wochenbericht über alle Beschwerden"
+        correct: false
+    explanation:
+      en: "Ticketing systems log each issue as a discrete record. It is a work item, not a voucher or a report."
+      de: "Ticketsysteme erfassen jedes Anliegen als eigenen Datensatz. Es ist ein Arbeitsvorgang, kein Gutschein und kein Bericht."
+    source: https://en.wikipedia.org/wiki/Customer_support
+  - id: tkb-f-fields
+    level: foundation
+    difficulty: 950
+    type: multi
+    stem:
+      en: "Which details belong in a good ticket? Select all that apply."
+      de: "Welche Angaben gehören in ein gutes Ticket? Wähle alle zutreffenden aus."
+    options:
+      - en: "Facts such as order number and dates"
+        de: "Fakten wie Bestellnummer und Daten"
+        correct: true
+      - en: "The next step with an owner and date"
+        de: "Der nächste Schritt mit verantwortlicher Person und Datum"
+        correct: true
+      - en: "Your personal opinion on whether the customer is annoying"
+        de: "Deine persönliche Meinung, ob die Kundschaft nervt"
+        correct: false
+      - en: "The customer's problem in their own words"
+        de: "Das Problem der Kundschaft in ihren eigenen Worten"
+        correct: true
+    explanation:
+      en: "A ticket should let a colleague continue without asking again, so it needs the problem, facts and next step. Opinions about the person do not help and may be read later."
+      de: "Ein Ticket soll es einer Kollegin erlauben, ohne Rückfrage weiterzuarbeiten, also braucht es Problem, Fakten und nächsten Schritt. Meinungen über die Person helfen nicht und können später gelesen werden."
+    source: https://openstax.org/books/principles-marketing/pages/1-6-customer-relationship-management-crm
+  - id: tkb-f-status
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "You asked the customer for a photo and wait for the answer. Which status fits best?"
+      de: "Du hast die Kundschaft um ein Foto gebeten und wartest auf die Antwort. Welcher Status passt am besten?"
+    options:
+      - en: "New"
+        de: "Neu"
+        correct: false
+      - en: "In progress by a colleague"
+        de: "In Bearbeitung bei einer Kollegin"
+        correct: false
+      - en: "Waiting for customer"
+        de: "Wartet auf Kundschaft"
+        correct: true
+      - en: "Solved"
+        de: "Gelöst"
+        correct: false
+    explanation:
+      en: "\"Waiting for customer\" shows that the next move is the customer's. Closing as solved hides an open case, and the other statuses suggest work is being done."
+      de: "„Wartet auf Kundschaft“ zeigt, dass der nächste Schritt bei der Kundschaft liegt. Ein Schließen als gelöst verbirgt einen offenen Fall, und die anderen Status suggerieren laufende Arbeit."
+    source: https://en.wikipedia.org/wiki/Customer_support
+  - id: tkb-f-faq
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "What is an FAQ?"
+      de: "Was ist eine FAQ?"
+    options:
+      - en: "A contract about response times"
+        de: "Ein Vertrag über Reaktionszeiten"
+        correct: false
+      - en: "A collection of frequently asked questions with their answers on a topic"
+        de: "Eine Zusammenstellung häufig gestellter Fragen mit Antworten zu einem Thema"
+        correct: true
+      - en: "A list of the customers who have complained most often about our products and services"
+        de: "Eine Liste der Kundschaft, die sich am häufigsten über unsere Produkte und Leistungen beschwert hat"
+        correct: false
+      - en: "A form for reporting software faults"
+        de: "Ein Formular zum Melden von Softwarefehlern"
+        correct: false
+    explanation:
+      en: "FAQ means frequently asked questions. The idea began with internet discussion groups that wanted to relieve their forums; response-time contracts are SLAs."
+      de: "FAQ steht für „häufig gestellte Fragen“. Die Idee entstand in Internet-Diskussionsgruppen, die ihre Foren entlasten wollten; Verträge über Reaktionszeiten sind SLAs."
+    source: https://de.wikipedia.org/wiki/Frequently_Asked_Questions
+  - id: tkb-p-priority
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "Which ticket should be handled first?"
+      de: "Welches Ticket sollte zuerst bearbeitet werden?"
+    options:
+      - en: "The checkout page fails for many customers"
+        de: "Die Kasse im Shop fällt für viele Kundinnen und Kunden aus"
+        correct: true
+      - en: "A customer asks for a new colour of a product"
+        de: "Ein Kunde wünscht eine neue Farbe eines Produkts"
+        correct: false
+      - en: "A customer who writes very politely wants a copy of an invoice"
+        de: "Eine sehr höflich schreibende Kundin möchte eine Rechnungskopie"
+        correct: false
+      - en: "The ticket that has been open the longest, whatever the topic"
+        de: "Das am längsten offene Ticket, egal zu welchem Thema"
+        correct: false
+    explanation:
+      en: "Priority follows impact and urgency: many people affected and blocked purchases come first. Politeness or age alone is not a priority rule, though age matters for SLAs."
+      de: "Die Priorität folgt Auswirkung und Dringlichkeit: viele Betroffene und blockierte Käufe kommen zuerst. Höflichkeit oder Alter allein sind keine Prioritätsregel, auch wenn das Alter für SLAs zählt."
+    source: https://de.wikipedia.org/wiki/Service-Level-Agreement
+  - id: tkb-p-sla
+    level: practitioner
+    difficulty: 1200
+    type: multi
+    stem:
+      en: "What can a service level agreement (SLA) define? Select all that apply."
+      de: "Was kann ein Service-Level-Agreement (SLA) festlegen? Wähle alle zutreffenden aus."
+    options:
+      - en: "Availability"
+        de: "Die Verfügbarkeit"
+        correct: true
+      - en: "Reaction time of the provider"
+        de: "Die Reaktionszeit des Anbieters"
+        correct: true
+      - en: "The customer's personal preferences for tone of voice"
+        de: "Die persönlichen Vorlieben der Kundschaft für den Tonfall"
+        correct: false
+      - en: "The scope of the service"
+        de: "Den Umfang der Leistung"
+        correct: true
+    explanation:
+      en: "An SLA describes the agreed service quality: scope, availability and reaction times. Tone preferences are not part of that agreement."
+      de: "Ein SLA beschreibt die vereinbarte Leistungsqualität: Umfang, Verfügbarkeit und Reaktionszeiten. Tonvorlieben gehören nicht zu dieser Vereinbarung."
+    source: https://de.wikipedia.org/wiki/Service-Level-Agreement
+  - id: tkb-p-notes
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "Which case note allows a colleague to continue?"
+      de: "Welche Fallnotiz erlaubt es einer Kollegin, weiterzumachen?"
+    options:
+      - en: "\"Call 14:05. Spoke about the lamp. Will see.\""
+        de: "„Anruf 14:05. Über die Lampe gesprochen. Mal sehen.“"
+        correct: false
+      - en: "\"Customer is difficult; ask someone else to continue.\""
+        de: "„Kunde ist schwierig; jemand anderes soll weitermachen.“"
+        correct: false
+      - en: "\"Facts: order 4711, lamp cracked, photo attached. Done: replacement ordered. Promised: tracking by Thursday. Next: Ben checks on Thursday.\""
+        de: "„Fakten: Bestellung 4711, Lampe gerissen, Foto angehängt. Getan: Ersatz bestellt. Zugesagt: Tracking bis Donnerstag. Weiter: Ben prüft am Donnerstag.“"
+        correct: true
+      - en: "\"Customer angry again, handled.\""
+        de: "„Kunde wieder sauer, erledigt.“"
+        correct: false
+    explanation:
+      en: "Good notes hold facts, what was done, what was promised and the next step. The others are vague, opinionated or give no next step."
+      de: "Gute Notizen enthalten Fakten, Getanes, Zugesagtes und den nächsten Schritt. Die anderen sind vage, wertend oder nennen keinen nächsten Schritt."
+    source: https://openstax.org/books/principles-marketing/pages/1-6-customer-relationship-management-crm
+  - id: tkb-p-article
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "Which knowledge article title is best for findability?"
+      de: "Welcher Titel eines Wissensartikels ist für die Auffindbarkeit am besten?"
+    options:
+      - en: "Process note 17"
+        de: "Prozessnotiz 17"
+        correct: false
+      - en: "How do I change my invoice address?"
+        de: "Wie ändere ich meine Rechnungsadresse?"
+        correct: true
+      - en: "Address management module, release 3.2"
+        de: "Adressverwaltungsmodul, Release 3.2"
+        correct: false
+      - en: "Information"
+        de: "Informationen"
+        correct: false
+    explanation:
+      en: "Customers search with their own words, so a title phrased as their question is found more easily. Internal jargon or vague titles are not."
+      de: "Kundschaft sucht mit ihren eigenen Worten, deshalb wird ein als ihre Frage formulierter Titel leichter gefunden. Interner Fachjargon oder vage Titel nicht."
+    source: https://de.wikipedia.org/wiki/Frequently_Asked_Questions
+  - id: tkb-a-lifecycle
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "A knowledge base has many articles that nobody has reviewed for years. Which action is best?"
+      de: "Eine Wissensdatenbank enthält viele Artikel, die seit Jahren niemand geprüft hat. Welche Maßnahme ist am besten?"
+    options:
+      - en: "Assign owners and review dates, then retire or merge outdated articles"
+        de: "Verantwortliche und Prüfdaten festlegen, dann veraltete Artikel stilllegen oder zusammenführen"
+        correct: true
+      - en: "Add more articles so the old ones are pushed down in search"
+        de: "Mehr Artikel ergänzen, damit die alten in der Suche nach unten rutschen"
+        correct: false
+      - en: "Leave them, because a larger knowledge base always helps customers"
+        de: "Sie belassen, weil eine größere Wissensdatenbank der Kundschaft immer hilft"
+        correct: false
+      - en: "Delete every article older than one year"
+        de: "Jeden Artikel löschen, der älter als ein Jahr ist"
+        correct: false
+    explanation:
+      en: "Articles need owners and reviews, and outdated ones should be retired or merged. Deleting by age alone also removes correct content, and piling up articles hides good answers."
+      de: "Artikel brauchen Verantwortliche und Prüfungen, veraltete sollten stillgelegt oder zusammengeführt werden. Reines Löschen nach Alter entfernt auch richtige Inhalte, und mehr Artikel verstecken gute Antworten."
+    source: https://de.wikipedia.org/wiki/Frequently_Asked_Questions
+  - id: tkb-a-categories
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "Which category scheme best supports later analysis?"
+      de: "Welches Kategorienschema unterstützt die spätere Auswertung am besten?"
+    options:
+      - en: "Several hundred detailed categories, so every case is exact"
+        de: "Mehrere hundert detaillierte Kategorien, damit jeder Fall exakt passt"
+        correct: false
+      - en: "Free-text categories that every agent names as they like"
+        de: "Freitext-Kategorien, die jede Person nach Belieben benennt"
+        correct: false
+      - en: "A single \"other\" category to save time"
+        de: "Eine einzige Kategorie „Sonstiges“, um Zeit zu sparen"
+        correct: false
+      - en: "Few, defined, non-overlapping categories, changed only rarely"
+        de: "Wenige, definierte, überschneidungsfreie Kategorien, die nur selten geändert werden"
+        correct: true
+    explanation:
+      en: "Categories should answer defined questions and stay comparable over time. Too many, free-text or catch-all categories make counts unreliable."
+      de: "Kategorien sollen definierte Fragen beantworten und über die Zeit vergleichbar bleiben. Zu viele, freie oder Sammelkategorien machen Zählungen unzuverlässig."
+    source: https://openstax.org/books/principles-marketing/pages/1-6-customer-relationship-management-crm
+  - id: tkb-a-gaming
+    level: advanced
+    difficulty: 1550
+    type: multi
+    stem:
+      en: "Which behaviours show that ticket targets are being gamed? Select all that apply."
+      de: "Welche Verhaltensweisen zeigen, dass Ticket-Ziele ausgehebelt werden? Wähle alle zutreffenden aus."
+    options:
+      - en: "Setting the status to \"waiting for customer\" without asking anything"
+        de: "Den Status „wartet auf Kundschaft“ setzen, ohne etwas zu fragen"
+        correct: true
+      - en: "Resolving a ticket with a complete answer on the first reply"
+        de: "Ein Ticket mit einer vollständigen Antwort in der ersten Reaktion lösen"
+        correct: false
+      - en: "First replies that say only \"we are looking into it\""
+        de: "Erste Antworten, die nur „wir prüfen“ sagen"
+        correct: true
+      - en: "Closing tickets to stop the clock and seeing many reopen"
+        de: "Tickets schließen, um die Uhr anzuhalten, und viele werden wieder geöffnet"
+        correct: true
+    explanation:
+      en: "Empty first replies, premature closing and a parked status meet targets without helping. A complete first reply is the desired outcome, not gaming."
+      de: "Leere erste Antworten, vorschnelles Schließen und ein geparkter Status erfüllen Ziele, ohne zu helfen. Eine vollständige erste Antwort ist das gewünschte Ergebnis, kein Aushebeln."
+    source: https://openstax.org/books/principles-marketing/pages/11-3-the-gap-model-of-service-quality
+  - id: tkb-a-data
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "Where is the most effective place to act when \"Where is my parcel?\" is the top ticket category?"
+      de: "Wo setzt du am wirksamsten an, wenn „Wo ist mein Paket?“ die häufigste Ticketkategorie ist?"
+    options:
+      - en: "Shorten the answer text to speed up the replies"
+        de: "Den Antworttext kürzen, um die Antworten zu beschleunigen"
+        correct: false
+      - en: "Add tracking steps to an article and the order confirmation, then check whether the category shrinks"
+        de: "Tracking-Schritte in einen Artikel und die Bestellbestätigung aufnehmen und prüfen, ob die Kategorie schrumpft"
+        correct: true
+      - en: "Hire more agents so that the same question can be answered faster by more people at the same time during peak hours"
+        de: "Mehr Mitarbeitende einstellen, damit dieselbe Frage zu Spitzenzeiten von mehr Personen gleichzeitig schneller beantwortet werden kann"
+        correct: false
+      - en: "Remove the category so the report looks better"
+        de: "Die Kategorie entfernen, damit der Bericht besser aussieht"
+        correct: false
+    explanation:
+      en: "Analysis of ticket data should lead to removing the cause of contacts, with an article and proactive information as cheap first steps. Faster answers or hidden categories leave the cause in place."
+      de: "Die Auswertung von Ticketdaten soll dazu führen, die Ursache der Kontakte zu beseitigen, wobei ein Artikel und proaktive Information günstige erste Schritte sind. Schnellere Antworten oder versteckte Kategorien lassen die Ursache bestehen."
+    source: https://openstax.org/books/principles-marketing/pages/1-6-customer-relationship-management-crm

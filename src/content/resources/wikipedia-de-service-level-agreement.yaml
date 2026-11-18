@@ -7,7 +7,7 @@ format: article
 minutes: 15
 license: CC-BY-SA-4.0
 licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
-licenseVerifiedOn: 2026-11-11
+licenseVerifiedOn: 2026-11-18
 mode: link
-competencies: [it-service-management, incident-request-handling]
-levels: [foundation, practitioner]
+competencies: [it-service-management, incident-request-handling, ticketing-knowledge-base]
+levels: [foundation, practitioner, advanced]

@@ -1,0 +1,290 @@
+competency: omnichannel-support
+items:
+  - id: oc-f-channels
+    level: foundation
+    difficulty: 900
+    type: multi
+    stem:
+      en: "Which of these are typical customer support channels? Select all that apply."
+      de: "Welche dieser Kanäle sind typische Kanäle im Kundenservice? Wähle alle zutreffenden aus."
+    options:
+      - en: "Telephone"
+        de: "Telefon"
+        correct: true
+      - en: "Email"
+        de: "E-Mail"
+        correct: true
+      - en: "Live chat"
+        de: "Live-Chat"
+        correct: true
+      - en: "Internal payroll system"
+        de: "Internes Gehaltsabrechnungssystem"
+        correct: false
+    explanation:
+      en: "Support uses telephone, email, live chat, self-service knowledge bases and social media. A payroll system is an internal tool, not a customer channel."
+      de: "Der Kundenservice nutzt Telefon, E-Mail, Live-Chat, Selbstbedienungs-Wissensdatenbanken und soziale Medien. Ein Gehaltssystem ist ein internes Werkzeug, kein Kundenkanal."
+    source: https://en.wikipedia.org/wiki/Customer_support
+  - id: oc-f-subject
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Which email subject line follows good practice?"
+      de: "Welcher E-Mail-Betreff entspricht guter Praxis?"
+    options:
+      - en: "\"Question about something that I need to know about my order, please answer\""
+        de: "„Frage zu etwas, das ich zu meiner Bestellung wissen muss, bitte antworten“"
+        correct: false
+      - en: "\"URGENT!!! READ NOW!!!\""
+        de: "„DRINGEND!!! JETZT LESEN!!!“"
+        correct: false
+      - en: "\"Re: Re: Re: Re: your mail\""
+        de: "„AW: AW: AW: AW: deine Mail“"
+        correct: false
+      - en: "\"Order 4711: delivery date of your replacement chair\""
+        de: "„Bestellung 4711: Liefertermin für deinen Ersatzsessel“"
+        correct: true
+    explanation:
+      en: "A meaningful subject that matches the content helps to grasp and find a mail later. Vague subjects, capitals and exclamation marks work against that."
+      de: "Ein aussagekräftiger Betreff, der zum Inhalt passt, hilft beim Erfassen und späteren Finden. Vage Betreffs, Großbuchstaben und Ausrufezeichen wirken dagegen."
+    source: https://de.wikipedia.org/wiki/Netiquette
+  - id: oc-f-caps
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "Why should you avoid writing whole sentences in capital letters in a customer chat?"
+      de: "Warum solltest du in einem Kundenchat ganze Sätze nicht in Großbuchstaben schreiben?"
+    options:
+      - en: "It makes the message legally invalid"
+        de: "Es macht die Nachricht rechtlich ungültig"
+        correct: false
+      - en: "It slows down the customer's computer"
+        de: "Es verlangsamt den Rechner der Kundschaft"
+        correct: false
+      - en: "It is usually read as shouting"
+        de: "Es wird meist als Schreien gelesen"
+        correct: true
+      - en: "Chat systems cannot display capital letters"
+        de: "Chat-Systeme können Großbuchstaben nicht darstellen"
+        correct: false
+    explanation:
+      en: "Text carries no tone of voice, so capitals are interpreted as aggression. It is a matter of good style, not technology or law."
+      de: "Text hat keinen Stimmklang, daher werden Großbuchstaben als Aggression gelesen. Es ist eine Frage des guten Stils, nicht von Technik oder Recht."
+    source: https://de.wikipedia.org/wiki/Netiquette
+  - id: oc-f-social
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "A customer posts a complaint on your public social media page. What is the best first step?"
+      de: "Eine Kundin postet eine Beschwerde auf eurer öffentlichen Social-Media-Seite. Was ist der beste erste Schritt?"
+    options:
+      - en: "Ignore it until the customer writes by email"
+        de: "Ihn ignorieren, bis die Kundin per E-Mail schreibt"
+        correct: false
+      - en: "Reply briefly and politely, and ask to continue the details in a private message"
+        de: "Kurz und höflich antworten und bitten, die Details in einer privaten Nachricht zu klären"
+        correct: true
+      - en: "Delete the post to protect the brand"
+        de: "Den Beitrag löschen, um die Marke zu schützen"
+        correct: false
+      - en: "Ask for the order number and address in the comment"
+        de: "Im Kommentar nach Bestellnummer und Adresse fragen"
+        correct: false
+    explanation:
+      en: "Comments on social media cannot be controlled and others can read them, so a short public answer plus a private continuation is sensible. Personal data should not be requested in public."
+      de: "Kommentare in sozialen Medien lassen sich nicht kontrollieren und andere können sie lesen, daher sind eine kurze öffentliche Antwort und die private Fortsetzung sinnvoll. Persönliche Daten sollten nicht öffentlich erfragt werden."
+    source: https://openstax.org/books/principles-marketing/pages/16-2-social-media-and-mobile-marketing
+  - id: oc-p-timing
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "A policy says only: \"Answer customers quickly.\" What is the main problem?"
+      de: "Eine Richtlinie sagt nur: „Antworte der Kundschaft schnell.“ Was ist das Hauptproblem?"
+    options:
+      - en: "\"Quickly\" is undefined, so staff and customers read it differently"
+        de: "„Schnell“ ist nicht definiert, daher verstehen Mitarbeitende und Kundschaft es unterschiedlich"
+        correct: true
+      - en: "Speed does not matter in customer service"
+        de: "Tempo spielt im Kundenservice keine Rolle"
+        correct: false
+      - en: "Speed does not matter in customer service as long as the answer is friendly and correct"
+        de: "Tempo spielt im Kundenservice keine Rolle, solange die Antwort freundlich und richtig ist"
+        correct: false
+      - en: "Only phone calls can be answered quickly"
+        de: "Nur Telefonate lassen sich schnell beantworten"
+        correct: false
+    explanation:
+      en: "Responsiveness is a service dimension, but a policy needs concrete targets per channel. Vague wording leads to different behaviour and to unmet expectations."
+      de: "Reaktionsfähigkeit ist eine Dimension der Servicequalität, aber eine Richtlinie braucht konkrete Ziele je Kanal. Unklare Formulierungen führen zu unterschiedlichem Verhalten und enttäuschten Erwartungen."
+    source: https://openstax.org/books/principles-marketing/pages/11-3-the-gap-model-of-service-quality
+  - id: oc-p-switch
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "A customer who emailed on Monday now calls. What should you do first?"
+      de: "Ein Kunde, der am Montag gemailt hat, ruft jetzt an. Was tust du zuerst?"
+    options:
+      - en: "Ask the customer to repeat everything from the beginning so that the information is fresh in mind"
+        de: "Die Kundschaft bitten, alles von Anfang an zu wiederholen, damit die Informationen frisch im Kopf sind"
+        correct: false
+      - en: "Open a new case so that the phone contact is kept separate"
+        de: "Einen neuen Fall anlegen, damit der Telefonkontakt getrennt bleibt"
+        correct: false
+      - en: "Tell the customer to use the same channel as before"
+        de: "Der Kundschaft sagen, sie solle denselben Kanal wie zuvor nutzen"
+        correct: false
+      - en: "Open the existing case and read the earlier notes before you answer"
+        de: "Den bestehenden Fall öffnen und die früheren Notizen lesen, bevor du antwortest"
+        correct: true
+    explanation:
+      en: "CRM and ticket systems store phone calls, emails and chats so that history is available. Reading the case spares the customer from telling the story twice."
+      de: "CRM- und Ticketsysteme speichern Telefonate, E-Mails und Chats, damit der Verlauf verfügbar ist. Das Lesen des Falls erspart der Kundschaft, die Geschichte zweimal zu erzählen."
+    source: https://openstax.org/books/principles-marketing/pages/1-6-customer-relationship-management-crm
+  - id: oc-p-public
+    level: practitioner
+    difficulty: 1250
+    type: multi
+    stem:
+      en: "Which actions are appropriate when moving a case from a public social media thread to a private channel? Select all that apply."
+      de: "Welche Maßnahmen sind angemessen, wenn ein Fall von einem öffentlichen Social-Media-Verlauf in einen privaten Kanal verlagert wird? Wähle alle zutreffenden aus."
+    options:
+      - en: "Log the private contact in the same case"
+        de: "Den privaten Kontakt im selben Fall dokumentieren"
+        correct: true
+      - en: "Share the customer's order details in the thread to show you are helping"
+        de: "Die Bestelldetails im Verlauf nennen, um zu zeigen, dass ihr helft"
+        correct: false
+      - en: "Answer publicly in a short, friendly way"
+        de: "Öffentlich kurz und freundlich antworten"
+        correct: true
+      - en: "Ask only for the data you really need"
+        de: "Nur nach Daten fragen, die du wirklich brauchst"
+        correct: true
+    explanation:
+      en: "A short public answer, minimal data and one case record keep the story together. Order details in a public thread expose personal data; questions on lawful processing go to the data protection officer."
+      de: "Eine kurze öffentliche Antwort, minimale Daten und ein gemeinsamer Fall halten die Geschichte zusammen. Bestelldetails im öffentlichen Verlauf legen personenbezogene Daten offen; Fragen zur rechtmäßigen Verarbeitung gehören zur Datenschutzbeauftragten oder zum Datenschutzbeauftragten."
+    source: https://openstax.org/books/principles-marketing/pages/16-2-social-media-and-mobile-marketing
+  - id: oc-p-tone
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "Which statement about the same answer in chat and in email is most accurate?"
+      de: "Welche Aussage zur gleichen Antwort in Chat und E-Mail trifft am ehesten zu?"
+    options:
+      - en: "Chat answers may be slightly less accurate than email answers because chat is an informal and quick medium"
+        de: "Chat-Antworten dürfen etwas ungenauer sein als E-Mail-Antworten, weil Chat ein informelles und schnelles Medium ist"
+        correct: false
+      - en: "The substance should be the same; only structure, length and speed change"
+        de: "Der Inhalt sollte derselbe sein; nur Struktur, Länge und Tempo ändern sich"
+        correct: true
+      - en: "Chat answers may be less accurate because they are informal"
+        de: "Chat-Antworten dürfen ungenauer sein, weil sie informell sind"
+        correct: false
+      - en: "Email answers should always be longer than the chat answers"
+        de: "E-Mail-Antworten sollten immer länger sein als Chat-Antworten"
+        correct: false
+    explanation:
+      en: "Customers who compare channels expect consistent facts. Form is adapted to the channel; content must not diverge."
+      de: "Kundschaft, die Kanäle vergleicht, erwartet übereinstimmende Fakten. Die Form passt sich dem Kanal an; der Inhalt darf nicht abweichen."
+    source: https://de.wikipedia.org/wiki/Callcenter
+  - id: oc-a-define
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "Which description is closest to the working definition of omnichannel service in this unit?"
+      de: "Welche Beschreibung kommt der Arbeitsdefinition von Omnichannel-Service in dieser Einheit am nächsten?"
+    options:
+      - en: "A customer can switch channel mid-case without repeating themselves and gets the same answer"
+        de: "Kundschaft kann mitten im Fall den Kanal wechseln, ohne sich zu wiederholen, und bekommt dieselbe Antwort"
+        correct: true
+      - en: "The company is present on as many channels as possible, including every new social media platform that appears"
+        de: "Das Unternehmen ist auf möglichst vielen Kanälen vertreten, einschließlich jeder neuen Social-Media-Plattform, die erscheint"
+        correct: false
+      - en: "Every channel has its own team with its own records"
+        de: "Jeder Kanal hat ein eigenes Team mit eigenen Aufzeichnungen"
+        correct: false
+      - en: "All customers are moved to the cheapest channel"
+        de: "Alle Kundinnen und Kunden werden in den günstigsten Kanal gelenkt"
+        correct: false
+    explanation:
+      en: "Being present on many channels is multichannel; omnichannel adds shared records, shared answers and a consistent message. Separate silos and cost-driven steering reproduce the problem."
+      de: "Präsenz auf vielen Kanälen ist Multichannel; Omnichannel ergänzt gemeinsame Aufzeichnungen, gemeinsame Antworten und eine einheitliche Botschaft. Getrennte Silos und kostengetriebene Lenkung wiederholen das Problem."
+    source: https://openstax.org/books/principles-marketing/pages/1-6-customer-relationship-management-crm
+  - id: oc-a-route
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "A customer is very angry about a disputed refund and writes in the chat. Which routing decision is most defensible?"
+      de: "Eine Kundin ist wegen einer strittigen Erstattung sehr verärgert und schreibt im Chat. Welche Zuordnung ist am vertretbarsten?"
+    options:
+      - en: "Keep the case in chat to keep handling time low"
+        de: "Den Fall im Chat halten, um die Bearbeitungszeit niedrig zu halten"
+        correct: false
+      - en: "Move it to a public social thread so others can see the resolution"
+        de: "In einen öffentlichen Social-Verlauf verlagern, damit andere die Lösung sehen"
+        correct: false
+      - en: "Send a standard email and close the chat"
+        de: "Eine Standard-E-Mail senden und den Chat schließen"
+        correct: false
+      - en: "Offer a phone call, because strong emotion and a disputed case suit a live voice"
+        de: "Einen Anruf anbieten, weil starke Emotion und ein strittiger Fall zu einer Live-Stimme passen"
+        correct: true
+    explanation:
+      en: "Routing by emotion and complexity favours a live conversation, but chat is still defensible if the customer prefers it. Keeping chat to protect a metric, going public or closing the contact ignores the customer's need."
+      de: "Die Zuordnung nach Emotion und Komplexität spricht für ein Live-Gespräch; Chat bleibt aber vertretbar, wenn die Person ihn bevorzugt. Chat zugunsten einer Kennzahl, ein öffentlicher Verlauf oder das Schließen des Kontakts missachten den Bedarf der Kundschaft."
+    source: https://de.wikipedia.org/wiki/Callcenter
+  - id: oc-a-staff
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "Phone volume drops in the afternoon while the email backlog grows. Which staffing decision fits best?"
+      de: "Am Nachmittag sinkt das Anrufaufkommen, während der E-Mail-Rückstand wächst. Welche Besetzungsentscheidung passt am besten?"
+    options:
+      - en: "Stop answering emails until phone volume rises"
+        de: "Keine E-Mails mehr beantworten, bis das Anrufaufkommen steigt"
+        correct: false
+      - en: "Make each agent handle phone, chat and email simultaneously"
+        de: "Jede Agentin gleichzeitig Telefon, Chat und E-Mail bedienen lassen"
+        correct: false
+      - en: "Let cross-trained agents take over emails in quiet phone periods, with a cap on parallel tasks"
+        de: "Mehrfach qualifizierte Agenten in ruhigen Telefonzeiten E-Mails übernehmen lassen, mit Obergrenze für parallele Aufgaben"
+        correct: true
+      - en: "Hire a separate email team and keep phone agents idle"
+        de: "Ein eigenes E-Mail-Team einstellen und die Telefonagenten warten lassen"
+        correct: false
+    explanation:
+      en: "Call blending and multiskilled staff are used to fill low-volume time with other channels. Unlimited parallel handling or idle capacity ignore quality and cost."
+      de: "Call Blending und Multiskiller werden genutzt, um ruhige Zeiten mit anderen Kanälen zu füllen. Unbegrenzte Parallelarbeit oder Leerlauf missachten Qualität und Kosten."
+    source: https://de.wikipedia.org/wiki/Callcenter
+  - id: oc-a-metric
+    level: advanced
+    difficulty: 1600
+    type: multi
+    stem:
+      en: "A chat team is judged only on handling time. Which risks and counter-measures are sensible? Select all that apply."
+      de: "Ein Chat-Team wird nur an der Bearbeitungszeit gemessen. Welche Risiken und Gegenmaßnahmen sind sinnvoll? Wähle alle zutreffenden aus."
+    options:
+      - en: "Handling time is the only fair metric, so adding others would confuse staff"
+        de: "Bearbeitungszeit ist die einzig faire Kennzahl, weitere würden das Personal verwirren"
+        correct: false
+      - en: "Cases may be closed too early, so track the reopen rate"
+        de: "Fälle werden womöglich zu früh geschlossen, also die Wiedereröffnungsquote verfolgen"
+        correct: true
+      - en: "Customers may be rushed, so add customer feedback to the review"
+        de: "Kundschaft wird womöglich gedrängt, also Rückmeldungen in die Auswertung aufnehmen"
+        correct: true
+      - en: "A first reply may only say \"we are looking into it\", so define what counts as a real reply"
+        de: "Die erste Antwort sagt womöglich nur „wir prüfen“, also definieren, was als echte Antwort zählt"
+        correct: true
+    explanation:
+      en: "Every metric invites a shortcut, so pair speed with outcome measures. Using a single metric because it is simple is exactly what makes distortion likely."
+      de: "Jede Kennzahl lädt zu einer Abkürzung ein, deshalb kopple Tempo mit Ergebniskennzahlen. Eine einzige Kennzahl zu nutzen, weil sie einfach ist, macht Verzerrung erst wahrscheinlich."
+    source: https://openstax.org/books/principles-marketing/pages/11-3-the-gap-model-of-service-quality
