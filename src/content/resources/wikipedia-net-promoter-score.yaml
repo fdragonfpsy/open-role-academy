@@ -1,0 +1,14 @@
+id: wikipedia-net-promoter-score
+url: https://en.wikipedia.org/wiki/Net_promoter_score
+title: "Net promoter score"
+provider: Wikipedia
+language: en
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies: [service-level-quality-management, customer-retention-feedback-voc]
+levels: [practitioner, advanced]
+note: "Footer states CC BY-SA 4.0; no maintenance banner (some inline citation-needed tags); read 2026-11-18. Used only for the definition (promoters 9-10, passives 7-8, detractors 0-6, NPS = % promoters minus % detractors). Link only."

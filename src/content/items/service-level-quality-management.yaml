@@ -1,0 +1,290 @@
+competency: service-level-quality-management
+items:
+  - id: slq-f-sla
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "What does a service level agreement (SLA) describe?"
+      de: "Was beschreibt eine Service-Level-Vereinbarung (SLA)?"
+    options:
+      - en: "The agreed quality of a service, such as availability and response time"
+        de: "Die vereinbarte Qualität einer Leistung, etwa Verfügbarkeit und Reaktionszeit"
+        correct: true
+      - en: "How satisfied one customer felt after a single call"
+        de: "Wie zufrieden eine einzelne Kundin nach einem Anruf war"
+        correct: false
+      - en: "The break and shift plan of the support team"
+        de: "Den Pausen- und Schichtplan des Support-Teams"
+        correct: false
+      - en: "A bonus scheme that rewards the most loyal customers"
+        de: "Ein Bonusprogramm, das besonders treue Kundschaft belohnt"
+        correct: false
+    explanation:
+      en: "An SLA is an agreement between provider and customer on aspects such as quality, availability and responsibilities. Satisfaction ratings, shift plans and bonus schemes are different things."
+      de: "Eine SLA ist eine Vereinbarung zwischen Dienstleister und Auftraggeber über Aspekte wie Qualität, Verfügbarkeit und Verantwortlichkeiten. Zufriedenheitsbewertungen, Schichtpläne und Bonusprogramme sind etwas anderes."
+    source: https://de.wikipedia.org/wiki/Service-Level-Agreement
+  - id: slq-f-response
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "A customer gets a first reply after 2 minutes, but the problem is fixed only after 3 days. Which statement is correct?"
+      de: "Eine Kundin bekommt nach 2 Minuten eine erste Antwort, das Problem ist aber erst nach 3 Tagen behoben. Welche Aussage stimmt?"
+    options:
+      - en: "Response time is 2 minutes and resolution time is 3 days"
+        de: "Die Reaktionszeit beträgt 2 Minuten und die Lösungszeit 3 Tage"
+        correct: true
+      - en: "Response time is 3 days because the customer waited that long"
+        de: "Die Reaktionszeit beträgt 3 Tage, weil die Kundin so lange gewartet hat"
+        correct: false
+      - en: "Resolution time is 2 minutes because the work started then"
+        de: "Die Lösungszeit beträgt 2 Minuten, weil die Arbeit dann begann"
+        correct: false
+      - en: "Both times are 2 minutes because only the first reply counts"
+        de: "Beide Zeiten betragen 2 Minuten, weil nur die erste Antwort zählt"
+        correct: false
+    explanation:
+      en: "Response time measures the start of the work, resolution time the fix. A fast first reply says nothing about how long the solution takes."
+      de: "Die Reaktionszeit misst den Beginn der Arbeit, die Lösungszeit die Behebung. Eine schnelle erste Antwort sagt nichts darüber, wie lange die Lösung dauert."
+    source: https://openstax.org/books/principles-marketing/pages/2-4-marketing-plan-progress-using-metrics
+  - id: slq-f-csat
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "60 customers answer a survey: 45 rate 4 or 5, 9 rate 3 and 6 rate 1 or 2. What is the CSAT?"
+      de: "60 Kundinnen und Kunden beantworten eine Umfrage: 45 vergeben 4 oder 5, 9 vergeben 3 und 6 vergeben 1 oder 2. Wie hoch ist der CSAT?"
+    options:
+      - en: "75 percent"
+        de: "75 Prozent"
+        correct: true
+      - en: "45 percent"
+        de: "45 Prozent"
+        correct: false
+      - en: "85 percent"
+        de: "85 Prozent"
+        correct: false
+      - en: "25 percent"
+        de: "25 Prozent"
+        correct: false
+    explanation:
+      en: "CSAT is the number of 4 and 5 ratings divided by all responses, times 100: 45 / 60 × 100 = 75. The 45 is a count, not a percentage, and 25 percent is the share of the other answers."
+      de: "CSAT ist die Zahl der Bewertungen 4 und 5 geteilt durch alle Antworten mal 100: 45 / 60 × 100 = 75. Die 45 ist eine Anzahl, kein Prozentwert, und 25 Prozent ist der Anteil der übrigen Antworten."
+    source: https://openstax.org/books/principles-marketing/pages/2-4-marketing-plan-progress-using-metrics
+  - id: slq-f-read
+    level: foundation
+    difficulty: 1050
+    type: multi
+    stem:
+      en: "Before you react to a number in a report, which questions help? Select all that apply."
+      de: "Welche Fragen helfen, bevor du auf eine Zahl in einem Bericht reagierst? Wähle alle zutreffenden aus."
+    options:
+      - en: "What exactly is counted, and what is left out?"
+        de: "Was genau wird gezählt, und was fehlt?"
+        correct: true
+      - en: "Over which period and how many cases is it based on?"
+        de: "Über welchen Zeitraum und auf wie vielen Fällen beruht sie?"
+        correct: true
+      - en: "Does the change look big, even if few answers lie behind it?"
+        de: "Wirkt die Veränderung groß, auch wenn wenige Antworten dahinterstehen?"
+        correct: false
+      - en: "Is the number the same as the one from last year's contract?"
+        de: "Ist die Zahl dieselbe wie aus dem Vertrag des Vorjahres?"
+        correct: false
+    explanation:
+      en: "Know what is counted and how many cases and which period stand behind the number. A big-looking change on very few answers can be pure chance."
+      de: "Wissen, was gezählt wird, und auf wie vielen Fällen und welchem Zeitraum die Zahl beruht. Eine groß wirkende Veränderung bei sehr wenigen Antworten kann reiner Zufall sein."
+    source: https://de.wikipedia.org/wiki/Kundenzufriedenheit
+  - id: slq-p-nps
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "50 customers answer the recommendation question: 20 give 9 or 10, 20 give 7 or 8 and 10 give 6 or lower. What is the NPS?"
+      de: "50 Kundinnen und Kunden beantworten die Weiterempfehlungsfrage: 20 geben 9 oder 10, 20 geben 7 oder 8 und 10 geben 6 oder weniger. Wie hoch ist der NPS?"
+    options:
+      - en: "20"
+        de: "20"
+        correct: true
+      - en: "10"
+        de: "10"
+        correct: false
+      - en: "40"
+        de: "40"
+        correct: false
+      - en: "80"
+        de: "80"
+        correct: false
+    explanation:
+      en: "NPS is the percentage of promoters minus the percentage of detractors: 40 − 20 = 20. Subtracting counts (20 − 10) gives 10, 40 is the promoter share alone, and 80 adds the passives."
+      de: "Der NPS ist der Prozentanteil der Promotoren minus der Prozentanteil der Detraktoren: 40 − 20 = 20. Die Differenz der Anzahlen (20 − 10) ergäbe 10, 40 ist allein der Promotorenanteil, und 80 rechnet die Passiven mit."
+    source: https://en.wikipedia.org/wiki/Net_promoter_score
+  - id: slq-p-balance
+    level: practitioner
+    difficulty: 1200
+    type: multi
+    stem:
+      en: "A team meets its first-reply target, but customers still complain. Which measures help to see what is wrong? Select all that apply."
+      de: "Ein Team erreicht sein Ziel für die erste Antwort, trotzdem beschweren sich Kundinnen und Kunden. Welche Kennzahlen helfen zu erkennen, was nicht stimmt? Wähle alle zutreffenden aus."
+    options:
+      - en: "First-contact resolution (share solved without a follow-up)"
+        de: "Erstlösungsquote (Anteil ohne Nachfrage gelöster Fälle)"
+        correct: true
+      - en: "Reopen rate of closed tickets"
+        de: "Wiedereröffnungsquote geschlossener Tickets"
+        correct: true
+      - en: "CSAT collected after the contact"
+        de: "CSAT, erhoben nach dem Kontakt"
+        correct: true
+      - en: "The average number of tickets opened per agent per hour"
+        de: "Die durchschnittliche Zahl eröffneter Tickets je Person und Stunde"
+        correct: false
+    explanation:
+      en: "Speed alone invites shortcuts, so add outcome and customer-view measures. Tickets opened per hour says nothing about whether customers were helped."
+      de: "Tempo allein verführt zu Abkürzungen, also ergänze Ergebnis- und Kundensicht-Kennzahlen. Eröffnete Tickets pro Stunde sagt nichts darüber, ob der Kundschaft geholfen wurde."
+    source: https://openstax.org/books/principles-marketing/pages/2-4-marketing-plan-progress-using-metrics
+  - id: slq-p-period
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "The target is \"80 percent of calls answered within 30 seconds per day\". On Monday the rate is 85 percent for the day, but only 55 percent between 9 and 10 am. What is the best reading?"
+      de: "Das Ziel lautet „80 Prozent der Anrufe innerhalb von 30 Sekunden pro Tag“. Am Montag liegt der Wert über den Tag bei 85 Prozent, zwischen 9 und 10 Uhr aber nur bei 55 Prozent. Was ist die beste Deutung?"
+    options:
+      - en: "The daily target is met; the morning peak hints at a staffing or forecast issue to check"
+        de: "Das Tagesziel ist erreicht; die Morgenspitze deutet auf ein zu prüfendes Personal- oder Prognoseproblem"
+        correct: true
+      - en: "The target is missed, because one hour fell below 80 percent and the daily average hides this"
+        de: "Das Ziel ist verfehlt, weil eine Stunde unter 80 Prozent lag und der Tagesdurchschnitt das verbirgt"
+        correct: false
+      - en: "The agents were too slow in that hour and need speed coaching"
+        de: "Die Agentinnen und Agenten waren in dieser Stunde zu langsam und brauchen ein Tempo-Coaching"
+        correct: false
+      - en: "The percentage is meaningless, so it should not be reported"
+        de: "Der Prozentwert ist bedeutungslos und sollte nicht berichtet werden"
+        correct: false
+    explanation:
+      en: "A service level is counted over a stated period, so the day meets the target. The weak hour is still information: contact centres plan agents per time slice from a forecast, so a recurring dip is often a planning matter, not effort."
+      de: "Ein Servicelevel wird über einen genannten Zeitraum gezählt, also ist das Tagesziel erreicht. Die schwache Stunde ist trotzdem eine Information: Contact-Center planen Personal je Zeitabschnitt aus einer Prognose, ein wiederkehrender Einbruch ist daher oft ein Planungsthema, keine Frage des Einsatzes."
+    source: https://de.wikipedia.org/wiki/Callcenter
+  - id: slq-p-quality
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "Which approach to quality monitoring works best?"
+      de: "Welcher Ansatz zur Qualitätssicherung funktioniert am besten?"
+    options:
+      - en: "Shared criteria, now and then a second reviewer, and feedback with one strength and one improvement"
+        de: "Gemeinsame Kriterien, ab und zu eine zweite Prüfperson und Feedback mit einer Stärke und einer Verbesserung"
+        correct: true
+      - en: "Reviewing only contacts that went badly, so that the team learns from mistakes"
+        de: "Nur schlecht gelaufene Kontakte prüfen, damit das Team aus Fehlern lernt"
+        correct: false
+      - en: "Letting each reviewer use their own impression, which keeps it flexible"
+        de: "Jede Prüfperson nach eigenem Eindruck bewerten lassen, das hält es flexibel"
+        correct: false
+      - en: "Sharing only the total score, so that nobody argues about details"
+        de: "Nur die Gesamtpunktzahl mitteilen, damit niemand über Einzelheiten streitet"
+        correct: false
+    explanation:
+      en: "Shared criteria and occasional second reviews keep scoring consistent, and concrete feedback helps people improve. Only bad cases give a skewed picture, and hidden criteria cause distrust."
+      de: "Gemeinsame Kriterien und gelegentliche Zweitprüfungen halten die Bewertung einheitlich, und konkretes Feedback hilft beim Verbessern. Nur schlechte Fälle ergeben ein verzerrtes Bild, und verborgene Kriterien erzeugen Misstrauen."
+    source: https://en.wikipedia.org/wiki/Service-level_agreement
+  - id: slq-a-staff
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "The team misses its service level every Monday morning for three months. What is the best first step?"
+      de: "Das Team verfehlt seit drei Monaten jeden Montagmorgen sein Servicelevel. Was ist der beste erste Schritt?"
+    options:
+      - en: "Compare forecast and actual contact volume for that time slice and adjust the schedule"
+        de: "Prognose und tatsächliches Kontaktaufkommen für diesen Zeitabschnitt vergleichen und den Dienstplan anpassen"
+        correct: true
+      - en: "Coach all agents on faster handling, because the speed must be the cause"
+        de: "Alle Agentinnen und Agenten zu schnellerer Bearbeitung coachen, weil das Tempo die Ursache sein muss"
+        correct: false
+      - en: "Skip breaks on Mondays until the figure improves"
+        de: "Montags auf Pausen verzichten, bis sich der Wert verbessert"
+        correct: false
+      - en: "Lower the target for Mondays without telling the customers or the client"
+        de: "Das Ziel für Montage senken, ohne Kundschaft oder Auftraggeber zu informieren"
+        correct: false
+    explanation:
+      en: "A recurring dip at a fixed time points to forecast and staffing: agents per slice are derived from a forecast and a service level target. Coaching or skipped breaks treat the symptom, and a silent target change hides it."
+      de: "Ein wiederkehrender Einbruch zu fester Zeit deutet auf Prognose und Personalplanung: Die Zahl der Agentinnen und Agenten je Abschnitt wird aus Prognose und Servicelevel-Ziel abgeleitet. Coaching oder ausgefallene Pausen behandeln nur das Symptom, und eine stille Zieländerung verbirgt es."
+    source: https://de.wikipedia.org/wiki/Callcenter
+  - id: slq-a-bias
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "A survey is sent only after solved tickets and 12 percent answer; CSAT is 92 percent. What is the most defensible statement?"
+      de: "Eine Umfrage wird nur nach gelösten Tickets verschickt, 12 Prozent antworten; der CSAT liegt bei 92 Prozent. Welche Aussage ist am besten vertretbar?"
+    options:
+      - en: "92 percent of the responders are satisfied; the silent majority and unresolved cases are unknown"
+        de: "92 Prozent der Antwortenden sind zufrieden; die schweigende Mehrheit und ungelöste Fälle sind unbekannt"
+        correct: true
+      - en: "92 percent of all our customers are satisfied with our service"
+        de: "92 Prozent unserer gesamten Kundschaft sind mit unserem Service zufrieden"
+        correct: false
+      - en: "The figure is so high that the target can be raised for next year, since the team clearly has room"
+        de: "Der Wert ist so hoch, dass das Ziel fürs nächste Jahr angehoben werden kann, weil das Team offenbar Luft hat"
+        correct: false
+      - en: "Surveys with low response rates have no value and should stop"
+        de: "Umfragen mit niedriger Rücklaufquote sind wertlos und sollten eingestellt werden"
+        correct: false
+    explanation:
+      en: "CSAT counts only the answers received, here from a minority and only after solved cases. It is a valid signal for that group, but not for all customers, and it can be improved by including unresolved cases."
+      de: "Der CSAT zählt nur eingegangene Antworten, hier von einer Minderheit und nur nach gelösten Fällen. Er ist ein gültiges Signal für diese Gruppe, aber nicht für alle Kundschaft, und lässt sich verbessern, indem man auch ungelöste Fälle einbezieht."
+    source: https://openstax.org/books/principles-marketing/pages/2-4-marketing-plan-progress-using-metrics
+  - id: slq-a-design
+    level: advanced
+    difficulty: 1550
+    type: multi
+    stem:
+      en: "Which measures make a service level target more reliable? Select all that apply."
+      de: "Welche Maßnahmen machen ein Servicelevel-Ziel verlässlicher? Wähle alle zutreffenden aus."
+    options:
+      - en: "Define precisely what counts as a first reply"
+        de: "Genau festlegen, was als erste Antwort zählt"
+        correct: true
+      - en: "Pair the time target with an outcome measure such as reopen rate"
+        de: "Das Zeitziel mit einer Ergebnis-Kennzahl wie der Wiedereröffnungsquote kombinieren"
+        correct: true
+      - en: "Report results by time slice as well as by day"
+        de: "Ergebnisse auch je Zeitabschnitt statt nur je Tag berichten"
+        correct: true
+      - en: "Reward each agent for the lowest average handling time"
+        de: "Jede Person für die niedrigste durchschnittliche Bearbeitungszeit belohnen"
+        correct: false
+    explanation:
+      en: "Clear definitions, a paired outcome measure and a view by time slice make the target harder to game and easier to act on. Rewarding only low handling time invites rushing."
+      de: "Klare Definitionen, eine gekoppelte Ergebnis-Kennzahl und eine Sicht je Zeitabschnitt machen das Ziel schwerer manipulierbar und besser umsetzbar. Nur niedrige Bearbeitungszeit zu belohnen verleitet zur Eile."
+    source: https://de.wikipedia.org/wiki/Service-Level-Agreement
+  - id: slq-a-ola
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "Your external SLA promises resolution within 24 hours, but fixes depend on an engineering team. What is the best step?"
+      de: "Deine externe SLA verspricht eine Lösung binnen 24 Stunden, die Behebung hängt aber von einem Entwicklungsteam ab. Was ist der beste Schritt?"
+    options:
+      - en: "Back it with an internal agreement for the hand-off and measure the hand-off time"
+        de: "Sie mit einer internen Vereinbarung für die Übergabe absichern und die Übergabezeit messen"
+        correct: true
+      - en: "Rely on goodwill and escalate every late case by hand"
+        de: "Sich auf Kulanz verlassen und jeden verspäteten Fall von Hand eskalieren"
+        correct: false
+      - en: "Mark tickets as resolved once they are handed to engineering"
+        de: "Tickets als gelöst markieren, sobald sie an die Entwicklung übergeben sind"
+        correct: false
+      - en: "Add a line that resolution times are never guaranteed"
+        de: "Einen Satz ergänzen, dass Lösungszeiten nie garantiert werden"
+        correct: false
+    explanation:
+      en: "An operational level agreement between departments supports the external SLA and makes the dependency measurable. Marking tickets resolved early distorts the figure, and a disclaimer removes the point of the SLA."
+      de: "Eine Operational-Level-Vereinbarung zwischen Abteilungen stützt die externe SLA und macht die Abhängigkeit messbar. Frühes Als-gelöst-Markieren verzerrt die Zahl, und ein Haftungsausschluss nimmt der SLA ihren Sinn."
+    source: https://de.wikipedia.org/wiki/Service-Level-Agreement

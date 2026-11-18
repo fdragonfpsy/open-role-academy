@@ -1,0 +1,14 @@
+id: eurlex-de-dsgvo-verordnung-2016-679
+url: https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679
+title: "Verordnung (EU) 2016/679 (Datenschutz-Grundverordnung)"
+provider: EUR-Lex (European Union)
+language: de
+format: article
+minutes: 60
+license: free-access
+licenseUrl: https://eur-lex.europa.eu/content/legal-notice/legal-notice.html
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies: [customer-data-privacy-service]
+levels: [foundation, practitioner, advanced]
+note: 'German-language version of the primary source, freely accessible (HTTP 200 on 2026-11-18); reuse terms not assessed here -> link only. Art. 5, 12, 25, 33 and 34 read in the English version on 2026-11-18; German text of Art. 33(1) (72 hours) checked.'
