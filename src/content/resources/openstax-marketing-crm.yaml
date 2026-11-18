@@ -7,8 +7,8 @@ format: book
 minutes: 20
 license: CC-BY-NC-SA-4.0
 licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
-licenseVerifiedOn: 2026-11-17
+licenseVerifiedOn: 2026-11-18
 mode: link
-competencies: [crm-sales-data-forecasting, account-management-upselling]
-levels: [foundation, practitioner]
+competencies: [crm-sales-data-forecasting, account-management-upselling, omnichannel-support, ticketing-knowledge-base]
+levels: [foundation, practitioner, advanced]
 note: 'Book page states "Creative Commons Attribution-NonCommercial-ShareAlike License" (NC -> link only). Read on 2026-11-17: defines CRM, operational/analytical/collaborative CRM, retention vs acquisition cost.'

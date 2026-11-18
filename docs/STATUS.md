@@ -1,5 +1,22 @@
 # Status
 
+## 2026-11-18 — Phase 4: Customer Service content batch 2 (complaint-handling-de-escalation, omnichannel-support, ticketing-knowledge-base)
+
+**Done**
+- 18 unit files (9 en + 9 de, `status: ai-draft`), all three levels; own methods (4-step reply, 3-part reply, channel routing criteria, ticket fields/statuses, 4-line case notes, article template, knowledge lifecycle) labelled "our own". Customer-facing example dialogues use "Sie" deliberately (company voice).
+- 36 items (12 per competency, 3 multi each); correct option uniquely longest in at most 4 of 9 singles.
+- 4 new link-only resources (`licenseVerifiedOn: 2026-11-18`, HTTP 200): de.wikipedia Beschwerdemanagement, Callcenter, Netiquette, Frequently Asked Questions (CC BY-SA). Existing OpenStax 1.6/11.3/13.2/16.2 and Wikipedia Deeskalation, SLA, Customer support re-tagged.
+- Role stays `status: draft`. Legal points topic-level only.
+
+**Reviewer to-dos**
+- Check: complaint-management process and ISO 10002 mention; de-escalation techniques and conflict styles; Callcenter definitions; netiquette; FAQ origin; SLA contents; OpenStax CRM/social statements.
+- Ticket fields, statuses and the omnichannel definition are own/common practice (Wikipedia pages with maintenance banners were skipped). Escalation thresholds rest on en Customer support ("needs citations" banner). Response-time targets in examples are invented.
+- Judgement items: chd-a-goodwill, chd-a-escalate, oc-a-route, oc-a-staff, tkb-a-lifecycle, tkb-a-gaming. German wording of the 9 DE units.
+
+**Counts:** roles 7 (1 draft) · competencies 68 · units 374 · items 772 · resources 384
+
+**Next:** Customer Service content: service-level-quality-management, customer-data-privacy-service, customer-retention-feedback-voc.
+
 ## 2026-11-18 — Phase 4: Customer Service content batch 1 (fundamentals, communication-empathy, needs-problem-solving)
 
 **Done**

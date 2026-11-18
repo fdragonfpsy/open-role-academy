@@ -1,0 +1,14 @@
+id: wikipedia-de-faq
+url: https://de.wikipedia.org/wiki/Frequently_Asked_Questions
+title: "Frequently Asked Questions (FAQ)"
+provider: Wikipedia
+language: de
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies: [ticketing-knowledge-base]
+levels: [foundation, practitioner, advanced]
+note: "Footer states CC BY-SA; no maintenance banner; read 2026-11-18 (short article). Link only."
