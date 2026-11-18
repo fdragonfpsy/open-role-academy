@@ -1,0 +1,62 @@
+id: project-management
+kind: role
+status: draft
+title:
+  en: Project Management
+  de: Projektmanagement
+summary:
+  en: >-
+    Deliver projects successfully: initiate with a business case, define scope and requirements, break down and schedule work, control budget, manage risks and issues, engage stakeholders, coordinate teams and resources, apply agile and hybrid approaches, manage quality and change, and close projects with lessons learned.
+  de: >-
+    Projekte erfolgreich umsetzen: mit einem Business Case starten, Umfang und Anforderungen definieren, Arbeit gliedern und terminieren, das Budget steuern, Risiken und Issues managen, Stakeholder einbinden, Teams und Ressourcen koordinieren, agile und hybride Vorgehensweisen anwenden, Qualität und Änderungen steuern und Projekte mit Lessons Learned abschließen.
+competencies:
+  # role-specific
+  - id: project-initiation-business-case
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: scope-requirements-management
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: work-breakdown-scheduling
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: project-budget-cost-control
+    priority: 2
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  - id: risk-issue-management
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: stakeholder-management-communication
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: resource-team-coordination
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: agile-hybrid-delivery
+    priority: 2
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  - id: quality-change-management
+    priority: 2
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  - id: project-closure-lessons-learned
+    priority: 3
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  # core track
+  - id: information-security-basics
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: digital-ai-literacy
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: communication-collaboration
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: working-with-data
+    priority: 3
+    targets: { foundation: foundation, practitioner: foundation, advanced: practitioner }
+  - id: self-organisation-project-basics
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: business-finance-fundamentals
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }

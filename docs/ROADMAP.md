@@ -120,7 +120,9 @@ One role per task, in the order of CLAUDE.md §4.3. Each task = framework + cont
   - [x] content: complaint-handling-de-escalation, omnichannel-support, ticketing-knowledge-base
   - [x] content: service-level-quality-management, customer-data-privacy-service, customer-retention-feedback-voc
   - [x] content: consumer-rights-basics; then `status: published` and quality pass
-- [ ] Project Management
+- [ ] Project Management (framework + content; publish the role when all content is done; EU/Germany context, label it; no proprietary framework text)
+  - [x] framework (role + 10 competencies, `status: draft`)
+  - [ ] content batches of 3 competencies in role yaml order, then `status: published` and quality pass
 - [ ] Procurement & Supply Chain
 - [ ] Data & Analytics
 - [ ] Software Development

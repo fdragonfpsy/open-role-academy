@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-18 — Phase 4: Project Management framework (draft, no content yet)
+
+**Done**
+- `src/content/roles/project-management.yaml` (`status: draft`, en/de) with 10 role competencies plus the 6 core-track ones; 10 new competency files (en/de, `track: role`, acyclic prerequisites chaining from `self-organisation-project-basics`). Descriptions are original and methodology-neutral (no PMBOK/PRINCE2 text).
+- 16 ESCO refs verified against the ESCO API (HTTP 200, label equals stored label); no DigComp refs.
+- `docs/FRAMEWORK.md` regenerated; decision logged. lint, typecheck, tests, validate:content (0 errors; draft-role warning) and build pass.
+
+**Counts:** roles 8 (1 draft) · competencies 78 · units 392 · items 820 · resources 392
+
+**Next:** Project Management content in batches of 3 competencies, then publish.
+
 ## 2026-11-18 — Phase 4: Customer Service content batch 4 (consumer-rights-basics), Customer Service published
 
 **Done**

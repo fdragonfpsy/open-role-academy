@@ -1,0 +1,15 @@
+id: resource-team-coordination
+title:
+  en: Resource and team coordination
+  de: Ressourcen- und Teamkoordination
+description:
+  en: >-
+    Assess resource needs, assign roles and responsibilities, balance workload and availability, coordinate internal and external contributors, build team cohesion and handle conflicts.
+  de: >-
+    Ressourcenbedarf einschätzen, Rollen und Verantwortlichkeiten zuweisen, Auslastung und Verfügbarkeit abstimmen, interne und externe Beteiligte koordinieren, den Teamzusammenhalt fördern und Konflikte klären.
+prerequisites: [work-breakdown-scheduling]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/b2235ce8-d0f0-4954-9b60-e2c1aeeadab5
+    label: assess project resource needs

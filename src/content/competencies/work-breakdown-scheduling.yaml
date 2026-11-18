@@ -1,0 +1,15 @@
+id: work-breakdown-scheduling
+title:
+  en: Work breakdown and scheduling
+  de: Arbeitspakete und Terminplanung
+description:
+  en: >-
+    Break deliverables into work packages, estimate effort and duration, identify dependencies and the critical path, set milestones, build a schedule and track progress against it.
+  de: >-
+    Liefergegenstände in Arbeitspakete gliedern, Aufwand und Dauer schätzen, Abhängigkeiten und kritischen Pfad erkennen, Meilensteine setzen, einen Terminplan erstellen und den Fortschritt dagegen verfolgen.
+prerequisites: [scope-requirements-management]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/8c6feedd-339f-4dba-b28a-dae84c759853
+    label: develop project schedule

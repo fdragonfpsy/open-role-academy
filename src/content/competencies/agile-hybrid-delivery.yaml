@@ -1,0 +1,15 @@
+id: agile-hybrid-delivery
+title:
+  en: Agile and hybrid delivery
+  de: Agile und hybride Projektdurchführung
+description:
+  en: >-
+    Choose and combine predictive, agile and hybrid approaches: iterations, backlogs, prioritisation, regular reviews and retrospectives, and tailoring practices to the project context.
+  de: >-
+    Vorgehensweisen wählen und kombinieren – klassisch, agil und hybrid: Iterationen, Backlogs, Priorisierung, regelmäßige Reviews und Retrospektiven sowie Anpassung der Praktiken an den Projektkontext.
+prerequisites: [work-breakdown-scheduling]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/0a9acb6b-1139-4be9-b431-3a80a959f2f4
+    label: Agile project management

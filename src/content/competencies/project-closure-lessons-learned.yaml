@@ -1,0 +1,15 @@
+id: project-closure-lessons-learned
+title:
+  en: Project closure and lessons learned
+  de: Projektabschluss und Lessons Learned
+description:
+  en: >-
+    Close a project properly: verify deliverables and acceptance, hand over to operations, release resources, document results and run a lessons-learned review that feeds future projects.
+  de: >-
+    Ein Projekt sauber abschließen: Liefergegenstände und Abnahme prüfen, an den Betrieb übergeben, Ressourcen freigeben, Ergebnisse dokumentieren und eine Lessons-Learned-Auswertung für künftige Projekte durchführen.
+prerequisites: [project-budget-cost-control, risk-issue-management, stakeholder-management-communication]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/4d38b095-6730-4157-9807-8049dd7b43b8
+    label: document project progress

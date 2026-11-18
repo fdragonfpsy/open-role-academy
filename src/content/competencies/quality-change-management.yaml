@@ -1,0 +1,18 @@
+id: quality-change-management
+title:
+  en: Quality and change management
+  de: Qualitäts- und Änderungsmanagement
+description:
+  en: >-
+    Plan quality through acceptance criteria and reviews, control scope changes with a simple change process, assess the impact of changes and support people through the changes a project brings.
+  de: >-
+    Qualität durch Abnahmekriterien und Reviews planen, Änderungen am Projektumfang mit einem einfachen Änderungsprozess steuern, deren Auswirkungen bewerten und Menschen bei den durch ein Projekt entstehenden Veränderungen begleiten.
+prerequisites: [scope-requirements-management]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/c7cc6dc5-d56b-4323-8e5c-47c4022f615f
+    label: quality assurance methodologies
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/3c03ee71-4a23-448f-b79e-81fd75d27dca
+    label: apply change management

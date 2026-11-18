@@ -1,0 +1,15 @@
+id: scope-requirements-management
+title:
+  en: Scope and requirements management
+  de: Projektumfang und Anforderungsmanagement
+description:
+  en: >-
+    Define what is in and out of scope: gather and document requirements, write measurable acceptance criteria, prioritise, define deliverables and keep requirements traceable as the project evolves.
+  de: >-
+    Festlegen, was zum Projektumfang gehört und was nicht: Anforderungen erheben und dokumentieren, messbare Abnahmekriterien formulieren, priorisieren, Liefergegenstände definieren und Anforderungen im Projektverlauf nachvollziehbar halten.
+prerequisites: [project-initiation-business-case]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/21fecc8a-392e-49ce-ac26-fb0696ccfead
+    label: create project specifications

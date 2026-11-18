@@ -1,0 +1,18 @@
+id: risk-issue-management
+title:
+  en: Risk and issue management
+  de: Risiko- und Issue-Management
+description:
+  en: >-
+    Identify, assess and prioritise project risks, plan responses, keep a risk register, and distinguish risks from issues and dependencies; escalate and resolve issues in time.
+  de: >-
+    Projektrisiken identifizieren, bewerten und priorisieren, Maßnahmen planen, ein Risikoregister führen, Risiken von Problemen (Issues) und Abhängigkeiten unterscheiden sowie Issues rechtzeitig eskalieren und lösen.
+prerequisites: [scope-requirements-management]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/1dd23dba-dd00-45ab-abf4-642902538317
+    label: perform risk analysis
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/bd832a82-b079-4001-80d1-f59efed33688
+    label: create risk reports

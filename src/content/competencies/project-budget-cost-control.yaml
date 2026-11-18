@@ -1,0 +1,21 @@
+id: project-budget-cost-control
+title:
+  en: Project budget and cost control
+  de: Projektbudget und Kostensteuerung
+description:
+  en: >-
+    Estimate project costs, build a budget with contingency, track actual against planned costs, forecast the outcome, report variances and decide on corrective actions.
+  de: >-
+    Projektkosten schätzen, ein Budget mit Reserve aufstellen, Ist- und Plankosten verfolgen, das Ergebnis prognostizieren, Abweichungen berichten und Gegenmaßnahmen entscheiden.
+prerequisites: [work-breakdown-scheduling, business-finance-fundamentals]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/21c5790c-0930-4d74-b3b0-84caf5af12ea
+    label: manage budgets
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/7d092d81-d1e2-4c34-b3cb-c1c9f2e68b7d
+    label: finish project within budget
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/c5a135be-218d-48e6-a422-5225a576dcd8
+    label: manage project metrics
