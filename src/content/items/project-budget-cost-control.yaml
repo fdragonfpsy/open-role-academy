@@ -1,0 +1,290 @@
+competency: project-budget-cost-control
+items:
+- id: pbc-f-bottomup
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: What is the main advantage of building a project budget bottom-up from work packages?
+    de: Was ist der Hauptvorteil, ein Projektbudget von unten aus Arbeitspaketen aufzubauen?
+  options:
+  - en: It guarantees that the final cost will equal the budget exactly
+    de: Es garantiert, dass die Endkosten dem Budget genau entsprechen
+    correct: false
+  - en: Every line has an owner who can explain and defend its figure
+    de: Jede Zeile hat eine verantwortliche Person, die ihre Zahl erklären und vertreten kann
+    correct: true
+  - en: It removes the need for any contingency in the budget
+    de: Es macht jede Reserve im Budget überflüssig
+    correct: false
+  - en: It lets the sponsor skip reviewing the assumptions
+    de: Es erlaubt den Auftraggebenden, die Annahmen nicht zu prüfen
+    correct: false
+  explanation:
+    en: A bottom-up budget ties each figure to a work package and its owner. It is still an estimate, so it needs contingency and visible assumptions.
+    de: Ein Budget von unten bindet jede Zahl an ein Arbeitspaket und seine verantwortliche Person. Es bleibt eine Schätzung, braucht also Reserve und sichtbare Annahmen.
+  source: https://de.wikipedia.org/wiki/Projektcontrolling
+- id: pbc-f-contingency
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: Where should contingency appear in a project budget?
+    de: Wo sollte die Reserve in einem Projektbudget erscheinen?
+  options:
+  - en: Spread evenly over all work packages so that nobody notices it
+    de: Gleichmäßig auf alle Arbeitspakete verteilt, damit es niemand bemerkt
+    correct: false
+  - en: Hidden inside each team member's own estimate as padding
+    de: Als Polster in der Schätzung jedes Teammitglieds versteckt
+    correct: false
+  - en: As a separate visible line with a named owner who decides on its release
+    de: Als eigene sichtbare Zeile mit benannter Person, die über die Freigabe entscheidet
+    correct: true
+  - en: Only in the sponsor's private notes and never in the budget
+    de: Nur in den privaten Notizen der Auftraggebenden und nie im Budget
+    correct: false
+  explanation:
+    en: A visible, owned contingency line shows how much uncertainty is covered and who may spend it. Hidden padding makes control impossible.
+    de: Eine sichtbare Reservezeile mit Verantwortung zeigt, wie viel Unsicherheit abgedeckt ist und wer sie ausgeben darf. Verstecktes Polster verhindert Kontrolle.
+  source: https://de.wikipedia.org/wiki/Projektcontrolling
+- id: pbc-f-variance
+  level: foundation
+  difficulty: 1000
+  type: multi
+  stem:
+    en: Which statements about budget variances are correct? Select all that apply.
+    de: Welche Aussagen über Budgetabweichungen sind richtig? Wähle alle zutreffenden aus.
+  options:
+  - en: An unfavourable variance means that expenses are higher than budgeted
+    de: Eine ungünstige Abweichung bedeutet, dass die Ausgaben höher sind als budgetiert
+    correct: true
+  - en: A variance shows where a problem may exist but does not prove one
+    de: Eine Abweichung zeigt, wo ein Problem liegen kann, beweist aber keines
+    correct: true
+  - en: A favourable variance always means that the work is going well
+    de: Eine günstige Abweichung bedeutet immer, dass die Arbeit gut läuft
+    correct: false
+  - en: Only unfavourable variances need to be looked at
+    de: Nur ungünstige Abweichungen müssen angeschaut werden
+    correct: false
+  explanation:
+    en: Favourable and unfavourable variances both point to places worth checking; a favourable one may mean costs were cut too far or work is missing.
+    de: Günstige wie ungünstige Abweichungen zeigen Stellen, die einen Blick wert sind; eine günstige kann bedeuten, dass zu stark gespart wurde oder Arbeit fehlt.
+  source: https://openstax.org/books/principles-managerial-accounting/pages/7-5-explain-how-budgets-are-used-to-evaluate-goals
+- id: pbc-f-baseline
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: The sponsor has approved the budget. A colleague asks for a new feature that costs 3 000 EUR. What is the best response?
+    de: Die Auftraggebenden haben das Budget genehmigt. Ein Kollege wünscht ein neues Feature für 3 000 EUR. Was ist die beste Reaktion?
+  options:
+  - en: Pay it from the contingency without a record, because the amount is small
+    de: Es ohne Vermerk aus der Reserve bezahlen, weil der Betrag klein ist
+    correct: false
+  - en: Record it as a change request and decide whether to adjust the baseline
+    de: Es als Änderungsantrag erfassen und entscheiden, ob die Baseline angepasst wird
+    correct: true
+  - en: Add it quietly to an existing work package
+    de: Es unauffällig in ein bestehendes Arbeitspaket aufnehmen
+    correct: false
+  - en: Refuse every change for the rest of the project
+    de: Für den Rest des Projekts jede Änderung ablehnen
+    correct: false
+  explanation:
+    en: Changes to an approved budget need a visible decision. Small, unrecorded additions add up and make later variances impossible to explain.
+    de: Änderungen an einem genehmigten Budget brauchen eine sichtbare Entscheidung. Kleine, unprotokollierte Ergänzungen summieren sich und machen spätere Abweichungen unerklärbar.
+  source: https://de.wikipedia.org/wiki/Projektcontrolling
+- id: pbc-p-cv
+  level: practitioner
+  difficulty: 1150
+  type: single
+  stem:
+    en: At week 10 the planned value is 60 000 EUR, the earned value 48 000 EUR and the actual cost 56 000 EUR. What is the cost variance?
+    de: In Woche 10 beträgt der Planwert 60 000 EUR, der Fertigstellungswert 48 000 EUR und die Istkosten 56 000 EUR. Wie hoch ist die Kostenabweichung?
+  options:
+  - en: Minus 12 000 EUR
+    de: Minus 12 000 EUR
+    correct: false
+  - en: Minus 8 000 EUR
+    de: Minus 8 000 EUR
+    correct: true
+  - en: Plus 8 000 EUR
+    de: Plus 8 000 EUR
+    correct: false
+  - en: Minus 4 000 EUR
+    de: Minus 4 000 EUR
+    correct: false
+  explanation:
+    en: 'Cost variance is earned value minus actual cost: 48 000 minus 56 000 = minus 8 000 EUR. Minus 12 000 EUR is the schedule variance in money.'
+    de: 'Die Kostenabweichung ist Fertigstellungswert minus Istkosten: 48 000 minus 56 000 = minus 8 000 EUR. Minus 12 000 EUR ist die Terminabweichung in Geld.'
+  source: https://de.wikipedia.org/wiki/Projektcontrolling
+- id: pbc-p-cpi
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: With the same figures (planned value 60 000, earned value 48 000, actual cost 56 000 EUR), what is the cost performance index and what does it say?
+    de: Was ist bei denselben Zahlen (Planwert 60 000, Fertigstellungswert 48 000, Istkosten 56 000 EUR) der Kostenindex, und was sagt er aus?
+  options:
+  - en: 'About 0.80: the project is 20 % behind schedule'
+    de: 'Etwa 0,80: das Projekt liegt 20 % hinter dem Termin'
+    correct: false
+  - en: 'About 1.17: the project is ahead on cost'
+    de: 'Etwa 1,17: das Projekt liegt bei den Kosten vorn'
+    correct: false
+  - en: 'About 1.25: the project has spent less than planned'
+    de: 'Etwa 1,25: das Projekt hat weniger ausgegeben als geplant'
+    correct: false
+  - en: 'About 0.86: each euro spent has produced about 0.86 euro of planned value'
+    de: 'Etwa 0,86: jeder ausgegebene Euro hat etwa 0,86 Euro Planwert erbracht'
+    correct: true
+  explanation:
+    en: 'The index is earned value divided by actual cost: 48 000 / 56 000, about 0.86. Below 1 means cost efficiency is worse than planned; 0.80 would be earned value divided by planned value.'
+    de: 'Der Kostenindex ist Fertigstellungswert geteilt durch Istkosten: 48 000 / 56 000, etwa 0,86. Unter 1 ist die Kosteneffizienz schlechter als geplant; 0,80 wäre Fertigstellungswert geteilt durch Planwert.'
+  source: https://de.wikipedia.org/wiki/Projektcontrolling
+- id: pbc-p-forecast
+  level: practitioner
+  difficulty: 1250
+  type: single
+  stem:
+    en: Why compare a trend forecast of the final cost with a bottom-up estimate to complete?
+    de: Warum sollte man eine Trendprognose der Endkosten mit einer Schätzung von unten für die Restarbeit vergleichen?
+  options:
+  - en: A bottom-up estimate is always more accurate, so the trend can be ignored entirely
+    de: Eine Schätzung von unten ist immer genauer, also kann man den Trend komplett ignorieren
+    correct: false
+  - en: The two must be equal, otherwise the report is wrong
+    de: Beide müssen gleich sein, sonst ist der Bericht falsch
+    correct: false
+  - en: A trend assumes the past continues, while owners may know of one-off effects
+    de: Ein Trend setzt voraus, dass die Vergangenheit anhält, während Verantwortliche Einmaleffekte kennen können
+    correct: true
+  - en: Only the sponsor is allowed to compute a trend forecast
+    de: Nur die Auftraggebenden dürfen eine Trendprognose berechnen
+    correct: false
+  explanation:
+    en: Each method has blind spots. When they differ, the gap itself is information and should be explained before reporting.
+    de: Jede Methode hat blinde Flecken. Weichen beide ab, ist der Unterschied selbst eine Information und sollte vor dem Berichten erklärt werden.
+  source: https://de.wikipedia.org/wiki/Projektcontrolling
+- id: pbc-p-report
+  level: practitioner
+  difficulty: 1300
+  type: multi
+  stem:
+    en: Which items belong in a variance report that supports a decision? Select all that apply.
+    de: Welche Bestandteile gehören in einen Abweichungsbericht, der eine Entscheidung stützt? Wähle alle zutreffenden aus.
+  options:
+  - en: A cause that was checked with the work package owner
+    de: Eine Ursache, die mit der Verantwortlichen oder dem Verantwortlichen des Arbeitspakets geprüft wurde
+    correct: true
+  - en: The expected total cost at completion
+    de: Die erwarteten Gesamtkosten zum Projektende
+    correct: true
+  - en: At least two options with their effects and one recommendation
+    de: Mindestens zwei Optionen mit ihren Auswirkungen und eine Empfehlung
+    correct: true
+  - en: A list of every invoice since the start of the project
+    de: Eine Liste aller Rechnungen seit Projektbeginn
+    correct: false
+  explanation:
+    en: A decision needs variance, cause, forecast and options. An invoice list is detail the sponsor cannot act on.
+    de: Eine Entscheidung braucht Abweichung, Ursache, Prognose und Optionen. Eine Rechnungsliste ist Detail, mit dem die Auftraggebenden nichts entscheiden können.
+  source: https://de.wikipedia.org/wiki/Projektcontrolling
+- id: pbc-a-sunk
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: Half the budget is spent and a feature is 30 % done. Finishing needs another 80 % of the original budget, but its expected benefit is now below that cost. What is the soundest basis for the decision?
+    de: Das halbe Budget ist ausgegeben und ein Feature zu 30 % fertig. Das Fertigstellen braucht weitere 80 % des ursprünglichen Budgets, der erwartete Nutzen liegt aber unter diesen Kosten. Was ist die tragfähigste Entscheidungsgrundlage?
+  options:
+  - en: Continue, because stopping would waste everything spent so far
+    de: Weitermachen, weil ein Stopp alles bisher Ausgegebene verschwenden würde
+    correct: false
+  - en: Compare remaining cost with remaining benefit and treat money already spent as irrelevant
+    de: Restkosten mit Restnutzen vergleichen und bereits ausgegebenes Geld als nicht relevant behandeln
+    correct: true
+  - en: Continue until the budget is used up, then decide
+    de: Weitermachen, bis das Budget aufgebraucht ist, und dann entscheiden
+    correct: false
+  - en: Cut the testing effort so that the remaining cost fits the benefit
+    de: Den Testaufwand kürzen, damit die Restkosten zum Nutzen passen
+    correct: false
+  explanation:
+    en: Escalation of commitment makes decision makers stay with a poor decision. Only future cost and future benefit can change with the decision.
+    de: Eskalation des Commitments lässt Entscheidende an einer schlechten Entscheidung festhalten. Nur künftige Kosten und künftiger Nutzen hängen von der Entscheidung ab.
+  source: https://openstax.org/books/principles-management/pages/2-4-barriers-to-effective-decision-making
+- id: pbc-a-favourable
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: The cost report shows a favourable variance of 15 % on the work package "Testing", and its owner reports it as "finished early". What do you do first?
+    de: Der Kostenbericht zeigt für das Arbeitspaket „Test“ eine günstige Abweichung von 15 %, und die Verantwortlichen melden es als „früher fertig“. Was tust du zuerst?
+  options:
+  - en: Release the saving to another work package immediately, since it is already free
+    de: Die Einsparung sofort einem anderen Arbeitspaket zuweisen, weil sie ohnehin frei ist
+    correct: false
+  - en: Reduce the contingency by the amount saved
+    de: Die Reserve um den eingesparten Betrag senken
+    correct: false
+  - en: Accept it, since favourable variances never need an explanation
+    de: Es akzeptieren, weil günstige Abweichungen nie erklärt werden müssen
+    correct: false
+  - en: Check the result against its acceptance criteria before accepting the saving
+    de: Prüfen, ob das Ergebnis seine Abnahmekriterien erfüllt, bevor du die Einsparung akzeptierst
+    correct: true
+  explanation:
+    en: A favourable variance can mean that costs were cut too far or that work is missing. Check the result first, then decide what to do with the saving.
+    de: Eine günstige Abweichung kann bedeuten, dass zu stark gespart wurde oder Arbeit fehlt. Prüfe zuerst das Ergebnis, dann entscheide über die Einsparung.
+  source: https://openstax.org/books/principles-managerial-accounting/pages/7-5-explain-how-budgets-are-used-to-evaluate-goals
+- id: pbc-a-traffic
+  level: advanced
+  difficulty: 1550
+  type: multi
+  stem:
+    en: Which rules make traffic-light cost reporting more useful? Select all that apply.
+    de: Welche Regeln machen Ampelberichte zu den Kosten nützlicher? Wähle alle zutreffenden aus.
+  options:
+  - en: Agree the thresholds for amber and red with the sponsor in advance
+    de: Die Schwellen für Gelb und Rot vorab mit den Auftraggebenden vereinbaren
+    correct: true
+  - en: Base the colour on the forecast at completion, not only on spend to date
+    de: Die Farbe auf die Prognose zum Projektende stützen, nicht nur auf die bisherigen Ausgaben
+    correct: true
+  - en: Show red only once the budget is completely used up
+    de: Rot erst zeigen, wenn das Budget vollständig aufgebraucht ist
+    correct: false
+  - en: Treat red as the signal to stop all work
+    de: Rot als Signal behandeln, alle Arbeit zu stoppen
+    correct: false
+  explanation:
+    en: Thresholds fixed in advance and a forward-looking basis make the colour a real early warning. Red calls for counter-steering, not for a stop.
+    de: Vorab vereinbarte Schwellen und eine vorausschauende Grundlage machen die Farbe zu einem echten Frühwarnsignal. Rot verlangt Gegensteuern, keinen Stopp.
+  source: https://de.wikipedia.org/wiki/Projektcontrolling
+- id: pbc-a-granular
+  level: advanced
+  difficulty: 1600
+  type: single
+  stem:
+    en: On a large project, costs are tracked with one budget line per phase. Drift is noticed only late. Which change improves control most?
+    de: In einem großen Projekt werden die Kosten mit einer Budgetzeile je Phase verfolgt. Abweichungen fallen erst spät auf. Welche Änderung verbessert die Steuerung am meisten?
+  options:
+  - en: Enlarge the contingency so that drift stays invisible
+    de: Die Reserve vergrößern, damit die Abweichung unsichtbar bleibt
+    correct: false
+  - en: Report once per phase instead of monthly to reduce noise
+    de: Einmal je Phase statt monatlich berichten, um Rauschen zu verringern
+    correct: false
+  - en: Track only the largest invoice of each phase
+    de: Nur die größte Rechnung jeder Phase verfolgen
+    correct: false
+  - en: Split budgets into hours, external services and travel per work package and compare with plan regularly
+    de: Budgets je Arbeitspaket in Stunden, externe Leistungen und Reisen aufteilen und regelmäßig mit dem Plan vergleichen
+    correct: true
+  explanation:
+    en: Smaller budget units, compared with plan at a steady rhythm, show drift early. Bigger reserves or rarer reports hide it.
+    de: Kleinere Budgeteinheiten, in gleichmäßigem Rhythmus mit dem Plan verglichen, zeigen Abweichungen früh. Größere Reserven oder seltenere Berichte verbergen sie.
+  source: https://de.wikipedia.org/wiki/Projektcontrolling

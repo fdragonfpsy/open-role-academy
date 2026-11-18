@@ -1,5 +1,22 @@
 # Status
 
+## 2026-11-18 — Phase 4: Project Management content batch 2 (project-budget-cost-control, risk-issue-management, stakeholder-management-communication)
+
+**Done**
+- 16 unit files (8 en + 8 de, `status: ai-draft`): budget at foundation/practitioner, risk and stakeholder at all three levels. Methodology-neutral; own methods labelled "our own"; examples invented and labelled; CV/SV/CPI formulas and figures are our own and hand-checked.
+- 36 items (12 per competency, 3 multi per file); the longest-option check is clean.
+- 15 new link-only resources (`licenseVerifiedOn: 2026-11-18`, HTTP 200): 6 OpenStax CC BY-NC-SA pages (Managerial Accounting 7.1, 7.5; Principles of Management 2.4, 16.1; Organizational Behavior 14.4; Business Ethics 3.2) and 9 Wikipedia pages (6 German). 4 existing resources re-tagged.
+- Role stays `status: draft`.
+
+**Reviewer to-dos**
+- DIN 69901 wording and earned-value terms against de.wikipedia Projektcontrolling; risk-register facts (NCVO impact-weighting remark, Toyota criticism) from Wikipedia only; stakeholder salience types from en.wikipedia (German terms "schlafend", "fordernd", "nachrangig").
+- No primary standard (ISO 31000, DIN 69901) was read; OpenStax pages are general and only partly read (OB 14.4 up to the influence stage).
+- Judgement items: pbc-a-sunk, pbc-a-favourable, rim-a-aggregate, rim-a-commit, smc-a-claims, smc-a-culture. German wording of the 8 DE units.
+
+**Counts:** roles 8 (1 draft) · competencies 78 · units 426 · items 892 · resources 429
+
+**Next:** Project Management content: resource-team-coordination, agile-hybrid-delivery, quality-change-management.
+
 ## 2026-11-18 — Phase 4: Project Management content batch 1 (project-initiation-business-case, scope-requirements-management, work-breakdown-scheduling)
 
 **Done**

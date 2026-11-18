@@ -1,0 +1,18 @@
+id: wikipedia-stakeholder-analysis
+url: https://en.wikipedia.org/wiki/Stakeholder_analysis
+title: Stakeholder analysis
+provider: Wikipedia
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies:
+- stakeholder-management-communication
+levels:
+- foundation
+- practitioner
+- advanced
+note: Footer states CC BY-SA; no maintenance banner; read 2026-11-18. Link only, nothing copied. stakeholder mapping, influence-interest grid, power-interest matrix, salience model.

@@ -1,0 +1,73 @@
+---
+id: risk-issue-management-practitioner
+competency: risk-issue-management
+level: practitioner
+title: "Risiken bewerten und priorisieren"
+objectives:
+  - "Wahrscheinlichkeit und Auswirkung auf vereinbarten Skalen bewerten."
+  - "Risiken in einer Risikomatrix einordnen und ordnen."
+  - "Die Grenzen eines Werts erkennen und ausgleichen."
+  - "Im regelmäßigen Projekttreffen eine kurze Risikoüberprüfung durchführen."
+minutes: 20
+resources:
+  - wikipedia-de-risikomatrix
+  - wikipedia-risk-register
+  - wikipedia-de-risikoanalyse
+  - wikipedia-de-risikomanagement
+status: ai-draft
+sources:
+  - title: "Risikomatrix"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Risikomatrix
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Risk register"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Risk_register
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Risikoanalyse"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Risikoanalyse
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Ein Register mit fünfzig ungeordneten Risiken ist eine Liste von Sorgen. Priorisieren zeigt, wo die nächste Stunde Arbeit am meisten bringt, und gibt den Auftraggebenden eine kurze Liste, mit der sie handeln können.
+
+## Wahrscheinlichkeit und Auswirkung bewerten
+
+Eine Risikomatrix stellt die Eintrittswahrscheinlichkeit dem Schadensausmaß in zwei Dimensionen gegenüber. Sie ist ein Standardwerkzeug, um Risiken abzuschätzen, zu bewerten und zu ordnen, und aus der Position eines Risikos lässt sich die Dringlichkeit einer Reaktion ablesen. Zeilen und Spalten können mit einem Index (1, 2, 3) oder mit Beschreibungen beschriftet werden, die Zellen sind oft wie eine Ampel gefärbt. Unsere eigene Beispielskala nutzt für beide Achsen 1 bis 5 mit schriftlichen Ankern, etwa Auswirkung 1 = weniger als ein Tag Verzug und Auswirkung 5 = Starttermin verpasst, Wahrscheinlichkeit 1 = sehr unwahrscheinlich und 5 = sehr wahrscheinlich. Vereinbart die Anker im Team; die Worte sind wichtiger als die Zahlen.
+
+## Werte und ihre Grenzen
+
+Wahrscheinlichkeit mal Auswirkung ergibt einen Wert nach Art eines Schadenserwartungswerts. Die Faktoren können einander aufheben und zu einem falschen Urteil führen: Ein seltenes, aber schweres Risiko und ein häufiges, aber harmloses können denselben Wert haben. Manche gewichten deshalb die Auswirkung stärker, etwa indem sie multiplizieren und den Auswirkungswert noch einmal addieren. Unsere eigene Regel: Jedes Risiko mit maximaler Auswirkung wird besprochen, egal wie sein Wert ausfällt.
+
+## Risiken erkennen
+
+Menschen nehmen dasselbe Risiko unterschiedlich oder gar nicht wahr, und selektive Wahrnehmung blendet manche Risiken aus. Sammle Risiken in einer Gruppe mit verschiedenen Rollen und verbinde Daten wie Erfahrungswerte und Checklisten mit Expertenurteilen. Ein Register kann außerdem zu ritualisierten Entscheidungen und einer Kontrollillusion führen. Mit gesundem Menschenverstand genutzt, regt es die Diskussion über Funktionsgrenzen hinweg an.
+
+## Risikoüberprüfung (unsere eigene Methode)
+
+Nimm dir in jedem regelmäßigen Projekttreffen zehn Minuten für Folgendes:
+
+- Die fünf wichtigsten Risiken neu bewerten.
+- Die Auslöser prüfen: Ist einer eingetreten?
+- Risiken schließen oder ergänzen und sicherstellen, dass jedes offene Risiko eine verantwortliche Person und eine nächste Aktion hat.
+- Eingetretene Risiken in die Issue-Liste übernehmen.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundenes Projekt. Ein Team führt ein neues Personalsystem ein und bewertet vier Risiken auf Skalen von 1 bis 5. R1 „Weil der leitende Entwickler gehen könnte, kann die Arbeit stocken“: Wahrscheinlichkeit 3, Auswirkung 4, Wert 12. R2 „Weil Altdaten unsauber sind, kann die Migration Fehler enthalten“: Wahrscheinlichkeit 4, Auswirkung 3, Wert 12. R3 „Weil der Hersteller die Lizenz spät liefern könnte, beginnt die Einrichtung spät“: Wahrscheinlichkeit 2, Auswirkung 3, Wert 6. R4 „Weil die datenschutzrechtliche Freigabe fehlt, kann der Go-live blockiert werden“: Wahrscheinlichkeit 1, Auswirkung 5, Wert 5. R1 und R2 liegen gleichauf bei 12. R4 hat den niedrigsten Wert, aber die maximale Auswirkung, deshalb bespricht das Team es trotzdem und beschließt, die Freigabe früh zu beantragen. Für R2 lautet die Reaktion: eine Probemigration mit einer Stichprobe von Datensätzen.
+
+## Das Wichtigste in Kürze
+
+- Bewerte Wahrscheinlichkeit und Auswirkung auf schriftlichen Skalen, die das Team vereinbart hat.
+- Ein Wert ordnet Risiken, kann aber seltene, schwere verbergen; bespreche jedes Risiko mit maximaler Auswirkung.
+- Sammle Risiken mit mehreren Rollen und etwas Daten, denn Wahrnehmung ist selektiv.
+- Prüfe die wichtigsten Risiken in jedem regelmäßigen Treffen; ein nie geprüftes Register ist nur ein Ritual.

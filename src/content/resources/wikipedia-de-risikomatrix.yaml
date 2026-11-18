@@ -1,0 +1,17 @@
+id: wikipedia-de-risikomatrix
+url: https://de.wikipedia.org/wiki/Risikomatrix
+title: Risikomatrix
+provider: Wikipedia
+language: de
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies:
+- risk-issue-management
+levels:
+- practitioner
+- advanced
+note: Footer states CC BY-SA; no maintenance banner; read 2026-11-18. Link only, nothing copied. probability vs extent of damage, expected value, criticism that factors can offset each other.
