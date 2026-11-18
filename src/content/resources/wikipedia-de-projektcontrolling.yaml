@@ -1,0 +1,18 @@
+id: wikipedia-de-projektcontrolling
+url: https://de.wikipedia.org/wiki/Projektcontrolling
+title: Projektcontrolling
+provider: Wikipedia
+language: de
+format: article
+minutes: 12
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies:
+- project-budget-cost-control
+levels:
+- foundation
+- practitioner
+- advanced
+note: Footer states CC BY-SA; no maintenance banner; read 2026-11-18. Link only, nothing copied. DIN 69901 definition, key figures, earned value terms, traffic light method, plan-actual comparison.

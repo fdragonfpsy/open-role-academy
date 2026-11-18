@@ -1,0 +1,17 @@
+id: wikipedia-project-stakeholder
+url: https://en.wikipedia.org/wiki/Project_stakeholder
+title: Project stakeholder
+provider: Wikipedia
+language: en
+format: article
+minutes: 8
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies:
+- stakeholder-management-communication
+levels:
+- foundation
+- advanced
+note: Footer states CC BY-SA; no maintenance banner; read 2026-11-18. Link only, nothing copied. definition, examples of project stakeholders, stakeholder management.

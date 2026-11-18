@@ -1,0 +1,290 @@
+competency: stakeholder-management-communication
+items:
+- id: smc-f-def
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: Who counts as a stakeholder of a project?
+    de: Wer zählt als Stakeholder eines Projekts?
+  options:
+  - en: Only people who invest money or other resources directly in the project
+    de: Nur Personen, die Geld oder andere Mittel direkt in das Projekt investieren
+    correct: false
+  - en: Anyone who can affect the project or is affected by it
+    de: Alle, die das Projekt beeinflussen können oder von ihm betroffen sind
+    correct: true
+  - en: Only the sponsor and the project team
+    de: Nur die Auftraggebenden und das Projektteam
+    correct: false
+  - en: Only people who signed the project mandate
+    de: Nur Personen, die den Projektauftrag unterschrieben haben
+    correct: false
+  explanation:
+    en: The broad definition covers everyone who can affect the achievement of the goals or is affected by it, inside and outside the organisation.
+    de: Die weite Definition umfasst alle, die die Zielerreichung beeinflussen können oder von ihr betroffen sind, innerhalb und außerhalb der Organisation.
+  source: https://de.wikipedia.org/wiki/Stakeholder
+- id: smc-f-grid
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: A stakeholder has high influence but low interest in the project. Which approach fits best?
+    de: Ein Stakeholder hat hohen Einfluss, aber geringes Interesse am Projekt. Welcher Ansatz passt am besten?
+  options:
+  - en: Ignore them, because low interest means there is no risk
+    de: Ihn ignorieren, weil geringes Interesse kein Risiko bedeutet
+    correct: false
+  - en: Involve them in the daily project work
+    de: Ihn in die tägliche Projektarbeit einbinden
+    correct: false
+  - en: Keep them satisfied with short, relevant updates
+    de: Ihn mit kurzen, relevanten Updates zufriedenstellen
+    correct: true
+  - en: Send them every detail so nothing is missed
+    de: Ihm jedes Detail schicken, damit nichts fehlt
+    correct: false
+  explanation:
+    en: People with high influence can still help or hinder the project, so they should not be ignored. Their low interest means they want short, relevant information rather than details.
+    de: Menschen mit hohem Einfluss können das Projekt trotzdem fördern oder behindern und sollten nicht ignoriert werden. Ihr geringes Interesse heißt, dass sie kurze, relevante Informationen wollen, keine Details.
+  source: https://en.wikipedia.org/wiki/Stakeholder_analysis
+- id: smc-f-plan
+  level: foundation
+  difficulty: 1000
+  type: multi
+  stem:
+    en: Which columns belong in a basic communication plan? Select all that apply.
+    de: Welche Spalten gehören in einen einfachen Kommunikationsplan? Wähle alle zutreffenden aus.
+  options:
+  - en: Who needs information or must decide
+    de: Wer Information braucht oder entscheiden muss
+    correct: true
+  - en: What they need and through which channel
+    de: Was sie brauchen und über welchen Kanal
+    correct: true
+  - en: When it is sent and by whom
+    de: Wann es gesendet wird und von wem
+    correct: true
+  - en: Which critics are left off all mailing lists
+    de: Welche Kritiker auf keinem Verteiler stehen
+    correct: false
+  explanation:
+    en: A plan says who needs what, how, when and from whom. Leaving critics out of all communication removes the chance to address their concerns early.
+    de: Ein Plan sagt, wer was braucht, wie, wann und von wem. Kritiker aus jeder Kommunikation auszuschließen, nimmt die Chance, ihre Bedenken früh zu klären.
+  source: https://de.wikipedia.org/wiki/Projektkommunikation
+- id: smc-f-raci
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: In a responsibility assignment matrix (RACI), what does "Accountable" mean?
+    de: Was bedeutet „Accountable“ in einer Verantwortlichkeitsmatrix (RACI)?
+  options:
+  - en: The person who does the work
+    de: Die Person, die die Arbeit erledigt
+    correct: false
+  - en: The person who is only kept informed of the outcome
+    de: Die Person, die nur über das Ergebnis informiert wird
+    correct: false
+  - en: A person whose opinion is asked before and during the work, in both directions
+    de: Eine Person, deren Meinung vor und während der Arbeit eingeholt wird, in beide Richtungen
+    correct: false
+  - en: The person who is ultimately answerable and signs off the result
+    de: Die Person, die letztlich verantwortlich ist und das Ergebnis abnimmt
+    correct: true
+  explanation:
+    en: Accountable is the one answerable for the result. Doing the work is Responsible, giving opinions is Consulted and being updated is Informed.
+    de: Accountable ist, wer für das Ergebnis geradesteht. Die Arbeit erledigen ist Responsible, Einschätzungen geben ist Consulted und auf dem Laufenden gehalten werden ist Informed.
+  source: https://en.wikipedia.org/wiki/Responsibility_assignment_matrix
+- id: smc-p-groups
+  level: practitioner
+  difficulty: 1150
+  type: single
+  stem:
+    en: A project will change how a business unit works. What should the project tell that unit first?
+    de: Ein Projekt verändert die Arbeitsweise einer Geschäftseinheit. Was sollte das Projekt dieser Einheit zuerst mitteilen?
+  options:
+  - en: The technical specification of every component, including all internal interfaces
+    de: Die technische Spezifikation jeder Komponente, einschließlich aller internen Schnittstellen
+    correct: false
+  - en: The consequences for the unit, such as resource needs and operating costs
+    de: Die Folgen für die Einheit, etwa Ressourcenbedarf und Betriebskosten
+    correct: true
+  - en: Nothing until the system goes live
+    de: Nichts, bis das System live geht
+    correct: false
+  - en: Only the project's name and sponsor
+    de: Nur Namen und Auftraggebende des Projekts
+    correct: false
+  explanation:
+    en: Affected units are first of all interested in what changes for them. Detail they cannot use, or silence, does not meet that need.
+    de: Betroffene Einheiten interessiert zuerst, was sich für sie ändert. Detail, das sie nicht nutzen können, oder Schweigen erfüllen dieses Bedürfnis nicht.
+  source: https://de.wikipedia.org/wiki/Projektkommunikation
+- id: smc-p-feedback
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: You sent a clear email about a change, but two days later nobody has acted. Which idea from the communication model explains this best?
+    de: Du hast eine klare E-Mail zu einer Änderung geschickt, aber zwei Tage später hat niemand gehandelt. Welcher Gedanke aus dem Kommunikationsmodell erklärt das am besten?
+  options:
+  - en: The sender should have written more, because length ensures understanding
+    de: Die Sendende hätte mehr schreiben sollen, weil Länge Verständnis sichert
+    correct: false
+  - en: Receivers decode messages through their own experience, and without feedback you cannot know it arrived as meant
+    de: Empfangende entschlüsseln Botschaften durch ihre eigene Erfahrung, und ohne Rückmeldung weißt du nicht, ob sie wie gemeint ankam
+    correct: true
+  - en: Email can never work; only meetings convey messages
+    de: E-Mail kann nie funktionieren; nur Meetings vermitteln Botschaften
+    correct: false
+  - en: Receivers who do not act are being disobedient
+    de: Empfangende, die nicht handeln, sind ungehorsam
+    correct: false
+  explanation:
+    en: Decoding depends on the receiver's experience and situation. Feedback tells you whether the message was understood as intended.
+    de: Das Entschlüsseln hängt von Erfahrung und Situation der Empfangenden ab. Rückmeldung zeigt, ob die Botschaft wie gedacht verstanden wurde.
+  source: https://openstax.org/books/principles-management/pages/16-1-the-process-of-managerial-communication
+- id: smc-p-status
+  level: practitioner
+  difficulty: 1250
+  type: multi
+  stem:
+    en: What makes a one-page status report decision-oriented? Select all that apply.
+    de: Was macht einen einseitigen Statusbericht entscheidungsorientiert? Wähle alle zutreffenden aus.
+  options:
+  - en: A one-sentence reason for the overall status
+    de: Ein Satz Begründung für den Gesamtstatus
+    correct: true
+  - en: A list of decisions needed with owner and date
+    de: Eine Liste nötiger Entscheidungen mit verantwortlicher Person und Datum
+    correct: true
+  - en: A green status unless the project is already failing
+    de: Ein grüner Status, solange das Projekt nicht schon scheitert
+    correct: false
+  - en: Hours spent per person as the main measure of progress
+    de: Aufgewendete Stunden je Person als wichtigstes Fortschrittsmaß
+    correct: false
+  explanation:
+    en: A short reason and explicit decisions let readers act. Optimistic colours and effort figures hide real progress.
+    de: Eine kurze Begründung und ausdrückliche Entscheidungen lassen Lesende handeln. Optimistische Farben und Aufwandszahlen verbergen den echten Fortschritt.
+  source: https://de.wikipedia.org/wiki/Projektkommunikation
+- id: smc-p-meeting
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: Which meeting practice most reliably turns discussion into progress?
+    de: Welche Meeting-Praxis macht aus Diskussion am zuverlässigsten Fortschritt?
+  options:
+  - en: Inviting everyone affected so that nobody feels left out
+    de: Alle Betroffenen einladen, damit sich niemand ausgeschlossen fühlt
+    correct: false
+  - en: Keeping the agenda open so that topics can develop freely
+    de: Die Agenda offen halten, damit sich Themen frei entwickeln
+    correct: false
+  - en: Sending minutes only when somebody asks for them
+    de: Protokolle nur zu schicken, wenn jemand danach fragt
+    correct: false
+  - en: Recording decisions and actions with owner and date during the meeting and sending them within a day
+    de: Entscheidungen und Aufgaben mit verantwortlicher Person und Datum während des Meetings festzuhalten und binnen eines Tages zu verschicken
+    correct: true
+  explanation:
+    en: Visible decisions and actions with owners create commitment. Large invitations, open agendas and optional minutes do not.
+    de: Sichtbare Entscheidungen und Aufgaben mit Verantwortlichen schaffen Verbindlichkeit. Große Einladungslisten, offene Agenden und optionale Protokolle tun das nicht.
+  source: https://de.wikipedia.org/wiki/Projektkommunikation
+- id: smc-a-salience
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: A stakeholder has a lot of power but no legitimate claim and no urgency. How does the salience model classify this stakeholder, and what follows?
+    de: Ein Stakeholder hat viel Macht, aber keinen legitimen Anspruch und keine Dringlichkeit. Wie ordnet das Salienzmodell ihn ein, und was folgt daraus?
+  options:
+  - en: 'Demanding: respond to every request immediately'
+    de: 'Fordernd: jede Anfrage sofort beantworten'
+    correct: false
+  - en: 'Discretionary: involve them in all decisions'
+    de: 'Nachrangig: in alle Entscheidungen einbinden'
+    correct: false
+  - en: 'Dormant: remove them from the register as irrelevant, since they will never become relevant'
+    de: 'Schlafend: als irrelevant aus dem Register streichen, weil sie nie relevant werden'
+    correct: false
+  - en: 'Dormant: unlikely to get involved now, but watch for changes in urgency or legitimacy'
+    de: 'Schlafend: wird sich jetzt kaum einbringen, aber auf Änderungen bei Dringlichkeit oder Legitimität achten'
+    correct: true
+  explanation:
+    en: Dormant stakeholders hold power but are not likely to become heavily involved. Because attitudes and urgency change, they should be watched, not deleted.
+    de: Schlafende Stakeholder haben Macht, werden sich aber vermutlich nicht stark einbringen. Weil sich Einstellungen und Dringlichkeit ändern, sollte man sie beobachten, nicht streichen.
+  source: https://en.wikipedia.org/wiki/Stakeholder_analysis
+- id: smc-a-claims
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: Two stakeholders make legitimate but conflicting claims and you cannot satisfy both. What is the best approach?
+    de: Zwei Stakeholder erheben legitime, aber widersprüchliche Ansprüche, und du kannst nicht beide erfüllen. Was ist der beste Ansatz?
+  options:
+  - en: Satisfy the more powerful one and tell the other nothing
+    de: Den mächtigeren zufriedenstellen und dem anderen nichts sagen
+    correct: false
+  - en: Split the resources 50/50 whatever the effect on the goals
+    de: Die Mittel 50/50 aufteilen, egal was das für die Ziele bedeutet
+    correct: false
+  - en: Make the criteria visible, decide with the sponsor and explain the decision to the side that loses
+    de: Die Kriterien sichtbar machen, mit den Auftraggebenden entscheiden und die Entscheidung der unterlegenen Seite erklären
+    correct: true
+  - en: Delay the decision until one of them gives up
+    de: Die Entscheidung verzögern, bis einer aufgibt
+    correct: false
+  explanation:
+    en: Not all claims are equal and limited resources force priorities, but an open, explained decision protects trust. Secrecy, mechanical splits and delay do not.
+    de: Nicht alle Ansprüche sind gleich wichtig, und begrenzte Mittel erzwingen Prioritäten, aber eine offene, erklärte Entscheidung schützt das Vertrauen. Heimlichkeit, mechanisches Teilen und Verzögern tun das nicht.
+  source: https://openstax.org/books/business-ethics/pages/3-2-weighing-stakeholder-claims
+- id: smc-a-negotiate
+  level: advanced
+  difficulty: 1550
+  type: multi
+  stem:
+    en: Which steps strengthen the preparation for a negotiation with a stakeholder? Select all that apply.
+    de: Welche Schritte stärken die Vorbereitung einer Verhandlung mit einem Stakeholder? Wähle alle zutreffenden aus.
+  options:
+  - en: Identify both sides' interests, not only their positions
+    de: Die Interessen beider Seiten ermitteln, nicht nur ihre Positionen
+    correct: true
+  - en: Decide on your fallback if no agreement is reached
+    de: Deine Rückfalloption festlegen, falls keine Einigung gelingt
+    correct: true
+  - en: Plan to confirm the result in writing
+    de: Planen, das Ergebnis schriftlich zu bestätigen
+    correct: true
+  - en: Skip the exchange of information to save time
+    de: Den Informationsaustausch überspringen, um Zeit zu sparen
+    correct: false
+  explanation:
+    en: Interests, a fallback and a written result make a negotiation purposeful and durable. Skipping the information exchange removes the shared picture on which an agreement rests.
+    de: Interessen, eine Rückfalloption und ein schriftliches Ergebnis machen eine Verhandlung zielgerichtet und tragfähig. Ohne Informationsaustausch fehlt das gemeinsame Bild, auf dem eine Einigung ruht.
+  source: https://openstax.org/books/organizational-behavior/pages/14-4-negotiation-behavior
+- id: smc-a-culture
+  level: advanced
+  difficulty: 1600
+  type: single
+  stem:
+    en: A negotiation partner from a culture in which relationships matter more than contracts spends the first meeting on small talk. What is the most useful reaction?
+    de: Ein Verhandlungspartner aus einer Kultur, in der Beziehungen mehr zählen als Verträge, verbringt das erste Treffen mit Smalltalk. Was ist die nützlichste Reaktion?
+  options:
+  - en: Push the agenda, because small talk is wasted time
+    de: Die Agenda vorantreiben, weil Smalltalk verlorene Zeit ist
+    correct: false
+  - en: Invest time in the relationship first, because trust shapes how far each side relies on the agreement
+    de: Zuerst Zeit in die Beziehung investieren, weil Vertrauen bestimmt, wie weit sich beide Seiten auf die Vereinbarung verlassen
+    correct: true
+  - en: Hand over a detailed contract to move things along
+    de: Einen detaillierten Vertrag übergeben, um voranzukommen
+    correct: false
+  - en: Postpone until a colleague from the same culture is found
+    de: Verschieben, bis eine Kollegin aus derselben Kultur gefunden ist
+    correct: false
+  explanation:
+    en: In some cultures the non-task stage is longer and more important because it establishes the relationship that carries the agreement. Rushing it can weaken trust.
+    de: In manchen Kulturen ist die aufgabenfreie Phase länger und wichtiger, weil sie die Beziehung herstellt, die die Vereinbarung trägt. Sie zu überstürzen kann das Vertrauen schwächen.
+  source: https://openstax.org/books/organizational-behavior/pages/14-4-negotiation-behavior

@@ -1,0 +1,19 @@
+id: openstax-pom-barriers-decision-making
+url: https://openstax.org/books/principles-management/pages/2-4-barriers-to-effective-decision-making
+title: 'Principles of Management, 2.4: Barriers to Effective Decision-Making'
+provider: OpenStax
+language: en
+format: book
+minutes: 20
+license: CC-BY-NC-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies:
+- project-budget-cost-control
+- risk-issue-management
+levels:
+- foundation
+- practitioner
+- advanced
+note: 'Book page footer states "Creative Commons Attribution-NonCommercial-ShareAlike License" (NC -> link only). Read 2026-11-18: bounded rationality, escalation of commitment, time constraints, uncertainty, personal biases.'

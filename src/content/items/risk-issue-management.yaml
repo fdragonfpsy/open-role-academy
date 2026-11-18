@@ -1,0 +1,290 @@
+competency: risk-issue-management
+items:
+- id: rim-f-issue
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: Which statement describes an issue rather than a risk?
+    de: Welche Aussage beschreibt ein Issue und kein Risiko?
+  options:
+  - en: The test server might crash during the final test week and block our release
+    de: Der Testserver könnte in der letzten Testwoche ausfallen und unseren Release blockieren
+    correct: false
+  - en: The supplier may deliver the licence late
+    de: Der Lieferant könnte die Lizenz verspätet liefern
+    correct: false
+  - en: We assume that the migrated data will be clean
+    de: Wir nehmen an, dass die migrierten Daten sauber sind
+    correct: false
+  - en: The test server crashed this morning and testing cannot start
+    de: Der Testserver ist heute Morgen ausgefallen, und der Test kann nicht beginnen
+    correct: true
+  explanation:
+    en: An issue has already happened and needs action now. The other statements describe possible future events or an unchecked assumption.
+    de: Ein Issue ist bereits eingetreten und verlangt jetzt Handeln. Die übrigen Aussagen beschreiben mögliche künftige Ereignisse oder eine ungeprüfte Annahme.
+  source: https://en.wikipedia.org/wiki/Risk_register
+- id: rim-f-terms
+  level: foundation
+  difficulty: 950
+  type: multi
+  stem:
+    en: Which statements about risks, issues, assumptions and dependencies are correct? Select all that apply.
+    de: Welche Aussagen über Risiken, Issues, Annahmen und Abhängigkeiten sind richtig? Wähle alle zutreffenden aus.
+  options:
+  - en: An assumption is taken as true in the plan without proof
+    de: Eine Annahme gilt im Plan als wahr, ohne dass es einen Beleg gibt
+    correct: true
+  - en: A dependency is something the project needs from someone else
+    de: Eine Abhängigkeit ist etwas, das das Projekt von anderen braucht
+    correct: true
+  - en: A risk is an event that has already happened
+    de: Ein Risiko ist ein Ereignis, das bereits eingetreten ist
+    correct: false
+  - en: A risk can become an issue when its event occurs
+    de: Ein Risiko kann zum Issue werden, wenn sein Ereignis eintritt
+    correct: true
+  explanation:
+    en: A risk concerns the future; once the event occurs it becomes an issue. Assumptions and dependencies are common sources of risk.
+    de: Ein Risiko betrifft die Zukunft; tritt das Ereignis ein, wird es zum Issue. Annahmen und Abhängigkeiten sind häufige Risikoquellen.
+  source: https://de.wikipedia.org/wiki/Risikomanagement
+- id: rim-f-format
+  level: foundation
+  difficulty: 1000
+  type: single
+  stem:
+    en: Which risk entry is best written for a register?
+    de: Welcher Risikoeintrag ist für ein Register am besten formuliert?
+  options:
+  - en: Problems with the budget and the schedule in the second half of the year
+    de: Probleme mit Budget und Terminplan in der zweiten Jahreshälfte
+    correct: false
+  - en: Because only one trainer is available, the training may start late and delay go-live
+    de: Weil nur eine Trainerin verfügbar ist, kann die Schulung spät beginnen und den Go-live verzögern
+    correct: true
+  - en: The supplier is unreliable and nothing can be done about it
+    de: Der Lieferant ist unzuverlässig, und man kann nichts dagegen tun
+    correct: false
+  - en: Possible delays caused by many different circumstances
+    de: Mögliche Verzögerungen durch viele unterschiedliche Umstände
+    correct: false
+  explanation:
+    en: A well-written risk names cause, event and effect, so it can be rated, owned and answered. Vague entries cannot.
+    de: Ein gut formuliertes Risiko nennt Ursache, Ereignis und Auswirkung und lässt sich so bewerten, zuordnen und beantworten. Vage Einträge nicht.
+  source: https://en.wikipedia.org/wiki/Risk_register
+- id: rim-f-response
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: A team buys insurance against cancellation costs of an event. Which kind of risk response is this?
+    de: Ein Team schließt eine Versicherung gegen Stornokosten einer Veranstaltung ab. Welche Art der Risikoreaktion ist das?
+  options:
+  - en: 'Avoid: change the plan so the risk cannot occur'
+    de: 'Vermeiden: den Plan so ändern, dass das Risiko nicht eintreten kann'
+    correct: false
+  - en: 'Transfer: shift the consequence to another party'
+    de: 'Übertragen: die Folge auf eine andere Partei verlagern'
+    correct: true
+  - en: 'Accept: do nothing now and keep a reserve'
+    de: 'Akzeptieren: jetzt nichts tun und eine Reserve vorhalten'
+    correct: false
+  - en: 'Reduce: lower the probability or the impact of the event'
+    de: 'Vermindern: Wahrscheinlichkeit oder Auswirkung senken'
+    correct: false
+  explanation:
+    en: Insurance shifts the financial consequence to another party. It does not stop the cancellation, so it is not avoidance, and the team is not simply accepting the loss.
+    de: Eine Versicherung verlagert die finanzielle Folge auf eine andere Partei. Sie verhindert die Absage nicht, ist also keine Vermeidung, und das Team nimmt den Verlust nicht einfach hin.
+  source: https://de.wikipedia.org/wiki/Risikomanagement
+- id: rim-p-score
+  level: practitioner
+  difficulty: 1150
+  type: single
+  stem:
+    en: A risk has probability 3 and impact 4 on 1 to 5 scales. What is its score, and how is it used?
+    de: Ein Risiko hat Wahrscheinlichkeit 3 und Auswirkung 4 auf Skalen von 1 bis 5. Wie hoch ist sein Wert, und wofür dient er?
+  options:
+  - en: 7, the sum of both values, used for ranking
+    de: 7, die Summe beider Werte, zum Ordnen
+    correct: false
+  - en: 4, the larger of the two values, used for ranking
+    de: 4, der größere der beiden Werte, zum Ordnen
+    correct: false
+  - en: 12, used to rank risks against each other
+    de: 12, dient dazu, Risiken untereinander zu ordnen
+    correct: true
+  - en: 12, the exact expected loss in euros
+    de: 12, der genaue erwartete Verlust in Euro
+    correct: false
+  explanation:
+    en: The score is probability times impact. On ordinal scales it ranks risks; it is not a loss in euros.
+    de: Der Wert ist Wahrscheinlichkeit mal Auswirkung. Auf Ordinalskalen ordnet er Risiken; er ist kein Verlust in Euro.
+  source: https://de.wikipedia.org/wiki/Risikomatrix
+- id: rim-p-limit
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: Risk A has probability 1 and impact 5 (score 5). Risk B has probability 5 and impact 1 (score 5). What is the sound conclusion?
+    de: Risiko A hat Wahrscheinlichkeit 1 und Auswirkung 5 (Wert 5). Risiko B hat Wahrscheinlichkeit 5 und Auswirkung 1 (Wert 5). Was ist der tragfähige Schluss?
+  options:
+  - en: They are equal, so there is no reason to treat the two risks differently
+    de: Sie sind gleich, also gibt es keinen Grund, die beiden Risiken unterschiedlich zu behandeln
+    correct: false
+  - en: Equal scores can hide different risks; discuss risk A separately
+    de: Gleiche Werte können verschiedene Risiken verbergen; bespreche Risiko A gesondert
+    correct: true
+  - en: Risk B matters more because it is likely
+    de: Risiko B ist wichtiger, weil es wahrscheinlich ist
+    correct: false
+  - en: Ignore both because scores below 6 never matter
+    de: Beide ignorieren, weil Werte unter 6 nie zählen
+    correct: false
+  explanation:
+    en: Probability and impact can offset each other and lead to a wrong judgement. A rare but severe risk deserves a look even with a low score.
+    de: Wahrscheinlichkeit und Auswirkung können sich gegenseitig aufheben und zu einem falschen Urteil führen. Ein seltenes, aber schweres Risiko verdient trotz niedrigem Wert einen Blick.
+  source: https://de.wikipedia.org/wiki/Risikomatrix
+- id: rim-p-perception
+  level: practitioner
+  difficulty: 1250
+  type: multi
+  stem:
+    en: How can a team reduce selective perception when collecting risks? Select all that apply.
+    de: Wie kann ein Team beim Sammeln von Risiken die selektive Wahrnehmung verringern? Wähle alle zutreffenden aus.
+  options:
+  - en: Ask people with different roles to contribute risks
+    de: Menschen mit unterschiedlichen Rollen bitten, Risiken beizutragen
+    correct: true
+  - en: Use history and checklists as well as expert opinion
+    de: Erfahrungswerte und Checklisten ebenso nutzen wie Expertenmeinungen
+    correct: true
+  - en: Let the project lead list the risks alone to stay consistent
+    de: Die Projektleitung die Risiken allein auflisten lassen, um konsistent zu bleiben
+    correct: false
+  - en: Include only risks that someone can prove with statistics
+    de: Nur Risiken aufnehmen, die jemand mit Statistiken belegen kann
+    correct: false
+  explanation:
+    en: Different people notice different risks, and data plus expert views complement each other. Demanding proof for every entry would hide many real risks.
+    de: Verschiedene Menschen bemerken verschiedene Risiken, und Daten ergänzen Expertenurteile. Für jeden Eintrag einen Beleg zu verlangen, würde viele echte Risiken verbergen.
+  source: https://de.wikipedia.org/wiki/Risikoanalyse
+- id: rim-p-review
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: Which routine keeps a risk register useful and prevents it from becoming a ritual?
+    de: Welche Routine hält ein Risikoregister nützlich und verhindert, dass es zum Ritual wird?
+  options:
+  - en: Update it once at project start and then file it
+    de: Es einmal zu Projektbeginn aktualisieren und dann ablegen
+    correct: false
+  - en: Add every new worry and never close any entry
+    de: Jede neue Sorge aufnehmen und nie einen Eintrag schließen
+    correct: false
+  - en: Let each risk owner update it silently, without discussion
+    de: Jede verantwortliche Person ihre Risiken still aktualisieren lassen, ohne Diskussion
+    correct: false
+  - en: In each regular meeting re-score the top risks, check triggers and move occurred risks to the issue list
+    de: In jedem regelmäßigen Treffen die wichtigsten Risiken neu bewerten, Auslöser prüfen und eingetretene Risiken in die Issue-Liste übernehmen
+    correct: true
+  explanation:
+    en: A register helps when it is discussed and kept current. Registers that are filed or only updated silently lead to ritual decisions and an illusion of control.
+    de: Ein Register hilft, wenn es besprochen und aktuell gehalten wird. Abgelegte oder nur still gepflegte Register führen zu ritualisierten Entscheidungen und einer Kontrollillusion.
+  source: https://en.wikipedia.org/wiki/Risk_register
+- id: rim-a-aggregate
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: Three risks each score 8, below the escalation threshold of 12, but all three stem from reliance on the same supplier. What should you do?
+    de: Drei Risiken haben jeweils den Wert 8, unter der Eskalationsschwelle von 12, gehen aber alle auf die Abhängigkeit vom selben Lieferanten zurück. Was solltest du tun?
+  options:
+  - en: Keep them separate, because each is below the threshold
+    de: Sie getrennt lassen, weil jedes unter der Schwelle liegt
+    correct: false
+  - en: Raise each score to 12 to be on the safe side
+    de: Jeden Wert vorsichtshalber auf 12 anheben
+    correct: false
+  - en: Delete two of them, because counting the same underlying cause twice overstates the risk
+    de: Zwei davon löschen, weil das doppelte Zählen derselben Ursache das Risiko überzeichnet
+    correct: false
+  - en: Group them by cause, estimate the combined exposure and compare it with thresholds
+    de: Sie nach Ursache gruppieren, die gemeinsame Betroffenheit schätzen und mit den Schwellen vergleichen
+    correct: true
+  explanation:
+    en: Combinations of individual risks often become threatening. Aggregating them gives a truer picture than judging each below its threshold.
+    de: Kombinationen von Einzelrisiken werden oft bedrohlich. Ihre Zusammenführung gibt ein wahreres Bild, als jedes einzeln unter seiner Schwelle zu beurteilen.
+  source: https://de.wikipedia.org/wiki/Risikomanagement
+- id: rim-a-threshold
+  level: advanced
+  difficulty: 1500
+  type: multi
+  stem:
+    en: Which rules should be agreed with the sponsor before trouble starts? Select all that apply.
+    de: Welche Regeln sollten mit den Auftraggebenden vereinbart werden, bevor es kritisch wird? Wähle alle zutreffenden aus.
+  options:
+  - en: The score or money value above which a risk is escalated
+    de: Der Wert oder Geldbetrag, ab dem ein Risiko eskaliert wird
+    correct: true
+  - en: Who may release contingency and up to which amount
+    de: Wer Reserve freigeben darf und bis zu welchem Betrag
+    correct: true
+  - en: The delay that turns a checkpoint into a go or no-go decision
+    de: Der Verzug, der einen Kontrollpunkt zur Go- oder No-go-Entscheidung macht
+    correct: true
+  - en: The exact date on which each risk will occur
+    de: Das genaue Datum, an dem jedes Risiko eintreten wird
+    correct: false
+  explanation:
+    en: Thresholds, release rights and checkpoint criteria make later decisions faster and fairer. A risk's exact date of occurrence cannot be known in advance.
+    de: Schwellen, Freigaberechte und Kontrollpunkt-Kriterien machen spätere Entscheidungen schneller und fairer. Den genauen Eintrittstag eines Risikos kann man vorab nicht kennen.
+  source: https://de.wikipedia.org/wiki/Risikomanagement
+- id: rim-a-commit
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: A key supplier has missed two milestones and the team wants to "give them another month" because so much has been invested. What best counters escalation of commitment?
+    de: Ein wichtiger Lieferant hat zwei Meilensteine verpasst, und das Team will ihm „noch einen Monat geben“, weil schon so viel investiert wurde. Was wirkt der Eskalation des Commitments am besten entgegen?
+  options:
+  - en: Let the person who chose the supplier decide alone
+    de: Die Person entscheiden lassen, die den Lieferanten ausgewählt hat
+    correct: false
+  - en: Wait for a third missed milestone to confirm a pattern
+    de: Auf einen dritten verpassten Meilenstein warten, der ein Muster bestätigt
+    correct: false
+  - en: Agree go or no-go criteria and a switch date in advance
+    de: Go- oder No-go-Kriterien und ein Wechseldatum vorab vereinbaren
+    correct: true
+  - en: Switch supplier only if the sponsor asks for it
+    de: Den Lieferanten nur wechseln, wenn die Auftraggebenden es verlangen
+    correct: false
+  explanation:
+    en: Staying with a poor decision feels easier than admitting a mistake. A written rule fixed beforehand makes the decision less dependent on what has been invested.
+    de: An einer schlechten Entscheidung festzuhalten wirkt leichter, als einen Fehler einzuräumen. Eine vorab festgelegte schriftliche Regel macht die Entscheidung weniger abhängig vom bereits Investierten.
+  source: https://openstax.org/books/principles-management/pages/2-4-barriers-to-effective-decision-making
+- id: rim-a-issue
+  level: advanced
+  difficulty: 1600
+  type: single
+  stem:
+    en: An issue is logged but no solution is moving. Which handling is the most defensible?
+    de: Ein Issue ist erfasst, aber keine Lösung kommt voran. Welches Vorgehen ist am besten vertretbar?
+  options:
+  - en: Keep it on the agenda every week until it fixes itself
+    de: Es jede Woche auf der Tagesordnung lassen, bis es sich von selbst löst
+    correct: false
+  - en: Assign the whole team so that everybody feels responsible
+    de: Dem ganzen Team zuweisen, damit sich alle verantwortlich fühlen
+    correct: false
+  - en: Reclassify it as a risk to lower its priority
+    de: Es als Risiko umklassifizieren, um seine Priorität zu senken
+    correct: false
+  - en: Name one owner, set a deadline for a solution proposal and escalate when it passes
+    de: Eine verantwortliche Person benennen, eine Frist für einen Lösungsvorschlag setzen und bei Fristablauf eskalieren
+    correct: true
+  explanation:
+    en: An issue has already happened, so it needs one owner, a time limit and a defined escalation. Shared ownership and reclassifying hide the problem.
+    de: Ein Issue ist bereits eingetreten und braucht eine verantwortliche Person, eine Frist und eine festgelegte Eskalation. Geteilte Verantwortung und Umklassifizieren verbergen das Problem.
+  source: https://en.wikipedia.org/wiki/Risk_register
