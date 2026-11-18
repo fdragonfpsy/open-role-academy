@@ -1,0 +1,14 @@
+id: wikipedia-strategic-sourcing
+url: https://en.wikipedia.org/wiki/Strategic_sourcing
+title: "Strategic sourcing"
+provider: Wikipedia
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies: [strategic-sourcing-category-management]
+levels: [foundation, practitioner, advanced]
+note: "Footer states CC BY-SA 4.0; no maintenance banner; read 2026-11-18 (intro and steps). Link only. Lowest total cost rather than lowest price; step lists by Nishiguchi (1994) and Payne and Dorn (2012); procurement tactical vs strategic sourcing."
