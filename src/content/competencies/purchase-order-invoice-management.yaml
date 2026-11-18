@@ -1,0 +1,15 @@
+id: purchase-order-invoice-management
+title:
+  en: Purchase order and invoice management
+  de: Bestell- und Rechnungsmanagement
+description:
+  en: >-
+    Create and track purchase orders, confirm goods receipt, perform the three-way match of order, receipt and invoice, and resolve discrepancies together with accounts payable.
+  de: >-
+    Bestellungen erstellen und verfolgen, Wareneingänge bestätigen, den Drei-Wege-Abgleich von Bestellung, Wareneingang und Rechnung durchführen und Abweichungen gemeinsam mit der Kreditorenbuchhaltung klären.
+prerequisites: [procurement-fundamentals-p2p, accounts-payable]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/73225018-7139-433b-bdba-2b90774761d9
+    label: issue purchase orders

@@ -1,0 +1,18 @@
+id: supply-chain-planning-demand
+title:
+  en: Supply chain planning and demand management
+  de: Supply-Chain-Planung und Bedarfsmanagement
+description:
+  en: >-
+    Understand the flow from supplier to customer, forecast demand, align supply with demand (sales and operations planning), plan material requirements and use data to find bottlenecks.
+  de: >-
+    Den Fluss vom Lieferanten zum Kunden verstehen, Bedarfe prognostizieren, Angebot und Nachfrage abstimmen (Absatz- und Produktionsplanung), Materialbedarfe planen und Engpässe mithilfe von Daten erkennen.
+prerequisites: [inventory-warehouse-management, working-with-data]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/f929c89e-c363-4132-a918-e021d57b307c
+    label: supply chain management
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/96d549bb-3e62-4c45-92a7-f114df089581
+    label: analyse supply chain strategies

@@ -1,0 +1,18 @@
+id: logistics-transport-planning
+title:
+  en: Logistics and transport planning
+  de: Logistik und Transportplanung
+description:
+  en: >-
+    Plan inbound and outbound transport, choose transport modes and carriers, understand delivery terms (Incoterms) and shipping documents at topic level, and monitor delivery performance.
+  de: >-
+    Eingehende und ausgehende Transporte planen, Verkehrsträger und Frachtführer auswählen, Lieferbedingungen (Incoterms) und Versanddokumente auf Themenebene verstehen und die Liefertreue überwachen.
+prerequisites: [inventory-warehouse-management]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/de857fbb-91a6-4a3f-8a47-93a9c1a616c8
+    label: plan transport operations
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/a25e5613-9c7c-4bdc-a145-b72644b69694
+    label: handle shipment documentation

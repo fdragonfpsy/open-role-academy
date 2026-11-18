@@ -1,0 +1,21 @@
+id: tendering-rfx-contracting
+title:
+  en: Tendering, RFx and contracting
+  de: Ausschreibung, RFx und Vertragsgestaltung
+description:
+  en: >-
+    Prepare requests for information, quotation and proposal, evaluate offers transparently, understand the basic elements of purchase contracts and know, at topic level, why public buyers in the EU follow formal procurement rules.
+  de: >-
+    Anfragen (RFI, RFQ, RFP) vorbereiten, Angebote transparent bewerten, die Grundbausteine von Kaufverträgen kennen und auf Themenebene verstehen, warum öffentliche Auftraggeber in der EU förmlichen Vergaberegeln folgen.
+prerequisites: [supplier-selection-evaluation]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/4b2c4de9-43d7-4905-9d58-bc2e7d84b2e1
+    label: manage tender processes
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/378caeec-10a0-4162-b75c-ab374a42e93d
+    label: e-procurement
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/92721092-fe7c-4689-96bd-4f02385bc0e7
+    label: manage contracts
