@@ -112,7 +112,7 @@ One role per task, in the order of CLAUDE.md §4.3. Each task = framework + cont
   - [x] framework (role + 10 competencies, `status: draft`)
   - [x] content: marketing-fundamentals-strategy, market-customer-research, segmentation-targeting-positioning
   - [x] content: brand-messaging, content-marketing-copywriting, digital-channels-seo-sem
-  - [ ] content: social-media-community, email-marketing-automation, campaign-planning-budgeting
+  - [x] content: social-media-community, email-marketing-automation, campaign-planning-budgeting
   - [ ] content: marketing-analytics-attribution; then set `status: published` and run the content quality pass for Marketing
 - [ ] Customer Service
 - [ ] Project Management

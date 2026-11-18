@@ -1,0 +1,290 @@
+competency: email-marketing-automation
+items:
+  - id: em-f-consent
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "What does ePrivacy Directive Article 13(1) say about email for direct marketing?"
+      de: "Was sagt Artikel 13 Absatz 1 der ePrivacy-Richtlinie zu E-Mail für Direktwerbung?"
+    options:
+      - en: "It may only be allowed for subscribers who gave prior consent"
+        de: "Sie darf nur bei Teilnehmern gestattet werden, die vorher eingewilligt haben"
+        correct: true
+      - en: "It is allowed until the recipient objects to it"
+        de: "Sie ist erlaubt, bis der Empfänger ihr widerspricht"
+        correct: false
+      - en: "It is allowed to any address found on a company website"
+        de: "Sie ist an jede Adresse erlaubt, die auf einer Firmenwebsite steht"
+        correct: false
+      - en: "It is allowed whenever the email contains an unsubscribe link"
+        de: "Sie ist immer erlaubt, wenn die E-Mail einen Abmeldelink enthält"
+        correct: false
+    explanation:
+      en: "The rule is prior consent in general (with a narrow exception for existing customers). An unsubscribe link does not replace consent, and opt-out is in many cases not permitted."
+      de: "Die Regel ist im Grundsatz die vorherige Einwilligung (mit einer engen Ausnahme für Bestandskunden). Ein Abmeldelink ersetzt die Einwilligung nicht, und Opt-out ist in vielen Fällen nicht zulässig."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32002L0058
+  - id: em-f-optin
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "What is an opt-in procedure in email marketing?"
+      de: "Was ist ein Opt-in-Verfahren im E-Mail-Marketing?"
+    options:
+      - en: "People receive advertising until they object"
+        de: "Menschen erhalten Werbung, bis sie widersprechen"
+        correct: false
+      - en: "People are added after a company buys their address from a partner"
+        de: "Menschen werden eingetragen, nachdem ein Unternehmen ihre Adresse von einem Partner gekauft hat"
+        correct: false
+      - en: "People explicitly agree beforehand to receive marketing"
+        de: "Menschen stimmen vorher ausdrücklich zu, Werbung zu erhalten"
+        correct: true
+      - en: "People are asked once a year whether they still read emails"
+        de: "Menschen werden einmal im Jahr gefragt, ob sie E-Mails noch lesen"
+        correct: false
+    explanation:
+      en: "The German Wikipedia article describes opt-in as an explicit consent procedure; its opposite, opt-out, treats advertising as accepted until someone objects."
+      de: "Der deutsche Wikipedia-Artikel beschreibt Opt-in als ausdrückliches Zustimmungsverfahren; das Gegenteil, Opt-out, behandelt Werbung als akzeptiert, bis jemand widerspricht."
+    source: https://de.wikipedia.org/wiki/Opt-in
+  - id: em-f-sender
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "Which two things does ePrivacy Article 13(4) require from marketing email senders in effect?"
+      de: "Was verlangt Artikel 13 Absatz 4 der ePrivacy-Richtlinie von Absendern von Werbe-E-Mails der Sache nach?"
+    options:
+      - en: "A discount code and a picture of the product"
+        de: "Einen Rabattcode und ein Bild des Produkts"
+        correct: false
+      - en: "A read receipt and the recipient's date of birth"
+        de: "Eine Lesebestätigung und das Geburtsdatum des Empfängers"
+        correct: false
+      - en: "A fixed sending time and a maximum of one email per week"
+        de: "Eine feste Sendezeit und höchstens eine E-Mail pro Woche"
+        correct: false
+      - en: "An identifiable sender and a valid address for requests to stop"
+        de: "Einen erkennbaren Absender und eine gültige Adresse für Aufforderungen zur Einstellung"
+        correct: true
+    explanation:
+      en: "Article 13(4) prohibits hiding the sender's identity or having no valid address for stop requests. In practice: a clear sender and an easy way to unsubscribe."
+      de: "Artikel 13 Absatz 4 verbietet es, die Identität des Absenders zu verschleiern oder keine gültige Adresse für Einstellungsaufforderungen anzugeben. Praktisch: klarer Absender und einfache Abmeldung."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32002L0058
+  - id: em-f-list
+    level: foundation
+    difficulty: 1050
+    type: multi
+    stem:
+      en: "Which are sound ways to build a marketing email list? Select all that apply."
+      de: "Welche Wege zum Aufbau einer Werbe-E-Mail-Liste sind sinnvoll? Wähle alle zutreffenden aus."
+    options:
+      - en: "A website form that states what people receive and how often"
+        de: "Ein Website-Formular, das sagt, was Menschen erhalten und wie oft"
+        correct: true
+      - en: "A checkout box that the customer ticks actively to get the newsletter"
+        de: "Ein Kassenfeld, das die Kundschaft aktiv ankreuzt, um den Newsletter zu erhalten"
+        correct: true
+      - en: "Importing addresses from collected business cards"
+        de: "Adressen aus gesammelten Visitenkarten importieren"
+        correct: false
+      - en: "Buying a list of addresses of people in the target group"
+        de: "Eine Liste mit Adressen von Menschen der Zielgruppe kaufen"
+        correct: false
+    explanation:
+      en: "Lists grow from active sign-ups with clear information. Business cards and bought addresses carry no consent for marketing emails."
+      de: "Listen wachsen aus aktiven Anmeldungen mit klarer Information. Visitenkarten und gekaufte Adressen enthalten keine Einwilligung für Werbe-E-Mails."
+    source: https://de.wikipedia.org/wiki/Opt-in
+  - id: em-p-doi
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "What does double opt-in add compared with single opt-in?"
+      de: "Was ergänzt Double-Opt-in gegenüber dem einfachen Opt-in?"
+    options:
+      - en: "A confirmation step by the recipient that helps prove consent"
+        de: "Einen Bestätigungsschritt der Empfängerin, der beim Nachweis der Einwilligung hilft"
+        correct: true
+      - en: "A legal duty in Germany that every sender of marketing email must follow"
+        de: "Eine gesetzliche Pflicht in Deutschland, die jeder Absender von Werbe-E-Mails einhalten muss"
+        correct: false
+      - en: "Encryption of the email content during transport"
+        de: "Eine Verschlüsselung des E-Mail-Inhalts beim Transport"
+        correct: false
+      - en: "A guarantee that the subscriber will open the emails"
+        de: "Eine Garantie, dass die Abonnentin die E-Mails öffnet"
+        correct: false
+    explanation:
+      en: "The German Wikipedia article says double opt-in is not legally mandatory but increasingly expected by courts, and the BGH held it suitable to help prove consent."
+      de: "Der deutsche Wikipedia-Artikel sagt, Double-Opt-in sei gesetzlich nicht verpflichtend, werde aber zunehmend von Gerichten erwartet, und der BGH hielt es für geeignet, den Nachweis zu erleichtern."
+    source: https://de.wikipedia.org/wiki/Opt-in
+  - id: em-p-transfer
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "A partner offers to rent you a list of people who opted in to the partner's newsletter. What is the right approach?"
+      de: "Ein Partner bietet dir eine Liste von Personen zur Miete an, die seinem Newsletter zugestimmt haben. Was ist der richtige Umgang?"
+    options:
+      - en: "Use it, because opt-in consent is valid for any sender"
+        de: "Nutzen, weil eine Opt-in-Einwilligung für jeden Absender gilt"
+        correct: false
+      - en: "Use it, but add a footer that says clearly that the list was rented from a partner"
+        de: "Nutzen, aber im Fußbereich deutlich vermerken, dass die Liste von einem Partner gemietet wurde"
+        correct: false
+      - en: "Do not use it without legal advice; consent is tied to whoever collected it"
+        de: "Ohne Rechtsberatung nicht nutzen; die Einwilligung ist an die einholende Stelle gebunden"
+        correct: true
+      - en: "Use it only for emails to business addresses"
+        de: "Nur für E-Mails an Geschäftsadressen nutzen"
+        correct: false
+    explanation:
+      en: "The article states that an opt-in applies only to the party it was given to and cannot simply be passed on. Ask legal counsel and the data protection officer."
+      de: "Der Artikel hält fest, dass ein Opt-in nur für die Stelle gilt, der es erteilt wurde, und nicht einfach weitergegeben werden kann. Frage Rechtsberatung und Datenschutzbeauftragte."
+    source: https://de.wikipedia.org/wiki/Opt-in
+  - id: em-p-exception
+    level: practitioner
+    difficulty: 1250
+    type: multi
+    stem:
+      en: "Which conditions belong to the existing-customer exception in ePrivacy Article 13(2)? Select all that apply."
+      de: "Welche Bedingungen gehören zur Bestandskunden-Ausnahme in Artikel 13 Absatz 2 der ePrivacy-Richtlinie? Wähle alle zutreffenden aus."
+    options:
+      - en: "The address was obtained in the context of selling a product or service"
+        de: "Die Adresse wurde im Zusammenhang mit dem Verkauf eines Produkts oder einer Dienstleistung erhalten"
+        correct: true
+      - en: "It is used for the company's own similar products or services"
+        de: "Sie wird für eigene ähnliche Produkte oder Dienstleistungen genutzt"
+        correct: true
+      - en: "Customers can object free of charge and easily, at collection and in each message"
+        de: "Kunden können gebührenfrei und einfach widersprechen, bei der Erhebung und in jeder Nachricht"
+        correct: true
+      - en: "It covers advertising for the products of any partner company"
+        de: "Sie erfasst Werbung für Produkte jedes Partnerunternehmens"
+        correct: false
+    explanation:
+      en: "The exception is narrow: own similar products, with a clear and easy chance to object each time. Partner products are outside it. German details sit in the UWG, so ask legal counsel."
+      de: "Die Ausnahme ist eng: eigene ähnliche Produkte, mit klarer und einfacher Widerspruchsmöglichkeit jedes Mal. Produkte von Partnern fallen nicht darunter. Deutsche Details stehen im UWG, frage die Rechtsberatung."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32002L0058
+  - id: em-p-withdraw
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "A subscriber clicks unsubscribe. Which handling fits the GDPR principle that withdrawing consent must be as easy as giving it?"
+      de: "Eine Abonnentin klickt auf Abmelden. Welcher Umgang passt zum DSGVO-Grundsatz, dass der Widerruf so einfach sein muss wie die Erteilung?"
+    options:
+      - en: "Ask her to log in and confirm the cancellation in her account"
+        de: "Sie bitten, sich anzumelden und die Kündigung im Konto zu bestätigen"
+        correct: false
+      - en: "Keep sending until the current campaign has finished"
+        de: "Weitersenden, bis die laufende Kampagne beendet ist"
+        correct: false
+      - en: "Add her to a suppression list checked before every send"
+        de: "Sie in eine vor jedem Versand geprüfte Sperrliste eintragen"
+        correct: true
+      - en: "Ask her to send a signed letter to the head office"
+        de: "Sie bitten, einen unterschriebenen Brief an die Zentrale zu senden"
+        correct: false
+    explanation:
+      en: "Article 7(3) requires withdrawal to be as easy as consent. An immediate entry in a suppression list that every send checks makes the withdrawal effective."
+      de: "Artikel 7 Absatz 3 verlangt, dass der Widerruf so einfach ist wie die Einwilligung. Ein sofortiger Eintrag in eine Sperrliste, die jeder Versand prüft, macht den Widerruf wirksam."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+  - id: em-a-stop
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "What is the best stop condition for a three-email welcome flow whose goal is a first purchase?"
+      de: "Was ist die beste Abbruchbedingung für eine Willkommensstrecke mit drei E-Mails, deren Ziel ein Erstkauf ist?"
+    options:
+      - en: "It ends when the person buys, unsubscribes or has received the last email"
+        de: "Sie endet, wenn die Person kauft, sich abmeldet oder die letzte E-Mail erhalten hat"
+        correct: true
+      - en: "It always sends all three emails, whatever happens"
+        de: "Sie sendet immer alle drei E-Mails, was auch geschieht"
+        correct: false
+      - en: "It ends once the first email has been opened"
+        de: "Sie endet, sobald die erste E-Mail geöffnet wurde"
+        correct: false
+      - en: "It repeats from the start for as long as the person has not bought"
+        de: "Sie beginnt von vorn, solange die Person nicht gekauft hat"
+        correct: false
+    explanation:
+      en: "Stop conditions prevent a flow from continuing after its goal is met or after withdrawal. Opens are not the goal."
+      de: "Abbruchbedingungen verhindern, dass eine Strecke nach Zielerreichung oder Widerruf weiterläuft. Öffnungen sind nicht das Ziel."
+    source: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
+  - id: em-a-purpose
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "Subscribers signed up for a monthly newsletter. Marketing wants to add a weekly promotion flow. What is the sound approach?"
+      de: "Abonnierende haben sich für einen monatlichen Newsletter angemeldet. Das Marketing will eine wöchentliche Aktionsstrecke ergänzen. Was ist der solide Weg?"
+    options:
+      - en: "Start it, since the people are already on the list and have agreed to emails"
+        de: "Sie starten, die Personen sind ja schon in der Liste und haben E-Mails zugestimmt"
+        correct: false
+      - en: "Start it, but hide the unsubscribe link in small print"
+        de: "Sie starten, den Abmeldelink aber im Kleingedruckten verstecken"
+        correct: false
+      - en: "Start it only for people who opened the last newsletter"
+        de: "Sie nur für Personen starten, die den letzten Newsletter geöffnet haben"
+        correct: false
+      - en: "Check what the consent covered and, if needed, collect new consent"
+        de: "Prüfen, was die Einwilligung abdeckte, und bei Bedarf eine neue einholen"
+        correct: true
+    explanation:
+      en: "Consent covers a described purpose. A much more frequent promotional flow goes beyond what people agreed to, so clarify or collect new consent."
+      de: "Eine Einwilligung deckt einen beschriebenen Zweck. Eine deutlich häufigere Werbestrecke geht über das Vereinbarte hinaus, kläre das also oder hole eine neue Einwilligung ein."
+    source: https://de.wikipedia.org/wiki/Opt-in
+  - id: em-a-holdout
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "How can you check whether a welcome flow actually causes extra orders?"
+      de: "Wie kannst du prüfen, ob eine Willkommensstrecke tatsächlich zusätzliche Bestellungen verursacht?"
+    options:
+      - en: "Compare this month's orders with last year's orders from the same month"
+        de: "Die Bestellungen dieses Monats mit denen desselben Monats im Vorjahr vergleichen"
+        correct: false
+      - en: "Hold out a random group of new subscribers and compare orders"
+        de: "Eine zufällige Gruppe neuer Abonnierender zurückhalten und Bestellungen vergleichen"
+        correct: true
+      - en: "Count how many emails the flow has sent"
+        de: "Zählen, wie viele E-Mails die Strecke versendet hat"
+        correct: false
+      - en: "Look at the open rate of the first email only"
+        de: "Nur die Öffnungsrate der ersten E-Mail ansehen"
+        correct: false
+    explanation:
+      en: "A randomly held-out group shows what happens without the flow. Without it you cannot separate the flow's effect from orders that would have happened anyway. This is a working method of this course."
+      de: "Eine zufällig zurückgehaltene Gruppe zeigt, was ohne die Strecke passiert. Ohne sie lässt sich ihre Wirkung nicht von ohnehin erfolgten Bestellungen trennen. Das ist eine Arbeitsmethode dieses Kurses."
+    source: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
+  - id: em-a-data
+    level: advanced
+    difficulty: 1600
+    type: multi
+    stem:
+      en: "Which choices fit data minimisation in an email programme? Select all that apply."
+      de: "Welche Entscheidungen passen zur Datenminimierung in einem E-Mail-Programm? Wähle alle zutreffenden aus."
+    options:
+      - en: "Asking only for email and first name if the flow needs nothing more"
+        de: "Nur E-Mail und Vornamen abfragen, wenn die Strecke nicht mehr braucht"
+        correct: true
+      - en: "Agreeing a rule for inactive contacts with the data protection officer"
+        de: "Mit den Datenschutzbeauftragten eine Regel für inaktive Kontakte vereinbaren"
+        correct: true
+      - en: "Collecting phone number and birth date just in case they become useful"
+        de: "Telefonnummer und Geburtsdatum erheben, falls sie später nützlich werden"
+        correct: false
+      - en: "Keeping every contact forever because storage is cheap"
+        de: "Jeden Kontakt für immer behalten, weil Speicher günstig ist"
+        correct: false
+    explanation:
+      en: "GDPR Article 5 asks for data limited to what is necessary and kept in identifiable form no longer than necessary. Collecting for a possible future use or keeping everything forever conflicts with that."
+      de: "Artikel 5 DSGVO verlangt Daten, die auf das Notwendige beschränkt sind und nicht länger als nötig identifizierbar gespeichert werden. Erheben auf Vorrat oder ewiges Behalten widerspricht dem."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679

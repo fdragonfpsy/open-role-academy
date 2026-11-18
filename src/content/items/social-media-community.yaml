@@ -1,0 +1,290 @@
+competency: social-media-community
+items:
+  - id: sm-f-def
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "How does OpenStax define social media marketing?"
+      de: "Wie definiert OpenStax Social-Media-Marketing?"
+    options:
+      - en: "Posting the same advert on every platform at the same time, whatever the audience is"
+        de: "Dieselbe Anzeige zur gleichen Zeit auf jeder Plattform veröffentlichen, egal wie die Zielgruppe aussieht"
+        correct: false
+      - en: "Using social media platforms to deliver content that drives engagement with your brand"
+        de: "Social-Media-Plattformen nutzen, um Inhalte auszuspielen, die Interaktion mit der Marke erzeugen"
+        correct: true
+      - en: "Buying followers so the profile looks popular"
+        de: "Follower kaufen, damit das Profil beliebt wirkt"
+        correct: false
+      - en: "Replacing the company website with a social profile"
+        de: "Die Firmenwebsite durch ein Social-Media-Profil ersetzen"
+        correct: false
+    explanation:
+      en: "OpenStax defines it as delivering content on social platforms that drives engagement. It covers organic and paid activity and does not replace the website."
+      de: "OpenStax definiert es als Ausspielen von Inhalten auf sozialen Plattformen, die Interaktion erzeugen. Es umfasst organische und bezahlte Aktivität und ersetzt die Website nicht."
+    source: https://openstax.org/books/principles-marketing/pages/16-2-social-media-and-mobile-marketing
+  - id: sm-f-limit
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Which disadvantage of social media marketing does OpenStax name?"
+      de: "Welchen Nachteil von Social-Media-Marketing nennt OpenStax?"
+    options:
+      - en: "Brands do not have complete control over the message"
+        de: "Marken haben nicht die volle Kontrolle über die Botschaft"
+        correct: true
+      - en: "It cannot be measured, so nobody can tell which posts work"
+        de: "Es lässt sich nicht messen, daher weiß niemand, welche Beiträge wirken"
+        correct: false
+      - en: "It cannot be targeted at specific groups"
+        de: "Es lässt sich nicht auf bestimmte Gruppen ausrichten"
+        correct: false
+      - en: "It only works for very large companies"
+        de: "Es funktioniert nur für sehr große Unternehmen"
+        correct: false
+    explanation:
+      en: "Users can freely write critical comments, so control is limited. OpenStax lists targeting and measurability as advantages."
+      de: "Nutzende können frei kritische Kommentare schreiben, die Kontrolle ist daher begrenzt. Zielgerichtetheit und Messbarkeit nennt OpenStax als Vorteile."
+    source: https://openstax.org/books/principles-marketing/pages/16-2-social-media-and-mobile-marketing
+  - id: sm-f-platform
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "How should a small organisation choose its social media platforms?"
+      de: "Wie sollte eine kleine Organisation ihre Social-Media-Plattformen wählen?"
+    options:
+      - en: "Pick the platform with the most users worldwide, because reach is what counts"
+        de: "Die Plattform mit den meisten Nutzenden weltweit wählen, weil nur Reichweite zählt"
+        correct: false
+      - en: "Open a profile on every platform to be safe"
+        de: "Sicherheitshalber auf jeder Plattform ein Profil eröffnen"
+        correct: false
+      - en: "Copy whichever platform the biggest competitor uses"
+        de: "Die Plattform übernehmen, die der größte Wettbewerber nutzt"
+        correct: false
+      - en: "Choose where the target group is and the team can stay active"
+        de: "Dort wählen, wo die Zielgruppe ist und das Team aktiv bleiben kann"
+        correct: true
+    explanation:
+      en: "Start with the target group and your capacity. A few active profiles beat many neglected ones, and platform popularity changes quickly."
+      de: "Beginne bei Zielgruppe und eigener Kapazität. Wenige aktive Profile schlagen viele vernachlässigte, und die Beliebtheit von Plattformen ändert sich schnell."
+    source: https://de.wikipedia.org/wiki/Social_Media_Marketing
+  - id: sm-f-plan
+    level: foundation
+    difficulty: 1050
+    type: multi
+    stem:
+      en: "Which items belong in a simple posting plan? Select all that apply."
+      de: "Was gehört in einen einfachen Veröffentlichungsplan? Wähle alle zutreffenden aus."
+    options:
+      - en: "Which platform and how often you post"
+        de: "Welche Plattform und wie oft du veröffentlichst"
+        correct: true
+      - en: "The topics you will cover"
+        de: "Die Themen, die du behandeln willst"
+        correct: true
+      - en: "Who publishes and who answers comments"
+        de: "Wer veröffentlicht und wer Kommentare beantwortet"
+        correct: true
+      - en: "The login passwords of all team members"
+        de: "Die Zugangspasswörter aller Teammitglieder"
+        correct: false
+    explanation:
+      en: "A plan names platform, rhythm, topics and owners, including who reads and answers reactions. Passwords never belong in a plan."
+      de: "Ein Plan nennt Plattform, Rhythmus, Themen und Verantwortliche, auch wer Reaktionen liest und beantwortet. Passwörter gehören nie in einen Plan."
+    source: https://openstax.org/books/principles-marketing/pages/16-2-social-media-and-mobile-marketing
+  - id: sm-p-metric
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "The goal of a social campaign is 40 sign-ups for a webinar. Which main metric fits best?"
+      de: "Das Ziel einer Social-Kampagne sind 40 Anmeldungen für ein Webinar. Welche Hauptkennzahl passt am besten?"
+    options:
+      - en: "The number of likes on the announcement post"
+        de: "Die Zahl der Likes unter dem Ankündigungsbeitrag"
+        correct: false
+      - en: "Sign-ups, tracked through tagged links"
+        de: "Anmeldungen, erfasst über markierte Links"
+        correct: true
+      - en: "The total number of followers of the page"
+        de: "Die Gesamtzahl der Follower der Seite"
+        correct: false
+      - en: "The number of posts published per week"
+        de: "Die Zahl der pro Woche veröffentlichten Beiträge"
+        correct: false
+    explanation:
+      en: "A metric must match the goal. Tagging links lets you see which visitors came from social media, so sign-ups can be attributed. Likes and followers show attention, not the goal."
+      de: "Eine Kennzahl muss zum Ziel passen. Mit markierten Links siehst du, welche Besuchenden aus sozialen Medien kamen, Anmeldungen lassen sich also zuordnen. Likes und Follower zeigen Aufmerksamkeit, nicht das Ziel."
+    source: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
+  - id: sm-p-data
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "Marketing wants to upload the customer email list to a platform to build a lookalike audience. What is the right step?"
+      de: "Das Marketing will die Kunden-E-Mail-Liste auf eine Plattform hochladen, um eine Lookalike Audience zu bilden. Was ist der richtige Schritt?"
+    options:
+      - en: "Upload it, because the platform's tool is built for this"
+        de: "Hochladen, weil das Werkzeug der Plattform dafür gebaut ist"
+        correct: false
+      - en: "Upload it, because email addresses on their own are not considered personal data"
+        de: "Hochladen, weil E-Mail-Adressen für sich allein nicht als personenbezogene Daten gelten"
+        correct: false
+      - en: "Ask the data protection officer or legal counsel before uploading"
+        de: "Vor dem Hochladen die Datenschutzbeauftragten oder die Rechtsberatung fragen"
+        correct: true
+      - en: "Upload only the first half of the list to be careful"
+        de: "Nur die erste Hälfte der Liste hochladen, um vorsichtig zu sein"
+        correct: false
+    explanation:
+      en: "Customer lists are personal data. The GDPR requires a lawful basis and data minimisation, so the decision belongs to data protection or legal counsel, not to the tool."
+      de: "Kundenlisten sind personenbezogene Daten. Die DSGVO verlangt eine Rechtsgrundlage und Datenminimierung, die Entscheidung liegt daher beim Datenschutz oder der Rechtsberatung, nicht beim Werkzeug."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+  - id: sm-p-reply
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "A follower posts justified criticism of your product under a post. What is the best reaction?"
+      de: "Ein Follower postet unter einem Beitrag berechtigte Kritik an deinem Produkt. Was ist die beste Reaktion?"
+    options:
+      - en: "Delete the comment so that other followers and customers do not see it"
+        de: "Den Kommentar löschen, damit andere Follower und Kundschaft ihn nicht sehen"
+        correct: false
+      - en: "Thank the person, answer briefly in public and offer to continue privately"
+        de: "Der Person danken, kurz öffentlich antworten und anbieten, privat weiterzusprechen"
+        correct: true
+      - en: "Ignore it and wait until the discussion fades"
+        de: "Ihn ignorieren und warten, bis die Diskussion abflaut"
+        correct: false
+      - en: "Reply with a discount advert for the next product"
+        de: "Mit einer Rabattwerbung für das nächste Produkt antworten"
+        correct: false
+    explanation:
+      en: "Justified criticism deserves an answer. A short public reply shows others you listen, and personal details move to a private channel. Deleting it usually makes things worse."
+      de: "Berechtigte Kritik verdient eine Antwort. Eine kurze öffentliche Antwort zeigt anderen, dass du zuhörst, persönliche Details gehören in einen privaten Kanal. Löschen verschlimmert die Lage meist."
+    source: https://de.wikipedia.org/wiki/Social_Media_Marketing
+  - id: sm-p-influ
+    level: practitioner
+    difficulty: 1300
+    type: multi
+    stem:
+      en: "Which statements about paid influencer posts are correct at topic level? Select all that apply."
+      de: "Welche Aussagen zu bezahlten Influencer-Beiträgen sind auf Themenebene richtig? Wähle alle zutreffenden aus."
+    options:
+      - en: "The EU Unfair Commercial Practices Directive treats paid promotion that is not made clear as unfair"
+        de: "Die EU-Richtlinie über unlautere Geschäftspraktiken behandelt bezahlte Werbung, die nicht erkennbar gemacht wird, als unlauter"
+        correct: true
+      - en: "The exact labelling in Germany depends on national law and case law, so ask legal counsel"
+        de: "Die genaue Kennzeichnung in Deutschland hängt von nationalem Recht und Rechtsprechung ab, frage daher die Rechtsberatung"
+        correct: true
+      - en: "No labelling is needed if the influencer likes the product anyway"
+        de: "Eine Kennzeichnung ist nicht nötig, wenn die Influencerin das Produkt ohnehin mag"
+        correct: false
+      - en: "The brand can leave labelling entirely to the influencer without agreeing a rule"
+        de: "Die Marke kann die Kennzeichnung ganz der Influencerin überlassen, ohne eine Regel zu vereinbaren"
+        correct: false
+    explanation:
+      en: "Paid promotion must be identifiable. Details are national and for legal counsel. The brand should write the labelling rule into the briefing instead of hoping."
+      de: "Bezahlte Werbung muss erkennbar sein. Die Einzelheiten sind national und Sache der Rechtsberatung. Die Marke sollte die Kennzeichnungsregel ins Briefing schreiben, statt zu hoffen."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32005L0029
+  - id: sm-a-crisis
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "Many critical comments arrive within an hour after a product problem. What should the team do first?"
+      de: "Nach einem Produktproblem treffen innerhalb einer Stunde viele kritische Kommentare ein. Was sollte das Team zuerst tun?"
+    options:
+      - en: "Keep all scheduled promotional posts running to stay visible"
+        de: "Alle geplanten Werbebeiträge weiterlaufen lassen, um sichtbar zu bleiben"
+        correct: false
+      - en: "Delete the critical comments and block the authors"
+        de: "Die kritischen Kommentare löschen und die Verfassenden sperren"
+        correct: false
+      - en: "Let each team member reply however they see fit"
+        de: "Jedes Teammitglied nach eigenem Ermessen antworten lassen"
+        correct: false
+      - en: "Pause scheduled promotions, agree one holding statement and name one person who answers"
+        de: "Geplante Werbung pausieren, eine Kurzaussage abstimmen und eine Person benennen, die antwortet"
+        correct: true
+    explanation:
+      en: "Promotions next to complaints look tone-deaf. One agreed statement and one responder keep answers consistent while the facts are checked."
+      de: "Werbung neben Beschwerden wirkt taub. Eine abgestimmte Aussage und eine antwortende Person halten Antworten konsistent, während die Fakten geprüft werden."
+    source: https://de.wikipedia.org/wiki/Social_Media_Marketing
+  - id: sm-a-fake
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "A manager wants to buy 5,000 followers to reach a follower target. How should you respond?"
+      de: "Eine Führungskraft will 5.000 Follower kaufen, um ein Follower-Ziel zu erreichen. Wie solltest du reagieren?"
+    options:
+      - en: "Agree, as long as the purchased followers look like real accounts and are not flagged"
+        de: "Zustimmen, solange die gekauften Follower wie echte Konten aussehen und nicht auffallen"
+        correct: false
+      - en: "Advise against it, since fake followers distort metrics, and tie the goal to sign-ups"
+        de: "Abraten, da gefälschte Follower Kennzahlen verzerren, und das Ziel an Anmeldungen koppeln"
+        correct: true
+      - en: "Agree, but buy only half the number"
+        de: "Zustimmen, aber nur die Hälfte kaufen"
+        correct: false
+      - en: "Agree, because a bigger audience always helps"
+        de: "Zustimmen, weil eine größere Zielgruppe immer hilft"
+        correct: false
+    explanation:
+      en: "The German Wikipedia article notes that fake followers and likes can be bought. They inflate reach figures without real people and make engagement rates worthless as a guide."
+      de: "Der deutsche Wikipedia-Artikel weist darauf hin, dass sich gefälschte Follower und Likes kaufen lassen. Sie blähen Reichweitenzahlen ohne echte Menschen auf und machen Interaktionsraten als Orientierung wertlos."
+    source: https://de.wikipedia.org/wiki/Social_Media_Marketing
+  - id: sm-a-report
+    level: advanced
+    difficulty: 1550
+    type: multi
+    stem:
+      en: "A report claims: \"Likes doubled, so the campaign worked.\" Which questions should you ask? Select all that apply."
+      de: "Ein Bericht behauptet: „Die Likes haben sich verdoppelt, also hat die Kampagne gewirkt.“ Welche Fragen solltest du stellen? Wähle alle zutreffenden aus."
+    options:
+      - en: "Did visits or sign-ups from tagged links rise as well?"
+        de: "Sind auch Besuche oder Anmeldungen über markierte Links gestiegen?"
+        correct: true
+      - en: "Where did the extra likes come from, for example bought or incentivised accounts?"
+        de: "Woher kamen die zusätzlichen Likes, etwa von gekauften oder belohnten Konten?"
+        correct: true
+      - en: "Did the metric match the goal the campaign was set up for?"
+        de: "Passte die Kennzahl zum Ziel, für das die Kampagne aufgesetzt wurde?"
+        correct: true
+      - en: "Were the likes posted at the time with the most shares?"
+        de: "Wurden die Likes zu der Zeit mit den meisten Shares gesetzt?"
+        correct: false
+    explanation:
+      en: "Likes are an engagement signal, not proof of the goal. Check the link to business outcomes and the quality of the source. Posting time is an optimisation question, not a validity check."
+      de: "Likes sind ein Interaktionssignal, kein Beleg für das Ziel. Prüfe die Verbindung zu Geschäftsergebnissen und die Qualität der Quelle. Die Veröffentlichungszeit ist eine Optimierungsfrage, keine Gültigkeitsprüfung."
+    source: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
+  - id: sm-a-imprint
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "The company opens a new business profile on a platform. Who decides whether imprint information is required and how it must appear?"
+      de: "Das Unternehmen eröffnet ein neues Geschäftsprofil auf einer Plattform. Wer entscheidet, ob Impressumsangaben nötig sind und wie sie erscheinen müssen?"
+    options:
+      - en: "The community manager, based on what the competitors show on their own profiles"
+        de: "Die Community-Managerin, orientiert an dem, was Wettbewerber auf ihren Profilen zeigen"
+        correct: false
+      - en: "Legal counsel, since it depends on national law and the profile type"
+        de: "Die Rechtsberatung, da es vom nationalen Recht und der Profilart abhängt"
+        correct: true
+      - en: "The platform automatically, so no check is needed"
+        de: "Die Plattform automatisch, eine Prüfung ist daher nicht nötig"
+        correct: false
+      - en: "Nobody, since profiles on platforms are exempt from all rules"
+        de: "Niemand, weil Profile auf Plattformen von allen Regeln ausgenommen sind"
+        correct: false
+    explanation:
+      en: "In Germany business profiles may need imprint information, and the details depend on national law. The platform does not guarantee compliance, so this is a question for legal counsel."
+      de: "In Deutschland brauchen geschäftliche Profile möglicherweise Impressumsangaben, die Einzelheiten hängen vom nationalen Recht ab. Die Plattform garantiert keine Regelkonformität, es ist daher eine Frage für die Rechtsberatung."
+    source: https://de.wikipedia.org/wiki/Social_Media_Marketing

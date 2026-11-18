@@ -1,0 +1,81 @@
+---
+id: email-marketing-automation-advanced
+competency: email-marketing-automation
+level: advanced
+title: "Designing automated flows with consent and measurement built in"
+objectives:
+  - "Specify an automated flow with trigger, goal, audience, length, stop condition and owner."
+  - "Keep consent records per purpose and check them with the suppression list before every send."
+  - "Apply data minimisation and agree retention rules for inactive contacts with data protection."
+  - "Explain at topic level why B2B email and profiling-based segmentation need legal or data protection input."
+  - "Measure a flow with tagged links and a holdout group."
+minutes: 30
+resources:
+  - eurlex-eprivacy-directive-2002-58
+  - eurlex-de-eprivacy-richtlinie-2002-58
+  - wikipedia-de-opt-in
+  - eurlex-gdpr-regulation-2016-679
+  - openstax-marketing-online-metrics
+status: ai-draft
+sources:
+  - title: "Directive 2002/58/EC (ePrivacy Directive)"
+    author: European Parliament and Council of the EU
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32002L0058
+    license: free-access
+    licenseUrl: https://eur-lex.europa.eu/content/legal-notice/legal-notice.html
+    usage: cited
+  - title: "Opt-in"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Opt-in
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Regulation (EU) 2016/679 (General Data Protection Regulation)"
+    author: European Parliament and Council of the EU
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+    license: free-access
+    licenseUrl: https://eur-lex.europa.eu/content/legal-notice/legal-notice.html
+    usage: cited
+  - title: "Principles of Marketing, 16.3: Metrics Used to Evaluate the Success of Online Marketing"
+    author: OpenStax
+    url: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+Automation multiplies both value and risk. A flow that sends the wrong message once is a mistake; a flow that sends it to ten thousand people every week is an incident. At advanced level you design automated flows so that consent, data minimisation and measurement are built in.
+
+## Automated flows and their triggers
+
+An automated flow is a series of emails started by a trigger, such as a sign-up, a purchase or a period without activity. Typical flows (our own working method, not from the sources) are a welcome series, a follow-up after a purchase and a re-engagement series. For each flow write down in one line: trigger, goal, audience, number of emails, stop condition and owner. Stop conditions matter most: the flow ends when the person unsubscribes, buys, or replies.
+
+## Consent follows the purpose
+
+A subscription is permission for a described purpose. If people signed up for a monthly newsletter, a flow with weekly product promotions goes beyond what they agreed to. Store consent as a record per purpose: what text was shown, when, how it was confirmed, and which list or flow it covers. As described in the German Wikipedia article on opt-in, such records make it possible to show later whether and when permission was given. Each flow checks the record and the suppression list before every send.
+
+## Data minimisation and retention
+
+The GDPR requires personal data to be limited to what is necessary for the purposes and kept in identifiable form no longer than necessary (Article 5). For email programmes this means: ask only for the fields a flow needs, and decide a rule for inactive contacts, for example a re-engagement series followed by removal. The retention period itself is a decision for the data protection officer, not for the marketing tool default.
+
+## B2B and special cases
+
+ePrivacy Article 13(5) says the consent rule applies to subscribers who are natural persons, and that Member States must protect the legitimate interests of other subscribers, such as companies, in national law. So business-to-business email is not automatically free of rules. In Germany the UWG applies, which could not be checked here. Treat B2B lists like consumer lists until legal counsel advises otherwise. Involve the data protection officer before profiling-based segmentation or any flow that makes decisions based on automated analysis of behaviour.
+
+## Measuring a flow
+
+Judge a flow by the outcome it was built for. OpenStax defines conversions as turning a visitor into a customer and notes that tracking code on links shows where traffic came from. Use tagged links, a holdout group (a random part of the audience that does not receive the flow) and the conversion difference between both groups. A holdout is our own working method; it shows whether the flow caused the orders or only reached people who would have ordered anyway.
+
+## Worked example
+
+Illustration only; invented company. A Dresden online bookshop designs a three-email welcome flow. Trigger: confirmed double opt-in. Stop condition: first purchase, unsubscribe or day 14. The signup form asks only for email and first name. Ten percent of new subscribers are randomly held out. After eight weeks the team compares orders per subscriber in both groups and removes the third email because it adds unsubscribes but no extra orders. Contacts without any click for twelve months enter a re-engagement series; the data protection officer decided that those not responding are then deleted.
+
+## Key takeaways
+
+- Define trigger, goal, audience, length, stop condition and owner for every flow.
+- Consent covers a described purpose; records and suppression checks run before every send.
+- Collect and keep only what the flow needs; retention rules are decided with data protection.
+- B2B email is not automatically exempt; ask legal counsel.
+- A holdout group shows whether a flow really causes the result.
