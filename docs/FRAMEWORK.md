@@ -217,7 +217,7 @@ Make offers known and wanted: understand markets and customers, define target gr
 | Self-organisation and project basics | core | 3 | F | P | P | — |
 | Working with data | core | 3 | F | F | P | digital-ai-literacy |
 
-## Project Management (`project-management`, role, draft)
+## Project Management (`project-management`, role, published)
 
 Deliver projects successfully: initiate with a business case, define scope and requirements, break down and schedule work, control budget, manage risks and issues, engage stakeholders, coordinate teams and resources, apply agile and hybrid approaches, manage quality and change, and close projects with lessons learned.
 

@@ -1,0 +1,14 @@
+id: wikipedia-after-action-review
+url: https://en.wikipedia.org/wiki/After-action_review
+title: After-action review
+provider: Wikipedia
+language: en
+format: article
+minutes: 6
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: '2026-11-18'
+mode: link
+competencies: [project-closure-lessons-learned]
+levels: [foundation, practitioner, advanced]
+note: Footer states CC BY-SA; no maintenance banner; read 2026-11-18 (introduction and NHS section start). Link only, nothing copied. Intended vs actual outcome, sustain/improve, no blame.
