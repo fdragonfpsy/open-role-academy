@@ -1,0 +1,290 @@
+competency: purchase-order-invoice-management
+items:
+- id: po-f-three
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: Which documents are compared in the three-way match?
+    de: Welche Dokumente werden im Drei-Wege-Abgleich verglichen?
+  options:
+  - en: Purchase order, goods receipt and invoice
+    de: Bestellung, Wareneingang und Rechnung
+    correct: true
+  - en: Contract, bank statement and invoice
+    de: Vertrag, Kontoauszug und Rechnung
+    correct: false
+  - en: Offer, purchase order and payment confirmation
+    de: Angebot, Bestellung und Zahlungsbestätigung
+    correct: false
+  - en: Delivery note, invoice and the supplier's price list
+    de: Lieferschein, Rechnung und die Preisliste des Lieferanten
+    correct: false
+  explanation:
+    en: The match compares what was ordered, what arrived and what is billed. Payment is released only if the three agree within the tolerance.
+    de: Der Abgleich vergleicht, was bestellt wurde, was ankam und was berechnet wird. Die Zahlung wird nur freigegeben, wenn die drei im Rahmen der Toleranz übereinstimmen.
+  source: https://en.wikipedia.org/wiki/Purchase-to-pay
+- id: po-f-legal
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: In Germany, what is a buyer's purchase order in legal terms?
+    de: Was ist eine Bestellung der kaufenden Seite in Deutschland rechtlich?
+  options:
+  - en: An offer; acceptance forms the contract
+    de: Ein Angebot; die Annahme lässt den Vertrag entstehen
+    correct: true
+  - en: A concluded contract from the moment it is sent
+    de: Ein geschlossener Vertrag ab dem Moment des Versands
+    correct: false
+  - en: Only an internal document without legal meaning
+    de: Nur ein internes Dokument ohne rechtliche Bedeutung
+    correct: false
+  - en: A promise to pay that needs no acceptance
+    de: Ein Zahlungsversprechen, das keine Annahme braucht
+    correct: false
+  explanation:
+    en: The order is legally an offer; acceptance by the seller forms the contract. An order confirmation is not legally required but is common. Ask legal counsel for details.
+    de: Die Bestellung ist rechtlich ein Angebot; die Annahme der verkaufenden Seite lässt den Vertrag entstehen. Eine Auftragsbestätigung ist rechtlich nicht erforderlich, aber üblich. Einzelheiten klärt die Rechtsberatung.
+  source: https://de.wikipedia.org/wiki/Bestellung
+- id: po-f-receipt
+  level: foundation
+  difficulty: 1000
+  type: multi
+  stem:
+    en: Which tasks belong to goods receipt? Select all that apply.
+    de: Welche Aufgaben gehören zum Wareneingang? Wähle alle zutreffenden aus.
+  options:
+  - en: Check the delivery physically against the delivery note
+    de: Die Lieferung körperlich mit dem Lieferschein abgleichen
+    correct: true
+  - en: Check quality and reject faulty deliveries at once
+    de: Die Qualität prüfen und fehlerhafte Lieferungen sofort zurückweisen
+    correct: true
+  - en: Approve the invoice price
+    de: Den Rechnungspreis freigeben
+    correct: false
+  - en: Agree next year's price with the supplier
+    de: Den Preis für das nächste Jahr mit dem Lieferanten vereinbaren
+    correct: false
+  explanation:
+    en: Goods receipt covers acceptance, quality inspection and booking. Prices belong to purchasing and invoice checking, not to the warehouse.
+    de: Der Wareneingang umfasst Annahme, Qualitätskontrolle und Buchung. Preise gehören zu Einkauf und Rechnungsprüfung, nicht zum Lager.
+  source: https://de.wikipedia.org/wiki/Wareneingang
+- id: po-f-roles
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: Why are ordering, receiving and releasing payment done by different people?
+    de: Warum erledigen verschiedene Personen Bestellen, Wareneingang und Zahlungsfreigabe?
+  options:
+  - en: To reduce errors and misuse (four-eyes principle)
+    de: Um Fehler und Missbrauch zu senken (Vier-Augen-Prinzip)
+    correct: true
+  - en: Because the law gives each step its own department
+    de: Weil das Gesetz jedem Schritt eine eigene Abteilung zuweist
+    correct: false
+  - en: Because it makes suppliers get paid faster
+    de: Weil Lieferanten dadurch schneller bezahlt werden
+    correct: false
+  - en: Because the warehouse is not allowed to see prices
+    de: Weil das Lager keine Preise sehen darf
+    correct: false
+  explanation:
+    en: The four-eyes principle lets at least two people take part in critical steps. It reduces errors and the opportunity for misuse; it does not by itself speed up payment.
+    de: Das Vier-Augen-Prinzip lässt mindestens zwei Personen an kritischen Schritten mitwirken. Es senkt Fehler und Missbrauchsgelegenheiten; schneller zahlen lässt es für sich genommen nicht.
+  source: https://de.wikipedia.org/wiki/Vier-Augen-Prinzip
+- id: po-p-qty
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: 'Order: 200 units at 5.00 euros. Receipt: 180 units. Invoice: 200 units at 5.00 euros (1,000 euros). What is the right handling?'
+    de: 'Bestellung: 200 Stück zu 5,00 Euro. Wareneingang: 180 Stück. Rechnung: 200 Stück zu 5,00 Euro (1.000 Euro). Wie gehst du richtig vor?'
+  options:
+  - en: Release the invoice at once, because quantity and price match the order
+    de: Die Rechnung sofort freigeben, weil Menge und Preis zur Bestellung passen
+    correct: false
+  - en: Block it; ask for a 100 euro credit note or the 20 missing units
+    de: Sie sperren; eine Gutschrift über 100 Euro oder die 20 fehlenden Stück verlangen
+    correct: true
+  - en: Pay 1,000 euros and book the missing 20 units as a loss in stock
+    de: 1.000 Euro zahlen und die 20 fehlenden Stück als Bestandsverlust buchen
+    correct: false
+  - en: Return the whole delivery and cancel the order with the supplier
+    de: Die gesamte Lieferung zurücksenden und die Bestellung beim Lieferanten stornieren
+    correct: false
+  explanation:
+    en: 'The match needs the receipt too: you may pay only for what arrived, 180 x 5.00 = 900 euros. The supplier corrects the invoice, delivers the rest or issues a credit note.'
+    de: 'Der Abgleich braucht auch den Wareneingang: Du zahlst nur, was ankam, 180 x 5,00 = 900 Euro. Der Lieferant korrigiert die Rechnung, liefert den Rest nach oder erstellt eine Gutschrift.'
+  source: https://en.wikipedia.org/wiki/Purchase-to-pay
+- id: po-p-nopo
+  level: practitioner
+  difficulty: 1250
+  type: single
+  stem:
+    en: An invoice arrives for a service that was already performed. No purchase order exists. What is the best handling?
+    de: Es trifft eine Rechnung für eine bereits erbrachte Leistung ein. Es gibt keine Bestellung. Was ist die beste Vorgehensweise?
+  options:
+  - en: Pay at once, since the service was clearly delivered and the supplier is waiting
+    de: Sofort zahlen, da die Leistung eindeutig erbracht wurde und der Lieferant wartet
+    correct: false
+  - en: Refuse payment permanently on principle
+    de: Die Zahlung grundsätzlich dauerhaft verweigern
+    correct: false
+  - en: Let accounts payable create the missing order afterwards so the match works
+    de: Die Kreditorenbuchhaltung die fehlende Bestellung nachträglich anlegen lassen, damit der Abgleich funktioniert
+    correct: false
+  - en: 'Record an exception: requester confirms, retrospective order is created'
+    de: 'Als Ausnahme erfassen: Bedarfsträger bestätigt, nachträgliche Bestellung wird angelegt'
+    correct: true
+  explanation:
+    en: A no-order-no-pay rule treats such invoices as recorded exceptions. The requester, not accounts payable, confirms the service, so the separation of duties is kept.
+    de: Eine Regel „keine Bestellung, keine Zahlung“ behandelt solche Rechnungen als erfasste Ausnahmen. Die bedarfstragende Person, nicht die Kreditorenbuchhaltung, bestätigt die Leistung, so bleibt die Funktionstrennung erhalten.
+  source: https://en.wikipedia.org/wiki/Purchase-to-pay
+- id: po-p-framework
+  level: practitioner
+  difficulty: 1300
+  type: multi
+  stem:
+    en: Which statements about call-off orders under a framework contract are correct? Select all that apply.
+    de: Welche Aussagen zu Abrufbestellungen unter einem Rahmenvertrag sind richtig? Wähle alle zutreffenden aus.
+  options:
+  - en: They should carry the framework contract reference
+    de: Sie sollten die Rahmenvertragsreferenz tragen
+    correct: true
+  - en: The price check can use the price agreed in the framework
+    de: Die Preisprüfung kann den im Rahmen vereinbarten Preis nutzen
+    correct: true
+  - en: Every call-off requires all terms to be renegotiated
+    de: Jeder Abruf erfordert, alle Konditionen neu zu verhandeln
+    correct: false
+  - en: Terms printed on the delivery note replace the agreed terms
+    de: Auf dem Lieferschein aufgedruckte Bedingungen ersetzen die vereinbarten Bedingungen
+    correct: false
+  explanation:
+    en: Individual orders refer to the framework, so the agreed prices and terms apply. A delivery note cannot unilaterally change terms that were agreed earlier.
+    de: Einzelaufträge beziehen sich auf den Rahmen, daher gelten die vereinbarten Preise und Bedingungen. Ein Lieferschein kann früher vereinbarte Bedingungen nicht einseitig ändern.
+  source: https://de.wikipedia.org/wiki/Lieferschein
+- id: po-p-skonto
+  level: practitioner
+  difficulty: 1350
+  type: single
+  stem:
+    en: An invoice with "14 days 2 percent, 30 days net" is blocked on day 10 for a small discrepancy. What is the best action?
+    de: Eine Rechnung mit „14 Tage 2 Prozent, 30 Tage netto“ wird am Tag 10 wegen einer kleinen Abweichung gesperrt. Was ist die beste Maßnahme?
+  options:
+  - en: Wait until everything is clarified, however long it takes and whatever the date
+    de: Warten, bis alles geklärt ist, egal wie lange es dauert und wie das Datum liegt
+    correct: false
+  - en: Contact the supplier before the deadline and pay the undisputed part
+    de: Vor Fristablauf den Lieferanten kontaktieren und den unstrittigen Teil zahlen
+    correct: true
+  - en: Deduct the discount after the deadline anyway, as the delay was not your fault
+    de: Das Skonto nach Fristablauf trotzdem abziehen, da die Verzögerung nicht deine Schuld war
+    correct: false
+  - en: Give up the discount silently and pay on day 30
+    de: Das Skonto stillschweigend aufgeben und am Tag 30 zahlen
+    correct: false
+  explanation:
+    en: A discount taken after the deadline can be reclaimed by the supplier. Acting before the deadline and agreeing in writing protects the discount and the relationship.
+    de: Ein nach Fristablauf abgezogenes Skonto kann der Lieferant zurückfordern. Rechtzeitiges Handeln und eine schriftliche Absprache schützen Skonto und Beziehung.
+  source: https://de.wikipedia.org/wiki/Skonto
+- id: po-a-bank
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: An email from a known supplier asks you to change its bank account; the signature and logo look right. What is the best step?
+    de: Eine E-Mail eines bekannten Lieferanten bittet dich, sein Bankkonto zu ändern; Signatur und Logo sehen echt aus. Was ist der beste Schritt?
+  options:
+  - en: Reply to the email and ask the sender to confirm the new details
+    de: Auf die E-Mail antworten und den Absender bitten, die neuen Daten zu bestätigen
+    correct: false
+  - en: Change the account but make the next payment small as a test
+    de: Das Konto ändern, aber die nächste Zahlung als Test klein halten
+    correct: false
+  - en: Call a number already stored in your master data, and have a second person approve the change
+    de: Eine bereits in den Stammdaten hinterlegte Nummer anrufen und die Änderung von einer zweiten Person freigeben lassen
+    correct: true
+  - en: Call the number given in the email signature
+    de: Die in der E-Mail-Signatur genannte Nummer anrufen
+    correct: false
+  explanation:
+    en: A reply or a number in the same email may lead to the fraudster. Verify through an independent, known channel and apply the four-eyes principle to master data changes.
+    de: Eine Antwort oder eine Nummer aus derselben E-Mail führt womöglich zum Betrüger. Prüfe über einen unabhängigen, bekannten Kanal und wende das Vier-Augen-Prinzip auf Stammdatenänderungen an.
+  source: https://de.wikipedia.org/wiki/Vier-Augen-Prinzip
+- id: po-a-touchless
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: After the price tolerance was widened from 1 to 10 percent, the touchless rate rose from 55 to 80 percent. What is the right conclusion?
+    de: Nachdem die Preistoleranz von 1 auf 10 Prozent erweitert wurde, stieg die Durchlaufquote von 55 auf 80 Prozent. Welche Schlussfolgerung ist richtig?
+  options:
+  - en: The process improved by 25 points
+    de: Der Prozess hat sich um 25 Punkte verbessert
+    correct: false
+  - en: Not yet known; check by sampling whether more errors pass and what the overpayments cost
+    de: Noch nicht bekannt; per Stichprobe prüfen, ob mehr Fehler durchrutschen und was die Überzahlungen kosten
+    correct: true
+  - en: The tolerance should be set back to zero immediately
+    de: Die Toleranz sollte sofort auf null zurückgesetzt werden
+    correct: false
+  - en: The tolerance should be widened further
+    de: Die Toleranz sollte weiter erweitert werden
+    correct: false
+  explanation:
+    en: A wider tolerance raises the touchless rate by definition. Whether it is good depends on the value of errors that now pass; zero tolerance and further widening are both unsupported by the figures.
+    de: Eine weitere Toleranz erhöht die Durchlaufquote per Definition. Ob das gut ist, hängt vom Wert der nun durchrutschenden Fehler ab; null Toleranz und weiteres Erweitern sind beide durch die Zahlen nicht belegt.
+  source: https://en.wikipedia.org/wiki/Purchase-to-pay
+- id: po-a-master
+  level: advanced
+  difficulty: 1550
+  type: multi
+  stem:
+    en: Which findings point to outdated price master data? Select all that apply.
+    de: Welche Befunde deuten auf veraltete Preisstammdaten hin? Wähle alle zutreffenden aus.
+  options:
+  - en: Most blocked invoices are price differences
+    de: Die meisten gesperrten Rechnungen sind Preisabweichungen
+    correct: true
+  - en: The differences are concentrated in a few suppliers whose prices recently changed
+    de: Die Abweichungen konzentrieren sich auf wenige Lieferanten, deren Preise sich kürzlich änderten
+    correct: true
+  - en: Most blocked invoices lack a goods receipt
+    de: Den meisten gesperrten Rechnungen fehlt ein Wareneingang
+    correct: false
+  - en: Most blocked invoices carry a duplicate invoice number
+    de: Die meisten gesperrten Rechnungen tragen eine doppelte Rechnungsnummer
+    correct: false
+  explanation:
+    en: Price differences clustered on suppliers with recent price changes suggest stale prices in the system. Missing receipts point to the warehouse or service confirmation, and duplicates to the invoice intake.
+    de: Preisabweichungen, die sich auf Lieferanten mit jüngsten Preisänderungen konzentrieren, deuten auf veraltete Preise im System. Fehlende Wareneingänge weisen auf Lager oder Leistungsbestätigung, Doubletten auf den Rechnungseingang.
+  source: https://de.wikipedia.org/wiki/Kreditorenbuchhaltung
+- id: po-a-controls
+  level: advanced
+  difficulty: 1600
+  type: single
+  stem:
+    en: Which combination best protects against payments to a fake supplier account?
+    de: Welche Kombination schützt am besten vor Zahlungen an ein gefälschtes Lieferantenkonto?
+  options:
+  - en: One experienced person maintains master data and releases payments, to keep it fast
+    de: Eine erfahrene Person pflegt Stammdaten und gibt Zahlungen frei, damit es schnell geht
+    correct: false
+  - en: Different people for master data changes and payment release, logged changes and call-back verification
+    de: Verschiedene Personen für Stammdatenänderungen und Zahlungsfreigabe, protokollierte Änderungen und Rückrufprüfung
+    correct: true
+  - en: Monthly sampling of paid invoices only
+    de: Nur monatliche Stichproben bezahlter Rechnungen
+    correct: false
+  - en: A high approval limit for every payment
+    de: Eine hohe Freigabegrenze für jede Zahlung
+    correct: false
+  explanation:
+    en: 'Preventive controls act before the money leaves: separated duties, logging and independent verification. Sampling after payment finds problems late, and approval limits alone do not verify the account.'
+    de: 'Vorbeugende Kontrollen wirken, bevor das Geld abfließt: getrennte Aufgaben, Protokoll und unabhängige Prüfung. Stichproben nach der Zahlung finden Probleme spät, und Freigabegrenzen allein prüfen das Konto nicht.'
+  source: https://de.wikipedia.org/wiki/Vier-Augen-Prinzip

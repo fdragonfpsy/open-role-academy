@@ -1,0 +1,290 @@
+competency: negotiation-supplier-relationships
+items:
+- id: ns-f-interest
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: Which statement is an interest rather than a position?
+    de: Welche Aussage ist ein Interesse und keine Position?
+  options:
+  - en: '"We will not pay more than 3.90 per ream."'
+    de: „Wir zahlen nicht mehr als 3,90 je Paket.“
+    correct: false
+  - en: '"We must stay within this year''s budget."'
+    de: „Wir müssen im Budget dieses Jahres bleiben.“
+    correct: true
+  - en: '"Your competitor already offered less."'
+    de: „Euer Wettbewerber hat schon weniger geboten.“
+    correct: false
+  - en: '"This is our final offer."'
+    de: „Das ist unser letztes Angebot.“
+    correct: false
+  explanation:
+    en: A position is a demand; an interest is the need behind it. Knowing the budget need opens other ways to meet it, such as longer payment terms or volume.
+    de: Eine Position ist eine Forderung, ein Interesse der Bedarf dahinter. Wer den Budgetbedarf kennt, findet andere Wege, ihn zu decken, etwa längere Zahlungsziele oder Mengen.
+  source: https://de.wikipedia.org/wiki/Harvard-Konzept
+- id: ns-f-batna
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: What does BATNA describe?
+    de: Was beschreibt der BATNA?
+  options:
+  - en: The highest price the supplier would still accept
+    de: Den höchsten Preis, den der Lieferant noch akzeptieren würde
+    correct: false
+  - en: Your next-best alternative to a deal
+    de: Deine nächstbeste Alternative zum Abschluss
+    correct: true
+  - en: The price you hope to reach
+    de: Den Preis, den du erreichen möchtest
+    correct: false
+  - en: The written summary of agreed terms
+    de: Die schriftliche Zusammenfassung vereinbarter Konditionen
+    correct: false
+  explanation:
+    en: BATNA is the best alternative to a negotiated agreement. It tells you where to walk away, because below that line the alternative is better than the deal.
+    de: BATNA ist die beste Alternative zu einer verhandelten Einigung. Sie zeigt dir, wo du aussteigst, denn jenseits dieser Linie ist die Alternative besser als der Abschluss.
+  source: https://de.wikipedia.org/wiki/Harvard-Konzept
+- id: ns-f-terms
+  level: foundation
+  difficulty: 1000
+  type: multi
+  stem:
+    en: Which terms can be negotiated besides the unit price? Select all that apply.
+    de: Über welche Konditionen lässt sich neben dem Stückpreis verhandeln? Wähle alle zutreffenden aus.
+  options:
+  - en: Payment period and cash discount
+    de: Zahlungsziel und Skonto
+    correct: true
+  - en: How long the price stays fixed
+    de: Wie lange der Preis fest bleibt
+    correct: true
+  - en: The supplier's own profit target
+    de: Das eigene Gewinnziel des Lieferanten
+    correct: false
+  - en: Your own walk-away point
+    de: Dein eigener Ausstiegspunkt
+    correct: false
+  explanation:
+    en: Payment terms and price fixing are terms of the deal. A supplier's profit target is not something the buyer sets, and your own walk-away point is a private limit, not a term to negotiate.
+    de: Zahlungsbedingungen und Preisbindung sind Konditionen des Geschäfts. Das Gewinnziel des Lieferanten legt der Einkauf nicht fest, und der eigene Ausstiegspunkt ist eine private Grenze, keine Kondition.
+  source: https://de.wikipedia.org/wiki/Zahlungsbedingungen
+- id: ns-f-stages
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: Which sequence of negotiation stages is correct?
+    de: Welche Reihenfolge der Verhandlungsphasen ist richtig?
+  options:
+  - en: Relationship, information exchange, influence and persuasion, closing
+    de: Beziehung, Informationsaustausch, Beeinflussung und Überzeugung, Abschluss
+    correct: true
+  - en: Information exchange, closing, relationship, persuasion
+    de: Informationsaustausch, Abschluss, Beziehung, Überzeugung
+    correct: false
+  - en: Persuasion, relationship, closing, information exchange
+    de: Überzeugung, Beziehung, Abschluss, Informationsaustausch
+    correct: false
+  - en: Closing, relationship, information exchange, persuasion
+    de: Abschluss, Beziehung, Informationsaustausch, Überzeugung
+    correct: false
+  explanation:
+    en: The stages start with building a relationship, then exchange background information, then try to persuade, and end in closing. Skipping the first two makes persuasion harder.
+    de: Die Phasen beginnen mit Beziehungsaufbau, dann folgt der Austausch von Hintergrundinformationen, dann der Überzeugungsversuch, zuletzt der Abschluss. Wer die ersten beiden überspringt, macht Überzeugen schwerer.
+  source: https://openstax.org/books/organizational-behavior/pages/14-4-negotiation-behavior
+- id: ns-p-pressure
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: 'The supplier pressures you: "Decide today or the price goes up." What does the Harvard approach advise?'
+    de: 'Der Lieferant setzt dich unter Druck: „Entscheide heute, sonst steigt der Preis.“ Was rät das Harvard-Konzept?'
+  options:
+  - en: Accept, to protect the relationship
+    de: Zustimmen, um die Beziehung zu schützen
+    correct: false
+  - en: Answer with a threat of your own
+    de: Mit einer eigenen Drohung antworten
+    correct: false
+  - en: Name the tactic calmly and, if needed, pause until the discussion is factual again
+    de: Die Taktik ruhig ansprechen und bei Bedarf unterbrechen, bis wieder sachlich gesprochen wird
+    correct: true
+  - en: Offer a small concession to calm the other side
+    de: Ein kleines Zugeständnis anbieten, um die Gegenseite zu beruhigen
+    correct: false
+  explanation:
+    en: The approach recommends addressing tricks directly and not letting yourself be pressured into an agreement, interrupting the talks if necessary. A concession rewards the pressure.
+    de: Das Konzept empfiehlt, Tricks direkt anzusprechen und sich nicht zu einer Einigung drängen zu lassen, notfalls die Verhandlung zu unterbrechen. Ein Zugeständnis belohnt den Druck.
+  source: https://de.wikipedia.org/wiki/Harvard-Konzept
+- id: ns-p-skonto
+  level: practitioner
+  difficulty: 1250
+  type: single
+  stem:
+    en: 'Terms: "14 days 2 percent discount, 30 days net". Invoice: 50,000 euros. How much do you pay on day 14?'
+    de: 'Bedingungen: „14 Tage 2 Prozent Skonto, 30 Tage netto“. Rechnung: 50.000 Euro. Wie viel zahlst du am Tag 14?'
+  options:
+  - en: 49,500 euros
+    de: 49.500 Euro
+    correct: false
+  - en: 50,000 euros
+    de: 50.000 Euro
+    correct: false
+  - en: 48,500 euros
+    de: 48.500 Euro
+    correct: false
+  - en: 49,000 euros
+    de: 49.000 Euro
+    correct: true
+  explanation:
+    en: 2 percent of 50,000 is 1,000, so you pay 49,000 on day 14. After the discount period the full 50,000 is due on day 30.
+    de: 2 Prozent von 50.000 sind 1.000, du zahlst also am Tag 14 49.000. Nach der Skontofrist sind am Tag 30 die vollen 50.000 fällig.
+  source: https://de.wikipedia.org/wiki/Skonto
+- id: ns-p-concession
+  level: practitioner
+  difficulty: 1300
+  type: multi
+  stem:
+    en: Which are good practices for trading concessions? Select all that apply.
+    de: Welche Vorgehensweisen sind gut beim Tausch von Zugeständnissen? Wähle alle zutreffenden aus.
+  options:
+  - en: Say "if you..., then we..." instead of giving things away
+    de: „Wenn ihr ..., dann wir ...“ sagen, statt etwas zu verschenken
+    correct: true
+  - en: Negotiate terms as a package, such as price, volume and payment period
+    de: Konditionen als Paket verhandeln, etwa Preis, Menge und Zahlungsziel
+    correct: true
+  - en: Concede early and generously to build goodwill
+    de: Früh und großzügig nachgeben, um Wohlwollen aufzubauen
+    correct: false
+  - en: Accept the first offer quickly, to protect the relationship
+    de: Das erste Angebot schnell annehmen, um die Beziehung zu schützen
+    correct: false
+  explanation:
+    en: Conditional concessions and packages keep the exchange balanced. Early free concessions and quick acceptance give away value without strengthening the relationship.
+    de: Bedingte Zugeständnisse und Pakete halten den Austausch ausgewogen. Frühe kostenlose Zugeständnisse und schnelle Annahme verschenken Wert, ohne die Beziehung zu stärken.
+  source: https://openstax.org/books/organizational-behavior/pages/14-4-negotiation-behavior
+- id: ns-p-power
+  level: practitioner
+  difficulty: 1350
+  type: single
+  stem:
+    en: The supplier is the only source of a critical component. Which tactic is least likely to lower the price?
+    de: Der Lieferant ist die einzige Quelle für ein kritisches Bauteil. Welche Taktik senkt den Preis am wahrscheinlichsten nicht?
+  options:
+  - en: Offering a multi-year volume commitment
+    de: Eine mehrjährige Mengenzusage anbieten
+    correct: false
+  - en: Asking for the cost breakdown and agreeing a two-way index clause
+    de: Die Kostenaufschlüsselung verlangen und eine Indexklausel in beide Richtungen vereinbaren
+    correct: false
+  - en: Threatening to switch to another supplier
+    de: Mit dem Wechsel zu einem anderen Lieferanten drohen
+    correct: true
+  - en: Proposing a joint cost-reduction project
+    de: Ein gemeinsames Projekt zur Kostensenkung vorschlagen
+    correct: false
+  explanation:
+    en: A threat only works if the alternative is real. With a sole source the threat is not credible, while commitments, transparency and joint projects address the supplier's interests.
+    de: Eine Drohung wirkt nur, wenn die Alternative echt ist. Bei einem Alleinlieferanten ist sie nicht glaubwürdig, während Zusagen, Transparenz und gemeinsame Projekte die Interessen des Lieferanten treffen.
+  source: https://openstax.org/books/organizational-behavior/pages/14-4-negotiation-behavior
+- id: ns-a-segment
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: Which supplier deserves the most intensive relationship management?
+    de: Welcher Lieferant verdient das intensivste Beziehungsmanagement?
+  options:
+  - en: The supplier of office paper, which has the largest invoice volume but many alternatives
+    de: Der Lieferant von Büropapier, der das größte Rechnungsvolumen hat, aber viele Alternativen
+    correct: false
+  - en: The sole source of a critical component, whose failure would stop production
+    de: Die einzige Quelle eines kritischen Bauteils, dessen Ausfall die Produktion stoppen würde
+    correct: true
+  - en: The smallest supplier on the list
+    de: Der kleinste Lieferant auf der Liste
+    correct: false
+  - en: The supplier with the most invoice exceptions
+    de: Der Lieferant mit den meisten Rechnungsabweichungen
+    correct: false
+  explanation:
+    en: Intensity should follow the impact of a failure and the dependence, not the invoice volume or the number of exceptions; exceptions are fixed in the order process.
+    de: Die Intensität sollte der Wirkung eines Ausfalls und der Abhängigkeit folgen, nicht dem Rechnungsvolumen oder der Zahl der Abweichungen; Abweichungen werden im Bestellprozess behoben.
+  source: https://de.wikipedia.org/wiki/Lieferantenmanagement
+- id: ns-a-increase
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: A supplier asks for 5 percent more. Material is 30 percent of its price and the relevant index rose 6 percent. What is the best response?
+    de: Ein Lieferant fordert 5 Prozent mehr. Material macht 30 Prozent seines Preises aus, der maßgebliche Index stieg um 6 Prozent. Was ist die beste Reaktion?
+  options:
+  - en: Grant the full 5 percent to keep the supplier happy
+    de: Die vollen 5 Prozent gewähren, damit der Lieferant zufrieden bleibt
+    correct: false
+  - en: Reject any increase, since the supplier must absorb costs
+    de: Jede Erhöhung ablehnen, da der Lieferant Kosten tragen muss
+    correct: false
+  - en: Check the claim (30 percent x 6 percent = 1.8 percent) and propose a two-way index clause
+    de: Die Forderung prüfen (30 Prozent x 6 Prozent = 1,8 Prozent) und eine Indexklausel in beide Richtungen vorschlagen
+    correct: true
+  - en: Offer to accept the 5 percent if the supplier gives a discount on another product
+    de: Die 5 Prozent akzeptieren, wenn der Lieferant auf ein anderes Produkt Rabatt gibt
+    correct: false
+  explanation:
+    en: The cost driver justifies about 1.8 percent, not 5. A published index applied in both directions is an objective criterion; blanket rejection or full acceptance ignores the facts.
+    de: Der Kostentreiber rechtfertigt etwa 1,8 Prozent, nicht 5. Ein veröffentlichter Index in beide Richtungen ist ein objektives Kriterium; pauschales Ablehnen oder volles Zustimmen ignoriert die Fakten.
+  source: https://de.wikipedia.org/wiki/Harvard-Konzept
+- id: ns-a-escalate
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: A delivery dispute has stayed unresolved between operational contacts for weeks, and the contract has no escalation path. What is the best step?
+    de: Ein Lieferstreit ist seit Wochen zwischen den operativen Kontakten ungelöst, und der Vertrag enthält keinen Eskalationsweg. Was ist der beste Schritt?
+  options:
+  - en: Write to the supplier's top management with a complaint about its team
+    de: An die Geschäftsführung des Lieferanten schreiben und sich über dessen Team beschweren
+    correct: false
+  - en: Agree an escalation path, then take the facts to the next level
+    de: Einen Eskalationsweg vereinbaren und die Fakten dann auf die nächste Stufe bringen
+    correct: true
+  - en: Wait for the supplier to propose a solution
+    de: Abwarten, bis der Lieferant eine Lösung vorschlägt
+    correct: false
+  - en: Terminate the contract at once and involve a lawyer
+    de: Den Vertrag sofort kündigen und eine Anwältin einschalten
+    correct: false
+  explanation:
+    en: An agreed path with a defined next level protects the relationship and keeps the facts separate from personalities. Going to top management or terminating skips the levels and may be unnecessary or costly.
+    de: Ein vereinbarter Weg mit definierter nächster Stufe schützt die Beziehung und trennt Fakten von Personen. Der Gang zur Geschäftsführung oder die Kündigung überspringt Stufen und ist womöglich unnötig oder teuer.
+  source: https://openstax.org/books/organizational-behavior/pages/14-3-resolving-conflict-in-organizations
+- id: ns-a-prevent
+  level: advanced
+  difficulty: 1600
+  type: multi
+  stem:
+    en: Which measures help prevent conflict with a key supplier? Select all that apply.
+    de: Welche Maßnahmen helfen, Konflikte mit einem wichtigen Lieferanten zu vermeiden? Wähle alle zutreffenden aus.
+  options:
+  - en: Agree shared goals such as end customer satisfaction
+    de: Gemeinsame Ziele vereinbaren, etwa die Zufriedenheit der Endkundschaft
+    correct: true
+  - en: Define who is responsible for what in the joint process
+    de: Festlegen, wer im gemeinsamen Prozess wofür verantwortlich ist
+    correct: true
+  - en: Reward buyers only for the price reduction they achieve
+    de: Einkaufende nur für die erzielte Preissenkung belohnen
+    correct: false
+  - en: Keep the supplier uninformed about forecasts to retain flexibility
+    de: Den Lieferanten über Prognosen im Unklaren lassen, um flexibel zu bleiben
+    correct: false
+  explanation:
+    en: Shared goals and clear responsibilities reduce conflict. Pure price incentives create win-lose situations, and withholding forecasts feeds misperceptions and suspicion.
+    de: Gemeinsame Ziele und klare Verantwortlichkeiten verringern Konflikte. Reine Preisanreize erzeugen Gewinner-Verlierer-Situationen, und zurückgehaltene Prognosen nähren Fehlwahrnehmungen und Misstrauen.
+  source: https://openstax.org/books/organizational-behavior/pages/14-3-resolving-conflict-in-organizations

@@ -1,0 +1,290 @@
+competency: tendering-rfx-contracting
+items:
+- id: tr-f-rfq
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: Your requirement is fixed and you only need price and terms for exactly that specification. Which request fits best?
+    de: Dein Bedarf steht fest und du brauchst nur Preis und Konditionen für genau diese Spezifikation. Welche Anfrage passt am besten?
+  options:
+  - en: Request for information (RFI)
+    de: Informationsanfrage (RFI)
+    correct: false
+  - en: Request for quotation (RFQ)
+    de: Preisanfrage (RFQ)
+    correct: true
+  - en: Request for proposal (RFP), so suppliers can design their own solution
+    de: Angebotsanfrage mit Lösungsvorschlag (RFP), damit Lieferanten eine eigene Lösung entwerfen können
+    correct: false
+  - en: Pre-qualification questionnaire for all suppliers on the market
+    de: Vorqualifikationsfragebogen für alle Lieferanten am Markt
+    correct: false
+  explanation:
+    en: An RFQ compares price and terms for a fixed need. An RFI collects information when you do not yet know the market, and an RFP invites suppliers to propose their own solution.
+    de: Eine RFQ vergleicht Preis und Konditionen für einen festen Bedarf. Eine RFI sammelt Informationen, wenn du den Markt noch nicht kennst, und eine RFP lädt Lieferanten ein, eine eigene Lösung vorzuschlagen.
+  source: https://en.wikipedia.org/wiki/Request_for_proposal
+- id: tr-f-rfi
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: What is the main purpose of a request for information (RFI)?
+    de: Was ist der Hauptzweck einer Informationsanfrage (RFI)?
+  options:
+  - en: To award the contract to the cheapest supplier on the market
+    de: Den Auftrag an den günstigsten Lieferanten am Markt zu vergeben
+    correct: false
+  - en: To learn what the market offers, before an RFQ or RFP
+    de: Zu erfahren, was der Markt bietet, bevor eine RFQ oder RFP folgt
+    correct: true
+  - en: To fix the final price with one chosen supplier in advance
+    de: Den Endpreis vorab mit einem ausgewählten Lieferanten festzulegen
+    correct: false
+  - en: To replace the contract with a shorter agreement
+    de: Den Vertrag durch eine kürzere Vereinbarung zu ersetzen
+    correct: false
+  explanation:
+    en: 'An RFI is an early step: you gather information about what is available. It is usually followed by an RFQ or RFP, and it does not award anything.'
+    de: 'Eine RFI ist ein früher Schritt: Du sammelst Informationen darüber, was verfügbar ist. Danach folgt meist eine RFQ oder RFP, und sie vergibt nichts.'
+  source: https://en.wikipedia.org/wiki/Request_for_proposal
+- id: tr-f-contents
+  level: foundation
+  difficulty: 1000
+  type: multi
+  stem:
+    en: Which elements belong in a clear request for offers? Select all that apply.
+    de: Welche Bestandteile gehören in eine klare Angebotsanfrage? Wähle alle zutreffenden aus.
+  options:
+  - en: Evaluation criteria and weights, stated before offers arrive
+    de: Bewertungskriterien und Gewichte, genannt bevor Angebote eintreffen
+    correct: true
+  - en: A price table in the same format for every bidder
+    de: Eine Preistabelle im gleichen Format für alle Bietenden
+    correct: true
+  - en: The name of the supplier you already prefer
+    de: Der Name des Lieferanten, den du schon bevorzugst
+    correct: false
+  - en: Your own maximum budget, so bidders can aim just below it
+    de: Dein eigenes Höchstbudget, damit Bietende knapp darunter anbieten können
+    correct: false
+  explanation:
+    en: Published criteria and a uniform price table make offers comparable. Naming a favourite undermines fairness, and revealing your maximum budget invites offers that sit just under it.
+    de: Veröffentlichte Kriterien und eine einheitliche Preistabelle machen Angebote vergleichbar. Einen Favoriten zu nennen untergräbt die Fairness, und ein offengelegtes Höchstbudget lädt zu Angeboten knapp darunter ein.
+  source: https://en.wikipedia.org/wiki/Tendering
+- id: tr-f-framework
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: What does a framework contract regulate?
+    de: Was regelt ein Rahmenvertrag?
+  options:
+  - en: Only the single delivery that is ordered today, with its quantity and date
+    de: Nur die einzelne Lieferung, die heute bestellt wird, mit Menge und Termin
+    correct: false
+  - en: The terms for many later orders, such as delivery, payment and quality
+    de: Die Bedingungen für viele spätere Aufträge, etwa Lieferung, Zahlung und Qualität
+    correct: true
+  - en: The supplier's internal cost structure and its margin calculation
+    de: Die interne Kostenstruktur des Lieferanten und seine Margenkalkulation
+    correct: false
+  - en: The evaluation weights and criteria for the next tender
+    de: Die Bewertungsgewichte und Kriterien der nächsten Ausschreibung
+    correct: false
+  explanation:
+    en: A framework contract fixes the conditions of the relationship; individual orders are concluded later and refer to it.
+    de: Ein Rahmenvertrag legt die Bedingungen der Beziehung fest; Einzelaufträge werden später geschlossen und beziehen sich darauf.
+  source: https://de.wikipedia.org/wiki/Rahmenvertrag
+- id: tr-p-price
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: An RFP uses the formula "lowest compliant price = 100 points; others = lowest price / own price x 100". The lowest price is 200,000 euros. How many points does an offer of 250,000 euros get?
+    de: Eine RFP nutzt die Formel „niedrigster zulässiger Preis = 100 Punkte; andere = niedrigster Preis / eigener Preis x 100“. Der niedrigste Preis beträgt 200.000 Euro. Wie viele Punkte erhält ein Angebot über 250.000 Euro?
+  options:
+  - en: 75 points
+    de: 75 Punkte
+    correct: false
+  - en: 125 points
+    de: 125 Punkte
+    correct: false
+  - en: 80 points
+    de: 80 Punkte
+    correct: true
+  - en: 50 points
+    de: 50 Punkte
+    correct: false
+  explanation:
+    en: 200,000 / 250,000 x 100 = 80. The common mistake is to subtract the 25 percent premium from 100, which gives 75 and does not follow the stated formula.
+    de: 200.000 / 250.000 x 100 = 80. Der häufige Fehler ist, den Aufschlag von 25 Prozent von 100 abzuziehen; das ergibt 75 und folgt nicht der genannten Formel.
+  source: https://en.wikipedia.org/wiki/Tendering
+- id: tr-p-clarify
+  level: practitioner
+  difficulty: 1250
+  type: single
+  stem:
+    en: During an RFP a bidder asks a question whose answer changes how the requirement is understood. How do you handle it?
+    de: Während einer RFP stellt ein Bietender eine Frage, deren Antwort das Verständnis des Bedarfs verändert. Wie gehst du vor?
+  options:
+  - en: Answer in writing to the bidder who asked, because they invested the effort
+    de: Schriftlich nur dem fragenden Bietenden antworten, weil er sich die Mühe gemacht hat
+    correct: false
+  - en: Send the question and the answer to all bidders in writing, without naming the asker
+    de: Frage und Antwort schriftlich an alle Bietenden senden, ohne die fragende Stelle zu nennen
+    correct: true
+  - en: Clarify it by phone with the bidder to save time and avoid a paper trail
+    de: Es telefonisch mit dem Bietenden klären, um Zeit zu sparen und keine Schriftspur zu hinterlassen
+    correct: false
+  - en: Decline to answer, so no bidder gains an advantage
+    de: Die Antwort verweigern, damit kein Bietender einen Vorteil erhält
+    correct: false
+  explanation:
+    en: Equal treatment means all bidders have the same information. Sharing the answer with everyone, anonymously, keeps the competition fair and documented.
+    de: Gleichbehandlung heißt, dass alle Bietenden dieselben Informationen haben. Die anonyme Antwort an alle hält den Wettbewerb fair und dokumentiert.
+  source: https://en.wikipedia.org/wiki/Request_for_proposal
+- id: tr-p-contract
+  level: practitioner
+  difficulty: 1300
+  type: multi
+  stem:
+    en: Which are typical building blocks of a purchase or framework contract? Select all that apply.
+    de: Welche sind typische Bausteine eines Kauf- oder Rahmenvertrags? Wähle alle zutreffenden aus.
+  options:
+  - en: Delivery dates and acceptance
+    de: Liefertermine und Abnahme
+    correct: true
+  - en: Liability and warranty
+    de: Haftung und Gewährleistung
+    correct: true
+  - en: The scoring sheet with the points of all competing offers
+    de: Das Bewertungsblatt mit den Punkten aller konkurrierenden Angebote
+    correct: false
+  - en: Your internal approval limits for purchase orders
+    de: Deine internen Freigabegrenzen für Bestellungen
+    correct: false
+  explanation:
+    en: Delivery, acceptance, liability and warranty are contract content. The scoring sheet and internal approval limits are internal documents and do not belong in the contract.
+    de: Lieferung, Abnahme, Haftung und Gewährleistung sind Vertragsinhalt. Bewertungsblatt und interne Freigabegrenzen sind interne Unterlagen und gehören nicht in den Vertrag.
+  source: https://de.wikipedia.org/wiki/Rahmenvertrag
+- id: tr-p-eu-award
+  level: practitioner
+  difficulty: 1350
+  type: single
+  stem:
+    en: Which statement about award criteria in EU public procurement is closest to the directive (topic level)?
+    de: Welche Aussage zu Zuschlagskriterien in der öffentlichen Auftragsvergabe der EU kommt der Richtlinie am nächsten (Themenebene)?
+  options:
+  - en: The most economically advantageous tender wins, judged on price or cost and possibly quality criteria tied to the subject
+    de: Das wirtschaftlich günstigste Angebot gewinnt, beurteilt nach Preis oder Kosten und möglicherweise Qualitätskriterien mit Bezug zum Gegenstand
+    correct: true
+  - en: The lowest price must always win, and quality or delivery conditions may never be taken into account
+    de: Der niedrigste Preis muss immer gewinnen, und Qualität oder Lieferbedingungen dürfen nie berücksichtigt werden
+    correct: false
+  - en: Authority and bidder may agree the criteria freely after the offers have been opened and compared
+    de: Auftraggeber und Bietende dürfen die Kriterien nach Öffnung und Vergleich der Angebote frei vereinbaren
+    correct: false
+  - en: Criteria may include the bidder's home country, because supporting local business is always a legitimate aim
+    de: Kriterien dürfen das Herkunftsland des Bietenden einbeziehen, weil die Stützung der lokalen Wirtschaft immer ein legitimes Ziel ist
+    correct: false
+  explanation:
+    en: The directive bases the award on the most economically advantageous tender, judged on price or cost and possibly quality-related criteria linked to the subject matter. Equal treatment and non-discrimination rule out favouring a home country. Details are for legal counsel.
+    de: Die Richtlinie stützt den Zuschlag auf das wirtschaftlich günstigste Angebot, beurteilt nach Preis oder Kosten und möglicherweise qualitätsbezogenen Kriterien mit Bezug zum Auftragsgegenstand. Gleichbehandlung und Nichtdiskriminierung schließen die Bevorzugung eines Herkunftslandes aus. Einzelheiten klärt die Rechtsberatung.
+  source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0024
+- id: tr-a-life
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: Offer A costs 10,000 euros to buy and 2,500 euros a year to run; offer B costs 13,000 euros and 1,500 euros a year. Compared over four years, without discounting, which statement is right?
+    de: Angebot A kostet 10.000 Euro in der Anschaffung und 2.500 Euro pro Jahr im Betrieb; Angebot B kostet 13.000 Euro und 1.500 Euro pro Jahr. Welche Aussage stimmt im Vergleich über vier Jahre ohne Abzinsung?
+  options:
+  - en: A is cheaper because its purchase price is lower
+    de: A ist günstiger, weil der Anschaffungspreis niedriger ist
+    correct: false
+  - en: 'B is cheaper: 19,000 against 20,000'
+    de: 'B ist günstiger: 19.000 gegenüber 20.000'
+    correct: true
+  - en: They cost the same over four years
+    de: Sie kosten über vier Jahre gleich viel
+    correct: false
+  - en: No comparison is possible without quality scores
+    de: Ohne Qualitätsbewertung ist kein Vergleich möglich
+    correct: false
+  explanation:
+    en: 'A: 10,000 + 4 x 2,500 = 20,000. B: 13,000 + 4 x 1,500 = 19,000. A life-cycle view reverses the ranking of the purchase prices; quality can be scored on top.'
+    de: 'A: 10.000 + 4 x 2.500 = 20.000. B: 13.000 + 4 x 1.500 = 19.000. Die Lebenszyklussicht kehrt die Rangfolge der Anschaffungspreise um; Qualität lässt sich zusätzlich bewerten.'
+  source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0024
+- id: tr-a-keep
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: The criteria and weights were clear and applied consistently, but the result surprises the team, which favoured another bidder. What do you do?
+    de: Die Kriterien und Gewichte waren klar und wurden einheitlich angewendet, doch das Ergebnis überrascht das Team, das einen anderen Bietenden bevorzugte. Was tust du?
+  options:
+  - en: Reweight the criteria quietly so that the favoured bidder wins
+    de: Die Kriterien leise neu gewichten, sodass der bevorzugte Bietende gewinnt
+    correct: false
+  - en: Award on the published criteria and document the result
+    de: Auf Basis der veröffentlichten Kriterien vergeben und das Ergebnis dokumentieren
+    correct: true
+  - en: Cancel and issue a new request with changed criteria, without telling the bidders why
+    de: Abbrechen und eine neue Anfrage mit geänderten Kriterien ausschreiben, ohne die Bietenden über den Grund zu informieren
+    correct: false
+  - en: Negotiate only with the favoured bidder to improve its offer
+    de: Nur mit dem bevorzugten Bietenden verhandeln, um sein Angebot zu verbessern
+    correct: false
+  explanation:
+    en: Criteria fixed in advance bind the buyer too. A surprising result is not a defect in the process. Changing the rules afterwards or negotiating with one bidder breaks equal treatment; a genuinely flawed request would have to be re-issued openly.
+    de: Vorab festgelegte Kriterien binden auch den Einkauf. Ein überraschendes Ergebnis ist kein Mangel im Verfahren. Regeln nachträglich zu ändern oder nur mit einem Bietenden zu verhandeln verletzt die Gleichbehandlung; eine wirklich fehlerhafte Anfrage müsste offen neu ausgeschrieben werden.
+  source: https://en.wikipedia.org/wiki/Tendering
+- id: tr-a-tie
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: Bidders B and C score 86.1 and 86.0. The evaluators disagreed on two quality scores, each worth more than the gap. What is the best next step?
+    de: Die Bietenden B und C erreichen 86,1 und 86,0 Punkte. Die Bewertenden waren bei zwei Qualitätsnoten uneinig, jede ist mehr wert als der Abstand. Was ist der beste nächste Schritt?
+  options:
+  - en: Re-check the disputed scores, ask both bidders the same question and record why
+    de: Die strittigen Noten erneut prüfen, beiden Bietenden dieselbe Frage stellen und die Begründung festhalten
+    correct: true
+  - en: Award to B at once, because 86.1 is higher than 86.0 and the rule is the rule
+    de: Sofort an B vergeben, weil 86,1 höher ist als 86,0 und Regel Regel ist
+    correct: false
+  - en: Ask only the cheaper bidder for a better price
+    de: Nur den günstigeren Bietenden um einen besseren Preis bitten
+    correct: false
+  - en: Switch to price only as the deciding criterion
+    de: Auf den Preis als allein entscheidendes Kriterium wechseln
+    correct: false
+  explanation:
+    en: A gap of 0.1 is smaller than the uncertainty in two disputed scores, so the ranking is not yet reliable. Treat both bidders the same, and keep the published criteria.
+    de: Ein Abstand von 0,1 ist kleiner als die Unsicherheit bei zwei strittigen Noten, die Rangfolge ist also noch nicht verlässlich. Behandle beide gleich und bleibe bei den veröffentlichten Kriterien.
+  source: https://en.wikipedia.org/wiki/Tendering
+- id: tr-a-public
+  level: advanced
+  difficulty: 1600
+  type: multi
+  stem:
+    en: You buy for a public body in the EU. Which actions are sensible? Select all that apply.
+    de: Du kaufst für eine öffentliche Stelle in der EU ein. Welche Handlungen sind sinnvoll? Wähle alle zutreffenden aus.
+  options:
+  - en: Ask the procurement office or legal counsel which procedure and rules apply before you send a request
+    de: Vor der Anfrage bei der Vergabestelle oder der Rechtsberatung klären, welches Verfahren und welche Regeln gelten
+    correct: true
+  - en: Treat bidders equally and document the reasons for each decision
+    de: Bietende gleich behandeln und die Gründe jeder Entscheidung dokumentieren
+    correct: true
+  - en: Split a large need into small orders so that a formal procedure seems not to apply
+    de: Einen großen Bedarf in kleine Aufträge teilen, damit ein förmliches Verfahren scheinbar nicht greift
+    correct: false
+  - en: Write the specification around a feature that only your preferred supplier has
+    de: Die Spezifikation um ein Merkmal herum schreiben, das nur der bevorzugte Lieferant hat
+    correct: false
+  explanation:
+    en: The directive requires equal treatment and transparency, and the design of a procurement must not aim to avoid its scope or to unduly favour operators. Splitting to avoid rules and tailoring specifications are exactly that. Ask counsel.
+    de: Die Richtlinie verlangt Gleichbehandlung und Transparenz, und die Gestaltung einer Vergabe darf nicht darauf zielen, ihren Anwendungsbereich zu umgehen oder Wirtschaftsteilnehmer ungebührlich zu bevorzugen. Aufteilen zur Umgehung und zugeschnittene Spezifikationen tun genau das. Frage die Rechtsberatung.
+  source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0024

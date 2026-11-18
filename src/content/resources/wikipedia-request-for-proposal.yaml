@@ -1,0 +1,14 @@
+id: wikipedia-request-for-proposal
+url: https://en.wikipedia.org/wiki/Request_for_proposal
+title: "Request for proposal"
+provider: Wikipedia
+language: en
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies: [tendering-rfx-contracting]
+levels: [foundation, practitioner]
+note: "Footer states CC BY-SA; no maintenance banner; read 2026-11-18. Link only. RFP vs invitation to tender vs RFQ and RFI, RFx, best and final offer (BAFO). Mentions US FAR; not relevant to EU rules."

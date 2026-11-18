@@ -1,0 +1,14 @@
+id: wikipedia-de-bestellung
+url: https://de.wikipedia.org/wiki/Bestellung
+title: "Bestellung"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies: [purchase-order-invoice-management]
+levels: [foundation, practitioner]
+note: "Footer states CC BY-SA (Namensnennung - Weitergabe unter gleichen Bedingungen); no maintenance banner; read 2026-11-18. Link only. Read intro and Rechtsfragen (order as binding request, legally an offer, acceptance forms the contract, order confirmation not required). Link only; no paragraph numbers reproduced."
