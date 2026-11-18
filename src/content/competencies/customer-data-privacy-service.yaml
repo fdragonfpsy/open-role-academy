@@ -1,0 +1,18 @@
+id: customer-data-privacy-service
+title:
+  en: Customer data and privacy in service (EU/Germany)
+  de: Kundendaten und Datenschutz im Service (EU/Deutschland)
+description:
+  en: >-
+    Handle customer data responsibly in service work, with EU/Germany context at topic level: data minimisation, verifying identity before disclosing data, recording calls and chats, data subject requests such as access or deletion, and recognising and reporting incidents.
+  de: >-
+    Kundendaten im Servicealltag verantwortungsvoll handhaben, mit EU-/Deutschland-Bezug auf Themenebene: Datensparsamkeit, Identitätsprüfung vor der Auskunft, Aufzeichnung von Anrufen und Chats, Betroffenenanfragen wie Auskunft oder Löschung sowie Datenpannen erkennen und melden.
+prerequisites: [information-security-basics, ticketing-knowledge-base]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/a4346013-a967-4a58-a533-6b32ad1364c5
+    label: data protection
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/097c6a36-f031-4d3e-b5c1-62d6ffcb430b
+    label: respect data protection principles

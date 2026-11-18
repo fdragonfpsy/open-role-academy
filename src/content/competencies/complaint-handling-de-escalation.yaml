@@ -1,0 +1,18 @@
+id: complaint-handling-de-escalation
+title:
+  en: Complaint handling and de-escalation
+  de: Beschwerdemanagement und Deeskalation
+description:
+  en: >-
+    Handle complaints and upset customers constructively: stay calm, acknowledge the issue, investigate, offer a fair solution within your authority, de-escalate tense situations, know when to escalate, and document the case.
+  de: >-
+    Beschwerden und verärgerte Kundschaft konstruktiv handhaben: ruhig bleiben, das Anliegen anerkennen, Ursachen klären, im eigenen Entscheidungsrahmen eine faire Lösung anbieten, angespannte Situationen deeskalieren, rechtzeitig eskalieren und den Fall dokumentieren.
+prerequisites: [customer-needs-problem-solving]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/28d715e3-3e5b-4fb6-8dd2-4be4919c8587
+    label: handle customer complaints
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/c44b3ddd-1a5a-4a3d-9dc2-a1f0b0d5e25f
+    label: investigate customer complaints

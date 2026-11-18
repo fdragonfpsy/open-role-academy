@@ -1,0 +1,18 @@
+id: customer-communication-empathy
+title:
+  en: Customer communication, listening and empathy
+  de: Kundenkommunikation, Zuhören und Empathie
+description:
+  en: >-
+    Communicate clearly and respectfully with customers: active listening, asking clarifying questions, empathic and positive wording, adapting tone to the customer and situation, and closing a contact properly.
+  de: >-
+    Klar und respektvoll mit Kundschaft kommunizieren: aktives Zuhören, klärende Fragen stellen, einfühlsame und positive Formulierungen, Tonalität an Person und Situation anpassen und Kontakte sauber abschließen.
+prerequisites: [customer-service-fundamentals]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/a17286c5-238d-4f0b-bc24-29e9121345de
+    label: listen actively
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/68698869-c13c-4563-adc7-118b7644f45d
+    label: identify customer's needs

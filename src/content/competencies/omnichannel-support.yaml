@@ -1,0 +1,15 @@
+id: omnichannel-support
+title:
+  en: "Support channels: phone, email, chat and social"
+  de: "Support-Kanäle: Telefon, E-Mail, Chat und Social Media"
+description:
+  en: >-
+    Serve customers across channels: strengths and limits of phone, email, chat, messaging and social media, writing and speaking style per channel, response expectations, and keeping the conversation consistent when a customer switches channel.
+  de: >-
+    Kundschaft über mehrere Kanäle betreuen: Stärken und Grenzen von Telefon, E-Mail, Chat, Messenger und Social Media, Schreib- und Sprechstil je Kanal, Reaktionserwartungen und ein konsistenter Gesprächsverlauf beim Kanalwechsel.
+prerequisites: [customer-communication-empathy]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/b215031a-dd21-48b1-a998-75d6373838d8
+    label: communicate with customer service department

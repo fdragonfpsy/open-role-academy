@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-18 — Phase 4: Customer Service framework (draft, no content yet)
+
+**Done**
+- `src/content/roles/customer-service.yaml` (`status: draft`, en/de) with 10 role competencies plus the 6 core-track ones; 10 new competency files (en/de, `track: role`, acyclic prerequisites on existing ids). `active-listening-empathy` merged into `customer-communication-empathy` (overlap with core communication-collaboration).
+- 19 ESCO refs verified against the ESCO API (HTTP 200, label equals stored label); no DigComp refs. Privacy and consumer-rights competencies are labelled EU/Germany, topic level only.
+- `docs/FRAMEWORK.md` regenerated. lint, typecheck, tests, validate:content (0 errors; draft-role warning) and build pass.
+
+**Counts:** roles 7 (1 draft) · competencies 68 · units 338 · items 700 · resources 372
+
+**Next:** Customer Service content in batches of 3 competencies, then publish.
+
 ## 2026-11-18 — Phase 4: Marketing content batch 4 (marketing-analytics-attribution), Marketing published
 
 **Done**

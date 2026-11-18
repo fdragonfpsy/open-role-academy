@@ -1,0 +1,18 @@
+id: customer-needs-problem-solving
+title:
+  en: Understanding needs and solving customer problems
+  de: Anliegen verstehen und Kundenprobleme lösen
+description:
+  en: >-
+    Turn a customer request into a solved problem: identify the real need, gather facts, offer options, solve in the first contact where possible, escalate or hand over with a complete summary, and follow up.
+  de: >-
+    Eine Kundenanfrage zum gelösten Problem machen: das eigentliche Anliegen erkennen, Fakten sammeln, Optionen anbieten, möglichst im Erstkontakt lösen, mit vollständiger Zusammenfassung eskalieren oder übergeben und nachfassen.
+prerequisites: [customer-communication-empathy]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/68698869-c13c-4563-adc7-118b7644f45d
+    label: identify customer's needs
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/50181a4b-1cfd-4fbd-ac9a-c1a494b9c5d0
+    label: implement customer follow-up

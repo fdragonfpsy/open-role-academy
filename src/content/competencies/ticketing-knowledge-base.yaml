@@ -1,0 +1,18 @@
+id: ticketing-knowledge-base
+title:
+  en: Ticketing and knowledge base
+  de: Ticketsystem und Wissensdatenbank
+description:
+  en: >-
+    Work with a customer service ticketing system and knowledge base: capture and categorise requests, set priority and status, write clear case notes, find and write helpful knowledge articles, and keep records tidy.
+  de: >-
+    Mit einem Ticketsystem und einer Wissensdatenbank im Kundenservice arbeiten: Anfragen erfassen und kategorisieren, Priorität und Status setzen, klare Fallnotizen schreiben, hilfreiche Wissensartikel finden und verfassen und Daten sauber halten.
+prerequisites: [customer-service-fundamentals, digital-ai-literacy]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/6430eb0d-c6de-46b7-a7fc-3dd2e8e62a69
+    label: use ICT ticketing system
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/9889b795-d755-41b2-8afd-2e3c87a65a38
+    label: use customer relationship management software

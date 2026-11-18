@@ -1,0 +1,18 @@
+id: customer-service-fundamentals
+title:
+  en: Customer service fundamentals
+  de: Kundenservice-Grundlagen
+description:
+  en: >-
+    Explain what good customer service is: service roles and goals, the customer journey, first-contact resolution, service promises and the link between service quality and customer satisfaction.
+  de: >-
+    Erklären, was guten Kundenservice ausmacht: Servicerollen und -ziele, Customer Journey, Lösung im Erstkontakt, Serviceversprechen und den Zusammenhang zwischen Servicequalität und Kundenzufriedenheit.
+prerequisites: [communication-collaboration]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/15a33d76-4640-438d-ae64-fdc0c1d3eebc
+    label: customer service
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/00e53a0a-c0ba-4c9f-a2ed-4706d5832a00
+    label: guarantee customer satisfaction
