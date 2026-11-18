@@ -1,0 +1,290 @@
+competency: customer-data-privacy-service
+items:
+  - id: cdp-f-personal
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "Which of these is personal data?"
+      de: "Welche dieser Angaben sind personenbezogene Daten?"
+    options:
+      - en: "A ticket stating that Ms Weber, order 4711, called about a refund"
+        de: "Ein Ticket mit dem Vermerk, dass Frau Weber, Bestellung 4711, wegen einer Erstattung angerufen hat"
+        correct: true
+      - en: "The total number of tickets closed by the team this week"
+        de: "Die Gesamtzahl der vom Team diese Woche geschlossenen Tickets"
+        correct: false
+      - en: "The opening hours published on the company website"
+        de: "Die auf der Firmenwebsite veröffentlichten Öffnungszeiten"
+        correct: false
+      - en: "The name of the product that most orders contain"
+        de: "Der Name des Produkts, das die meisten Bestellungen enthalten"
+        correct: false
+    explanation:
+      en: "Personal data is any information about an identifiable person, such as a name together with an order and a call. Team totals, opening hours and product names do not point to a person."
+      de: "Personenbezogene Daten sind alle Informationen über eine identifizierbare Person, etwa ein Name zusammen mit Bestellung und Anruf. Teamsummen, Öffnungszeiten und Produktnamen verweisen auf keine Person."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+  - id: cdp-f-identity
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "A caller says he is the husband of an account holder and asks for her new address. What do you do?"
+      de: "Ein Anrufer sagt, er sei der Ehemann einer Kontoinhaberin, und fragt nach ihrer neuen Adresse. Was tust du?"
+    options:
+      - en: "Share no account details; offer to contact the account holder via the address on file"
+        de: "Keine Kontodaten nennen und anbieten, die Kontoinhaberin über die hinterlegte Adresse zu kontaktieren"
+        correct: true
+      - en: "Give the address, since he knows her name, her order number and the date of her last purchase"
+        de: "Die Adresse nennen, weil er ihren Namen, ihre Bestellnummer und das Datum ihres letzten Kaufs kennt"
+        correct: false
+      - en: "Ask him to read out the address on file so you can confirm it"
+        de: "Ihn bitten, die hinterlegte Adresse vorzulesen, damit du sie bestätigen kannst"
+        correct: false
+      - en: "Give only the city, because that is not very sensitive"
+        de: "Nur den Ort nennen, weil das nicht sehr sensibel ist"
+        correct: false
+    explanation:
+      en: "Only the verified account holder may receive account details. Knowing a name or order number is not proof, and letting the caller read out or confirm the address would still disclose data."
+      de: "Nur die geprüfte Kontoinhaberin darf Kontodaten erhalten. Name oder Bestellnummer zu kennen ist kein Nachweis, und auch ein Vorlesen oder Bestätigen der Adresse würde Daten preisgeben."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+  - id: cdp-f-minimal
+    level: foundation
+    difficulty: 1000
+    type: multi
+    stem:
+      en: "Which habits fit the principle of data minimisation? Select all that apply."
+      de: "Welche Gewohnheiten passen zum Grundsatz der Datenminimierung? Wähle alle zutreffenden aus."
+    options:
+      - en: "Ask only for the details you need for this case"
+        de: "Nur nach den Angaben fragen, die du für diesen Fall brauchst"
+        correct: true
+      - en: "Do not copy customer data into private notes or spreadsheets"
+        de: "Kundendaten nicht in private Notizen oder Tabellen kopieren"
+        correct: true
+      - en: "Note everything the customer mentions, in case it is useful later"
+        de: "Alles notieren, was die Kundschaft erwähnt, falls es später nützlich ist"
+        correct: false
+      - en: "Write the customer's password into the ticket to save time"
+        de: "Das Passwort der Kundschaft ins Ticket schreiben, um Zeit zu sparen"
+        correct: false
+    explanation:
+      en: "Data must be adequate, relevant and limited to what is necessary, and not kept longer than needed. Collecting for later use and writing passwords into tickets both break these principles and add risk."
+      de: "Daten müssen angemessen, erheblich und auf das notwendige Maß beschränkt sein und nicht länger als nötig gespeichert werden. Sammeln auf Vorrat und Passwörter in Tickets verstoßen dagegen und erhöhen das Risiko."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+  - id: cdp-f-incident
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "You notice that you sent an email with a customer's order list to the wrong person. What is the best action?"
+      de: "Dir fällt auf, dass du eine E-Mail mit der Bestellliste einer Kundin an die falsche Person geschickt hast. Was ist die beste Maßnahme?"
+    options:
+      - en: "Tell your lead or the privacy contact immediately, with the facts"
+        de: "Sofort deine Teamleitung oder die Datenschutz-Ansprechperson mit den Fakten informieren"
+        correct: true
+      - en: "Wait until Monday to see whether anyone notices the mistake"
+        de: "Bis Montag abwarten, ob jemand den Fehler bemerkt"
+        correct: false
+      - en: "Ask the recipient to delete it and then say nothing further"
+        de: "Den Empfänger bitten, sie zu löschen, und sonst nichts weiter sagen"
+        correct: false
+      - en: "Send a corrected email and treat the case as closed"
+        de: "Eine korrigierte E-Mail senden und den Fall als erledigt betrachten"
+        correct: false
+    explanation:
+      en: "A company that becomes aware of a personal data breach must act quickly, with a 72-hour target for notifying the authority, so staff report at once. Only the privacy team can assess the risk and decide."
+      de: "Ein Unternehmen, das eine Datenpanne bemerkt, muss schnell handeln, mit 72 Stunden als Ziel für die Meldung an die Behörde, also meldest du sofort. Nur das Datenschutzteam kann das Risiko bewerten und entscheiden."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+  - id: cdp-p-right
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "A customer writes: \"Please send me all the data you have about me.\" Which right is this?"
+      de: "Eine Kundin schreibt: „Bitte schickt mir alle Daten, die ihr über mich habt.“ Um welches Recht geht es?"
+    options:
+      - en: "Right of access (Art. 15)"
+        de: "Auskunftsrecht (Art. 15)"
+        correct: true
+      - en: "Right to erasure (Art. 17)"
+        de: "Recht auf Löschung (Art. 17)"
+        correct: false
+      - en: "Right to object (Art. 21)"
+        de: "Widerspruchsrecht (Art. 21)"
+        correct: false
+      - en: "Right to be told about a breach (Art. 34)"
+        de: "Recht auf Benachrichtigung bei einer Panne (Art. 34)"
+        correct: false
+    explanation:
+      en: "The right of access means confirmation whether data is processed and access to it. Erasure is deletion, objection concerns certain processing such as direct marketing, and Art. 34 concerns breaches."
+      de: "Das Auskunftsrecht bedeutet Bestätigung, ob Daten verarbeitet werden, und Zugang zu ihnen. Löschung ist das Entfernen, Widerspruch betrifft bestimmte Verarbeitung wie Direktwerbung, und Art. 34 betrifft Pannen."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+  - id: cdp-p-time
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "A customer sends an access request by chat on 3 March. The agent forwards it to the privacy team on 20 March. By when must the company respond in general?"
+      de: "Eine Kundin schickt am 3. März eine Auskunftsanfrage per Chat. Der Agent leitet sie am 20. März an das Datenschutzteam weiter. Bis wann muss das Unternehmen grundsätzlich antworten?"
+    options:
+      - en: "Within one month of 3 March, with an extension only in complex cases"
+        de: "Innerhalb eines Monats nach dem 3. März, eine Verlängerung nur in komplexen Fällen"
+        correct: true
+      - en: "Within one month of 20 March, when the privacy team received it"
+        de: "Innerhalb eines Monats nach dem 20. März, als das Datenschutzteam sie erhielt"
+        correct: false
+      - en: "Within 72 hours of 3 March, as for a data breach"
+        de: "Innerhalb von 72 Stunden nach dem 3. März, wie bei einer Datenpanne"
+        correct: false
+      - en: "There is no fixed period, only a reply when the team has time"
+        de: "Es gibt keine feste Frist, nur eine Antwort, wenn das Team Zeit hat"
+        correct: false
+    explanation:
+      en: "The period is one month from receipt of the request, extendable by two months for complex or numerous requests with notice inside the first month. The 72 hours belong to breaches, and delays inside the company use up the time."
+      de: "Die Frist beträgt einen Monat ab Eingang der Anfrage und ist bei komplexen oder zahlreichen Anfragen um zwei Monate verlängerbar, mit Mitteilung innerhalb des ersten Monats. Die 72 Stunden gehören zu Pannen, und Verzögerungen im Unternehmen verbrauchen die Zeit."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+  - id: cdp-p-erasure
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "A customer writes: \"Delete everything about me.\" What is the best reply from the service agent?"
+      de: "Ein Kunde schreibt: „Löscht alles über mich.“ Was ist die beste Antwort der Servicekraft?"
+    options:
+      - en: "Confirm receipt, say the privacy team will assess and reply, and promise no result"
+        de: "Den Eingang bestätigen, sagen, dass das Datenschutzteam prüft und antwortet, und kein Ergebnis zusagen"
+        correct: true
+      - en: "Promise that everything will be deleted within 24 hours"
+        de: "Zusagen, dass alles innerhalb von 24 Stunden gelöscht wird"
+        correct: false
+      - en: "Tell him this is not possible, because invoices and accounting records have to be kept for years"
+        de: "Ihm sagen, dass das nicht möglich ist, weil Rechnungen und Buchhaltungsunterlagen jahrelang aufbewahrt werden müssen"
+        correct: false
+      - en: "Ask him to repeat the request by letter before you do anything"
+        de: "Ihn bitten, die Anfrage per Brief zu wiederholen, bevor du etwas tust"
+        correct: false
+    explanation:
+      en: "Art. 17 lists grounds and exceptions, so the decision is for the privacy team. The agent should record and route the request, and should not promise deletion, refuse it or add hurdles."
+      de: "Art. 17 nennt Gründe und Ausnahmen, die Entscheidung liegt also beim Datenschutzteam. Die Servicekraft erfasst und leitet die Anfrage weiter und sagt weder Löschung zu noch lehnt sie ab oder baut Hürden auf."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+  - id: cdp-p-record
+    level: practitioner
+    difficulty: 1300
+    type: multi
+    stem:
+      en: "A customer asks about call recording. Which reactions are appropriate? Select all that apply."
+      de: "Eine Kundin fragt zur Gesprächsaufzeichnung. Welche Reaktionen sind angemessen? Wähle alle zutreffenden aus."
+    options:
+      - en: "Follow the announcement and script your company provides"
+        de: "Der Ansage und dem Leitfaden deines Unternehmens folgen"
+        correct: true
+      - en: "Pass questions about the legal details to the data protection officer"
+        de: "Fragen zu rechtlichen Einzelheiten an die Datenschutzbeauftragte oder den Datenschutzbeauftragten weitergeben"
+        correct: true
+      - en: "Say that recording is always allowed when it is for quality purposes"
+        de: "Sagen, dass eine Aufzeichnung zu Qualitätszwecken immer erlaubt ist"
+        correct: false
+      - en: "End the call if the customer objects, without offering any alternative"
+        de: "Das Gespräch beenden, wenn die Kundin widerspricht, ohne eine Alternative anzubieten"
+        correct: false
+    explanation:
+      en: "Recording needs a legal basis and customers must be informed, and national details differ, so agents follow the process and escalate legal questions. Blanket legal claims or ending the call without alternatives are not appropriate."
+      de: "Aufzeichnung braucht eine Rechtsgrundlage, und Kundschaft muss informiert werden; nationale Einzelheiten unterscheiden sich, also folgen Agentinnen und Agenten dem Ablauf und geben Rechtsfragen weiter. Pauschale Rechtsaussagen oder ein Gesprächsende ohne Alternative sind unangemessen."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+  - id: cdp-a-default
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "Every agent can currently see full card numbers in every ticket. Which change best reflects privacy by default?"
+      de: "Alle Agentinnen und Agenten sehen derzeit in jedem Ticket vollständige Kartennummern. Welche Änderung entspricht Datenschutz durch Voreinstellung am besten?"
+    options:
+      - en: "Restrict full numbers to a trained role and show masked values to everyone else by default"
+        de: "Vollständige Nummern auf eine geschulte Rolle beschränken und für alle anderen standardmäßig maskierte Werte zeigen"
+        correct: true
+      - en: "Add a reminder for all agents to be careful with card numbers"
+        de: "Alle Agentinnen und Agenten an einen sorgfältigen Umgang mit Kartennummern erinnern"
+        correct: false
+      - en: "Keep access as it is, because refunds sometimes need the data"
+        de: "Den Zugriff belassen, weil Erstattungen die Daten manchmal brauchen"
+        correct: false
+      - en: "Export the card numbers to a spreadsheet for the refund team"
+        de: "Die Kartennummern für das Erstattungsteam in eine Tabelle exportieren"
+        correct: false
+    explanation:
+      en: "By default only data necessary for the purpose should be accessible, so access depends on role and values are masked. Reminders help but do not change what is exposed, and spreadsheets add copies."
+      de: "Standardmäßig sollen nur für den Zweck notwendige Daten zugänglich sein, der Zugriff hängt also von der Rolle ab, und Werte werden maskiert. Erinnerungen helfen, ändern aber nichts an dem, was offenliegt, und Tabellen schaffen zusätzliche Kopien."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+  - id: cdp-a-triage
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "You see that a colleague sent a refund list with 40 names and IBAN endings to a wrong external address. What do you do first?"
+      de: "Du siehst, dass ein Kollege eine Erstattungsliste mit 40 Namen und IBAN-Endungen an eine falsche externe Adresse geschickt hat. Was tust du zuerst?"
+    options:
+      - en: "Send the privacy team the facts at once: what, when, which data, how many, what was done"
+        de: "Sofort die Fakten an das Datenschutzteam senden: was, wann, welche Daten, wie viele, was getan wurde"
+        correct: true
+      - en: "Decide on your own that the risk is low and note it in the ticket only, without telling anyone"
+        de: "Allein entscheiden, dass das Risiko gering ist, und es nur im Ticket vermerken, ohne es jemandem zu sagen"
+        correct: false
+      - en: "Write to the 40 customers first to apologise"
+        de: "Zuerst den 40 Kundinnen und Kunden schreiben und sich entschuldigen"
+        correct: false
+      - en: "Wait until the cause is clear, to avoid a false alarm"
+        de: "Warten, bis die Ursache klar ist, um Fehlalarm zu vermeiden"
+        correct: false
+    explanation:
+      en: "The company's 72-hour period starts when it becomes aware, and the risk assessment and notices are decided by the privacy team. Staff provide facts fast and do not wait, judge the risk alone or contact people on their own."
+      de: "Die 72-Stunden-Frist des Unternehmens beginnt mit der Kenntnis, und Risikobewertung und Mitteilungen entscheidet das Datenschutzteam. Mitarbeitende liefern schnell Fakten und warten nicht, bewerten das Risiko nicht allein und kontaktieren nicht selbst."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+  - id: cdp-a-proportion
+    level: advanced
+    difficulty: 1550
+    type: multi
+    stem:
+      en: "Which actions should get a stronger identity check than the others? Select all that apply."
+      de: "Welche Handlungen sollten eine stärkere Identitätsprüfung bekommen als die übrigen? Wähle alle zutreffenden aus."
+    options:
+      - en: "Changing the bank details on an account"
+        de: "Die Bankverbindung eines Kontos ändern"
+        correct: true
+      - en: "Changing the email address used to log in"
+        de: "Die zum Einloggen genutzte E-Mail-Adresse ändern"
+        correct: true
+      - en: "Reading out the expected delivery date of an order"
+        de: "Den voraussichtlichen Liefertermin einer Bestellung nennen"
+        correct: false
+      - en: "Answering a general product question"
+        de: "Eine allgemeine Produktfrage beantworten"
+        correct: false
+    explanation:
+      en: "Our own principle is that the stronger the possible harm of a wrong disclosure or change, the stronger the check. Bank and login changes enable fraud or takeover; a delivery date or general product question carries little risk."
+      de: "Unser eigenes Prinzip lautet: Je größer der mögliche Schaden einer falschen Auskunft oder Änderung, desto stärker die Prüfung. Bank- und Login-Änderungen ermöglichen Betrug oder Übernahme; ein Liefertermin oder eine allgemeine Produktfrage birgt wenig Risiko."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+  - id: cdp-a-log
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "Which measure best prevents data subject requests from missing the one-month deadline?"
+      de: "Welche Maßnahme verhindert am besten, dass Betroffenenanfragen die Monatsfrist verpassen?"
+    options:
+      - en: "A log with received date, owner and due date, reviewed weekly"
+        de: "Ein Protokoll mit Eingangsdatum, Verantwortlichem und Fälligkeitsdatum, das wöchentlich geprüft wird"
+        correct: true
+      - en: "Every agent keeps requests in personal notes until there is time"
+        de: "Jede Servicekraft behält Anfragen in persönlichen Notizen, bis Zeit ist"
+        correct: false
+      - en: "A monthly summary of all requests in the team meeting"
+        de: "Eine monatliche Zusammenfassung aller Anfragen in der Teambesprechung"
+        correct: false
+      - en: "Waiting for the privacy team to chase the open cases"
+        de: "Abwarten, bis das Datenschutzteam bei offenen Fällen nachfragt"
+        correct: false
+    explanation:
+      en: "The period runs from receipt, so the received date, an owner and a due date must be visible and reviewed often. Personal notes hide cases, and a monthly summary comes too late for a one-month period."
+      de: "Die Frist läuft ab Eingang, also müssen Eingangsdatum, Verantwortlicher und Fälligkeitsdatum sichtbar sein und oft geprüft werden. Persönliche Notizen verbergen Fälle, und eine Monatszusammenfassung kommt für eine Monatsfrist zu spät."
+    source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679

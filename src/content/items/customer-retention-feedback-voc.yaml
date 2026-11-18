@@ -1,0 +1,290 @@
+competency: customer-retention-feedback-voc
+items:
+  - id: voc-f-retention
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "What is customer retention?"
+      de: "Was ist Kundenbindung (Customer Retention)?"
+    options:
+      - en: "A company's ability to keep customers over a period so that they keep buying"
+        de: "Die Fähigkeit eines Unternehmens, Kundschaft über einen Zeitraum zu halten, sodass sie weiter kauft"
+        correct: true
+      - en: "Winning as many new customers as possible within a short time, using campaigns and offers"
+        de: "In kurzer Zeit mit Kampagnen und Angeboten möglichst viele Neukunden gewinnen"
+        correct: false
+      - en: "The number of complaints a team receives in a month"
+        de: "Die Zahl der Beschwerden, die ein Team in einem Monat erhält"
+        correct: false
+      - en: "A discount that is offered to everyone on every purchase"
+        de: "Ein Rabatt, der allen bei jedem Kauf angeboten wird"
+        correct: false
+    explanation:
+      en: "Retention is about keeping existing customers so that they return or do not defect. Winning new customers is acquisition, and complaint counts or blanket discounts are different things."
+      de: "Kundenbindung bedeutet, bestehende Kundschaft zu halten, sodass sie wiederkommt oder nicht abwandert. Neue Kundschaft zu gewinnen ist Akquise, und Beschwerdezahlen oder pauschale Rabatte sind etwas anderes."
+    source: https://en.wikipedia.org/wiki/Customer_retention
+  - id: voc-f-sources
+    level: foundation
+    difficulty: 950
+    type: multi
+    stem:
+      en: "Which of these are sources of customer feedback? Select all that apply."
+      de: "Welche davon sind Quellen für Kundenfeedback? Wähle alle zutreffenden aus."
+    options:
+      - en: "A rating survey after a service contact"
+        de: "Eine Bewertungsumfrage nach einem Servicekontakt"
+        correct: true
+      - en: "Cancellations and returns"
+        de: "Kündigungen und Rücksendungen"
+        correct: true
+      - en: "Only formal written complaints sent by post"
+        de: "Nur förmliche schriftliche Beschwerden per Post"
+        correct: false
+      - en: "Only what the manager hears in meetings"
+        de: "Nur das, was die Führungskraft in Besprechungen hört"
+        correct: false
+    explanation:
+      en: "Feedback comes from surveys, comments, tickets, calls and behaviour such as cancellations. Limiting yourself to formal complaints or meetings misses most signals."
+      de: "Feedback kommt aus Umfragen, Kommentaren, Tickets, Anrufen und Verhalten wie Kündigungen. Wer sich auf förmliche Beschwerden oder Besprechungen beschränkt, verpasst die meisten Signale."
+    source: https://openstax.org/books/principles-marketing/pages/1-6-customer-relationship-management-crm
+  - id: voc-f-satisfied
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "A satisfied customer cancels the contract. What is the best explanation?"
+      de: "Ein zufriedener Kunde kündigt den Vertrag. Was ist die beste Erklärung?"
+    options:
+      - en: "Satisfaction helps retention but does not guarantee it; price or needs can still win"
+        de: "Zufriedenheit fördert die Bindung, garantiert sie aber nicht; auch andere Faktoren wie Preis oder Bedarf zählen"
+        correct: true
+      - en: "The satisfaction survey must have been wrong, or the customer misunderstood the question"
+        de: "Die Zufriedenheitsumfrage muss falsch gewesen sein, oder der Kunde hat die Frage missverstanden"
+        correct: false
+      - en: "Satisfaction has no link to retention at all"
+        de: "Zufriedenheit hat überhaupt keinen Zusammenhang mit Kundenbindung"
+        correct: false
+      - en: "The customer is simply disloyal and nothing could have been done"
+        de: "Der Kunde ist einfach illoyal, und man hätte nichts tun können"
+        correct: false
+    explanation:
+      en: "Research describes satisfaction as a strong driver of retention whose strength varies with customer, product and industry. So it helps but does not decide, and other factors can win."
+      de: "Die Forschung beschreibt Zufriedenheit als starken Treiber der Bindung, dessen Stärke je nach Kundschaft, Produkt und Branche schwankt. Sie hilft also, entscheidet aber nicht, und andere Faktoren können überwiegen."
+    source: https://en.wikipedia.org/wiki/Customer_retention
+  - id: voc-f-loop
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "A customer says: \"Fine, but nobody told me it would come a day later.\" Which reply closes the loop best?"
+      de: "Ein Kunde sagt: „In Ordnung, aber niemand hat mir gesagt, dass es einen Tag später kommt.“ Welche Antwort schließt den Kreis am besten?"
+    options:
+      - en: "Thank him, say what you will do and pass the point on to the team"
+        de: "Ihm danken, sagen, was du tust, und den Punkt ans Team weitergeben"
+        correct: true
+      - en: "Promise that the company will change its delivery process soon"
+        de: "Versprechen, dass das Unternehmen seinen Lieferprozess bald ändert"
+        correct: false
+      - en: "Thank him and do nothing further with the feedback"
+        de: "Ihm danken und mit dem Feedback nichts weiter tun"
+        correct: false
+      - en: "Ask him to write his remark in the official survey form"
+        de: "Ihn bitten, seine Anmerkung im offiziellen Umfrageformular zu schreiben"
+        correct: false
+    explanation:
+      en: "Closing the loop means thanking, acting or explaining honestly and passing the point on. Promises you cannot keep, doing nothing or sending him elsewhere do not help."
+      de: "Den Kreis schließen heißt danken, handeln oder ehrlich erklären und den Punkt weitergeben. Versprechen, die du nicht halten kannst, Nichtstun oder Weiterverweisen helfen nicht."
+    source: https://openstax.org/books/principles-marketing/pages/1-6-customer-relationship-management-crm
+  - id: voc-p-response
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "A survey goes to 15,000 customers; 1,500 answer and 87 percent of the answers are 4 or 5. How should you read the result?"
+      de: "Eine Umfrage geht an 15.000 Kundinnen und Kunden; 1.500 antworten und 87 Prozent der Antworten sind 4 oder 5. Wie liest du das Ergebnis?"
+    options:
+      - en: "87 percent of those who replied; the 90 percent who did not reply are unknown"
+        de: "87 Prozent derer, die geantwortet haben; die 90 Prozent ohne Antwort sind unbekannt"
+        correct: true
+      - en: "87 percent of all 15,000 customers are satisfied"
+        de: "87 Prozent aller 15.000 Kundinnen und Kunden sind zufrieden"
+        correct: false
+      - en: "The result is invalid because fewer than half answered"
+        de: "Das Ergebnis ist ungültig, weil weniger als die Hälfte geantwortet hat"
+        correct: false
+      - en: "The response rate is 1,500 percent, which is very high"
+        de: "Die Rücklaufquote beträgt 1.500 Prozent, was sehr hoch ist"
+        correct: false
+    explanation:
+      en: "The response rate is 1,500 / 15,000 = 10 percent, and the satisfaction share describes the responders only. It is still useful, but you must not generalise it to all customers."
+      de: "Die Rücklaufquote beträgt 1.500 / 15.000 = 10 Prozent, und der Zufriedenheitsanteil beschreibt nur die Antwortenden. Er ist trotzdem nützlich, darf aber nicht auf alle Kundschaft übertragen werden."
+    source: https://openstax.org/books/principles-marketing/pages/2-4-marketing-plan-progress-using-metrics
+  - id: voc-p-tags
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "Which approach finds themes in open comments most reliably?"
+      de: "Welcher Ansatz findet Themen in offenen Kommentaren am zuverlässigsten?"
+    options:
+      - en: "A short list of defined tags, one main theme per comment, and a check of examples"
+        de: "Eine kurze Liste definierter Tags, ein Haupt-Thema je Kommentar und eine Prüfung von Beispielen"
+        correct: true
+      - en: "Every agent invents tags freely as they read the comments"
+        de: "Jede Person erfindet beim Lesen der Kommentare frei Tags"
+        correct: false
+      - en: "Counting only comments that contain the word \"complaint\""
+        de: "Nur Kommentare zählen, die das Wort „Beschwerde“ enthalten"
+        correct: false
+      - en: "One catch-all tag for everything that is unclear"
+        de: "Ein Sammel-Tag für alles, was unklar ist"
+        correct: false
+    explanation:
+      en: "Defined tags with a consistency check make counts comparable. Free tags, keyword-only counting and a catch-all tag make the numbers unreliable."
+      de: "Definierte Tags mit Konsistenzprüfung machen Zählungen vergleichbar. Freie Tags, reines Stichwortzählen und ein Sammel-Tag machen die Zahlen unzuverlässig."
+    source: https://openstax.org/books/principles-marketing/pages/2-4-marketing-plan-progress-using-metrics
+  - id: voc-p-nps
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "Your NPS is 52, while a company in an unrelated industry reports 31. What is the best conclusion?"
+      de: "Dein NPS liegt bei 52, ein Unternehmen aus einer ganz anderen Branche meldet 31. Was ist die beste Schlussfolgerung?"
+    options:
+      - en: "The values are not directly comparable; compare with your own past and read the \"why\" answers"
+        de: "Die Werte sind nicht direkt vergleichbar, also vergleiche mit deiner eigenen Vergangenheit und lies die „Warum“-Antworten"
+        correct: true
+      - en: "You are clearly better than that company, and this can be stated in the annual report and in sales material"
+        de: "Ihr seid klar besser als das andere Unternehmen, und das kann im Jahresbericht und in Vertriebsunterlagen stehen"
+        correct: false
+      - en: "NPS is meaningless, so the survey should be stopped"
+        de: "Der NPS ist bedeutungslos, also sollte die Umfrage eingestellt werden"
+        correct: false
+      - en: "Survey only happy customers next time to reach 60"
+        de: "Beim nächsten Mal nur zufriedene Kundschaft befragen, um 60 zu erreichen"
+        correct: false
+    explanation:
+      en: "NPS levels differ substantially between industries, so cross-industry comparison misleads; the trend over time and the open answers are more useful. Surveying only happy customers would distort the score."
+      de: "NPS-Werte unterscheiden sich stark zwischen Branchen, ein branchenübergreifender Vergleich führt also in die Irre; der Verlauf über die Zeit und die offenen Antworten sind nützlicher. Nur zufriedene Kundschaft zu befragen würde den Wert verzerren."
+    source: https://en.wikipedia.org/wiki/Net_promoter_score
+  - id: voc-p-note
+    level: practitioner
+    difficulty: 1300
+    type: multi
+    stem:
+      en: "What belongs in an insight note for the product team? Select all that apply."
+      de: "Was gehört in eine Erkenntnisnotiz für das Produktteam? Wähle alle zutreffenden aus."
+    options:
+      - en: "The theme with a count and the period it covers"
+        de: "Das Thema mit einer Zahl und dem abgedeckten Zeitraum"
+        correct: true
+      - en: "One or two anonymised example comments"
+        de: "Ein oder zwei anonymisierte Beispielkommentare"
+        correct: true
+      - en: "The names and phone numbers of the customers, so product can call them"
+        de: "Namen und Telefonnummern der Kundschaft, damit das Produktteam anrufen kann"
+        correct: false
+      - en: "A promise of a fix date on behalf of the product team"
+        de: "Ein Zusagetermin für die Behebung im Namen des Produktteams"
+        correct: false
+    explanation:
+      en: "A good note is short, counted and anonymised, because the receiving team does not need personal data. Promising fixes for others is not your decision."
+      de: "Eine gute Notiz ist kurz, gezählt und anonymisiert, weil das empfangende Team keine personenbezogenen Daten braucht. Behebungen für andere zuzusagen ist nicht deine Entscheidung."
+    source: https://openstax.org/books/principles-marketing/pages/1-6-customer-relationship-management-crm
+  - id: voc-a-intent
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "NPS stays high, but cancellations are rising. What is the best step?"
+      de: "Der NPS bleibt hoch, aber die Kündigungen steigen. Was ist der beste Schritt?"
+    options:
+      - en: "Analyse cancellation reasons and behaviour, as stated intentions predict actions only weakly"
+        de: "Kündigungsgründe und Verhalten auswerten, weil geäußerte Absichten Handlungen nur schwach vorhersagen"
+        correct: true
+      - en: "Trust the NPS and assume that the cancellations are seasonal and will fall back by themselves"
+        de: "Dem NPS vertrauen und annehmen, dass die Kündigungen saisonal sind und von selbst wieder sinken"
+        correct: false
+      - en: "Send the NPS survey more often to get a clearer picture"
+        de: "Die NPS-Umfrage häufiger versenden, um ein klareres Bild zu bekommen"
+        correct: false
+      - en: "Stop using the NPS and rely on the cancellation figures only"
+        de: "Den NPS nicht mehr nutzen und sich nur auf die Kündigungszahlen stützen"
+        correct: false
+    explanation:
+      en: "Intentions are a moderate to weak predictor of behaviour, so retention should be checked with behavioural data. Surveying more often does not fix that gap, and dropping a useful signal loses information."
+      de: "Absichten sagen Verhalten nur mäßig bis schwach voraus, also sollte Kundenbindung mit Verhaltensdaten geprüft werden. Häufigeres Befragen schließt diese Lücke nicht, und ein nützliches Signal zu streichen verliert Information."
+    source: https://en.wikipedia.org/wiki/Customer_retention
+  - id: voc-a-reward
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "A bonus card raises repeat purchases, but complaints about service stay the same. What is the most defensible view?"
+      de: "Eine Bonuskarte erhöht die Wiederholungskäufe, aber die Beschwerden über den Service bleiben gleich. Welche Sicht ist am besten vertretbar?"
+    options:
+      - en: "Keep the card, but treat complaint themes as the main risk; reward-only loyalty is fragile"
+        de: "Die Karte behalten, aber die Beschwerdethemen als Hauptrisiko behandeln, da reine Belohnungsbindung brüchig sein kann"
+        correct: true
+      - en: "End the card at once, because rewards never influence whether customers stay or leave"
+        de: "Die Karte sofort beenden, weil Belohnungen nie beeinflussen, ob Kundschaft bleibt oder geht"
+        correct: false
+      - en: "The card proves that customers are satisfied with the service"
+        de: "Die Karte beweist, dass die Kundschaft mit dem Service zufrieden ist"
+        correct: false
+      - en: "Stop collecting complaints, as the card keeps customers anyway"
+        de: "Das Erfassen von Beschwerden einstellen, da die Karte die Kundschaft ohnehin hält"
+        correct: false
+    explanation:
+      en: "Reward programmes can raise retention, but loyalty created only by rewards can be unstable, while lasting loyalty rests on satisfaction. Repeat purchases do not prove satisfaction, so complaints still matter."
+      de: "Belohnungsprogramme können die Bindung erhöhen, aber nur durch Belohnung erzeugte Treue kann labil sein, während dauerhafte Treue auf Zufriedenheit beruht. Wiederholungskäufe beweisen keine Zufriedenheit, also bleiben Beschwerden wichtig."
+    source: https://de.wikipedia.org/wiki/Kundenbindung
+  - id: voc-a-unused
+    level: advanced
+    difficulty: 1550
+    type: multi
+    stem:
+      en: "Which signs show that feedback is not really being used? Select all that apply."
+      de: "Welche Anzeichen zeigen, dass Feedback nicht wirklich genutzt wird? Wähle alle zutreffenden aus."
+    options:
+      - en: "Themes are counted but nobody owns them or answers them"
+        de: "Themen werden gezählt, aber niemand verantwortet oder bearbeitet sie"
+        correct: true
+      - en: "Customers who complained never hear what happened"
+        de: "Kundschaft, die sich beschwert hat, erfährt nie, was passiert ist"
+        correct: true
+      - en: "A recurring theme becomes rarer after a fix"
+        de: "Ein wiederkehrendes Thema wird nach einer Behebung seltener"
+        correct: false
+      - en: "Insight notes reach the owner of the cause every month"
+        de: "Erkenntnisnotizen erreichen jeden Monat die Verantwortlichen für die Ursache"
+        correct: false
+    explanation:
+      en: "Unused feedback has no owner and no reply to customers. A theme that declines after a fix and regular notes to the owner are signs that the loop works."
+      de: "Ungenutztes Feedback hat keine Verantwortlichen und keine Antwort an die Kundschaft. Ein Thema, das nach einer Behebung seltener wird, und regelmäßige Notizen an die Verantwortlichen zeigen, dass der Kreis funktioniert."
+    source: https://openstax.org/books/principles-marketing/pages/1-6-customer-relationship-management-crm
+  - id: voc-a-value
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "You must prioritise retention work with limited time. Which approach is the most defensible?"
+      de: "Du musst Bindungsmaßnahmen bei begrenzter Zeit priorisieren. Welcher Ansatz ist am besten vertretbar?"
+    options:
+      - en: "Weigh effort against customer value, such as lifetime value minus acquisition cost"
+        de: "Den Aufwand gegen den Kundenwert abwägen, etwa Lebenszeitwert abzüglich Akquisekosten"
+        correct: true
+      - en: "Give the biggest discount to everyone who complains"
+        de: "Allen, die sich beschweren, den größten Rabatt geben"
+        correct: false
+      - en: "Retain every customer at any cost, because keeping a customer is always worth the effort"
+        de: "Jede Kundin und jeden Kunden um jeden Preis halten, weil Bindung sich immer lohnt"
+        correct: false
+      - en: "Focus only on the newest customers, since they are easiest to keep"
+        de: "Nur auf die neuesten Kunden konzentrieren, da sie am leichtesten zu halten sind"
+        correct: false
+    explanation:
+      en: "Not all long-term customers are profitable, so retention effort should reflect expected value and cost. Blanket discounts and retaining at any cost can lose money."
+      de: "Nicht jede langjährige Kundschaft ist profitabel, also sollte der Bindungsaufwand zu Wert und Kosten passen. Pauschale Rabatte und Bindung um jeden Preis können Geld kosten."
+    source: https://openstax.org/books/principles-marketing/pages/2-4-marketing-plan-progress-using-metrics

@@ -1,5 +1,22 @@
 # Status
 
+## 2026-11-18 — Phase 4: Customer Service content batch 3 (service-level-quality-management, customer-data-privacy-service, customer-retention-feedback-voc)
+
+**Done**
+- 14 unit files (7 en + 7 de, `status: ai-draft`): SLQM and retention at foundation/practitioner, privacy at all three levels (role targets). Own methods (first-contact resolution definition, scorecard and coaching, five-fact breach note, proportionate identity checks, theme tagging, insight note) labelled "our own"; examples invented and labelled.
+- 36 items (12 per competency, 3 multi each).
+- 4 new link-only resources (`licenseVerifiedOn: 2026-11-18`, HTTP 200): OpenStax Marketing 2.4 (CC BY-NC-SA), en/de Wikipedia Net Promoter Score (CC BY-SA), EUR-Lex GDPR German text (free-access). 13 existing resources re-tagged.
+- Role stays `status: draft`. Privacy units at topic level (GDPR Art. 5, 12, 15, 17, 21, 25, 28, 33, 34) and point to the data protection officer; national rules and call-recording legality are left to the DPO.
+
+**Reviewer to-dos**
+- GDPR: Art. 5(1) and Art. 12 checked against EUR-Lex; Art. 25, 28, 34 read only briefly.
+- NPS definition (promoters 9-10, detractors 0-6) rests on Wikipedia (citation-needed tags, no banner).
+- German wording and gender-inclusive phrasing of the 7 DE units; check "our own" methods read as such.
+
+**Counts:** roles 7 (1 draft) · competencies 68 · units 388 · items 808 · resources 388
+
+**Next:** Customer Service content: consumer-rights-basics; then publish and quality pass.
+
 ## 2026-11-18 — Phase 4: Customer Service content batch 2 (complaint-handling-de-escalation, omnichannel-support, ticketing-knowledge-base)
 
 **Done**
