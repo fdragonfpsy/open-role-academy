@@ -1,0 +1,103 @@
+---
+id: inventory-warehouse-management-practitioner
+competency: inventory-warehouse-management
+level: practitioner
+title: "Meldebestand, Sicherheitsbestand und Bestandsklassen"
+objectives:
+  - "Einen Meldebestand aus Durchschnittsverbrauch, Lieferzeit und Sicherheitsbestand berechnen."
+  - "Erklären, wovor ein Sicherheitsbestand schützt."
+  - "Artikel mit einer ABC-Analyse einteilen und Prüfregeln je Klasse festlegen."
+  - "Die Lagerumschlagshäufigkeit lesen und zwei Gründe für einen niedrigen Wert nennen."
+minutes: 20
+resources:
+  - wikipedia-de-bestellpunktverfahren
+  - wikipedia-economic-order-quantity
+  - wikipedia-de-abc-analyse
+  - wikipedia-inventory-turnover
+  - wikipedia-de-lagerumschlag
+  - openstax-ib-resource-planning
+  - wikipedia-de-inventur
+status: ai-draft
+sources:
+  - title: "Bestellpunktverfahren"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Bestellpunktverfahren
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Economic order quantity"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Economic_order_quantity
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "ABC-Analyse"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/ABC-Analyse
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Inventory turnover"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Inventory_turnover
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Lagerumschlag"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Lagerumschlag
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Introduction to Business, 10.4 Pulling It Together: Resource Planning"
+    author: OpenStax
+    url: https://openstax.org/books/introduction-business/pages/10-4-pulling-it-together-resource-planning
+    license: CC-BY-4.0
+    licenseUrl: https://creativecommons.org/licenses/by/4.0/
+    usage: cited
+  - title: "Inventur"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Inventur
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Fachkräfte entscheiden nicht nur, ob bestellt wird, sondern wann und wie viel. Eine klare Regel je Artikel ersetzt das Raten und macht Fehlmengen und Überbestände unwahrscheinlicher.
+
+## Das Bestellpunktsystem
+
+Im Bestellpunktsystem wird eine Bestellung ausgelöst, sobald der Bestand auf einen festgelegten Meldebestand fällt. Geprüft wird nach jedem Lagerabgang, die Bestelltermine stehen also nicht im Voraus fest. Die Höhe hängt vom typischen Verbrauch bis zum Eintreffen der Ware ab, plus einem Sicherheitsbestand für ungewöhnliche Lieferzeiten oder höheren Verbrauch. Üblich sind zwei Politiken: eine feste Menge bestellen, wenn der Meldebestand erreicht ist, oder bis zu einem Sollbestand auffüllen.
+
+## Eine einfache Berechnung (unsere eigene Methode)
+
+- Durchschnittsverbrauch pro Tag, aus der jüngsten Historie.
+- Lieferzeit in Tagen von der Bestellung bis zum Wareneingang.
+- Meldebestand = Durchschnittsverbrauch x Lieferzeit + Sicherheitsbestand.
+
+## Wie viel bestellt wird
+
+Die klassische optimale Bestellmenge wägt Bestellkosten gegen Lagerkosten ab. Sie setzt gleichmäßigen Bedarf und vollständige Lieferungen voraus, ist also ein Ausgangspunkt: Frachtraten und Mengenrabatte können die beste Menge in der Praxis verschieben.
+
+## ABC-Klassen und Prüfregeln
+
+- A-Artikel: die wenigen Artikel mit dem größten Beitrag; häufig prüfen und öfter zählen.
+- B-Artikel: die mittlere Gruppe; regelmäßige Prüfung nach Standardregeln.
+- C-Artikel: viele Artikel mit geringem Wert; einfache Regeln wie ein fester Bestellzyklus.
+
+## Lagerumschlag
+
+Der Lagerumschlag ist der Wareneinsatz geteilt durch den durchschnittlichen Lagerbestand; 365 geteilt durch den Umschlag ergibt die durchschnittliche Lagerdauer in Tagen. Ein niedriger Wert kann auf Überbestand oder veraltete Ware hindeuten, ist aber gelegentlich gewollt, etwa vor einer erwarteten Knappheit.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundene Zahlen. Ein Artikel wird mit 25 Stück pro Tag verbraucht, der Lieferant braucht 8 Tage, und das Team will 60 Stück Sicherheitsbestand. Meldebestand = 25 x 8 + 60 = 260 Stück. Für das gesamte Lager beträgt der Wareneinsatz 480.000 Euro und der durchschnittliche Bestand 120.000 Euro. Umschlag = 480.000 / 120.000 = 4-mal im Jahr, also rund 91 Tage Lagerdauer (365 / 4).
+
+## Das Wichtigste in Kürze
+
+- Der Meldebestand deckt den Verbrauch in der Lieferzeit plus einen Sicherheitsbestand.
+- Der Sicherheitsbestand schützt vor höherem Verbrauch und verspäteten Lieferungen, nicht vor allem.
+- ABC-Klassen lenken den Kontrollaufwand dorthin, wo er zählt.
+- Lies den Umschlag mit seinen Gründen: Ein niedriger Wert ist eine Frage, kein Urteil.

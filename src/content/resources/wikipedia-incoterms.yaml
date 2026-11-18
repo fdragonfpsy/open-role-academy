@@ -1,0 +1,14 @@
+id: wikipedia-incoterms
+url: https://en.wikipedia.org/wiki/Incoterms
+title: "Incoterms"
+provider: Wikipedia
+language: en
+format: article
+minutes: 12
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies: [logistics-transport-planning]
+levels: [foundation, practitioner, advanced]
+note: "Footer states CC BY-SA 4.0; no maintenance banner; read 2026-11-18 (intro). Link only. Standardised ICC terms allocating tasks, costs and risk of transport and delivery; they do not set price or transfer of title; Incoterms is a registered trademark of the ICC."

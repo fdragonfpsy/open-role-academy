@@ -1,0 +1,14 @@
+id: wikipedia-de-bullwhip-effekt
+url: https://de.wikipedia.org/wiki/Bullwhip-Effekt
+title: "Bullwhip-Effekt (Peitscheneffekt)"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies: [supply-chain-planning-demand]
+levels: [foundation, practitioner, advanced]
+note: "Footer states CC BY-SA (Namensnennung - Weitergabe unter gleichen Bedingungen); no maintenance banner; read 2026-11-18 (intro, Ursachen). Link only. Order swings grow upstream in the supply chain; causes: demand signal processing, order batching, shortage gaming, price fluctuations."

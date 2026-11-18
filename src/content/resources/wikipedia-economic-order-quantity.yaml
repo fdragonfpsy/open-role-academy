@@ -1,0 +1,14 @@
+id: wikipedia-economic-order-quantity
+url: https://en.wikipedia.org/wiki/Economic_order_quantity
+title: "Economic order quantity"
+provider: Wikipedia
+language: en
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies: [inventory-warehouse-management]
+levels: [practitioner, advanced]
+note: "Footer states CC BY-SA 4.0; no maintenance banner; read 2026-11-18 (intro and overview). Link only. EOQ minimises ordering plus holding cost; assumes constant demand and full-batch delivery; transport rates and quantity discounts matter in practice."

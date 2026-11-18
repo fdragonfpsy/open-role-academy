@@ -1,0 +1,14 @@
+id: wikipedia-de-bestellpunktverfahren
+url: https://de.wikipedia.org/wiki/Bestellpunktverfahren
+title: "Bestellpunktverfahren"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 8
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies: [inventory-warehouse-management, supply-chain-planning-demand]
+levels: [practitioner, advanced]
+note: "Footer states CC BY-SA (Namensnennung - Weitergabe unter gleichen Bedingungen); no maintenance banner; read 2026-11-18 (intro and Eigenschaften). Link only. Order triggered when the Meldebestand is reached; depends on use during lead time plus Sicherheitsbestand; (s,q) and (s,S) policies."

@@ -1,0 +1,293 @@
+competency: inventory-warehouse-management
+items:
+- id: inv-f-def
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: What does the term inventory mean in operations?
+    de: Was bedeutet der Begriff Bestand im Betrieb?
+  options:
+  - en: Only finished goods that are already on their way to the customer
+    de: Nur Fertigwaren, die bereits zur Kundschaft unterwegs sind
+    correct: false
+  - en: The supply of goods a firm holds for use in production or for sale
+    de: Der Vorrat an Waren, den ein Unternehmen für Produktion oder Verkauf vorhält
+    correct: true
+  - en: The list of suppliers that are approved to deliver goods
+    de: Die Liste der Lieferanten, die für Lieferungen zugelassen sind
+    correct: false
+  - en: The cash that the company reserves for future purchases
+    de: Das Geld, das das Unternehmen für künftige Einkäufe zurückstellt
+    correct: false
+  explanation:
+    en: Inventory is the supply of goods held for production or for sale. It is a physical stock, not a list of suppliers or a cash reserve, and it covers raw materials and parts as well as finished goods.
+    de: Bestand ist der Vorrat an Waren für Produktion oder Verkauf. Er ist ein physischer Vorrat, keine Lieferantenliste oder Geldrücklage, und umfasst Rohstoffe und Teile ebenso wie Fertigwaren.
+  source: https://openstax.org/books/introduction-business/pages/10-4-pulling-it-together-resource-planning
+- id: inv-f-costs
+  level: foundation
+  difficulty: 950
+  type: multi
+  stem:
+    en: Which are drawbacks of holding large inventories? Select all that apply.
+    de: Welche Nachteile hat ein großer Lagerbestand? Wähle alle zutreffenden aus.
+  options:
+  - en: Money is tied up in the goods
+    de: Geld ist in der Ware gebunden
+    correct: true
+  - en: Production may stop because parts are missing
+    de: Die Produktion kann stillstehen, weil Teile fehlen
+    correct: false
+  - en: The goods can become obsolete
+    de: Die Ware kann veralten
+    correct: true
+  - en: Storage space and handling cost money
+    de: Lagerplatz und Handhabung kosten Geld
+    correct: true
+  - en: Quantity discounts are no longer possible
+    de: Mengenrabatte sind nicht mehr möglich
+    correct: false
+  explanation:
+    en: Large stocks tie up money, need space and can become obsolete. Missing parts are the problem of too little stock, and large orders are often what earns quantity discounts.
+    de: Große Bestände binden Geld, brauchen Platz und können veralten. Fehlende Teile sind das Problem zu kleiner Bestände, und große Bestellungen bringen oft erst Mengenrabatte.
+  source: https://openstax.org/books/introduction-business/pages/10-4-pulling-it-together-resource-planning
+- id: inv-f-diff
+  level: foundation
+  difficulty: 1000
+  type: single
+  stem:
+    en: A count finds 188 boxes, but the system shows 200. What is the sensible first step?
+    de: Die Zählung ergibt 188 Schachteln, das System zeigt 200. Was ist der sinnvolle erste Schritt?
+  options:
+  - en: Set the system to 188 at once, so that the stock list is right again and the gap is gone from the report
+    de: Das System sofort auf 188 setzen, damit die Bestandsliste wieder stimmt und die Lücke aus dem Bericht verschwindet
+    correct: false
+  - en: Look for causes such as unbooked issues or late receipts, then correct the books
+    de: Nach Ursachen wie ungebuchten Entnahmen oder verspäteten Zugängen suchen, dann die Buchung korrigieren
+    correct: true
+  - en: Order 12 more boxes and leave the system untouched, as it will even out
+    de: 12 Schachteln nachbestellen und das System unverändert lassen, es gleicht sich aus
+    correct: false
+  - en: Send a complaint to the supplier because the delivery was surely short
+    de: Beim Lieferanten reklamieren, weil die Lieferung sicher zu klein war
+    correct: false
+  explanation:
+    en: A difference is a symptom. Check recent receipts and issues first, since booking errors are a common cause; only then correct the records. Blaming the supplier or ignoring the gap hides the real cause.
+    de: Eine Differenz ist ein Symptom. Prüfe zuerst jüngste Zugänge und Entnahmen, denn Buchungsfehler sind eine häufige Ursache; erst dann korrigierst du die Aufzeichnungen. Den Lieferanten verantwortlich zu machen oder die Lücke zu ignorieren verdeckt die Ursache.
+  source: https://de.wikipedia.org/wiki/Inventur
+- id: inv-f-hgb
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: In Germany, what must a merchant do for stock at the end of the financial year?
+    de: Was müssen Kaufleute in Deutschland zum Ende des Geschäftsjahres beim Bestand tun?
+  options:
+  - en: Report stock only if a supplier asks for it
+    de: Bestand nur melden, wenn ein Lieferant danach fragt
+    correct: false
+  - en: Estimate stock from the sales figures of the year
+    de: Den Bestand aus den Verkaufszahlen des Jahres schätzen
+    correct: false
+  - en: Draw up an inventory, counting, measuring or weighing physical goods
+    de: Ein Inventar aufstellen und körperliche Güter zählen, messen oder wiegen
+    correct: true
+  - en: Nothing, because stock only counts once it has been sold
+    de: Nichts, denn Bestand zählt erst, wenn er verkauft wurde
+    correct: false
+  explanation:
+    en: Section 240 HGB requires an inventory at the end of each financial year; physical goods are counted, measured or weighed. This is German law; Finance applies it in detail.
+    de: § 240 HGB verlangt zum Ende jedes Geschäftsjahres ein Inventar; körperliche Güter werden gezählt, gemessen oder gewogen. Das ist deutsches Recht; die Anwendung im Einzelnen übernimmt Finanzen.
+  source: https://www.gesetze-im-internet.de/hgb/__240.html
+- id: inv-p-rop
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: Average use is 20 units per day, the lead time is 5 days and the safety stock is 30 units. What is the reorder point?
+    de: Der Durchschnittsverbrauch liegt bei 20 Stück pro Tag, die Lieferzeit bei 5 Tagen und der Sicherheitsbestand bei 30 Stück. Wie hoch ist der Meldebestand?
+  options:
+  - en: 100 units, since use during the lead time is what counts
+    de: 100 Stück, denn der Verbrauch in der Lieferzeit zählt
+    correct: false
+  - en: 50 units, the daily use plus the safety stock
+    de: 50 Stück, der Tagesverbrauch plus der Sicherheitsbestand
+    correct: false
+  - en: 55 units, simply adding use, lead time and safety stock
+    de: 55 Stück, Verbrauch, Lieferzeit und Sicherheitsbestand einfach addiert
+    correct: false
+  - en: 130 units, use during the lead time plus the safety stock
+    de: 130 Stück, Verbrauch in der Lieferzeit plus Sicherheitsbestand
+    correct: true
+  explanation:
+    en: Reorder point = average use x lead time + safety stock = 20 x 5 + 30 = 130. Leaving out the safety stock gives 100, which would run the stock to zero when deliveries are normal and below zero when they are late.
+    de: Meldebestand = Durchschnittsverbrauch x Lieferzeit + Sicherheitsbestand = 20 x 5 + 30 = 130. Ohne Sicherheitsbestand ergeben sich 100; damit liefe der Bestand bei normaler Lieferung auf null und bei verspäteter Lieferung darunter.
+  source: https://de.wikipedia.org/wiki/Bestellpunktverfahren
+- id: inv-p-safety
+  level: practitioner
+  difficulty: 1250
+  type: multi
+  stem:
+    en: What does safety stock protect against? Select all that apply.
+    de: Wovor schützt ein Sicherheitsbestand? Wähle alle zutreffenden aus.
+  options:
+  - en: A supplier raising its price after the order
+    de: Eine Preiserhöhung des Lieferanten nach der Bestellung
+    correct: false
+  - en: Higher use than usual during the lead time
+    de: Höherer Verbrauch als üblich während der Lieferzeit
+    correct: true
+  - en: Counting errors in the annual stock count
+    de: Zählfehler bei der jährlichen Inventur
+    correct: false
+  - en: A delivery that arrives later than expected
+    de: Eine Lieferung, die später eintrifft als erwartet
+    correct: true
+  explanation:
+    en: Safety stock covers variation in use and in delivery time. It does not protect against price changes or booking errors, which need other measures such as price clauses and clean booking.
+    de: Der Sicherheitsbestand deckt Schwankungen bei Verbrauch und Lieferzeit ab. Preisänderungen oder Buchungsfehler deckt er nicht ab; dafür braucht es andere Maßnahmen wie Preisklauseln und saubere Buchung.
+  source: https://de.wikipedia.org/wiki/Bestellpunktverfahren
+- id: inv-p-abc
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: How does an ABC analysis sort items?
+    de: Wie sortiert eine ABC-Analyse Artikel?
+  options:
+  - en: By the date of the last goods receipt, to find the oldest stock and plan which goods to sell first
+    de: Nach dem Datum des letzten Wareneingangs, um Altbestand zu finden und zu planen, was zuerst verkauft wird
+    correct: false
+  - en: By their contribution, for example annual consumption value, into classes
+    de: Nach ihrem Beitrag, zum Beispiel dem Jahresverbrauchswert, in Klassen
+    correct: true
+  - en: Alphabetically by supplier name, so counts are easy to organise
+    de: Alphabetisch nach Lieferantenname, damit Zählungen leicht zu organisieren sind
+    correct: false
+  - en: By the physical size of the item, to plan the shelf space
+    de: Nach der Größe des Artikels, um den Regalplatz zu planen
+    correct: false
+  explanation:
+    en: An ABC analysis classifies items by their contribution, often consumption value, so control effort goes where it matters. The class limits are set by each company.
+    de: Eine ABC-Analyse teilt Artikel nach ihrem Beitrag ein, häufig dem Verbrauchswert, damit der Kontrollaufwand dort liegt, wo er zählt. Die Klassengrenzen legt jedes Unternehmen selbst fest.
+  source: https://de.wikipedia.org/wiki/ABC-Analyse
+- id: inv-p-turn
+  level: practitioner
+  difficulty: 1350
+  type: single
+  stem:
+    en: The cost of goods sold is 480,000 euros a year and the average inventory is 120,000 euros. What are turnover and days of stock?
+    de: Der Wareneinsatz beträgt 480.000 Euro im Jahr, der durchschnittliche Bestand 120.000 Euro. Wie hoch sind Umschlag und Lagerdauer?
+  options:
+  - en: 0.25 times a year, about 4 days
+    de: 0,25-mal im Jahr, etwa 4 Tage
+    correct: false
+  - en: 4 times a year, about 4 days
+    de: 4-mal im Jahr, etwa 4 Tage
+    correct: false
+  - en: 120 times a year, about 3 days
+    de: 120-mal im Jahr, etwa 3 Tage
+    correct: false
+  - en: 4 times a year, about 91 days
+    de: 4-mal im Jahr, etwa 91 Tage
+    correct: true
+  explanation:
+    en: Turnover = 480,000 / 120,000 = 4; days of stock = 365 / 4, about 91. Dividing the other way round gives 0.25, a common mix-up.
+    de: Umschlag = 480.000 / 120.000 = 4; Lagerdauer = 365 / 4, rund 91 Tage. Die umgekehrte Division ergibt 0,25, eine häufige Verwechslung.
+  source: https://en.wikipedia.org/wiki/Inventory_turnover
+- id: inv-a-turn
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: The turnover of a product group fell from 6 to 4 while the service level stayed at 98 percent. What is the best conclusion?
+    de: Der Umschlag einer Produktgruppe fiel von 6 auf 4, während der Servicegrad bei 98 Prozent blieb. Was ist die beste Schlussfolgerung?
+  options:
+  - en: Not conclusive yet; compare with sales and look at stock by item to find the cause
+    de: Noch nicht aussagekräftig; mit dem Absatz vergleichen und den Bestand je Artikel ansehen, um die Ursache zu finden
+    correct: true
+  - en: Inventory management has clearly failed, so stock should be cut by a third across the whole group at once
+    de: Die Bestandsführung hat eindeutig versagt, daher sollte der Bestand in der ganzen Gruppe sofort um ein Drittel gekürzt werden
+    correct: false
+  - en: Nothing to do, because the service level is still good
+    de: Nichts zu tun, weil der Servicegrad weiterhin gut ist
+    correct: false
+  - en: Turnover says nothing, so the figure can be ignored
+    de: Der Umschlag sagt nichts aus, die Kennzahl kann ignoriert werden
+    correct: false
+  explanation:
+    en: A lower turnover means more capital is tied up per euro of sales. The cause may be slow movers, minimum order quantities or a planned build-up. Look at item level first; cutting blindly can lower the service level.
+    de: Ein niedrigerer Umschlag heißt, dass je Euro Umsatz mehr Kapital gebunden ist. Ursache können Langsamdreher, Mindestbestellmengen oder ein geplanter Aufbau sein. Schau zuerst auf Artikelebene; blindes Kürzen kann den Servicegrad senken.
+  source: https://de.wikipedia.org/wiki/Lagerumschlag
+- id: inv-a-diff
+  level: advanced
+  difficulty: 1500
+  type: multi
+  stem:
+    en: Which findings point to a process cause rather than real loss in count differences? Select all that apply.
+    de: Welche Befunde bei Zähldifferenzen deuten eher auf eine Prozessursache als auf echten Verlust hin? Wähle alle zutreffenden aus.
+  options:
+  - en: Differences cluster on items with several packaging units
+    de: Die Differenzen häufen sich bei Artikeln mit mehreren Verpackungseinheiten
+    correct: true
+  - en: Shortages disappear after late goods receipts are posted
+    de: Fehlmengen verschwinden, nachdem verspätete Wareneingänge gebucht wurden
+    correct: true
+  - en: All differences are shortages on small, easily portable items
+    de: Alle Differenzen sind Fehlmengen bei kleinen, leicht tragbaren Artikeln
+    correct: false
+  - en: Differences stay the same after all postings are checked
+    de: Die Differenzen bleiben gleich, nachdem alle Buchungen geprüft wurden
+    correct: false
+  explanation:
+    en: Unit-of-measure mix-ups and late postings are booking problems and disappear once fixed. Shortages that remain after checking, especially on portable items, point more towards real loss, although they are no proof.
+    de: Verwechslungen von Einheiten und verspätete Buchungen sind Buchungsprobleme und verschwinden, sobald sie behoben sind. Fehlmengen, die nach der Prüfung bleiben, besonders bei tragbaren Artikeln, deuten eher auf echten Verlust hin, sind aber kein Beweis.
+  source: https://de.wikipedia.org/wiki/Inventur
+- id: inv-a-eoq
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: The EOQ result is 400 units, but the supplier offers a discount from 600 units and a truck holds 800. What is the best approach?
+    de: Die optimale Bestellmenge ergibt 400 Stück, doch der Lieferant gibt ab 600 Stück Rabatt und ein Lkw fasst 800. Was ist das beste Vorgehen?
+  options:
+  - en: Order exactly 400, since the formula gives the optimum
+    de: Genau 400 bestellen, denn die Formel liefert das Optimum
+    correct: false
+  - en: Always take the largest quantity, because quantity discounts will beat the holding costs of any extra stock
+    de: Immer die größte Menge nehmen, denn Mengenrabatte schlagen die Lagerkosten jedes zusätzlichen Bestands
+    correct: false
+  - en: Compare total cost for the realistic quantities including discount and freight
+    de: Die Gesamtkosten der realistischen Mengen samt Rabatt und Fracht vergleichen
+    correct: true
+  - en: Drop the EOQ idea and order whatever the buyer prefers
+    de: Die Idee der optimalen Bestellmenge verwerfen und bestellen, was die einkaufende Person bevorzugt
+    correct: false
+  explanation:
+    en: The EOQ assumes steady demand and ignores discounts and transport rates. Use it as a starting point and compare the total cost of the real options, including holding costs for the extra units.
+    de: Die optimale Bestellmenge setzt gleichmäßigen Bedarf voraus und ignoriert Rabatte und Frachtraten. Nutze sie als Ausgangspunkt und vergleiche die Gesamtkosten der realen Optionen, einschließlich der Lagerkosten für die zusätzlichen Einheiten.
+  source: https://en.wikipedia.org/wiki/Economic_order_quantity
+- id: inv-a-crit
+  level: advanced
+  difficulty: 1600
+  type: single
+  stem:
+    en: A cheap C item can stop a production line when missing. How should you treat it?
+    de: Ein billiger C-Artikel kann bei Fehlen ein Fertigungsband stoppen. Wie gehst du damit um?
+  options:
+  - en: Give it a higher safety stock or a second source, since value does not show criticality
+    de: Ihm einen höheren Sicherheitsbestand oder eine zweite Quelle geben, denn der Wert zeigt keine Kritikalität
+    correct: true
+  - en: Keep the standard C rule, because the ABC class is binding and exceptions would make the system confusing
+    de: Bei der üblichen C-Regel bleiben, weil die ABC-Klasse verbindlich ist und Ausnahmen das System unübersichtlich machen
+    correct: false
+  - en: Move it to class A so that it is reviewed like the expensive items
+    de: Ihn in Klasse A verschieben, damit er wie die teuren Artikel geprüft wird
+    correct: false
+  - en: Order it only when the production line has already stopped
+    de: Ihn erst bestellen, wenn das Fertigungsband schon steht
+    correct: false
+  explanation:
+    en: ABC classes by value are a tool, not a law. Mark critical items separately and give them their own policy; moving them into class A would distort the value-based classes.
+    de: ABC-Klassen nach Wert sind ein Werkzeug, kein Gesetz. Markiere kritische Artikel gesondert und gib ihnen eine eigene Politik; sie in Klasse A zu verschieben würde die wertbasierten Klassen verzerren.
+  source: https://de.wikipedia.org/wiki/ABC-Analyse

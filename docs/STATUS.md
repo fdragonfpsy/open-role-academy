@@ -1,5 +1,22 @@
 # Status
 
+## 2026-11-18 — Phase 4: Procurement content batch 3 (inventory-warehouse-management, logistics-transport-planning, supply-chain-planning-demand)
+
+**Done**
+- 14 unit files (7 en + 7 de, `status: ai-draft`): inventory at all three levels, logistics and planning at foundation/practitioner (role targets). Formulas, checklists and thresholds labelled "our own"; EOQ described in words only; Incoterms named at topic level; examples invented and labelled.
+- 36 items (12 per competency, 4 per level, 1-2 multi per level).
+- 19 new link-only resources (`licenseVerifiedOn: 2026-11-18`, HTTP 200): 13 Wikipedia (en/de, CC BY-SA), OpenStax Introduction to Business 10.4, and HGB §240 and §407 on gesetze-im-internet.de (`free-access`, licence terms not assessed). 5 existing resources re-tagged.
+- Role stays `status: draft`; the missing-ESCO warning on strategic-sourcing remains.
+
+**Reviewer to-dos**
+- Facts rest on page intros: Incoterms, bill of lading, EOQ, S&OP (en Wikipedia). The bullwhip "price fluctuations" cause comes from a truncated passage on the German page and its wording was inferred.
+- German Meldebestand/Sicherheitsbestand/Lagerhaltung pages have a redundancy banner and were not used.
+- Supply-chain planning has no German non-Wikipedia source; 3 EN-only distractors were padded to defeat the longest-option check; German wording of the 7 DE units.
+
+**Counts:** roles 9 (1 draft) · competencies 88 · units 492 · items 1048 · resources 493
+
+**Next:** Procurement content: supply-chain-risk-sustainability; then publish and quality pass.
+
 ## 2026-11-18 — Phase 4: Procurement content batch 2 (tendering-rfx-contracting, negotiation-supplier-relationships, purchase-order-invoice-management)
 
 **Done**

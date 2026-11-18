@@ -1,0 +1,103 @@
+---
+id: inventory-warehouse-management-practitioner
+competency: inventory-warehouse-management
+level: practitioner
+title: "Reorder points, safety stock and stock classes"
+objectives:
+  - "Calculate a reorder point from average use, lead time and safety stock."
+  - "Explain what safety stock protects against."
+  - "Classify items with an ABC analysis and set review rules per class."
+  - "Read stock turnover and name two reasons for a low value."
+minutes: 20
+resources:
+  - wikipedia-de-bestellpunktverfahren
+  - wikipedia-economic-order-quantity
+  - wikipedia-de-abc-analyse
+  - wikipedia-inventory-turnover
+  - wikipedia-de-lagerumschlag
+  - openstax-ib-resource-planning
+  - wikipedia-de-inventur
+status: ai-draft
+sources:
+  - title: "Bestellpunktverfahren"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Bestellpunktverfahren
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Economic order quantity"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Economic_order_quantity
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "ABC-Analyse"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/ABC-Analyse
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Inventory turnover"
+    author: Wikipedia contributors
+    url: https://en.wikipedia.org/wiki/Inventory_turnover
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Lagerumschlag"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Lagerumschlag
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Introduction to Business, 10.4 Pulling It Together: Resource Planning"
+    author: OpenStax
+    url: https://openstax.org/books/introduction-business/pages/10-4-pulling-it-together-resource-planning
+    license: CC-BY-4.0
+    licenseUrl: https://creativecommons.org/licenses/by/4.0/
+    usage: cited
+  - title: "Inventur"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Inventur
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+Practitioners decide when to order and how much, not only whether. A clear rule per item replaces guessing and makes stock-outs and overstock both less likely.
+
+## The reorder-point system
+
+In a reorder-point system an order is triggered as soon as stock falls to a defined reorder level (Meldebestand). The check happens after every withdrawal, so order dates are not fixed in advance. The level depends on the typical use until the goods arrive plus a safety stock for unusual delivery times or higher use. There are two common policies: order a fixed quantity when the level is reached, or refill up to a target stock level.
+
+## A simple calculation (our own method)
+
+- Average use per day, taken from recent history.
+- Lead time in days from order to goods receipt.
+- Reorder point = average use x lead time + safety stock.
+
+## How much to order
+
+The classic economic order quantity balances ordering cost against holding cost. It assumes steady demand and full-batch deliveries, so treat it as a starting point: transport rates and quantity discounts can move the best quantity in real life.
+
+## ABC classes and review rules
+
+- A items: the few items with the largest contribution; review often and count more often.
+- B items: the middle group; regular review with standard rules.
+- C items: many items with little value; simple rules such as a fixed order cycle.
+
+## Stock turnover
+
+Stock turnover is the cost of goods sold divided by the average inventory; 365 divided by the turnover gives the average days stock is held. A low value may point to overstocking or obsolete goods, though occasionally it is intended, for example before an expected shortage.
+
+## Worked example
+
+Illustration only; invented figures. An item is used at 25 units per day, the supplier needs 8 days, and the team wants 60 units of safety stock. Reorder point = 25 x 8 + 60 = 260 units. For the whole warehouse, the cost of goods sold is 480,000 euros and the average inventory is 120,000 euros. Turnover = 480,000 / 120,000 = 4 times a year, or about 91 days of stock (365 / 4).
+
+## Key takeaways
+
+- The reorder point covers use during the lead time plus a safety stock.
+- Safety stock protects against higher use and late deliveries, not against everything.
+- ABC classes let you spend control effort where it counts.
+- Read turnover with its reasons: a low value is a question, not a verdict.
