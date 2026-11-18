@@ -1,0 +1,290 @@
+competency: resource-team-coordination
+items:
+- id: rtc-f-kinds
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: Which list names the main kinds of resources a project needs?
+    de: Welche Aufzählung nennt die wichtigsten Arten von Ressourcen, die ein Projekt braucht?
+  options:
+  - en: People, equipment and spaces, licences and services, money
+    de: Menschen, Ausrüstung und Räume, Lizenzen und Dienste, Geld
+    correct: true
+  - en: People only, because everything else is just a cost
+    de: Nur Menschen, weil alles andere nur Kosten sind
+    correct: false
+  - en: Money and time, because people are covered by the budget
+    de: Geld und Zeit, weil Menschen im Budget enthalten sind
+    correct: false
+  - en: Equipment and licences, because people are not planned
+    de: Ausrüstung und Lizenzen, weil Menschen nicht geplant werden
+    correct: false
+  explanation:
+    en: Resources include people (skills, effort, time), equipment and spaces, licences and services, and money. People are planned like everything else.
+    de: Zu den Ressourcen zählen Menschen (Fähigkeiten, Aufwand, Zeit), Ausrüstung und Räume, Lizenzen und Dienste sowie Geld. Menschen werden wie alles andere eingeplant.
+  source: https://de.wikipedia.org/wiki/Ressourcenmanagement_(Projektmanagement)
+- id: rtc-f-owner
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: How many answerable owners should each task have in a responsibility matrix?
+    de: Wie viele verantwortliche Personen sollte jede Aufgabe in einer Verantwortungsmatrix haben?
+  options:
+  - en: Two, so that one can step in for the other
+    de: Zwei, damit eine Person für die andere einspringen kann
+    correct: false
+  - en: As many as take part in the work
+    de: So viele, wie an der Arbeit beteiligt sind
+    correct: false
+  - en: Exactly one, even if several people do the work
+    de: Genau eine, auch wenn mehrere die Arbeit machen
+    correct: true
+  - en: None, if the team organises itself
+    de: Keine, wenn sich das Team selbst organisiert
+    correct: false
+  explanation:
+    en: Several people may do the work, but one name carries the result. With two owners, each can assume the other is in charge.
+    de: Mehrere können mitarbeiten, aber ein Name trägt das Ergebnis. Bei zwei Verantwortlichen kann jede Person annehmen, die andere sei zuständig.
+  source: https://openstax.org/books/principles-management/pages/15-3-things-to-consider-when-managing-teams
+- id: rtc-f-capacity
+  level: foundation
+  difficulty: 1000
+  type: single
+  stem:
+    en: A colleague works 40 hours a week. Each week 8 hours go to recurring meetings and 12 hours to routine work. How many hours per week can you plan for your project?
+    de: Eine Kollegin arbeitet 40 Stunden pro Woche. Pro Woche gehen 8 Stunden in feste Besprechungen und 12 Stunden ins Tagesgeschäft. Wie viele Stunden pro Woche kannst du für dein Projekt einplanen?
+  options:
+  - en: 40 hours, because she is employed full time
+    de: 40 Stunden, weil sie in Vollzeit angestellt ist
+    correct: false
+  - en: 32 hours, because only the meetings count
+    de: 32 Stunden, weil nur die Besprechungen zählen
+    correct: false
+  - en: 28 hours, because only routine work counts
+    de: 28 Stunden, weil nur das Tagesgeschäft zählt
+    correct: false
+  - en: 20 hours, the time left after meetings and routine work
+    de: 20 Stunden, die Zeit nach Besprechungen und Tagesgeschäft
+    correct: true
+  explanation:
+    en: 'Availability is not capacity: 40 - 8 - 12 = 20 hours. Planning with the employment percentage overbooks the person from the start.'
+    de: 'Verfügbarkeit ist nicht Kapazität: 40 - 8 - 12 = 20 Stunden. Wer mit dem Beschäftigungsgrad plant, überbucht die Person von Anfang an.'
+  source: https://de.wikipedia.org/wiki/Ressourcenmanagement_(Projektmanagement)
+- id: rtc-f-need
+  level: foundation
+  difficulty: 1050
+  type: multi
+  stem:
+    en: Which statements about deriving the resource need are correct? Select all that apply.
+    de: Welche Aussagen über das Ableiten des Ressourcenbedarfs sind richtig? Wähle alle zutreffenden aus.
+  options:
+  - en: It starts from the work packages in the work breakdown
+    de: Er beginnt bei den Arbeitspaketen im Projektstrukturplan
+    correct: true
+  - en: For each package you note skills, effort and period
+    de: Je Arbeitspaket notierst du Fähigkeiten, Aufwand und Zeitraum
+    correct: true
+  - en: The resource need equals the approved budget
+    de: Der Ressourcenbedarf entspricht dem genehmigten Budget
+    correct: false
+  - en: A gap should be reported early and in numbers
+    de: Eine Lücke sollte früh und in Zahlen gemeldet werden
+    correct: true
+  explanation:
+    en: The need comes from the work, not from the budget. Early, numeric reports of gaps give others time to act.
+    de: Der Bedarf ergibt sich aus der Arbeit, nicht aus dem Budget. Frühe Meldungen in Zahlen geben anderen Zeit zu handeln.
+  source: https://de.wikipedia.org/wiki/Ressourcenmanagement_(Projektmanagement)
+- id: rtc-p-overload
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: The load chart shows a specialist at 130 percent in week 6. One of her tasks has three days of slack. What is the best first step?
+    de: Das Auslastungsdiagramm zeigt eine Spezialistin in Woche 6 bei 130 Prozent. Eine ihrer Aufgaben hat drei Tage Puffer. Was ist der beste erste Schritt?
+  options:
+  - en: Ask her to work overtime for the whole project
+    de: Sie bitten, im ganzen Projekt Überstunden zu machen
+    correct: false
+  - en: Move the task with slack to a quieter week
+    de: Die Aufgabe mit Puffer in eine ruhigere Woche verschieben
+    correct: true
+  - en: Hire a contractor for the entire workload
+    de: Für die gesamte Arbeit eine externe Fachkraft holen
+    correct: false
+  - en: Cut the scope of the work package
+    de: Den Umfang des Arbeitspakets kürzen
+    correct: false
+  explanation:
+    en: 'Use the cheapest option first: moving work that has slack costs nothing in time or scope. Overtime, contractors and scope cuts come later.'
+    de: 'Nutze zuerst die günstigste Option: Arbeit mit Puffer zu verschieben kostet weder Zeit noch Umfang. Überstunden, Externe und Kürzungen kommen später.'
+  source: https://en.wikipedia.org/wiki/Resource_leveling
+- id: rtc-p-leveling
+  level: practitioner
+  difficulty: 1250
+  type: single
+  stem:
+    en: What does resource leveling usually cost?
+    de: Was kostet Ressourcenglättung (Resource Leveling) in der Regel?
+  options:
+  - en: Nothing, if project software does the calculation
+    de: Nichts, wenn Projektsoftware die Berechnung übernimmt
+    correct: false
+  - en: Time, cost or scope, usually at least one of them
+    de: Zeit, Kosten oder Umfang, meist mindestens eines davon
+    correct: true
+  - en: Only quality, because people work faster under load
+    de: Nur Qualität, weil Menschen unter Last schneller arbeiten
+    correct: false
+  - en: Only budget, because dates stay fixed by definition
+    de: Nur Budget, weil Termine per Definition fest bleiben
+    correct: false
+  explanation:
+    en: Leveling balances demand and supply, typically at the expense of time, cost or scope. Software only calculates the delays; the price remains.
+    de: Glättung gleicht Bedarf und Angebot aus, meist zulasten von Zeit, Kosten oder Umfang. Software berechnet nur die Verzögerungen; der Preis bleibt.
+  source: https://en.wikipedia.org/wiki/Resource_leveling
+- id: rtc-p-storming
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: 'Your team is in the storming stage: members compete for influence and frustration with goals grows. What helps most?'
+    de: 'Dein Team ist in der Storming-Phase: Mitglieder ringen um Einfluss, und der Frust über Ziele wächst. Was hilft am meisten?'
+  options:
+  - en: Replace the loudest member right away
+    de: Das lauteste Mitglied sofort austauschen
+    correct: false
+  - en: Wait, because the stage passes without help
+    de: Abwarten, weil die Phase auch ohne Hilfe vergeht
+    correct: false
+  - en: Keep discussion on the task, make decisions visible and address disagreement openly
+    de: Die Diskussion bei der Sache halten, Entscheidungen sichtbar machen und Meinungsverschiedenheiten offen ansprechen
+    correct: true
+  - en: Tighten control and remove discussion from meetings
+    de: Die Kontrolle verschärfen und Diskussionen aus Terminen nehmen
+    correct: false
+  explanation:
+    en: Storming is a normal stage. Clear decisions and open handling of disagreement help the team move towards norming; suppressing it or waiting does not.
+    de: Storming ist eine normale Phase. Klare Entscheidungen und der offene Umgang mit Meinungsverschiedenheiten helfen dem Team Richtung Norming; Unterdrücken oder Abwarten nicht.
+  source: https://openstax.org/books/principles-management/pages/15-2-team-development-over-time
+- id: rtc-p-regress
+  level: practitioner
+  difficulty: 1250
+  type: multi
+  stem:
+    en: Which events can send a team back to an earlier stage of development? Select all that apply.
+    de: Welche Ereignisse können ein Team in eine frühere Entwicklungsphase zurückwerfen? Wähle alle zutreffenden aus.
+  options:
+  - en: A new member joins the team
+    de: Ein neues Mitglied stößt zum Team
+    correct: true
+  - en: A new task causes confusion or anxiety
+    de: Eine neue Aufgabe löst Verwirrung oder Sorge aus
+    correct: true
+  - en: The team passes its first milestone on time
+    de: Das Team erreicht seinen ersten Meilenstein pünktlich
+    correct: false
+  - en: The team reaches the adjourning stage
+    de: Das Team erreicht die Adjourning-Phase
+    correct: false
+  explanation:
+    en: The stages are not linear. Changes in membership or confusing tasks can cause a backward slide. Meeting a milestone does not, and adjourning describes the end of a project.
+    de: Die Phasen verlaufen nicht geradlinig. Wechsel bei den Mitgliedern oder verwirrende Aufgaben können zurückwerfen. Ein Meilenstein tut das nicht, und Adjourning beschreibt das Projektende.
+  source: https://openstax.org/books/principles-management/pages/15-2-team-development-over-time
+- id: rtc-a-shared
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: A security engineer is planned at 60 percent by project A and at 60 percent by project B. Both leads consider this within her agreed share. What is the best action?
+    de: Eine Sicherheitsingenieurin ist bei Projekt A mit 60 Prozent und bei Projekt B mit 60 Prozent eingeplant. Beide Leitungen halten das für ihren vereinbarten Anteil. Was ist die beste Maßnahme?
+  options:
+  - en: Let her decide privately which project gets which hours, since she knows the work best
+    de: Sie privat entscheiden lassen, welches Projekt wie viele Stunden bekommt, da sie die Arbeit am besten kennt
+    correct: false
+  - en: Plan her at 50 percent in each project to be safe
+    de: Sie in jedem Projekt vorsichtshalber mit 50 Prozent einplanen
+    correct: false
+  - en: Compare total load with her line manager; take options to those who set priorities
+    de: Die Gesamtauslastung mit ihrer Linienführung abgleichen; Optionen zu denen bringen, die Prioritäten setzen
+    correct: true
+  - en: Keep both plans, as each is correct on its own
+    de: Beide Pläne beibehalten, da jeder für sich stimmt
+    correct: false
+  explanation:
+    en: Each plan looks right alone; the total is 120 percent. A priority conflict belongs with the people who set priorities, with options and consequences.
+    de: Jeder Plan wirkt allein richtig; die Summe beträgt 120 Prozent. Ein Prioritätskonflikt gehört zu denen, die Prioritäten setzen, mit Optionen und Folgen.
+  source: https://openstax.org/books/principles-management/pages/15-3-things-to-consider-when-managing-teams
+- id: rtc-a-handover
+  level: advanced
+  difficulty: 1500
+  type: multi
+  stem:
+    en: Which elements belong in a handover agreement with an external supplier? Select all that apply.
+    de: Welche Bestandteile gehören in eine Übergabevereinbarung mit einem externen Lieferanten? Wähle alle zutreffenden aus.
+  options:
+  - en: What is delivered, by when and in which form
+    de: Was geliefert wird, bis wann und in welcher Form
+    correct: true
+  - en: Who accepts the delivery for your side
+    de: Wer die Lieferung auf deiner Seite abnimmt
+    correct: true
+  - en: A named contact on each side
+    de: Eine benannte Kontaktperson auf jeder Seite
+    correct: true
+  - en: How the supplier assigns its own staff internally
+    de: Wie der Lieferant sein eigenes Personal intern einteilt
+    correct: false
+  explanation:
+    en: An interface needs deliverable, date, form, acceptance and contacts. The supplier manages its own staff; you manage the commitment.
+    de: Eine Schnittstelle braucht Ergebnis, Termin, Form, Abnahme und Kontakte. Der Lieferant steuert sein Personal selbst; du steuerst die Zusage.
+  source: https://de.wikipedia.org/wiki/Ressourcenmanagement_(Projektmanagement)
+- id: rtc-a-spof
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: For a critical task you ask what happens if the only expert is absent for two weeks. The answer is "the project stops". What is the most appropriate response?
+    de: Für eine kritische Aufgabe fragst du, was passiert, wenn die einzige Expertin zwei Wochen fehlt. Die Antwort lautet „das Projekt steht“. Was ist die passendste Reaktion?
+  options:
+  - en: Add a two-week buffer at the end of the project to absorb a possible absence
+    de: Am Projektende einen Puffer von zwei Wochen einplanen, um einen möglichen Ausfall aufzufangen
+    correct: false
+  - en: Ask the expert not to take holiday during the project
+    de: Die Expertin bitten, im Projekt keinen Urlaub zu nehmen
+    correct: false
+  - en: Accept the risk, since experts are hard to replace
+    de: Das Risiko akzeptieren, weil Expertinnen schwer zu ersetzen sind
+    correct: false
+  - en: 'Reduce the dependence: trained deputy, documented key steps or pairing'
+    de: 'Die Abhängigkeit verringern: geschulte Vertretung, dokumentierte Schlüsselschritte oder Arbeit zu zweit'
+    correct: true
+  explanation:
+    en: A buffer covers only the schedule effect and does not remove the dependence. A deputy, documentation or pairing reduces it at the source.
+    de: Ein Puffer deckt nur die Terminwirkung ab und beseitigt die Abhängigkeit nicht. Vertretung, Dokumentation oder Arbeit zu zweit verringern sie an der Wurzel.
+  source: https://openstax.org/books/principles-management/pages/15-3-things-to-consider-when-managing-teams
+- id: rtc-a-skillgap
+  level: advanced
+  difficulty: 1600
+  type: single
+  stem:
+    en: You cannot choose your team. The assigned developer lacks a skill the work package needs. What is the best course?
+    de: Du kannst dein Team nicht auswählen. Einer zugewiesenen Person aus der Entwicklung fehlt eine Fähigkeit, die das Arbeitspaket braucht. Was ist der beste Weg?
+  options:
+  - en: Do the work yourself so that nobody is blamed
+    de: Die Arbeit selbst erledigen, damit niemand beschuldigt wird
+    correct: false
+  - en: Describe the gap (skill, effort, period) and ask the sponsor for options
+    de: Die Lücke beschreiben (Fähigkeit, Aufwand, Zeitraum) und die Auftraggebenden um Optionen bitten
+    correct: true
+  - en: Lower the quality target silently, so that the work fits the skills at hand
+    de: Das Qualitätsziel stillschweigend senken, damit die Arbeit zu den vorhandenen Fähigkeiten passt
+    correct: false
+  - en: Wait for the first missed date to prove the gap
+    de: Auf den ersten verpassten Termin warten, der die Lücke beweist
+    correct: false
+  explanation:
+    en: Where you lack influence over staffing, state the gap early and concretely and let those who control the people choose among training, swapping or external help.
+    de: Wo du keinen Einfluss auf die Besetzung hast, benenne die Lücke früh und konkret und lass die Verantwortlichen zwischen Schulung, Tausch oder externer Hilfe wählen.
+  source: https://de.wikipedia.org/wiki/Ressourcenmanagement_(Projektmanagement)

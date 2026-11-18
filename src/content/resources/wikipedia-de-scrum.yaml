@@ -1,0 +1,14 @@
+id: wikipedia-de-scrum
+url: https://de.wikipedia.org/wiki/Scrum
+title: Scrum
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: '2026-11-18'
+mode: link
+competencies: [agile-hybrid-delivery]
+levels: [foundation, practitioner, advanced]
+note: Footer states CC BY-SA; no maintenance banner; read 2026-11-18. Link only, nothing copied.
