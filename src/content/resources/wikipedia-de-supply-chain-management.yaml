@@ -1,0 +1,14 @@
+id: wikipedia-de-supply-chain-management
+url: https://de.wikipedia.org/wiki/Supply-Chain-Management
+title: "Supply-Chain-Management"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies: [supply-chain-planning-demand]
+levels: [foundation, practitioner]
+note: "Footer states CC BY-SA (Namensnennung - Weitergabe unter gleichen Bedingungen); no maintenance banner; read 2026-11-18 (intro). Link only. SCM covers planning, control, monitoring, documentation and optimisation of the supply chain from raw materials to delivery to customers."

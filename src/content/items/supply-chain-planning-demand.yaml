@@ -1,0 +1,296 @@
+competency: supply-chain-planning-demand
+items:
+- id: scp-f-chain
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: What is a supply chain?
+    de: Was ist eine Lieferkette?
+  options:
+  - en: A list of all the suppliers and customers a company has dealt with in the past years
+    de: Eine Liste aller Lieferanten und Kunden, mit denen ein Unternehmen in den vergangenen Jahren zu tun hatte
+    correct: false
+  - en: The fleet of trucks owned by a company
+    de: Der Fuhrpark eines Unternehmens
+    correct: false
+  - en: The warehouses a company rents in different countries
+    de: Die Lager, die ein Unternehmen in verschiedenen Ländern mietet
+    correct: false
+  - en: The system through which an organisation acquires material, produces and delivers
+    de: Das System, über das eine Organisation Material beschafft, produziert und liefert
+    correct: true
+  explanation:
+    en: A supply chain is the system through which an organisation acquires raw material, produces products and delivers them to customers. Suppliers, trucks and warehouses are parts of it, not the whole.
+    de: Eine Lieferkette ist das System, über das eine Organisation Rohstoffe beschafft, Produkte herstellt und an Kundschaft liefert. Lieferanten, Lkw und Lager sind Teile davon, nicht das Ganze.
+  source: https://openstax.org/books/introduction-business/pages/12-4-using-supply-chain-management-to-increase-efficiency-and-customer-satisfaction
+- id: scp-f-first
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: Which step starts resource planning for production?
+    de: Welcher Schritt steht am Anfang der Ressourcenplanung für die Produktion?
+  options:
+  - en: Forecast the quantity of finished goods that will be needed
+    de: Die Menge an Fertigerzeugnissen prognostizieren, die gebraucht wird
+    correct: true
+  - en: Sign a framework contract with the cheapest supplier
+    de: Einen Rahmenvertrag mit dem günstigsten Lieferanten schließen
+    correct: false
+  - en: Count the warehouse and order what is missing
+    de: Das Lager zählen und bestellen, was fehlt
+    correct: false
+  - en: Pay the supplier invoices of the previous month
+    de: Die Lieferantenrechnungen des Vormonats bezahlen
+    correct: false
+  explanation:
+    en: To know what parts are needed, the expected quantity of finished goods must be forecast first; the bill of materials then turns it into parts. Counting stock comes after, to find the difference.
+    de: Um zu wissen, welche Teile gebraucht werden, muss zuerst die erwartete Menge an Fertigerzeugnissen prognostiziert werden; die Stückliste macht daraus die Teile. Das Zählen des Bestands kommt danach, um die Differenz zu finden.
+  source: https://openstax.org/books/introduction-business/pages/10-4-pulling-it-together-resource-planning
+- id: scp-f-avg
+  level: foundation
+  difficulty: 1000
+  type: single
+  stem:
+    en: Weekly sales were 120, 130, 110 and 140 units. What is the four-week moving average forecast for next week?
+    de: Die Wochenverkäufe lagen bei 120, 130, 110 und 140 Stück. Wie hoch ist die Prognose per gleitendem Vierwochendurchschnitt für nächste Woche?
+  options:
+  - en: 140 units, the most recent value
+    de: 140 Stück, der jüngste Wert
+    correct: false
+  - en: 500 units, the sum of the four weeks
+    de: 500 Stück, die Summe der vier Wochen
+    correct: false
+  - en: 125 units
+    de: 125 Stück
+    correct: true
+  - en: 120 units, the oldest value
+    de: 120 Stück, der älteste Wert
+    correct: false
+  explanation:
+    en: The moving average is (120 + 130 + 110 + 140) / 4 = 125. The sum is the four-week total, and single values ignore the other weeks.
+    de: Der gleitende Durchschnitt ist (120 + 130 + 110 + 140) / 4 = 125. Die Summe ist die Gesamtmenge der vier Wochen, und einzelne Werte ignorieren die übrigen Wochen.
+  source: https://en.wikipedia.org/wiki/Forecasting
+- id: scp-f-whip
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: What does the bullwhip effect describe?
+    de: Was beschreibt der Bullwhip-Effekt?
+  options:
+  - en: Orders to suppliers swing more than end-customer sales, increasing up the chain
+    de: Bestellungen bei Lieferanten schwanken stärker als die Endkundenverkäufe, zunehmend flussaufwärts
+    correct: true
+  - en: Prices rise whenever demand for a product goes up
+    de: Preise steigen immer, wenn die Nachfrage nach einem Produkt steigt
+    correct: false
+  - en: Deliveries get faster the further back in the chain a supplier is
+    de: Lieferungen werden schneller, je weiter hinten ein Lieferant in der Kette steht
+    correct: false
+  - en: A supplier delivers more than was ordered
+    de: Ein Lieferant liefert mehr, als bestellt wurde
+    correct: false
+  explanation:
+    en: Small changes in end-customer demand are amplified into larger order swings the further upstream you go. It is a planning problem, not a price or delivery-speed effect.
+    de: Kleine Änderungen der Endkundennachfrage werden flussaufwärts zu größeren Bestellschwankungen verstärkt. Es ist ein Planungsproblem, kein Preis- oder Liefergeschwindigkeitseffekt.
+  source: https://de.wikipedia.org/wiki/Bullwhip-Effekt
+- id: scp-p-sop
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: What is the purpose of sales and operations planning (S&OP)?
+    de: Was ist der Zweck der Absatz- und Produktionsplanung (S&OP)?
+  options:
+  - en: To set the annual price list for customers and to agree the sales targets for the sales team
+    de: Die jährliche Preisliste für Kundschaft festlegen und die Absatzziele für das Vertriebsteam vereinbaren
+    correct: false
+  - en: To pay supplier invoices on time
+    de: Lieferantenrechnungen pünktlich bezahlen
+    correct: false
+  - en: To integrate demand forecasts with supply planning so that departments share one plan
+    de: Bedarfsprognosen mit der Angebotsplanung verbinden, damit Abteilungen einen gemeinsamen Plan haben
+    correct: true
+  - en: To replace the ERP system with a spreadsheet
+    de: Das ERP-System durch eine Tabelle ersetzen
+    correct: false
+  explanation:
+    en: S&OP brings demand forecasting and supply planning together, balancing demand with available resources so that sales, operations, purchasing and finance work from the same assumptions.
+    de: S&OP führt Bedarfsprognose und Angebotsplanung zusammen und gleicht Nachfrage mit den verfügbaren Ressourcen ab, sodass Vertrieb, Betrieb, Einkauf und Finanzen von denselben Annahmen ausgehen.
+  source: https://en.wikipedia.org/wiki/Sales_and_operations_planning
+- id: scp-p-steps
+  level: practitioner
+  difficulty: 1250
+  type: multi
+  stem:
+    en: Which belong to the typical steps of an S&OP cycle? Select all that apply.
+    de: Welche gehören zu den typischen Schritten eines S&OP-Zyklus? Wähle alle zutreffenden aus.
+  options:
+  - en: Data gathering
+    de: Datenerhebung
+    correct: true
+  - en: Annual price negotiation with every supplier
+    de: Jährliche Preisverhandlung mit jedem Lieferanten
+    correct: false
+  - en: Demand planning
+    de: Bedarfsplanung
+    correct: true
+  - en: Supply planning
+    de: Angebotsplanung
+    correct: true
+  - en: Approval of individual supplier invoices
+    de: Freigabe einzelner Lieferantenrechnungen
+    correct: false
+  explanation:
+    en: The cycle runs from data gathering through demand planning and supply planning to a pre-meeting and an executive meeting. Price negotiations and invoice approval belong to other processes.
+    de: Der Zyklus reicht von der Datenerhebung über Bedarfs- und Angebotsplanung bis zu Vorbesprechung und Entscheidungsrunde der Leitung. Preisverhandlungen und Rechnungsfreigabe gehören zu anderen Prozessen.
+  source: https://en.wikipedia.org/wiki/Sales_and_operations_planning
+- id: scp-p-mrp
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: How does material requirements planning (MRP) work in principle?
+    de: Wie funktioniert die Materialbedarfsplanung (MRP) im Prinzip?
+  options:
+  - en: It derives timed material needs from a master schedule based on forecasts, and from stock on hand
+    de: Sie leitet zeitlich gestaffelte Materialbedarfe aus einem Produktionsplan auf Prognosebasis und aus dem Bestand ab
+    correct: true
+  - en: It ranks all suppliers by price, picks the cheapest one for every item and places the orders from that list
+    de: Sie reiht alle Lieferanten nach Preis, wählt für jeden Artikel den günstigsten und bestellt nach dieser Liste
+    correct: false
+  - en: It orders a fixed quantity every Monday regardless of use
+    de: Sie bestellt jeden Montag eine feste Menge, unabhängig vom Verbrauch
+    correct: false
+  - en: It forecasts customer demand without using any data
+    de: Sie prognostiziert die Kundennachfrage ganz ohne Daten
+    correct: false
+  explanation:
+    en: MRP uses a master schedule based on demand forecasts, plus the materials already on hand, to make sure materials are in the right place, amount and time. It is needs-driven, unlike a fixed-quantity rule.
+    de: Die MRP nutzt einen Produktionsplan auf Basis von Bedarfsprognosen sowie die vorhandenen Materialien, damit Material am richtigen Ort, in der richtigen Menge und zur richtigen Zeit bereitsteht. Sie ist bedarfsorientiert, anders als eine Regel mit fester Menge.
+  source: https://openstax.org/books/introduction-business/pages/10-4-pulling-it-together-resource-planning
+- id: scp-p-causes
+  level: practitioner
+  difficulty: 1350
+  type: multi
+  stem:
+    en: Which are typical causes of the bullwhip effect? Select all that apply.
+    de: Welche sind typische Ursachen des Bullwhip-Effekts? Wähle alle zutreffenden aus.
+  options:
+  - en: Each stage forecasts from the orders it sees, not from end-customer sales
+    de: Jede Stufe prognostiziert aus den Bestellungen, die sie sieht, nicht aus Endkundenverkäufen
+    correct: true
+  - en: Orders are bundled to save fixed order costs or get discounts
+    de: Bestellungen werden gebündelt, um Bestellfixkosten zu sparen oder Rabatte zu erhalten
+    correct: true
+  - en: End-customer sales data is shared along the whole chain
+    de: Endkundenverkaufsdaten werden entlang der ganzen Kette geteilt
+    correct: false
+  - en: Expected price changes trigger forward buying
+    de: Erwartete Preisänderungen lösen Vorratskäufe aus
+    correct: true
+  explanation:
+    en: Demand-signal processing, order batching, price fluctuations and shortage gaming amplify swings. Sharing real sales data is a countermeasure, not a cause.
+    de: Nachfragesignale, Auftragsbündelung, Preisschwankungen und Engpasspoker verstärken die Schwankungen. Das Teilen realer Verkaufsdaten ist eine Gegenmaßnahme, keine Ursache.
+  source: https://de.wikipedia.org/wiki/Bullwhip-Effekt
+- id: scp-a-mae
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: Forecast 100 units per month; actual demand was 90, 120, 80 and 130. What does the mean absolute error of 20 mean?
+    de: Prognose 100 Stück pro Monat; der Ist-Bedarf lag bei 90, 120, 80 und 130. Was bedeutet die mittlere absolute Abweichung von 20?
+  options:
+  - en: The forecast was 20 units too high in every single month, so it should be reduced by that amount
+    de: Die Prognose lag in jedem einzelnen Monat um 20 Stück zu hoch und sollte um diesen Betrag gesenkt werden
+    correct: false
+  - en: The forecast missed demand by 20 units per month on average, in either direction
+    de: Die Prognose verfehlte den Bedarf im Mittel um 20 Stück pro Monat, in beide Richtungen
+    correct: true
+  - en: The forecast was right on average because errors cancel out
+    de: Die Prognose stimmte im Mittel, weil sich die Fehler aufheben
+    correct: false
+  - en: The forecast is 20 percent too low
+    de: Die Prognose liegt 20 Prozent zu niedrig
+    correct: false
+  explanation:
+    en: The absolute errors are 10, 20, 20 and 30, so they average 20 units regardless of sign. Average demand is 105, so there is also a small bias of 5 units; the error measure alone does not show direction.
+    de: Die absoluten Fehler betragen 10, 20, 20 und 30 und liegen damit unabhängig vom Vorzeichen im Mittel bei 20 Stück. Der Durchschnittsbedarf beträgt 105, es gibt also auch eine kleine Verzerrung von 5 Stück; die Fehlerkennzahl allein zeigt die Richtung nicht.
+  source: https://en.wikipedia.org/wiki/Forecasting
+- id: scp-a-sop
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: Sales plans +30 percent next quarter, but your supplier needs 10 weeks and has limited capacity. What should purchasing do?
+    de: Der Vertrieb plant für das nächste Quartal +30 Prozent, doch dein Lieferant braucht 10 Wochen und hat begrenzte Kapazität. Was sollte der Einkauf tun?
+  options:
+  - en: Order 30 percent more at once to be on the safe side and tell the supplier to reserve the capacity
+    de: Sofort 30 Prozent mehr bestellen, um auf der sicheren Seite zu sein, und den Lieferanten die Kapazität reservieren lassen
+    correct: false
+  - en: Bring lead time and capacity limits into the pre-meeting so the gap is resolved before the decision
+    de: Lieferzeit und Kapazitätsgrenzen in die Vorbesprechung einbringen, damit die Lücke vor der Entscheidung geklärt wird
+    correct: true
+  - en: Wait until the actual orders arrive and react then
+    de: Abwarten, bis die tatsächlichen Aufträge eintreffen, und dann reagieren
+    correct: false
+  - en: Ask the supplier for a lower price instead
+    de: Stattdessen beim Lieferanten um einen niedrigeren Preis bitten
+    correct: false
+  explanation:
+    en: Purchasing contributes supplier lead times and capacity to the plan. Raising them before the decision lets the team adjust the plan or secure capacity; panic orders feed the bullwhip effect and waiting costs lead time.
+    de: Der Einkauf steuert Lieferzeiten und Kapazität zum Plan bei. Werden sie vor der Entscheidung eingebracht, kann das Team den Plan anpassen oder Kapazität sichern; Panikbestellungen füttern den Bullwhip-Effekt, und Abwarten kostet Lieferzeit.
+  source: https://en.wikipedia.org/wiki/Sales_and_operations_planning
+- id: scp-a-data
+  level: advanced
+  difficulty: 1550
+  type: multi
+  stem:
+    en: Which data helps find bottlenecks in the supply chain? Select all that apply.
+    de: Welche Daten helfen, Engpässe in der Lieferkette zu finden? Wähle alle zutreffenden aus.
+  options:
+  - en: Delivery performance by supplier and item group
+    de: Liefertreue je Lieferant und Artikelgruppe
+    correct: true
+  - en: Total spend per supplier, taken alone
+    de: Gesamtausgaben je Lieferant, für sich allein
+    correct: false
+  - en: Variation in supplier lead times
+    de: Schwankung der Lieferzeiten der Lieferanten
+    correct: true
+  - en: Number of purchase orders per buyer
+    de: Zahl der Bestellungen je Einkaufsperson
+    correct: false
+  - en: Weeks of demand covered by current stock
+    de: Durch den aktuellen Bestand gedeckte Wochen an Bedarf
+    correct: true
+  explanation:
+    en: Delivery performance, lead-time variation and stock coverage show where supply is likely to fail. Spend and workload per buyer describe other things and do not point to a bottleneck by themselves.
+    de: Liefertreue, Lieferzeitschwankung und Bestandsreichweite zeigen, wo die Versorgung voraussichtlich scheitert. Ausgaben und Arbeitslast je Einkaufsperson beschreiben anderes und weisen für sich allein nicht auf einen Engpass hin.
+  source: https://de.wikipedia.org/wiki/Liefertreue
+- id: scp-a-whip
+  level: advanced
+  difficulty: 1600
+  type: single
+  stem:
+    en: A distributor's orders swing wildly while retail sales are steady. Which measure fits best?
+    de: Die Bestellungen eines Großhändlers schwanken stark, während der Einzelhandelsabsatz stabil ist. Welche Maßnahme passt am besten?
+  options:
+  - en: Raise the safety stock at every stage of the chain
+    de: Den Sicherheitsbestand auf jeder Stufe der Kette erhöhen
+    correct: false
+  - en: Offer larger quantity discounts so that customers order in bulk
+    de: Größere Mengenrabatte anbieten, damit Kundschaft in großen Mengen bestellt
+    correct: false
+  - en: Add another forecast layer at each stage
+    de: Auf jeder Stufe eine weitere Prognoseebene einführen
+    correct: false
+  - en: Share end-customer sales data and agree on smaller, more frequent orders
+    de: Endkundenverkaufsdaten teilen und kleinere, häufigere Bestellungen vereinbaren
+    correct: true
+  explanation:
+    en: Shared real sales data removes the guesswork behind demand signals, and smaller orders reduce batching peaks. Quantity discounts reward bulk orders and worsen the swings; more safety stock and more forecast layers do not address the cause.
+    de: Geteilte reale Verkaufsdaten nehmen den Nachfragesignalen das Rätselraten, und kleinere Bestellungen senken Bündelungsspitzen. Mengenrabatte belohnen Großbestellungen und verschärfen die Schwankungen; mehr Sicherheitsbestand und mehr Prognoseebenen beheben die Ursache nicht.
+  source: https://de.wikipedia.org/wiki/Bullwhip-Effekt

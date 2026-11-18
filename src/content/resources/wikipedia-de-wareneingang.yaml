@@ -9,6 +9,6 @@ license: CC-BY-SA-4.0
 licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
 licenseVerifiedOn: 2026-11-18
 mode: link
-competencies: [purchase-order-invoice-management]
+competencies: [purchase-order-invoice-management, inventory-warehouse-management]
 levels: [foundation, practitioner]
 note: "Footer states CC BY-SA (Namensnennung - Weitergabe unter gleichen Bedingungen); no maintenance banner; read 2026-11-18. Link only. Read intro and Ablauforganisation: Warenannahme (physical check against delivery papers), Wareneingangskontrolle (quality, faulty deliveries rejected), booking."

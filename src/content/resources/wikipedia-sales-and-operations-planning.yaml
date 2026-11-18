@@ -1,0 +1,14 @@
+id: wikipedia-sales-and-operations-planning
+url: https://en.wikipedia.org/wiki/Sales_and_operations_planning
+title: "Sales and operations planning"
+provider: Wikipedia
+language: en
+format: article
+minutes: 12
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies: [supply-chain-planning-demand]
+levels: [practitioner, advanced]
+note: "Footer states CC BY-SA 4.0; no maintenance banner; read 2026-11-18 (intro, definitions, planning process, inputs). Link only. S&OP integrates demand forecasting with supply planning; typically monthly, horizon up to 18 months; steps from data gathering to executive meeting."

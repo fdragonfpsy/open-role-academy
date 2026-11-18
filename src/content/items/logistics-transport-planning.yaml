@@ -1,0 +1,293 @@
+competency: logistics-transport-planning
+items:
+- id: log-f-tul
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: Which three processes are the main processes of logistics?
+    de: Welche drei Prozesse sind die Hauptprozesse der Logistik?
+  options:
+  - en: Ordering, invoicing and paying
+    de: Bestellen, Rechnen und Bezahlen
+    correct: false
+  - en: Planning, forecasting and budgeting
+    de: Planen, Prognostizieren und Budgetieren
+    correct: false
+  - en: Transport, storage and handling
+    de: Transportieren, Lagern und Umschlagen
+    correct: true
+  - en: Packing, labelling and insuring
+    de: Verpacken, Beschriften und Versichern
+    correct: false
+  explanation:
+    en: Transport, storage and handling are the three main processes of logistics. Ordering, planning and paying belong to purchasing and finance.
+    de: Transportieren, Lagern und Umschlagen sind die drei Hauptprozesse der Logistik. Bestellen, Planen und Bezahlen gehören zu Einkauf und Finanzen.
+  source: https://de.wikipedia.org/wiki/Transportlogistik
+- id: log-f-spedition
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: What does a freight forwarder (Spedition) do?
+    de: Was macht eine Spedition?
+  options:
+  - en: Organises the transport and often buys it from carriers
+    de: Sie organisiert den Transport und kauft ihn oft bei Frachtführern ein
+    correct: true
+  - en: Keeps the goods in its own warehouse and never moves them
+    de: Sie bewahrt die Ware im eigenen Lager auf und bewegt sie nie
+    correct: false
+  - en: Decides which products the buyer should order next
+    de: Sie entscheidet, welche Produkte die einkaufende Seite als Nächstes bestellt
+    correct: false
+  - en: Checks and approves invoices on behalf of the buyer
+    de: Sie prüft und genehmigt Rechnungen im Auftrag der einkaufenden Seite
+    correct: false
+  explanation:
+    en: A forwarder organises the carriage of goods and usually buys the actual transport from carriers. It is not a storage-only firm or an invoice-checking service, although many forwarders add storage as an extra.
+    de: Eine Spedition organisiert die Beförderung von Gütern und kauft die eigentliche Transportleistung meist bei Frachtführern ein. Sie ist weder ein reines Lagerunternehmen noch ein Rechnungsprüfdienst, auch wenn viele zusätzlich Lagerung anbieten.
+  source: https://de.wikipedia.org/wiki/Spedition
+- id: log-f-hgb
+  level: foundation
+  difficulty: 1000
+  type: single
+  stem:
+    en: Under a German freight contract (section 407 HGB), what is the carrier obliged to do?
+    de: Wozu ist der Frachtführer nach dem deutschen Frachtvertrag (§ 407 HGB) verpflichtet?
+  options:
+  - en: Insure the goods against every kind of loss
+    de: Das Gut gegen jede Art von Verlust versichern
+    correct: false
+  - en: Carry the goods to the destination and deliver them to the consignee
+    de: Das Gut zum Bestimmungsort befördern und dem Empfänger abliefern
+    correct: true
+  - en: Collect the purchase price from the buyer for the seller
+    de: Den Kaufpreis beim Käufer für den Verkäufer einziehen
+    correct: false
+  - en: Store the goods until the consignee collects them
+    de: Das Gut lagern, bis der Empfänger es abholt
+    correct: false
+  explanation:
+    en: Under section 407 HGB the carrier carries the goods to the destination and delivers them to the consignee; the sender pays the freight. Insurance and collecting the price are not part of that definition. This is German law; ask Legal for details.
+    de: Nach § 407 HGB befördert der Frachtführer das Gut zum Bestimmungsort und liefert es an den Empfänger ab; die absendende Seite zahlt die Fracht. Versicherung und Einzug des Kaufpreises gehören nicht zu dieser Definition. Das ist deutsches Recht; Details klärt die Rechtsabteilung.
+  source: https://www.gesetze-im-internet.de/hgb/__407.html
+- id: log-f-otd
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: A supplier makes 40 deliveries and 34 arrive on time. What is the delivery performance?
+    de: Ein Lieferant macht 40 Lieferungen, 34 kommen pünktlich an. Wie hoch ist die Liefertreue?
+  options:
+  - en: 34 percent
+    de: 34 Prozent
+    correct: false
+  - en: 6 percent
+    de: 6 Prozent
+    correct: false
+  - en: 15 percent
+    de: 15 Prozent
+    correct: false
+  - en: 85 percent
+    de: 85 Prozent
+    correct: true
+  explanation:
+    en: Delivery performance = on-time deliveries / all deliveries = 34 / 40 = 85 percent. 15 percent is the share of late deliveries.
+    de: Liefertreue = pünktliche Lieferungen / alle Lieferungen = 34 / 40 = 85 Prozent. 15 Prozent ist der Anteil verspäteter Lieferungen.
+  source: https://de.wikipedia.org/wiki/Liefertreue
+- id: log-p-inco
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: What do Incoterms do?
+    de: Was leisten die Incoterms?
+  options:
+  - en: They fix the price and the currency of the contract
+    de: Sie legen Preis und Währung des Vertrags fest
+    correct: false
+  - en: They are binding law that applies without any agreement
+    de: Sie sind verbindliches Recht, das ohne Vereinbarung gilt
+    correct: false
+  - en: They state in every legal system when ownership passes
+    de: Sie legen in jeder Rechtsordnung fest, wann das Eigentum übergeht
+    correct: false
+  - en: They are standard clauses allocating duties, costs and risk of delivery
+    de: Sie sind Standardklauseln, die Pflichten, Kosten und Risiko der Lieferung verteilen
+    correct: true
+  explanation:
+    en: Incoterms are voluntary standard clauses that allocate tasks, costs and risk between seller and buyer. They do not set the price or payment terms and do not decide where title passes. Check the current rules.
+    de: Incoterms sind freiwillige Standardklauseln, die Aufgaben, Kosten und Risiko zwischen Verkäufer und Käufer verteilen. Sie legen weder Preis noch Zahlungsbedingungen fest und regeln nicht, wo das Eigentum übergeht. Prüfe die aktuellen Regeln.
+  source: https://en.wikipedia.org/wiki/Incoterms
+- id: log-p-bol
+  level: practitioner
+  difficulty: 1250
+  type: multi
+  stem:
+    en: Which are functions of a bill of lading? Select all that apply.
+    de: Welche Funktionen hat ein Konnossement? Wähle alle zutreffenden aus.
+  options:
+  - en: Receipt that the goods have been loaded
+    de: Empfangsbestätigung, dass die Ware verladen wurde
+    correct: true
+  - en: Proof that the supplier invoice has been paid
+    de: Nachweis, dass die Lieferantenrechnung bezahlt wurde
+    correct: false
+  - en: Evidence of the terms of the contract of carriage
+    de: Beleg der Bedingungen des Beförderungsvertrags
+    correct: true
+  - en: Document of title to the goods
+    de: Warenwertpapier über die Ware
+    correct: true
+  - en: Tax return for the goods crossing a border
+    de: Steuererklärung für den Grenzübertritt der Ware
+    correct: false
+  explanation:
+    en: A bill of lading is a receipt, evidence of the contract of carriage and a document of title. Payment proof and tax returns are separate documents.
+    de: Ein Konnossement ist Empfangsbestätigung, Beleg des Beförderungsvertrags und Warenwertpapier. Zahlungsnachweis und Steuererklärung sind eigene Dokumente.
+  source: https://en.wikipedia.org/wiki/Bill_of_lading
+- id: log-p-date
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: Which delivery performance figure is usually lower in practice?
+    de: Welche Liefertreue fällt in der Praxis meist niedriger aus?
+  options:
+  - en: Against the first confirmed date of the supplier
+    de: Gegen den ersten bestätigten Termin des Lieferanten
+    correct: false
+  - en: Both are always identical
+    de: Beide sind immer identisch
+    correct: false
+  - en: Against the date the customer originally wished
+    de: Gegen den Termin, den die Kundschaft ursprünglich wünschte
+    correct: true
+  - en: It depends only on which carrier is used
+    de: Es hängt nur davon ab, welcher Frachtführer genutzt wird
+    correct: false
+  explanation:
+    en: In most companies, performance against the customer-requested date is worse than against the first confirmed date, because the confirmed date already contains the supplier's known lead time. State which one you report.
+    de: In den meisten Unternehmen ist die Liefertreue zum Kundenwunschtermin schlechter als zum ersten bestätigten Termin, weil der bestätigte Termin die bekannte Lieferzeit des Lieferanten schon enthält. Nenne, welche du berichtest.
+  source: https://de.wikipedia.org/wiki/Liefertreue
+- id: log-p-carrier
+  level: practitioner
+  difficulty: 1350
+  type: single
+  stem:
+    en: A new carrier is 10 percent cheaper per shipment but late on 22 percent of shipments. What should you compare?
+    de: Ein neuer Frachtführer ist je Sendung 10 Prozent günstiger, aber bei 22 Prozent der Sendungen zu spät. Was solltest du vergleichen?
+  options:
+  - en: Only the price per shipment, since that is on the invoice
+    de: Nur den Preis je Sendung, denn der steht auf der Rechnung
+    correct: false
+  - en: Only the number of late shipments, ignoring the price
+    de: Nur die Zahl verspäteter Sendungen, ohne den Preis
+    correct: false
+  - en: The total cost per shipment including the cost of delays and extra stock
+    de: Die Gesamtkosten je Sendung einschließlich Verspätungs- und Mehrbestandskosten
+    correct: true
+  - en: The company size of the carrier, since larger means better
+    de: Die Größe des Frachtführers, denn größer heißt besser
+    correct: false
+  explanation:
+    en: 'The right comparison is total cost: price plus the cost of delays, expediting and extra safety stock. A cheaper price can turn out more expensive, as in the worked example of the unit.'
+    de: 'Der richtige Vergleich sind die Gesamtkosten: Preis plus Kosten für Verspätungen, Eilmaßnahmen und zusätzlichen Sicherheitsbestand. Ein günstigerer Preis kann sich als teurer erweisen, wie im Beispiel der Lerneinheit.'
+  source: https://de.wikipedia.org/wiki/Liefertreue
+- id: log-a-version
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: A contract names an Incoterm clause but no version of the rules and no place. What is the main risk?
+    de: Ein Vertrag nennt eine Incoterms-Klausel, aber weder die Version der Regeln noch einen Ort. Was ist das Hauptrisiko?
+  options:
+  - en: None, because the abbreviation alone is always clear
+    de: Keines, denn die Abkürzung allein ist immer eindeutig
+    correct: false
+  - en: The price becomes invalid until the version is added
+    de: Der Preis wird ungültig, bis die Version ergänzt ist
+    correct: false
+  - en: The customs office will refuse every shipment automatically
+    de: Der Zoll verweigert automatisch jede Sendung
+    correct: false
+  - en: The parties may read duties and risk transfer differently, so state clause, place and version
+    de: Die Parteien können Pflichten und Risikoübergang unterschiedlich lesen, also Klausel, Ort und Version nennen
+    correct: true
+  explanation:
+    en: The rules have been revised several times and the delivery place matters for who bears costs and risk. Name the clause, the place and the version to avoid disputes. Incoterms do not by themselves decide the price.
+    de: Die Regeln wurden mehrfach überarbeitet, und der Lieferort ist für die Kosten- und Risikotragung wichtig. Nenne Klausel, Ort und Version, um Streit zu vermeiden. Die Incoterms entscheiden nicht von sich aus über den Preis.
+  source: https://de.wikipedia.org/wiki/Incoterms
+- id: log-a-cause
+  level: advanced
+  difficulty: 1500
+  type: multi
+  stem:
+    en: Which findings suggest a late delivery was caused by the carrier rather than the supplier? Select all that apply.
+    de: Welche Befunde deuten darauf hin, dass eine verspätete Lieferung beim Frachtführer statt beim Lieferanten lag? Wähle alle zutreffenden aus.
+  options:
+  - en: The consignment note shows the goods were handed over on time
+    de: Der Frachtbrief zeigt, dass die Ware pünktlich übergeben wurde
+    correct: true
+  - en: The supplier moved its confirmed date several times before shipping
+    de: Der Lieferant hat seinen bestätigten Termin vor dem Versand mehrfach verschoben
+    correct: false
+  - en: Delays concentrate on one carrier and one lane
+    de: Die Verspätungen häufen sich bei einem Frachtführer und einer Relation
+    correct: true
+  - en: The order confirmation already showed a date after the wished date
+    de: Die Auftragsbestätigung nannte schon einen Termin nach dem Wunschtermin
+    correct: false
+  explanation:
+    en: A timely handover on the consignment note and delays clustered on one carrier and lane point to transport. Moved confirmations and a late confirmed date point to the supplier.
+    de: Eine pünktliche Übergabe laut Frachtbrief und Verspätungen, die sich auf einen Frachtführer und eine Relation häufen, deuten auf den Transport. Verschobene Bestätigungen und ein später bestätigter Termin deuten auf den Lieferanten.
+  source: https://de.wikipedia.org/wiki/Frachtbrief
+- id: log-a-kpi
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: A supplier reports 98 percent on-time delivery, your own data shows 82 percent. What is the best step?
+    de: Ein Lieferant meldet 98 Prozent Liefertreue, deine eigenen Daten zeigen 82 Prozent. Was ist der beste Schritt?
+  options:
+  - en: Trust the supplier figure because it knows its own shipments
+    de: Der Zahl des Lieferanten vertrauen, denn er kennt seine eigenen Sendungen
+    correct: false
+  - en: 'Align the definition: which date, which reference, per delivery or line, then compare'
+    de: 'Die Definition abgleichen: welches Datum, welcher Bezug, je Lieferung oder Position, dann vergleichen'
+    correct: true
+  - en: Charge penalties immediately using your own figure
+    de: Sofort Vertragsstrafen auf Basis der eigenen Zahl berechnen
+    correct: false
+  - en: Stop measuring delivery performance, since the figures differ
+    de: Die Messung der Liefertreue einstellen, da die Zahlen abweichen
+    correct: false
+  explanation:
+    en: Different dates (shipment, arrival, requested, first confirmed), counts and tolerances give different values. Agree on the definition first; penalties or giving up on the measure would be premature.
+    de: Unterschiedliche Termine (Versand, Ankunft, Wunsch, erster bestätigter Termin), Zählweisen und Toleranzen ergeben unterschiedliche Werte. Einigt euch zuerst auf die Definition; Strafen oder das Aufgeben der Kennzahl wären voreilig.
+  source: https://de.wikipedia.org/wiki/Liefertreue
+- id: log-a-doc
+  level: advanced
+  difficulty: 1600
+  type: single
+  stem:
+    en: Outside the United States, which of these documents can serve as a document of title to goods at sea?
+    de: Welches dieser Dokumente kann außerhalb der USA als Warenwertpapier für Ware auf See dienen?
+  options:
+  - en: A sea waybill, because it names the consignee
+    de: Ein Seefrachtbrief, denn er nennt den Empfänger
+    correct: false
+  - en: The commercial invoice, since it lists the goods
+    de: Die Handelsrechnung, denn sie führt die Ware auf
+    correct: false
+  - en: The bill of lading
+    de: Das Konnossement
+    correct: true
+  - en: The delivery note, since it travels with the goods
+    de: Der Lieferschein, denn er reist mit der Ware
+    correct: false
+  explanation:
+    en: A bill of lading is a document of title and is negotiable. In international trade outside the United States, sea waybills are not transferable and do not confer title; invoices and delivery notes are not documents of title either.
+    de: Ein Konnossement ist ein Warenwertpapier und übertragbar. Im internationalen Handel außerhalb der USA sind Seefrachtbriefe nicht übertragbar und verleihen keinen Eigentumstitel; Rechnungen und Lieferscheine sind ebenfalls keine Warenwertpapiere.
+  source: https://en.wikipedia.org/wiki/Bill_of_lading

@@ -1,0 +1,14 @@
+id: wikipedia-bill-of-lading
+url: https://en.wikipedia.org/wiki/Bill_of_lading
+title: "Bill of lading"
+provider: Wikipedia
+language: en
+format: article
+minutes: 12
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies: [logistics-transport-planning]
+levels: [practitioner, advanced]
+note: "Footer states CC BY-SA 4.0; no maintenance banner; read 2026-11-18 (intro and three functions). Link only. Receipt, evidence of the contract of carriage and document of title; sea waybills are not transferable and do not confer title (outside the US)."

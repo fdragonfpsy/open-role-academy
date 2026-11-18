@@ -1,0 +1,14 @@
+id: wikipedia-de-transportlogistik
+url: https://de.wikipedia.org/wiki/Transportlogistik
+title: "Transport (Logistik)"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies: [logistics-transport-planning]
+levels: [foundation, practitioner]
+note: "Footer states CC BY-SA (Namensnennung - Weitergabe unter gleichen Bedingungen); only a disambiguation hatnote, no maintenance banner; read 2026-11-18 (intro, Allgemeines). Link only. Transport, storage and handling (TUL) as the main logistics processes; decisions on route, means, company and chain."
