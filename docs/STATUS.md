@@ -1,5 +1,23 @@
 # Status
 
+## 2026-11-18 — Phase 4: Customer Service content batch 1 (fundamentals, communication-empathy, needs-problem-solving)
+
+**Done**
+- 18 unit files (9 en + 9 de, `status: ai-draft`), all three levels; own methods (first-contact resolution definition, 4 habits, 5-step cycle, handover template, empowerment limits, follow-up) labelled "our own". Identical headings/list counts en/de.
+- 36 items (12 per competency, 3 multi each).
+- 9 new link-only resources (`licenseVerifiedOn: 2026-11-18`, HTTP 200): OpenStax Marketing 11.2, 11.3, 13.2 (CC BY-NC-SA); en Customer service; de Kundendienst, Kundenzufriedenheit, Vier-Seiten-Modell, Problemlösen (CC BY-SA). Four existing Wikipedia resources re-tagged. Every competency has an OpenStax and a German-language resource.
+- Customer Service stays `status: draft`. No legal sources used ("ask legal counsel").
+
+**Reviewer to-dos**
+- OpenStax 11.2 (service-profit chain, empowerment, services triangle), 11.3 (five gaps, RATER), 13.2 (communication, noise, feedback).
+- Wikipedia-only claims: Rogers' attitudes, echo vs paraphrase, four sides of a message, problem-solving gap; "escalation at defined thresholds" seen only as a search snippet of en Customer_support.
+- German RATER terms ("Souveränität", "Reaktionsfähigkeit") are own translations; German wording of the 9 DE units.
+- Judgement items: csf-a-empower, csf-a-causes, cce-a-first, cce-a-close, cnp-a-limit, cnp-a-goodwill.
+
+**Counts:** roles 7 (1 draft) · competencies 68 · units 356 · items 736 · resources 380
+
+**Next:** Customer Service content: complaint-handling-de-escalation, omnichannel-support, ticketing-knowledge-base.
+
 ## 2026-11-18 — Phase 4: Customer Service framework (draft, no content yet)
 
 **Done**
