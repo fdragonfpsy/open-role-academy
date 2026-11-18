@@ -1,0 +1,290 @@
+competency: campaign-planning-budgeting
+items:
+  - id: cp-f-camp
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "Which description fits a marketing campaign best?"
+      de: "Welche Beschreibung passt am besten zu einer Marketingkampagne?"
+    options:
+      - en: "A permanent logo and colour palette that the company keeps for many years"
+        de: "Ein dauerhaftes Logo und eine Farbpalette, die das Unternehmen viele Jahre behält"
+        correct: false
+      - en: "A time-limited set of activities for one goal and one core message"
+        de: "Eine zeitlich begrenzte Folge von Maßnahmen für ein Ziel und eine Kernbotschaft"
+        correct: true
+      - en: "A single advert published once on one channel"
+        de: "Eine einzelne Anzeige, die einmal auf einem Kanal erscheint"
+        correct: false
+      - en: "The annual list of all company expenses"
+        de: "Die Jahresliste aller Unternehmensausgaben"
+        correct: false
+    explanation:
+      en: "A campaign is limited in time, aims at a defined goal and carries one core message across channels (integrated marketing communications)."
+      de: "Eine Kampagne ist zeitlich begrenzt, verfolgt ein festgelegtes Ziel und trägt eine Kernbotschaft über mehrere Kanäle (integrierte Marketingkommunikation)."
+    source: https://openstax.org/books/principles-marketing/pages/13-3-integrated-marketing-communications
+  - id: cp-f-action
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "According to OpenStax, what should an action programme show for each activity?"
+      de: "Was sollte ein Aktionsprogramm laut OpenStax für jede Maßnahme zeigen?"
+    options:
+      - en: "Only the cost, since time and people are not planned"
+        de: "Nur die Kosten, da Zeit und Personen nicht geplant werden"
+        correct: false
+      - en: "What is to be done, when, by whom and at what cost"
+        de: "Was zu tun ist, wann, von wem und zu welchen Kosten"
+        correct: true
+      - en: "The names of competitors and their prices"
+        de: "Die Namen der Wettbewerber und ihre Preise"
+        correct: false
+      - en: "The colours used in the advert"
+        de: "Die Farben, die in der Anzeige verwendet werden"
+        correct: false
+    explanation:
+      en: "OpenStax says strategies are translated into action programmes that show what, when, by whom and the cost, including start, review and completion times."
+      de: "OpenStax sagt, Strategien werden in Aktionsprogramme übersetzt, die zeigen, was, wann, von wem und zu welchen Kosten, einschließlich Start-, Prüf- und Abschlusszeiten."
+    source: https://openstax.org/books/principles-marketing/pages/2-3-purpose-and-structure-of-the-marketing-plan
+  - id: cp-f-budget
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "What is a budget, as the German Wikipedia article on Budgetierung describes it?"
+      de: "Was ist ein Budget laut dem deutschen Wikipedia-Artikel zur Budgetierung?"
+    options:
+      - en: "A list of everything the department has already spent so far this year"
+        de: "Eine Liste von allem, was die Abteilung dieses Jahr bereits ausgegeben hat"
+        correct: false
+      - en: "A plan in value terms for a period, checked later"
+        de: "Ein Plan in Wertgrößen für einen Zeitraum, später geprüft"
+        correct: true
+      - en: "A collection of creative ideas for the campaign"
+        de: "Eine Sammlung kreativer Ideen für die Kampagne"
+        correct: false
+      - en: "A promise to the agency to pay any invoice"
+        de: "Ein Versprechen an die Agentur, jede Rechnung zu bezahlen"
+        correct: false
+    explanation:
+      en: "Budgeting means drawing up the plan and later checking against it. A list of past spend is a report, not a budget."
+      de: "Budgetierung heißt, den Plan aufzustellen und später dagegen zu prüfen. Eine Liste vergangener Ausgaben ist ein Bericht, kein Budget."
+    source: https://de.wikipedia.org/wiki/Budgetierung
+  - id: cp-f-first
+    level: foundation
+    difficulty: 1050
+    type: multi
+    stem:
+      en: "Which questions should a one-page campaign plan answer? Select all that apply."
+      de: "Welche Fragen sollte ein einseitiger Kampagnenplan beantworten? Wähle alle zutreffenden aus."
+    options:
+      - en: "What do we want to achieve, and by when?"
+        de: "Was wollen wir bis wann erreichen?"
+        correct: true
+      - en: "Who is the target group?"
+        de: "Wer ist die Zielgruppe?"
+        correct: true
+      - en: "What is the one core message?"
+        de: "Was ist die eine Kernbotschaft?"
+        correct: true
+      - en: "Which design award could we win?"
+        de: "Welchen Designpreis könnten wir gewinnen?"
+        correct: false
+    explanation:
+      en: "Goal, target group and message come before channels and creative. Awards are not a planning question for a first campaign."
+      de: "Ziel, Zielgruppe und Botschaft kommen vor Kanälen und Gestaltung. Preise sind für eine erste Kampagne keine Planungsfrage."
+    source: https://openstax.org/books/principles-marketing/pages/2-3-purpose-and-structure-of-the-marketing-plan
+  - id: cp-p-kpi
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "Which formulation is a usable KPI for a campaign?"
+      de: "Welche Formulierung ist eine brauchbare KPI für eine Kampagne?"
+    options:
+      - en: "5,000 landing-page visits from tagged links by day 30"
+        de: "5.000 Landingpage-Besuche über markierte Links bis Tag 30"
+        correct: true
+      - en: "More awareness for our brand among everyone in our target group"
+        de: "Mehr Bekanntheit für unsere Marke bei der gesamten Zielgruppe"
+        correct: false
+      - en: "Be more active on social media than we were last year"
+        de: "Auf Social Media aktiver sein als im letzten Jahr"
+        correct: false
+      - en: "A creative and memorable campaign that people like to talk about"
+        de: "Eine kreative, einprägsame Kampagne, über die Menschen gern sprechen"
+        correct: false
+    explanation:
+      en: "A KPI needs a measurable value and a date. The other formulations state wishes without a target or a way to check them."
+      de: "Eine KPI braucht einen messbaren Wert und ein Datum. Die anderen Formulierungen nennen Wünsche ohne Zielwert und ohne Prüfmöglichkeit."
+    source: https://openstax.org/books/principles-marketing/pages/13-3-integrated-marketing-communications
+  - id: cp-p-pl
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "How does OpenStax describe the supporting marketing budget?"
+      de: "Wie beschreibt OpenStax das unterstützende Marketingbudget?"
+    options:
+      - en: "As a list of agency fees only"
+        de: "Als reine Liste von Agenturhonoraren"
+        correct: false
+      - en: "As a wish list that does not need revenue figures"
+        de: "Als Wunschliste, die keine Ertragszahlen braucht"
+        correct: false
+      - en: "As the previous year's spend, copied unchanged into the new plan"
+        de: "Als Ausgaben des Vorjahres, unverändert in den neuen Plan übernommen"
+        correct: false
+      - en: "Essentially as a projected profit-and-loss statement"
+        de: "Im Kern als geplante Gewinn- und Verlustrechnung"
+        correct: true
+    explanation:
+      en: "OpenStax: forecast units and average net price on the revenue side, production, distribution and marketing costs on the expense side."
+      de: "OpenStax: prognostizierte Stückzahl und durchschnittlicher Nettopreis auf der Ertragsseite, Produktions-, Vertriebs- und Marketingkosten auf der Aufwandsseite."
+    source: https://openstax.org/books/principles-marketing/pages/2-3-purpose-and-structure-of-the-marketing-plan
+  - id: cp-p-control
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "After week one, paid search has cost twice the planned amount. What is the best next step?"
+      de: "Nach Woche eins hat die bezahlte Suche das Doppelte des Geplanten gekostet. Was ist der beste nächste Schritt?"
+    options:
+      - en: "Wait until the campaign ends and then report it"
+        de: "Bis zum Kampagnenende warten und es dann berichten"
+        correct: false
+      - en: "Analyse the cause and adjust per the agreed rule"
+        de: "Die Ursache analysieren und nach der vereinbarten Regel nachsteuern"
+        correct: true
+      - en: "Add the missing amount to the budget without discussion"
+        de: "Den fehlenden Betrag ohne Diskussion zum Budget addieren"
+        correct: false
+      - en: "Remove the paid search figures from the report"
+        de: "Die Zahlen der bezahlten Suche aus dem Bericht streichen"
+        correct: false
+    explanation:
+      en: "OpenStax names controls as the last part of a plan: monitor metrics, analyse the root cause when something falls outside the range and adjust. Review dates and rules are set in advance."
+      de: "OpenStax nennt Kontrollen als letzten Teil eines Plans: Kennzahlen beobachten, bei Abweichungen die Ursache analysieren und nachsteuern. Prüftermine und Regeln legt man vorab fest."
+    source: https://openstax.org/books/principles-marketing/pages/2-3-purpose-and-structure-of-the-marketing-plan
+  - id: cp-p-brief
+    level: practitioner
+    difficulty: 1300
+    type: multi
+    stem:
+      en: "Which belong in a written agency brief? Select all that apply."
+      de: "Was gehört in ein schriftliches Agentur-Briefing? Wähle alle zutreffenden aus."
+    options:
+      - en: "Goal, KPIs and target group"
+        de: "Ziel, KPIs und Zielgruppe"
+        correct: true
+      - en: "Budget, timeline and who approves"
+        de: "Budget, Zeitplan und wer freigibt"
+        correct: true
+      - en: "Mandatory legal and brand rules"
+        de: "Verbindliche rechtliche und Markenregeln"
+        correct: true
+      - en: "The full customer list, sent without asking data protection"
+        de: "Die komplette Kundenliste, ohne den Datenschutz zu fragen"
+        correct: false
+    explanation:
+      en: "A brief fixes expectations and responsibilities. Personal data may only be shared after clearing it with the data protection officer."
+      de: "Ein Briefing legt Erwartungen und Zuständigkeiten fest. Personenbezogene Daten dürfen erst nach Klärung mit den Datenschutzbeauftragten weitergegeben werden."
+    source: https://de.wikipedia.org/wiki/Budgetierung
+  - id: cp-a-phase
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "Why release a campaign budget in phases?"
+      de: "Warum ein Kampagnenbudget in Phasen freigeben?"
+    options:
+      - en: "Because finance rules always require exactly two separate payments per campaign"
+        de: "Weil Finanzregeln pro Kampagne immer genau zwei getrennte Zahlungen verlangen"
+        correct: false
+      - en: "Early results show where money works; long forecasts are uncertain"
+        de: "Frühe Ergebnisse zeigen, wo Geld wirkt; lange Prognosen sind unsicher"
+        correct: true
+      - en: "Because agencies work better with smaller amounts"
+        de: "Weil Agenturen mit kleineren Beträgen besser arbeiten"
+        correct: false
+      - en: "Because a phased budget does not need to be checked"
+        de: "Weil ein phasenweises Budget nicht geprüft werden muss"
+        correct: false
+    explanation:
+      en: "The German Wikipedia article notes that budgets are mostly short-term because longer horizons lower forecasting certainty. Releasing the second part after first results lets you shift money."
+      de: "Der deutsche Wikipedia-Artikel nennt Budgets meist kurzfristig, weil längere Zeiträume die Prognosesicherheit verringern. Gibst du den zweiten Teil nach ersten Ergebnissen frei, kannst du Geld umschichten."
+    source: https://de.wikipedia.org/wiki/Budgetierung
+  - id: cp-a-same
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "Each channel team wants to write its own headline for the campaign. What fits an integrated approach?"
+      de: "Jedes Kanalteam will eine eigene Hauptbotschaft für die Kampagne schreiben. Was passt zu einem integrierten Ansatz?"
+    options:
+      - en: "Let each team decide freely, since channels differ"
+        de: "Jedes Team frei entscheiden lassen, da Kanäle verschieden sind"
+        correct: false
+      - en: "Use the same core message everywhere and adapt only the format to each channel"
+        de: "Überall dieselbe Kernbotschaft nutzen und nur das Format an den Kanal anpassen"
+        correct: true
+      - en: "Choose the channel with the biggest budget and use only that message"
+        de: "Den Kanal mit dem größten Budget wählen und nur dessen Botschaft nutzen"
+        correct: false
+      - en: "Change the message every week to avoid boredom"
+        de: "Die Botschaft jede Woche ändern, um Langeweile zu vermeiden"
+        correct: false
+    explanation:
+      en: "OpenStax says integrated marketing communications send the same message through different methods; otherwise the messages are disjointed and customers are confused."
+      de: "OpenStax sagt, integrierte Marketingkommunikation sende dieselbe Botschaft über verschiedene Methoden; sonst wirken Botschaften unzusammenhängend und Kundschaft ist verwirrt."
+    source: https://openstax.org/books/principles-marketing/pages/13-3-integrated-marketing-communications
+  - id: cp-a-over
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "The planned costs exceed the approved budget by a fifth. What is the most sensible response?"
+      de: "Die geplanten Kosten übersteigen das genehmigte Budget um ein Fünftel. Was ist die sinnvollste Reaktion?"
+    options:
+      - en: "Reduce every item by the same percentage without looking at results"
+        de: "Jede Position um denselben Prozentsatz kürzen, ohne auf Ergebnisse zu schauen"
+        correct: false
+      - en: "Rely on the reserve and hope that some costs turn out lower"
+        de: "Auf die Reserve vertrauen und hoffen, dass manche Kosten niedriger ausfallen"
+        correct: false
+      - en: "Drop or shrink the activities that contribute least to the objective"
+        de: "Die Maßnahmen streichen oder verkleinern, die am wenigsten zum Ziel beitragen"
+        correct: true
+      - en: "Ask the agency to deliver the same scope for a lower fee"
+        de: "Die Agentur bitten, denselben Umfang für ein geringeres Honorar zu liefern"
+        correct: false
+    explanation:
+      en: "If the total does not fit, remove the lowest-value activities. Blanket cuts ignore contribution, and the reserve is for surprises, not for a known gap. This is a working method of this course."
+      de: "Passt die Summe nicht, streiche die Maßnahmen mit dem geringsten Beitrag. Pauschale Kürzungen ignorieren den Beitrag, und die Reserve ist für Überraschungen, nicht für eine bekannte Lücke. Das ist eine Arbeitsmethode dieses Kurses."
+    source: https://de.wikipedia.org/wiki/Budgetierung
+  - id: cp-a-dep
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "The email to former participants is scheduled for Monday, but the consent check will only finish on Wednesday. What do you do?"
+      de: "Die E-Mail an frühere Teilnehmende ist für Montag geplant, die Einwilligungsprüfung wird aber erst am Mittwoch fertig. Was tust du?"
+    options:
+      - en: "Send on Monday and finish the check afterwards"
+        de: "Am Montag senden und die Prüfung danach abschließen"
+        correct: false
+      - en: "Send on Monday, but only to a small test group"
+        de: "Am Montag senden, aber nur an eine kleine Testgruppe"
+        correct: false
+      - en: "Skip the email and tell nobody"
+        de: "Die E-Mail streichen und niemandem etwas sagen"
+        correct: false
+      - en: "Move the email after the check and update the timeline"
+        de: "Die E-Mail hinter die Prüfung verschieben und den Zeitplan anpassen"
+        correct: true
+    explanation:
+      en: "A timeline marks dependencies: the email cannot go out before the consent check. Move the date, adjust the plan and tell the people affected."
+      de: "Ein Zeitplan markiert Abhängigkeiten: Die E-Mail darf nicht vor der Einwilligungsprüfung rausgehen. Verschiebe den Termin, passe den Plan an und informiere Betroffene."
+    source: https://de.wikipedia.org/wiki/Opt-in

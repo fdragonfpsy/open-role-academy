@@ -1,5 +1,24 @@
 # Status
 
+## 2026-11-18 — Phase 4: Marketing content batch 3 (social-media-community, email-marketing-automation, campaign-planning-budgeting)
+
+**Done**
+- 14 unit files (7 en + 7 de, `status: ai-draft`): social and campaign at foundation/practitioner, email at all three levels (role targets). Own methods (reply protocol, holdout group, flow spec, agency brief, phased budget) labelled as such. Worked examples are invented illustrations.
+- 36 items, 12 per competency (4 per level, 3 multi per competency); correct option uniquely longest in at most 4 of 9 single items.
+- 5 new resources (`mode: link`, `licenseVerifiedOn: 2026-11-18`, HTTP 200): OpenStax 16.2 (CC BY-NC-SA), EUR-Lex ePrivacy 2002/58 en/de (free-access), de.wikipedia Opt-in and Social Media Marketing. Existing OpenStax 2.3/13.3/16.3, Budgetierung, GDPR, UCPD re-tagged.
+- Marketing stays `status: draft`. QA issues: #54 and #58 were already fixed by merged PRs #60/#61; #53/#55/#56/#57 are older broad findings, not re-worked this run.
+
+**Reviewer to-dos**
+- de Opt-in claims (double opt-in not mandatory but expected by courts; BGH as proof; consent not resellable) and the fake-followers statement come from Wikipedia only.
+- Check ePrivacy Art. 13(1),(2),(4),(5), GDPR Art. 5, 7(3), 21(2)-(3), UCPD Annex I point 11 and Art. 7.
+- UWG is cited via Wikipedia only (gesetze-im-internet.de unreachable); units say "ask legal counsel".
+- Items em-a-stop and cp-a-over cite sources for own-method points. Judgement items: sm-p-influ, sm-a-report, sm-a-imprint, em-p-exception, cp-a-over, cp-a-dep.
+- German wording of the 7 DE units.
+
+**Counts:** roles 6 (1 draft) · competencies 58 · units 332 · items 688 · resources 370
+
+**Next:** Marketing content: marketing-analytics-attribution; then publish Marketing and run the quality pass.
+
 ## 2026-11-17 — Phase 4: Marketing content batch 2 (brand-messaging, content-marketing-copywriting, digital-channels-seo-sem)
 
 **Done**

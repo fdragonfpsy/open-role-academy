@@ -1,0 +1,81 @@
+---
+id: email-marketing-automation-practitioner
+competency: email-marketing-automation
+level: practitioner
+title: "Double opt-in, withdrawal, segmentation and testing"
+objectives:
+  - "Distinguish single, confirmed and double opt-in and say why documentation matters."
+  - "Explain why consent cannot simply be passed on and why bought lists need legal advice."
+  - "Describe the narrow existing-customer exception and when to involve legal counsel."
+  - "Handle objection and withdrawal with a suppression list."
+  - "Design a simple, one-variable email test judged by a goal-matching metric."
+minutes: 25
+resources:
+  - eurlex-eprivacy-directive-2002-58
+  - eurlex-de-eprivacy-richtlinie-2002-58
+  - wikipedia-de-opt-in
+  - eurlex-gdpr-regulation-2016-679
+  - openstax-marketing-online-metrics
+status: ai-draft
+sources:
+  - title: "Directive 2002/58/EC (ePrivacy Directive)"
+    author: European Parliament and Council of the EU
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32002L0058
+    license: free-access
+    licenseUrl: https://eur-lex.europa.eu/content/legal-notice/legal-notice.html
+    usage: cited
+  - title: "Opt-in"
+    author: Wikipedia contributors
+    url: https://de.wikipedia.org/wiki/Opt-in
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Regulation (EU) 2016/679 (General Data Protection Regulation)"
+    author: European Parliament and Council of the EU
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+    license: free-access
+    licenseUrl: https://eur-lex.europa.eu/content/legal-notice/legal-notice.html
+    usage: cited
+  - title: "Principles of Marketing, 16.3: Metrics Used to Evaluate the Success of Online Marketing"
+    author: OpenStax
+    url: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+At practitioner level you do not only send emails, you run a list: you document consent, honour withdrawals, split the audience and test what works. Mistakes here are legal risks as well as marketing risks.
+
+## Single, confirmed and double opt-in
+
+The German Wikipedia article on opt-in distinguishes three procedures. With single opt-in a person ticks a box or enters an address once. The problem is that anyone can enter any address, including wrong ones or those of third parties. With double opt-in a second step is added: the system sends a confirmation message and the subscription only becomes effective once the person confirms. The article says double opt-in is not required by law, but that courts increasingly expect it, and that the Federal Court of Justice (BGH) held it suitable to help show that consent was given. Logging the steps allows you to prove later whether and when permission was granted.
+
+## Consent belongs to the collector
+
+The same article states that an opt-in is only valid for the party to whom it was given and cannot simply be passed on or resold. So bought or rented lists are a red flag: ask legal counsel and the data protection officer before using any list you did not collect yourself.
+
+## The existing-customer exception
+
+ePrivacy Article 13(2) allows a company that obtained a customer's email address in the context of selling a product or service to use it for direct marketing of its own similar products or services, if customers were clearly given the chance to object free of charge and in an easy manner, both when the address was collected and on each message, and they did not refuse at the start. This is a narrow exception with several conditions. The German details sit in the UWG, which could not be checked for this course. Ask legal counsel before relying on it.
+
+## Objection and withdrawal
+
+Under GDPR Article 21(2) and (3), a person may object at any time to processing for direct marketing, and then the data must no longer be processed for that purpose. Article 7(3) says withdrawal of consent must be as easy as giving it. Operationally (our own working method): an unsubscribe must take effect quickly, be stored in a suppression list that your tools check before every send, and never depend on logging in or writing a letter.
+
+## Segmentation, subject lines, testing
+
+Segment by what people signed up for, their behaviour and their stage, not by guesses. A subject line should say honestly what the email contains; our own working method is to write two versions and test them. Change one element per test, send to randomly split groups of the same list and compare a metric that matches your goal. OpenStax names conversions as the key metric when visitors become customers, so a high open rate alone proves little.
+
+## Worked example
+
+Illustration only; invented company. An online shop for garden tools in Bremen runs a double opt-in newsletter. It stores the sign-up time, the form text and the confirmation click in its tool. A subscriber unsubscribes on Monday; the tool adds her to the suppression list immediately. The team tests two subject lines on random halves of its list and counts orders from tagged links rather than opens.
+
+## Key takeaways
+
+- Double opt-in adds confirmation and documentation; it is not law, but courts increasingly expect it.
+- Consent belongs to whoever collected it; do not buy or rent lists without legal advice.
+- The existing-customer exception is narrow with several conditions; ask legal counsel.
+- Objection and withdrawal must be easy and respected through a suppression list.
+- Test one change at a time and judge by conversions, not by opens alone.
