@@ -227,7 +227,7 @@ Make offers known and wanted: understand markets and customers, define target gr
 | Self-organisation and project basics | core | 3 | F | P | P | — |
 | Working with data | core | 3 | F | F | P | digital-ai-literacy |
 
-## Procurement & Supply Chain (`procurement-supply-chain`, role, draft)
+## Procurement & Supply Chain (`procurement-supply-chain`, role, published)
 
 Buy and move goods and services reliably: understand purchase-to-pay, source strategically, select and evaluate suppliers, run tenders and contracts, negotiate and manage supplier relationships, handle orders and invoices, control inventory and warehouses, plan logistics and transport, balance supply and demand, and manage supply chain risk and sustainability.
 
