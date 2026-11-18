@@ -1,0 +1,290 @@
+competency: customer-communication-empathy
+items:
+  - id: cce-f-active
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "What distinguishes active listening from the echo technique?"
+      de: "Wodurch unterscheidet sich aktives Zuhören von der Echo-Technik?"
+    options:
+      - en: "It returns the meaning of what was said, not just the last words"
+        de: "Es gibt den Sinn des Gesagten zurück, nicht nur die letzten Worte"
+        correct: true
+      - en: "It means staying silent throughout and never reacting to what is said"
+        de: "Es heißt, durchgehend zu schweigen und nie auf das Gesagte zu reagieren"
+        correct: false
+      - en: "It means agreeing with everything the speaker says"
+        de: "Es heißt, allem zuzustimmen, was die sprechende Person sagt"
+        correct: false
+      - en: "It means taking notes instead of answering"
+        de: "Es heißt, Notizen zu machen, statt zu antworten"
+        correct: false
+    explanation:
+      en: "The echo technique only repeats the last word or words. Active listening reflects the content and, in Rogers' sense, the feeling, based on an open, accepting attitude. It does not require agreement."
+      de: "Die Echo-Technik wiederholt nur das letzte Wort oder die letzten Worte. Aktives Zuhören spiegelt den Inhalt und im Sinne von Rogers das Gefühl, auf Basis einer offenen, akzeptierenden Haltung. Zustimmung ist dafür nicht nötig."
+    source: https://de.wikipedia.org/wiki/Aktives_Zuh%C3%B6ren
+  - id: cce-f-noise
+    level: foundation
+    difficulty: 950
+    type: multi
+    stem:
+      en: "Which of these count as noise in a customer contact? Select all that apply."
+      de: "Was zählt in einem Kundenkontakt als Störgeräusch (Noise)? Wähle alle zutreffenden aus."
+    options:
+      - en: "A poor phone line"
+        de: "Eine schlechte Telefonleitung"
+        correct: true
+      - en: "A customer reading your reply while being distracted"
+        de: "Eine Kundin, die deine Antwort abgelenkt liest"
+        correct: true
+      - en: "A very long email in which the answer is hidden"
+        de: "Eine sehr lange E-Mail, in der die Antwort versteckt ist"
+        correct: true
+      - en: "The customer's clear wish to know the delivery date"
+        de: "Der klare Wunsch der Kundschaft, den Liefertermin zu erfahren"
+        correct: false
+    explanation:
+      en: "Noise is anything that gets in the way of the receiver getting and decoding a message. A clear wish is the content of the contact, not interference."
+      de: "Noise ist alles, was dem Empfänger das Aufnehmen und Dekodieren einer Botschaft erschwert. Ein klarer Wunsch ist der Inhalt des Kontakts, keine Störung."
+    source: https://openstax.org/books/principles-marketing/pages/13-2-the-communication-process
+  - id: cce-f-clarify
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "A customer writes 'It doesn't work.' What is the best first reply?"
+      de: "Eine Kundin schreibt „Es geht nicht.“ Was ist die beste erste Antwort?"
+    options:
+      - en: "Restate briefly and ask one clarifying question, such as what happens when they try"
+        de: "Kurz wiedergeben und eine klärende Frage stellen, etwa was passiert, wenn sie es versucht"
+        correct: true
+      - en: "Send the full troubleshooting guide at once so the customer can try everything themselves"
+        de: "Sofort die komplette Anleitung zur Fehlersuche schicken, damit die Kundin alles selbst ausprobieren kann"
+        correct: false
+      - en: "Ask five questions in one message to save time"
+        de: "Fünf Fragen in einer Nachricht stellen, um Zeit zu sparen"
+        correct: false
+      - en: "Reply that the product works as designed"
+        de: "Antworten, dass das Produkt wie vorgesehen funktioniert"
+        correct: false
+    explanation:
+      en: "One clarifying question at a time collects facts without overloading the customer. Sending a generic guide or claiming 'as designed' skips understanding what is actually happening."
+      de: "Eine klärende Frage nach der anderen sammelt Fakten, ohne die Kundschaft zu überfordern. Eine allgemeine Anleitung oder „funktioniert wie vorgesehen“ überspringt das Verstehen dessen, was tatsächlich passiert."
+    source: https://openstax.org/books/principles-marketing/pages/13-2-the-communication-process
+  - id: cce-f-close
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "Which closing of a contact is best?"
+      de: "Welcher Abschluss eines Kontakts ist am besten?"
+    options:
+      - en: "'I will restore your account today and write to you by 4 pm.'"
+        de: "„Ich stelle dein Konto heute wieder her und schreibe dir bis 16 Uhr.“"
+        correct: true
+      - en: "'We will look into it.'"
+        de: "„Wir sehen uns das an.“"
+        correct: false
+      - en: "'Please contact us again if it is still not working.'"
+        de: "„Melde dich bitte erneut, wenn es noch nicht funktioniert.“"
+        correct: false
+      - en: "'This is not our department.'"
+        de: "„Dafür sind wir nicht zuständig.“"
+        correct: false
+    explanation:
+      en: "A good close states what will happen, who does it and by when. 'We will look into it' and 'contact us again' leave the customer without a next step or time, and 'not our department' gives no help."
+      de: "Ein guter Abschluss nennt, was passiert, wer es tut und bis wann. „Wir sehen uns das an“ und „melde dich erneut“ lassen die Kundschaft ohne nächsten Schritt und Zeitpunkt, und „nicht zuständig“ hilft nicht weiter."
+    source: https://de.wikipedia.org/wiki/Aktives_Zuh%C3%B6ren
+  - id: cce-p-sides
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "A customer writes 'This is the third time I have to ask!' Which side of the message is the appeal?"
+      de: "Ein Kunde schreibt „Jetzt muss ich schon zum dritten Mal nachfragen!“ Welche Seite der Nachricht ist der Appell?"
+    options:
+      - en: "Fix this now and do not make me ask again"
+        de: "Löst das jetzt und lasst mich nicht noch einmal nachfragen"
+        correct: true
+      - en: "I have already contacted you three times about this matter"
+        de: "Ich habe mich schon dreimal wegen dieser Sache bei euch gemeldet"
+        correct: false
+      - en: "I am annoyed"
+        de: "Ich bin verärgert"
+        correct: false
+      - en: "You have let me down"
+        de: "Ihr habt mich im Stich gelassen"
+        correct: false
+    explanation:
+      en: "The appeal is what the speaker wants the receiver to do. 'Three times' is the matter, 'I am annoyed' is the self-revelation and 'you have let me down' is the relationship side."
+      de: "Der Appell ist das, wozu die empfangende Person veranlasst werden soll. „Dreimal“ ist die Sache, „ich bin verärgert“ die Selbstkundgabe und „ihr habt mich im Stich gelassen“ die Beziehungsseite."
+    source: https://de.wikipedia.org/wiki/Vier-Seiten-Modell
+  - id: cce-p-empathy
+    level: practitioner
+    difficulty: 1200
+    type: multi
+    stem:
+      en: "Which reply elements show empathy without overpromising? Select all that apply."
+      de: "Welche Elemente einer Antwort zeigen Empathie, ohne zu viel zu versprechen? Wähle alle zutreffenden aus."
+    options:
+      - en: "Naming the situation, such as that the customer already wrote twice"
+        de: "Die Situation benennen, etwa dass die Kundschaft schon zweimal geschrieben hat"
+        correct: true
+      - en: "Saying what you will do next and by when"
+        de: "Sagen, was du als Nächstes tust und bis wann"
+        correct: true
+      - en: "Saying 'I know exactly how you feel'"
+        de: "Sagen „Ich weiß genau, wie du dich fühlst“"
+        correct: false
+      - en: "Promising 'this will never happen again'"
+        de: "Versprechen „das passiert nie wieder“"
+        correct: false
+    explanation:
+      en: "Acknowledging the situation and giving a concrete next step make the customer feel valued. Claiming to know their feelings or promising outcomes you do not control can feel hollow and may be broken."
+      de: "Die Situation anzuerkennen und einen konkreten nächsten Schritt zu nennen gibt Wertschätzung. Zu behaupten, die Gefühle zu kennen, oder Ergebnisse zu versprechen, die du nicht kontrollierst, wirkt leer und kann gebrochen werden."
+    source: https://openstax.org/books/principles-marketing/pages/11-3-the-gap-model-of-service-quality
+  - id: cce-p-positive
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "Which rewrite of 'We cannot ship before Monday' is best?"
+      de: "Welche Umformulierung von „Vor Montag können wir nicht versenden“ ist am besten?"
+    options:
+      - en: "'Your order ships on Monday; I can mark it as a priority.'"
+        de: "„Deine Bestellung geht am Montag raus; ich kann sie als vorrangig markieren.“"
+        correct: true
+      - en: "'Unfortunately that is impossible.'"
+        de: "„Das ist leider unmöglich.“"
+        correct: false
+      - en: "'It should ship quite soon, I think.'"
+        de: "„Es geht wohl ziemlich bald raus, glaube ich.“"
+        correct: false
+      - en: "'Please be patient, we are very busy.'"
+        de: "„Bitte hab Geduld, wir haben sehr viel zu tun.“"
+        correct: false
+    explanation:
+      en: "Positive wording states what can be done and gives a concrete date without hiding the fact. The other replies are negative, vague or put the burden on the customer."
+      de: "Positive Formulierung nennt, was möglich ist, und ein konkretes Datum, ohne die Tatsache zu verbergen. Die anderen Antworten sind negativ, vage oder legen die Last auf die Kundschaft."
+    source: https://openstax.org/books/principles-marketing/pages/11-3-the-gap-model-of-service-quality
+  - id: cce-p-tone
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "A customer in a hurry writes two short lines; another sends a long, unsure message. What is the most suitable reaction?"
+      de: "Ein eiliger Kunde schreibt zwei kurze Zeilen, eine andere Person schickt eine lange, unsichere Nachricht. Was ist die passendste Reaktion?"
+    options:
+      - en: "Answer briefly and practically for the first, explain more for the second"
+        de: "Beim ersten kurz und praktisch antworten, beim zweiten mehr erklären"
+        correct: true
+      - en: "Use the same standard template for both customers to stay consistent and fair"
+        de: "Für beide Personen dieselbe Standardvorlage nutzen, um konsistent und fair zu bleiben"
+        correct: false
+      - en: "Mirror each customer's mood, including irritation"
+        de: "Die Stimmung jeder Person spiegeln, auch Gereiztheit"
+        correct: false
+      - en: "Answer the long message first because it has more content"
+        de: "Die lange Nachricht zuerst beantworten, weil sie mehr Inhalt hat"
+        correct: false
+    explanation:
+      en: "Tone, length and speed should fit the person and situation, while respect stays constant. A single template ignores differences, and mirroring irritation escalates. Order of work depends on urgency, not message length."
+      de: "Tonalität, Länge und Tempo sollten zu Person und Situation passen, während der Respekt konstant bleibt. Eine einzige Vorlage ignoriert Unterschiede, und Spiegeln von Gereiztheit eskaliert. Die Reihenfolge richtet sich nach Dringlichkeit, nicht nach Länge."
+    source: https://de.wikipedia.org/wiki/Vier-Seiten-Modell
+  - id: cce-a-first
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "A customer's chat message is mostly blame ('You people never test anything'), with a question buried at the end. What is the most defensible first reply?"
+      de: "Die Chat-Nachricht eines Kunden besteht großteils aus Vorwürfen („Ihr testet ja nichts“), mit einer Frage am Ende. Was ist die vertretbarste erste Antwort?"
+    options:
+      - en: "Acknowledge the frustration in one sentence, then ask the key fact question"
+        de: "Den Frust in einem Satz anerkennen, dann die entscheidende Faktenfrage stellen"
+        correct: true
+      - en: "Defend the testing process first and explain how many checks every release passes"
+        de: "Zuerst den Testprozess verteidigen und erklären, wie viele Prüfungen jede Version durchläuft"
+        correct: false
+      - en: "Answer only the buried question and ignore the tone"
+        de: "Nur die versteckte Frage beantworten und den Ton ignorieren"
+        correct: false
+      - en: "Write several paragraphs of apology before any fact"
+        de: "Mehrere Absätze Entschuldigung schreiben, bevor ein Fakt kommt"
+        correct: false
+    explanation:
+      en: "When the relationship side is loud, brief acknowledgement lowers the barrier, and the fact question moves the case forward. Defending triggers more conflict, ignoring tone can be heard as dismissive, and long apologies bury the content."
+      de: "Ist die Beziehungsseite laut, senkt kurze Anerkennung die Hürde, und die Faktenfrage bringt den Fall voran. Verteidigung löst mehr Konflikt aus, den Ton zu ignorieren kann abweisend wirken, und lange Entschuldigungen begraben den Inhalt."
+    source: https://de.wikipedia.org/wiki/Vier-Seiten-Modell
+  - id: cce-a-text
+    level: advanced
+    difficulty: 1500
+    type: multi
+    stem:
+      en: "In chat and email you cannot see the customer's face. Which measures compensate? Select all that apply."
+      de: "Im Chat und per E-Mail siehst du das Gesicht der Kundschaft nicht. Welche Maßnahmen gleichen das aus? Wähle alle zutreffenden aus."
+    options:
+      - en: "Put the answer first and number the steps"
+        de: "Die Antwort an den Anfang stellen und Schritte nummerieren"
+        correct: true
+      - en: "Ask a check question that needs a real answer"
+        de: "Eine Kontrollfrage stellen, die eine echte Antwort braucht"
+        correct: true
+      - en: "Restate the agreement at the end"
+        de: "Die Vereinbarung am Ende noch einmal wiedergeben"
+        correct: true
+      - en: "Write longer messages so nothing is missed"
+        de: "Längere Nachrichten schreiben, damit nichts fehlt"
+        correct: false
+    explanation:
+      en: "Without body language feedback is poorer, so structure, check questions and a closing summary make understanding visible. Longer text adds noise and makes the key point harder to find."
+      de: "Ohne Körpersprache ist das Feedback ärmer, daher machen Struktur, Kontrollfragen und eine Schlusszusammenfassung das Verständnis sichtbar. Längerer Text erhöht die Störungen und versteckt den Kern."
+    source: https://openstax.org/books/principles-marketing/pages/13-2-the-communication-process
+  - id: cce-a-decode
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "A customer repeats the same mistake after your instructions. What is the best interpretation and response?"
+      de: "Eine Kundin macht nach deiner Anleitung denselben Fehler erneut. Was ist die beste Deutung und Reaktion?"
+    options:
+      - en: "The wording may have been decoded differently: rephrase and check"
+        de: "Die Formulierung wurde womöglich anders dekodiert: umformulieren und prüfen"
+        correct: true
+      - en: "The customer is careless: repeat the instructions louder"
+        de: "Die Kundin ist nachlässig: die Anleitung nachdrücklicher wiederholen"
+        correct: false
+      - en: "The customer does not want to solve it: close the case"
+        de: "Die Kundin will es nicht lösen: den Fall schließen"
+        correct: false
+      - en: "The instructions are fine: send a link to the full manual"
+        de: "Die Anleitung ist in Ordnung: einen Link zum ganzen Handbuch schicken"
+        correct: false
+    explanation:
+      en: "Decoding depends on the receiver's knowledge and experience, so a repeated error is a signal to change the encoding. Blaming the customer or closing the case ignores the feedback you have just received. A manual may help later, but not instead of rephrasing."
+      de: "Die Dekodierung hängt von Wissen und Erfahrung des Empfängers ab, daher ist ein wiederholter Fehler ein Signal, die Kodierung zu ändern. Der Kundschaft die Schuld zu geben oder den Fall zu schließen ignoriert das soeben erhaltene Feedback. Ein Handbuch kann später helfen, aber nicht statt des Umformulierens."
+    source: https://openstax.org/books/principles-marketing/pages/13-2-the-communication-process
+  - id: cce-a-close
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "The outcome is not what the customer wanted: a refund is refused under the policy. Which close is most defensible?"
+      de: "Das Ergebnis entspricht nicht dem Wunsch: Eine Erstattung wird nach Richtlinie abgelehnt. Welcher Abschluss ist am vertretbarsten?"
+    options:
+      - en: "State the decision and reason plainly, offer alternatives and name the next step"
+        de: "Entscheidung und Grund klar nennen, Alternativen anbieten und den nächsten Schritt nennen"
+        correct: true
+      - en: "Soften it by saying 'maybe later' or 'we will see', to keep the customer calm for now"
+        de: "Es mit „vielleicht später“ oder „mal sehen“ abschwächen, um die Kundschaft vorerst ruhig zu halten"
+        correct: false
+      - en: "Hand the customer to a manager without explanation"
+        de: "Die Kundschaft ohne Erklärung an eine Führungskraft übergeben"
+        correct: false
+      - en: "Repeat the policy sentence until the customer accepts it"
+        de: "Den Richtliniensatz wiederholen, bis die Kundschaft ihn akzeptiert"
+        correct: false
+    explanation:
+      en: "A transparent no with reasons and options protects trust and avoids a later communication gap. A hollow 'maybe' creates a promise you cannot keep, repeating the rule ignores the customer's need, and a handover is justified only if a defined escalation threshold applies."
+      de: "Ein transparentes Nein mit Gründen und Optionen schützt das Vertrauen und vermeidet eine spätere Kommunikationslücke. Ein leeres „vielleicht“ schafft ein Versprechen, das du nicht halten kannst, das Wiederholen der Regel ignoriert den Bedarf, und eine Übergabe ist nur bei einer festgelegten Eskalationsschwelle gerechtfertigt."
+    source: https://openstax.org/books/principles-marketing/pages/11-3-the-gap-model-of-service-quality

@@ -1,0 +1,290 @@
+competency: customer-needs-problem-solving
+items:
+  - id: cnp-f-gap
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "How can a customer problem be described in the sense of problem solving?"
+      de: "Wie lässt sich ein Kundenproblem im Sinne des Problemlösens beschreiben?"
+    options:
+      - en: "As a gap between the current state and the wanted state"
+        de: "Als Lücke zwischen Ist-Zustand und Soll-Zustand"
+        correct: true
+      - en: "As a mistake the customer has made when using the product"
+        de: "Als Fehler, den die Kundschaft bei der Nutzung des Produkts gemacht hat"
+        correct: false
+      - en: "As a question that always needs a refund"
+        de: "Als Frage, die immer eine Erstattung braucht"
+        correct: false
+      - en: "As a complaint that must be closed quickly"
+        de: "Als Beschwerde, die schnell geschlossen werden muss"
+        correct: false
+    explanation:
+      en: "Problem solving starts with dissatisfaction about the current state and aims at a wanted state. Not every problem is the customer's mistake, needs a refund or is a complaint."
+      de: "Problemlösen beginnt mit der Unzufriedenheit über den Ist-Zustand und zielt auf einen Soll-Zustand. Nicht jedes Problem ist ein Kundenfehler, braucht eine Erstattung oder ist eine Beschwerde."
+    source: https://de.wikipedia.org/wiki/Probleml%C3%B6sen
+  - id: cnp-f-need
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "A customer says 'Cancel my order!' What is the best next step?"
+      de: "Eine Kundin sagt „Storniert meine Bestellung!“ Was ist der beste nächste Schritt?"
+    options:
+      - en: "Ask what they want to achieve and what led to the wish"
+        de: "Fragen, was sie erreichen will und was zu dem Wunsch geführt hat"
+        correct: true
+      - en: "Cancel immediately without any question"
+        de: "Sofort stornieren, ohne zu fragen"
+        correct: false
+      - en: "Explain why cancelling is a bad idea"
+        de: "Erklären, warum Stornieren keine gute Idee ist"
+        correct: false
+      - en: "Ask the customer to fill in a form first"
+        de: "Die Kundin bitten, zuerst ein Formular auszufüllen"
+        correct: false
+    explanation:
+      en: "The request is 'cancel', but the need may be a late delivery or a wrong item that another solution could address. Asking before acting finds the need; cancelling blindly or arguing may solve the wrong problem. If cancelling is what they want, you can then act."
+      de: "Das Anliegen ist „stornieren“, doch der Bedarf kann eine späte Lieferung oder ein falscher Artikel sein, den eine andere Lösung abdecken könnte. Fragen vor dem Handeln findet den Bedarf; blind zu stornieren oder zu argumentieren löst womöglich das falsche Problem. Will sie stornieren, kannst du danach handeln."
+    source: https://openstax.org/books/principles-marketing/pages/11-3-the-gap-model-of-service-quality
+  - id: cnp-f-facts
+    level: foundation
+    difficulty: 1000
+    type: multi
+    stem:
+      en: "Which facts are useful to collect early in a technical support contact? Select all that apply."
+      de: "Welche Fakten sind zu Beginn eines technischen Supportkontakts nützlich? Wähle alle zutreffenden aus."
+    options:
+      - en: "What exactly happens and any error message"
+        de: "Was genau passiert und welche Fehlermeldung erscheint"
+        correct: true
+      - en: "Since when it happens and what changed before"
+        de: "Seit wann es auftritt und was sich zuvor geändert hat"
+        correct: true
+      - en: "What has already been tried"
+        de: "Was bereits versucht wurde"
+        correct: true
+      - en: "The customer's opinion of the company's competitors"
+        de: "Die Meinung der Kundschaft zu den Wettbewerbern des Unternehmens"
+        correct: false
+    explanation:
+      en: "Symptom, timing, changes and attempted steps narrow down the cause and prevent repeated questions. Opinions about competitors do not help to solve this problem."
+      de: "Symptom, Zeitpunkt, Änderungen und versuchte Schritte grenzen die Ursache ein und verhindern wiederholte Fragen. Meinungen zu Wettbewerbern helfen bei diesem Problem nicht."
+    source: https://en.wikipedia.org/wiki/Customer_support
+  - id: cnp-f-follow
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "You gave a customer a workaround and promised to check back in two days. What does the five-step cycle ask of you at that point?"
+      de: "Du hast einer Kundin eine Übergangslösung gegeben und zugesagt, dich in zwei Tagen zu melden. Was verlangt der Fünf-Schritte-Zyklus an dieser Stelle?"
+    options:
+      - en: "Follow up as promised and confirm the problem stayed solved"
+        de: "Wie zugesagt nachfassen und bestätigen, dass das Problem gelöst blieb"
+        correct: true
+      - en: "Wait for the customer to write back if something is wrong"
+        de: "Warten, bis sich die Kundin meldet, falls etwas nicht stimmt"
+        correct: false
+      - en: "Close the ticket now so that the numbers look good"
+        de: "Das Ticket jetzt schließen, damit die Zahlen gut aussehen"
+        correct: false
+      - en: "Forward the ticket to another team unchecked"
+        de: "Das Ticket ungeprüft an ein anderes Team weiterleiten"
+        correct: false
+    explanation:
+      en: "Follow-up keeps the promise and shows whether the fix held. Waiting passes the effort to the customer, closing early hides unsolved cases and an unchecked forward does not use the cycle."
+      de: "Nachfassen hält die Zusage und zeigt, ob die Lösung hielt. Warten schiebt den Aufwand zur Kundschaft, vorzeitiges Schließen verbirgt ungelöste Fälle, und ein ungeprüftes Weiterleiten nutzt den Zyklus nicht."
+    source: https://de.wikipedia.org/wiki/Probleml%C3%B6sen
+  - id: cnp-p-options
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "A delivery is damaged; policy allows repair, replacement or refund. Which approach is best?"
+      de: "Eine Lieferung ist beschädigt; die Richtlinie erlaubt Reparatur, Ersatz oder Erstattung. Welcher Ansatz ist am besten?"
+    options:
+      - en: "Describe each option with its consequence, recommend one and let the customer choose"
+        de: "Jede Option mit ihrer Folge beschreiben, eine empfehlen und die Kundschaft wählen lassen"
+        correct: true
+      - en: "Pick the option that is cheapest for the company and simply inform the customer of it"
+        de: "Die für das Unternehmen günstigste Option wählen und die Kundschaft darüber einfach informieren"
+        correct: false
+      - en: "List all options without advice and leave the choice open"
+        de: "Alle Optionen ohne Rat auflisten und die Wahl offenlassen"
+        correct: false
+      - en: "Offer only a refund because it ends the case fastest"
+        de: "Nur die Erstattung anbieten, weil sie den Fall am schnellsten beendet"
+        correct: false
+    explanation:
+      en: "Options with consequences and a recommendation respect the customer's priorities and save them from analysing. The cheapest option for the company ignores their need, a bare list overloads them and refund-only closes the case but may not solve the need."
+      de: "Optionen mit Folgen und Empfehlung respektieren die Prioritäten der Kundschaft und ersparen ihr die Analyse. Die günstigste Option für das Unternehmen ignoriert ihren Bedarf, eine bloße Liste überfordert, und nur die Erstattung beendet den Fall, löst aber den Bedarf womöglich nicht."
+    source: https://openstax.org/books/principles-marketing/pages/11-3-the-gap-model-of-service-quality
+  - id: cnp-p-escalate
+    level: practitioner
+    difficulty: 1200
+    type: multi
+    stem:
+      en: "Which situations justify escalating to a senior or specialised colleague? Select all that apply."
+      de: "Welche Situationen rechtfertigen die Eskalation an eine erfahrenere oder spezialisierte Kollegin? Wähle alle zutreffenden aus."
+    options:
+      - en: "The case needs a permission you do not have"
+        de: "Der Fall braucht eine Berechtigung, die du nicht hast"
+        correct: true
+      - en: "The agreed time limit for the case has been exceeded"
+        de: "Die vereinbarte Frist für den Fall ist überschritten"
+        correct: true
+      - en: "The topic needs knowledge you do not have"
+        de: "Das Thema braucht Wissen, das du nicht hast"
+        correct: true
+      - en: "The customer sounded a little annoyed once"
+        de: "Die Kundschaft klang einmal ein wenig genervt"
+        correct: false
+    explanation:
+      en: "Escalation follows defined thresholds such as missing permission, time limits or knowledge. A bit of annoyance is normal and handled in the conversation, so it does not by itself trigger escalation."
+      de: "Eskalation folgt festgelegten Schwellen wie fehlender Berechtigung, Fristen oder Wissen. Etwas Verärgerung ist normal und wird im Gespräch aufgefangen; sie löst für sich keine Eskalation aus."
+    source: https://en.wikipedia.org/wiki/Customer_support
+  - id: cnp-p-handover
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "Which handover note lets the next agent continue without asking the customer again?"
+      de: "Welche Übergabenotiz erlaubt der nächsten Agentin, ohne erneute Rückfrage weiterzuarbeiten?"
+    options:
+      - en: "Customer, need, facts, steps tried, promise with date, and the decision needed"
+        de: "Kunde, Bedarf, Fakten, versuchte Schritte, Zusage mit Datum und die nötige Entscheidung"
+        correct: true
+      - en: "'Customer upset about the invoice again, please call back as soon as possible.'"
+        de: "„Kunde wegen der Rechnung erneut verärgert, bitte so bald wie möglich zurückrufen.“"
+        correct: false
+      - en: "The full chat log pasted without comment"
+        de: "Der komplette Chatverlauf ohne Kommentar eingefügt"
+        correct: false
+      - en: "'Solved by me earlier; no action needed.'"
+        de: "„Von mir vorhin gelöst; nichts zu tun.“"
+        correct: false
+    explanation:
+      en: "A usable summary holds the need, facts, attempts, promises and the open decision. Vague notes force repeat questions, a raw log makes the reader search and 'no action needed' hides an open case."
+      de: "Eine brauchbare Zusammenfassung enthält Bedarf, Fakten, Versuche, Zusagen und die offene Entscheidung. Vage Notizen erzwingen Rückfragen, ein Rohprotokoll lässt die Lesenden suchen, und „nichts zu tun“ verbirgt einen offenen Fall."
+    source: https://en.wikipedia.org/wiki/Customer_support
+  - id: cnp-p-cause
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "Restarting a customer's app fixes the error, but it has come back three times this month. What should you do?"
+      de: "Ein Neustart der App der Kundschaft behebt den Fehler, doch er ist diesen Monat dreimal wiedergekehrt. Was solltest du tun?"
+    options:
+      - en: "Record the pattern so the cause can be found, while keeping the workaround"
+        de: "Das Muster festhalten, damit die Ursache gefunden werden kann, und die Übergangslösung beibehalten"
+        correct: true
+      - en: "Keep restarting the app each time the error returns and close the ticket afterwards"
+        de: "Die App jedes Mal neu starten, wenn der Fehler wiederkehrt, und das Ticket danach schließen"
+        correct: false
+      - en: "Tell the customer the fault is theirs"
+        de: "Der Kundschaft sagen, der Fehler liege bei ihr"
+        correct: false
+      - en: "Wait until the fault happens a tenth time"
+        de: "Warten, bis der Fehler zum zehnten Mal auftritt"
+        correct: false
+    explanation:
+      en: "Root cause analysis looks beyond the visible effect. A workaround helps now, but a repeating fault should be documented for a cause-level fix. Blaming the customer or waiting for more cases wastes information you already have."
+      de: "Die Ursachenanalyse schaut über die sichtbare Wirkung hinaus. Eine Übergangslösung hilft jetzt, doch ein wiederkehrender Fehler sollte für eine Ursachenbehebung dokumentiert werden. Die Kundschaft zu beschuldigen oder auf mehr Fälle zu warten verschwendet Informationen, die du schon hast."
+    source: https://en.wikipedia.org/wiki/Root_cause_analysis
+  - id: cnp-a-limit
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "Your team's rule is 'use your judgement' for goodwill gestures, and agents decide very differently. What is the best improvement?"
+      de: "Die Regel deines Teams für Kulanzgesten lautet „nach eigenem Ermessen“, und die Entscheidungen der Agentinnen und Agenten gehen weit auseinander. Was ist die beste Verbesserung?"
+    options:
+      - en: "Set specific limits per case or category and review how they are used"
+        de: "Konkrete Grenzen je Fall oder Kategorie setzen und ihre Nutzung auswerten"
+        correct: true
+      - en: "Remove all goodwill options so that every customer gets exactly the same treatment"
+        de: "Alle Kulanzmöglichkeiten streichen, damit jede Kundschaft exakt gleich behandelt wird"
+        correct: false
+      - en: "Require manager approval for every gesture"
+        de: "Für jede Geste die Freigabe einer Führungskraft verlangen"
+        correct: false
+      - en: "Let the most senior agent decide every case"
+        de: "Die dienstälteste Agentin jeden Fall entscheiden lassen"
+        correct: false
+    explanation:
+      en: "A vague standard is the policy gap; specific limits let staff act with consistency. Removing options harms customers, full approval removes empowerment and slows cases, and one decider creates a bottleneck."
+      de: "Ein vager Standard ist die Standardlücke; konkrete Grenzen lassen Mitarbeitende einheitlich handeln. Das Streichen von Optionen schadet der Kundschaft, volle Freigabepflicht nimmt das Empowerment weg und bremst Fälle, und eine entscheidende Person wird zum Engpass."
+    source: https://openstax.org/books/principles-marketing/pages/11-2-the-service-profit-chain-model-and-the-service-marketing-triangle
+  - id: cnp-a-recurring
+    level: advanced
+    difficulty: 1500
+    type: multi
+    stem:
+      en: "Twelve customers report the same login problem after an update. Which actions are appropriate together? Select all that apply."
+      de: "Zwölf Kundinnen und Kunden melden nach einem Update dasselbe Anmeldeproblem. Welche Maßnahmen sind gemeinsam angemessen? Wähle alle zutreffenden aus."
+    options:
+      - en: "Keep the workaround in the knowledge article for current cases"
+        de: "Die Übergangslösung für aktuelle Fälle im Wissensartikel belassen"
+        correct: true
+      - en: "Open a cause-level ticket with cases, times and versions"
+        de: "Ein Ursachen-Ticket mit Fällen, Zeiten und Versionen eröffnen"
+        correct: true
+      - en: "Inform the affected customers when the cause is fixed"
+        de: "Die betroffene Kundschaft informieren, wenn die Ursache behoben ist"
+        correct: true
+      - en: "Stop recording new cases to reduce workload"
+        de: "Neue Fälle nicht mehr erfassen, um Arbeit zu sparen"
+        correct: false
+    explanation:
+      en: "A quick fix serves blocked customers, the cause-level item removes the problem, and follow-up closes the loop. Not recording cases hides the size of the problem and delays the fix."
+      de: "Eine schnelle Behebung hilft blockierter Kundschaft, der Ursachen-Eintrag beseitigt das Problem, und das Nachfassen schließt die Schleife. Fälle nicht zu erfassen verbirgt die Größe des Problems und verzögert die Behebung."
+    source: https://en.wikipedia.org/wiki/Root_cause_analysis
+  - id: cnp-a-goodwill
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "A customer was locked out of their business account for two days, and the standard compensation does not fit. What is the most defensible decision?"
+      de: "Ein Kunde war zwei Tage aus seinem Geschäftskonto ausgesperrt, und die Standardentschädigung passt nicht. Was ist die vertretbarste Entscheidung?"
+    options:
+      - en: "Weigh loss, cost, fairness and your limit, decide, and document the reason"
+        de: "Schaden, Kosten, Gleichbehandlung und deine Grenze abwägen, entscheiden und den Grund dokumentieren"
+        correct: true
+      - en: "Apply the standard rule unchanged, whatever the loss"
+        de: "Die Standardregel unverändert anwenden, egal wie hoch der Schaden ist"
+        correct: false
+      - en: "Grant the largest gesture to end the complaint at once"
+        de: "Die größte Geste gewähren, um die Beschwerde sofort zu beenden"
+        correct: false
+      - en: "Refer all legal questions to the customer's own lawyer"
+        de: "Alle Rechtsfragen an die Anwältin des Kunden verweisen"
+        correct: false
+    explanation:
+      en: "Unusual cases call for judgement within limits and a documented reason. Mechanical rules ignore the loss, a maximum gesture ignores cost and fairness, and legal doubts belong with your own counsel, not the customer's."
+      de: "Sonderfälle verlangen Urteilsvermögen innerhalb von Grenzen und eine dokumentierte Begründung. Mechanische Regeln ignorieren den Schaden, eine Maximalgeste Kosten und Gleichbehandlung, und rechtliche Zweifel gehören zur eigenen Rechtsberatung, nicht zu der des Kunden."
+    source: https://openstax.org/books/principles-marketing/pages/11-2-the-service-profit-chain-model-and-the-service-marketing-triangle
+  - id: cnp-a-system
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "Many promises of callbacks are missed because they exist only in agents' memory. What is the strongest fix?"
+      de: "Viele Rückrufzusagen werden verpasst, weil sie nur im Kopf der Agentinnen und Agenten existieren. Was ist die stärkste Lösung?"
+    options:
+      - en: "Give every promise an owner and date in the ticket and review open ones daily"
+        de: "Jeder Zusage im Ticket eine verantwortliche Person und ein Datum geben und offene täglich prüfen"
+        correct: true
+      - en: "Remind agents in the next team meeting to be more careful about their promises"
+        de: "Die Agentinnen und Agenten in der nächsten Teamsitzung an mehr Sorgfalt bei Zusagen erinnern"
+        correct: false
+      - en: "Stop promising callbacks altogether"
+        de: "Rückrufe grundsätzlich nicht mehr zusagen"
+        correct: false
+      - en: "Add a longer apology template for missed callbacks"
+        de: "Eine längere Entschuldigungsvorlage für verpasste Rückrufe ergänzen"
+        correct: false
+    explanation:
+      en: "Making promises visible and owned prevents the drift between promise and delivery. Reminders rely on memory, giving up callbacks removes useful service and apologies treat the result, not the cause."
+      de: "Sichtbare, zugeordnete Zusagen verhindern das Auseinanderlaufen von Versprechen und Lieferung. Ermahnungen verlassen sich aufs Gedächtnis, auf Rückrufe zu verzichten nimmt nützlichen Service weg, und Entschuldigungen behandeln das Ergebnis, nicht die Ursache."
+    source: https://openstax.org/books/principles-marketing/pages/11-3-the-gap-model-of-service-quality

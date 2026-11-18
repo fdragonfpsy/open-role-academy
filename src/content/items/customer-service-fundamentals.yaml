@@ -1,0 +1,290 @@
+competency: customer-service-fundamentals
+items:
+  - id: csf-f-sat
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "Which description of customer satisfaction fits the sources?"
+      de: "Welche Beschreibung der Kundenzufriedenheit passt zu den Quellen?"
+    options:
+      - en: "It arises when the experience meets what the customer expected"
+        de: "Sie entsteht, wenn das Erlebte zu dem passt, was die Kundschaft erwartet hat"
+        correct: true
+      - en: "It depends only on how low the price is, not on how the service was delivered"
+        de: "Sie hängt allein davon ab, wie niedrig der Preis ist, nicht davon, wie der Service erbracht wurde"
+        correct: false
+      - en: "It is the number of contacts a customer has made"
+        de: "Sie ist die Zahl der Kontakte, die eine Person aufgenommen hat"
+        correct: false
+      - en: "It is the same for every customer with the same service"
+        de: "Sie ist bei gleichem Service für alle Kundinnen und Kunden gleich"
+        correct: false
+    explanation:
+      en: "Satisfaction compares expectation with perceived experience, so it is a function of perception. Because expectations differ, identical service can satisfy one person and disappoint another."
+      de: "Zufriedenheit vergleicht Erwartung mit wahrgenommenem Erlebnis und ist damit eine Funktion der Wahrnehmung. Da Erwartungen verschieden sind, kann derselbe Service eine Person zufriedenstellen und eine andere enttäuschen."
+    source: https://de.wikipedia.org/wiki/Kundenzufriedenheit
+  - id: csf-f-tasks
+    level: foundation
+    difficulty: 950
+    type: multi
+    stem:
+      en: "Which of these are typical tasks of customer service (Kundendienst)? Select all that apply."
+      de: "Welche dieser Aufgaben gehören typischerweise zum Kundendienst? Wähle alle zutreffenden aus."
+    options:
+      - en: "Handling complaints about faulty products"
+        de: "Reklamationen zu fehlerhaften Produkten bearbeiten"
+        correct: true
+      - en: "Answering questions about how to use a product"
+        de: "Fragen zur Nutzung eines Produkts beantworten"
+        correct: true
+      - en: "Arranging repairs or maintenance"
+        de: "Reparaturen oder Wartung vermitteln"
+        correct: true
+      - en: "Setting the company's list prices"
+        de: "Die Listenpreise des Unternehmens festlegen"
+        correct: false
+    explanation:
+      en: "Typical tasks are complaints, maintenance, repairs, usage questions (helpdesk) and requests for spare parts. Setting list prices is a pricing decision, not part of customer service."
+      de: "Typische Aufgaben sind Reklamationen, Wartung, Reparaturen, Nutzungsfragen (Helpdesk) und Wünsche nach Ersatzteilen. Die Festlegung von Listenpreisen ist eine Preisentscheidung und gehört nicht zum Kundendienst."
+    source: https://de.wikipedia.org/wiki/Kundendienst
+  - id: csf-f-promise
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "You tell a customer 'You will hear from us tomorrow', but you are not sure you can manage it. What is the best approach?"
+      de: "Du sagst einer Kundin „Du hörst morgen von uns“, bist aber nicht sicher, ob du es schaffst. Was ist das beste Vorgehen?"
+    options:
+      - en: "Promise only a time you can keep, and tell the customer when it changes"
+        de: "Nur einen Zeitpunkt zusagen, den du halten kannst, und Änderungen mitteilen"
+        correct: true
+      - en: "Give the earliest time anyway, since customers prefer quick answers"
+        de: "Trotzdem den frühesten Zeitpunkt nennen, denn Kundschaft bevorzugt schnelle Antworten"
+        correct: false
+      - en: "Say nothing about timing so you cannot be blamed"
+        de: "Nichts zum Zeitpunkt sagen, damit man dir nichts vorwerfen kann"
+        correct: false
+      - en: "Promise a later time than needed and then do nothing until then"
+        de: "Einen späteren Zeitpunkt als nötig zusagen und bis dahin nichts tun"
+        correct: false
+    explanation:
+      en: "Not delivering on a promise damages credibility, and expectations shape satisfaction. A time you can keep, with a heads-up if it changes, protects both. Saying nothing leaves the customer with their own guess."
+      de: "Nicht gehaltene Versprechen schädigen die Glaubwürdigkeit, und Erwartungen prägen die Zufriedenheit. Ein haltbarer Zeitpunkt mit Hinweis bei Änderungen schützt beides. Schweigen überlässt der Kundschaft ihre eigene Vermutung."
+    source: https://openstax.org/books/principles-marketing/pages/11-3-the-gap-model-of-service-quality
+  - id: csf-f-first
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "What does 'resolve in the first contact' aim at?"
+      de: "Worauf zielt „Lösung im Erstkontakt“?"
+    options:
+      - en: "The customer does not need to contact you again about the same matter"
+        de: "Die Kundschaft muss sich zu demselben Anliegen nicht erneut melden"
+        correct: true
+      - en: "Closing every contact as fast as possible so that the queue stays short"
+        de: "Jeden Kontakt so schnell wie möglich zu beenden, damit die Warteschlange kurz bleibt"
+        correct: false
+      - en: "Avoiding all escalation, whatever the case"
+        de: "Jede Eskalation zu vermeiden, egal um welchen Fall es geht"
+        correct: false
+      - en: "Answering every message within one minute"
+        de: "Jede Nachricht innerhalb einer Minute zu beantworten"
+        correct: false
+    explanation:
+      en: "The goal is that the matter stays solved, so the customer need not ask twice. It is not speed for its own sake, and where you cannot resolve it you should name the next step and time instead of forcing a quick close."
+      de: "Ziel ist, dass das Anliegen gelöst bleibt und niemand zweimal nachfragen muss. Es geht nicht um Tempo an sich; wo du nicht lösen kannst, nennst du nächsten Schritt und Zeitpunkt, statt einen schnellen Abschluss zu erzwingen."
+    source: https://de.wikipedia.org/wiki/Kundendienst
+  - id: csf-p-rater
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "Customers praise how friendly the agents are but complain that answers are often wrong. Which RATER dimension is weakest?"
+      de: "Kundschaft lobt die Freundlichkeit der Agentinnen und Agenten, beklagt aber oft falsche Antworten. Welche RATER-Dimension ist am schwächsten?"
+    options:
+      - en: "Reliability"
+        de: "Zuverlässigkeit"
+        correct: true
+      - en: "Tangibles"
+        de: "Greifbares"
+        correct: false
+      - en: "Responsiveness"
+        de: "Reaktionsfähigkeit"
+        correct: false
+      - en: "Empathy"
+        de: "Empathie"
+        correct: false
+    explanation:
+      en: "Reliability is delivering what was promised accurately and dependably. Friendliness speaks for empathy, so it is not the weak point here, and wrong answers are about accuracy rather than speed or the look of the facilities."
+      de: "Zuverlässigkeit heißt, Zugesagtes genau und verlässlich zu liefern. Freundlichkeit spricht für Empathie und ist hier nicht der Schwachpunkt; falsche Antworten betreffen die Genauigkeit, nicht Tempo oder das Aussehen der Umgebung."
+    source: https://openstax.org/books/principles-marketing/pages/11-3-the-gap-model-of-service-quality
+  - id: csf-p-gap
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "A support team has a rule to 'answer emails quickly', but agents answer after very different times. Which gap does the rule most directly show?"
+      de: "Ein Support-Team hat die Regel „E-Mails schnell beantworten“, doch die Antwortzeiten der Agentinnen und Agenten sind sehr verschieden. Auf welche Lücke weist die Regel am direktesten hin?"
+    options:
+      - en: "Policy gap: the standard is not specific enough to act on"
+        de: "Standardlücke: Die Vorgabe ist nicht konkret genug, um danach zu handeln"
+        correct: true
+      - en: "Knowledge gap: the company does not know what customers want"
+        de: "Wissenslücke: Das Unternehmen weiß nicht, was Kundschaft will"
+        correct: false
+      - en: "Customer gap: customers misperceive the service"
+        de: "Kundenlücke: Kundschaft nimmt den Service falsch wahr"
+        correct: false
+      - en: "Communication gap: marketing promises too much"
+        de: "Kommunikationslücke: Das Marketing verspricht zu viel"
+        correct: false
+    explanation:
+      en: "OpenStax's example of the vague 'quickly' rule illustrates the policy gap: management knows the need, but the standard does not tell staff what to do. A specific target, such as a number of hours, would close it."
+      de: "Das Beispiel der vagen Regel „schnell“ bei OpenStax illustriert die Standardlücke: Das Management kennt den Bedarf, doch der Standard sagt den Mitarbeitenden nicht, was zu tun ist. Ein konkretes Ziel, etwa eine Stundenzahl, würde sie schließen."
+    source: https://openstax.org/books/principles-marketing/pages/11-3-the-gap-model-of-service-quality
+  - id: csf-p-journey
+    level: practitioner
+    difficulty: 1250
+    type: multi
+    stem:
+      en: "You map a customer journey for a return. Which points deserve special attention as risky touchpoints? Select all that apply."
+      de: "Du skizzierst die Customer Journey für eine Rückgabe. Welche Stellen verdienen als riskante Kontaktpunkte besondere Aufmerksamkeit? Wähle alle zutreffenden aus."
+    options:
+      - en: "Where the customer has to wait without information"
+        de: "Wo die Kundschaft ohne Information warten muss"
+        correct: true
+      - en: "Where the customer has to repeat the same information"
+        de: "Wo die Kundschaft dieselben Angaben wiederholen muss"
+        correct: true
+      - en: "Where the customer has to switch channel to continue"
+        de: "Wo die Kundschaft den Kanal wechseln muss, um weiterzukommen"
+        correct: true
+      - en: "Where the process is smooth and customers finish without contact"
+        de: "Wo der Ablauf glatt ist und Kundschaft ohne Kontakt fertig wird"
+        correct: false
+    explanation:
+      en: "Waiting, repetition and channel switches are typical friction points that raise effort and the chance of dissatisfaction. A smooth step needs no extra attention beyond routine monitoring."
+      de: "Warten, Wiederholungen und Kanalwechsel sind typische Reibungspunkte, die Aufwand und Unzufriedenheitsrisiko erhöhen. Ein glatter Schritt braucht über die routinemäßige Beobachtung hinaus keine besondere Aufmerksamkeit."
+    source: https://en.wikipedia.org/wiki/Customer_service
+  - id: csf-p-measure
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "A team reports 'customers love us' because the satisfaction survey average is high. What is the most useful next step?"
+      de: "Ein Team meldet „Kundschaft liebt uns“, weil der Durchschnitt der Zufriedenheitsumfrage hoch ist. Was ist der nützlichste nächste Schritt?"
+    options:
+      - en: "Combine it with other indicators such as retention and repeat contacts"
+        de: "Ihn mit anderen Kennzahlen wie Kundenbindung und Folgekontakten kombinieren"
+        correct: true
+      - en: "Treat the average as proof that no gaps exist"
+        de: "Den Durchschnitt als Beweis nehmen, dass keine Lücken bestehen"
+        correct: false
+      - en: "Stop surveying since the result is already high"
+        de: "Die Befragung einstellen, da das Ergebnis schon hoch ist"
+        correct: false
+      - en: "Replace it by a single score for easier reporting"
+        de: "Ihn durch einen einzigen Wert ersetzen, damit das Berichten leichter wird"
+        correct: false
+    explanation:
+      en: "A survey average shows perception, not causes, and may hide groups who are unhappy. Retention and repeat contacts show outcomes, and together with the gap analysis they give a fuller picture."
+      de: "Ein Umfragedurchschnitt zeigt Wahrnehmung, keine Ursachen, und kann unzufriedene Gruppen verbergen. Kundenbindung und Folgekontakte zeigen Ergebnisse und ergeben zusammen mit der Lückenanalyse ein vollständigeres Bild."
+    source: https://en.wikipedia.org/wiki/Customer_service
+  - id: csf-a-chain
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "Management wants better customer loyalty and proposes only more training on friendly wording. Based on the service-profit chain, what is the main weakness of this plan?"
+      de: "Das Management will mehr Kundenloyalität und plant nur mehr Training zu freundlichen Formulierungen. Was ist nach der Service-Profit-Chain die Hauptschwäche des Plans?"
+    options:
+      - en: "It ignores internal service quality, which comes first in the chain"
+        de: "Er ignoriert die interne Servicequalität, die in der Kette am Anfang steht"
+        correct: true
+      - en: "It overlooks that profit must be raised before satisfaction"
+        de: "Er übersieht, dass der Gewinn vor der Zufriedenheit steigen muss"
+        correct: false
+      - en: "It forgets that loyalty is not linked to satisfaction"
+        de: "Er vergisst, dass Loyalität nichts mit Zufriedenheit zu tun hat"
+        correct: false
+      - en: "It trains the wrong people, since only back-office staff matter"
+        de: "Er schult die falschen Personen, denn nur das Backoffice zählt"
+        correct: false
+    explanation:
+      en: "In the chain, support for frontline staff drives employee satisfaction, which drives value, customer satisfaction and loyalty. Wording training alone leaves slow tools or missing information untouched. Profit is a result, not the starting point."
+      de: "In der Kette treibt die Unterstützung der Mitarbeitenden im Kundenkontakt deren Zufriedenheit, diese Wert, Kundenzufriedenheit und Loyalität. Wortlaut-Training allein lässt langsame Werkzeuge oder fehlende Informationen unberührt. Gewinn ist ein Ergebnis, kein Ausgangspunkt."
+    source: https://openstax.org/books/principles-marketing/pages/11-2-the-service-profit-chain-model-and-the-service-marketing-triangle
+  - id: csf-a-triangle
+    level: advanced
+    difficulty: 1500
+    type: multi
+    stem:
+      en: "A telecom's adverts promise 'instant help', agents are not trained on new tariffs, and calls take long. Which sides of the services marketing triangle are failing? Select all that apply."
+      de: "Die Werbung eines Telekommunikationsunternehmens verspricht „sofortige Hilfe“, die Agentinnen und Agenten sind zu neuen Tarifen nicht geschult, und Anrufe dauern lang. Welche Seiten des Dienstleistungsdreiecks versagen? Wähle alle zutreffenden aus."
+    options:
+      - en: "External marketing: the promise is not realistic"
+        de: "Externes Marketing: Das Versprechen ist nicht realistisch"
+        correct: true
+      - en: "Internal marketing: staff are not enabled through training"
+        de: "Internes Marketing: Mitarbeitende werden nicht durch Schulung befähigt"
+        correct: true
+      - en: "Interactive marketing: the encounter does not keep the promise"
+        de: "Interaktives Marketing: Die Begegnung hält das Versprechen nicht"
+        correct: true
+      - en: "None: the triangle only describes advertising"
+        de: "Keine: Das Dreieck beschreibt nur Werbung"
+        correct: false
+    explanation:
+      en: "The triangle covers making promises (external), enabling them (internal) and keeping them (interactive). Here the promise, the training and the encounter are all affected. It is not limited to advertising."
+      de: "Das Dreieck umfasst Versprechen geben (extern), ermöglichen (intern) und halten (interaktiv). Hier sind Versprechen, Schulung und Begegnung betroffen. Es beschränkt sich nicht auf Werbung."
+    source: https://openstax.org/books/principles-marketing/pages/11-2-the-service-profit-chain-model-and-the-service-marketing-triangle
+  - id: csf-a-empower
+    level: advanced
+    difficulty: 1550
+    type: single
+    stem:
+      en: "You must set a goodwill limit for agents. Which approach is best supported by the service-profit logic and the policy-gap warning?"
+      de: "Du sollst für Agentinnen und Agenten eine Kulanzgrenze festlegen. Welcher Ansatz wird von der Service-Profit-Logik und der Warnung vor der Standardlücke am besten gestützt?"
+    options:
+      - en: "A clear limit per case with records and regular review"
+        de: "Eine klare Grenze je Fall mit Dokumentation und regelmäßiger Auswertung"
+        correct: true
+      - en: "No limit; trust agents completely and do not look"
+        de: "Keine Grenze; Agentinnen und Agenten voll vertrauen und nicht nachsehen"
+        correct: false
+      - en: "A rule that every goodwill gesture needs manager approval"
+        de: "Eine Regel, dass jede Kulanzgeste eine Freigabe der Führungskraft braucht"
+        correct: false
+      - en: "'Use your judgement' without figures, to stay flexible"
+        de: "„Entscheide nach Ermessen“ ohne Zahlen, um flexibel zu bleiben"
+        correct: false
+    explanation:
+      en: "Empowerment gives staff autonomy within limits. Vague wording is the policy gap; full approval removes empowerment and slows resolution. Defensible alternatives exist, but a clear limit with review balances speed, cost and consistency best."
+      de: "Empowerment gibt Mitarbeitenden Autonomie innerhalb von Grenzen. Vage Formulierungen sind die Standardlücke; volle Freigabepflicht nimmt das Empowerment weg und bremst die Lösung. Es gibt vertretbare Alternativen, doch eine klare Grenze mit Auswertung bringt Tempo, Kosten und Gleichbehandlung am besten in Balance."
+    source: https://openstax.org/books/principles-marketing/pages/11-2-the-service-profit-chain-model-and-the-service-marketing-triangle
+  - id: csf-a-causes
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "Agents spend most of their time explaining the same confusing invoice layout. What gives the greatest lasting benefit?"
+      de: "Agentinnen und Agenten erklären die meiste Zeit dasselbe verwirrende Rechnungslayout. Was bringt den größten dauerhaften Nutzen?"
+    options:
+      - en: "Tag the contacts by cause and bring the top cause to the invoice owners"
+        de: "Die Kontakte nach Ursache verschlagworten und die Hauptursache den Zuständigen für die Rechnung vorlegen"
+        correct: true
+      - en: "Give agents a faster canned explanation so that each contact takes less time"
+        de: "Den Agentinnen und Agenten einen schnelleren Textbaustein geben, damit jeder Kontakt weniger Zeit kostet"
+        correct: false
+      - en: "Hire more agents for peak weeks"
+        de: "Für Spitzenwochen mehr Personal einstellen"
+        correct: false
+      - en: "Ask customers to read the invoice guide first"
+        de: "Die Kundschaft bitten, zuerst die Rechnungsanleitung zu lesen"
+        correct: false
+    explanation:
+      en: "Service requests can reveal how a product can be improved. Removing the cause lowers contact volume permanently. Faster explanations, more staff and guides treat the symptom, though each can be a useful short-term step."
+      de: "Serviceanfragen können zeigen, wie ein Produkt verbessert werden kann. Das Beseitigen der Ursache senkt das Kontaktaufkommen dauerhaft. Schnellere Erklärungen, mehr Personal und Anleitungen behandeln das Symptom, auch wenn jedes als kurzfristiger Schritt nützlich sein kann."
+    source: https://de.wikipedia.org/wiki/Kundendienst
