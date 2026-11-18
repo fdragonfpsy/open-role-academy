@@ -1,5 +1,23 @@
 # Status
 
+## 2026-11-18 — Phase 4: Marketing content batch 4 (marketing-analytics-attribution), Marketing published
+
+**Done**
+- 6 unit files (3 en + 3 de, `status: ai-draft`): KPIs vs vanity metrics, funnel/conversion, attribution models and limits, holdout/incrementality (own method, labelled), consent-aware measurement at topic level. 12 items (4 per level, 3 multi).
+- 2 new resources (link-only, `licenseVerifiedOn: 2026-11-18`, HTTP 200): EDPB Guidelines 05/2020 on consent (German PDF, free-access), de.wikipedia Konversion (Marketing). OpenStax 16.3 and GDPR re-tagged.
+- Quality pass: every Marketing competency has a non-Wikipedia and a German-language resource. Marketing set to `status: published`; `docs/FRAMEWORK.md` regenerated. Validator: 0 errors, 0 warnings.
+- Subagent saw one unexplained test failure on a first chained run, then 109/109 on four reruns (possibly flaky).
+- Open QA issues #53/#55/#56/#57 (older, broad) not re-worked this run.
+
+**Reviewer to-dos**
+- OpenStax 16.3 metric definitions; EDPB consent statements (freely given, specific, informed, unambiguous; no pre-ticked boxes; withdrawal as easy as giving); German wording of the 3 DE units.
+- UTM is concept-level and unsourced (common practice); cookie/ePrivacy device-access rules are "ask legal counsel".
+- Own methods ("if doubled" KPI test, UTM naming rules, holdout design, report rules). Judgement items: maa-p-report, maa-a-report, maa-a-consent.
+
+**Counts:** roles 6 (0 draft) · competencies 58 · units 338 · items 700 · resources 372
+
+**Next:** Customer Service role framework (Phase 4).
+
 ## 2026-11-18 — Phase 4: Marketing content batch 3 (social-media-community, email-marketing-automation, campaign-planning-budgeting)
 
 **Done**

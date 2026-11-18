@@ -1,0 +1,14 @@
+id: wikipedia-de-konversion-marketing
+url: https://de.wikipedia.org/wiki/Konversion_(Marketing)
+title: "Konversion (Marketing)"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies: [marketing-analytics-attribution]
+levels: [foundation, practitioner]
+note: "Page footer states CC BY-SA; read 2026-11-18. Conversion as status change of a target person, conversion rate, conversion funnel, conversion tracking. Its typical-value range for shops is not used."
