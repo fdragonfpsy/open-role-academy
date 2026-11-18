@@ -114,12 +114,12 @@ One role per task, in the order of CLAUDE.md §4.3. Each task = framework + cont
   - [x] content: brand-messaging, content-marketing-copywriting, digital-channels-seo-sem
   - [x] content: social-media-community, email-marketing-automation, campaign-planning-budgeting
   - [x] content: marketing-analytics-attribution; then set `status: published` and run the content quality pass for Marketing
-- [ ] Customer Service (framework + content; publish the role when all content is done; EU/Germany context, label it; no invented laws or figures)
+- [x] Customer Service (framework + content; publish the role when all content is done; EU/Germany context, label it; no invented laws or figures)
   - [x] framework (role + 10 competencies, `status: draft`)
   - [x] content: customer-service-fundamentals, customer-communication-empathy, customer-needs-problem-solving
   - [x] content: complaint-handling-de-escalation, omnichannel-support, ticketing-knowledge-base
   - [x] content: service-level-quality-management, customer-data-privacy-service, customer-retention-feedback-voc
-  - [ ] content: consumer-rights-basics; then `status: published` and quality pass
+  - [x] content: consumer-rights-basics; then `status: published` and quality pass
 - [ ] Project Management
 - [ ] Procurement & Supply Chain
 - [ ] Data & Analytics

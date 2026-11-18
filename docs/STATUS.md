@@ -1,5 +1,23 @@
 # Status
 
+## 2026-11-18 — Phase 4: Customer Service content batch 4 (consumer-rights-basics), Customer Service published
+
+**Done**
+- 4 unit files (2 en + 2 de, `status: ai-draft`, foundation and practitioner = the required levels), EU/Germany labelled, topic level; invented example labelled. 12 items (4 per level, 3 multi).
+- 4 new link-only EUR-Lex resources (free-access, `licenseVerifiedOn: 2026-11-18`, HTTP 200): Consumer Rights Directive 2011/83/EU and Directive (EU) 2019/771, en and de.
+- Quality pass: every Customer Service competency has a non-Wikipedia and a German-language resource; Customer Service set to `status: published`; `docs/FRAMEWORK.md` regenerated. Validator: 0 errors, 0 warnings.
+- Open QA issues #53/#55/#56/#57 (older, broad) were not re-worked this run; #54 and #58 were already fixed by merged PRs.
+
+**Reviewer to-dos**
+- Check units against EUR-Lex: CRD Art. 6(1), 9-14, 16; Directive 2019/771 Art. 2, 3, 10-14, 17 (13(4)(c) was cut off in reading, so only (a) and (b) are cited).
+- "Gewährleistung"/"Garantie" are labelled as German terms; the directives say "Vertragswidrigkeit"/"gewerbliche Garantie".
+- gesetze-im-internet.de unreachable: units give no BGB sections or national deadlines and say "ask legal counsel". UCPD not cited.
+- Judgement items: crb-a-late, crb-a-old, crb-a-ad. German wording of the DE units.
+
+**Counts:** roles 7 (0 draft) · competencies 68 · units 392 · items 820 · resources 392
+
+**Next:** Project Management role framework (Phase 4).
+
 ## 2026-11-18 — Phase 4: Customer Service content batch 3 (service-level-quality-management, customer-data-privacy-service, customer-retention-feedback-voc)
 
 **Done**
