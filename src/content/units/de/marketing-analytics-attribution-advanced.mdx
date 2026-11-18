@@ -1,0 +1,73 @@
+---
+id: marketing-analytics-attribution-advanced
+competency: marketing-analytics-attribution
+level: advanced
+title: "Inkrementalität, Holdouts und einwilligungsbewusste Messung"
+objectives:
+  - "Erklären, warum Attribution kein Beleg für Ursache ist und was Inkrementalität stattdessen fragt."
+  - "Einen einfachen Holdout-Test entwerfen und seine Fallstricke benennen."
+  - "Auf Themenebene beschreiben, wie Einwilligung bestimmt, was du messen kannst."
+  - "Ergebnisse mit Unsicherheit und Entscheidungsregeln berichten."
+minutes: 30
+resources:
+  - openstax-marketing-online-metrics
+  - edpb-guidelines-05-2020-consent-de
+  - eurlex-gdpr-regulation-2016-679
+status: ai-draft
+sources:
+  - title: "Principles of Marketing, 16.3: Metrics Used to Evaluate the Success of Online Marketing"
+    author: OpenStax
+    url: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+  - title: "Leitlinien 05/2020 zur Einwilligung gemäß Verordnung 2016/679 (Version 1.1)"
+    author: Europäischer Datenschutzausschuss (EDPB)
+    url: https://www.edpb.europa.eu/system/files/documents/files/file1/edpb_guidelines_202005_consent_de.pdf
+    license: free-access
+    licenseUrl: https://www.edpb.europa.eu/copyright_en
+    usage: cited
+  - title: "Regulation (EU) 2016/679 (GDPR)"
+    author: European Union
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+    license: free-access
+    licenseUrl: https://eur-lex.europa.eu/content/legal-notice/legal-notice.html
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Attributionsberichte sagen, wer den Erfolg zugeschrieben bekommt. Führungskräfte fragen Schwierigeres: Wie viele Conversions wären ohne die Kampagne nicht passiert? Auf Expertenniveau gestaltest du Messung, die das zu beantworten versucht, und bleibst ehrlich darüber, was unsicher bleibt.
+
+## Inkrementalität
+
+Eine Conversion ist **inkrementell**, wenn sie wegen des Marketings passiert ist. Viele Menschen, die eine Anzeige zum Markennamen sehen, hätten ohnehin gekauft. Last-Touch-Berichte schreiben der Anzeige den Erfolg trotzdem zu. Die Frage "Was wäre ohne die Maßnahme passiert?" braucht eine Vergleichsgruppe.
+
+## Holdout-Test (unsere eigene Arbeitsmethode)
+
+1. Wähle eine Frage, zum Beispiel: "Bringt Retargeting zusätzliche Käufe?"
+2. Teile berechtigte Personen zufällig in eine **Testgruppe** (sieht die Kampagne) und eine **Holdout-Gruppe** (sieht sie nicht). Zufällige Zuteilung vermeidet einen versteckten Unterschied zwischen den Gruppen.
+3. Lege KPI, Dauer und den kleinsten Unterschied, der deine Entscheidung ändern würde, vor dem Start fest.
+4. Vergleiche die Conversion Rates. Der Unterschied ist der geschätzte Effekt (Lift).
+5. Prüfe, ob die Gruppen vergleichbar waren und sich während des Tests nichts anderes geändert hat (Aktion, Feiertag, neue Konkurrenz).
+
+Fallstricke: Gruppen zu klein, um echten Unterschied von Zufall zu trennen; vorzeitiger Abbruch, wenn die Zahlen gut aussehen; Holdout-Personen sehen die Kampagne über einen anderen Kanal; die Kosten entgangener Reichweite werden ignoriert. Wo ein Zufallstest nicht möglich ist, vergleiche Regionen oder Zeiträume und sage, dass das schwächere Evidenz ist. Frage Datenfachleute nach Stichprobengröße und Signifikanz.
+
+## Einwilligungsbewusste Messung (EU, Themenebene)
+
+Messung auf Basis personenbezogener Daten braucht eine Rechtsgrundlage. Die EDPB-Leitlinien zur Einwilligung, die die DSGVO-Definition wiedergeben, sagen: Einwilligung muss freiwillig, für den bestimmten Fall, in informierter Weise und unmissverständlich erfolgen; vorangekreuzte Kästchen und Opt-out-Konstruktionen sind ungeeignet; und der Widerruf muss genauso einfach sein wie die Erteilung. Folgen für das Messdesign: Manche Besuchende sind nicht messbar, Berichte beschreiben dann nur Einwilligende; setze sie nicht mit allen gleich; verstecke die Wahl nicht im Design. Die Grundsätze in Artikel 5 DSGVO, etwa Datenminimierung und Zweckbindung, sprechen dafür, nur zu erheben, was eine Entscheidung braucht. Welche Werkzeugkonfiguration und welche Rechtsgrundlage in deinem Fall zulässig ist, einschließlich der Regeln zu Cookies und Gerätezugriff, ist eine Frage für die Rechtsberatung und die Datenschutzbeauftragten.
+
+## Praxisbeispiel
+
+Nur zur Veranschaulichung; erfundene Zahlen. Ein Shop will wissen, ob sich bezahlte Suche nach dem eigenen Markennamen lohnt. Das Team schaltet die Anzeigen vier Wochen lang in zufällig gewählten Regionen (die Hälfte) ab. Die Bestellungen in beiden Hälften sind nahezu gleich. Fazit im Bericht: "Bei dieser Stichprobengröße kein sichtbarer Effekt; die Last-Touch-Zuordnung überschätzte den Wert. Wir behalten ein kleines Budget und wiederholen den Test länger." Der Bericht nennt die Grenze, statt Gewissheit zu behaupten.
+
+## Berichtsregeln
+
+Unsere eigene Methode: ein Haupt-KPI, die Methode, der Zeitraum, die Stichprobe, die Unsicherheit in Worten, die unterstützte Entscheidung und was nicht gemessen wurde.
+
+## Wichtigste Erkenntnisse
+
+- Attribution verteilt Wert; Inkrementalität prüft Ursache mit einer Vergleichsgruppe.
+- Randomisiere, lege die Entscheidungsschwelle vorher fest, brich nicht vorzeitig ab.
+- Einwilligung begrenzt, wen du messen kannst; berichte diese Grenze.
+- Erhebe nur, was die Entscheidung braucht, und beziehe die Rechtsberatung ein.

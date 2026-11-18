@@ -151,7 +151,7 @@ Keep people productive and IT running: handle incidents and requests, troublesho
 | Self-organisation and project basics | core | 3 | F | P | P | — |
 | Working with data | core | 3 | F | F | P | digital-ai-literacy |
 
-## Marketing (`marketing`, role, draft)
+## Marketing (`marketing`, role, published)
 
 Make offers known and wanted: understand markets and customers, define target groups and a clear brand, create content, run digital channels, email and social media fairly and lawfully, plan campaigns and budgets, and measure what works.
 

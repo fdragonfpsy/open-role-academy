@@ -1,0 +1,73 @@
+---
+id: marketing-analytics-attribution-advanced
+competency: marketing-analytics-attribution
+level: advanced
+title: "Incrementality, holdouts and consent-aware measurement"
+objectives:
+  - "Explain why attribution is not proof of cause and what incrementality asks instead."
+  - "Design a simple holdout test and name its pitfalls."
+  - "Describe how consent shapes what you can measure, at topic level."
+  - "Report results with uncertainty and decision rules."
+minutes: 30
+resources:
+  - openstax-marketing-online-metrics
+  - edpb-guidelines-05-2020-consent-de
+  - eurlex-gdpr-regulation-2016-679
+status: ai-draft
+sources:
+  - title: "Principles of Marketing, 16.3: Metrics Used to Evaluate the Success of Online Marketing"
+    author: OpenStax
+    url: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+  - title: "Leitlinien 05/2020 zur Einwilligung gemäß Verordnung 2016/679 (Version 1.1)"
+    author: Europäischer Datenschutzausschuss (EDPB)
+    url: https://www.edpb.europa.eu/system/files/documents/files/file1/edpb_guidelines_202005_consent_de.pdf
+    license: free-access
+    licenseUrl: https://www.edpb.europa.eu/copyright_en
+    usage: cited
+  - title: "Regulation (EU) 2016/679 (GDPR)"
+    author: European Union
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+    license: free-access
+    licenseUrl: https://eur-lex.europa.eu/content/legal-notice/legal-notice.html
+    usage: cited
+---
+
+## Why this matters
+
+Attribution reports say who got the credit. Leaders ask something harder: how many conversions would not have happened without the campaign? At advanced level you design measurement that tries to answer that, and you stay honest about what remains uncertain.
+
+## Incrementality
+
+A conversion is **incremental** if it happened because of the marketing. Many people who see a brand search ad would have bought anyway. Last-touch reports credit the ad regardless. The question "what would have happened without it?" needs a comparison group.
+
+## Holdout test (our own working method)
+
+1. Pick one question, for example "Does retargeting add purchases?"
+2. Randomly assign eligible people to a **test** group (sees the campaign) and a **holdout** group (does not). Random assignment avoids a hidden difference between the groups.
+3. Fix the KPI, the duration and the minimum difference that would change your decision before you start.
+4. Compare conversion rates. The difference is the estimated lift.
+5. Check that the groups were comparable and that nothing else changed during the test (a sale, a holiday, a new competitor).
+
+Pitfalls: groups too small to tell a real difference from chance; stopping early when the numbers look good; holdout people seeing the campaign through another channel; ignoring costs of the lost reach. Where a randomised test is not possible, compare regions or periods, and say that this is weaker evidence. Ask a data specialist for sample size and significance.
+
+## Consent-aware measurement (EU, topic level)
+
+Measurement based on personal data has to rest on a legal basis. The EDPB guidance on consent, which restates the GDPR definition, says that consent must be freely given, specific, informed and unambiguous, that pre-ticked boxes and opt-out constructions are not suitable, and that withdrawing consent must be as easy as giving it. Consequences for measurement design: some visitors will not be measurable, so reports describe consenting users only; do not treat them as identical to everyone; do not hide the choice in design. The GDPR's principles in Article 5, such as data minimisation and purpose limitation, argue for collecting only what a decision needs. Which tool setup and which legal basis is allowed in your case, including cookie and device-access rules, is a question for legal counsel and the data protection officer.
+
+## Worked example
+
+Illustration only; invented numbers. A shop wants to know whether paid search for its own brand name is worth the spend. The team switches the ads off for a randomly chosen half of the regions for four weeks. Orders in both halves are nearly identical. Conclusion in the report: "No visible lift at this sample size; last-touch credit overstated the value. We keep a small budget and repeat with longer duration." The report names the limit instead of claiming certainty.
+
+## Reporting rules
+
+Our own method: one headline KPI, the method, the period, the sample, the uncertainty in words, the decision it supports, and what was not measured.
+
+## Key takeaways
+
+- Attribution splits credit; incrementality tests cause with a comparison group.
+- Randomise, define the decision threshold first, avoid early stopping.
+- Consent limits who you can measure; report that limit.
+- Collect only what the decision needs and involve legal counsel.

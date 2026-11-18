@@ -1,0 +1,290 @@
+competency: marketing-analytics-attribution
+items:
+  - id: maa-f-kpi
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "A campaign aims at newsletter sign-ups. Which number is most likely a vanity metric for this goal?"
+      de: "Eine Kampagne soll Newsletter-Anmeldungen bringen. Welche Zahl ist für dieses Ziel am ehesten eine Vanity Metric?"
+    options:
+      - en: "Number of sign-ups per euro spent"
+        de: "Anzahl der Anmeldungen pro ausgegebenem Euro"
+        correct: false
+      - en: "Total likes on the campaign post"
+        de: "Gesamtzahl der Likes unter dem Kampagnenbeitrag"
+        correct: true
+      - en: "Share of landing page visitors who sign up"
+        de: "Anteil der Besuchenden der Landingpage, die sich anmelden"
+        correct: false
+      - en: "Number of sign-ups per week"
+        de: "Anzahl der Anmeldungen pro Woche"
+        correct: false
+    explanation:
+      en: "Likes look good but do not tell you whether the goal, sign-ups, is reached or what to change. The other numbers are tied to the goal."
+      de: "Likes sehen gut aus, sagen aber nicht, ob das Ziel Anmeldungen erreicht wird oder was zu ändern ist. Die anderen Zahlen sind an das Ziel gekoppelt."
+    source: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
+  - id: maa-f-funnel
+    level: foundation
+    difficulty: 920
+    type: single
+    stem:
+      en: "How does OpenStax describe a sales funnel?"
+      de: "Wie beschreibt OpenStax einen Sales Funnel?"
+    options:
+      - en: "A list of all products a company sells"
+        de: "Eine Liste aller Produkte, die ein Unternehmen verkauft"
+        correct: false
+      - en: "A visual representation of the customer journey from awareness to purchase"
+        de: "Eine visuelle Darstellung der Customer Journey von der Wahrnehmung bis zum Kauf"
+        correct: true
+      - en: "A report of all complaints received from customers"
+        de: "Ein Bericht über alle eingegangenen Beschwerden"
+        correct: false
+      - en: "A budget plan split by channel"
+        de: "Ein nach Kanälen aufgeteilter Budgetplan"
+        correct: false
+    explanation:
+      en: "OpenStax defines the funnel as the journey from product awareness to purchase; traffic sits at the top, where most visitors stop."
+      de: "OpenStax definiert den Funnel als Weg von der Produktwahrnehmung bis zum Kauf; der Traffic steht oben, wo die meisten Besuchenden aussteigen."
+    source: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
+  - id: maa-f-rate
+    level: foundation
+    difficulty: 980
+    type: single
+    stem:
+      en: "Invented example: a campaign costs 600 euros and leads to 30 conversions. What is the cost per acquisition?"
+      de: "Erfundenes Beispiel: Eine Kampagne kostet 600 Euro und führt zu 30 Conversions. Wie hoch sind die Kosten pro Akquise?"
+    options:
+      - en: "5 euros"
+        de: "5 Euro"
+        correct: false
+      - en: "30 euros"
+        de: "30 Euro"
+        correct: false
+      - en: "20 euros"
+        de: "20 Euro"
+        correct: true
+      - en: "18,000 euros"
+        de: "18.000 Euro"
+        correct: false
+    explanation:
+      en: "CPA is spend divided by conversions: 600 / 30 = 20 euros. Multiplying the numbers or inverting the fraction gives meaningless results."
+      de: "CPA ist Ausgabe geteilt durch Conversions: 600 / 30 = 20 Euro. Multiplizieren oder Umkehren des Bruchs liefert sinnlose Ergebnisse."
+    source: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
+  - id: maa-f-define
+    level: foundation
+    difficulty: 1000
+    type: multi
+    stem:
+      en: "Which steps help you compare conversion rates fairly between two campaigns? Select all that apply."
+      de: "Welche Schritte helfen, Conversion Rates zweier Kampagnen fair zu vergleichen? Wähle alle zutreffenden aus."
+    options:
+      - en: "Define in advance what counts as a conversion"
+        de: "Vorab festlegen, was als Conversion zählt"
+        correct: true
+      - en: "Use the same denominator, for example unique visitors"
+        de: "Denselben Nenner verwenden, zum Beispiel eindeutige Besuchende"
+        correct: true
+      - en: "Pick for each campaign whichever definition gives the higher rate"
+        de: "Für jede Kampagne die Definition wählen, die die höhere Rate ergibt"
+        correct: false
+      - en: "Compare the periods only if both are equally short"
+        de: "Zeiträume nur vergleichen, wenn beide gleich kurz sind"
+        correct: false
+    explanation:
+      en: "A comparison needs the same conversion definition and the same denominator. Choosing the flattering definition per campaign makes the comparison meaningless."
+      de: "Ein Vergleich braucht dieselbe Conversion-Definition und denselben Nenner. Die jeweils schmeichelhafte Definition zu wählen, macht ihn bedeutungslos."
+    source: https://de.wikipedia.org/wiki/Konversion_(Marketing)
+  - id: maa-p-last
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "What is a typical weakness of last-touch attribution?"
+      de: "Was ist eine typische Schwäche der Last-Touch-Attribution?"
+    options:
+      - en: "It gives credit to every contact equally"
+        de: "Sie gibt jedem Kontakt gleich viel Wert"
+        correct: false
+      - en: "It credits earlier contacts that started the journey too much"
+        de: "Sie überbewertet frühe Kontakte, die die Reise begonnen haben"
+        correct: false
+      - en: "It favours channels close to the purchase and undervalues earlier ones"
+        de: "Sie bevorzugt kaufnahe Kanäle und unterschätzt frühere"
+        correct: true
+      - en: "It cannot be calculated when a customer has only one contact"
+        de: "Sie lässt sich nicht berechnen, wenn es nur einen Kontakt gibt"
+        correct: false
+    explanation:
+      en: "Last touch gives all credit to the final contact, so brand search or a reminder email look strong while the social post that started the journey gets nothing."
+      de: "Last Touch gibt dem letzten Kontakt den ganzen Wert, daher wirken Markensuche oder Erinnerungsmail stark, während der Social-Post am Anfang nichts bekommt."
+    source: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
+  - id: maa-p-linear
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "Invented example: a buyer had four contacts before purchase. How much credit does each contact get under linear attribution?"
+      de: "Erfundenes Beispiel: Eine Käuferin hatte vor dem Kauf vier Kontakte. Wie viel Wert erhält jeder Kontakt bei linearer Attribution?"
+    options:
+      - en: "Half for the first, the rest split among the others"
+        de: "Die Hälfte für den ersten, der Rest verteilt auf die anderen"
+        correct: false
+      - en: "One quarter each"
+        de: "Je ein Viertel"
+        correct: true
+      - en: "Everything for the last contact"
+        de: "Alles für den letzten Kontakt"
+        correct: false
+      - en: "Nothing, as linear attribution only counts purchases"
+        de: "Nichts, da lineare Attribution nur Käufe zählt"
+        correct: false
+    explanation:
+      en: "Linear attribution splits credit equally across all contacts, so four contacts get 25 percent each. Its weakness is that a minor reminder counts as much as the decisive contact."
+      de: "Lineare Attribution verteilt den Wert gleichmäßig auf alle Kontakte, bei vier also je 25 Prozent. Schwäche: Eine kleine Erinnerung zählt so viel wie der entscheidende Kontakt."
+    source: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
+  - id: maa-p-tags
+    level: practitioner
+    difficulty: 1280
+    type: multi
+    stem:
+      en: "Which practices keep tagged campaign links useful? Select all that apply."
+      de: "Welche Praktiken halten markierte Kampagnenlinks brauchbar? Wähle alle zutreffenden aus."
+    options:
+      - en: "One agreed naming scheme, for example lower case only"
+        de: "Ein vereinbartes Benennungsschema, zum Beispiel nur Kleinbuchstaben"
+        correct: true
+      - en: "A shared list of campaign names"
+        de: "Eine gemeinsame Liste der Kampagnennamen"
+        correct: true
+      - en: "Putting the visitor's email address into the link to identify them"
+        de: "Die E-Mail-Adresse der Person in den Link schreiben, um sie zu erkennen"
+        correct: false
+      - en: "Tagging internal links on your own website as well"
+        de: "Auch interne Links auf der eigenen Website markieren"
+        correct: false
+    explanation:
+      en: "Naming discipline keeps reports clean. Personal data does not belong in links, and tagging internal links can overwrite the real source of a visit (own working method)."
+      de: "Benennungsdisziplin hält Berichte sauber. Personenbezogene Daten gehören nicht in Links, und markierte interne Links können die echte Herkunft eines Besuchs überschreiben (eigene Arbeitsmethode)."
+    source: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
+  - id: maa-p-report
+    level: practitioner
+    difficulty: 1320
+    type: single
+    stem:
+      en: "Under last touch, search looks best; under first touch, social does. What is the most sensible statement in the report?"
+      de: "Nach Last Touch sieht die Suche am besten aus, nach First Touch Social. Was ist die vernünftigste Aussage im Bericht?"
+    options:
+      - en: "Cut social entirely, because search wins under last touch"
+        de: "Social komplett streichen, weil die Suche nach Last Touch gewinnt"
+        correct: false
+      - en: "Cut search, because social starts the journey"
+        de: "Die Suche streichen, weil Social die Reise beginnt"
+        correct: false
+      - en: "Show both models and name the blind spots"
+        de: "Beide Modelle zeigen und die blinden Flecken nennen"
+        correct: true
+      - en: "Average the two models into one secret score"
+        de: "Beide Modelle zu einer geheimen Kennzahl mitteln"
+        correct: false
+    explanation:
+      en: "Each model is only a rule for splitting credit. Showing both and stating limits supports a decision; a test (see advanced unit) can add evidence."
+      de: "Jedes Modell ist nur eine Regel zur Verteilung von Wert. Beide zu zeigen und Grenzen zu nennen stützt eine Entscheidung; ein Test (siehe Expertenstufe) kann Belege ergänzen."
+    source: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
+  - id: maa-a-incr
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "What question does an incrementality test try to answer that attribution does not?"
+      de: "Welche Frage will ein Inkrementalitätstest beantworten, die Attribution nicht beantwortet?"
+    options:
+      - en: "Which contact came last before the purchase?"
+        de: "Welcher Kontakt kam vor dem Kauf zuletzt?"
+        correct: false
+      - en: "Which channel has the lowest cost per click?"
+        de: "Welcher Kanal hat die niedrigsten Kosten pro Klick?"
+        correct: false
+      - en: "How many conversions would not have happened without the campaign?"
+        de: "Wie viele Conversions wären ohne die Kampagne nicht passiert?"
+        correct: true
+      - en: "How many visitors saw the landing page?"
+        de: "Wie viele Besuchende haben die Landingpage gesehen?"
+        correct: false
+    explanation:
+      en: "Incrementality asks about the causal effect and needs a comparison group. Attribution only splits credit among observed contacts."
+      de: "Inkrementalität fragt nach dem ursächlichen Effekt und braucht eine Vergleichsgruppe. Attribution verteilt nur Wert auf beobachtete Kontakte."
+    source: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
+  - id: maa-a-holdout
+    level: advanced
+    difficulty: 1550
+    type: multi
+    stem:
+      en: "Which design choices make a holdout test more trustworthy (own working method)? Select all that apply."
+      de: "Welche Designentscheidungen machen einen Holdout-Test vertrauenswürdiger (eigene Arbeitsmethode)? Wähle alle zutreffenden aus."
+    options:
+      - en: "Randomly assign people to test and holdout"
+        de: "Personen zufällig auf Test- und Holdout-Gruppe verteilen"
+        correct: true
+      - en: "Fix the KPI and the decision threshold before the start"
+        de: "KPI und Entscheidungsschwelle vor dem Start festlegen"
+        correct: true
+      - en: "Stop as soon as the numbers look good"
+        de: "Abbrechen, sobald die Zahlen gut aussehen"
+        correct: false
+      - en: "Put the most loyal customers into the test group only"
+        de: "Nur die treuesten Kunden in die Testgruppe legen"
+        correct: false
+    explanation:
+      en: "Randomisation and pre-set rules protect against hidden group differences and wishful reading. Early stopping and hand-picked groups bias the result."
+      de: "Zufallszuteilung und vorab festgelegte Regeln schützen vor versteckten Gruppenunterschieden und Wunschdenken. Frühes Abbrechen und handverlesene Gruppen verzerren das Ergebnis."
+    source: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
+  - id: maa-a-consent
+    level: advanced
+    difficulty: 1580
+    type: single
+    stem:
+      en: "Per the EDPB guidance on consent, which statement about consent for measurement based on personal data is correct?"
+      de: "Welche Aussage zur Einwilligung für Messung auf Basis personenbezogener Daten stimmt laut EDPB-Leitlinien zur Einwilligung?"
+    options:
+      - en: "A pre-ticked box is a suitable way to obtain it"
+        de: "Ein vorangekreuztes Kästchen ist ein geeigneter Weg, sie einzuholen"
+        correct: false
+      - en: "Withdrawing it must be as easy as giving it"
+        de: "Der Widerruf muss genauso einfach sein wie die Erteilung"
+        correct: true
+      - en: "Once given in one project it covers any later purpose"
+        de: "Einmal in einem Projekt erteilt, deckt sie jeden späteren Zweck ab"
+        correct: false
+      - en: "It is unnecessary whenever the data is used only for reports"
+        de: "Sie ist unnötig, wenn die Daten nur für Berichte genutzt werden"
+        correct: false
+    explanation:
+      en: "The EDPB guidance says withdrawal must be as easy as giving consent and that pre-ticked boxes and opt-out constructions do not work. Whether and which consent is needed in a concrete case is a question for legal counsel."
+      de: "Die EDPB-Leitlinien sagen, der Widerruf muss genauso einfach sein wie die Erteilung, und vorangekreuzte Kästchen sowie Opt-out-Konstruktionen taugen nicht. Ob und welche Einwilligung im konkreten Fall nötig ist, klärt die Rechtsberatung."
+    source: https://www.edpb.europa.eu/system/files/documents/files/file1/edpb_guidelines_202005_consent_de.pdf
+  - id: maa-a-report
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "A holdout test shows no visible difference, but the sample was small. What is the best wording in the report?"
+      de: "Ein Holdout-Test zeigt keinen sichtbaren Unterschied, die Stichprobe war aber klein. Was ist die beste Formulierung im Bericht?"
+    options:
+      - en: "The campaign has no effect at all, so stop all spend and move the budget elsewhere"
+        de: "Die Kampagne wirkt überhaupt nicht, daher alle Ausgaben stoppen und das Budget umlenken"
+        correct: false
+      - en: "The campaign proved its value, since conversions occurred"
+        de: "Die Kampagne hat ihren Wert bewiesen, da Conversions stattfanden"
+        correct: false
+      - en: "No visible lift at this size; a small effect is not ruled out, so retest"
+        de: "Bei dieser Größe kein sichtbarer Effekt; ein kleiner Effekt ist nicht ausgeschlossen, daher erneut testen"
+        correct: true
+      - en: "Leave out the test because it was inconclusive"
+        de: "Den Test weglassen, weil er nicht eindeutig war"
+        correct: false
+    explanation:
+      en: "A small test can miss real effects. Reporting the limit and the next step keeps the result honest and useful; hiding or overstating it misleads decisions."
+      de: "Ein kleiner Test kann echte Effekte übersehen. Grenze und nächsten Schritt zu nennen hält das Ergebnis ehrlich und nützlich; Verschweigen oder Übertreiben führt Entscheidungen in die Irre."
+    source: https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing
