@@ -1,0 +1,18 @@
+id: consumer-rights-basics
+title:
+  en: Consumer rights basics (EU/Germany)
+  de: Verbraucherrechte – Grundlagen (EU/Deutschland)
+description:
+  en: >-
+    Recognise common consumer topics in service contacts, with EU/Germany context at topic level only: withdrawal from distance contracts, statutory warranty versus voluntary guarantee, information duties and complaints; know when to refer to legal or compliance staff.
+  de: >-
+    Typische Verbraucherthemen im Servicekontakt erkennen, mit EU-/Deutschland-Bezug nur auf Themenebene: Widerruf bei Fernabsatzverträgen, gesetzliche Gewährleistung versus freiwillige Garantie, Informationspflichten und Beschwerden; wissen, wann an Recht oder Compliance verwiesen wird.
+prerequisites: [complaint-handling-de-escalation]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/947e6a15-5539-43e2-b62f-6a52fd57e0a0
+    label: consumer law
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/7ae62140-fe02-4ee3-a0c5-fb5668a2870d
+    label: consumer protection

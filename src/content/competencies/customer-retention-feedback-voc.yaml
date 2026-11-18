@@ -1,0 +1,18 @@
+id: customer-retention-feedback-voc
+title:
+  en: Customer retention and voice of the customer
+  de: Kundenbindung und Kundenstimme (Voice of the Customer)
+description:
+  en: >-
+    Use customer feedback to keep and improve customer relationships: collect feedback and surveys, analyse recurring themes, close the loop with customers, support loyalty and retention, and pass insights on to product and other teams.
+  de: >-
+    Kundenfeedback nutzen, um Kundenbeziehungen zu erhalten und zu verbessern: Feedback und Umfragen erheben, wiederkehrende Themen auswerten, den Kreis mit der Kundschaft schließen, Bindung fördern und Erkenntnisse an Produkt und andere Teams weitergeben.
+prerequisites: [service-level-quality-management, complaint-handling-de-escalation]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/89ba58e8-a67e-4d2b-ad42-6acab25c241b
+    label: measure customer feedback
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/dc9a236c-c640-43c3-812f-269403591edb
+    label: customer relationship management

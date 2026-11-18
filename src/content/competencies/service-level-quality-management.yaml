@@ -1,0 +1,18 @@
+id: service-level-quality-management
+title:
+  en: Service levels and quality management
+  de: Service-Level und Qualitätsmanagement
+description:
+  en: >-
+    Measure and steer service quality: service level agreements, response and resolution times, common metrics such as CSAT, NPS and first-contact resolution, quality monitoring and coaching, and staffing and workload basics.
+  de: >-
+    Servicequalität messen und steuern: Service-Level-Vereinbarungen, Reaktions- und Lösungszeiten, gängige Kennzahlen wie CSAT, NPS und Erstlösungsquote, Qualitätssicherung und Coaching sowie Grundlagen der Personal- und Lastplanung.
+prerequisites: [ticketing-knowledge-base, working-with-data]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/ee1d5734-89b8-4519-81f1-733a6b4f8df8
+    label: monitor customer service
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/8d4271ca-c9fd-40b3-875f-15f78332a49e
+    label: quality standards
