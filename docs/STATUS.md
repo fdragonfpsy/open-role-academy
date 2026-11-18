@@ -1,5 +1,23 @@
 # Status
 
+## 2026-11-18 — Phase 4: Project Management content batch 3 (resource-team-coordination, agile-hybrid-delivery, quality-change-management)
+
+**Done**
+- 14 unit files (7 en + 7 de, `status: ai-draft`): team coordination at all three levels, agile and quality at foundation/practitioner (role targets). Own methods labelled "our own"; examples invented and labelled.
+- 36 items (12 per competency, 4 per level, multi mixed in); longest-option check clean.
+- 16 new link-only resources (`licenseVerifiedOn: 2026-11-18`, HTTP 200): 5 OpenStax pages (4 CC BY-NC-SA, Introduction to Business 10.6 CC BY) and 11 Wikipedia (en/de). 3 existing resources re-tagged. Pages with maintenance banners or disambiguation were dropped.
+- Role stays `status: draft`.
+
+**Reviewer to-dos**
+- Check facts against `sources[]`: Tuckman stages and regression, resource leveling, Scrum sprint rules, QA vs QC, six-step change control, change requests in contracts, OpenStax 17.8.
+- Item `ahd-a-lead` (eight-week lead time) and the quality "late inspection" explanation are own reasoning. Only the introductions of the Wikipedia articles were read.
+- agilemanifesto.org and scrumguides.org were unreachable, so neither is cited; no non-Wikipedia agile source except OpenStax 17.8 as background.
+- German wording of the 7 DE units.
+
+**Counts:** roles 8 (1 draft) · competencies 78 · units 440 · items 928 · resources 445
+
+**Next:** Project Management content: project-closure-lessons-learned; then publish and quality pass.
+
 ## 2026-11-18 — Phase 4: Project Management content batch 2 (project-budget-cost-control, risk-issue-management, stakeholder-management-communication)
 
 **Done**

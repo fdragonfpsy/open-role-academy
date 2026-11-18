@@ -1,0 +1,14 @@
+id: wikipedia-resource-leveling
+url: https://en.wikipedia.org/wiki/Resource_leveling
+title: Resource leveling
+provider: Wikipedia
+language: en
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: '2026-11-18'
+mode: link
+competencies: [resource-team-coordination]
+levels: [practitioner, advanced]
+note: Footer states CC BY-SA; no maintenance banner; read 2026-11-18. Link only, nothing copied. Leveling resolves over-allocation by delaying tasks, usually at the expense of time, cost or scope.

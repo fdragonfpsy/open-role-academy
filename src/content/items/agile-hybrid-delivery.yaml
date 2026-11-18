@@ -1,0 +1,290 @@
+competency: agile-hybrid-delivery
+items:
+- id: ahd-f-sprint
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: How long is a sprint in Scrum?
+    de: Wie lange dauert ein Sprint in Scrum?
+  options:
+  - en: At most one month, commonly two weeks
+    de: Höchstens einen Monat, üblich sind zwei Wochen
+    correct: true
+  - en: Always exactly four weeks, never shorter
+    de: Immer genau vier Wochen, nie kürzer
+    correct: false
+  - en: Until all planned work is finished
+    de: Bis die gesamte geplante Arbeit fertig ist
+    correct: false
+  - en: At least one quarter, to allow real progress
+    de: Mindestens ein Quartal, damit echter Fortschritt möglich ist
+    correct: false
+  explanation:
+    en: A sprint is a time-boxed iteration of no more than one month. Its length is fixed in advance and does not stretch until the work is done.
+    de: Ein Sprint ist eine zeitlich begrenzte Iteration von höchstens einem Monat. Seine Länge steht vorab fest und dehnt sich nicht, bis die Arbeit fertig ist.
+  source: https://en.wikipedia.org/wiki/Scrum_(project_management)
+- id: ahd-f-events
+  level: foundation
+  difficulty: 950
+  type: multi
+  stem:
+    en: Which statements about Scrum meetings are correct? Select all that apply.
+    de: Welche Aussagen über Scrum-Termine sind richtig? Wähle alle zutreffenden aus.
+  options:
+  - en: The daily scrum lasts at most 15 minutes
+    de: Das Daily Scrum dauert höchstens 15 Minuten
+    correct: true
+  - en: The sprint review shows work to stakeholders and collects feedback
+    de: Im Sprint-Review wird die Arbeit den Stakeholdern gezeigt und Rückmeldung eingeholt
+    correct: true
+  - en: The retrospective is where stakeholders approve the budget
+    de: In der Retrospektive geben die Stakeholder das Budget frei
+    correct: false
+  - en: The retrospective looks at how the team works together
+    de: Die Retrospektive betrachtet, wie das Team zusammenarbeitet
+    correct: true
+  explanation:
+    en: Review looks at the product with stakeholders; retrospective looks at the way of working inside the team. Budget decisions belong elsewhere.
+    de: Das Review betrachtet das Produkt mit den Stakeholdern; die Retrospektive die Arbeitsweise im Team. Budgetentscheidungen gehören woanders hin.
+  source: https://en.wikipedia.org/wiki/Scrum_(project_management)
+- id: ahd-f-backlog
+  level: foundation
+  difficulty: 1000
+  type: single
+  stem:
+    en: What is a backlog?
+    de: Was ist ein Backlog?
+  options:
+  - en: A list of all completed work items
+    de: Eine Liste aller erledigten Arbeitseinträge
+    correct: false
+  - en: An ordered list of the work still to be done
+    de: Eine geordnete Liste der noch offenen Arbeit
+    correct: true
+  - en: The fixed scope that the contract defines
+    de: Der feste Umfang, den der Vertrag definiert
+    correct: false
+  - en: A register of all project risks and issues
+    de: Ein Register aller Projektrisiken und Issues
+    correct: false
+  explanation:
+    en: A backlog is an ordered list of remaining work. The most valuable or urgent items are on top and described in most detail.
+    de: Ein Backlog ist eine geordnete Liste der verbleibenden Arbeit. Die wertvollsten oder dringendsten Einträge stehen oben und sind am genauesten beschrieben.
+  source: https://de.wikipedia.org/wiki/Scrum
+- id: ahd-f-fit
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: In which situation does an agile approach fit best?
+    de: In welcher Situation passt ein agiles Vorgehen am besten?
+  options:
+  - en: Scope, date and price are fixed in the contract and little is unknown
+    de: Umfang, Termin und Preis sind vertraglich fest und wenig ist unbekannt
+    correct: false
+  - en: Requirements are unclear and users can give feedback early
+    de: Anforderungen sind unklar und Nutzende können früh Rückmeldung geben
+    correct: true
+  - en: A single delivery is due to a regulator and no change is possible
+    de: Eine einzige Lieferung ist an eine Behörde fällig und Änderungen sind nicht möglich
+    correct: false
+  - en: The team works alone and cannot meet any stakeholders
+    de: Das Team arbeitet allein und kann keine Stakeholder treffen
+    correct: false
+  explanation:
+    en: Agile approaches suit uncertainty and early feedback. Fixed, well-known work with no room for change leans to a plan-driven approach.
+    de: Agile Ansätze passen zu Unsicherheit und früher Rückmeldung. Feste, gut bekannte Arbeit ohne Änderungsspielraum spricht eher für ein plangetriebenes Vorgehen.
+  source: https://de.wikipedia.org/wiki/Agile_Softwareentwicklung
+- id: ahd-p-split
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: Which split is typical for a hybrid project?
+    de: Welche Aufteilung ist für ein hybrides Projekt typisch?
+  options:
+  - en: Plan the frame (budget, final date, approvals); organise content in iterations
+    de: Den Rahmen (Budget, Endtermin, Freigaben) planen; den Inhalt in Iterationen organisieren
+    correct: true
+  - en: Iterate on the budget and final date; plan every detail of the content in advance
+    de: Budget und Endtermin iterativ anpassen; jedes Detail des Inhalts vorab planen
+    correct: false
+  - en: Use iterations for everything and drop milestones
+    de: Alles in Iterationen machen und Meilensteine streichen
+    correct: false
+  - en: Plan everything up front and add a retrospective at the end
+    de: Alles vorab planen und am Ende eine Retrospektive ergänzen
+    correct: false
+  explanation:
+    en: A common hybrid pattern is a planned frame with iterative work inside it. The other options mix up which part is stable and which is uncertain.
+    de: Ein häufiges hybrides Muster ist ein geplanter Rahmen mit iterativer Arbeit darin. Die anderen Optionen verwechseln, was stabil und was unsicher ist.
+  source: https://openstax.org/books/principles-management/pages/17-8-the-control-and-involvement-oriented-approaches-to-planning-and-controlling
+- id: ahd-p-report
+  level: practitioner
+  difficulty: 1250
+  type: single
+  stem:
+    en: What should a sponsor mainly receive as progress reporting in a hybrid project?
+    de: Was sollten Auftraggebende in einem hybriden Projekt vor allem als Fortschrittsbericht erhalten?
+  options:
+  - en: Delivered and accepted outcomes per iteration and what remains in the backlog
+    de: Gelieferte und abgenommene Ergebnisse je Iteration und was im Backlog bleibt
+    correct: true
+  - en: The number of hours worked per person each week
+    de: Die Zahl der geleisteten Stunden je Person und Woche
+    correct: false
+  - en: A percent-complete figure based on elapsed time
+    de: Einen Fertigstellungsgrad in Prozent auf Basis der verstrichenen Zeit
+    correct: false
+  - en: The list of meetings held in the last sprint
+    de: Die Liste der Termine im letzten Sprint
+    correct: false
+  explanation:
+    en: Outcomes accepted by stakeholders show real progress. Effort, elapsed time and meeting counts show activity, not results.
+    de: Von Stakeholdern abgenommene Ergebnisse zeigen echten Fortschritt. Aufwand, verstrichene Zeit und Terminzahlen zeigen Aktivität, nicht Ergebnisse.
+  source: https://en.wikipedia.org/wiki/Scrum_(project_management)
+- id: ahd-p-retro
+  level: practitioner
+  difficulty: 1300
+  type: multi
+  stem:
+    en: Which practices make a retrospective effective? Select all that apply.
+    de: Welche Praktiken machen eine Retrospektive wirksam? Wähle alle zutreffenden aus.
+  options:
+  - en: Choose one or two improvements
+    de: Ein bis zwei Verbesserungen auswählen
+    correct: true
+  - en: Assign an owner to each improvement
+    de: Jeder Verbesserung eine verantwortliche Person zuweisen
+    correct: true
+  - en: Check the improvements at the next retrospective
+    de: Die Verbesserungen in der nächsten Retrospektive prüfen
+    correct: true
+  - en: Collect as many actions as possible and track them all
+    de: So viele Maßnahmen wie möglich sammeln und alle verfolgen
+    correct: false
+  explanation:
+    en: A few owned and checked actions change the way of working. Long lists are rarely followed up, so the meeting changes nothing.
+    de: Wenige Maßnahmen mit Verantwortlichen und Nachprüfung verändern die Arbeitsweise. Lange Listen werden selten verfolgt, und der Termin bewirkt nichts.
+  source: https://en.wikipedia.org/wiki/Scrum_(project_management)
+- id: ahd-p-planning
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: Under high uncertainty, who should plan and steer the iterations in a hybrid project?
+    de: Wer sollte bei hoher Unsicherheit in einem hybriden Projekt die Iterationen planen und steuern?
+  options:
+  - en: The sponsor, who plans each task in detail
+    de: Die Auftraggebenden, die jede Aufgabe im Detail planen
+    correct: false
+  - en: A central planning office that sends the schedule
+    de: Eine zentrale Planungsstelle, die den Terminplan verschickt
+    correct: false
+  - en: The project lead alone, to keep control tight
+    de: Die Projektleitung allein, um die Kontrolle eng zu halten
+    correct: false
+  - en: The team, inside goals and limits set by the sponsor
+    de: Das Team, innerhalb von Zielen und Grenzen der Auftraggebenden
+    correct: true
+  explanation:
+    en: With more uncertainty, planning and controlling move closer to the people doing the work, while goals and limits stay with the sponsor.
+    de: Bei mehr Unsicherheit rücken Planen und Steuern näher an die Menschen, die die Arbeit tun; Ziele und Grenzen bleiben bei den Auftraggebenden.
+  source: https://openstax.org/books/principles-management/pages/17-8-the-control-and-involvement-oriented-approaches-to-planning-and-controlling
+- id: ahd-a-frame
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: A project has a fixed regulatory date and unclear requirements. Which approach is most defensible?
+    de: Ein Projekt hat einen festen behördlichen Termin und unklare Anforderungen. Welcher Ansatz ist am besten vertretbar?
+  options:
+  - en: Fix all requirements first, then build to the plan
+    de: Zuerst alle Anforderungen festlegen, dann nach Plan bauen
+    correct: false
+  - en: Work in iterations without any date commitment
+    de: In Iterationen arbeiten, ohne sich auf einen Termin festzulegen
+    correct: false
+  - en: Fix the date; iterate on content with a prioritised backlog and drop the lowest items if needed
+    de: Den Termin festlegen; den Inhalt mit priorisiertem Backlog iterativ erarbeiten und bei Bedarf die untersten Einträge streichen
+    correct: true
+  - en: Ask the regulator to move the regulatory date until the requirements are clear and stable enough
+    de: Die Behörde bitten, den Termin zu verschieben, bis die Anforderungen klar und stabil genug sind
+    correct: false
+  explanation:
+    en: 'The date is fixed and the content is not. Prioritisation makes the date safe: the most valuable items are done first and the least valuable can be dropped.'
+    de: 'Der Termin steht fest, der Inhalt nicht. Priorisierung sichert den Termin: Das Wertvollste entsteht zuerst, das Unwichtigste kann entfallen.'
+  source: https://openstax.org/books/principles-management/pages/17-8-the-control-and-involvement-oriented-approaches-to-planning-and-controlling
+- id: ahd-a-percent
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: A sponsor insists on a percent-complete figure for an iterative workstream. What is the best response?
+    de: Die Auftraggebenden bestehen auf einem Fertigstellungsgrad in Prozent für einen iterativen Arbeitsstrang. Was ist die beste Reaktion?
+  options:
+  - en: Refuse any figure because agile cannot be measured
+    de: Jede Zahl ablehnen, weil agil nicht messbar sei
+    correct: false
+  - en: Report the hours spent divided by the hours planned, as a simple effort-based percentage figure
+    de: Die verbrauchten Stunden geteilt durch die geplanten melden, als einfache aufwandsbasierte Prozentzahl
+    correct: false
+  - en: Pick a percentage that feels right each month
+    de: Jeden Monat einen Prozentwert wählen, der sich richtig anfühlt
+    correct: false
+  - en: Offer accepted outcomes against backlog and milestone; explain why effort ratios mislead
+    de: Abgenommene Ergebnisse gegenüber Backlog und Meilenstein anbieten; erklären, warum Aufwandsquoten in die Irre führen
+    correct: true
+  explanation:
+    en: Refusing blocks the dialogue, and effort ratios hide whether outcomes are accepted. Outcome-based reporting meets the sponsor's need for a view of progress.
+    de: Ablehnen blockiert den Dialog, und Aufwandsquoten verbergen, ob Ergebnisse abgenommen werden. Ergebnisbasierte Berichte erfüllen das Bedürfnis nach einem Fortschrittsbild.
+  source: https://en.wikipedia.org/wiki/Scrum_(project_management)
+- id: ahd-a-name
+  level: advanced
+  difficulty: 1550
+  type: multi
+  stem:
+    en: Which observations suggest that a team is agile in name only? Select all that apply.
+    de: Welche Beobachtungen deuten darauf hin, dass ein Team nur dem Namen nach agil ist? Wähle alle zutreffenden aus.
+  options:
+  - en: The daily meeting is used to assign tasks and check hours
+    de: Das tägliche Meeting dient dazu, Aufgaben zuzuweisen und Stunden zu prüfen
+    correct: true
+  - en: Retrospectives produce lists that nobody follows up
+    de: Retrospektiven liefern Listen, die niemand nachverfolgt
+    correct: true
+  - en: The backlog is reordered after sponsor feedback
+    de: Das Backlog wird nach Rückmeldung der Auftraggebenden umsortiert
+    correct: false
+  - en: Reviews show working results to stakeholders
+    de: Reviews zeigen den Stakeholdern funktionierende Ergebnisse
+    correct: false
+  explanation:
+    en: Using the daily meeting for control and ignoring retrospective actions are signs of ritual without substance. Reordering and showing results are what the practices are for.
+    de: Das Daily als Kontrollinstrument und ignorierte Retrospektiv-Maßnahmen sind Ritual ohne Inhalt. Umsortieren und Ergebnisse zeigen ist der Zweck der Praktiken.
+  source: https://de.wikipedia.org/wiki/Agile_Softwareentwicklung
+- id: ahd-a-lead
+  level: advanced
+  difficulty: 1600
+  type: single
+  stem:
+    en: The team works in two-week sprints. A component needs an eight-week procurement lead time before it can be used in sprint 5. What is the best handling?
+    de: Das Team arbeitet in Zwei-Wochen-Sprints. Eine Komponente hat eine Beschaffungszeit von acht Wochen, bevor sie in Sprint 5 verwendet werden kann. Was ist die beste Handhabung?
+  options:
+  - en: Start procurement now as a planned item in the frame and show it on the board
+    de: Die Beschaffung jetzt als geplanten Punkt im Rahmen starten und auf dem Board zeigen
+    correct: true
+  - en: Wait until the backlog item reaches the top, then order
+    de: Warten, bis der Backlog-Eintrag oben steht, dann bestellen
+    correct: false
+  - en: Put the order into sprint 4 so that it is visible then
+    de: Die Bestellung in Sprint 4 legen, damit sie dann sichtbar ist
+    correct: false
+  - en: Ask the team to guess the lead time at each review
+    de: Das Team bitten, die Lieferzeit bei jedem Review zu schätzen
+    correct: false
+  explanation:
+    en: Items with long, fixed lead times belong to the planned frame. Waiting for the backlog to reach them guarantees a delay.
+    de: Punkte mit langer, fester Vorlaufzeit gehören in den geplanten Rahmen. Wer wartet, bis das Backlog sie erreicht, verzögert garantiert.
+  source: https://openstax.org/books/principles-management/pages/17-8-the-control-and-involvement-oriented-approaches-to-planning-and-controlling

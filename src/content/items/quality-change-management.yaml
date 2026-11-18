@@ -1,0 +1,290 @@
+competency: quality-change-management
+items:
+- id: qcm-f-criterion
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: Which acceptance criterion can be checked with a clear yes or no?
+    de: Welches Abnahmekriterium lässt sich klar mit Ja oder Nein prüfen?
+  options:
+  - en: The report looks professional and is easy to read
+    de: Der Bericht sieht professionell aus und ist gut lesbar
+    correct: false
+  - en: Every chart in the report has a title and a source
+    de: Jede Grafik im Bericht hat einen Titel und eine Quelle
+    correct: true
+  - en: Stakeholders will be satisfied with the report
+    de: Die Stakeholder werden mit dem Bericht zufrieden sein
+    correct: false
+  - en: The report reflects best practice in the field
+    de: Der Bericht entspricht der besten Praxis auf dem Gebiet
+    correct: false
+  explanation:
+    en: A testable criterion names something observable. Words like "professional" or "satisfied" leave room for disagreement at acceptance.
+    de: Ein prüfbares Kriterium nennt etwas Beobachtbares. Wörter wie „professionell“ oder „zufrieden“ lassen bei der Abnahme Raum für Streit.
+  source: https://openstax.org/books/introduction-business/pages/10-6-looking-for-a-better-way-improving-production-and-operations
+- id: qcm-f-assurance
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: Which activity is an example of quality assurance in the sense of prevention?
+    de: Welche Tätigkeit ist ein Beispiel für Qualitätssicherung im Sinne von Vorbeugung?
+  options:
+  - en: Reviewing a finished chapter before printing
+    de: Ein fertiges Kapitel vor dem Druck prüfen
+    correct: false
+  - en: Counting the defects found in the final inspection
+    de: Die in der Endprüfung gefundenen Mängel zählen
+    correct: false
+  - en: Using a template and a checklist while drafting
+    de: Beim Entwerfen eine Vorlage und eine Checkliste nutzen
+    correct: true
+  - en: Testing the product after delivery to the customer
+    de: Das Produkt nach Lieferung an die Kundschaft testen
+    correct: false
+  explanation:
+    en: Assurance aims to prevent mistakes early, for example with templates and checklists. Reviews of finished work and tests detect defects and belong to quality control.
+    de: Sicherung will Fehler früh verhindern, etwa mit Vorlagen und Checklisten. Reviews fertiger Arbeit und Tests erkennen Mängel und gehören zur Qualitätsprüfung.
+  source: https://en.wikipedia.org/wiki/Quality_assurance
+- id: qcm-f-views
+  level: foundation
+  difficulty: 1000
+  type: single
+  stem:
+    en: How does a producer mainly judge quality, in contrast to a customer?
+    de: Wie beurteilt eine herstellende Seite Qualität hauptsächlich, anders als Kundinnen und Kunden?
+  options:
+  - en: By how well the product serves its purpose in daily use
+    de: Danach, wie gut das Produkt im Alltag seinen Zweck erfüllt
+    correct: false
+  - en: By how far the product conforms to predetermined standards
+    de: Danach, wie weit das Produkt vorab festgelegten Standards entspricht
+    correct: true
+  - en: By the price that the product achieves on the market
+    de: Danach, welchen Preis das Produkt am Markt erzielt
+    correct: false
+  - en: By the number of features compared with competitors
+    de: Danach, wie viele Funktionen es im Vergleich zur Konkurrenz hat
+    correct: false
+  explanation:
+    en: A customer judges by purpose; a producer by conformance to standards. A project needs standards that reflect the purpose.
+    de: Kundschaft urteilt nach Zweck, die herstellende Seite nach Übereinstimmung mit Standards. Ein Projekt braucht Standards, die den Zweck abbilden.
+  source: https://openstax.org/books/introduction-business/pages/10-6-looking-for-a-better-way-improving-production-and-operations
+- id: qcm-f-plan
+  level: foundation
+  difficulty: 1050
+  type: multi
+  stem:
+    en: Which statements about planning reviews are correct? Select all that apply.
+    de: Welche Aussagen über das Einplanen von Reviews sind richtig? Wähle alle zutreffenden aus.
+  options:
+  - en: A review should be a scheduled task with an owner
+    de: Ein Review sollte eine eingeplante Aufgabe mit Verantwortlichen sein
+    correct: true
+  - en: The plan should include time for rework after the review
+    de: Der Plan sollte Zeit für Nacharbeit nach dem Review enthalten
+    correct: true
+  - en: Reviews can be skipped first when time is short
+    de: Reviews kann man bei Zeitnot als Erstes streichen
+    correct: false
+  - en: Criteria are agreed before the review starts
+    de: Die Kriterien werden vereinbart, bevor das Review beginnt
+    correct: true
+  explanation:
+    en: Unplanned reviews are the first to be dropped under pressure. A review without rework time and agreed criteria finds problems that nobody can fix.
+    de: Nicht eingeplante Reviews fallen unter Druck als Erste weg. Ein Review ohne Nacharbeitszeit und vereinbarte Kriterien findet Probleme, die niemand beheben kann.
+  source: https://en.wikipedia.org/wiki/Quality_assurance
+- id: qcm-p-log
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: A stakeholder asks for an additional report. What should you do first?
+    de: Ein Stakeholder bittet um einen zusätzlichen Bericht. Was solltest du zuerst tun?
+  options:
+  - en: Start building it, since it is only one report
+    de: Mit dem Bau beginnen, da es nur ein Bericht ist
+    correct: false
+  - en: Record it as a change request with reason, benefit and wanted date
+    de: Es als Änderungsanforderung mit Grund, Nutzen und Wunschtermin erfassen
+    correct: true
+  - en: Decline it, because changes are not allowed after approval
+    de: Es ablehnen, weil nach der Freigabe keine Änderungen erlaubt sind
+    correct: false
+  - en: Ask the team to find time for it without telling anyone
+    de: Das Team bitten, still Zeit dafür zu finden
+    correct: false
+  explanation:
+    en: Change control starts by writing the request down so that it can be assessed and decided. The aim is a knowing decision, not a refusal.
+    de: Die Änderungskontrolle beginnt damit, die Anforderung aufzuschreiben, damit sie bewertet und entschieden werden kann. Ziel ist eine bewusste Entscheidung, keine Ablehnung.
+  source: https://en.wikipedia.org/wiki/Change_control
+- id: qcm-p-route
+  level: practitioner
+  difficulty: 1250
+  type: single
+  stem:
+    en: How should the approval effort differ between a low-risk and a high-risk change?
+    de: Wie sollte sich der Freigabeaufwand zwischen einer Änderung mit niedrigem und hohem Risiko unterscheiden?
+  options:
+  - en: Every change goes to the same board for approval
+    de: Jede Änderung geht zur Freigabe an dasselbe Gremium
+    correct: false
+  - en: Low-risk changes need no record at all, while high-risk ones need only a short note
+    de: Bei niedrigem Risiko braucht es gar keinen Vermerk, bei hohem nur eine Kurznotiz
+    correct: false
+  - en: The requester decides, regardless of risk
+    de: Die anfragende Person entscheidet, unabhängig vom Risiko
+    correct: false
+  - en: 'Low: lead approval, brief notes; high: management approval, stakeholders informed'
+    de: 'Niedrig: Freigabe der Leitung, kurze Notizen; hoch: Freigabe des Managements, Stakeholder informiert'
+    correct: true
+  explanation:
+    en: Routing by risk keeps small changes quick and gives large ones more care, such as management approval and stakeholder notification.
+    de: Die Einstufung nach Risiko hält kleine Änderungen schnell und gibt großen mehr Sorgfalt, etwa Freigabe durch das Management und Information der Stakeholder.
+  source: https://en.wikipedia.org/wiki/Change_control
+- id: qcm-p-assess
+  level: practitioner
+  difficulty: 1300
+  type: multi
+  stem:
+    en: What should the assessment of a change request include? Select all that apply.
+    de: Was sollte die Bewertung einer Änderungsanforderung enthalten? Wähle alle zutreffenden aus.
+  options:
+  - en: The effect on scope, schedule and cost
+    de: Die Wirkung auf Umfang, Termine und Kosten
+    correct: true
+  - en: The effect on related deliverables and quality
+    de: Die Wirkung auf verwandte Ergebnisse und die Qualität
+    correct: true
+  - en: A way back if the change fails
+    de: Einen Weg zurück, falls die Änderung scheitert
+    correct: true
+  - en: The seniority of the person who asked
+    de: Die Seniorität der anfragenden Person
+    correct: false
+  explanation:
+    en: Impact and risk assessment looks at what the change affects and how to undo it. Who asked may matter for priorities but is not part of the technical impact.
+    de: Die Bewertung von Auswirkung und Risiko betrachtet, was die Änderung berührt und wie man sie zurücknimmt. Wer gefragt hat, mag für Prioritäten zählen, gehört aber nicht zur fachlichen Wirkung.
+  source: https://en.wikipedia.org/wiki/Change_control
+- id: qcm-p-contract
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: Under a contract with a customer, the customer asks a developer directly for a change. What is the best handling?
+    de: Im Rahmen eines Vertrags mit einer Kundschaft bittet diese eine entwickelnde Person direkt um eine Änderung. Was ist die beste Handhabung?
+  options:
+  - en: Implement it quickly as a goodwill gesture
+    de: Sie als Entgegenkommen schnell umsetzen
+    correct: false
+  - en: Ignore it, because only the lead is allowed to speak with the customer
+    de: Sie ignorieren, weil nur die Leitung mit der Kundschaft sprechen darf
+    correct: false
+  - en: Bring it into the change process to be assessed and agreed jointly
+    de: Sie in den Änderungsprozess holen, damit sie bewertet und gemeinsam vereinbart wird
+    correct: true
+  - en: Note it in the developer's own task list only
+    de: Sie nur in der eigenen Aufgabenliste der entwickelnden Person notieren
+    correct: false
+  explanation:
+    en: In a contractual relationship, changes are released jointly and become part of the contract. Side agreements bypass the process.
+    de: In einem Vertragsverhältnis werden Änderungen gemeinsam freigegeben und Teil des Vertrags. Nebenabsprachen umgehen den Ablauf.
+  source: https://de.wikipedia.org/wiki/Change_Request
+- id: qcm-a-people
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: A change will alter how 200 staff do their daily work. Which approach is most defensible?
+    de: Eine Änderung wird verändern, wie 200 Beschäftigte ihre tägliche Arbeit erledigen. Welcher Ansatz ist am besten vertretbar?
+  options:
+  - en: Announce the decision top-down once it is approved, to save time and avoid long debates in the teams
+    de: Die Entscheidung nach der Freigabe von oben verkünden, um Zeit zu sparen und lange Debatten in den Teams zu vermeiden
+    correct: false
+  - en: Treat it as low-risk, because the technical effort is small
+    de: Sie als risikoarm behandeln, weil der technische Aufwand klein ist
+    correct: false
+  - en: Involve representatives of those affected beforehand; plan information, training and time
+    de: Vertretungen der Betroffenen vorab einbinden; Information, Schulung und Zeit planen
+    correct: true
+  - en: Wait until all affected staff agree before doing anything
+    de: Abwarten, bis alle Betroffenen zustimmen, bevor etwas geschieht
+    correct: false
+  explanation:
+    en: The people effect is large even if the technical effort is small. Involving those affected and planning support is usually more effective than a top-down announcement, while waiting for unanimity is impractical.
+    de: Der Effekt auf Menschen ist groß, auch wenn der technische Aufwand klein ist. Betroffene einzubinden und Unterstützung zu planen wirkt meist besser als eine Ankündigung von oben; auf Einstimmigkeit zu warten ist unpraktisch.
+  source: https://openstax.org/books/principles-management/pages/10-3-managing-change
+- id: qcm-a-cumulative
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: A stakeholder submits many small changes. Each is low-risk and approved by the lead, but together they push the date. What is the best response?
+    de: Ein Stakeholder reicht viele kleine Änderungen ein. Jede ist risikoarm und wird von der Leitung freigegeben, zusammen verschieben sie den Termin. Was ist die beste Reaktion?
+  options:
+  - en: Keep approving them, since each one passes the rule
+    de: Weiter freigeben, da jede einzelne die Regel erfüllt
+    correct: false
+  - en: Reject all further changes from this stakeholder
+    de: Alle weiteren Änderungen dieses Stakeholders ablehnen
+    correct: false
+  - en: Hide the delay by quietly moving the baseline date, so that the status reports stay green
+    de: Die Verzögerung verbergen, indem das Basisdatum still verschoben wird, damit die Statusberichte grün bleiben
+    correct: false
+  - en: Show the sponsor the cumulative effect; add a cumulative threshold to the approval rule
+    de: Den Auftraggebenden die Gesamtwirkung zeigen; der Freigaberegel eine Summenschwelle hinzufügen
+    correct: true
+  explanation:
+    en: Individually small changes add up, much like risks with a shared cause. A cumulative view and a cumulative threshold keep the lead from approving the project into delay.
+    de: Einzeln kleine Änderungen summieren sich, ähnlich wie Risiken mit gemeinsamer Ursache. Eine Gesamtsicht und eine Summenschwelle verhindern, dass die Leitung das Projekt in die Verspätung freigibt.
+  source: https://en.wikipedia.org/wiki/Change_control
+- id: qcm-a-highrisk
+  level: advanced
+  difficulty: 1550
+  type: multi
+  stem:
+    en: Which measures suit a high-risk change? Select all that apply.
+    de: Welche Maßnahmen passen zu einer Änderung mit hohem Risiko? Wähle alle zutreffenden aus.
+  options:
+  - en: Management approval
+    de: Freigabe durch das Management
+    correct: true
+  - en: Advance notification of stakeholders
+    de: Vorherige Information der Stakeholder
+    correct: true
+  - en: A prepared way back
+    de: Ein vorbereiteter Weg zurück
+    correct: true
+  - en: Skipping tests if the requester is senior
+    de: Tests auslassen, wenn die anfragende Person ranghoch ist
+    correct: false
+  explanation:
+    en: 'High-risk changes need more steps: approval, notification and a back-out plan. Seniority never replaces testing.'
+    de: 'Änderungen mit hohem Risiko brauchen mehr Schritte: Freigabe, Information und einen Rückweg. Ranghöhe ersetzt nie das Testen.'
+  source: https://en.wikipedia.org/wiki/Change_control
+- id: qcm-a-tradeoff
+  level: advanced
+  difficulty: 1600
+  type: single
+  stem:
+    en: The schedule is tight and the team proposes to drop all planned peer reviews and rely on the final inspection. What is the best judgement?
+    de: Der Terminplan ist knapp, und das Team schlägt vor, alle geplanten Peer-Reviews zu streichen und sich auf die Endprüfung zu verlassen. Was ist die beste Einschätzung?
+  options:
+  - en: Agree, because assurance and control are the same thing
+    de: Zustimmen, denn Sicherung und Prüfung sind dasselbe
+    correct: false
+  - en: Keep reviews for the riskiest deliverables and cut them elsewhere
+    de: Reviews für die riskantesten Ergebnisse behalten und anderswo streichen
+    correct: true
+  - en: Refuse any change to the plan and extend the schedule
+    de: Jede Planänderung ablehnen und den Terminplan verlängern
+    correct: false
+  - en: Drop the final inspection instead and keep all reviews
+    de: Stattdessen die Endprüfung streichen und alle Reviews behalten
+    correct: false
+  explanation:
+    en: Inspection at the end only detects defects late, when dependent work exists. Targeting prevention where risk is highest is a defensible compromise; the quality literature stresses building quality in, not only inspecting at the end.
+    de: Eine Endprüfung erkennt Mängel nur spät, wenn abhängige Arbeit schon besteht. Vorbeugung dort zu bündeln, wo das Risiko am höchsten ist, ist ein vertretbarer Kompromiss; die Qualitätsliteratur betont, Qualität einzubauen statt nur am Ende zu prüfen.
+  source: https://openstax.org/books/introduction-business/pages/10-6-looking-for-a-better-way-improving-production-and-operations

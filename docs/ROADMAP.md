@@ -124,7 +124,7 @@ One role per task, in the order of CLAUDE.md §4.3. Each task = framework + cont
   - [x] framework (role + 10 competencies, `status: draft`)
   - [x] content: project-initiation-business-case, scope-requirements-management, work-breakdown-scheduling
   - [x] content: project-budget-cost-control, risk-issue-management, stakeholder-management-communication
-  - [ ] content: resource-team-coordination, agile-hybrid-delivery, quality-change-management
+  - [x] content: resource-team-coordination, agile-hybrid-delivery, quality-change-management
   - [ ] content: project-closure-lessons-learned; then `status: published` and quality pass
 - [ ] Procurement & Supply Chain
 - [ ] Data & Analytics
