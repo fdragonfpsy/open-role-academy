@@ -1,5 +1,22 @@
 # Status
 
+## 2026-11-18 — Phase 4: Project Management content batch 1 (project-initiation-business-case, scope-requirements-management, work-breakdown-scheduling)
+
+**Done**
+- 18 unit files (9 en + 9 de, `status: ai-draft`), all three levels; methodology-neutral, own methods (one-page business case, feasibility checks, requirement format, change-request steps, buffer and re-plan rules, one-to-two-week work-package size) labelled "our own"; all figures in examples invented and labelled.
+- 36 items (12 per competency, 4 per level, 6 multi-select in total per file at most; correct option uniquely longest in at most 4 of 9 singles).
+- 22 new link-only resources (`licenseVerifiedOn: 2026-11-18`, HTTP 200): 17 Wikipedia (12 German, CC BY-SA), OpenStax Principles of Management 17.2 and 17.4 (CC BY-NC-SA), 2 Wikibooks PMBOK Scope/Time pages (CC BY-SA, linked only, nothing copied).
+- Role stays `status: draft`.
+
+**Reviewer to-dos**
+- Spot-check: PERT "late 1950s" origin, Bundeshaushaltsordnung §7 mention, MoSCoW "Won't have" wording.
+- OpenStax has no project-management chapter, so it only supports the initiation units; German resources are all de.Wikipedia (CIO Bund, German Wikibooks, OpenLearn unreachable). Preferred open sources are thin here (see QA #56).
+- German wording of the 9 DE units; en distractors were lengthened to satisfy the length validator.
+
+**Counts:** roles 8 (1 draft) · competencies 78 · units 410 · items 856 · resources 414
+
+**Next:** Project Management content: project-budget-cost-control, risk-issue-management, stakeholder-management-communication.
+
 ## 2026-11-18 — Phase 4: Project Management framework (draft, no content yet)
 
 **Done**

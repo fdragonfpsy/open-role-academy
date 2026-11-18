@@ -1,0 +1,14 @@
+id: wikipedia-work-breakdown-structure
+url: https://en.wikipedia.org/wiki/Work_breakdown_structure
+title: "Work breakdown structure"
+provider: Wikipedia
+language: en
+format: article
+minutes: 20
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies: [work-breakdown-scheduling]
+levels: [foundation, practitioner, advanced]
+note: "Footer states CC BY-SA; no maintenance banner; read 2026-11-18. Link only. Hierarchical decomposition, work packages, 100% rule."

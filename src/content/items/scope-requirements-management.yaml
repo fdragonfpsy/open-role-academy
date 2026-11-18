@@ -1,0 +1,290 @@
+competency: scope-requirements-management
+items:
+  - id: srm-f-outofscope
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "What does \"out of scope\" mean?"
+      de: "Was bedeutet „out of scope“?"
+    options:
+      - en: "Tasks that are too difficult for the team to carry out within the project"
+        de: "Aufgaben, die für das Team zu schwierig sind, um sie im Projekt auszuführen"
+        correct: false
+      - en: "Matters outside the defined scope, excluded to keep the project focused"
+        de: "Dinge außerhalb des festgelegten Umfangs, ausgeschlossen, damit das Projekt fokussiert bleibt"
+        correct: true
+      - en: "Work that has already been finished"
+        de: "Arbeit, die bereits abgeschlossen ist"
+        correct: false
+      - en: "Requirements with the lowest priority that will be done last"
+        de: "Anforderungen mit der niedrigsten Priorität, die zuletzt erledigt werden"
+        correct: false
+    explanation:
+      en: "Out of scope means not part of the agreed scope. Low-priority items inside the scope are still in scope."
+      de: "„Out of scope“ heißt: nicht Teil des vereinbarten Umfangs. Niedrig priorisierte Punkte innerhalb des Umfangs bleiben im Umfang."
+    source: https://en.wikipedia.org/wiki/Scope_(project_management)
+  - id: srm-f-requirement
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Which statement is a requirement rather than a solution?"
+      de: "Welche Aussage ist eine Anforderung und keine Lösung?"
+    options:
+      - en: "We need a new mobile app for our customers, available in both major app stores"
+        de: "Wir brauchen eine neue mobile App für unsere Kundschaft, verfügbar in beiden großen App-Stores"
+        correct: false
+      - en: "Customers can check their order status without calling us"
+        de: "Kundschaft kann ihren Bestellstatus prüfen, ohne uns anzurufen"
+        correct: true
+      - en: "Use the cheapest cloud provider on the market"
+        de: "Den günstigsten Cloud-Anbieter am Markt nutzen"
+        correct: false
+      - en: "Build the page with a rotating banner at the top"
+        de: "Die Seite mit einem rotierenden Banner oben bauen"
+        correct: false
+    explanation:
+      en: "A requirement states a need and leaves the how open. The other statements name an app, a provider or a design element."
+      de: "Eine Anforderung nennt einen Bedarf und lässt das Wie offen. Die anderen Aussagen nennen eine App, einen Anbieter oder ein Gestaltungselement."
+    source: https://de.wikipedia.org/wiki/Lastenheft
+  - id: srm-f-statement
+    level: foundation
+    difficulty: 1000
+    type: multi
+    stem:
+      en: "Which parts belong in a simple scope statement? Select all that apply."
+      de: "Welche Teile gehören in eine einfache Umfangsbeschreibung? Wähle alle zutreffenden aus."
+    options:
+      - en: "The deliverables that will exist at the end"
+        de: "Die Ergebnisse, die am Ende existieren"
+        correct: true
+      - en: "A list of what is out of scope"
+        de: "Eine Liste dessen, was nicht im Umfang liegt"
+        correct: true
+      - en: "A full probability table of all project risks"
+        de: "Eine vollständige Wahrscheinlichkeitstabelle aller Projektrisiken"
+        correct: false
+      - en: "How the sponsor will check that a deliverable is done"
+        de: "Wie die Auftraggeberin prüft, dass ein Ergebnis fertig ist"
+        correct: true
+    explanation:
+      en: "Purpose, deliverables, in scope, out of scope and acceptance make up a simple scope statement. A detailed risk table is a separate planning product."
+      de: "Zweck, Ergebnisse, Im-Umfang, Nicht-im-Umfang und Abnahme bilden eine einfache Umfangsbeschreibung. Eine detaillierte Risikotabelle ist ein eigenes Planungsergebnis."
+    source: https://en.wikipedia.org/wiki/Scope_(project_management)
+  - id: srm-f-creep
+    level: foundation
+    difficulty: 1050
+    type: single
+    stem:
+      en: "What is scope creep?"
+      de: "Was ist Scope Creep?"
+    options:
+      - en: "The slow progress of a team that works very carefully on every detail"
+        de: "Der langsame Fortschritt eines Teams, das jedes Detail sehr sorgfältig bearbeitet"
+        correct: false
+      - en: "Continuous or uncontrolled growth of scope after the project has started"
+        de: "Fortlaufendes oder unkontrolliertes Wachstum des Umfangs nach Projektbeginn"
+        correct: true
+      - en: "A decision by the sponsor to add a deliverable, with budget and date adjusted"
+        de: "Eine Entscheidung der Auftraggeberin, ein Ergebnis zu ergänzen, mit angepasstem Budget und Termin"
+        correct: false
+      - en: "The reduction of scope when the budget is cut"
+        de: "Die Verkleinerung des Umfangs, wenn das Budget gekürzt wird"
+        correct: false
+    explanation:
+      en: "Scope creep is growth without proper definition or control. A decided and resourced addition is a managed change, not creep."
+      de: "Scope Creep ist Wachstum ohne saubere Definition oder Kontrolle. Eine beschlossene und mit Mitteln hinterlegte Ergänzung ist eine gesteuerte Änderung, kein Creep."
+    source: https://en.wikipedia.org/wiki/Scope_creep
+  - id: srm-p-testable
+    level: practitioner
+    difficulty: 1150
+    type: single
+    stem:
+      en: "Which requirement can be accepted or rejected as written?"
+      de: "Welche Anforderung lässt sich so, wie sie formuliert ist, annehmen oder ablehnen?"
+    options:
+      - en: "The search should respond quickly and feel modern to all employees"
+        de: "Die Suche soll schnell reagieren und sich für alle Mitarbeitenden modern anfühlen"
+        correct: false
+      - en: "The search must be user-friendly"
+        de: "Die Suche muss benutzerfreundlich sein"
+        correct: false
+      - en: "Results appear in under two seconds for 95 % of test queries"
+        de: "Ergebnisse erscheinen bei 95 % der Testanfragen in unter zwei Sekunden"
+        correct: true
+      - en: "The search should work well on all devices"
+        de: "Die Suche soll auf allen Geräten gut funktionieren"
+        correct: false
+    explanation:
+      en: "A requirement should state how it can be verified. Only the third one names a measurable check; the others rely on vague words."
+      de: "Eine Anforderung sollte sagen, wie sie sich prüfen lässt. Nur die dritte nennt eine messbare Prüfung; die anderen stützen sich auf unscharfe Wörter."
+    source: https://de.wikipedia.org/wiki/Anforderungsmanagement
+  - id: srm-p-must
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "In MoSCoW, what does \"Must have\" mean for the current delivery?"
+      de: "Was bedeutet „Must have“ in MoSCoW für die aktuelle Lieferung?"
+    options:
+      - en: "It is the most urgent item for the team's workload in the coming weeks"
+        de: "Es ist das dringendste Element für die Arbeitslast des Teams in den kommenden Wochen"
+        correct: false
+      - en: "It may be dropped first if time is short"
+        de: "Es kann als Erstes entfallen, wenn die Zeit knapp wird"
+        correct: false
+      - en: "If even one Must is missing, the delivery counts as a failure"
+        de: "Fehlt auch nur ein Must, gilt die Lieferung als gescheitert"
+        correct: true
+      - en: "It is the requirement that the most senior person asked for"
+        de: "Es ist die Anforderung, die die ranghöchste Person verlangt hat"
+        correct: false
+    explanation:
+      en: "Musts are critical for success in the current timebox. Should and Could items are the ones removed first when time is short."
+      de: "Musts sind entscheidend für den Erfolg der aktuellen Lieferung. Should- und Could-Punkte entfallen zuerst, wenn die Zeit knapp wird."
+    source: https://en.wikipedia.org/wiki/MoSCoW_method
+  - id: srm-p-vague
+    level: practitioner
+    difficulty: 1250
+    type: multi
+    stem:
+      en: "Which phrases cannot be verified as written? Select all that apply."
+      de: "Welche Formulierungen lassen sich so nicht überprüfen? Wähle alle zutreffenden aus."
+    options:
+      - en: "\"The export should be faster\""
+        de: "„Der Export soll schneller sein“"
+        correct: true
+      - en: "\"The export finishes within 30 seconds for 10,000 rows\""
+        de: "„Der Export ist bei 10.000 Zeilen innerhalb von 30 Sekunden fertig“"
+        correct: false
+      - en: "\"The form should be user-friendly\""
+        de: "„Das Formular soll benutzerfreundlich sein“"
+        correct: true
+      - en: "\"Reports are needed as soon as possible\""
+        de: "„Berichte werden so bald wie möglich benötigt“"
+        correct: true
+    explanation:
+      en: "Words like faster, user-friendly and as soon as possible are weak words without a measure. The 30-second statement can be tested."
+      de: "Wörter wie schneller, benutzerfreundlich und so bald wie möglich sind schwache Wörter ohne Maß. Die Aussage mit 30 Sekunden lässt sich testen."
+    source: https://de.wikipedia.org/wiki/Anforderungsmanagement
+  - id: srm-p-shortdeadline
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "The deadline is fixed and time runs short. Which items are usually reduced first?"
+      de: "Der Termin steht fest, und die Zeit wird knapp. Welche Punkte werden üblicherweise zuerst reduziert?"
+    options:
+      - en: "The Must items, because they are the largest"
+        de: "Die Musts, weil sie am umfangreichsten sind"
+        correct: false
+      - en: "The testing, because it adds no visible feature"
+        de: "Das Testen, weil es kein sichtbares Merkmal bringt"
+        correct: false
+      - en: "Whatever the team finds the most boring"
+        de: "Was das Team am langweiligsten findet"
+        correct: false
+      - en: "Could items first, then Should items, as agreed with stakeholders"
+        de: "Zuerst Could-Punkte, dann Should-Punkte, in Abstimmung mit den Stakeholdern"
+        correct: true
+    explanation:
+      en: "With a fixed deadline, the lower categories give way first by agreement. Cutting Musts risks failure, and cutting tests only hides the problem."
+      de: "Bei festem Termin weichen die niedrigeren Kategorien zuerst, in Abstimmung. Musts zu kürzen riskiert das Scheitern, und Tests zu kürzen verbirgt nur das Problem."
+    source: https://en.wikipedia.org/wiki/MoSCoW_method
+  - id: srm-a-cause
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "Creep is caused by requirements nobody collected from some stakeholder groups. Which action targets that cause?"
+      de: "Creep entsteht durch Anforderungen, die niemand bei einigen Stakeholder-Gruppen eingeholt hat. Welche Maßnahme setzt an dieser Ursache an?"
+    options:
+      - en: "Add 20 % to all estimates"
+        de: "Alle Schätzungen um 20 % erhöhen"
+        correct: false
+      - en: "Make the scope statement longer"
+        de: "Die Umfangsbeschreibung verlängern"
+        correct: false
+      - en: "Reduce the number of project meetings"
+        de: "Die Zahl der Projektbesprechungen verringern"
+        correct: false
+      - en: "Walk through every stakeholder group before sign-off"
+        de: "Vor der Freigabe jede Stakeholder-Gruppe durchgehen"
+        correct: true
+    explanation:
+      en: "Missing requirements come from missing input. A stakeholder walk-through before sign-off addresses it; padding, length or fewer meetings do not."
+      de: "Fehlende Anforderungen kommen von fehlendem Input. Ein Stakeholder-Durchgang vor der Freigabe setzt dort an; Puffer, Länge oder weniger Besprechungen nicht."
+    source: https://en.wikipedia.org/wiki/Scope_creep
+  - id: srm-a-change
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "A senior colleague asks for a change that would take half a day. Your agreed rule says changes up to one day go to the project lead. What do you do?"
+      de: "Eine ranghohe Kollegin bittet um eine Änderung, die einen halben Tag dauern würde. Eure Regel besagt, dass Änderungen bis zu einem Tag zur Projektleitung gehen. Was tust du?"
+    options:
+      - en: "Build it quietly, since small changes need no record"
+        de: "Still umsetzen, weil kleine Änderungen keinen Eintrag brauchen"
+        correct: false
+      - en: "Send every change to the steering committee, whatever its size"
+        de: "Jede Änderung unabhängig von ihrer Größe an den Lenkungskreis geben"
+        correct: false
+      - en: "Log it, assess the impact and let the project lead decide under the threshold rule"
+        de: "Erfassen, Auswirkungen bewerten und die Projektleitung nach der Schwellenregel entscheiden lassen"
+        correct: true
+      - en: "Accept it without logging, because of the person's seniority"
+        de: "Ohne Eintrag annehmen, weil die Person ranghoch ist"
+        correct: false
+    explanation:
+      en: "A threshold rule lets small changes be handled quickly but not invisibly. Seniority does not change the path, and sending everything to a board slows the project."
+      de: "Eine Schwellenregel lässt kleine Änderungen schnell, aber nicht unsichtbar abwickeln. Rang ändert den Weg nicht, und alles an ein Gremium zu geben bremst das Projekt."
+    source: https://en.wikipedia.org/wiki/Scope_creep
+  - id: srm-a-trace
+    level: advanced
+    difficulty: 1550
+    type: multi
+    stem:
+      en: "Which columns belong in a minimal traceability table? Select all that apply."
+      de: "Welche Spalten gehören in eine minimale Rückverfolgbarkeitstabelle? Wähle alle zutreffenden aus."
+    options:
+      - en: "Source of the requirement"
+        de: "Quelle der Anforderung"
+        correct: true
+      - en: "Daily working hours of each team member"
+        de: "Tägliche Arbeitszeit jedes Teammitglieds"
+        correct: false
+      - en: "The acceptance check"
+        de: "Die Abnahmeprüfung"
+        correct: true
+      - en: "The deliverable that fulfils it"
+        de: "Das Ergebnis, das sie erfüllt"
+        correct: true
+    explanation:
+      en: "Traceability links requirement, source, deliverable and test so that the effect of a change is visible. Working hours are not part of that chain."
+      de: "Rückverfolgbarkeit verknüpft Anforderung, Quelle, Ergebnis und Test, damit die Wirkung einer Änderung sichtbar wird. Arbeitszeiten gehören nicht in diese Kette."
+    source: https://de.wikipedia.org/wiki/Anforderungsmanagement
+  - id: srm-a-tradeoff
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "The deadline is fixed and the sponsor says: \"Just add this feature.\" What is the best response?"
+      de: "Der Termin steht fest, und die Auftraggeberin sagt: „Bau das einfach ein.“ Was ist die beste Antwort?"
+    options:
+      - en: "Absorb it by reducing testing"
+        de: "Durch weniger Tests auffangen"
+        correct: false
+      - en: "Offer options: swap it for something of equal size, move the date or add budget, and log the decision"
+        de: "Optionen anbieten: gegen etwas Gleichgroßes tauschen, Termin verschieben oder Budget erhöhen, und die Entscheidung protokollieren"
+        correct: true
+      - en: "Add it and ask the team to work longer hours"
+        de: "Aufnehmen und das Team länger arbeiten lassen"
+        correct: false
+      - en: "Refuse, because the scope was signed"
+        de: "Ablehnen, weil der Umfang unterschrieben ist"
+        correct: false
+    explanation:
+      en: "Trade-offs are made openly, with options and a logged decision. Reducing tests moves the cost to later, overtime hides the trade-off, and a flat refusal ignores a legitimate change."
+      de: "Zielkonflikte werden offen gelöst, mit Optionen und protokollierter Entscheidung. Weniger Tests verschieben die Kosten nach hinten, Überstunden verbergen den Zielkonflikt, und eine glatte Ablehnung ignoriert eine berechtigte Änderung."
+    source: https://de.wikipedia.org/wiki/Pflichtenheft

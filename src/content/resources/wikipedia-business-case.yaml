@@ -1,0 +1,14 @@
+id: wikipedia-business-case
+url: https://en.wikipedia.org/wiki/Business_case
+title: "Business case"
+provider: Wikipedia
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies: [project-initiation-business-case]
+levels: [foundation, practitioner, advanced]
+note: "Footer states CC BY-SA; no maintenance banner; read 2026-11-18. Link only. Covers purpose of a business case, typical contents, option of doing nothing."
