@@ -9,4 +9,7 @@ description:
     Ausgaben und Bedarfe analysieren, Einkäufe in Warengruppen bündeln, Beschaffungsmärkte verstehen, Sourcing-Strategien festlegen und Gesamtkosten (Total Cost of Ownership) statt nur den Preis betrachten.
 prerequisites: [procurement-fundamentals-p2p]
 track: role
-frameworkRefs: []
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/96d549bb-3e62-4c45-92a7-f114df089581
+    label: analyse supply chain strategies

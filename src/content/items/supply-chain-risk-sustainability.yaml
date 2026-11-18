@@ -1,0 +1,290 @@
+competency: supply-chain-risk-sustainability
+items:
+- id: scr-f-def
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: Which description fits a supply chain risk best?
+    de: Welche Beschreibung passt am besten zu einem Lieferkettenrisiko?
+  options:
+  - en: Something that can hurt your organisation but arises at a supplier or elsewhere in the chain
+    de: Etwas, das deiner Organisation schaden kann, aber bei einem Lieferanten oder anderswo in der Kette entsteht
+    correct: true
+  - en: Any price increase that a supplier announces to its customers in writing and in advance
+    de: Jede Preiserhöhung, die ein Lieferant seiner Kundschaft vorab schriftlich ankündigt
+    correct: false
+  - en: A problem that only occurs inside your own warehouse
+    de: Ein Problem, das nur im eigenen Lager auftritt
+    correct: false
+  - en: A contract clause that limits the buyer's liability
+    de: Eine Vertragsklausel, die die Haftung der einkaufenden Seite begrenzt
+    correct: false
+  explanation:
+    en: A supply chain risk affects your organisation but originates in the supplier network or the chain for your goods and services. Price changes can be one effect, but they are not the definition, and internal warehouse issues are not supply chain risks in this sense.
+    de: Ein Lieferkettenrisiko betrifft deine Organisation, entsteht aber im Lieferantennetz oder in der Kette für deine Waren und Dienstleistungen. Preisänderungen können eine Folge sein, sind aber nicht die Definition, und interne Lagerprobleme sind in diesem Sinn keine Lieferkettenrisiken.
+  source: https://en.wikipedia.org/wiki/Supply_chain_risk_management
+- id: scr-f-size
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: Which two questions are usually combined to size a risk?
+    de: Welche zwei Fragen werden üblicherweise kombiniert, um ein Risiko zu bemessen?
+  options:
+  - en: How likely is it and how large is the effect?
+    de: Wie wahrscheinlich ist es und wie groß ist die Wirkung?
+    correct: true
+  - en: How old is the supplier company and how large is its own sales team?
+    de: Wie alt ist das Lieferantenunternehmen und wie groß ist sein eigenes Vertriebsteam?
+    correct: false
+  - en: How cheap is the item and how often is it ordered?
+    de: Wie günstig ist der Artikel und wie oft wird er bestellt?
+    correct: false
+  - en: Who found the risk and when was it first reported?
+    de: Wer hat das Risiko gefunden und wann wurde es zuerst gemeldet?
+    correct: false
+  explanation:
+    en: Likelihood and impact are the usual pair. A grid with likelihood on one axis and impact on the other lets you compare risks and rank them. Item price and order frequency can matter for other analyses, but they do not size a risk on their own.
+    de: Eintrittswahrscheinlichkeit und Auswirkung sind das übliche Paar. Ein Raster mit Wahrscheinlichkeit auf der einen und Auswirkung auf der anderen Achse erlaubt es, Risiken zu vergleichen und zu ordnen. Artikelpreis und Bestellhäufigkeit können für andere Analysen wichtig sein, bemessen ein Risiko aber nicht allein.
+  source: https://de.wikipedia.org/wiki/Risikomatrix
+- id: scr-f-steps
+  level: foundation
+  difficulty: 1000
+  type: multi
+  stem:
+    en: Which are steps of supply chain risk management? Select all that apply.
+    de: Welche sind Schritte des Lieferkettenrisikomanagements? Wähle alle zutreffenden aus.
+  options:
+  - en: Identifying risks
+    de: Risiken identifizieren
+    correct: true
+  - en: Assessing risks
+    de: Risiken bewerten
+    correct: true
+  - en: Waiting until a disruption has happened before looking at it
+    de: Abwarten, bis eine Störung eingetreten ist, und dann erst hinschauen
+    correct: false
+  - en: Monitoring the risks and reviewing them
+    de: Risiken überwachen und erneut prüfen
+    correct: true
+  explanation:
+    en: Identification, assessment, treatment and monitoring are the usual steps. Waiting for a disruption is the opposite of managing the risk, because the point is to prepare before it happens.
+    de: Identifikation, Bewertung, Behandlung und Überwachung sind die üblichen Schritte. Abwarten bis zur Störung ist das Gegenteil von Risikomanagement, denn es geht darum, sich vor dem Eintritt vorzubereiten.
+  source: https://en.wikipedia.org/wiki/Supply_chain_risk_management
+- id: scr-f-law
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: A colleague asks whether your company must follow a supply chain due diligence law. What is the best first step?
+    de: Eine Kollegin fragt, ob euer Unternehmen ein Lieferkettengesetz befolgen muss. Was ist der beste erste Schritt?
+  options:
+  - en: Ask Legal or Compliance, because scope and rules have been changing
+    de: Recht oder Compliance fragen, denn Anwendungsbereich und Regeln haben sich geändert
+    correct: true
+  - en: Say yes straight away, because every company in Germany is covered by such a law regardless of its size
+    de: Sofort Ja sagen, denn jedes Unternehmen in Deutschland ist unabhängig von seiner Größe von einem solchen Gesetz erfasst
+    correct: false
+  - en: Say no, because such laws only concern the supplier
+    de: Nein sagen, denn solche Gesetze betreffen nur den Lieferanten
+    correct: false
+  - en: Send all suppliers a questionnaire first and decide afterwards
+    de: Zuerst allen Lieferanten einen Fragebogen schicken und danach entscheiden
+    correct: false
+  explanation:
+    en: Whether a law applies depends on the company and on rules that have been under discussion, so legal counsel decides. Purchasing should not guess in either direction.
+    de: Ob ein Gesetz gilt, hängt vom Unternehmen und von Regeln ab, die in der Diskussion waren; die Rechtsberatung entscheidet das. Der Einkauf sollte in keine Richtung raten.
+  source: https://de.wikipedia.org/wiki/Lieferkettensorgfaltspflichtengesetz
+- id: scr-p-register
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: Which entry makes a supplier risk register most useful?
+    de: Welcher Eintrag macht ein Lieferantenrisikoregister am nützlichsten?
+  options:
+  - en: A named owner, a response and a review date for each risk
+    de: Eine verantwortliche Person, eine Maßnahme und ein Prüftermin je Risiko
+    correct: true
+  - en: A traffic-light colour for each risk and a short heading, but no further text
+    de: Eine Ampelfarbe je Risiko und eine kurze Überschrift, aber keinen weiteren Text
+    correct: false
+  - en: The names of all suppliers sorted alphabetically
+    de: Die Namen aller Lieferanten alphabetisch sortiert
+    correct: false
+  - en: Only risks that have already caused a loss in the past
+    de: Nur Risiken, die in der Vergangenheit bereits einen Verlust verursacht haben
+    correct: false
+  explanation:
+    en: A register only works when someone is responsible, a concrete response exists and the entry is reviewed. Past losses alone miss risks that have not happened yet.
+    de: Ein Register funktioniert nur, wenn jemand verantwortlich ist, eine konkrete Maßnahme existiert und der Eintrag überprüft wird. Nur vergangene Verluste zu erfassen übersieht Risiken, die noch nicht eingetreten sind.
+  source: https://en.wikipedia.org/wiki/Supply_chain_risk_management
+- id: scr-p-sourcing
+  level: practitioner
+  difficulty: 1250
+  type: multi
+  stem:
+    en: Which statements about sourcing options are correct? Select all that apply.
+    de: Welche Aussagen zu Bezugsstrategien sind richtig? Wähle alle zutreffenden aus.
+  options:
+  - en: Single sourcing is simple but one supplier failure can stop you
+    de: Single Sourcing ist einfach, aber der Ausfall eines Lieferanten kann dich stoppen
+    correct: true
+  - en: Dual sourcing removes every supply risk
+    de: Dual Sourcing beseitigt jedes Versorgungsrisiko
+    correct: false
+  - en: Dual sourcing usually costs more effort and splits the volume
+    de: Dual Sourcing kostet meist mehr Aufwand und teilt die Menge auf
+    correct: true
+  - en: Safety stock can be a response to dependency
+    de: Sicherheitsbestand kann eine Maßnahme gegen Abhängigkeit sein
+    correct: true
+  explanation:
+    en: 'Dual sourcing reduces dependency but does not remove risk: both suppliers can share the same upstream weakness. It costs effort and splits the volume. Single sourcing is simple but fragile, and safety stock buys time.'
+    de: 'Dual Sourcing verringert die Abhängigkeit, beseitigt das Risiko aber nicht: Beide Lieferanten können dieselbe vorgelagerte Schwachstelle haben. Es kostet Aufwand und teilt die Menge. Single Sourcing ist einfach, aber anfällig, und ein Sicherheitsbestand verschafft Zeit.'
+  source: https://en.wikipedia.org/wiki/Supply_chain_risk_management
+- id: scr-p-score
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: A supplier shows a low risk score, but you hear that its only plant had a fire. What do you do?
+    de: Ein Lieferant hat einen niedrigen Risikoscore, aber du hörst, dass sein einziges Werk gebrannt hat. Was tust du?
+  options:
+  - en: Ask the supplier for details and update the risk, because scores do not see everything
+    de: Beim Lieferanten nachfragen und das Risiko aktualisieren, denn Scores sehen nicht alles
+    correct: true
+  - en: Keep the score, because it was calculated by a system
+    de: Den Score beibehalten, denn er wurde von einem System berechnet
+    correct: false
+  - en: Terminate the contract immediately without further checks
+    de: Den Vertrag sofort ohne weitere Prüfung kündigen
+    correct: false
+  - en: Wait for the next yearly review so the data stay consistent
+    de: Bis zur nächsten Jahresprüfung warten, damit die Daten konsistent bleiben
+    correct: false
+  explanation:
+    en: A score is a first-pass tool and can be out of date. New information such as a fire calls for a quick check and an update. Ending the contract without facts or waiting a year are both poor answers.
+    de: Ein Score ist ein Werkzeug für den ersten Durchgang und kann veraltet sein. Neue Informationen wie ein Brand verlangen eine schnelle Prüfung und eine Aktualisierung. Den Vertrag ohne Fakten zu beenden oder ein Jahr zu warten sind beides schlechte Antworten.
+  source: https://de.wikipedia.org/wiki/Risikomatrix
+- id: scr-p-sust
+  level: practitioner
+  difficulty: 1350
+  type: single
+  stem:
+    en: Which approach to supplier sustainability fits a practitioner best?
+    de: Welcher Ansatz zur Nachhaltigkeit bei Lieferanten passt am besten zu einer fortgeschrittenen Fachkraft?
+  options:
+  - en: Code of conduct in the contract, a questionnaire for screening and audits for the riskiest suppliers
+    de: Verhaltenskodex im Vertrag, Fragebogen zur Vorauswahl und Audits bei den riskantesten Lieferanten
+    correct: true
+  - en: Audit every single supplier on site every year regardless of the risk level
+    de: Jeden einzelnen Lieferanten jedes Jahr vor Ort auditieren, unabhängig von der Risikohöhe
+    correct: false
+  - en: Rely only on the supplier's own website statements
+    de: Sich nur auf Aussagen auf der Website des Lieferanten verlassen
+    correct: false
+  - en: Leave the topic to the supplier because it is not your contract partner downstream
+    de: Das Thema dem Lieferanten überlassen, da es nicht dein Vertragspartner ist
+    correct: false
+  explanation:
+    en: 'A tiered approach puts effort where the risk is: expectations in the contract, a questionnaire to screen and audits for the riskiest suppliers. Auditing everyone is rarely feasible, and relying on self-statements alone gives no check.'
+    de: 'Ein gestufter Ansatz setzt den Aufwand dort ein, wo das Risiko liegt: Erwartungen im Vertrag, ein Fragebogen zur Vorauswahl und Audits bei den riskantesten Lieferanten. Alle zu auditieren ist selten machbar, und allein auf Selbstaussagen zu vertrauen ist keine Kontrolle.'
+  source: https://de.wikipedia.org/wiki/Risikomanagement
+- id: scr-a-trade
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: A sole-source part costs 100 and a second source costs 104. Idle production costs 30,000 euros a day and the part is needed 300 times a year at the plant. What is the key question before dual sourcing?
+    de: Ein Alleinbezugsteil kostet 100, eine zweite Quelle 104. Stillstand kostet 30.000 Euro am Tag, das Teil wird im Werk 300-mal im Jahr benötigt. Was ist die Kernfrage vor dem Dual Sourcing?
+  options:
+  - en: How long could an outage last and how fast could a second source be qualified?
+    de: Wie lange könnte ein Ausfall dauern und wie schnell ließe sich eine zweite Quelle qualifizieren?
+    correct: true
+  - en: Which supplier has the lower price per unit, since the cheaper price settles the whole question
+    de: Welcher Lieferant hat den niedrigeren Stückpreis, denn der günstigere Preis entscheidet die ganze Frage
+    correct: false
+  - en: Whether the 4 percent difference is below the inflation rate
+    de: Ob der Unterschied von 4 Prozent unter der Inflationsrate liegt
+    correct: false
+  - en: Whether the second supplier is located in the same country
+    de: Ob der zweite Lieferant im selben Land sitzt
+    correct: false
+  explanation:
+    en: The decision compares the extra unit cost with the expected loss from an outage, and that depends on outage length and qualification time. Unit price alone ignores the downside, and location matters only as one input.
+    de: Die Entscheidung vergleicht die Mehrkosten je Stück mit dem erwarteten Verlust bei einem Ausfall, und der hängt von Ausfalldauer und Qualifizierungszeit ab. Der Stückpreis allein ignoriert die Risikoseite, und der Standort ist nur ein Faktor unter mehreren.
+  source: https://en.wikipedia.org/wiki/Supply_chain_risk_management
+- id: scr-a-ttr
+  level: advanced
+  difficulty: 1500
+  type: multi
+  stem:
+    en: Which actions shorten the time to recover after a supplier plant is lost? Select all that apply.
+    de: Welche Maßnahmen verkürzen die Wiederanlaufzeit nach dem Verlust eines Lieferantenwerks? Wähle alle zutreffenden aus.
+  options:
+  - en: Having an alternative source already approved
+    de: Eine alternative Quelle bereits freigegeben haben
+    correct: true
+  - en: Holding a safety stock for the affected part
+    de: Einen Sicherheitsbestand für das betroffene Teil halten
+    correct: true
+  - en: Negotiating a lower price for the current supplier
+    de: Einen niedrigeren Preis mit dem aktuellen Lieferanten verhandeln
+    correct: false
+  - en: Knowing which sub-suppliers feed the critical part
+    de: Wissen, welche Unterlieferanten das kritische Teil beliefern
+    correct: true
+  explanation:
+    en: Time to recover depends on re-sourcing and re-qualifying. An approved alternative, safety stock and visibility of sub-suppliers all help. A lower price may even reduce a supplier's margin for resilience and does not shorten recovery.
+    de: Die Wiederanlaufzeit hängt von Neubeschaffung und Neuqualifizierung ab. Eine freigegebene Alternative, ein Sicherheitsbestand und Einblick in die Unterlieferanten helfen alle. Ein niedrigerer Preis kann sogar den Spielraum des Lieferanten für Resilienz verringern und verkürzt den Wiederanlauf nicht.
+  source: https://en.wikipedia.org/wiki/Supply_chain_risk_management
+- id: scr-a-law
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: A supplier answers a sustainability questionnaire with "all fine". What is the most defensible next step?
+    de: Ein Lieferant beantwortet einen Nachhaltigkeitsfragebogen mit „alles in Ordnung“. Was ist der vertretbarste nächste Schritt?
+  options:
+  - en: Rate the supplier's risk by category and country, check evidence for high risk, and document it
+    de: Das Risiko des Lieferanten nach Warengruppe und Land einstufen, bei hohem Risiko Nachweise prüfen und dokumentieren
+    correct: true
+  - en: Accept the answer and close the topic for this year, because a manager at the supplier signed it
+    de: Die Antwort akzeptieren und das Thema für dieses Jahr abschließen, da eine Führungskraft beim Lieferanten unterschrieben hat
+    correct: false
+  - en: Request audits at every supplier immediately
+    de: Sofort bei jedem Lieferanten Audits verlangen
+    correct: false
+  - en: Tell the supplier that the law requires an audit
+    de: Dem Lieferanten sagen, dass das Gesetz ein Audit verlangt
+    correct: false
+  explanation:
+    en: A questionnaire is a screening tool; the answer alone is not evidence. Link it to a risk view and check evidence where the risk is high. Saying a law requires something should wait for Legal, as scope and rules have been changing.
+    de: Ein Fragebogen ist ein Werkzeug zur Vorauswahl; die Antwort allein ist kein Nachweis. Verknüpfe sie mit einer Risikosicht und prüfe Nachweise, wo das Risiko hoch ist. Zu sagen, ein Gesetz verlange etwas, sollte auf die Rechtsabteilung warten, da Anwendungsbereich und Regeln sich geändert haben.
+  source: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024L1760
+- id: scr-a-dd
+  level: advanced
+  difficulty: 1600
+  type: multi
+  stem:
+    en: Which statements about handling due diligence laws in purchasing are sound? Select all that apply.
+    de: Welche Aussagen zum Umgang mit Sorgfaltspflichten-Gesetzen im Einkauf sind stimmig? Wähle alle zutreffenden aus.
+  options:
+  - en: Legal decides whether and how the company is covered
+    de: Die Rechtsabteilung entscheidet, ob und wie das Unternehmen erfasst ist
+    correct: true
+  - en: Purchasing can supply supplier data and contract clauses that Legal asks for
+    de: Der Einkauf kann Lieferantendaten und Vertragsklauseln liefern, die Recht anfordert
+    correct: true
+  - en: Only first-tier suppliers can ever carry relevant risks
+    de: Nur direkte Lieferanten können relevante Risiken tragen
+    correct: false
+  - en: Rules have been in flux, so avoid hard-coding thresholds into purchasing guides
+    de: Die Regeln waren im Fluss, also keine festen Schwellenwerte in Einkaufsleitfäden schreiben
+    correct: true
+  explanation:
+    en: Legal owns the interpretation; purchasing supplies data and contract support. Risks can sit further upstream, and because scope and national rules have moved, guides should point to Legal instead of fixing thresholds.
+    de: Die Auslegung liegt bei der Rechtsabteilung; der Einkauf liefert Daten und Vertragsunterstützung. Risiken können weiter vorgelagert liegen, und weil Anwendungsbereich und nationale Regeln sich bewegt haben, sollten Leitfäden auf Recht verweisen, statt Schwellenwerte festzuschreiben.
+  source: https://de.wikipedia.org/wiki/Lieferkettensorgfaltspflichtengesetz

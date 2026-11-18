@@ -1,5 +1,21 @@
 # Status
 
+## 2026-11-18 — Phase 4: Procurement content batch 4 (supply-chain-risk-sustainability), Procurement published; run summary
+
+**Done**
+- 4 unit files (2 en + 2 de, `status: ai-draft`, foundation and practitioner = required levels), invented example labelled (arithmetic: 36,000 € × 4 % = 1,440 €; 3 days × 30,000 € = 90,000 €). 12 items (4 per level, 5 multi).
+- 4 new link-only resources (`licenseVerifiedOn: 2026-11-18`, HTTP 200): Wikipedia supply chain risk management (en) and Lieferkettensorgfaltspflichtengesetz (de) (CC BY-SA); EUR-Lex Directive (EU) 2024/1760 en/de (free-access). ESCO refs added: corporate social responsibility, supply chain management; strategic-sourcing got "analyse supply chain strategies" (fits reasonably, not exactly), which clears the earlier warning.
+- Quality pass: every Procurement competency has a non-Wikipedia and a German-language resource. Procurement & Supply Chain set to `status: published`; `docs/FRAMEWORK.md` regenerated. Validator: 0 errors, 0 warnings.
+- Run summary (this evening): Marketing (batches 3-4) and Customer Service (framework + 4 batches) and Project Management (framework + 4 batches) and Procurement (framework + 4 batches) done and published; 14 PRs merged. Older open QA issues #53/#55/#56/#57 were not re-worked (#54, #58 already fixed by PRs #60/#61); #56 (Wikipedia-heavy resources) still applies, since gesetze-im-internet.de, BME and similar German sites are often unreachable from this environment.
+
+**Reviewer to-dos**
+- Legal wording rests on the Wikipedia LkSG article and only the title/status line of Directive 2024/1760; units state that the laws exist, that scope has been changing, and to ask Legal/Compliance, with no thresholds or duties. Confirm that is acceptable; add a primary LkSG link when reachable.
+- Check practitioner example arithmetic; deliberately long distractors' wording; German wording of the 2 DE units.
+
+**Counts:** roles 9 (0 draft) · competencies 88 · units 496 · items 1060 · resources 497
+
+**Next:** Data & Analytics role framework (Phase 4).
+
 ## 2026-11-18 — Phase 4: Procurement content batch 3 (inventory-warehouse-management, logistics-transport-planning, supply-chain-planning-demand)
 
 **Done**
