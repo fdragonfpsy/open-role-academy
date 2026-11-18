@@ -1,0 +1,290 @@
+competency: project-closure-lessons-learned
+items:
+- id: pcl-f-record
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: Why are acceptance and handover recorded in writing?
+    de: Warum werden Abnahme und Übergabe schriftlich festgehalten?
+  options:
+  - en: To document how many hours each team member worked on the delivered result
+    de: Um zu zeigen, wie viele Stunden das Team am Ergebnis gearbeitet hat
+    correct: false
+  - en: To avoid later disputes about what was agreed and which points are open
+    de: Um späteren Streit darüber zu vermeiden, was vereinbart war und welche Punkte offen sind
+    correct: true
+  - en: To replace the closure analysis with a single document
+    de: Um die Abschlussanalyse durch ein einziges Dokument zu ersetzen
+    correct: false
+  - en: To make the project team liable for the result forever
+    de: Um das Projektteam für das Ergebnis dauerhaft haftbar zu machen
+    correct: false
+  explanation:
+    en: A written record names who handed over, who took over, when, and what remains open. It does not replace the analysis of plan versus actual, and it is not a statement about the hours spent.
+    de: Ein schriftlicher Nachweis nennt, wer übergeben, wer übernommen hat, wann, und was offen bleibt. Er ersetzt weder den Plan-Ist-Vergleich noch sagt er etwas über geleistete Stunden.
+  source: https://de.wikipedia.org/wiki/Projektabschluss
+- id: pcl-f-steps
+  level: foundation
+  difficulty: 950
+  type: multi
+  stem:
+    en: Which activities belong to closing a project? Select all that apply.
+    de: Welche Tätigkeiten gehören zum Abschluss eines Projekts? Wähle alle zutreffenden aus.
+  options:
+  - en: Acceptance of the result against agreed criteria
+    de: Abnahme des Ergebnisses gegen vereinbarte Kriterien
+    correct: true
+  - en: Comparing the plan with what actually happened
+    de: Vergleich des Plans mit dem tatsächlichen Verlauf
+    correct: true
+  - en: Collecting lessons learned for later projects
+    de: Lessons Learned für spätere Projekte sammeln
+    correct: true
+  - en: Adding new features to keep the team busy
+    de: Neue Funktionen ergänzen, um das Team zu beschäftigen
+    correct: false
+  explanation:
+    en: Closing covers acceptance, closure analysis, experience capture and releasing people and resources. Adding scope at the end goes against closing and would need its own change decision.
+    de: Der Abschluss umfasst Abnahme, Abschlussanalyse, Erfahrungssicherung und die Freigabe von Personen und Ressourcen. Zusätzlicher Umfang am Ende widerspricht dem Abschluss und bräuchte eine eigene Änderungsentscheidung.
+  source: https://de.wikipedia.org/wiki/Projektabschluss
+- id: pcl-f-dissolve
+  level: foundation
+  difficulty: 1000
+  type: single
+  stem:
+    en: What is the main purpose of dissolving a project at its end?
+    de: Was ist der Hauptzweck der Projektauflösung am Ende?
+  options:
+  - en: Deleting all project documents to save storage
+    de: Alle Projektunterlagen löschen, um Speicherplatz zu sparen
+    correct: false
+  - en: Letting the customer decide who stays on the team
+    de: Die Kundschaft entscheiden lassen, wer im Team bleibt
+    correct: false
+  - en: Moving people and resources on to new tasks
+    de: Personen und Ressourcen auf neue Aufgaben überführen
+    correct: true
+  - en: Starting a follow-up project with the same budget
+    de: Mit demselben Budget ein Folgeprojekt starten
+    correct: false
+  explanation:
+    en: A project has a defined end. Dissolution frees the people and resources tied up in it, so that they can work on something else. Documents are kept, because lessons and results are needed later.
+    de: Ein Projekt hat ein eindeutiges Ende. Die Auflösung gibt gebundene Personen und Ressourcen frei, damit sie anderes bearbeiten können. Unterlagen bleiben erhalten, weil Ergebnisse und Lehren später gebraucht werden.
+  source: https://de.wikipedia.org/wiki/Projektabschluss
+- id: pcl-f-who
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: Who should be invited to a lessons-learned session?
+    de: Wer sollte zu einer Lessons-Learned-Runde eingeladen werden?
+  options:
+  - en: Only the project lead, because the lead has the full overview of the project
+    de: Nur die Projektleitung, die den vollen Überblick hat
+    correct: false
+  - en: The people who did the work, to report their experiences
+    de: Die Menschen, die die Arbeit gemacht haben, damit sie positive und negative Erfahrungen berichten
+    correct: true
+  - en: Only the sponsor, who decides about future projects
+    de: Nur die Auftraggeberschaft, die über künftige Projekte entscheidet
+    correct: false
+  - en: Only people from other teams, for an outside view
+    de: Nur Personen aus anderen Teams, für einen Blick von außen
+    correct: false
+  explanation:
+    en: Experience sits with the people who did the work. A session with only the lead or the sponsor misses what happened day to day. Outside views can help, but they cannot replace the team.
+    de: Erfahrung liegt bei denen, die die Arbeit gemacht haben. Eine Runde nur mit Leitung oder Auftraggeberschaft verfehlt, was im Alltag geschah. Außenblicke helfen, ersetzen aber das Team nicht.
+  source: https://de.wikipedia.org/wiki/Lessons_Learned
+- id: pcl-p-lesson
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: Which statement is a lesson rather than only an observation?
+    de: Welche Aussage ist eine Lehre und nicht nur eine Beobachtung?
+  options:
+  - en: The vendor delivered the main components three weeks later than planned
+    de: Der Lieferant hat drei Wochen zu spät geliefert
+    correct: false
+  - en: The team was under a lot of pressure at the end
+    de: Das Team stand am Ende unter großem Druck
+    correct: false
+  - en: For new vendors, agree on a check after half the lead time
+    de: Bei Lieferanten ohne Lieferhistorie nach der halben Vorlaufzeit einen Meilensteintermin vereinbaren
+    correct: true
+  - en: The review meeting lasted two hours
+    de: Die Auswertungsrunde dauerte zwei Stunden
+    correct: false
+  explanation:
+    en: A lesson generalises beyond the single case and names an action that others can apply. The other statements describe what happened but do not say what to do differently.
+    de: Eine Lehre verallgemeinert über den Einzelfall hinaus und nennt eine Maßnahme, die andere anwenden können. Die übrigen Aussagen beschreiben, was geschah, sagen aber nicht, was anders zu tun ist.
+  source: https://en.wikipedia.org/wiki/Lessons_learned
+- id: pcl-p-aar
+  level: practitioner
+  difficulty: 1250
+  type: single
+  stem:
+    en: What distinguishes an after-action review from a simple debrief?
+    de: Was unterscheidet eine Nachbesprechung nach dem Vorgehen (After-Action-Review) von einer einfachen Nachbesprechung?
+  options:
+  - en: It begins by comparing intended and actual results
+    de: Sie beginnt mit einem klaren Vergleich von beabsichtigten und tatsächlichen Ergebnissen
+    correct: true
+  - en: It identifies who caused the deviations
+    de: Sie ermittelt, wer die Abweichungen verursacht hat
+    correct: false
+  - en: It is held only after failed projects
+    de: Sie findet nur nach gescheiterten Projekten statt
+    correct: false
+  - en: It must always be run by the project sponsor
+    de: Sie muss immer von der Auftraggeberschaft geleitet werden
+    correct: false
+  explanation:
+    en: The comparison of intended versus actual results is the starting point, and the review looks forward. Blame is contrary to its purpose, and it can be used after successes as well.
+    de: Der Vergleich von Soll und Ist ist der Ausgangspunkt, und die Auswertung schaut nach vorn. Schuldzuweisung widerspricht ihrem Zweck, und sie lässt sich auch nach Erfolgen nutzen.
+  source: https://en.wikipedia.org/wiki/After-action_review
+- id: pcl-p-criteria
+  level: practitioner
+  difficulty: 1300
+  type: multi
+  stem:
+    en: Which tests should a candidate lesson pass before it is recorded? Select all that apply.
+    de: Welche Prüfungen sollte eine Lehre bestehen, bevor sie festgehalten wird? Wähle alle zutreffenden aus.
+  options:
+  - en: It is significant, because it has a real or assumed impact
+    de: Sie ist bedeutsam, weil sie eine tatsächliche oder angenommene Auswirkung hat
+    correct: true
+  - en: It is valid, because the cause is known rather than guessed
+    de: Sie ist gültig, weil die Ursache bekannt ist und nicht geraten
+    correct: true
+  - en: It is applicable, because someone can name the action to take
+    de: Sie ist anwendbar, weil jemand die zu ergreifende Maßnahme nennen kann
+    correct: true
+  - en: It names the person who made the mistake
+    de: Sie nennt die Person, die den Fehler gemacht hat
+    correct: false
+  explanation:
+    en: Significance, validity and applicability make a lesson usable. Naming a person does not make a lesson more useful and works against an open review.
+    de: Bedeutsamkeit, Gültigkeit und Anwendbarkeit machen eine Lehre nutzbar. Eine Person zu nennen macht sie nicht nützlicher und schadet einer offenen Auswertung.
+  source: https://en.wikipedia.org/wiki/Lessons_learned
+- id: pcl-p-store
+  level: practitioner
+  difficulty: 1350
+  type: single
+  stem:
+    en: Where is a lesson most likely to be used in the next project?
+    de: Wo wird eine Lehre im nächsten Projekt am ehesten genutzt?
+  options:
+  - en: In the minutes of the closing meeting, filed in the project folder
+    de: Im Protokoll der Abschlussrunde, abgelegt beim Projekt
+    correct: false
+  - en: In the personal notes of the project lead who ran the review
+    de: In den persönlichen Notizen der Projektleitung, die die Auswertung geleitet hat
+    correct: false
+  - en: In a one-off email to everyone in the organisation
+    de: In einer einmaligen E-Mail an alle in der Organisation
+    correct: false
+  - en: In a template that new projects start from
+    de: In einer Planungsvorlage oder Checkliste, von der neue Projekte ausgehen
+    correct: true
+  explanation:
+    en: Lessons help when they are present at the moment of planning. Minutes, private notes and one-off emails are rarely consulted when the next project is set up.
+    de: Lehren helfen, wenn sie im Moment der Planung präsent sind. Protokolle, private Notizen und einmalige E-Mails werden beim Aufsetzen des nächsten Projekts selten angesehen.
+  source: https://de.wikipedia.org/wiki/Lessons_Learned
+- id: pcl-a-failed
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: A project is stopped early because its business case no longer holds. Some say a lessons-learned session is pointless because there is no result to learn from. What is the best judgement?
+    de: Ein Projekt wird vorzeitig beendet, weil der Business Case nicht mehr trägt. Manche meinen, eine Lessons-Learned-Runde sei sinnlos, weil es kein Ergebnis gibt, aus dem man lernen könnte. Was ist die beste Einschätzung?
+  options:
+  - en: Skip it, since a session without a delivered result produces no usable lessons for anyone at all
+    de: Darauf verzichten, da eine Runde ohne geliefertes Ergebnis keine brauchbaren Lehren hervorbringt
+    correct: false
+  - en: Hold a focused session anyway, since negative experience and the stop decision itself hold lessons
+    de: Trotzdem eine fokussierte Runde abhalten, da Erfahrung negativ wie positiv sein kann und die Abbruchentscheidung selbst Lehren birgt
+    correct: true
+  - en: Hold it only if the sponsor asks for it in writing
+    de: Sie nur abhalten, wenn die Auftraggeberschaft sie schriftlich verlangt
+    correct: false
+  - en: Postpone it until a similar project is planned
+    de: Sie verschieben, bis ein ähnliches Projekt geplant wird
+    correct: false
+  explanation:
+    en: A terminated project is still a source of experience, for example about how the case was assessed or why the signals came late. Waiting for a similar project means the people have moved on and the details are lost.
+    de: Auch ein abgebrochenes Projekt liefert Erfahrung, etwa dazu, wie der Fall bewertet wurde oder warum Signale spät kamen. Wer auf ein ähnliches Projekt wartet, hat die Menschen und Details dann längst verloren.
+  source: https://en.wikipedia.org/wiki/Lessons_learned
+- id: pcl-a-delicate
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: The review shows that slow decisions by the sponsor caused much of the delay, and the sponsor is in the room. Which approach is most defensible?
+    de: Die Auswertung zeigt, dass langsame Entscheidungen der Auftraggeberschaft einen großen Teil der Verzögerung verursachten, und diese sitzt im Raum. Welcher Ansatz ist am besten vertretbar?
+  options:
+  - en: Leave it out of the review entirely, to protect the working relationship with the sponsor in the room
+    de: Es weglassen, um die Arbeitsbeziehung im Raum zu schützen
+    correct: false
+  - en: Describe the effect on the schedule in neutral terms, and agree what is recorded
+    de: Die Wirkung auf den Terminplan und den Entscheidungsweg neutral beschreiben und vereinbaren, was offen festgehalten wird
+    correct: true
+  - en: Record the sponsor's name and the days of delay in the report
+    de: Name der Auftraggeberschaft und Verzugstage im Bericht festhalten
+    correct: false
+  - en: Raise it only in a private message after the review
+    de: Es nur in einer privaten Nachricht nach der Auswertung ansprechen
+    correct: false
+  explanation:
+    en: Omitting the cause loses the lesson, while naming a person turns the review into blame. A neutral description of the decision path keeps the lesson and makes it possible to agree what is shared widely.
+    de: Die Ursache wegzulassen verliert die Lehre, eine Person zu nennen macht die Auswertung zur Schuldzuweisung. Eine neutrale Beschreibung des Entscheidungswegs bewahrt die Lehre und erlaubt, abzustimmen, was breit geteilt wird.
+  source: https://en.wikipedia.org/wiki/After-action_review
+- id: pcl-a-uptake
+  level: advanced
+  difficulty: 1550
+  type: multi
+  stem:
+    en: Which measures raise the chance that lessons are used in later projects? Select all that apply.
+    de: Welche Maßnahmen erhöhen die Chance, dass Lehren in späteren Projekten genutzt werden? Wähle alle zutreffenden aus.
+  options:
+  - en: Requiring that earlier lessons are consulted at the start of a new project
+    de: Vorschreiben, dass frühere Lehren zu Beginn eines neuen Projekts herangezogen werden
+    correct: true
+  - en: Building the lesson into a planning template, with an owner and a date
+    de: Die Lehre mit Verantwortlichen und Termin in eine Planungsvorlage einbauen
+    correct: true
+  - en: Saving a long report in an archive that few people search
+    de: Einen langen Bericht in einem Archiv ablegen, das kaum jemand durchsucht
+    correct: false
+  - en: Reviewing lessons across several projects for structural improvements
+    de: Lehren über mehrere Projekte hinweg auf strukturelle Verbesserungen auswerten
+    correct: true
+  explanation:
+    en: Lessons have an effect when use is mandatory, when they sit in the tools people start from and when patterns across projects are analysed. A long report in a rarely searched archive is the usual place where lessons go unused.
+    de: Lehren wirken, wenn ihre Nutzung verbindlich ist, wenn sie in den Werkzeugen stehen, von denen Menschen ausgehen, und wenn Muster über Projekte ausgewertet werden. Ein langer Bericht in einem selten durchsuchten Archiv ist der übliche Ort, an dem Lehren ungenutzt bleiben.
+  source: https://de.wikipedia.org/wiki/Lessons_Learned
+- id: pcl-a-timing
+  level: advanced
+  difficulty: 1600
+  type: single
+  stem:
+    en: Acceptance is done and the sponsor wants the team released the next day, with the review "sometime later". What is the best judgement?
+    de: Die Abnahme ist erfolgt, und die Auftraggeberschaft möchte das Team am nächsten Tag freigeben, die Auswertung „irgendwann später“. Was ist die beste Einschätzung?
+  options:
+  - en: Agree, because a released team can write up its notes alone and in its own time later
+    de: Zustimmen, denn ein freigegebenes Team kann seine Notizen später allein verfassen
+    correct: false
+  - en: Refuse the release until every lesson has been written up and approved
+    de: Die Freigabe verweigern, bis jede Lehre ausgearbeitet und genehmigt ist
+    correct: false
+  - en: Cancel the review, since the closing report already covers it
+    de: Die Auswertung streichen, da der Abschlussbericht sie schon abdeckt
+    correct: false
+  - en: Collect input before the release, and finish the write-up afterwards
+    de: Vor der Freigabe eine kurze Runde abhalten oder Beiträge einsammeln und die Ausarbeitung danach abschließen
+    correct: true
+  explanation:
+    en: Once people move to new work, memories fade and availability drops. Capturing input before release and finishing the write-up later is a compromise that protects the experience without blocking the release.
+    de: Sobald Menschen neue Aufgaben haben, verblasst die Erinnerung und die Verfügbarkeit sinkt. Beiträge vor der Freigabe einzusammeln und die Ausarbeitung später zu beenden ist ein Kompromiss, der die Erfahrung schützt, ohne die Freigabe zu blockieren.
+  source: https://de.wikipedia.org/wiki/Projektabschluss

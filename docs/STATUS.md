@@ -1,5 +1,21 @@
 # Status
 
+## 2026-11-18 — Phase 4: Project Management content batch 4 (project-closure-lessons-learned), Project Management published
+
+**Done**
+- 4 unit files (2 en + 2 de, `status: ai-draft`, foundation and practitioner = required levels); own methods (90-minute agenda, "five questions", ERP example) labelled/invented. 12 items (4 per level, 3 multi).
+- 5 new link-only resources (`licenseVerifiedOn: 2026-11-18`, HTTP 200): en/de Wikipedia Lessons learned, en After-action review, de Projektabschluss (CC BY-SA), Wikibooks PMBOK Integration Management (CC BY-SA, linked only).
+- Quality pass: every Project Management competency has a non-Wikipedia and a German-language resource. Project Management set to `status: published`; `docs/FRAMEWORK.md` regenerated. Validator: 0 errors, 0 warnings.
+- Open QA issues #53/#55/#56/#57 (older, broad) were not re-worked this run; #54 and #58 were already fixed by merged PRs.
+
+**Reviewer to-dos**
+- Check against `sources[]`: NASA/OECD lesson definitions, after-action review points (intended vs actual, no blame), de Projektabschluss steps.
+- The only non-Wikipedia source for closure is a 2018 PMBOK-vocabulary Wikibooks page (OpenStax has no closure page). Item `pcl-a-timing` is judgement. German wording of the 2 DE units; en distractors were adjusted for the length check.
+
+**Counts:** roles 8 (0 draft) · competencies 78 · units 444 · items 940 · resources 450
+
+**Next:** Procurement & Supply Chain role framework (Phase 4).
+
 ## 2026-11-18 — Phase 4: Project Management content batch 3 (resource-team-coordination, agile-hybrid-delivery, quality-change-management)
 
 **Done**
