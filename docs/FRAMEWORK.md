@@ -90,7 +90,7 @@ The shared core track that every role builds on: digital and AI literacy, commun
 | Working with data | core | 2 | F | P | A | digital-ai-literacy |
 | Business and finance fundamentals | core | 3 | F | P | A | — |
 
-## Customer Service (`customer-service`, role, draft)
+## Customer Service (`customer-service`, role, published)
 
 Help customers well: listen and communicate with empathy, understand and solve problems, handle complaints and de-escalate, work across phone, email, chat and social channels, use ticketing and knowledge bases, protect customer data, steer service quality and recognise common consumer-rights topics.
 

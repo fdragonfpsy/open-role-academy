@@ -1,0 +1,290 @@
+competency: consumer-rights-basics
+items:
+- id: crb-f-consumer
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: Which customer is a consumer in the sense of the EU consumer rules?
+    de: Welche Kundschaft ist Verbraucherin oder Verbraucher im Sinne der EU-Verbraucherregeln?
+  options:
+  - en: A company's purchasing manager ordering laptops for the staff
+    de: Der Einkaufsleiter eines Unternehmens, der Laptops für die Belegschaft bestellt
+    correct: false
+  - en: A private person buying a laptop for personal use
+    de: Eine Privatperson, die einen Laptop für den persönlichen Gebrauch kauft
+    correct: true
+  - en: Anyone who buys goods, whatever the purpose
+    de: Jede Person, die Waren kauft, egal zu welchem Zweck
+    correct: false
+  - en: Only people who order through an online shop
+    de: Nur Personen, die über einen Onlineshop bestellen
+    correct: false
+  explanation:
+    en: A consumer is a natural person acting outside their trade, business, craft or profession. Buying for the company's staff is a business purpose, and consumer status does not depend on the sales channel.
+    de: Verbraucher ist eine natürliche Person, die außerhalb ihrer gewerblichen, geschäftlichen, handwerklichen oder beruflichen Tätigkeit handelt. Der Kauf für die Belegschaft ist ein geschäftlicher Zweck, und der Verbraucherstatus hängt nicht vom Vertriebsweg ab.
+  source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019L0771
+- id: crb-f-withdraw
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: A customer ordered goods online and received them yesterday. What is the basic rule on withdrawal?
+    de: Eine Kundin hat online Waren bestellt und gestern erhalten. Was ist die Grundregel zum Widerruf?
+  options:
+  - en: She can withdraw without giving a reason; the basic period is 14 days from receiving the goods
+    de: Sie kann ohne Angabe von Gründen widerrufen; die Grundfrist beträgt 14 Tage ab Erhalt der Waren
+    correct: true
+  - en: She can withdraw only if the goods are defective or do not match the description
+    de: Sie kann nur widerrufen, wenn die Waren mangelhaft sind oder nicht der Beschreibung entsprechen
+    correct: false
+  - en: The 14 days start on the day she placed the order
+    de: Die 14 Tage beginnen an dem Tag, an dem sie bestellt hat
+    correct: false
+  - en: She can withdraw only if the shop agrees to take the goods back and tells her so in writing
+    de: Sie kann nur widerrufen, wenn der Shop der Rücknahme zustimmt und ihr das schriftlich mitteilt
+    correct: false
+  explanation:
+    en: For distance contracts the consumer may withdraw without giving a reason. For goods the 14 days normally run from receipt, not from the order, and a defect or the trader's consent is not required.
+    de: Bei Fernabsatzverträgen können Verbraucherinnen und Verbraucher ohne Angabe von Gründen widerrufen. Bei Waren laufen die 14 Tage in der Regel ab Erhalt, nicht ab Bestellung, und weder ein Mangel noch die Zustimmung des Unternehmens ist nötig.
+  source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32011L0083
+- id: crb-f-exceptions
+  level: foundation
+  difficulty: 1000
+  type: multi
+  stem:
+    en: Which goods can be excluded from the right of withdrawal under EU rules? Select all that apply.
+    de: Welche Waren können nach EU-Regeln vom Widerrufsrecht ausgeschlossen sein? Wähle alle zutreffenden aus.
+  options:
+  - en: Goods made to the consumer's specifications
+    de: Waren, die nach den Vorgaben der Kundschaft angefertigt wurden
+    correct: true
+  - en: Sealed hygiene goods that were unsealed after delivery
+    de: Versiegelte Hygieneartikel, die nach der Lieferung geöffnet wurden
+    correct: true
+  - en: Any item the customer simply does not like
+    de: Jeder Artikel, der der Kundschaft einfach nicht gefällt
+    correct: false
+  - en: Any item that was delivered by express shipping
+    de: Jeder Artikel, der per Expressversand geliefert wurde
+    correct: false
+  explanation:
+    en: Personalised goods and opened sealed hygiene goods are listed exceptions. Dislike of an item is the very reason the withdrawal right exists without justification, and the delivery speed does not matter.
+    de: Individuell angefertigte Waren und geöffnete versiegelte Hygieneartikel sind aufgeführte Ausnahmen. Dass ein Artikel nicht gefällt, ist gerade der Fall, für den das Widerrufsrecht ohne Begründung gilt, und die Liefergeschwindigkeit spielt keine Rolle.
+  source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32011L0083
+- id: crb-f-guarantee
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: 'A customer says: "The manufacturer''s guarantee ended last month, so I have no rights left, right?" What do you say?'
+    de: 'Ein Kunde sagt: „Die Herstellergarantie ist letzten Monat abgelaufen, also habe ich keine Rechte mehr, oder?“ Was sagst du?'
+  options:
+  - en: Yes, once the guarantee has ended there is nothing more to claim against the manufacturer or the shop
+    de: Ja, nach Ablauf der Garantie gibt es weder gegenüber dem Hersteller noch gegenüber dem Shop etwas zu fordern
+    correct: false
+  - en: Only the manufacturer is liable under the statutory rules, so contact them
+    de: Nach den gesetzlichen Regeln haftet nur der Hersteller, also soll er sich dorthin wenden
+    correct: false
+  - en: A guarantee is an extra promise; statutory rights can exist besides it, so I pass your case to our team to check
+    de: Eine Garantie ist ein zusätzliches Versprechen; daneben können gesetzliche Rechte bestehen, deshalb gebe ich deinen Fall zur Prüfung an unser Team weiter
+    correct: true
+  - en: I will arrange a free replacement now
+    de: Ich veranlasse jetzt einen kostenlosen Ersatz
+    correct: false
+  explanation:
+    en: The statutory liability of the seller for a lack of conformity is separate from a commercial guarantee. The agent neither denies nor promises, and refers.
+    de: Die gesetzliche Haftung der Verkäuferseite für Vertragswidrigkeit ist von einer gewerblichen Garantie getrennt. Die Servicekraft sagt weder ab noch zu und leitet weiter.
+  source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019L0771
+- id: crb-p-notice
+  level: practitioner
+  difficulty: 1150
+  type: single
+  stem:
+    en: A shop forgot to give the information on the right of withdrawal. What is the consequence at EU level?
+    de: Ein Shop hat vergessen, über das Widerrufsrecht zu informieren. Was ist die Folge auf EU-Ebene?
+  options:
+  - en: The withdrawal period expires 12 months after the end of the initial period
+    de: Die Widerrufsfrist endet 12 Monate nach dem Ende der ursprünglichen Frist
+    correct: true
+  - en: Nothing changes; the 14 days apply anyway, as the notice is only a courtesy of the shop
+    de: Es ändert sich nichts; die 14 Tage gelten trotzdem, da die Information nur ein Entgegenkommen des Shops ist
+    correct: false
+  - en: The whole contract is void
+    de: Der gesamte Vertrag ist nichtig
+    correct: false
+  - en: The right of withdrawal ends as soon as the customer has used the goods
+    de: Das Widerrufsrecht endet, sobald die Kundschaft die Waren benutzt hat
+    correct: false
+  explanation:
+    en: If the withdrawal information was not provided, the period runs for 12 months beyond the initial period (and ends earlier if the information is given later). The contract itself stays valid.
+    de: Wurde nicht über den Widerruf informiert, läuft die Frist 12 Monate über die ursprüngliche Frist hinaus (und endet früher, wenn die Information später nachgeholt wird). Der Vertrag selbst bleibt wirksam.
+  source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32011L0083
+- id: crb-p-presume
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: A kettle breaks six months after delivery. Which statement fits the EU rules on proof?
+    de: Ein Wasserkocher geht sechs Monate nach der Lieferung kaputt. Welche Aussage passt zu den EU-Regeln zum Beweis?
+  options:
+  - en: The customer must prove that the defect already existed at the time of delivery, whatever the timing
+    de: Die Kundschaft muss immer beweisen, dass der Mangel schon zum Zeitpunkt der Lieferung bestand, egal wann er auftritt
+    correct: false
+  - en: The defect is presumed to have existed at delivery, unless the seller proves otherwise or the presumption does not fit
+    de: Es wird vermutet, dass der Mangel bei Lieferung bestand, es sei denn, die Verkäuferseite beweist das Gegenteil oder die Vermutung passt nicht
+    correct: true
+  - en: The seller is liable only as long as a manufacturer's guarantee runs
+    de: Die Verkäuferseite haftet nur, solange eine Herstellergarantie läuft
+    correct: false
+  - en: The customer has to claim from the manufacturer first
+    de: Die Kundschaft muss sich zuerst an den Hersteller wenden
+    correct: false
+  explanation:
+    en: A defect that becomes apparent within one year is presumed to have existed at delivery. The seller, not the manufacturer, is the consumer's contact, independent of any guarantee. Member States may choose a longer presumption period.
+    de: Ein Mangel, der innerhalb eines Jahres offenbar wird, gilt als bei Lieferung vorhanden. Ansprechpartner ist die Verkäuferseite, nicht der Hersteller, unabhängig von einer Garantie. Die Mitgliedstaaten können einen längeren Vermutungszeitraum wählen.
+  source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019L0771
+- id: crb-p-remedies
+  level: practitioner
+  difficulty: 1250
+  type: multi
+  stem:
+    en: Which statements about remedies for a lack of conformity fit the EU rules? Select all that apply.
+    de: Welche Aussagen zu Rechtsbehelfen bei Vertragswidrigkeit passen zu den EU-Regeln? Wähle alle zutreffenden aus.
+  options:
+  - en: Repair or replacement must be free of charge for the consumer
+    de: Nachbesserung oder Ersatzlieferung müssen für die Kundschaft kostenlos sein
+    correct: true
+  - en: The consumer may choose repair or replacement unless the choice is impossible or disproportionate
+    de: Die Kundschaft kann zwischen Nachbesserung und Ersatz wählen, es sei denn, die Wahl ist unmöglich oder unverhältnismäßig
+    correct: true
+  - en: A price reduction is always available at once, without any attempt to repair
+    de: Eine Preisminderung ist immer sofort möglich, ohne jeden Reparaturversuch
+    correct: false
+  - en: The consumer pays for sending back the replaced goods
+    de: Die Kundschaft zahlt die Rücksendung der ersetzten Waren
+    correct: false
+  explanation:
+    en: Repair and replacement are free, and the consumer can choose between them within limits. Price reduction or termination come in listed cases, such as unsuccessful repair, and the seller takes back replaced goods at its own expense.
+    de: Nachbesserung und Ersatz sind kostenlos, und die Kundschaft kann in Grenzen wählen. Preisminderung oder Vertragsbeendigung folgen in genannten Fällen, etwa bei erfolgloser Reparatur, und die Verkäuferseite nimmt ersetzte Waren auf eigene Kosten zurück.
+  source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019L0771
+- id: crb-p-refund
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: A customer withdraws from an order that was shipped by express, which cost more than the shop's cheapest standard delivery. What applies to the refund?
+    de: Eine Kundin widerruft eine Bestellung, die per Express verschickt wurde und mehr kostete als die günstigste Standardlieferung des Shops. Was gilt für die Erstattung?
+  options:
+  - en: Refund only the price of the goods, never any delivery costs
+    de: Nur den Warenpreis erstatten, niemals Lieferkosten
+    correct: false
+  - en: Refund with the same means of payment; the extra cost of the more expensive delivery need not be refunded
+    de: Mit demselben Zahlungsmittel erstatten; die Mehrkosten der teureren Lieferung müssen nicht erstattet werden
+    correct: true
+  - en: Offer a voucher instead, because the shop prefers that
+    de: Stattdessen einen Gutschein anbieten, weil der Shop das bevorzugt
+    correct: false
+  - en: Refund everything including the express surcharge, because a withdrawal always covers all costs of the order
+    de: Alles inklusive Expresszuschlag erstatten, weil ein Widerruf immer sämtliche Kosten der Bestellung umfasst
+    correct: false
+  explanation:
+    en: The trader reimburses payments using the same means of payment, including delivery costs, but is not required to refund supplementary costs if the consumer chose a delivery other than the cheapest standard one.
+    de: Das Unternehmen erstattet Zahlungen mit demselben Zahlungsmittel, einschließlich der Lieferkosten, muss aber zusätzliche Kosten nicht erstatten, wenn die Kundschaft eine andere als die günstigste Standardlieferung gewählt hat.
+  source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32011L0083
+- id: crb-a-late
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: A customer writes "I withdraw" on day 20 after delivery. Your order confirmation seems not to contain the withdrawal information. What is the best action?
+    de: Ein Kunde schreibt am Tag 20 nach der Lieferung „Ich widerrufe“. Deine Bestellbestätigung enthält anscheinend keine Information zum Widerruf. Was ist das beste Vorgehen?
+  options:
+  - en: Reject it politely and point to the standard 14 days, which have already passed since the goods were delivered to him
+    de: Höflich ablehnen und auf die üblichen 14 Tage verweisen, die seit der Lieferung der Waren an ihn bereits vergangen sind
+    correct: false
+  - en: Accept it at once without any check, to keep the customer happy
+    de: Sofort ohne Prüfung annehmen, damit die Kundschaft zufrieden bleibt
+    correct: false
+  - en: Record the dates and message, note the missing information and refer to legal staff, who decide on the period
+    de: Daten und Nachricht festhalten, die fehlende Information vermerken und an die Rechtsabteilung verweisen, die über die Frist entscheidet
+    correct: true
+  - en: Ask the customer to prove that the goods are unused before replying
+    de: Die Kundschaft bitten, vor einer Antwort nachzuweisen, dass die Waren unbenutzt sind
+    correct: false
+  explanation:
+    en: Missing withdrawal information can extend the period, so a rejection on day 20 could be wrong; an unchecked acceptance may be wrong in the other direction. The agent secures the facts and refers.
+    de: Fehlende Widerrufsinformation kann die Frist verlängern, eine Ablehnung am Tag 20 könnte also falsch sein; eine ungeprüfte Annahme kann in die andere Richtung falsch sein. Die Servicekraft sichert die Fakten und leitet weiter.
+  source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32011L0083
+- id: crb-a-old
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: 'A customer reports a defect 14 months after delivery and says: "My rights run for two years." What is the best reply?'
+    de: 'Ein Kunde meldet einen Mangel 14 Monate nach der Lieferung und sagt: „Meine Rechte laufen zwei Jahre.“ Was ist die beste Antwort?'
+  options:
+  - en: Refuse, because the one-year presumption has already passed
+    de: Ablehnen, weil die einjährige Vermutung schon vorbei ist
+    correct: false
+  - en: Confirm that every claim within two years will succeed
+    de: Bestätigen, dass jeder Anspruch innerhalb von zwei Jahren Erfolg hat
+    correct: false
+  - en: Send him to the manufacturer, who is liable after the first year
+    de: Ihn an den Hersteller verweisen, der nach dem ersten Jahr haftet
+    correct: false
+  - en: Log the dates and symptoms, say that the seller may be liable for defects present at delivery and that legal staff check it, and refer
+    de: Daten und Fehlerbild erfassen, sagen, dass die Verkäuferseite für bei Lieferung vorhandene Mängel haften kann und die Rechtsabteilung das prüft, und weiterleiten
+    correct: true
+  explanation:
+    en: After the first year the presumption no longer helps the consumer, but liability for defects apparent within two years remains, and the proof and national details need a legal check. The agent neither denies nor promises.
+    de: Nach dem ersten Jahr hilft die Vermutung der Kundschaft nicht mehr, die Haftung für innerhalb von zwei Jahren offenbar werdende Mängel bleibt aber, und Beweis sowie nationale Einzelheiten brauchen eine rechtliche Prüfung. Die Servicekraft sagt weder ab noch zu.
+  source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019L0771
+- id: crb-a-wording
+  level: advanced
+  difficulty: 1550
+  type: multi
+  stem:
+    en: Which replies fit an agent's role in a consumer-rights question? Select all that apply.
+    de: Welche Antworten passen zur Rolle einer Servicekraft bei einer verbraucherrechtlichen Frage? Wähle alle zutreffenden aus.
+  options:
+  - en: '"I have noted your dates; our legal team will check this and reply by Friday."'
+    de: „Ich habe deine Daten notiert; unser Rechtsteam prüft das und antwortet bis Freitag.“
+    correct: true
+  - en: '"I cannot confirm the outcome, but your message is recorded as a withdrawal."'
+    de: „Das Ergebnis kann ich nicht bestätigen, aber deine Nachricht ist als Widerruf erfasst.“
+    correct: true
+  - en: '"By law you had exactly 14 days, so you are too late."'
+    de: „Nach dem Gesetz hattest du genau 14 Tage, du bist also zu spät.“
+    correct: false
+  - en: '"The guarantee has expired, so you have no claims."'
+    de: „Die Garantie ist abgelaufen, also hast du keine Ansprüche.“
+    correct: false
+  explanation:
+    en: Good replies record facts, name the next step and avoid legal conclusions. A flat 14-day statement ignores exceptions and missing information, and an expired guarantee does not end statutory rights.
+    de: Gute Antworten halten Fakten fest, nennen den nächsten Schritt und vermeiden rechtliche Schlüsse. Eine pauschale 14-Tage-Aussage übergeht Ausnahmen und fehlende Informationen, und eine abgelaufene Garantie beendet gesetzliche Rechte nicht.
+  source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32011L0083
+- id: crb-a-ad
+  level: advanced
+  difficulty: 1600
+  type: single
+  stem:
+    en: A product page advertises a "lifetime guarantee", but the guarantee statement in the box is narrower. A customer asks which counts. What is the best action?
+    de: Eine Produktseite wirbt mit „lebenslanger Garantie“, aber die Garantieerklärung in der Packung ist enger gefasst. Ein Kunde fragt, was gilt. Was ist das beste Vorgehen?
+  options:
+  - en: Say that only the statement in the box counts, because it is the written document
+    de: Sagen, dass nur die Erklärung in der Packung gilt, weil sie das schriftliche Dokument ist
+    correct: false
+  - en: Say that advertising is only marketing and can never bind the producer or the shop in any way, so the box wins
+    de: Sagen, dass Werbung nur Marketing ist und weder den Hersteller noch den Shop in irgendeiner Weise binden kann, also gilt die Packung
+    correct: false
+  - en: 'Refer to legal or compliance: advertising can be part of what binds the guarantor, so both must be compared'
+    de: 'An Recht oder Compliance verweisen: Werbung kann Teil dessen sein, woran der Garantiegeber gebunden ist; beides muss verglichen werden'
+    correct: true
+  - en: Promise the lifetime cover that the page states
+    de: Die Abdeckung auf Lebenszeit zusagen, wie auf der Seite angegeben
+    correct: false
+  explanation:
+    en: A commercial guarantee binds the guarantor under the statement and the associated advertising, and where the statement is less favourable than the advertising, the advertising terms can apply unless corrected beforehand. That is a legal comparison, so the agent refers it.
+    de: Eine gewerbliche Garantie bindet den Garantiegeber nach Erklärung und zugehöriger Werbung, und ist die Erklärung ungünstiger als die Werbung, können die Bedingungen der Werbung gelten, sofern sie nicht vorher berichtigt wurde. Das ist ein rechtlicher Vergleich, daher leitet die Servicekraft weiter.
+  source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019L0771
