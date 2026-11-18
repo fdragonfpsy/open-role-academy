@@ -1,0 +1,21 @@
+id: negotiation-supplier-relationships
+title:
+  en: Negotiation and supplier relationships
+  de: Verhandlung und Lieferantenbeziehungen
+description:
+  en: >-
+    Prepare purchasing negotiations (interests, alternatives, limits), negotiate terms beyond price, and build and manage constructive, long-term supplier relationships including escalation and conflict resolution.
+  de: >-
+    Einkaufsverhandlungen vorbereiten (Interessen, Alternativen, Grenzen), Konditionen über den Preis hinaus verhandeln sowie konstruktive, langfristige Lieferantenbeziehungen aufbauen und steuern, einschließlich Eskalation und Konfliktlösung.
+prerequisites: [supplier-selection-evaluation, communication-collaboration]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/fde186df-c9c4-49f5-b2a5-d66adc7c43a5
+    label: negotiate buying conditions
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/c842be42-81b3-40f2-904c-ea8790ac88bd
+    label: negotiate supplier arrangements
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/3cd35f5d-ce6d-4f14-9a09-53d7a28d834c
+    label: maintain relationship with suppliers

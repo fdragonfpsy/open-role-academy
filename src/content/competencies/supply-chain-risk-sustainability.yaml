@@ -1,0 +1,15 @@
+id: supply-chain-risk-sustainability
+title:
+  en: Supply chain risk and sustainability
+  de: Lieferkettenrisiken und Nachhaltigkeit
+description:
+  en: >-
+    Identify supply risks (single sourcing, disruption, price volatility), plan mitigation and contingencies, and understand at topic level the sustainability and human-rights expectations on supply chains in the EU and Germany, including supplier due diligence.
+  de: >-
+    Lieferrisiken (Single Sourcing, Ausfälle, Preisschwankungen) erkennen, Gegenmaßnahmen und Notfallpläne entwickeln und auf Themenebene die Nachhaltigkeits- und Menschenrechtserwartungen an Lieferketten in der EU und in Deutschland verstehen, einschließlich der Sorgfaltspflichten gegenüber Lieferanten.
+prerequisites: [supplier-selection-evaluation]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/96ec2d53-4f41-4172-8ef2-70742c4bb540
+    label: assess supplier risks

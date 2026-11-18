@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-18 — Phase 4: Procurement & Supply Chain framework (draft, no content yet)
+
+**Done**
+- `src/content/roles/procurement-supply-chain.yaml` (`status: draft`, en/de) with 10 role competencies plus the 6 core-track ones; 10 new competency files (en/de, `track: role`, acyclic prerequisites on existing ids). Negotiation does not reuse the sales-only objection-handling competency.
+- 18 ESCO refs verified against the ESCO API (HTTP 200, label equals stored label); `strategic-sourcing-category-management` has no ESCO ref (no fitting skill found), which gives one validator warning. EU public procurement, Incoterms and supply-chain due diligence are at topic level only.
+- `docs/FRAMEWORK.md` regenerated; decision logged. lint, typecheck, tests, validate:content (0 errors; draft-role and missing-ESCO warnings) and build pass.
+
+**Counts:** roles 9 (1 draft) · competencies 88 · units 444 · items 940 · resources 450
+
+**Next:** Procurement content in batches of 3 competencies, then publish.
+
 ## 2026-11-18 — Phase 4: Project Management content batch 4 (project-closure-lessons-learned), Project Management published
 
 **Done**

@@ -1,0 +1,18 @@
+id: procurement-fundamentals-p2p
+title:
+  en: Procurement fundamentals and purchase-to-pay
+  de: Beschaffungsgrundlagen und Purchase-to-Pay
+description:
+  en: >-
+    Understand the role of procurement in a company, the purchase-to-pay process from requisition to payment, spend categories, make-or-buy decisions and the key roles and documents involved.
+  de: >-
+    Die Rolle der Beschaffung im Unternehmen, den Purchase-to-Pay-Prozess von der Bedarfsmeldung bis zur Zahlung, Ausgabenkategorien, Make-or-Buy-Entscheidungen sowie die wichtigsten Rollen und Dokumente verstehen.
+prerequisites: [business-finance-fundamentals]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/c7d64df4-7af3-4269-add6-97833bd5448e
+    label: manage purchasing cycle
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/650f44e2-cb4c-41ba-9095-581fe6bea4b1
+    label: coordinate purchasing activities

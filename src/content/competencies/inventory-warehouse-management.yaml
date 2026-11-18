@@ -1,0 +1,21 @@
+id: inventory-warehouse-management
+title:
+  en: Inventory and warehouse management
+  de: Bestands- und Lagerverwaltung
+description:
+  en: >-
+    Control stock levels, reorder points and safety stock, organise warehouse processes (receiving, storage, picking), run stock counts and understand inventory valuation and key figures at a basic level.
+  de: >-
+    Bestände, Meldebestände und Sicherheitsbestände steuern, Lagerprozesse (Wareneingang, Lagerung, Kommissionierung) organisieren, Inventuren durchführen und Bestandsbewertung sowie Kennzahlen auf Grundniveau verstehen.
+prerequisites: [procurement-fundamentals-p2p]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/ab6265f2-a9bf-49e8-a9a5-67cbab4de38b
+    label: manage inventory
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/fa7be6bf-f906-4b8e-857d-48a9a7da901c
+    label: manage warehouse operations
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/44f6a65f-6be7-4818-9a66-73908797283f
+    label: monitor stock level

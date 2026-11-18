@@ -1,0 +1,12 @@
+id: strategic-sourcing-category-management
+title:
+  en: Strategic sourcing and category management
+  de: Strategisches Sourcing und Warengruppenmanagement
+description:
+  en: >-
+    Analyse spend and demand, group purchases into categories, understand supply markets, define sourcing strategies and consider total cost of ownership rather than price alone.
+  de: >-
+    Ausgaben und Bedarfe analysieren, Einkäufe in Warengruppen bündeln, Beschaffungsmärkte verstehen, Sourcing-Strategien festlegen und Gesamtkosten (Total Cost of Ownership) statt nur den Preis betrachten.
+prerequisites: [procurement-fundamentals-p2p]
+track: role
+frameworkRefs: []

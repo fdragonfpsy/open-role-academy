@@ -1,0 +1,62 @@
+id: procurement-supply-chain
+kind: role
+status: draft
+title:
+  en: Procurement & Supply Chain
+  de: Einkauf & Supply Chain
+summary:
+  en: >-
+    Buy and move goods and services reliably: understand purchase-to-pay, source strategically, select and evaluate suppliers, run tenders and contracts, negotiate and manage supplier relationships, handle orders and invoices, control inventory and warehouses, plan logistics and transport, balance supply and demand, and manage supply chain risk and sustainability.
+  de: >-
+    Waren und Dienstleistungen zuverlässig beschaffen und bewegen: Purchase-to-Pay verstehen, strategisch einkaufen, Lieferanten auswählen und bewerten, Ausschreibungen und Verträge durchführen, verhandeln und Lieferantenbeziehungen steuern, Bestellungen und Rechnungen abwickeln, Bestände und Lager steuern, Logistik und Transport planen, Angebot und Nachfrage abstimmen sowie Lieferkettenrisiken und Nachhaltigkeit managen.
+competencies:
+  # role-specific
+  - id: procurement-fundamentals-p2p
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: strategic-sourcing-category-management
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: supplier-selection-evaluation
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: tendering-rfx-contracting
+    priority: 2
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  - id: negotiation-supplier-relationships
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: purchase-order-invoice-management
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: inventory-warehouse-management
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: logistics-transport-planning
+    priority: 2
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  - id: supply-chain-planning-demand
+    priority: 2
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  - id: supply-chain-risk-sustainability
+    priority: 2
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  # core track
+  - id: information-security-basics
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: digital-ai-literacy
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: communication-collaboration
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: working-with-data
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: self-organisation-project-basics
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: business-finance-fundamentals
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }

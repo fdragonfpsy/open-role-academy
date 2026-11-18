@@ -1,0 +1,15 @@
+id: supplier-selection-evaluation
+title:
+  en: Supplier selection and evaluation
+  de: Lieferantenauswahl und -bewertung
+description:
+  en: >-
+    Define selection criteria, qualify and compare suppliers, use scorecards and performance indicators, and review supplier performance on a regular basis.
+  de: >-
+    Auswahlkriterien festlegen, Lieferanten qualifizieren und vergleichen, Scorecards und Leistungskennzahlen nutzen und die Lieferantenleistung regelmäßig bewerten.
+prerequisites: [strategic-sourcing-category-management]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/409a7608-20ac-40b6-a022-5cb74d23799d
+    label: develop methodologies for supplier evaluation
