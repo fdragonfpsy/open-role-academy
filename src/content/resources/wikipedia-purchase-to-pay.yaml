@@ -1,0 +1,14 @@
+id: wikipedia-purchase-to-pay
+url: https://en.wikipedia.org/wiki/Purchase-to-pay
+title: "Purchase-to-pay"
+provider: Wikipedia
+language: en
+format: article
+minutes: 5
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies: [procurement-fundamentals-p2p]
+levels: [foundation]
+note: "Footer states CC BY-SA 4.0; no maintenance banner (short stub article); read in full 2026-11-18. Link only. P2P = requisitioning, purchasing, receiving, paying and accounting; formal process and specialist staff to avoid waste and fraud."

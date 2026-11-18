@@ -1,5 +1,22 @@
 # Status
 
+## 2026-11-18 — Phase 4: Procurement content batch 1 (procurement-fundamentals-p2p, strategic-sourcing-category-management, supplier-selection-evaluation)
+
+**Done**
+- 18 unit files (9 en + 9 de, `status: ai-draft`), all three levels. Own methods (seven-step purchase-to-pay cycle, three-way match, invoice-exception rules, ABC limits, scorecard KPI definitions, escalation ladder) labelled "our own"; examples invented and labelled, arithmetic hand-checked.
+- 36 items (12 per competency, 4 per level, 3 multi each); correct option uniquely longest in at most 4 of 9 singles.
+- 12 new link-only resources (`licenseVerifiedOn: 2026-11-18`, HTTP 200): 10 Wikipedia (CC BY-SA; 7 German), OpenStax Introduction to Business 12.4 (CC BY) and Managerial Accounting 10.3 (CC BY-NC-SA). 5 existing resources re-tagged.
+- Role stays `status: draft`. No fitting verified ESCO skill for strategic-sourcing-category-management, so that validator warning remains.
+
+**Reviewer to-dos**
+- Check against sources: direct/indirect spend (en Procurement); Kraljič four fields (de page reads like machine translation); de Lieferantenbewertung criteria and ppm; B2B buying stages and rebuy types; make-or-buy factors. No source was read for three-way matching.
+- Supplier advanced unit mentions the Lieferkettensorgfaltspflichtengesetz and says to ask legal counsel. German wording of the 9 DE units.
+- BME, BMWK and gesetze-im-internet were unreachable, so German-language resources are de.Wikipedia only (see QA #56).
+
+**Counts:** roles 9 (1 draft) · competencies 88 · units 462 · items 976 · resources 462
+
+**Next:** Procurement content: tendering-rfx-contracting, negotiation-supplier-relationships, purchase-order-invoice-management.
+
 ## 2026-11-18 — Phase 4: Procurement & Supply Chain framework (draft, no content yet)
 
 **Done**

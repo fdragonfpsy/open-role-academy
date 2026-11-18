@@ -1,0 +1,14 @@
+id: wikipedia-procurement
+url: https://en.wikipedia.org/wiki/Procurement
+title: "Procurement"
+provider: Wikipedia
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-18
+mode: link
+competencies: [procurement-fundamentals-p2p, strategic-sourcing-category-management]
+levels: [foundation, practitioner, advanced]
+note: "Footer states CC BY-SA 4.0; no maintenance banner; read 2026-11-18. Link only, nothing copied. Procurement vs purchasing, direct vs indirect spend, spend under management (a 2011 report is cited on the page), sourcing as the more strategic layer."

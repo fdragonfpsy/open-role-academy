@@ -1,0 +1,290 @@
+competency: procurement-fundamentals-p2p
+items:
+- id: pfp-f-order
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: Which document does the buyer send to the supplier to place an order?
+    de: Welches Dokument sendet der Einkauf an den Lieferanten, um zu bestellen?
+  options:
+  - en: The purchase requisition
+    de: Die Bestellanforderung
+    correct: false
+  - en: The purchase order
+    de: Die Bestellung
+    correct: true
+  - en: The goods receipt confirmation
+    de: Die Wareneingangsbestätigung
+    correct: false
+  - en: The supplier invoice
+    de: Die Lieferantenrechnung
+    correct: false
+  explanation:
+    en: A requisition is the internal request for a need. The purchase order goes to the supplier and names item, quantity, price, delivery date and place.
+    de: Die Bestellanforderung ist die interne Anforderung eines Bedarfs. Die Bestellung geht an den Lieferanten und nennt Artikel, Menge, Preis, Liefertermin und Lieferort.
+  source: https://en.wikipedia.org/wiki/Purchase-to-pay
+- id: pfp-f-invoicecheck
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: What should happen before a supplier invoice is paid?
+    de: Was sollte geschehen, bevor eine Lieferantenrechnung bezahlt wird?
+  options:
+  - en: Check that the supplier appears in the contract database
+    de: Prüfen, ob der Lieferant in der Vertragsdatenbank steht
+    correct: false
+  - en: Call the supplier to confirm the invoice amount
+    de: Den Lieferanten anrufen, um den Rechnungsbetrag zu bestätigen
+    correct: false
+  - en: Compare it with the purchase order and the goods receipt
+    de: Sie mit der Bestellung und dem Wareneingang abgleichen
+    correct: true
+  - en: Wait for a reminder to learn the real due date
+    de: Auf eine Mahnung warten, um den echten Fälligkeitstag zu erfahren
+    correct: false
+  explanation:
+    en: The invoice check matches invoice, order and receipt. A known supplier or a phone call does not show that the goods were ordered and received in this quantity.
+    de: Die Rechnungsprüfung gleicht Rechnung, Bestellung und Wareneingang ab. Ein bekannter Lieferant oder ein Anruf zeigt nicht, dass die Ware in dieser Menge bestellt und angenommen wurde.
+  source: https://en.wikipedia.org/wiki/Purchase-to-pay
+- id: pfp-f-direct
+  level: foundation
+  difficulty: 1000
+  type: multi
+  stem:
+    en: Which purchases are direct spend? Select all that apply.
+    de: Welche Einkäufe sind direkte Ausgaben? Wähle alle zutreffenden aus.
+  options:
+  - en: Raw materials that become part of the product
+    de: Rohstoffe, die Teil des Produkts werden
+    correct: true
+  - en: Components that are assembled into the product
+    de: Bauteile, die ins Produkt eingebaut werden
+    correct: true
+  - en: Office supplies for the sales team
+    de: Büromaterial für das Vertriebsteam
+    correct: false
+  - en: A consulting project on the company's organisation
+    de: Ein Beratungsprojekt zur Organisation des Unternehmens
+    correct: false
+  explanation:
+    en: Direct spend is production-related and goes into finished products. Office supplies, consulting and similar items are indirect spend.
+    de: Direkte Ausgaben sind produktionsbezogen und gehen in Fertigprodukte ein. Büromaterial, Beratung und Ähnliches sind indirekte Ausgaben.
+  source: https://en.wikipedia.org/wiki/Procurement
+- id: pfp-f-roles
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: Why should the person who orders a purchase not also release its payment?
+    de: Warum sollte die Person, die einen Einkauf bestellt, die Zahlung nicht auch freigeben?
+  options:
+  - en: So that the cheapest supplier is always chosen
+    de: Damit immer der günstigste Lieferant gewählt wird
+    correct: false
+  - en: So that errors and fraud are more likely to be noticed by a second person
+    de: Damit Fehler und Betrug eher von einer zweiten Person bemerkt werden
+    correct: true
+  - en: So that each department keeps its own supplier list
+    de: Damit jede Abteilung ihre eigene Lieferantenliste behält
+    correct: false
+  - en: So that purchase orders are no longer needed
+    de: Damit Bestellungen nicht mehr nötig sind
+    correct: false
+  explanation:
+    en: Separating roles creates a second look at each purchase (four-eyes principle). It does not choose suppliers, structure lists or replace orders.
+    de: Getrennte Rollen schaffen einen zweiten Blick auf jeden Einkauf (Vier-Augen-Prinzip). Sie wählen keine Lieferanten, ordnen keine Listen und ersetzen keine Bestellungen.
+  source: https://en.wikipedia.org/wiki/Purchase-to-pay
+- id: pfp-p-type
+  level: practitioner
+  difficulty: 1150
+  type: single
+  stem:
+    en: A department reorders toner from its usual supplier. Which purchase type is this?
+    de: Eine Abteilung bestellt Toner beim üblichen Lieferanten nach. Um welche Einkaufsart handelt es sich?
+  options:
+  - en: Straight rebuy
+    de: Reiner Wiederholungskauf
+    correct: true
+  - en: Modified rebuy
+    de: Veränderter Wiederholungskauf
+    correct: false
+  - en: New task
+    de: Neukauf
+    correct: false
+  - en: Public tender
+    de: Öffentliche Ausschreibung
+    correct: false
+  explanation:
+    en: A straight rebuy repeats an earlier purchase without changes and needs only a quick order. A modified rebuy changes specifications or equipment; a new task is bought for the first time.
+    de: Ein reiner Wiederholungskauf wiederholt einen früheren Einkauf unverändert und braucht nur eine schnelle Bestellung. Ein veränderter Wiederholungskauf ändert Spezifikation oder Geräte; ein Neukauf wird erstmals getätigt.
+  source: https://openstax.org/books/principles-marketing/pages/4-4-stages-in-the-b2b-buying-process
+- id: pfp-p-qty
+  level: practitioner
+  difficulty: 1250
+  type: single
+  stem:
+    en: An invoice lists 22 headsets, but only 20 were received. What is the right handling?
+    de: Eine Rechnung weist 22 Headsets aus, aber nur 20 wurden geliefert. Wie ist richtig zu verfahren?
+  options:
+  - en: Pay 22, because the invoice is the binding document
+    de: 22 bezahlen, weil die Rechnung das maßgebliche Dokument ist
+    correct: false
+  - en: Pay 21 as a compromise
+    de: 21 als Kompromiss bezahlen
+    correct: false
+  - en: Pay for 20 once the supplier has corrected the invoice or issued a credit note
+    de: Für 20 bezahlen, sobald der Lieferant die Rechnung korrigiert oder eine Gutschrift erstellt hat
+    correct: true
+  - en: Hold the whole invoice until the supplier has delivered the missing two headsets as invoiced
+    de: Die gesamte Rechnung zurückhalten, bis der Lieferant die fehlenden zwei Headsets wie berechnet geliefert hat
+    correct: false
+  explanation:
+    en: Payment follows what was ordered and received. The difference is cleared with the supplier; there is no compromise quantity and no reason to reject the 20 delivered units.
+    de: Die Zahlung richtet sich nach Bestelltem und Erhaltenem. Die Differenz wird mit dem Lieferanten geklärt; es gibt keine Kompromissmenge und keinen Grund, die 20 gelieferten Stück abzulehnen.
+  source: https://en.wikipedia.org/wiki/Purchase-to-pay
+- id: pfp-p-relevant
+  level: practitioner
+  difficulty: 1300
+  type: multi
+  stem:
+    en: Which costs are relevant in a make-or-buy comparison? Select all that apply.
+    de: Welche Kosten sind bei einem Make-or-Buy-Vergleich relevant? Wähle alle zutreffenden aus.
+  options:
+  - en: Variable production costs that stop if the part is bought
+    de: Variable Produktionskosten, die bei Zukauf entfallen
+    correct: true
+  - en: Fixed costs that would disappear if production stopped
+    de: Fixkosten, die bei Einstellung der Fertigung wegfielen
+    correct: true
+  - en: Allocated overhead that remains whatever is decided
+    de: Zugeordnete Gemeinkosten, die unabhängig von der Entscheidung bleiben
+    correct: false
+  - en: The price paid for the machine years ago
+    de: Der vor Jahren gezahlte Preis der Maschine
+    correct: false
+  explanation:
+    en: Only costs that change with the decision matter. Unavoidable fixed costs and money already spent stay the same either way.
+    de: Nur Kosten, die sich durch die Entscheidung ändern, zählen. Nicht vermeidbare Fixkosten und bereits ausgegebenes Geld bleiben in beiden Fällen gleich.
+  source: https://openstax.org/books/principles-managerial-accounting/pages/10-3-evaluate-and-determine-whether-to-make-or-buy-a-component
+- id: pfp-p-mob
+  level: practitioner
+  difficulty: 1350
+  type: single
+  stem:
+    en: A part costs 3.00 euro variable plus 1.00 euro unavoidable fixed overhead to make. A supplier offers it at 3.60 euro. Considering costs only, what follows?
+    de: Ein Teil kostet in der Herstellung 3,00 Euro variabel plus 1,00 Euro nicht vermeidbare Fixkosten. Ein Lieferant bietet es für 3,60 Euro an. Was folgt, wenn nur die Kosten betrachtet werden?
+  options:
+  - en: Buy, because 3.60 is below the full cost of 4.00
+    de: Zukaufen, weil 3,60 unter den Vollkosten von 4,00 liegt
+    correct: false
+  - en: Make, because the relevant cost of making is 3.00 against 3.60
+    de: Selbst herstellen, weil die relevanten Kosten 3,00 gegenüber 3,60 betragen
+    correct: true
+  - en: Buy, because fixed costs always disappear when work is outsourced
+    de: Zukaufen, weil Fixkosten bei Auslagerung immer wegfallen
+    correct: false
+  - en: Both are equal, because the yearly total is identical
+    de: Beides ist gleich, weil die Jahressumme identisch ist
+    correct: false
+  explanation:
+    en: The 1.00 euro fixed overhead is unavoidable, so it stays whichever way you decide and is not relevant. Making costs 3.00, buying 3.60. Quality and dependence still need a look.
+    de: Die 1,00 Euro Fixkosten sind nicht vermeidbar, bleiben also in jedem Fall und sind nicht relevant. Herstellen kostet 3,00, Zukauf 3,60. Qualität und Abhängigkeit sind trotzdem zu prüfen.
+  source: https://openstax.org/books/principles-managerial-accounting/pages/10-3-evaluate-and-determine-whether-to-make-or-buy-a-component
+- id: pfp-a-bypass
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: Only 65 percent of invoices have a purchase order issued before the invoice date. What is the best first step?
+    de: Nur bei 65 Prozent der Rechnungen wurde die Bestellung vor dem Rechnungsdatum ausgelöst. Was ist der beste erste Schritt?
+  options:
+  - en: Raise the invoice tolerance so that fewer invoices stop and the exception queue in accounts payable shrinks
+    de: Die Rechnungstoleranz erhöhen, damit weniger Rechnungen anhalten und die Ausnahmeliste der Kreditorenbuchhaltung schrumpft
+    correct: false
+  - en: Block every invoice without a prior order from today
+    de: Ab heute jede Rechnung ohne vorherige Bestellung sperren
+    correct: false
+  - en: Review the remaining invoices to separate legitimate contract-based payments from retroactive orders
+    de: Die übrigen Rechnungen prüfen, um legitime vertragsbasierte Zahlungen von nachträglichen Bestellungen zu trennen
+    correct: true
+  - en: Ask all employees to sign a purchasing policy
+    de: Alle Mitarbeitenden eine Einkaufsrichtlinie unterschreiben lassen
+    correct: false
+  explanation:
+    en: Rent, utilities and similar contract payments legitimately have no order. Only after separating them can you see the real bypassing. A blanket block would stop legitimate payments; tolerance and signatures do not address the cause.
+    de: Miete, Energie und ähnliche Vertragszahlungen haben legitim keine Bestellung. Erst nach dieser Trennung sieht man das echte Umgehen. Eine pauschale Sperre würde berechtigte Zahlungen stoppen; Toleranz und Unterschriften beheben die Ursache nicht.
+  source: https://en.wikipedia.org/wiki/Procurement
+- id: pfp-a-sum
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: Your spend under management is 70 percent, a published benchmark says 60 percent. What must you check first?
+    de: Dein Spend under Management beträgt 70 Prozent, ein veröffentlichter Vergleichswert nennt 60 Prozent. Was musst du zuerst prüfen?
+  options:
+  - en: Whether both figures use the same definition of managed and addressable spend
+    de: Ob beide Werte dieselbe Definition von gesteuerten und adressierbaren Ausgaben nutzen
+    correct: true
+  - en: Whether the benchmark company is larger than yours
+    de: Ob das Vergleichsunternehmen größer ist als deines
+    correct: false
+  - en: Nothing; a higher value is always better
+    de: Nichts; ein höherer Wert ist immer besser
+    correct: false
+  - en: Whether the benchmark was published recently
+    de: Ob der Vergleichswert kürzlich veröffentlicht wurde
+    correct: false
+  explanation:
+    en: The measure has several definitions (managed or influenced, total or addressable spend). Without matching definitions the comparison says little, whichever figure is higher.
+    de: Die Kennzahl hat mehrere Definitionen (gesteuert oder beeinflusst, Gesamt- oder adressierbare Ausgaben). Ohne gleiche Definitionen sagt der Vergleich wenig, egal welcher Wert höher ist.
+  source: https://en.wikipedia.org/wiki/Procurement
+- id: pfp-a-speed
+  level: advanced
+  difficulty: 1600
+  type: multi
+  stem:
+    en: Which measures keep a purchasing path both controlled and fast? Select all that apply.
+    de: Welche Maßnahmen halten einen Beschaffungsweg kontrolliert und zugleich schnell? Wähle alle zutreffenden aus.
+  options:
+  - en: A catalogue or framework contract for routine low-risk purchases
+    de: Ein Katalog oder Rahmenvertrag für routinemäßige risikoarme Einkäufe
+    correct: true
+  - en: Approval levels that scale with value and risk
+    de: Freigabestufen, die mit Wert und Risiko wachsen
+    correct: true
+  - en: The same four approvals for every purchase, whatever its value
+    de: Dieselben vier Freigaben für jeden Einkauf, egal welchen Wert
+    correct: false
+  - en: Letting requesters release payment for their own orders
+    de: Anfordernde die Zahlung ihrer eigenen Bestellungen freigeben lassen
+    correct: false
+  explanation:
+    en: Light paths for routine items and stronger control for high value or risk keep speed and control together. Uniform heavy approval drives bypassing, and self-release removes the separation of roles.
+    de: Leichte Wege für Routineartikel und stärkere Kontrolle bei hohem Wert oder Risiko verbinden Tempo und Kontrolle. Einheitlich schwere Freigabe fördert das Umgehen, und Selbstfreigabe hebt die Rollentrennung auf.
+  source: https://en.wikipedia.org/wiki/Purchase-to-pay
+- id: pfp-a-tol
+  level: advanced
+  difficulty: 1650
+  type: single
+  stem:
+    en: Accounts payable proposes a flat 5 percent tolerance for all invoices to cut exceptions. What is the most defensible design?
+    de: Die Kreditorenbuchhaltung schlägt eine pauschale Toleranz von 5 Prozent für alle Rechnungen vor, um Ausnahmen zu senken. Was ist die vertretbarste Ausgestaltung?
+  options:
+  - en: Use a percentage together with an absolute euro cap, and review it with finance
+    de: Einen Prozentsatz zusammen mit einer absoluten Euro-Obergrenze verwenden und mit dem Finanzbereich prüfen
+    correct: true
+  - en: Use a high percentage only, since small invoices are rarely wrong
+    de: Nur einen hohen Prozentsatz verwenden, weil kleine Rechnungen selten falsch sind
+    correct: false
+  - en: Allow no tolerance, because every difference is a control failure
+    de: Keine Toleranz zulassen, weil jede Abweichung ein Kontrollversagen ist
+    correct: false
+  - en: Let each buyer decide per invoice
+    de: Jede Einkäuferin und jeden Einkäufer pro Rechnung entscheiden lassen
+    correct: false
+  explanation:
+    en: 5 percent of a large invoice can be a large amount. A percentage with a euro cap balances effort and exposure; no tolerance is defensible in theory but costs time, and individual discretion removes consistency.
+    de: 5 Prozent einer großen Rechnung können ein hoher Betrag sein. Ein Prozentsatz mit Euro-Obergrenze wägt Aufwand und Risiko ab; keine Toleranz ist theoretisch vertretbar, kostet aber Zeit, und individueller Ermessensspielraum nimmt die Einheitlichkeit.
+  source: https://en.wikipedia.org/wiki/Procurement

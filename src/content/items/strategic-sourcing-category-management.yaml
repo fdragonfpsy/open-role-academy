@@ -1,0 +1,290 @@
+competency: strategic-sourcing-category-management
+items:
+- id: ssc-f-aim
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: What does strategic sourcing aim for?
+    de: Worauf zielt strategisches Sourcing ab?
+  options:
+  - en: The lowest purchase price per item, negotiated separately for every single article
+    de: Den niedrigsten Kaufpreis pro Artikel, für jeden einzelnen Artikel getrennt verhandelt
+    correct: false
+  - en: The fewest suppliers possible
+    de: Möglichst wenige Lieferanten
+    correct: false
+  - en: Supply at the lowest total cost, not only the lowest price
+    de: Versorgung zu den niedrigsten Gesamtkosten, nicht nur zum niedrigsten Preis
+    correct: true
+  - en: The fastest possible order processing
+    de: Die schnellstmögliche Bestellabwicklung
+    correct: false
+  explanation:
+    en: Strategic sourcing looks at total cost over the whole procurement cycle. A low price can hide high running costs, and fewer suppliers is a means in some categories, not the aim.
+    de: Strategisches Sourcing betrachtet die Gesamtkosten über den ganzen Beschaffungszyklus. Ein niedriger Preis kann hohe laufende Kosten verbergen, und weniger Lieferanten sind in manchen Warengruppen ein Mittel, nicht das Ziel.
+  source: https://en.wikipedia.org/wiki/Strategic_sourcing
+- id: ssc-f-abc
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: In an ABC analysis of spend categories, what does class A contain?
+    de: Was enthält Klasse A in einer ABC-Analyse von Warengruppen?
+  options:
+  - en: Many categories with little spend
+    de: Viele Warengruppen mit geringen Ausgaben
+    correct: false
+  - en: The few categories with the highest share of spend
+    de: Die wenigen Warengruppen mit dem höchsten Ausgabenanteil
+    correct: true
+  - en: The categories with the most suppliers
+    de: Die Warengruppen mit den meisten Lieferanten
+    correct: false
+  - en: The categories that are bought most often
+    de: Die Warengruppen, die am häufigsten gekauft werden
+    correct: false
+  explanation:
+    en: Class A holds the few objects with a high contribution; C holds many with a small one. Frequency or supplier count are different measures, and each company sets its own class limits.
+    de: Klasse A enthält die wenigen Objekte mit hohem Beitrag; C enthält viele mit kleinem Beitrag. Häufigkeit oder Lieferantenzahl sind andere Maße, und jedes Unternehmen legt seine Klassengrenzen selbst fest.
+  source: https://de.wikipedia.org/wiki/ABC-Analyse
+- id: ssc-f-tco
+  level: foundation
+  difficulty: 1000
+  type: multi
+  stem:
+    en: Which items belong in the total cost of ownership of a printer? Select all that apply.
+    de: Welche Positionen gehören zu den Gesamtkosten des Betriebs eines Druckers? Wähle alle zutreffenden aus.
+  options:
+  - en: Purchase price
+    de: Kaufpreis
+    correct: true
+  - en: Toner and other consumables
+    de: Toner und anderes Verbrauchsmaterial
+    correct: true
+  - en: Maintenance and repair
+    de: Wartung und Reparatur
+    correct: true
+  - en: The list price of a competing printer
+    de: Der Listenpreis eines Konkurrenzdruckers
+    correct: false
+  explanation:
+    en: TCO adds all costs of use to the purchase price, such as consumables, energy, maintenance and repair. A competitor's price is a comparison point, not a cost of this printer.
+    de: TCO addiert alle Nutzungskosten zum Kaufpreis, etwa Verbrauchsmaterial, Energie, Wartung und Reparatur. Der Preis eines Konkurrenzgeräts ist ein Vergleichswert, keine Kostenposition dieses Druckers.
+  source: https://de.wikipedia.org/wiki/Total_Cost_of_Ownership
+- id: ssc-f-first
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: What is the first step of a strategic sourcing process?
+    de: Was ist der erste Schritt eines strategischen Sourcing-Prozesses?
+  options:
+  - en: Negotiate with the incumbent suppliers
+    de: Mit den bisherigen Lieferanten verhandeln
+    correct: false
+  - en: 'Analyse current spend: what is bought, from whom and at what price'
+    de: 'Die aktuellen Ausgaben analysieren: was wird gekauft, bei wem und zu welchem Preis'
+    correct: true
+  - en: Send a quotation request to as many suppliers as possible
+    de: Eine Angebotsanfrage an möglichst viele Lieferanten senden
+    correct: false
+  - en: Decide to consolidate suppliers
+    de: Entscheiden, Lieferanten zu bündeln
+    correct: false
+  explanation:
+    en: Strategy and negotiation need facts. Spend data shows where the money goes, and only then can you study the market and develop a strategy.
+    de: Strategie und Verhandlung brauchen Fakten. Ausgabendaten zeigen, wohin das Geld fließt; erst dann lassen sich der Markt untersuchen und eine Strategie entwickeln.
+  source: https://en.wikipedia.org/wiki/Strategic_sourcing
+- id: ssc-p-axes
+  level: practitioner
+  difficulty: 1150
+  type: single
+  stem:
+    en: Which two dimensions does the Kraljič matrix use?
+    de: Welche zwei Dimensionen nutzt die Kraljič-Matrix?
+  options:
+  - en: Price and quality
+    de: Preis und Qualität
+    correct: false
+  - en: Importance of the purchase and complexity of the supply market
+    de: Bedeutung des Einkaufs und Komplexität des Liefermarkts
+    correct: true
+  - en: Number of suppliers and delivery time
+    de: Zahl der Lieferanten und Lieferzeit
+    correct: false
+  - en: Annual savings targets and the length of the contract with each supplier
+    de: Jährliche Einsparziele und die Laufzeit des Vertrags mit jedem Lieferanten
+    correct: false
+  explanation:
+    en: The matrix sorts purchases by their importance (for example share of spend) and the complexity or risk of the supply market. The other pairs are not its axes.
+    de: Die Matrix ordnet Einkäufe nach ihrer Bedeutung (zum Beispiel Ausgabenanteil) und der Komplexität oder dem Risiko des Liefermarkts. Die anderen Paare sind nicht ihre Achsen.
+  source: https://de.wikipedia.org/wiki/Kraljic-Matrix
+- id: ssc-p-leverage
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: A category is important for the company, but the market is low risk with many suppliers. Which approach fits best?
+    de: Eine Warengruppe ist für das Unternehmen wichtig, der Markt ist aber risikoarm mit vielen Lieferanten. Welcher Ansatz passt am besten?
+  options:
+  - en: Long-term partnership with joint development projects and shared investment plans
+    de: Langfristige Partnerschaft mit gemeinsamen Entwicklungsprojekten und Investitionsplänen
+    correct: false
+  - en: Delegate it to departments with minimal control
+    de: An Abteilungen mit minimaler Steuerung delegieren
+    correct: false
+  - en: Secure supply with a safety stock and a second source
+    de: Die Versorgung mit Sicherheitsbestand und zweiter Bezugsquelle sichern
+    correct: false
+  - en: 'Use buying power: competitive quotes and regular negotiation'
+    de: 'Einkaufsmacht nutzen: Angebote im Wettbewerb und regelmäßige Verhandlung'
+    correct: true
+  explanation:
+    en: This is a leverage category. Many suppliers and low market risk let you use volume and competition. Partnership and safety stock fit strategic and bottleneck categories; delegation fits non-critical ones.
+    de: Das ist eine Hebel-Warengruppe. Viele Lieferanten und geringes Marktrisiko erlauben es, Volumen und Wettbewerb zu nutzen. Partnerschaft und Sicherheitsbestand passen zu strategischen und Engpass-Warengruppen; Delegation zu unkritischen.
+  source: https://de.wikipedia.org/wiki/Kraljic-Matrix
+- id: ssc-p-bottleneck
+  level: practitioner
+  difficulty: 1250
+  type: single
+  stem:
+    en: A cheap seal can only be delivered by one manufacturer, and a missing seal stops a production line. Which field is this?
+    de: Eine günstige Dichtung kann nur ein Hersteller liefern, und eine fehlende Dichtung stoppt eine Produktionslinie. Welches Feld ist das?
+  options:
+  - en: Non-critical
+    de: Nicht kritisch
+    correct: false
+  - en: Leverage
+    de: Hebel
+    correct: false
+  - en: Strategic
+    de: Strategisch
+    correct: false
+  - en: Bottleneck
+    de: Engpass
+    correct: true
+  explanation:
+    en: Low economic impact but at-risk continuity of supply defines a bottleneck item. The answer is to secure supply, for example with medium-term relationships, rather than to push on price.
+    de: Geringe wirtschaftliche Auswirkung bei gefährdeter Liefersicherheit kennzeichnet ein Engpassteil. Die Antwort ist, die Versorgung zu sichern, etwa über mittelfristige Beziehungen, statt beim Preis zu drücken.
+  source: https://de.wikipedia.org/wiki/Kraljic-Matrix
+- id: ssc-p-single
+  level: practitioner
+  difficulty: 1300
+  type: multi
+  stem:
+    en: Which statements about single and multiple sourcing are correct? Select all that apply.
+    de: Welche Aussagen zu Single Sourcing und Mehrlieferantenstrategie sind richtig? Wähle alle zutreffenden aus.
+  options:
+  - en: Buying from several suppliers on purpose can reduce dependence
+    de: Der bewusste Kauf bei mehreren Lieferanten kann die Abhängigkeit verringern
+    correct: true
+  - en: Single sourcing concentrates volume and effort but increases dependence
+    de: Single Sourcing bündelt Menge und Aufwand, erhöht aber die Abhängigkeit
+    correct: true
+  - en: Single sourcing is always cheapest in total
+    de: Single Sourcing ist insgesamt immer am günstigsten
+    correct: false
+  - en: Multiple sourcing is always wrong for strategic categories
+    de: Mehrere Lieferanten sind bei strategischen Warengruppen immer falsch
+    correct: false
+  explanation:
+    en: Both models trade off cost, effort and dependence, and the choice is made per category. 'Always' claims in either direction ignore this.
+    de: Beide Modelle wägen Kosten, Aufwand und Abhängigkeit ab, und die Wahl erfolgt pro Warengruppe. Aussagen mit „immer“ in beide Richtungen übersehen das.
+  source: https://de.wikipedia.org/wiki/Eigenfertigung_oder_Fremdbezug
+- id: ssc-a-tco
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: Offer A is 15 thousand euro cheaper to buy than offer B but costs 4 thousand more per year in maintenance for 5 years and 2 thousand more for disposal. Undiscounted, which is cheaper in total cost?
+    de: Angebot A ist im Kauf 15 Tausend Euro günstiger als Angebot B, kostet aber 5 Jahre lang jährlich 4 Tausend mehr für Wartung und 2 Tausend mehr für Entsorgung. Welches ist ohne Abzinsung insgesamt günstiger?
+  options:
+  - en: A, saving 15 thousand euro
+    de: A, Ersparnis 15 Tausend Euro
+    correct: false
+  - en: B, saving 7 thousand euro
+    de: B, Ersparnis 7 Tausend Euro
+    correct: true
+  - en: B, saving 22 thousand euro
+    de: B, Ersparnis 22 Tausend Euro
+    correct: false
+  - en: A, because later costs should be ignored
+    de: A, weil spätere Kosten ignoriert werden sollten
+    correct: false
+  explanation:
+    en: A's extra running costs are 4 x 5 + 2 = 22 thousand, against a 15 thousand purchase advantage, so B is 7 thousand cheaper. Ignoring later costs is exactly what TCO is meant to avoid; 22 forgets the price difference.
+    de: Die zusätzlichen laufenden Kosten von A betragen 4 x 5 + 2 = 22 Tausend, gegenüber 15 Tausend Kaufvorteil, also ist B 7 Tausend günstiger. Spätere Kosten zu ignorieren ist genau das, was TCO vermeiden soll; 22 vergisst den Preisunterschied.
+  source: https://de.wikipedia.org/wiki/Total_Cost_of_Ownership
+- id: ssc-a-consol
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: Moving all volume of a strategic part to one supplier would cut the price by 8 percent, but it would be the only source. What is the best approach?
+    de: Würde man das gesamte Volumen eines strategischen Teils zu einem Lieferanten verlagern, sänke der Preis um 8 Prozent, aber er wäre die einzige Quelle. Was ist der beste Ansatz?
+  options:
+  - en: Accept, because price is what counts
+    de: Annehmen, weil der Preis zählt
+    correct: false
+  - en: Reject, because single sourcing is never allowed
+    de: Ablehnen, weil Single Sourcing nie erlaubt ist
+    correct: false
+  - en: Accept only with safeguards such as commitments, a safety stock or a second-source plan, after valuing the dependence
+    de: Nur mit Absicherungen wie Zusagen, Sicherheitsbestand oder Plan für eine zweite Quelle annehmen, nachdem die Abhängigkeit bewertet wurde
+    correct: true
+  - en: Accept and stop supplier reviews, since the supplier is now a partner
+    de: Annehmen und Lieferantenbewertungen einstellen, weil der Lieferant nun Partner ist
+    correct: false
+  explanation:
+    en: The saving is real but so is the dependence. Neither blanket acceptance nor a blanket ban weighs both; partnership also needs continued review.
+    de: Die Ersparnis ist real, aber die Abhängigkeit auch. Weder pauschale Annahme noch pauschales Verbot wägt beides ab; Partnerschaft braucht außerdem weiterhin Bewertung.
+  source: https://de.wikipedia.org/wiki/Eigenfertigung_oder_Fremdbezug
+- id: ssc-a-savings
+  level: advanced
+  difficulty: 1600
+  type: multi
+  stem:
+    en: Which practices make a savings report credible? Select all that apply.
+    de: Welche Vorgehensweisen machen einen Einsparungsbericht glaubwürdig? Wähle alle zutreffenden aus.
+  options:
+  - en: Stating the baseline, period and volume
+    de: Vergleichsbasis, Zeitraum und Menge angeben
+    correct: true
+  - en: Separating price reductions from lower consumption
+    de: Preissenkungen von geringerem Verbrauch trennen
+    correct: true
+  - en: Counting the gap to the supplier's first asking price as saving
+    de: Die Lücke zum ersten Wunschpreis des Lieferanten als Einsparung zählen
+    correct: false
+  - en: Reporting without confirmation from finance
+    de: Ohne Bestätigung des Finanzbereichs berichten
+    correct: false
+  explanation:
+    en: A saving only means something against a stated baseline, and consumption changes are not negotiated savings. An opening ask is not a baseline, and unconfirmed numbers invite disputes.
+    de: Eine Einsparung hat nur gegenüber einer genannten Vergleichsbasis Aussagekraft, und Verbrauchsänderungen sind keine verhandelten Einsparungen. Ein Anfangspreis ist keine Vergleichsbasis, und unbestätigte Zahlen führen zu Streit.
+  source: https://en.wikipedia.org/wiki/Strategic_sourcing
+- id: ssc-a-makebuy
+  level: advanced
+  difficulty: 1650
+  type: single
+  stem:
+    en: The relevant cost of buying a strategic component is 5 percent below making it, but the supplier would be the only source of know-how you depend on. What is the best reasoning?
+    de: Die relevanten Kosten des Zukaufs einer strategischen Komponente liegen 5 Prozent unter denen der Eigenfertigung, doch der Lieferant wäre die einzige Quelle für Know-how, von dem du abhängst. Was ist die beste Überlegung?
+  options:
+  - en: Decide on cost alone, because numbers are objective
+    de: Allein nach den Kosten entscheiden, weil Zahlen objektiv sind
+    correct: false
+  - en: Use the cost result as one input, then weigh quality, dependence, capacity and transaction costs
+    de: Das Kostenergebnis als eine Eingangsgröße nutzen und dann Qualität, Abhängigkeit, Kapazität und Transaktionskosten abwägen
+    correct: true
+  - en: Always make strategic parts in-house
+    de: Strategische Teile immer selbst herstellen
+    correct: false
+  - en: Buy, because fixed costs are sunk anyway
+    de: Zukaufen, weil die Fixkosten ohnehin versunken sind
+    correct: false
+  explanation:
+    en: A 5 percent difference is small compared with the risk of a one-source dependence. Cost is one input; qualitative factors can justify either choice. Rules like 'always make' ignore the numbers.
+    de: Ein Unterschied von 5 Prozent ist klein gegenüber dem Risiko einer Abhängigkeit von einer einzigen Quelle. Kosten sind eine Eingangsgröße; qualitative Faktoren können beide Entscheidungen begründen. Regeln wie „immer selbst herstellen“ ignorieren die Zahlen.
+  source: https://openstax.org/books/principles-managerial-accounting/pages/10-3-evaluate-and-determine-whether-to-make-or-buy-a-component

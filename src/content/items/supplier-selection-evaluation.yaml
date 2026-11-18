@@ -1,0 +1,290 @@
+competency: supplier-selection-evaluation
+items:
+- id: sse-f-knockout
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: What is a knock-out criterion in supplier selection?
+    de: Was ist ein Ausschlusskriterium bei der Lieferantenauswahl?
+  options:
+  - en: A criterion with the highest weight in the scoring
+    de: Ein Kriterium mit dem höchsten Gewicht in der Bewertung
+    correct: false
+  - en: A requirement that must be met; a supplier failing it is out whatever its score
+    de: Eine Anforderung, die erfüllt sein muss; wer sie verfehlt, scheidet unabhängig von der Punktzahl aus
+    correct: true
+  - en: A criterion that is scored twice in the total to break a tie between two suppliers
+    de: Ein Kriterium, das in der Summe doppelt bewertet wird, um einen Gleichstand zwischen zwei Lieferanten aufzulösen
+    correct: false
+  - en: A supplier removed after poor performance
+    de: Ein Lieferant, der nach schlechter Leistung entfernt wurde
+    correct: false
+  explanation:
+    en: Knock-out criteria, such as a required approval, are checked first and cannot be offset by high scores elsewhere. Weights apply only to the criteria that remain.
+    de: Ausschlusskriterien, etwa eine geforderte Zulassung, werden zuerst geprüft und lassen sich nicht durch hohe Punkte anderswo ausgleichen. Gewichte gelten nur für die verbleibenden Kriterien.
+  source: https://openstax.org/books/principles-marketing/pages/4-4-stages-in-the-b2b-buying-process
+- id: sse-f-when
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: When should selection criteria be defined?
+    de: Wann sollten Auswahlkriterien festgelegt werden?
+  options:
+  - en: After the offers have arrived, so they fit the offers
+    de: Nachdem die Angebote eingetroffen sind, damit sie zu den Angeboten passen
+    correct: false
+  - en: During the negotiation with the preferred supplier
+    de: Während der Verhandlung mit dem bevorzugten Lieferanten
+    correct: false
+  - en: Before offers are requested
+    de: Bevor Angebote angefragt werden
+    correct: true
+  - en: After the first delivery
+    de: Nach der ersten Lieferung
+    correct: false
+  explanation:
+    en: Criteria set in advance keep the decision fair and repeatable. Criteria fitted to the offers after the fact favour the supplier you already prefer.
+    de: Vorab festgelegte Kriterien halten die Entscheidung fair und wiederholbar. Nachträglich an die Angebote angepasste Kriterien begünstigen den Lieferanten, den man ohnehin bevorzugt.
+  source: https://de.wikipedia.org/wiki/Beschaffung
+- id: sse-f-objective
+  level: foundation
+  difficulty: 1000
+  type: multi
+  stem:
+    en: Which criteria are objective and measurable? Select all that apply.
+    de: Welche Kriterien sind objektiv und messbar? Wähle alle zutreffenden aus.
+  options:
+  - en: Price
+    de: Preis
+    correct: true
+  - en: Defect rate of delivered parts
+    de: Fehlerquote gelieferter Teile
+    correct: true
+  - en: Innovation capability
+    de: Innovationsfähigkeit
+    correct: false
+  - en: Willingness to cooperate
+    de: Kooperationsbereitschaft
+    correct: false
+  explanation:
+    en: Price and defect rate can be measured directly. Innovation capability and cooperation are subjective and need written definitions for each score.
+    de: Preis und Fehlerquote lassen sich direkt messen. Innovationsfähigkeit und Kooperation sind subjektiv und brauchen schriftliche Definitionen für jede Note.
+  source: https://de.wikipedia.org/wiki/Lieferantenbewertung
+- id: sse-f-score
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: 'Weights: quality 50 percent, price 30, delivery 20. A supplier scores quality 4, price 5, delivery 3 (scale 1 to 5). What is its weighted total?'
+    de: 'Gewichte: Qualität 50 Prozent, Preis 30, Lieferung 20. Ein Lieferant erhält Qualität 4, Preis 5, Lieferung 3 (Skala 1 bis 5). Wie hoch ist seine gewichtete Summe?'
+  options:
+  - en: '4.0'
+    de: 4,0
+    correct: false
+  - en: '4.1'
+    de: 4,1
+    correct: true
+  - en: '12'
+    de: '12'
+    correct: false
+  - en: '3.5'
+    de: 3,5
+    correct: false
+  explanation:
+    en: 4 x 0.5 + 5 x 0.3 + 3 x 0.2 = 2.0 + 1.5 + 0.6 = 4.1. The plain average (4.0) ignores the weights, and 12 is the unweighted sum.
+    de: 4 x 0,5 + 5 x 0,3 + 3 x 0,2 = 2,0 + 1,5 + 0,6 = 4,1. Der einfache Durchschnitt (4,0) ignoriert die Gewichte, und 12 ist die ungewichtete Summe.
+  source: https://openstax.org/books/principles-marketing/pages/4-4-stages-in-the-b2b-buying-process
+- id: sse-p-ontime
+  level: practitioner
+  difficulty: 1150
+  type: single
+  stem:
+    en: A supplier delivered 118 of 140 order lines on the confirmed date. What is its on-time delivery rate?
+    de: Ein Lieferant lieferte 118 von 140 Bestellpositionen zum bestätigten Termin. Wie hoch ist seine Liefertreue?
+  options:
+  - en: 15.7 percent
+    de: 15,7 Prozent
+    correct: false
+  - en: 84.3 percent
+    de: 84,3 Prozent
+    correct: true
+  - en: 118 percent
+    de: 118 Prozent
+    correct: false
+  - en: 88.2 percent
+    de: 88,2 Prozent
+    correct: false
+  explanation:
+    en: 118 divided by 140 is 0.843, so 84.3 percent. 15.7 percent is the late share, 118 percent confuses count and rate.
+    de: 118 geteilt durch 140 ergibt 0,843, also 84,3 Prozent. 15,7 Prozent ist der Verspätungsanteil, 118 Prozent verwechselt Anzahl und Quote.
+  source: https://de.wikipedia.org/wiki/Lieferantenbewertung
+- id: sse-p-ppm
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: 38 of 24,000 inspected parts are defective. What is the ppm rate?
+    de: 38 von 24.000 geprüften Teilen sind fehlerhaft. Wie hoch ist die ppm-Rate?
+  options:
+  - en: About 158 ppm
+    de: Etwa 158 ppm
+    correct: false
+  - en: 38 ppm
+    de: 38 ppm
+    correct: false
+  - en: About 15,833 ppm
+    de: Etwa 15.833 ppm
+    correct: false
+  - en: About 1,583 ppm
+    de: Etwa 1.583 ppm
+    correct: true
+  explanation:
+    en: 'ppm means defective parts per million: 38 / 24,000 x 1,000,000 is about 1,583. 158 and 15,833 are slips of a power of ten; 38 is just the count.'
+    de: 'ppm bedeutet fehlerhafte Teile pro Million: 38 / 24.000 x 1.000.000 sind etwa 1.583. 158 und 15.833 sind Zehnerpotenz-Fehler; 38 ist nur die Anzahl.'
+  source: https://de.wikipedia.org/wiki/Lieferantenbewertung
+- id: sse-p-reliable
+  level: practitioner
+  difficulty: 1300
+  type: multi
+  stem:
+    en: Which practices make a supplier scorecard reliable? Select all that apply.
+    de: Welche Vorgehensweisen machen eine Lieferanten-Scorecard verlässlich? Wähle alle zutreffenden aus.
+  options:
+  - en: Writing down data source, period and exclusions for each indicator
+    de: Datenquelle, Zeitraum und Ausschlüsse je Kennzahl schriftlich festhalten
+    correct: true
+  - en: Sharing the figures with the supplier before the review
+    de: Die Zahlen vor dem Gespräch mit dem Lieferanten teilen
+    correct: true
+  - en: Rating every supplier on the same twenty indicators whatever its importance
+    de: Jeden Lieferanten anhand derselben zwanzig Kennzahlen bewerten, egal wie wichtig er ist
+    correct: false
+  - en: Judging a supplier on three late deliveries out of five
+    de: Einen Lieferanten anhand von drei verspäteten Lieferungen aus fünf beurteilen
+    correct: false
+  explanation:
+    en: Clear definitions and transparency make figures usable. Too many indicators waste effort on unimportant suppliers, and tiny samples say little.
+    de: Klare Definitionen und Transparenz machen Zahlen nutzbar. Zu viele Kennzahlen verschwenden Aufwand bei unwichtigen Lieferanten, und winzige Stichproben sagen wenig.
+  source: https://de.wikipedia.org/wiki/Lieferantenbewertung
+- id: sse-p-cause
+  level: practitioner
+  difficulty: 1350
+  type: single
+  stem:
+    en: A supplier shows a 30 percent late-delivery rate, but most delays followed the buyer's own late order changes. What is the best action?
+    de: Ein Lieferant zeigt 30 Prozent verspätete Lieferungen, doch die meisten Verspätungen folgten späten Bestelländerungen des Käufers. Was ist die beste Maßnahme?
+  options:
+  - en: Downgrade the supplier anyway, because the rule is the rule
+    de: Den Lieferanten trotzdem abwerten, weil Regel Regel ist
+    correct: false
+  - en: Remove the delivery indicator from the scorecard
+    de: Die Kennzahl Liefertreue aus der Scorecard entfernen
+    correct: false
+  - en: Send a formal warning and prepare to end the contract
+    de: Eine förmliche Abmahnung senden und die Vertragsbeendigung vorbereiten
+    correct: false
+  - en: Exclude buyer-caused delays as defined, fix your own change process, then re-evaluate
+    de: Vom Käufer verursachte Verzögerungen laut Definition ausschließen, den eigenen Änderungsprozess verbessern und neu bewerten
+    correct: true
+  explanation:
+    en: A good definition names exclusions such as buyer-caused delays. The indicator stays, but the real cause, your change process, needs fixing; punishing the supplier for it would be unfair.
+    de: Eine gute Definition nennt Ausschlüsse wie vom Käufer verursachte Verzögerungen. Die Kennzahl bleibt, doch die eigentliche Ursache, der eigene Änderungsprozess, ist zu beheben; den Lieferanten dafür zu bestrafen wäre unfair.
+  source: https://de.wikipedia.org/wiki/Lieferantenbewertung
+- id: sse-a-dependence
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: Supplier X has an excellent scorecard but is the only source of a bottleneck part from one plant. What is the best response?
+    de: Lieferant X hat eine hervorragende Scorecard, ist aber die einzige Bezugsquelle eines Engpassteils aus einem Werk. Was ist die beste Reaktion?
+  options:
+  - en: Reward it with more volume
+    de: Ihn mit mehr Volumen belohnen
+    correct: false
+  - en: Do nothing, because the indicators are green
+    de: Nichts tun, weil die Kennzahlen grün sind
+    correct: false
+  - en: Replace it immediately with a cheaper supplier, because sole sourcing is unacceptable in any case
+    de: Ihn sofort durch einen günstigeren Lieferanten ersetzen, weil Alleinbezug in jedem Fall nicht akzeptabel ist
+    correct: false
+  - en: 'Treat dependence as a separate risk: qualify a second source or build a safety stock'
+    de: 'Die Abhängigkeit als eigenes Risiko behandeln: eine zweite Quelle qualifizieren oder einen Sicherheitsbestand aufbauen'
+    correct: true
+  explanation:
+    en: Performance and dependence are different questions. A strong score does not remove the exposure; a rushed replacement of a good supplier would add risk.
+    de: Leistung und Abhängigkeit sind verschiedene Fragen. Eine starke Bewertung beseitigt das Risiko nicht; ein überstürzter Ersatz eines guten Lieferanten würde Risiko hinzufügen.
+  source: https://de.wikipedia.org/wiki/Lieferantenmanagement
+- id: sse-a-ladder
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: A strategic supplier that is hard to replace shows a growing quality gap. What is the most appropriate first step?
+    de: Ein strategischer, schwer ersetzbarer Lieferant zeigt eine wachsende Qualitätslücke. Was ist der angemessenste erste Schritt?
+  options:
+  - en: End the contract, so that others see the consequence
+    de: Den Vertrag beenden, damit andere die Folge sehen
+    correct: false
+  - en: Share the data and agree an improvement plan with measures and dates
+    de: Die Daten teilen und einen Verbesserungsplan mit Maßnahmen und Terminen vereinbaren
+    correct: true
+  - en: Lower the weight of quality in the next evaluation
+    de: Das Gewicht der Qualität in der nächsten Bewertung senken
+    correct: false
+  - en: Wait for the annual review to avoid conflict
+    de: Auf die Jahresbewertung warten, um Konflikte zu vermeiden
+    correct: false
+  explanation:
+    en: A staged path starts with transparency and a joint plan; ending the contract of a hard-to-replace supplier can cost more than the gap. Changing weights hides the problem, and waiting lets it grow.
+    de: Ein gestufter Weg beginnt mit Transparenz und einem gemeinsamen Plan; die Beendigung bei einem schwer ersetzbaren Lieferanten kann mehr kosten als die Lücke. Gewichte zu ändern verdeckt das Problem, und Abwarten lässt es wachsen.
+  source: https://de.wikipedia.org/wiki/Lieferantenmanagement
+- id: sse-a-depth
+  level: advanced
+  difficulty: 1600
+  type: multi
+  stem:
+    en: Which are good reasons to scale the depth of supplier evaluation to importance? Select all that apply.
+    de: Welche sind gute Gründe, die Tiefe der Lieferantenbewertung nach Bedeutung abzustufen? Wähle alle zutreffenden aus.
+  options:
+  - en: A failure of a strategic supplier has a large impact
+    de: Der Ausfall eines strategischen Lieferanten hat große Auswirkungen
+    correct: true
+  - en: Deep evaluation of non-critical suppliers costs effort for little value
+    de: Eine tiefe Bewertung unkritischer Lieferanten kostet Aufwand für wenig Nutzen
+    correct: true
+  - en: Strategic suppliers need no evaluation because the relationship is close
+    de: Strategische Lieferanten brauchen keine Bewertung, weil die Beziehung eng ist
+    correct: false
+  - en: Small suppliers must never be evaluated
+    de: Kleine Lieferanten dürfen nie bewertet werden
+    correct: false
+  explanation:
+    en: Effort should follow impact. A close relationship is no substitute for evaluation, and size alone is not the criterion.
+    de: Der Aufwand sollte der Auswirkung folgen. Eine enge Beziehung ersetzt keine Bewertung, und die Größe allein ist nicht das Kriterium.
+  source: https://de.wikipedia.org/wiki/Lieferantenmanagement
+- id: sse-a-law
+  level: advanced
+  difficulty: 1650
+  type: single
+  stem:
+    en: A colleague quotes from memory what a supply chain due diligence law demands of your supplier checks. What is the best way to proceed?
+    de: Eine Kollegin zitiert aus dem Gedächtnis, was ein Lieferkettensorgfaltspflichtengesetz von euren Lieferantenprüfungen verlangt. Wie geht man am besten vor?
+  options:
+  - en: Ask legal counsel which duties apply to your company, then build them into the criteria
+    de: Rechtsberatung fragen, welche Pflichten für das Unternehmen gelten, und sie dann in die Kriterien übernehmen
+    correct: true
+  - en: Treat an encyclopedia summary as binding and apply it
+    de: Eine Lexikonzusammenfassung als verbindlich behandeln und anwenden
+    correct: false
+  - en: Ignore it, since only large companies ever matter
+    de: Es ignorieren, weil nur große Unternehmen je betroffen sind
+    correct: false
+  - en: Have suppliers sign any declaration and consider the duty met
+    de: Lieferanten irgendeine Erklärung unterschreiben lassen und die Pflicht als erfüllt ansehen
+    correct: false
+  explanation:
+    en: Whether and how such a rule applies depends on the company's situation, which counsel must judge. Neither memory, a summary nor a signature settles it, and 'ignore it' is a guess.
+    de: Ob und wie eine solche Regel gilt, hängt von der Situation des Unternehmens ab, die Rechtsberatung beurteilen muss. Weder Erinnerung, Zusammenfassung noch Unterschrift klärt es, und „ignorieren“ ist geraten.
+  source: https://de.wikipedia.org/wiki/Lieferantenmanagement
