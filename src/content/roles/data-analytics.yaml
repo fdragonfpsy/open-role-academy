@@ -1,0 +1,62 @@
+id: data-analytics
+kind: role
+status: draft
+title:
+  en: Data & Analytics
+  de: Data & Analytics
+summary:
+  en: >-
+    Turn data into decisions: understand the analytics lifecycle, source and collect data, ensure data quality, query data with SQL, apply statistics, visualise results in dashboards, build business intelligence reports, frame problems and tell data stories, handle data responsibly under EU and German privacy rules, and understand machine learning basics.
+  de: >-
+    Aus Daten Entscheidungen machen: den Analytics-Ablauf verstehen, Daten beschaffen und erheben, Datenqualität sichern, Daten mit SQL abfragen, Statistik anwenden, Ergebnisse in Dashboards visualisieren, Business-Intelligence-Berichte erstellen, Probleme formulieren und Daten-Geschichten erzählen, verantwortungsvoll mit Daten nach EU- und deutschem Datenschutz umgehen und die Grundlagen des maschinellen Lernens verstehen.
+competencies:
+  # role-specific
+  - id: data-analytics-fundamentals
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: data-sourcing-collection
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: data-quality-cleaning
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: sql-data-querying
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: statistics-fundamentals
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: data-visualization-dashboards
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: business-intelligence-reporting
+    priority: 2
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  - id: analytical-problem-framing-storytelling
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: data-governance-privacy-analytics
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: machine-learning-basics-ai-analytics
+    priority: 3
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  # core track
+  - id: information-security-basics
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: digital-ai-literacy
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: communication-collaboration
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: working-with-data
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: self-organisation-project-basics
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: business-finance-fundamentals
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }

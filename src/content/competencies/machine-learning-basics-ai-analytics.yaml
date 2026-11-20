@@ -1,0 +1,18 @@
+id: machine-learning-basics-ai-analytics
+title:
+  en: Machine learning basics and AI in analytics
+  de: Grundlagen des maschinellen Lernens und KI in der Analytik
+description:
+  en: >-
+    Understand supervised and unsupervised learning, training and test data, overfitting and basic evaluation metrics, and the limits, bias risks and responsible use of machine learning and generative AI in analytics work.
+  de: >-
+    Überwachtes und unüberwachtes Lernen, Trainings- und Testdaten, Overfitting und grundlegende Bewertungsmetriken verstehen sowie Grenzen, Verzerrungsrisiken und verantwortungsvollen Einsatz von maschinellem Lernen und generativer KI in der Analytik kennen.
+prerequisites: [statistics-fundamentals, digital-ai-literacy]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/8369c2d6-c100-4cf6-bd83-9668d8678433
+    label: utilise machine learning
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/25f0ea33-b4a2-4f31-b7b4-7d20e827b180
+    label: data mining

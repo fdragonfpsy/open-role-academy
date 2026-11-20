@@ -1,5 +1,14 @@
 # Status
 
+## 2026-11-20 — QA issues closed; Data & Analytics framework
+
+**Done**
+- Closed qa issues #53, #54, #55, #56, #58 (already fixed by merged PRs #60–#65). #57 (nit) stays open.
+- Role `data-analytics` (status `draft`): 10 role-specific competencies + 6 core, en/de texts, ESCO refs.
+- Stale branch `claude/admiring-mayer-dn6uyq` is superseded by merged PRs; owner may delete it.
+
+**Next:** Data & Analytics content batches 1–3, then publish and quality pass.
+
 ## 2026-11-18 — Phase 4: Procurement content batch 4 (supply-chain-risk-sustainability), Procurement published; run summary
 
 **Done**

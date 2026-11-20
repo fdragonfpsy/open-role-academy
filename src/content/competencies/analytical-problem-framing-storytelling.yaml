@@ -1,0 +1,18 @@
+id: analytical-problem-framing-storytelling
+title:
+  en: Analytical problem framing and storytelling
+  de: Analytische Problemformulierung und Storytelling
+description:
+  en: >-
+    Turn business questions into answerable analytical questions and hypotheses, choose a sensible approach, and communicate findings, limits and recommendations in a clear narrative for the audience.
+  de: >-
+    Geschäftsfragen in beantwortbare analytische Fragen und Hypothesen übersetzen, einen sinnvollen Ansatz wählen und Ergebnisse, Grenzen und Empfehlungen in einer klaren Geschichte für die Zielgruppe vermitteln.
+prerequisites: [data-analytics-fundamentals, communication-collaboration]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/c544a9f3-5945-4b54-afed-de0697852817
+    label: report analysis results
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/d0f2f8a7-d935-4a6d-8e54-dcc3e5e2cbeb
+    label: present reports

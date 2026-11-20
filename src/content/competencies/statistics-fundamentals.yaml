@@ -1,0 +1,18 @@
+id: statistics-fundamentals
+title:
+  en: Statistics fundamentals
+  de: Grundlagen der Statistik
+description:
+  en: >-
+    Use descriptive statistics, distributions, sampling, correlation and basic hypothesis testing and confidence intervals, and interpret results carefully, including the difference between correlation and causation.
+  de: >-
+    Deskriptive Statistik, Verteilungen, Stichproben, Korrelation sowie grundlegende Hypothesentests und Konfidenzintervalle anwenden und Ergebnisse sorgfältig interpretieren, einschließlich des Unterschieds zwischen Korrelation und Kausalität.
+prerequisites: [data-analytics-fundamentals]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/382c11ed-20d5-4ae7-b60e-15fec527fa6c
+    label: apply statistical analysis techniques
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/7ee4c2ea-b349-4bd2-81a3-ec31475d4833
+    label: statistics
