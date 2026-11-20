@@ -1,0 +1,18 @@
+id: data-governance-privacy-analytics
+title:
+  en: Data governance and privacy in analytics
+  de: Data Governance und Datenschutz in der Analytik
+description:
+  en: >-
+    Handle data responsibly in analytics in the EU and Germany: data ownership and access, metadata and lineage, purpose limitation and data minimisation, anonymisation and pseudonymisation, and when to involve the data protection officer. Topic level only, no legal advice.
+  de: >-
+    Daten in der Analytik verantwortungsvoll handhaben (EU und Deutschland): Datenverantwortung und Zugriff, Metadaten und Datenherkunft, Zweckbindung und Datenminimierung, Anonymisierung und Pseudonymisierung sowie wann die Datenschutzbeauftragten einzubinden sind. Nur Themenebene, keine Rechtsberatung.
+prerequisites: [information-security-basics, data-analytics-fundamentals]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/a4346013-a967-4a58-a533-6b32ad1364c5
+    label: data protection
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/097c6a36-f031-4d3e-b5c1-62d6ffcb430b
+    label: respect data protection principles

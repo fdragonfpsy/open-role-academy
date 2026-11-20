@@ -1,0 +1,18 @@
+id: business-intelligence-reporting
+title:
+  en: Business intelligence and reporting
+  de: Business Intelligence und Reporting
+description:
+  en: >-
+    Understand BI building blocks (data warehouse, data models, metrics and dimensions), define consistent KPIs, build and maintain recurring reports, and keep report definitions documented and trusted.
+  de: >-
+    Bausteine der Business Intelligence (Data Warehouse, Datenmodelle, Kennzahlen und Dimensionen) verstehen, einheitliche KPIs definieren, wiederkehrende Berichte erstellen und pflegen und Berichtsdefinitionen dokumentiert und vertrauenswürdig halten.
+prerequisites: [sql-data-querying, data-visualization-dashboards]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/143769cb-b61e-47d8-a61e-eedfbec1016c
+    label: business intelligence
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/3ec2e4d6-7000-4905-bf1a-c5b1679416de
+    label: data warehouse

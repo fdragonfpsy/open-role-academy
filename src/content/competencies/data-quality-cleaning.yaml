@@ -1,0 +1,18 @@
+id: data-quality-cleaning
+title:
+  en: Data quality and cleaning
+  de: Datenqualität und Datenbereinigung
+description:
+  en: >-
+    Assess data quality (completeness, accuracy, consistency, timeliness, uniqueness), find and handle missing values, duplicates and outliers, standardise formats, and document cleaning steps so results are reproducible.
+  de: >-
+    Datenqualität bewerten (Vollständigkeit, Richtigkeit, Konsistenz, Aktualität, Eindeutigkeit), fehlende Werte, Duplikate und Ausreißer finden und behandeln, Formate vereinheitlichen und Bereinigungsschritte dokumentieren, damit Ergebnisse nachvollziehbar sind.
+prerequisites: [data-sourcing-collection]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/50b100ea-74fd-4706-99db-3e4ca55e51b8
+    label: perform data cleansing
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/cc7370dd-69fa-4c67-a96f-d4d135d38700
+    label: data quality assessment

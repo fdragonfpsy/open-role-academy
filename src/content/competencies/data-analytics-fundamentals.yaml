@@ -1,0 +1,18 @@
+id: data-analytics-fundamentals
+title:
+  en: Data analytics fundamentals
+  de: Grundlagen der Datenanalyse
+description:
+  en: >-
+    Understand the analytics lifecycle from question to decision, the types of analysis (descriptive, diagnostic, predictive, prescriptive), data types and structures, and the typical tools and roles in an analytics team.
+  de: >-
+    Den Analytics-Ablauf von der Fragestellung bis zur Entscheidung verstehen, die Arten der Analyse (deskriptiv, diagnostisch, prädiktiv, präskriptiv), Datentypen und -strukturen sowie typische Werkzeuge und Rollen in einem Analytics-Team kennen.
+prerequisites: [working-with-data, digital-ai-literacy]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f
+    label: perform data analysis
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/f2d57f41-43b4-4f5b-8100-3df5c21eda50
+    label: process data

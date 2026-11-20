@@ -1,0 +1,18 @@
+id: sql-data-querying
+title:
+  en: SQL and data querying
+  de: SQL und Datenabfragen
+description:
+  en: >-
+    Understand relational data (tables, keys, relationships) and retrieve and aggregate data with SQL: selecting, filtering, joining, grouping and sorting, and writing readable, correct queries.
+  de: >-
+    Relationale Daten (Tabellen, Schlüssel, Beziehungen) verstehen und Daten mit SQL abrufen und aggregieren: auswählen, filtern, verknüpfen, gruppieren und sortieren sowie lesbare, korrekte Abfragen schreiben.
+prerequisites: [data-analytics-fundamentals]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742
+    label: SQL
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/75f839c2-fd9a-4ad3-8921-6e734608568d
+    label: use query languages
