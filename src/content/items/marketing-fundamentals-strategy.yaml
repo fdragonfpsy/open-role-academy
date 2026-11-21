@@ -33,7 +33,7 @@ items:
       de: "Ein Unternehmen entscheidet, über den eigenen Webshop und zwei Partnerhändler zu verkaufen. Welches P des Marketing-Mix ist das?"
     options:
       - en: "Promotion, because it makes the product known"
-        de: "Promotion (Kommunikation), weil es das Produkt bekannt macht"
+        de: "Promotion (Kommunikation), weil es das Produkt bekannt macht und Kundschaft zum Kauf anregt"
         correct: false
       - en: "Product, because the goods are changed"
         de: "Product (Produkt), weil die Ware verändert wird"
@@ -129,7 +129,7 @@ items:
       de: "Was macht aus einer SWOT-Analyse etwas, mit dem du handeln kannst?"
     options:
       - en: "Filling each of the four boxes with as many points as possible"
-        de: "Jedes der vier Felder mit möglichst vielen Punkten füllen"
+        de: "Jedes der vier Felder mit möglichst vielen Punkten füllen, damit nichts vergessen wird, und die Liste danach ablegen"
         correct: false
       - en: "Combining strengths with opportunities and weaknesses with threats to form options"
         de: "Stärken mit Chancen und Schwächen mit Risiken zu Optionen verknüpfen"
@@ -273,7 +273,7 @@ items:
       de: "Ein Unternehmen führt zwei Geschäftseinheiten in sehr unterschiedlichen Märkten. Was empfiehlt OpenStax für die strategische Planung?"
     options:
       - en: "Use one joint plan so that the brand looks consistent in every market"
-        de: "Einen gemeinsamen Plan nutzen, damit die Marke in jedem Markt einheitlich wirkt"
+        de: "Einen gemeinsamen Plan nutzen, damit die Marke in jedem Markt einheitlich wirkt, und lokale Besonderheiten bewusst ignorieren"
         correct: false
       - en: "Plan the unit with most revenue and let the others copy its plan"
         de: "Die umsatzstärkste Einheit planen und die anderen deren Plan übernehmen lassen"

@@ -9,7 +9,7 @@ items:
       de: "Was bedeutet „out of scope“?"
     options:
       - en: "Tasks that are too difficult for the team to carry out within the project"
-        de: "Aufgaben, die für das Team zu schwierig sind, um sie im Projekt auszuführen"
+        de: "Aufgaben, die für das Team zu schwierig sind, um sie im Projekt auszuführen, und die deshalb extern vergeben werden"
         correct: false
       - en: "Matters outside the defined scope, excluded to keep the project focused"
         de: "Dinge außerhalb des festgelegten Umfangs, ausgeschlossen, damit das Projekt fokussiert bleibt"
@@ -180,7 +180,7 @@ items:
         de: "Die Musts, weil sie am umfangreichsten sind"
         correct: false
       - en: "The testing, because it adds no visible feature"
-        de: "Das Testen, weil es kein sichtbares Merkmal bringt"
+        de: "Das Testen, weil es kein sichtbares Merkmal bringt und der Kundschaft nicht auffällt, wenn es fehlt"
         correct: false
       - en: "Whatever the team finds the most boring"
         de: "Was das Team am langweiligsten findet"
@@ -207,7 +207,7 @@ items:
         de: "Die Umfangsbeschreibung verlängern"
         correct: false
       - en: "Reduce the number of project meetings"
-        de: "Die Zahl der Projektbesprechungen verringern"
+        de: "Die Zahl der Projektbesprechungen verringern, damit mehr Zeit für die Arbeit bleibt"
         correct: false
       - en: "Walk through every stakeholder group before sign-off"
         de: "Vor der Freigabe jede Stakeholder-Gruppe durchgehen"

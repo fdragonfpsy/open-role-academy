@@ -42,7 +42,7 @@ items:
         de: "Erklären, warum Stornieren keine gute Idee ist"
         correct: false
       - en: "Ask the customer to fill in a form first"
-        de: "Die Kundin bitten, zuerst ein Formular auszufüllen"
+        de: "Die Kundin bitten, zuerst ein Formular auszufüllen und die Bestellung dann erneut zu schicken"
         correct: false
     explanation:
       en: "The request is 'cancel', but the need may be a late delivery or a wrong item that another solution could address. Asking before acting finds the need; cancelling blindly or arguing may solve the wrong problem. If cancelling is what they want, you can then act."
@@ -180,7 +180,7 @@ items:
         de: "Das Muster festhalten, damit die Ursache gefunden werden kann, und die Übergangslösung beibehalten"
         correct: true
       - en: "Keep restarting the app each time the error returns and close the ticket afterwards"
-        de: "Die App jedes Mal neu starten, wenn der Fehler wiederkehrt, und das Ticket danach schließen"
+        de: "Die App jedes Mal neu starten, wenn der Fehler wiederkehrt, und das Ticket danach sofort wieder schließen"
         correct: false
       - en: "Tell the customer the fault is theirs"
         de: "Der Kundschaft sagen, der Fehler liege bei ihr"
@@ -252,7 +252,7 @@ items:
         de: "Schaden, Kosten, Gleichbehandlung und deine Grenze abwägen, entscheiden und den Grund dokumentieren"
         correct: true
       - en: "Apply the standard rule unchanged, whatever the loss"
-        de: "Die Standardregel unverändert anwenden, egal wie hoch der Schaden ist"
+        de: "Die Standardregel unverändert anwenden, egal wie hoch der Schaden ist und auch wenn die Beziehung darunter leidet"
         correct: false
       - en: "Grant the largest gesture to end the complaint at once"
         de: "Die größte Geste gewähren, um die Beschwerde sofort zu beenden"
@@ -276,7 +276,7 @@ items:
         de: "Jeder Zusage im Ticket eine verantwortliche Person und ein Datum geben und offene täglich prüfen"
         correct: true
       - en: "Remind agents in the next team meeting to be more careful about their promises"
-        de: "Die Agentinnen und Agenten in der nächsten Teamsitzung an mehr Sorgfalt bei Zusagen erinnern"
+        de: "Die Agentinnen und Agenten in der nächsten Teamsitzung an mehr Sorgfalt bei ihren Zusagen erinnern"
         correct: false
       - en: "Stop promising callbacks altogether"
         de: "Rückrufe grundsätzlich nicht mehr zusagen"

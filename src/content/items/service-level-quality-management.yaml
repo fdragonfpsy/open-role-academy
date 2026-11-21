@@ -156,7 +156,7 @@ items:
         de: "Das Tagesziel ist erreicht; die Morgenspitze deutet auf ein zu prüfendes Personal- oder Prognoseproblem"
         correct: true
       - en: "The target is missed, because one hour fell below 80 percent and the daily average hides this"
-        de: "Das Ziel ist verfehlt, weil eine Stunde unter 80 Prozent lag und der Tagesdurchschnitt das verbirgt"
+        de: "Das Ziel ist verfehlt, weil eine Stunde unter 80 Prozent lag und der Tagesdurchschnitt das Problem verbirgt"
         correct: false
       - en: "The agents were too slow in that hour and need speed coaching"
         de: "Die Agentinnen und Agenten waren in dieser Stunde zu langsam und brauchen ein Tempo-Coaching"
@@ -180,7 +180,7 @@ items:
         de: "Gemeinsame Kriterien, ab und zu eine zweite Prüfperson und Feedback mit einer Stärke und einer Verbesserung"
         correct: true
       - en: "Reviewing only contacts that went badly, so that the team learns from mistakes"
-        de: "Nur schlecht gelaufene Kontakte prüfen, damit das Team aus Fehlern lernt"
+        de: "Nur schlecht gelaufene Kontakte prüfen, damit das Team aus Fehlern lernt und Probleme sofort sichtbar werden"
         correct: false
       - en: "Letting each reviewer use their own impression, which keeps it flexible"
         de: "Jede Prüfperson nach eigenem Eindruck bewerten lassen, das hält es flexibel"
@@ -204,7 +204,7 @@ items:
         de: "Prognose und tatsächliches Kontaktaufkommen für diesen Zeitabschnitt vergleichen und den Dienstplan anpassen"
         correct: true
       - en: "Coach all agents on faster handling, because the speed must be the cause"
-        de: "Alle Agentinnen und Agenten zu schnellerer Bearbeitung coachen, weil das Tempo die Ursache sein muss"
+        de: "Alle Agentinnen und Agenten zu schnellerer Bearbeitung coachen, weil das Tempo die Ursache sein muss, und den Dienstplan unverändert lassen"
         correct: false
       - en: "Skip breaks on Mondays until the figure improves"
         de: "Montags auf Pausen verzichten, bis sich der Wert verbessert"
@@ -279,7 +279,7 @@ items:
         de: "Sich auf Kulanz verlassen und jeden verspäteten Fall von Hand eskalieren"
         correct: false
       - en: "Mark tickets as resolved once they are handed to engineering"
-        de: "Tickets als gelöst markieren, sobald sie an die Entwicklung übergeben sind"
+        de: "Tickets als gelöst markieren, sobald sie an die Entwicklung übergeben sind, damit die Kennzahl gut aussieht"
         correct: false
       - en: "Add a line that resolution times are never guaranteed"
         de: "Einen Satz ergänzen, dass Lösungszeiten nie garantiert werden"

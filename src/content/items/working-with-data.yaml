@@ -19,7 +19,7 @@ items:
         de: "Mehrere Bestellungen in einer Zelle, durch Kommas getrennt"
         correct: false
       - en: "Subtotals and blank rows between every group of orders"
-        de: "Zwischensummen und Leerzeilen zwischen jeder Gruppe von Bestellungen"
+        de: "Zwischensummen und Leerzeilen zwischen jeder Gruppe von Bestellungen, damit die Tabelle auf einen Blick lesbar bleibt und Gruppen klar getrennt sind"
         correct: false
     explanation:
       en: A simple list — one record per row, one attribute per column, one header — can be sorted, filtered and analysed (e.g. with pivot tables). Colours, merged cells and blank rows break that.
@@ -110,7 +110,7 @@ items:
         de: "Eine Pivot-Tabelle mit Region und Monat als Zeilen/Spalten und dem Umsatz als summierten Werten"
         correct: true
       - en: "Adding up the values by hand with a calculator"
-        de: "Die Werte von Hand mit dem Taschenrechner addieren"
+        de: "Die Werte von Hand mit dem Taschenrechner addieren und die Summen anschließend jeweils in eine neue Zeile der Tabelle eintippen"
         correct: false
       - en: "Copying each region into a new file"
         de: "Jede Region in eine neue Datei kopieren"
@@ -210,7 +210,7 @@ items:
         de: "Das Werkzeug verursacht die höhere Zufriedenheit"
         correct: false
       - en: "Higher satisfaction causes teams to use the tool"
-        de: "Höhere Zufriedenheit führt dazu, dass Teams das Werkzeug nutzen"
+        de: "Höhere Zufriedenheit führt dazu, dass Teams das Werkzeug nutzen, weil zufriedene Teams neue Werkzeuge schneller einführen und dadurch häufiger damit arbeiten"
         correct: false
       - en: "The data is useless and should be ignored"
         de: "Die Daten sind nutzlos und sollten ignoriert werden"

@@ -9,7 +9,7 @@ items:
     de: Was ist der Hauptvorteil, ein Projektbudget von unten aus Arbeitspaketen aufzubauen?
   options:
   - en: It guarantees that the final cost will equal the budget exactly
-    de: Es garantiert, dass die Endkosten dem Budget genau entsprechen
+    de: "Es garantiert, dass die Endkosten dem Budget genau entsprechen, auch wenn sich Preise oder Umfang später ändern"
     correct: false
   - en: Every line has an owner who can explain and defend its figure
     de: Jede Zeile hat eine verantwortliche Person, die ihre Zahl erklären und vertreten kann
@@ -33,7 +33,7 @@ items:
     de: Wo sollte die Reserve in einem Projektbudget erscheinen?
   options:
   - en: Spread evenly over all work packages so that nobody notices it
-    de: Gleichmäßig auf alle Arbeitspakete verteilt, damit es niemand bemerkt
+    de: "Gleichmäßig auf alle Arbeitspakete verteilt, damit es niemand bemerkt und niemand es verwalten muss"
     correct: false
   - en: Hidden inside each team member's own estimate as padding
     de: Als Polster in der Schätzung jedes Teammitglieds versteckt
@@ -81,7 +81,7 @@ items:
     de: Die Auftraggebenden haben das Budget genehmigt. Ein Kollege wünscht ein neues Feature für 3 000 EUR. Was ist die beste Reaktion?
   options:
   - en: Pay it from the contingency without a record, because the amount is small
-    de: Es ohne Vermerk aus der Reserve bezahlen, weil der Betrag klein ist
+    de: "Es ohne Vermerk aus der Reserve bezahlen, weil der Betrag klein ist und sich eine Erfassung nicht lohnt"
     correct: false
   - en: Record it as a change request and decide whether to adjust the baseline
     de: Es als Änderungsantrag erfassen und entscheiden, ob die Baseline angepasst wird
@@ -129,7 +129,7 @@ items:
     de: Was ist bei denselben Zahlen (Planwert 60 000, Fertigstellungswert 48 000, Istkosten 56 000 EUR) der Kostenindex, und was sagt er aus?
   options:
   - en: 'About 0.80: the project is 20 % behind schedule'
-    de: 'Etwa 0,80: das Projekt liegt 20 % hinter dem Termin'
+    de: "Etwa 0,80: das Projekt liegt 20 % hinter dem Termin, weil der Index den Zeitplan misst"
     correct: false
   - en: 'About 1.17: the project is ahead on cost'
     de: 'Etwa 1,17: das Projekt liegt bei den Kosten vorn'
@@ -201,7 +201,7 @@ items:
     de: Das halbe Budget ist ausgegeben und ein Feature zu 30 % fertig. Das Fertigstellen braucht weitere 80 % des ursprünglichen Budgets, der erwartete Nutzen liegt aber unter diesen Kosten. Was ist die tragfähigste Entscheidungsgrundlage?
   options:
   - en: Continue, because stopping would waste everything spent so far
-    de: Weitermachen, weil ein Stopp alles bisher Ausgegebene verschwenden würde
+    de: "Weitermachen, weil ein Stopp alles bisher Ausgegebene verschwenden würde und niemand den Verlust erklären möchte"
     correct: false
   - en: Compare remaining cost with remaining benefit and treat money already spent as irrelevant
     de: Restkosten mit Restnutzen vergleichen und bereits ausgegebenes Geld als nicht relevant behandeln
@@ -225,7 +225,7 @@ items:
     de: Der Kostenbericht zeigt für das Arbeitspaket „Test“ eine günstige Abweichung von 15 %, und die Verantwortlichen melden es als „früher fertig“. Was tust du zuerst?
   options:
   - en: Release the saving to another work package immediately, since it is already free
-    de: Die Einsparung sofort einem anderen Arbeitspaket zuweisen, weil sie ohnehin frei ist
+    de: "Die Einsparung sofort einem anderen Arbeitspaket zuweisen, weil sie ohnehin frei ist und gebraucht wird"
     correct: false
   - en: Reduce the contingency by the amount saved
     de: Die Reserve um den eingesparten Betrag senken

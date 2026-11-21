@@ -39,7 +39,7 @@ items:
         de: "So viel wie möglich erheben, falls es später nützlich ist"
         correct: false
       - en: "Store all data on private devices to keep it small"
-        de: "Alle Daten auf privaten Geräten speichern, damit es wenig bleibt"
+        de: "Alle Daten auf privaten Geräten speichern, damit im Firmensystem nur wenig bleibt"
         correct: false
       - en: "Delete all data every evening"
         de: "Jeden Abend alle Daten löschen"
@@ -63,7 +63,7 @@ items:
         de: "Die Liste schicken, da sie im selben Unternehmen arbeitet und Kolleginnen und Kollegen einander vertrauen sollen"
         correct: false
       - en: "Send only the half of the list that covers her own team, because that part is closest to her work"
-        de: "Nur die Hälfte der Liste schicken, die ihr eigenes Team betrifft, weil dieser Teil ihrer Arbeit am nächsten liegt"
+        de: "Nur die Hälfte der Liste schicken, die ihr eigenes Team betrifft, weil dieser Teil ihrer Arbeit am nächsten liegt, und die Liste vorher als PDF schützen, damit sie nicht verändert wird"
         correct: false
       - en: "Read out the numbers in person so that no written copy exists which could later be forwarded"
         de: "Die Zahlen mündlich vorlesen, damit keine schriftliche Kopie existiert, die später weitergeleitet werden könnte"
@@ -87,7 +87,7 @@ items:
         de: "Weitergeben und danach fragen"
         correct: false
       - en: "Look up a legal deadline online and decide yourself"
-        de: "Eine gesetzliche Frist online nachschlagen und selbst entscheiden"
+        de: "Eine gesetzliche Frist online nachschlagen und selbst entscheiden, ohne vorher jemanden im Unternehmen zu fragen"
         correct: false
       - en: "Post a question in a private messaging group"
         de: "Die Frage in einer privaten Messenger-Gruppe stellen"
@@ -108,7 +108,7 @@ items:
         de: "Jeder HR-Prozess sollte sich auf eine erkennbare Rechtsgrundlage stützen; kannst du sie nicht benennen, frage den DSB"
         correct: true
       - en: "Consent from the employee is always the right basis for everything"
-        de: "Die Einwilligung der beschäftigten Person ist immer die richtige Grundlage für alles"
+        de: "Die Einwilligung der beschäftigten Person ist immer die richtige Grundlage für alles, weil sie freiwillig erteilt wird und deshalb jede andere Rechtsgrundlage überflüssig macht"
         correct: false
       - en: "No basis is needed for internal data"
         de: "Für interne Daten braucht es keine Grundlage"

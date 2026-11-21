@@ -63,7 +63,7 @@ items:
     de: Weil nur eine Trainerin verfügbar ist, kann die Schulung spät beginnen und den Go-live verzögern
     correct: true
   - en: The supplier is unreliable and nothing can be done about it
-    de: Der Lieferant ist unzuverlässig, und man kann nichts dagegen tun
+    de: "Der Lieferant ist unzuverlässig, und man kann nichts dagegen tun, weil er seine Termine schon früher nicht hielt"
     correct: false
   - en: Possible delays caused by many different circumstances
     de: Mögliche Verzögerungen durch viele unterschiedliche Umstände
@@ -108,7 +108,7 @@ items:
     de: 7, die Summe beider Werte, zum Ordnen
     correct: false
   - en: 4, the larger of the two values, used for ranking
-    de: 4, der größere der beiden Werte, zum Ordnen
+    de: "4, der größere der beiden Werte, nur zum Ordnen der Risiken"
     correct: false
   - en: 12, used to rank risks against each other
     de: 12, dient dazu, Risiken untereinander zu ordnen
@@ -207,7 +207,7 @@ items:
     de: Jeden Wert vorsichtshalber auf 12 anheben
     correct: false
   - en: Delete two of them, because counting the same underlying cause twice overstates the risk
-    de: Zwei davon löschen, weil das doppelte Zählen derselben Ursache das Risiko überzeichnet
+    de: "Zwei davon löschen, weil das doppelte Zählen derselben Ursache das Risiko überzeichnet und die Schwelle zu schnell erreicht wird"
     correct: false
   - en: Group them by cause, estimate the combined exposure and compare it with thresholds
     de: Sie nach Ursache gruppieren, die gemeinsame Betroffenheit schätzen und mit den Schwellen vergleichen
@@ -273,7 +273,7 @@ items:
     de: Ein Issue ist erfasst, aber keine Lösung kommt voran. Welches Vorgehen ist am besten vertretbar?
   options:
   - en: Keep it on the agenda every week until it fixes itself
-    de: Es jede Woche auf der Tagesordnung lassen, bis es sich von selbst löst
+    de: "Es jede Woche auf der Tagesordnung lassen, bis es sich von selbst löst, ohne eine Frist oder Verantwortliche zu benennen"
     correct: false
   - en: Assign the whole team so that everybody feels responsible
     de: Dem ganzen Team zuweisen, damit sich alle verantwortlich fühlen

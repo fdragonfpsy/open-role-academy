@@ -12,7 +12,7 @@ items:
         de: "Ein Gesamtprozess aus Identifizieren, Ansprechen, Vorauswahl, Shortlist, Interviews und Einstellung, der je nach Arbeitgeber und Rolle variiert"
         correct: true
       - en: "A single interview with the hiring manager, after which the offer is made without any further steps or comparison"
-        de: "Ein einziges Gespräch mit der Führungskraft, nach dem das Angebot ohne weitere Schritte oder Vergleich gemacht wird"
+        de: "Ein einziges Gespräch mit der Führungskraft, nach dem das Angebot ohne weitere Schritte oder Vergleich gemacht wird, sodass der Prozess nur wenige Tage dauert und keine Dokumentation anfällt"
         correct: false
       - en: "Only the writing and posting of a job ad"
         de: "Nur das Schreiben und Veröffentlichen einer Stellenanzeige"
@@ -162,7 +162,7 @@ items:
         de: "Die Bewerbungen auswählen, die vertraut wirken, weil vertraute Hintergründe leichter zu beurteilen sind"
         correct: false
       - en: "Decide on the criteria after seeing who applied, so that they fit the actual candidate pool"
-        de: "Die Kriterien erst festlegen, wenn man sieht, wer sich beworben hat, damit sie zum tatsächlichen Bewerbendenfeld passen"
+        de: "Die Kriterien erst festlegen, wenn man sieht, wer sich beworben hat, damit sie zum tatsächlichen Bewerbendenfeld passen, und sie danach bei Bedarf noch einmal anpassen"
         correct: false
     explanation:
       en: "Fixed criteria applied to every application make assessments comparable and explainable. The criteria come from the requirement profile."
@@ -180,7 +180,7 @@ items:
         de: "Dieselben stellenbezogenen Fragen für alle Bewerbenden, jede Antwort anhand einer verankerten Skala bewertet, mit Notizen"
         correct: true
       - en: "Free conversation with questions chosen on the spot and one overall impression at the end"
-        de: "Freies Gespräch mit spontan gewählten Fragen und einem Gesamteindruck am Ende"
+        de: "Freies Gespräch mit spontan gewählten Fragen und einem Gesamteindruck am Ende, das sich je nach Gesprächsverlauf vertiefen lässt, ohne dass Antworten schriftlich festgehalten oder verglichen werden"
         correct: false
       - en: "Different questions for each candidate so everyone can shine"
         de: "Für jede Person andere Fragen, damit alle glänzen können"
@@ -234,7 +234,7 @@ items:
         de: "Die zuletzt interviewte Person einstellen, weil dieses Gespräch allen am frischesten in Erinnerung ist"
         correct: false
       - en: "Add a new criterion that favours the preferred candidate, so the choice looks justified afterwards"
-        de: "Ein neues Kriterium ergänzen, das die bevorzugte Person begünstigt, damit die Wahl im Nachhinein begründet wirkt"
+        de: "Ein neues Kriterium ergänzen, das die bevorzugte Person begünstigt, damit die Wahl im Nachhinein begründet wirkt, und den Auswahlbogen anschließend an das Ergebnis anpassen"
         correct: false
     explanation:
       en: "Tying the impression back to criteria and evidence reduces the risk of affinity-type distortions and gives you a record you can explain."

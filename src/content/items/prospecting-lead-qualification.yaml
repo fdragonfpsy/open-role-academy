@@ -81,7 +81,7 @@ items:
       de: "Nach einem Gespräch erfährst du, dass ein Kontakt keinen Bedarf an deinem Angebot hat und auch keiner zu erwarten ist. Was ist die beste Maßnahme?"
     options:
       - en: "Keep calling every week until the person finally agrees to a meeting"
-        de: "Jede Woche weiter anrufen, bis die Person schließlich einem Termin zustimmt"
+        de: "Jede Woche weiter anrufen, bis die Person schließlich einem Termin zustimmt, auch wenn sie mehrfach gesagt hat, dass kein Bedarf besteht"
         correct: false
       - en: "Delete the notes so the CRM does not show an unsuccessful conversation"
         de: "Die Notizen löschen, damit das CRM kein erfolgloses Gespräch zeigt"
@@ -108,7 +108,7 @@ items:
         de: "Gemeinsame Merkmale gewonnener und gehaltener Kundschaft, formuliert als überprüfbare Kriterien"
         correct: true
       - en: "The company types that the sales team personally finds most interesting"
-        de: "Die Unternehmensarten, die das Vertriebsteam persönlich am interessantesten findet"
+        de: "Die Unternehmensarten, die das Vertriebsteam persönlich am interessantesten findet, unabhängig von bisherigen Abschlüssen"
         correct: false
       - en: "The largest companies in the region, regardless of whether they bought"
         de: "Die größten Unternehmen der Region, unabhängig davon, ob sie gekauft haben"
@@ -183,7 +183,7 @@ items:
         de: "Abwarten, bis der Lead anruft, damit du nicht zu aufdringlich wirkst"
         correct: false
       - en: "Mark the lead as won because interest data show a strong buying intent"
-        de: "Den Lead als gewonnen markieren, weil die Interessendaten eine starke Kaufabsicht zeigen"
+        de: "Den Lead als gewonnen markieren, weil die Interessendaten eine starke Kaufabsicht zeigen, und sofort einen Vertragsentwurf ohne vorheriges Gespräch verschicken"
         correct: false
       - en: "Research the company and contact first, then reach out with a relevant, specific message"
         de: "Unternehmen und Kontaktperson recherchieren und dann mit einer relevanten, konkreten Nachricht Kontakt aufnehmen"
@@ -252,7 +252,7 @@ items:
         de: "Alle Leads unter der Schwelle aus dem CRM entfernen, um die Daten sauber zu halten"
         correct: false
       - en: "Assume they would not have converted, since the model scored them low"
-        de: "Annehmen, dass sie nicht konvertiert hätten, da das Modell sie niedrig bewertet hat"
+        de: "Annehmen, dass sie nicht konvertiert hätten, da das Modell sie niedrig bewertet hat, und sie dauerhaft nicht mehr bearbeiten"
         correct: false
       - en: "Work a small random sample of low-scored leads and compare outcomes"
         de: "Eine kleine Zufallsstichprobe niedrig bewerteter Leads bearbeiten und die Ergebnisse vergleichen"

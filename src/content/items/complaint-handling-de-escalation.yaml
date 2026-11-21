@@ -12,7 +12,7 @@ items:
         de: "Viele unzufriedene Kunden wenden sich still ab, daher kannst du mit einer Beschwerde das Problem lösen und sie halten"
         correct: true
       - en: "Complaints show that the customer will certainly buy again and no further effort is needed to keep them"
-        de: "Beschwerden zeigen, dass die Kundschaft sicher wieder kauft und es keinen weiteren Aufwand braucht, sie zu halten"
+        de: "Beschwerden zeigen, dass die Kundschaft sicher wieder kauft und es keinen weiteren Aufwand braucht, sie dauerhaft zu halten"
         correct: false
       - en: "Complaints let the company avoid refunds"
         de: "Beschwerden erlauben es dem Unternehmen, Erstattungen zu vermeiden"
@@ -33,7 +33,7 @@ items:
       de: "Eine Kundin sagt, das Paket sei zu spät gekommen. Welche erste Antwort passt zu den vier Schritten anerkennen, klären, anbieten, bestätigen?"
     options:
       - en: "\"Delays happen; the carrier is responsible for this.\""
-        de: "„Verspätungen kommen vor; dafür ist der Paketdienst zuständig.“"
+        de: "„Verspätungen kommen vor; dafür ist der Paketdienst zuständig, und wir können daran leider nichts ändern, auch wenn es ärgerlich ist.“"
         correct: false
       - en: "\"Please read our delivery terms on our website.\""
         de: "„Bitte lies unsere Lieferbedingungen auf der Website.“"
@@ -90,7 +90,7 @@ items:
         de: "Weil die Dokumentation belegt, dass die Kundschaft im Unrecht war"
         correct: false
       - en: "Because complaints must be kept secret from other teams so that nobody compares cases and finds patterns"
-        de: "Weil Beschwerden vor anderen Teams geheim bleiben müssen, damit niemand Fälle vergleicht und Muster findet"
+        de: "Weil Beschwerden vor anderen Teams geheim bleiben müssen, damit niemand Fälle miteinander vergleicht und Muster findet"
         correct: false
     explanation:
       en: "Complete records avoid repeat questions and feed the later evaluation of what goes wrong most often. A record is a working tool, not evidence against the customer."
@@ -207,7 +207,7 @@ items:
         de: "Kundschaft schneller antworten als im direkten Prozess"
         correct: false
       - en: "Reducing the number of complaints that customers can submit"
-        de: "Die Zahl der Beschwerden zu verringern, die Kundschaft einreichen kann"
+        de: "Die Zahl der Beschwerden zu verringern, die Kundschaft einreichen kann, indem Kanäle und Formulare eingeschränkt werden"
         correct: false
       - en: "Handling only those complaints that involve a legal claim"
         de: "Nur Beschwerden mit rechtlichem Anspruch zu bearbeiten"

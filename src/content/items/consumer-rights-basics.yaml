@@ -84,10 +84,10 @@ items:
     de: Ja, nach Ablauf der Garantie gibt es weder gegenüber dem Hersteller noch gegenüber dem Shop etwas zu fordern
     correct: false
   - en: Only the manufacturer is liable under the statutory rules, so contact them
-    de: Nach den gesetzlichen Regeln haftet nur der Hersteller, also soll er sich dorthin wenden
+    de: "Nach den gesetzlichen Regeln haftet nur der Hersteller, also soll er sich dorthin wenden, weil wir als Shop dafür ohnehin nicht zuständig sind"
     correct: false
   - en: A guarantee is an extra promise; statutory rights can exist besides it, so I pass your case to our team to check
-    de: Eine Garantie ist ein zusätzliches Versprechen; daneben können gesetzliche Rechte bestehen, deshalb gebe ich deinen Fall zur Prüfung an unser Team weiter
+    de: "Eine Garantie ist ein zusätzliches Versprechen; gesetzliche Rechte können daneben bestehen, daher gebe ich deinen Fall zur Prüfung an unser Team weiter"
     correct: true
   - en: I will arrange a free replacement now
     de: Ich veranlasse jetzt einen kostenlosen Ersatz
@@ -129,7 +129,7 @@ items:
     de: Ein Wasserkocher geht sechs Monate nach der Lieferung kaputt. Welche Aussage passt zu den EU-Regeln zum Beweis?
   options:
   - en: The customer must prove that the defect already existed at the time of delivery, whatever the timing
-    de: Die Kundschaft muss immer beweisen, dass der Mangel schon zum Zeitpunkt der Lieferung bestand, egal wann er auftritt
+    de: "Die Kundschaft muss immer beweisen, dass der Mangel schon zum Zeitpunkt der Lieferung bestand, egal wann er auftritt und wie lange der Kauf zurückliegt"
     correct: false
   - en: The defect is presumed to have existed at delivery, unless the seller proves otherwise or the presumption does not fit
     de: Es wird vermutet, dass der Mangel bei Lieferung bestand, es sei denn, die Verkäuferseite beweist das Gegenteil oder die Vermutung passt nicht
@@ -186,7 +186,7 @@ items:
     de: Stattdessen einen Gutschein anbieten, weil der Shop das bevorzugt
     correct: false
   - en: Refund everything including the express surcharge, because a withdrawal always covers all costs of the order
-    de: Alles inklusive Expresszuschlag erstatten, weil ein Widerruf immer sämtliche Kosten der Bestellung umfasst
+    de: "Alles inklusive Expresszuschlag erstatten, weil ein Widerruf immer sämtliche Kosten der gesamten Bestellung umfasst"
     correct: false
   explanation:
     en: The trader reimburses payments using the same means of payment, including delivery costs, but is not required to refund supplementary costs if the consumer chose a delivery other than the cheapest standard one.
@@ -201,7 +201,7 @@ items:
     de: Ein Kunde schreibt am Tag 20 nach der Lieferung „Ich widerrufe“. Deine Bestellbestätigung enthält anscheinend keine Information zum Widerruf. Was ist das beste Vorgehen?
   options:
   - en: Reject it politely and point to the standard 14 days, which have already passed since the goods were delivered to him
-    de: Höflich ablehnen und auf die üblichen 14 Tage verweisen, die seit der Lieferung der Waren an ihn bereits vergangen sind
+    de: "Höflich ablehnen und auf die üblichen 14 Tage verweisen, die seit der Lieferung der Waren an ihn bereits vergangen sind, ohne weiter zu prüfen"
     correct: false
   - en: Accept it at once without any check, to keep the customer happy
     de: Sofort ohne Prüfung annehmen, damit die Kundschaft zufrieden bleibt
@@ -276,7 +276,7 @@ items:
     de: Sagen, dass nur die Erklärung in der Packung gilt, weil sie das schriftliche Dokument ist
     correct: false
   - en: Say that advertising is only marketing and can never bind the producer or the shop in any way, so the box wins
-    de: Sagen, dass Werbung nur Marketing ist und weder den Hersteller noch den Shop in irgendeiner Weise binden kann, also gilt die Packung
+    de: "Sagen, dass Werbung nur Marketing ist und weder den Hersteller noch den Shop in irgendeiner Weise binden kann, also gilt allein die Packung"
     correct: false
   - en: 'Refer to legal or compliance: advertising can be part of what binds the guarantor, so both must be compared'
     de: 'An Recht oder Compliance verweisen: Werbung kann Teil dessen sein, woran der Garantiegeber gebunden ist; beides muss verglichen werden'

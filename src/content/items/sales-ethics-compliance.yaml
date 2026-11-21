@@ -15,7 +15,7 @@ items:
         de: "Ja, sie verbindet sich, denn das Produktteam liefert sie sicher vor Vertragsbeginn"
         correct: false
       - en: "It works through a workaround, without mentioning that it needs a manual export every time"
-        de: "Es geht über einen Umweg, ohne zu erwähnen, dass jedes Mal ein manueller Export nötig ist"
+        de: "Es geht über einen Umweg, ohne zu erwähnen, dass jedes Mal ein manueller Export nötig ist und die Einrichtung erst nach Vertragsabschluss erfolgt"
         correct: false
       - en: "I am not sure, so let me show you the features we already have instead"
         de: "Ich bin nicht sicher, daher zeige ich dir lieber die Funktionen, die wir schon haben"
@@ -87,7 +87,7 @@ items:
         de: "Die geplante Abfolge von drei Mails zu Ende führen und dann die Person nicht mehr kontaktieren"
         correct: false
       - en: "Call once to confirm that the person really wants to stop receiving any offers from us"
-        de: "Einmal anrufen, um zu bestätigen, dass die Person wirklich keine Angebote mehr erhalten möchte"
+        de: "Einmal anrufen, um zu bestätigen, dass die Person wirklich keine Angebote mehr erhalten möchte, und dabei auch gleich ein neues Angebot vorstellen"
         correct: false
       - en: "Keep contacting the person, but only about products they have not been shown before"
         de: "Die Person weiter kontaktieren, aber nur zu Produkten, die sie noch nicht kennt"
@@ -111,7 +111,7 @@ items:
         de: "Das Angebot ist in Ordnung, denn jede Zahl darin stimmt und die Fußnote ist Teil des Dokuments"
         correct: false
       - en: "It is only a problem if the customer later cancels and complains about the term or the fee"
-        de: "Es ist nur ein Problem, wenn die Kundschaft später kündigt und sich über Laufzeit oder Gebühr beschwert"
+        de: "Es ist nur ein Problem, wenn die Kundschaft später kündigt und sich über Laufzeit oder Gebühr beschwert, weil es dann einen nachweisbaren Schaden gibt"
         correct: false
       - en: "It is only a problem if the set-up fee is higher than the first monthly payment"
         de: "Es ist nur ein Problem, wenn die Einrichtungsgebühr höher ist als die erste Monatszahlung"
@@ -228,7 +228,7 @@ items:
         de: "Den Pilot als kommerzielle Bedingung zu schriftlichen Konditionen behandeln und Compliance zuerst über die Einladung entscheiden lassen"
         correct: true
       - en: "Approve both quietly now and tell compliance after the tender closes to avoid delays"
-        de: "Beides jetzt still genehmigen und Compliance nach Ende der Ausschreibung informieren, um Verzögerungen zu vermeiden"
+        de: "Beides jetzt still genehmigen und Compliance nach Ende der Ausschreibung informieren, um Verzögerungen zu vermeiden, da der Vertrieb solche Konditionen eigenständig verantwortet"
         correct: false
       - en: "Decline both, because any contact with a prospect during an evaluation is forbidden"
         de: "Beides ablehnen, denn jeder Kontakt mit Interessenten während einer Bewertung ist verboten"
