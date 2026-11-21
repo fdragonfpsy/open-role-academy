@@ -108,7 +108,7 @@ items:
     de: Den Rahmen (Budget, Endtermin, Freigaben) planen; den Inhalt in Iterationen organisieren
     correct: true
   - en: Iterate on the budget and final date; plan every detail of the content in advance
-    de: Budget und Endtermin iterativ anpassen; jedes Detail des Inhalts vorab planen
+    de: "Budget und Endtermin iterativ anpassen; jedes Detail des Inhalts vorab genau planen und dokumentieren"
     correct: false
   - en: Use iterations for everything and drop milestones
     de: Alles in Iterationen machen und Meilensteine streichen
@@ -135,7 +135,7 @@ items:
     de: Die Zahl der geleisteten Stunden je Person und Woche
     correct: false
   - en: A percent-complete figure based on elapsed time
-    de: Einen Fertigstellungsgrad in Prozent auf Basis der verstrichenen Zeit
+    de: "Einen Fertigstellungsgrad in Prozent auf Basis der verstrichenen Zeit und der Teamgröße"
     correct: false
   - en: The list of meetings held in the last sprint
     de: Die Liste der Termine im letzten Sprint
@@ -180,7 +180,7 @@ items:
     de: Die Auftraggebenden, die jede Aufgabe im Detail planen
     correct: false
   - en: A central planning office that sends the schedule
-    de: Eine zentrale Planungsstelle, die den Terminplan verschickt
+    de: "Eine zentrale Planungsstelle, die den Terminplan an alle verschickt"
     correct: false
   - en: The project lead alone, to keep control tight
     de: Die Projektleitung allein, um die Kontrolle eng zu halten
@@ -279,7 +279,7 @@ items:
     de: Warten, bis der Backlog-Eintrag oben steht, dann bestellen
     correct: false
   - en: Put the order into sprint 4 so that it is visible then
-    de: Die Bestellung in Sprint 4 legen, damit sie dann sichtbar ist
+    de: "Die Bestellung in Sprint 4 legen, damit sie dann sichtbar ist und das Team sie prüfen kann"
     correct: false
   - en: Ask the team to guess the lead time at each review
     de: Das Team bitten, die Lieferzeit bei jedem Review zu schätzen

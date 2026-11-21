@@ -207,7 +207,7 @@ items:
     de: 'Nachrangig: in alle Entscheidungen einbinden'
     correct: false
   - en: 'Dormant: remove them from the register as irrelevant, since they will never become relevant'
-    de: 'Schlafend: als irrelevant aus dem Register streichen, weil sie nie relevant werden'
+    de: "Schlafend: als irrelevant aus dem Register streichen, weil sie nie relevant werden und keine Aufmerksamkeit verdienen"
     correct: false
   - en: 'Dormant: unlikely to get involved now, but watch for changes in urgency or legitimacy'
     de: 'Schlafend: wird sich jetzt kaum einbringen, aber auf Änderungen bei Dringlichkeit oder Legitimität achten'
@@ -228,7 +228,7 @@ items:
     de: Den mächtigeren zufriedenstellen und dem anderen nichts sagen
     correct: false
   - en: Split the resources 50/50 whatever the effect on the goals
-    de: Die Mittel 50/50 aufteilen, egal was das für die Ziele bedeutet
+    de: "Die Mittel 50/50 aufteilen, egal was das für die Ziele bedeutet, und beiden Seiten sagen, dass das fair ist und nicht mehr diskutiert wird"
     correct: false
   - en: Make the criteria visible, decide with the sponsor and explain the decision to the side that loses
     de: Die Kriterien sichtbar machen, mit den Auftraggebenden entscheiden und die Entscheidung der unterlegenen Seite erklären
@@ -282,7 +282,7 @@ items:
     de: Einen detaillierten Vertrag übergeben, um voranzukommen
     correct: false
   - en: Postpone until a colleague from the same culture is found
-    de: Verschieben, bis eine Kollegin aus derselben Kultur gefunden ist
+    de: "Verschieben, bis eine Kollegin aus derselben Kultur gefunden ist, die das Gespräch für dich führen und übersetzen kann"
     correct: false
   explanation:
     en: In some cultures the non-task stage is longer and more important because it establishes the relationship that carries the agreement. Rushing it can weaken trust.

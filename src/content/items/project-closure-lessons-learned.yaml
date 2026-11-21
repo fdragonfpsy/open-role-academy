@@ -9,7 +9,7 @@ items:
     de: Warum werden Abnahme und Übergabe schriftlich festgehalten?
   options:
   - en: To document how many hours each team member worked on the delivered result
-    de: Um zu zeigen, wie viele Stunden das Team am Ergebnis gearbeitet hat
+    de: "Um zu zeigen, wie viele Stunden jede Person des Teams am gelieferten Ergebnis gearbeitet hat"
     correct: false
   - en: To avoid later disputes about what was agreed and which points are open
     de: Um späteren Streit darüber zu vermeiden, was vereinbart war und welche Punkte offen sind
@@ -81,7 +81,7 @@ items:
     de: Wer sollte zu einer Lessons-Learned-Runde eingeladen werden?
   options:
   - en: Only the project lead, because the lead has the full overview of the project
-    de: Nur die Projektleitung, die den vollen Überblick hat
+    de: "Nur die Projektleitung, weil sie den vollen Überblick über das gesamte Projekt hat und alles beurteilen kann"
     correct: false
   - en: The people who did the work, to report their experiences
     de: Die Menschen, die die Arbeit gemacht haben, damit sie positive und negative Erfahrungen berichten
@@ -105,13 +105,13 @@ items:
     de: Welche Aussage ist eine Lehre und nicht nur eine Beobachtung?
   options:
   - en: The vendor delivered the main components three weeks later than planned
-    de: Der Lieferant hat drei Wochen zu spät geliefert
+    de: "Der Lieferant hat die Hauptkomponenten drei Wochen später als geplant geliefert"
     correct: false
   - en: The team was under a lot of pressure at the end
     de: Das Team stand am Ende unter großem Druck
     correct: false
   - en: For new vendors, agree on a check after half the lead time
-    de: Bei Lieferanten ohne Lieferhistorie nach der halben Vorlaufzeit einen Meilensteintermin vereinbaren
+    de: "Bei neuen Lieferanten nach halber Vorlaufzeit einen Prüftermin vereinbaren"
     correct: true
   - en: The review meeting lasted two hours
     de: Die Auswertungsrunde dauerte zwei Stunden
@@ -138,7 +138,7 @@ items:
     de: Sie findet nur nach gescheiterten Projekten statt
     correct: false
   - en: It must always be run by the project sponsor
-    de: Sie muss immer von der Auftraggeberschaft geleitet werden
+    de: "Sie muss immer von der Auftraggeberschaft geleitet werden, damit die Ergebnisse Gewicht haben und umgesetzt werden"
     correct: false
   explanation:
     en: The comparison of intended versus actual results is the starting point, and the review looks forward. Blame is contrary to its purpose, and it can be used after successes as well.
@@ -231,7 +231,7 @@ items:
     de: Die Wirkung auf den Terminplan und den Entscheidungsweg neutral beschreiben und vereinbaren, was offen festgehalten wird
     correct: true
   - en: Record the sponsor's name and the days of delay in the report
-    de: Name der Auftraggeberschaft und Verzugstage im Bericht festhalten
+    de: "Name der Auftraggeberschaft und Verzugstage im Bericht festhalten, damit künftig jeder weiß, wer den Verzug verursacht hat"
     correct: false
   - en: Raise it only in a private message after the review
     de: Es nur in einer privaten Nachricht nach der Auswertung ansprechen
@@ -273,7 +273,7 @@ items:
     de: Die Abnahme ist erfolgt, und die Auftraggeberschaft möchte das Team am nächsten Tag freigeben, die Auswertung „irgendwann später“. Was ist die beste Einschätzung?
   options:
   - en: Agree, because a released team can write up its notes alone and in its own time later
-    de: Zustimmen, denn ein freigegebenes Team kann seine Notizen später allein verfassen
+    de: "Zustimmen, denn ein freigegebenes Team kann seine Notizen später allein verfassen, ohne dass etwas verloren geht"
     correct: false
   - en: Refuse the release until every lesson has been written up and approved
     de: Die Freigabe verweigern, bis jede Lehre ausgearbeitet und genehmigt ist

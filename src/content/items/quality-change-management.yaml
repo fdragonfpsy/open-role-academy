@@ -42,7 +42,7 @@ items:
     de: Beim Entwerfen eine Vorlage und eine Checkliste nutzen
     correct: true
   - en: Testing the product after delivery to the customer
-    de: Das Produkt nach Lieferung an die Kundschaft testen
+    de: "Das Produkt nach der Lieferung an die Kundschaft in der Praxis testen"
     correct: false
   explanation:
     en: Assurance aims to prevent mistakes early, for example with templates and checklists. Reviews of finished work and tests detect defects and belong to quality control.
@@ -66,7 +66,7 @@ items:
     de: Danach, welchen Preis das Produkt am Markt erzielt
     correct: false
   - en: By the number of features compared with competitors
-    de: Danach, wie viele Funktionen es im Vergleich zur Konkurrenz hat
+    de: "Danach, wie viele Funktionen es im Vergleich zur Konkurrenz hat und wie neu sie sind"
     correct: false
   explanation:
     en: A customer judges by purpose; a producer by conformance to standards. A project needs standards that reflect the purpose.
@@ -111,7 +111,7 @@ items:
     de: Es als Änderungsanforderung mit Grund, Nutzen und Wunschtermin erfassen
     correct: true
   - en: Decline it, because changes are not allowed after approval
-    de: Es ablehnen, weil nach der Freigabe keine Änderungen erlaubt sind
+    de: "Es ablehnen, weil nach der Freigabe grundsätzlich keine Änderungen mehr erlaubt sind"
     correct: false
   - en: Ask the team to find time for it without telling anyone
     de: Das Team bitten, still Zeit dafür zu finden
@@ -132,7 +132,7 @@ items:
     de: Jede Änderung geht zur Freigabe an dasselbe Gremium
     correct: false
   - en: Low-risk changes need no record at all, while high-risk ones need only a short note
-    de: Bei niedrigem Risiko braucht es gar keinen Vermerk, bei hohem nur eine Kurznotiz
+    de: "Bei niedrigem Risiko braucht es gar keinen Vermerk, bei hohem nur eine Kurznotiz der anfragenden Person"
     correct: false
   - en: The requester decides, regardless of risk
     de: Die anfragende Person entscheidet, unabhängig vom Risiko
@@ -180,7 +180,7 @@ items:
     de: Sie als Entgegenkommen schnell umsetzen
     correct: false
   - en: Ignore it, because only the lead is allowed to speak with the customer
-    de: Sie ignorieren, weil nur die Leitung mit der Kundschaft sprechen darf
+    de: "Sie ignorieren, weil nur die Leitung mit der Kundschaft sprechen darf und das Team keine Zusagen machen soll"
     correct: false
   - en: Bring it into the change process to be assessed and agreed jointly
     de: Sie in den Änderungsprozess holen, damit sie bewertet und gemeinsam vereinbart wird

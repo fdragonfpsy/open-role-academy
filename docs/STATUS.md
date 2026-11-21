@@ -1,5 +1,14 @@
 # Status
 
+## 2026-11-21 — QA #105: German answer-length cues removed
+
+**Done**
+- Rewrote German distractors (de text only, en/flags unchanged) in 24 competencies; `validate:content` shows no `(de)` length warning anymore (0 errors). Roadmap length batches ticked.
+
+**Reviewer to-dos:** skim German wording of lengthened distractors (done by subagents, not human-reviewed).
+
+**Next:** #106 non-Wikipedia resources for 8 published competencies; then Data & Analytics content.
+
 ## 2026-11-20 — QA issues closed; Data & Analytics framework
 
 **Done**
