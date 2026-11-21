@@ -12,7 +12,7 @@ items:
         de: "Die Fähigkeit eines Unternehmens, Kundschaft über einen Zeitraum zu halten, sodass sie weiter kauft"
         correct: true
       - en: "Winning as many new customers as possible within a short time, using campaigns and offers"
-        de: "In kurzer Zeit mit Kampagnen und Angeboten möglichst viele Neukunden gewinnen"
+        de: "In kurzer Zeit mit Kampagnen und Angeboten möglichst viele Neukunden gewinnen, unabhängig davon, ob sie bleiben"
         correct: false
       - en: "The number of complaints a team receives in a month"
         de: "Die Zahl der Beschwerden, die ein Team in einem Monat erhält"
@@ -60,7 +60,7 @@ items:
         de: "Zufriedenheit fördert die Bindung, garantiert sie aber nicht; auch andere Faktoren wie Preis oder Bedarf zählen"
         correct: true
       - en: "The satisfaction survey must have been wrong, or the customer misunderstood the question"
-        de: "Die Zufriedenheitsumfrage muss falsch gewesen sein, oder der Kunde hat die Frage missverstanden"
+        de: "Die Zufriedenheitsumfrage muss falsch gewesen sein, oder der Kunde hat die Frage ganz anders verstanden, als sie gemeint war"
         correct: false
       - en: "Satisfaction has no link to retention at all"
         de: "Zufriedenheit hat überhaupt keinen Zusammenhang mit Kundenbindung"
@@ -111,7 +111,7 @@ items:
         de: "87 Prozent aller 15.000 Kundinnen und Kunden sind zufrieden"
         correct: false
       - en: "The result is invalid because fewer than half answered"
-        de: "Das Ergebnis ist ungültig, weil weniger als die Hälfte geantwortet hat"
+        de: "Das Ergebnis ist ungültig, weil weniger als die Hälfte geantwortet hat, und darf deshalb nicht berichtet werden"
         correct: false
       - en: "The response rate is 1,500 percent, which is very high"
         de: "Die Rücklaufquote beträgt 1.500 Prozent, was sehr hoch ist"
@@ -132,7 +132,7 @@ items:
         de: "Eine kurze Liste definierter Tags, ein Haupt-Thema je Kommentar und eine Prüfung von Beispielen"
         correct: true
       - en: "Every agent invents tags freely as they read the comments"
-        de: "Jede Person erfindet beim Lesen der Kommentare frei Tags"
+        de: "Jede Person erfindet beim Lesen der Kommentare frei neue Tags, wenn ihr ein passender Begriff einfällt"
         correct: false
       - en: "Counting only comments that contain the word \"complaint\""
         de: "Nur Kommentare zählen, die das Wort „Beschwerde“ enthalten"
@@ -204,7 +204,7 @@ items:
         de: "Kündigungsgründe und Verhalten auswerten, weil geäußerte Absichten Handlungen nur schwach vorhersagen"
         correct: true
       - en: "Trust the NPS and assume that the cancellations are seasonal and will fall back by themselves"
-        de: "Dem NPS vertrauen und annehmen, dass die Kündigungen saisonal sind und von selbst wieder sinken"
+        de: "Dem NPS vertrauen und annehmen, dass die Kündigungen saisonal sind und von selbst wieder deutlich sinken werden"
         correct: false
       - en: "Send the NPS survey more often to get a clearer picture"
         de: "Die NPS-Umfrage häufiger versenden, um ein klareres Bild zu bekommen"
@@ -228,7 +228,7 @@ items:
         de: "Die Karte behalten, aber die Beschwerdethemen als Hauptrisiko behandeln, da reine Belohnungsbindung brüchig sein kann"
         correct: true
       - en: "End the card at once, because rewards never influence whether customers stay or leave"
-        de: "Die Karte sofort beenden, weil Belohnungen nie beeinflussen, ob Kundschaft bleibt oder geht"
+        de: "Die Karte sofort beenden, weil Belohnungen nie beeinflussen, ob Kundschaft bleibt oder geht, und das Geld lieber in Werbung stecken"
         correct: false
       - en: "The card proves that customers are satisfied with the service"
         de: "Die Karte beweist, dass die Kundschaft mit dem Service zufrieden ist"

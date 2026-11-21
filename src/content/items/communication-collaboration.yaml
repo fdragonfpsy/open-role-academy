@@ -85,7 +85,7 @@ items:
         de: "„Im heutigen Meeting hast du die Zahlen ohne Vorjahresvergleich gezeigt, deshalb konnte das Team den Trend nicht einschätzen. Kannst du ihn nächstes Mal ergänzen?“"
         correct: true
       - en: "\"Your presentations are always a bit chaotic and the team often cannot follow your line of argument, so please structure them better.\""
-        de: "„Deine Präsentationen sind immer etwas chaotisch und das Team kann deiner Argumentation oft nicht folgen, bitte strukturiere sie besser.“"
+        de: "„Deine Präsentationen sind immer etwas chaotisch und das Team kann deiner Argumentation oft nicht folgen, bitte strukturiere sie künftig besser, damit so etwas nicht noch einmal vorkommt und das Team nicht weiter Zeit verliert.“"
         correct: false
       - en: "\"Great job!\""
         de: "„Super gemacht!“"
@@ -207,7 +207,7 @@ items:
         de: "Die Mitglieder sind überzeugt, dass sie nicht bestraft oder bloßgestellt werden, wenn sie Ideen, Fragen, Bedenken oder Fehler ansprechen"
         correct: true
       - en: "Nobody ever disagrees with anyone, because open disagreement is seen as a sign of disloyalty"
-        de: "Niemand widerspricht jemals jemandem, weil offener Widerspruch als Zeichen von Illoyalität gilt"
+        de: "Niemand widerspricht jemals jemandem, weil offener Widerspruch als Zeichen von Illoyalität gilt, und Entscheidungen der Leitung werden grundsätzlich ohne Rückfragen und ohne jede Diskussion im Team umgesetzt"
         correct: false
       - en: "Performance problems are never addressed"
         de: "Leistungsprobleme werden nie angesprochen"
@@ -255,7 +255,7 @@ items:
         de: "Wortbeiträge strukturieren (z. B. Remote-Teilnehmende zuerst), einen gemeinsamen Chat oder ein Dokument für Beiträge nutzen und allen gleiche Ton- und Bildqualität geben"
         correct: true
       - en: "Ask remote participants to turn their cameras off to save bandwidth"
-        de: "Remote-Teilnehmende bitten, die Kamera auszuschalten, um Bandbreite zu sparen"
+        de: "Remote-Teilnehmende bitten, die Kamera auszuschalten, um Bandbreite zu sparen, und Fragen aus dem Raum zuerst und ausführlich beantworten, weil sie dort leichter zu hören sind"
         correct: false
       - en: "Make decisions in the room after the call ends"
         de: "Entscheidungen nach dem Ende des Calls im Raum treffen"

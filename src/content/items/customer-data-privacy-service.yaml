@@ -12,7 +12,7 @@ items:
         de: "Ein Ticket mit dem Vermerk, dass Frau Weber, Bestellung 4711, wegen einer Erstattung angerufen hat"
         correct: true
       - en: "The total number of tickets closed by the team this week"
-        de: "Die Gesamtzahl der vom Team diese Woche geschlossenen Tickets"
+        de: "Die Gesamtzahl der vom Team diese Woche geschlossenen Tickets, ohne Angaben zu einzelnen Personen oder Bestellungen"
         correct: false
       - en: "The opening hours published on the company website"
         de: "Die auf der Firmenwebsite veröffentlichten Öffnungszeiten"
@@ -36,7 +36,7 @@ items:
         de: "Keine Kontodaten nennen und anbieten, die Kontoinhaberin über die hinterlegte Adresse zu kontaktieren"
         correct: true
       - en: "Give the address, since he knows her name, her order number and the date of her last purchase"
-        de: "Die Adresse nennen, weil er ihren Namen, ihre Bestellnummer und das Datum ihres letzten Kaufs kennt"
+        de: "Die Adresse nennen, weil er ihren Namen, ihre Bestellnummer und das Datum ihres letzten Kaufs genau kennt"
         correct: false
       - en: "Ask him to read out the address on file so you can confirm it"
         de: "Ihn bitten, die hinterlegte Adresse vorzulesen, damit du sie bestätigen kannst"
@@ -87,7 +87,7 @@ items:
         de: "Bis Montag abwarten, ob jemand den Fehler bemerkt"
         correct: false
       - en: "Ask the recipient to delete it and then say nothing further"
-        de: "Den Empfänger bitten, sie zu löschen, und sonst nichts weiter sagen"
+        de: "Den Empfänger bitten, sie zu löschen, und sonst nichts weiter sagen, damit der Vorfall nicht intern bekannt wird"
         correct: false
       - en: "Send a corrected email and treat the case as closed"
         de: "Eine korrigierte E-Mail senden und den Fall als erledigt betrachten"
@@ -132,7 +132,7 @@ items:
         de: "Innerhalb eines Monats nach dem 3. März, eine Verlängerung nur in komplexen Fällen"
         correct: true
       - en: "Within one month of 20 March, when the privacy team received it"
-        de: "Innerhalb eines Monats nach dem 20. März, als das Datenschutzteam sie erhielt"
+        de: "Innerhalb eines Monats nach dem 20. März, als das Datenschutzteam sie erstmals erhielt"
         correct: false
       - en: "Within 72 hours of 3 March, as for a data breach"
         de: "Innerhalb von 72 Stunden nach dem 3. März, wie bei einer Datenpanne"
@@ -204,7 +204,7 @@ items:
         de: "Vollständige Nummern auf eine geschulte Rolle beschränken und für alle anderen standardmäßig maskierte Werte zeigen"
         correct: true
       - en: "Add a reminder for all agents to be careful with card numbers"
-        de: "Alle Agentinnen und Agenten an einen sorgfältigen Umgang mit Kartennummern erinnern"
+        de: "Alle Agentinnen und Agenten an einen sorgfältigen Umgang mit Kartennummern erinnern und weiter vollen Zugriff für alle lassen"
         correct: false
       - en: "Keep access as it is, because refunds sometimes need the data"
         de: "Den Zugriff belassen, weil Erstattungen die Daten manchmal brauchen"

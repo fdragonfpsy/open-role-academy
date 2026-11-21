@@ -15,7 +15,7 @@ items:
         de: "Neue Kundschaft lässt sich nicht mehr gewinnen, sobald ein Bestand vorhanden ist"
         correct: false
       - en: "Existing customers accept any price increase without comparing offers"
-        de: "Bestandskundschaft akzeptiert jede Preiserhöhung, ohne Angebote zu vergleichen"
+        de: "Bestandskundschaft akzeptiert jede Preiserhöhung, ohne Angebote zu vergleichen, weil ein Wechsel für sie immer teurer ist als Bleiben"
         correct: false
       - en: "Sales teams are paid only for existing customers, not for new ones"
         de: "Vertriebsteams werden nur für Bestandskundschaft bezahlt, nicht für neue"
@@ -66,7 +66,7 @@ items:
         de: "Nichts sagen, bis der Vertrag im nächsten Jahr verlängert wird"
         correct: false
       - en: "Tell the colleagues to share one login to save money"
-        de: "Den Kolleg:innen raten, sich einen Zugang zu teilen, um Geld zu sparen"
+        de: "Den Kolleg:innen raten, sich einen Zugang zu teilen, um Geld zu sparen, auch wenn das gegen die Lizenzbedingungen verstößt"
         correct: false
     explanation:
       en: "A real need is visible, so a fitting offer helps. First clarify the size, then compare plans. Oversized offers ignore the need; login sharing may break the terms and security rules."
@@ -108,7 +108,7 @@ items:
         de: "Schnell antworten, Verantwortung übernehmen und die richtige Kollegin einbeziehen"
         correct: true
       - en: "Explain why the problem is not your department's responsibility"
-        de: "Erklären, warum das Problem nicht in der Verantwortung deiner Abteilung liegt"
+        de: "Erklären, warum das Problem nicht in der Verantwortung deiner Abteilung liegt, und an die zuständige Stelle verweisen"
         correct: false
       - en: "Wait to see whether the customer raises it again"
         de: "Abwarten, ob die Kundschaft es erneut anspricht"

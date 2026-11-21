@@ -189,7 +189,7 @@ items:
     de: Die Gesamtkosten je Sendung einschließlich Verspätungs- und Mehrbestandskosten
     correct: true
   - en: The company size of the carrier, since larger means better
-    de: Die Größe des Frachtführers, denn größer heißt besser
+    de: Die Größe des Frachtführers, denn größer heißt besser, weil große Unternehmen zuverlässiger und günstiger liefern
     correct: false
   explanation:
     en: 'The right comparison is total cost: price plus the cost of delays, expediting and extra safety stock. A cheaper price can turn out more expensive, as in the worked example of the unit.'
@@ -204,7 +204,7 @@ items:
     de: Ein Vertrag nennt eine Incoterms-Klausel, aber weder die Version der Regeln noch einen Ort. Was ist das Hauptrisiko?
   options:
   - en: None, because the abbreviation alone is always clear
-    de: Keines, denn die Abkürzung allein ist immer eindeutig
+    de: Keines, denn die Abkürzung allein ist immer eindeutig, und eine spätere Klärung durch den Frachtführer reicht in jedem Fall aus
     correct: false
   - en: The price becomes invalid until the version is added
     de: Der Preis wird ungültig, bis die Version ergänzt ist
@@ -258,7 +258,7 @@ items:
     de: 'Die Definition abgleichen: welches Datum, welcher Bezug, je Lieferung oder Position, dann vergleichen'
     correct: true
   - en: Charge penalties immediately using your own figure
-    de: Sofort Vertragsstrafen auf Basis der eigenen Zahl berechnen
+    de: Sofort Vertragsstrafen auf Basis der eigenen Zahl berechnen und die Abweichung dem Lieferanten als Fehler seiner Messung zuschreiben
     correct: false
   - en: Stop measuring delivery performance, since the figures differ
     de: Die Messung der Liefertreue einstellen, da die Zahlen abweichen

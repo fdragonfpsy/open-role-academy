@@ -39,7 +39,7 @@ items:
         de: "A – wegen der Position der Person"
         correct: false
       - en: "Whichever ticket was created first, regardless of impact"
-        de: "Das Ticket, das zuerst angelegt wurde, unabhängig von der Auswirkung"
+        de: "Das Ticket, das zuerst angelegt wurde, unabhängig von der Auswirkung und der Anzahl betroffener Personen"
         correct: false
       - en: "Both wait until the end of the day"
         de: "Beide warten bis zum Ende des Tages"
@@ -90,7 +90,7 @@ items:
         de: "Wenn das Ticket älter als eine Woche ist, weil alte Tickets die Statistik des gesamten Teams verzerren"
         correct: false
       - en: "When you believe that the problem might be solved, because the user can always open a new ticket later"
-        de: "Wenn du glaubst, dass das Problem gelöst sein könnte, weil die Person später jederzeit ein neues Ticket öffnen kann"
+        de: "Wenn du glaubst, dass das Problem gelöst sein könnte, weil die Person später jederzeit ein neues Ticket öffnen kann und das Ticket dadurch aus deiner Warteschlange verschwindet, was die Übersicht verbessert"
         correct: false
     explanation:
       en: "A clean closure confirms that service is restored and records what fixed it. The documented resolution helps colleagues with similar incidents later."
@@ -114,7 +114,7 @@ items:
         de: "Das Ticket sofort ohne Notizen an das Datenbankteam weiterleiten, da die Fachleute nachfragen, was sie brauchen"
         correct: false
       - en: "Ask the user to contact the database team directly, since they can describe the symptoms best themselves"
-        de: "Die Person bitten, das Datenbankteam direkt zu kontaktieren, da sie die Symptome selbst am besten beschreiben kann"
+        de: "Die Person bitten, das Datenbankteam direkt zu kontaktieren, da sie die Symptome selbst am besten beschreiben kann, und das Ticket erst wieder anzufassen, wenn sich dort jemand meldet"
         correct: false
     explanation:
       en: "Timely escalation with complete information is part of good incident handling. It prevents SLA breaches and avoids that the next team starts from zero."
@@ -207,7 +207,7 @@ items:
         de: "Genau fünf Fragen finden immer die eine wahre Ursache, weil fünf Schritte jede Ursachenkette abdecken"
         correct: false
       - en: "It is used mainly to find out which person made the error, so that the right colleague can be retrained"
-        de: "Es dient vor allem dazu, herauszufinden, welche Person den Fehler gemacht hat, damit sie nachgeschult werden kann"
+        de: "Es dient vor allem dazu, herauszufinden, welche Person den Fehler gemacht hat, damit sie nachgeschult werden kann, und damit künftig Fehler in der Personalakte der Betroffenen dokumentiert werden können"
         correct: false
       - en: "It replaces the need to collect data, because the answers of the team to each question are accepted as facts"
         de: "Es ersetzt die Datensammlung, weil die Antworten des Teams auf jede Frage als Tatsachen akzeptiert werden"

@@ -36,7 +36,7 @@ items:
         de: "Das Individualarbeitsrecht betrifft das Verhältnis zwischen Arbeitnehmenden und Arbeitgeber, das kollektive Arbeitsrecht Gewerkschaften und Arbeitnehmervertretungen"
         correct: true
       - en: "Individual labour law applies only to managers and executives, while collective labour law covers all other staff"
-        de: "Das Individualarbeitsrecht gilt nur für Führungskräfte, das kollektive Arbeitsrecht für alle anderen Beschäftigten"
+        de: "Das Individualarbeitsrecht gilt nur für Führungskräfte, das kollektive Arbeitsrecht für alle anderen Beschäftigten, wobei Tarifverträge und Betriebsvereinbarungen ausschließlich für leitende Angestellte abgeschlossen werden"
         correct: false
       - en: "Individual labour law is purely national, whereas collective labour law is always international"
         de: "Das Individualarbeitsrecht ist rein national, das kollektive Arbeitsrecht immer international"
@@ -60,7 +60,7 @@ items:
         de: "Erklären, dass ein Arbeitsvertrag nach deutschem Recht auch mündlich geschlossen werden kann, weshalb die Bedingungen dokumentiert und die Dokumentationspflichten geprüft werden sollten"
         correct: true
       - en: "Agree, because under German law only a written and signed contract is valid and creates obligations for either side"
-        de: "Zustimmen, weil nach deutschem Recht nur ein schriftlicher, unterschriebener Vertrag gültig ist und Pflichten für beide Seiten begründet"
+        de: "Zustimmen, weil nach deutschem Recht nur ein schriftlicher, unterschriebener Vertrag gültig ist und Pflichten für beide Seiten begründet, und dass ein mündlich vereinbartes Arbeitsverhältnis deshalb rechtlich nicht durchsetzbar und für beide Seiten unverbindlich ist"
         correct: false
       - en: "Say that employment contracts are always unwritten and that no document needs to be kept in the personnel file"
         de: "Sagen, dass Arbeitsverträge immer mündlich sind und kein Dokument in der Personalakte aufbewahrt werden muss"
@@ -276,7 +276,7 @@ items:
         de: "Vorlagen regelmäßig anhand aktueller amtlicher Texte und Hinweise der Rechtsberatung prüfen und das Prüfdatum festhalten"
         correct: true
       - en: "Keep the template unchanged, because law rarely changes and a stable template is easier to apply consistently"
-        de: "Die Vorlage unverändert lassen, weil sich Recht selten ändert und eine stabile Vorlage einheitlicher anwendbar ist"
+        de: "Die Vorlage unverändert lassen, weil sich Recht selten ändert und eine stabile Vorlage einheitlicher anwendbar ist, und Hinweise von Rechtsberatung oder Behörden nur dann aufgreifen, wenn ein Gericht die Vorlage beanstandet hat"
         correct: false
       - en: "Update the template only when an employee complains or a dispute arises about a specific clause"
         de: "Die Vorlage nur ändern, wenn sich jemand beschwert oder ein Streit über eine bestimmte Klausel entsteht"
