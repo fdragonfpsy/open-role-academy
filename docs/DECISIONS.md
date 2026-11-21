@@ -2,6 +2,11 @@
 
 Format: date — decision — reason — alternatives considered.
 
+## 2026-11-21 — Answer-length cue checked per language; German cue pass before more Phase 4 content (weekly review)
+- **Decision:** The `uniquely longest` warning in `validate:content` runs separately for en and de. ROADMAP gets a "German answer-length cue and resource gaps" task (4 batches + 1 resource sub-task) in the quality-pass section, ahead of the remaining Data & Analytics content. Browser e2e in CI is added as a Phase 3 task.
+- **Reason:** The en-only check was cleared by padding English distractors; in German 24 competencies are still cued (> 50%). German is a first-class language (CLAUDE.md §1). e2e passes locally but is not run in CI.
+- **Alternatives:** Making the check an error (would block every PR until 24 files are rewritten); measuring only the language the learner sees most (no data, and no analytics allowed); leaving the batches to a later maintenance run (the cue would spread to 4 more roles).
+
 ## 2026-11-17 — Profile form: scope and placement
 - **Decision:** The profile form lives inside the account island; role options are passed from content at build time; skipping is remembered in localStorage per user id; the upsert payload is a fixed column whitelist (`PROFILE_COLUMNS`) without `placement_done`. Preferred language always has a value (column is NOT NULL, default = page language); all other fields may stay empty (null).
 - **Reason:** Data minimisation and no new route or dependency; a partial upsert leaves `placement_done` and `created_at` untouched.

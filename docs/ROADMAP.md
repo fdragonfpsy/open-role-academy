@@ -1,6 +1,7 @@
 # ROADMAP — Open Role Academy
 
 Work top to bottom. Tick a box only when the task is done **and** all checks pass. Add sub-tasks if a task is too big for one session.
+Every run ends with one dated line in `docs/STATUS.md` that names why it stopped (window end, usage limit, rate limit, blocker), also when it stops after a single slice (weekly review 2026-11-21).
 
 ## Phase 0 — Foundation (kickoff session)
 
@@ -76,6 +77,12 @@ Item and resource quality (added by weekly review 2026-11-14, applies to all new
   - [x] IT Support & Operations (10) (exception: it-service-management has no non-Wikipedia resource yet)
   - [x] Finance & Accounting (11) (exceptions: 6 competencies without non-Wikipedia resource, see STATUS)
   - [x] Human Resources (11)
+- [ ] German answer-length cue and resource gaps (weekly review 2026-11-21; QA issues #105, #106). The length check now runs per language: 24 competencies have the correct **German** option as the uniquely longest in > 50% of single-choice items (English distractors were padded, German ones not). Rewrite German options (shorten the correct one or lengthen distractors with real content, not filler; keep en/de meaning equal). Tick a batch when `npm run validate:content` shows no `(de)` length warning for its competencies:
+  - [ ] Core, IT, HR (6): communication-collaboration, working-with-data, incident-request-handling, employment-law-basics, recruitment-selection, hr-data-protection
+  - [ ] Sales, Marketing, Procurement (5): prospecting-lead-qualification, account-management-upselling, sales-ethics-compliance, marketing-fundamentals-strategy, logistics-transport-planning
+  - [ ] Customer Service (6): customer-needs-problem-solving, complaint-handling-de-escalation, service-level-quality-management, customer-data-privacy-service, customer-retention-feedback-voc, consumer-rights-basics
+  - [ ] Project Management (7): scope-requirements-management, project-budget-cost-control, risk-issue-management, stakeholder-management-communication, agile-hybrid-delivery, quality-change-management, project-closure-lessons-learned
+  - [ ] Non-Wikipedia resource for the 8 published competencies that still have none: accounts-payable, financial-statements-reporting, tax-basics, cash-liquidity-management, budgeting-forecasting, financial-analysis-kpis, it-service-management, employee-relations-conflict (OpenStax accounting/OB books are already used elsewhere and reachable; primary statutes for tax-basics where reachable)
 
 ## Phase 3 — Learner experience
 
@@ -86,6 +93,7 @@ Item and resource quality (added by weekly review 2026-11-14, applies to all new
 - [x] Accessibility pass (keyboard, contrast, screen reader labels) + Lighthouse ≥ 90 on all categories
 - [x] Mobile layout pass
 - [x] **Launch checklist** in `docs/LAUNCH.md` (what the human must fill in: Impressum data, contact email, Cloudflare Pages project) — then mark the site ready
+- [ ] CI runs the browser e2e suite (`npm run e2e`, Playwright/Chromium) against `astro preview` on every PR (weekly review 2026-11-21: the suite passes locally but is not in `ci.yml`, so UI regressions can merge unseen). Acceptance: e2e job in `ci.yml`, green on the PR, no paid service, run time stays under 10 min.
 
 ## Phase 3b — Catalog, accounts and profile
 

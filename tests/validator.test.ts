@@ -235,6 +235,21 @@ describe('content validator', () => {
     expect(cueWarnings(b)).toHaveLength(0);
   });
 
+  it('checks the answer-length cue in German too, not only in English', () => {
+    const cueWarnings = (b: ContentBundle) =>
+      validateContent(b, { today: TODAY }).filter((i) => i.level === 'warning' && /uniquely longest/.test(i.message));
+    const b = validBundle();
+    for (const item of d(b.items[0]!.data).items) item.options = [
+      { en: 'Correct', de: 'Die richtige und deutlich längere Antwort', correct: true },
+      { en: 'An incorrect answer of greater length', de: 'Kurz', correct: false },
+    ];
+    const warnings = cueWarnings(b);
+    expect(warnings).toHaveLength(1);
+    expect(warnings[0]!.message).toMatch(/\(de\)/);
+    for (const item of d(b.items[0]!.data).items) item.options[1].de = 'Eine falsche Antwort, die noch länger ist als die richtige';
+    expect(cueWarnings(b)).toHaveLength(0);
+  });
+
   it('warns when a competency has no framework reference', () => {
     const b = validBundle();
     const warnings = validateContent(b, { today: TODAY }).filter((i) => i.level === 'warning');
