@@ -82,6 +82,9 @@ async function run(browser, lang) {
   while (await page.locator('fieldset').count()) {
     if (!(await tabTo(page, () => document.activeElement?.name?.startsWith('q-'), 'answer input'))) break;
     await page.keyboard.press('Space');
+    // Let the island commit the selection before submitting (slower CI runners raced here).
+    await page.waitForFunction(() => document.activeElement?.checked === true);
+    await page.waitForTimeout(150);
     await page.keyboard.press('Enter');
     await page.waitForSelector('[role=status][aria-live=polite]');
     await page.waitForTimeout(100);
