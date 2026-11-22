@@ -84,7 +84,8 @@ async function run(browser, lang) {
     if (!(await tabTo(page, () => document.activeElement?.name?.startsWith('q-'), 'answer input'))) break;
     await page.keyboard.press('Space');
     // Let the island commit the selection before submitting (slower CI runners raced here).
-    const anyChecked = () => page.locator('fieldset input:checked').count().then((n) => n > 0);
+    // The submit button is disabled until the island's state holds a selection; Enter before that does nothing.
+    const anyChecked = () => page.locator('form button[type=submit]:not([disabled])').count().then((n) => n > 0);
     for (let tries = 0; tries < 5 && !(await anyChecked()); tries++) {
       await page.waitForTimeout(400);
       if (!(await anyChecked()) && tries >= 2) await page.keyboard.press('Space');
