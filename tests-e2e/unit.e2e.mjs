@@ -75,6 +75,7 @@ async function run(browser, lang) {
   if (hasAttribution) check((await page.locator('#sources ~ ul').innerText()).includes(t.changes), `${tag} attribution shows changes made`);
 
   // Mastery check via keyboard.
+  await page.waitForFunction(() => [...document.querySelectorAll('astro-island')].every((i) => !i.hasAttribute('ssr'))); // islands hydrated (CI runners are slower)
   await tabTo(page, () => document.activeElement?.tagName === 'BUTTON' && document.activeElement.closest('section')?.getAttribute('aria-labelledby') === 'mastery', 'mastery start button');
   await page.keyboard.press('Enter');
   await page.waitForSelector('fieldset');
