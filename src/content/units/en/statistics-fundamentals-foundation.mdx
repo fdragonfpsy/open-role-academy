@@ -1,0 +1,68 @@
+---
+id: statistics-fundamentals-foundation
+competency: statistics-fundamentals
+level: foundation
+title: "Describing data: centre, spread and distribution"
+objectives:
+  - "Calculate and choose between mean, median and mode."
+  - "Describe spread with range, interquartile range and standard deviation."
+  - "Distinguish a population from a sample."
+  - "Read a histogram and recognise skewed data and outliers."
+minutes: 25
+resources:
+  - openstax-intro-stats-descriptive
+  - wikipedia-de-deskriptive-statistik
+status: ai-draft
+sources:
+  - title: "Introductory Statistics 2e, Chapter 2: Descriptive Statistics"
+    author: "Barbara Illowsky, Susan Dean et al. (OpenStax)"
+    url: https://openstax.org/books/introductory-statistics-2e/pages/2-introduction
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+  - title: "Deskriptive Statistik"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Deskriptive_Statistik
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+Almost every analysis starts by describing data: what is typical, how much does it vary, what does the shape look like? Wrong summaries lead to wrong decisions long before any advanced method is used.
+
+## Centre
+
+- Mean: the sum of all values divided by their number.
+- Median: the middle value of the ordered data (for an even count, the average of the two middle values).
+- Mode: the most frequent value.
+
+The mean uses every value, so a few extreme values pull it. The median hardly reacts to them. For skewed data such as salaries or delivery times, the median is often the better description of a typical case.
+
+## Spread
+
+- Range: largest minus smallest value; very sensitive to extremes.
+- Interquartile range (IQR): the spread of the middle half of the data, between the first and third quartile.
+- Standard deviation: a typical distance of values from the mean; it is the usual companion of the mean.
+
+Two groups can have the same mean and very different spread, so always report centre and spread together.
+
+## Population and sample
+
+The population is the whole group you care about; a sample is the part you actually observe. Summaries of a sample describe the sample and estimate the population. How the sample was chosen decides whether the estimate can be trusted.
+
+## Shape
+
+A histogram groups values into ranges and shows how many fall in each. Look for one or several peaks, symmetry, and a long tail on one side (skew). In right-skewed data the mean is usually larger than the median. Isolated values far from the rest are outliers; investigate them before removing them.
+
+## Worked example
+
+Illustration only; invented data. Five delivery times in days: 2, 3, 4, 5, 36. The mean is 10, the median is 4, the range is 34. The 36 is probably a parcel that was lost and found again. Reporting only "10 days on average" would mislead; the analyst reports "median 4 days, one extreme case of 36 days", and checks the 36 with logistics.
+
+## Key takeaways
+
+- Report centre and spread together.
+- Use the median when data are skewed or contain extreme values.
+- A sample is only as good as the way it was chosen.
+- Plot the data before you trust any single number.

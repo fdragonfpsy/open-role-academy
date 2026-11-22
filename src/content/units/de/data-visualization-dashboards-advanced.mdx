@@ -1,0 +1,75 @@
+---
+id: data-visualization-dashboards-advanced
+competency: data-visualization-dashboards
+level: advanced
+title: "Dashboard-Gestaltung als Entscheidungshilfe"
+objectives:
+  - "Kennzahlendefinitionen vereinbaren und über Dashboards hinweg konsistent halten."
+  - "Wünsche nach mehr Inhalt gegen Fokus abwägen, mit Entscheidungen als Leitlinie."
+  - "Beurteilen, wann eine Basislinie ungleich null, die Darstellung von Unsicherheit oder eine Anmerkung angemessen ist."
+  - "Ein Dashboard mit Nutzenden, Abgleich und Barrierefreiheitsprüfungen testen."
+minutes: 35
+resources:
+  - wikipedia-de-informationsvisualisierung
+  - wikibooks-statistics-displaying-data
+  - wikipedia-data-visualization
+status: ai-draft
+sources:
+  - title: "Informationsvisualisierung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Informationsvisualisierung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Statistics/Displaying Data"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Statistics/Displaying_Data
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Data and information visualization"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_visualization
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Auf fortgeschrittenem Niveau lautet die Frage, ob ein Dashboard Menschen hilft, gut zu entscheiden, und ob seine Zahlen über die Zeit konsistent und vertrauenswürdig bleiben. Viele Dashboards scheitern nicht an Diagrammen, sondern an Definitionen, Umfang und fehlendem Test.
+
+## Kennzahlen einmal definieren
+
+Zeigen zwei Dashboards verschiedene Zahlen für „aktive Kundschaft“, sinkt das Vertrauen in beide. Abhilfe schafft eine dokumentierte Definition (was zählt, welcher Zeitraum, welche Ausschlüsse), gepflegt in einer gemeinsamen Datenschicht und auf jedem Dashboard sichtbar, auf dem die Kennzahl vorkommt. Benenne eine verantwortliche Person, die über Änderungen entscheidet und die Nutzenden informiert.
+
+## Entscheidungen bestimmen den Umfang
+
+Der Wunsch nach mehr Filtern und Kennzahlen ist ein Anlass zu fragen, welche Entscheidung die Person treffen muss und was sie ändern würde. Ergänze, was diese Entscheidung stützt, verlege den Rest auf Detailseiten und entferne, was niemand nutzt. Ein kleineres Dashboard, das Menschen tatsächlich öffnen, schlägt ein vollständiges, das sie meiden.
+
+## Unsicherheit und Kontext zeigen
+
+Eine einzelne Zahl verleitet zu falscher Genauigkeit. Wo Daten gestichprobt oder schwankend sind, zeige ein Intervall, ein Band oder einen Hinweis zur Stichprobengröße. Ergänze eine Referenz wie Ziel, Vorjahr oder typische Spanne, denn ein Wert ohne Kontext lässt sich nicht beurteilen. Beschrifte ungewöhnliche Ereignisse, etwa eine Systemumstellung, direkt im Diagramm.
+
+## Abwägungen bei Achsen
+
+Balken kodieren Länge ab null; eine gekürzte Balkenachse führt in die Irre. Bei einem Liniendiagramm kann eine gezoomte Achse ehrlich sein, wenn kleine Änderungen wichtig sind, solange die Skala sichtbar und beschriftet ist und nicht dazu dient, die Änderung zu überhöhen. Erwäge, zusätzlich die relative Änderung zu zeigen.
+
+## Das Dashboard testen
+
+- Beobachte echte Nutzende bei ihren typischen Aufgaben und notiere, wo sie zögern.
+- Gleiche die Zahlen mit einem Quellbericht oder der Datenbank ab.
+- Prüfe die Barrierefreiheit: Tastaturbedienung, Kontrast, Textalternativen.
+- Prüfe Aktualisierung und Ladezeit und zeige den Zeitpunkt der letzten Aktualisierung.
+Schau nach einigen Wochen erneut hin und streiche Teile, die niemand nutzt.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundenes Szenario. Service und Vertrieb melden jeweils „aktive Kundschaft“, 12.400 und 9.900. Das Analyseteam stellt fest, dass der Service alle mit einem Ticket in 24 Monaten zählt und der Vertrieb alle mit einer Bestellung in 12 Monaten. Die Teams einigen sich auf je eine dokumentierte Definition für ihren Zweck, nennen sie „Kundschaft mit Bestellung (12 Monate)“ und „Kundschaft mit Kontakt (24 Monate)“, legen beide in der gemeinsamen Schicht ab und zeigen die Definition in einem Infofeld. Eine Nutzungssitzung zeigt, dass Führungskräfte den Zielvergleich noch vermissen, also wandert er nach oben.
+
+## Das Wichtigste in Kürze
+
+- Eine dokumentierte, verantwortete Definition je Kennzahl, überall genutzt.
+- Gehe von Entscheidungen aus; halte die Hauptansicht mit Detailseiten fokussiert.
+- Zeige Unsicherheit und Kontext; nutze Achsen ehrlich.
+- Teste mit Nutzenden, gleiche Zahlen ab und prüfe die Barrierefreiheit.

@@ -1,0 +1,85 @@
+---
+id: sql-data-querying-advanced
+competency: sql-data-querying
+level: advanced
+title: "Korrekte, lesbare und prüfbare Abfragen"
+objectives:
+  - "Die Hauptursachen falscher Summen benennen: Fan-out, NULL-Fallen und falsche Granularität."
+  - "Lange Abfragen mit benannten Schritten (CTEs) strukturieren, damit andere sie prüfen können."
+  - "Ein Ergebnis vor dem Teilen durch Abgleich validieren."
+  - "Eine langsame Abfrage diagnostizieren, bevor man sie ändert."
+minutes: 30
+resources:
+  - wikipedia-de-sql
+  - wikibooks-de-einfuehrung-sql
+status: ai-draft
+sources:
+  - title: "SQL"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/SQL
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Einführung in SQL"
+    author: "Jürgen Thomas und Wikibooks-Autorinnen und -Autoren"
+    url: https://de.wikibooks.org/wiki/Einf%C3%BChrung_in_SQL
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Auf fortgeschrittenem Niveau ist das Risiko nicht ein Syntaxfehler, den die Datenbank meldet, sondern eine plausible falsche Zahl, die niemand meldet. Deine Aufgabe ist, Abfragen korrekt, lesbar und prüfbar zu machen.
+
+## Zuerst die Granularität festlegen
+
+Schreibe in einem Satz auf, was eine Ergebniszeile darstellt, zum Beispiel „eine Zeile je Bestellung“. Prüfe dann jeden Join dagegen. Der Join mit einer Tabelle, die mehrere Zeilen je Bestellung hat, etwa Lieferungen, vervielfacht die Bestellzeilen. Aggregiere eine solche Tabelle zuerst auf den Join-Schlüssel und verknüpfe dann.
+
+## Bekannte Fallen
+
+- NOT IN mit einer Unterabfrage, die NULL liefern kann: Die Bedingung wird für jede Zeile unbekannt, und die Abfrage liefert nichts. Nutze NOT EXISTS oder filtere NULL in der Unterabfrage.
+- Bedingungen auf die rechte Tabelle nach einem LEFT JOIN machen ihn stillschweigend zum Inner Join.
+- SELECT DISTINCT, um Duplikate zu verbergen. Das behandelt ein Symptom; suche stattdessen die Ursache (meist die Granularität).
+- Ganzzahldivision und Rundung können Verhältnisse verändern; wandle dort, wo das Produkt es verlangt, in einen Dezimaltyp um.
+- Datumsgrenzen: Lege fest, ob das Enddatum eingeschlossen ist.
+
+## Abfragen lesbar machen
+
+Nutze Common Table Expressions (WITH), um jeden Schritt zu benennen, aussagekräftige Aliase, eine Klausel je Zeile und einen kurzen Kommentar für jede nicht offensichtliche Regel.
+
+```sql
+WITH order_totals AS (
+  SELECT order_id, SUM(price * quantity) AS revenue
+  FROM order_items
+  GROUP BY order_id
+)
+SELECT o.region, SUM(t.revenue) AS revenue
+FROM orders o
+JOIN order_totals t ON t.order_id = o.order_id
+GROUP BY o.region;
+```
+
+Fensterfunktionen, etwa für Ränge oder laufende Summen, liefern Kontext zu Zeilen, ohne sie zu verdichten; nutze sie, wenn du neben einem Gruppenwert einen Wert je Zeile brauchst.
+
+## Vor dem Teilen validieren
+
+- Vergleiche eine Summe mit einer Zahl aus dem Quellsystem oder einem bestehenden Bericht.
+- Zähle die Zeilen vor und nach jedem Join.
+- Prüfe zwei oder drei Datensätze stichprobenartig von Hand.
+- Halte die Abfrage in der Versionskontrolle, damit sie wiederholt und geprüft werden kann.
+
+## Performance, kurz
+
+Diagnostiziere, bevor du änderst. Lies den Ausführungsplan, filtere früh, wähle nur nötige Spalten und vermeide Funktionen auf gefilterten Spalten, wo ein Index nutzbar wäre. Indexänderungen gehören zu den Betreibenden der Datenbank, besprich sie daher mit den Verantwortlichen.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundene Zahlen. Ein Umsatzbericht verknüpft orders, order_items und shipments. Bestellung 7 hat zwei Lieferungen, daher erscheinen ihre Positionen doppelt, und der Bericht zeigt 240 Euro statt 120. Der Abgleich mit der Rechnungssumme deckt die Differenz auf. Die Lösung ist, die Lieferungen auf eine Zeile je Bestellung zu aggregieren oder wegzulassen, da sie für den Umsatz nicht nötig sind. DISTINCT auf der Betragsspalte wäre falsch gewesen, weil zwei Positionen rechtmäßig gleich viel kosten können.
+
+## Das Wichtigste in Kürze
+
+- Lege die Granularität fest und prüfe jeden Join dagegen.
+- Kenne die NULL-Fallen, besonders NOT IN und Filter nach einem LEFT JOIN.
+- Strukturiere Abfragen in benannten Schritten, damit Prüfende ihnen folgen können.
+- Gleiche Ergebnisse mit einer vertrauenswürdigen Zahl ab, bevor du sie teilst.

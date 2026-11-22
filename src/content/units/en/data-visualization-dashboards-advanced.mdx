@@ -1,0 +1,75 @@
+---
+id: data-visualization-dashboards-advanced
+competency: data-visualization-dashboards
+level: advanced
+title: "Dashboard design as decision support"
+objectives:
+  - "Agree metric definitions and keep them consistent across dashboards."
+  - "Balance requests for more content against focus, using decisions as the guide."
+  - "Judge when a non-zero baseline, uncertainty display or annotation is appropriate."
+  - "Test a dashboard with users, reconciliation and accessibility checks."
+minutes: 35
+resources:
+  - wikipedia-data-visualization
+  - wikibooks-statistics-displaying-data
+  - wikipedia-de-informationsvisualisierung
+status: ai-draft
+sources:
+  - title: "Data and information visualization"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_visualization
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Statistics/Displaying Data"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Statistics/Displaying_Data
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Informationsvisualisierung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Informationsvisualisierung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+At advanced level the question is whether a dashboard helps people decide well, and whether its numbers stay consistent and trusted over time. Many dashboards fail not on charts but on definitions, scope and testing.
+
+## Define metrics once
+
+If two dashboards show different numbers for "active customers", trust in both falls. Fix this with one documented definition (what counts, which period, which exclusions), kept in a shared data layer and shown on every dashboard where the metric appears. Name an owner who decides changes and tells users.
+
+## Let decisions set the scope
+
+A request for more filters and KPIs is a prompt to ask which decision the person needs to make and what would change it. Add what supports that decision, move the rest to drill-down pages and remove what nobody uses. A smaller dashboard that people actually open beats a complete one they avoid.
+
+## Show uncertainty and context
+
+A single number invites false precision. Where data are sampled or volatile, show an interval, a range band, or a note on sample size. Add a reference, such as target, last year or a typical range, because a value without context cannot be judged. Annotate unusual events, such as a system change, directly on the chart.
+
+## Axis judgements
+
+Bars encode length from zero; a cut bar axis misleads. For a line chart a zoomed axis can be honest when small changes matter, as long as the scale is visible, labelled and not used to oversell the change. Consider showing relative change as well.
+
+## Test the dashboard
+
+- Observe real users solving their typical tasks and note where they hesitate.
+- Reconcile the numbers with a source report or the database.
+- Check accessibility: keyboard use, contrast, text alternatives.
+- Check refresh and load time, and show the time of the last update.
+Revisit the dashboard after a few weeks and retire parts that nobody uses.
+
+## Worked example
+
+Illustration only; invented scenario. The service and sales teams each report "active customers", 12,400 and 9,900. The analyst finds that service counts anyone with a ticket in 24 months and sales counts anyone with an order in 12 months. The teams agree on a documented definition for each purpose, name them "Customers with orders (12 months)" and "Customers with contact (24 months)", store both in the shared layer and display the definition in an info panel. A usability session shows that managers still miss the target comparison, so it moves to the top.
+
+## Key takeaways
+
+- One documented, owned definition per metric, used everywhere.
+- Start from decisions; use drill-down to keep the main view focused.
+- Show uncertainty and context; use axes honestly.
+- Test with users, reconcile numbers and check accessibility.

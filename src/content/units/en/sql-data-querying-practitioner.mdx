@@ -1,0 +1,77 @@
+---
+id: sql-data-querying-practitioner
+competency: sql-data-querying
+level: practitioner
+title: "Joins, grouping and aggregates"
+objectives:
+  - "Choose between INNER JOIN and LEFT JOIN for a question."
+  - "Aggregate with GROUP BY and filter groups with HAVING."
+  - "Predict how NULL affects COUNT and SUM."
+  - "Recognise join duplication (fan-out) in totals."
+minutes: 25
+resources:
+  - wikipedia-sql
+  - wikibooks-de-einfuehrung-sql
+status: ai-draft
+sources:
+  - title: "SQL"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/SQL
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Einführung in SQL"
+    author: "Jürgen Thomas und Wikibooks-Autorinnen und -Autoren"
+    url: https://de.wikibooks.org/wiki/Einf%C3%BChrung_in_SQL
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+Real questions span several tables: revenue per region needs orders and customers. Joins and aggregates answer them, and they are also where most silent mistakes happen, because a wrong join still returns numbers.
+
+## Joins
+
+A join combines rows from two tables where a condition holds, usually where a foreign key equals a primary key.
+
+```sql
+SELECT c.name, o.amount
+FROM customers c
+INNER JOIN orders o ON o.customer_id = c.id;
+```
+
+An INNER JOIN keeps only rows that match on both sides. A LEFT JOIN keeps every row of the left table and fills the right side with NULL where nothing matches. Use it when you want all customers, including those without orders. If you add a WHERE condition on a right-hand column after a LEFT JOIN, unmatched rows disappear again, so put such conditions in the ON clause when you want to keep them.
+
+## Grouping and aggregates
+
+GROUP BY collapses rows into groups; aggregate functions such as COUNT, SUM, AVG, MIN and MAX summarise each group.
+
+```sql
+SELECT region, SUM(amount) AS total
+FROM orders
+GROUP BY region
+HAVING SUM(amount) > 10000;
+```
+
+WHERE filters rows before grouping; HAVING filters groups afterwards. Every selected column must be in GROUP BY or inside an aggregate.
+
+## NULL in aggregates
+
+Aggregates ignore NULL values. COUNT(*) counts rows, COUNT(email) counts rows where email is not NULL, and COUNT(DISTINCT email) counts different non-NULL values. AVG divides by the number of non-NULL values, not by the number of rows.
+
+## Watch the grain
+
+The grain is what one row represents. Joining customers to orders gives one row per order. If you now sum a customer-level column such as credit_limit, each customer is counted once per order, so the total is too high. This is called fan-out. Sum before joining, or aggregate at the right level.
+
+## Worked example
+
+Illustration only; invented data. There are 3 customers and 5 orders. Customer A has 3 orders, B has 2, C has none. An INNER JOIN returns 5 rows and C is missing. A LEFT JOIN returns 6 rows: C appears once with NULL in amount. COUNT(*) per customer then gives 1 for C, which is wrong; COUNT(o.order_id) gives 0, which is correct. The analyst notes the difference and uses COUNT(o.order_id).
+
+## Key takeaways
+
+- INNER JOIN keeps matches only; LEFT JOIN keeps all left rows.
+- WHERE filters rows, HAVING filters groups.
+- Aggregates ignore NULL; choose COUNT(*) or COUNT(column) on purpose.
+- Know the grain and compare row counts before and after each join.

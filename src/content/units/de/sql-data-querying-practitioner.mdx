@@ -1,0 +1,77 @@
+---
+id: sql-data-querying-practitioner
+competency: sql-data-querying
+level: practitioner
+title: "Joins, Gruppierung und Aggregate"
+objectives:
+  - "Für eine Fragestellung zwischen INNER JOIN und LEFT JOIN wählen."
+  - "Mit GROUP BY aggregieren und Gruppen mit HAVING filtern."
+  - "Vorhersagen, wie NULL COUNT und SUM beeinflusst."
+  - "Vervielfachung durch Joins (Fan-out) in Summen erkennen."
+minutes: 25
+resources:
+  - wikipedia-de-sql
+  - wikibooks-de-einfuehrung-sql
+status: ai-draft
+sources:
+  - title: "SQL"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/SQL
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Einführung in SQL"
+    author: "Jürgen Thomas und Wikibooks-Autorinnen und -Autoren"
+    url: https://de.wikibooks.org/wiki/Einf%C3%BChrung_in_SQL
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Echte Fragen betreffen mehrere Tabellen: Umsatz je Region braucht Bestellungen und Kundendaten. Joins und Aggregate beantworten sie, und genau dort passieren die meisten stillen Fehler, denn auch ein falscher Join liefert Zahlen.
+
+## Joins
+
+Ein Join verbindet Zeilen zweier Tabellen, wo eine Bedingung gilt, meist wo ein Fremdschlüssel einem Primärschlüssel entspricht.
+
+```sql
+SELECT c.name, o.amount
+FROM customers c
+INNER JOIN orders o ON o.customer_id = c.id;
+```
+
+Ein INNER JOIN behält nur Zeilen, die auf beiden Seiten passen. Ein LEFT JOIN behält jede Zeile der linken Tabelle und füllt die rechte Seite mit NULL, wo nichts passt. Nutze ihn, wenn du alle Kundinnen und Kunden willst, auch ohne Bestellung. Setzt du nach einem LEFT JOIN eine WHERE-Bedingung auf eine Spalte der rechten Tabelle, verschwinden die Zeilen ohne Treffer wieder; setze solche Bedingungen in die ON-Klausel, wenn du sie behalten willst.
+
+## Gruppieren und Aggregate
+
+GROUP BY fasst Zeilen zu Gruppen zusammen; Aggregatfunktionen wie COUNT, SUM, AVG, MIN und MAX fassen jede Gruppe zusammen.
+
+```sql
+SELECT region, SUM(amount) AS total
+FROM orders
+GROUP BY region
+HAVING SUM(amount) > 10000;
+```
+
+WHERE filtert Zeilen vor dem Gruppieren; HAVING filtert Gruppen danach. Jede ausgewählte Spalte muss in GROUP BY stehen oder in einem Aggregat verwendet werden.
+
+## NULL in Aggregaten
+
+Aggregate ignorieren NULL-Werte. COUNT(*) zählt Zeilen, COUNT(email) zählt Zeilen, in denen email nicht NULL ist, und COUNT(DISTINCT email) zählt verschiedene Werte, die nicht NULL sind. AVG teilt durch die Zahl der Werte ungleich NULL, nicht durch die Zahl der Zeilen.
+
+## Auf die Granularität achten
+
+Die Granularität ist, was eine Zeile darstellt. Der Join von customers mit orders ergibt eine Zeile je Bestellung. Summierst du nun eine Spalte der Kundenebene wie credit_limit, wird jede Kundin und jeder Kunde je Bestellung gezählt, die Summe ist zu hoch. Das nennt man Fan-out. Summiere vor dem Join oder aggregiere auf der richtigen Ebene.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundene Daten. Es gibt 3 Kundendatensätze und 5 Bestellungen. Kundennummer A hat 3 Bestellungen, B hat 2, C hat keine. Ein INNER JOIN liefert 5 Zeilen, C fehlt. Ein LEFT JOIN liefert 6 Zeilen: C erscheint einmal mit NULL im Betrag. COUNT(*) je Kundennummer ergibt dann 1 für C, was falsch ist; COUNT(o.order_id) ergibt 0, was richtig ist. Das Analyseteam hält den Unterschied fest und nutzt COUNT(o.order_id).
+
+## Das Wichtigste in Kürze
+
+- INNER JOIN behält nur Treffer; LEFT JOIN behält alle linken Zeilen.
+- WHERE filtert Zeilen, HAVING filtert Gruppen.
+- Aggregate ignorieren NULL; wähle COUNT(*) oder COUNT(Spalte) bewusst.
+- Kenne die Granularität und vergleiche die Zeilenzahlen vor und nach jedem Join.

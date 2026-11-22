@@ -1,0 +1,76 @@
+---
+id: data-visualization-dashboards-foundation
+competency: data-visualization-dashboards
+level: foundation
+title: "Das richtige Diagramm wählen und ehrlich bleiben"
+objectives:
+  - "Eine Frage einem Diagrammtyp zuordnen: Vergleich, Verlauf, Zusammenhang, Anteil am Ganzen."
+  - "Balkendiagramme bei null beginnen lassen und Achsen, Einheiten und Quellen beschriften."
+  - "Überladung, 3D-Effekte und dekorative Farben vermeiden."
+  - "Farbe so einsetzen, dass sie nie allein Bedeutung trägt."
+minutes: 20
+resources:
+  - wikipedia-de-informationsvisualisierung
+  - wikibooks-statistics-displaying-data
+  - wikipedia-data-visualization
+status: ai-draft
+sources:
+  - title: "Informationsvisualisierung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Informationsvisualisierung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Statistics/Displaying Data"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Statistics/Displaying_Data
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Data and information visualization"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_visualization
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Ein Diagramm ist ein Argument. Ein klares lässt Lesende die Antwort in Sekunden erkennen; ein irreführendes lässt sie etwas glauben, das die Daten nicht sagen. Gute Gewohnheiten zählen mehr als Softwarekenntnisse.
+
+## Von der Frage ausgehen
+
+Wähle das Diagramm nach der Frage, die du beantworten willst:
+
+- Kategorien vergleichen: Balkendiagramm, nach Wert sortiert, lange Namen waagerecht geschrieben.
+- Einen Verlauf über die Zeit zeigen: Liniendiagramm mit der Zeit in Reihenfolge auf der waagerechten Achse.
+- Einen Zusammenhang zwischen zwei Zahlen zeigen: Streudiagramm.
+- Die Verteilung einer Zahlenvariable zeigen: Histogramm oder Boxplot.
+- Anteile am Ganzen zeigen: wenige Teile im Balken oder, bei höchstens einer Handvoll Segmenten, ein Kreisdiagramm. Viele Segmente lassen sich schwer vergleichen.
+
+## Ehrliche Skalen
+
+Das Auge liest die Länge eines Balkens ab seiner Basislinie, daher sollten Balkendiagramme bei null beginnen. Eine gekürzte Achse übertreibt Unterschiede. Liniendiagramme zeigen Veränderung, daher kann eine Basislinie ungleich null vertretbar sein, wenn die Achse deutlich beschriftet ist. Nutze dieselbe Skala, wenn Diagramme verglichen werden sollen.
+
+## Lesbar machen
+
+- Ein Titel, der sagt, was das Diagramm zeigt, am besten die Aussage.
+- Achsenbeschriftungen mit Einheiten; Datenquelle und Datenstand.
+- Direkte Beschriftung statt Legende, wo möglich.
+- Entferne, was keine Information trägt: dicke Gitternetzlinien, 3D-Effekte, Schatten, Dekobilder.
+
+## Farbe
+
+Nutze wenige Farben und gib ihnen Bedeutung. Viele Menschen können Rot und Grün nicht unterscheiden, daher sollte Farbe nie das einzige Signal sein; ergänze Beschriftungen, Formen oder Helligkeitsunterschiede.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundene Daten. Der Monatsumsatz von zwölf Monaten soll gezeigt werden, mit einer interessanten Unterscheidung: online gegenüber Laden. Ein erster Entwurf nutzte ein 3D-Kreisdiagramm mit zwölf Segmenten. Das Analyseteam wechselt zu einem Liniendiagramm mit den Monaten unten und zwei Linien, die an ihren Enden mit „Online“ und „Laden“ beschriftet sind, ergänzt den Titel „Der Online-Umsatz liegt seit Juni über dem Umsatz im Laden“ (erfunden), Einheiten in Euro und die Quelle. Dieselben Daten beantworten die Frage nun auf einen Blick.
+
+## Das Wichtigste in Kürze
+
+- Wähle das Diagramm nach der Frage, nicht danach, was interessant aussieht.
+- Balken beginnen bei null; beschrifte Achsen, Einheiten und Quellen.
+- Entferne Überladung und 3D-Effekte.
+- Lass Farbe nie allein Bedeutung tragen.

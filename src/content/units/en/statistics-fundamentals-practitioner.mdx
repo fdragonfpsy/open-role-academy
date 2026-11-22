@@ -1,0 +1,67 @@
+---
+id: statistics-fundamentals-practitioner
+competency: statistics-fundamentals
+level: practitioner
+title: "Sampling, correlation and confidence intervals"
+objectives:
+  - "Spot sampling bias and explain why a larger biased sample does not help."
+  - "Interpret a correlation without claiming causation."
+  - "Explain a confidence interval and a p-value in correct words."
+  - "State a null and alternative hypothesis for a simple comparison."
+minutes: 30
+resources:
+  - openstax-intro-stats-hypothesis-testing
+  - wikipedia-de-statistischer-test
+  - wikibooks-statistics
+status: ai-draft
+sources:
+  - title: "Introductory Statistics 2e, Chapter 9: Hypothesis Testing with One Sample"
+    author: "Barbara Illowsky, Susan Dean et al. (OpenStax)"
+    url: https://openstax.org/books/introductory-statistics-2e/pages/9-introduction
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+  - title: "Statistischer Test"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Statistischer_Test
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Statistics"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Statistics
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+Analysts are asked "is this difference real?" and "does A cause B?". Sampling, correlation, intervals and tests give disciplined answers, but each has well-known misreadings.
+
+## Sampling and bias
+
+A random sample gives every member of the population a known chance of selection. Selection bias arises when the way people enter the sample is linked to what you measure, for example a survey sent only to people who opened a newsletter. More answers do not repair this; they only make a biased estimate look more precise.
+
+## Correlation is not causation
+
+Correlation measures how closely two variables move together, from -1 to +1. Two variables can be correlated because one causes the other, the other way round, because a third factor drives both (a confounder), or by chance. Ice cream sales and sunburn rise together in summer because of warm weather. Correlation is a reason to look closer, not a conclusion.
+
+## Confidence intervals
+
+A confidence interval is a range around a sample estimate. A 95 percent interval means: if you repeated the sampling and the calculation many times, about 95 percent of the intervals would contain the true value. It does not say that 95 percent of individual values lie inside it. Wider intervals reflect more uncertainty, often from smaller samples or more variable data.
+
+## Hypothesis tests and p-values
+
+A test starts from a null hypothesis, usually "no difference", and an alternative. The p-value is the probability of seeing data at least as extreme as yours if the null hypothesis were true. A small p-value is evidence against the null. It is not the probability that the null is true, and it says nothing about how large or useful the difference is. Report the estimated difference with its interval next to the p-value.
+
+## Worked example
+
+Illustration only; invented data. Version B of a web page converts 5.2 percent of visitors, version A 4.8 percent, with 5,000 visitors each. The null hypothesis is "A and B convert equally". The test gives p = 0.36 and the interval for the difference runs from about minus 0.5 to plus 1.3 percentage points. The analyst reports: "B was higher in this sample, but the data are also consistent with no difference or a small disadvantage; more data are needed." Declaring B the winner would overstate the evidence.
+
+## Key takeaways
+
+- Check how the sample was chosen before interpreting it.
+- Correlation signals a relationship; it does not prove a cause.
+- A confidence interval describes the method's long-run behaviour, not single values.
+- A p-value is not the probability that the hypothesis is true; also report effect size.

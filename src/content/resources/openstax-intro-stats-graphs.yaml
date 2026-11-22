@@ -1,0 +1,14 @@
+id: openstax-intro-stats-graphs
+url: "https://openstax.org/books/introductory-statistics-2e/pages/2-2-histograms-frequency-polygons-and-time-series-graphs"
+title: "Introductory Statistics 2e, 2.2 Histograms, Frequency Polygons, and Time Series Graphs"
+provider: OpenStax
+language: en
+format: book
+minutes: 45
+license: CC-BY-NC-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+licenseVerifiedOn: 2026-11-22
+mode: link
+competencies: [data-visualization-dashboards]
+levels: [foundation, practitioner, advanced]
+note: "Same textbook as openstax-intro-stats-descriptive, which states a CC BY-NC-SA license (NC means link only). Section page HTTP 200 on 2026-11-22."

@@ -1,0 +1,67 @@
+---
+id: statistics-fundamentals-advanced
+competency: statistics-fundamentals
+level: advanced
+title: "Judging evidence: multiple tests, effect size and confounding"
+objectives:
+  - "Explain why many tests produce false positives and how to respond."
+  - "Separate statistical significance from practical relevance."
+  - "Spot confounding and Simpson's paradox and decide how to analyse."
+  - "Report an analysis with effect size, intervals, assumptions and limits."
+minutes: 35
+resources:
+  - openstax-intro-stats-hypothesis-testing
+  - wikipedia-de-statistischer-test
+  - wikibooks-statistics
+status: ai-draft
+sources:
+  - title: "Introductory Statistics 2e, Chapter 9: Hypothesis Testing with One Sample"
+    author: "Barbara Illowsky, Susan Dean et al. (OpenStax)"
+    url: https://openstax.org/books/introductory-statistics-2e/pages/9-introduction
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+  - title: "Statistischer Test"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Statistischer_Test
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Statistics"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Statistics
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+At advanced level the computation is rarely the hard part. The hard part is judging whether a result deserves trust and describing it honestly to people who will act on it.
+
+## Many tests, many chances
+
+Test 20 unrelated metrics at the 5 percent level and you should expect about one to look significant by chance alone. Slicing data by many segments and reporting only the hits has the same effect. Responses: decide the main hypotheses and tests before looking at results; adjust for multiple comparisons where you test many things; treat surprising single hits as hypotheses to confirm on fresh data.
+
+## Significant is not the same as important
+
+With a very large sample, a tiny difference can have a very small p-value. Whether it matters depends on the effect size and on costs and benefits. With a small sample the opposite happens: a large, useful difference can fail to reach significance, and the right message is "uncertain", not "no effect". Plan the sample size before collecting data when you can: it depends on the smallest difference worth detecting and on how variable the data are.
+
+## Confounding and Simpson's paradox
+
+A confounder influences both the cause and the effect you study. Comparing groups that differ in composition can even reverse a result: an option may look better overall yet worse within each subgroup, because the subgroups are mixed in different proportions (Simpson's paradox). Which view answers the question depends on how the groups arose, so use subject knowledge, not a rule. Observational data rarely establish causation; randomised experiments are the strongest tool, and when they are impossible, state the assumptions you make.
+
+## Check the assumptions
+
+Every method has assumptions: independent observations, a suitable shape of the data, no strong outliers. Inspect plots, try a more robust method where assumptions look doubtful, and say what you did.
+
+## Worked example
+
+Illustration only; invented figures. A campaign A reached mostly new customers and campaign B mostly returning ones. Overall, A's order rate is lower than B's. Within new customers A is higher than B, and within returning customers A is also higher. Returning customers order more often anyway, and B reached more of them. The analyst reports the rates by customer group, states that the overall comparison mixes two audiences, and recommends A for the next test with a randomised split. The sample, the customer groups and the open questions are listed in the report.
+
+## Key takeaways
+
+- Decide hypotheses first; treat post-hoc hits as hypotheses.
+- Statistical significance and practical relevance are separate questions.
+- Check for confounders and compare within groups.
+- Report effect size, interval, sample and limits, not only a p-value.

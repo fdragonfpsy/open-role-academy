@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-22 (d) — Data & Analytics content batch 2
+
+**Done**
+- sql-data-querying, statistics-fundamentals, data-visualization-dashboards: 18 units (en+de, `ai-draft`), 36 items, 10 new link-only resources (HTTP 200, verified 2026-11-22). Role stays `draft`. Validator: 0 errors. Also in this run: PR #110 (QA #106 resources), #111 (e2e job in CI, plus several e2e timing fixes for slow runners), #112 (batch 1).
+
+**Reviewer to-dos:** non-Wikipedia resources are Wikibooks/OpenStax only (postgresql.org, w3.org unreachable from here); viz has no German non-Wikipedia source; some German distractors lengthened (slightly padded); check invented A/B-test numbers (5,000 visitors, p = 0.36) and German wording ("Datenverantwortliche").
+
+**Counts:** roles 10 (1 draft) · competencies 98 · units 532 · items 1132 · resources 527
+
+**Next:** Data & Analytics batch 3 (business-intelligence-reporting, analytical-problem-framing-storytelling, data-governance-privacy-analytics), then batch 4, publish, quality pass.
+
 ## 2026-11-22 (c) — Data & Analytics content batch 1
 
 **Done**

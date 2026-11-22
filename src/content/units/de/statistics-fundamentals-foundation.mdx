@@ -1,0 +1,68 @@
+---
+id: statistics-fundamentals-foundation
+competency: statistics-fundamentals
+level: foundation
+title: "Daten beschreiben: Mitte, Streuung und Verteilung"
+objectives:
+  - "Mittelwert, Median und Modus berechnen und zwischen ihnen wählen."
+  - "Streuung mit Spannweite, Interquartilsabstand und Standardabweichung beschreiben."
+  - "Grundgesamtheit und Stichprobe unterscheiden."
+  - "Ein Histogramm lesen und Schiefe sowie Ausreißer erkennen."
+minutes: 25
+resources:
+  - wikipedia-de-deskriptive-statistik
+  - openstax-intro-stats-descriptive
+status: ai-draft
+sources:
+  - title: "Deskriptive Statistik"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Deskriptive_Statistik
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Introductory Statistics 2e, Chapter 2: Descriptive Statistics"
+    author: "Barbara Illowsky, Susan Dean et al. (OpenStax)"
+    url: https://openstax.org/books/introductory-statistics-2e/pages/2-introduction
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Fast jede Analyse beginnt mit dem Beschreiben der Daten: Was ist typisch, wie stark schwanken sie, wie sieht die Form aus? Falsche Zusammenfassungen führen zu falschen Entscheidungen, lange bevor ein fortgeschrittenes Verfahren zum Einsatz kommt.
+
+## Mitte
+
+- Mittelwert: die Summe aller Werte geteilt durch ihre Anzahl.
+- Median: der mittlere Wert der geordneten Daten (bei gerader Anzahl der Durchschnitt der beiden mittleren Werte).
+- Modus: der häufigste Wert.
+
+Der Mittelwert nutzt jeden Wert, daher ziehen wenige Extremwerte ihn mit. Der Median reagiert kaum darauf. Bei schiefen Daten wie Gehältern oder Lieferzeiten beschreibt der Median oft den typischen Fall besser.
+
+## Streuung
+
+- Spannweite: größter minus kleinster Wert; sehr empfindlich gegenüber Extremen.
+- Interquartilsabstand (IQR): die Streuung der mittleren Hälfte der Daten, zwischen erstem und drittem Quartil.
+- Standardabweichung: ein typischer Abstand der Werte vom Mittelwert; sie ist der übliche Begleiter des Mittelwerts.
+
+Zwei Gruppen können denselben Mittelwert und sehr verschiedene Streuung haben, berichte daher immer Mitte und Streuung zusammen.
+
+## Grundgesamtheit und Stichprobe
+
+Die Grundgesamtheit ist die ganze Gruppe, die dich interessiert; eine Stichprobe ist der Teil, den du tatsächlich beobachtest. Kennzahlen einer Stichprobe beschreiben die Stichprobe und schätzen die Grundgesamtheit. Wie die Stichprobe gewählt wurde, entscheidet darüber, ob man der Schätzung trauen kann.
+
+## Form
+
+Ein Histogramm ordnet Werte in Bereiche und zeigt, wie viele in jeden fallen. Achte auf einen oder mehrere Gipfel, Symmetrie und einen langen Ausläufer auf einer Seite (Schiefe). Bei rechtsschiefen Daten ist der Mittelwert meist größer als der Median. Einzelne Werte weit abseits der übrigen sind Ausreißer; untersuche sie, bevor du sie entfernst.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundene Daten. Fünf Lieferzeiten in Tagen: 2, 3, 4, 5, 36. Der Mittelwert ist 10, der Median 4, die Spannweite 34. Die 36 ist wahrscheinlich ein Paket, das verloren ging und wieder auftauchte. „Im Schnitt 10 Tage“ allein wäre irreführend; das Analyseteam berichtet „Median 4 Tage, ein Extremfall mit 36 Tagen“ und klärt die 36 mit der Logistik.
+
+## Das Wichtigste in Kürze
+
+- Berichte Mitte und Streuung gemeinsam.
+- Nutze den Median bei schiefen Daten oder Extremwerten.
+- Eine Stichprobe ist nur so gut wie die Art, wie sie gewählt wurde.
+- Zeichne die Daten, bevor du einer einzelnen Zahl traust.

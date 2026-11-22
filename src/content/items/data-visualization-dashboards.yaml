@@ -1,0 +1,299 @@
+competency: data-visualization-dashboards
+items:
+- id: viz-f-trend
+  level: foundation
+  difficulty: 850
+  type: single
+  stem:
+    en: You want to show how monthly revenue developed over twelve months. Which chart fits best?
+    de: Du willst zeigen, wie sich der Monatsumsatz über zwölf Monate entwickelt hat. Welches Diagramm passt am besten?
+  options:
+  - en: A line chart with the months in order along the horizontal axis
+    de: Ein Liniendiagramm mit den Monaten in Reihenfolge auf der horizontalen Achse
+    correct: true
+  - en: A pie chart with one slice for each month of the year in the data
+    de: Ein Kreisdiagramm mit einem Segment für jeden Monat des Jahres in den Daten
+    correct: false
+  - en: A scatter plot with the months placed in random order on the axis
+    de: Ein Streudiagramm, bei dem die Monate in zufälliger Reihenfolge auf der Achse liegen
+    correct: false
+  - en: A table sorted alphabetically by month name, without any chart at all
+    de: Eine alphabetisch nach Monatsnamen sortierte Tabelle, ganz ohne Diagramm
+    correct: false
+  explanation:
+    en: Time on one axis with connected points makes a trend easy to read. A pie chart shows parts of a whole, not development, and alphabetical or random order destroys the time sequence.
+    de: Zeit auf einer Achse mit verbundenen Punkten macht einen Verlauf gut lesbar. Ein Kreisdiagramm zeigt Anteile eines Ganzen, keine Entwicklung, und alphabetische oder zufällige Reihenfolge zerstört die zeitliche Abfolge.
+  source: https://openstax.org/books/introductory-statistics-2e/pages/2-2-histograms-frequency-polygons-and-time-series-graphs
+- id: viz-f-axis
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: A bar chart's vertical axis starts at 90 instead of 0, and small differences look huge. What is wrong?
+    de: Die vertikale Achse eines Balkendiagramms beginnt bei 90 statt 0, und kleine Unterschiede wirken riesig. Was ist falsch?
+  options:
+  - en: The length of a bar encodes its value, so a cut-off baseline exaggerates differences
+    de: Die Länge eines Balkens kodiert seinen Wert, daher übertreibt eine abgeschnittene Basislinie Unterschiede
+    correct: true
+  - en: Nothing, because every chart should start at the smallest value in the data
+    de: Nichts, denn jedes Diagramm sollte beim kleinsten Wert der Daten beginnen
+    correct: false
+  - en: The bars are too wide, and narrower bars would make the differences look more right
+    de: Die Balken sind zu breit, und schmalere Balken ließen die Unterschiede richtig wirken, ohne dass sich Daten ändern müssen
+    correct: false
+  - en: The chart needs a legend, and the legend would correct the visual impression
+    de: Das Diagramm braucht eine Legende, und die Legende würde den optischen Eindruck korrigieren
+    correct: false
+  explanation:
+    en: For bars the eye compares lengths from the baseline, so the baseline should be zero. A cut axis can be acceptable on a line chart if it is clearly marked.
+    de: Bei Balken vergleicht das Auge Längen ab der Basislinie, daher sollte sie bei null liegen. Eine gekürzte Achse kann bei einem Liniendiagramm vertretbar sein, wenn sie deutlich gekennzeichnet ist.
+  source: https://en.wikibooks.org/wiki/Statistics/Displaying_Data
+- id: viz-f-elements
+  level: foundation
+  difficulty: 1000
+  type: multi
+  stem:
+    en: Which elements help to make a chart clear? Select all that apply.
+    de: Welche Elemente tragen dazu bei, ein Diagramm klar zu machen? Wähle alle zutreffenden aus.
+  options:
+  - en: A title that says what the chart shows
+    de: Ein Titel, der sagt, was das Diagramm zeigt
+    correct: true
+  - en: Axis labels with units, for example euros or percent
+    de: Achsenbeschriftungen mit Einheiten, zum Beispiel Euro oder Prozent
+    correct: true
+  - en: A note with the data source and the date of the data
+    de: Ein Hinweis mit Datenquelle und Datenstand
+    correct: true
+  - en: Three-dimensional effects that add depth to the bars
+    de: Dreidimensionale Effekte, die den Balken Tiefe geben
+    correct: false
+  - en: As many bright colours as possible to keep attention
+    de: So viele leuchtende Farben wie möglich, um Aufmerksamkeit zu halten
+    correct: false
+  explanation:
+    en: Titles, labelled units and sources let readers understand and trust a chart. 3D effects and decorative colours distort values and distract.
+    de: Titel, beschriftete Einheiten und Quellen lassen Lesende ein Diagramm verstehen und ihm vertrauen. 3D-Effekte und dekorative Farben verzerren Werte und lenken ab.
+  source: https://en.wikipedia.org/wiki/Data_visualization
+- id: viz-f-compare
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: You compare sales of 12 product categories. Which choice reads best?
+    de: Du vergleichst den Umsatz von 12 Produktkategorien. Welche Wahl lässt sich am besten lesen?
+  options:
+  - en: A horizontal bar chart sorted by value, with the category names written out
+    de: Ein waagerechtes Balkendiagramm, nach Wert sortiert, mit ausgeschriebenen Kategorienamen
+    correct: true
+  - en: A pie chart with twelve slices in different colours and a separate legend
+    de: Ein Kreisdiagramm mit zwölf Segmenten in verschiedenen Farben und mit einer getrennten Legende daneben
+    correct: false
+  - en: A stacked area chart in which every category is layered on top of the others
+    de: Ein gestapeltes Flächendiagramm, in dem jede Kategorie auf die anderen geschichtet ist
+    correct: false
+  - en: A radar chart with one axis per category, joined by a line around the centre
+    de: Ein Netzdiagramm mit einer Achse je Kategorie, durch eine Linie um die Mitte verbunden
+    correct: false
+  explanation:
+    en: Sorted bars let the eye compare lengths on a common baseline and read names without a legend. Twelve slices are hard to compare, and area or radar charts hide exact values.
+    de: Sortierte Balken lassen das Auge Längen auf einer gemeinsamen Basislinie vergleichen und Namen ohne Legende lesen. Zwölf Segmente lassen sich schwer vergleichen, und Flächen- oder Netzdiagramme verbergen genaue Werte.
+  source: https://en.wikibooks.org/wiki/Statistics/Displaying_Data
+- id: viz-p-color
+  level: practitioner
+  difficulty: 1150
+  type: multi
+  stem:
+    en: Which practices help people with colour-vision deficiency read a chart? Select all that apply.
+    de: Welche Vorgehensweisen helfen Menschen mit Farbfehlsichtigkeit, ein Diagramm zu lesen? Wähle alle zutreffenden aus.
+  options:
+  - en: Using differences in lightness, patterns or shapes, not hue alone
+    de: Unterschiede in Helligkeit, Mustern oder Formen nutzen, nicht nur den Farbton
+    correct: true
+  - en: Labelling lines or bars directly, so a legend lookup is not needed
+    de: Linien oder Balken direkt beschriften, damit ein Blick in die Legende nicht nötig ist
+    correct: true
+  - en: Checking the colour contrast against the background of the page
+    de: Den Farbkontrast gegenüber dem Seitenhintergrund prüfen
+    correct: true
+  - en: Showing good and bad only as green and red, with nothing else
+    de: Gut und schlecht nur als Grün und Rot zeigen, ohne weitere Kennzeichen
+    correct: false
+  - en: Adding more colours, so that each series is easier to tell apart
+    de: Mehr Farben ergänzen, damit sich jede Reihe leichter unterscheiden lässt
+    correct: false
+  explanation:
+    en: Colour should never be the only carrier of meaning. Red and green are hard to tell apart for many people, and more colours make that worse.
+    de: Farbe sollte nie der einzige Bedeutungsträger sein. Rot und Grün sind für viele Menschen schwer zu unterscheiden, und mehr Farben verschlimmern das.
+  source: https://en.wikipedia.org/wiki/Data_visualization
+- id: viz-p-dual
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: A chart plots two lines on separate vertical axes and the lines cross. What is the main risk?
+    de: Ein Diagramm zeigt zwei Linien auf getrennten vertikalen Achsen, und die Linien kreuzen sich. Was ist das Hauptrisiko?
+  options:
+  - en: The crossing depends on the chosen scales and can suggest a link that is not there
+    de: Die Kreuzung hängt von den gewählten Skalen ab und kann einen Zusammenhang vortäuschen, den es nicht gibt
+    correct: true
+  - en: Two lines always cancel each other out, so readers see no information at all in them
+    de: Zwei Linien heben sich immer gegenseitig auf, daher sehen Lesende gar keine Information mehr in dem Diagramm
+    correct: false
+  - en: Line charts cannot show more than one series, so the second line is ignored
+    de: Liniendiagramme können nicht mehr als eine Reihe zeigen, daher wird die zweite Linie ignoriert
+    correct: false
+  - en: Crossing lines are only a risk when both of them are drawn in the same colour
+    de: Sich kreuzende Linien sind nur dann ein Risiko, wenn beide in derselben Farbe gezeichnet sind und sich nicht trennen lassen
+    correct: false
+  explanation:
+    en: With two independent scales the designer can make lines cross or run parallel at will. Prefer separate panels or indexed values when you must compare series with different units.
+    de: Bei zwei unabhängigen Skalen kann man Linien nach Belieben kreuzen oder parallel laufen lassen. Nutze besser getrennte Felder oder Indexwerte, wenn du Reihen mit verschiedenen Einheiten vergleichen musst.
+  source: https://en.wikipedia.org/wiki/Data_visualization
+- id: viz-p-layout
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: Sales managers mainly ask, "Are we on target this month?" Which dashboard layout serves them best?
+    de: 'Vertriebsleitungen fragen vor allem: „Liegen wir diesen Monat im Plan?“ Welches Dashboard-Layout dient ihnen am besten?'
+  options:
+  - en: Current value against target at the top left, with the trend and breakdowns below it
+    de: Aktueller Wert gegen Ziel oben links, darunter der Verlauf und die Aufschlüsselungen
+    correct: true
+  - en: Twenty equally sized charts in a grid, so that every available metric is visible
+    de: Zwanzig gleich große Diagramme in einem Raster, damit jede verfügbare Kennzahl sichtbar ist
+    correct: false
+  - en: One large table of all transactions, which the managers can sort and filter freely
+    de: Eine große Tabelle aller Transaktionen, die die Leitungen frei sortieren und filtern können
+    correct: false
+  - en: A decorative map of all sales offices in the middle, with the target in a footnote
+    de: Eine dekorative Karte aller Vertriebsbüros in der Mitte, mit dem Ziel in einer Fußnote
+    correct: false
+  explanation:
+    en: A dashboard should answer the main question at first glance and place details after it. Equal weight for everything and raw tables force users to search for the answer.
+    de: Ein Dashboard sollte die Hauptfrage auf den ersten Blick beantworten und Details danach anordnen. Gleiches Gewicht für alles und rohe Tabellen zwingen Nutzende, die Antwort zu suchen.
+  source: https://en.wikipedia.org/wiki/Data_visualization
+- id: viz-p-scale
+  level: practitioner
+  difficulty: 1350
+  type: single
+  stem:
+    en: Six regional line charts each have their own vertical scale, and the viewers will compare regions. What should you do?
+    de: Sechs regionale Liniendiagramme haben jeweils eine eigene vertikale Skala, und die Betrachtenden vergleichen Regionen. Was solltest du tun?
+  options:
+  - en: Use the same scale in all panels, or state clearly where the scales differ
+    de: In allen Feldern dieselbe Skala verwenden oder klar angeben, wo sich die Skalen unterscheiden
+    correct: true
+  - en: Keep separate scales, because every chart should fill its panel as much as possible
+    de: Getrennte Skalen beibehalten, weil jedes Diagramm sein Feld möglichst ausfüllen sollte
+    correct: false
+  - en: Remove the scales entirely, so that readers focus on the shape of each line only
+    de: Die Skalen ganz entfernen, damit sich Lesende nur auf die Form jeder Linie konzentrieren
+    correct: false
+  - en: Switch to pie charts, since pie charts never need a scale for any comparison
+    de: Auf Kreisdiagramme wechseln, da Kreisdiagramme für keinen Vergleich eine Skala brauchen
+    correct: false
+  explanation:
+    en: Small multiples are only comparable with a shared scale. Free scales are fine to show each shape, but then the difference must be visible to readers.
+    de: Kleine Vielfache sind nur mit gemeinsamer Skala vergleichbar. Freie Skalen sind für die jeweilige Form in Ordnung, aber dann muss der Unterschied für Lesende erkennbar sein.
+  source: https://en.wikibooks.org/wiki/Statistics/Displaying_Data
+- id: viz-a-def
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: Two dashboards show different numbers of "active customers". What is the most durable fix?
+    de: Zwei Dashboards zeigen unterschiedliche Zahlen für „aktive Kundschaft“. Was ist die dauerhafteste Lösung?
+  options:
+  - en: Agree on one documented definition, keep it in a shared layer and show it on each dashboard
+    de: Eine dokumentierte Definition vereinbaren, sie in einer gemeinsamen Schicht pflegen und auf jedem Dashboard anzeigen
+    correct: true
+  - en: Tell users to trust the dashboard that was built first, since it was the original one and is older
+    de: Den Nutzenden sagen, sie sollen dem zuerst gebauten Dashboard vertrauen, da es das ursprüngliche und damit das älteste Dashboard war
+    correct: false
+  - en: Show the average of both numbers, which removes the difference between the two
+    de: Den Durchschnitt beider Zahlen anzeigen, was den Unterschied zwischen beiden beseitigt
+    correct: false
+  - en: Hide the metric from the dashboards until somebody asks again about the numbers
+    de: Die Kennzahl aus den Dashboards ausblenden, bis jemand wieder nach den Zahlen fragt
+    correct: false
+  explanation:
+    en: Different definitions, not different data, are a typical cause. One owned, documented definition used by every dashboard removes the conflict at its root.
+    de: Unterschiedliche Definitionen, nicht unterschiedliche Daten, sind eine typische Ursache. Eine verantwortete, dokumentierte Definition für alle Dashboards beseitigt den Konflikt an der Wurzel.
+  source: https://en.wikipedia.org/wiki/Data_visualization
+- id: viz-a-scope
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: A stakeholder asks you to add 15 more filters and KPIs to a dashboard. What is the best response?
+    de: Eine Führungskraft bittet dich, einem Dashboard 15 weitere Filter und Kennzahlen hinzuzufügen. Was ist die beste Reaktion?
+  options:
+  - en: Ask which decisions they need to make, add what supports them and put the rest into drill-downs
+    de: Fragen, welche Entscheidungen sie treffen muss, ergänzen, was sie stützt, und den Rest in Detailansichten legen
+    correct: true
+  - en: Add everything that was asked for, because a dashboard should never turn a request down
+    de: Alles Gewünschte ergänzen, weil ein Dashboard nie eine Anfrage ablehnen sollte
+    correct: false
+  - en: Refuse any change, because a finished dashboard must stay exactly the same for all its users
+    de: Jede Änderung ablehnen, weil ein fertiges Dashboard für alle Nutzenden unverändert gleich bleiben muss, solange es genutzt wird
+    correct: false
+  - en: Add the items on a hidden second page, so that nobody can find them by accident
+    de: Die Punkte auf einer versteckten zweiten Seite ergänzen, damit sie niemand zufällig findet
+    correct: false
+  explanation:
+    en: A dashboard serves decisions. Starting from the decision keeps it focused, and drill-downs preserve access to detail without overloading the main view.
+    de: Ein Dashboard dient Entscheidungen. Der Ausgang von der Entscheidung hält es fokussiert, und Detailansichten erhalten den Zugriff auf Einzelheiten, ohne die Hauptansicht zu überladen.
+  source: https://en.wikipedia.org/wiki/Data_visualization
+- id: viz-a-test
+  level: advanced
+  difficulty: 1550
+  type: multi
+  stem:
+    en: How do you check that a dashboard works? Select all that apply.
+    de: Wie prüfst du, ob ein Dashboard funktioniert? Wähle alle zutreffenden aus.
+  options:
+  - en: Watch real users try to answer their typical questions with it
+    de: Echten Nutzenden zusehen, wie sie damit ihre typischen Fragen beantworten
+    correct: true
+  - en: Reconcile the displayed numbers with source reports or the database
+    de: Die angezeigten Zahlen mit Quellberichten oder der Datenbank abgleichen
+    correct: true
+  - en: Test keyboard use, contrast and readability of the labels
+    de: Tastaturbedienung, Kontrast und Lesbarkeit der Beschriftungen testen
+    correct: true
+  - en: Count the charts, since more charts mean a more useful dashboard
+    de: Die Diagramme zählen, denn mehr Diagramme bedeuten ein nützlicheres Dashboard
+    correct: false
+  - en: Check that the colours match the brand, since brand colours settle it
+    de: Prüfen, ob die Farben zur Marke passen, denn Markenfarben entscheiden darüber
+    correct: false
+  explanation:
+    en: Usefulness, correctness and accessibility are tested with users, source checks and accessibility tests. Chart count and brand colours say little about whether people can answer their questions.
+    de: Nützlichkeit, Richtigkeit und Barrierefreiheit prüft man mit Nutzenden, Quellabgleichen und Barrierefreiheitstests. Diagrammzahl und Markenfarben sagen wenig darüber, ob Menschen ihre Fragen beantworten können.
+  source: https://de.wikipedia.org/wiki/Informationsvisualisierung
+- id: viz-a-trunc
+  level: advanced
+  difficulty: 1650
+  type: single
+  stem:
+    en: A line chart shows a daily conversion rate between 2.1 and 2.4 percent. Starting the axis at 0 makes the line look flat. What is the best judgement?
+    de: Ein Liniendiagramm zeigt eine tägliche Konversionsrate zwischen 2,1 und 2,4 Prozent. Beginnt die Achse bei 0, wirkt die Linie flach. Was ist die beste Abwägung?
+  options:
+  - en: A non-zero baseline can be fine for a line, if the axis is labelled and the change stays in context
+    de: Eine Basislinie ungleich null kann bei einer Linie in Ordnung sein, wenn die Achse beschriftet und die Änderung eingeordnet ist
+    correct: true
+  - en: Every axis must start at zero without exception, so the line must remain flat
+    de: Jede Achse muss ausnahmslos und in jedem Diagrammtyp bei null beginnen, daher muss die Linie flach bleiben
+    correct: false
+  - en: Cut the axis and leave out its labels, because a clean look matters more than scales do
+    de: Die Achse kürzen und ihre Beschriftung weglassen, weil ein sauberes Aussehen wichtiger als Skalen und Zahlen für alle Lesenden ist
+    correct: false
+  - en: Switch to a bar chart with a cut axis, since bars make small changes easier to see
+    de: Zu einem Balkendiagramm mit gekürzter Achse wechseln, da Balken kleine Änderungen leichter sichtbar machen
+    correct: false
+  explanation:
+    en: Lines show change, so a zoomed axis can be honest if it is visible and not oversold. Bars encode length from zero, so a cut bar axis misleads.
+    de: Linien zeigen Veränderung, daher kann eine gezoomte Achse ehrlich sein, wenn sie sichtbar ist und nicht überhöht wird. Balken kodieren Länge ab null, daher führt eine gekürzte Balkenachse in die Irre.
+  source: https://en.wikibooks.org/wiki/Statistics/Displaying_Data

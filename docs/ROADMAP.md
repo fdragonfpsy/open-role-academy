@@ -143,7 +143,7 @@ One role per task, in the order of CLAUDE.md §4.3. Each task = framework + cont
 - [ ] Data & Analytics (framework + content; publish the role when all content is done; EU/Germany context, label it; no proprietary framework text)
   - [x] framework (role + 10 competencies, `status: draft`)
   - [x] content: data-analytics-fundamentals, data-sourcing-collection, data-quality-cleaning
-  - [ ] content: sql-data-querying, statistics-fundamentals, data-visualization-dashboards
+  - [x] content: sql-data-querying, statistics-fundamentals, data-visualization-dashboards
   - [ ] content: business-intelligence-reporting, analytical-problem-framing-storytelling, data-governance-privacy-analytics
   - [ ] content: machine-learning-basics-ai-analytics; then `status: published` and quality pass
 - [ ] Software Development

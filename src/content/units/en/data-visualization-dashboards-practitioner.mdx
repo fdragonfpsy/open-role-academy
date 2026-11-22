@@ -1,0 +1,78 @@
+---
+id: data-visualization-dashboards-practitioner
+competency: data-visualization-dashboards
+level: practitioner
+title: "Accessible charts and dashboards for a purpose"
+objectives:
+  - "Design charts that work for colour-blind readers and with enough contrast."
+  - "Avoid dual-axis and other charts that suggest links that are not there."
+  - "Lay out a dashboard around the main question of its audience."
+  - "Use small multiples with shared scales for comparison."
+minutes: 30
+resources:
+  - wikipedia-data-visualization
+  - wikibooks-statistics-displaying-data
+  - wikipedia-de-informationsvisualisierung
+status: ai-draft
+sources:
+  - title: "Data and information visualization"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_visualization
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Statistics/Displaying Data"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Statistics/Displaying_Data
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Informationsvisualisierung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Informationsvisualisierung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+A dashboard is used by people with a goal, often in a hurry. If it does not answer their question quickly, or some readers cannot use it, it fails however correct the numbers are.
+
+## Accessibility basics
+
+- Do not rely on colour alone: add direct labels, patterns, shapes or different lightness.
+- Keep sufficient contrast between text, marks and background.
+- Provide a text summary or alternative text with the main finding, and a data table for readers who use assistive technology.
+- Keep text large enough and avoid long rotated labels.
+- Check keyboard use for interactive filters.
+
+## Charts that suggest too much
+
+- Dual-axis charts: with two independent scales the designer can make lines cross or run parallel at will, which can suggest a relation. Prefer two panels one above the other, or indexed values (start = 100).
+- Truncated bar axes exaggerate differences.
+- Area and bubble sizes are hard to compare precisely; use them only when approximate size is enough.
+- Too many categories: group small ones into "Other" and say so.
+
+## Small multiples and shared scales
+
+Small multiples repeat the same chart for each group, such as one line per region. They are comparable only if all panels use the same scale. If free scales are needed to show each shape, mark that clearly.
+
+## Dashboards: design around a question
+
+1. Write down who uses it and which question they ask most often, for example "Are we on target this month?".
+2. Put the answer at the top left: the key figure against its target, with a clear status.
+3. Place trends and breakdowns below, ordered from overview to detail.
+4. Add filters only where they help the question, and show which filters are active.
+5. Show the data date and the definition of important measures.
+
+## Worked example
+
+Illustration only; invented data. A sales dashboard first showed twenty equal charts. The team lead asks "Are we on target?" and cannot find the answer. The analyst redesigns it: a large tile "Revenue this month against target" with a text status, a line chart of the monthly trend next to it, and a sorted bar chart of revenue by region below. Region colours are replaced with direct labels, and the page gets a one-sentence summary at the top.
+
+## Key takeaways
+
+- Do not let colour carry meaning alone; check contrast and offer text alternatives.
+- Dual axes and cut axes can mislead; prefer honest alternatives.
+- Compare small multiples only on a shared scale.
+- Build a dashboard around the audience's main question and put the answer first.
