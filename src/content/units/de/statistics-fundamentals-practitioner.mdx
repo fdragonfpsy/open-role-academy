@@ -1,0 +1,67 @@
+---
+id: statistics-fundamentals-practitioner
+competency: statistics-fundamentals
+level: practitioner
+title: "Stichproben, Korrelation und Konfidenzintervalle"
+objectives:
+  - "Stichprobenverzerrung erkennen und erklären, warum eine größere verzerrte Stichprobe nicht hilft."
+  - "Eine Korrelation deuten, ohne Kausalität zu behaupten."
+  - "Ein Konfidenzintervall und einen p-Wert mit korrekten Worten erklären."
+  - "Nullhypothese und Alternativhypothese für einen einfachen Vergleich formulieren."
+minutes: 30
+resources:
+  - wikipedia-de-statistischer-test
+  - openstax-intro-stats-hypothesis-testing
+  - wikibooks-statistics
+status: ai-draft
+sources:
+  - title: "Statistischer Test"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Statistischer_Test
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Introductory Statistics 2e, Chapter 9: Hypothesis Testing with One Sample"
+    author: "Barbara Illowsky, Susan Dean et al. (OpenStax)"
+    url: https://openstax.org/books/introductory-statistics-2e/pages/9-introduction
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+  - title: "Statistics"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Statistics
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Analysierende werden gefragt: „Ist dieser Unterschied echt?“ und „Verursacht A das B?“. Stichproben, Korrelation, Intervalle und Tests liefern diszipliniert Antworten, doch jedes dieser Werkzeuge wird oft falsch gedeutet.
+
+## Stichproben und Verzerrung
+
+Eine Zufallsstichprobe gibt jedem Mitglied der Grundgesamtheit eine bekannte Auswahlchance. Auswahlverzerrung entsteht, wenn der Weg in die Stichprobe mit dem zusammenhängt, was du misst, etwa bei einer Umfrage nur an Personen, die einen Newsletter geöffnet haben. Mehr Antworten beheben das nicht; sie lassen eine verzerrte Schätzung nur genauer aussehen.
+
+## Korrelation ist nicht Kausalität
+
+Die Korrelation misst, wie eng zwei Variablen sich gemeinsam bewegen, von -1 bis +1. Zwei Variablen können korreliert sein, weil eine die andere verursacht, umgekehrt, weil ein dritter Faktor beide antreibt (Störfaktor) oder zufällig. Eisverkäufe und Sonnenbrand steigen im Sommer gemeinsam wegen des warmen Wetters. Eine Korrelation ist ein Anlass, genauer hinzusehen, kein Ergebnis.
+
+## Konfidenzintervalle
+
+Ein Konfidenzintervall ist ein Bereich um eine Stichprobenschätzung. Ein 95-Prozent-Intervall bedeutet: Würdest du Stichprobe und Berechnung oft wiederholen, enthielten etwa 95 Prozent der Intervalle den wahren Wert. Es sagt nicht, dass 95 Prozent der Einzelwerte darin liegen. Breitere Intervalle spiegeln mehr Unsicherheit, oft durch kleinere Stichproben oder stärker schwankende Daten.
+
+## Hypothesentests und p-Werte
+
+Ein Test geht von einer Nullhypothese aus, meist „kein Unterschied“, und einer Alternativhypothese. Der p-Wert ist die Wahrscheinlichkeit, Daten mindestens so extrem wie deine zu sehen, wenn die Nullhypothese stimmte. Ein kleiner p-Wert spricht gegen die Nullhypothese. Er ist nicht die Wahrscheinlichkeit, dass sie stimmt, und sagt nichts darüber, wie groß oder nützlich der Unterschied ist. Berichte den geschätzten Unterschied mit seinem Intervall neben dem p-Wert.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundene Daten. Version B einer Webseite konvertiert 5,2 Prozent der Besuchenden, Version A 4,8 Prozent, mit je 5.000 Besuchen. Die Nullhypothese lautet „A und B konvertieren gleich“. Der Test ergibt p = 0,36, und das Intervall für den Unterschied reicht von etwa minus 0,5 bis plus 1,3 Prozentpunkten. Das Analyseteam berichtet: „B war in dieser Stichprobe höher, die Daten passen aber auch zu keinem Unterschied oder einem kleinen Nachteil; es braucht mehr Daten.“ B zum Sieger zu erklären würde die Belege überbewerten.
+
+## Das Wichtigste in Kürze
+
+- Prüfe, wie die Stichprobe gewählt wurde, bevor du sie deutest.
+- Korrelation deutet auf einen Zusammenhang hin; sie beweist keine Ursache.
+- Ein Konfidenzintervall beschreibt das Langzeitverhalten des Verfahrens, nicht Einzelwerte.
+- Ein p-Wert ist nicht die Wahrscheinlichkeit, dass die Hypothese stimmt; berichte auch die Effektgröße.

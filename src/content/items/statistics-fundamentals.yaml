@@ -1,0 +1,299 @@
+competency: statistics-fundamentals
+items:
+- id: stat-f-center
+  level: foundation
+  difficulty: 850
+  type: single
+  stem:
+    en: Five delivery times in days are 2, 3, 4, 5 and 36. Which measure describes a typical delivery best?
+    de: Fünf Lieferzeiten in Tagen sind 2, 3, 4, 5 und 36. Welches Maß beschreibt eine typische Lieferung am besten?
+  options:
+  - en: The median of 4 days, because the single large value does not pull it up
+    de: Der Median von 4 Tagen, weil der einzelne große Wert ihn nicht nach oben zieht
+    correct: true
+  - en: The mean of 10 days, because it uses every single value with the same weight
+    de: Der Mittelwert von 10 Tagen, weil er jeden Wert mit gleichem Gewicht verwendet
+    correct: false
+  - en: The range of 34 days, because it shows how far the values are apart
+    de: Die Spannweite von 34 Tagen, weil sie zeigt, wie weit die Werte auseinanderliegen
+    correct: false
+  - en: The maximum of 36 days, because it covers every delivery that occurred
+    de: Das Maximum von 36 Tagen, weil es jede vorgekommene Lieferung abdeckt
+    correct: false
+  explanation:
+    en: A very large value drags the mean upward, while the median stays in the middle of the ordered values. The range and the maximum describe extremes, not a typical case.
+    de: Ein sehr großer Wert zieht den Mittelwert nach oben, während der Median in der Mitte der geordneten Werte bleibt. Spannweite und Maximum beschreiben Extreme, keinen typischen Fall.
+  source: https://de.wikipedia.org/wiki/Deskriptive_Statistik
+- id: stat-f-spread
+  level: foundation
+  difficulty: 900
+  type: multi
+  stem:
+    en: Which of these describe the spread of data? Select all that apply.
+    de: Welche davon beschreiben die Streuung von Daten? Wähle alle zutreffenden aus.
+  options:
+  - en: Range
+    de: Spannweite
+    correct: true
+  - en: Standard deviation
+    de: Standardabweichung
+    correct: true
+  - en: Interquartile range
+    de: Interquartilsabstand
+    correct: true
+  - en: Mean
+    de: Mittelwert
+    correct: false
+  - en: Median
+    de: Median
+    correct: false
+  explanation:
+    en: Range, standard deviation and interquartile range say how far values are spread. Mean and median describe the centre.
+    de: Spannweite, Standardabweichung und Interquartilsabstand sagen, wie weit Werte streuen. Mittelwert und Median beschreiben die Mitte.
+  source: https://openstax.org/books/introductory-statistics-2e/pages/2-introduction
+- id: stat-f-sample
+  level: foundation
+  difficulty: 1000
+  type: single
+  stem:
+    en: A survey asks 200 of 5,000 employees about home office. What are the 200 and the 5,000?
+    de: Eine Umfrage fragt 200 von 5.000 Beschäftigten zum Homeoffice. Was sind die 200 und die 5.000?
+  options:
+  - en: The 200 are a sample, and the 5,000 are the population the result should describe
+    de: Die 200 sind eine Stichprobe, und die 5.000 sind die Grundgesamtheit, die das Ergebnis beschreiben soll
+    correct: true
+  - en: The 200 are the population, because they are the people who actually answered the questions
+    de: Die 200 sind die Grundgesamtheit, weil sie die Personen sind, die tatsächlich geantwortet haben, und mehr gibt es nicht
+    correct: false
+  - en: Both numbers are samples, because no survey ever reaches the whole company
+    de: Beide Zahlen sind Stichproben, weil keine Umfrage jemals das ganze Unternehmen erreicht
+    correct: false
+  - en: The 5,000 are a sample of the 200, since a larger number can contain a smaller
+    de: Die 5.000 sind eine Stichprobe der 200, da eine größere Zahl eine kleinere enthalten kann
+    correct: false
+  explanation:
+    en: The population is the whole group of interest; a sample is the part that is actually observed and used to draw conclusions about the population.
+    de: Die Grundgesamtheit ist die ganze interessierende Gruppe; eine Stichprobe ist der tatsächlich beobachtete Teil, mit dem man Schlüsse auf die Grundgesamtheit zieht.
+  source: https://openstax.org/books/introductory-statistics-2e/pages/1-introduction
+- id: stat-f-skew
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: A histogram of salaries has a long tail to the right. How do mean and median usually relate?
+    de: Ein Histogramm von Gehältern hat einen langen Ausläufer nach rechts. Wie verhalten sich Mittelwert und Median üblicherweise?
+  options:
+  - en: The mean is larger than the median, because the tail pulls the mean upward
+    de: Der Mittelwert ist größer als der Median, weil der Ausläufer den Mittelwert nach oben zieht
+    correct: true
+  - en: The mean is smaller than the median, because the tail lowers every average
+    de: Der Mittelwert ist kleiner als der Median, weil der Ausläufer jeden Durchschnitt senkt
+    correct: false
+  - en: The mean and the median are always equal, whatever the shape of the data is
+    de: Mittelwert und Median sind immer gleich, egal wie die Daten verteilt sind
+    correct: false
+  - en: The median cannot be calculated for data with a tail, so only the mean is left
+    de: Der Median lässt sich bei Daten mit Ausläufer nicht berechnen, also bleibt nur der Mittelwert
+    correct: false
+  explanation:
+    en: In a right-skewed distribution a few large values raise the mean above the median. The median can always be calculated and is the more robust centre here.
+    de: Bei einer rechtsschiefen Verteilung heben einige große Werte den Mittelwert über den Median. Der Median ist immer berechenbar und hier die robustere Mitte.
+  source: https://openstax.org/books/introductory-statistics-2e/pages/2-introduction
+- id: stat-p-bias
+  level: practitioner
+  difficulty: 1150
+  type: single
+  stem:
+    en: A satisfaction survey is sent only to customers who opened the last newsletter. Why is this a problem?
+    de: Eine Zufriedenheitsumfrage geht nur an Kundschaft, die den letzten Newsletter geöffnet hat. Warum ist das ein Problem?
+  options:
+  - en: These customers may differ from all customers, and more answers do not remove that bias
+    de: Diese Kundschaft kann sich von allen Kunden unterscheiden, und mehr Antworten beseitigen diese Verzerrung nicht
+    correct: true
+  - en: The survey is valid, as long as a large number of people sent in an answer to it
+    de: Die Umfrage ist gültig, solange sich eine große Zahl von Personen mit einer Antwort beteiligt hat
+    correct: false
+  - en: Newsletter readers are a random sample, because nobody chose them on purpose
+    de: Newsletter-Lesende sind eine Zufallsstichprobe, weil sie niemand von uns gezielt ausgewählt hat und es viele sind
+    correct: false
+  - en: The only problem arises if fewer than thirty people take part in the survey
+    de: Ein Problem entsteht nur, wenn weniger als dreißig Personen an der Umfrage teilnehmen
+    correct: false
+  explanation:
+    en: Selection bias arises when the way people get into the sample is related to the answer. A bigger biased sample is still biased.
+    de: Auswahlverzerrung entsteht, wenn der Weg in die Stichprobe mit der Antwort zusammenhängt. Eine größere verzerrte Stichprobe bleibt verzerrt.
+  source: https://openstax.org/books/introductory-statistics-2e/pages/1-introduction
+- id: stat-p-corr
+  level: practitioner
+  difficulty: 1250
+  type: single
+  stem:
+    en: Across months, ice cream sales and sunburn cases rise and fall together. What can you conclude?
+    de: Über die Monate steigen und fallen Eisverkäufe und Sonnenbrandfälle gemeinsam. Was kannst du daraus schließen?
+  options:
+  - en: They are correlated; a third factor such as warm weather may drive both
+    de: Sie sind korreliert; ein dritter Faktor wie warmes Wetter könnte beide antreiben
+    correct: true
+  - en: Ice cream causes sunburn, because the two always move up and down together
+    de: Eis verursacht Sonnenbrand, weil sich beide immer gemeinsam auf und ab bewegen
+    correct: false
+  - en: Sunburn causes ice cream sales, because the cases are recorded before the sales
+    de: Sonnenbrand verursacht Eisverkäufe, weil die Fälle vor den Verkäufen erfasst werden
+    correct: false
+  - en: Nothing at all, because a correlation can never tell us anything about data
+    de: Gar nichts, weil eine Korrelation nie etwas über Daten aussagen kann
+    correct: false
+  explanation:
+    en: Correlation shows that values move together, not why. A confounder, here the weather, can explain both. Correlation is still useful as a signal worth investigating.
+    de: Korrelation zeigt, dass sich Werte gemeinsam bewegen, nicht warum. Ein Störfaktor, hier das Wetter, kann beides erklären. Korrelation ist dennoch ein nützliches Signal, dem man nachgehen kann.
+  source: https://en.wikibooks.org/wiki/Statistics
+- id: stat-p-ci
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: A sample gives a 95 percent confidence interval of 48 to 56 euros for the mean order value. Which reading is correct?
+    de: Eine Stichprobe ergibt ein 95-Prozent-Konfidenzintervall von 48 bis 56 Euro für den mittleren Bestellwert. Welche Deutung stimmt?
+  options:
+  - en: The method gives intervals that contain the true mean in about 95 percent of repeated samples
+    de: Das Verfahren liefert Intervalle, die den wahren Mittelwert in etwa 95 Prozent wiederholter Stichproben enthalten
+    correct: true
+  - en: About 95 percent of all single orders lie between 48 and 56 euros in this data set
+    de: Etwa 95 Prozent aller einzelnen Bestellungen liegen in diesem Datensatz zwischen 48 und 56 Euro
+    correct: false
+  - en: The sample mean lies in this interval with a probability of 95 percent for sure, always
+    de: Der Stichprobenmittelwert liegt mit einer Wahrscheinlichkeit von 95 Prozent sicher in diesem Intervall
+    correct: false
+  - en: The interval proves that the true mean is at least 48 euros in every possible case
+    de: Das Intervall beweist, dass der wahre Mittelwert in jedem denkbaren Fall mindestens 48 Euro beträgt
+    correct: false
+  explanation:
+    en: A confidence interval describes the long-run behaviour of the method for estimating a parameter. It is not a range for single values, and it is not a proof.
+    de: Ein Konfidenzintervall beschreibt das Langzeitverhalten des Schätzverfahrens für einen Parameter. Es ist kein Bereich für Einzelwerte und kein Beweis.
+  source: https://openstax.org/books/introductory-statistics-2e/pages/9-introduction
+- id: stat-p-pvalue
+  level: practitioner
+  difficulty: 1350
+  type: multi
+  stem:
+    en: An A/B test gives p = 0.03. Which statements are correct? Select all that apply.
+    de: Ein A/B-Test ergibt p = 0,03. Welche Aussagen sind richtig? Wähle alle zutreffenden aus.
+  options:
+  - en: If there were no real difference, data this extreme would occur in about 3 of 100 repeats
+    de: Gäbe es keinen echten Unterschied, träten so extreme Daten in etwa 3 von 100 Wiederholungen auf
+    correct: true
+  - en: A small p-value alone says nothing about how large or important the difference is
+    de: Ein kleiner p-Wert allein sagt nichts darüber, wie groß oder wichtig der Unterschied ist
+    correct: true
+  - en: The effect size and an interval should be reported next to the p-value itself
+    de: Neben dem p-Wert sollten auch die Effektgröße und ein Intervall berichtet werden
+    correct: true
+  - en: There is a 3 percent probability that the null hypothesis of no difference is true
+    de: Mit 3 Prozent Wahrscheinlichkeit ist die Nullhypothese eines fehlenden Unterschieds wahr
+    correct: false
+  - en: There is a 97 percent probability that the change really works for every visitor
+    de: Mit 97 Prozent Wahrscheinlichkeit wirkt die Änderung tatsächlich bei jeder Besucherin und jedem Besucher
+    correct: false
+  explanation:
+    en: A p-value is calculated assuming the null hypothesis; it is not the probability that the hypothesis is true and not a measure of effect size.
+    de: Ein p-Wert wird unter der Annahme der Nullhypothese berechnet; er ist weder die Wahrscheinlichkeit, dass die Hypothese stimmt, noch ein Maß für die Effektgröße.
+  source: https://de.wikipedia.org/wiki/Statistischer_Test
+- id: stat-a-multi
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: An analyst tests 20 metrics at the 5 percent level and one shows p = 0.04. What is the most sound way to treat it?
+    de: Eine Analystin testet 20 Kennzahlen zum 5-Prozent-Niveau, und eine zeigt p = 0,04. Wie geht man damit am sinnvollsten um?
+  options:
+  - en: As a hypothesis to confirm on new data, since chance alone can produce a hit among 20 tests
+    de: Als Hypothese, die an neuen Daten bestätigt wird, da der Zufall allein unter 20 Tests einen Treffer erzeugen kann
+    correct: true
+  - en: As a confirmed finding to report, because p is below 0.05 and that is the usual rule
+    de: Als bestätigten Befund, den man berichtet, weil p unter 0,05 liegt und das die Regel ist
+    correct: false
+  - en: As an error to delete, because one significant result among many is always wrong
+    de: Als Fehler, den man löscht, weil ein signifikantes Ergebnis unter vielen immer falsch ist
+    correct: false
+  - en: As a reason to test 20 more metrics until the result appears again in the data
+    de: Als Grund, 20 weitere Kennzahlen zu testen, bis das Ergebnis in den Daten wieder auftaucht
+    correct: false
+  explanation:
+    en: With many tests, some will look significant by chance. Adjust for multiple comparisons or confirm on fresh data. A hit is not always wrong, but it is not yet a finding either.
+    de: Bei vielen Tests wirken einige zufällig signifikant. Korrigiere für Mehrfachvergleiche oder bestätige an frischen Daten. Ein Treffer ist nicht immer falsch, aber noch kein Befund.
+  source: https://de.wikipedia.org/wiki/Statistischer_Test
+- id: stat-a-practical
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: With 2 million rows, a difference of 0.1 percent in conversion is highly significant (p < 0.001). What is the right judgement?
+    de: Bei 2 Millionen Zeilen ist ein Unterschied von 0,1 Prozent in der Konversion hoch signifikant (p < 0,001). Wie lautet die richtige Beurteilung?
+  options:
+  - en: It is statistically clear, but whether it matters depends on the effect size and the costs
+    de: Er ist statistisch eindeutig, ob er zählt, hängt aber von der Effektgröße und den Kosten ab
+    correct: true
+  - en: It is important, because a p-value this small always means a large business effect
+    de: Er ist wichtig, weil ein so kleiner p-Wert immer einen großen geschäftlichen Effekt bedeutet
+    correct: false
+  - en: It is meaningless, because such a large sample cannot say anything about a small difference
+    de: Er ist bedeutungslos, weil eine so große Stichprobe nichts über einen Unterschied aussagen kann
+    correct: false
+  - en: It should be ignored, because the p-value does not account for the size of the sample
+    de: Er sollte ignoriert werden, weil der p-Wert die Größe der Stichprobe nicht berücksichtigt
+    correct: false
+  explanation:
+    en: Large samples make tiny differences detectable. Statistical significance answers whether a difference is likely real; practical relevance asks whether it is big enough to act on.
+    de: Große Stichproben machen winzige Unterschiede nachweisbar. Statistische Signifikanz fragt, ob ein Unterschied wahrscheinlich echt ist; praktische Relevanz fragt, ob er groß genug ist, um zu handeln.
+  source: https://openstax.org/books/introductory-statistics-2e/pages/9-introduction
+- id: stat-a-report
+  level: advanced
+  difficulty: 1550
+  type: multi
+  stem:
+    en: Which practices make the reporting of an analysis more reliable? Select all that apply.
+    de: Welche Vorgehensweisen machen die Berichterstattung über eine Analyse verlässlicher? Wähle alle zutreffenden aus.
+  options:
+  - en: Defining the hypothesis and the test before looking at the results
+    de: Die Hypothese und den Test festlegen, bevor man die Ergebnisse ansieht
+    correct: true
+  - en: Reporting the effect size with an interval, not only a p-value
+    de: Die Effektgröße mit einem Intervall berichten, nicht nur einen p-Wert
+    correct: true
+  - en: Describing how the sample was chosen and where its limits lie
+    de: Beschreiben, wie die Stichprobe gewählt wurde und wo ihre Grenzen liegen
+    correct: true
+  - en: Trying several tests and reporting only the one that turned out significant
+    de: Mehrere Tests ausprobieren und nur den berichten, der signifikant ausfiel
+    correct: false
+  - en: Leaving out segments without a clear result so that the story reads better
+    de: Segmente ohne klares Ergebnis weglassen, damit sich die Geschichte besser liest
+    correct: false
+  explanation:
+    en: Pre-specified tests, effect sizes with intervals and open limits keep the analysis honest. Selecting only the significant result or dropping inconvenient segments misleads readers.
+    de: Vorab festgelegte Tests, Effektgrößen mit Intervallen und offene Grenzen halten die Analyse ehrlich. Nur das signifikante Ergebnis zu wählen oder unbequeme Segmente wegzulassen führt Lesende in die Irre.
+  source: https://en.wikibooks.org/wiki/Statistics
+- id: stat-a-simpson
+  level: advanced
+  difficulty: 1650
+  type: single
+  stem:
+    en: Overall, treatment A has a higher success rate than B, yet within each of two patient groups B is higher. The group sizes differ between A and B. How do you handle this?
+    de: Insgesamt hat Behandlung A eine höhere Erfolgsquote als B, doch in jeder von zwei Patientengruppen ist B höher. Die Gruppengrößen unterscheiden sich zwischen A und B. Wie gehst du damit um?
+  options:
+  - en: Look at the groups, since a different group mix can reverse the overall picture; judge by subject knowledge
+    de: Die Gruppen betrachten, denn eine andere Gruppenmischung kann das Gesamtbild umkehren; mit Fachwissen beurteilen
+    correct: true
+  - en: Assume a calculation error, because a result cannot be reversed by splitting data
+    de: Einen Rechenfehler annehmen, weil sich ein Ergebnis durch Aufteilen der Daten nicht umkehren kann
+    correct: false
+  - en: Trust the overall figure, because the larger sample is always the more reliable one of the two
+    de: Der Gesamtzahl vertrauen, weil die größere Stichprobe immer die verlässlichere von beiden Sichten ist
+    correct: false
+  - en: Average the two group rates with equal weight and report that value as the true rate
+    de: Die beiden Gruppenquoten gleich gewichtet mitteln und diesen Wert als wahre Quote berichten
+    correct: false
+  explanation:
+    en: 'This is Simpson''s paradox: when group composition differs between the compared options, the aggregate can point the other way. Decide which view answers the question using knowledge of how the groups arose.'
+    de: 'Das ist das Simpson-Paradoxon: Unterscheidet sich die Gruppenzusammensetzung zwischen den verglichenen Optionen, kann das Gesamtergebnis in die andere Richtung zeigen. Entscheide mit Wissen über die Entstehung der Gruppen, welche Sicht die Frage beantwortet.'
+  source: https://en.wikibooks.org/wiki/Statistics

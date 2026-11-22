@@ -1,0 +1,76 @@
+---
+id: data-visualization-dashboards-foundation
+competency: data-visualization-dashboards
+level: foundation
+title: "Choosing the right chart and keeping it honest"
+objectives:
+  - "Match a question to a chart type: comparison, trend, relationship, part of a whole."
+  - "Start bar charts at zero and label axes, units and sources."
+  - "Avoid clutter, 3D effects and decorative colour."
+  - "Use colour so that it never carries meaning alone."
+minutes: 20
+resources:
+  - wikipedia-data-visualization
+  - wikibooks-statistics-displaying-data
+  - wikipedia-de-informationsvisualisierung
+status: ai-draft
+sources:
+  - title: "Data and information visualization"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_visualization
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Statistics/Displaying Data"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Statistics/Displaying_Data
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Informationsvisualisierung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Informationsvisualisierung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+A chart is an argument. A clear one lets readers see the answer in seconds; a misleading one makes them believe something the data do not say. Good habits matter more than software skills.
+
+## Start from the question
+
+Pick the chart from the question you want to answer:
+
+- Compare categories: bar chart, sorted by value, with long names written horizontally.
+- Show a trend over time: line chart with time in order on the horizontal axis.
+- Show a relationship between two numbers: scatter plot.
+- Show the distribution of one numeric variable: histogram or box plot.
+- Show parts of a whole: a few parts in a bar or, for at most a handful of slices, a pie chart. Many slices are hard to compare.
+
+## Honest scales
+
+The eye reads the length of a bar from its baseline, so bar charts should start at zero. Cutting the axis exaggerates differences. Line charts show change, so a non-zero baseline can be acceptable if the axis is clearly labelled. Use the same scale when charts are meant to be compared.
+
+## Make it readable
+
+- A title that says what the chart shows, ideally the finding.
+- Axis labels with units; the data source and date.
+- Direct labels instead of a legend where possible.
+- Remove what does not carry information: heavy gridlines, 3D effects, shadows, decorative images.
+
+## Colour
+
+Use few colours and give them meaning. Many people cannot tell red from green apart, so never use colour as the only signal; add labels, shapes or differences in lightness.
+
+## Worked example
+
+Illustration only; invented data. The monthly revenue for twelve months is to be shown, with one category of interest: online versus shop. A first draft used a 3D pie chart with twelve slices. The analyst switches to a line chart with months along the bottom and two lines labelled "Online" and "Shop" at their ends, adds the title "Online revenue has overtaken shop revenue since June" (invented), units in euros, and the source. The same data now answer the question at a glance.
+
+## Key takeaways
+
+- Choose the chart by the question, not by what looks interesting.
+- Bars start at zero; label axes, units and sources.
+- Remove clutter and 3D effects.
+- Never let colour carry meaning alone.

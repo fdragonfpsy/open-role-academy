@@ -1,0 +1,14 @@
+id: wikibooks-statistics-displaying-data
+url: "https://en.wikibooks.org/wiki/Statistics/Displaying_Data"
+title: "Statistics/Displaying Data (Wikibooks)"
+provider: Wikibooks
+language: en
+format: book
+minutes: 30
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-22
+mode: link
+competencies: [data-visualization-dashboards]
+levels: [foundation, practitioner, advanced]
+note: "Open textbook chapter on bar charts, histograms, scatter and box plots, line graphs; same Wikibooks CC BY-SA 4.0 licence as the Statistics book; HTTP 200 on 2026-11-22. Link only."

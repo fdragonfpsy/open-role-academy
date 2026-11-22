@@ -1,0 +1,67 @@
+---
+id: sql-data-querying-foundation
+competency: sql-data-querying
+level: foundation
+title: "Tables, keys and your first SELECT queries"
+objectives:
+  - "Describe a relational database as tables of rows and columns linked by keys."
+  - "Write a basic SELECT query with WHERE and ORDER BY."
+  - "Explain NULL and why it needs IS NULL."
+  - "Read a query clause by clause."
+minutes: 20
+resources:
+  - wikipedia-sql
+  - wikibooks-de-einfuehrung-sql
+status: ai-draft
+sources:
+  - title: "SQL"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/SQL
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Einführung in SQL"
+    author: "Jürgen Thomas und Wikibooks-Autorinnen und -Autoren"
+    url: https://de.wikibooks.org/wiki/Einf%C3%BChrung_in_SQL
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+Most business data lives in relational databases. SQL (Structured Query Language) is the common language for asking such databases questions, so even a few reliable queries make you independent of someone else's export.
+
+## Tables, rows, columns and keys
+
+A relational database stores data in tables. Each row is one record, for example one customer; each column is one attribute, such as the country. A primary key is a column whose values are unique and never empty, so each row can be told apart. A foreign key is a column that holds a primary key value from another table, which is how an order points to its customer.
+
+## Your first query
+
+```sql
+SELECT name, country
+FROM customers
+WHERE country = 'DE'
+ORDER BY name;
+```
+
+Read it in this order: take the table customers (FROM), keep rows where the country is DE (WHERE), return the columns name and country (SELECT), and sort by name (ORDER BY). The clauses must be written in a fixed order. Standard SQL ends a statement with a semicolon; details differ a little between database products.
+
+## Comparing and combining conditions
+
+Use `=`, `<>`, `<`, `>`, `<=` and `>=` to compare values, AND and OR to combine conditions, and parentheses to make the grouping clear. A condition such as amount > 100 AND country = 'DE' keeps only rows that satisfy both.
+
+## NULL means unknown
+
+NULL marks a value that is missing or unknown. It is not zero and not an empty text. A comparison with NULL is never true, so write WHERE amount IS NULL, not WHERE amount = NULL. A row with NULL in amount also fails amount > 100.
+
+## Worked example
+
+Illustration only; invented data. The table orders has the columns order_id, customer_id, amount and order_date. Question: which orders above 100 euros are there, largest first? The query is SELECT order_id, amount FROM orders WHERE amount > 100 ORDER BY amount DESC; Three of the five invented rows qualify. One order has NULL in amount: it is not returned, because for an unknown amount the condition is not true. Before reporting, the analyst asks the data owner why that value is missing.
+
+## Key takeaways
+
+- Tables hold rows and columns; a primary key identifies a row, a foreign key points to another table.
+- A query reads in the order FROM, WHERE, SELECT, ORDER BY, even though SELECT is written first.
+- NULL means unknown; use IS NULL to find it.
+- Check unexpected row counts before you trust a result.

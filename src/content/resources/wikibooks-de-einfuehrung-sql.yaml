@@ -1,0 +1,14 @@
+id: wikibooks-de-einfuehrung-sql
+url: "https://de.wikibooks.org/wiki/Einf%C3%BChrung_in_SQL"
+title: "Einführung in SQL"
+provider: Wikibooks
+language: de
+format: book
+minutes: 120
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-22
+mode: link
+competencies: [sql-data-querying]
+levels: [foundation, practitioner, advanced]
+note: "Open German textbook (Jürgen Thomas); page footer states CC BY-SA 4.0 (Namensnennung, Weitergabe unter gleichen Bedingungen); HTTP 200 on 2026-11-22. Link only; the unit does not copy its text."

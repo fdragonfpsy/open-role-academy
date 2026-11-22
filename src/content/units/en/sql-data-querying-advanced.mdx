@@ -1,0 +1,85 @@
+---
+id: sql-data-querying-advanced
+competency: sql-data-querying
+level: advanced
+title: "Correct, readable and reviewable queries"
+objectives:
+  - "Name the main causes of wrong totals: fan-out, NULL traps and wrong grain."
+  - "Structure long queries with named steps (CTEs) so that others can review them."
+  - "Validate a result by reconciliation before sharing it."
+  - "Diagnose a slow query before changing it."
+minutes: 30
+resources:
+  - wikipedia-sql
+  - wikibooks-de-einfuehrung-sql
+status: ai-draft
+sources:
+  - title: "SQL"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/SQL
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Einführung in SQL"
+    author: "Jürgen Thomas und Wikibooks-Autorinnen und -Autoren"
+    url: https://de.wikibooks.org/wiki/Einf%C3%BChrung_in_SQL
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+At advanced level the risk is not a syntax error, which the database reports, but a plausible wrong number, which nobody reports. Your work is to make queries correct, readable and reviewable.
+
+## Decide the grain first
+
+Write down in one sentence what one result row represents, for example "one row per order". Then check each join against it. Joining a table with several rows per order, such as shipments, multiplies the order rows. Aggregate such a table to the join key first, then join.
+
+## Known traps
+
+- NOT IN with a subquery that can return NULL: the condition becomes unknown for every row and the query returns nothing. Use NOT EXISTS, or filter NULL inside the subquery.
+- Conditions on the right-hand table after a LEFT JOIN silently turn it into an inner join.
+- SELECT DISTINCT added to hide duplicates. It treats a symptom; find the cause (usually grain) instead.
+- Integer division and rounding can change ratios; cast to a decimal type where the product requires it.
+- Date boundaries: decide whether the end date is included.
+
+## Make queries readable
+
+Use common table expressions (WITH) to name each step, meaningful aliases, one clause per line and a short comment for any non-obvious rule.
+
+```sql
+WITH order_totals AS (
+  SELECT order_id, SUM(price * quantity) AS revenue
+  FROM order_items
+  GROUP BY order_id
+)
+SELECT o.region, SUM(t.revenue) AS revenue
+FROM orders o
+JOIN order_totals t ON t.order_id = o.order_id
+GROUP BY o.region;
+```
+
+Window functions, for example ranking or running totals, add rows' context without collapsing them; use them when you need a value per row next to a group value.
+
+## Validate before you share
+
+- Compare a total with a figure from the source system or an existing report.
+- Count rows before and after each join.
+- Spot-check two or three records by hand.
+- Keep the query in version control so that it can be rerun and reviewed.
+
+## Performance, briefly
+
+Diagnose before changing. Read the execution plan, filter early, select only needed columns and avoid functions on filtered columns where an index could be used. Index changes belong to the people who run the database, so discuss them with the owner.
+
+## Worked example
+
+Illustration only; invented figures. A revenue report joins orders, order_items and shipments. Order 7 has two shipments, so its items appear twice and the report shows 240 euros instead of 120. Reconciling with the invoice total reveals the difference. The fix is to aggregate shipments to one row per order, or to leave them out because they are not needed for revenue. DISTINCT on the amount column would have been wrong, because two items may legitimately cost the same.
+
+## Key takeaways
+
+- State the grain and test every join against it.
+- Know the NULL traps, especially NOT IN and filters after a LEFT JOIN.
+- Structure queries in named steps so reviewers can follow them.
+- Reconcile results with a trusted figure before you share them.

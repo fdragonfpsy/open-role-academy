@@ -1,0 +1,67 @@
+---
+id: sql-data-querying-foundation
+competency: sql-data-querying
+level: foundation
+title: "Tabellen, Schlüssel und erste SELECT-Abfragen"
+objectives:
+  - "Eine relationale Datenbank als Tabellen aus Zeilen und Spalten beschreiben, die über Schlüssel verbunden sind."
+  - "Eine einfache SELECT-Abfrage mit WHERE und ORDER BY schreiben."
+  - "NULL erklären und warum man dafür IS NULL braucht."
+  - "Eine Abfrage Klausel für Klausel lesen."
+minutes: 20
+resources:
+  - wikipedia-de-sql
+  - wikibooks-de-einfuehrung-sql
+status: ai-draft
+sources:
+  - title: "SQL"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/SQL
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Einführung in SQL"
+    author: "Jürgen Thomas und Wikibooks-Autorinnen und -Autoren"
+    url: https://de.wikibooks.org/wiki/Einf%C3%BChrung_in_SQL
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Die meisten Geschäftsdaten liegen in relationalen Datenbanken. SQL (Structured Query Language) ist die gemeinsame Sprache, um solche Datenbanken zu befragen. Schon wenige verlässliche Abfragen machen dich unabhängig vom Export einer anderen Person.
+
+## Tabellen, Zeilen, Spalten und Schlüssel
+
+Eine relationale Datenbank speichert Daten in Tabellen. Jede Zeile ist ein Datensatz, zum Beispiel eine Kundin oder ein Kunde; jede Spalte ist ein Merkmal, etwa das Land. Ein Primärschlüssel ist eine Spalte, deren Werte eindeutig und nie leer sind, sodass sich jede Zeile unterscheiden lässt. Ein Fremdschlüssel ist eine Spalte mit einem Primärschlüsselwert einer anderen Tabelle, so verweist eine Bestellung auf ihre Kundschaft.
+
+## Deine erste Abfrage
+
+```sql
+SELECT name, country
+FROM customers
+WHERE country = 'DE'
+ORDER BY name;
+```
+
+Lies sie in dieser Reihenfolge: Nimm die Tabelle customers (FROM), behalte Zeilen mit Land DE (WHERE), gib die Spalten name und country aus (SELECT) und sortiere nach name (ORDER BY). Die Klauseln müssen in fester Reihenfolge stehen. Standard-SQL beendet eine Anweisung mit einem Semikolon; Einzelheiten unterscheiden sich je nach Datenbankprodukt etwas.
+
+## Bedingungen vergleichen und kombinieren
+
+Mit `=`, `<>`, `<`, `>`, `<=` und `>=` vergleichst du Werte, mit AND und OR kombinierst du Bedingungen, und Klammern machen die Gruppierung klar. Eine Bedingung wie amount > 100 AND country = 'DE' behält nur Zeilen, die beides erfüllen.
+
+## NULL heißt unbekannt
+
+NULL kennzeichnet einen fehlenden oder unbekannten Wert. Es ist weder null noch ein leerer Text. Ein Vergleich mit NULL ist nie wahr, daher schreibst du WHERE amount IS NULL und nicht WHERE amount = NULL. Eine Zeile mit NULL in amount erfüllt auch amount > 100 nicht.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundene Daten. Die Tabelle orders hat die Spalten order_id, customer_id, amount und order_date. Frage: Welche Bestellungen über 100 Euro gibt es, die größte zuerst? Die Abfrage lautet SELECT order_id, amount FROM orders WHERE amount > 100 ORDER BY amount DESC; Drei der fünf erfundenen Zeilen passen. Eine Bestellung hat NULL im Betrag: Sie wird nicht ausgegeben, weil die Bedingung für einen unbekannten Betrag nicht wahr ist. Vor dem Bericht fragt das Analyseteam die Datenverantwortlichen, warum der Wert fehlt.
+
+## Das Wichtigste in Kürze
+
+- Tabellen bestehen aus Zeilen und Spalten; ein Primärschlüssel identifiziert eine Zeile, ein Fremdschlüssel verweist auf eine andere Tabelle.
+- Eine Abfrage wird in der Reihenfolge FROM, WHERE, SELECT, ORDER BY gelesen, auch wenn SELECT zuerst steht.
+- NULL heißt unbekannt; mit IS NULL findest du es.
+- Prüfe unerwartete Zeilenzahlen, bevor du einem Ergebnis traust.

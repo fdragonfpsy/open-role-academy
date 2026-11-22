@@ -1,0 +1,299 @@
+competency: sql-data-querying
+items:
+- id: sql-f-pk
+  level: foundation
+  difficulty: 850
+  type: single
+  stem:
+    en: What does a primary key do in a table?
+    de: Was leistet ein Primärschlüssel in einer Tabelle?
+  options:
+  - en: It identifies each row of the table uniquely
+    de: Er identifiziert jede Zeile der Tabelle eindeutig, sodass auf Zeilen verwiesen werden kann
+    correct: true
+  - en: It sorts the rows of the table alphabetically whenever someone reads them out
+    de: Er sortiert die Zeilen der Tabelle alphabetisch, sobald jemand sie liest
+    correct: false
+  - en: It encrypts the values of its column so that other users cannot see them
+    de: Er verschlüsselt die Werte seiner Spalte, sodass andere Nutzende sie nicht sehen können
+    correct: false
+  - en: It lists all the columns of the table that are allowed to stay empty
+    de: Er listet alle Spalten der Tabelle auf, die leer bleiben dürfen
+    correct: false
+  explanation:
+    en: A primary key is a column (or set of columns) whose values are unique and never empty, so every row can be told apart and referenced. It does not sort, encrypt or list optional columns.
+    de: Ein Primärschlüssel ist eine Spalte (oder Spaltenkombination), deren Werte eindeutig und nie leer sind, sodass jede Zeile unterscheidbar und referenzierbar ist. Er sortiert, verschlüsselt oder listet keine optionalen Spalten.
+  source: https://en.wikipedia.org/wiki/SQL
+- id: sql-f-select
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: Which query lists the names of customers from Germany, sorted by name?
+    de: Welche Abfrage listet die Namen der Kundschaft aus Deutschland, nach Namen sortiert?
+  options:
+  - en: SELECT name FROM customers WHERE country = 'DE' ORDER BY name;
+    de: SELECT name FROM customers WHERE country = 'DE' ORDER BY name;
+    correct: true
+  - en: SELECT name FROM customers ORDER BY name WHERE country = 'DE';
+    de: SELECT name FROM customers ORDER BY name WHERE country = 'DE';
+    correct: false
+  - en: SELECT name WHERE country = 'DE' FROM customers ORDER BY name;
+    de: SELECT name WHERE country = 'DE' FROM customers ORDER BY name;
+    correct: false
+  - en: SELECT name FROM customers HAVING country = 'DE' SORT BY name ASC;
+    de: SELECT name FROM customers HAVING country = 'DE' SORT BY name ASC;
+    correct: false
+  explanation:
+    en: 'The clauses come in a fixed order: SELECT, FROM, WHERE, ORDER BY. The other variants put clauses in the wrong place or use keywords that do not exist for this purpose.'
+    de: 'Die Klauseln stehen in fester Reihenfolge: SELECT, FROM, WHERE, ORDER BY. Die anderen Varianten setzen Klauseln an die falsche Stelle oder nutzen dafür nicht vorgesehene Schlüsselwörter.'
+  source: https://en.wikipedia.org/wiki/SQL
+- id: sql-f-null
+  level: foundation
+  difficulty: 1000
+  type: multi
+  stem:
+    en: Which statements about NULL are true? Select all that apply.
+    de: Welche Aussagen über NULL sind richtig? Wähle alle zutreffenden aus.
+  options:
+  - en: NULL marks a value that is missing or unknown; it is not the number zero
+    de: NULL kennzeichnet einen fehlenden oder unbekannten Wert; es ist nicht die Zahl null
+    correct: true
+  - en: To find rows without a value you write IS NULL, not = NULL
+    de: Um Zeilen ohne Wert zu finden, schreibst du IS NULL und nicht = NULL
+    correct: true
+  - en: A condition such as amount > 100 is not true for a row where amount is NULL
+    de: Eine Bedingung wie amount > 100 ist für eine Zeile mit amount NULL nicht erfüllt
+    correct: true
+  - en: NULL and the number 0 are the same thing, so both are found by amount = 0
+    de: NULL und die Zahl 0 sind dasselbe, daher findet amount = 0 beide gleichermaßen
+    correct: false
+  - en: WHERE amount = NULL returns all rows that have no amount recorded at all
+    de: WHERE amount = NULL liefert alle Zeilen, bei denen kein Betrag erfasst wurde
+    correct: false
+  explanation:
+    en: NULL means unknown, and any ordinary comparison with an unknown value is not true, so IS NULL is needed to find it. NULL is not zero, and = NULL never matches.
+    de: NULL bedeutet unbekannt, und jeder gewöhnliche Vergleich mit einem unbekannten Wert ist nicht wahr, daher braucht man IS NULL. NULL ist nicht null, und = NULL trifft nie zu.
+  source: https://de.wikibooks.org/wiki/Einf%C3%BChrung_in_SQL
+- id: sql-f-fk
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: The table orders has a column customer_id that holds a value from customers.id. What is customer_id called?
+    de: Die Tabelle orders hat eine Spalte customer_id mit einem Wert aus customers.id. Wie heißt customer_id?
+  options:
+  - en: A foreign key, which links each order to exactly one customer
+    de: Ein Fremdschlüssel, der jede Bestellung genau einer Kundin oder einem Kunden zuordnet
+    correct: true
+  - en: A primary key of the customers table, which must be unique in orders too
+    de: Ein Primärschlüssel der Tabelle customers, der auch in orders eindeutig sein muss
+    correct: false
+  - en: A view, which stores a saved copy of the customers table inside orders
+    de: Eine Sicht (View), die eine gespeicherte Kopie der Tabelle customers in orders ablegt
+    correct: false
+  - en: An alias, which only renames the column id while the query result is shown
+    de: Ein Alias, der nur die Spalte id umbenennt, während das Abfrageergebnis angezeigt wird
+    correct: false
+  explanation:
+    en: A column that refers to the primary key of another table is a foreign key. It may repeat in orders, because one customer can place several orders.
+    de: Eine Spalte, die auf den Primärschlüssel einer anderen Tabelle verweist, ist ein Fremdschlüssel. Er darf in orders mehrfach vorkommen, weil eine Kundin oder ein Kunde mehrere Bestellungen aufgeben kann.
+  source: https://en.wikipedia.org/wiki/SQL
+- id: sql-p-left
+  level: practitioner
+  difficulty: 1150
+  type: single
+  stem:
+    en: You want all customers listed, including those who never ordered. Which join do you use?
+    de: Du willst alle Kundinnen und Kunden auflisten, auch die ohne Bestellung. Welchen Join nutzt du?
+  options:
+  - en: A LEFT JOIN from customers to orders, which keeps unmatched customers
+    de: Einen LEFT JOIN von customers zu orders, der Kunden ohne Treffer behält
+    correct: true
+  - en: An INNER JOIN on the customer id, which keeps unmatched customers too
+    de: Einen INNER JOIN über die Kunden-ID, der auch Kunden ohne Treffer behält
+    correct: false
+  - en: A LEFT JOIN, then WHERE orders.order_id IS NOT NULL to clean the result
+    de: Einen LEFT JOIN und danach WHERE orders.order_id IS NOT NULL zur Bereinigung
+    correct: false
+  - en: A CROSS JOIN, which pairs every customer with every order in the tables
+    de: Einen CROSS JOIN, der jede Kundin und jeden Kunden mit jeder Bestellung paart
+    correct: false
+  explanation:
+    en: A LEFT JOIN keeps every row of the left table and fills the right side with NULL when nothing matches. An INNER JOIN drops unmatched customers, and filtering for non-NULL orders afterwards removes them again.
+    de: Ein LEFT JOIN behält jede Zeile der linken Tabelle und füllt die rechte Seite mit NULL, wenn nichts passt. Ein INNER JOIN verwirft Kunden ohne Treffer, und ein anschließender Filter auf Bestellungen ungleich NULL entfernt sie wieder.
+  source: https://de.wikibooks.org/wiki/Einf%C3%BChrung_in_SQL
+- id: sql-p-having
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: You want only regions whose total sales exceed 10,000. Where does this condition belong?
+    de: Du willst nur Regionen, deren Gesamtumsatz 10.000 übersteigt. Wohin gehört diese Bedingung?
+  options:
+  - en: In HAVING after GROUP BY, as it tests an aggregate per group
+    de: In HAVING nach GROUP BY region, weil sie ein Aggregat je Gruppe prüft
+    correct: true
+  - en: In WHERE before the grouping, because WHERE can use SUM on all rows
+    de: In WHERE vor der Gruppierung, weil WHERE die Funktion SUM auf alle Zeilen nutzen kann
+    correct: false
+  - en: In ORDER BY, because sorting by the total removes the smaller regions
+    de: In ORDER BY, weil das Sortieren nach der Summe die kleineren Regionen entfernt
+    correct: false
+  - en: In SELECT, because a calculated column filters the rows by itself
+    de: In SELECT, weil eine berechnete Spalte die Zeilen von selbst filtert
+    correct: false
+  explanation:
+    en: WHERE filters individual rows before grouping and cannot use aggregates; HAVING filters groups after aggregation. ORDER BY and SELECT do not remove rows.
+    de: WHERE filtert einzelne Zeilen vor der Gruppierung und kann keine Aggregate nutzen; HAVING filtert Gruppen nach der Aggregation. ORDER BY und SELECT entfernen keine Zeilen.
+  source: https://de.wikibooks.org/wiki/Einf%C3%BChrung_in_SQL
+- id: sql-p-count
+  level: practitioner
+  difficulty: 1300
+  type: multi
+  stem:
+    en: Which statements about COUNT are true? Select all that apply.
+    de: Welche Aussagen über COUNT sind richtig? Wähle alle zutreffenden aus.
+  options:
+  - en: COUNT(*) counts all rows in each group, whether or not a column is empty
+    de: COUNT(*) zählt alle Zeilen jeder Gruppe, unabhängig davon, ob eine Spalte leer ist
+    correct: true
+  - en: COUNT(email) counts only the rows in which email is not NULL
+    de: COUNT(email) zählt nur die Zeilen, in denen email nicht NULL ist
+    correct: true
+  - en: COUNT(DISTINCT email) counts the different non-NULL values of email
+    de: COUNT(DISTINCT email) zählt die verschiedenen Werte von email, die nicht NULL sind
+    correct: true
+  - en: COUNT(email) includes the rows in which email is NULL as well
+    de: COUNT(email) zählt auch die Zeilen mit, in denen email NULL ist
+    correct: false
+  - en: COUNT(*) skips every row in which any column at all contains NULL
+    de: COUNT(*) überspringt jede Zeile, in der irgendeine Spalte NULL enthält
+    correct: false
+  explanation:
+    en: COUNT(*) counts rows; COUNT(column) ignores NULLs; DISTINCT counts each non-NULL value once. Mixing these up is a common source of wrong totals.
+    de: COUNT(*) zählt Zeilen; COUNT(Spalte) ignoriert NULL; DISTINCT zählt jeden Wert, der nicht NULL ist, einmal. Das zu verwechseln ist eine häufige Quelle falscher Summen.
+  source: https://en.wikipedia.org/wiki/SQL
+- id: sql-p-fanout
+  level: practitioner
+  difficulty: 1350
+  type: single
+  stem:
+    en: After joining customers to orders, the sum of customers.credit_limit is far too high. What is the most likely cause?
+    de: Nach dem Join von customers mit orders ist die Summe von customers.credit_limit viel zu hoch. Was ist die wahrscheinlichste Ursache?
+  options:
+  - en: Each customer row is repeated once per order, so its limit is added several times
+    de: Jede Kundenzeile wird je Bestellung wiederholt, sodass ihr Limit mehrfach addiert wird
+    correct: true
+  - en: SUM adds every value twice whenever it is combined with a join in the query
+    de: SUM addiert jeden Wert doppelt, sobald es in der Abfrage mit einem Join kombiniert wird
+    correct: false
+  - en: The join changed the order of the rows, which changes the result of the sum
+    de: Der Join hat die Reihenfolge der Zeilen verändert, was das Ergebnis der Summe verändert
+    correct: false
+  - en: The column credit_limit contains NULL values, which are added as large numbers
+    de: Die Spalte credit_limit enthält NULL-Werte, die als große Zahlen addiert werden
+    correct: false
+  explanation:
+    en: A one-to-many join repeats the one-side rows for each matching many-side row. Sums over one-side columns then count values several times. Sum before joining, or use a different grain.
+    de: Ein Eins-zu-viele-Join wiederholt die Zeilen der Eins-Seite für jede passende Zeile der Viele-Seite. Summen über Spalten der Eins-Seite zählen Werte dann mehrfach. Summiere vor dem Join oder wähle eine andere Granularität.
+  source: https://de.wikibooks.org/wiki/Einf%C3%BChrung_in_SQL
+- id: sql-a-notin
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: A query for customers with no order uses WHERE id NOT IN (SELECT customer_id FROM orders) and returns no rows, although such customers exist. What is the likely cause and fix?
+    de: Eine Abfrage nach Kundschaft ohne Bestellung nutzt WHERE id NOT IN (SELECT customer_id FROM orders) und liefert keine Zeilen, obwohl es solche gibt. Was ist die wahrscheinliche Ursache und Lösung?
+  options:
+  - en: A NULL in orders.customer_id makes NOT IN unknown; use NOT EXISTS or exclude NULLs
+    de: Ein NULL in orders.customer_id macht NOT IN unbekannt; nutze NOT EXISTS oder schließe NULL aus
+    correct: true
+  - en: NOT IN works only on text columns, so the ids must first be converted to text
+    de: NOT IN funktioniert nur bei Textspalten, daher müssen die IDs zuerst in Text umgewandelt werden
+    correct: false
+  - en: The subquery is evaluated too slowly, so the database gives up and returns nothing
+    de: Die Unterabfrage wird zu langsam ausgewertet, daher gibt die Datenbank auf und liefert nichts
+    correct: false
+  - en: NOT IN needs an ORDER BY inside the subquery, otherwise no row can be compared
+    de: NOT IN braucht ein ORDER BY in der Unterabfrage, sonst kann keine Zeile verglichen werden
+    correct: false
+  explanation:
+    en: If the list contains a NULL, id NOT IN (...) can never be true, because the comparison with NULL is unknown. NOT EXISTS, or a filter for NOT NULL inside the subquery, gives the intended result.
+    de: Enthält die Liste ein NULL, kann id NOT IN (...) nie wahr werden, weil der Vergleich mit NULL unbekannt ist. NOT EXISTS oder ein Filter auf NOT NULL in der Unterabfrage liefert das gewünschte Ergebnis.
+  source: https://de.wikibooks.org/wiki/Einf%C3%BChrung_in_SQL
+- id: sql-a-trust
+  level: advanced
+  difficulty: 1500
+  type: multi
+  stem:
+    en: Which steps make a query result more trustworthy before you share it? Select all that apply.
+    de: Welche Schritte machen ein Abfrageergebnis vertrauenswürdiger, bevor du es teilst? Wähle alle zutreffenden aus.
+  options:
+  - en: State what one result row represents, which is the grain of the result
+    de: Festhalten, was eine Ergebniszeile darstellt, also die Granularität des Ergebnisses
+    correct: true
+  - en: Compare totals with a figure from the source system or an existing report
+    de: Summen mit einer Zahl aus dem Quellsystem oder einem bestehenden Bericht vergleichen
+    correct: true
+  - en: Count the rows before and after each join and explain any change that you see
+    de: Die Zeilen vor und nach jedem Join zählen und jede Veränderung erklären
+    correct: true
+  - en: Add SELECT DISTINCT whenever there are duplicates, without looking for the cause
+    de: SELECT DISTINCT ergänzen, sobald Duplikate auftreten, ohne die Ursache zu suchen
+    correct: false
+  - en: Treat a fast run time as proof that the numbers in the result are correct
+    de: Eine schnelle Laufzeit als Beweis dafür werten, dass die Zahlen im Ergebnis stimmen
+    correct: false
+  explanation:
+    en: Grain, reconciliation and row counts expose join mistakes. DISTINCT can hide a fan-out instead of fixing it, and speed says nothing about correctness.
+    de: Granularität, Abgleich und Zeilenzahlen decken Join-Fehler auf. DISTINCT kann eine Vervielfachung verdecken statt sie zu beheben, und Geschwindigkeit sagt nichts über Richtigkeit.
+  source: https://de.wikibooks.org/wiki/Einf%C3%BChrung_in_SQL
+- id: sql-a-grain
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: A revenue-per-product report joins orders, order_items and shipments, and an order can have several shipments. Revenue is now too high. What is the best fix?
+    de: Ein Umsatzbericht je Produkt verknüpft orders, order_items und shipments, und eine Bestellung kann mehrere Lieferungen haben. Der Umsatz ist jetzt zu hoch. Was ist die beste Lösung?
+  options:
+  - en: Aggregate each table to the needed grain first, then join, and compare with the total
+    de: Jede Tabelle zuerst auf die nötige Granularität aggregieren, dann verknüpfen und mit der Gesamtsumme abgleichen
+    correct: true
+  - en: Put SELECT DISTINCT in front of the revenue column so that repeated values vanish
+    de: SELECT DISTINCT vor die Umsatzspalte setzen, damit wiederholte Werte verschwinden
+    correct: false
+  - en: Change the joins to LEFT JOINs, which never repeat rows from the left-hand table
+    de: Die Joins in LEFT JOINs ändern, die Zeilen der linken Tabelle nie wiederholen
+    correct: false
+  - en: Divide the final total by the average number of shipments that an order has
+    de: Die Endsumme durch die durchschnittliche Zahl von Lieferungen je Bestellung teilen
+    correct: false
+  explanation:
+    en: The extra shipment rows multiply each order item. Aggregating to one row per order before joining prevents this. DISTINCT may remove genuine equal amounts, LEFT JOIN still repeats rows, and dividing by an average is only a rough guess.
+    de: Die zusätzlichen Lieferzeilen vervielfachen jede Bestellposition. Aggregieren auf eine Zeile je Bestellung vor dem Join verhindert das. DISTINCT kann echte gleiche Beträge entfernen, LEFT JOIN wiederholt Zeilen trotzdem, und Teilen durch einen Durchschnitt ist nur eine grobe Schätzung.
+  source: https://de.wikibooks.org/wiki/Einf%C3%BChrung_in_SQL
+- id: sql-a-perf
+  level: advanced
+  difficulty: 1650
+  type: single
+  stem:
+    en: A dashboard query now runs for minutes. What is the most sensible first approach?
+    de: Eine Dashboard-Abfrage läuft jetzt minutenlang. Was ist der sinnvollste erste Ansatz?
+  options:
+  - en: Read the execution plan, filter early, select only needed columns, and discuss indexes with the database owner
+    de: Den Ausführungsplan lesen, früh filtern, nur nötige Spalten wählen und Indizes mit den Datenbankverantwortlichen besprechen
+    correct: true
+  - en: Add SELECT DISTINCT to every query, which makes the database skip repeated work in each case
+    de: SELECT DISTINCT zu jeder Abfrage ergänzen, damit die Datenbank wiederholte Arbeit überspringt
+    correct: false
+  - en: Export the tables to a spreadsheet each month and calculate there instead of querying
+    de: Die Tabellen jeden Monat in eine Tabellenkalkulation exportieren und dort rechnen statt abzufragen
+    correct: false
+  - en: Nest as many subqueries as possible, because nested queries are always the faster form to run
+    de: So viele Unterabfragen wie möglich verschachteln, weil verschachtelte Abfragen immer schneller sind
+    correct: false
+  explanation:
+    en: 'Diagnose before changing: the plan shows where time goes, early filters and fewer columns reduce work, and index changes belong to the people who run the database. The other options add risk or have no basis.'
+    de: 'Erst diagnostizieren, dann ändern: Der Plan zeigt, wo die Zeit bleibt, frühe Filter und weniger Spalten verringern die Arbeit, und Indexänderungen gehören zu den Betreibenden der Datenbank. Die anderen Optionen erhöhen das Risiko oder entbehren jeder Grundlage.'
+  source: https://en.wikipedia.org/wiki/SQL

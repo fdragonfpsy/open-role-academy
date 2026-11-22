@@ -1,0 +1,67 @@
+---
+id: statistics-fundamentals-advanced
+competency: statistics-fundamentals
+level: advanced
+title: "Evidenz beurteilen: Mehrfachtests, Effektgröße und Störfaktoren"
+objectives:
+  - "Erklären, warum viele Tests falsch-positive Ergebnisse erzeugen und wie man reagiert."
+  - "Statistische Signifikanz von praktischer Relevanz trennen."
+  - "Störfaktoren und das Simpson-Paradoxon erkennen und die Analyse entsprechend wählen."
+  - "Eine Analyse mit Effektgröße, Intervallen, Annahmen und Grenzen berichten."
+minutes: 35
+resources:
+  - wikipedia-de-statistischer-test
+  - openstax-intro-stats-hypothesis-testing
+  - wikibooks-statistics
+status: ai-draft
+sources:
+  - title: "Statistischer Test"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Statistischer_Test
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Introductory Statistics 2e, Chapter 9: Hypothesis Testing with One Sample"
+    author: "Barbara Illowsky, Susan Dean et al. (OpenStax)"
+    url: https://openstax.org/books/introductory-statistics-2e/pages/9-introduction
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+  - title: "Statistics"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Statistics
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Auf fortgeschrittenem Niveau ist die Berechnung selten das Schwierige. Schwierig ist zu beurteilen, ob ein Ergebnis Vertrauen verdient, und es denen ehrlich zu beschreiben, die danach handeln.
+
+## Viele Tests, viele Chancen
+
+Testest du 20 voneinander unabhängige Kennzahlen zum 5-Prozent-Niveau, solltest du erwarten, dass etwa eine allein durch Zufall signifikant wirkt. Dasselbe passiert, wenn man Daten in viele Segmente zerlegt und nur die Treffer berichtet. Gegenmittel: Lege die Haupthypothesen und Tests fest, bevor du Ergebnisse siehst; korrigiere für Mehrfachvergleiche, wenn du vieles testest; behandle überraschende Einzeltreffer als Hypothesen, die du an frischen Daten bestätigst.
+
+## Signifikant heißt nicht wichtig
+
+Bei sehr großer Stichprobe kann ein winziger Unterschied einen sehr kleinen p-Wert haben. Ob er zählt, hängt von der Effektgröße sowie von Kosten und Nutzen ab. Bei kleiner Stichprobe passiert das Gegenteil: Ein großer, nützlicher Unterschied kann die Signifikanz verfehlen, und die richtige Botschaft lautet „unsicher“, nicht „kein Effekt“. Plane den Stichprobenumfang, wenn möglich, vor der Datenerhebung: Er hängt vom kleinsten nachzuweisenden Unterschied und von der Schwankung der Daten ab.
+
+## Störfaktoren und Simpson-Paradoxon
+
+Ein Störfaktor beeinflusst sowohl die Ursache als auch die Wirkung, die du untersuchst. Der Vergleich von Gruppen mit unterschiedlicher Zusammensetzung kann ein Ergebnis sogar umkehren: Eine Option wirkt insgesamt besser, aber in jeder Untergruppe schlechter, weil die Untergruppen in unterschiedlichen Anteilen gemischt sind (Simpson-Paradoxon). Welche Sicht die Frage beantwortet, hängt davon ab, wie die Gruppen entstanden sind; nutze dafür Fachwissen, keine Regel. Beobachtungsdaten belegen selten Kausalität; randomisierte Experimente sind das stärkste Mittel, und wo sie unmöglich sind, nenne die Annahmen, die du triffst.
+
+## Annahmen prüfen
+
+Jedes Verfahren hat Annahmen: unabhängige Beobachtungen, eine passende Form der Daten, keine starken Ausreißer. Prüfe Diagramme, probiere bei zweifelhaften Annahmen ein robusteres Verfahren und sage, was du getan hast.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundene Zahlen. Kampagne A erreichte überwiegend Neukundschaft, Kampagne B überwiegend Bestandskundschaft. Insgesamt ist die Bestellquote von A niedriger als die von B. Bei Neukundschaft liegt A über B, und bei Bestandskundschaft liegt A ebenfalls über B. Bestandskundschaft bestellt ohnehin häufiger, und B erreichte mehr davon. Das Analyseteam berichtet die Quoten je Kundengruppe, hält fest, dass der Gesamtvergleich zwei Zielgruppen mischt, und empfiehlt A für den nächsten Test mit zufälliger Aufteilung. Stichprobe, Kundengruppen und offene Fragen stehen im Bericht.
+
+## Das Wichtigste in Kürze
+
+- Lege Hypothesen vorab fest; behandle nachträgliche Treffer als Hypothesen.
+- Statistische Signifikanz und praktische Relevanz sind getrennte Fragen.
+- Suche nach Störfaktoren und vergleiche innerhalb von Gruppen.
+- Berichte Effektgröße, Intervall, Stichprobe und Grenzen, nicht nur einen p-Wert.
