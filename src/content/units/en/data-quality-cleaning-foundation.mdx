@@ -1,0 +1,71 @@
+---
+id: data-quality-cleaning-foundation
+competency: data-quality-cleaning
+level: foundation
+title: "What good data looks like and the usual problems"
+objectives:
+  - "Explain data quality as fitness for the intended use."
+  - "Name the dimensions: completeness, accuracy, consistency, timeliness and uniqueness."
+  - "Recognise missing values, duplicates, inconsistent formats and outliers."
+  - "Keep the raw data and log every change."
+minutes: 20
+resources:
+  - wikipedia-data-quality
+  - wikipedia-de-datenbereinigung
+status: ai-draft
+sources:
+  - title: "Data quality"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_quality
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Datenbereinigung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Datenbereinigung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+Wrong data gives wrong answers, and the answers still look professional. A short quality check at the start often saves a correction at the end, after a report has already gone out.
+
+## What data quality means
+
+Data is generally considered high quality when it is fit for its intended use and represents the real-world thing it describes. The same data can be good enough for one question and useless for another: customer addresses that are fine for a monthly newsletter may be too imprecise for planning delivery routes.
+
+## Five dimensions (our own simple list)
+
+- Completeness: are required values present?
+- Accuracy: do values match reality?
+- Consistency: is the same thing recorded the same way everywhere?
+- Timeliness: is the data recent enough for the use?
+- Uniqueness: is each real-world thing recorded once?
+
+## The usual problems
+
+- Missing values: empty cells, or placeholders such as 0, "n/a" or 9999 that look like real data.
+- Duplicates: the same customer or order recorded more than once, sometimes with slightly different spelling.
+- Inconsistent formats: dates as 03/04/2026 (is that March or April?), "Germany" next to "DE", decimal comma and decimal point mixed.
+- Outliers: values far from the rest. They can be errors or real, rare cases.
+
+Data cleansing means identifying such errors and correcting, replacing or removing the affected data.
+
+## Three simple habits
+
+- Keep the raw data unchanged; work on a copy.
+- Write down every change you make and why.
+- Look before you clean: count rows, count empty cells, check the smallest and largest values.
+
+## Worked example
+
+Illustration only; invented figures. A table of 6 customers has two rows for "Müller GmbH" and "Mueller GmbH" with the same street and city, a delivery date written as 03/04/2026 in one row and 2026-04-03 in another, and an age of 250 in one row. The analyst copies the file, then notes: the two Müller rows are probably one customer (to confirm with the sales team), the dates need one format, and 250 is certainly an entry error, so it is marked as missing rather than guessed. Each decision goes into a change log.
+
+## Key takeaways
+
+- Data quality means fitness for the intended use.
+- Check completeness, accuracy, consistency, timeliness and uniqueness.
+- Look for missing values, duplicates, mixed formats and outliers before analysing.
+- Keep the raw data and log every change.

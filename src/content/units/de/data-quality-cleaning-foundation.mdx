@@ -1,0 +1,71 @@
+---
+id: data-quality-cleaning-foundation
+competency: data-quality-cleaning
+level: foundation
+title: "Wie gute Daten aussehen und die üblichen Probleme"
+objectives:
+  - "Datenqualität als Eignung für den vorgesehenen Zweck erklären."
+  - "Die Dimensionen benennen: Vollständigkeit, Richtigkeit, Konsistenz, Aktualität und Eindeutigkeit."
+  - "Fehlende Werte, Duplikate, uneinheitliche Formate und Ausreißer erkennen."
+  - "Die Rohdaten behalten und jede Änderung protokollieren."
+minutes: 20
+resources:
+  - wikipedia-data-quality
+  - wikipedia-de-datenbereinigung
+status: ai-draft
+sources:
+  - title: "Data quality"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_quality
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Datenbereinigung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Datenbereinigung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Falsche Daten liefern falsche Antworten, und die Antworten sehen trotzdem professionell aus. Eine kurze Qualitätsprüfung am Anfang erspart oft eine Korrektur am Ende, wenn ein Bericht schon verschickt ist.
+
+## Was Datenqualität bedeutet
+
+Daten gelten allgemein als qualitativ hochwertig, wenn sie für den vorgesehenen Zweck geeignet sind und das Ding der realen Welt abbilden, das sie beschreiben. Dieselben Daten können für eine Frage gut genug und für eine andere unbrauchbar sein: Kundenadressen, die für einen monatlichen Newsletter reichen, können für die Planung von Lieferrouten zu ungenau sein.
+
+## Fünf Dimensionen (unsere eigene einfache Liste)
+
+- Vollständigkeit: Sind die benötigten Werte vorhanden?
+- Richtigkeit: Stimmen die Werte mit der Wirklichkeit überein?
+- Konsistenz: Wird dasselbe überall gleich erfasst?
+- Aktualität: Sind die Daten für den Zweck aktuell genug?
+- Eindeutigkeit: Ist jedes reale Ding nur einmal erfasst?
+
+## Die üblichen Probleme
+
+- Fehlende Werte: leere Zellen oder Platzhalter wie 0, „k. A.“ oder 9999, die wie echte Daten aussehen.
+- Duplikate: derselbe Kunde oder dieselbe Bestellung mehrfach erfasst, manchmal mit leicht anderer Schreibweise.
+- Uneinheitliche Formate: Datumsangaben wie 03.04.2026 und 2026-04-03 nebeneinander, „Deutschland“ neben „DE“, Dezimalkomma und Dezimalpunkt gemischt.
+- Ausreißer: Werte weit abseits der übrigen. Sie können Fehler sein oder echte, seltene Fälle.
+
+Datenbereinigung bedeutet, solche Fehler zu finden und die betroffenen Daten zu korrigieren, zu ersetzen oder zu entfernen.
+
+## Drei einfache Gewohnheiten
+
+- Lass die Rohdaten unverändert; arbeite mit einer Kopie.
+- Schreibe jede Änderung samt Begründung auf.
+- Schau, bevor du bereinigst: Zeilen zählen, leere Zellen zählen, kleinste und größte Werte prüfen.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundene Zahlen. Eine Tabelle mit 6 Kundendatensätzen enthält zwei Zeilen für „Müller GmbH“ und „Mueller GmbH“ mit gleicher Straße und Stadt, ein Lieferdatum, das in einer Zeile als 03.04.2026 und in einer anderen als 2026-04-03 steht, und in einer Zeile ein Alter von 250. Das Analyseteam kopiert die Datei und notiert: Die beiden Müller-Zeilen sind wahrscheinlich ein Kunde (mit dem Vertrieb zu bestätigen), die Datumsangaben brauchen ein einheitliches Format, und 250 ist sicher ein Eingabefehler und wird als fehlend markiert statt geraten. Jede Entscheidung kommt in ein Änderungsprotokoll.
+
+## Das Wichtigste in Kürze
+
+- Datenqualität bedeutet Eignung für den vorgesehenen Zweck.
+- Prüfe Vollständigkeit, Richtigkeit, Konsistenz, Aktualität und Eindeutigkeit.
+- Suche vor der Analyse nach fehlenden Werten, Duplikaten, gemischten Formaten und Ausreißern.
+- Behalte die Rohdaten und protokolliere jede Änderung.

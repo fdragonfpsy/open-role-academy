@@ -1,0 +1,81 @@
+---
+id: data-sourcing-collection-foundation
+competency: data-sourcing-collection
+level: foundation
+title: "Where data comes from and what to know about it"
+objectives:
+  - "Name common data sources: files, databases, APIs, surveys and public portals."
+  - "Tell primary from secondary data and internal from external data."
+  - "List what to document about a source before using it."
+  - "Check whether data fits the question."
+minutes: 20
+resources:
+  - wikipedia-data-collection
+  - wikipedia-de-datenerhebung
+  - data-europa-eu-portal
+status: ai-draft
+sources:
+  - title: "Data collection"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_collection
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Erhebung (Empirie)"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Erhebung_(Empirie)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "data.europa.eu, the official portal for European data"
+    author: "Publications Office of the European Union"
+    url: https://data.europa.eu/en
+    license: free-access
+    licenseUrl: https://data.europa.eu/en
+    usage: cited
+---
+
+## Why this matters
+
+An analysis is only as good as the data it starts from. Before you calculate anything, you should know where the data comes from, who owns it, what the columns mean and whether it can answer your question at all.
+
+## What data collection is
+
+Data collection is the process of gathering and measuring information on chosen variables so that questions can be answered and results evaluated. In official statistics and in market and social research it is often called a survey or census (German: Erhebung), as opposed to an experiment, where the situation is created first.
+
+## Kinds of sources
+
+- Files: exports from systems, such as CSV or Excel files.
+- Databases: tables in a company system, read with SQL.
+- APIs: a defined way for programs to request data from another system.
+- Surveys: you ask people and record the answers.
+- Public portals: open datasets published by public bodies, for example the European data portal data.europa.eu. Every dataset has its own terms, so check them.
+
+## Primary and secondary data
+
+Primary data is collected for your own question. Secondary data was collected for another purpose and is reused. Secondary data is faster and cheaper, but you must check that its definitions fit your question.
+
+## What to write down about a source
+
+- Owner and contact.
+- Extraction date and period covered.
+- A short description of each field: meaning, unit, allowed values.
+- Known gaps or changes in how it was recorded.
+- Terms of use, and whether it contains personal data.
+
+## Fit for the question
+
+Check three things: the right group (does the data cover the customers, products or sites you ask about?), the right period and the right level of detail (daily or monthly, per order or per customer).
+
+A note on personal data: data about identifiable people is subject to privacy law, in the EU the GDPR. As a beginner, do not pull such data on your own; ask your data protection contact first.
+
+## Worked example
+
+Illustration only; invented figures. An analyst receives an export with a column "Umsatz" and wants monthly revenue. The sheet shows 118,000 for March. A colleague from finance says the finance report shows 99,160 for March. Before anyone argues, the analyst asks what the column means: the export contains gross amounts including 19 percent VAT, the report net amounts. 118,000 divided by 1.19 is 99,160, so both are right. The analyst adds the definition to the source notes: "Umsatz = gross".
+
+## Key takeaways
+
+- Know the owner, period and field meanings of every source.
+- Secondary data needs a check of definitions before reuse.
+- Check that the data covers the right group, period and level of detail.
+- Ask the data protection contact before touching personal data.

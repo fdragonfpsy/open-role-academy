@@ -1,0 +1,86 @@
+---
+id: data-sourcing-collection-advanced
+competency: data-sourcing-collection
+level: advanced
+title: "Judging source fitness and designing collection with quality built in"
+objectives:
+  - "Assess a source for coverage, bias, timeliness, provenance and terms of use."
+  - "Design a collection process that prevents errors instead of cleaning them later."
+  - "Weigh internal, external, open and newly collected data against cost and risk."
+  - "Apply data minimisation and purpose limitation at topic level and involve data protection early."
+minutes: 30
+resources:
+  - wikipedia-data-collection
+  - wikipedia-de-datenerhebung
+  - wikipedia-de-datenintegration
+  - data-europa-eu-portal
+status: ai-draft
+sources:
+  - title: "Data collection"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_collection
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Erhebung (Empirie)"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Erhebung_(Empirie)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Informationsintegration"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Datenintegration
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "data.europa.eu, the official portal for European data"
+    author: "Publications Office of the European Union"
+    url: https://data.europa.eu/en
+    license: free-access
+    licenseUrl: https://data.europa.eu/en
+    usage: cited
+---
+
+## Why this matters
+
+At advanced level you decide which data a project is built on. A weak source cannot be rescued by clever analysis, and a late discovery that the data may not be used costs the whole project.
+
+## Assess a source
+
+- Coverage: which units can never appear in this data? A customer survey sent through an app misses customers without the app.
+- Bias: who responds, who is recorded? Selection effects shape the result before any analysis.
+- Timeliness: how old is the data, how often is it updated, what changes without notice?
+- Provenance: who produced it, with which method and definitions? A source without that information is a risk.
+- Terms of use: may we use it for this purpose, and does it contain personal data?
+
+## Design collection with quality in
+
+Prevention is cheaper than correction. Agree definitions before collecting. Use fixed answer options, valid ranges and required fields where they make sense. Test the instrument on a few cases. Plan checks during collection, for example daily row counts, and do not wait for the end. Quality assurance comes before collection, quality control during and after.
+
+## Weighing the options
+
+- Internal data: closest to your business but shaped by how systems were used.
+- External or open data: broad and often free of charge, but definitions are set by others and each dataset has its own terms. Open data is data that anyone may access and share, usually under an open licence; check the licence per dataset.
+- New collection: fits your question but costs time and needs design.
+
+Choose by fit, cost, timeliness and risk, and write the reasoning down.
+
+## Personal data, at topic level
+
+If the data relates to identifiable people, EU data protection law (GDPR) applies. Two principles matter for design: collect only what is needed for a stated purpose (data minimisation) and do not reuse it for an unrelated purpose without checking whether that is allowed. Involve your data protection officer or contact at the planning stage; do not leave it until the results exist. Legal assessments are theirs, not the analyst's.
+
+## Watch for change
+
+Sources change: a field is redefined, a system is replaced, a portal changes its format. Add simple checks (row counts, value ranges, last update date) so that a change is noticed before it distorts a report.
+
+## Worked example
+
+Illustration only; invented figures. A customer-satisfaction survey sent as an app notification returns an average of 4.6 out of 5. The analyst notes that only active app users can respond, and that these are about 12 percent of all customers. The result describes app users, not the customer base. The analyst recommends adding a small random sample by email, reports the two groups separately and labels the limitation in the summary. The survey form also gets a required field for the order number, so answers can be matched to orders without free-text names, and nothing else personal is asked.
+
+## Key takeaways
+
+- Assess coverage, bias, timeliness, provenance and terms before building on a source.
+- Prevent errors with definitions, constraints and early checks.
+- Compare data options on fit, cost, timeliness and risk, and record the reasoning.
+- Plan data minimisation and involve data protection from the start.

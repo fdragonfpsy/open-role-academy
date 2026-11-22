@@ -1,0 +1,299 @@
+competency: data-analytics-fundamentals
+items:
+- id: daf-f-types
+  level: foundation
+  difficulty: 850
+  type: single
+  stem:
+    en: Which of these questions is a descriptive question?
+    de: Welche dieser Fragen ist eine deskriptive Frage?
+  options:
+  - en: How many tickets were answered within 24 hours last quarter?
+    de: Wie viele Tickets wurden im letzten Quartal innerhalb von 24 Stunden beantwortet?
+    correct: true
+  - en: Why did the response times become slower over the last quarter?
+    de: Warum sind die Antwortzeiten im Laufe des letzten Quartals insgesamt langsamer geworden?
+    correct: false
+  - en: How many tickets are we likely to receive during the next month?
+    de: Wie viele Tickets erwarten wir voraussichtlich im nächsten Monat?
+    correct: false
+  - en: Which staffing plan should we choose for the next quarter?
+    de: Welchen Einsatzplan sollen wir für das nächste Quartal wählen?
+    correct: false
+  explanation:
+    en: A descriptive question asks what happened and is answered with counts, totals or averages. "Why" is diagnostic, "how many next month" is predictive and "which plan" is prescriptive.
+    de: Eine deskriptive Frage fragt, was passiert ist, und wird mit Zählungen, Summen oder Durchschnitten beantwortet. „Warum“ ist diagnostisch, „wie viele im nächsten Monat“ prädiktiv und „welcher Plan“ präskriptiv.
+  source: https://en.wikipedia.org/wiki/Data_analysis
+- id: daf-f-numeric
+  level: foundation
+  difficulty: 900
+  type: multi
+  stem:
+    en: Which of these columns hold numerical data that you can calculate with? Select all that apply.
+    de: Welche dieser Spalten enthalten numerische Daten, mit denen du rechnen kannst? Wähle alle zutreffenden aus.
+  options:
+  - en: Order value in euros
+    de: Bestellwert in Euro
+    correct: true
+  - en: Region name, such as "North"
+    de: Regionsname, etwa „Nord“
+    correct: false
+  - en: Delivery time in hours
+    de: Lieferzeit in Stunden
+    correct: true
+  - en: Product group label, such as "Tools"
+    de: Produktgruppen-Bezeichnung, etwa „Werkzeuge“
+    correct: false
+  - en: Number of items per order
+    de: Anzahl der Artikel je Bestellung
+    correct: true
+  explanation:
+    en: 'Numerical data are numbers that support calculation: value, time and count. Region names and group labels are categorical data; you can count them, but an average of labels makes no sense.'
+    de: 'Numerische Daten sind Zahlen, die Rechnen zulassen: Wert, Zeit und Anzahl. Regionsnamen und Gruppenbezeichnungen sind kategoriale Daten; du kannst sie zählen, aber ein Durchschnitt von Bezeichnungen ergibt keinen Sinn.'
+  source: https://openstax.org/books/introductory-statistics-2e/pages/1-introduction
+- id: daf-f-first
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: 'A manager says: "We need an analysis of our customers." What is the sensible first step?'
+    de: 'Eine Führungskraft sagt: „Wir brauchen eine Analyse unserer Kundschaft.“ Was ist der sinnvolle erste Schritt?'
+  options:
+  - en: Clarify which decision the analysis should support and what the real question is
+    de: Klären, welche Entscheidung die Analyse stützen soll und wie die eigentliche Frage lautet
+    correct: true
+  - en: Open the customer table and build charts of every column to see what stands out
+    de: Die Kundentabelle öffnen und Diagramme jeder Spalte erstellen, um zu sehen, was auffällt
+    correct: false
+  - en: Pick a tool and a modelling method that the team already knows well from earlier work
+    de: Ein Werkzeug und eine Modellierungsmethode wählen, die das Team aus früherer Arbeit gut kennt
+    correct: false
+  - en: Clean every column of the table so that nothing in the data can disturb the work later
+    de: Jede Spalte der Tabelle bereinigen, damit später nichts in den Daten die Arbeit stören kann
+    correct: false
+  explanation:
+    en: A vague request must be turned into a question tied to a decision. Without it you cannot tell which data, which cleaning and which method are needed, and charts of everything answer nothing in particular.
+    de: Eine vage Anfrage muss in eine Frage mit Bezug zu einer Entscheidung verwandelt werden. Ohne sie weißt du nicht, welche Daten, welche Bereinigung und welche Methode nötig sind, und Diagramme von allem beantworten nichts Bestimmtes.
+  source: https://en.wikipedia.org/wiki/Data_analysis
+- id: daf-f-postcode
+  level: foundation
+  difficulty: 1000
+  type: single
+  stem:
+    en: A column holds postcodes such as 80331 and 10115. How should you treat it?
+    de: Eine Spalte enthält Postleitzahlen wie 80331 und 10115. Wie behandelst du sie?
+  options:
+  - en: 'As categorical data: a label, since averaging postcodes has no meaning'
+    de: 'Als kategoriale Daten: eine Bezeichnung, denn ein Durchschnitt von Postleitzahlen hat keine Bedeutung'
+    correct: true
+  - en: As numerical data, since it consists of digits and can be added up and averaged
+    de: Als numerische Daten, da sie aus Ziffern bestehen und sich daher addieren, mitteln und vergleichen lassen
+    correct: false
+  - en: As numerical data, because a higher postcode means a larger or more important area
+    de: Als numerische Daten, weil eine höhere Postleitzahl ein größeres, wichtigeres oder bedeutenderes Gebiet bedeutet
+    correct: false
+  - en: As unstructured data, because a postcode is a piece of free text about a place
+    de: Als unstrukturierte Daten, weil eine Postleitzahl ein freier Text über einen Ort ist
+    correct: false
+  explanation:
+    en: Digits do not make data numerical. A postcode identifies a place and works as a label; calculating with it is meaningless. Treating it as text also keeps leading zeros, which some German postcodes have.
+    de: Ziffern machen Daten nicht numerisch. Eine Postleitzahl kennzeichnet einen Ort und wirkt als Bezeichnung; Rechnen damit ist sinnlos. Als Text behandelt bleiben auch führende Nullen erhalten, die manche deutsche Postleitzahlen haben.
+  source: https://openstax.org/books/introductory-statistics-2e/pages/1-introduction
+- id: daf-p-confirm
+  level: practitioner
+  difficulty: 1150
+  type: single
+  stem:
+    en: What describes confirmatory analysis correctly?
+    de: Was beschreibt die bestätigende Analyse richtig?
+  options:
+  - en: It tests a hypothesis stated beforehand and tries to confirm or falsify it
+    de: Sie prüft eine vorab formulierte Hypothese und versucht, sie zu bestätigen oder zu widerlegen
+    correct: true
+  - en: It searches the data for new features and patterns that nobody expected earlier
+    de: Sie durchsucht die Daten nach neuen Auffälligkeiten und Mustern, die vorher niemand erwartet hat
+    correct: false
+  - en: It summarises the data in totals and averages without testing any specific claim
+    de: Sie fasst die Daten in Summen und Durchschnitten zusammen, ohne eine bestimmte Aussage zu prüfen
+    correct: false
+  - en: It builds a forecasting model and then reports how accurate the forecast turned out
+    de: Sie baut ein Prognosemodell und berichtet danach, wie genau die Prognose ausgefallen ist
+    correct: false
+  explanation:
+    en: Confirmatory analysis starts from a stated hypothesis and tests it. Searching for new patterns is exploratory analysis, summarising is descriptive, and forecasting is predictive.
+    de: Die bestätigende Analyse geht von einer genannten Hypothese aus und prüft sie. Die Suche nach neuen Mustern ist explorative Analyse, das Zusammenfassen deskriptiv und das Vorhersagen prädiktiv.
+  source: https://en.wikipedia.org/wiki/Data_analysis
+- id: daf-p-tool
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: A report on the same figures must go to 60 readers every month, and the data sits in a company database. What fits best?
+    de: Ein Bericht mit denselben Kennzahlen soll jeden Monat an 60 Lesende gehen, die Daten liegen in einer Unternehmensdatenbank. Was passt am besten?
+  options:
+  - en: A BI report fed by a stored query, so that it refreshes without manual copying
+    de: Ein BI-Bericht, der aus einer gespeicherten Abfrage gespeist wird und sich ohne manuelles Kopieren aktualisiert
+    correct: true
+  - en: A spreadsheet that an analyst rebuilds by hand every month from a fresh export
+    de: Eine Tabelle, die jemand im Analyseteam jeden Monat von Hand aus einem neuen Export neu aufbaut
+    correct: false
+  - en: A machine-learning model that predicts the figures instead of reading them
+    de: Ein Machine-Learning-Modell, das die Kennzahlen vorhersagt, statt sie einfach aus den Daten auszulesen und darzustellen
+    correct: false
+  - en: A set of screenshots that are saved in a shared folder after each reporting date
+    de: Eine Sammlung von Bildschirmfotos, die nach jedem Berichtsstichtag in einem Ordner abgelegt werden
+    correct: false
+  explanation:
+    en: 'A recurring report for many readers calls for an automated, repeatable pipeline: a stored query feeding a BI tool. Manual rebuilds invite errors, a model is not needed to read known figures and screenshots cannot be reused.'
+    de: 'Ein wiederkehrender Bericht für viele Lesende braucht eine automatisierte, wiederholbare Kette: eine gespeicherte Abfrage, die ein BI-Tool speist. Manueller Neuaufbau begünstigt Fehler, für bekannte Kennzahlen braucht es kein Modell, und Bildschirmfotos lassen sich nicht weiterverwenden.'
+  source: https://en.wikipedia.org/wiki/Data_analysis
+- id: daf-p-handover
+  level: practitioner
+  difficulty: 1250
+  type: multi
+  stem:
+    en: Which items belong in a good handover of an analysis to a colleague? Select all that apply.
+    de: Was gehört in eine gute Übergabe einer Analyse an eine Kollegin oder einen Kollegen? Wähle alle zutreffenden aus.
+  options:
+  - en: The definitions used, such as what counts as an active customer
+    de: Die verwendeten Definitionen, etwa was als aktive Kundschaft zählt
+    correct: true
+  - en: The data sources and the date on which the data was extracted
+    de: Die Datenquellen und das Datum, an dem die Daten extrahiert wurden
+    correct: true
+  - en: Open questions and known limits of the result
+    de: Offene Fragen und bekannte Grenzen des Ergebnisses
+    correct: true
+  - en: Only the final chart as an image, so that nothing distracts from the message
+    de: Nur das fertige Diagramm als Bild, damit nichts von der Botschaft ablenkt
+    correct: false
+  - en: A list of everyone who happened to open the working file in the last month
+    de: Eine Liste aller, die die Arbeitsdatei im letzten Monat zufällig geöffnet haben
+    correct: false
+  explanation:
+    en: 'A handover must let the next person understand and rerun the work: definitions, sources with extraction date, and limits. A bare image hides how the figure came about, and a list of people who opened a file says nothing about the analysis.'
+    de: 'Eine Übergabe muss der nächsten Person ermöglichen, die Arbeit zu verstehen und erneut auszuführen: Definitionen, Quellen mit Extraktionsdatum und Grenzen. Ein bloßes Bild verbirgt, wie die Zahl entstand, und eine Liste der Personen, die eine Datei geöffnet haben, sagt nichts über die Analyse.'
+  source: https://en.wikipedia.org/wiki/Data_analysis
+- id: daf-p-hypo
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: After trying 20 splits of the data you find a higher return rate for one supplier batch. How do you report it?
+    de: Nach 20 Aufteilungen der Daten fällt dir eine höhere Retourenquote bei einer Lieferantencharge auf. Wie berichtest du das?
+  options:
+  - en: As a hypothesis that needs a test, for example on the next batch or another period
+    de: Als Hypothese, die einen Test braucht, zum Beispiel an der nächsten Charge oder einem anderen Zeitraum
+    correct: true
+  - en: As the confirmed cause, because the pattern in the data is clearly visible
+    de: Als bestätigte Ursache, weil das Muster in den Daten deutlich zu sehen ist
+    correct: false
+  - en: Not at all, because patterns found by exploring are never of any use to a team
+    de: Gar nicht, denn beim Erkunden gefundene Muster sind für ein Team grundsätzlich nie nützlich
+    correct: false
+  - en: As the main finding, while the 19 other splits are left out so the report stays tidy
+    de: Als Hauptbefund, wobei die 19 anderen Aufteilungen weggelassen werden, damit der Bericht aufgeräumt bleibt
+    correct: false
+  explanation:
+    en: With many splits, some patterns appear by chance. A finding from exploration is a lead, so label it a hypothesis and test it. Hiding the other 19 splits would overstate how solid the finding is.
+    de: Bei vielen Aufteilungen tauchen manche Muster zufällig auf. Ein Fund aus der Erkundung ist ein Hinweis; nenne ihn Hypothese und teste ihn. Die anderen 19 Aufteilungen zu verschweigen würde übertreiben, wie belastbar der Fund ist.
+  source: https://en.wikipedia.org/wiki/Data_analysis
+- id: daf-a-scope
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: Which question helps most to decide whether an analysis is worth doing at all?
+    de: Welche Frage hilft am meisten zu entscheiden, ob sich eine Analyse überhaupt lohnt?
+  options:
+  - en: What result would make the decision-maker decide differently?
+    de: Welches Ergebnis würde die entscheidende Person anders entscheiden lassen?
+    correct: true
+  - en: Which of the available tools is the team most experienced in using?
+    de: Mit welchem der verfügbaren Werkzeuge hat das Team die meiste Erfahrung?
+    correct: false
+  - en: How many rows and columns does the largest available data source hold?
+    de: Wie viele Zeilen und Spalten hat die größte verfügbare Datenquelle?
+    correct: false
+  - en: How complex a statistical model could we build with the time that we have?
+    de: Wie komplex ein statistisches Modell könnten wir in der verfügbaren Zeit bauen?
+    correct: false
+  explanation:
+    en: If no possible result would change the decision, the analysis has no value for it. Tools, data volume and model complexity describe what is possible, not what is worthwhile.
+    de: Würde kein mögliches Ergebnis die Entscheidung ändern, hat die Analyse für sie keinen Wert. Werkzeuge, Datenmenge und Modellkomplexität beschreiben, was möglich ist, nicht, was sich lohnt.
+  source: https://en.wikipedia.org/wiki/Data_analysis
+- id: daf-a-traps
+  level: advanced
+  difficulty: 1500
+  type: multi
+  stem:
+    en: Which practices raise the risk of a misleading finding? Select all that apply.
+    de: Welche Vorgehensweisen erhöhen das Risiko eines irreführenden Befunds? Wähle alle zutreffenden aus.
+  options:
+  - en: Splitting the data many ways without recording which splits were tried
+    de: Die Daten vielfach aufzuteilen, ohne festzuhalten, welche Aufteilungen probiert wurden
+    correct: true
+  - en: Adopting an explanation that was found only after the result was known
+    de: Eine Erklärung zu übernehmen, die erst gefunden wurde, nachdem das Ergebnis bekannt war
+    correct: true
+  - en: Applying a result from app users to all customers without further checks
+    de: Ein Ergebnis von App-Nutzenden ohne weitere Prüfung auf die gesamte Kundschaft zu übertragen
+    correct: true
+  - en: Storing the query so that a colleague can rerun the analysis later on
+    de: Die Abfrage zu speichern, damit eine Kollegin die Analyse später erneut ausführen kann
+    correct: false
+  - en: Stating the assumptions and how sensitive the result is to each of them
+    de: Die Annahmen zu nennen und wie empfindlich das Ergebnis auf jede von ihnen reagiert
+    correct: false
+  explanation:
+    en: Unrecorded multiple comparisons, hindsight explanations and unjustified generalisation all produce findings that look firmer than they are. Stored queries and stated assumptions make an analysis checkable and are good practice.
+    de: Unprotokollierte Mehrfachvergleiche, Erklärungen im Nachhinein und unbegründetes Verallgemeinern erzeugen Befunde, die fester wirken, als sie sind. Gespeicherte Abfragen und genannte Annahmen machen eine Analyse überprüfbar und sind gute Praxis.
+  source: https://en.wikipedia.org/wiki/Data_analysis
+- id: daf-a-churn
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: The retention team can phone 200 customers a month. Marketing wants a complex churn model. What is the best scope?
+    de: Das Bindungsteam kann im Monat 200 Kundinnen und Kunden anrufen. Das Marketing will ein komplexes Abwanderungsmodell. Was ist der beste Zuschnitt?
+  options:
+  - en: Start with a simple ranking rule for the 200 calls and check after a few months whether it helped
+    de: Mit einer einfachen Rangfolgeregel für die 200 Anrufe beginnen und nach einigen Monaten prüfen, ob sie geholfen hat
+    correct: true
+  - en: Build the full model first and decide only afterwards which business decision it could actually serve
+    de: Zuerst das vollständige Modell bauen und erst danach entscheiden, welcher betrieblichen Entscheidung es tatsächlich dienen könnte
+    correct: false
+  - en: Calculate an exact cancellation probability for every customer and publish all of them
+    de: Für jede Kundin und jeden Kunden eine genaue Abwanderungswahrscheinlichkeit berechnen und alle veröffentlichen
+    correct: false
+  - en: Decline the request, because no analysis can ever improve who gets called in a month
+    de: Die Anfrage ablehnen, denn keine Analyse kann je verbessern, wer in einem Monat angerufen wird
+    correct: false
+  explanation:
+    en: The decision is "which 200?", so a simple ranking is enough to act on. A later check shows whether more effort is justified. Building a model before knowing the decision, or publishing probabilities nobody can use, spends effort without changing anything.
+    de: Die Entscheidung lautet „Welche 200?“, eine einfache Rangfolge genügt also, um zu handeln. Eine spätere Prüfung zeigt, ob mehr Aufwand gerechtfertigt ist. Ein Modell vor der Kenntnis der Entscheidung oder Wahrscheinlichkeiten, die niemand nutzen kann, verbrauchen Aufwand, ohne etwas zu ändern.
+  source: https://en.wikipedia.org/wiki/Data_analysis
+- id: daf-a-repro
+  level: advanced
+  difficulty: 1650
+  type: single
+  stem:
+    en: Which practice best makes an analysis reproducible by someone else?
+    de: Welche Vorgehensweise macht eine Analyse am besten für andere reproduzierbar?
+  options:
+  - en: A stored script or query, the extraction date and fixed written definitions
+    de: Ein gespeichertes Skript oder eine Abfrage, das Extraktionsdatum und festgehaltene schriftliche Definitionen
+    correct: true
+  - en: A final chart saved as an image with a clear title and the name of the analyst
+    de: Ein fertiges Diagramm als Bild mit klarem Titel und dem Namen der Analysierenden
+    correct: false
+  - en: A chat message that lists which buttons were clicked and in which order they came
+    de: Eine Chatnachricht, die aufführt, welche Schaltflächen in welcher Reihenfolge angeklickt wurden und was dabei zu sehen war
+    correct: false
+  - en: A working file in a shared folder that was named "final" and is edited by hand
+    de: Eine Arbeitsdatei in einem gemeinsamen Ordner, die „final“ heißt und von Hand bearbeitet wird
+    correct: false
+  explanation:
+    en: Reproducibility needs the steps themselves in a rerunnable form plus the data date and the definitions. An image, a click list or a hand-edited file leaves silent edits and unclear definitions that cannot be rerun.
+    de: Reproduzierbarkeit braucht die Schritte selbst in wiederholbarer Form sowie Datenstand und Definitionen. Ein Bild, eine Klickliste oder eine von Hand bearbeitete Datei lassen stille Änderungen und unklare Definitionen zurück, die sich nicht wiederholen lassen.
+  source: https://en.wikipedia.org/wiki/Data_analysis

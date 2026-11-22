@@ -1,0 +1,14 @@
+id: data-europa-eu-portal
+url: "https://data.europa.eu/en"
+title: "data.europa.eu, the official portal for European data"
+provider: Publications Office of the European Union
+language: en
+format: interactive
+minutes: 20
+license: free-access
+licenseUrl: https://data.europa.eu/en
+licenseVerifiedOn: 2026-11-22
+mode: link
+competencies: [data-sourcing-collection]
+levels: [foundation, practitioner, advanced]
+note: "Portal page (title: The European Data Portal) free to access, HTTP 200 on 2026-11-22; no blanket open license verified for its content, so link only. Individual datasets carry their own licenses."

@@ -1,0 +1,85 @@
+---
+id: data-sourcing-collection-practitioner
+competency: data-sourcing-collection
+level: practitioner
+title: "Collecting and combining data from several sources"
+objectives:
+  - "Choose between an extract, an API and a survey for a given need."
+  - "Combine sources using join keys and spot mismatches in keys, formats and granularity."
+  - "Avoid inflated totals after joining tables with one-to-many relations."
+  - "Record where each field came from."
+minutes: 25
+resources:
+  - wikipedia-data-collection
+  - wikipedia-de-datenerhebung
+  - wikipedia-de-datenintegration
+  - data-europa-eu-portal
+status: ai-draft
+sources:
+  - title: "Data collection"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_collection
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Erhebung (Empirie)"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Erhebung_(Empirie)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Informationsintegration"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Datenintegration
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "data.europa.eu, the official portal for European data"
+    author: "Publications Office of the European Union"
+    url: https://data.europa.eu/en
+    license: free-access
+    licenseUrl: https://data.europa.eu/en
+    usage: cited
+---
+
+## Why this matters
+
+Most real questions need more than one source: customers from the CRM, orders from the shop, costs from finance. Combining them is where many analyses quietly go wrong.
+
+## Choosing how to collect
+
+- Extract or file: quick for a one-off; note the extraction date.
+- Database query: repeatable and documented by the query itself.
+- API: good for regularly updated external data; watch limits and changes in the format.
+- Survey: when the data does not exist yet; define the question, the target group and how people are reached.
+
+A data collection process benefits from quality assurance before collection (clear protocols and definitions, prevention) and quality control during and after (checks that catch errors).
+
+## Combining sources
+
+Data integration means bringing data from sources with different structures into one common structure. A classic pattern is the data warehouse: data is extracted from the sources, transformed to a common format and loaded into one place. Whether you build a warehouse or a simple join, the same questions arise.
+
+- Join keys: use a stable ID, not a name. Names differ in spelling, IDs should not.
+- Formats: dates, currencies, upper and lower case, units.
+- Granularity: daily against monthly, per order against per customer. Bring both sides to the same level before joining.
+- Time: time zones and cut-off times for "yesterday".
+- Coverage: which records exist in only one source, and why?
+
+## Check the result
+
+After every join compare row counts and totals with the input. A join of a one-row-per-customer table with a many-rows-per-customer table repeats the customer's values on each row; summing a customer-level figure afterwards counts it several times.
+
+## Keep the lineage
+
+Write down for every field: source, extraction date, transformation. That note lets others, and you later, trust and rebuild the table.
+
+## Worked example
+
+Illustration only; invented figures. The analyst joins a customer table (credit limit per customer) to an order table (several orders per customer) and sums the credit limit per region. The total looks 3 times too high. The reason: a customer with three orders now has three rows, so the credit limit is counted three times. The fix is to aggregate orders per customer first, then join one row per customer, and to check that the sum of credit limits equals the figure from the customer table alone.
+
+## Key takeaways
+
+- Choose the collection method by need: one-off, repeatable, external or new.
+- Join on stable IDs and bring both sides to the same granularity.
+- Compare row counts and totals before and after a join.
+- Keep a lineage note for every field.

@@ -1,0 +1,91 @@
+---
+id: data-quality-cleaning-advanced
+competency: data-quality-cleaning
+level: advanced
+title: "Quality rules, reproducible cleaning and judging trade-offs"
+objectives:
+  - "Define measurable quality rules with owners and thresholds."
+  - "Choose a cleaning approach by its effect on the analysis, and test sensitivity."
+  - "Make cleaning reproducible with scripts or queries, a log and no manual edits to the source."
+  - "Fix problems at the source and agree on responsibility."
+minutes: 30
+resources:
+  - wikipedia-data-quality
+  - wikipedia-de-datenbereinigung
+  - wikipedia-de-duplikaterkennung
+  - openstax-intro-stats-descriptive
+status: ai-draft
+sources:
+  - title: "Data quality"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_quality
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Datenbereinigung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Datenbereinigung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Duplikaterkennung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Duplikaterkennung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Introductory Statistics 2e, Chapter 2: Descriptive Statistics"
+    author: "Barbara Illowsky, Susan Dean et al. (OpenStax)"
+    url: https://openstax.org/books/introductory-statistics-2e/pages/2-introduction
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+At advanced level the question is no longer how to clean one file, but how to keep data trustworthy over time, for many users and many analyses. Quality that depends on one person's manual fixes disappears when that person is away.
+
+## Turn quality into rules
+
+A rule is a check that gives a clear pass or fail and has an owner. Examples (the thresholds are illustrative; the data owner sets real ones):
+
+- customer_id is never empty and is unique.
+- Order date is not in the future.
+- No more than 2 percent of delivery addresses lack a postcode.
+- Every order references an existing customer.
+
+Run the rules on each data load and report results to the owner. Data governance, meaning agreed responsibilities and standards, is what gives the rules weight. A rule nobody owns is ignored.
+
+## Judge the trade-offs
+
+Every treatment has an effect on the result:
+
+- Removing rows can bias a result if the removed rows differ from the others.
+- Filling values reduces apparent variation and can make results look surer than they are.
+- Over-cleaning can delete real signal: the rare large customer is an outlier and also a key account.
+- Under-cleaning lets errors drive conclusions.
+
+A practical test is sensitivity: run the analysis with and without the treatment, or with two plausible alternatives. If the conclusion holds, say so; if it changes, report the range and what drives it.
+
+## Make cleaning reproducible
+
+- Do the cleaning in a script or query kept under version control, not by hand in the source file.
+- Keep the raw data untouched and log every rule applied, with counts of rows affected.
+- Record the data extraction date and tool versions where they matter.
+- State, in the report, the main cleaning choices and their effect.
+
+## Fix at the source
+
+Repeated downstream cleaning is a sign of an upstream problem. Find the cause (a form without validation, a system that allows two spellings, a manual interface) and agree with the owner on a fix. Until it is fixed, handle the problem transparently and visibly, not silently.
+
+## Worked example
+
+Illustration only; invented figures. 6 percent of orders have no region. The analyst could fill the gap with the most common region, but that would favour one region. Tracing the cause shows that the mobile order form lets the field stay empty. The analyst asks the data owner to make the field mandatory and meanwhile uses the category "unknown", reported in every regional chart. A sensitivity check, with the unknown rows spread proportionally and with them left out, changes regional shares by less than one percentage point, so the conclusions stand. The rule "region not empty, at most 1 percent" is added to the load checks.
+
+## Key takeaways
+
+- Turn quality into rules with clear pass or fail, an owner and a threshold.
+- Judge each treatment by its effect on the conclusion; test sensitivity.
+- Clean with scripts and logs, never by hand in the source.
+- Fix causes upstream and handle the gap openly until then.

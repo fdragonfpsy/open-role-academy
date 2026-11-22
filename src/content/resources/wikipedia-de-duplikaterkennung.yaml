@@ -1,0 +1,14 @@
+id: wikipedia-de-duplikaterkennung
+url: "https://de.wikipedia.org/wiki/Duplikaterkennung"
+title: "Duplikaterkennung"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-22
+mode: link
+competencies: [data-quality-cleaning]
+levels: [foundation, practitioner, advanced]
+note: "Wikipedia text under CC BY-SA; intro and start of process section read 2026-11-22 (identische vs. nichtidentische Duplikate, Konsolidierung). Link only."

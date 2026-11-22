@@ -1,0 +1,74 @@
+---
+id: data-analytics-fundamentals-advanced
+competency: data-analytics-fundamentals
+level: advanced
+title: "Scoping and judging analyses: from decision to reproducible result"
+objectives:
+  - "Scope an analysis from the decision it should change and the effort it is worth."
+  - "Judge whether a question can be answered with the data and time available."
+  - "Spot common traps: hindsight, many comparisons, unrepresentative data."
+  - "Make an analysis reproducible and state its uncertainty."
+minutes: 30
+resources:
+  - wikipedia-data-analysis
+  - wikipedia-de-datenanalyse
+  - openstax-intro-stats-sampling-data
+status: ai-draft
+sources:
+  - title: "Data analysis"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_analysis
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Datenanalyse"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Datenanalyse
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Introductory Statistics 2e, Chapter 1: Sampling and Data"
+    author: "Barbara Illowsky, Susan Dean et al. (OpenStax)"
+    url: https://openstax.org/books/introductory-statistics-2e/pages/1-introduction
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+At advanced level you are asked less "can you calculate this?" and more "should we do this analysis at all, and how far?" Good scoping saves weeks; good review protects decisions from results that only look solid.
+
+## Scope from the decision
+
+Ask four questions before any work starts:
+
+- Which decision will this change, and who takes it?
+- What result would make them decide differently? If no result would, the analysis is not needed.
+- What is a good enough answer, and by when?
+- Which data exists, and is it fit for this question?
+
+Our own rule: agree on the simplest analysis that could change the decision, and extend it only if the decision needs more.
+
+## Traps to check
+
+- Hindsight: explanations that fit the past neatly but were found after seeing the result.
+- Many comparisons: if you split the data many ways, some patterns appear by chance. Keep a record of what you tried.
+- Unrepresentative data: a result holds for the group that is in the data, not automatically for everyone.
+- Correlation is not causation: a diagnostic finding is a lead, not proof.
+- Mixing up types: data mining and prediction aim at forecasting, while business intelligence relies heavily on aggregating business information; a dashboard is not a forecast.
+
+## Reproducibility and uncertainty
+
+Someone else, or you in six months, should be able to rerun the analysis and get the same result. That means stored queries or scripts, a note of the data extraction date, fixed definitions and no silent manual edits. State uncertainty plainly: what the data cannot show, which assumptions you made and how sensitive the result is to them.
+
+## Worked example
+
+Illustration only; invented figures. Marketing asks for a model to predict which customers will cancel. The analyst asks what action would follow. The retention team can phone about 200 customers a month. So the decision is "which 200?", not "what is the exact probability?". A simple ranking rule based on recent inactivity and open complaints is enough to start. The analyst documents the query, notes that the data covers only customers with an online account, and agrees to check after three months whether the called customers stayed more often than comparable ones that were not called. A complex model is deferred until that check shows value.
+
+## Key takeaways
+
+- Scope from the decision and its threshold, not from the available methods.
+- Choose the simplest analysis that could change the decision.
+- Keep a record of everything tried to avoid chance findings.
+- Make the work reproducible and state what the result cannot show.

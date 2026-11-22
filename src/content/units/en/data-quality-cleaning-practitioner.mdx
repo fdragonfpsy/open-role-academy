@@ -1,0 +1,85 @@
+---
+id: data-quality-cleaning-practitioner
+competency: data-quality-cleaning
+level: practitioner
+title: "Finding and fixing missing values, duplicates and outliers"
+objectives:
+  - "Profile a dataset before cleaning it."
+  - "Handle missing values with an explicit, stated rule."
+  - "Tell identical from non-identical duplicates and merge them safely."
+  - "Treat outliers as questions to investigate, and standardise formats with documentation."
+minutes: 25
+resources:
+  - wikipedia-data-quality
+  - wikipedia-de-datenbereinigung
+  - wikipedia-de-duplikaterkennung
+  - openstax-intro-stats-descriptive
+status: ai-draft
+sources:
+  - title: "Data quality"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_quality
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Datenbereinigung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Datenbereinigung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Duplikaterkennung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Duplikaterkennung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Introductory Statistics 2e, Chapter 2: Descriptive Statistics"
+    author: "Barbara Illowsky, Susan Dean et al. (OpenStax)"
+    url: https://openstax.org/books/introductory-statistics-2e/pages/2-introduction
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+Cleaning decisions change results. Deleting rows, filling gaps or removing outliers are analytical choices, not housekeeping, and each needs a stated reason.
+
+## Profile first
+
+Before changing anything, describe the data: number of rows, share of empty values per column, distinct values for categories, minimum, maximum and typical values for numbers. A profile shows where the problems are and which ones matter for your question.
+
+## Missing values
+
+First ask why a value is missing: not entered, not applicable, or not yet known? A blank, a zero and "unknown" mean different things. Options, with their trade-offs:
+
+- Leave it and say so: honest, but some tools skip those rows silently.
+- Flag it as its own category ("unknown"): keeps the row and shows the gap.
+- Fill it with a justified value, such as the median for a group: keeps the row, but invents precision; the filled share should be reported.
+- Remove the row: simple, but biased if the missing rows differ from the others.
+
+Pick one rule per column and write it down.
+
+## Duplicates
+
+There are two kinds. Identical duplicates agree in all values and can be removed without losing information. Non-identical duplicates describe the same real object with differing values, such as two spellings of a name; they cannot simply be deleted, since the values must first be consolidated. Detection needs rules or similarity checks, so review matches before merging.
+
+## Outliers
+
+An outlier is a value far from the rest. Common statistical rules, such as flagging values far outside the middle half of the data, only point to candidates. Investigate: is it a typing error, a unit mix-up or a real rare case? Correct errors, keep real cases and report them separately if they distort averages.
+
+## Standardise and document
+
+Use one format for dates, one spelling for categories, one unit per column. Keep a change log with what, why, how many rows and who decided.
+
+## Worked example
+
+Illustration only; invented figures. Among 40 orders, 39 are between 50 and 200 euros and one is 12,000. The analyst checks the source system: the order was entered as 12000 but the invoice says 120.00, a typing error with two extra zeros. The value is corrected, and the log records "order 1032: 12000 corrected to 120.00 per invoice". Had the invoice also said 12,000 for a genuine bulk order, the row would stay and be reported separately, because it would distort the average order value.
+
+## Key takeaways
+
+- Profile before cleaning and decide on one stated rule per column.
+- Missing values have different causes; the treatment must fit the cause.
+- Identical duplicates can be removed; non-identical ones must be consolidated.
+- Investigate outliers before removing them, and log every change.

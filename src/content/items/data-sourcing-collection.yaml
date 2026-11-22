@@ -1,0 +1,299 @@
+competency: data-sourcing-collection
+items:
+- id: dsc-f-primary
+  level: foundation
+  difficulty: 850
+  type: single
+  stem:
+    en: What is meant by primary data?
+    de: Was versteht man unter Primärdaten?
+  options:
+  - en: Data that is collected for your own question
+    de: Daten, die für die eigene Fragestellung erhoben werden
+    correct: true
+  - en: Data that was exported from a company system for another purpose
+    de: Daten, die für einen anderen Zweck aus einem Unternehmenssystem exportiert wurden
+    correct: false
+  - en: Data that comes from a public portal and may be reused by anyone
+    de: Daten, die aus einem öffentlichen Portal stammen und von allen weiterverwendet werden dürfen
+    correct: false
+  - en: Data that is more recent than all the other data sources in an analysis
+    de: Daten, die jünger sind als alle anderen Datenquellen in einer Analyse
+    correct: false
+  explanation:
+    en: Primary data is collected for the question at hand, for example in a survey you design. Data that was gathered for another purpose, from a system export or a portal, is secondary data and needs a check of its definitions.
+    de: Primärdaten werden für die vorliegende Frage erhoben, etwa in einer selbst entworfenen Befragung. Daten, die für einen anderen Zweck gesammelt wurden, aus einem Systemexport oder einem Portal, sind Sekundärdaten und brauchen einen Abgleich der Definitionen.
+  source: https://en.wikipedia.org/wiki/Data_collection
+- id: dsc-f-document
+  level: foundation
+  difficulty: 900
+  type: multi
+  stem:
+    en: What should you write down about a data source before you use it? Select all that apply.
+    de: Was solltest du über eine Datenquelle festhalten, bevor du sie nutzt? Wähle alle zutreffenden aus.
+  options:
+  - en: Who owns the data and whom to contact
+    de: Wem die Daten gehören und wen du kontaktieren kannst
+    correct: true
+  - en: The extraction date and the period that the data covers
+    de: Das Extraktionsdatum und den Zeitraum, den die Daten abdecken
+    correct: true
+  - en: What each field means, including its unit and allowed values
+    de: Was jedes Feld bedeutet, einschließlich Einheit und zulässiger Werte
+    correct: true
+  - en: Which chart type you expect to like best once the analysis is done
+    de: Welchen Diagrammtyp du nach Abschluss der Analyse voraussichtlich am schönsten finden wirst
+    correct: false
+  - en: How many colleagues have already opened the export file on their computers
+    de: Wie viele Kolleginnen und Kollegen die Exportdatei schon auf ihren Rechnern geöffnet haben
+    correct: false
+  explanation:
+    en: Owner, extraction date, period and field meanings let others judge and reproduce your work. Personal chart preferences and how often a file was opened say nothing about the data.
+    de: Verantwortliche, Extraktionsdatum, Zeitraum und Feldbedeutungen erlauben es anderen, deine Arbeit zu beurteilen und nachzuvollziehen. Persönliche Diagrammvorlieben und wie oft eine Datei geöffnet wurde sagen nichts über die Daten.
+  source: https://en.wikipedia.org/wiki/Data_collection
+- id: dsc-f-gross
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: Your export shows March revenue of 118,000, the finance report 99,160. What do you check first?
+    de: Dein Export zeigt für März einen Umsatz von 118.000, der Finanzbericht 99.160. Was prüfst du zuerst?
+  options:
+  - en: Whether the two figures use the same definition, for example gross or net of VAT
+    de: Ob beide Zahlen dieselbe Definition nutzen, etwa brutto oder netto
+    correct: true
+  - en: Whether finance made a mistake, since the larger figure is more likely to be right
+    de: Ob das Finanzwesen sich geirrt hat, denn die größere Zahl ist wahrscheinlich die richtige
+    correct: false
+  - en: Which figure to keep, by taking the average of the two and reporting that value
+    de: Welche Zahl du behältst, indem du den Mittelwert beider bildest und diesen Wert berichtest
+    correct: false
+  - en: Whether March should be deleted from the analysis, since the data cannot be trusted
+    de: Ob der März aus der Analyse gelöscht werden sollte, weil den Daten nicht zu trauen ist
+    correct: false
+  explanation:
+    en: A gap between two sources often comes from different definitions. Here 118,000 divided by 1.19 is 99,160, so one figure is gross and the other net. Averaging, deleting or guessing which side is right hides the cause.
+    de: Eine Lücke zwischen zwei Quellen entsteht oft durch unterschiedliche Definitionen. Hier ergibt 118.000 geteilt durch 1,19 genau 99.160, die eine Zahl ist also brutto und die andere netto. Mitteln, Löschen oder Raten, welche Seite stimmt, verdeckt die Ursache.
+  source: https://en.wikipedia.org/wiki/Data_collection
+- id: dsc-f-api
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: What is an API in the context of data sourcing?
+    de: Was ist eine API im Zusammenhang mit der Datenbeschaffung?
+  options:
+  - en: A defined way for programs to request data from another system
+    de: Eine festgelegte Möglichkeit, bei der Programme Daten von einem anderen System anfordern
+    correct: true
+  - en: A special type of spreadsheet file that holds several tables at once
+    de: Eine besondere Art von Tabellendatei, die mehrere Tabellen und Blätter gleichzeitig enthalten kann
+    correct: false
+  - en: A survey tool that sends questionnaires to customers by email on request
+    de: Ein Befragungswerkzeug, das auf Anforderung Fragebögen per E-Mail an Kundschaft sendet
+    correct: false
+  - en: A printed monthly report that is delivered to the managers of each team
+    de: Ein gedruckter Monatsbericht, der an die Leitung jedes Teams ausgeliefert wird
+    correct: false
+  explanation:
+    en: An API (application programming interface) lets one program ask another for data in an agreed format. It is neither a file type, a survey tool nor a report.
+    de: Eine API (Programmierschnittstelle) lässt ein Programm von einem anderen Daten in einem vereinbarten Format anfordern. Sie ist weder ein Dateityp noch ein Befragungswerkzeug noch ein Bericht.
+  source: https://en.wikipedia.org/wiki/Data_collection
+- id: dsc-p-key
+  level: practitioner
+  difficulty: 1150
+  type: single
+  stem:
+    en: Why should you join two tables on a customer ID rather than on the customer name?
+    de: Warum solltest du zwei Tabellen über eine Kunden-ID statt über den Kundennamen verknüpfen?
+  options:
+  - en: An ID is stable and unique, while names vary in spelling and can be shared
+    de: Eine ID ist stabil und eindeutig, Namen werden verschieden geschrieben und kommen doppelt vor
+    correct: true
+  - en: An ID is always shorter than a name, which makes the join run much faster
+    de: Eine ID ist immer kürzer als ein Name, wodurch die Verknüpfung sehr viel schneller läuft
+    correct: false
+  - en: Names cannot be stored in a database, so only numbers can be used for joins
+    de: Namen lassen sich nicht in einer Datenbank speichern, deshalb sind nur Zahlen für Verknüpfungen nutzbar
+    correct: false
+  - en: A join on names is forbidden by data protection rules in every case in the EU
+    de: Eine Verknüpfung über Namen ist nach dem Datenschutzrecht der EU in jedem Fall grundsätzlich verboten
+    correct: false
+  explanation:
+    en: Names appear with different spellings, abbreviations and duplicates, so name-based joins lose or mismatch records. A stable unique ID avoids this. Names can be stored and joined; the problem is reliability, not speed or a general ban.
+    de: Namen kommen mit unterschiedlichen Schreibweisen, Abkürzungen und Dopplungen vor, daher verlieren oder vermischen Verknüpfungen über Namen Datensätze. Eine stabile eindeutige ID vermeidet das. Namen lassen sich speichern und verknüpfen; das Problem ist die Verlässlichkeit, nicht Tempo oder ein generelles Verbot.
+  source: https://de.wikipedia.org/wiki/Datenintegration
+- id: dsc-p-fanout
+  level: practitioner
+  difficulty: 1250
+  type: single
+  stem:
+    en: After joining customers (one row each) to orders (several rows each), the summed credit limit is far too high. Why?
+    de: Nach dem Verknüpfen von Kunden (eine Zeile je Kunde) mit Bestellungen (mehrere Zeilen je Kunde) ist die summierte Kreditlinie viel zu hoch. Warum?
+  options:
+  - en: The credit limit is repeated on every order row of a customer and is summed several times
+    de: Die Kreditlinie wiederholt sich in jeder Bestellzeile eines Kunden und wird mehrfach aufsummiert
+    correct: true
+  - en: Credit limits are always entered in the wrong currency in orders data and need conversion
+    de: Kreditlinien werden in Bestelldaten immer in der falschen Währung erfasst und müssen umgerechnet werden
+    correct: false
+  - en: The join has removed all customers who have not yet placed any order in the period
+    de: Die Verknüpfung hat alle Kundinnen und Kunden entfernt, die im Zeitraum noch nichts bestellt haben
+    correct: false
+  - en: Summing is not allowed on a joined table, so the database multiplies the values
+    de: Summieren ist auf einer verknüpften Tabelle nicht erlaubt, deshalb vervielfacht die Datenbank die Werte
+    correct: false
+  explanation:
+    en: In a one-to-many join the customer-level value is copied to each order row, so a sum counts it once per order. Aggregate the orders first, join one row per customer, and compare the total with the customer table alone.
+    de: Bei einer 1:n-Verknüpfung wird der Wert auf Kundenebene in jede Bestellzeile kopiert, die Summe zählt ihn also einmal je Bestellung. Aggregiere erst die Bestellungen, verknüpfe eine Zeile je Kunde und vergleiche die Summe mit der Kundentabelle allein.
+  source: https://de.wikipedia.org/wiki/Datenintegration
+- id: dsc-p-checks
+  level: practitioner
+  difficulty: 1300
+  type: multi
+  stem:
+    en: Which checks belong after combining two sources? Select all that apply.
+    de: Welche Prüfungen gehören nach dem Zusammenführen zweier Quellen dazu? Wähle alle zutreffenden aus.
+  options:
+  - en: Comparing row counts with the inputs and explaining any difference
+    de: Zeilenzahlen mit den Ausgangsdaten vergleichen und jede Abweichung erklären
+    correct: true
+  - en: Comparing key totals with the totals of each source table
+    de: Wichtige Summen mit den Summen jeder Quelltabelle vergleichen
+    correct: true
+  - en: Looking at records that exist in only one of the two sources
+    de: Datensätze ansehen, die nur in einer der beiden Quellen vorkommen
+    correct: true
+  - en: Concluding that the result is correct because the join gave no error message
+    de: Daraus, dass die Verknüpfung keine Fehlermeldung ergab, schließen, dass das Ergebnis stimmt
+    correct: false
+  - en: Checking that both source files have the same file name and the same file size
+    de: Prüfen, ob beide Quelldateien denselben Dateinamen und dieselbe Dateigröße haben
+    correct: false
+  explanation:
+    en: Row counts, totals and unmatched records reveal lost or duplicated rows. A join without an error can still be wrong, and file names or sizes say nothing about whether the content fits together.
+    de: Zeilenzahlen, Summen und nicht zugeordnete Datensätze zeigen verlorene oder doppelte Zeilen. Eine Verknüpfung ohne Fehlermeldung kann trotzdem falsch sein, und Dateinamen oder -größen sagen nichts darüber, ob die Inhalte zusammenpassen.
+  source: https://de.wikipedia.org/wiki/Datenintegration
+- id: dsc-p-qa
+  level: practitioner
+  difficulty: 1350
+  type: single
+  stem:
+    en: Which of these is quality assurance, as opposed to quality control, in data collection?
+    de: Was davon ist bei der Datenerhebung Qualitätssicherung im Unterschied zur Qualitätskontrolle?
+  options:
+  - en: Agreeing definitions and a written collection protocol before collecting starts
+    de: Vor Beginn der Erhebung Definitionen und ein schriftliches Erhebungsprotokoll vereinbaren
+    correct: true
+  - en: Counting empty fields in the data after it has been loaded into the central database tables
+    de: Leere Felder in den Daten zählen, nachdem sie in die zentrale Datenbank geladen wurden
+    correct: false
+  - en: Comparing the totals of the finished table with those of the source system afterwards
+    de: Die Summen der fertigen Tabelle mit denen des Quellsystems nach Abschluss der Erhebung vergleichen
+    correct: false
+  - en: Rechecking a random sample of the entries while the survey is still running
+    de: Eine Zufallsstichprobe der Einträge nachprüfen, während die Befragung noch läuft
+    correct: false
+  explanation:
+    en: Quality assurance means actions before collection that prevent errors, such as agreed definitions and protocols. Counting, comparing and sampling during or after collection are quality control.
+    de: Qualitätssicherung sind Maßnahmen vor der Erhebung, die Fehler verhindern, etwa vereinbarte Definitionen und Protokolle. Zählen, Vergleichen und Stichproben während oder nach der Erhebung sind Qualitätskontrolle.
+  source: https://en.wikipedia.org/wiki/Data_collection
+- id: dsc-a-app
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: An app notification survey gives an average of 4.6 of 5, and 12 percent of customers use the app. What do you conclude?
+    de: Eine Befragung per App-Benachrichtigung ergibt im Schnitt 4,6 von 5, und 12 Prozent der Kundschaft nutzen die App. Was folgerst du?
+  options:
+  - en: The result describes app users and not the whole customer base
+    de: Das Ergebnis beschreibt die App-Nutzenden und nicht den gesamten Kundenstamm
+    correct: true
+  - en: The customer base is very satisfied, because a score of 4.6 is a high value overall
+    de: Der Kundenstamm ist sehr zufrieden, denn ein Wert von 4,6 ist insgesamt ein hoher Wert
+    correct: false
+  - en: The score is invalid and must be dropped, because the app users answered voluntarily
+    de: Der Wert ist ungültig und muss verworfen werden, weil die App-Nutzenden freiwillig geantwortet haben
+    correct: false
+  - en: The score would be the same for all customers if the survey simply ran for longer
+    de: Der Wert wäre für alle Kundinnen und Kunden gleich, wenn die Befragung einfach länger liefe
+    correct: false
+  explanation:
+    en: Only people who have the app can respond, so selection bias limits what the result says. It is still useful as a result for app users. A longer run does not reach customers without the app.
+    de: Nur Personen mit der App können antworten, daher begrenzt eine Auswahlverzerrung die Aussage. Als Ergebnis für App-Nutzende ist es dennoch nützlich. Eine längere Laufzeit erreicht keine Kundschaft ohne App.
+  source: https://en.wikipedia.org/wiki/Data_collection
+- id: dsc-a-fit
+  level: advanced
+  difficulty: 1500
+  type: multi
+  stem:
+    en: Which points belong in an assessment of whether a source fits your question? Select all that apply.
+    de: Welche Punkte gehören in die Beurteilung, ob eine Quelle zu deiner Frage passt? Wähle alle zutreffenden aus.
+  options:
+  - en: Which units can never appear in the data, so what the coverage is
+    de: Welche Einheiten in den Daten nie vorkommen können, also wie die Abdeckung ist
+    correct: true
+  - en: Who produced the data, with which method and which definitions
+    de: Wer die Daten mit welcher Methode und welchen Definitionen erzeugt hat
+    correct: true
+  - en: How old the data is and how often it is updated, compared with your need
+    de: Wie alt die Daten sind und wie oft sie aktualisiert werden, gemessen an deinem Bedarf
+    correct: true
+  - en: How attractive and modern the website is that provides the download of the data
+    de: Wie ansprechend und modern die Website gestaltet ist, über die die Daten heruntergeladen werden
+    correct: false
+  - en: Whether the file format is the one that the analyst personally likes working with most
+    de: Ob das Dateiformat dasjenige ist, mit dem die analysierende Person am liebsten arbeitet
+    correct: false
+  explanation:
+    en: Coverage, provenance and timeliness decide whether data can answer the question. The look of a website and a personal format preference do not; a format can be converted.
+    de: Abdeckung, Herkunft und Aktualität entscheiden, ob Daten die Frage beantworten können. Das Aussehen einer Website und eine persönliche Formatvorliebe tun das nicht; ein Format lässt sich umwandeln.
+  source: https://en.wikipedia.org/wiki/Data_collection
+- id: dsc-a-open
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: You find a dataset on an open data portal. What is the sound approach before using it?
+    de: Du findest einen Datensatz auf einem Open-Data-Portal. Was ist vor der Nutzung der sinnvolle Weg?
+  options:
+  - en: Read the licence and the field definitions of that particular dataset
+    de: Die Lizenz und die Felddefinitionen genau dieses Datensatzes lesen
+    correct: true
+  - en: Assume the portal gives the same terms to every dataset it lists, so nothing needs checking
+    de: Davon ausgehen, dass das Portal für jeden gelisteten Datensatz dieselben Bedingungen vorgibt, also nichts zu prüfen ist
+    correct: false
+  - en: Assume that public data is always correct and complete, because a public body published it
+    de: Davon ausgehen, dass öffentliche Daten immer richtig und vollständig sind, weil eine Behörde sie veröffentlicht hat
+    correct: false
+  - en: Use it only after copying it into a spreadsheet, which removes any terms attached to it
+    de: Sie erst nutzen, nachdem du sie in eine Tabelle kopiert hast, wodurch anhängende Bedingungen entfallen
+    correct: false
+  explanation:
+    en: Each dataset on a portal has its own terms and its own definitions; publication does not guarantee fitness for your question. Copying does not remove licence terms.
+    de: Jeder Datensatz auf einem Portal hat eigene Bedingungen und eigene Definitionen; die Veröffentlichung garantiert nicht die Eignung für deine Frage. Kopieren hebt Lizenzbedingungen nicht auf.
+  source: https://data.europa.eu/en
+- id: dsc-a-minim
+  level: advanced
+  difficulty: 1600
+  type: single
+  stem:
+    en: You design a survey with customer feedback linked to orders. Which design follows data minimisation and good practice?
+    de: Du entwirfst eine Befragung mit Kundenfeedback, das Bestellungen zugeordnet wird. Welches Design folgt der Datenminimierung und guter Praxis?
+  options:
+  - en: Ask for the order number only, state the purpose and involve data protection while planning
+    de: Nur nach der Bestellnummer fragen, den Zweck nennen und den Datenschutz schon bei der Planung einbinden
+    correct: true
+  - en: Ask for name, address and age as well, in case the data turns out to be useful at a later time
+    de: Zusätzlich nach Name, Adresse und Alter fragen, falls die Daten sich zu einem späteren Zeitpunkt als nützlich erweisen
+    correct: false
+  - en: Collect everything first and ask the data protection contact once the results are available
+    de: Zuerst alles erheben und die Ansprechperson für Datenschutz erst fragen, wenn die Ergebnisse vorliegen
+    correct: false
+  - en: Hide the purpose from respondents so that their answers are not influenced by it
+    de: Den Zweck vor den Befragten verbergen, damit ihre Antworten nicht davon beeinflusst werden
+    correct: false
+  explanation:
+    en: Data minimisation means collecting only what a stated purpose needs, and involving data protection at the planning stage, since changes are cheapest then. Collecting on spec, asking later or hiding the purpose all conflict with that approach.
+    de: Datenminimierung heißt, nur zu erheben, was ein genannter Zweck braucht, und den Datenschutz in der Planung einzubinden, denn dann sind Änderungen am günstigsten. Erheben auf Vorrat, spätes Nachfragen oder ein verborgener Zweck widersprechen diesem Vorgehen.
+  source: https://data.europa.eu/en

@@ -1,0 +1,14 @@
+id: wikipedia-data-collection
+url: "https://en.wikipedia.org/wiki/Data_collection"
+title: "Data collection"
+provider: Wikipedia
+language: en
+format: article
+minutes: 20
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-22
+mode: link
+competencies: [data-sourcing-collection]
+levels: [foundation, practitioner, advanced]
+note: "Wikipedia text under CC BY-SA; read 2026-11-22 (intro, methodology, data integrity: quality assurance before and quality control during and after collection). Link only."
