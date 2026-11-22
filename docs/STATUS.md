@@ -1,5 +1,12 @@
 # Status
 
+## 2026-11-22 (b) — CI runs the browser e2e suite
+
+**Done**
+- `ci.yml`: new `e2e` job (build, install Playwright 1.49.1 with `--no-save`, serve `astro preview`, `npm run e2e`; 10-min timeout). Locally 238 checks pass in ~30 s. Stopped: run kept to two slices (window not exhausted).
+
+**Next:** Data & Analytics content batches 1–3.
+
 ## 2026-11-22 — QA #106: non-Wikipedia resources for 8 competencies
 
 **Done**

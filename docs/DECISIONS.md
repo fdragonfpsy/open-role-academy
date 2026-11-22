@@ -226,3 +226,8 @@ Format: date — decision — reason — alternatives considered.
 - Decision: Data & Analytics role added as `status: draft` with 10 role competencies (analytics fundamentals, data sourcing and collection, data quality and cleaning, SQL and querying, statistics fundamentals, visualisation and dashboards, BI and reporting, problem framing and storytelling, data governance and privacy in analytics, machine learning basics and AI in analytics) plus the 6 core-track competencies. Existing ids reused as prerequisites (`working-with-data`, `digital-ai-literacy`, `information-security-basics`, `communication-collaboration`). Privacy/governance (EU/Germany) is topic level only: no articles, thresholds or legal details. ESCO refs were looked up via the ESCO search API (URI and preferred label as returned); no DigComp refs; no proprietary framework text. Prerequisites are acyclic.
 - Reason: same pattern as Procurement and Project Management; draft keeps coverage unenforced and the role hidden until content exists.
 - Alternatives: separate data engineering competencies (out of scope for a basic role), publishing early (fails coverage validation).
+
+## 2026-11-22 — e2e in CI installs Playwright per job
+- Decision: `ci.yml` e2e job runs `npm install --no-save playwright@1.49.1` instead of adding it as a dependency.
+- Reason: keeps the lockfile/deps lean (CLAUDE.md §3); the suite already requires it only at test time.
+- Alternatives: devDependency (heavier install for every job); Playwright test runner (rewrite of existing scripts).
