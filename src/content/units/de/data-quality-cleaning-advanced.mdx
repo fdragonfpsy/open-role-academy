@@ -1,0 +1,91 @@
+---
+id: data-quality-cleaning-advanced
+competency: data-quality-cleaning
+level: advanced
+title: "Qualitätsregeln, reproduzierbare Bereinigung und Abwägungen"
+objectives:
+  - "Messbare Qualitätsregeln mit Verantwortlichen und Schwellen festlegen."
+  - "Ein Bereinigungsverfahren nach seiner Wirkung auf die Analyse wählen und die Sensitivität prüfen."
+  - "Bereinigung mit Skripten oder Abfragen, Protokoll und ohne manuelle Änderungen an der Quelle reproduzierbar machen."
+  - "Probleme an der Quelle beheben und Verantwortung vereinbaren."
+minutes: 30
+resources:
+  - wikipedia-data-quality
+  - wikipedia-de-datenbereinigung
+  - wikipedia-de-duplikaterkennung
+  - openstax-intro-stats-descriptive
+status: ai-draft
+sources:
+  - title: "Data quality"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_quality
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Datenbereinigung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Datenbereinigung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Duplikaterkennung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Duplikaterkennung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Introductory Statistics 2e, Chapter 2: Descriptive Statistics"
+    author: "Barbara Illowsky, Susan Dean et al. (OpenStax)"
+    url: https://openstax.org/books/introductory-statistics-2e/pages/2-introduction
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Auf Experten-Niveau lautet die Frage nicht mehr, wie du eine Datei bereinigst, sondern wie Daten über die Zeit für viele Nutzende und viele Analysen vertrauenswürdig bleiben. Qualität, die von den manuellen Korrekturen einer Person abhängt, verschwindet, wenn diese Person nicht da ist.
+
+## Qualität in Regeln übersetzen
+
+Eine Regel ist eine Prüfung mit klarem Bestanden oder Nicht-bestanden und einer verantwortlichen Person. Beispiele (die Schwellen sind beispielhaft; die tatsächlichen legt die Datenverantwortung fest):
+
+- customer_id ist nie leer und eindeutig.
+- Das Bestelldatum liegt nicht in der Zukunft.
+- Höchstens 2 Prozent der Lieferadressen haben keine Postleitzahl.
+- Jede Bestellung verweist auf einen existierenden Kunden.
+
+Führe die Regeln bei jedem Datenladen aus und melde die Ergebnisse an die Verantwortlichen. Data Governance, also vereinbarte Zuständigkeiten und Standards, gibt den Regeln Gewicht. Eine Regel ohne Verantwortliche wird ignoriert.
+
+## Abwägungen beurteilen
+
+Jede Behandlung wirkt auf das Ergebnis:
+
+- Zeilen entfernen kann das Ergebnis verzerren, wenn sich die entfernten Zeilen von den übrigen unterscheiden.
+- Werte füllen verringert die scheinbare Streuung und lässt Ergebnisse sicherer wirken, als sie sind.
+- Zu viel Bereinigung kann echte Signale löschen: Der seltene Großkunde ist ein Ausreißer und zugleich ein Schlüsselkunde.
+- Zu wenig Bereinigung lässt Fehler die Schlüsse bestimmen.
+
+Ein praktischer Test ist die Sensitivität: Führe die Analyse mit und ohne die Behandlung durch oder mit zwei plausiblen Alternativen. Hält die Schlussfolgerung, sage das; ändert sie sich, nenne die Spanne und was sie treibt.
+
+## Bereinigung reproduzierbar machen
+
+- Bereinige in einem Skript oder einer Abfrage unter Versionskontrolle, nicht von Hand in der Quelldatei.
+- Lass die Rohdaten unangetastet und protokolliere jede angewendete Regel mit der Zahl betroffener Zeilen.
+- Halte das Extraktionsdatum und, wo relevant, Werkzeugversionen fest.
+- Nenne im Bericht die wichtigsten Bereinigungsentscheidungen und ihre Wirkung.
+
+## An der Quelle beheben
+
+Wiederholte Bereinigung weiter unten im Ablauf deutet auf ein Problem weiter oben hin. Finde die Ursache (ein Formular ohne Validierung, ein System, das zwei Schreibweisen zulässt, eine manuelle Schnittstelle) und vereinbare mit den Verantwortlichen eine Lösung. Bis dahin behandle das Problem offen und sichtbar, nicht stillschweigend.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundene Zahlen. Bei 6 Prozent der Bestellungen fehlt die Region. Der Analyst könnte die Lücke mit der häufigsten Region füllen, doch das würde eine Region begünstigen. Die Ursachensuche zeigt, dass das Feld im mobilen Bestellformular leer bleiben darf. Der Analyst bittet die Datenverantwortlichen, das Feld zum Pflichtfeld zu machen, und nutzt bis dahin die Kategorie „unbekannt“, die in jeder Regionsgrafik ausgewiesen wird. Eine Sensitivitätsprüfung, einmal mit anteilig verteilten und einmal mit weggelassenen unbekannten Zeilen, verändert die Regionsanteile um weniger als einen Prozentpunkt, die Schlüsse bleiben also bestehen. Die Regel „Region nicht leer, höchstens 1 Prozent“ kommt in die Ladeprüfungen.
+
+## Das Wichtigste in Kürze
+
+- Übersetze Qualität in Regeln mit klarem Bestanden/Nicht-bestanden, Verantwortlichen und Schwelle.
+- Beurteile jede Behandlung nach ihrer Wirkung auf die Schlussfolgerung; prüfe die Sensitivität.
+- Bereinige mit Skripten und Protokollen, nie von Hand in der Quelle.
+- Behebe Ursachen an der Quelle und gehe bis dahin offen mit der Lücke um.

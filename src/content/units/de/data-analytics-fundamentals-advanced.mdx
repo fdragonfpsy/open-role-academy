@@ -1,0 +1,74 @@
+---
+id: data-analytics-fundamentals-advanced
+competency: data-analytics-fundamentals
+level: advanced
+title: "Analysen eingrenzen und beurteilen: von der Entscheidung zum reproduzierbaren Ergebnis"
+objectives:
+  - "Eine Analyse von der Entscheidung her eingrenzen, die sie verändern soll, und vom Aufwand, der sich lohnt."
+  - "Beurteilen, ob sich eine Frage mit den verfügbaren Daten und der verfügbaren Zeit beantworten lässt."
+  - "Typische Fallen erkennen: Rückschaufehler, viele Vergleiche, nicht repräsentative Daten."
+  - "Eine Analyse reproduzierbar machen und ihre Unsicherheit benennen."
+minutes: 30
+resources:
+  - wikipedia-data-analysis
+  - wikipedia-de-datenanalyse
+  - openstax-intro-stats-sampling-data
+status: ai-draft
+sources:
+  - title: "Data analysis"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_analysis
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Datenanalyse"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Datenanalyse
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Introductory Statistics 2e, Chapter 1: Sampling and Data"
+    author: "Barbara Illowsky, Susan Dean et al. (OpenStax)"
+    url: https://openstax.org/books/introductory-statistics-2e/pages/1-introduction
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Auf Experten-Niveau wirst du seltener gefragt „Kannst du das ausrechnen?“ und öfter „Sollten wir diese Analyse überhaupt machen, und wie weit?“. Gutes Eingrenzen spart Wochen; gutes Prüfen schützt Entscheidungen vor Ergebnissen, die nur belastbar aussehen.
+
+## Von der Entscheidung her eingrenzen
+
+Stelle vier Fragen, bevor die Arbeit beginnt:
+
+- Welche Entscheidung ändert sich dadurch, und wer trifft sie?
+- Welches Ergebnis würde sie anders entscheiden lassen? Wenn keines, ist die Analyse nicht nötig.
+- Was ist eine ausreichend gute Antwort, und bis wann?
+- Welche Daten gibt es, und passen sie zu dieser Frage?
+
+Unsere eigene Regel: Vereinbare die einfachste Analyse, die die Entscheidung verändern könnte, und erweitere sie nur, wenn die Entscheidung mehr braucht.
+
+## Fallen, auf die du achtest
+
+- Rückschaufehler: Erklärungen, die zur Vergangenheit gut passen, aber erst gefunden wurden, nachdem das Ergebnis bekannt war.
+- Viele Vergleiche: Wenn du die Daten vielfach aufteilst, tauchen zufällig Muster auf. Halte fest, was du ausprobiert hast.
+- Nicht repräsentative Daten: Ein Ergebnis gilt für die Gruppe, die in den Daten ist, nicht automatisch für alle.
+- Korrelation ist nicht Kausalität: Ein diagnostischer Befund ist ein Hinweis, kein Beweis.
+- Arten vermischen: Data Mining und Prognose zielen auf Vorhersage, Business Intelligence stützt sich stark auf das Aggregieren von Geschäftsdaten; ein Dashboard ist keine Prognose.
+
+## Reproduzierbarkeit und Unsicherheit
+
+Jemand anderes, oder du in sechs Monaten, sollte die Analyse erneut ausführen und dasselbe Ergebnis erhalten können. Das heißt: gespeicherte Abfragen oder Skripte, ein Vermerk zum Extraktionsdatum, feste Definitionen und keine stillen manuellen Änderungen. Benenne Unsicherheit klar: was die Daten nicht zeigen können, welche Annahmen du getroffen hast und wie empfindlich das Ergebnis darauf reagiert.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundene Zahlen. Das Marketing bittet um ein Modell, das vorhersagt, welche Kundinnen und Kunden kündigen werden. Der Analyst fragt, welche Maßnahme darauf folgt. Das Bindungsteam kann im Monat etwa 200 Personen anrufen. Die Entscheidung lautet also „Welche 200?“, nicht „Wie genau ist die Wahrscheinlichkeit?“. Eine einfache Rangfolge nach letzter Inaktivität und offenen Beschwerden reicht für den Anfang. Der Analyst dokumentiert die Abfrage, vermerkt, dass die Daten nur Kundschaft mit Online-Konto abdecken, und vereinbart, nach drei Monaten zu prüfen, ob angerufene Personen häufiger geblieben sind als vergleichbare, die nicht angerufen wurden. Ein komplexes Modell wird zurückgestellt, bis diese Prüfung einen Nutzen zeigt.
+
+## Das Wichtigste in Kürze
+
+- Grenze von der Entscheidung und ihrer Schwelle her ein, nicht von den verfügbaren Methoden.
+- Wähle die einfachste Analyse, die die Entscheidung verändern könnte.
+- Halte alles Ausprobierte fest, um Zufallsfunde zu vermeiden.
+- Mach die Arbeit reproduzierbar und benenne, was das Ergebnis nicht zeigen kann.

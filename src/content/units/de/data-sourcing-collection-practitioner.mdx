@@ -1,0 +1,85 @@
+---
+id: data-sourcing-collection-practitioner
+competency: data-sourcing-collection
+level: practitioner
+title: "Daten aus mehreren Quellen erheben und zusammenführen"
+objectives:
+  - "Für einen Bedarf zwischen Export, API und Befragung wählen."
+  - "Quellen über Verknüpfungsschlüssel zusammenführen und Abweichungen bei Schlüsseln, Formaten und Detailgrad erkennen."
+  - "Aufgeblähte Summen nach dem Verknüpfen von Tabellen mit 1:n-Beziehung vermeiden."
+  - "Festhalten, woher jedes Feld stammt."
+minutes: 25
+resources:
+  - wikipedia-data-collection
+  - wikipedia-de-datenerhebung
+  - wikipedia-de-datenintegration
+  - data-europa-eu-portal
+status: ai-draft
+sources:
+  - title: "Data collection"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_collection
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Erhebung (Empirie)"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Erhebung_(Empirie)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Informationsintegration"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Datenintegration
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "data.europa.eu, the official portal for European data"
+    author: "Publications Office of the European Union"
+    url: https://data.europa.eu/en
+    license: free-access
+    licenseUrl: https://data.europa.eu/en
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Die meisten echten Fragen brauchen mehr als eine Quelle: Kundendaten aus dem CRM, Bestellungen aus dem Shop, Kosten aus dem Finanzwesen. Beim Zusammenführen geht in vielen Analysen unbemerkt etwas schief.
+
+## Die Erhebung wählen
+
+- Export oder Datei: schnell für einmalige Fragen; notiere das Extraktionsdatum.
+- Datenbankabfrage: wiederholbar und durch die Abfrage selbst dokumentiert.
+- API: gut für regelmäßig aktualisierte externe Daten; achte auf Limits und Formatänderungen.
+- Befragung: wenn die Daten noch nicht existieren; lege Frage, Zielgruppe und Ansprache fest.
+
+Ein Erhebungsprozess profitiert von Qualitätssicherung vor der Erhebung (klare Protokolle und Definitionen, Vorbeugung) und Qualitätskontrolle währenddessen und danach (Prüfungen, die Fehler finden).
+
+## Quellen zusammenführen
+
+Datenintegration heißt, Daten aus Quellen mit unterschiedlichen Strukturen in eine gemeinsame Struktur zu bringen. Ein klassisches Muster ist das Data Warehouse: Die Daten werden aus den Quellen extrahiert, in ein einheitliches Format umgewandelt und an einer Stelle geladen. Ob Data Warehouse oder einfache Verknüpfung, es stellen sich dieselben Fragen.
+
+- Verknüpfungsschlüssel: Nimm eine stabile ID, keinen Namen. Namen unterscheiden sich in der Schreibweise, IDs sollten das nicht.
+- Formate: Datumsangaben, Währungen, Groß- und Kleinschreibung, Einheiten.
+- Detailgrad: täglich oder monatlich, pro Bestellung oder pro Kundin bzw. Kunde. Bringe beide Seiten vor dem Verknüpfen auf dieselbe Ebene.
+- Zeit: Zeitzonen und Stichzeiten für „gestern“.
+- Abdeckung: Welche Datensätze gibt es nur in einer Quelle, und warum?
+
+## Das Ergebnis prüfen
+
+Vergleiche nach jeder Verknüpfung Zeilenzahl und Summen mit den Ausgangsdaten. Wird eine Tabelle mit einer Zeile pro Kunde mit einer Tabelle mit mehreren Zeilen pro Kunde verknüpft, wiederholen sich die Kundenwerte in jeder Zeile; summierst du danach eine Kennzahl auf Kundenebene, zählst du sie mehrfach.
+
+## Herkunft festhalten
+
+Notiere für jedes Feld: Quelle, Extraktionsdatum, Umwandlung. Diese Notiz hilft anderen, und dir später, der Tabelle zu vertrauen und sie nachzubauen.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundene Zahlen. Der Analyst verknüpft eine Kundentabelle (Kreditlimit je Kunde) mit einer Bestelltabelle (mehrere Bestellungen je Kunde) und summiert das Kreditlimit je Region. Die Summe wirkt dreimal zu hoch. Der Grund: Ein Kunde mit drei Bestellungen hat jetzt drei Zeilen, das Kreditlimit wird dreimal gezählt. Die Lösung: erst die Bestellungen je Kunde aggregieren, dann mit einer Zeile je Kunde verknüpfen und prüfen, ob die Summe der Kreditlimits mit der Zahl aus der Kundentabelle allein übereinstimmt.
+
+## Das Wichtigste in Kürze
+
+- Wähle die Erhebungsart nach Bedarf: einmalig, wiederholbar, extern oder neu.
+- Verknüpfe über stabile IDs und bringe beide Seiten auf denselben Detailgrad.
+- Vergleiche Zeilenzahl und Summen vor und nach einer Verknüpfung.
+- Führe für jedes Feld eine Herkunftsnotiz.

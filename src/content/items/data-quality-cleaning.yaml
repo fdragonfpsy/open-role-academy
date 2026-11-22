@@ -1,0 +1,299 @@
+competency: data-quality-cleaning
+items:
+- id: dqc-f-def
+  level: foundation
+  difficulty: 850
+  type: single
+  stem:
+    en: Which statement best describes high data quality?
+    de: Welche Aussage beschreibt hohe Datenqualität am besten?
+  options:
+  - en: The data is fit for its intended use and represents what it describes
+    de: Die Daten sind für den vorgesehenen Zweck geeignet und bilden ab, was sie beschreiben
+    correct: true
+  - en: The data contains no empty cells at all, whatever the question is that it is meant to answer
+    de: Die Daten enthalten keine einzige leere Zelle, egal welche Frage sie beantworten sollen
+    correct: false
+  - en: The data comes from the newest system that the company has bought and installed so far
+    de: Die Daten stammen aus dem neuesten System, das das Unternehmen bisher gekauft und eingerichtet hat
+    correct: false
+  - en: The data has been run through an automatic cleaning tool at least once in the past year
+    de: Die Daten wurden im letzten Jahr mindestens einmal durch ein automatisches Bereinigungswerkzeug geschickt
+    correct: false
+  explanation:
+    en: 'Quality is judged against the use: the same data can suit one question and fail another. Absence of empty cells, a new source system or a cleaning run do not guarantee that data fits its purpose.'
+    de: 'Qualität wird am Verwendungszweck gemessen: Dieselben Daten können zu einer Frage passen und bei einer anderen versagen. Das Fehlen leerer Zellen, ein neues Quellsystem oder ein Bereinigungslauf garantieren nicht, dass Daten zu ihrem Zweck passen.'
+  source: https://en.wikipedia.org/wiki/Data_quality
+- id: dqc-f-dims
+  level: foundation
+  difficulty: 900
+  type: multi
+  stem:
+    en: Which of these are dimensions of data quality? Select all that apply.
+    de: Welche dieser Punkte sind Dimensionen der Datenqualität? Wähle alle zutreffenden aus.
+  options:
+  - en: Completeness
+    de: Vollständigkeit
+    correct: true
+  - en: Uniqueness
+    de: Eindeutigkeit
+    correct: true
+  - en: Timeliness
+    de: Aktualität
+    correct: true
+  - en: Popularity among analysts
+    de: Beliebtheit bei Analystinnen und Analysten
+    correct: false
+  - en: Colour coding of the columns
+    de: Farbliche Kennzeichnung der Spalten
+    correct: false
+  explanation:
+    en: Completeness, uniqueness, timeliness, accuracy and consistency are common quality dimensions. How popular a dataset is or how its columns are coloured says nothing about whether the data is good.
+    de: Vollständigkeit, Eindeutigkeit, Aktualität, Richtigkeit und Konsistenz sind gängige Qualitätsdimensionen. Wie beliebt ein Datensatz ist oder wie seine Spalten gefärbt sind, sagt nichts darüber, ob die Daten gut sind.
+  source: https://en.wikipedia.org/wiki/Data_quality
+- id: dqc-f-age
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: In a customer table one row shows an age of 250. What is a sensible way to handle it?
+    de: In einer Kundentabelle steht in einer Zeile ein Alter von 250. Wie gehst du sinnvoll damit um?
+  options:
+  - en: Mark it as missing or invalid and note the change in the log, not guess a new value
+    de: Es als fehlend oder ungültig markieren und die Änderung im Protokoll vermerken, nicht einen neuen Wert raten
+    correct: true
+  - en: Replace it with the average age of the other customers and say nothing about it afterwards to anyone
+    de: Es durch das Durchschnittsalter der übrigen Kundschaft ersetzen und danach gegenüber niemandem etwas sagen
+    correct: false
+  - en: Delete the whole table because a single wrong value means that the entire data cannot be used
+    de: Die ganze Tabelle löschen, weil ein einziger falscher Wert bedeutet, dass die gesamten Daten unbrauchbar sind
+    correct: false
+  - en: Leave it as it is, since a computer calculates with 250 just as well as with any other number
+    de: Es unverändert lassen, denn ein Computer rechnet mit 250 genauso gut wie mit jeder anderen Zahl
+    correct: false
+  explanation:
+    en: An impossible value is an error, but its true value is unknown, so do not invent one. Mark it, log the decision and, if possible, check the source. Silent replacement or ignoring the value distorts results, and deleting the whole table is out of proportion.
+    de: Ein unmöglicher Wert ist ein Fehler, aber der wahre Wert ist unbekannt, erfinde also keinen. Markiere ihn, protokolliere die Entscheidung und prüfe wenn möglich die Quelle. Stilles Ersetzen oder Ignorieren verzerrt Ergebnisse, und die ganze Tabelle zu löschen steht in keinem Verhältnis.
+  source: https://de.wikipedia.org/wiki/Datenbereinigung
+- id: dqc-f-date
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: Why is a date such as 03/04/2026 a risk in shared data?
+    de: Warum ist ein Datum wie 03.04.2026 in gemeinsam genutzten Daten ein Risiko?
+  options:
+  - en: Some readers take it as 3 April and others as 4 March, so the format must be agreed
+    de: Manche lesen es als 3. April, andere als 4. März, daher muss das Format vereinbart werden
+    correct: true
+  - en: Dates written with slashes or dots cannot be stored by any common spreadsheet or database
+    de: Datumsangaben mit Schrägstrichen oder Punkten kann keine gängige Tabellenkalkulation oder Datenbank speichern
+    correct: false
+  - en: Dates in the year 2026 are not accepted by systems that were built before the year 2020
+    de: Datumsangaben im Jahr 2026 werden von Systemen nicht akzeptiert, die vor dem Jahr 2020 gebaut wurden
+    correct: false
+  - en: A date must always be stored as plain text, since any real date type makes the data unreliable
+    de: Ein Datum muss immer als einfacher Text gespeichert werden, da jeder echte Datumstyp die Daten unzuverlässig macht
+    correct: false
+  explanation:
+    en: Day-first and month-first conventions differ between countries and systems, so a date like this can be misread. Agree one unambiguous format, such as 2026-04-03. Spreadsheets and databases do store dates, and proper date types are the reliable choice.
+    de: Die Konventionen Tag zuerst und Monat zuerst unterscheiden sich zwischen Ländern und Systemen, daher kann ein solches Datum falsch gelesen werden. Vereinbare ein eindeutiges Format wie 2026-04-03. Tabellenkalkulationen und Datenbanken speichern Datumsangaben, und echte Datumstypen sind die verlässliche Wahl.
+  source: https://en.wikipedia.org/wiki/Data_quality
+- id: dqc-p-blank
+  level: practitioner
+  difficulty: 1150
+  type: single
+  stem:
+    en: A "discount" column is blank in 30 percent of rows. What do you do first?
+    de: Eine Spalte „Rabatt“ ist in 30 Prozent der Zeilen leer. Was tust du zuerst?
+  options:
+  - en: Find out from the source owner whether blank means no discount or not recorded
+    de: Bei den Verantwortlichen der Quelle klären, ob leer keinen Rabatt oder nicht erfasst bedeutet
+    correct: true
+  - en: Fill the blanks with the average discount of the rows that are filled in the same column
+    de: Die Leerstellen mit dem durchschnittlichen Rabatt der ausgefüllten Zeilen derselben Spalte füllen
+    correct: false
+  - en: Delete all rows with a blank discount, so that only complete records remain for analysis
+    de: Alle Zeilen mit leerem Rabatt löschen, damit nur vollständige Datensätze für die Analyse bleiben
+    correct: false
+  - en: Set all blanks to zero straight away, since a missing discount always means no discount
+    de: Alle Leerstellen sofort auf null setzen, denn ein fehlender Rabatt bedeutet immer keinen Rabatt
+    correct: false
+  explanation:
+    en: The right treatment depends on why a value is missing. Blank can mean "none" or "not recorded", which are different. Filling, deleting or zeroing before you know risks bias, since the missing rows may differ from the others.
+    de: Die richtige Behandlung hängt davon ab, warum ein Wert fehlt. Leer kann „keiner“ oder „nicht erfasst“ heißen, und das ist etwas anderes. Füllen, Löschen oder Nullsetzen vor diesem Wissen riskiert Verzerrung, da sich die fehlenden Zeilen von den übrigen unterscheiden können.
+  source: https://de.wikipedia.org/wiki/Duplikaterkennung
+- id: dqc-p-dups
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: Which statement about duplicates is correct?
+    de: Welche Aussage über Duplikate ist richtig?
+  options:
+  - en: Identical duplicates can be removed; non-identical ones need their values consolidated first
+    de: Identische Duplikate lassen sich entfernen; nichtidentische brauchen vorher zusammengeführte Werte
+    correct: true
+  - en: All duplicates can safely be removed by keeping only the first row that was entered, always
+    de: Alle Duplikate lassen sich bedenkenlos entfernen, indem man immer nur die zuerst erfasste Zeile behält
+    correct: false
+  - en: Rows that differ in a spelling are not duplicates, since only exact copies count as duplicates
+    de: Zeilen, die sich in einer Schreibweise unterscheiden, sind keine Duplikate, denn nur exakte Kopien zählen
+    correct: false
+  - en: Duplicates matter only in very large tables, whereas small tables are not affected by them at all
+    de: Duplikate spielen nur in sehr großen Tabellen eine Rolle, kleine Tabellen sind davon gar nicht betroffen
+    correct: false
+  explanation:
+    en: Exact copies carry no extra information and can go. Rows that describe the same object with differing values, such as two spellings or phone numbers, must be consolidated first. Duplicates distort counts and sums in tables of any size.
+    de: Exakte Kopien enthalten keine zusätzliche Information und können weg. Zeilen, die dasselbe Objekt mit abweichenden Werten beschreiben, etwa zwei Schreibweisen oder Telefonnummern, müssen zuerst zusammengeführt werden. Duplikate verzerren Zählungen und Summen in Tabellen jeder Größe.
+  source: https://de.wikipedia.org/wiki/Duplikaterkennung
+- id: dqc-p-outlier
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: One of 40 orders is 12,000 euros while the others lie between 50 and 200. What is the best handling?
+    de: Eine von 40 Bestellungen beträgt 12.000 Euro, die anderen liegen zwischen 50 und 200. Was ist der beste Umgang damit?
+  options:
+  - en: Check the source, correct it if it is an error, otherwise keep it and report it separately
+    de: Die Quelle prüfen, bei einem Fehler korrigieren, sonst behalten und getrennt ausweisen
+    correct: true
+  - en: Delete every value that a statistical rule flags, because outliers are always errors in data
+    de: Jeden Wert löschen, den eine statistische Regel markiert, denn Ausreißer sind in Daten immer Fehler
+    correct: false
+  - en: Keep it unchanged and unmentioned, since all data in the system is true by definition at all times
+    de: Unverändert und unerwähnt lassen, denn alle Daten im System sind per Definition jederzeit wahr
+    correct: false
+  - en: Replace it with the average of the other 39 orders without telling the readers of the report
+    de: Es durch den Durchschnitt der anderen 39 Bestellungen ersetzen, ohne die Lesenden des Berichts zu informieren
+    correct: false
+  explanation:
+    en: A statistical rule only flags candidates. An outlier can be a typing error or a genuine rare case, so check the source. Automatic deletion, silent keeping and silent replacement all risk wrong conclusions.
+    de: Eine statistische Regel markiert nur Kandidaten. Ein Ausreißer kann ein Tippfehler oder ein echter seltener Fall sein, also prüfe die Quelle. Automatisches Löschen, stilles Behalten und stilles Ersetzen riskieren falsche Schlüsse.
+  source: https://openstax.org/books/introductory-statistics-2e/pages/2-introduction
+- id: dqc-p-log
+  level: practitioner
+  difficulty: 1350
+  type: multi
+  stem:
+    en: What belongs in a change log for data cleaning? Select all that apply.
+    de: Was gehört in ein Änderungsprotokoll der Datenbereinigung? Wähle alle zutreffenden aus.
+  options:
+  - en: What was changed and how many rows were affected
+    de: Was geändert wurde und wie viele Zeilen betroffen waren
+    correct: true
+  - en: The reason or rule behind each change
+    de: Der Grund oder die Regel hinter jeder Änderung
+    correct: true
+  - en: Who decided on the change and when it was made
+    de: Wer die Änderung beschlossen hat und wann sie vorgenommen wurde
+    correct: true
+  - en: A personal opinion on how well the data provider works
+    de: Eine persönliche Meinung dazu, wie gut die Datenlieferanten arbeiten
+    correct: false
+  - en: The colour that was used to highlight the changed cells
+    de: Die Farbe, mit der die geänderten Zellen hervorgehoben wurden
+    correct: false
+  explanation:
+    en: 'A log lets others retrace and judge the cleaning: what, why, how many, who and when. Opinions about suppliers and highlight colours do not help to reproduce the result.'
+    de: 'Ein Protokoll lässt andere die Bereinigung nachvollziehen und beurteilen: was, warum, wie viele, wer und wann. Meinungen über Lieferanten und Hervorhebungsfarben helfen nicht, das Ergebnis zu reproduzieren.'
+  source: https://de.wikipedia.org/wiki/Datenbereinigung
+- id: dqc-a-rule
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: What makes a data quality rule useful in practice?
+    de: Was macht eine Datenqualitätsregel in der Praxis nützlich?
+  options:
+  - en: A clear pass or fail result, a named owner and a threshold that was agreed in advance
+    de: Klares Bestanden oder Nicht-bestanden, eine verantwortliche Person und eine vorab vereinbarte Schwelle
+    correct: true
+  - en: A general description of what perfect data would look like in the best imaginable case
+    de: Eine allgemeine Beschreibung davon, wie perfekte Daten im bestmöglichen denkbaren Fall aussehen würden
+    correct: false
+  - en: Having as many rules as possible, so that every column is covered by a long list of checks
+    de: Möglichst viele Regeln zu haben, damit jede Spalte durch eine lange Liste von Prüfungen abgedeckt ist
+    correct: false
+  - en: Agreement among analysts that the rule is elegant and that it is written in a clever way
+    de: Einigkeit unter den Analysierenden, dass die Regel elegant ist und besonders geschickt formuliert wurde
+    correct: false
+  explanation:
+    en: A rule must be testable, with a threshold and someone responsible for acting when it fails. Vague ideals, sheer quantity and elegance do not lead to action.
+    de: Eine Regel muss prüfbar sein, mit Schwelle und jemandem, der bei einem Verstoß handelt. Vage Ideale, bloße Menge und Eleganz führen nicht zu Handeln.
+  source: https://en.wikipedia.org/wiki/Data_quality
+- id: dqc-a-sens
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: In 6 percent of orders the region is missing. How do you test whether this threatens your regional conclusions?
+    de: Bei 6 Prozent der Bestellungen fehlt die Region. Wie prüfst du, ob das deine Schlüsse zu den Regionen gefährdet?
+  options:
+  - en: Run the analysis with the unknown rows spread proportionally and with them left out, then compare
+    de: Die Analyse mit anteilig verteilten und mit weggelassenen unbekannten Zeilen durchführen und vergleichen
+    correct: true
+  - en: Fill all gaps with the most frequent region, which is the simplest option and needs no comparison
+    de: Alle Lücken mit der häufigsten Region füllen, was die einfachste Option ist und gar keinen Vergleich braucht
+    correct: false
+  - en: Delete the 6 percent of rows without a mention, because the remaining 94 percent is always enough
+    de: Die 6 Prozent Zeilen ohne Erwähnung löschen, weil die übrigen 94 Prozent in jedem Fall ausreichen
+    correct: false
+  - en: Do nothing, because a share of missing values below ten percent never has any effect at all
+    de: Nichts tun, denn ein Anteil fehlender Werte unter zehn Prozent hat nie irgendeine Wirkung auf Ergebnisse
+    correct: false
+  explanation:
+    en: A sensitivity check runs the analysis under plausible alternatives and shows whether the conclusion holds. Filling with the most common value favours one region, silent deletion hides the gap, and no fixed percentage is automatically harmless.
+    de: Eine Sensitivitätsprüfung führt die Analyse unter plausiblen Alternativen durch und zeigt, ob die Schlussfolgerung hält. Füllen mit dem häufigsten Wert begünstigt eine Region, stilles Löschen verbirgt die Lücke, und kein fester Prozentsatz ist automatisch harmlos.
+  source: https://en.wikipedia.org/wiki/Data_quality
+- id: dqc-a-repro
+  level: advanced
+  difficulty: 1550
+  type: multi
+  stem:
+    en: Which practices make data cleaning reproducible? Select all that apply.
+    de: Welche Vorgehensweisen machen Datenbereinigung reproduzierbar? Wähle alle zutreffenden aus.
+  options:
+  - en: Doing the cleaning in a script or query that is kept under version control
+    de: Die Bereinigung in einem Skript oder einer Abfrage unter Versionskontrolle durchführen
+    correct: true
+  - en: Leaving the raw data untouched and logging each rule with the number of rows it affected
+    de: Die Rohdaten unangetastet lassen und jede Regel mit der Zahl betroffener Zeilen protokollieren
+    correct: true
+  - en: Stating the main cleaning choices and their effect in the report that goes to readers
+    de: Die wichtigsten Bereinigungsentscheidungen und ihre Wirkung im Bericht für die Lesenden nennen
+    correct: true
+  - en: Editing the source file by hand after each load and remembering what was changed
+    de: Die Quelldatei nach jedem Laden von Hand bearbeiten und sich merken, was geändert wurde
+    correct: false
+  - en: Overwriting the raw file with the cleaned version so that only one version remains
+    de: Die Rohdatei mit der bereinigten Version überschreiben, sodass nur eine Version übrig bleibt
+    correct: false
+  explanation:
+    en: Scripts, a log and untouched raw data let anyone rerun and check the cleaning. Hand edits that live in memory, and overwritten raw files, make the process impossible to repeat or audit.
+    de: Skripte, ein Protokoll und unangetastete Rohdaten lassen jeden die Bereinigung wiederholen und prüfen. Handarbeit, die nur im Gedächtnis liegt, und überschriebene Rohdateien machen den Vorgang nicht wiederholbar und nicht prüfbar.
+  source: https://en.wikipedia.org/wiki/Data_quality
+- id: dqc-a-source
+  level: advanced
+  difficulty: 1650
+  type: single
+  stem:
+    en: A mobile order form lets the region stay empty, and analysts fix this every month by hand. What is the best approach?
+    de: Ein mobiles Bestellformular lässt die Region leer, und Analysierende korrigieren das jeden Monat von Hand. Was ist der beste Ansatz?
+  options:
+  - en: Agree with the data owner to make the field mandatory, and until then report "unknown" openly
+    de: Mit den Datenverantwortlichen vereinbaren, das Feld zum Pflichtfeld zu machen, und bis dahin „unbekannt“ offen ausweisen
+    correct: true
+  - en: Keep fixing the gaps by hand each month, since fixing them at the source would take far too long
+    de: Die Lücken weiter jeden Monat von Hand beheben, denn eine Behebung an der Quelle würde viel zu lange dauern
+    correct: false
+  - en: Ask each analyst to guess the most likely region and to record the guess in the working file
+    de: Jede Analystin und jeden Analysten bitten, die wahrscheinlichste Region zu raten und das in der Arbeitsdatei zu notieren
+    correct: false
+  - en: Remove the region from all reports so that the missing values cannot cause any complaints
+    de: Die Region aus allen Berichten entfernen, damit die fehlenden Werte keine Beschwerden auslösen können
+    correct: false
+  explanation:
+    en: Repeated downstream fixes point to an upstream cause. Fix it at the source with the owner and keep the gap visible meanwhile. Manual patching costs time every month, guessing introduces errors and removing the region hides the problem.
+    de: Wiederholte Korrekturen weiter unten deuten auf eine Ursache weiter oben hin. Behebe sie mit den Verantwortlichen an der Quelle und halte die Lücke bis dahin sichtbar. Handarbeit kostet jeden Monat Zeit, Raten bringt Fehler, und das Entfernen der Region verbirgt das Problem.
+  source: https://de.wikipedia.org/wiki/Duplikaterkennung

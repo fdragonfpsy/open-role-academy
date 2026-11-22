@@ -1,0 +1,14 @@
+id: openstax-intro-stats-sampling-data
+url: "https://openstax.org/books/introductory-statistics-2e/pages/1-introduction"
+title: "Introductory Statistics 2e, Chapter 1: Sampling and Data"
+provider: OpenStax
+language: en
+format: book
+minutes: 90
+license: CC-BY-NC-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+licenseVerifiedOn: 2026-11-22
+mode: link
+competencies: [data-analytics-fundamentals]
+levels: [foundation, practitioner, advanced]
+note: "Same textbook as openstax-intro-stats-descriptive, which states a CC BY-NC-SA license (NC means link only). Only the chapter introduction page was checked 2026-11-22 (HTTP 200)."

@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-22 (c) — Data & Analytics content batch 1
+
+**Done**
+- data-analytics-fundamentals, data-sourcing-collection, data-quality-cleaning: 18 units (en+de, `ai-draft`), 36 items, 10 new link-only resources (`licenseVerifiedOn` 2026-11-22, HTTP 200). Role stays `draft`. Validator: 0 errors, 0 length warnings. Stopped: window end approaching for a full batch / run kept lean.
+
+**Reviewer to-dos:** several facts rest on page intros (Wikipedia data collection/quality/integration; 5 quality dimensions labelled "our own"); German govdata/destatis unreachable, so data.europa.eu used (`free-access`); outlier and data-type statements are general knowledge, not from the linked pages; German wording not human-reviewed.
+
+**Counts:** roles 10 (1 draft) · competencies 98 · units 514 · items 1096 · resources 517
+
+**Next:** Data & Analytics batch 2 (sql-data-querying, statistics-fundamentals, data-visualization-dashboards).
+
 ## 2026-11-22 (b) — CI runs the browser e2e suite
 
 **Done**

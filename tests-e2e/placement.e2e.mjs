@@ -73,6 +73,7 @@ async function run(browser, lang) {
   const roleCount = groups[0]?.radios.length ?? 0;
   check(roleCount >= 2, `${tag} ${roleCount} roles selectable`);
 
+  await page.waitForFunction(() => [...document.querySelectorAll('astro-island')].every((i) => !i.hasAttribute('ssr'))); // islands hydrated (CI runners are slower)
   // Keyboard: Tab into role group, ArrowDown to select the 2nd role.
   await tabTo(page, () => document.activeElement?.name === 'role', 'role radio group');
   let f = await focusInfo(page);

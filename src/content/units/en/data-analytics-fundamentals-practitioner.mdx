@@ -1,0 +1,75 @@
+---
+id: data-analytics-fundamentals-practitioner
+competency: data-analytics-fundamentals
+level: practitioner
+title: "Choosing the right analysis, tools and roles"
+objectives:
+  - "Match a business question to a type of analysis."
+  - "Distinguish exploratory from confirmatory analysis."
+  - "Pick a suitable tool for a task: spreadsheet, SQL, BI tool or scripting."
+  - "Describe typical roles in an analytics team and what each hands over."
+minutes: 25
+resources:
+  - wikipedia-data-analysis
+  - wikipedia-de-datenanalyse
+  - openstax-intro-stats-sampling-data
+status: ai-draft
+sources:
+  - title: "Data analysis"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_analysis
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Datenanalyse"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Datenanalyse
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Introductory Statistics 2e, Chapter 1: Sampling and Data"
+    author: "Barbara Illowsky, Susan Dean et al. (OpenStax)"
+    url: https://openstax.org/books/introductory-statistics-2e/pages/1-introduction
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+At practitioner level you choose the approach yourself. A wrong choice costs days: a model where a pivot table would do, or a one-off spreadsheet for a report that is needed every month.
+
+## From question to type of analysis
+
+- "How many, how much, how has it developed?" is descriptive.
+- "Why did it change?" is diagnostic: split the figure by groups, periods or channels.
+- "What will happen next month?" is predictive and needs history that is stable enough to learn from.
+- "What should we do?" is prescriptive and needs a clear decision, options and costs.
+
+## Exploratory and confirmatory analysis
+
+Exploratory analysis looks for new features in the data and produces hypotheses. Confirmatory analysis tests a hypothesis that was stated beforehand and tries to confirm or falsify it. The trap: browse many cuts of the data, find one striking pattern, and present it as if it had been the plan. Label what you found while exploring as a hypothesis until you have tested it on other data or another period.
+
+## Choosing tools (our own rule of thumb)
+
+- Spreadsheet: small, one-off, visible to the whole team.
+- SQL: data already lives in a database; the query is the repeatable record of what you did.
+- BI tool: recurring reports and dashboards for many readers.
+- Scripting (for example Python or R): larger data, repeated steps, more complex methods.
+
+Tools differ by company, so learn the idea behind each rather than one product.
+
+## Roles in a team
+
+Typical roles are the business owner who owns the question, the data analyst who answers it, the data engineer who makes data available and reliable, and the data scientist who builds models. Titles and boundaries differ widely between companies. What matters is a clear handover: what is asked, which data was used, which definitions apply.
+
+## Worked example
+
+Illustration only; invented figures. Operations asks why the return rate of a product group rose. The analyst first reports descriptively: 6 percent of orders came back last month against 4 percent before. In the diagnostic step the figure is split by size, supplier and sales channel; most of the rise sits in one supplier's batch. Exploring many splits can throw up chance patterns, so the analyst writes: "Hypothesis: the batch has a defect. To check: inspect returned items and compare with the next batch." The claim is marked as unconfirmed, and the next step is a test.
+
+## Key takeaways
+
+- Choose the type of analysis from the question and the decision.
+- Mark exploratory findings as hypotheses until tested.
+- Match the tool to size, repeatability and audience.
+- Hand over with definitions, data sources and open questions.

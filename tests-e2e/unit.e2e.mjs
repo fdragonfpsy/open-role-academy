@@ -75,6 +75,7 @@ async function run(browser, lang) {
   if (hasAttribution) check((await page.locator('#sources ~ ul').innerText()).includes(t.changes), `${tag} attribution shows changes made`);
 
   // Mastery check via keyboard.
+  await page.waitForFunction(() => [...document.querySelectorAll('astro-island')].every((i) => !i.hasAttribute('ssr'))); // islands hydrated (CI runners are slower)
   await tabTo(page, () => document.activeElement?.tagName === 'BUTTON' && document.activeElement.closest('section')?.getAttribute('aria-labelledby') === 'mastery', 'mastery start button');
   await page.keyboard.press('Enter');
   await page.waitForSelector('fieldset');
@@ -83,14 +84,21 @@ async function run(browser, lang) {
     if (!(await tabTo(page, () => document.activeElement?.name?.startsWith('q-'), 'answer input'))) break;
     await page.keyboard.press('Space');
     // Let the island commit the selection before submitting (slower CI runners raced here).
-    await page.waitForFunction(() => document.activeElement?.checked === true);
+    const anyChecked = () => page.locator('fieldset input:checked').count().then((n) => n > 0);
+    for (let tries = 0; tries < 5 && !(await anyChecked()); tries++) {
+      await page.waitForTimeout(400);
+      if (!(await anyChecked()) && tries >= 2) await page.keyboard.press('Space');
+    }
     await page.waitForTimeout(150);
     await page.keyboard.press('Enter');
     await page.waitForSelector('[role=status][aria-live=polite]');
     await page.waitForTimeout(100);
     await tabTo(page, () => document.activeElement?.type === 'submit', 'next button');
+    const before = await page.locator('fieldset').first().innerText().catch(() => '');
     await page.keyboard.press('Enter');
     asked++;
+    // Wait until the next question (or the result view) replaced the answered one; slow runners raced here.
+    await page.waitForFunction((prev) => { const f = document.querySelector('fieldset'); return !f || f.innerText !== prev; }, before);
     await page.waitForTimeout(100);
     if (asked > 6) break;
   }

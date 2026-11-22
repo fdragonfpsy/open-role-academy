@@ -1,0 +1,79 @@
+---
+id: data-analytics-fundamentals-foundation
+competency: data-analytics-fundamentals
+level: foundation
+title: "From question to decision: what data analysis is"
+objectives:
+  - "Define data analysis and say what it is for."
+  - "Name the phases from question to decision."
+  - "Tell descriptive, diagnostic, predictive and prescriptive analysis apart."
+  - "Distinguish numerical from categorical data."
+minutes: 20
+resources:
+  - wikipedia-data-analysis
+  - wikipedia-de-datenanalyse
+  - openstax-intro-stats-sampling-data
+status: ai-draft
+sources:
+  - title: "Data analysis"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_analysis
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Datenanalyse"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Datenanalyse
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Introductory Statistics 2e, Chapter 1: Sampling and Data"
+    author: "Barbara Illowsky, Susan Dean et al. (OpenStax)"
+    url: https://openstax.org/books/introductory-statistics-2e/pages/1-introduction
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+Every team has data, but few teams have answers. Data analysis is the work that turns a question into something a person can decide on. Knowing the steps helps you avoid the most common mistake: starting with a spreadsheet instead of a question.
+
+## What data analysis is
+
+Data analysis is the process of inspecting, cleansing, transforming and modelling data to find useful information and to support decisions. The phases are iterative: what you learn late in the work can send you back to an earlier step.
+
+## The lifecycle (our own simple description)
+
+- Question: which decision depends on this, and who will use the answer?
+- Data: which data could answer it, and where does it come from?
+- Prepare: check the data and clean it.
+- Analyse: summarise, compare, look for patterns.
+- Communicate: show the result together with its limits.
+- Decide and review: act, then check whether it worked.
+
+## Four types of analysis
+
+These are common teaching labels; the wording here is our own.
+
+- Descriptive: what happened? Totals, averages, trends.
+- Diagnostic: why did it happen? Comparing groups, looking for causes.
+- Predictive: what is likely to happen? Forecasts and models.
+- Prescriptive: what should we do? Recommendations.
+
+Most analytics work starts descriptive. A prediction built on a poorly understood past is rarely better than the past.
+
+## Kinds of data
+
+Numerical data are numbers you can calculate with, such as an order value. Categorical data are labels, such as a region or a product group. Data in tables with fixed columns are called structured; free text, images and audio are unstructured.
+
+## Worked example
+
+Illustration only; invented figures. A support lead asks: "Why are customers unhappy?" That is too vague to analyse. The analyst asks what decision depends on it and sharpens the question: "Did the share of tickets answered within 24 hours change last quarter?" The data is a ticket export with created and answered timestamps. The descriptive result: 82 percent in the first quarter and 71 percent in the second. That is a finding the lead can act on, and it prompts a diagnostic follow-up: which ticket categories got slower?
+
+## Key takeaways
+
+- Start with the question and the decision, not with the data.
+- The lifecycle is iterative; expect to loop back.
+- Descriptive, diagnostic, predictive and prescriptive analysis answer different questions.
+- Know whether a column is numerical or categorical before you calculate.

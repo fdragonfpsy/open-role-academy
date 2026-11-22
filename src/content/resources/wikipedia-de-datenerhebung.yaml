@@ -1,0 +1,14 @@
+id: wikipedia-de-datenerhebung
+url: "https://de.wikipedia.org/wiki/Erhebung_(Empirie)"
+title: "Erhebung (Empirie)"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-22
+mode: link
+competencies: [data-sourcing-collection]
+levels: [foundation, practitioner, advanced]
+note: "Wikipedia text under CC BY-SA; only the intro was read 2026-11-22 (Sammeln und Auswerten von Daten in amtlicher Statistik, Sozial- und Marktforschung; Erhebung vs. Experiment). Link only. Redirect target of Datenerhebung."
