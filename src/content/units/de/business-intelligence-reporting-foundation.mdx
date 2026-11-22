@@ -1,0 +1,73 @@
+---
+id: business-intelligence-reporting-foundation
+competency: business-intelligence-reporting
+level: foundation
+title: "Bausteine der Business Intelligence"
+objectives:
+  - "Erklären, was Business Intelligence ist und wozu ein Data Warehouse dient."
+  - "Kennzahlen (Fakten) von Dimensionen unterscheiden."
+  - "Den Weg von den Quellsystemen bis zum Bericht beschreiben."
+  - "Die Fragen nennen, die du stellst, bevor du einer Berichtszahl vertraust."
+minutes: 20
+resources:
+  - wikipedia-business-intelligence
+  - wikipedia-de-business-intelligence
+  - mslearn-de-power-bi-overview
+status: ai-draft
+sources:
+  - title: "Business intelligence"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Business_intelligence
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Business Intelligence"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Business_Intelligence
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Power BI Übersicht (Microsoft Learn)"
+    author: "Microsoft"
+    url: https://learn.microsoft.com/de-de/power-bi/fundamentals/power-bi-overview
+    license: free-access
+    licenseUrl: https://learn.microsoft.com/de-de/legal/termsofuse
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Führungskräfte fragen selten selbst Datenbanken ab. Sie lesen Berichte. Wenn du verstehst, wie eine Berichtszahl entsteht, kannst du sie erklären, verteidigen und erkennen, wenn sie falsch ist.
+
+## Was Business Intelligence ist
+
+Business Intelligence (BI) umfasst die Methoden und Werkzeuge, die Daten einer Organisation in Berichte und Dashboards für Entscheidungen verwandeln. Ziel ist eine gemeinsame, wiederholbare Sicht auf das Geschäft statt vieler privater Tabellen.
+
+## Von der Quelle zum Bericht
+
+- Quellsysteme halten die tägliche Arbeit fest: ein Bestellsystem, ein Personalsystem, ein Buchhaltungssystem.
+- Ein Data Warehouse sammelt Daten aus mehreren Quellen an einem Ort, aufgebaut für Analysen statt für das Tagesgeschäft.
+- Ein Datenmodell beschreibt, welche Tabellen es gibt und wie sie zusammenhängen.
+- Das BI-Werkzeug liest das Modell und zeigt Diagramme, Tabellen und Filter. Power BI ist ein Beispiel für ein solches Werkzeug; es gibt weitere.
+
+## Kennzahlen und Dimensionen
+
+Eine Kennzahl (auch Fakt oder Measure) lässt sich addieren oder mitteln, etwa Umsatz oder Anzahl der Bestellungen. Eine Dimension ist eine Art, sie aufzuschneiden, etwa Monat, Region oder Produktgruppe. Ein Bericht beantwortet "Kennzahl nach Dimension", zum Beispiel "Umsatz nach Region und Monat".
+
+## Fragen, bevor du einer Zahl vertraust
+
+- Woher stammen die Daten, und wann wurden sie zuletzt aktualisiert?
+- Wie genau ist die Kennzahl definiert (zum Beispiel Umsatz netto oder brutto)?
+- Was ist enthalten und was ausgeschlossen (stornierte Bestellungen, Testkonten)?
+- Wer verantwortet den Bericht und kann Fragen dazu beantworten?
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundene Zahlen. Eine Führungskraft sieht im Dashboard "Bestellungen: 1.200" und im monatlichen PDF "Bestellungen: 1.150". Du prüfst beide Definitionen. Das Dashboard zählt jede angelegte Bestellung, das PDF nur Bestellungen ohne Stornierung. Beide Zahlen stimmen für ihre eigene Definition. Die Lösung ist eine gemeinsame Definition direkt an der Kennzahl und dieselbe Bezeichnung in beiden Berichten.
+
+## Das Wichtigste in Kürze
+
+- BI macht aus Daten der Quellsysteme wiederholbare Berichte und Dashboards.
+- Ein Data Warehouse bündelt Daten aus mehreren Quellen für Analysen.
+- Ein Bericht zeigt Kennzahlen, aufgeteilt nach Dimensionen.
+- Prüfe vor jeder Zahl Definition, Aktualisierungszeitpunkt und Verantwortliche.

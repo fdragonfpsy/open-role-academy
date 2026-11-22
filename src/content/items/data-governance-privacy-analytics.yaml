@@ -1,0 +1,302 @@
+competency: data-governance-privacy-analytics
+items:
+- id: dgp-f-pd
+  level: foundation
+  difficulty: 850
+  type: multi
+  stem:
+    en: Which of these can be personal data? Select all that apply.
+    de: Welche dieser Angaben können personenbezogene Daten sein? Wähle alle zutreffenden aus.
+  options:
+  - en: A customer email address
+    de: Die E-Mail-Adresse einer Kundin oder eines Kunden
+    correct: true
+  - en: An IP address in a web log
+    de: Eine IP-Adresse in einem Webprotokoll
+    correct: true
+  - en: A job title, department and start date that match only one person
+    de: Eine Stellenbezeichnung, Abteilung und ein Eintrittsdatum, die nur auf eine Person passen
+    correct: true
+  - en: The total number of orders of the whole company last year
+    de: Die Gesamtzahl der Bestellungen des gesamten Unternehmens im letzten Jahr
+    correct: false
+  - en: The average temperature in Berlin last July
+    de: Die Durchschnittstemperatur in Berlin im vergangenen Juli
+    correct: false
+  explanation:
+    en: Data is personal when it relates to an identifiable person, including indirect identifiers and combinations. Company-wide totals and weather averages do not point to a person.
+    de: Daten sind personenbezogen, wenn sie sich auf eine identifizierbare Person beziehen, auch über indirekte Merkmale und Kombinationen. Gesamtsummen des Unternehmens und Wetterdurchschnitte weisen nicht auf eine Person hin.
+  source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+- id: dgp-f-purpose
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: What does purpose limitation mean?
+    de: Was bedeutet Zweckbindung?
+  options:
+  - en: Data collected for one purpose is not reused for an incompatible one unchecked
+    de: Für einen Zweck erhobene Daten sollen nicht ohne Prüfung für einen unvereinbaren anderen Zweck genutzt werden
+    correct: true
+  - en: Data may be used for any purpose as long as the analyst works inside the same company
+    de: Daten dürfen für jeden Zweck genutzt werden, solange die Analystin oder der Analyst im selben Unternehmen arbeitet
+    correct: false
+  - en: Data must be deleted on the day after the first analysis has been completed and shared
+    de: Daten müssen am Tag nach Abschluss und Weitergabe der ersten Analyse gelöscht werden
+    correct: false
+  - en: Data may be shared with anybody as soon as the names of the persons have been removed
+    de: Daten dürfen mit jedermann geteilt werden, sobald die Namen der Personen entfernt wurden
+    correct: false
+  explanation:
+    en: Purpose limitation ties data use to the reason it was collected, so a new purpose needs a check. Working in the same company does not remove it, it is not an automatic deletion rule, and removing names is not enough on its own.
+    de: Die Zweckbindung knüpft die Datennutzung an den Erhebungsgrund, ein neuer Zweck braucht daher eine Prüfung. Die Arbeit im selben Unternehmen hebt sie nicht auf, sie ist keine automatische Löschregel, und das Entfernen von Namen allein genügt nicht.
+  source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+- id: dgp-f-min
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: Your question is why customers cancel. Which request follows data minimisation best?
+    de: Deine Frage lautet, warum Kundschaft kündigt. Welche Anfrage entspricht der Datenminimierung am besten?
+  options:
+  - en: Customer ID, sign-up month, plan and cancellation month only
+    de: Nur Kunden-ID, Anmeldemonat, Tarif und Kündigungsmonat
+    correct: true
+  - en: The full customer export with names and phone numbers in case they are useful later on
+    de: Den vollständigen Kundenexport mit Namen und Telefonnummern, falls sie später nützlich sind
+    correct: false
+  - en: The full export, but with the columns hidden in the spreadsheet so that nobody sees them
+    de: Den vollständigen Export, aber mit in der Tabelle ausgeblendeten Spalten, damit sie niemand sieht
+    correct: false
+  - en: Whatever columns the data owner offers first, since they know the data better than you
+    de: Welche Spalten die Datenverantwortlichen zuerst anbieten, da sie die Daten besser kennen als du
+    correct: false
+  explanation:
+    en: Minimisation means requesting only what the question needs. Taking everything "just in case" or hiding columns still loads the data, and leaving the choice to the owner skips your own check of need.
+    de: Minimierung heißt, nur das anzufordern, was die Frage braucht. Alles "für alle Fälle" zu nehmen oder Spalten auszublenden lädt die Daten trotzdem, und die Wahl den Verantwortlichen zu überlassen übergeht deine eigene Prüfung des Bedarfs.
+  source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+- id: dgp-f-ask
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: When should you ask Legal or the data protection officer before you start?
+    de: Wann solltest du vor dem Start die Rechtsabteilung oder die Datenschutzbeauftragten fragen?
+  options:
+  - en: When you want to use personal data for a new purpose or share it outside the organisation
+    de: Bei neuem Zweck der personenbezogenen Daten oder Weitergabe nach außen
+    correct: true
+  - en: Only after the analysis is finished, when the results are ready to be presented to management
+    de: Erst nach Abschluss der Analyse, wenn die Ergebnisse der Geschäftsleitung präsentiert werden können
+    correct: false
+  - en: Never, because data protection is a technical topic that only the IT security team handles
+    de: Nie, weil Datenschutz ein technisches Thema ist, das nur das IT-Sicherheitsteam betreut
+    correct: false
+  - en: Only when a data subject has already complained about the way their data was handled
+    de: Erst wenn sich eine betroffene Person bereits über den Umgang mit ihren Daten beschwert hat
+    correct: false
+  explanation:
+    en: Ask early, before a new use or an outside sharing starts, because a check afterwards cannot undo a problem. Data protection is not only IT security, and waiting for a complaint is too late.
+    de: Frage früh, bevor eine neue Nutzung oder Weitergabe beginnt, weil eine Prüfung danach ein Problem nicht rückgängig machen kann. Datenschutz ist nicht nur IT-Sicherheit, und das Warten auf eine Beschwerde kommt zu spät.
+  source: https://en.wikipedia.org/wiki/Data_protection_officer
+- id: dgp-p-pseudo
+  level: practitioner
+  difficulty: 1150
+  type: single
+  stem:
+    en: How does pseudonymised data count under EU data protection rules?
+    de: Wie gelten pseudonymisierte Daten nach den EU-Datenschutzregeln?
+  options:
+  - en: It is still personal data, as the additional information can identify the person
+    de: Sie bleiben personenbezogen, da die Zusatzinformation die Person bestimmbar macht
+    correct: true
+  - en: It is no longer personal data, as soon as the names have been replaced by codes in the table
+    de: Sie sind keine personenbezogenen Daten mehr, sobald die Namen in der Tabelle durch Codes ersetzt wurden
+    correct: false
+  - en: It is anonymous data, since pseudonymisation and anonymisation are two names for the same thing
+    de: Sie sind anonyme Daten, da Pseudonymisierung und Anonymisierung zwei Namen für dieselbe Sache sind
+    correct: false
+  - en: It is exempt from purpose limitation, because the analyst can no longer see who the persons are
+    de: Sie sind von der Zweckbindung ausgenommen, weil die Analysierenden nicht mehr sehen, wer die Personen sind
+    correct: false
+  explanation:
+    en: Pseudonymisation lowers risk but the link to the person still exists, so the data remains personal and the duties continue. Replacing names with codes does not anonymise.
+    de: Pseudonymisierung senkt das Risiko, doch die Verbindung zur Person besteht fort, die Daten bleiben also personenbezogen und die Pflichten gelten weiter. Namen durch Codes zu ersetzen anonymisiert nicht.
+  source: https://en.wikipedia.org/wiki/Pseudonymization
+- id: dgp-p-reid
+  level: practitioner
+  difficulty: 1200
+  type: multi
+  stem:
+    en: Which situations can lead to re-identification even without names? Select all that apply.
+    de: Welche Situationen können auch ohne Namen zur Re-Identifizierung führen? Wähle alle zutreffenden aus.
+  options:
+  - en: A table cell that describes only one or two people
+    de: Eine Tabellenzelle, die nur eine oder zwei Personen beschreibt
+    correct: true
+  - en: Age, postcode and job title in the same row
+    de: Alter, Postleitzahl und Berufsbezeichnung in derselben Zeile
+    correct: true
+  - en: A free-text comment column that mentions personal details
+    de: Eine Freitext-Kommentarspalte, die persönliche Angaben erwähnt
+    correct: true
+  - en: A column with the number of orders per month for all customers combined
+    de: Eine Spalte mit der Zahl der Bestellungen pro Monat für die gesamte Kundschaft zusammen
+    correct: false
+  - en: A chart title that names the department only
+    de: Ein Diagrammtitel, der nur die Abteilung nennt
+    correct: false
+  explanation:
+    en: Small cells, combined quasi-identifiers and free text can single out people. An aggregate over all customers and a department-level title do not point to individuals.
+    de: Kleine Zellen, kombinierte Quasi-Identifikatoren und Freitext können Personen herausstellen. Eine Summe über die gesamte Kundschaft und ein Titel auf Abteilungsebene weisen nicht auf Einzelne hin.
+  source: https://en.wikipedia.org/wiki/Pseudonymization
+- id: dgp-p-small
+  level: practitioner
+  difficulty: 1250
+  type: single
+  stem:
+    en: A report breaks overtime down by department. One department has two employees. What is the best handling?
+    de: Ein Bericht schlüsselt Überstunden nach Abteilung auf. Eine Abteilung hat zwei Beschäftigte. Was ist die beste Behandlung?
+  options:
+  - en: Merge it into a larger category or hide the small cell
+    de: Sie in eine größere Kategorie zusammenfassen oder die kleine Zelle ausblenden
+    correct: true
+  - en: Show it unchanged, because no names appear in the table and so nobody can be identified
+    de: Unverändert zeigen, weil in der Tabelle keine Namen stehen und deshalb niemand erkennbar ist
+    correct: false
+  - en: Show it unchanged, but add a note asking readers not to draw conclusions about the two staff
+    de: Unverändert zeigen, aber mit einem Hinweis, dass Lesende keine Schlüsse über die zwei Beschäftigten ziehen sollen
+    correct: false
+  - en: Replace the value with a random number so that the department looks like the others
+    de: Den Wert durch eine Zufallszahl ersetzen, damit die Abteilung wie die anderen aussieht
+    correct: false
+  explanation:
+    en: With two people, the value is practically a statement about them, even without names. Merging or hiding the cell protects them; a note or an invented number does not fix the exposure and the latter falsifies data.
+    de: Bei zwei Personen ist der Wert praktisch eine Aussage über sie, auch ohne Namen. Zusammenfassen oder Ausblenden schützt sie; ein Hinweis oder eine erfundene Zahl behebt die Offenlegung nicht, und Letztere verfälscht Daten.
+  source: https://en.wikipedia.org/wiki/Pseudonymization
+- id: dgp-p-doc
+  level: practitioner
+  difficulty: 1300
+  type: multi
+  stem:
+    en: Which items belong in the documentation of an analysis that uses personal data? Select all that apply.
+    de: Welche Angaben gehören in die Dokumentation einer Analyse mit personenbezogenen Daten? Wähle alle zutreffenden aus.
+  options:
+  - en: The purpose of the analysis
+    de: Der Zweck der Analyse
+    correct: true
+  - en: Who approved the use of the data
+    de: Wer die Nutzung der Daten freigegeben hat
+    correct: true
+  - en: Where the files are stored and when they will be deleted
+    de: Wo die Dateien liegen und wann sie gelöscht werden
+    correct: true
+  - en: Private notes about the personal lives of the persons in the data
+    de: Private Notizen über das Privatleben der Personen in den Daten
+    correct: false
+  - en: A copy of the full raw export attached to the report for later reference
+    de: Eine Kopie des vollständigen Rohexports als Anhang des Berichts zur späteren Ansicht
+    correct: false
+  explanation:
+    en: Purpose, approval, storage and deletion make the handling transparent and controllable. Extra private notes or attaching the raw export would create new unnecessary personal data copies.
+    de: Zweck, Freigabe, Ablage und Löschung machen den Umgang transparent und kontrollierbar. Zusätzliche private Notizen oder der Rohexport im Anhang würden neue, unnötige Kopien personenbezogener Daten schaffen.
+  source: https://en.wikipedia.org/wiki/Data_governance
+- id: dgp-a-access
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: Which access design best follows the principle of least privilege?
+    de: Welche Zugriffsgestaltung folgt dem Prinzip der minimalen Rechte am besten?
+  options:
+  - en: Most analysts use aggregated data; a small named group may see raw data
+    de: Die meisten Analysierenden nutzen aggregierte Daten; eine kleine benannte Gruppe sieht bei Bedarf Rohdaten
+    correct: true
+  - en: Every analyst gets access to all raw tables so that nobody has to wait for a permission
+    de: Alle Analysierenden erhalten Zugriff auf sämtliche Rohtabellen, damit niemand auf eine Berechtigung warten muss
+    correct: false
+  - en: Access is granted for a project and kept after it ends in case a follow-up question arrives
+    de: Der Zugriff wird für ein Projekt vergeben und nach dessen Ende für eventuelle Folgefragen beibehalten
+    correct: false
+  - en: One shared login for the whole team is used, so that the access list stays short and simple
+    de: Ein gemeinsames Konto für das ganze Team wird genutzt, damit die Zugriffsliste kurz und einfach bleibt
+    correct: false
+  explanation:
+    en: Least privilege limits sensitive data to those who need it and gives everyone else safer data. Blanket access, access kept after a project and shared logins make misuse and tracing harder.
+    de: Minimale Rechte beschränken sensible Daten auf alle, die sie brauchen, und geben den übrigen sicherere Daten. Pauschaler Zugriff, über das Projekt hinaus behaltene Rechte und gemeinsame Konten erschweren Missbrauchsschutz und Nachvollziehbarkeit.
+  source: https://en.wikipedia.org/wiki/Data_governance
+- id: dgp-a-escalate
+  level: advanced
+  difficulty: 1500
+  type: multi
+  stem:
+    en: Which features of a planned analysis suggest you should escalate to Legal or the DPO? Select all that apply.
+    de: Welche Merkmale einer geplanten Analyse legen nahe, dass du an Rechtsabteilung oder Datenschutzbeauftragte eskalieren solltest? Wähle alle zutreffenden aus.
+  options:
+  - en: It profiles individual customers using combined internal and external data
+    de: Sie bewertet einzelne Kundschaft anhand verknüpfter interner und externer Daten
+    correct: true
+  - en: It involves sensitive topics such as health
+    de: Sie betrifft sensible Themen wie Gesundheit
+    correct: true
+  - en: It is a new use that the original data collection did not foresee
+    de: Sie ist eine neue Nutzung, die bei der Erhebung der Daten nicht vorgesehen war
+    correct: true
+  - en: It uses a company-wide sales total that contains no personal data
+    de: Sie nutzt eine unternehmensweite Umsatzsumme ohne personenbezogene Daten
+    correct: false
+  - en: It is requested by a senior manager in the same team
+    de: Sie wird von einer ranghohen Führungskraft im selben Team angefragt
+    correct: false
+  explanation:
+    en: Profiling, sensitive topics and new uses raise questions that need a specialist check. A non-personal total needs no escalation, and seniority of the requester is not a data protection criterion.
+    de: Profiling, sensible Themen und neue Nutzungen werfen Fragen auf, die eine fachliche Prüfung brauchen. Eine Summe ohne Personenbezug braucht keine Eskalation, und der Rang der anfragenden Person ist kein Datenschutzkriterium.
+  source: https://en.wikipedia.org/wiki/Data_protection_officer
+- id: dgp-a-lineage
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: A KPI in a board report cannot be traced to its source, and nobody knows whether the data may be used for this purpose. Which measure addresses the cause best?
+    de: Ein KPI in einem Bericht an die Geschäftsleitung lässt sich nicht bis zur Quelle zurückverfolgen, und niemand weiß, ob die Daten für diesen Zweck genutzt werden dürfen. Welche Maßnahme behebt die Ursache am besten?
+  options:
+  - en: Maintain a catalogue with lineage, owner, sensitivity and permitted purposes
+    de: Einen Katalog mit Datenherkunft, Verantwortlichen, Sensibilität und zulässigen Zwecken je Datensatz pflegen
+    correct: true
+  - en: Delete the KPI from the report, since an untraceable number should never appear anywhere
+    de: Den KPI aus dem Bericht streichen, da eine nicht nachvollziehbare Zahl nirgends erscheinen sollte
+    correct: false
+  - en: Ask the analyst who built the report to remember the sources and write them down for you
+    de: Die Person, die den Bericht gebaut hat, bitten, sich an die Quellen zu erinnern und sie aufzuschreiben
+    correct: false
+  - en: Move all datasets to a single large table so that lineage and ownership no longer matter
+    de: Alle Datensätze in eine einzige große Tabelle verschieben, damit Herkunft und Verantwortung nicht mehr zählen
+    correct: false
+  explanation:
+    en: A catalogue records source, owner, sensitivity and permitted purposes systematically, so the question can be answered for every dataset. Deleting one KPI, relying on memory or merging tables leaves the cause in place.
+    de: Ein Katalog hält Quelle, Verantwortliche, Sensibilität und zulässige Zwecke systematisch fest, sodass die Frage für jeden Datensatz beantwortet werden kann. Einen KPI zu streichen, sich auf das Gedächtnis zu verlassen oder Tabellen zu verschmelzen lässt die Ursache bestehen.
+  source: https://en.wikipedia.org/wiki/Data_governance
+- id: dgp-a-balance
+  level: advanced
+  difficulty: 1650
+  type: single
+  stem:
+    en: Analysts complain that data requests take weeks and some have started to keep private copies of exports. What is the best governance response?
+    de: Analysierende klagen, dass Datenanfragen Wochen dauern, und einige haben begonnen, private Kopien von Exporten aufzubewahren. Was ist die beste Governance-Antwort?
+  options:
+  - en: Offer pre-approved aggregated datasets, a standard request route and a named contact
+    de: Freigegebene aggregierte Datensätze, einen Standard-Anfrageweg und eine Ansprechperson anbieten
+    correct: true
+  - en: Tighten the rules and announce penalties for private copies, without changing how requests are handled
+    de: Die Regeln verschärfen und Sanktionen für private Kopien ankündigen, ohne die Bearbeitung der Anfragen zu ändern
+    correct: false
+  - en: Allow private copies in general, since the risk is small once an analyst has been trained
+    de: Private Kopien grundsätzlich erlauben, da das Risiko gering ist, sobald eine Person geschult wurde
+    correct: false
+  - en: Stop all data requests until the review of the whole governance framework is complete
+    de: Alle Datenanfragen stoppen, bis die Überprüfung des gesamten Governance-Rahmens abgeschlossen ist
+    correct: false
+  explanation:
+    en: Private copies are a symptom of a slow, unclear process. Fast, safe routes remove the reason for them. Penalties alone, a general permission or a freeze leave the need unmet or the risk uncontrolled.
+    de: Private Kopien sind ein Symptom eines langsamen, unklaren Prozesses. Schnelle, sichere Wege nehmen ihnen den Anlass. Sanktionen allein, eine generelle Erlaubnis oder ein Stopp lassen den Bedarf unerfüllt oder das Risiko unkontrolliert.
+  source: https://en.wikipedia.org/wiki/Data_governance

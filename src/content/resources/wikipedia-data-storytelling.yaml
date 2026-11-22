@@ -1,0 +1,14 @@
+id: wikipedia-data-storytelling
+url: "https://en.wikipedia.org/wiki/Data_storytelling"
+title: "Data storytelling"
+provider: Wikipedia
+language: en
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-22
+mode: link
+competencies: [analytical-problem-framing-storytelling]
+levels: [foundation, practitioner, advanced]
+note: "Wikipedia text under CC BY-SA; HTTP 200 on 2026-11-22. Link only."

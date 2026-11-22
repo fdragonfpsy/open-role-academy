@@ -81,6 +81,8 @@ async function run(browser, lang) {
   await page.waitForSelector('fieldset');
   let asked = 0;
   while (await page.locator('fieldset').count()) {
+    // The item view focuses its stem in a post-paint effect; tabbing before that lets it steal focus from the radio.
+    await page.waitForFunction(() => document.activeElement?.tagName === 'P' && document.activeElement.getAttribute('tabindex') === '-1');
     if (!(await tabTo(page, () => document.activeElement?.name?.startsWith('q-'), 'answer input'))) break;
     await page.keyboard.press('Space');
     // Let the island commit the selection before submitting (slower CI runners raced here).

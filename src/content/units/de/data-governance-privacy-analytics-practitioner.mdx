@@ -1,0 +1,74 @@
+---
+id: data-governance-privacy-analytics-practitioner
+competency: data-governance-privacy-analytics
+level: practitioner
+title: "Minimieren, pseudonymisieren, anonymisieren (EU/Deutschland)"
+objectives:
+  - "Datenminimierung beim Anfordern und Aufbereiten von Datensätzen anwenden."
+  - "Pseudonymisierung von Anonymisierung unterscheiden und erklären, warum der Unterschied zählt."
+  - "Das Risiko der Re-Identifizierung bei kleinen Gruppen und kombinierten Spalten senken."
+  - "Zweck, Zugriff und Umgang für eine Analyse dokumentieren."
+minutes: 25
+resources:
+  - wikipedia-pseudonymization
+  - eurlex-de-dsgvo-verordnung-2016-679
+  - wikipedia-de-dsgvo
+status: ai-draft
+sources:
+  - title: "Pseudonymization"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Pseudonymization
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Verordnung (EU) 2016/679 (Datenschutz-Grundverordnung)"
+    author: "European Union"
+    url: https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679
+    license: free-access
+    licenseUrl: https://eur-lex.europa.eu/content/legal-notice/legal-notice.html
+    usage: cited
+  - title: "Datenschutz-Grundverordnung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Datenschutz-Grundverordnung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Wenn du weißt, was personenbezogene Daten sind, lautet die praktische Frage, wie du mit weniger davon arbeitest. Diese Einheit behandelt drei Werkzeuge der Analytik-Praxis in der EU und in Deutschland und deren Grenzen. Sie ist Orientierung auf Themenebene, keine Rechtsberatung; Entscheidungen triffst du mit der Rechtsabteilung oder den Datenschutzbeauftragten.
+
+## Zuerst minimieren
+
+Fordere nur die Spalten und Zeilen an, die deine Frage braucht. Ersetze genaue Werte, wo ein gröberer genügt: Altersgruppe statt Geburtsdatum, Postleitzahlbereich statt vollständiger Adresse. Daten, die du nie lädst, können aus deiner Arbeitsumgebung nicht abfließen.
+
+## Pseudonymisierung
+
+Pseudonymisierung ersetzt direkte Kennzeichen wie Name oder Kundennummer durch einen Code oder Schlüssel, während die Information, die Code und Person verbindet, getrennt und geschützt aufbewahrt wird. Du kannst dann mit den Codes arbeiten. Pseudonymisierte Daten sind nach EU-Recht weiterhin personenbezogene Daten, weil die Person mit der zusätzlichen Information wieder bestimmt werden kann. Zweckbindung, Zugriffskontrolle und die übrigen Pflichten gelten also weiter.
+
+## Anonymisierung
+
+Anonymisierung bedeutet, dass die Daten mit keinem Mittel, das vernünftigerweise genutzt werden könnte, mehr einer Person zugeordnet werden können. Wird das wirklich erreicht, sind die Daten keine personenbezogenen Daten mehr. Das ist schwer zu erreichen: Die Namensspalte zu löschen genügt nicht, weil Kombinationen anderer Felder weiterhin einzelne Personen herausstellen können.
+
+## Auf Re-Identifizierung achten
+
+- Kleine Gruppen: Eine Tabellenzelle mit ein oder zwei Personen kann sie verraten. Fasse Kategorien zusammen oder blende kleine Zellen aus.
+- Kombinierte Spalten: Alter, Postleitzahl und Berufsbezeichnung zusammen können eine Person bestimmen.
+- Verknüpfung mit anderen Daten: Ein zusätzlicher Datensatz kann Identitäten freilegen.
+- Freitext: Namen und Details verstecken sich oft in Kommentarfeldern.
+
+## Deine Arbeit dokumentieren
+
+Halte Zweck, die freigebenden Datenverantwortlichen, die verwendeten Spalten, den Zugriffskreis, den Speicherort der Dateien und den Zeitpunkt der Löschung fest. Teile Ergebnisse möglichst in aggregierter Form.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundenes Szenario. Eine Personalanalyse untersucht Überstunden nach Abteilung. Der Export enthält Personalnummern, Namen und Geburtsdaten. Du forderst nur Abteilung, Monat und Überstunden an, Namen und Geburtsdaten werden nie geladen. Eine Abteilung hat zwei Beschäftigte; ihr Wert würde sie verraten, deshalb wird sie zu "Sonstige" zusammengefasst. Die Analyse-Notiz nennt Zweck, Freigebende und Löschdatum.
+
+## Das Wichtigste in Kürze
+
+- Minimiere zuerst Spalten, Zeilen und Genauigkeit.
+- Pseudonymisierte Daten bleiben personenbezogen; Anonymisierung ist schwer zu erreichen und sorgfältig zu beurteilen.
+- Kleine Gruppen, kombinierte Spalten und verknüpfte Daten führen zur Re-Identifizierung.
+- Dokumentiere Zweck, Freigabe, Zugriff und Löschung.

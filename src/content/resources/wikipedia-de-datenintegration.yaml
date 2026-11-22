@@ -9,6 +9,6 @@ license: CC-BY-SA-4.0
 licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
 licenseVerifiedOn: 2026-11-22
 mode: link
-competencies: [data-sourcing-collection]
+competencies: [data-sourcing-collection, business-intelligence-reporting]
 levels: [foundation, practitioner, advanced]
 note: "Wikipedia text under CC BY-SA; intro and history read 2026-11-22 (Zusammenfuehren von Informationen aus Datenquellen mit unterschiedlichen Strukturen; Data Warehouse mit Extraktion, Transformation, Laden). Link only."

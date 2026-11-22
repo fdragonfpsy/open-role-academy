@@ -1,0 +1,74 @@
+---
+id: data-governance-privacy-analytics-practitioner
+competency: data-governance-privacy-analytics
+level: practitioner
+title: "Minimise, pseudonymise, anonymise (EU/Germany)"
+objectives:
+  - "Apply data minimisation when requesting and preparing datasets."
+  - "Distinguish pseudonymisation from anonymisation and explain why the difference matters."
+  - "Reduce re-identification risk in small groups and combined columns."
+  - "Document purpose, access and handling for an analysis."
+minutes: 25
+resources:
+  - wikipedia-pseudonymization
+  - eurlex-gdpr-regulation-2016-679
+  - wikipedia-data-protection-officer
+status: ai-draft
+sources:
+  - title: "Pseudonymization"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Pseudonymization
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Regulation (EU) 2016/679 (General Data Protection Regulation)"
+    author: "European Union"
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+    license: free-access
+    licenseUrl: https://eur-lex.europa.eu/content/legal-notice/legal-notice.html
+    usage: cited
+  - title: "Data protection officer"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_protection_officer
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+Once you know what personal data is, the practical question is how to work with less of it. This unit covers three tools used in EU and German analytics practice and the limits of each. It is topic-level guidance, not legal advice; ask Legal or the data protection officer (DPO) for decisions.
+
+## Minimise first
+
+Request only the columns and rows your question needs. Replace exact values where a coarser one is enough: age group instead of birth date, postcode area instead of full address. Data you never load cannot leak from your workspace.
+
+## Pseudonymisation
+
+Pseudonymisation replaces direct identifiers, such as name or customer number, with a code or key, while the information that links code and person is kept separately and protected. Analysts can then work with the codes. Pseudonymised data is still personal data under EU rules, because the person can be identified again with the additional information. So purpose limitation, access control and the other duties continue to apply.
+
+## Anonymisation
+
+Anonymisation means the data can no longer be linked to a person by any means reasonably likely to be used. If that is truly achieved, the data is no longer personal data. It is hard to achieve: removing the name column is not enough, because combinations of other fields can still single out people.
+
+## Watch for re-identification
+
+- Small groups: a table cell with one or two people can reveal them. Merge categories or hide small cells.
+- Combined columns: age, postcode and job title together may identify a person.
+- Linking with other data: an extra dataset can unlock identities.
+- Free text: names and details often hide in comment fields.
+
+## Document your work
+
+Write down the purpose, the data owner who approved it, the columns used, who has access, where the files are stored and when they will be deleted. Share results in aggregated form where you can.
+
+## Worked example
+
+Illustration only; invented scenario. An HR analyst studies overtime by department. The export contains employee numbers, names and birth dates. The analyst asks only for department, month and overtime hours, so names and birth dates are never loaded. One department has two employees; showing its value would reveal them, so it is merged into "Other". The analysis note states purpose, approver and deletion date.
+
+## Key takeaways
+
+- Minimise columns, rows and precision before anything else.
+- Pseudonymised data is still personal data; anonymised data is hard to achieve and must be judged carefully.
+- Small groups, combined columns and linked data cause re-identification.
+- Document purpose, approval, access and deletion.

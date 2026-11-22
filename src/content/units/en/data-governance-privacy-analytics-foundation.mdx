@@ -1,0 +1,72 @@
+---
+id: data-governance-privacy-analytics-foundation
+competency: data-governance-privacy-analytics
+level: foundation
+title: "Personal data, ownership and the purpose of analysis (EU/Germany)"
+objectives:
+  - "Recognise personal data in typical analytics datasets."
+  - "Explain data ownership, stewardship and access in plain terms."
+  - "Explain purpose limitation and data minimisation at topic level."
+  - "Know when to ask Legal or the data protection officer."
+minutes: 20
+resources:
+  - eurlex-gdpr-regulation-2016-679
+  - wikipedia-de-personenbezogene-daten
+  - wikipedia-data-governance
+status: ai-draft
+sources:
+  - title: "Regulation (EU) 2016/679 (General Data Protection Regulation)"
+    author: "European Union"
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+    license: free-access
+    licenseUrl: https://eur-lex.europa.eu/content/legal-notice/legal-notice.html
+    usage: cited
+  - title: "Personenbezogene Daten"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Personenbezogene_Daten
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Data governance"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_governance
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+Analysts see more data than most colleagues. That access comes with responsibility. This unit gives you the basic habits for the EU and Germany, where the General Data Protection Regulation (GDPR) applies. It is a topic-level introduction, not legal advice.
+
+## What counts as personal data
+
+Personal data is any information that relates to an identified or identifiable person. Obvious examples are name, email address and customer number. Less obvious are IP addresses, location data and combinations of values, such as job title plus department plus start date in a small team, that point to one person. If you can reasonably work out who it is, treat the data as personal.
+
+## Who is responsible for data
+
+- Data owner: the person or function accountable for a dataset and for who may use it.
+- Data steward: the person who looks after quality, definitions and documentation day to day.
+- Users such as analysts: use the data only for approved purposes and with the access they were given.
+
+Data governance is the set of rules, roles and processes that makes this clear.
+
+## Two core ideas
+
+- Purpose limitation: data collected for one purpose should not be reused for an incompatible one without a check.
+- Data minimisation: use only the data that your question needs. If you do not need names, do not load them.
+
+## When to ask
+
+Ask Legal or the data protection officer (DPO) before you start when you want to use personal data for a new purpose, combine datasets, share data outside the organisation or work with sensitive categories such as health data. Whether a DPO must be appointed depends on the organisation, so check who your contact is.
+
+## Worked example
+
+Illustration only; invented scenario. An analyst wants to study why customers cancel and asks for the full customer export, including names and phone numbers. Following data minimisation, the analyst checks what the question needs: customer ID, sign-up month, plan and cancellation month. The data owner approves exactly these columns for this purpose. A later idea to use the same export for marketing mailings is a different purpose, so the analyst asks Legal or the DPO first.
+
+## Key takeaways
+
+- Personal data includes anything that can reasonably identify a person, also in combinations.
+- Know who owns the data and use only the access you were given.
+- Use data only for its purpose and only the columns you need.
+- When in doubt, ask Legal or the DPO before you start.

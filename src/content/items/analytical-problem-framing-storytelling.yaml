@@ -1,0 +1,299 @@
+competency: analytical-problem-framing-storytelling
+items:
+- id: apf-f-start
+  level: foundation
+  difficulty: 850
+  type: single
+  stem:
+    en: A manager asks, "Can you look at our customer data?" What should you do first?
+    de: 'Eine Führungskraft fragt: "Kannst du dir unsere Kundendaten ansehen?" Was tust du zuerst?'
+  options:
+  - en: Ask which decision the analysis should support and by when it is needed
+    de: Fragen, welche Entscheidung die Analyse unterstützen soll und bis wann sie gebraucht wird
+    correct: true
+  - en: Open the customer table and look for anything unusual that could interest the manager
+    de: Die Kundentabelle öffnen und nach allem Auffälligen suchen, das die Führungskraft interessieren könnte
+    correct: false
+  - en: Build a dashboard with every customer field so that nothing important is missed later
+    de: Ein Dashboard mit allen Kundenfeldern bauen, damit später nichts Wichtiges fehlt
+    correct: false
+  - en: Wait until the manager sends a written list of all columns that should be included
+    de: Warten, bis die Führungskraft eine schriftliche Liste aller aufzunehmenden Spalten schickt
+    correct: false
+  explanation:
+    en: A vague request needs a decision and a deadline before work starts. Browsing, building everything or waiting passively produces analysis nobody can use.
+    de: Eine vage Anfrage braucht vor Arbeitsbeginn eine Entscheidung und einen Termin. Stöbern, alles bauen oder passiv warten erzeugt Analysen, die niemand nutzen kann.
+  source: https://en.wikipedia.org/wiki/Data_storytelling
+- id: apf-f-good
+  level: foundation
+  difficulty: 900
+  type: multi
+  stem:
+    en: Which parts belong in a well-framed analytical question? Select all that apply.
+    de: Welche Bestandteile gehören in eine gut formulierte analytische Frage? Wähle alle zutreffenden aus.
+  options:
+  - en: The measure that is counted or compared
+    de: Die Messgröße, die gezählt oder verglichen wird
+    correct: true
+  - en: The scope, such as customer group and period
+    de: Der Umfang, etwa Kundengruppe und Zeitraum
+    correct: true
+  - en: The comparison, such as last year
+    de: Der Vergleich, etwa mit dem Vorjahr
+    correct: true
+  - en: The software that will be used to draw the charts
+    de: Die Software, mit der die Diagramme gezeichnet werden
+    correct: false
+  - en: A guess of the answer that the analysis must reach
+    de: Eine Vermutung zur Antwort, die die Analyse erreichen muss
+    correct: false
+  explanation:
+    en: Measure, scope and comparison make a question answerable. The charting tool is a later choice, and an answer fixed in advance turns the analysis into a search for confirmation.
+    de: Messgröße, Umfang und Vergleich machen eine Frage beantwortbar. Das Diagrammwerkzeug ist eine spätere Wahl, und eine vorab festgelegte Antwort macht die Analyse zur Suche nach Bestätigung.
+  source: https://de.wikipedia.org/wiki/Probleml%C3%B6sen
+- id: apf-f-sentence
+  level: foundation
+  difficulty: 1000
+  type: single
+  stem:
+    en: Which finding sentence is best for a busy non-expert?
+    de: Welcher Ergebnissatz ist für Nichtfachleute mit wenig Zeit am besten?
+  options:
+  - en: Median reply time rose from 9 to 14 hours but is still below the 24-hour target
+    de: Die mediane Antwortzeit stieg von 9 auf 14 Stunden, liegt aber noch unter dem Ziel von 24 Stunden
+    correct: true
+  - en: After cleaning the ticket data and testing three methods, a few differences were found in the timings
+    de: Nach Bereinigung der Ticketdaten und dem Test dreier Methoden zeigten sich einige Unterschiede bei den Zeiten
+    correct: false
+  - en: The timestamps in the ticket table were analysed over six months and the results are in the attached file
+    de: Die Zeitstempel der Ticket-Tabelle wurden über sechs Monate ausgewertet, die Ergebnisse stehen in der Anlage
+    correct: false
+  - en: Reply times are a complex topic with many factors, so it is difficult to say anything definite right now
+    de: Antwortzeiten sind ein komplexes Thema mit vielen Einflüssen, daher lässt sich derzeit schwer etwas Sicheres sagen
+    correct: false
+  explanation:
+    en: A good finding gives the answer first, with size and meaning. Describing the method, pointing to an attachment or hedging leaves the reader without the message.
+    de: Ein gutes Ergebnis nennt zuerst die Antwort mit Größe und Bedeutung. Wer die Methode beschreibt, auf einen Anhang verweist oder sich absichert, lässt die Lesenden ohne Botschaft.
+  source: https://en.wikipedia.org/wiki/Data_storytelling
+- id: apf-f-scope
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: Why should you confirm a short brief with the requester before analysing?
+    de: Warum solltest du einen kurzen Auftrag mit den Auftraggebenden bestätigen, bevor du analysierst?
+  options:
+  - en: To check that you and the requester mean the same question, data and result
+    de: Um zu prüfen, dass du und die Auftraggebenden dieselbe Frage, Daten und dasselbe Ergebnis meinen
+    correct: true
+  - en: To move responsibility for any later error to the requester, who approved the brief
+    de: Um die Verantwortung für spätere Fehler auf die Auftraggebenden zu verlagern, die den Auftrag freigaben
+    correct: false
+  - en: To show that the analysis was started early, before other teams could ask for the same thing
+    de: Um zu zeigen, dass die Analyse früh begann, bevor andere Teams dasselbe anfordern konnten
+    correct: false
+  - en: To make sure that the final report will have enough pages for a formal presentation
+    de: Um sicherzustellen, dass der Abschlussbericht genug Seiten für eine formale Präsentation hat
+    correct: false
+  explanation:
+    en: The brief aligns expectations about question, data and output, which prevents rework. It is not a way to shift blame, claim priority or fill pages.
+    de: Der Auftrag gleicht Erwartungen zu Frage, Daten und Ergebnis ab und verhindert Nacharbeit. Er dient nicht dazu, Schuld zu verschieben, Vorrang zu beanspruchen oder Seiten zu füllen.
+  source: https://de.wikipedia.org/wiki/Probleml%C3%B6sen
+- id: apf-p-hyp
+  level: practitioner
+  difficulty: 1150
+  type: single
+  stem:
+    en: Which statement is a testable hypothesis?
+    de: Welche Aussage ist eine prüfbare Hypothese?
+  options:
+  - en: Cancellations rose mainly among customers with two or more support tickets in month one
+    de: Die Kündigungen stiegen vor allem bei Kundschaft mit zwei oder mehr Support-Tickets im ersten Monat
+    correct: true
+  - en: Customers are generally unhappy and the company should work harder to understand them
+    de: Die Kundschaft ist insgesamt unzufrieden, und das Unternehmen sollte sich mehr bemühen, sie zu verstehen
+    correct: false
+  - en: There may or may not be a relationship between customer behaviour and the company results
+    de: Es gibt möglicherweise einen Zusammenhang zwischen Kundenverhalten und den Unternehmensergebnissen oder auch nicht
+    correct: false
+  - en: Data about customers is an important asset that should be analysed in more depth in future
+    de: Daten über die Kundschaft sind ein wichtiges Gut, das künftig gründlicher analysiert werden sollte
+    correct: false
+  explanation:
+    en: A hypothesis names a specific claim that data could contradict. The other statements are too vague, cannot be wrong or are only opinions about priorities.
+    de: Eine Hypothese nennt eine konkrete Behauptung, die Daten widerlegen könnten. Die anderen Aussagen sind zu vage, können nicht falsch sein oder sind bloße Meinungen über Prioritäten.
+  source: https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation
+- id: apf-p-approach
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: A request asks only what happened to sales last quarter. Which approach fits best?
+    de: Eine Anfrage fragt nur, was im letzten Quartal mit dem Umsatz passiert ist. Welches Vorgehen passt am besten?
+  options:
+  - en: A descriptive analysis with comparisons and breakdowns, without a forecasting model
+    de: Eine beschreibende Analyse mit Vergleichen und Aufschlüsselungen, ohne Prognosemodell
+    correct: true
+  - en: A complex predictive model, since advanced methods always show more skill than simple counts
+    de: Ein komplexes Vorhersagemodell, da fortgeschrittene Methoden immer mehr Können zeigen als einfache Zählungen
+    correct: false
+  - en: A survey of all customers about why they bought, because only they know what happened
+    de: Eine Befragung der gesamten Kundschaft zu ihren Kaufgründen, da nur sie wissen, was passiert ist
+    correct: false
+  - en: No analysis, as a past quarter cannot tell anybody anything useful about the future
+    de: Keine Analyse, da ein vergangenes Quartal niemandem etwas Nützliches über die Zukunft sagen kann
+    correct: false
+  explanation:
+    en: The question is descriptive, so describe and compare. A predictive model or a survey goes beyond the question and the data at hand, and the past quarter is exactly what was asked about.
+    de: Die Frage ist beschreibend, also beschreibe und vergleiche. Ein Vorhersagemodell oder eine Befragung geht über Frage und vorhandene Daten hinaus, und das vergangene Quartal ist genau das, wonach gefragt wurde.
+  source: https://de.wikipedia.org/wiki/Probleml%C3%B6sen
+- id: apf-p-structure
+  level: practitioner
+  difficulty: 1250
+  type: multi
+  stem:
+    en: Which elements belong in a short report that readers can act on? Select all that apply.
+    de: Welche Elemente gehören in einen kurzen Bericht, auf den Lesende reagieren können? Wähle alle zutreffenden aus.
+  options:
+  - en: The main finding stated first
+    de: Das Hauptergebnis zuerst genannt
+    correct: true
+  - en: Charts whose titles state their message
+    de: Diagramme, deren Titel ihre Botschaft nennen
+    correct: true
+  - en: The limits and assumptions of the analysis
+    de: Die Grenzen und Annahmen der Analyse
+    correct: true
+  - en: A full chronological account of every dead end that was tried
+    de: Ein vollständiger chronologischer Bericht über jede Sackgasse, die versucht wurde
+    correct: false
+  - en: Only the results that agree with what management expected
+    de: Nur die Ergebnisse, die zu den Erwartungen des Managements passen
+    correct: false
+  explanation:
+    en: Lead with the answer, support it with titled evidence and show limits. A diary of dead ends hides the message, and leaving out inconvenient results misleads the audience.
+    de: Beginne mit der Antwort, stütze sie mit betitelten Belegen und zeige die Grenzen. Ein Tagebuch der Sackgassen verdeckt die Botschaft, und das Weglassen unbequemer Ergebnisse führt die Zielgruppe in die Irre.
+  source: https://en.wikipedia.org/wiki/Data_storytelling
+- id: apf-p-corr
+  level: practitioner
+  difficulty: 1350
+  type: single
+  stem:
+    en: Ice cream sales and sunburn cases rise together over the year. What is the sensible conclusion for a report?
+    de: Eisverkäufe und Sonnenbrand-Fälle steigen im Jahresverlauf gemeinsam. Welche Schlussfolgerung ist für einen Bericht sinnvoll?
+  options:
+  - en: They are correlated through a third factor such as hot weather, not through cause
+    de: Sie korrelieren über einen dritten Faktor wie heißes Wetter, nicht über Ursache und Wirkung
+    correct: true
+  - en: Ice cream causes sunburn, so ice cream sales should be reduced during the summer months
+    de: Eis verursacht Sonnenbrand, daher sollten die Eisverkäufe in den Sommermonaten gesenkt werden
+    correct: false
+  - en: Sunburn causes people to buy ice cream, because they want to cool down their skin afterwards
+    de: Sonnenbrand führt dazu, dass Menschen Eis kaufen, weil sie ihre Haut danach abkühlen möchten
+    correct: false
+  - en: The two series are unrelated, since a real relationship would have to hold in every single week
+    de: Die beiden Reihen sind unabhängig, da ein echter Zusammenhang in jeder einzelnen Woche gelten müsste
+    correct: false
+  explanation:
+    en: Both series follow a common driver, the weather, so the correlation is not a causal link in either direction. A real relationship does not need to hold in every week to exist.
+    de: Beide Reihen folgen einem gemeinsamen Treiber, dem Wetter, die Korrelation ist also keine ursächliche Verbindung in eine der beiden Richtungen. Ein echter Zusammenhang muss nicht in jeder Woche gelten, um zu bestehen.
+  source: https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation
+- id: apf-a-reframe
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: A director asks for a dashboard of churn by region. You suspect the real aim is to reduce churn. What is the best response?
+    de: Eine Direktorin bittet um ein Dashboard der Kündigungen nach Region. Du vermutest, dass das eigentliche Ziel ist, Kündigungen zu senken. Was ist die beste Reaktion?
+  options:
+  - en: Ask which decision it should inform; propose a quick check of main drivers first
+    de: Fragen, welche Entscheidung es stützen soll; zuerst Haupttreiber kurz prüfen
+    correct: true
+  - en: Build exactly the requested dashboard, since the requester knows best what is needed
+    de: Genau das gewünschte Dashboard bauen, da die Anfragenden am besten wissen, was gebraucht wird
+    correct: false
+  - en: Refuse the request until the director explains the reasons for it in a formal document
+    de: Die Anfrage ablehnen, bis die Direktorin ihre Gründe in einem formalen Dokument darlegt
+    correct: false
+  - en: Build a larger dashboard with every possible breakdown, so that the real need is covered too
+    de: Ein größeres Dashboard mit allen möglichen Aufschlüsselungen bauen, damit auch der eigentliche Bedarf abgedeckt ist
+    correct: false
+  explanation:
+    en: Asking about the decision exposes the real need, and a quick check avoids a big build that may not help. Building blindly, refusing or building everything wastes effort or blocks collaboration.
+    de: Die Frage nach der Entscheidung deckt den wahren Bedarf auf, und eine schnelle Prüfung vermeidet einen großen Bau, der vielleicht nicht hilft. Blind bauen, ablehnen oder alles bauen verschwendet Aufwand oder blockiert die Zusammenarbeit.
+  source: https://de.wikipedia.org/wiki/Probleml%C3%B6sen
+- id: apf-a-uncert
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: Your forecast is uncertain. How should you present it to decision makers?
+    de: Deine Prognose ist unsicher. Wie präsentierst du sie Entscheidenden?
+  options:
+  - en: Give a range or scenarios, name the key assumption and still state a labelled recommendation
+    de: Eine Spanne oder Szenarien nennen, die Schlüsselannahme benennen und dennoch eine gekennzeichnete Empfehlung abgeben
+    correct: true
+  - en: Show one precise number without caveats, because leaders ask for certainty and a single figure is easier to act on
+    de: Eine genaue Zahl ohne Vorbehalte zeigen, weil Führungskräfte Sicherheit verlangen und eine Zahl leichter umzusetzen ist
+    correct: false
+  - en: Explain every source of uncertainty at length and leave out a recommendation so that the choice stays open
+    de: Jede Unsicherheitsquelle ausführlich erklären und keine Empfehlung geben, damit die Entscheidung offen bleibt
+    correct: false
+  - en: Delay the forecast until the data is complete, even if that is after the decision has been taken
+    de: Die Prognose verschieben, bis die Daten vollständig sind, auch wenn das nach der Entscheidung liegt
+    correct: false
+  explanation:
+    en: Ranges and a named assumption show honest limits, and a recommendation keeps the result usable. False precision, hedging without advice and missing the decision date each fail the decision makers.
+    de: Spannen und eine benannte Annahme zeigen ehrliche Grenzen, und eine Empfehlung hält das Ergebnis nutzbar. Scheingenauigkeit, Absichern ohne Rat und das Verpassen des Entscheidungstermins lassen die Entscheidenden im Stich.
+  source: https://en.wikipedia.org/wiki/Data_storytelling
+- id: apf-a-framing
+  level: advanced
+  difficulty: 1550
+  type: multi
+  stem:
+    en: Which presentation choices can mislead even if every number is correct? Select all that apply.
+    de: Welche Darstellungsentscheidungen können irreführen, auch wenn jede Zahl stimmt? Wähle alle zutreffenden aus.
+  options:
+  - en: A truncated vertical axis that exaggerates a small change
+    de: Eine abgeschnittene senkrechte Achse, die eine kleine Veränderung übertreibt
+    correct: true
+  - en: A time window picked because it shows the strongest trend
+    de: Ein Zeitfenster, das gewählt wurde, weil es den stärksten Trend zeigt
+    correct: true
+  - en: Percentages shown without the absolute numbers behind them
+    de: Prozentwerte ohne die zugrunde liegenden absoluten Zahlen
+    correct: true
+  - en: A chart title that states the message in plain words
+    de: Ein Diagrammtitel, der die Botschaft in einfachen Worten nennt
+    correct: false
+  - en: A footnote that lists the data source and the refresh date
+    de: Eine Fußnote, die Datenquelle und Aktualisierungsdatum nennt
+    correct: false
+  explanation:
+    en: Truncated axes, selective windows and percentages without bases distort impressions. A plain message title and a source footnote help readers judge the chart.
+    de: Abgeschnittene Achsen, ausgewählte Zeitfenster und Prozente ohne Basis verzerren den Eindruck. Ein Titel mit klarer Botschaft und eine Quellenfußnote helfen Lesenden, das Diagramm zu beurteilen.
+  source: https://en.wikipedia.org/wiki/Data_visualization
+- id: apf-a-cost
+  level: advanced
+  difficulty: 1650
+  type: single
+  stem:
+    en: Which situation justifies a deeper, more certain analysis rather than a quick estimate?
+    de: Welche Situation rechtfertigt eine tiefere, sicherere Analyse statt einer schnellen Schätzung?
+  options:
+  - en: A hard-to-reverse decision affecting all customers, such as a price change
+    de: Eine schwer umkehrbare Entscheidung für die ganze Kundschaft, etwa eine unternehmensweite Preisänderung
+    correct: true
+  - en: A choice between two email subject lines that can be changed again in the next campaign
+    de: Die Wahl zwischen zwei E-Mail-Betreffzeilen, die in der nächsten Kampagne wieder geändert werden kann und nur wenige betrifft
+    correct: false
+  - en: A question asked out of curiosity in a meeting that no decision depends on at all
+    de: Eine aus Neugier in einer Besprechung gestellte Frage, von der keinerlei Entscheidung im Unternehmen abhängt
+    correct: false
+  - en: A routine weekly figure that has been stable for years and is used only for orientation
+    de: Eine routinemäßige Wochenzahl, die seit Jahren stabil ist und nur zur Orientierung dient
+    correct: false
+  explanation:
+    en: The cost of being wrong and the difficulty of reversing a decision set the evidence needed. Easily reversible or purely informative questions are fine with a quick estimate.
+    de: Die Kosten eines Irrtums und die Schwierigkeit, eine Entscheidung zurückzunehmen, bestimmen die nötige Belegstärke. Leicht umkehrbare oder rein informative Fragen kommen mit einer schnellen Schätzung aus.
+  source: https://de.wikipedia.org/wiki/Probleml%C3%B6sen

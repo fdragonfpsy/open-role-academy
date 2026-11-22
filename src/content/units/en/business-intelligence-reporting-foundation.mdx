@@ -1,0 +1,73 @@
+---
+id: business-intelligence-reporting-foundation
+competency: business-intelligence-reporting
+level: foundation
+title: "Building blocks of business intelligence"
+objectives:
+  - "Explain what business intelligence is and what a data warehouse is for."
+  - "Distinguish metrics (measures) from dimensions."
+  - "Describe the path from source systems to a report."
+  - "Name the questions to ask before trusting a report number."
+minutes: 20
+resources:
+  - wikipedia-business-intelligence
+  - wikipedia-de-business-intelligence
+  - mslearn-power-bi-overview
+status: ai-draft
+sources:
+  - title: "Business intelligence"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Business_intelligence
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Business Intelligence"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Business_Intelligence
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Power BI overview (Microsoft Learn)"
+    author: "Microsoft"
+    url: https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-overview
+    license: free-access
+    licenseUrl: https://learn.microsoft.com/en-us/legal/termsofuse
+    usage: cited
+---
+
+## Why this matters
+
+Managers rarely query databases themselves. They read reports. If you understand how a report number is produced, you can explain it, defend it and spot when it is wrong.
+
+## What business intelligence is
+
+Business intelligence (BI) means the methods and tools that turn an organisation's data into reports and dashboards for decisions. The aim is one shared, repeatable view of the business instead of many private spreadsheets.
+
+## From source to report
+
+- Source systems record daily work: an order system, an HR system, an accounting system.
+- A data warehouse collects data from several sources in one place, organised for analysis rather than for daily transactions.
+- A data model describes which tables exist and how they connect.
+- The BI tool reads the model and displays charts, tables and filters. Power BI is one example of such a tool; others exist.
+
+## Metrics and dimensions
+
+A metric (also called a measure) is something you can add up or average, such as revenue or number of orders. A dimension is a way to slice it, such as month, region or product group. A report answers "metric by dimension", for example "revenue by region and month".
+
+## Questions before you trust a number
+
+- Where does the data come from, and when was it last refreshed?
+- How exactly is the metric defined (for example, is revenue net or gross of VAT)?
+- What is included and excluded (cancelled orders, test accounts)?
+- Who owns the report and can answer questions about it?
+
+## Worked example
+
+Illustration only; invented figures. A manager sees "Orders: 1,200" in a dashboard and "Orders: 1,150" in a monthly PDF. The analyst checks both definitions. The dashboard counts every order created, while the PDF counts only orders that were not cancelled. Both numbers are correct for their own definition. The fix is a shared definition, written next to the metric, and the same label in both reports.
+
+## Key takeaways
+
+- BI turns data from source systems into repeatable reports and dashboards.
+- A data warehouse gathers data from several sources for analysis.
+- A report shows metrics broken down by dimensions.
+- Always check definition, refresh time and owner before relying on a number.
