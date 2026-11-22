@@ -1,0 +1,14 @@
+id: eurlex-vat-directive-2006-112
+url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0112"
+title: "Directive 2006/112/EC (Common system of value added tax)"
+provider: EUR-Lex (European Union)
+language: en
+format: article
+minutes: 45
+license: free-access
+licenseUrl: https://eur-lex.europa.eu/content/legal-notice/legal-notice.html
+licenseVerifiedOn: 2026-11-22
+mode: link
+competencies: [tax-basics]
+levels: [foundation, practitioner]
+note: "EU VAT Directive, primary source, freely accessible (HTTP 200 on 2026-11-22; the page content itself was not read, bot challenge); reuse terms not assessed -> link only."

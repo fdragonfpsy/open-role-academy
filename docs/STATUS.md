@@ -1,5 +1,17 @@
 # Status
 
+## 2026-11-22 — QA #106: non-Wikipedia resources for 8 competencies
+
+**Done**
+- 10 new link-only resources (`licenseVerifiedOn: 2026-11-22`, HTTP 200): OpenStax accounting/finance/managerial/OB chapters, EUR-Lex VAT directive 2006/112. it-service-management reuses BSI OPS.1.1.3 (German only; no open ITSM page was reachable). Resource ids added to the en/de units. Validator: 0 errors. Closed #105.
+- Stopped after one slice: run kept lean; next slice is CI e2e job.
+
+**Reviewer to-dos:** EUR-Lex page content was not read (bot check); gesetze-im-internet.de unreachable, so tax-basics has no German statute link. Confirm OpenStax license text on the resource notes.
+
+**Counts:** roles 10 (1 draft) · competencies 98 · units 496 · items 1060 · resources 507
+
+**Next:** CI e2e job; Data & Analytics content.
+
 ## 2026-11-21 — QA #105: German answer-length cues removed
 
 **Done**

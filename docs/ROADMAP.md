@@ -82,7 +82,7 @@ Item and resource quality (added by weekly review 2026-11-14, applies to all new
   - [x] Sales, Marketing, Procurement (5): prospecting-lead-qualification, account-management-upselling, sales-ethics-compliance, marketing-fundamentals-strategy, logistics-transport-planning
   - [x] Customer Service (6): customer-needs-problem-solving, complaint-handling-de-escalation, service-level-quality-management, customer-data-privacy-service, customer-retention-feedback-voc, consumer-rights-basics
   - [x] Project Management (7): scope-requirements-management, project-budget-cost-control, risk-issue-management, stakeholder-management-communication, agile-hybrid-delivery, quality-change-management, project-closure-lessons-learned
-  - [ ] Non-Wikipedia resource for the 8 published competencies that still have none: accounts-payable, financial-statements-reporting, tax-basics, cash-liquidity-management, budgeting-forecasting, financial-analysis-kpis, it-service-management, employee-relations-conflict (OpenStax accounting/OB books are already used elsewhere and reachable; primary statutes for tax-basics where reachable)
+  - [x] Non-Wikipedia resource for the 8 published competencies that still have none: accounts-payable, financial-statements-reporting, tax-basics, cash-liquidity-management, budgeting-forecasting, financial-analysis-kpis, it-service-management, employee-relations-conflict (OpenStax accounting/OB books are already used elsewhere and reachable; primary statutes for tax-basics where reachable)
 
 ## Phase 3 — Learner experience
 
