@@ -7,11 +7,13 @@ format: book
 minutes: 20
 license: CC-BY-NC-SA-4.0
 licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
-licenseVerifiedOn: 2026-11-18
+licenseVerifiedOn: 2026-11-22
 mode: link
 competencies:
 - stakeholder-management-communication
+- analytical-problem-framing-storytelling
 levels:
+- foundation
 - practitioner
 - advanced
 note: 'Book page footer states "Creative Commons Attribution-NonCommercial-ShareAlike License" (NC -> link only). Read 2026-11-18: basic communication model: encoding, decoding, feedback. Exhibit credited CC BY 4.0 inside the page.'

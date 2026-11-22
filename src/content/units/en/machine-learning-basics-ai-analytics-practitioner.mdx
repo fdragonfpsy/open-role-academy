@@ -1,0 +1,91 @@
+---
+id: machine-learning-basics-ai-analytics-practitioner
+competency: machine-learning-basics-ai-analytics
+level: practitioner
+title: "Evaluating models, spotting bias and using AI assistants responsibly"
+objectives:
+  - "Read accuracy, precision and recall at concept level and see why accuracy can mislead."
+  - "Spot data leakage and judge a result against a simple baseline."
+  - "Explain how bias in data leads to unfair model results and ask first questions about fairness."
+  - "Use AI assistants with human verification and place the EU AI Act as a topic."
+minutes: 30
+resources:
+  - wikipedia-machine-learning
+  - wikipedia-de-maschinelles-lernen
+  - eu-digital-strategy-ai-regulatory-framework
+  - bsi-kuenstliche-intelligenz
+status: ai-draft
+sources:
+  - title: "Machine learning"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Machine_learning
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Maschinelles Lernen"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Maschinelles_Lernen
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "AI Act (regulatory framework for AI)"
+    author: "European Commission"
+    url: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+    license: free-access
+    licenseUrl: https://commission.europa.eu/legal-notice_en
+    usage: cited
+  - title: "Künstliche Intelligenz – wir bringen Ihnen die Technologie näher"
+    author: "Bundesamt für Sicherheit in der Informationstechnik (BSI)"
+    url: https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Technologien_sicher_gestalten/Kuenstliche-Intelligenz/kuenstliche-intelligenz_node.html
+    license: free-access
+    licenseUrl: https://www.bsi.bund.de/DE/Service/Impressum/impressum_node.html
+    usage: cited
+---
+
+## Why this matters
+
+At practitioner level you are the person who reads a model result and decides whether it can be trusted. You do not need the maths behind each method. You need to ask the right questions about the evaluation, the data and the people affected.
+
+## Metrics at concept level
+
+For a model that predicts yes or no, such as "will this customer cancel", you can count four outcomes on the test set: true positives, false positives, true negatives and false negatives.
+
+- Accuracy: the share of all predictions that were right.
+- Precision: of the cases the model flagged as yes, how many really were yes.
+- Recall: of the cases that really were yes, how many the model found.
+
+Accuracy can mislead when one class is rare. If only a few customers in a hundred cancel, a model that always predicts "stays" is right most of the time and still finds nobody. Which metric matters depends on the cost of mistakes: missing a case, or raising a false alarm.
+
+## Baselines and data leakage
+
+Compare every model with a simple baseline, for example "always predict the most common outcome" or last month's value. A model that barely beats the baseline is rarely worth its complexity.
+
+Data leakage means information from outside the legitimate training data slips in. Examples: a feature that is only known after the outcome, such as a cancellation reason used to predict cancellation, or test cases that also appear in the training set. Leakage produces excellent test results that vanish in real use.
+
+## Bias and fairness
+
+Models learn from past data. If the past contains unequal treatment, gaps in who is represented or labels that reflect human judgement, the model can repeat or amplify it. Removing a sensitive column does not solve this automatically, because other columns, such as postcode, can act as stand-ins. First questions to ask: Who is in the data and who is missing? What does the label really measure? Does the model make different kinds of mistakes for different groups? Who is affected by a wrong decision, and can they get a human review?
+
+## AI assistants with human verification
+
+AI assistants can speed up routine work: drafting SQL, explaining code, suggesting how to describe a chart. They can also invent column names, misread your question or produce plausible but wrong numbers. A practical routine:
+
+- Give the tool only data your organisation allows; use synthetic or aggregated examples where possible.
+- Run generated code on a small sample and compare results with a known figure.
+- Check assumptions, joins and filters yourself.
+- Record that AI was used and who verified the result.
+
+## EU AI Act as a topic
+
+The EU has a regulation on artificial intelligence, the EU AI Act. At topic level it takes a risk-based approach: the more a system can affect people's rights and safety, the stricter the requirements. If your team builds or buys AI that influences decisions about people, involve Legal or Compliance early. This unit is orientation, not legal advice.
+
+## Worked example
+
+Illustration only; invented scenario. A model flags customers likely to cancel. The report says 95 percent accuracy. You notice that only about 5 percent of customers cancel, so "nobody cancels" would also score 95 percent. You ask for precision and recall for the cancelling group and learn that recall is low. You also find that "retention call made" is a feature, which is only known after the risk was spotted: leakage. After removing it and comparing with a baseline, the result is more modest but honest. A colleague suggests letting an AI assistant write the summary text; you let it draft, then check every number against the output before it is sent.
+
+## Key takeaways
+
+- Accuracy hides weak results on rare classes; check precision and recall for the group that matters.
+- Always compare against a baseline and watch for leakage.
+- Bias comes from data and labels; dropping one column does not remove it.
+- Verify AI assistant output yourself and involve Legal or Compliance when AI affects decisions about people.

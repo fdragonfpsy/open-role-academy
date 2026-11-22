@@ -1,0 +1,14 @@
+id: eu-digital-strategy-ai-regulatory-framework
+url: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+title: "AI Act (regulatory framework for AI)"
+provider: European Commission
+language: en
+format: article
+minutes: 15
+license: free-access
+licenseUrl: https://commission.europa.eu/legal-notice_en
+licenseVerifiedOn: 2026-11-22
+mode: link
+competencies: [machine-learning-basics-ai-analytics]
+levels: [practitioner, advanced]
+note: "Official EU page, free to access (HTTP 200 on 2026-11-22); reuse terms not assessed here -> link only. Cited at topic level only."
