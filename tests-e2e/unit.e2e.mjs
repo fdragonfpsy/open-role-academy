@@ -94,8 +94,11 @@ async function run(browser, lang) {
     await page.waitForSelector('[role=status][aria-live=polite]');
     await page.waitForTimeout(100);
     await tabTo(page, () => document.activeElement?.type === 'submit', 'next button');
+    const before = await page.locator('fieldset').first().innerText().catch(() => '');
     await page.keyboard.press('Enter');
     asked++;
+    // Wait until the next question (or the result view) replaced the answered one; slow runners raced here.
+    await page.waitForFunction((prev) => { const f = document.querySelector('fieldset'); return !f || f.innerText !== prev; }, before);
     await page.waitForTimeout(100);
     if (asked > 6) break;
   }
