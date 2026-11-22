@@ -1,0 +1,88 @@
+---
+id: analytical-problem-framing-storytelling-advanced
+competency: analytical-problem-framing-storytelling
+level: advanced
+title: "Framing under ambiguity and communicating limits honestly"
+objectives:
+  - "Reframe a request when the stated question is not the real problem."
+  - "Weigh options, trade-offs and the cost of being wrong before choosing an analysis."
+  - "Communicate uncertainty and limits without hiding the recommendation."
+  - "Review a data story for misleading framing and for fit with the decision."
+minutes: 30
+resources:
+  - wikipedia-data-storytelling
+  - wikipedia-de-data-storytelling
+  - wikipedia-correlation-causation
+  - wikipedia-data-visualization
+  - wikipedia-de-problemloesen
+status: ai-draft
+sources:
+  - title: "Data storytelling"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_storytelling
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Data Storytelling"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Data_Storytelling
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Correlation does not imply causation"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Data and information visualization"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_visualization
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Problemlösen"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Problemlösen
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+At advanced level the hard part is rarely the calculation. It is deciding which question deserves an answer, how much certainty the decision needs, and how to say what you do not know without losing the audience.
+
+## Reframe the request
+
+Stated requests are often solutions in disguise: "Build a dashboard of churn by region" may stand for "We want to reduce churn." Ask what would change if the answer were A or B. If nothing would change, the analysis is not needed. If several questions compete, propose a sequence: a quick check first, a deeper analysis only if the quick check justifies it.
+
+## Match effort to the cost of being wrong
+
+Ask how much error the decision can tolerate and how expensive a mistake is. A choice of email subject line needs less certainty than a price change for all customers. Say beforehand what level of evidence you will aim for, and agree it with the decision maker.
+
+## Present options, not only conclusions
+
+Where data cannot settle a question, lay out two or three options with their trade-offs, the assumption each one depends on and what you would monitor to learn more. Make a recommendation anyway, labelled as judgement.
+
+## Communicate uncertainty honestly
+
+- Say what the data can support, what it suggests and what it cannot tell.
+- Give ranges or scenarios instead of one precise number when precision would be false.
+- Name the main assumption that, if wrong, would change the recommendation.
+- Avoid hedging every sentence; place the limits in one clearly marked place.
+
+## Check your story for framing traps
+
+Truncated axes, selective time windows, percentages without absolute numbers and causal wording for correlations can mislead even when each number is correct. Ask a colleague who did not work on it to read the draft and tell you the main message back.
+
+## Worked example
+
+Illustration only; invented figures. A leadership team asks for a forecast of next quarter's demand to decide about extra stock. The analyst reframes: what matters is the cost of too little versus too much stock. A rough range from two scenarios is enough, because the cost of too little stock is three times higher. The report states the range, names the assumption (no promotion in the second month), recommends buying for the upper range and says which early figure to watch in week four to adjust.
+
+## Key takeaways
+
+- Look for the decision behind a request and reframe when needed.
+- Match the depth of evidence to the cost of being wrong.
+- Present options with trade-offs, and still make a labelled recommendation.
+- Put limits in one visible place and test the story on an outside reader.

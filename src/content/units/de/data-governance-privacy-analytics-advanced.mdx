@@ -1,0 +1,80 @@
+---
+id: data-governance-privacy-analytics-advanced
+competency: data-governance-privacy-analytics
+level: advanced
+title: "Governance in der Praxis: Datenherkunft, Zugriff und Eskalation (EU/Deutschland)"
+objectives:
+  - "Datenherkunft, Metadaten und einen Datenkatalog so aufbauen, dass Analysen nachvollziehbar sind."
+  - "Rollenbasierte Zugriffs- und Weitergaberegeln nach dem Prinzip der minimalen Rechte gestalten."
+  - "Eine neue analytische Nutzung personenbezogener Daten bewerten und entscheiden, wann an Rechtsabteilung oder Datenschutzbeauftragte eskaliert wird."
+  - "Datenschutz, Nutzen und Geschwindigkeit bei Datenanfragen abwägen."
+minutes: 30
+resources:
+  - wikipedia-data-governance
+  - eurlex-de-dsgvo-verordnung-2016-679
+  - wikipedia-de-dsgvo
+status: ai-draft
+sources:
+  - title: "Data governance"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_governance
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Verordnung (EU) 2016/679 (Datenschutz-Grundverordnung)"
+    author: "European Union"
+    url: https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679
+    license: free-access
+    licenseUrl: https://eur-lex.europa.eu/content/legal-notice/legal-notice.html
+    usage: cited
+  - title: "Datenschutz-Grundverordnung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Datenschutz-Grundverordnung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Auf dem Niveau Experte prägst du, wie ein Team mit Daten umgeht, nicht nur, wie du selbst damit umgehst. Gute Governance macht Analysen schneller und sicherer: Alle wissen, woher Daten kommen, wer sie nutzen darf und wann man innehält und nachfragt. Dies ist Orientierung auf Themenebene für die EU und Deutschland, keine Rechtsberatung.
+
+## Datenherkunft und Metadaten
+
+Die Datenherkunft (Data Lineage) hält fest, woher Daten stammen und welche Schritte sie verändert haben. Metadaten beschreiben Datensätze: Verantwortliche, Bedeutung der Spalten, Aktualisierungszeit, Sensibilität und zulässige Zwecke. Ein einfacher Datenkatalog, der das je Datensatz auflistet, lässt Prüfende eine Zahl bis zur Quelle zurückverfolgen und zeigt Neuen, ob sie die Daten nutzen dürfen.
+
+## Zugriff: minimale Rechte
+
+- Gib Personen nur den Zugriff, den ihre Rolle und Aufgabe erfordern.
+- Bevorzuge rollenbasierte Gruppen gegenüber Einzelrechten.
+- Trenne personenbezogene Rohdaten von analysefertigen oder aggregierten Daten, und lasse die meisten Analysierenden mit Letzteren arbeiten.
+- Überprüfe Zugriffe regelmäßig und entziehe sie, wenn sich eine Rolle ändert.
+- Protokolliere, wer auf sensible Datensätze zugegriffen hat.
+
+## Eine neue Nutzung bewerten
+
+Frage vor einer neuen analytischen Nutzung personenbezogener Daten:
+
+- Was ist der Zweck, und ist er mit dem Erhebungszweck vereinbar?
+- Welche Spalten werden wirklich gebraucht (Minimierung)?
+- Geht die Arbeit mit pseudonymisierten oder aggregierten Daten?
+- Wer sieht die Ergebnisse, und könnten kleine Gruppen erkennbar werden?
+- Werden Daten außerhalb der Organisation weitergegeben oder mit externen Daten verknüpft?
+- Ist die Nutzung neuartig, umfangreich oder betrifft sie sensible Themen?
+
+Wenn die Antworten auf die letzten drei Fragen Zweifel wecken, eskaliere. Die Datenschutzbeauftragten beraten zur Einhaltung des Datenschutzes und überwachen sie; die Rechtsabteilung legt aus, was die Regeln für deinen Fall bedeuten. Bring eine kurze Beschreibung von Zweck, Daten und Schutzmaßnahmen mit, damit sie schnell entscheiden können.
+
+## Datenschutz und Tempo abwägen
+
+Behandle Governance nicht als Stoppschild. Biete schnelle Wege an: vorab freigegebene aggregierte Datensätze, ein einheitliches Anfrageformular und eine benannte Ansprechperson. Ist Governance langsam und unklar, bauen Leute private Kopien, und das ist das größere Risiko.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundenes Szenario. Ein Produktteam will App-Nutzungsprotokolle mit Support-Tickets verknüpfen, um vorherzusagen, wer kündigt. Du listest Zweck, Spalten und Empfangende auf und stellst fest, dass Freitext-Tickets personenbezogene Angaben enthalten können und der Plan einzelne Kundschaft bewertet. Weil die Nutzung neu ist und viele Kundinnen und Kunden betrifft, eskalierst du mit einer einseitigen Beschreibung an die Datenschutzbeauftragten. Währenddessen bereitet das Team eine pseudonymisierte Stichprobe mit nur den nötigen Feldern vor, damit das Vorgehen getestet werden kann, ohne unnötige Daten offenzulegen.
+
+## Das Wichtigste in Kürze
+
+- Datenherkunft und Metadaten machen Analysen nachvollziehbar und wiederverwendbar.
+- Minimale Rechte und die Trennung von Roh- und aggregierten Daten senken das Risiko.
+- Nutze eine Checkliste für neue Nutzungen personenbezogener Daten und eskaliere neuartige, große oder sensible Fälle.
+- Schnelle, klare Governance verhindert private Datenkopien.

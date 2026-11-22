@@ -1,0 +1,75 @@
+---
+id: business-intelligence-reporting-practitioner
+competency: business-intelligence-reporting
+level: practitioner
+title: "Consistent KPIs and maintained reports"
+objectives:
+  - "Define a KPI so that two people calculate the same value."
+  - "Choose the grain and dimensions of a recurring report."
+  - "Document a report with owner, source, refresh schedule and change history."
+  - "Test a report after a change and retire reports nobody uses."
+minutes: 25
+resources:
+  - wikipedia-business-intelligence
+  - wikipedia-de-kennzahl
+  - mslearn-power-bi-overview
+status: ai-draft
+sources:
+  - title: "Business intelligence"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Business_intelligence
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Kennzahl"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Kennzahl
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Power BI overview (Microsoft Learn)"
+    author: "Microsoft"
+    url: https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-overview
+    license: free-access
+    licenseUrl: https://learn.microsoft.com/en-us/legal/termsofuse
+    usage: cited
+---
+
+## Why this matters
+
+A report that is built once and never looked after slowly becomes wrong. At practitioner level your task is to keep reports consistent, documented and trusted over months, not only to build them.
+
+## Define a KPI so it cannot be misread
+
+A key performance indicator (KPI) is a metric tied to a goal. A good definition fits in a short table:
+
+- Name and business purpose.
+- Formula, including filters (which statuses, which dates).
+- Unit and time basis (per month, rolling 12 months).
+- Source tables and refresh schedule.
+- Owner who may approve a change.
+
+Keep the definition in one place and link to it from every report that uses the KPI.
+
+## Choose the grain and the dimensions
+
+State what one row of the report base represents, for example "one row per order line". Then add only the dimensions that readers need to act on. Too many dimensions make a report slow and hard to read. Check that totals match when you remove a dimension; if they do not, something fans out or drops rows.
+
+## Keep recurring reports healthy
+
+- Document owner, source, refresh time and known limits on the report itself.
+- Keep a change history: what changed, when, why and who approved it.
+- Test after every change by comparing the new output with the previous period and with a trusted figure.
+- Show a "data as of" date so that readers know how fresh the numbers are.
+- Review usage from time to time and retire reports nobody opens.
+
+## Worked example
+
+Illustration only; invented figures. Sales and Finance both report "monthly revenue" and differ by about 3 percent every month. The analyst compares the definitions: Sales counts orders by order date, Finance counts invoices by invoice date. Neither is wrong. The team agrees on one KPI named "Invoiced revenue" for Finance reports and a second, clearly named "Order intake" for Sales. Both definitions are written into the shared KPI table, and each report links to it.
+
+## Key takeaways
+
+- A KPI definition names formula, filters, time basis, source and owner.
+- State the grain of a report and test totals when dimensions change.
+- Document, version and test recurring reports; show a data-as-of date.
+- Two similar numbers with different names are better than one name with two meanings.

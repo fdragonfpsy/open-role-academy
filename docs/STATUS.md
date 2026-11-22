@@ -1,5 +1,14 @@
 # Status
 
+## 2026-11-22 (e) — Data & Analytics content batch 3
+
+**Done**
+- business-intelligence-reporting (foundation+practitioner), analytical-problem-framing-storytelling and data-governance-privacy-analytics (3 levels): 16 units per language set (8 en + 8 de, `ai-draft`), 36 items, 8 new link-only resources; 11 existing resources re-tagged. Role stays `draft`. lint/typecheck/test/validate/build all green.
+
+**Reviewer to-dos:** two GDPR statements rest on general knowledge, not a fetched source (pseudonymised data remains personal data; anonymisation needs no reasonably likely re-identification) — no article numbers, fines or deadlines used; storytelling has no non-Wikipedia resource beyond reused OpenStax NC pages; Wikipedia pages were confirmed to load, not read in full; German wording/gender-inclusion not human-reviewed.
+
+**Next:** Data & Analytics batch 4 (machine-learning-basics-ai-analytics), publish role, quality pass (storytelling non-Wikipedia resource).
+
 ## 2026-11-22 (d) — Data & Analytics content batch 2
 
 **Done**

@@ -1,0 +1,80 @@
+---
+id: data-governance-privacy-analytics-advanced
+competency: data-governance-privacy-analytics
+level: advanced
+title: "Governance in practice: lineage, access and escalation (EU/Germany)"
+objectives:
+  - "Set up lineage, metadata and a data catalogue so that analyses can be traced."
+  - "Design role-based access and sharing rules that follow least privilege."
+  - "Assess a new analytics use of personal data and decide when to escalate to Legal or the DPO."
+  - "Balance privacy, usefulness and speed in data requests."
+minutes: 30
+resources:
+  - wikipedia-data-governance
+  - eurlex-gdpr-regulation-2016-679
+  - wikipedia-data-protection-officer
+status: ai-draft
+sources:
+  - title: "Data governance"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_governance
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Regulation (EU) 2016/679 (General Data Protection Regulation)"
+    author: "European Union"
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+    license: free-access
+    licenseUrl: https://eur-lex.europa.eu/content/legal-notice/legal-notice.html
+    usage: cited
+  - title: "Data protection officer"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_protection_officer
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+At advanced level you shape how a team handles data, not only how you handle your own. Good governance makes analysis faster and safer: everyone knows where data comes from, who may use it and when to stop and ask. This is topic-level guidance for the EU and Germany, not legal advice.
+
+## Lineage and metadata
+
+Data lineage records where data came from and which steps changed it. Metadata describes datasets: owner, meaning of columns, refresh time, sensitivity and permitted purposes. A simple data catalogue that lists this for each dataset lets reviewers trace a number back to its source and lets newcomers find out whether they may use it.
+
+## Access: least privilege
+
+- Give people the minimum access needed for their role and task.
+- Prefer role-based groups over individual permissions.
+- Separate raw personal data from analysis-ready or aggregated data, and let most analysts work on the latter.
+- Review access regularly and remove it when a role changes.
+- Keep a log of who accessed sensitive datasets.
+
+## Assess a new use
+
+Before a new analytics use of personal data, ask:
+
+- What is the purpose, and is it compatible with why the data was collected?
+- Which columns are truly needed (minimisation)?
+- Can the work be done with pseudonymised or aggregated data?
+- Who will see results, and could small groups be identified?
+- Is the data shared outside the organisation or combined with external data?
+- Is the use novel, large-scale or about sensitive topics?
+
+If the answer to the last three raises doubt, escalate. The data protection officer (DPO) advises on and monitors data protection compliance; Legal interprets what the rules mean for your case. Bring a short description of purpose, data and safeguards so they can decide quickly.
+
+## Balance privacy and speed
+
+Do not treat governance as a stop sign. Offer fast routes: pre-approved aggregated datasets, a standard request form and a named contact. If governance is slow and unclear, people will build private copies, which is the larger risk.
+
+## Worked example
+
+Illustration only; invented scenario. A product team wants to combine app usage logs with support tickets to predict who will cancel. The analyst lists purpose, columns and recipients, and notes that free-text tickets may contain personal details and that the plan involves profiling individual customers. Because the use is new and touches many customers, the analyst escalates to the DPO with a one-page description. Meanwhile, the team prepares a pseudonymised sample with only the needed fields, so that the approach can be tested without exposing unnecessary data.
+
+## Key takeaways
+
+- Lineage and metadata make analyses traceable and reusable.
+- Least privilege and separate raw from aggregated data reduce risk.
+- Use a checklist for new uses of personal data and escalate novel, large or sensitive cases.
+- Fast, clear governance prevents private data copies.

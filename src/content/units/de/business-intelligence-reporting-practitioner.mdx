@@ -1,0 +1,75 @@
+---
+id: business-intelligence-reporting-practitioner
+competency: business-intelligence-reporting
+level: practitioner
+title: "Einheitliche KPIs und gepflegte Berichte"
+objectives:
+  - "Einen KPI so definieren, dass zwei Personen denselben Wert berechnen."
+  - "Granularität und Dimensionen eines wiederkehrenden Berichts wählen."
+  - "Einen Bericht mit Verantwortlichen, Quelle, Aktualisierungsplan und Änderungsverlauf dokumentieren."
+  - "Einen Bericht nach einer Änderung testen und ungenutzte Berichte abschalten."
+minutes: 25
+resources:
+  - wikipedia-business-intelligence
+  - wikipedia-de-kennzahl
+  - mslearn-de-power-bi-overview
+status: ai-draft
+sources:
+  - title: "Business intelligence"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Business_intelligence
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Kennzahl"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Kennzahl
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Power BI Übersicht (Microsoft Learn)"
+    author: "Microsoft"
+    url: https://learn.microsoft.com/de-de/power-bi/fundamentals/power-bi-overview
+    license: free-access
+    licenseUrl: https://learn.microsoft.com/de-de/legal/termsofuse
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Ein Bericht, der einmal gebaut und dann nie gepflegt wird, wird mit der Zeit falsch. Auf dem Niveau Fortgeschritten besteht deine Aufgabe darin, Berichte über Monate hinweg einheitlich, dokumentiert und vertrauenswürdig zu halten, nicht nur sie zu bauen.
+
+## Einen KPI so definieren, dass er nicht missverstanden wird
+
+Ein Key Performance Indicator (KPI) ist eine Kennzahl mit Bezug zu einem Ziel. Eine gute Definition passt in eine kurze Tabelle:
+
+- Name und fachlicher Zweck.
+- Formel samt Filtern (welche Status, welche Datumsfelder).
+- Einheit und Zeitbezug (pro Monat, gleitende 12 Monate).
+- Quelltabellen und Aktualisierungsplan.
+- Verantwortliche, die Änderungen freigeben.
+
+Halte die Definition an einem Ort und verlinke sie aus jedem Bericht, der den KPI nutzt.
+
+## Granularität und Dimensionen wählen
+
+Lege fest, was eine Zeile der Berichtsbasis darstellt, zum Beispiel "eine Zeile pro Bestellposition". Nimm dann nur die Dimensionen auf, die Lesende zum Handeln brauchen. Zu viele Dimensionen machen einen Bericht langsam und unübersichtlich. Prüfe, ob die Summen übereinstimmen, wenn du eine Dimension entfernst; wenn nicht, vervielfachen sich Zeilen oder gehen verloren.
+
+## Wiederkehrende Berichte gesund halten
+
+- Dokumentiere Verantwortliche, Quelle, Aktualisierungszeit und bekannte Grenzen am Bericht selbst.
+- Führe einen Änderungsverlauf: was, wann, warum und mit wessen Freigabe geändert wurde.
+- Teste nach jeder Änderung, indem du die neue Ausgabe mit der Vorperiode und mit einer verlässlichen Zahl vergleichst.
+- Zeige ein Datum "Datenstand", damit Lesende wissen, wie aktuell die Zahlen sind.
+- Prüfe gelegentlich die Nutzung und schalte Berichte ab, die niemand öffnet.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundene Zahlen. Vertrieb und Finanzen berichten beide "Monatsumsatz" und weichen jeden Monat um etwa 3 Prozent voneinander ab. Du vergleichst die Definitionen: Der Vertrieb zählt Aufträge nach Auftragsdatum, die Finanzen zählen Rechnungen nach Rechnungsdatum. Keine Seite liegt falsch. Das Team einigt sich auf einen KPI "Fakturierter Umsatz" für Finanzberichte und einen zweiten, klar benannten KPI "Auftragseingang" für den Vertrieb. Beide Definitionen stehen in der gemeinsamen KPI-Tabelle, und jeder Bericht verlinkt darauf.
+
+## Das Wichtigste in Kürze
+
+- Eine KPI-Definition nennt Formel, Filter, Zeitbezug, Quelle und Verantwortliche.
+- Lege die Granularität eines Berichts fest und teste die Summen, wenn sich Dimensionen ändern.
+- Dokumentiere, versioniere und teste wiederkehrende Berichte; zeige ein Datum "Datenstand".
+- Zwei ähnliche Zahlen mit verschiedenen Namen sind besser als ein Name mit zwei Bedeutungen.

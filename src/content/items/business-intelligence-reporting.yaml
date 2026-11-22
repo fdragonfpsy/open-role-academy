@@ -1,0 +1,302 @@
+competency: business-intelligence-reporting
+items:
+- id: bir-f-def
+  level: foundation
+  difficulty: 850
+  type: single
+  stem:
+    en: What is the main purpose of business intelligence in an organisation?
+    de: Was ist der Hauptzweck von Business Intelligence in einer Organisation?
+  options:
+  - en: To turn organisational data into reports and dashboards that support decisions
+    de: Daten der Organisation in Berichte und Dashboards zu verwandeln, die Entscheidungen unterstützen
+    correct: true
+  - en: To replace every operational system with one new central application that staff use
+    de: Jedes operative System durch eine neue zentrale Anwendung zu ersetzen, die alle Mitarbeitenden nutzen
+    correct: false
+  - en: To store backups of all company files so that they can be restored after a failure
+    de: Sicherungskopien aller Unternehmensdateien zu speichern, damit sie nach einem Ausfall wiederhergestellt werden können
+    correct: false
+  - en: To give every employee write access to the data so that each team can fix it itself
+    de: Allen Mitarbeitenden Schreibzugriff auf die Daten zu geben, damit jedes Team sie selbst korrigieren kann
+    correct: false
+  explanation:
+    en: BI is about reporting and analysis for decisions. It does not replace operational systems, it is not a backup tool, and wide write access would harm consistency rather than create a shared view.
+    de: BI dient Berichten und Analysen für Entscheidungen. Es ersetzt keine operativen Systeme, ist kein Sicherungswerkzeug, und weiter Schreibzugriff würde die Einheitlichkeit gefährden, statt eine gemeinsame Sicht zu schaffen.
+  source: https://en.wikipedia.org/wiki/Business_intelligence
+- id: bir-f-wh
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: What is a data warehouse?
+    de: Was ist ein Data Warehouse?
+  options:
+  - en: A central store that collects data from several sources, organised for analysis
+    de: Ein zentraler Speicher, der Daten aus mehreren Quellen sammelt und für Analysen aufbereitet
+    correct: true
+  - en: A physical room in which the servers of a company are kept, cooled and locked
+    de: Ein physischer Raum, in dem die Server eines Unternehmens stehen, gekühlt und abgeschlossen
+    correct: false
+  - en: A chart type that shows how stock levels in a company warehouse change over time
+    de: Ein Diagrammtyp, der zeigt, wie sich Lagerbestände in einem Unternehmenslager über die Zeit verändern
+    correct: false
+  - en: The order system itself, where staff enter each sale as it happens during the day
+    de: Das Bestellsystem selbst, in dem Mitarbeitende jeden Verkauf direkt während des Tages erfassen
+    correct: false
+  explanation:
+    en: A data warehouse brings data from different source systems together in a structure built for analysis. It is not a server room, a stock chart or the transactional system where daily entries are made.
+    de: Ein Data Warehouse führt Daten aus verschiedenen Quellsystemen in einer Struktur zusammen, die für Analysen gebaut ist. Es ist weder ein Serverraum noch ein Lagerdiagramm noch das operative System, in dem täglich erfasst wird.
+  source: https://en.wikipedia.org/wiki/Business_intelligence
+- id: bir-f-dim
+  level: foundation
+  difficulty: 950
+  type: multi
+  stem:
+    en: Which of these are typically dimensions in a sales report? Select all that apply.
+    de: Welche dieser Punkte sind in einem Vertriebsbericht typischerweise Dimensionen? Wähle alle zutreffenden aus.
+  options:
+  - en: Region
+    de: Region
+    correct: true
+  - en: Month
+    de: Monat
+    correct: true
+  - en: Product group
+    de: Produktgruppe
+    correct: true
+  - en: Total revenue
+    de: Gesamtumsatz
+    correct: false
+  - en: Number of orders
+    de: Anzahl der Bestellungen
+    correct: false
+  explanation:
+    en: 'Region, month and product group are ways to slice the data. Total revenue and number of orders are metrics: they are the values you add up or count.'
+    de: 'Region, Monat und Produktgruppe sind Arten, die Daten aufzuteilen. Gesamtumsatz und Anzahl der Bestellungen sind Kennzahlen: Sie sind die Werte, die man addiert oder zählt.'
+  source: https://en.wikipedia.org/wiki/Business_intelligence
+- id: bir-f-trust
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: Two reports show different order counts for the same month. What is the best first step?
+    de: Zwei Berichte zeigen für denselben Monat unterschiedliche Bestellzahlen. Was ist der beste erste Schritt?
+  options:
+  - en: Compare how each report defines an order and which filters and refresh time it uses
+    de: Vergleichen, wie jeder Bericht eine Bestellung definiert und filtert und wann er aktualisiert wurde
+    correct: true
+  - en: Use the higher number, since a lower count more likely means that some orders were lost
+    de: Die höhere Zahl verwenden, weil eine niedrigere Zahl eher bedeutet, dass Bestellungen verloren gegangen sind und niemand sie zählt
+    correct: false
+  - en: Report the average of the two numbers, as that is usually close to the true value
+    de: Den Durchschnitt beider Zahlen berichten, da dieser meist nahe am wahren Wert liegt
+    correct: false
+  - en: Delete the older report so that nobody sees conflicting figures in the next meeting
+    de: Den älteren Bericht löschen, damit in der nächsten Besprechung niemand widersprüchliche Zahlen sieht
+    correct: false
+  explanation:
+    en: Differences usually come from definitions, filters or refresh times, so compare these first. Picking the higher number, averaging or deleting a report hides the cause instead of finding it.
+    de: Unterschiede kommen meist von Definitionen, Filtern oder Aktualisierungszeitpunkten, vergleiche daher zuerst diese. Die höhere Zahl zu wählen, zu mitteln oder einen Bericht zu löschen verdeckt die Ursache, statt sie zu finden.
+  source: https://en.wikipedia.org/wiki/Business_intelligence
+- id: bir-p-kpi
+  level: practitioner
+  difficulty: 1150
+  type: multi
+  stem:
+    en: Which elements belong in a KPI definition so that two people calculate the same value? Select all that apply.
+    de: Welche Bestandteile gehören in eine KPI-Definition, damit zwei Personen denselben Wert berechnen? Wähle alle zutreffenden aus.
+  options:
+  - en: The formula including filters such as order status and date field
+    de: Die Formel einschließlich Filtern wie Bestellstatus und Datumsfeld
+    correct: true
+  - en: The time basis, for example per month or rolling 12 months
+    de: Der Zeitbezug, zum Beispiel pro Monat oder gleitende 12 Monate
+    correct: true
+  - en: The person who may approve changes to the definition
+    de: Die Person, die Änderungen an der Definition freigeben darf
+    correct: true
+  - en: The colour that the KPI should have in every chart
+    de: Die Farbe, die der KPI in jedem Diagramm haben soll
+    correct: false
+  - en: The name of the analyst who built the first version
+    de: Der Name der Person, die die erste Version gebaut hat
+    correct: false
+  explanation:
+    en: A definition must fix formula, filters, time basis, source and an owner for changes. Chart colour is a design choice, and who built the first version does not determine how the value is calculated.
+    de: Eine Definition muss Formel, Filter, Zeitbezug, Quelle und Verantwortliche für Änderungen festlegen. Die Diagrammfarbe ist eine Gestaltungsfrage, und wer die erste Version gebaut hat, bestimmt nicht, wie der Wert berechnet wird.
+  source: https://de.wikipedia.org/wiki/Kennzahl
+- id: bir-p-grain
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: Totals in a report change when you remove one dimension. What does this most likely indicate?
+    de: Die Summen in einem Bericht ändern sich, wenn du eine Dimension entfernst. Worauf deutet das am ehesten hin?
+  options:
+  - en: Rows are multiplied or dropped by a join or filter, so the grain needs checking
+    de: Ein Join oder Filter vervielfacht Zeilen oder lässt sie wegfallen, Granularität prüfen
+    correct: true
+  - en: The BI tool rounds figures differently depending on how many columns are visible
+    de: Das BI-Werkzeug rundet Zahlen unterschiedlich, je nachdem, wie viele Spalten und Filter sichtbar sind
+    correct: false
+  - en: The report is working as designed, because every dimension adds its own share to the total
+    de: Der Bericht funktioniert wie vorgesehen, weil jede Dimension ihren eigenen Anteil zur Summe beiträgt
+    correct: false
+  - en: The data warehouse must be rebuilt from scratch, since totals can never depend on layout
+    de: Das Data Warehouse muss komplett neu gebaut werden, da Summen nie vom Layout abhängen dürfen
+    correct: false
+  explanation:
+    en: A total should not depend on which dimensions are shown. If it does, a join multiplies rows or a filter drops them, and the grain needs checking. Rounding, design intent and a rebuild are not the usual cause.
+    de: Eine Summe sollte nicht davon abhängen, welche Dimensionen angezeigt werden. Tut sie es doch, vervielfacht ein Join Zeilen oder ein Filter lässt sie wegfallen, und die Granularität muss geprüft werden. Rundung, Absicht im Entwurf oder ein Neubau sind nicht die übliche Ursache.
+  source: https://en.wikipedia.org/wiki/Business_intelligence
+- id: bir-p-same
+  level: practitioner
+  difficulty: 1250
+  type: single
+  stem:
+    en: Sales and Finance both report "monthly revenue" and the values differ. Sales counts by order date, Finance by invoice date. What is the best long-term fix?
+    de: Vertrieb und Finanzen berichten beide "Monatsumsatz" und die Werte weichen ab. Der Vertrieb zählt nach Auftragsdatum, die Finanzen nach Rechnungsdatum. Was ist die beste langfristige Lösung?
+  options:
+  - en: Give the two KPIs distinct names, document both definitions and link them from each report
+    de: Beiden KPIs verschiedene Namen geben, beide Definitionen dokumentieren und aus jedem Bericht verlinken
+    correct: true
+  - en: Force Sales to use invoice dates as well, because the finance figure is always the right one
+    de: Den Vertrieb ebenfalls zu Rechnungsdaten verpflichten, weil die Finanzzahl immer die richtige ist
+    correct: false
+  - en: Show only the Sales number on the dashboard, since it is the one that managers see first
+    de: Nur die Vertriebszahl im Dashboard zeigen, weil sie die ist, die Führungskräfte zuerst sehen
+    correct: false
+  - en: Keep both reports unchanged and tell readers to expect a small difference every month
+    de: Beide Berichte unverändert lassen und Lesenden sagen, dass jeden Monat eine kleine Abweichung zu erwarten ist
+    correct: false
+  explanation:
+    en: Both definitions answer legitimate questions, so the problem is the shared name. Distinct names plus documentation remove the confusion. Forcing one view, hiding one number or leaving it unexplained keeps the ambiguity.
+    de: Beide Definitionen beantworten berechtigte Fragen, das Problem ist also der gemeinsame Name. Verschiedene Namen samt Dokumentation beseitigen die Verwirrung. Eine Sicht zu erzwingen, eine Zahl auszublenden oder die Abweichung unerklärt zu lassen erhält die Mehrdeutigkeit.
+  source: https://de.wikipedia.org/wiki/Kennzahl
+- id: bir-p-maint
+  level: practitioner
+  difficulty: 1300
+  type: multi
+  stem:
+    en: Which practices help keep a recurring report trusted over time? Select all that apply.
+    de: Welche Praktiken helfen, einen wiederkehrenden Bericht über die Zeit vertrauenswürdig zu halten? Wähle alle zutreffenden aus.
+  options:
+  - en: Showing a "data as of" date on the report
+    de: Ein Datum "Datenstand" im Bericht anzeigen
+    correct: true
+  - en: Recording what changed, when and why
+    de: Festhalten, was wann und warum geändert wurde
+    correct: true
+  - en: Comparing new output with the previous period after a change
+    de: Nach einer Änderung die neue Ausgabe mit der Vorperiode vergleichen
+    correct: true
+  - en: Editing the report directly in production without telling anybody, to save time
+    de: Den Bericht direkt in der Produktion ändern, ohne jemandem Bescheid zu geben, um Zeit zu sparen
+    correct: false
+  - en: Keeping every old report forever, even when nobody opens it any more
+    de: Jeden alten Bericht ewig behalten, auch wenn ihn niemand mehr öffnet
+    correct: false
+  explanation:
+    en: Freshness information, change history and a before-after comparison make problems visible. Silent edits in production and endless unused reports create risk and confusion.
+    de: Informationen zur Aktualität, ein Änderungsverlauf und ein Vorher-Nachher-Vergleich machen Probleme sichtbar. Stille Änderungen in der Produktion und endlos viele ungenutzte Berichte schaffen Risiko und Verwirrung.
+  source: https://en.wikipedia.org/wiki/Business_intelligence
+- id: bir-a-conflict
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: Two departments insist on different definitions of "active customer", and both are reasonable. What is the best approach for the shared BI layer?
+    de: Zwei Abteilungen bestehen auf verschiedenen Definitionen von "aktive Kundschaft", und beide sind vernünftig. Was ist der beste Ansatz für die gemeinsame BI-Schicht?
+  options:
+  - en: Offer both as separately named, documented metrics; the data owners decide the default
+    de: Beide als getrennt benannte, dokumentierte Kennzahlen anbieten, Standard bestimmen die Datenverantwortlichen
+    correct: true
+  - en: Pick the definition of the larger department, since it will have more report readers
+    de: Die Definition der größeren Abteilung wählen, da sie mehr Lesende der Berichte hat, und alle anderen zur Anpassung auffordern
+    correct: false
+  - en: Average the two resulting counts so that neither department feels it has lost the argument
+    de: Die beiden resultierenden Zahlen mitteln, damit keine Abteilung das Gefühl hat, den Streit verloren zu haben
+    correct: false
+  - en: Leave the definition out of the model and let each report author choose a rule on their own
+    de: Die Definition aus dem Modell weglassen und jede Berichtsautorin und jeden Berichtsautor selbst eine Regel wählen lassen
+    correct: false
+  explanation:
+    en: Separate names avoid hidden disagreement, and the owners decide which one is the default. Choosing by department size, averaging or leaving it to each author recreates inconsistent numbers.
+    de: Getrennte Namen vermeiden verdeckten Widerspruch, und die Verantwortlichen bestimmen den Standard. Die Wahl nach Abteilungsgröße, ein Mittelwert oder die Entscheidung bei jeder einzelnen Person erzeugt wieder uneinheitliche Zahlen.
+  source: https://de.wikipedia.org/wiki/Kennzahl
+- id: bir-a-fresh
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: A dashboard is refreshed every night, but a nightly load fails silently and nobody notices for three days. Which improvement addresses the root problem best?
+    de: Ein Dashboard wird jede Nacht aktualisiert, doch ein nächtlicher Ladevorgang schlägt unbemerkt fehl und drei Tage lang merkt es niemand. Welche Verbesserung greift die Ursache am besten auf?
+  options:
+  - en: Show the last successful refresh time and alert the owner when a load fails or is late
+    de: Letzten erfolgreichen Ladezeitpunkt anzeigen und Verantwortliche bei Fehlern oder Verspätung alarmieren
+    correct: true
+  - en: Ask every report reader to check the numbers by hand each morning before they use them
+    de: Alle Lesenden bitten, die Zahlen jeden Morgen von Hand mit dem Quellsystem zu prüfen, bevor sie sie verwenden
+    correct: false
+  - en: Refresh the dashboard every hour, because a more frequent load makes failures less likely
+    de: Das Dashboard stündlich aktualisieren, da ein häufigerer Ladevorgang Ausfälle unwahrscheinlicher macht
+    correct: false
+  - en: Hide the refresh time, since an old date on the page could make readers distrust the report
+    de: Den Aktualisierungszeitpunkt ausblenden, da ein altes Datum auf der Seite Lesende misstrauisch machen könnte
+    correct: false
+  explanation:
+    en: 'Visibility and monitoring address the silent failure: readers see how fresh the data is and owners are alerted. Manual checks do not scale, a higher frequency does not remove failures, and hiding the date removes the warning.'
+    de: 'Sichtbarkeit und Überwachung beheben das stille Scheitern: Lesende sehen, wie aktuell die Daten sind, und Verantwortliche werden alarmiert. Manuelle Prüfungen skalieren nicht, eine höhere Frequenz beseitigt keine Ausfälle, und das Ausblenden des Datums nimmt die Warnung weg.'
+  source: https://en.wikipedia.org/wiki/Business_intelligence
+- id: bir-a-change
+  level: advanced
+  difficulty: 1550
+  type: multi
+  stem:
+    en: Before changing the definition of a widely used KPI, which steps are sensible? Select all that apply.
+    de: Welche Schritte sind sinnvoll, bevor die Definition eines weit verbreiteten KPIs geändert wird? Wähle alle zutreffenden aus.
+  options:
+  - en: Identify which reports and decisions depend on the KPI
+    de: Feststellen, welche Berichte und Entscheidungen vom KPI abhängen
+    correct: true
+  - en: Get approval from the KPI owner and inform the users
+    de: Die Freigabe der KPI-Verantwortlichen einholen und die Nutzenden informieren
+    correct: true
+  - en: Show old and new values side by side for a transition period
+    de: Alte und neue Werte für eine Übergangszeit nebeneinander zeigen
+    correct: true
+  - en: Change it quietly overnight so that nobody argues about the effect on past values
+    de: Ihn unbemerkt über Nacht ändern, damit niemand über die Wirkung auf frühere Werte streitet
+    correct: false
+  - en: Overwrite the history with the new rule without keeping the old definition
+    de: Die Historie mit der neuen Regel überschreiben, ohne die alte Definition aufzubewahren
+    correct: false
+  explanation:
+    en: Impact analysis, owner approval, communication and a parallel period keep trust intact. Silent changes and overwritten history break comparability and credibility.
+    de: Eine Wirkungsanalyse, die Freigabe durch die Verantwortlichen, Kommunikation und eine Parallelphase erhalten das Vertrauen. Stille Änderungen und überschriebene Historie zerstören Vergleichbarkeit und Glaubwürdigkeit.
+  source: https://de.wikipedia.org/wiki/Kennzahl
+- id: bir-a-selfservice
+  level: advanced
+  difficulty: 1650
+  type: single
+  stem:
+    en: Self-service BI lets many people build their own reports. Which governance measure best protects consistency without blocking people?
+    de: Self-Service-BI lässt viele Personen eigene Berichte bauen. Welche Governance-Maßnahme schützt die Einheitlichkeit am besten, ohne Menschen zu blockieren?
+  options:
+  - en: A shared, certified data model with documented metrics that people build their reports on
+    de: Ein gemeinsames, zertifiziertes Datenmodell mit dokumentierten Kennzahlen als Grundlage aller Berichte
+    correct: true
+  - en: A rule that only the BI team may open the BI tool, with everyone else sent a PDF
+    de: Eine Regel, dass nur das BI-Team das BI-Werkzeug öffnen darf und alle anderen ein PDF erhalten
+    correct: false
+  - en: No control at all, since people will correct each other whenever numbers disagree
+    de: Gar keine Kontrolle, da sich die Leute gegenseitig korrigieren werden, wenn Zahlen abweichen
+    correct: false
+  - en: A requirement that each team builds its own copy of the data to avoid shared dependencies
+    de: Eine Vorgabe, dass jedes Team eine eigene Kopie der Daten aufbaut, um gemeinsame Abhängigkeiten zu vermeiden
+    correct: false
+  explanation:
+    en: A shared, governed model gives everyone the same metric definitions while still allowing self-service. Locking the tool down defeats the purpose, and no control or private data copies lead to conflicting numbers.
+    de: Ein gemeinsames, gesteuertes Modell gibt allen dieselben Kennzahldefinitionen und erlaubt trotzdem Self-Service. Das Werkzeug zu sperren verfehlt den Zweck, und fehlende Kontrolle oder private Datenkopien führen zu widersprüchlichen Zahlen.
+  source: https://en.wikipedia.org/wiki/Business_intelligence
