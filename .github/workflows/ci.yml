@@ -29,3 +29,24 @@ jobs:
       - run: npm test
       - run: npm run validate:content
       - run: npm run build
+
+  e2e:
+    name: browser e2e (Playwright)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      # Playwright is intentionally not a project dependency (see DECISIONS.md); install it for this job only.
+      - run: npm install --no-save --no-package-lock playwright@1.49.1
+      - run: npx playwright install --with-deps --only-shell chromium
+      - name: Serve the built site
+        run: |
+          npx astro preview --host 127.0.0.1 --port 4321 > preview.log 2>&1 &
+          npx --yes wait-on@8 -t 60000 http://127.0.0.1:4321/
+      - run: npm run e2e

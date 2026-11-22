@@ -93,7 +93,7 @@ Item and resource quality (added by weekly review 2026-11-14, applies to all new
 - [x] Accessibility pass (keyboard, contrast, screen reader labels) + Lighthouse ≥ 90 on all categories
 - [x] Mobile layout pass
 - [x] **Launch checklist** in `docs/LAUNCH.md` (what the human must fill in: Impressum data, contact email, Cloudflare Pages project) — then mark the site ready
-- [ ] CI runs the browser e2e suite (`npm run e2e`, Playwright/Chromium) against `astro preview` on every PR (weekly review 2026-11-21: the suite passes locally but is not in `ci.yml`, so UI regressions can merge unseen). Acceptance: e2e job in `ci.yml`, green on the PR, no paid service, run time stays under 10 min.
+- [x] CI runs the browser e2e suite (`npm run e2e`, Playwright/Chromium) against `astro preview` on every PR (weekly review 2026-11-21: the suite passes locally but is not in `ci.yml`, so UI regressions can merge unseen). Acceptance: e2e job in `ci.yml`, green on the PR, no paid service, run time stays under 10 min.
 
 ## Phase 3b — Catalog, accounts and profile
 
