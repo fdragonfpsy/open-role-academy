@@ -1,0 +1,290 @@
+competency: machine-learning-basics-ai-analytics
+items:
+- id: mlb-f-supervised
+  level: foundation
+  difficulty: 850
+  type: single
+  stem:
+    en: A team has past orders, each with a known label "returned" or "kept", and wants to predict returns for new orders. Which kind of learning is this?
+    de: Ein Team hat frühere Bestellungen mit bekanntem Label "retourniert" oder "behalten" und will Retouren für neue Bestellungen vorhersagen. Welche Art des Lernens ist das?
+  options:
+  - en: Supervised learning, because the examples come with known answers
+    de: Überwachtes Lernen, da die Beispiele Antworten enthalten
+    correct: true
+  - en: Unsupervised learning, because the model predicts something unseen
+    de: Unüberwachtes Lernen, weil das Modell etwas Unbekanntes vorhersagt
+    correct: false
+  - en: Unsupervised learning, because many orders are used as input data
+    de: Unüberwachtes Lernen, weil viele Bestellungen als Eingabe dienen
+    correct: false
+  - en: Neither, because predictions always need fixed written rules
+    de: Keines von beiden, weil Vorhersagen immer feste Regeln brauchen
+    correct: false
+  explanation:
+    en: Supervised learning uses examples with known labels. Unsupervised learning has no labels and looks for structure, for example clusters.
+    de: Überwachtes Lernen nutzt Beispiele mit bekannten Labels. Unüberwachtes Lernen hat keine Labels und sucht Struktur, zum Beispiel Cluster.
+  source: https://en.wikipedia.org/wiki/Machine_learning
+- id: mlb-f-split
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: Why do you keep a test set aside when you build a model?
+    de: Warum legst du beim Bau eines Modells eine Testmenge beiseite?
+  options:
+  - en: To estimate performance on cases the model has not seen
+    de: Um die Leistung bei Fällen zu schätzen, die das Modell nicht kennt
+    correct: true
+  - en: To make the training run faster on a smaller amount of data
+    de: Um das Training auf einer kleineren Datenmenge schneller laufen zu lassen
+    correct: false
+  - en: To delete the rows that contain errors before the training starts
+    de: Um die Zeilen mit Fehlern zu löschen, bevor das Training beginnt
+    correct: false
+  - en: To give the model more examples to learn from during training
+    de: Um dem Modell beim Training mehr Beispiele zum Lernen zu geben
+    correct: false
+  explanation:
+    en: A model checked on its own training data looks better than it is. Unseen test data gives a more honest estimate of real-life performance.
+    de: Ein Modell, das an den eigenen Trainingsdaten geprüft wird, wirkt besser, als es ist. Ungesehene Testdaten liefern eine ehrlichere Schätzung für den Einsatz.
+  source: https://en.wikipedia.org/wiki/Machine_learning
+- id: mlb-f-overfit
+  level: foundation
+  difficulty: 1000
+  type: multi
+  stem:
+    en: Which observations point to overfitting? Select all that apply.
+    de: Welche Beobachtungen deuten auf Überanpassung hin? Wähle alle zutreffenden aus.
+  options:
+  - en: Very high results on training data, clearly lower on test data
+    de: Sehr gute Ergebnisse auf Trainingsdaten, deutlich schlechtere auf Testdaten
+    correct: true
+  - en: A complex model that fits the noise of the training data
+    de: Ein komplexes Modell, das das Rauschen der Trainingsdaten abbildet
+    correct: true
+  - en: Similar, moderate results on both training and test data
+    de: Ähnliche, mittelmäßige Ergebnisse auf Trainings- und Testdaten
+    correct: false
+  - en: Results that stay equally poor however simple the model is
+    de: Ergebnisse, die gleich schlecht bleiben, wie einfach das Modell auch ist
+    correct: false
+  explanation:
+    en: Overfitting means learning quirks of the training data. The typical sign is a gap between training and test results. Similar moderate results suggest underfitting rather than overfitting.
+    de: Überanpassung heißt, Eigenheiten der Trainingsdaten zu lernen. Das typische Zeichen ist eine Lücke zwischen Trainings- und Testergebnis. Ähnliche mittelmäßige Ergebnisse deuten eher auf Unteranpassung hin.
+  source: https://en.wikipedia.org/wiki/Machine_learning
+- id: mlb-f-assistant
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: An AI assistant gives you a SQL query that looks correct. What is the best next step?
+    de: Ein KI-Assistent liefert dir eine SQL-Abfrage, die richtig aussieht. Was ist der beste nächste Schritt?
+  options:
+  - en: Run it on a sample and compare totals with a trusted figure
+    de: An einer Stichprobe ausführen, Summen mit einer Referenz vergleichen
+    correct: true
+  - en: Use it directly, because assistants rarely make mistakes in SQL
+    de: Sie direkt verwenden, weil Assistenten bei SQL selten Fehler machen
+    correct: false
+  - en: Paste the real customer table into the tool to test it fully
+    de: Die echte Kundentabelle in das Werkzeug einfügen, um sie vollständig zu testen
+    correct: false
+  - en: Ask the same assistant whether it is sure and accept the answer
+    de: Denselben Assistenten fragen, ob er sicher ist, und die Antwort übernehmen
+    correct: false
+  explanation:
+    en: Assistants can sound confident and still be wrong. You stay responsible, so you check the result against a trusted source, and you do not share confidential data with unapproved tools.
+    de: Assistenten klingen oft sicher und liegen trotzdem falsch. Du bleibst verantwortlich, prüfst das Ergebnis also an einer vertrauten Quelle und gibst keine vertraulichen Daten in nicht freigegebene Werkzeuge.
+  source: https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Technologien_sicher_gestalten/Kuenstliche-Intelligenz/kuenstliche-intelligenz_node.html
+- id: mlb-p-accuracy
+  level: practitioner
+  difficulty: 1150
+  type: single
+  stem:
+    en: Only 2 in 100 transactions are fraudulent. A model predicts "not fraud" every time and reports 98 percent accuracy. What does this show?
+    de: Nur 2 von 100 Transaktionen sind Betrug. Ein Modell sagt jedes Mal "kein Betrug" voraus und meldet 98 Prozent Genauigkeit. Was zeigt das?
+  options:
+  - en: Accuracy can look high on rare classes while the model finds no fraud
+    de: Genauigkeit wirkt bei seltenen Klassen hoch, obwohl kein Betrug auffällt
+    correct: true
+  - en: The model is nearly perfect and can be used without further checks
+    de: Das Modell ist nahezu perfekt und ohne weitere Prüfung einsetzbar
+    correct: false
+  - en: The test set is too small, so the 98 percent cannot be trusted at all
+    de: Die Testmenge ist zu klein, daher ist den 98 Prozent gar nicht zu trauen
+    correct: false
+  - en: Precision is 98 percent too, since both numbers always match
+    de: Die Präzision beträgt ebenfalls 98 Prozent, da beide Zahlen stets übereinstimmen
+    correct: false
+  explanation:
+    en: With a rare class, always predicting the majority class gives high accuracy and zero recall for the class that matters. Check precision and recall for that class.
+    de: Bei einer seltenen Klasse ergibt die ständige Vorhersage der Mehrheitsklasse hohe Genauigkeit, aber null Trefferquote für die wichtige Klasse. Prüfe Präzision und Trefferquote dieser Klasse.
+  source: https://en.wikipedia.org/wiki/Machine_learning
+- id: mlb-p-precision-recall
+  level: practitioner
+  difficulty: 1200
+  type: multi
+  stem:
+    en: Which statements about precision and recall are correct? Select all that apply.
+    de: Welche Aussagen zu Präzision und Trefferquote sind richtig? Wähle alle zutreffenden aus.
+  options:
+  - en: Precision asks how many flagged cases were truly positive
+    de: Präzision fragt, wie viele markierte Fälle wirklich positiv waren
+    correct: true
+  - en: Recall asks how many truly positive cases were found
+    de: Trefferquote fragt, wie viele wirklich positive Fälle gefunden wurden
+    correct: true
+  - en: Recall asks how many of all predictions were right
+    de: Trefferquote fragt, wie viele aller Vorhersagen richtig waren
+    correct: false
+  - en: High precision always means that few positives were missed
+    de: Hohe Präzision bedeutet immer, dass wenige Positive übersehen wurden
+    correct: false
+  explanation:
+    en: Precision looks at the flagged cases, recall at the real positives. A model can be precise yet miss many positives. The share of all correct predictions is accuracy.
+    de: Präzision betrachtet die markierten Fälle, Trefferquote die echten Positiven. Ein Modell kann präzise sein und trotzdem viele Positive übersehen. Der Anteil aller richtigen Vorhersagen ist die Genauigkeit.
+  source: https://en.wikipedia.org/wiki/Machine_learning
+- id: mlb-p-baseline
+  level: practitioner
+  difficulty: 1250
+  type: single
+  stem:
+    en: A forecasting model beats last month's value as a prediction by only a tiny margin. How do you interpret this?
+    de: Ein Prognosemodell schlägt den Vormonatswert als Vorhersage nur um eine winzige Spanne. Wie ordnest du das ein?
+  options:
+  - en: The added complexity may not be worth it compared with the baseline
+    de: Der Mehraufwand lohnt sich gegenüber der Basis womöglich nicht
+    correct: true
+  - en: The model is strong, because any improvement proves that it works
+    de: Das Modell ist stark, denn jede Verbesserung beweist, dass es funktioniert
+    correct: false
+  - en: The baseline is wrong, because a baseline should never be that simple
+    de: Die Vergleichsbasis ist falsch, denn eine Basis sollte nie so einfach sein
+    correct: false
+  - en: The model must be underfitted, so more features always solve this
+    de: Das Modell muss unterangepasst sein, daher löst mehr Merkmale das immer
+    correct: false
+  explanation:
+    en: A simple baseline shows what you get for free. A model that barely improves on it adds cost and risk for little value.
+    de: Eine einfache Vergleichsbasis zeigt, was man ohnehin bekommt. Ein Modell, das sie kaum verbessert, verursacht Aufwand und Risiko für wenig Nutzen.
+  source: https://en.wikipedia.org/wiki/Machine_learning
+- id: mlb-p-bias
+  level: practitioner
+  difficulty: 1350
+  type: single
+  stem:
+    en: A hiring model was trained on past decisions. The gender column was removed, yet results still differ by gender. What is a plausible reason?
+    de: Ein Einstellungsmodell wurde mit früheren Entscheidungen trainiert. Die Spalte Geschlecht wurde entfernt, doch die Ergebnisse unterscheiden sich weiter nach Geschlecht. Was ist ein plausibler Grund?
+  options:
+  - en: Other columns act as stand-ins and past data was skewed
+    de: Andere Spalten wirken als Ersatz und frühere Daten waren verzerrt
+    correct: true
+  - en: The model must have been trained on too few columns in total
+    de: Das Modell muss insgesamt mit zu wenigen Spalten trainiert worden sein
+    correct: false
+  - en: Models cannot learn patterns that are not stored in a column
+    de: Modelle können keine Muster lernen, die nicht in einer Spalte stehen
+    correct: false
+  - en: Gender differences always come from the choice of the test set
+    de: Geschlechtsunterschiede entstehen immer durch die Wahl der Testmenge
+    correct: false
+  explanation:
+    en: Bias can come from labels and from proxies such as postcode or job history. Removing a sensitive column does not remove the pattern, so check outcomes by group.
+    de: Verzerrung kann aus Labels und Stellvertretermerkmalen wie Postleitzahl oder Berufsverlauf stammen. Eine sensible Spalte zu entfernen beseitigt das Muster nicht, prüfe also die Ergebnisse je Gruppe.
+  source: https://en.wikipedia.org/wiki/Machine_learning
+- id: mlb-a-leakage
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: A churn model shows excellent test results. You find that a feature "retention offer sent" is filled in only after a customer shows signs of leaving. What do you conclude?
+    de: Ein Abwanderungsmodell zeigt hervorragende Testergebnisse. Du findest heraus, dass das Merkmal "Halteangebot gesendet" erst ausgefüllt wird, nachdem eine Kundin oder ein Kunde Abwanderungszeichen zeigt. Was schließt du daraus?
+  options:
+  - en: It is likely leakage, so remove it and evaluate again
+    de: Es ist vermutlich ein Datenleck, also entfernen und erneut bewerten
+    correct: true
+  - en: It is a strong feature, so keep it and report the great result
+    de: Es ist ein starkes Merkmal, also behalten und das tolle Ergebnis melden
+    correct: false
+  - en: It only matters for training, so ignore it in the test evaluation
+    de: Es zählt nur im Training, also in der Testbewertung ignorieren
+    correct: false
+  - en: It proves the model is overfitted, so a larger model will fix it
+    de: Es beweist die Überanpassung, also behebt ein größeres Modell das
+    correct: false
+  explanation:
+    en: A feature known only after the outcome signal leaks the answer. The test result is then too optimistic and will not hold in real use. Remove the feature and re-evaluate.
+    de: Ein Merkmal, das erst nach dem Ergebnissignal bekannt ist, verrät die Antwort. Das Testergebnis ist dann zu optimistisch und hält im Einsatz nicht. Entferne das Merkmal und bewerte erneut.
+  source: https://en.wikipedia.org/wiki/Machine_learning
+- id: mlb-a-tradeoff
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: A model screens medical-device complaints for safety issues. Missing a real issue is costly, a false alarm only costs a short review. Which evaluation priority fits best?
+    de: Ein Modell sortiert Reklamationen zu Medizinprodukten auf Sicherheitsprobleme vor. Ein übersehenes echtes Problem ist teuer, ein Fehlalarm kostet nur eine kurze Prüfung. Welche Bewertungspriorität passt am besten?
+  options:
+  - en: High recall, accepting more false alarms that people can review
+    de: Hohe Trefferquote, mit mehr Fehlalarmen, die Menschen prüfen können
+    correct: true
+  - en: High precision, so that no complaint is flagged by mistake
+    de: Hohe Präzision, damit keine Reklamation irrtümlich markiert wird
+    correct: false
+  - en: High accuracy, because it summarises all outcomes in one number
+    de: Hohe Genauigkeit, weil sie alle Ausgänge in einer Zahl zusammenfasst
+    correct: false
+  - en: Low recall, because fewer flags mean fewer reviews to handle
+    de: Niedrige Trefferquote, weil weniger Markierungen weniger Prüfungen bedeuten
+    correct: false
+  explanation:
+    en: When misses are costly and false alarms are cheap, you favour recall. Accuracy can hide misses when real issues are rare, and chasing precision would increase misses.
+    de: Wenn Übersehenes teuer und Fehlalarm billig ist, bevorzugst du die Trefferquote. Genauigkeit kann Übersehenes verdecken, wenn echte Probleme selten sind, und Präzision zu jagen würde Übersehenes erhöhen.
+  source: https://en.wikipedia.org/wiki/Machine_learning
+- id: mlb-a-fairness
+  level: advanced
+  difficulty: 1550
+  type: multi
+  stem:
+    en: A model scores loan applicants and will influence decisions about people. Which steps are sensible before use? Select all that apply.
+    de: Ein Modell bewertet Kreditantragstellende und beeinflusst Entscheidungen über Menschen. Welche Schritte sind vor dem Einsatz sinnvoll? Wähle alle zutreffenden aus.
+  options:
+  - en: Compare error rates across groups and look for stand-in columns
+    de: Fehlerraten über Gruppen hinweg vergleichen und nach Ersatzspalten suchen
+    correct: true
+  - en: Involve Legal or Compliance and plan a human review of decisions
+    de: Recht oder Compliance einbeziehen und eine menschliche Prüfung der Entscheidungen planen
+    correct: true
+  - en: Skip group checks, because one overall accuracy figure is enough
+    de: Gruppenprüfungen auslassen, weil eine Gesamtgenauigkeit ausreicht
+    correct: false
+  - en: Drop all columns about people so that fairness is guaranteed
+    de: Alle Spalten zu Personen streichen, damit Fairness garantiert ist
+    correct: false
+  explanation:
+    en: Overall accuracy can hide unequal errors. AI that influences decisions about people calls for early legal or compliance involvement (a topic in the EU AI Act) and for human review. Dropping columns does not guarantee fairness.
+    de: Die Gesamtgenauigkeit kann ungleiche Fehler verdecken. KI, die Entscheidungen über Menschen beeinflusst, braucht (ein Thema der EU-KI-Verordnung) früh Recht oder Compliance und menschliche Prüfung. Spalten zu streichen garantiert keine Fairness.
+  source: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+- id: mlb-a-llm-verification
+  level: advanced
+  difficulty: 1650
+  type: single
+  stem:
+    en: An AI assistant wrote a join for your revenue report and the total is 12 percent higher than last quarter's signed-off report for the same period. What do you do?
+    de: Ein KI-Assistent hat einen Join für deinen Umsatzbericht geschrieben, und die Summe liegt 12 Prozent über dem freigegebenen Bericht des Vorquartals für denselben Zeitraum. Was tust du?
+  options:
+  - en: Find the cause of the gap, such as duplicate join rows, first
+    de: Die Ursache klären, etwa doppelte Zeilen durch den Join
+    correct: true
+  - en: Report the new total, since the assistant is newer than the old report
+    de: Die neue Summe melden, da der Assistent neuer ist als der alte Bericht
+    correct: false
+  - en: Ask the assistant to confirm its query and report if it says yes
+    de: Den Assistenten um Bestätigung seiner Abfrage bitten und bei Ja berichten
+    correct: false
+  - en: Reduce the total by 12 percent so it matches the old report
+    de: Die Summe um 12 Prozent kürzen, damit sie zum alten Bericht passt
+    correct: false
+  explanation:
+    en: A mismatch with a trusted figure is a signal to investigate. A common cause is a join that multiplies rows. The assistant cannot vouch for its own output, and adjusting totals to fit hides the error.
+    de: Eine Abweichung zu einer vertrauten Zahl ist ein Anlass zur Untersuchung. Eine häufige Ursache ist ein Join, der Zeilen vervielfacht. Der Assistent kann nicht für die eigene Ausgabe bürgen, und das Anpassen der Summe verdeckt den Fehler.
+  source: https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Technologien_sicher_gestalten/Kuenstliche-Intelligenz/kuenstliche-intelligenz_node.html

@@ -1,5 +1,18 @@
 # Status
 
+## 2026-11-22 (f) — Data & Analytics complete and published; run summary
+
+**Done**
+- machine-learning-basics-ai-analytics (foundation+practitioner, en+de, `ai-draft`), 12 items, 3 new link-only resources. Quality pass: all 10 role competencies have a non-Wikipedia and a German resource (storytelling uses an OpenStax NC managerial-communication page, not data-specific). Data & Analytics set to `status: published`; FRAMEWORK.md regenerated. Validator: 0 errors, 0 warnings.
+- This run (4 PRs and more): #110 QA #106 resources (#105 closed), #111 e2e job in CI (+ test timing fixes: hydration, selection, focus races on slow runners), #112/#113/#114 Data & Analytics batches 1–3, plus this PR (batch 4 + publish).
+- Stopped: all window time not used up, run kept to a sensible slice count; next role is a fresh, larger task.
+
+**Reviewer to-dos:** ML/AI units mention the EU AI Act at topic level only; Google ML Crash Course and Elements of AI unreachable from here; storytelling would benefit from a data-specific open source; German wording not human-reviewed.
+
+**Counts:** roles 10 (0 draft) · competencies 98 · units 552 · items 1180 · resources 538
+
+**Next:** Software Development framework (Phase 4).
+
 ## 2026-11-22 (e) — Data & Analytics content batch 3
 
 **Done**

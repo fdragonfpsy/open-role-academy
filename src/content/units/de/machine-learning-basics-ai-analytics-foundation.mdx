@@ -1,0 +1,72 @@
+---
+id: machine-learning-basics-ai-analytics-foundation
+competency: machine-learning-basics-ai-analytics
+level: foundation
+title: "Was maschinelles Lernen ist: aus Beispielen lernen, an neuen Daten testen"
+objectives:
+  - "In einfachen Worten erklären, was maschinelles Lernen ist und worin es sich von festen Regeln unterscheidet."
+  - "Überwachtes und unüberwachtes Lernen unterscheiden und je eine typische Aufgabe nennen."
+  - "Erklären, warum Daten in Trainings- und Testdaten aufgeteilt werden."
+  - "Überanpassung erkennen und KI-Assistenten als Hilfsmittel nutzen, deren Ergebnisse du prüfst."
+minutes: 25
+resources:
+  - wikipedia-machine-learning
+  - wikipedia-de-maschinelles-lernen
+  - bsi-kuenstliche-intelligenz
+status: ai-draft
+sources:
+  - title: "Machine learning"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Machine_learning
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Maschinelles Lernen"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Maschinelles_Lernen
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Künstliche Intelligenz – wir bringen Ihnen die Technologie näher"
+    author: "Bundesamt für Sicherheit in der Informationstechnik (BSI)"
+    url: https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Technologien_sicher_gestalten/Kuenstliche-Intelligenz/kuenstliche-intelligenz_node.html
+    license: free-access
+    licenseUrl: https://www.bsi.bund.de/DE/Service/Impressum/impressum_node.html
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Im Analytics-Alltag arbeitest du zunehmend neben Data Scientists und nutzt Werkzeuge, in denen maschinelles Lernen steckt. Auf diesem Niveau musst du keine Modelle bauen. Du brauchst die Begriffe, stellst gute Fragen und vermeidest die häufigsten Fallen.
+
+## Aus Beispielen lernen
+
+In klassischer Software schreibt ein Mensch die Regeln. Beim maschinellen Lernen (ML) sucht ein Verfahren Muster in Beispieldaten und baut ein Modell, das für neue Fälle Vorhersagen trifft oder Gruppen bildet. Das Modell ist nur so gut wie die Beispiele, die es gesehen hat.
+
+## Überwachtes und unüberwachtes Lernen
+
+- Überwachtes Lernen: Die Beispiele enthalten bekannte Antworten, sogenannte Labels. Das Modell lernt, das Label aus den übrigen Spalten, den Merkmalen (Features), vorherzusagen. Typische Aufgaben: vorhersagen, ob eine Kundin oder ein Kunde kündigt (Klassifikation), oder die Verkäufe des nächsten Monats (Regression).
+- Unüberwachtes Lernen: Es gibt keine Labels. Das Verfahren sucht selbst nach Struktur. Eine typische Aufgabe ist das Clustering, zum Beispiel Kundschaft mit ähnlichem Verhalten zu gruppieren.
+
+## Trainings- und Testdaten
+
+Wenn du ein Modell mit denselben Daten prüfst, aus denen es gelernt hat, sieht das Ergebnis besser aus, als es in der Praxis sein wird. Deshalb teilst du die Daten auf. Die Trainingsdaten dienen dem Bau des Modells. Die Testdaten legst du beiseite und nutzt sie einmal am Ende, um abzuschätzen, wie das Modell bei Fällen abschneidet, die es nie gesehen hat.
+
+## Überanpassung
+
+Ein Modell ist überangepasst (Overfitting), wenn es die Eigenheiten und das Rauschen der Trainingsdaten lernt statt des allgemeinen Musters. Warnzeichen: Auf den Trainingsdaten schneidet es sehr gut ab, auf den Testdaten deutlich schlechter. Oft helfen ein einfacheres Modell, mehr Daten oder weniger unwichtige Merkmale.
+
+## KI-Assistenten als Hilfsmittel
+
+Chatbasierte KI-Assistenten können SQL entwerfen, Diagrammarten vorschlagen oder eine Fehlermeldung erklären. Sie formulieren flüssig, können aber Falsches mit großer Sicherheit behaupten. Behandle die Ausgabe wie den Entwurf einer Kollegin, die deine Daten nie gesehen hat: Führe die Abfrage aus, vergleiche die Zahlen mit einer Quelle, der du vertraust, und gib keine vertraulichen oder personenbezogenen Daten in ein Werkzeug ein, das deine Organisation nicht freigegeben hat. Die Verantwortung für das Ergebnis bleibt bei dir.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundenes Szenario. Ein Team will vorhersagen, welche Kundschaft kündigt. Es hat 10.000 frühere Kundinnen und Kunden mit bekanntem Ausgang. Das ist überwachtes Lernen, weil der Ausgang ein Label ist. Das Team nimmt 8.000 Fälle als Trainingsdaten und legt 2.000 beiseite. Das Modell schneidet auf den 8.000 sehr gut ab, auf den 2.000 aber deutlich schlechter, ein Zeichen für Überanpassung. Das Team vereinfacht das Modell, prüft erneut an den Testdaten und berichtet das Testergebnis, nicht das Trainingsergebnis. Unabhängig davon lässt du dir von einem KI-Assistenten eine SQL-Abfrage schreiben; du liest sie, führst sie an einer kleinen Stichprobe aus und vergleichst die Summen mit einem bestehenden Bericht, bevor du sie verwendest.
+
+## Das Wichtigste in Kürze
+
+- ML lernt Muster aus Beispielen; überwachtes Lernen nutzt Labels, unüberwachtes nicht.
+- Beurteile ein Modell an Testdaten, die es nicht gesehen hat, nie an den Trainingsdaten.
+- Starke Trainings- bei schwachen Testergebnissen deuten auf Überanpassung hin.
+- KI-Assistenten helfen bei Entwürfen, aber du prüfst jedes Ergebnis und schützt vertrauliche Daten.

@@ -1,0 +1,91 @@
+---
+id: machine-learning-basics-ai-analytics-practitioner
+competency: machine-learning-basics-ai-analytics
+level: practitioner
+title: "Modelle bewerten, Verzerrungen erkennen und KI-Assistenten verantwortungsvoll nutzen"
+objectives:
+  - "Genauigkeit, Präzision und Trefferquote auf Konzeptebene lesen und erkennen, warum Genauigkeit täuschen kann."
+  - "Datenleck (Data Leakage) erkennen und ein Ergebnis an einer einfachen Vergleichsbasis messen."
+  - "Erklären, wie Verzerrungen in Daten zu unfairen Modellergebnissen führen, und erste Fairness-Fragen stellen."
+  - "KI-Assistenten mit menschlicher Prüfung nutzen und die EU-KI-Verordnung als Thema einordnen."
+minutes: 30
+resources:
+  - wikipedia-machine-learning
+  - wikipedia-de-maschinelles-lernen
+  - eu-digital-strategy-ai-regulatory-framework
+  - bsi-kuenstliche-intelligenz
+status: ai-draft
+sources:
+  - title: "Machine learning"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Machine_learning
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Maschinelles Lernen"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Maschinelles_Lernen
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "AI Act (regulatory framework for AI)"
+    author: "European Commission"
+    url: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+    license: free-access
+    licenseUrl: https://commission.europa.eu/legal-notice_en
+    usage: cited
+  - title: "Künstliche Intelligenz – wir bringen Ihnen die Technologie näher"
+    author: "Bundesamt für Sicherheit in der Informationstechnik (BSI)"
+    url: https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Technologien_sicher_gestalten/Kuenstliche-Intelligenz/kuenstliche-intelligenz_node.html
+    license: free-access
+    licenseUrl: https://www.bsi.bund.de/DE/Service/Impressum/impressum_node.html
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Auf dem Niveau Fortgeschritten liest du ein Modellergebnis und entscheidest, ob man ihm trauen kann. Die Mathematik hinter jedem Verfahren brauchst du nicht. Du musst aber die richtigen Fragen zu Bewertung, Daten und betroffenen Menschen stellen.
+
+## Kennzahlen auf Konzeptebene
+
+Bei einem Modell, das Ja oder Nein vorhersagt, etwa "kündigt diese Kundin oder dieser Kunde", zählst du auf den Testdaten vier Ausgänge: richtig Positive, falsch Positive, richtig Negative und falsch Negative.
+
+- Genauigkeit (Accuracy): der Anteil aller Vorhersagen, die richtig waren.
+- Präzision: Von den Fällen, die das Modell als Ja markiert hat, wie viele wirklich Ja waren.
+- Trefferquote (Recall): Von den Fällen, die wirklich Ja waren, wie viele das Modell gefunden hat.
+
+Genauigkeit kann täuschen, wenn eine Klasse selten ist. Kündigen nur wenige von hundert Kundinnen und Kunden, liegt ein Modell, das immer "bleibt" vorhersagt, meistens richtig und findet trotzdem niemanden. Welche Kennzahl zählt, hängt von den Kosten der Fehler ab: einen Fall zu übersehen oder Fehlalarm auszulösen.
+
+## Vergleichsbasis und Datenleck
+
+Vergleiche jedes Modell mit einer einfachen Vergleichsbasis, zum Beispiel "immer den häufigsten Ausgang vorhersagen" oder dem Wert des Vormonats. Ein Modell, das die Basis kaum schlägt, ist selten seine Komplexität wert.
+
+Ein Datenleck (Data Leakage) liegt vor, wenn Informationen in das Training gelangen, die dort nicht hingehören. Beispiele: ein Merkmal, das erst nach dem Ausgang bekannt ist, etwa der Kündigungsgrund zur Vorhersage der Kündigung, oder Testfälle, die auch in den Trainingsdaten vorkommen. Ein Datenleck erzeugt hervorragende Testergebnisse, die im echten Einsatz verschwinden.
+
+## Verzerrung und Fairness
+
+Modelle lernen aus vergangenen Daten. Enthält die Vergangenheit Ungleichbehandlung, Lücken bei der Repräsentation oder Labels, die menschliche Urteile abbilden, kann das Modell sie wiederholen oder verstärken. Eine sensible Spalte zu entfernen löst das nicht automatisch, denn andere Spalten, etwa die Postleitzahl, können als Ersatz dienen. Erste Fragen: Wer ist in den Daten und wer fehlt? Was misst das Label wirklich? Macht das Modell bei verschiedenen Gruppen unterschiedliche Fehler? Wen trifft eine falsche Entscheidung, und gibt es eine menschliche Überprüfung?
+
+## KI-Assistenten mit menschlicher Prüfung
+
+KI-Assistenten beschleunigen Routinearbeit: SQL entwerfen, Code erklären, Formulierungen für ein Diagramm vorschlagen. Sie können aber auch Spaltennamen erfinden, deine Frage falsch verstehen oder plausible, aber falsche Zahlen liefern. Ein praktisches Vorgehen:
+
+- Gib dem Werkzeug nur Daten, die deine Organisation erlaubt; nutze nach Möglichkeit synthetische oder aggregierte Beispiele.
+- Führe erzeugten Code an einer kleinen Stichprobe aus und vergleiche mit einer bekannten Zahl.
+- Prüfe Annahmen, Joins und Filter selbst.
+- Halte fest, dass KI genutzt wurde und wer das Ergebnis geprüft hat.
+
+## Die EU-KI-Verordnung als Thema
+
+Die EU hat eine Verordnung über künstliche Intelligenz, die EU-KI-Verordnung (AI Act). Auf Themenebene verfolgt sie einen risikobasierten Ansatz: Je stärker ein System Rechte und Sicherheit von Menschen beeinflussen kann, desto strenger die Anforderungen. Wenn dein Team KI entwickelt oder einkauft, die Entscheidungen über Menschen beeinflusst, beziehe früh die Rechtsabteilung oder Compliance ein. Diese Einheit ist Orientierung, keine Rechtsberatung.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundenes Szenario. Ein Modell markiert Kundschaft mit Kündigungsrisiko. Der Bericht nennt 95 Prozent Genauigkeit. Dir fällt auf, dass nur etwa 5 Prozent kündigen, "niemand kündigt" würde also auch 95 Prozent erreichen. Du fragst nach Präzision und Trefferquote für die kündigende Gruppe und erfährst, dass die Trefferquote niedrig ist. Außerdem ist "Halteanruf erfolgt" ein Merkmal, das erst bekannt ist, nachdem das Risiko erkannt wurde: ein Datenleck. Nach dem Entfernen und dem Vergleich mit einer Vergleichsbasis fällt das Ergebnis bescheidener, aber ehrlich aus. Eine Kollegin schlägt vor, den Zusammenfassungstext von einem KI-Assistenten schreiben zu lassen; du lässt ihn entwerfen und prüfst jede Zahl gegen die Ausgabe, bevor der Text rausgeht.
+
+## Das Wichtigste in Kürze
+
+- Genauigkeit verdeckt schwache Ergebnisse bei seltenen Klassen; prüfe Präzision und Trefferquote für die wichtige Gruppe.
+- Vergleiche immer mit einer Vergleichsbasis und achte auf Datenlecks.
+- Verzerrung entsteht in Daten und Labels; eine Spalte zu streichen beseitigt sie nicht.
+- Prüfe die Ausgabe von KI-Assistenten selbst und beziehe Recht oder Compliance ein, wenn KI Entscheidungen über Menschen beeinflusst.

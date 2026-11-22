@@ -143,7 +143,7 @@ Help customers well: listen and communicate with empathy, understand and solve p
 | Self-organisation and project basics | core | 3 | F | P | P | — |
 | Working with data | core | 3 | F | F | P | digital-ai-literacy |
 
-## Data & Analytics (`data-analytics`, role, draft)
+## Data & Analytics (`data-analytics`, role, published)
 
 Turn data into decisions: understand the analytics lifecycle, source and collect data, ensure data quality, query data with SQL, apply statistics, visualise results in dashboards, build business intelligence reports, frame problems and tell data stories, handle data responsibly under EU and German privacy rules, and understand machine learning basics.
 
