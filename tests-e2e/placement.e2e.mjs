@@ -140,6 +140,7 @@ async function run(browser, lang) {
   await page.keyboard.press('Enter');
   await page.waitForURL(`**${prefix}/dashboard`);
   await page.waitForSelector('main h1');
+  await page.waitForSelector('#comp-title ~ ul'); // dashboard content is rendered by the island after hydration
   const dash = await page.locator('main').innerText();
   check(dash.length > 100, `${tag} dashboard reachable and rendered`);
   check(!(de ? EN_ONLY : DE_ONLY).some((s) => dash.includes(s)), `${tag} no foreign strings on dashboard`);
