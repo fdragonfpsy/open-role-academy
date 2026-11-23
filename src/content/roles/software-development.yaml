@@ -1,0 +1,62 @@
+id: software-development
+kind: role
+status: draft
+title:
+  en: Software Development
+  de: Softwareentwicklung
+summary:
+  en: >-
+    Build and ship reliable software: solve problems in code, collaborate with version control, design maintainable structures, test and debug, connect systems through APIs, model and store data, write secure code, automate delivery with CI/CD, and work in agile teams with requirements and code review.
+  de: >-
+    Zuverlässige Software entwickeln und ausliefern: Probleme in Code lösen, mit Versionsverwaltung zusammenarbeiten, wartbare Strukturen entwerfen, testen und Fehler suchen, Systeme über APIs verbinden, Daten modellieren und speichern, sicheren Code schreiben, die Auslieferung mit CI/CD automatisieren und in agilen Teams mit Anforderungen und Code-Review arbeiten.
+competencies:
+  # role-specific
+  - id: programming-fundamentals-problem-solving
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: version-control-collaboration
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: software-design-architecture-basics
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: software-testing-quality
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: software-debugging
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: apis-integration
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: databases-data-modelling-basics
+    priority: 2
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  - id: secure-coding-basics
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: ci-cd-devops-basics
+    priority: 2
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  - id: agile-delivery-code-review
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  # core track
+  - id: information-security-basics
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: digital-ai-literacy
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: communication-collaboration
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: working-with-data
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: self-organisation-project-basics
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: business-finance-fundamentals
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }

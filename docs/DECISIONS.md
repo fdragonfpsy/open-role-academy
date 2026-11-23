@@ -231,3 +231,8 @@ Format: date — decision — reason — alternatives considered.
 - Decision: `ci.yml` e2e job runs `npm install --no-save playwright@1.49.1` instead of adding it as a dependency.
 - Reason: keeps the lockfile/deps lean (CLAUDE.md §3); the suite already requires it only at test time.
 - Alternatives: devDependency (heavier install for every job); Playwright test runner (rewrite of existing scripts).
+
+## 2026-11-23 — Software Development framework: 10 competencies, draft status
+- Decision: Software Development role added as `status: draft` with 10 role competencies (programming fundamentals and problem solving, version control and collaboration, software design and architecture basics, testing and quality, debugging, APIs and integration, databases and data modelling basics, secure coding basics, CI/CD and DevOps basics, requirements/agile delivery/code review) plus the 6 core-track competencies. Existing ids reused as prerequisites (`digital-ai-literacy`, `sql-data-querying`, `information-security-basics`, `communication-collaboration`). ESCO refs were looked up via the ESCO search API (URI and preferred label as returned); no DigComp refs; no proprietary framework text. Prerequisites are acyclic. CI/CD and databases start at practitioner-level targets for foundation = none, like other niche competencies.
+- Reason: same pattern as Data & Analytics and Procurement; draft keeps coverage unenforced and the role hidden until content exists.
+- Alternatives: language-specific competencies (too narrow for a basic role), publishing early (fails coverage validation).

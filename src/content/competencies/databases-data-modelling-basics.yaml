@@ -1,0 +1,18 @@
+id: databases-data-modelling-basics
+title:
+  en: Databases and data modelling basics
+  de: Grundlagen von Datenbanken und Datenmodellierung
+description:
+  en: >-
+    Store and retrieve application data reliably: relational and NoSQL databases, modelling entities and relationships, keys and indexes, transactions, and using a database from application code.
+  de: >-
+    Anwendungsdaten zuverlässig speichern und abrufen: relationale und NoSQL-Datenbanken, Modellierung von Entitäten und Beziehungen, Schlüssel und Indizes, Transaktionen und die Nutzung einer Datenbank aus dem Anwendungscode.
+prerequisites: [sql-data-querying]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576
+    label: database
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/76ef6ed3-1658-4a1a-9593-204d799c6d0c
+    label: NoSQL

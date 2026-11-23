@@ -1,0 +1,18 @@
+id: programming-fundamentals-problem-solving
+title:
+  en: Programming fundamentals and problem solving
+  de: Programmiergrundlagen und Problemlösen
+description:
+  en: >-
+    Break problems into steps and express them in code: variables, data types, control flow, functions, basic data structures and algorithms, readable code and coding conventions.
+  de: >-
+    Probleme in Schritte zerlegen und in Code ausdrücken: Variablen, Datentypen, Kontrollfluss, Funktionen, grundlegende Datenstrukturen und Algorithmen, lesbarer Code und Programmierkonventionen.
+prerequisites: [digital-ai-literacy]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/69bbd53f-fbb0-4476-b4b2-ef7844464e28
+    label: web programming
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/4b88b1ee-c2d9-473a-9fe8-ba3b9c0c179a
+    label: implement ICT coding conventions

@@ -1,5 +1,12 @@
 # Status
 
+## 2026-11-23 — Software Development framework
+
+**Done**
+- Role `software-development` (status `draft`): 10 role-specific competencies + 6 core, en/de texts, ESCO refs (looked up via ESCO API).
+
+**Next:** Software Development content batches 1-3, then publish and quality pass.
+
 ## 2026-11-22 (f) — Data & Analytics complete and published; run summary
 
 **Done**

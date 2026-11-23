@@ -1,0 +1,18 @@
+id: software-testing-quality
+title:
+  en: Software testing and quality
+  de: Softwaretests und Qualitätssicherung
+description:
+  en: >-
+    Verify that software works as intended: test levels, unit and integration tests, test design, test automation, coverage and maintainability as quality attributes.
+  de: >-
+    Prüfen, ob Software wie vorgesehen funktioniert: Teststufen, Unit- und Integrationstests, Testentwurf, Testautomatisierung, Testabdeckung und Wartbarkeit als Qualitätsmerkmale.
+prerequisites: [programming-fundamentals-problem-solving]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/85f46538-ae70-498a-bfbc-b8ddafe96c7d
+    label: levels of software testing
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/7961413f-61d0-4722-9cd9-20a050a29899
+    label: perform software unit testing

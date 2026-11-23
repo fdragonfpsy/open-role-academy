@@ -1,0 +1,21 @@
+id: agile-delivery-code-review
+title:
+  en: Requirements, agile delivery and code review
+  de: Anforderungen, agile Umsetzung und Code-Review
+description:
+  en: >-
+    Turn needs into working software in small steps: user stories and acceptance criteria, backlog refinement, iterations, estimation, reviewing teammates' code constructively and incorporating feedback.
+  de: >-
+    Bedarfe in kleinen Schritten zu funktionierender Software machen: User Stories und Akzeptanzkriterien, Backlog-Pflege, Iterationen, Schätzung, konstruktives Review des Codes anderer und Umgang mit Feedback.
+prerequisites: [communication-collaboration, version-control-collaboration]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/f28617ad-afdd-4041-814c-216153a38998
+    label: analyse software specifications
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/9d1b08b3-ba1e-41f6-a466-1ac1e62eb5f0
+    label: conduct ICT code review
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/0a9acb6b-1139-4be9-b431-3a80a959f2f4
+    label: Agile project management

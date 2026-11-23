@@ -1,0 +1,15 @@
+id: version-control-collaboration
+title:
+  en: Version control and collaboration
+  de: Versionsverwaltung und Zusammenarbeit
+description:
+  en: >-
+    Track and share changes with version control: commits, branches, merging, resolving conflicts, pull or merge requests, and team workflows for working on shared code.
+  de: >-
+    Änderungen mit Versionsverwaltung nachverfolgen und teilen: Commits, Branches, Zusammenführen, Konflikte lösen, Pull bzw. Merge Requests und Teamabläufe für die Arbeit an gemeinsamem Code.
+prerequisites: [programming-fundamentals-problem-solving]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/9d2e926f-53d9-41f5-98f3-19dfaa687f3f
+    label: tools for software configuration management
