@@ -1,0 +1,18 @@
+id: software-debugging
+title:
+  en: Debugging and troubleshooting code
+  de: Fehlersuche und Debugging im Code
+description:
+  en: >-
+    Find and fix defects systematically: reproducing problems, reading error messages and logs, using a debugger, isolating causes, and verifying and documenting fixes.
+  de: >-
+    Fehler systematisch finden und beheben: Probleme reproduzieren, Fehlermeldungen und Logs lesen, einen Debugger nutzen, Ursachen eingrenzen sowie Korrekturen prüfen und dokumentieren.
+prerequisites: [programming-fundamentals-problem-solving]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/2522a6ce-3202-4ac8-9f5b-b9cb5a3a83a1
+    label: debug software
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/6014921e-1d25-4039-adc2-04852d61880e
+    label: ICT debugging tools

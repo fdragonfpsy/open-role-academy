@@ -1,0 +1,15 @@
+id: ci-cd-devops-basics
+title:
+  en: CI/CD and DevOps basics
+  de: Grundlagen von CI/CD und DevOps
+description:
+  en: >-
+    Automate building, testing and releasing software: continuous integration and delivery pipelines, environments, configuration, deployment strategies, monitoring and shared responsibility between development and operations.
+  de: >-
+    Bauen, Testen und Ausliefern von Software automatisieren: Pipelines für kontinuierliche Integration und Auslieferung, Umgebungen, Konfiguration, Deployment-Strategien, Monitoring und gemeinsame Verantwortung von Entwicklung und Betrieb.
+prerequisites: [version-control-collaboration, software-testing-quality]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/f0de4973-0a70-4644-8fd4-3a97080476f4
+    label: DevOps

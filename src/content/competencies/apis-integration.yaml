@@ -1,0 +1,18 @@
+id: apis-integration
+title:
+  en: APIs and system integration
+  de: APIs und Systemintegration
+description:
+  en: >-
+    Connect software components and services through interfaces: how APIs work, HTTP and web APIs, data formats such as JSON, authentication basics, error handling, versioning and documentation.
+  de: >-
+    Softwarekomponenten und Dienste über Schnittstellen verbinden: Funktionsweise von APIs, HTTP und Web-APIs, Datenformate wie JSON, Grundlagen der Authentifizierung, Fehlerbehandlung, Versionierung und Dokumentation.
+prerequisites: [software-design-architecture-basics]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/b0096dc5-2e2d-4bc1-8172-05bf486c3968
+    label: design application interfaces
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/8b94aa1e-89c9-459d-b3b4-1dfab8dec2df
+    label: use software libraries

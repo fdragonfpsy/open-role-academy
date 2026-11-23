@@ -1,0 +1,18 @@
+id: software-design-architecture-basics
+title:
+  en: Software design and architecture basics
+  de: Grundlagen von Softwareentwurf und -architektur
+description:
+  en: >-
+    Structure software so it stays understandable and changeable: modularity, separation of concerns, common design patterns, layers and components, and recording design decisions.
+  de: >-
+    Software so strukturieren, dass sie verständlich und änderbar bleibt: Modularität, Trennung von Zuständigkeiten, gängige Entwurfsmuster, Schichten und Komponenten sowie das Festhalten von Entwurfsentscheidungen.
+prerequisites: [programming-fundamentals-problem-solving]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/2b7a79e5-84d8-4880-be66-3d9bb05bea17
+    label: use software design patterns
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/f7e2eb04-3e50-4561-bce1-7e51a1fec308
+    label: define software architecture

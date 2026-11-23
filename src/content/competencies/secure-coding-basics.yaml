@@ -1,0 +1,18 @@
+id: secure-coding-basics
+title:
+  en: Secure coding basics
+  de: Grundlagen der sicheren Softwareentwicklung
+description:
+  en: >-
+    Write software that resists common attacks: input validation, injection and cross-site scripting, authentication and secrets handling, dependency risks, least privilege and security testing.
+  de: >-
+    Software schreiben, die gängigen Angriffen standhält: Eingabevalidierung, Injection und Cross-Site-Scripting, Authentifizierung und Umgang mit Geheimnissen, Risiken durch Abhängigkeiten, minimale Rechte und Sicherheitstests.
+prerequisites: [information-security-basics, programming-fundamentals-problem-solving]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/902fb91c-3113-4004-9b4f-79aa86b638b7
+    label: web application security threats
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/f4a85869-1855-45d5-a43c-7ee8cd451996
+    label: perform security vulnerability assessments
