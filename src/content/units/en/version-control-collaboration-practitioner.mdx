@@ -1,0 +1,89 @@
+---
+id: version-control-collaboration-practitioner
+competency: version-control-collaboration
+level: practitioner
+title: "Branching, merging and resolving conflicts"
+objectives:
+  - "Merge a branch and explain the difference between merge and rebase at a basic level."
+  - "Resolve a merge conflict step by step."
+  - "Open a pull request that is easy to review."
+  - "Keep your branch up to date with the main line."
+minutes: 30
+resources:
+  - wikipedia-branching-version-control
+  - wikipedia-merge-version-control
+  - wikipedia-pull-request
+  - wikipedia-de-versionsverwaltung
+  - wikibooks-git
+status: ai-draft
+sources:
+  - title: "Branching (version control)"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Branching_(version_control)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Merge (version control)"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Merge_(version_control)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Pull request"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Pull_request
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Versionsverwaltung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Versionsverwaltung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Git"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Git
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+As soon as two people change the same project, their work has to be combined. Knowing how merging works and how to resolve conflicts calmly keeps a team moving and keeps the history understandable.
+
+## Merging
+
+The Wikipedia article on merging describes it as combining changes made by different people or on different branches. When the changes touch different places, the version control system can usually combine them automatically. Two common ways to bring a branch back:
+
+- **Merge**: joins two lines of history and records that they were joined. The history shows what really happened, including the branch.
+- **Rebase**: replays your commits on top of the latest main line, giving a straight history. It rewrites your commits, so do not rebase commits that others already use.
+
+Many teams choose one convention and document it.
+
+## Conflicts
+
+A conflict occurs when two changes touch the same lines and the system cannot decide which to keep. It marks the conflicting area in the file. To resolve it:
+
+1. Read both versions and understand what each person intended.
+2. Write the correct combined result; it may be one side, the other or a mix.
+3. Remove the conflict markers, build and run the tests.
+4. Commit the resolution with a clear message.
+
+If you do not understand the other change, ask its author. Frequent small merges reduce conflicts more than any tool does.
+
+## Pull requests
+
+A pull request (or merge request) proposes that your branch is merged and gives others a place to review and discuss it. Make it easy to review: keep it small, describe what and why, link the related task and make sure the checks pass before you ask for review.
+
+## Worked example
+
+Illustration only; invented project. You and a colleague both changed the same message text in a configuration file. After you pull the latest main line, the system reports a conflict and shows your wording and hers between markers. You talk to her and learn that her change fixes a spelling error, while yours adds a new word. You write a result that has both: the corrected spelling and your new word. You remove the markers, run the tests and commit with the message "Merge main, keep spelling fix and new wording". Then you push and update the pull request.
+
+## Key takeaways
+
+- Merging combines work from different branches; rebasing replays commits on top of the main line.
+- Conflicts need human judgement: understand both changes, then write the right result.
+- Small, frequent integration produces fewer conflicts.
+- A good pull request is small, explained and checked before review.

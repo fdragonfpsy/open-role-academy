@@ -1,0 +1,92 @@
+---
+id: programming-fundamentals-problem-solving-foundation
+competency: programming-fundamentals-problem-solving
+level: foundation
+title: "Thinking like a programmer: steps, decisions, repetition"
+objectives:
+  - "Describe a program as a precise sequence of steps that works on data."
+  - "Use variables, conditions and loops to express a simple solution."
+  - "Write a solution as pseudocode before coding it."
+  - "Test a small program with typical and edge-case inputs."
+minutes: 25
+resources:
+  - wikipedia-computer-programming
+  - wikipedia-de-programmierung
+  - wikipedia-pseudocode
+  - wikibooks-python-programming
+  - wikibooks-de-regal-programmierung
+status: ai-draft
+sources:
+  - title: "Computer programming"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Computer_programming
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Programmierung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Programmierung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Pseudocode"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Pseudocode
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Python Programming"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Python_Programming
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Regal: Programmierung (Wikibooks)"
+    author: "Wikibooks-Autorinnen und -Autoren"
+    url: https://de.wikibooks.org/wiki/Regal:Programmierung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+Every task in software development starts the same way: you turn a vague wish into exact steps that a computer can follow. Languages and tools change, but this way of thinking stays. If you can describe a problem as clear steps, you can learn any language faster.
+
+## The basic building blocks
+
+The Wikipedia article on computer programming describes programming as designing and writing instructions that a computer executes. Almost every program combines a few building blocks:
+
+- **Variables** store values under a name, such as a price or a user name. Each value has a type, for example number or text.
+- **Conditions** choose between paths: if the stock is empty, show "sold out", otherwise show the price.
+- **Loops** repeat steps, for example for every row of a table.
+- **Functions** give a group of steps a name so that you can reuse it.
+
+## Solve first, then code
+
+An algorithm is a finite list of well-defined steps that solves a problem. Before you write code, write the steps in plain words or in pseudocode, a structured description that is not tied to one language. Ask yourself:
+
+1. What goes in (input) and what should come out (output)?
+2. What are the steps in between?
+3. What could go wrong: empty input, a negative number, text instead of a number?
+
+## Test while you build
+
+Run the smallest possible version first. Try a typical input, then edge cases such as zero, an empty list or a very large value. Change one thing at a time so that you know what caused a change in the result. Reading error messages from top to bottom is a skill of its own: they usually name the line and the kind of problem.
+
+## Worked example
+
+Illustration only; invented numbers. Task: find the highest of a list of test scores. Pseudocode:
+
+1. Set `best` to the first score.
+2. For each remaining score: if it is higher than `best`, set `best` to it.
+3. Output `best`.
+
+Test with the scores 12, 7, 19, 4: `best` starts at 12, stays 12 after 7, becomes 19, stays 19 after 4. Edge cases: a list with one score returns that score; an empty list has no first score, so the program must decide what to do, for example report an error.
+
+## Key takeaways
+
+- A program is a precise sequence of steps working on data.
+- Variables, conditions, loops and functions are the core building blocks.
+- Write the steps as pseudocode first, then translate them into code.
+- Test with typical values and edge cases, and change one thing at a time.

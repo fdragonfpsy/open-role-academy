@@ -1,0 +1,84 @@
+---
+id: programming-fundamentals-problem-solving-practitioner
+competency: programming-fundamentals-problem-solving
+level: practitioner
+title: "Probleme zerlegen und Datenstrukturen wählen"
+objectives:
+  - "Ein größeres Problem in kleinere Funktionen mit klaren Ein- und Ausgaben zerlegen."
+  - "Zwischen gängigen Datenstrukturen danach wählen, wie die Daten genutzt werden."
+  - "Lesbaren Code mit sprechenden Namen und kleinen Funktionen schreiben."
+  - "Ungültige Eingaben und Fehler bewusst behandeln."
+minutes: 30
+resources:
+  - wikipedia-data-structure
+  - wikipedia-de-datenstruktur
+  - wikipedia-algorithm
+  - wikipedia-de-algorithmus
+  - wikibooks-python-programming
+status: ai-draft
+sources:
+  - title: "Data structure"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_structure
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Datenstruktur"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Datenstruktur
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Algorithm"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Algorithm
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Algorithmus"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Algorithmus
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Python Programming"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Python_Programming
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Echte Aufgaben sind zu groß, um sie in einem Stück zu lösen. Entwickelnde verbringen viel Zeit damit, eine Aufgabe in Teile zu zerlegen, eine passende Form für die Daten zu wählen und Code zu schreiben, den Kolleginnen und Kollegen auch nach Monaten noch lesen können.
+
+## Zerlegen
+
+Beginne beim gewünschten Ergebnis und frage, welche kleineren Ergebnisse dorthin führen. Jeder Teil wird eine Funktion mit klarem Namen, definierten Eingaben und einer klaren Ausgabe. Eine Funktion, die eine Sache tut, lässt sich leichter testen, wiederverwenden und ersetzen. Wenn du eine Funktion nicht ohne das Wort „und“ benennen kannst, tut sie wahrscheinlich zwei Dinge.
+
+## Die Datenstruktur nach der Nutzung wählen
+
+Der Wikipedia-Artikel zu Datenstrukturen beschreibt sie als Möglichkeiten, Daten so zu organisieren, dass sie effizient genutzt werden können. Typische Auswahl:
+
+- **Liste oder Array**: geordnete Elemente, Zugriff über die Position. Gut für Folgen, die du durchläufst.
+- **Dictionary (Map)**: Werte, die über einen Schlüssel gefunden werden, etwa eine Kundennummer. Gut, wenn du nach Namen oder Kennungen suchst.
+- **Menge (Set)**: eine Sammlung ohne Duplikate. Gut für die Frage „habe ich das schon gesehen?“.
+- **Warteschlange und Stapel**: Elemente verlassen die Struktur nach dem Prinzip „zuerst hinein, zuerst heraus“ beziehungsweise „zuletzt hinein, zuerst heraus“.
+
+Frage zuerst, wie du die Daten nutzt: nach Schlüssel suchen, eine Reihenfolge halten, Duplikate vermeiden? Die Antwort weist meist auf die Struktur.
+
+## Lesbarer Code und bewusste Fehlerbehandlung
+
+Wähle Namen, die sagen, was etwas bedeutet (`order_total` statt `x`). Halte Funktionen kurz. Lege fest, was bei ungültiger Eingabe passiert: mit klarer Meldung ablehnen, einen dokumentierten Standardwert nehmen oder abbrechen. Stille Fehler sind später am schwersten zu finden.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundene Daten. Aufgabe: zählen, wie oft jedes Produkt in einer Liste von Bestellzeilen vorkommt. Zerlegung: (1) Zeilen einlesen, (2) je Produkt zählen, (3) das Ergebnis sortiert ausgeben. Für Schritt 2 passt ein Dictionary mit dem Produktnamen als Schlüssel und der Anzahl als Wert. Für jede Zeile erhöhst du die Anzahl ihres Produkts um eins; ist das Produkt neu, beginnst du bei eins. Weil der Zugriff über den Schlüssel erfolgt, bleibt der Code kurz und muss nicht für jede Zeile die ganze Liste durchsuchen. Ungültige Zeilen, etwa mit leerem Produktnamen, werden übersprungen und gemeldet, nicht stillschweigend mitgezählt.
+
+## Das Wichtigste in Kürze
+
+- Zerlege große Probleme in kleine Funktionen mit klaren Ein- und Ausgaben.
+- Wähle die Datenstruktur danach, wie du auf die Daten zugreifst.
+- Gute Namen und kurze Funktionen machen Code für andere lesbar.
+- Lege bewusst fest, wie mit ungültigen Eingaben und Fehlern umgegangen wird.

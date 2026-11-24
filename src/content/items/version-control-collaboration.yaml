@@ -1,0 +1,221 @@
+competency: version-control-collaboration
+items:
+- id: vcc-f-commit
+  level: foundation
+  difficulty: 850
+  type: single
+  stem:
+    en: What is a commit in version control?
+    de: Was ist ein Commit in der Versionsverwaltung?
+  options:
+  - en: A saved snapshot of changes with a message, author and time
+    de: Ein gespeicherter Zwischenstand von Änderungen mit Nachricht, Autor und Zeit
+    correct: true
+  - en: A server that stores the passwords of all people who work on the project
+    de: Ein Server, der die Passwörter aller Personen speichert, die am Projekt arbeiten
+    correct: false
+  - en: A rule that blocks every person from changing the main line of a project
+    de: Eine Regel, die jeder Person verbietet, die Hauptlinie eines Projekts zu ändern
+    correct: false
+  - en: A tool that translates the source code into a program that users can run
+    de: Ein Werkzeug, das den Quellcode in ein Programm übersetzt, das Nutzende ausführen können
+    correct: false
+  explanation:
+    en: A commit records a set of changes together with a message, author and time, which builds the history. It is not password storage, a blocking rule or a compiler.
+    de: Ein Commit hält eine Menge von Änderungen mit Nachricht, Autorin oder Autor und Zeit fest und baut so den Verlauf auf. Er ist weder Passwortspeicher noch Sperrregel noch Compiler.
+  source: https://en.wikipedia.org/wiki/Version_control
+- id: vcc-f-branch
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: Why do you usually work on a branch for a new change?
+    de: Warum arbeitest du für eine neue Änderung meist auf einem Branch?
+  options:
+  - en: To work without disturbing the stable main line until the change is ready
+    de: Um zu arbeiten, ohne die stabile Hauptlinie zu stören, bis die Änderung fertig ist
+    correct: true
+  - en: To make the project files smaller so that they use less space on the disk
+    de: Um die Projektdateien zu verkleinern, damit sie weniger Platz auf der Festplatte belegen
+    correct: false
+  - en: To hide your work from your colleagues so that nobody can ever review it
+    de: Um deine Arbeit vor Kolleginnen und Kollegen zu verbergen, damit sie nie jemand prüfen kann
+    correct: false
+  - en: To delete the history of earlier changes so that the project starts fresh
+    de: Um den Verlauf früherer Änderungen zu löschen, damit das Projekt neu beginnt
+    correct: false
+  explanation:
+    en: A branch is a separate line of development, so the main line stays stable. It does not shrink files, hide work from review or delete history.
+    de: Ein Branch ist eine eigene Entwicklungslinie, sodass die Hauptlinie stabil bleibt. Er verkleinert keine Dateien, verbirgt keine Arbeit vor dem Review und löscht keinen Verlauf.
+  source: https://en.wikipedia.org/wiki/Branching_(version_control)
+- id: vcc-f-msg
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: Which commit message is most helpful for the team?
+    de: Welche Commit-Nachricht hilft dem Team am meisten?
+  options:
+  - en: Reject empty user name in signup form
+    de: Leeren Benutzernamen im Anmeldeformular ablehnen
+    correct: true
+  - en: changes
+    de: Änderungen
+    correct: false
+  - en: Fixed some stuff and also did the other things that I talked about earlier today
+    de: Einiges repariert und auch die anderen Dinge erledigt, über die ich heute früh gesprochen habe
+    correct: false
+  - en: asdf
+    de: asdf
+    correct: false
+  explanation:
+    en: A good message says what changed and, if needed, why. Vague messages such as "changes" or "asdf" give nobody a clue later, and a long vague message is no better.
+    de: Eine gute Nachricht sagt, was sich geändert hat und bei Bedarf warum. Vage Nachrichten wie „Änderungen“ oder „asdf“ geben später niemandem einen Hinweis, und eine lange vage Nachricht ist nicht besser.
+  source: https://en.wikipedia.org/wiki/Version_control
+- id: vcc-p-conflict
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: When does a merge conflict occur?
+    de: Wann entsteht ein Merge-Konflikt?
+  options:
+  - en: Two changes touch the same lines and the system cannot decide which to keep
+    de: Zwei Änderungen betreffen dieselben Zeilen, und das System kann nicht entscheiden, welche bleibt
+    correct: true
+  - en: A branch has been open for longer than one day, whatever it contains
+    de: Ein Branch ist länger als einen Tag offen, egal was er enthält
+    correct: false
+  - en: A commit message is longer than the lines of code that were changed
+    de: Eine Commit-Nachricht ist länger als die geänderten Codezeilen
+    correct: false
+  - en: A person has made more commits than the other people on the same team
+    de: Eine Person hat mehr Commits gemacht als die anderen Personen im selben Team
+    correct: false
+  explanation:
+    en: A conflict arises when changes overlap in a way that cannot be combined automatically. Branch age, message length and commit counts do not cause it.
+    de: Ein Konflikt entsteht, wenn sich Änderungen so überschneiden, dass sie nicht automatisch kombiniert werden können. Alter des Branches, Länge der Nachricht und Zahl der Commits verursachen ihn nicht.
+  source: https://en.wikipedia.org/wiki/Merge_(version_control)
+- id: vcc-p-resolve
+  level: practitioner
+  difficulty: 1300
+  type: multi
+  stem:
+    en: Which steps belong in resolving a merge conflict well? Select all that apply.
+    de: Welche Schritte gehören zu einer guten Lösung eines Merge-Konflikts? Wähle alle zutreffenden aus.
+  options:
+  - en: Read both versions and understand what each change intended
+    de: Beide Versionen lesen und verstehen, was jede Änderung beabsichtigt
+    correct: true
+  - en: Remove the conflict markers and run the tests
+    de: Die Konfliktmarkierungen entfernen und die Tests ausführen
+    correct: true
+  - en: Ask the author of the other change when it is unclear
+    de: Die Autorin oder den Autor der anderen Änderung fragen, wenn es unklar ist
+    correct: true
+  - en: Always keep your own version and discard the other one
+    de: Immer die eigene Version behalten und die andere verwerfen
+    correct: false
+  - en: Commit the file with the markers still inside to fix it later
+    de: Die Datei mit den Markierungen committen, um sie später zu beheben
+    correct: false
+  explanation:
+    en: A good resolution combines understanding, a tested result and, when needed, a conversation. Always keeping your own version can drop a colleague's fix, and committing markers breaks the file.
+    de: Eine gute Lösung verbindet Verständnis, ein getestetes Ergebnis und bei Bedarf ein Gespräch. Immer die eigene Version zu behalten kann die Korrektur einer Kollegin verwerfen, und Markierungen zu committen macht die Datei kaputt.
+  source: https://en.wikipedia.org/wiki/Merge_(version_control)
+- id: vcc-p-pr
+  level: practitioner
+  difficulty: 1250
+  type: single
+  stem:
+    en: What makes a pull request easy to review?
+    de: Was macht einen Pull Request leicht prüfbar?
+  options:
+  - en: It is small, explains what and why, and its checks already pass
+    de: Er ist klein, erklärt was und warum, und seine Prüfungen bestehen bereits
+    correct: true
+  - en: It bundles every open task of the whole team into one large change set
+    de: Er bündelt alle offenen Aufgaben des ganzen Teams in einem großen Änderungspaket
+    correct: false
+  - en: It has no description so that reviewers form their own opinion first
+    de: Er hat keine Beschreibung, damit sich Prüfende zuerst eine eigene Meinung bilden
+    correct: false
+  - en: It is opened before the code builds so that others can find the errors
+    de: Er wird geöffnet, bevor der Code baut, damit andere die Fehler finden
+    correct: false
+  explanation:
+    en: Reviewers work best with a small change, a clear description and passing checks. Huge bundles, missing descriptions and a broken build waste their time.
+    de: Prüfende arbeiten am besten mit einer kleinen Änderung, einer klaren Beschreibung und bestandenen Prüfungen. Riesige Bündel, fehlende Beschreibungen und ein kaputter Build verschwenden ihre Zeit.
+  source: https://en.wikipedia.org/wiki/Pull_request
+- id: vcc-a-trunk
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: Which statement describes trunk-based development best?
+    de: Welche Aussage beschreibt Trunk-based Development am besten?
+  options:
+  - en: Developers integrate small changes into one shared main line often
+    de: Entwickelnde integrieren oft kleine Änderungen in eine gemeinsame Hauptlinie
+    correct: true
+  - en: Every developer keeps a separate branch for months and merges once a year
+    de: Jede entwickelnde Person hält monatelang einen eigenen Branch und führt ihn einmal im Jahr zusammen
+    correct: false
+  - en: Only one person may change the code, and all others must send requests
+    de: Nur eine Person darf den Code ändern, alle anderen müssen Anfragen senden
+    correct: false
+  - en: The history is deleted regularly so that the repository stays very small
+    de: Der Verlauf wird regelmäßig gelöscht, damit das Repository sehr klein bleibt
+    correct: false
+  explanation:
+    en: Trunk-based development relies on frequent integration of small changes into one main line. Long-lived branches, a single gatekeeper and deleting history are different or unrelated.
+    de: Trunk-based Development setzt auf häufige Integration kleiner Änderungen in eine Hauptlinie. Langlebige Branches, ein einzelner Torwächter und das Löschen des Verlaufs sind etwas anderes oder haben damit nichts zu tun.
+  source: https://en.wikipedia.org/wiki/Trunk-based_development
+- id: vcc-a-secret
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: A developer accidentally committed an API key and pushed it to a shared repository. What should happen first?
+    de: Ein Entwickler hat versehentlich einen API-Schlüssel committet und in ein geteiltes Repository gepusht. Was sollte zuerst geschehen?
+  options:
+  - en: Revoke and replace the key, then clean the history if needed
+    de: Den Schlüssel widerrufen und ersetzen, danach bei Bedarf den Verlauf bereinigen
+    correct: true
+  - en: Delete the file in a new commit and consider the problem solved
+    de: Die Datei in einem neuen Commit löschen und das Problem als erledigt ansehen
+    correct: false
+  - en: Keep the key because nobody outside the team has looked at the repository
+    de: Den Schlüssel behalten, weil niemand außerhalb des Teams das Repository angesehen hat
+    correct: false
+  - en: Rename the branch so that the key can no longer be found by anyone
+    de: Den Branch umbenennen, damit der Schlüssel von niemandem mehr gefunden werden kann
+    correct: false
+  explanation:
+    en: A pushed secret must be treated as exposed because copies may exist, so revoking and replacing it comes first. Deleting the file in a new commit leaves it in the history.
+    de: Ein gepushtes Geheimnis muss als offengelegt gelten, weil Kopien existieren können, daher kommt Widerrufen und Ersetzen zuerst. Die Datei in einem neuen Commit zu löschen lässt sie im Verlauf.
+  source: https://en.wikipedia.org/wiki/Version_control
+- id: vcc-a-revert
+  level: advanced
+  difficulty: 1650
+  type: single
+  stem:
+    en: A faulty change is already on a shared branch that others use. What is the safest way to undo it?
+    de: Eine fehlerhafte Änderung liegt schon auf einem geteilten Branch, den andere nutzen. Was ist der sicherste Weg, sie rückgängig zu machen?
+  options:
+  - en: Add a new commit that reverses the change
+    de: Einen neuen Commit hinzufügen, der die Änderung umkehrt
+    correct: true
+  - en: Rewrite the shared history and force-push it over the existing branch
+    de: Den geteilten Verlauf umschreiben und per Force-Push über den bestehenden Branch legen
+    correct: false
+  - en: Ask everybody to delete their copies and to download the project again
+    de: Alle bitten, ihre Kopien zu löschen und das Projekt neu herunterzuladen
+    correct: false
+  - en: Leave the faulty change in place and hope that nobody notices the problem
+    de: Die fehlerhafte Änderung belassen und hoffen, dass niemand das Problem bemerkt
+    correct: false
+  explanation:
+    en: A revert commit keeps the shared history intact and tells everyone what happened. Rewriting shared history disrupts the work of others.
+    de: Ein Revert-Commit lässt den geteilten Verlauf intakt und zeigt allen, was passiert ist. Geteilten Verlauf umzuschreiben stört die Arbeit anderer.
+  source: https://en.wikipedia.org/wiki/Git

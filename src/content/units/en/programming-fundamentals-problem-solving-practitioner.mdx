@@ -1,0 +1,84 @@
+---
+id: programming-fundamentals-problem-solving-practitioner
+competency: programming-fundamentals-problem-solving
+level: practitioner
+title: "Decomposing problems and choosing data structures"
+objectives:
+  - "Break a larger problem into smaller functions with clear inputs and outputs."
+  - "Choose between common data structures based on how the data is used."
+  - "Write readable code with meaningful names and small functions."
+  - "Handle invalid input and errors deliberately."
+minutes: 30
+resources:
+  - wikipedia-data-structure
+  - wikipedia-de-datenstruktur
+  - wikipedia-algorithm
+  - wikipedia-de-algorithmus
+  - wikibooks-python-programming
+status: ai-draft
+sources:
+  - title: "Data structure"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_structure
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Datenstruktur"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Datenstruktur
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Algorithm"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Algorithm
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Algorithmus"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Algorithmus
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Python Programming"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Python_Programming
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+Real tasks are too big to solve in one piece. Working developers spend much of their time splitting a task into parts, picking a fitting way to hold the data and writing code that colleagues can read months later.
+
+## Decompose
+
+Start with the result you need and ask which smaller results lead to it. Each part becomes a function with a clear name, defined inputs and one clear output. A function that does one thing is easier to test, reuse and replace. If you struggle to name a function without the word "and", it probably does two things.
+
+## Pick a data structure for how you use the data
+
+The Wikipedia article on data structures describes them as ways of organising data so that it can be used efficiently. Typical choices:
+
+- **List or array**: ordered items, access by position. Good for sequences you walk through.
+- **Dictionary (map)**: values looked up by a key, such as a customer number. Good when you search by name or identifier.
+- **Set**: a collection without duplicates. Good for "have I seen this before?".
+- **Queue and stack**: items leave in the order first-in-first-out or last-in-first-out.
+
+Ask first how you will use the data: look up by key, keep an order, avoid duplicates? The answer usually points to the structure.
+
+## Readable code and deliberate errors
+
+Use names that say what a thing means (`order_total`, not `x`). Keep functions short. Decide what happens with invalid input: reject it with a clear message, use a documented default, or stop. Silent failures are the hardest to find later.
+
+## Worked example
+
+Illustration only; invented data. Task: count how often each product appears in a list of order lines. Decomposition: (1) read the lines, (2) count per product, (3) print the result sorted. For step 2 a dictionary fits, with the product name as key and the count as value. For each line, add one to the count of its product; if the product is new, start at one. Because lookup is by key, the code stays short and does not need to search the whole list for every line. Invalid lines, such as an empty product name, are skipped and reported, not silently counted.
+
+## Key takeaways
+
+- Split big problems into small functions with clear inputs and outputs.
+- Choose the data structure by how you will access the data.
+- Good names and short functions make code readable for others.
+- Decide deliberately how invalid input and errors are handled.

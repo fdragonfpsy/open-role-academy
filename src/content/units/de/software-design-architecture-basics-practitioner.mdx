@@ -1,0 +1,95 @@
+---
+id: software-design-architecture-basics-practitioner
+competency: software-design-architecture-basics
+level: practitioner
+title: "Schichten, Schnittstellen und Entwurfsprinzipien"
+objectives:
+  - "Eine Schichtenarchitektur und die Regel zu Abhängigkeiten zwischen den Schichten beschreiben."
+  - "Die SOLID-Prinzipien auf Grundniveau anwenden."
+  - "Schnittstellen nutzen, um Teile eines Systems zu entkoppeln und testbar zu machen."
+  - "Erkennen, wann ein Muster oder Prinzip übertrieben angewendet wird."
+minutes: 30
+resources:
+  - wikipedia-de-schichtenarchitektur
+  - wikipedia-solid
+  - wikipedia-de-prinzipien-objektorientierten-designs
+  - wikipedia-de-refactoring
+  - wikibooks-intro-software-engineering-architecture
+status: ai-draft
+sources:
+  - title: "Schichtenarchitektur"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Schichtenarchitektur
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "SOLID"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/SOLID
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Prinzipien objektorientierten Designs"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Prinzipien_objektorientierten_Designs
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Refactoring"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Refactoring
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Introduction to Software Engineering: Architecture"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Introduction_to_Software_Engineering/Architecture
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Wächst eine Codebasis über den Kopf einer einzelnen Person hinaus, entscheidet die Struktur, ob neue Funktionen Stunden oder Wochen dauern. Schichten und einige bekannte Prinzipien geben einem Team ein gemeinsames Vokabular, um sie in Form zu halten.
+
+## Schichten
+
+Der deutsche Wikipedia-Artikel zur Schichtenarchitektur beschreibt ein System, das in Schichten gegliedert ist, wobei jede Schicht der darüberliegenden Dienste anbietet und die darunterliegende nutzt. Eine gängige Aufteilung:
+
+- **Präsentation**: Benutzeroberfläche oder API-Endpunkte.
+- **Geschäftslogik**: die Regeln der Fachdomäne, etwa Preis- und Rabattberechnung.
+- **Datenzugriff**: Lesen und Schreiben der Datenbank oder externer Dienste.
+
+Die Kernregel ist die Richtung der Abhängigkeiten: Obere Schichten nutzen untere, nicht umgekehrt, und Geschäftsregeln sollten nicht von Bildschirmdetails abhängen.
+
+## SOLID-Prinzipien
+
+Der Wikipedia-Artikel zu SOLID nennt fünf Prinzipien für objektorientierten Entwurf:
+
+- **Single Responsibility**: Eine Klasse sollte nur einen Grund zur Änderung haben.
+- **Open-Closed**: offen für Erweiterung, geschlossen für Änderung, sodass du Verhalten ergänzt, ohne getesteten Code umzuschreiben.
+- **Liskov-Substitution**: Ein Untertyp muss überall nutzbar sein, wo sein Basistyp erwartet wird.
+- **Interface Segregation**: mehrere kleine Schnittstellen sind besser als eine große.
+- **Dependency Inversion**: von Abstraktionen abhängen, nicht von konkreten Details.
+
+Verstehe sie als Leitlinien für dein Urteil, nicht als Gesetze. Sie helfen am meisten, wenn du Schmerz bemerkst, etwa eine Klasse, die sich aus vielen verschiedenen Gründen ändert.
+
+## Schnittstellen zur Entkopplung und für Tests
+
+Ruft die Geschäftslogik eine Schnittstelle `PaymentGateway` statt den Code eines bestimmten Anbieters auf, kannst du den Anbieter tauschen und mit einem einfachen Ersatz testen. Das ist Dependency Inversion in der Praxis.
+
+## Refactoring und Zurückhaltung
+
+Refactoring heißt, Code umzustrukturieren, ohne sein beobachtbares Verhalten zu ändern. Gehe in kleinen Schritten vor, mit Tests als Sicherheitsnetz. Baue keine Schichten und Muster „für die Zukunft“, die noch niemand braucht; unnötige Indirektion kostet ebenfalls.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundene App. Eine Berichtsseite führt SQL-Abfragen direkt im Bildschirmcode aus. Für einen CSV-Export müsste das Team die Abfragen kopieren. Es führt eine Datenzugriffsfunktion `load_orders(period)` und eine Geschäftsfunktion `summarise(orders)` ein. Bildschirm und CSV-Export rufen beide diese Funktionen auf. Tests für `summarise` nutzen eine kleine Liste von Bestellungen und keine Datenbank. Ändert sich später die Datenbank, wird nur `load_orders` bearbeitet.
+
+## Das Wichtigste in Kürze
+
+- Schichten trennen Präsentation, Geschäftslogik und Datenzugriff; Abhängigkeiten zeigen nach unten.
+- SOLID liefert fünf Leitlinien, um objektorientierten Code flexibel zu halten.
+- Schnittstellen entkoppeln Teile und machen sie testbar.
+- Refactore in kleinen Schritten und vermeide spekulative Struktur.

@@ -1,0 +1,89 @@
+---
+id: version-control-collaboration-practitioner
+competency: version-control-collaboration
+level: practitioner
+title: "Branching, Zusammenführen und Konflikte lösen"
+objectives:
+  - "Einen Branch zusammenführen und den Unterschied zwischen Merge und Rebase auf Grundniveau erklären."
+  - "Einen Merge-Konflikt Schritt für Schritt lösen."
+  - "Einen Pull Request öffnen, der sich leicht prüfen lässt."
+  - "Deinen Branch mit der Hauptlinie aktuell halten."
+minutes: 30
+resources:
+  - wikipedia-branching-version-control
+  - wikipedia-merge-version-control
+  - wikipedia-pull-request
+  - wikipedia-de-versionsverwaltung
+  - wikibooks-git
+status: ai-draft
+sources:
+  - title: "Branching (version control)"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Branching_(version_control)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Merge (version control)"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Merge_(version_control)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Pull request"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Pull_request
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Versionsverwaltung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Versionsverwaltung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Git"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Git
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Sobald zwei Personen dasselbe Projekt ändern, muss ihre Arbeit zusammengeführt werden. Wer das Zusammenführen versteht und Konflikte ruhig löst, hält das Team in Bewegung und den Verlauf nachvollziehbar.
+
+## Zusammenführen
+
+Der Wikipedia-Artikel zum Merge beschreibt das Zusammenführen als Kombinieren von Änderungen verschiedener Personen oder verschiedener Branches. Betreffen die Änderungen unterschiedliche Stellen, kann das Versionsverwaltungssystem sie meist automatisch kombinieren. Zwei gängige Wege, einen Branch zurückzubringen:
+
+- **Merge**: verbindet zwei Verlaufslinien und hält fest, dass sie verbunden wurden. Der Verlauf zeigt, was wirklich geschah, einschließlich des Branches.
+- **Rebase**: spielt deine Commits auf der neuesten Hauptlinie erneut ab und ergibt einen geraden Verlauf. Dabei werden deine Commits neu geschrieben, rebase daher keine Commits, die andere schon nutzen.
+
+Viele Teams legen eine Konvention fest und dokumentieren sie.
+
+## Konflikte
+
+Ein Konflikt entsteht, wenn zwei Änderungen dieselben Zeilen betreffen und das System nicht entscheiden kann, welche bleibt. Es markiert den betroffenen Bereich in der Datei. So löst du ihn:
+
+1. Lies beide Versionen und verstehe, was jede Person beabsichtigt hat.
+2. Schreibe das richtige kombinierte Ergebnis; es kann die eine Seite, die andere oder eine Mischung sein.
+3. Entferne die Konfliktmarkierungen, baue das Projekt und führe die Tests aus.
+4. Committe die Lösung mit einer klaren Nachricht.
+
+Verstehst du die andere Änderung nicht, frag die Autorin oder den Autor. Häufiges, kleines Zusammenführen verringert Konflikte mehr als jedes Werkzeug.
+
+## Pull Requests
+
+Ein Pull Request (oder Merge Request) schlägt vor, deinen Branch zusammenzuführen, und gibt anderen einen Ort zum Prüfen und Diskutieren. Mach die Prüfung leicht: halte ihn klein, beschreibe, was und warum, verlinke die zugehörige Aufgabe und stelle sicher, dass die Prüfungen bestehen, bevor du um ein Review bittest.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundenes Projekt. Du und eine Kollegin habt beide denselben Meldungstext in einer Konfigurationsdatei geändert. Nachdem du die neueste Hauptlinie geholt hast, meldet das System einen Konflikt und zeigt deine und ihre Formulierung zwischen Markierungen. Du sprichst mit ihr und erfährst, dass ihre Änderung einen Rechtschreibfehler behebt, während deine ein neues Wort ergänzt. Du schreibst ein Ergebnis mit beidem: korrigierte Schreibweise und dein neues Wort. Du entfernst die Markierungen, führst die Tests aus und committest mit der Nachricht „Merge main, keep spelling fix and new wording“. Dann pushst du und aktualisierst den Pull Request.
+
+## Das Wichtigste in Kürze
+
+- Merge führt Arbeit aus verschiedenen Branches zusammen; Rebase spielt Commits auf der Hauptlinie neu ab.
+- Konflikte brauchen menschliches Urteil: beide Änderungen verstehen, dann das richtige Ergebnis schreiben.
+- Kleine, häufige Integration erzeugt weniger Konflikte.
+- Ein guter Pull Request ist klein, erklärt und vor dem Review geprüft.

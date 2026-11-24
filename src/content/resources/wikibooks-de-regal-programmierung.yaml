@@ -1,0 +1,14 @@
+id: wikibooks-de-regal-programmierung
+url: "https://de.wikibooks.org/wiki/Regal:Programmierung"
+title: "Regal: Programmierung (Wikibooks)"
+provider: Wikibooks (Deutsch)
+language: de
+format: book
+minutes: 45
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-24
+mode: link
+competencies: [programming-fundamentals-problem-solving]
+levels: [foundation]
+note: "Open textbook shelf; CC BY-SA 4.0 stated in the page footer; HTTP 200 on 2026-11-24. Link only."

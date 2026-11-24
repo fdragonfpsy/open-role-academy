@@ -1,0 +1,86 @@
+---
+id: software-design-architecture-basics-foundation
+competency: software-design-architecture-basics
+level: foundation
+title: "Guter Entwurf: Module, Kohäsion und Kopplung"
+objectives:
+  - "Erklären, warum Software vor und während des Bauens einen Entwurf braucht."
+  - "Ein Modul und die Idee der Trennung von Zuständigkeiten beschreiben."
+  - "Kohäsion und Kopplung erklären und die anzustrebende Richtung nennen."
+  - "Anzeichen eines verworrenen Entwurfs an einem kleinen Beispiel erkennen."
+minutes: 25
+resources:
+  - wikipedia-software-design
+  - wikipedia-separation-of-concerns
+  - wikipedia-coupling-programming
+  - wikipedia-cohesion-computer-science
+  - wikipedia-de-softwarearchitektur
+status: ai-draft
+sources:
+  - title: "Software design"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Software_design
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Separation of concerns"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Separation_of_concerns
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Coupling (computer programming)"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Coupling_(computer_programming)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Cohesion (computer science)"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Cohesion_(computer_science)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Softwarearchitektur"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Softwarearchitektur
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Code, der heute funktioniert, aber verworren ist, wird langsam und riskant zu ändern. Entwurf ist der Weg, Software verständlich und änderbar zu halten, und das zählt, weil ein Programm den größten Teil seines Lebens damit verbringt, geändert zu werden.
+
+## Module und Trennung von Zuständigkeiten
+
+Der Wikipedia-Artikel zum Software-Entwurf beschreibt ihn als den Prozess, zu planen, wie ein System aufgebaut ist und wie seine Teile zusammenpassen. Ein Grundwerkzeug ist das **Modul**: ein Teil mit definiertem Zweck und klarer Grenze, etwa eine Funktion, eine Klasse oder eine Datei. Die Idee der **Trennung von Zuständigkeiten** (Separation of Concerns) besagt, dass sich jeder Teil eines Programms um eine Zuständigkeit kümmern sollte, etwa Eingabe lesen, Geschäftsregeln anwenden oder Ausgabe anzeigen, damit eine Änderung an einer Zuständigkeit nicht überall Änderungen erzwingt.
+
+## Kohäsion und Kopplung
+
+- **Kohäsion** beschreibt, wie eng der Inhalt eines Moduls zusammengehört. Hohe Kohäsion heißt: Ein Modul erledigt eine klar umrissene Aufgabe.
+- **Kopplung** beschreibt, wie stark Module voneinander abhängen. Lose Kopplung heißt: Du kannst ein Modul mit geringer Wirkung auf andere ändern.
+
+Üblich ist das Ziel hoher Kohäsion und loser Kopplung. Ein Modul, das Preisberechnung, E-Mail-Versand und Bildschirmdarstellung übernimmt, hat niedrige Kohäsion. Zwei Module, die gegenseitig ihre internen Variablen lesen, sind eng gekoppelt.
+
+## Details hinter einer Schnittstelle verbergen
+
+Eine Schnittstelle ist die kleine Menge an Dingen, die ein Modul anderen anbietet, etwa Funktionsnamen mit Ein- und Ausgaben. Nutzen andere nur die Schnittstelle, kannst du das Innere später ändern, ohne sie zu brechen. Deshalb zählt die Entscheidung, was du nach außen zeigst.
+
+## Anzeichen eines verworrenen Entwurfs
+
+- Eine Änderung erzwingt Anpassungen an vielen unzusammenhängenden Stellen.
+- Eine Funktion hat eine sehr lange Parameterliste oder tut mehrere unzusammenhängende Dinge.
+- Du kannst einen Teil nicht testen, ohne das ganze Programm zu starten.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundener Shop. Eine einzige Funktion berechnet einen Bestellpreis, wendet einen Rabatt an, schreibt in die Datenbank und druckt einen Beleg. Eine Änderung am Beleglayout gefährdet die Rabattregeln. Du teilst sie in vier Funktionen: Preisberechnung, Rabattregeln, Bestellung speichern und Beleg formatieren. Jede hat eine Aufgabe und klare Ein- und Ausgaben. Nun kannst du die Rabattregeln mit einfachen Zahlen ohne Datenbank testen und den Beleg ändern, ohne Preise anzufassen.
+
+## Das Wichtigste in Kürze
+
+- Entwurf hält Software verständlich und änderbar.
+- Teile ein Programm nach Zuständigkeiten in Module mit klaren Grenzen.
+- Strebe hohe Kohäsion in Modulen und lose Kopplung zwischen ihnen an.
+- Zeige eine kleine Schnittstelle und verberge die Details dahinter.

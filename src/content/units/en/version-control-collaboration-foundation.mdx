@@ -1,0 +1,85 @@
+---
+id: version-control-collaboration-foundation
+competency: version-control-collaboration
+level: foundation
+title: "Commits, history and branches"
+objectives:
+  - "Explain what version control is and why teams use it."
+  - "Describe a commit, a repository and the history of a project."
+  - "Explain what a branch is and why you work on one."
+  - "Write a commit message that tells others what changed and why."
+minutes: 20
+resources:
+  - wikipedia-version-control
+  - wikipedia-de-versionsverwaltung
+  - wikipedia-git
+  - wikipedia-de-git
+  - wikibooks-git
+status: ai-draft
+sources:
+  - title: "Version control"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Version_control
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Versionsverwaltung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Versionsverwaltung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Git"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Git
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Git"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Git
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Git"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Git
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+Without version control, a project ends up with folders named "final", "final2" and "final-really". Nobody knows who changed what or how to go back. Version control solves this and lets several people work on the same code at the same time.
+
+## The core ideas
+
+The Wikipedia article on version control describes it as managing changes to documents, code and other collections of information. For software, three terms matter first:
+
+- **Repository**: the project folder plus its complete history of changes.
+- **Commit**: a saved snapshot of your changes with a message, author and time.
+- **History**: the chain of commits, which lets you see what changed, when and by whom, and return to an earlier state.
+
+Git is a widely used, distributed version control system: every developer has a full copy of the repository on their own computer. Hosting services let teams share their copies, but the ideas are the same without them.
+
+## Branches
+
+A branch is a separate line of development. You create a branch for a change, work on it without disturbing the stable version, and later bring it back with a merge. Many teams keep one main branch that always works and do each task on its own branch.
+
+## Good commits
+
+- Keep a commit small and focused on one change.
+- Write a short, clear message in the first line that says what changed, and add a sentence on why when it is not obvious.
+- Do not commit passwords, keys or large generated files. Once a secret is in the history, assume it is exposed and replace it.
+
+## Worked example
+
+Illustration only; invented project. You must fix a spelling mistake in an error message and add a new input check. You create a branch for the check, make one commit for the check ("Reject empty user name in the signup form") and a separate commit for the spelling fix ("Fix typo in login error message"). Later a colleague asks why the empty-name check exists. The history shows the commit, its date and its message, so the answer is one click away. If the check turns out to be wrong, you can undo that single commit without touching the spelling fix.
+
+## Key takeaways
+
+- Version control records every change, so you can see history and go back.
+- A repository holds the project and its history; a commit is one saved step.
+- A branch lets you work on a change without disturbing the main line.
+- Small commits with clear messages help everyone, including you later.

@@ -1,0 +1,87 @@
+---
+id: software-design-architecture-basics-advanced
+competency: software-design-architecture-basics
+level: advanced
+title: "Architecture decisions and trade-offs"
+objectives:
+  - "Explain what architecture adds to design and which decisions are costly to reverse."
+  - "Compare a monolith with a service-based style such as microservices."
+  - "Weigh quality attributes such as changeability, performance and operability."
+  - "Record an architecture decision with context, options and consequences."
+minutes: 30
+resources:
+  - wikipedia-software-architecture
+  - wikipedia-de-softwarearchitektur
+  - wikipedia-microservices
+  - wikipedia-solid
+  - wikibooks-intro-software-engineering-architecture
+status: ai-draft
+sources:
+  - title: "Software architecture"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Software_architecture
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Softwarearchitektur"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Softwarearchitektur
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Microservices"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Microservices
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "SOLID"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/SOLID
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Introduction to Software Engineering: Architecture"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Introduction_to_Software_Engineering/Architecture
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+Architecture covers the decisions that are hard to change later: how the system is split, how parts communicate and where data lives. Good choices let a team move fast for years; poor ones become a tax on every feature.
+
+## What architecture adds
+
+The Wikipedia article on software architecture describes it as the fundamental structures of a software system and the discipline of creating them. Where design talks about modules inside one codebase, architecture also asks about the big parts, their relationships and the quality goals they must meet. A useful test is cost of reversal: choices that would take months to undo deserve more thought than ones you can change in a day.
+
+## Quality attributes drive structure
+
+Requirements say what the system does; quality attributes say how well. Examples are changeability, performance, availability, security and operability (how easy it is to run and monitor). They often conflict, for example more caching can improve speed but complicate consistency. Ask which attribute matters most here and for whom, and write the answer down.
+
+## Monolith or services
+
+The article on microservices describes a style in which an application is a collection of small, independently deployable services. Compared with a single deployable unit (a monolith):
+
+- Services can be deployed and scaled separately and let teams work more independently.
+- They add costs: network calls can fail, data is spread across services, and monitoring and deployment become more complex.
+- A well-structured monolith with clear modules is often a sensible start and can be split later where it hurts.
+
+Pick the style that fits team size, the need for independent scaling and the maturity of your automation, not the one that is fashionable.
+
+## Record decisions
+
+A short architecture decision record keeps the reason for a choice. Typical parts: context, the options considered, the decision and its consequences. A year later it prevents the same debate and shows when a premise has changed.
+
+## Worked example
+
+Illustration only; invented company. A team of six is building an internal booking tool. A colleague proposes ten microservices. The team lists its quality goals: easy changes and simple operation matter most, while load is small. It chooses one deployable application with clearly separated modules for bookings, users and notifications, and records: "Context: small team, low load. Options: monolith, services. Decision: modular monolith. Consequence: simple deployment; a module may be split into a service if its load or team ownership demands it." Later, the notification module is split off because it needs separate scaling.
+
+## Key takeaways
+
+- Architecture covers the structural decisions that are costly to reverse.
+- Quality attributes, not fashion, should drive the structure.
+- Services trade independence for operational and consistency costs; a modular monolith is often a good start.
+- Write short decision records so that reasons survive team changes.

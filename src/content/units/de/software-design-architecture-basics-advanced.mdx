@@ -1,0 +1,87 @@
+---
+id: software-design-architecture-basics-advanced
+competency: software-design-architecture-basics
+level: advanced
+title: "Architekturentscheidungen und Abwägungen"
+objectives:
+  - "Erklären, was Architektur zum Entwurf hinzufügt und welche Entscheidungen teuer umzukehren sind."
+  - "Einen Monolithen mit einem dienstbasierten Stil wie Microservices vergleichen."
+  - "Qualitätsmerkmale wie Änderbarkeit, Performance und Betreibbarkeit abwägen."
+  - "Eine Architekturentscheidung mit Kontext, Optionen und Folgen festhalten."
+minutes: 30
+resources:
+  - wikipedia-software-architecture
+  - wikipedia-de-softwarearchitektur
+  - wikipedia-microservices
+  - wikipedia-solid
+  - wikibooks-intro-software-engineering-architecture
+status: ai-draft
+sources:
+  - title: "Software architecture"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Software_architecture
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Softwarearchitektur"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Softwarearchitektur
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Microservices"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Microservices
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "SOLID"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/SOLID
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Introduction to Software Engineering: Architecture"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Introduction_to_Software_Engineering/Architecture
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Architektur umfasst die Entscheidungen, die sich später schwer ändern lassen: wie das System aufgeteilt ist, wie Teile kommunizieren und wo Daten liegen. Gute Entscheidungen lassen ein Team jahrelang schnell arbeiten; schlechte werden zur Steuer auf jede Funktion.
+
+## Was Architektur hinzufügt
+
+Der Wikipedia-Artikel zur Softwarearchitektur beschreibt sie als die grundlegenden Strukturen eines Softwaresystems und die Disziplin, sie zu schaffen. Spricht der Entwurf über Module innerhalb einer Codebasis, fragt die Architektur zusätzlich nach den großen Teilen, ihren Beziehungen und den Qualitätszielen, die sie erfüllen müssen. Ein nützlicher Test sind die Kosten der Umkehr: Entscheidungen, die Monate zum Rückgängigmachen brauchen, verdienen mehr Überlegung als solche, die du an einem Tag änderst.
+
+## Qualitätsmerkmale bestimmen die Struktur
+
+Anforderungen sagen, was das System tut; Qualitätsmerkmale sagen, wie gut. Beispiele sind Änderbarkeit, Performance, Verfügbarkeit, Sicherheit und Betreibbarkeit (wie einfach man es betreibt und überwacht). Sie stehen oft im Konflikt, etwa kann mehr Caching die Geschwindigkeit verbessern, aber die Konsistenz erschweren. Frage, welches Merkmal hier und für wen am wichtigsten ist, und halte die Antwort schriftlich fest.
+
+## Monolith oder Dienste
+
+Der Artikel zu Microservices beschreibt einen Stil, in dem eine Anwendung aus vielen kleinen, unabhängig auslieferbaren Diensten besteht. Im Vergleich zu einer einzigen auslieferbaren Einheit (einem Monolithen):
+
+- Dienste lassen sich getrennt ausliefern und skalieren und lassen Teams unabhängiger arbeiten.
+- Sie erzeugen Kosten: Netzwerkaufrufe können scheitern, Daten verteilen sich auf mehrere Dienste, und Überwachung sowie Auslieferung werden komplexer.
+- Ein gut strukturierter Monolith mit klaren Modulen ist oft ein vernünftiger Start und lässt sich später dort aufteilen, wo es schmerzt.
+
+Wähle den Stil nach Teamgröße, Bedarf an unabhängiger Skalierung und Reife deiner Automatisierung, nicht nach Mode.
+
+## Entscheidungen festhalten
+
+Ein kurzes Architecture Decision Record bewahrt den Grund einer Entscheidung. Typische Teile: Kontext, geprüfte Optionen, Entscheidung und Folgen. Ein Jahr später verhindert es dieselbe Debatte und zeigt, wann sich eine Annahme geändert hat.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundenes Unternehmen. Ein Team von sechs baut ein internes Buchungswerkzeug. Ein Kollege schlägt zehn Microservices vor. Das Team listet seine Qualitätsziele: Einfache Änderungen und einfacher Betrieb zählen am meisten, die Last ist gering. Es wählt eine einzige auslieferbare Anwendung mit klar getrennten Modulen für Buchungen, Benutzer und Benachrichtigungen und hält fest: „Kontext: kleines Team, geringe Last. Optionen: Monolith, Dienste. Entscheidung: modularer Monolith. Folge: einfache Auslieferung; ein Modul kann zum Dienst werden, wenn Last oder Teamzuständigkeit es verlangen.“ Später wird das Benachrichtigungsmodul abgetrennt, weil es getrennt skaliert werden muss.
+
+## Das Wichtigste in Kürze
+
+- Architektur umfasst die strukturellen Entscheidungen, die teuer umzukehren sind.
+- Qualitätsmerkmale, nicht Moden, sollten die Struktur bestimmen.
+- Dienste tauschen Unabhängigkeit gegen Betriebs- und Konsistenzkosten; ein modularer Monolith ist oft ein guter Start.
+- Schreibe kurze Entscheidungsprotokolle, damit Gründe Teamwechsel überdauern.
