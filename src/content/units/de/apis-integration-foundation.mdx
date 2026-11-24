@@ -1,0 +1,96 @@
+---
+id: apis-integration-foundation
+competency: apis-integration
+level: foundation
+title: "APIs, HTTP-Anfragen und JSON"
+objectives:
+  - "Erklären, was eine API ist und warum Programme APIs nutzen."
+  - "Eine HTTP-Anfrage und -Antwort beschreiben: Methode, URL, Header, Body und Statuscode."
+  - "Die gängigen Klassen von Statuscodes lesen."
+  - "Einfache JSON-Daten lesen und schreiben."
+minutes: 25
+resources:
+  - wikipedia-api
+  - wikipedia-http
+  - wikipedia-list-http-status-codes
+  - wikipedia-json
+  - wikipedia-de-programmierschnittstelle
+  - wikipedia-de-json
+status: ai-draft
+sources:
+  - title: "API"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/API
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "HTTP"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/HTTP
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "List of HTTP status codes"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "JSON"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/JSON
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "JSON"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/JSON
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Programmierschnittstelle"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Programmierschnittstelle
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "JSON"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/JSON
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Fast keine Software arbeitet allein. Dein Code liest Wetterdaten, bucht von einer Karte ab, versendet eine E-Mail oder fragt den Dienst eines anderen Teams nach Kundendaten. All das läuft über Schnittstellen. Wenn du verstehst, wie sie funktionieren, kannst du Systeme verbinden und herausfinden, warum eine Verbindung scheitert.
+
+## Was eine API ist
+
+Eine Programmierschnittstelle (API, Application Programming Interface) ist ein festgelegter Weg, über den ein Stück Software ein anderes bittet, etwas zu tun oder Daten herauszugeben. Die aufrufende Seite muss nur wissen, was sie anfordern darf, wie die Anfrage aussieht und in welcher Form die Antwort kommt, aber nicht, wie die andere Seite innen arbeitet. Das ist dieselbe Idee wie die Schnittstelle eines Moduls im Entwurf.
+
+## HTTP in Kürze
+
+Viele Web-APIs nutzen HTTP, das Protokoll des Webs. Ein Client sendet eine **Anfrage** (Request), und der Server liefert eine **Antwort** (Response).
+
+- Eine Anfrage hat eine **Methode**, eine **URL**, **Header** (Zusatzinformationen wie den Inhaltstyp) und manchmal einen **Body**.
+- Gängige Methoden: GET liest Daten, POST sendet Daten, um etwas anzulegen, PUT ersetzt etwas, DELETE entfernt es.
+- Eine Antwort hat einen **Statuscode**, Header und meist einen Body.
+
+Der Statuscode zeigt das Ergebnis mit seiner ersten Ziffer: 2xx bedeutet Erfolg, 3xx eine Weiterleitung, 4xx einen Fehler durch die Anfrage (den Client) und 5xx einen Fehler auf dem Server. Beispiele: 200 OK, 404 Not Found, 500 Internal Server Error.
+
+## JSON
+
+JSON ist ein Textformat für Daten, das die meisten Web-APIs nutzen. Es kennt Objekte (Namen mit Werten in geschweiften Klammern), Arrays (geordnete Listen in eckigen Klammern), Zeichenketten, Zahlen, true und false sowie null. Namen und Zeichenketten stehen in doppelten Anführungszeichen, und das Format hat keine Kommentare. Ein Programm liest JSON, indem es es in eigene Datenstrukturen einliest (parst), und ein Parse-Fehler bedeutet meist ein fehlendes Komma oder Anführungszeichen.
+
+## Beispiel zur Veranschaulichung
+
+Nur zur Veranschaulichung; erfundener Dienst. Du fragst einen fiktiven Wetterdienst nach der aktuellen Temperatur. Die Anfrage ist ein GET an die Adresse der Ressource der Stadt. Die Antwort hat den Status 200 und einen Body, etwa ein Objekt mit den Feldern `city` (Zeichenkette), `temperatureC` (Zahl) und `sensors` (Array aus Zeichenketten). Dein Programm parst den Body und zeigt die Zahl. Wenn du die Stadt falsch schreibst, antwortet der Dienst mit 404 und einem JSON-Body mit einer Meldung. Dein Programm prüft zuerst den Statuscode, statt anzunehmen, dass immer eine Temperatur kommt.
+
+## Wichtige Erkenntnisse
+
+- Eine API ist ein festgelegter Weg, auf dem Programme miteinander sprechen, ohne ihr Inneres zu kennen.
+- Eine HTTP-Anfrage hat Methode, URL, Header und optional einen Body; eine Antwort hat Statuscode, Header und einen Body.
+- Klassen der Statuscodes: 2xx Erfolg, 3xx Weiterleitung, 4xx Client-Fehler, 5xx Server-Fehler.
+- JSON ist das übliche Datenformat; prüfe immer den Statuscode, bevor du den Body nutzt.

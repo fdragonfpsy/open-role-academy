@@ -1,0 +1,100 @@
+---
+id: software-debugging-advanced
+competency: software-debugging
+level: advanced
+title: "Hard bugs: intermittent failures, root causes and observability"
+objectives:
+  - "Investigate intermittent failures such as timing-dependent and concurrency bugs."
+  - "Minimise a failing input systematically."
+  - "Separate symptom, cause and root cause in a post-incident review."
+  - "Use logs, metrics and traces to debug a running system."
+minutes: 30
+resources:
+  - wikipedia-heisenbug
+  - wikipedia-delta-debugging
+  - wikipedia-logging-computing
+  - wikibooks-intro-software-engineering-debugger
+  - wikipedia-de-logging
+status: ai-draft
+sources:
+  - title: "Heisenbug"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Heisenbug
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Delta debugging"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Delta_debugging
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Logging (computing)"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Logging_(computing)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Debugging"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Debugging
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Introduction to Software Engineering/Tools/Debugger"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Introduction_to_Software_Engineering/Tools/Debugger
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Logging"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Logging
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+Some defects do not repeat on demand, vanish when you look at them or only appear under production load. They take the most time and cause the most damage, and they need method rather than luck.
+
+## Intermittent failures
+
+A defect that changes or disappears when you try to observe it is sometimes called a heisenbug. Typical causes are timing and concurrency: two threads or requests access shared data in an unlucky order, a task finishes before another one it silently depends on, or a value depends on the clock, the time zone or random numbers. Adding a print statement or running under a debugger can change the timing and hide the problem.
+
+Strategies:
+
+- Make the environment deterministic where you can: fixed clock, fixed random seed, one thread.
+- Increase the chance of failure, for example by repeating the test many times or adding load, and record each failing run completely.
+- Compare failing and passing runs for the first difference.
+- Prefer recording tools such as detailed logs over interactive pausing for timing problems.
+
+## Minimising a failing input
+
+When a large input makes a program fail, remove parts systematically and keep only what still fails. Delta debugging is a method that automates this: it repeatedly tries smaller variants of the input or of the change set and keeps the ones that still produce the failure, ending with a small input that is far easier to understand.
+
+## Symptom, cause and root cause
+
+The symptom is what you see. The direct cause is the line or condition that produced it. A **root cause** is the underlying reason the defect could exist and was not noticed, such as a missing validation, a wrong assumption in a design, a missing test or an unclear requirement. Fixing only the cause may let the same class of problem return. After a serious problem, review what happened with a focus on the system and process, not on blaming a person, and decide on a few concrete changes.
+
+## Observability in running systems
+
+You often cannot attach a debugger to a production system. Teams therefore rely on:
+
+- **Logs** of discrete events, ideally structured so they can be searched.
+- **Metrics** such as error rates and response times over time.
+- **Traces** that follow one request across several services, usually by passing an identifier along with it.
+
+Add such identifiers early; they make it possible to find all log lines of one failed request.
+
+## Worked example
+
+Illustration only; invented system. A test fails about once in thirty runs. You repeat it in a loop until it fails and save the log of each failing run. All failing runs show that the second update happens before the first has finished. You fix the clock and the order of tasks in a test, reproduce the failure every time, and find that two tasks write the same record without a lock. After the fix you add a stress test that runs the scenario many times. In the review you note the root cause: the design did not say who owns the record.
+
+## Key takeaways
+
+- Make intermittent bugs reproducible by controlling time, randomness and concurrency, or by repeating until they fail.
+- Minimise failing inputs systematically instead of reading everything.
+- Look for the root cause, and improve the process, not only the code.
+- Use logs, metrics and traces with request identifiers in production.

@@ -1,0 +1,91 @@
+---
+id: software-testing-quality-advanced
+competency: software-testing-quality
+level: advanced
+title: "Test strategy: coverage, mutation testing and a trusted suite"
+objectives:
+  - "Interpret code coverage correctly and explain its limits."
+  - "Explain mutation testing as a check of test quality."
+  - "Diagnose and reduce flaky and slow tests."
+  - "Design a risk-based test strategy and keep tests maintainable."
+minutes: 30
+resources:
+  - wikipedia-code-coverage
+  - wikipedia-mutation-testing
+  - wikipedia-test-automation
+  - wikipedia-test-driven-development
+  - wikipedia-de-testgetriebene-entwicklung
+status: ai-draft
+sources:
+  - title: "Code coverage"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Code_coverage
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Mutation testing"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Mutation_testing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Test automation"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Test_automation
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Test-driven development"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Test-driven_development
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Software testing"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Software_testing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Testgetriebene Entwicklung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Testgetriebene_Entwicklung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+A large test suite is not automatically a good one. At this level your job is to decide what to test, how much, and how to keep the suite fast, reliable and cheap to maintain so that the team keeps trusting it.
+
+## Coverage: useful, but easy to misread
+
+Code coverage measures how much of the code is executed while the tests run, for example the share of lines or branches. A part that no test executes is clearly untested, so coverage finds gaps. The reverse does not hold: code can be executed by a test that checks nothing. High coverage therefore does not mean high quality, and turning a coverage number into a target invites tests written only to raise it. Use coverage to look for blind spots, not as a score.
+
+## Mutation testing
+
+Mutation testing asks whether your tests would notice a defect. A tool makes small changes to the code, such as flipping a comparison or replacing a plus with a minus. Each changed version is a mutant. If the tests fail, the mutant is killed; if they all pass, the tests did not detect the change, which points to a weak or missing assertion. It is expensive to run, so it is often applied to critical modules only.
+
+## Reliability of the suite
+
+A **flaky** test sometimes passes and sometimes fails without any code change. Typical causes are shared state between tests, dependence on time or execution order, real network calls and unsynchronised asynchronous code. Flaky tests teach a team to ignore red results, so fix or quarantine them quickly and track them. Keep the suite fast as well, because a slow suite is run less often.
+
+## A risk-based strategy
+
+You cannot test everything equally. Put the most effort where failure would be costly or likely: money, security, data loss, complex or frequently changed code. Choose the cheapest test level that can detect a given problem. Automate stable, repeated checks and keep exploratory testing by people for what is new or unclear.
+
+## Keep tests maintainable
+
+Tests are code too. Test behaviour through the public interface rather than internal details, so that refactoring does not break them. Remove duplication with small helper functions, name tests by behaviour and delete tests that no longer protect anything.
+
+## Worked example
+
+Illustration only; invented project. A module reports 95 percent line coverage, yet a bug in its tax calculation reaches production. A mutation run shows that changing `>=` to `>` in the threshold check does not fail any test, since the tests never use the exact threshold value. The team adds a boundary test, and the mutant is now killed. They also find three tests that fail about once in twenty runs because they share a database table, give each test its own data, and the failures stop.
+
+## Key takeaways
+
+- Coverage shows what is not tested, not that the tested parts are tested well.
+- Mutation testing measures whether tests detect small defects.
+- Flaky and slow tests destroy trust in the suite; fix them early.
+- Spend test effort by risk and test behaviour, not internals.

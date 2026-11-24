@@ -1,0 +1,102 @@
+---
+id: software-testing-quality-practitioner
+competency: software-testing-quality
+level: practitioner
+title: "Testentwurf, Testdoubles und Regressionstests"
+objectives:
+  - "Testfälle mit Äquivalenzklassen und Grenzwerten auswählen."
+  - "Testdoubles einsetzen, um Code von langsamen oder unvorhersehbaren Abhängigkeiten zu trennen."
+  - "Den Zyklus Rot-Grün-Refactoring der testgetriebenen Entwicklung anwenden."
+  - "Unit-, Integrations- und End-to-End-Tests in einer automatisierten Testsuite ausbalancieren."
+minutes: 30
+resources:
+  - wikipedia-integration-testing
+  - wikipedia-test-double
+  - wikipedia-test-driven-development
+  - wikipedia-regression-testing
+  - wikipedia-de-integrationstest
+status: ai-draft
+sources:
+  - title: "Software testing"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Software_testing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Integration testing"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Integration_testing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Test double"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Test_double
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Test-driven development"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Test-driven_development
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Regression testing"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Regression_testing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Test automation"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Test_automation
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Integrationstest"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Integrationstest
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Sobald ein Projekt mehr als ein paar Funktionen hat, kannst du nicht mehr alles von Hand testen. Du brauchst eine kleine Menge gut gewählter automatisierter Tests, die bei jeder Änderung laufen und denen das Team vertraut.
+
+## Testfälle auswählen
+
+Alle Eingaben zu testen ist unmöglich, also wählst du Vertreter aus. Zwei gängige Techniken:
+
+- **Äquivalenzklassen**: Du gruppierst Eingaben, die das Programm gleich behandeln soll, und testest einen Wert je Gruppe.
+- **Grenzwerte**: Fehler verstecken sich oft an den Rändern eines Bereichs, also teste knapp darunter, genau auf und knapp über jeder Grenze.
+
+Ergänze Fälle für ungültige Eingaben und Fehlerpfade, nicht nur für den Normalfall.
+
+## Testdoubles
+
+Eine Einheit hängt oft von etwas Langsamem oder Unvorhersehbarem ab, etwa einem Netzwerkdienst, einer Uhr oder einer Datenbank. Ein **Testdouble** ersetzt diese Abhängigkeit während des Tests. Gängige Arten sind der **Stub**, der vorbereitete Antworten liefert; der **Mock**, der zusätzlich prüft, ob er wie erwartet aufgerufen wurde; der **Fake**, ein einfacher funktionierender Ersatz wie ein Speicher im Arbeitsspeicher; und der **Spy**, der aufzeichnet, wie er genutzt wurde. Setze Doubles an den Rändern deines Codes ein. Wenn du alles ersetzt, prüfen die Tests nur noch deine Annahmen und nicht mehr das echte Verhalten.
+
+## Integrationstests
+
+Integrationstests prüfen, ob Teile zusammenpassen, zum Beispiel ob dein Datenzugriffscode wirklich mit einer Datenbank funktioniert. Sie sind langsamer und brauchen mehr Vorbereitung, also schreibe weniger davon und richte sie auf die Nahtstellen zwischen Komponenten.
+
+## Testgetriebene Entwicklung
+
+Bei der testgetriebenen Entwicklung (TDD) arbeitest du in kurzen Zyklen: einen fehlschlagenden Test schreiben (rot), den kleinsten Code schreiben, der ihn bestehen lässt (grün), und dann den Code aufräumen, während die Tests grün bleiben (Refactoring). Der Test kommt zuerst, die Anforderung ist also klar, bevor du die Lösung schreibst.
+
+## Regressionstests und Balance
+
+Ein Regressionstest prüft, dass etwas, das vorher funktionierte, nach einer Änderung weiter funktioniert. Mit der Zeit bilden deine automatisierten Tests eine Regressionssuite, die du bei jeder Änderung laufen lässt, idealerweise in der Build-Pipeline. Eine verbreitete Empfehlung lautet: viele schnelle Unit-Tests, weniger Integrationstests und nur wenige End-to-End-Tests des Gesamtsystems, weil die höheren Ebenen langsamer und anfälliger sind.
+
+## Beispiel zur Veranschaulichung
+
+Nur zur Veranschaulichung; erfundene Funktion. Eine Rabattregel gewährt 10 Prozent Nachlass ab einem Bestellwert von 50 Euro. Du testest 49,99 (kein Rabatt), 50,00 (Rabatt) und 50,01 (Rabatt) sowie einen negativen Betrag (abgelehnt). Der Code, der die Bestellhistorie der Kundschaft lädt, wird durch einen Stub mit fester Liste ersetzt, sodass der Test keine Datenbank braucht und in Millisekunden läuft. Ein Integrationstest prüft anschließend den echten Ladecode gegen eine Testdatenbank.
+
+## Wichtige Erkenntnisse
+
+- Wähle Testfälle nach Äquivalenzklassen und Grenzwerten, auch für Fehlerpfade.
+- Ersetze langsame oder unvorhersehbare Abhängigkeiten durch Stubs, Mocks oder Fakes, aber nicht alles.
+- TDD durchläuft Rot, Grün, Refactoring.
+- Lass bei jeder Änderung eine Regressionssuite laufen, mit vielen Unit-Tests und weniger Tests auf hoher Ebene.

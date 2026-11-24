@@ -1,0 +1,92 @@
+---
+id: software-debugging-foundation
+competency: software-debugging
+level: foundation
+title: "Fehler systematisch finden: reproduzieren, lesen, eingrenzen"
+objectives:
+  - "Die Schritte einer systematischen Fehlersuche beschreiben."
+  - "Ein Problem zuverlässig reproduzieren, bevor du Code änderst."
+  - "Eine Fehlermeldung und einen Stack Trace lesen, um zu wissen, wo du suchen musst."
+  - "Eine Korrektur prüfen und verhindern, dass der Fehler zurückkehrt."
+minutes: 25
+resources:
+  - wikipedia-debugging
+  - wikipedia-software-bug
+  - wikipedia-stack-trace
+  - wikipedia-rubber-duck-debugging
+  - wikipedia-de-programmfehler
+status: ai-draft
+sources:
+  - title: "Debugging"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Debugging
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Software bug"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Software_bug
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Stack trace"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Stack_trace
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Rubber duck debugging"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Rubber_duck_debugging
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Programmfehler"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Programmfehler
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Introduction to Software Engineering/Tools/Debugger"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Introduction_to_Software_Engineering/Tools/Debugger
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Alle, die programmieren, verbringen viel Zeit mit Code, der nicht tut, was gedacht war. Debugging ist der Vorgang, solche Fehler zu finden und zu beheben. Raten und wahlloses Ändern ist langsam und kann neue Probleme schaffen; ein systematisches Vorgehen ist schneller.
+
+## Defekt, Fehler und Ausfall
+
+Ein Programmfehler (Bug) ist ein Mangel im Code oder im Entwurf. Sichtbar wird er als Fehlverhalten, wenn das Programm etwa abstürzt oder eine falsche Zahl anzeigt. Derselbe Fehler kann weit entfernt von seiner Stelle im Code auffallen, das sichtbare Symptom ist also nur der Anfang deiner Suche.
+
+## Eine systematische Schleife
+
+1. **Reproduzieren**: Finde die genauen Schritte, die Eingabe und die Umgebung, die das Problem auslösen. Wenn du es nicht auf Abruf herbeiführen kannst, bist du nie sicher, ob du es behoben hast.
+2. **Hinweise lesen**: die Fehlermeldung, den Stack Trace und die Logzeilen in der Nähe des Fehlers.
+3. **Eingrenzen**: Entscheide, wo das falsche Verhalten beginnt. Prüfe Werte an mehreren Stellen und finde die erste Stelle, an der die Wirklichkeit von deiner Erwartung abweicht.
+4. **Hypothese bilden**: Formuliere eine konkrete Vermutung zur Ursache und überlege dir eine Prüfung, die sie widerlegen könnte.
+5. **Die Ursache beheben**, nicht nur das Symptom, mit der kleinsten Änderung, die funktioniert.
+6. **Prüfen**: Wiederhole die ursprünglichen Schritte und die vorhandenen Tests und ergänze einen Test, der den Fehler gefunden hätte.
+
+## Fehlermeldung und Stack Trace lesen
+
+Lies zuerst die Meldung vollständig. Sie nennt meist die Art des Problems und oft Datei und Zeile. Ein Stack Trace listet die Funktionsaufrufe, die beim Fehler aktiv waren. Er zeigt den Weg, den das Programm bis zum Fehler genommen hat. Beginne bei den Zeilen, die auf deinen eigenen Code zeigen; Code aus Bibliotheken ist selten die Ursache, aber der Trace verrät, welcher deiner Aufrufe dorthin geführt hat.
+
+## Werkzeuge für den Anfang
+
+Werte an ausgewählten Stellen auszugeben oder ein Log zu nutzen ist eine einfache Möglichkeit zu sehen, was das Programm wirklich tut. Das Problem Zeile für Zeile zu erklären, sogar einem Gegenstand wie einer Gummiente, ist eine bekannte Technik: Es in Worte zu fassen deckt oft eine falsche Annahme auf.
+
+## Beispiel zur Veranschaulichung
+
+Nur zur Veranschaulichung; erfundenes Programm. Ein Bericht zeigt für einen Kunden mit eindeutig vorhandenen Bestellungen die Summe 0. Du machst es zuerst wiederholbar: Es passiert immer, wenn der Kundenname einen Umlaut enthält. Das Log zeigt, dass die Abfrage keine Zeilen lieferte, das Problem liegt also vor der Summe und nicht darin. Du grenzt es auf den Code ein, der den Suchtext aufbaut, und findest, dass Namen mit einer anderen Zeichenkodierung verglichen werden. Du korrigierst den Vergleich, wiederholst genau die Schritte und ergänzt einen Test mit einem Namen mit Umlaut.
+
+## Wichtige Erkenntnisse
+
+- Debugging ist eine Schleife: reproduzieren, Hinweise lesen, eingrenzen, vermuten, beheben, prüfen.
+- Behebe die Ursache, nicht das Symptom, und ergänze dafür einen Test.
+- Lies Fehlermeldungen und Stack Traces sorgfältig und vollständig.
+- Ändere jeweils nur eine Sache, damit du weißt, was gewirkt hat.

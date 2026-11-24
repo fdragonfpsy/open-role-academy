@@ -1,0 +1,224 @@
+competency: apis-integration
+items:
+- id: api-f-what
+  level: foundation
+  difficulty: 850
+  type: single
+  stem:
+    en: "What is an API?"
+    de: "Was ist eine API?"
+  options:
+  - en: "A defined way for one program to ask another to do something"
+    de: "Ein festgelegter Weg, auf dem ein Programm ein anderes um etwas bittet"
+    correct: true
+  - en: "A tool that automatically writes the source code of an application"
+    de: "Ein Werkzeug, das den Quellcode einer Anwendung automatisch schreibt"
+    correct: false
+  - en: "A kind of database that stores all of the user passwords of a system"
+    de: "Eine Art Datenbank, die alle Passwörter der Nutzenden eines Systems speichert"
+    correct: false
+  - en: "A programming language that can only be used for websites"
+    de: "Eine Programmiersprache, die nur für Websites verwendet werden kann"
+    correct: false
+  explanation:
+    en: "An API defines what one piece of software may ask of another and in which form, without exposing how the other side works inside."
+    de: "Eine API legt fest, was ein Stück Software von einem anderen anfordern darf und in welcher Form, ohne offenzulegen, wie die andere Seite innen arbeitet."
+  source: https://en.wikipedia.org/wiki/API
+- id: api-f-status
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: "A server answers a request with status 404. What does this class of code mean?"
+    de: "Ein Server antwortet auf eine Anfrage mit dem Status 404. Was bedeutet diese Klasse von Codes?"
+  options:
+  - en: "The request was wrong, for example the resource was not found"
+    de: "Die Anfrage war fehlerhaft, zum Beispiel wurde die Ressource nicht gefunden"
+    correct: true
+  - en: "The request succeeded and the body contains the data that was asked for"
+    de: "Die Anfrage war erfolgreich, und der Body enthält die angeforderten Daten"
+    correct: false
+  - en: "The server crashed while processing and has to be restarted by its team"
+    de: "Der Server ist bei der Verarbeitung abgestürzt und muss vom Team neu gestartet werden"
+    correct: false
+  - en: "The request was redirected permanently to a new address by the server"
+    de: "Die Anfrage wurde vom Server dauerhaft an eine neue Adresse weitergeleitet"
+    correct: false
+  explanation:
+    en: "Codes starting with 4 signal an error on the client side of the request, such as a missing resource. 2xx is success, 3xx a redirect and 5xx a server error."
+    de: "Codes mit einer 4 am Anfang zeigen einen Fehler auf der Seite der Anfrage an, etwa eine fehlende Ressource. 2xx ist Erfolg, 3xx eine Weiterleitung und 5xx ein Serverfehler."
+  source: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+- id: api-f-json
+  level: foundation
+  difficulty: 1050
+  type: multi
+  stem:
+    en: "Which statements about JSON are correct? Select all that apply."
+    de: "Welche Aussagen über JSON sind richtig? Wähle alle zutreffenden aus."
+  options:
+  - en: "It is a text format with objects and arrays"
+    de: "Es ist ein Textformat mit Objekten und Arrays"
+    correct: true
+  - en: "Names and strings are written in double quotes"
+    de: "Namen und Zeichenketten stehen in doppelten Anführungszeichen"
+    correct: true
+  - en: "It can represent numbers, true, false and null"
+    de: "Es kann Zahlen, true, false und null darstellen"
+    correct: true
+  - en: "It allows comments with two slashes at the end of a line"
+    de: "Es erlaubt Kommentare mit zwei Schrägstrichen am Zeilenende"
+    correct: false
+  - en: "It can only be read by programs written in one specific language"
+    de: "Es kann nur von Programmen einer bestimmten Sprache gelesen werden"
+    correct: false
+  explanation:
+    en: "JSON is a language-independent text format with objects, arrays, strings, numbers, booleans and null. Strict JSON has no comments."
+    de: "JSON ist ein sprachunabhängiges Textformat mit Objekten, Arrays, Zeichenketten, Zahlen, Booleschen Werten und null. Striktes JSON hat keine Kommentare."
+  source: https://en.wikipedia.org/wiki/JSON
+- id: api-p-401
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: "An API returns 401. What is the most likely reason?"
+    de: "Eine API liefert 401. Was ist der wahrscheinlichste Grund?"
+  options:
+  - en: "Credentials are missing, invalid or expired"
+    de: "Zugangsdaten fehlen, sind ungültig oder abgelaufen"
+    correct: true
+  - en: "The server has run out of memory and cannot process any request"
+    de: "Dem Server ist der Speicher ausgegangen, und er kann keine Anfrage verarbeiten"
+    correct: false
+  - en: "The request body contains too many fields for the server to store"
+    de: "Der Request-Body enthält zu viele Felder, als dass der Server sie speichern könnte"
+    correct: false
+  - en: "The resource has been moved to a new address without a redirect"
+    de: "Die Ressource wurde ohne Weiterleitung an eine neue Adresse verschoben"
+    correct: false
+  explanation:
+    en: "401 usually means authentication failed: credentials are missing, invalid or expired. 403 would mean that you are known but not allowed."
+    de: "401 bedeutet meist, dass die Authentifizierung gescheitert ist: Zugangsdaten fehlen, sind ungültig oder abgelaufen. 403 würde bedeuten, dass du bekannt bist, aber nicht darfst."
+  source: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+- id: api-p-retry
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: "Which failure is it reasonable to retry automatically after a short wait?"
+    de: "Bei welchem Fehler ist ein automatischer Wiederholungsversuch nach kurzer Wartezeit sinnvoll?"
+  options:
+  - en: "503 Service Unavailable"
+    de: "503 Service Unavailable"
+    correct: true
+  - en: "400 Bad Request because the body is not valid for this endpoint"
+    de: "400 Bad Request, weil der Body für diesen Endpunkt ungültig ist"
+    correct: false
+  - en: "404 Not Found for an identifier that does not exist on the server"
+    de: "404 Not Found für eine Kennung, die auf dem Server nicht existiert"
+    correct: false
+  - en: "403 Forbidden because the account lacks the permission for this action"
+    de: "403 Forbidden, weil dem Konto die Berechtigung für diese Aktion fehlt"
+    correct: false
+  explanation:
+    en: "A 503 may pass when the server recovers. A 400, 404 or 403 describes a problem with the request or permissions that a retry will not fix."
+    de: "Ein 503 kann vergehen, wenn sich der Server erholt. Ein 400, 404 oder 403 beschreibt ein Problem der Anfrage oder der Berechtigung, das eine Wiederholung nicht behebt."
+  source: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+- id: api-p-secret
+  level: practitioner
+  difficulty: 1350
+  type: single
+  stem:
+    en: "Where should an API token for a service be stored?"
+    de: "Wo sollte das API-Token für einen Dienst abgelegt werden?"
+  options:
+  - en: "In configuration or a secret store outside the source code"
+    de: "In einer Konfiguration oder einem Geheimnisspeicher außerhalb des Quellcodes"
+    correct: true
+  - en: "Directly in the source code, so that every colleague has it at hand"
+    de: "Direkt im Quellcode, damit es jede Kollegin und jeder Kollege zur Hand hat"
+    correct: false
+  - en: "In the query string of every URL so that it is always sent along"
+    de: "In der Query-String jeder URL, damit es immer mitgesendet wird"
+    correct: false
+  - en: "In the public README of the repository next to the usage example"
+    de: "In der öffentlichen README des Repositorys neben dem Anwendungsbeispiel"
+    correct: false
+  explanation:
+    en: "Secrets in code, URLs or public files leak through version control, logs and browser history. Keep them in configuration or a secret store."
+    de: "Geheimnisse in Code, URLs oder öffentlichen Dateien gelangen über Versionsverwaltung, Logs und Browserverlauf nach außen. Halte sie in Konfiguration oder einem Geheimnisspeicher."
+  source: https://en.wikipedia.org/wiki/OAuth
+- id: api-a-idem
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: "A request to create a payment times out. What lets you retry without risking a double payment?"
+    de: "Eine Anfrage zum Anlegen einer Zahlung läuft in ein Timeout. Was erlaubt dir eine Wiederholung, ohne eine doppelte Zahlung zu riskieren?"
+  options:
+  - en: "Sending the same idempotency key with each attempt"
+    de: "Bei jedem Versuch denselben Idempotenzschlüssel mitzusenden"
+    correct: true
+  - en: "Retrying immediately and as fast as possible until a reply arrives"
+    de: "Sofort und so schnell wie möglich zu wiederholen, bis eine Antwort kommt"
+    correct: false
+  - en: "Switching the request method from POST to GET to avoid a side effect"
+    de: "Die Anfragemethode von POST auf GET zu ändern, um eine Nebenwirkung zu vermeiden"
+    correct: false
+  - en: "Assuming that every timed-out request was surely not processed"
+    de: "Anzunehmen, dass jede Anfrage mit Timeout sicher nicht verarbeitet wurde"
+    correct: false
+  explanation:
+    en: "After a timeout you do not know whether the server acted. An idempotency key lets the server recognise the repeat and return the first result instead of acting twice."
+    de: "Nach einem Timeout weißt du nicht, ob der Server gehandelt hat. Ein Idempotenzschlüssel lässt den Server die Wiederholung erkennen und das erste Ergebnis zurückgeben, statt zweimal zu handeln."
+  source: https://en.wikipedia.org/wiki/Idempotence
+- id: api-a-429
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: "An API answers 429 Too Many Requests. What is the best reaction?"
+    de: "Eine API antwortet mit 429 Too Many Requests. Was ist die beste Reaktion?"
+  options:
+  - en: "Wait as the API indicates, then retry with growing delays"
+    de: "So lange warten, wie die API angibt, dann mit wachsenden Pausen wiederholen"
+    correct: true
+  - en: "Send the same request again in a tight loop until it is accepted"
+    de: "Dieselbe Anfrage in einer engen Schleife erneut senden, bis sie angenommen wird"
+    correct: false
+  - en: "Open many parallel connections so that some of them get through"
+    de: "Viele parallele Verbindungen öffnen, damit einige durchkommen"
+    correct: false
+  - en: "Switch to a second account and send the same requests from there"
+    de: "Auf ein zweites Konto wechseln und dieselben Anfragen von dort senden"
+    correct: false
+  explanation:
+    en: "Rate limits protect the provider. Respect any wait time the API gives and back off exponentially. Hammering the API or evading the limit makes things worse."
+    de: "Ratenbegrenzungen schützen die Anbietenden. Beachte jede Wartezeit, die die API nennt, und weiche exponentiell aus. Die API zu bombardieren oder die Grenze zu umgehen macht es schlimmer."
+  source: https://en.wikipedia.org/wiki/Rate_limiting
+- id: api-a-webhook
+  level: advanced
+  difficulty: 1650
+  type: multi
+  stem:
+    en: "Which practices make a webhook receiver reliable and secure? Select all that apply."
+    de: "Welche Vorgehensweisen machen einen Webhook-Empfänger verlässlich und sicher? Wähle alle zutreffenden aus."
+  options:
+  - en: "Verify the sender, for example by a documented signature"
+    de: "Den Absender prüfen, zum Beispiel über eine dokumentierte Signatur"
+    correct: true
+  - en: "Store event identifiers so that duplicates are ignored"
+    de: "Ereigniskennungen speichern, damit Duplikate ignoriert werden"
+    correct: true
+  - en: "Be able to fetch the current state from the API if an event is missed"
+    de: "Den aktuellen Zustand über die API abrufen können, falls ein Ereignis verloren geht"
+    correct: true
+  - en: "Trust any caller that knows the address of the endpoint"
+    de: "Jedem Aufrufer vertrauen, der die Adresse des Endpunkts kennt"
+    correct: false
+  - en: "Assume that events always arrive exactly once and in order"
+    de: "Annehmen, dass Ereignisse immer genau einmal und in der richtigen Reihenfolge ankommen"
+    correct: false
+  explanation:
+    en: "Webhooks are outside input: verify the sender, expect duplicates and different order, and keep a way to re-sync. Knowing the address is no proof of identity."
+    de: "Webhooks sind Eingaben von außen: Prüfe den Absender, rechne mit Duplikaten und anderer Reihenfolge und halte einen Weg zur Neusynchronisation bereit. Die Adresse zu kennen ist kein Identitätsnachweis."
+  source: https://en.wikipedia.org/wiki/Webhook

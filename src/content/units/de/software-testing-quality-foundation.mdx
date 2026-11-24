@@ -1,0 +1,88 @@
+---
+id: software-testing-quality-foundation
+competency: software-testing-quality
+level: foundation
+title: "Warum wir testen: Teststufen, Testfälle und Unit-Tests"
+objectives:
+  - "Erklären, was Tests über Software zeigen können und was nicht."
+  - "Die gängigen Teststufen nennen: Unit-, Integrations-, System- und Abnahmetest."
+  - "Einen Testfall mit Eingabe, Aktion und erwartetem Ergebnis beschreiben."
+  - "Die Idee eines einfachen, gut lesbaren Unit-Tests wiedergeben."
+minutes: 25
+resources:
+  - wikipedia-software-testing
+  - wikipedia-unit-testing
+  - wikibooks-intro-software-engineering-testing
+  - wikipedia-de-softwaretest
+  - wikipedia-de-modultest
+status: ai-draft
+sources:
+  - title: "Software testing"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Software_testing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Unit testing"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Unit_testing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Introduction to Software Engineering/Testing"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Introduction_to_Software_Engineering/Testing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Softwaretest"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Softwaretest
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Modultest"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Modultest
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Software wird ständig verändert, und jede Änderung kann etwas kaputt machen, das gestern noch funktionierte. Tests sind wiederholbare Prüfungen, die dir schnell zeigen, ob das Programm noch tut, was es soll.
+
+## Was Tests zeigen können
+
+Testen bedeutet, Software auszuführen, um zu prüfen, ob sie ihre Anforderungen erfüllt, und um Fehler zu finden. Ein bestandener Test zeigt nur, dass sich das Programm in genau dieser Situation richtig verhalten hat. Er beweist nicht, dass das Programm fehlerfrei ist, denn du kannst nie alle Eingaben ausprobieren. Deshalb zählt der Testentwurf, also die Auswahl guter Fälle, mehr als die reine Anzahl der Tests.
+
+## Teststufen
+
+Teststufen beschreiben, wie viel vom System ein Test abdeckt:
+
+- **Unit-Test (Modultest)**: prüft einen kleinen Teil, etwa eine Funktion oder Klasse, für sich allein.
+- **Integrationstest**: prüft, ob mehrere Teile zusammenarbeiten, zum Beispiel dein Code und eine Datenbank.
+- **Systemtest**: prüft die vollständige, zusammengesetzte Anwendung gegen ihre Anforderungen.
+- **Abnahmetest**: prüft, ob das Ergebnis dem entspricht, was Kundschaft oder Nutzende brauchen.
+
+Kleine Tests sind schnell und zeigen die Ursache rasch; größere Tests sind langsamer, finden aber Probleme, die erst im Zusammenspiel auftreten.
+
+## Was zu einem Testfall gehört
+
+Ein Testfall beschreibt eine Situation und das erwartete Verhalten: die **Eingabe** oder den Ausgangszustand, die **Aktion** und das **erwartete Ergebnis**. Ohne erwartetes Ergebnis führst du Code nur aus, aber testest nicht. Gute Tests sind voneinander unabhängig und liefern bei jedem Lauf dasselbe Ergebnis.
+
+## Einen einfachen Unit-Test schreiben
+
+Viele Unit-Tests folgen drei Schritten: Vorbereiten (Daten bereitstellen), Ausführen (den zu testenden Code aufrufen) und Prüfen (das Ergebnis mit der Erwartung vergleichen). Ein Test sollte ein Verhalten prüfen und einen Namen tragen, der dieses Verhalten beschreibt, damit schon ein fehlschlagender Test verrät, was kaputt ist.
+
+## Beispiel zur Veranschaulichung
+
+Nur zur Veranschaulichung; erfundene Funktion. Eine Funktion `fullPrice(net, taxRate)` soll den Nettopreis plus Steuer liefern. Du schreibst drei Fälle: Netto 100 bei einem Satz von 0,2 ergibt 120; Netto 0 ergibt 0; ein negativer Nettopreis wird mit einem Fehler abgelehnt. Du führst sie aus, und der zweite schlägt fehl, weil die Funktion einen leeren Wert statt 0 liefert. Du korrigierst die Funktion und startest alle drei erneut. Die Tests dokumentieren nun das gewünschte Verhalten, und wer die Funktion später ändert, erfährt sofort, wenn er etwas kaputt macht.
+
+## Wichtige Erkenntnisse
+
+- Tests zeigen, dass Software in den geprüften Fällen funktioniert, nicht dass sie fehlerfrei ist.
+- Kenne die Stufen: Unit, Integration, System, Abnahme.
+- Jeder Testfall braucht Eingabe, Aktion und erwartetes Ergebnis.
+- Halte Unit-Tests klein, unabhängig, wiederholbar und klar benannt.

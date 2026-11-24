@@ -1,0 +1,14 @@
+id: wikipedia-de-testgetriebene-entwicklung
+url: "https://de.wikipedia.org/wiki/Testgetriebene_Entwicklung"
+title: "Testgetriebene Entwicklung"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-24
+mode: link
+competencies: [software-testing-quality]
+levels: [advanced]
+note: "Wikipedia text under CC BY-SA; HTTP 200 on 2026-11-24. Link only."

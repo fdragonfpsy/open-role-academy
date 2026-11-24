@@ -1,0 +1,224 @@
+competency: software-testing-quality
+items:
+- id: stq-f-limits
+  level: foundation
+  difficulty: 850
+  type: single
+  stem:
+    en: "What can a passing test show?"
+    de: "Was kann ein bestandener Test zeigen?"
+  options:
+  - en: "That the program behaved correctly in that tested case"
+    de: "Dass sich das Programm in diesem getesteten Fall richtig verhalten hat"
+    correct: true
+  - en: "That the whole program is free of defects for every possible input"
+    de: "Dass das gesamte Programm für jede mögliche Eingabe frei von Fehlern ist"
+    correct: false
+  - en: "That the code will also be easy to read and maintain later"
+    de: "Dass der Code auch später leicht lesbar und wartbar sein wird"
+    correct: false
+  - en: "That no further tests are needed after any later change to the code"
+    de: "Dass nach späteren Änderungen am Code keine weiteren Tests mehr nötig sind"
+    correct: false
+  explanation:
+    en: "A passing test confirms the tested situation only. You cannot try every input, so passing tests never prove the absence of defects, and later changes need new test runs."
+    de: "Ein bestandener Test bestätigt nur die geprüfte Situation. Du kannst nicht jede Eingabe ausprobieren, also beweisen bestandene Tests nie die Fehlerfreiheit, und spätere Änderungen erfordern neue Testläufe."
+  source: https://en.wikipedia.org/wiki/Software_testing
+- id: stq-f-levels
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: "Which test level checks one small part, such as a single function, in isolation?"
+    de: "Welche Teststufe prüft einen kleinen Teil, etwa eine einzelne Funktion, für sich allein?"
+  options:
+  - en: "Unit test"
+    de: "Unit-Test (Modultest)"
+    correct: true
+  - en: "Acceptance test of the finished product by the customer"
+    de: "Abnahmetest des fertigen Produkts durch die Kundschaft"
+    correct: false
+  - en: "System test of the complete assembled application"
+    de: "Systemtest der vollständigen, zusammengesetzten Anwendung"
+    correct: false
+  - en: "Integration test of several components working together"
+    de: "Integrationstest mehrerer zusammenarbeitender Komponenten"
+    correct: false
+  explanation:
+    en: "A unit test covers a small part in isolation. Integration, system and acceptance tests cover progressively larger parts of the system."
+    de: "Ein Unit-Test deckt einen kleinen Teil für sich allein ab. Integrations-, System- und Abnahmetests decken zunehmend größere Teile des Systems ab."
+  source: https://en.wikipedia.org/wiki/Unit_testing
+- id: stq-f-case
+  level: foundation
+  difficulty: 1050
+  type: multi
+  stem:
+    en: "Which elements belong in a test case? Select all that apply."
+    de: "Welche Bestandteile gehören zu einem Testfall? Wähle alle zutreffenden aus."
+  options:
+  - en: "An input or starting state"
+    de: "Eine Eingabe oder ein Ausgangszustand"
+    correct: true
+  - en: "An action to perform"
+    de: "Eine auszuführende Aktion"
+    correct: true
+  - en: "An expected result to compare with"
+    de: "Ein erwartetes Ergebnis zum Vergleich"
+    correct: true
+  - en: "The name of the person who will be blamed if it fails"
+    de: "Der Name der Person, die bei einem Fehlschlag verantwortlich gemacht wird"
+    correct: false
+  - en: "A guarantee that the test will always pass"
+    de: "Eine Garantie, dass der Test immer besteht"
+    correct: false
+  explanation:
+    en: "A test case needs input, action and expected result. Without an expected result you only run the code. Blame and guaranteed success are not part of a test case."
+    de: "Ein Testfall braucht Eingabe, Aktion und erwartetes Ergebnis. Ohne erwartetes Ergebnis führst du den Code nur aus. Schuldzuweisung und garantierter Erfolg gehören nicht zu einem Testfall."
+  source: https://en.wikipedia.org/wiki/Software_testing
+- id: stq-p-boundary
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: "An order gets a discount from 50 euros upwards. Which set of inputs best tests the boundary?"
+    de: "Eine Bestellung erhält ab 50 Euro einen Rabatt. Welche Eingaben testen die Grenze am besten?"
+  options:
+  - en: "49.99, 50.00 and 50.01"
+    de: "49,99, 50,00 und 50,01"
+    correct: true
+  - en: "1, 2 and 3, because small numbers are the easiest to check by hand"
+    de: "1, 2 und 3, weil sich kleine Zahlen am leichtesten von Hand prüfen lassen"
+    correct: false
+  - en: "Only 500, because any large amount will behave like the limit"
+    de: "Nur 500, weil sich jeder große Betrag wie die Grenze verhält"
+    correct: false
+  - en: "Only 50.00, because one value at the limit is always enough"
+    de: "Nur 50,00, weil ein einziger Wert an der Grenze immer genügt"
+    correct: false
+  explanation:
+    en: "Defects often sit at the edges of a range, so test just below, on and just above the limit. Values far from the boundary add little information."
+    de: "Fehler sitzen oft an den Rändern eines Bereichs, also teste knapp darunter, genau auf und knapp über der Grenze. Werte weit von der Grenze entfernt liefern wenig Erkenntnis."
+  source: https://en.wikipedia.org/wiki/Software_testing
+- id: stq-p-double
+  level: practitioner
+  difficulty: 1250
+  type: single
+  stem:
+    en: "What is a test double?"
+    de: "Was ist ein Testdouble?"
+  options:
+  - en: "A stand-in that replaces a dependency during a test"
+    de: "Ein Stellvertreter, der eine Abhängigkeit während eines Tests ersetzt"
+    correct: true
+  - en: "A second copy of every test that runs after the first one"
+    de: "Eine zweite Kopie jedes Tests, die nach dem ersten läuft"
+    correct: false
+  - en: "A test that has to pass twice before it is accepted as valid"
+    de: "Ein Test, der zweimal bestehen muss, bevor er als gültig gilt"
+    correct: false
+  - en: "A colleague who repeats the manual checks of the first tester"
+    de: "Eine Kollegin, die die manuellen Prüfungen der ersten Testerin wiederholt"
+    correct: false
+  explanation:
+    en: "A test double, such as a stub, mock, fake or spy, replaces a slow or unpredictable dependency so that the unit can be tested in isolation."
+    de: "Ein Testdouble, etwa ein Stub, Mock, Fake oder Spy, ersetzt eine langsame oder unvorhersehbare Abhängigkeit, sodass sich die Einheit isoliert testen lässt."
+  source: https://en.wikipedia.org/wiki/Test_double
+- id: stq-p-tdd
+  level: practitioner
+  difficulty: 1350
+  type: single
+  stem:
+    en: "What is the order of the cycle in test-driven development?"
+    de: "Wie lautet die Reihenfolge des Zyklus in der testgetriebenen Entwicklung?"
+  options:
+  - en: "Failing test, minimal code to pass, then refactor"
+    de: "Fehlschlagender Test, minimaler Code zum Bestehen, dann Refactoring"
+    correct: true
+  - en: "Write all the code first, then write the tests, then fix the failing ones"
+    de: "Erst den gesamten Code schreiben, dann die Tests, dann die fehlschlagenden beheben"
+    correct: false
+  - en: "Refactor the code, then write the tests, then delete the code that fails"
+    de: "Den Code umbauen, dann die Tests schreiben, dann den fehlschlagenden Code löschen"
+    correct: false
+  - en: "Write a passing test, then change it until it fails, then ship the result"
+    de: "Einen bestehenden Test schreiben, ihn ändern, bis er fehlschlägt, dann ausliefern"
+    correct: false
+  explanation:
+    en: "TDD works in short cycles: red (a failing test), green (the least code that passes) and refactor (clean up while the tests stay green)."
+    de: "TDD arbeitet in kurzen Zyklen: Rot (ein fehlschlagender Test), Grün (der kleinste Code, der besteht) und Refactoring (aufräumen, während die Tests grün bleiben)."
+  source: https://en.wikipedia.org/wiki/Test-driven_development
+- id: stq-a-coverage
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: "A module has 95 percent line coverage. What does that tell you?"
+    de: "Ein Modul hat 95 Prozent Zeilenabdeckung. Was sagt dir das?"
+  options:
+  - en: "That most lines are executed by tests, but not that the tests check them well"
+    de: "Dass die meisten Zeilen von Tests ausgeführt werden, aber nicht, dass die Tests sie gut prüfen"
+    correct: true
+  - en: "That the module contains at most five percent of the defects of the system"
+    de: "Dass das Modul höchstens fünf Prozent der Fehler des Systems enthält"
+    correct: false
+  - en: "That the tests are guaranteed to catch every defect in the covered lines"
+    de: "Dass die Tests jeden Fehler in den abgedeckten Zeilen garantiert finden"
+    correct: false
+  - en: "That the remaining five percent of the lines can be deleted safely"
+    de: "Dass die übrigen fünf Prozent der Zeilen gefahrlos gelöscht werden können"
+    correct: false
+  explanation:
+    en: "Coverage counts executed code, not verified behaviour. A test can run a line without asserting anything about it, so coverage reveals gaps but does not prove quality."
+    de: "Abdeckung zählt ausgeführten Code, nicht geprüftes Verhalten. Ein Test kann eine Zeile ausführen, ohne etwas darüber zu prüfen; Abdeckung zeigt also Lücken, beweist aber keine Qualität."
+  source: https://en.wikipedia.org/wiki/Code_coverage
+- id: stq-a-mutation
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: "In mutation testing, a mutant survives all tests. What does this most likely indicate?"
+    de: "Beim Mutationstest übersteht ein Mutant alle Tests. Worauf deutet das am ehesten hin?"
+  options:
+  - en: "A weak or missing assertion in the tests"
+    de: "Eine schwache oder fehlende Prüfung in den Tests"
+    correct: true
+  - en: "That the original code was already free of every possible defect"
+    de: "Dass der ursprüngliche Code bereits frei von jedem möglichen Fehler war"
+    correct: false
+  - en: "That the mutation tool has damaged the compiler on the build server"
+    de: "Dass das Mutationswerkzeug den Compiler auf dem Build-Server beschädigt hat"
+    correct: false
+  - en: "That the test suite is complete and no further tests are ever needed"
+    de: "Dass die Testsuite vollständig ist und nie weitere Tests nötig sind"
+    correct: false
+  explanation:
+    en: "A surviving mutant means the changed behaviour went unnoticed, so the tests do not check that behaviour well enough. Adding a targeted assertion usually kills it."
+    de: "Ein überlebender Mutant bedeutet, dass das geänderte Verhalten unbemerkt blieb, die Tests es also nicht gut genug prüfen. Eine gezielte zusätzliche Prüfung tötet ihn meist."
+  source: https://en.wikipedia.org/wiki/Mutation_testing
+- id: stq-a-flaky
+  level: advanced
+  difficulty: 1650
+  type: multi
+  stem:
+    en: "Which are typical causes of flaky tests? Select all that apply."
+    de: "Welche Ursachen sind typisch für instabile (flaky) Tests? Wähle alle zutreffenden aus."
+  options:
+  - en: "Shared state between tests"
+    de: "Geteilter Zustand zwischen Tests"
+    correct: true
+  - en: "Dependence on the current time or on test order"
+    de: "Abhängigkeit von der aktuellen Zeit oder der Testreihenfolge"
+    correct: true
+  - en: "Real network calls or unsynchronised asynchronous code"
+    de: "Echte Netzwerkaufrufe oder nicht synchronisierter asynchroner Code"
+    correct: true
+  - en: "Giving every test its own independent data set"
+    de: "Jedem Test einen eigenen, unabhängigen Datensatz zu geben"
+    correct: false
+  - en: "Replacing a slow external service by a stable stub"
+    de: "Einen langsamen externen Dienst durch einen stabilen Stub zu ersetzen"
+    correct: false
+  explanation:
+    en: "Flakiness comes from hidden dependencies: shared state, time, order, network and unsynchronised async code. Independent data and stubs reduce it."
+    de: "Instabilität entsteht durch versteckte Abhängigkeiten: geteilter Zustand, Zeit, Reihenfolge, Netzwerk und nicht synchronisierter asynchroner Code. Unabhängige Daten und Stubs verringern sie."
+  source: https://en.wikipedia.org/wiki/Test_automation

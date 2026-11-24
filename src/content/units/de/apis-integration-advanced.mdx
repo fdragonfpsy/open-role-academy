@@ -1,0 +1,100 @@
+---
+id: apis-integration-advanced
+competency: apis-integration
+level: advanced
+title: "Verlässliche Integrationen: Idempotenz, Ratenbegrenzung, Ereignisse und Verträge"
+objectives:
+  - "Sichere Wiederholungen entwerfen, mit idempotenten Operationen oder Idempotenzschlüsseln."
+  - "Ratenbegrenzungen und Backoff behandeln."
+  - "Webhooks sicher verarbeiten und mit doppelten oder vertauschten Ereignissen umgehen."
+  - "API-Verträge, Kompatibilität und Versionierung mit einer maschinenlesbaren Beschreibung verwalten."
+minutes: 30
+resources:
+  - wikipedia-idempotence
+  - wikipedia-rate-limiting
+  - wikipedia-webhook
+  - wikipedia-openapi-specification
+  - wikipedia-oauth
+  - wikipedia-de-webhook
+  - wikipedia-de-oauth
+status: ai-draft
+sources:
+  - title: "Idempotence"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Idempotence
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Rate limiting"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Rate_limiting
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Webhook"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Webhook
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "OpenAPI Specification"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/OpenAPI_Specification
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "OAuth"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/OAuth
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "OAuth"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/OAuth
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Webhook"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Webhook
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Wenn Systeme über Netze Daten austauschen, scheitern Aufrufe auf halbem Weg, gehen Antworten verloren und kommen Nachrichten doppelt an. Auf diesem Niveau entwirfst du Integrationen, die trotzdem korrekt bleiben und sich ändern können, ohne die Gegenseite zu brechen.
+
+## Sichere Wiederholungen und Idempotenz
+
+Eine Operation ist **idempotent**, wenn mehrfaches Ausführen dieselbe Wirkung hat wie einmaliges. In HTTP sind GET, PUT und DELETE als idempotent definiert, POST dagegen nicht. Das ist wichtig, weil du nach einem Timeout oft nicht weißt, ob der Server deine Anfrage verarbeitet hat. Ist die Operation idempotent, kannst du einfach wiederholen. Für eine nicht idempotente Operation wie das Anlegen einer Zahlung akzeptieren viele APIs einen **Idempotenzschlüssel**: einen eindeutigen Wert, den du erzeugst und mitsendest, damit der Server eine Wiederholung erkennt und das erste Ergebnis zurückgibt, statt zweimal zu handeln. Prüfe, ob die API, die du nutzt, das unterstützt.
+
+## Ratenbegrenzung und Backoff
+
+Anbietende begrenzen, wie viele Anfragen ein Client in einem Zeitraum senden darf, um ihren Dienst zu schützen. Überschreitest du das, erhältst du üblicherweise den Status 429 Too Many Requests und manchmal einen Header, der sagt, wann du es erneut versuchen kannst. Halte dich daran. Wiederhole mit **exponentiellem Backoff**, also mit nach jedem Fehlschlag längeren Wartezeiten, idealerweise mit einer kleinen zufälligen Abweichung, damit viele Clients nicht im selben Moment erneut anfragen, und höre nach einer Grenze auf. Verringere die Aufrufe durch Zwischenspeichern, Bündeln und indem du nur die Daten anforderst, die du brauchst.
+
+## Webhooks und Ereignisse
+
+Ein Webhook ist ein Aufruf, den die Anbietenden an deinen Server richten, wenn etwas passiert, damit du nicht ständig nachfragen musst. Behandle ihn wie Eingaben von außen:
+
+- **Prüfe** den Absender, zum Beispiel mit einer Signatur oder einem Geheimnis, das die Anbietenden dokumentieren, bevor du handelst.
+- Antworte schnell und erledige die Arbeit danach.
+- Rechne mit **Duplikaten** und mit Ereignissen in anderer Reihenfolge, als sie geschahen; speichere eine Ereigniskennung und mache die Verarbeitung idempotent.
+- Halte einen Weg bereit, den aktuellen Zustand über die API neu abzurufen, falls ein Ereignis verloren geht.
+
+## Verträge, Kompatibilität und Versionierung
+
+Die API ist ein Vertrag zwischen Teams. Die OpenAPI Specification ist ein Standard, um eine HTTP-API in einer maschinenlesbaren Datei zu beschreiben, aus der sich Dokumentation, Client-Code und Tests erzeugen lassen. Bevorzuge kompatible Änderungen: Ein optionales Feld hinzuzufügen ist meist unproblematisch, ein Feld zu entfernen, umzubenennen oder seine Bedeutung zu ändern bricht bestehende Clients. Schreibe Clients so, dass sie unbekannte Felder ignorieren. Führe für brechende Änderungen eine neue Version ein, kündige eine Auslaufzeit an und miss, welche Clients noch die alte nutzen.
+
+## Beispiel zur Veranschaulichung
+
+Nur zur Veranschaulichung; erfundener Shop. Ein Client sendet eine Anfrage zum Anlegen einer Bestellung, und die Verbindung läuft in ein Timeout. Ohne Schlüssel könnte ein blindes Wiederholen zwei Bestellungen anlegen. Der Client sendet deshalb bei jedem Versuch denselben erzeugten Schlüssel, und der Server gibt beim zweiten Mal die bestehende Bestellung zurück. Ein Zahlungsanbieter sendet später das Ereignis „bezahlt“ zweimal und einmal vor dem Ereignis „angelegt“. Der Shop speichert Ereigniskennungen, ignoriert das Duplikat und ruft für das verfrühte Ereignis den aktuellen Bestellzustand über die API ab, statt der Reihenfolge des Eintreffens zu vertrauen.
+
+## Wichtige Erkenntnisse
+
+- Wiederhole nur, was sicher ist: idempotente Operationen oder Anfragen mit Idempotenzschlüssel.
+- Beachte Ratenbegrenzungen und weiche mit exponentiellem Backoff und etwas Zufall aus.
+- Prüfe Webhooks und behandle doppelte und vertauschte Ereignisse.
+- Behandle die API als Vertrag: beschreibe sie, halte Änderungen kompatibel und versioniere brechende.

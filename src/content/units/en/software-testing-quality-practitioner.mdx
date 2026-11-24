@@ -1,0 +1,102 @@
+---
+id: software-testing-quality-practitioner
+competency: software-testing-quality
+level: practitioner
+title: "Test design, test doubles and regression suites"
+objectives:
+  - "Choose test cases with equivalence classes and boundary values."
+  - "Use test doubles to isolate code from slow or unpredictable dependencies."
+  - "Apply the red-green-refactor cycle of test-driven development."
+  - "Balance unit, integration and end-to-end tests in an automated suite."
+minutes: 30
+resources:
+  - wikipedia-integration-testing
+  - wikipedia-test-double
+  - wikipedia-test-driven-development
+  - wikipedia-regression-testing
+  - wikipedia-de-integrationstest
+status: ai-draft
+sources:
+  - title: "Software testing"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Software_testing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Integration testing"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Integration_testing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Test double"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Test_double
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Test-driven development"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Test-driven_development
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Regression testing"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Regression_testing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Test automation"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Test_automation
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Integrationstest"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Integrationstest
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+Once a project has more than a few functions, you cannot test everything by hand. You need a small set of well-chosen automated tests that run on every change and that the team trusts.
+
+## Choosing test cases
+
+Testing every input is impossible, so you pick representatives. Two common techniques:
+
+- **Equivalence classes**: group inputs that the program should treat the same, and test one value per group.
+- **Boundary values**: bugs often hide at the edges of a range, so test just below, on and just above each limit.
+
+Add cases for invalid input and error paths, not only for the happy path.
+
+## Test doubles
+
+A unit often depends on something slow or unpredictable, such as a network service, a clock or a database. A **test double** replaces that dependency during a test. Common kinds are a **stub**, which returns prepared answers; a **mock**, which also checks that it was called as expected; a **fake**, which is a simple working replacement such as an in-memory store; and a **spy**, which records how it was used. Use doubles at the edges of your code. If you double everything, the tests only check your assumptions and no longer the real behaviour.
+
+## Integration tests
+
+Integration tests check that parts fit together, for example that your data-access code really works with a database. They are slower and need more set-up, so write fewer of them and aim them at the seams between components.
+
+## Test-driven development
+
+In test-driven development (TDD) you work in short cycles: write a failing test (red), write the least code that makes it pass (green), then clean up the code while the tests stay green (refactor). The test comes first, so the requirement is clear before you write the solution.
+
+## Regression suites and balance
+
+A regression test checks that something that worked before still works after a change. Over time your automated tests form a regression suite that you run on every change, ideally in the build pipeline. A common recommendation is many fast unit tests, fewer integration tests and only a few end-to-end tests of the whole system, because the higher levels are slower and more fragile.
+
+## Worked example
+
+Illustration only; invented feature. A discount rule gives 10 percent off for orders of at least 50 euros. You test 49.99 (no discount), 50.00 (discount) and 50.01 (discount), plus a negative amount (rejected). The code that loads the customer's order history is replaced by a stub that returns a fixed list, so the test needs no database and runs in milliseconds. One integration test then checks the real loading code against a test database.
+
+## Key takeaways
+
+- Pick test cases by equivalence classes and boundary values, including error paths.
+- Replace slow or unpredictable dependencies with stubs, mocks or fakes, but not everything.
+- TDD cycles through red, green, refactor.
+- Run a regression suite on every change, with many unit tests and fewer high-level ones.

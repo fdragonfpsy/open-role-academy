@@ -1,0 +1,224 @@
+competency: software-debugging
+items:
+- id: dbg-f-first
+  level: foundation
+  difficulty: 850
+  type: single
+  stem:
+    en: "What should you do first when you get a bug report?"
+    de: "Was solltest du zuerst tun, wenn du eine Fehlermeldung zu einem Problem erhältst?"
+  options:
+  - en: "Find steps that reproduce the problem reliably"
+    de: "Schritte finden, die das Problem zuverlässig reproduzieren"
+    correct: true
+  - en: "Rewrite the module where you suspect the problem so that it is cleaner"
+    de: "Das Modul, in dem du das Problem vermutest, sauberer neu schreiben"
+    correct: false
+  - en: "Add random changes until the symptom no longer appears on your machine"
+    de: "Zufällige Änderungen vornehmen, bis das Symptom auf deinem Rechner verschwindet"
+    correct: false
+  - en: "Close the report because a bug that you cannot see is not a bug"
+    de: "Die Meldung schließen, weil ein Fehler, den du nicht siehst, kein Fehler ist"
+    correct: false
+  explanation:
+    en: "Without a reliable way to trigger the problem you cannot narrow it down or know that you fixed it. Random changes and rewrites are slow and add risk."
+    de: "Ohne einen verlässlichen Weg, das Problem auszulösen, kannst du es nicht eingrenzen und nicht wissen, ob du es behoben hast. Zufällige Änderungen und Neuschreiben sind langsam und riskant."
+  source: https://en.wikipedia.org/wiki/Debugging
+- id: dbg-f-trace
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: "What does a stack trace show?"
+    de: "Was zeigt ein Stack Trace?"
+  options:
+  - en: "The function calls that were active when the error occurred"
+    de: "Die Funktionsaufrufe, die beim Auftreten des Fehlers aktiv waren"
+    correct: true
+  - en: "A list of all the files that were changed since the last release"
+    de: "Eine Liste aller Dateien, die seit dem letzten Release geändert wurden"
+    correct: false
+  - en: "The names of the people who wrote the code that failed in production"
+    de: "Die Namen der Personen, die den fehlgeschlagenen Code in der Produktion geschrieben haben"
+    correct: false
+  - en: "The complete list of every variable and value in the whole program"
+    de: "Die vollständige Liste aller Variablen und Werte des gesamten Programms"
+    correct: false
+  explanation:
+    en: "A stack trace lists the chain of calls that led to the error, so it tells you where to start looking. It does not list authors, changed files or all variables."
+    de: "Ein Stack Trace listet die Kette von Aufrufen, die zum Fehler führte, und zeigt dir damit, wo du anfangen kannst. Er listet weder Autorinnen und Autoren noch geänderte Dateien oder alle Variablen."
+  source: https://en.wikipedia.org/wiki/Stack_trace
+- id: dbg-f-fix
+  level: foundation
+  difficulty: 1050
+  type: multi
+  stem:
+    en: "Which steps belong after you think you have found the cause of a bug? Select all that apply."
+    de: "Welche Schritte gehören dazu, nachdem du glaubst, die Ursache eines Fehlers gefunden zu haben? Wähle alle zutreffenden aus."
+  options:
+  - en: "Make the smallest change that fixes the cause"
+    de: "Die kleinste Änderung vornehmen, die die Ursache behebt"
+    correct: true
+  - en: "Repeat the original steps to confirm the problem is gone"
+    de: "Die ursprünglichen Schritte wiederholen, um zu bestätigen, dass das Problem verschwunden ist"
+    correct: true
+  - en: "Add a test that would have caught the bug"
+    de: "Einen Test ergänzen, der den Fehler gefunden hätte"
+    correct: true
+  - en: "Skip the existing tests because the change was small anyway"
+    de: "Die vorhandenen Tests überspringen, weil die Änderung ohnehin klein war"
+    correct: false
+  - en: "Delete the log lines that helped you find the problem"
+    de: "Die Logzeilen löschen, die dir beim Finden des Problems geholfen haben"
+    correct: false
+  explanation:
+    en: "A good fix is small, verified by the original steps and protected by a new test. Skipping existing tests risks new defects."
+    de: "Eine gute Korrektur ist klein, durch die ursprünglichen Schritte bestätigt und durch einen neuen Test abgesichert. Vorhandene Tests zu überspringen riskiert neue Fehler."
+  source: https://en.wikipedia.org/wiki/Debugging
+- id: dbg-p-break
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: "You want to pause only when an order total becomes negative. Which debugger feature fits best?"
+    de: "Du willst nur anhalten, wenn eine Bestellsumme negativ wird. Welche Debugger-Funktion passt am besten?"
+  options:
+  - en: "A conditional breakpoint"
+    de: "Ein bedingter Haltepunkt"
+    correct: true
+  - en: "Stepping through the whole program one line at a time from the start"
+    de: "Das ganze Programm von Anfang an Zeile für Zeile durchlaufen"
+    correct: false
+  - en: "Printing every variable of the program into the log on each line"
+    de: "Bei jeder Zeile alle Variablen des Programms ins Log schreiben"
+    correct: false
+  - en: "Restarting the debugger until the total happens to be negative"
+    de: "Den Debugger neu starten, bis die Summe zufällig negativ ist"
+    correct: false
+  explanation:
+    en: "A conditional breakpoint pauses only when its condition is true, so you do not have to step through thousands of irrelevant lines."
+    de: "Ein bedingter Haltepunkt hält nur an, wenn seine Bedingung zutrifft, sodass du nicht durch Tausende irrelevante Zeilen laufen musst."
+  source: https://en.wikipedia.org/wiki/Debugger
+- id: dbg-p-log
+  level: practitioner
+  difficulty: 1250
+  type: single
+  stem:
+    en: "Which is good practice for log messages?"
+    de: "Was ist gute Praxis für Lognachrichten?"
+  options:
+  - en: "Include identifiers and context, and keep passwords and tokens out"
+    de: "Kennungen und Kontext angeben und Passwörter und Tokens heraushalten"
+    correct: true
+  - en: "Write the full request including the password so that nothing is lost"
+    de: "Die vollständige Anfrage samt Passwort schreiben, damit nichts verloren geht"
+    correct: false
+  - en: "Use one single level for all the messages so the log stays uniform"
+    de: "Für alle Nachrichten eine einzige Stufe nutzen, damit das Log einheitlich bleibt"
+    correct: false
+  - en: "Write short messages like 'error' without any detail to save space"
+    de: "Kurze Nachrichten wie 'Fehler' ohne Details schreiben, um Platz zu sparen"
+    correct: false
+  explanation:
+    en: "Useful logs state what happened and with which identifiers, use levels so that detail can be filtered, and never contain secrets, because logs are copied and kept."
+    de: "Nützliche Logs sagen, was mit welchen Kennungen passiert ist, nutzen Stufen, damit sich Details filtern lassen, und enthalten nie Geheimnisse, denn Logs werden kopiert und aufbewahrt."
+  source: https://en.wikipedia.org/wiki/Logging_(computing)
+- id: dbg-p-bisect
+  level: practitioner
+  difficulty: 1350
+  type: single
+  stem:
+    en: "A feature worked in version 1.0 and is broken in version 1.8. What is an efficient way to find the commit that broke it?"
+    de: "Eine Funktion arbeitete in Version 1.0 und ist in Version 1.8 kaputt. Wie findest du effizient den Commit, der sie kaputt gemacht hat?"
+  options:
+  - en: "Test the middle version and repeatedly halve the range"
+    de: "Die mittlere Version testen und den Bereich wiederholt halbieren"
+    correct: true
+  - en: "Read every change of all versions between 1.0 and 1.8 from the first one"
+    de: "Jede Änderung aller Versionen zwischen 1.0 und 1.8 von der ersten an lesen"
+    correct: false
+  - en: "Revert the whole project to version 1.0 and drop all new features"
+    de: "Das ganze Projekt auf Version 1.0 zurücksetzen und alle neuen Funktionen verwerfen"
+    correct: false
+  - en: "Ask the whole team to guess which commit it was and vote on it"
+    de: "Das ganze Team raten lassen, welcher Commit es war, und darüber abstimmen"
+    correct: false
+  explanation:
+    en: "Binary search halves the number of candidates with each test, so even a long history needs only a few checks. Tools for version control can automate it."
+    de: "Die binäre Suche halbiert mit jedem Test die Zahl der Kandidaten, sodass selbst eine lange Historie nur wenige Prüfungen braucht. Werkzeuge der Versionsverwaltung können sie automatisieren."
+  source: https://en.wikipedia.org/wiki/Debugging
+- id: dbg-a-flaky
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: "A bug appears in about one of thirty test runs. Which approach is most likely to make progress?"
+    de: "Ein Fehler tritt bei etwa einem von dreißig Testläufen auf. Welcher Ansatz bringt am ehesten Fortschritt?"
+  options:
+  - en: "Repeat the test until it fails and keep complete logs of failing runs"
+    de: "Den Test wiederholen, bis er scheitert, und vollständige Logs fehlgeschlagener Läufe sichern"
+    correct: true
+  - en: "Ignore it, because a bug that rarely occurs cannot be a real problem"
+    de: "Ihn ignorieren, weil ein selten auftretender Fehler kein echtes Problem sein kann"
+    correct: false
+  - en: "Increase the timeouts until the test passes on the first thirty runs"
+    de: "Die Zeitlimits erhöhen, bis der Test die ersten dreißig Läufe besteht"
+    correct: false
+  - en: "Delete the test from the suite so that the pipeline turns green"
+    de: "Den Test aus der Suite löschen, damit die Pipeline grün wird"
+    correct: false
+  explanation:
+    en: "Intermittent bugs need many repetitions and good evidence of failing runs to compare with passing ones. Longer timeouts or deleting the test only hide the problem."
+    de: "Sporadische Fehler brauchen viele Wiederholungen und gute Belege fehlgeschlagener Läufe zum Vergleich mit erfolgreichen. Längere Zeitlimits oder das Löschen des Tests verbergen das Problem nur."
+  source: https://en.wikipedia.org/wiki/Heisenbug
+- id: dbg-a-delta
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: "What is the goal of delta debugging?"
+    de: "Was ist das Ziel von Delta Debugging?"
+  options:
+  - en: "To shrink a failing input or change set to a small one that still fails"
+    de: "Eine fehlschlagende Eingabe oder Änderungsmenge auf eine kleine zu verkleinern, die noch scheitert"
+    correct: true
+  - en: "To generate the largest possible input in order to stress the system"
+    de: "Die größtmögliche Eingabe zu erzeugen, um das System zu belasten"
+    correct: false
+  - en: "To replace the debugger by an automatic tool that fixes the code"
+    de: "Den Debugger durch ein automatisches Werkzeug zu ersetzen, das den Code korrigiert"
+    correct: false
+  - en: "To measure how many lines of the program are executed by the tests"
+    de: "Zu messen, wie viele Zeilen des Programms von den Tests ausgeführt werden"
+    correct: false
+  explanation:
+    en: "Delta debugging systematically removes parts of a failing input or change set and keeps only what still triggers the failure, which makes the cause easier to see."
+    de: "Delta Debugging entfernt systematisch Teile einer fehlschlagenden Eingabe oder Änderungsmenge und behält nur, was den Fehler noch auslöst, sodass die Ursache leichter erkennbar wird."
+  source: https://en.wikipedia.org/wiki/Delta_debugging
+- id: dbg-a-root
+  level: advanced
+  difficulty: 1650
+  type: multi
+  stem:
+    en: "Which statements about root cause analysis are correct? Select all that apply."
+    de: "Welche Aussagen zur Grundursachenanalyse sind richtig? Wähle alle zutreffenden aus."
+  options:
+  - en: "It asks why the defect could exist and go unnoticed"
+    de: "Sie fragt, warum der Fehler bestehen und unbemerkt bleiben konnte"
+    correct: true
+  - en: "It may lead to changes in process, tests or design, not only in code"
+    de: "Sie kann zu Änderungen an Prozess, Tests oder Entwurf führen, nicht nur am Code"
+    correct: true
+  - en: "It focuses on the system and process rather than on blaming a person"
+    de: "Sie richtet den Blick auf System und Prozess statt auf die Schuld einer Person"
+    correct: true
+  - en: "It is finished as soon as the failing line of code has been corrected"
+    de: "Sie ist abgeschlossen, sobald die fehlerhafte Codezeile korrigiert wurde"
+    correct: false
+  - en: "It should name the person who made the mistake in the public report"
+    de: "Sie sollte im öffentlichen Bericht die Person nennen, die den Fehler gemacht hat"
+    correct: false
+  explanation:
+    en: "A root cause is the underlying reason a defect was possible and unnoticed. Looking only at the failing line misses it, and blaming a person does not prevent a repeat."
+    de: "Eine Grundursache ist der tiefere Grund, warum ein Fehler möglich war und unbemerkt blieb. Nur die fehlerhafte Zeile zu betrachten verfehlt sie, und Schuldzuweisung verhindert keine Wiederholung."
+  source: https://en.wikipedia.org/wiki/Debugging

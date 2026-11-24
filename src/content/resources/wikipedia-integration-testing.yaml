@@ -1,0 +1,14 @@
+id: wikipedia-integration-testing
+url: "https://en.wikipedia.org/wiki/Integration_testing"
+title: "Integration testing"
+provider: Wikipedia
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-24
+mode: link
+competencies: [software-testing-quality]
+levels: [practitioner]
+note: "Wikipedia text under CC BY-SA; HTTP 200 on 2026-11-24. Link only."

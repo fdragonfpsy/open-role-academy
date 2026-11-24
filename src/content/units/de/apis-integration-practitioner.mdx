@@ -1,0 +1,105 @@
+---
+id: apis-integration-practitioner
+competency: apis-integration
+level: practitioner
+title: "REST-artige APIs, Authentifizierung und Fehlerbehandlung"
+objectives:
+  - "Die Grundideen REST-artiger Web-APIs beschreiben."
+  - "Authentifizierung und Autorisierung unterscheiden und einen geeigneten Weg für Zugangsdaten wählen."
+  - "Fehler, Zeitüberschreitungen und Seitenweises Laden in einem Client robust behandeln."
+  - "API-Dokumentation lesen und Versionierung einplanen."
+minutes: 30
+resources:
+  - wikipedia-rest
+  - wikipedia-http
+  - wikipedia-list-http-status-codes
+  - wikipedia-oauth
+  - wikipedia-de-representational-state-transfer
+  - wikipedia-de-http-statuscode
+status: ai-draft
+sources:
+  - title: "REST"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/REST
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "HTTP"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/HTTP
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "List of HTTP status codes"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "OAuth"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/OAuth
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "JSON"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/JSON
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Representational State Transfer"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Representational_State_Transfer
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "HTTP-Statuscode"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/HTTP-Statuscode
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Ein Client, der nur im Normalfall funktioniert, scheitert in der Produktion: Das Netz ist langsam, ein Token läuft ab, der Server liefert einen Fehler, oder die Antwort ist auf viele Seiten verteilt. Robuster Integrationscode rechnet damit.
+
+## REST-artige APIs
+
+REST ist ein Architekturstil für Web-APIs. Seine Hauptideen sind:
+
+- Dinge, die die API verwaltet, sind **Ressourcen**, jeweils durch eine URL wie `/customers/42` bezeichnet.
+- Die HTTP-Methoden drücken die Operation aus: GET liest, POST legt an, PUT ersetzt, PATCH ändert einen Teil einer Ressource, DELETE entfernt.
+- Jede Anfrage ist **zustandslos**: Sie enthält alles, was der Server braucht, er führt also keine Unterhaltung über mehrere Anfragen hinweg.
+- Ressourcen werden meist in JSON dargestellt.
+
+Viele APIs, die REST genannt werden, folgen nur einem Teil dieser Ideen. Lies deshalb immer die Dokumentation der konkreten API.
+
+## Authentifizierung und Autorisierung
+
+**Authentifizierung** beantwortet, wer du bist; **Autorisierung** beantwortet, was du tun darfst. Übliche Wege für Zugangsdaten sind ein API-Schlüssel oder ein Token in einem Anfrage-Header. OAuth ist ein Standard, mit dem Nutzende einer Anwendung begrenzten Zugriff auf ihre Daten erlauben, ohne ihr Passwort herauszugeben. Nutze immer HTTPS, schreibe Geheimnisse nie in den Code oder in eine URL, die protokolliert werden kann, und lege sie in Konfiguration oder einem Geheimnisspeicher ab. Status 401 bedeutet meist fehlende oder ungültige Zugangsdaten, 403 bedeutet, dass du bekannt bist, aber nicht darfst.
+
+## Fehler und Robustheit
+
+- Prüfe den Statuscode, bevor du den Body liest, und behandle die 4xx-Familie anders als 5xx: Ein 400 oder 404 wird durch Wiederholen nicht besser, ein 503 kann vorübergehen.
+- Setze ein **Timeout**. Ein Aufruf ohne Timeout kann dein Programm ewig blockieren.
+- Rechne damit, dass der Body fehlt oder ungültig ist, und behandle Parse-Fehler.
+- Logge Anfragekennung und Status fehlgeschlagener Aufrufe, ohne Geheimnisse.
+- Bei langen Listen liefern APIs **Seiten**; folge den Seiteninformationen bis zum Ende, statt anzunehmen, dass die erste Antwort vollständig ist.
+
+## Dokumentation und Versionierung
+
+Lies die API-Dokumentation zu Endpunkten, Parametern, Beispielantworten und Fehlerformaten. Eine API ändert sich mit der Zeit, deshalb tragen Anbietende oft eine Version in der URL oder in einem Header. Lege die Version fest, gegen die du getestet hast, und lies Hinweise zu Änderungen und auslaufenden Funktionen.
+
+## Beispiel zur Veranschaulichung
+
+Nur zur Veranschaulichung; erfundener Dienst. Dein Code lädt alle offenen Rechnungen aus einer Abrechnungs-API. Der erste Aufruf liefert 50 Einträge und einen Link zur nächsten Seite; du folgst den Links, bis keiner mehr kommt. Ein Aufruf scheitert mit 401, weil ein Token abgelaufen ist, also fordert dein Client einmal ein neues Token an und wiederholt die Anfrage. Ein anderer Aufruf liefert 503, daher wartet er kurz und versucht es einige Male mit wachsenden Wartezeiten erneut, protokolliert dann den Fehler und meldet ihn, statt abzustürzen. Basisadresse und Token kommen aus der Konfiguration, nicht aus dem Code.
+
+## Wichtige Erkenntnisse
+
+- REST-artige APIs stellen Ressourcen unter URLs bereit und nutzen HTTP-Methoden und JSON.
+- Authentifizierung ist, wer du bist, Autorisierung, was du darfst; schütze Geheimnisse und nutze HTTPS.
+- Prüfe Statuscodes, setze Timeouts, behandle Seitenwechsel und wiederhole nur Fehler, die vorübergehen können.
+- Lies die Dokumentation und lege die getestete API-Version fest.

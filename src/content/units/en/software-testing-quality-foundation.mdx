@@ -1,0 +1,88 @@
+---
+id: software-testing-quality-foundation
+competency: software-testing-quality
+level: foundation
+title: "Why we test: levels, test cases and unit tests"
+objectives:
+  - "Explain what testing can and cannot show about software."
+  - "Name the common test levels: unit, integration, system and acceptance."
+  - "Describe a test case with input, action and expected result."
+  - "Write the idea of a simple, readable unit test."
+minutes: 25
+resources:
+  - wikipedia-software-testing
+  - wikipedia-unit-testing
+  - wikibooks-intro-software-engineering-testing
+  - wikipedia-de-softwaretest
+  - wikipedia-de-modultest
+status: ai-draft
+sources:
+  - title: "Software testing"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Software_testing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Unit testing"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Unit_testing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Introduction to Software Engineering/Testing"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Introduction_to_Software_Engineering/Testing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Softwaretest"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Softwaretest
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Modultest"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Modultest
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+Software is changed all the time, and every change can break something that worked yesterday. Tests are repeatable checks that tell you quickly whether the program still does what it should.
+
+## What testing can show
+
+Testing means running software to find out whether it meets its requirements and to find defects. A passing test shows that the program behaved correctly in that one situation. It does not prove that the program is free of defects, because you can never try every input. This is why test design, choosing good cases, matters more than the sheer number of tests.
+
+## Test levels
+
+Test levels describe how much of the system a test covers:
+
+- **Unit test**: checks one small part, such as a function or a class, in isolation.
+- **Integration test**: checks that several parts work together, for example your code and a database.
+- **System test**: checks the complete, assembled application against its requirements.
+- **Acceptance test**: checks whether the result is what the customer or user needs.
+
+Small tests are fast and point to the cause quickly; larger tests are slower but find problems that only appear when parts interact.
+
+## What is in a test case
+
+A test case describes a situation and what should happen: the **input** or starting state, the **action** you perform, and the **expected result**. Without an expected result you are only running code, not testing it. Good tests are independent of each other and give the same result every time they run.
+
+## Writing a simple unit test
+
+Many unit tests follow three steps: arrange (prepare the data), act (call the code under test) and assert (compare the result with the expectation). A test should check one behaviour and have a name that says what that behaviour is, so that a failing test already tells you what is broken.
+
+## Worked example
+
+Illustration only; invented function. A function `fullPrice(net, taxRate)` should return the net price plus tax. You write three cases: net 100 with a rate of 0.2 should give 120; net 0 should give 0; a negative net should be rejected with an error. You run them, and the second one fails because the function returns an empty value instead of 0. You fix the function and run all three again. The tests now document the intended behaviour, and anyone who changes the function later learns at once if they break it.
+
+## Key takeaways
+
+- Tests show that software works in the tried cases, not that it is defect-free.
+- Know the levels: unit, integration, system, acceptance.
+- Every test case needs an input, an action and an expected result.
+- Keep unit tests small, independent, repeatable and clearly named.
