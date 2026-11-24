@@ -1,0 +1,91 @@
+---
+id: software-testing-quality-advanced
+competency: software-testing-quality
+level: advanced
+title: "Teststrategie: Abdeckung, Mutationstests und eine verlässliche Suite"
+objectives:
+  - "Codeabdeckung richtig interpretieren und ihre Grenzen erklären."
+  - "Mutationstests als Prüfung der Testqualität erklären."
+  - "Instabile und langsame Tests diagnostizieren und verringern."
+  - "Eine risikoorientierte Teststrategie entwerfen und Tests wartbar halten."
+minutes: 30
+resources:
+  - wikipedia-code-coverage
+  - wikipedia-mutation-testing
+  - wikipedia-test-automation
+  - wikipedia-test-driven-development
+  - wikipedia-de-testgetriebene-entwicklung
+status: ai-draft
+sources:
+  - title: "Code coverage"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Code_coverage
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Mutation testing"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Mutation_testing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Test automation"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Test_automation
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Test-driven development"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Test-driven_development
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Software testing"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Software_testing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Testgetriebene Entwicklung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Testgetriebene_Entwicklung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Eine große Testsuite ist nicht automatisch eine gute. Auf diesem Niveau entscheidest du, was, wie viel und wie getestet wird und wie die Suite schnell, verlässlich und günstig zu pflegen bleibt, damit das Team ihr weiter vertraut.
+
+## Abdeckung: nützlich, aber leicht misszuverstehen
+
+Die Codeabdeckung (Code Coverage) misst, wie viel vom Code beim Testlauf ausgeführt wird, etwa den Anteil der Zeilen oder Verzweigungen. Ein Teil, den kein Test ausführt, ist offensichtlich ungetestet, die Abdeckung findet also Lücken. Umgekehrt gilt das nicht: Code kann von einem Test ausgeführt werden, der nichts prüft. Hohe Abdeckung bedeutet daher nicht hohe Qualität, und wer aus der Zahl ein Ziel macht, lädt zu Tests ein, die nur geschrieben werden, um sie zu erhöhen. Nutze die Abdeckung, um blinde Flecken zu suchen, nicht als Punktzahl.
+
+## Mutationstests
+
+Mutationstests fragen, ob deine Tests einen Fehler bemerken würden. Ein Werkzeug nimmt kleine Änderungen am Code vor, etwa einen Vergleich umzukehren oder ein Plus durch ein Minus zu ersetzen. Jede geänderte Version ist ein Mutant. Schlagen die Tests fehl, ist der Mutant getötet; bestehen alle, hat kein Test die Änderung bemerkt, was auf eine schwache oder fehlende Prüfung hinweist. Das Verfahren ist aufwendig und wird deshalb oft nur auf kritische Module angewendet.
+
+## Verlässlichkeit der Suite
+
+Ein **instabiler** Test (flaky) besteht mal und scheitert mal, ohne dass sich der Code ändert. Typische Ursachen sind geteilter Zustand zwischen Tests, Abhängigkeit von Zeit oder Reihenfolge, echte Netzwerkaufrufe und nicht synchronisierter asynchroner Code. Instabile Tests bringen ein Team dazu, rote Ergebnisse zu ignorieren, also repariere oder isoliere sie schnell und halte sie nach. Halte die Suite außerdem schnell, denn eine langsame Suite wird seltener ausgeführt.
+
+## Eine risikoorientierte Strategie
+
+Du kannst nicht alles gleich gründlich testen. Setze den meisten Aufwand dort ein, wo ein Fehler teuer oder wahrscheinlich ist: Geld, Sicherheit, Datenverlust, komplexer oder oft geänderter Code. Wähle die günstigste Teststufe, die ein Problem erkennen kann. Automatisiere stabile, wiederholte Prüfungen und lass Menschen explorativ testen, was neu oder unklar ist.
+
+## Tests wartbar halten
+
+Tests sind auch Code. Teste Verhalten über die öffentliche Schnittstelle statt interner Details, damit Refactoring sie nicht zerbricht. Beseitige Duplikate mit kleinen Hilfsfunktionen, benenne Tests nach Verhalten und lösche Tests, die nichts mehr absichern.
+
+## Beispiel zur Veranschaulichung
+
+Nur zur Veranschaulichung; erfundenes Projekt. Ein Modul meldet 95 Prozent Zeilenabdeckung, und trotzdem gelangt ein Fehler in der Steuerberechnung in die Produktion. Ein Mutationslauf zeigt, dass der Wechsel von `>=` zu `>` bei der Schwellenprüfung keinen Test fehlschlagen lässt, weil die Tests nie den genauen Schwellenwert verwenden. Das Team ergänzt einen Grenzwerttest, und der Mutant wird getötet. Außerdem finden sie drei Tests, die etwa bei jedem zwanzigsten Lauf scheitern, weil sie eine Datenbanktabelle teilen. Sie geben jedem Test eigene Daten, und die Ausfälle hören auf.
+
+## Wichtige Erkenntnisse
+
+- Abdeckung zeigt, was nicht getestet ist, nicht dass das Getestete gut getestet ist.
+- Mutationstests messen, ob Tests kleine Fehler bemerken.
+- Instabile und langsame Tests zerstören das Vertrauen in die Suite; behebe sie früh.
+- Setze Testaufwand nach Risiko ein und teste Verhalten, nicht Interna.

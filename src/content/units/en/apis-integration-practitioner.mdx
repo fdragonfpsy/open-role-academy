@@ -1,0 +1,105 @@
+---
+id: apis-integration-practitioner
+competency: apis-integration
+level: practitioner
+title: "REST-style APIs, authentication and error handling"
+objectives:
+  - "Describe the main ideas of REST-style web APIs."
+  - "Tell authentication from authorization and choose a suitable way to send credentials."
+  - "Handle errors, timeouts and paging robustly in a client."
+  - "Read API documentation and plan for versioning."
+minutes: 30
+resources:
+  - wikipedia-rest
+  - wikipedia-http
+  - wikipedia-list-http-status-codes
+  - wikipedia-oauth
+  - wikipedia-de-representational-state-transfer
+  - wikipedia-de-http-statuscode
+status: ai-draft
+sources:
+  - title: "REST"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/REST
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "HTTP"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/HTTP
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "List of HTTP status codes"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "OAuth"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/OAuth
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "JSON"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/JSON
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Representational State Transfer"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Representational_State_Transfer
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "HTTP-Statuscode"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/HTTP-Statuscode
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+A client that works on the happy path will fail in production: the network is slow, a token expires, the server returns an error or the answer is split over many pages. Robust integration code expects this.
+
+## REST-style APIs
+
+REST is an architectural style for web APIs. Its main ideas are:
+
+- Things the API manages are **resources**, each identified by a URL such as `/customers/42`.
+- The HTTP methods express the operation: GET reads, POST creates, PUT replaces, PATCH changes part of a resource, DELETE removes.
+- Each request is **stateless**: it carries everything the server needs, so the server keeps no conversation between requests.
+- Resources are usually represented in JSON.
+
+Many APIs that are called REST follow only some of these ideas, so always read the documentation of the actual API.
+
+## Authentication and authorization
+
+**Authentication** answers who you are; **authorization** answers what you may do. Typical ways to send credentials are an API key or a token in a request header. OAuth is a standard that lets a user grant an application limited access to their data without giving it their password. Always use HTTPS, never put secrets in the code or in a URL that may be logged, and store them in configuration or a secret store. Status 401 usually means missing or invalid credentials, and 403 means that you are known but not allowed.
+
+## Errors and robustness
+
+- Check the status code before reading the body, and handle the 4xx family differently from 5xx: a 400 or 404 will not be fixed by retrying, while a 503 may pass.
+- Set a **timeout**. A call without a timeout can block your program forever.
+- Expect the body to be missing or invalid and handle parse errors.
+- Log the request identifier and status of failed calls, without secrets.
+- For long lists, APIs return **pages**; follow the paging information until it ends instead of assuming that the first response is complete.
+
+## Documentation and versioning
+
+Read the API documentation for endpoints, parameters, example responses and error formats. An API changes over time, so providers often put a version in the URL or a header. Pin the version that you tested against and read the notices about changes and deprecations.
+
+## Worked example
+
+Illustration only; invented service. Your code loads all open invoices from a billing API. The first call returns 50 items plus a link to the next page; you follow the links until none is left. A call fails with 401, because a token has expired, so your client requests a new token once and repeats the request. Another call returns 503, so it waits a moment and retries a few times with growing waits, then logs the failure and reports it instead of crashing. The base address and the token come from configuration, not from the code.
+
+## Key takeaways
+
+- REST-style APIs expose resources at URLs and use HTTP methods and JSON.
+- Authentication is who you are, authorization is what you may do; protect secrets and use HTTPS.
+- Check status codes, set timeouts, handle paging and retry only errors that may pass.
+- Read the documentation and pin the API version you tested against.

@@ -1,0 +1,100 @@
+---
+id: software-debugging-advanced
+competency: software-debugging
+level: advanced
+title: "Schwierige Fehler: sporadische Ausfälle, Grundursachen und Observability"
+objectives:
+  - "Sporadische Fehler wie zeitabhängige und Nebenläufigkeitsfehler untersuchen."
+  - "Eine fehlschlagende Eingabe systematisch verkleinern."
+  - "Symptom, Ursache und Grundursache in einer Nachbetrachtung trennen."
+  - "Logs, Metriken und Traces nutzen, um ein laufendes System zu analysieren."
+minutes: 30
+resources:
+  - wikipedia-heisenbug
+  - wikipedia-delta-debugging
+  - wikipedia-logging-computing
+  - wikibooks-intro-software-engineering-debugger
+  - wikipedia-de-logging
+status: ai-draft
+sources:
+  - title: "Heisenbug"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Heisenbug
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Delta debugging"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Delta_debugging
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Logging (computing)"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Logging_(computing)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Debugging"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Debugging
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Introduction to Software Engineering/Tools/Debugger"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Introduction_to_Software_Engineering/Tools/Debugger
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Logging"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Logging
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Manche Fehler lassen sich nicht auf Abruf wiederholen, verschwinden, sobald du hinschaust, oder zeigen sich nur unter Last in der Produktion. Sie kosten am meisten Zeit und richten den größten Schaden an, und sie erfordern Methode statt Glück.
+
+## Sporadische Fehler
+
+Ein Fehler, der sich ändert oder verschwindet, wenn du ihn beobachtest, wird manchmal Heisenbug genannt. Typische Ursachen sind Zeitverhalten und Nebenläufigkeit: Zwei Threads oder Anfragen greifen in ungünstiger Reihenfolge auf gemeinsame Daten zu, eine Aufgabe endet vor einer anderen, von der sie unausgesprochen abhängt, oder ein Wert hängt von Uhr, Zeitzone oder Zufallszahlen ab. Eine zusätzliche Ausgabe oder ein Lauf im Debugger kann das Zeitverhalten ändern und das Problem verbergen.
+
+Strategien:
+
+- Mache die Umgebung wo möglich deterministisch: feste Uhr, fester Zufallsstartwert, ein Thread.
+- Erhöhe die Chance auf den Fehler, etwa durch viele Wiederholungen oder zusätzliche Last, und zeichne jeden fehlschlagenden Lauf vollständig auf.
+- Vergleiche fehlschlagende und erfolgreiche Läufe auf den ersten Unterschied.
+- Bevorzuge bei Zeitproblemen aufzeichnende Mittel wie ausführliche Logs gegenüber interaktivem Anhalten.
+
+## Eine fehlschlagende Eingabe verkleinern
+
+Wenn eine große Eingabe ein Programm scheitern lässt, entferne systematisch Teile und behalte nur, was noch scheitert. Delta Debugging ist eine Methode, die das automatisiert: Sie probiert wiederholt kleinere Varianten der Eingabe oder der Änderungen und behält die, die den Fehler noch erzeugen, und endet bei einer kleinen Eingabe, die viel leichter zu verstehen ist.
+
+## Symptom, Ursache und Grundursache
+
+Das Symptom ist, was du siehst. Die unmittelbare Ursache ist die Zeile oder Bedingung, die es erzeugt hat. Eine **Grundursache** ist der tiefere Grund, warum der Fehler bestehen konnte und nicht bemerkt wurde, etwa eine fehlende Validierung, eine falsche Annahme im Entwurf, ein fehlender Test oder eine unklare Anforderung. Wer nur die Ursache behebt, lässt dieselbe Art von Problem womöglich zurückkehren. Betrachte nach einem ernsten Problem, was passiert ist, mit Blick auf System und Prozess statt auf Schuld einer Person, und beschließe wenige konkrete Änderungen.
+
+## Observability in laufenden Systemen
+
+An ein Produktivsystem kannst du oft keinen Debugger anhängen. Teams stützen sich deshalb auf:
+
+- **Logs** einzelner Ereignisse, am besten strukturiert, damit sie durchsuchbar sind.
+- **Metriken** wie Fehlerraten und Antwortzeiten im Zeitverlauf.
+- **Traces**, die eine Anfrage über mehrere Dienste verfolgen, meist indem eine Kennung mitgegeben wird.
+
+Führe solche Kennungen früh ein; sie machen es möglich, alle Logzeilen einer fehlgeschlagenen Anfrage zu finden.
+
+## Beispiel zur Veranschaulichung
+
+Nur zur Veranschaulichung; erfundenes System. Ein Test scheitert etwa bei jedem dreißigsten Lauf. Du wiederholst ihn in einer Schleife, bis er scheitert, und sicherst das Log jedes fehlgeschlagenen Laufs. Alle zeigen, dass die zweite Aktualisierung beginnt, bevor die erste fertig ist. Du fixierst in einem Test die Uhr und die Reihenfolge der Aufgaben, reproduzierst den Fehler jedes Mal und findest, dass zwei Aufgaben denselben Datensatz ohne Sperre schreiben. Nach der Korrektur ergänzt du einen Belastungstest, der das Szenario oft ausführt. In der Nachbetrachtung hältst du die Grundursache fest: Der Entwurf legte nicht fest, wer den Datensatz besitzt.
+
+## Wichtige Erkenntnisse
+
+- Mache sporadische Fehler reproduzierbar, indem du Zeit, Zufall und Nebenläufigkeit kontrollierst oder wiederholst, bis sie auftreten.
+- Verkleinere fehlschlagende Eingaben systematisch, statt alles zu lesen.
+- Suche die Grundursache und verbessere den Prozess, nicht nur den Code.
+- Nutze in der Produktion Logs, Metriken und Traces mit Anfragekennungen.

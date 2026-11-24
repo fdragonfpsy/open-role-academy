@@ -1,0 +1,100 @@
+---
+id: software-debugging-practitioner
+competency: software-debugging
+level: practitioner
+title: "Debugger, Logs und Eingrenzen der Ursache"
+objectives:
+  - "Haltepunkte, Einzelschritte und die Anzeige von Variablen in einem Debugger nutzen."
+  - "Hilfreiche Lognachrichten auf sinnvollen Stufen schreiben, ohne sensible Daten preiszugeben."
+  - "Ein minimales reproduzierbares Beispiel erstellen."
+  - "Mit binärer Suche herausfinden, wo oder wann ein Fehler entstanden ist."
+minutes: 30
+resources:
+  - wikipedia-debugger
+  - wikipedia-logging-computing
+  - wikipedia-stack-trace
+  - wikibooks-intro-software-engineering-debugger
+  - wikipedia-de-debugger
+status: ai-draft
+sources:
+  - title: "Debugger"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Debugger
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Logging (computing)"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Logging_(computing)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Stack trace"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Stack_trace
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Debugging"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Debugging
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Introduction to Software Engineering/Tools/Debugger"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Introduction_to_Software_Engineering/Tools/Debugger
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Debugger"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Debugger
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Logging"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Logging
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Werte auszugeben genügt bei kleinen Problemen. Wenn Code größer ist, auf einem Server läuft oder nur manchmal scheitert, brauchst du Werkzeuge, mit denen du das Programm beim Laufen beobachtest, und Aufzeichnungen darüber, was es getan hat.
+
+## Einen Debugger nutzen
+
+Ein Debugger führt dein Programm unter Kontrolle aus. Die Kernfunktionen sind:
+
+- **Haltepunkte (Breakpoints)**: Das Programm hält an einer gewählten Zeile an, auf Wunsch nur, wenn eine Bedingung zutrifft.
+- **Einzelschritte**: Du läufst Zeile für Zeile, über einen Aufruf hinweg, in ihn hinein oder aus der aktuellen Funktion heraus.
+- **Untersuchen**: Du siehst Variablenwerte und den Aufrufstapel im Moment der Unterbrechung und kannst im Stapel nach oben gehen, um zu sehen, wie du dorthin gekommen bist.
+- **Beobachten**: Du verfolgst einen Ausdruck und siehst, wann er sich ändert.
+
+Bilde vor dem Anhalten eine Hypothese: Entscheide, welchen Wert du an dieser Stelle erwartest. Der Debugger nützt am meisten, wenn du Erwartung und Wirklichkeit vergleichst.
+
+## Logging
+
+Ein Log ist eine Aufzeichnung von Ereignissen während der Programmlaufzeit und die einzige Beweisquelle, wenn du keinen Debugger anhängen kannst, zum Beispiel auf einem Server. Üblich sind Stufen wie Debug, Info, Warnung und Fehler, damit sich Details ein- und ausschalten lassen. Eine nützliche Nachricht sagt, was passiert ist, nennt die relevanten Kennungen und Werte und enthält Kontext wie eine Anfrage- oder Bestellnummer. Schreibe keine Passwörter, Tokens oder unnötigen personenbezogenen Daten in Logs; Logs werden oft kopiert und lange aufbewahrt.
+
+## Minimales reproduzierbares Beispiel
+
+Wenn du Hilfe von Kolleginnen und Kollegen oder den Betreuenden einer Bibliothek brauchst, reduziere das Problem auf den kleinsten Code und die kleinsten Daten, die es noch zeigen. Teile nacheinander zu entfernen zeigt dir oft die Ursache, bevor du jemanden fragst. Verschwindet das Problem, wenn du etwas entfernst, ist dieses Etwas beteiligt.
+
+## Binäre Suche nach der Ursache
+
+Wenn ein Programm früher funktionierte und jetzt scheitert, kannst du den Suchraum immer wieder halbieren. Prüfe die mittlere Version zwischen einem bekannten guten und einem bekannten schlechten Zustand und mache mit der Hälfte weiter, die die Änderung noch enthält. Werkzeuge der Versionsverwaltung können das über die Commit-Historie automatisieren, was am besten klappt, wenn jeder Commit baut und die Tests besteht. Dieselbe Idee funktioniert im Code: Prüfe einen Wert in der Mitte eines langen Ablaufs, um zu erfahren, welche Hälfte falsch ist.
+
+## Beispiel zur Veranschaulichung
+
+Nur zur Veranschaulichung; erfundener Dienst. Bestellungen zeigen manchmal ein falsches Lieferdatum. Du setzt einen bedingten Haltepunkt, der nur auslöst, wenn das Datum vor dem Bestelldatum liegt. Beim Anhalten zeigt der Aufrufstapel, dass das Datum in einer Hilfsfunktion gesetzt wurde, die Zeiten zwischen Zeitzonen umrechnet. Die Logzeile, die du dort ergänzt hast, zeigt die Zone bei Bestellungen eines Shops als leer. Du baust ein Beispiel mit zehn Zeilen, das die Hilfsfunktion mit leerer Zone aufruft, reproduzierst das falsche Datum, korrigierst den Standardwert und ergänzt einen Test.
+
+## Wichtige Erkenntnisse
+
+- Nutze Haltepunkte, Einzelschritte und den Aufrufstapel, um Erwartung und Wirklichkeit zu vergleichen.
+- Logge mit Stufen und Kontext und halte Geheimnisse und personenbezogene Daten heraus.
+- Reduziere ein Problem auf ein minimales reproduzierbares Beispiel.
+- Halbiere den Suchraum, in der Historie oder im Code, um die Ursache schnell zu finden.

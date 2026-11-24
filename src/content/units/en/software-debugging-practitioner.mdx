@@ -1,0 +1,100 @@
+---
+id: software-debugging-practitioner
+competency: software-debugging
+level: practitioner
+title: "Debuggers, logs and isolating the cause"
+objectives:
+  - "Use breakpoints, stepping and variable inspection in a debugger."
+  - "Write useful log messages at sensible levels without leaking sensitive data."
+  - "Build a minimal reproducible example."
+  - "Use binary search to find where or when a defect was introduced."
+minutes: 30
+resources:
+  - wikipedia-debugger
+  - wikipedia-logging-computing
+  - wikipedia-stack-trace
+  - wikibooks-intro-software-engineering-debugger
+  - wikipedia-de-debugger
+status: ai-draft
+sources:
+  - title: "Debugger"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Debugger
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Logging (computing)"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Logging_(computing)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Stack trace"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Stack_trace
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Debugging"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Debugging
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Introduction to Software Engineering/Tools/Debugger"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Introduction_to_Software_Engineering/Tools/Debugger
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Debugger"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Debugger
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Logging"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Logging
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+Printing values works for small problems. When code is larger, runs on a server or fails only sometimes, you need tools that let you watch the program run and records of what it did.
+
+## Using a debugger
+
+A debugger runs your program under control. The core features are:
+
+- **Breakpoints**: pause the program at a chosen line, optionally only when a condition is true.
+- **Stepping**: run line by line, stepping over a call, into it or out of the current function.
+- **Inspecting**: look at variable values and at the call stack at the moment of the pause, and move up the stack to see how you got there.
+- **Watching**: follow an expression and see when it changes.
+
+Form a hypothesis before you pause: decide what value you expect at this point. The debugger is most useful when you compare expectation and reality.
+
+## Logging
+
+A log is a record of events written while the program runs, and the only source of evidence when you cannot attach a debugger, for example on a server. Common practice is to use levels, such as debug, info, warning and error, so that detail can be switched on and off. A useful message says what happened, with the relevant identifiers and values, and includes context such as a request or order number. Do not write passwords, tokens or unnecessary personal data into logs; logs are often copied and kept for a long time.
+
+## Minimal reproducible example
+
+When you need help from a colleague or from the maintainers of a library, strip the problem down to the smallest code and data that still shows it. Removing parts one at a time often shows you the cause before you ask anyone. If the problem disappears when you remove something, that something is involved.
+
+## Binary search for the cause
+
+If a program worked before and fails now, you can halve the search space repeatedly. Check the middle version between a known good and a known bad state, then continue with the half that still contains the change. Version control tools can automate this over the commit history, which works best if each commit builds and passes tests. The same idea works inside code: check a value in the middle of a long process to learn which half is wrong.
+
+## Worked example
+
+Illustration only; invented service. Orders sometimes show a wrong delivery date. You set a conditional breakpoint that triggers only when the date is earlier than the order date. At the pause, the call stack shows that the date was set in a helper that converts times between zones. The log line you added there records the zone as empty for orders from one shop. You build a ten-line example that calls the helper with an empty zone, reproduce the wrong date, fix the default and add a test for it.
+
+## Key takeaways
+
+- Use breakpoints, stepping and the call stack to compare expectation with reality.
+- Log with levels and context, and keep secrets and personal data out.
+- Reduce a problem to a minimal reproducible example.
+- Halve the search space, in the history or in the code, to locate the cause quickly.

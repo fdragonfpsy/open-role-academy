@@ -1,5 +1,14 @@
 # Status
 
+## 2026-11-24 (b) — Software Development content batch 2
+
+**Done**
+- software-testing-quality, software-debugging, apis-integration: 9 units per language (en+de, `ai-draft`), 27 items, 36 link-only resources (HTTP 200, verified 2026-11-24). Role stays `draft`. All checks green.
+
+**Reviewer to-dos:** facts rest on cited Wikipedia/Wikibooks plus general knowledge (test double definitions, red-green-refactor, HTTP method idempotency, 401 vs 403, 429/backoff, idempotency keys, observability); MDN unreachable; German resources are de.wikipedia only; German wording not human-reviewed.
+
+**Next:** Software Development batch 3 (databases-data-modelling-basics, secure-coding-basics, ci-cd-devops-basics).
+
 ## 2026-11-24 — Software Development content batch 1
 
 **Done**

@@ -1,0 +1,100 @@
+---
+id: apis-integration-advanced
+competency: apis-integration
+level: advanced
+title: "Reliable integrations: idempotency, rate limits, events and contracts"
+objectives:
+  - "Design retries that are safe, using idempotent operations or idempotency keys."
+  - "Handle rate limits and backoff."
+  - "Consume webhooks securely and handle duplicate or out-of-order events."
+  - "Manage API contracts, compatibility and versioning with a machine-readable description."
+minutes: 30
+resources:
+  - wikipedia-idempotence
+  - wikipedia-rate-limiting
+  - wikipedia-webhook
+  - wikipedia-openapi-specification
+  - wikipedia-oauth
+  - wikipedia-de-webhook
+  - wikipedia-de-oauth
+status: ai-draft
+sources:
+  - title: "Idempotence"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Idempotence
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Rate limiting"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Rate_limiting
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Webhook"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Webhook
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "OpenAPI Specification"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/OpenAPI_Specification
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "OAuth"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/OAuth
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "OAuth"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/OAuth
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Webhook"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Webhook
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+When systems exchange data over networks, calls fail halfway, answers get lost and messages arrive twice. At this level you design integrations that stay correct anyway and that can change without breaking the other side.
+
+## Safe retries and idempotency
+
+An operation is **idempotent** if doing it several times has the same effect as doing it once. In HTTP, GET, PUT and DELETE are defined to be idempotent, while POST is not. This matters because, after a timeout, you often do not know whether the server processed your request. If the operation is idempotent, you can simply retry. For a non-idempotent operation such as creating a payment, many APIs accept an **idempotency key**: a unique value that you generate and send with the request, so that the server recognises a repeat and returns the first result instead of acting twice. Check whether the API you use supports this.
+
+## Rate limits and backoff
+
+Providers limit how many requests a client may send in a period, to protect their service. When you exceed it, you commonly receive status 429 Too Many Requests and sometimes a header that says when to try again. Respect it. Retry with **exponential backoff**, which means waiting longer after each failure, ideally with a small random variation so that many clients do not retry at the same moment, and stop after a limit. Reduce calls by caching, batching and asking only for the data you need.
+
+## Webhooks and events
+
+A webhook is a call that the provider makes to your server when something happens, so that you do not have to poll. Treat it as input from outside:
+
+- **Verify** the sender, for example with a signature or secret that the provider documents, before you act on it.
+- Answer quickly and process the work afterwards.
+- Expect **duplicates** and events in a different order than they happened; store an event identifier and make processing idempotent.
+- Have a way to re-fetch the current state from the API if an event is missed.
+
+## Contracts, compatibility and versioning
+
+The API is a contract between teams. The OpenAPI Specification is a standard way to describe an HTTP API in a machine-readable file, from which documentation, client code and tests can be produced. Prefer changes that stay compatible: adding an optional field is usually safe, while removing or renaming a field, or changing its meaning, breaks existing clients. Write clients that ignore unknown fields. For breaking changes, introduce a new version, announce a deprecation period and measure which clients still use the old one.
+
+## Worked example
+
+Illustration only; invented shop. A client sends a request to create an order and the connection times out. Without a key, a blind retry might create two orders. The client therefore sends the same generated key with every attempt, and the server returns the existing order the second time. A payment provider later sends the event "paid" twice and once before the event "created". The shop stores event identifiers, ignores the duplicate and, for the early one, fetches the current order state from the API instead of trusting the order of arrival.
+
+## Key takeaways
+
+- Retry only what is safe: idempotent operations or requests with an idempotency key.
+- Respect rate limits and back off exponentially with some randomness.
+- Verify webhooks, and handle duplicate and out-of-order events.
+- Treat the API as a contract: describe it, keep changes compatible and version breaking ones.

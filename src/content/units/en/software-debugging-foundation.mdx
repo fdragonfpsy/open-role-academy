@@ -1,0 +1,92 @@
+---
+id: software-debugging-foundation
+competency: software-debugging
+level: foundation
+title: "Finding bugs systematically: reproduce, read, narrow down"
+objectives:
+  - "Describe the steps of a systematic search for a defect."
+  - "Reproduce a problem reliably before changing code."
+  - "Read an error message and a stack trace to find where to look."
+  - "Verify a fix and keep it from coming back."
+minutes: 25
+resources:
+  - wikipedia-debugging
+  - wikipedia-software-bug
+  - wikipedia-stack-trace
+  - wikipedia-rubber-duck-debugging
+  - wikipedia-de-programmfehler
+status: ai-draft
+sources:
+  - title: "Debugging"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Debugging
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Software bug"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Software_bug
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Stack trace"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Stack_trace
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Rubber duck debugging"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Rubber_duck_debugging
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Programmfehler"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Programmfehler
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Introduction to Software Engineering/Tools/Debugger"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Introduction_to_Software_Engineering/Tools/Debugger
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+Every programmer spends a lot of time with code that does not do what was intended. Debugging is the process of finding and fixing such defects. Guessing and changing things at random is slow and can add new problems; a systematic approach is faster.
+
+## Defect, fault and failure
+
+A software bug is a flaw in the code or design. It becomes visible as a failure, when the program behaves wrongly, for example by crashing or by showing a wrong number. The same bug may show up far from where it sits in the code, so the visible symptom is only the start of your search.
+
+## A systematic loop
+
+1. **Reproduce**: find the exact steps, input and environment that trigger the problem. If you cannot make it happen on demand, you cannot be sure you fixed it.
+2. **Read the evidence**: the error message, the stack trace and the log lines near the failure.
+3. **Narrow down**: decide where the wrong behaviour starts. Check values at several points and find the first place where reality differs from what you expect.
+4. **Form a hypothesis**: state a concrete guess about the cause and think of a check that could prove it wrong.
+5. **Fix the cause**, not only the symptom, with the smallest change that works.
+6. **Verify**: run the original steps again and the existing tests, and add a test that would have caught the bug.
+
+## Reading an error message and a stack trace
+
+Read the message first, in full. It usually names the kind of problem and often a file and line. A stack trace lists the function calls that were active when the error occurred. It shows the path the program took to the failure. Start with the lines that point to your own code; code from libraries is rarely the cause, but the trace shows which of your calls led there.
+
+## Tools of the beginner
+
+Printing values at selected places, or using a log, is a simple way to see what the program really does. Explaining the problem line by line, even to an object such as a rubber duck, is a known technique: putting it into words often exposes a wrong assumption.
+
+## Worked example
+
+Illustration only; invented program. A report shows a total of 0 for a customer who clearly has orders. You first make it repeatable: it happens whenever the customer name contains an umlaut. The log shows that the query returned no rows, so the problem is before the sum, not inside it. You narrow it down to the code that builds the search text and find that it compares names with a different character encoding. You fix the comparison, repeat the exact steps, and add a test with an umlaut name.
+
+## Key takeaways
+
+- Debugging is a loop: reproduce, read the evidence, narrow down, hypothesise, fix, verify.
+- Fix the cause, not the symptom, and add a test for it.
+- Read error messages and stack traces carefully and in full.
+- Change one thing at a time so you know what worked.

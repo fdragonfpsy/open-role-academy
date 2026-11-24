@@ -1,0 +1,96 @@
+---
+id: apis-integration-foundation
+competency: apis-integration
+level: foundation
+title: "APIs, HTTP requests and JSON"
+objectives:
+  - "Explain what an API is and why programs use APIs."
+  - "Describe an HTTP request and response: method, URL, headers, body and status code."
+  - "Read common status code classes."
+  - "Read and write simple JSON data."
+minutes: 25
+resources:
+  - wikipedia-api
+  - wikipedia-http
+  - wikipedia-list-http-status-codes
+  - wikipedia-json
+  - wikipedia-de-programmierschnittstelle
+  - wikipedia-de-json
+status: ai-draft
+sources:
+  - title: "API"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/API
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "HTTP"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/HTTP
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "List of HTTP status codes"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "JSON"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/JSON
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "JSON"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/JSON
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Programmierschnittstelle"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Programmierschnittstelle
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "JSON"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/JSON
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+Almost no software works alone. Your code reads weather data, charges a card, sends an email or asks another team's service for customer data. All of this happens through interfaces. Understanding how they work lets you connect systems and find out why a connection fails.
+
+## What an API is
+
+An application programming interface (API) is a defined way for one piece of software to ask another to do something or to hand over data. The caller needs to know only what it may ask for, the format of the request and the form of the answer, not how the other side works inside. This is the same idea as the interface of a module in a design.
+
+## HTTP in a nutshell
+
+Many web APIs use HTTP, the protocol of the web. A client sends a **request** and the server returns a **response**.
+
+- A request has a **method**, a **URL**, **headers** (extra information such as the content type) and sometimes a **body**.
+- Common methods: GET reads data, POST sends data to create something, PUT replaces something, DELETE removes it.
+- A response has a **status code**, headers and usually a body.
+
+The status code tells you the outcome by its first digit: 2xx means success, 3xx a redirect, 4xx an error caused by the request (the client) and 5xx an error on the server. Examples: 200 OK, 404 Not Found, 500 Internal Server Error.
+
+## JSON
+
+JSON is a text format for data that most web APIs use. It has objects (names with values in curly braces), arrays (ordered lists in square brackets), strings, numbers, true and false, and null. Names and strings use double quotes, and the format has no comments. A program reads JSON by parsing it into its own data structures, and a parse error usually means a missing comma or quote.
+
+## Worked example
+
+Illustration only; invented service. You ask a fictional weather service for the current temperature. The request is a GET to the address of the city resource. The response has the status 200 and a body such as an object with the fields `city` (a string), `temperatureC` (a number) and `sensors` (an array of strings). Your program parses the body and shows the number. When you misspell the city, the service answers 404 with a JSON body that contains a message. Your program checks the status code first instead of assuming that it always got a temperature.
+
+## Key takeaways
+
+- An API is a defined way for programs to talk to each other without knowing each other's insides.
+- An HTTP request has a method, URL, headers and optional body; a response has a status code, headers and a body.
+- Status code classes: 2xx success, 3xx redirect, 4xx client error, 5xx server error.
+- JSON is the common data format; always check the status code before using the body.
