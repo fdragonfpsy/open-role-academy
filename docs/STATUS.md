@@ -3,7 +3,7 @@
 ## 2026-11-24 — Software Development content batch 1
 
 **Done**
-- programming-fundamentals-problem-solving, version-control-collaboration, software-design-architecture-basics: 18 units (en+de, `ai-draft`), 18 items, 26 new link-only resources (HTTP 200, verified 2026-11-24). Role stays `draft`. Closed QA #106 (fixed by #110); deleted stale branch attempt. All checks green.
+- programming-fundamentals-problem-solving, version-control-collaboration, software-design-architecture-basics: 18 units (en+de, `ai-draft`), 18 items, 26 new link-only resources (HTTP 200, verified 2026-11-24). Role stays `draft`. Closed QA #106 (fixed by #110). Stale branch `claude/admiring-mayer-dn6uyq` (pre-rewrite history) could not be deleted from here; owner may delete it. All checks green.
 
 **Reviewer to-dos:** unit text paraphrases Wikipedia (layered architecture, trunk-based development, SOLID, microservices, merge vs rebase) without live re-check; git-scm.com, MDN, docs.github.com unreachable from here; no German non-Wikipedia source for version control/design; worked examples invented (labelled); German wording not human-reviewed.
 
