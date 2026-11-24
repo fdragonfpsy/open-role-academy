@@ -1,0 +1,14 @@
+id: wikipedia-de-algorithmus
+url: "https://de.wikipedia.org/wiki/Algorithmus"
+title: "Algorithmus"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 20
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-24
+mode: link
+competencies: [programming-fundamentals-problem-solving]
+levels: [practitioner, advanced]
+note: "Wikipedia text under CC BY-SA; HTTP 200 on 2026-11-24. Link only."

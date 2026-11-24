@@ -1,0 +1,86 @@
+---
+id: software-design-architecture-basics-foundation
+competency: software-design-architecture-basics
+level: foundation
+title: "Good design: modules, cohesion and coupling"
+objectives:
+  - "Explain why software needs a design before and while it is built."
+  - "Describe a module and the idea of separation of concerns."
+  - "Explain cohesion and coupling and which direction to aim for."
+  - "Recognise signs of a tangled design in a small example."
+minutes: 25
+resources:
+  - wikipedia-software-design
+  - wikipedia-separation-of-concerns
+  - wikipedia-coupling-programming
+  - wikipedia-cohesion-computer-science
+  - wikipedia-de-softwarearchitektur
+status: ai-draft
+sources:
+  - title: "Software design"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Software_design
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Separation of concerns"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Separation_of_concerns
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Coupling (computer programming)"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Coupling_(computer_programming)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Cohesion (computer science)"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Cohesion_(computer_science)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Softwarearchitektur"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Softwarearchitektur
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+Code that works today but is tangled becomes slow and risky to change. Design is how you keep software easy to understand and change, which matters because most of a program's life is spent being changed.
+
+## Modules and separation of concerns
+
+The Wikipedia article on software design describes it as the process of planning how a system is structured and how its parts fit together. A basic tool is the **module**: a part with a defined purpose and a clear boundary, such as a function, a class or a file. The idea of **separation of concerns** says that each part of a program should deal with one concern, such as reading input, applying business rules or showing output, so that a change to one concern does not force changes everywhere.
+
+## Cohesion and coupling
+
+- **Cohesion** describes how closely the contents of a module belong together. High cohesion means a module does one well-defined job.
+- **Coupling** describes how strongly modules depend on each other. Low coupling means you can change one module with little effect on others.
+
+The usual aim is high cohesion and low coupling. A module that handles pricing, sending emails and drawing screens has low cohesion. Two modules that read each other's internal variables are tightly coupled.
+
+## Hide details behind an interface
+
+An interface is the small set of things a module offers to others, such as function names and their inputs and outputs. If others use only the interface, you can change the inside later without breaking them. This is why design decisions about what to expose matter.
+
+## Signs of a tangled design
+
+- One change forces edits in many unrelated places.
+- A function has a very long list of parameters or does several unrelated things.
+- You cannot test a part without starting the whole program.
+
+## Worked example
+
+Illustration only; invented shop. A single function calculates an order price, applies a discount, writes to the database and prints a receipt. A change to the receipt layout risks breaking the discount rules. You split it into four functions: price calculation, discount rules, saving the order and formatting the receipt. Each has one job and a clear input and output. Now you can test the discount rules with plain numbers, without a database, and change the receipt without touching prices.
+
+## Key takeaways
+
+- Design keeps software understandable and changeable.
+- Split a program into modules by concern, each with a clear boundary.
+- Aim for high cohesion within modules and low coupling between them.
+- Expose a small interface and hide the details behind it.

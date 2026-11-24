@@ -7,7 +7,7 @@ format: article
 minutes: 15
 license: CC-BY-SA-4.0
 licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
-licenseVerifiedOn: 2026-11-12
+licenseVerifiedOn: 2026-11-24
 mode: link
-competencies: [scripting-automation]
-levels: [practitioner, advanced]
+competencies: [scripting-automation, version-control-collaboration]
+levels: [foundation, practitioner, advanced]

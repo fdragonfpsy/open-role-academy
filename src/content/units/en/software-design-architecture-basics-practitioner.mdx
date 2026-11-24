@@ -1,0 +1,95 @@
+---
+id: software-design-architecture-basics-practitioner
+competency: software-design-architecture-basics
+level: practitioner
+title: "Layers, interfaces and design principles"
+objectives:
+  - "Describe a layered architecture and the rule about dependencies between layers."
+  - "Apply the SOLID principles at a basic level."
+  - "Use interfaces to decouple parts of a system and make them testable."
+  - "Recognise when a pattern or a principle is being over-applied."
+minutes: 30
+resources:
+  - wikipedia-de-schichtenarchitektur
+  - wikipedia-solid
+  - wikipedia-de-prinzipien-objektorientierten-designs
+  - wikipedia-de-refactoring
+  - wikibooks-intro-software-engineering-architecture
+status: ai-draft
+sources:
+  - title: "Schichtenarchitektur"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Schichtenarchitektur
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "SOLID"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/SOLID
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Prinzipien objektorientierten Designs"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Prinzipien_objektorientierten_Designs
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Refactoring"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Refactoring
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Introduction to Software Engineering: Architecture"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Introduction_to_Software_Engineering/Architecture
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+Once a codebase grows beyond one person's head, structure decides whether new features take hours or weeks. Layers and a few well-known principles give a team a shared vocabulary for keeping it in shape.
+
+## Layers
+
+The German Wikipedia article on layered architecture describes a system divided into layers, where each layer offers services to the layer above and uses the layer below. A common split is:
+
+- **Presentation**: user interface or API endpoints.
+- **Business logic**: the rules of the domain, such as price and discount calculation.
+- **Data access**: reading and writing the database or external services.
+
+The key rule is the direction of dependencies: upper layers use lower ones, not the other way round, and business rules should not depend on screen details.
+
+## SOLID principles
+
+The Wikipedia article on SOLID names five principles for object-oriented design:
+
+- **Single responsibility**: a class should have one reason to change.
+- **Open-closed**: open for extension, closed for modification, so you add behaviour without rewriting tested code.
+- **Liskov substitution**: a subtype must be usable wherever its base type is expected.
+- **Interface segregation**: prefer several small interfaces to one large one.
+- **Dependency inversion**: depend on abstractions, not on concrete details.
+
+Treat them as guidelines for judgement, not laws. They help most when you notice pain, for example a class that changes for many different reasons.
+
+## Interfaces for decoupling and testing
+
+If business logic calls a `PaymentGateway` interface rather than one provider's code, you can swap the provider and test with a simple stand-in. This is dependency inversion in practice.
+
+## Refactoring and restraint
+
+Refactoring is restructuring code without changing its observable behaviour. Do it in small steps with tests as a safety net. Avoid building layers and patterns "for the future" that nobody needs yet; unnecessary indirection is also a cost.
+
+## Worked example
+
+Illustration only; invented app. A report page runs SQL queries directly inside its screen code. To add an export to CSV, the team would copy the queries. They introduce a data access function `load_orders(period)` and a business function `summarise(orders)`. The screen and the CSV export both call these. Tests for `summarise` use a small list of orders and no database. When the database later changes, only `load_orders` is edited.
+
+## Key takeaways
+
+- Layers separate presentation, business logic and data access; dependencies point downward.
+- SOLID gives five guidelines for keeping object-oriented code flexible.
+- Interfaces decouple parts and make them testable.
+- Refactor in small steps and avoid speculative structure.

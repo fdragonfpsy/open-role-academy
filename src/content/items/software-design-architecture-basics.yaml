@@ -1,0 +1,221 @@
+competency: software-design-architecture-basics
+items:
+- id: sdab-f-sep
+  level: foundation
+  difficulty: 850
+  type: single
+  stem:
+    en: What does separation of concerns mean?
+    de: Was bedeutet Trennung von Zuständigkeiten (Separation of Concerns)?
+  options:
+  - en: Each part of a program deals with one concern
+    de: Jeder Teil eines Programms kümmert sich um eine Zuständigkeit
+    correct: true
+  - en: The code is split into several files so that nobody can read all of it
+    de: Der Code wird auf mehrere Dateien verteilt, damit ihn niemand ganz lesen kann
+    correct: false
+  - en: Only one person in the team is allowed to understand each module
+    de: Nur eine Person im Team darf jedes Modul verstehen
+    correct: false
+  - en: Every function must be copied into each module that needs its result
+    de: Jede Funktion muss in jedes Modul kopiert werden, das ihr Ergebnis braucht
+    correct: false
+  explanation:
+    en: Separation of concerns means that each part has one concern, such as input, rules or output, so that changes stay local. It is not about hiding knowledge or copying code.
+    de: Trennung von Zuständigkeiten heißt, dass jeder Teil eine Zuständigkeit hat, etwa Eingabe, Regeln oder Ausgabe, sodass Änderungen lokal bleiben. Es geht nicht darum, Wissen zu verbergen oder Code zu kopieren.
+  source: https://en.wikipedia.org/wiki/Separation_of_concerns
+- id: sdab-f-coh
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: Which combination do designers usually aim for?
+    de: Welche Kombination streben Entwerfende üblicherweise an?
+  options:
+  - en: High cohesion and low coupling
+    de: Hohe Kohäsion und lose Kopplung
+    correct: true
+  - en: Low cohesion and high coupling in all the modules of the system
+    de: Niedrige Kohäsion und enge Kopplung in allen Modulen des Systems
+    correct: false
+  - en: High cohesion and high coupling, so that modules depend on each other
+    de: Hohe Kohäsion und enge Kopplung, damit Module voneinander abhängen
+    correct: false
+  - en: Low cohesion and low coupling, so that modules do nothing in particular
+    de: Niedrige Kohäsion und lose Kopplung, damit Module nichts Bestimmtes tun
+    correct: false
+  explanation:
+    en: A module should do one well-defined job (high cohesion) and depend little on other modules (low coupling). The other combinations make changes harder.
+    de: Ein Modul sollte eine klar umrissene Aufgabe erfüllen (hohe Kohäsion) und wenig von anderen Modulen abhängen (lose Kopplung). Die anderen Kombinationen erschweren Änderungen.
+  source: https://en.wikipedia.org/wiki/Cohesion_(computer_science)
+- id: sdab-f-tangle
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: Which situation is a sign of a tangled design?
+    de: Welche Situation ist ein Anzeichen für einen verworrenen Entwurf?
+  options:
+  - en: A small change forces edits in many unrelated places
+    de: Eine kleine Änderung erzwingt Anpassungen an vielen unzusammenhängenden Stellen
+    correct: true
+  - en: A function has a clear name and one well-defined job and result
+    de: Eine Funktion hat einen klaren Namen und eine klar umrissene Aufgabe samt Ergebnis
+    correct: false
+  - en: A module can be tested on its own with a few simple input values
+    de: Ein Modul lässt sich mit wenigen einfachen Eingabewerten einzeln testen
+    correct: false
+  - en: A new feature is added by writing one new module and one new test
+    de: Eine neue Funktion entsteht durch ein neues Modul und einen neuen Test
+    correct: false
+  explanation:
+    en: When one change ripples through unrelated code, parts are too tightly coupled. The other situations describe a healthy design.
+    de: Wenn eine Änderung durch unzusammenhängenden Code zieht, sind Teile zu eng gekoppelt. Die anderen Situationen beschreiben einen gesunden Entwurf.
+  source: https://en.wikipedia.org/wiki/Coupling_(computer_programming)
+- id: sdab-p-layer
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: In a layered architecture, which dependency direction is the usual rule?
+    de: Welche Abhängigkeitsrichtung ist in einer Schichtenarchitektur die übliche Regel?
+  options:
+  - en: Upper layers use lower ones, not the other way round
+    de: Obere Schichten nutzen untere, nicht umgekehrt
+    correct: true
+  - en: Every layer may freely call every other layer in both directions
+    de: Jede Schicht darf jede andere Schicht frei in beide Richtungen aufrufen
+    correct: false
+  - en: Business rules should call the screen code to find out what to do
+    de: Geschäftsregeln sollten den Bildschirmcode aufrufen, um zu erfahren, was zu tun ist
+    correct: false
+  - en: The data layer should decide how the user interface looks on screen
+    de: Die Datenschicht sollte entscheiden, wie die Oberfläche auf dem Bildschirm aussieht
+    correct: false
+  explanation:
+    en: 'Layers depend downward: presentation uses business logic, which uses data access. Calls in the opposite direction tie business rules to screen details.'
+    de: 'Schichten hängen nach unten ab: Die Präsentation nutzt die Geschäftslogik, diese den Datenzugriff. Aufrufe in die Gegenrichtung binden Geschäftsregeln an Bildschirmdetails.'
+  source: https://de.wikipedia.org/wiki/Schichtenarchitektur
+- id: sdab-p-solid
+  level: practitioner
+  difficulty: 1300
+  type: multi
+  stem:
+    en: Which of these are part of the SOLID principles? Select all that apply.
+    de: Welche davon gehören zu den SOLID-Prinzipien? Wähle alle zutreffenden aus.
+  options:
+  - en: Single responsibility
+    de: Single Responsibility (eine Verantwortlichkeit)
+    correct: true
+  - en: Open-closed
+    de: Open-Closed (offen für Erweiterung, geschlossen für Änderung)
+    correct: true
+  - en: Dependency inversion
+    de: Dependency Inversion (Umkehr der Abhängigkeiten)
+    correct: true
+  - en: Maximum nesting
+    de: Maximale Verschachtelung
+    correct: false
+  - en: Global state first
+    de: Globaler Zustand zuerst
+    correct: false
+  explanation:
+    en: SOLID stands for single responsibility, open-closed, Liskov substitution, interface segregation and dependency inversion. Maximum nesting and global state first are not among them.
+    de: SOLID steht für Single Responsibility, Open-Closed, Liskov-Substitution, Interface Segregation und Dependency Inversion. Maximale Verschachtelung und globaler Zustand zuerst gehören nicht dazu.
+  source: https://en.wikipedia.org/wiki/SOLID
+- id: sdab-p-iface
+  level: practitioner
+  difficulty: 1250
+  type: single
+  stem:
+    en: Why do business rules call a payment interface instead of one provider's code?
+    de: Warum rufen Geschäftsregeln eine Zahlungsschnittstelle statt den Code eines bestimmten Anbieters auf?
+  options:
+  - en: The provider can be swapped and the rules tested with a stand-in
+    de: Der Anbieter lässt sich tauschen und die Regeln mit einem Ersatz testen
+    correct: true
+  - en: Interfaces make a program run faster than direct calls in every case
+    de: Schnittstellen machen ein Programm in jedem Fall schneller als direkte Aufrufe
+    correct: false
+  - en: Interfaces remove the need to write any tests for the payment code
+    de: Schnittstellen machen es unnötig, Tests für den Zahlungscode zu schreiben
+    correct: false
+  - en: Interfaces are required by law for every program that handles payments
+    de: Schnittstellen sind gesetzlich für jedes Programm vorgeschrieben, das Zahlungen abwickelt
+    correct: false
+  explanation:
+    en: An interface decouples the rules from one provider and allows a test stand-in. It does not guarantee speed, replace tests or follow from a legal requirement.
+    de: Eine Schnittstelle entkoppelt die Regeln von einem Anbieter und erlaubt einen Testersatz. Sie garantiert keine Geschwindigkeit, ersetzt keine Tests und folgt aus keiner gesetzlichen Pflicht.
+  source: https://en.wikipedia.org/wiki/SOLID
+- id: sdab-a-arch
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: What makes a decision architectural rather than a local design detail?
+    de: Was macht eine Entscheidung architektonisch statt zu einem lokalen Entwurfsdetail?
+  options:
+  - en: It shapes the whole system and is costly to reverse later
+    de: Sie prägt das ganze System und ist später teuer umzukehren
+    correct: true
+  - en: It concerns the name of a single local variable inside a function
+    de: Sie betrifft den Namen einer einzelnen lokalen Variablen in einer Funktion
+    correct: false
+  - en: It was made by the most senior person in the team on a single day
+    de: Sie wurde von der erfahrensten Person im Team an einem einzigen Tag getroffen
+    correct: false
+  - en: It is written in a document that is longer than ten pages in total
+    de: Sie steht in einem Dokument, das insgesamt länger als zehn Seiten ist
+    correct: false
+  explanation:
+    en: Architecture covers the structural choices that affect the whole system and are expensive to undo. Naming a variable, seniority or document length do not define it.
+    de: Architektur umfasst die strukturellen Entscheidungen, die das ganze System betreffen und teuer rückgängig zu machen sind. Variablennamen, Seniorität oder Dokumentlänge definieren sie nicht.
+  source: https://en.wikipedia.org/wiki/Software_architecture
+- id: sdab-a-mono
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: A team of six with low load starts a new internal tool. Which starting point is usually sensible?
+    de: Ein Team von sechs Personen mit geringer Last startet ein neues internes Werkzeug. Welcher Startpunkt ist meist sinnvoll?
+  options:
+  - en: A modular monolith that can be split later where needed
+    de: Ein modularer Monolith, der sich später bei Bedarf aufteilen lässt
+    correct: true
+  - en: Ten microservices from the first day, as the style is fashionable
+    de: Zehn Microservices vom ersten Tag an, weil der Stil gerade in Mode ist
+    correct: false
+  - en: One large file without modules so that nothing has to be agreed upon
+    de: Eine große Datei ohne Module, damit nichts abgestimmt werden muss
+    correct: false
+  - en: No structure at all, since the tool will surely never need a change
+    de: Gar keine Struktur, da das Werkzeug sicher nie geändert werden muss
+    correct: false
+  explanation:
+    en: For a small team and low load, a modular monolith keeps deployment simple and leaves room to split later. Services add network, data and operations costs that the situation does not justify.
+    de: Für ein kleines Team und geringe Last hält ein modularer Monolith die Auslieferung einfach und lässt Raum für spätere Aufteilung. Dienste bringen Netzwerk-, Daten- und Betriebskosten, die die Lage nicht rechtfertigt.
+  source: https://en.wikipedia.org/wiki/Microservices
+- id: sdab-a-adr
+  level: advanced
+  difficulty: 1650
+  type: single
+  stem:
+    en: What is the main value of a short architecture decision record?
+    de: Was ist der Hauptnutzen eines kurzen Architecture Decision Records?
+  options:
+  - en: It keeps the context, options and reasons behind a decision
+    de: Er bewahrt Kontext, Optionen und Gründe hinter einer Entscheidung
+    correct: true
+  - en: It replaces the need for any tests of the finished system
+    de: Er ersetzt die Notwendigkeit jeglicher Tests des fertigen Systems
+    correct: false
+  - en: It proves to customers that the software contains no errors
+    de: Er beweist Kundschaft, dass die Software keine Fehler enthält
+    correct: false
+  - en: It forces the team to keep every decision unchanged for ever
+    de: Er zwingt das Team, jede Entscheidung für immer unverändert zu lassen
+    correct: false
+  explanation:
+    en: A decision record preserves why a choice was made, so that later teams can see when a premise has changed. It neither replaces tests nor proves correctness nor freezes decisions.
+    de: Ein Entscheidungsprotokoll bewahrt, warum eine Wahl getroffen wurde, sodass spätere Teams erkennen, wann sich eine Annahme geändert hat. Es ersetzt weder Tests noch beweist es Korrektheit noch friert es Entscheidungen ein.
+  source: https://en.wikipedia.org/wiki/Software_architecture

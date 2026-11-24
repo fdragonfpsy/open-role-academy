@@ -1,0 +1,90 @@
+---
+id: version-control-collaboration-advanced
+competency: version-control-collaboration
+level: advanced
+title: "Team-Workflows und ein sauberer Verlauf"
+objectives:
+  - "Branching-Workflows wie Feature-Branches und Trunk-based Development vergleichen."
+  - "Eine Merge-Strategie und Schutzregeln für Branches für ein Team wählen."
+  - "Einen Verlauf pflegen, der Review, Fehlersuche und Release-Notizen unterstützt."
+  - "Fehler sicher behandeln, auch versehentlich committete Geheimnisse."
+minutes: 30
+resources:
+  - wikipedia-trunk-based-development
+  - wikipedia-branching-version-control
+  - wikipedia-pull-request
+  - wikipedia-git
+  - wikibooks-git
+status: ai-draft
+sources:
+  - title: "Trunk-based development"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Trunk-based_development
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Branching (version control)"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Branching_(version_control)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Pull request"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Pull_request
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Git"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Git
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Git"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Git
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+In einem Team ist der Versionsverwaltungs-Workflow eine Entwurfsentscheidung. Er bestimmt, wie schnell Änderungen die Nutzenden erreichen, wie mühsam Merges sind und wie leicht sich herausfinden lässt, wann ein Fehler entstanden ist.
+
+## Workflows im Vergleich
+
+Der Wikipedia-Artikel zu Trunk-based Development beschreibt ein Modell, in dem Entwickelnde kleine Änderungen häufig in eine gemeinsame Hauptlinie (den Trunk) integrieren, statt langlebige Branches zu halten. Typische Optionen:
+
+- **Feature-Branches mit Pull Requests**: Jede Änderung lebt bis zum Review auf einem eigenen Branch. Gut für die Review-Qualität; langlebige Branches erschweren Merges.
+- **Trunk-based Development**: sehr kurzlebige Branches oder kleine Commits direkt auf den Trunk, meist mit automatischen Prüfungen. Unfertige Funktionen werden oft hinter Schaltern (Feature-Flags) versteckt. Es braucht gute Tests und Disziplin.
+- **Release-Branches**: Ein Branch bleibt für eine Version bestehen, die noch Korrekturen erhält.
+
+Kein Workflow ist allgemein der beste. Wähle nach Teamgröße, Release-Rhythmus, Testabdeckung und Risiko.
+
+## Die Hauptlinie schützen
+
+Teams schützen meist den Hauptbranch: Änderungen kommen über geprüfte Pull Requests, automatische Prüfungen müssen bestehen, und Force-Push ist gesperrt. Diese Regeln gehören zum Qualitätsprozess des Teams, sie sind keine Bürokratie.
+
+## Ein Verlauf, der hilft
+
+- Kleine, fokussierte Commits erleichtern das Review und erlauben, eine Änderung zurückzunehmen, ohne andere zu verlieren.
+- Ein Werkzeug, das den Verlauf per Bisect durchsucht, findet den Commit, der einen Fehler eingebaut hat; es funktioniert am besten, wenn jeder Commit baut und die Tests besteht.
+- Entscheide, ob beim Merge alle Commits eines Branches erhalten bleiben oder zu einem zusammengefasst werden, und halte es im Contributing-Leitfaden fest.
+- Einheitliche Nachrichten erleichtern das Schreiben von Release-Notizen.
+
+## Mit Fehlern umgehen
+
+Nutze auf geteilten Branches einen neuen Commit, der eine Änderung umkehrt (Revert), statt geteilten Verlauf umzuschreiben. Umschreiben ist auf deinem eigenen, nicht geteilten Branch in Ordnung. Wurde ein Geheimnis committet, behandle es als offengelegt: Widerrufe und ersetze es zuerst und bereinige den Verlauf erst danach, denn Kopien können schon existieren.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundenes Team. Ein Team von acht Personen released wöchentlich und leidet unter Branches, die zwei Wochen leben und stark kollidieren. Es vereinbart Branches mit höchstens zwei Tagen Lebensdauer, Pull Requests unterhalb einer festgelegten Größe, eine verpflichtend bestandene Prüfungsreihe und einen Schalter, der unfertige Funktionen verbirgt. Nach einem Monat sind die zeitraubenden Merge-Konflikte selten. Eine Fehlermeldung verweist auf eine Änderung der Vorwoche, und das Team findet den verursachenden Commit schnell, weil jeder Commit die Prüfungen bestanden hat.
+
+## Das Wichtigste in Kürze
+
+- Ein Branching-Workflow wägt Review-Sicherheit gegen Integrationsgeschwindigkeit ab.
+- Trunk-based Development integriert oft kleine Änderungen und braucht gute Automatisierung.
+- Schütze die Hauptlinie durch Reviews und verpflichtende Prüfungen.
+- Nutze auf geteilten Branches Reverts; behandle geleakte Geheimnisse als offengelegt und ersetze sie.

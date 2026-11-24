@@ -1,0 +1,221 @@
+competency: programming-fundamentals-problem-solving
+items:
+- id: pfps-f-algo
+  level: foundation
+  difficulty: 850
+  type: single
+  stem:
+    en: What is an algorithm?
+    de: Was ist ein Algorithmus?
+  options:
+  - en: A finite list of well-defined steps that solves a problem
+    de: Eine endliche Folge eindeutig definierter Schritte, die ein Problem löst
+    correct: true
+  - en: A programming language that is used mainly for large web applications
+    de: Eine Programmiersprache, die vor allem für große Webanwendungen genutzt wird
+    correct: false
+  - en: A saved copy of a program that can be restored after a computer failure
+    de: Eine gespeicherte Kopie eines Programms, die nach einem Computerausfall wiederhergestellt werden kann
+    correct: false
+  - en: A type of computer hardware that executes the instructions of a program
+    de: Eine Art von Computerhardware, die die Anweisungen eines Programms ausführt
+    correct: false
+  explanation:
+    en: An algorithm is a finite sequence of well-defined steps. It is independent of any one language, it is not a backup, and it is not hardware.
+    de: Ein Algorithmus ist eine endliche Folge eindeutig definierter Schritte. Er ist unabhängig von einer Sprache, keine Sicherung und keine Hardware.
+  source: https://en.wikipedia.org/wiki/Algorithm
+- id: pfps-f-loop
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: A program must apply the same calculation to every row of a table. Which building block fits best?
+    de: Ein Programm soll dieselbe Berechnung auf jede Zeile einer Tabelle anwenden. Welcher Baustein passt am besten?
+  options:
+  - en: A loop
+    de: Eine Schleife
+    correct: true
+  - en: A single variable that holds all the rows at once and is read only one time
+    de: Eine einzige Variable, die alle Zeilen auf einmal enthält und nur ein einziges Mal gelesen wird
+    correct: false
+  - en: A comment that explains the calculation to the people who will read the code
+    de: Ein Kommentar, der die Berechnung für die Personen erklärt, die den Code lesen werden
+    correct: false
+  - en: A condition that checks the first row only and then stops the whole program
+    de: Eine Bedingung, die nur die erste Zeile prüft und dann das ganze Programm beendet
+    correct: false
+  explanation:
+    en: A loop repeats steps, for example for every row. A variable stores a value, a comment only explains, and a condition on the first row would not process the others.
+    de: Eine Schleife wiederholt Schritte, zum Beispiel für jede Zeile. Eine Variable speichert einen Wert, ein Kommentar erklärt nur, und eine Bedingung für die erste Zeile würde die anderen nicht verarbeiten.
+  source: https://en.wikipedia.org/wiki/Computer_programming
+- id: pfps-f-edge
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: You wrote a function that returns the highest value of a list. Which test input is an important edge case?
+    de: Du hast eine Funktion geschrieben, die den höchsten Wert einer Liste liefert. Welche Testeingabe ist ein wichtiger Grenzfall?
+  options:
+  - en: An empty list
+    de: Eine leere Liste
+    correct: true
+  - en: A list with five typical numbers that are all different from each other
+    de: Eine Liste mit fünf typischen Zahlen, die alle voneinander verschieden sind
+    correct: false
+  - en: The same typical list again, run a second time to see if it gives the same result
+    de: Dieselbe typische Liste, ein zweites Mal ausgeführt, um dasselbe Ergebnis zu prüfen
+    correct: false
+  - en: A list that was sorted by hand before the function was called
+    de: Eine Liste, die vor dem Aufruf der Funktion von Hand sortiert wurde
+    correct: false
+  explanation:
+    en: An empty list has no highest value, so the function must handle it deliberately. Typical inputs show that the normal case works, but edge cases reveal gaps.
+    de: Eine leere Liste hat keinen höchsten Wert, die Funktion muss sie also bewusst behandeln. Typische Eingaben zeigen, dass der Normalfall funktioniert, Grenzfälle decken Lücken auf.
+  source: https://en.wikipedia.org/wiki/Computer_programming
+- id: pfps-p-dict
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: You must find a customer quickly by customer number among many customers. Which data structure fits best?
+    de: Du musst unter vielen Kunden schnell einen Kunden anhand der Kundennummer finden. Welche Datenstruktur passt am besten?
+  options:
+  - en: A dictionary keyed by customer number
+    de: Ein Dictionary mit der Kundennummer als Schlüssel
+    correct: true
+  - en: A plain list in which you check every entry until the number matches
+    de: Eine einfache Liste, in der du jeden Eintrag prüfst, bis die Nummer passt
+    correct: false
+  - en: A queue from which the oldest customer is always removed first
+    de: Eine Warteschlange, aus der immer zuerst der älteste Kunde entfernt wird
+    correct: false
+  - en: A stack from which you can only take the most recently added customer
+    de: Ein Stapel, aus dem du nur den zuletzt hinzugefügten Kunden entnehmen kannst
+    correct: false
+  explanation:
+    en: A dictionary is built for lookup by key. A plain list needs a search through entries, and queues and stacks control the order of removal, not lookup by key.
+    de: Ein Dictionary ist für den Zugriff über einen Schlüssel gebaut. Eine einfache Liste braucht eine Suche, und Warteschlange und Stapel steuern die Reihenfolge der Entnahme, nicht den Zugriff über Schlüssel.
+  source: https://en.wikipedia.org/wiki/Data_structure
+- id: pfps-p-decomp
+  level: practitioner
+  difficulty: 1300
+  type: multi
+  stem:
+    en: Which are good reasons to split a long function into smaller ones? Select all that apply.
+    de: Welche Gründe sprechen dafür, eine lange Funktion in kleinere aufzuteilen? Wähle alle zutreffenden aus.
+  options:
+  - en: Each part can be tested on its own
+    de: Jeder Teil lässt sich einzeln testen
+    correct: true
+  - en: Each part gets a name that says what it does
+    de: Jeder Teil bekommt einen Namen, der sagt, was er tut
+    correct: true
+  - en: A part can be reused in other places
+    de: Ein Teil kann an anderen Stellen wiederverwendet werden
+    correct: true
+  - en: The program is guaranteed to run faster
+    de: Das Programm läuft garantiert schneller
+    correct: false
+  - en: Comments are no longer allowed in the code
+    de: Kommentare sind im Code nicht mehr erlaubt
+    correct: false
+  explanation:
+    en: Small functions with clear names are easier to test, read and reuse. Splitting does not guarantee speed, and comments remain useful.
+    de: Kleine Funktionen mit klaren Namen lassen sich leichter testen, lesen und wiederverwenden. Aufteilen garantiert keine Geschwindigkeit, und Kommentare bleiben nützlich.
+  source: https://en.wikipedia.org/wiki/Computer_programming
+- id: pfps-p-invalid
+  level: practitioner
+  difficulty: 1250
+  type: single
+  stem:
+    en: A function receives an empty product name. Which handling is best?
+    de: Eine Funktion erhält einen leeren Produktnamen. Welche Behandlung ist am besten?
+  options:
+  - en: Reject it with a clear message or report it, as you decided beforehand
+    de: Ablehnen oder melden mit klarer Meldung, wie vorher festgelegt
+    correct: true
+  - en: Ignore the problem quietly and count the line as an existing product
+    de: Das Problem stillschweigend ignorieren und die Zeile als vorhandenes Produkt zählen
+    correct: false
+  - en: Guess a name based on the previous line and continue without telling anyone
+    de: Einen Namen anhand der vorigen Zeile raten und weitermachen, ohne es jemandem zu sagen
+    correct: false
+  - en: Delete the whole input file so that the problem cannot appear again
+    de: Die ganze Eingabedatei löschen, damit das Problem nicht wieder auftreten kann
+    correct: false
+  explanation:
+    en: Invalid input needs a deliberate, visible decision such as reject, report or documented default. Silent failures and guesses hide data problems.
+    de: Ungültige Eingaben brauchen eine bewusste, sichtbare Entscheidung wie Ablehnen, Melden oder dokumentierten Standardwert. Stille Fehler und Raten verbergen Datenprobleme.
+  source: https://en.wikipedia.org/wiki/Computer_programming
+- id: pfps-a-bigo
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: A method compares every element of a list with every other element. How does its running time grow with n elements?
+    de: Ein Verfahren vergleicht jedes Element einer Liste mit jedem anderen Element. Wie wächst seine Laufzeit bei n Elementen?
+  options:
+  - en: About quadratically, O(n²)
+    de: Etwa quadratisch, O(n²)
+    correct: true
+  - en: Linearly, O(n), because each element is looked at one time
+    de: Linear, O(n), weil jedes Element einmal angesehen wird
+    correct: false
+  - en: Logarithmically, O(log n), because the search range is halved each time
+    de: Logarithmisch, O(log n), weil der Suchbereich jedes Mal halbiert wird
+    correct: false
+  - en: It stays constant, O(1), no matter how many elements the list has
+    de: Sie bleibt konstant, O(1), egal wie viele Elemente die Liste hat
+    correct: false
+  explanation:
+    en: Comparing each element with every other element means roughly n times n comparisons, so growth is quadratic. Linear, logarithmic and constant growth apply to other patterns.
+    de: Jedes Element mit jedem anderen zu vergleichen bedeutet etwa n mal n Vergleiche, das Wachstum ist also quadratisch. Lineares, logarithmisches und konstantes Wachstum gelten für andere Muster.
+  source: https://en.wikipedia.org/wiki/Time_complexity
+- id: pfps-a-set
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: You check 100,000 ids against a list of 100,000 known ids and it is too slow. What is the most effective first change?
+    de: Du prüfst 100.000 IDs gegen eine Liste von 100.000 bekannten IDs, und es ist zu langsam. Was ist die wirksamste erste Änderung?
+  options:
+  - en: Put the known ids in a set and look each one up there
+    de: Die bekannten IDs in eine Menge legen und jede dort nachschlagen
+    correct: true
+  - en: Rename the variables so that the code is easier to read for colleagues
+    de: Die Variablen umbenennen, damit der Code für Kolleginnen und Kollegen leichter lesbar ist
+    correct: false
+  - en: Add more comments to explain the search for people who maintain the code
+    de: Mehr Kommentare ergänzen, die die Suche für Personen erklären, die den Code pflegen
+    correct: false
+  - en: Run the same nested search twice and keep the result that finishes sooner
+    de: Dieselbe verschachtelte Suche zweimal laufen lassen und das Ergebnis nehmen, das früher fertig ist
+    correct: false
+  explanation:
+    en: Set lookups take about constant time on average, which turns a quadratic nested search into roughly linear work. Naming and comments do not change growth, and repeating the slow search does not help.
+    de: Suchen in einer Menge dauern im Mittel etwa konstant, wodurch aus einer quadratischen verschachtelten Suche etwa lineare Arbeit wird. Namen und Kommentare ändern das Wachstum nicht, und die langsame Suche zu wiederholen hilft nicht.
+  source: https://en.wikipedia.org/wiki/Time_complexity
+- id: pfps-a-measure
+  level: advanced
+  difficulty: 1650
+  type: single
+  stem:
+    en: A colleague wants to rewrite a function for speed, but nobody has measured the program. What should you do first?
+    de: Eine Kollegin will eine Funktion auf Geschwindigkeit umschreiben, aber niemand hat das Programm gemessen. Was solltest du zuerst tun?
+  options:
+  - en: Measure on realistic data to find where time is actually spent
+    de: Auf realistischen Daten messen, um zu finden, wo tatsächlich Zeit verbraucht wird
+    correct: true
+  - en: Rewrite the function in the most compact way you can think of anyway
+    de: Die Funktion trotzdem auf die kompakteste Weise umschreiben, die dir einfällt
+    correct: false
+  - en: Rewrite every function in the program so that no slow part can be missed
+    de: Jede Funktion im Programm umschreiben, damit kein langsamer Teil übersehen wird
+    correct: false
+  - en: Accept the current speed without checking, because speed never matters
+    de: Die aktuelle Geschwindigkeit ohne Prüfung akzeptieren, weil Geschwindigkeit nie zählt
+    correct: false
+  explanation:
+    en: Optimise what costs time, and find it by measuring on realistic data. Rewriting unmeasured code adds complexity, and ignoring speed is not justified either.
+    de: Optimiere, was Zeit kostet, und finde es durch Messen auf realistischen Daten. Ungemessenen Code umzuschreiben erhöht die Komplexität, und Geschwindigkeit generell zu ignorieren ist auch nicht begründet.
+  source: https://en.wikipedia.org/wiki/Time_complexity

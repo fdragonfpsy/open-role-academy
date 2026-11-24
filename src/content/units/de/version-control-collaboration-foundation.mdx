@@ -1,0 +1,85 @@
+---
+id: version-control-collaboration-foundation
+competency: version-control-collaboration
+level: foundation
+title: "Commits, Verlauf und Branches"
+objectives:
+  - "Erklären, was Versionsverwaltung ist und warum Teams sie nutzen."
+  - "Commit, Repository und Verlauf eines Projekts beschreiben."
+  - "Erklären, was ein Branch ist und warum du auf einem arbeitest."
+  - "Eine Commit-Nachricht schreiben, die anderen sagt, was sich geändert hat und warum."
+minutes: 20
+resources:
+  - wikipedia-version-control
+  - wikipedia-de-versionsverwaltung
+  - wikipedia-git
+  - wikipedia-de-git
+  - wikibooks-git
+status: ai-draft
+sources:
+  - title: "Version control"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Version_control
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Versionsverwaltung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Versionsverwaltung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Git"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Git
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Git"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Git
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Git"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Git
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Ohne Versionsverwaltung enden Projekte mit Ordnern namens „final“, „final2“ und „final-wirklich“. Niemand weiß, wer was geändert hat oder wie man zurückgeht. Versionsverwaltung löst das und erlaubt mehreren Personen, gleichzeitig am selben Code zu arbeiten.
+
+## Die Kernideen
+
+Der Wikipedia-Artikel zur Versionsverwaltung beschreibt sie als das Verwalten von Änderungen an Dokumenten, Programmcode und anderen Sammlungen von Informationen. Für Software sind zuerst drei Begriffe wichtig:
+
+- **Repository**: der Projektordner samt der vollständigen Änderungshistorie.
+- **Commit**: ein gespeicherter Zwischenstand deiner Änderungen mit Nachricht, Autorin oder Autor und Zeit.
+- **Verlauf**: die Kette der Commits, die zeigt, was sich wann und durch wen geändert hat, und die Rückkehr zu einem früheren Stand ermöglicht.
+
+Git ist ein weit verbreitetes, verteiltes Versionsverwaltungssystem: Jede entwickelnde Person hat eine vollständige Kopie des Repositorys auf dem eigenen Rechner. Hosting-Dienste helfen Teams, ihre Kopien zu teilen, die Ideen sind aber auch ohne sie dieselben.
+
+## Branches
+
+Ein Branch ist eine eigene Entwicklungslinie. Du legst für eine Änderung einen Branch an, arbeitest darauf, ohne die stabile Version zu stören, und bringst ihn später per Merge zurück. Viele Teams halten einen Hauptbranch, der immer funktioniert, und erledigen jede Aufgabe auf einem eigenen Branch.
+
+## Gute Commits
+
+- Halte einen Commit klein und auf eine Änderung konzentriert.
+- Schreibe in der ersten Zeile eine kurze, klare Nachricht, was sich geändert hat, und ergänze einen Satz zum Warum, wenn es nicht offensichtlich ist.
+- Committe keine Passwörter, Schlüssel oder großen generierten Dateien. Ist ein Geheimnis einmal im Verlauf, gehe davon aus, dass es offengelegt ist, und ersetze es.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundenes Projekt. Du sollst einen Tippfehler in einer Fehlermeldung beheben und eine neue Eingabeprüfung ergänzen. Du legst einen Branch für die Prüfung an, machst einen Commit für die Prüfung („Reject empty user name in the signup form“) und einen getrennten für den Tippfehler („Fix typo in login error message“). Später fragt eine Kollegin, warum es die Prüfung auf leere Namen gibt. Der Verlauf zeigt den Commit mit Datum und Nachricht, die Antwort ist einen Klick entfernt. Erweist sich die Prüfung als falsch, kannst du genau diesen Commit rückgängig machen, ohne den Tippfehler anzufassen.
+
+## Das Wichtigste in Kürze
+
+- Versionsverwaltung zeichnet jede Änderung auf, sodass du den Verlauf siehst und zurückgehen kannst.
+- Ein Repository enthält Projekt und Verlauf; ein Commit ist ein gespeicherter Schritt.
+- Ein Branch erlaubt Arbeit an einer Änderung, ohne die Hauptlinie zu stören.
+- Kleine Commits mit klaren Nachrichten helfen allen, auch dir später.

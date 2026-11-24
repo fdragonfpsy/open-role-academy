@@ -1,0 +1,92 @@
+---
+id: programming-fundamentals-problem-solving-foundation
+competency: programming-fundamentals-problem-solving
+level: foundation
+title: "Wie Programmierende denken: Schritte, Entscheidungen, Wiederholung"
+objectives:
+  - "Ein Programm als genaue Abfolge von Schritten beschreiben, die mit Daten arbeitet."
+  - "Variablen, Bedingungen und Schleifen nutzen, um eine einfache Lösung auszudrücken."
+  - "Eine Lösung als Pseudocode formulieren, bevor du sie programmierst."
+  - "Ein kleines Programm mit typischen Eingaben und Grenzfällen testen."
+minutes: 25
+resources:
+  - wikipedia-computer-programming
+  - wikipedia-de-programmierung
+  - wikipedia-pseudocode
+  - wikibooks-python-programming
+  - wikibooks-de-regal-programmierung
+status: ai-draft
+sources:
+  - title: "Computer programming"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Computer_programming
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Programmierung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Programmierung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Pseudocode"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Pseudocode
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Python Programming"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Python_Programming
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Regal: Programmierung (Wikibooks)"
+    author: "Wikibooks-Autorinnen und -Autoren"
+    url: https://de.wikibooks.org/wiki/Regal:Programmierung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Jede Aufgabe in der Softwareentwicklung beginnt gleich: Du übersetzt einen vagen Wunsch in genaue Schritte, denen ein Computer folgen kann. Sprachen und Werkzeuge wechseln, diese Denkweise bleibt. Wenn du ein Problem als klare Schritte beschreiben kannst, lernst du jede Sprache schneller.
+
+## Die Grundbausteine
+
+Der Wikipedia-Artikel zur Programmierung beschreibt Programmieren als das Entwerfen und Schreiben von Anweisungen, die ein Computer ausführt. Fast jedes Programm kombiniert wenige Bausteine:
+
+- **Variablen** speichern Werte unter einem Namen, etwa einen Preis oder einen Benutzernamen. Jeder Wert hat einen Typ, zum Beispiel Zahl oder Text.
+- **Bedingungen** wählen zwischen Wegen: Ist der Bestand leer, zeige „ausverkauft“, sonst den Preis.
+- **Schleifen** wiederholen Schritte, zum Beispiel für jede Zeile einer Tabelle.
+- **Funktionen** geben einer Gruppe von Schritten einen Namen, damit du sie wiederverwenden kannst.
+
+## Erst lösen, dann programmieren
+
+Ein Algorithmus ist eine endliche Folge eindeutig definierter Schritte, die ein Problem löst. Bevor du Code schreibst, notiere die Schritte in einfachen Worten oder als Pseudocode, eine strukturierte Beschreibung, die an keine Sprache gebunden ist. Frage dich:
+
+1. Was geht hinein (Eingabe) und was soll herauskommen (Ausgabe)?
+2. Welche Schritte liegen dazwischen?
+3. Was kann schiefgehen: leere Eingabe, negative Zahl, Text statt Zahl?
+
+## Beim Bauen testen
+
+Führe zuerst die kleinstmögliche Version aus. Probiere eine typische Eingabe, dann Grenzfälle wie null, eine leere Liste oder einen sehr großen Wert. Ändere immer nur eine Sache, damit du weißt, was eine Änderung im Ergebnis verursacht hat. Fehlermeldungen von oben nach unten zu lesen ist eine eigene Fähigkeit: Sie nennen meist die Zeile und die Art des Problems.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundene Zahlen. Aufgabe: den höchsten Wert aus einer Liste von Testergebnissen finden. Pseudocode:
+
+1. Setze `best` auf das erste Ergebnis.
+2. Für jedes weitere Ergebnis: Ist es höher als `best`, setze `best` auf dieses Ergebnis.
+3. Gib `best` aus.
+
+Test mit den Ergebnissen 12, 7, 19, 4: `best` beginnt bei 12, bleibt nach 7 bei 12, wird 19 und bleibt nach 4 bei 19. Grenzfälle: Eine Liste mit einem Ergebnis liefert dieses Ergebnis; eine leere Liste hat kein erstes Ergebnis, das Programm muss also entscheiden, was passiert, zum Beispiel einen Fehler melden.
+
+## Das Wichtigste in Kürze
+
+- Ein Programm ist eine genaue Abfolge von Schritten, die mit Daten arbeitet.
+- Variablen, Bedingungen, Schleifen und Funktionen sind die Kernbausteine.
+- Formuliere die Schritte zuerst als Pseudocode und übersetze sie dann in Code.
+- Teste mit typischen Werten und Grenzfällen und ändere jeweils nur eine Sache.

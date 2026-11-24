@@ -1,0 +1,14 @@
+id: wikibooks-intro-software-engineering-architecture
+url: "https://en.wikibooks.org/wiki/Introduction_to_Software_Engineering/Architecture"
+title: "Introduction to Software Engineering: Architecture"
+provider: Wikibooks
+language: en
+format: book
+minutes: 30
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-24
+mode: link
+competencies: [software-design-architecture-basics]
+levels: [practitioner, advanced]
+note: "Open textbook; CC BY-SA 4.0 stated in the page footer; HTTP 200 on 2026-11-24. Link only."

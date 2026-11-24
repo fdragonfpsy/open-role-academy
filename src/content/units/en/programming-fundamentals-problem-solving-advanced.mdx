@@ -1,0 +1,85 @@
+---
+id: programming-fundamentals-problem-solving-advanced
+competency: programming-fundamentals-problem-solving
+level: advanced
+title: "Algorithms, complexity and trade-offs"
+objectives:
+  - "Compare algorithms by how their running time grows with input size."
+  - "Explain big-O notation at a basic level and apply it to common cases."
+  - "Weigh time, memory and readability when choosing a solution."
+  - "Decide when optimisation is worth the effort."
+minutes: 30
+resources:
+  - wikipedia-time-complexity
+  - wikipedia-algorithm
+  - wikipedia-de-algorithmus
+  - wikipedia-data-structure
+  - wikibooks-python-programming
+status: ai-draft
+sources:
+  - title: "Time complexity"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Time_complexity
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Algorithm"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Algorithm
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Algorithmus"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Algorithmus
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Data structure"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_structure
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Python Programming"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Python_Programming
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+A solution that works on ten test records can fail on ten million. Advanced developers judge in advance how a solution scales and can explain the trade-offs to a team. They also know when not to optimise.
+
+## Complexity in one idea
+
+The Wikipedia article on time complexity describes it as the amount of time an algorithm needs as a function of the size of its input, often written with big-O notation. The notation keeps only the part that dominates for large inputs. Common cases, from slow growth to fast growth:
+
+- **O(1)**: constant, for example reading an element of an array by position.
+- **O(log n)**: grows slowly, for example binary search in a sorted list, which halves the search range at each step.
+- **O(n)**: linear, for example looking at each element once.
+- **O(n log n)**: typical for efficient general sorting methods.
+- **O(n²)**: quadratic, typical when you compare every element with every other element.
+
+Big-O describes growth, not exact seconds. A quadratic method can beat a better one on tiny inputs; the difference shows when n gets large.
+
+## Trade-offs
+
+Faster often means more memory: a lookup table or an index speeds up searches but takes space and must be kept up to date. Clever code can be harder to read and to change. Weigh time, memory, readability and the effort to maintain.
+
+## Measure before you optimise
+
+Optimise the part that actually costs time. Measure with a profiler or simple timing on realistic data, change one thing and measure again. Premature optimisation of rarely used code only adds complexity. Also check correctness first: a fast wrong answer is worse than a slow right one.
+
+## Worked example
+
+Illustration only; invented sizes. You must check for each of 50,000 order numbers whether it appears in a list of 50,000 known numbers. Looking through the list for each one is a nested pass: about n times n comparisons, which is O(n²), roughly 2.5 billion comparisons. If you first put the known numbers into a set, each lookup is on average constant time, so the whole task is about O(n). The price is extra memory for the set. You would accept it here; for a list of ten items you would keep the simple version.
+
+## Key takeaways
+
+- Big-O describes how running time grows with input size, not exact time.
+- Sorted data and suitable structures (sets, maps) can turn O(n²) work into about O(n) or O(n log n).
+- Speed usually costs memory or readability, so weigh the trade-off.
+- Measure on realistic data before optimising.

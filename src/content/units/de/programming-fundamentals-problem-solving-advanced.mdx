@@ -1,0 +1,85 @@
+---
+id: programming-fundamentals-problem-solving-advanced
+competency: programming-fundamentals-problem-solving
+level: advanced
+title: "Algorithmen, Komplexität und Abwägungen"
+objectives:
+  - "Algorithmen danach vergleichen, wie ihre Laufzeit mit der Eingabegröße wächst."
+  - "Die O-Notation auf grundlegendem Niveau erklären und auf gängige Fälle anwenden."
+  - "Zeit, Speicher und Lesbarkeit bei der Wahl einer Lösung abwägen."
+  - "Entscheiden, wann sich Optimierung lohnt."
+minutes: 30
+resources:
+  - wikipedia-time-complexity
+  - wikipedia-algorithm
+  - wikipedia-de-algorithmus
+  - wikipedia-data-structure
+  - wikibooks-python-programming
+status: ai-draft
+sources:
+  - title: "Time complexity"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Time_complexity
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Algorithm"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Algorithm
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Algorithmus"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Algorithmus
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Data structure"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_structure
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Python Programming"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Python_Programming
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Eine Lösung, die mit zehn Testdatensätzen funktioniert, kann bei zehn Millionen scheitern. Erfahrene Entwickelnde beurteilen vorab, wie eine Lösung skaliert, und können dem Team die Abwägungen erklären. Sie wissen auch, wann sie nicht optimieren.
+
+## Komplexität in einer Idee
+
+Der Wikipedia-Artikel zur Zeitkomplexität beschreibt sie als die Zeit, die ein Algorithmus in Abhängigkeit von der Größe seiner Eingabe braucht, oft in der O-Notation geschrieben. Die Notation behält nur den Teil, der bei großen Eingaben überwiegt. Gängige Fälle, von langsamem zu schnellem Wachstum:
+
+- **O(1)**: konstant, zum Beispiel ein Array-Element über seine Position lesen.
+- **O(log n)**: wächst langsam, zum Beispiel die binäre Suche in einer sortierten Liste, die den Suchbereich in jedem Schritt halbiert.
+- **O(n)**: linear, zum Beispiel jedes Element einmal ansehen.
+- **O(n log n)**: typisch für effiziente allgemeine Sortierverfahren.
+- **O(n²)**: quadratisch, typisch, wenn du jedes Element mit jedem anderen vergleichst.
+
+Die O-Notation beschreibt Wachstum, keine genauen Sekunden. Ein quadratisches Verfahren kann bei winzigen Eingaben ein besseres schlagen; der Unterschied zeigt sich, wenn n groß wird.
+
+## Abwägungen
+
+Schneller heißt oft mehr Speicher: Eine Nachschlagetabelle oder ein Index beschleunigt Suchen, braucht aber Platz und muss aktuell gehalten werden. Clever geschriebener Code kann schwerer zu lesen und zu ändern sein. Wäge Zeit, Speicher, Lesbarkeit und Wartungsaufwand ab.
+
+## Erst messen, dann optimieren
+
+Optimiere den Teil, der wirklich Zeit kostet. Miss mit einem Profiler oder einfacher Zeitmessung auf realistischen Daten, ändere eine Sache und miss erneut. Voreilige Optimierung selten genutzten Codes erhöht nur die Komplexität. Prüfe außerdem zuerst die Korrektheit: Eine schnelle falsche Antwort ist schlechter als eine langsame richtige.
+
+## Beispiel aus der Praxis
+
+Nur zur Veranschaulichung; erfundene Größen. Du sollst für 50.000 Bestellnummern prüfen, ob sie in einer Liste von 50.000 bekannten Nummern vorkommen. Für jede die Liste zu durchsuchen ist ein verschachtelter Durchlauf: etwa n mal n Vergleiche, also O(n²), grob 2,5 Milliarden Vergleiche. Legst du die bekannten Nummern zuerst in eine Menge (Set), dauert jede Suche im Mittel konstant, die ganze Aufgabe also etwa O(n). Der Preis ist zusätzlicher Speicher für die Menge. Hier würdest du ihn akzeptieren; bei einer Liste mit zehn Einträgen bliebest du bei der einfachen Version.
+
+## Das Wichtigste in Kürze
+
+- Die O-Notation beschreibt, wie die Laufzeit mit der Eingabegröße wächst, nicht die genaue Zeit.
+- Sortierte Daten und passende Strukturen (Mengen, Maps) können aus O(n²) etwa O(n) oder O(n log n) machen.
+- Geschwindigkeit kostet meist Speicher oder Lesbarkeit, wäge also ab.
+- Miss auf realistischen Daten, bevor du optimierst.

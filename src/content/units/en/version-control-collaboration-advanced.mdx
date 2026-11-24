@@ -1,0 +1,90 @@
+---
+id: version-control-collaboration-advanced
+competency: version-control-collaboration
+level: advanced
+title: "Team workflows and a clean history"
+objectives:
+  - "Compare branching workflows such as feature branches and trunk-based development."
+  - "Choose a merge strategy and branch protection rules for a team."
+  - "Keep a history that supports review, bisecting and release notes."
+  - "Handle mistakes safely, including secrets committed by accident."
+minutes: 30
+resources:
+  - wikipedia-trunk-based-development
+  - wikipedia-branching-version-control
+  - wikipedia-pull-request
+  - wikipedia-git
+  - wikibooks-git
+status: ai-draft
+sources:
+  - title: "Trunk-based development"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Trunk-based_development
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Branching (version control)"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Branching_(version_control)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Pull request"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Pull_request
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Git"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Git
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Git"
+    author: "Wikibooks contributors"
+    url: https://en.wikibooks.org/wiki/Git
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+On a team, the version control workflow is a design decision. It decides how fast changes reach users, how painful merges are and how easily you can find out when a bug appeared.
+
+## Workflows compared
+
+The Wikipedia article on trunk-based development describes a model in which developers integrate small changes frequently into one shared main line (the trunk) rather than keeping long-lived branches. Typical options:
+
+- **Feature branches with pull requests**: each change lives on its own branch until reviewed. Good for review quality; long-lived branches make merges harder.
+- **Trunk-based development**: very short-lived branches or direct small commits to the trunk, usually with automated checks. Unfinished features are often hidden behind switches (feature flags). It needs good tests and discipline.
+- **Release branches**: a branch is kept for a version that still receives fixes.
+
+No workflow is best in general. Choose by team size, release rhythm, test coverage and risk.
+
+## Protect the main line
+
+Teams usually protect the main branch: changes arrive through reviewed pull requests, automated checks must pass, and force-pushing is blocked. These rules are part of the team's quality process, not bureaucracy.
+
+## A history that helps
+
+- Small, focused commits make review easier and let you undo one change without losing others.
+- A tool that bisects the history can find the commit that introduced a bug; it works best when each commit builds and passes tests.
+- Decide whether to keep every commit of a branch or combine them into one when merging, and say so in the contributing guide.
+- Consistent messages make release notes easier to write.
+
+## Handling mistakes
+
+Use a new commit that reverses a change (a revert) on shared branches, instead of rewriting shared history. Rewriting history is acceptable on your own unshared branch. If a secret was committed, treat it as exposed: revoke and replace it first, and clean the history only afterwards, because copies may already exist.
+
+## Worked example
+
+Illustration only; invented team. A team of eight releases weekly and suffers from branches that live for two weeks and conflict heavily. They agree on branches that live at most two days, pull requests below a set size, a required passing check suite and a switch that hides unfinished features. After a month, the merge conflicts that cost them time are rare. A bug report points to a change from last week, and the team finds the guilty commit quickly because each commit passed the checks.
+
+## Key takeaways
+
+- A branching workflow trades review safety against integration speed.
+- Trunk-based development integrates small changes often and needs good automation.
+- Protect the main line with reviews and required checks.
+- Revert on shared branches; treat leaked secrets as exposed and replace them.
