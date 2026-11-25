@@ -1,0 +1,18 @@
+id: controlling-processes-systems
+title:
+  en: Controlling processes and systems
+  de: Controlling-Prozesse und -Systeme
+description:
+  en: >-
+    Run the planning, forecasting and reporting calendar, keep master data and cost-centre structures consistent, and use ERP, planning and reporting tools with clear data lineage and documented definitions.
+  de: >-
+    Den Planungs-, Forecast- und Berichtskalender steuern, Stammdaten und Kostenstellenstrukturen konsistent halten sowie ERP-, Planungs- und Reporting-Werkzeuge mit nachvollziehbarer Datenherkunft und dokumentierten Definitionen nutzen.
+prerequisites: [working-with-data, cost-accounting]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/f0393af3-bcd9-41af-a36e-0cfb83b60081
+    label: manage standard enterprise resource planning system
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/a0d79341-8398-4019-ad1b-27888ec35aaa
+    label: use accounting systems
