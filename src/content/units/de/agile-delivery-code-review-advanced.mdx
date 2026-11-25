@@ -1,0 +1,128 @@
+---
+id: agile-delivery-code-review-advanced
+competency: agile-delivery-code-review
+level: advanced
+title: "Review-Praxis im Team, technische Schulden und statische Analyse"
+objectives:
+  - "Einen Review-Prozess gestalten, der schnell genug und trotzdem wirksam ist."
+  - "Statische Analyse und Checklisten zur Unterstützung des Reviews einsetzen."
+  - "Technische Schulden sichtbar behandeln und entscheiden, wann man sie eingeht."
+  - "Eine Review-Kultur aufbauen, die Lernen und psychologische Sicherheit fördert."
+minutes: 30
+resources:
+  - wikipedia-de-code-review
+  - wikipedia-de-statische-code-analyse
+  - wikipedia-de-technische-schulden
+  - wikipedia-de-paarprogrammierung
+  - wikibooks-de-softwaretechnik
+  - wikipedia-code-review
+  - wikipedia-static-program-analysis
+  - wikipedia-technical-debt
+  - wikipedia-agile-software-development
+status: ai-draft
+sources:
+  - title: "Code-Review"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Code-Review
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Statische Code-Analyse"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Statische_Code-Analyse
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Technische Schulden"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Technische_Schulden
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Paarprogrammierung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Paarprogrammierung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Softwaretechnik"
+    author: "Wikibooks-Autorinnen und -Autoren"
+    url: https://de.wikibooks.org/wiki/Softwaretechnik
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Code review"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Code_review
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Static program analysis"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Static_program_analysis
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Technical debt"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Technical_debt
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Agile software development"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Agile_software_development
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Auf fortgeschrittenem Niveau beeinflusst du, wie ein ganzes Team arbeitet. Review-Praxis kann eine Quelle für Lernen und Qualität sein oder ein Engpass und Konfliktherd. Technische Schulden bestimmen, wie schnell das Team im nächsten Jahr vorankommt. Beides braucht bewusste Entscheidungen.
+
+## Den Review-Prozess gestalten
+
+Fragen, die ein Team beantworten und aufschreiben sollte:
+
+- **Wer prüft?** Mindestens eine Person außer der Autorin oder dem Autor; bei riskanten Bereichen jemand, der den Bereich kennt. Wechsle die Prüfenden, um Wissen zu verteilen.
+- **Wie schnell?** Warten auf ein Review blockiert Arbeit. Vereinbart eine Ziel-Reaktionszeit und macht Reviews zur täglichen Routine, statt sie ans Ende des Tages oder der Iteration zu schieben.
+- **Wie groß?** Große Änderungen sind schwer gut zu prüfen. Strebt kleine Änderungen an und trennt Refactoring von Verhaltensänderungen.
+- **Was gilt als Freigabe?** Legt fest, wann eine Änderung gemergt werden darf und wer sie blockieren kann.
+- **Was prüfen Menschen nicht?** Formatierung, einfachen Stil und bekannte Fehlermuster übernimmt die Automatisierung.
+
+Reviews sind eine von mehreren Qualitätsmaßnahmen neben Tests, Paarprogrammierung und automatischen Prüfungen. Wähle eine Mischung, die zum Risiko passt; die eine beste Form gibt es nicht.
+
+## Statische Analyse als Partner
+
+**Statische Analyse** untersucht Quellcode, ohne ihn auszuführen, etwa um mögliche Fehler, unsichere Muster oder Stilverstöße zu finden. Setze sie in der Pipeline ein, damit jede Änderung dieselben Prüfungen bekommt, bevor ein Mensch hinsieht. Beachte die Grenzen: Werkzeuge liefern Fehlalarme und übersehen Probleme, die Ergebnisse brauchen also Urteilsvermögen, und Regeln sollten so abgestimmt sein, dass niemand lernt, Warnungen zu ignorieren.
+
+## Checklisten
+
+Eine kurze, vom Team gepflegte Checkliste hilft, wichtige Punkte nicht zu vergessen, etwa Eingabeprüfung, Fehlerbehandlung, Tests, Logging und Datenschutz. Halte sie knapp und aktualisiere sie nach Vorfällen: Wenn ein Fehler durchs Review gerutscht ist, frage, welche Frage ihn gefunden hätte.
+
+## Technische Schulden
+
+**Technische Schulden** sind eine Metapher: Schnelle oder schlechte Entwurfsentscheidungen machen spätere Änderungen teurer, wie Zinsen bei einem Kredit. Schulden können bewusst eingegangen werden, etwa für einen wichtigen Termin, wenn das Team plant, sie zurückzuzahlen. Ungeplante Schulden entstehen durch Hektik, unklare Anforderungen oder fehlende Tests.
+
+Praktischer Umgang:
+
+- Mache Schulden **sichtbar**: im Backlog erfassen, mit den Kosten, die sie verursachen, statt nur mit einem Gefühl.
+- Entscheide bewusst: Was ist der Nutzen jetzt, was die Kosten später, wer stimmt zu?
+- Zahle in kleinen Schritten zurück, etwa im laufenden Betrieb, und priorisiere Schulden, die häufige Änderungen bremsen.
+- Nutze das Review, um neue Schulden früh zu erkennen und solche ohne Nutzen abzulehnen.
+
+## Review-Kultur
+
+Reviews funktionieren, wenn Menschen sich sicher fühlen, zu fragen und sich zu irren. Führende setzen den Ton: den eigenen Code offen prüfen lassen, Kritik sichtbar annehmen, gute Lösungen loben und Fehler als Information über den Prozess behandeln, nicht über Personen. Schau auf Muster statt auf Einzelne; taucht dieselbe Fehlerart immer wieder auf, ändere eine Checkliste, ein Werkzeug oder eine Konvention. Achte auf schädliche Muster: Reviews als Statussymbol, Kleinkram ohne Gewichtung, stille Freigabe ohne Lesen.
+
+## Praxisbeispiel
+
+Nur zur Veranschaulichung; erfundenes Beispiel. Ein Team merkt, dass Änderungen zwei Tage auf ein Review warten. Es vereinbart: Review-Anfragen werden am selben Arbeitstag angesehen, Änderungen bleiben klein, und die Pipeline führt zuerst Formatierung und statische Analyse aus. Die Prüfenden widmen sich nun Entwurf und Tests. Eine wiederkehrende Lücke bei der Fehlerbehandlung führt zu einer neuen Checklistenzeile. Außerdem legt das Team für ein altes, schwer änderbares Modul einen sichtbaren Backlog-Eintrag mit dem Aufwand an, den es pro Iteration kostet, und vereinbart, es in kleinen Schritten abzubauen.
+
+## Wichtige Erkenntnisse
+
+- Legt fest, wer prüft, wie schnell, wie groß und wann freigegeben wird; automatisiert das Triviale.
+- Statische Analyse hilft, braucht aber Abstimmung und Urteilsvermögen.
+- Behandle technische Schulden als sichtbare, bewusste Entscheidung mit Rückzahlungsplan.
+- Eine sichere, schuldfreie Kultur macht Reviews nützlich.

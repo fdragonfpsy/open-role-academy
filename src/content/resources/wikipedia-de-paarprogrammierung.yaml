@@ -1,0 +1,14 @@
+id: wikipedia-de-paarprogrammierung
+url: "https://de.wikipedia.org/wiki/Paarprogrammierung"
+title: "Paarprogrammierung"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-25
+mode: link
+competencies: [agile-delivery-code-review]
+levels: [practitioner]
+note: "Wikipedia text under CC BY-SA; HTTP 200 on 2026-11-25. Link only."

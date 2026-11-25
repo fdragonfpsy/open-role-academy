@@ -146,12 +146,12 @@ One role per task, in the order of CLAUDE.md §4.3. Each task = framework + cont
   - [x] content: sql-data-querying, statistics-fundamentals, data-visualization-dashboards
   - [x] content: business-intelligence-reporting, analytical-problem-framing-storytelling, data-governance-privacy-analytics
   - [x] content: machine-learning-basics-ai-analytics; then `status: published` and quality pass
-- [ ] Software Development (framework + content; publish the role when all content is done; no proprietary framework text)
+- [x] Software Development (framework + content; publish the role when all content is done; no proprietary framework text)
   - [x] framework (role + 10 competencies, `status: draft`)
   - [x] content: programming-fundamentals-problem-solving, version-control-collaboration, software-design-architecture-basics
   - [x] content: software-testing-quality, software-debugging, apis-integration
   - [x] content: databases-data-modelling-basics, secure-coding-basics, ci-cd-devops-basics
-  - [ ] content: agile-delivery-code-review; then `status: published` and quality pass
+  - [x] content: agile-delivery-code-review; then `status: published` and quality pass
 - [ ] Controlling
 - [ ] Legal & Compliance
 - [ ] People Leadership

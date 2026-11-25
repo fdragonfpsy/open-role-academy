@@ -1,0 +1,108 @@
+---
+id: agile-delivery-code-review-foundation
+competency: agile-delivery-code-review
+level: foundation
+title: "User Stories, Iterationen und dein erstes Code-Review"
+objectives:
+  - "Beschreiben, wie agile Teams Software in kleinen, wiederholten Schritten liefern."
+  - "Eine einfache User Story mit Akzeptanzkriterien formulieren."
+  - "Erklären, was ein Code-Review ist und wer darin welche Aufgabe hat."
+  - "Review-Kommentare höflich und klar geben und annehmen."
+minutes: 25
+resources:
+  - wikipedia-de-agile-softwareentwicklung
+  - wikipedia-de-user-story
+  - wikipedia-de-code-review
+  - wikibooks-de-softwaretechnik
+  - wikipedia-agile-software-development
+  - wikipedia-user-story
+  - wikipedia-code-review
+status: ai-draft
+sources:
+  - title: "Agile Softwareentwicklung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Agile_Softwareentwicklung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "User Story"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/User_Story
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Code-Review"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Code-Review
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Softwaretechnik"
+    author: "Wikibooks-Autorinnen und -Autoren"
+    url: https://de.wikibooks.org/wiki/Softwaretechnik
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Agile software development"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Agile_software_development
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "User story"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/User_story
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Code review"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Code_review
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Code zu schreiben ist nur ein Teil der Arbeit. Du musst auch verstehen, was Menschen brauchen, in kleinen Stücken liefern und deine Arbeit von anderen prüfen lassen. So fallen Missverständnisse und Fehler früh auf, wenn die Korrektur noch günstig ist.
+
+## Agile Umsetzung in einer Minute
+
+Agile Softwareentwicklung heißt, in kurzen, wiederholten Schritten zu arbeiten statt mit einem großen Plan und einem großen Release. Das Team liefert ein kleines funktionierendes Stück, holt Rückmeldung ein und passt den Plan an. Viele Teams arbeiten in **Iterationen** fester Länge (zum Beispiel zwei Wochen) und führen ein **Backlog**: eine geordnete Liste der noch offenen Arbeit. Oben stehen die wertvollsten und am besten verstandenen Einträge.
+
+## User Stories und Akzeptanzkriterien
+
+Eine **User Story** beschreibt einen Bedarf aus Sicht der Person, die ihn hat. Eine übliche Form lautet:
+
+> Als *Rolle* möchte ich *Ziel*, damit *Nutzen*.
+
+Die Story ist bewusst kurz. Sie startet ein Gespräch im Team und ist keine vollständige Spezifikation. **Akzeptanzkriterien** machen sie prüfbar: konkrete Bedingungen, die erfüllt sein müssen, damit die Arbeit als erledigt gilt. Gute Kriterien sind eindeutig und lassen sich mit Ja oder Nein beantworten.
+
+## Was ist ein Code-Review?
+
+Bei einem **Code-Review** liest jemand anderes als die Autorin oder der Autor eine Änderung, bevor sie Teil des gemeinsamen Codes wird. Typische Rollen:
+
+- Die **Autorin oder der Autor** macht eine kleine, fokussierte Änderung und beschreibt sie: was, warum und wie getestet wurde.
+- Die **prüfende Person** liest die Änderung, vergleicht sie mit dem Ziel, stellt Fragen und schlägt Verbesserungen vor.
+- Gemeinsam einigt man sich auf das Ergebnis: freigeben oder anpassen und erneut ansehen.
+
+Reviews finden Fehler, verteilen Wissen über den Code und halten den Stil einheitlich. Kleine Änderungen werden schneller und sorgfältiger geprüft als riesige.
+
+## Kommentare schreiben und annehmen
+
+- Kommentiere den **Code**, nicht die Person. Schreibe „Diese Funktion macht zwei Dinge“ statt „Das hast du schlecht gemacht“.
+- Stelle eine Frage, wenn du unsicher bist: „Was passiert, wenn die Liste leer ist?“
+- Nenne auch, was gut ist. Sage, warum eine Änderung nötig ist.
+- Als Autorin oder Autor: Bedanke dich, beantworte jeden Kommentar und nimm ihn nicht persönlich. Es geht um die Arbeit.
+
+## Praxisbeispiel
+
+Nur zur Veranschaulichung; erfundenes Beispiel. Eine kleine Bibliotheks-App braucht eine Funktion. Die Story: „Als Leserin möchte ich meine Rückgabetermine sehen, damit ich Bücher rechtzeitig zurückgebe.“ Akzeptanzkriterien: Die Liste zeigt Titel und Rückgabedatum; Bücher, die in drei Tagen fällig sind, sind markiert; eine leere Liste zeigt einen kurzen Hinweis. Der Autor öffnet eine kleine Änderung mit Beschreibung. Der Prüfer fragt: „Was, wenn das Datum fehlt?“ und bemerkt einen unklaren Variablennamen. Der Autor ergänzt einen Test und benennt die Variable um, danach wird freigegeben.
+
+## Wichtige Erkenntnisse
+
+- Agile Teams liefern in kurzen Iterationen aus einem priorisierten Backlog.
+- Eine User Story nennt wer, was und warum; Akzeptanzkriterien machen sie prüfbar.
+- Ein Code-Review ist ein zweites Paar Augen, bevor Code zusammengeführt wird.
+- Halte Änderungen klein und Kommentare auf den Code bezogen, freundlich und konkret.

@@ -1,0 +1,108 @@
+---
+id: agile-delivery-code-review-foundation
+competency: agile-delivery-code-review
+level: foundation
+title: "User stories, iterations and your first code review"
+objectives:
+  - "Describe how agile teams deliver software in small, repeated steps."
+  - "Write a simple user story with acceptance criteria."
+  - "Explain what a code review is and who does what in it."
+  - "Give and receive review comments politely and clearly."
+minutes: 25
+resources:
+  - wikipedia-agile-software-development
+  - wikipedia-user-story
+  - wikipedia-code-review
+  - wikipedia-de-agile-softwareentwicklung
+  - wikipedia-de-user-story
+  - wikipedia-de-code-review
+  - wikibooks-de-softwaretechnik
+status: ai-draft
+sources:
+  - title: "Agile software development"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Agile_software_development
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "User story"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/User_story
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Code review"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Code_review
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Agile Softwareentwicklung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Agile_Softwareentwicklung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "User Story"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/User_Story
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Code-Review"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Code-Review
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Softwaretechnik"
+    author: "Wikibooks-Autorinnen und -Autoren"
+    url: https://de.wikibooks.org/wiki/Softwaretechnik
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+Writing code is only part of a developer's job. You also need to understand what people need, deliver it in small pieces and let teammates check your work. These habits catch misunderstandings and mistakes early, when they are cheap to fix.
+
+## Agile delivery in one minute
+
+Agile software development means building in short, repeated steps instead of one big plan and one big release. The team delivers a small working piece, gets feedback and adjusts the plan. Many teams work in **iterations** of fixed length (for example two weeks) and keep a **backlog**: an ordered list of work that is still to do. The most valuable and best understood items are at the top.
+
+## User stories and acceptance criteria
+
+A **user story** describes a need from the point of view of the person who has it. A common form is:
+
+> As a *role*, I want *goal*, so that *benefit*.
+
+The story is deliberately short. It starts a conversation in the team; it is not a full specification. **Acceptance criteria** make it testable: concrete conditions that must be true when the work counts as done. Good criteria are specific and can be answered with yes or no.
+
+## What is a code review?
+
+In a **code review**, someone other than the author reads a change before it becomes part of the shared code. Typical roles:
+
+- The **author** makes a small, focused change and explains it in the description: what, why and how it was tested.
+- The **reviewer** reads the change, checks it against the goal, asks questions and suggests improvements.
+- Both agree on the outcome: approve, or change and look again.
+
+Reviews find defects, spread knowledge about the code and keep the style consistent. Small changes are reviewed faster and more carefully than huge ones.
+
+## Writing and receiving comments
+
+- Comment on the **code**, not on the person. Write "this function does two things" rather than "you wrote this badly".
+- Ask a question when you are unsure: "What happens if the list is empty?"
+- Say what is good, too. Say why a change is needed.
+- As an author, thank the reviewer, answer every comment and do not take it personally. A review is about the work.
+
+## Worked example
+
+Illustration only; invented example. A small library app needs a feature. The story: "As a reader, I want to see my due dates, so that I return books on time." Acceptance criteria: the list shows title and due date; books due within three days are marked; an empty list shows a short message. The author opens a small change with a description. The reviewer asks: "What if the due date is missing?" and notes a confusing variable name. The author adds a test and renames the variable, and the change is approved.
+
+## Key takeaways
+
+- Agile teams deliver in short iterations from a prioritised backlog.
+- A user story names who, what and why; acceptance criteria make it checkable.
+- A code review is a second pair of eyes before code is merged.
+- Keep changes small and comments about the code, kind and specific.

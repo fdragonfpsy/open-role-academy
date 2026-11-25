@@ -1,0 +1,290 @@
+competency: agile-delivery-code-review
+items:
+- id: acr-f-story
+  level: foundation
+  difficulty: 850
+  type: single
+  stem:
+    en: What does a user story describe?
+    de: Was beschreibt eine User Story?
+  options:
+  - en: A need seen from the view of the person who has it
+    de: Einen Bedarf aus Sicht der Person, die ihn hat
+    correct: true
+  - en: The full technical design of a whole database schema
+    de: Den vollständigen technischen Entwurf eines gesamten Datenbankschemas
+    correct: false
+  - en: A list of all bugs found during the last release
+    de: Eine Liste aller Fehler aus dem letzten Release
+    correct: false
+  - en: The monthly budget of a development team
+    de: Das Monatsbudget eines Entwicklungsteams
+    correct: false
+  explanation:
+    en: A user story is a short description of a need, usually who wants what and why. It starts a conversation and is not a full specification.
+    de: Eine User Story beschreibt kurz einen Bedarf, meist wer was und warum möchte. Sie startet ein Gespräch und ist keine vollständige Spezifikation.
+  source: https://en.wikipedia.org/wiki/User_story
+- id: acr-f-criteria
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: What are acceptance criteria for?
+    de: Wofür sind Akzeptanzkriterien da?
+  options:
+  - en: To make a story checkable with yes or no answers
+    de: Eine Story mit Ja-Nein-Antworten prüfbar zu machen
+    correct: true
+  - en: To decide who gets the highest salary in the team
+    de: Zu entscheiden, wer im Team das höchste Gehalt bekommt
+    correct: false
+  - en: To replace all automated tests of the project
+    de: Alle automatisierten Tests des Projekts zu ersetzen
+    correct: false
+  - en: To hide open questions until the release date
+    de: Offene Fragen bis zum Release-Termin zu verbergen
+    correct: false
+  explanation:
+    en: Acceptance criteria are concrete conditions that must be true for the work to count as done, so that everyone can check the result the same way.
+    de: Akzeptanzkriterien sind konkrete Bedingungen, die erfüllt sein müssen, damit die Arbeit als erledigt gilt, sodass alle das Ergebnis gleich prüfen können.
+  source: https://en.wikipedia.org/wiki/User_story
+- id: acr-f-review
+  level: foundation
+  difficulty: 1000
+  type: single
+  stem:
+    en: In a code review, who reads the change before it is merged?
+    de: Wer liest bei einem Code-Review die Änderung, bevor sie zusammengeführt wird?
+  options:
+  - en: Someone other than the author
+    de: Jemand anderes als die Autorin oder der Autor
+    correct: true
+  - en: Only the author, a second time
+    de: Nur die Autorin oder der Autor ein zweites Mal
+    correct: false
+  - en: The end customers after the release
+    de: Die Endkundschaft nach der Auslieferung
+    correct: false
+  - en: Nobody; the build server decides alone
+    de: Niemand; der Build-Server entscheidet allein
+    correct: false
+  explanation:
+    en: A code review means that a person other than the author examines the change. This finds defects early and spreads knowledge about the code.
+    de: Beim Code-Review prüft eine andere Person als die Autorin oder der Autor die Änderung. Das findet Fehler früh und verteilt Wissen über den Code.
+  source: https://en.wikipedia.org/wiki/Code_review
+- id: acr-f-comment
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: Which review comment is the most constructive?
+    de: Welcher Review-Kommentar ist am konstruktivsten?
+  options:
+  - en: This function does two things; split it?
+    de: Diese Funktion macht zwei Dinge; teilen wir sie?
+    correct: true
+  - en: You always write such messy code, honestly.
+    de: Du schreibst ehrlich gesagt immer so chaotischen Code.
+    correct: false
+  - en: Rewrite everything, I will not look again.
+    de: Schreib alles neu, ich schaue nicht mehr hin.
+    correct: false
+  - en: Fine.
+    de: Passt.
+    correct: false
+  explanation:
+    en: Good comments address the code, are specific and invite a reply. Personal remarks or empty approvals help nobody.
+    de: Gute Kommentare beziehen sich auf den Code, sind konkret und laden zur Antwort ein. Persönliche Bemerkungen oder leere Freigaben helfen niemandem.
+  source: https://en.wikipedia.org/wiki/Code_review
+- id: acr-p-dod
+  level: practitioner
+  difficulty: 1150
+  type: single
+  stem:
+    en: What is the purpose of a definition of done?
+    de: Was ist der Zweck einer Definition of Done?
+  options:
+  - en: A shared checklist every item must meet to be finished
+    de: Eine gemeinsame Checkliste für das Fertigsein jedes Eintrags
+    correct: true
+  - en: A legal contract with the customer about the final price
+    de: Ein rechtlicher Vertrag mit der Kundschaft über den Endpreis
+    correct: false
+  - en: A list of people who are not allowed to review code
+    de: Eine Liste von Personen, die keinen Code prüfen dürfen
+    correct: false
+  - en: A plan for the next five years of the product
+    de: Ein Plan für die nächsten fünf Jahre des Produkts
+    correct: false
+  explanation:
+    en: A definition of done makes the meaning of finished the same for everyone, for example reviewed, tested and documented.
+    de: Eine Definition of Done macht die Bedeutung von fertig für alle gleich, etwa geprüft, getestet und dokumentiert.
+  source: https://en.wikipedia.org/wiki/Definition_of_done
+- id: acr-p-refine
+  level: practitioner
+  difficulty: 1200
+  type: multi
+  stem:
+    en: Which results are typical for backlog refinement? Select all that apply.
+    de: Welche Ergebnisse sind typisch für das Refinement des Backlogs? Wähle alle zutreffenden aus.
+  options:
+  - en: A too large item is split into smaller ones
+    de: Ein zu großer Eintrag wird in kleinere geteilt
+    correct: true
+  - en: Acceptance criteria are written, including error cases
+    de: Akzeptanzkriterien werden geschrieben, auch für Fehlerfälle
+    correct: true
+  - en: Every estimate is fixed as a promise to the customer
+    de: Jede Schätzung wird als Versprechen an die Kundschaft festgeschrieben
+    correct: false
+  - en: All open questions are ignored to save time
+    de: Alle offenen Fragen werden ignoriert, um Zeit zu sparen
+    correct: false
+  explanation:
+    en: Refinement makes items small, clear and testable. Estimates are shared guesses, not promises, and open questions should be answered or turned into tasks.
+    de: Refinement macht Einträge klein, klar und testbar. Schätzungen sind gemeinsame Vermutungen und keine Versprechen; offene Fragen werden beantwortet oder zu Aufgaben.
+  source: https://en.wikipedia.org/wiki/User_story
+- id: acr-p-rev
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: What should a reviewer check first before judging details?
+    de: Was sollte eine prüfende Person zuerst klären, bevor sie Details beurteilt?
+  options:
+  - en: The goal of the change and whether it is met
+    de: Das Ziel der Änderung und ob sie es erreicht
+    correct: true
+  - en: Whether the author uses the same text editor as you
+    de: Ob die Autorin oder der Autor denselben Texteditor nutzt
+    correct: false
+  - en: The number of lines the author wrote that day
+    de: Die Zahl der Zeilen, die die Person an dem Tag schrieb
+    correct: false
+  - en: The colour theme of the code in the editor
+    de: Das Farbschema des Codes im Editor
+    correct: false
+  explanation:
+    en: Understanding the goal from the description and story lets the reviewer judge correctness, tests, readability and risk against what the change should achieve.
+    de: Das Ziel aus Beschreibung und Story zu verstehen, lässt die prüfende Person Korrektheit, Tests, Lesbarkeit und Risiken daran messen, was die Änderung erreichen soll.
+  source: https://en.wikipedia.org/wiki/Code_review
+- id: acr-p-pair
+  level: practitioner
+  difficulty: 1350
+  type: single
+  stem:
+    en: In pair programming, what do the two roles driver and navigator usually do?
+    de: Was tun die beiden Rollen Driver und Navigator bei der Paarprogrammierung üblicherweise?
+  options:
+  - en: One writes code while the other thinks ahead and checks
+    de: Eine schreibt Code, die andere denkt voraus und prüft
+    correct: true
+  - en: One works by day, the other works by night on the same code
+    de: Eine arbeitet tagsüber, die andere nachts am selben Code
+    correct: false
+  - en: One writes tests only, the other never looks at them
+    de: Eine schreibt nur Tests, die andere sieht sie nie an
+    correct: false
+  - en: One manages the budget while the other deploys
+    de: Eine verwaltet das Budget, während die andere ausliefert
+    correct: false
+  explanation:
+    en: The driver types, the navigator reviews and plans ahead; the roles switch regularly. It works like a continuous review.
+    de: Der Driver tippt, der Navigator prüft und plant voraus; die Rollen wechseln regelmäßig. Es wirkt wie ein laufendes Review.
+  source: https://en.wikipedia.org/wiki/Pair_programming
+- id: acr-a-debt
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: What does the metaphor of technical debt express?
+    de: Was drückt die Metapher der technischen Schulden aus?
+  options:
+  - en: Quick design shortcuts make later changes more expensive
+    de: Schnelle Entwurfsabkürzungen machen spätere Änderungen teurer
+    correct: true
+  - en: The team owes money to the cloud provider every single month
+    de: Das Team schuldet dem Cloud-Anbieter jeden einzelnen Monat Geld
+    correct: false
+  - en: Old code is always worthless and must be deleted at once
+    de: Alter Code ist immer wertlos und muss sofort gelöscht werden
+    correct: false
+  - en: Debt can never be taken on purpose
+    de: Schulden dürfen nie bewusst eingegangen werden
+    correct: false
+  explanation:
+    en: Like interest, the extra effort grows the longer the shortcut stays. Debt can be taken consciously if the team plans to repay it.
+    de: Wie Zinsen wächst der Mehraufwand, je länger die Abkürzung bleibt. Schulden können bewusst eingegangen werden, wenn das Team Rückzahlung plant.
+  source: https://en.wikipedia.org/wiki/Technical_debt
+- id: acr-a-static
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: What is a sensible use of static analysis in the review process?
+    de: Was ist ein sinnvoller Einsatz statischer Analyse im Review-Prozess?
+  options:
+  - en: Run it in the pipeline so people focus on design
+    de: In der Pipeline ausführen, damit Menschen sich auf Entwurf konzentrieren
+    correct: true
+  - en: Trust every result blindly and skip all human review for good
+    de: Jedem Ergebnis blind vertrauen und jedes menschliche Review dauerhaft auslassen
+    correct: false
+  - en: Switch off all rules as soon as the first warning appears
+    de: Alle Regeln abschalten, sobald die erste Warnung erscheint
+    correct: false
+  - en: Run it only after the release in production
+    de: Erst nach dem Release in der Produktion ausführen
+    correct: false
+  explanation:
+    en: Static analysis checks code without running it and gives every change the same baseline. It has false positives and misses, so it supports review and does not replace it.
+    de: Statische Analyse prüft Code ohne Ausführung und gibt jeder Änderung dieselbe Grundprüfung. Sie hat Fehlalarme und Lücken, unterstützt also das Review und ersetzt es nicht.
+  source: https://en.wikipedia.org/wiki/Static_program_analysis
+- id: acr-a-process
+  level: advanced
+  difficulty: 1600
+  type: multi
+  stem:
+    en: Which measures help keep reviews fast and effective? Select all that apply.
+    de: Welche Maßnahmen halten Reviews schnell und wirksam? Wähle alle zutreffenden aus.
+  options:
+  - en: Keep changes small and separate refactoring from behaviour changes
+    de: Änderungen klein halten und Refactoring von Verhaltensänderungen trennen
+    correct: true
+  - en: Agree on a target response time for review requests
+    de: Eine Ziel-Reaktionszeit für Review-Anfragen vereinbaren
+    correct: true
+  - en: Let people check formatting by hand in every review
+    de: Formatierung in jedem Review von Hand prüfen lassen
+    correct: false
+  - en: Review only at the very end of the iteration
+    de: Erst ganz am Ende der Iteration prüfen
+    correct: false
+  explanation:
+    en: Small changes and fast responses prevent bottlenecks, and automation should take over formatting. Late review makes problems more expensive.
+    de: Kleine Änderungen und schnelle Reaktion verhindern Engpässe, und Automatisierung sollte die Formatierung übernehmen. Späte Reviews verteuern Probleme.
+  source: https://en.wikipedia.org/wiki/Code_review
+- id: acr-a-culture
+  level: advanced
+  difficulty: 1650
+  type: single
+  stem:
+    en: The same kind of defect keeps slipping through review. What is the best response for a lead?
+    de: Dieselbe Fehlerart rutscht immer wieder durchs Review. Was ist die beste Reaktion für eine Führungskraft?
+  options:
+  - en: Change a checklist, tool or rule that would catch it
+    de: Eine Checkliste, ein Werkzeug oder eine Regel ändern, die ihn fängt
+    correct: true
+  - en: Blame the reviewer who approved it the last time
+    de: Die Person verantwortlich machen, die ihn beim letzten Mal freigegeben hat
+    correct: false
+  - en: Stop doing reviews because they are not perfect anyway
+    de: Reviews einstellen, weil sie ohnehin nicht perfekt sind
+    correct: false
+  - en: Hide the defects from the rest of the team
+    de: Die Fehler vor dem restlichen Team verbergen
+    correct: false
+  explanation:
+    en: Treat defects as information about the process. Recurring patterns call for a better checklist, tool or convention, not for blame.
+    de: Fehler sind Information über den Prozess. Wiederkehrende Muster verlangen eine bessere Checkliste, ein Werkzeug oder eine Konvention, keine Schuldzuweisung.
+  source: https://en.wikipedia.org/wiki/Code_review
