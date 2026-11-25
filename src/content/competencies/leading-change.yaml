@@ -1,0 +1,15 @@
+id: leading-change
+title:
+  en: Leading teams through change
+  de: Teams durch Veränderungen führen
+description:
+  en: >-
+    Guide a team through organisational change: explain the reasons and direction, anticipate typical reactions and resistance, involve people, communicate regularly, secure quick wins and know when employee representatives must be involved in Germany (topic level).
+  de: >-
+    Ein Team durch organisatorische Veränderungen führen: Gründe und Richtung erklären, typische Reaktionen und Widerstände antizipieren, Menschen einbeziehen, regelmäßig kommunizieren, schnelle Erfolge sichern und wissen, wann in Deutschland die Arbeitnehmervertretung einzubeziehen ist (auf Themenebene).
+prerequisites: [team-building-psychological-safety, goal-setting-team-planning]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/3c03ee71-4a23-448f-b79e-81fd75d27dca
+    label: apply change management

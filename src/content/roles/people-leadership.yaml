@@ -1,0 +1,68 @@
+id: people-leadership
+kind: role
+status: draft
+title:
+  en: People Leadership
+  de: Personalführung
+summary:
+  en: >-
+    Lead a team well: grow from expert to team lead, delegate with clear accountability, set goals and plan work, hold one-to-one conversations and coach, give feedback, build a team with psychological safety, keep people motivated, handle conflicts, run effective meetings and decisions, lead through change, and know the labour-law and diversity basics for leaders in Germany and the EU.
+  de: >-
+    Ein Team gut führen: vom Fachexperten zur Teamleitung wachsen, mit klarer Verantwortung delegieren, Ziele setzen und Arbeit planen, Einzelgespräche führen und coachen, Feedback geben, ein Team mit psychologischer Sicherheit aufbauen, Menschen motiviert halten, Konflikte bearbeiten, Meetings und Entscheidungen wirksam gestalten, Veränderungen begleiten und die arbeitsrechtlichen und Diversity-Grundlagen für Führungskräfte in Deutschland und der EU kennen.
+competencies:
+  # role-specific
+  - id: leadership-fundamentals-role-transition
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: delegation-accountability
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: goal-setting-team-planning
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: one-to-one-coaching
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: performance-feedback
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: team-building-psychological-safety
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: motivation-engagement-wellbeing
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: employee-relations-conflict
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: meetings-decision-making
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: leading-change
+    priority: 2
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  - id: employment-law-basics
+    priority: 3
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: diversity-inclusion
+    priority: 3
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  # core track
+  - id: information-security-basics
+    priority: 3
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: digital-ai-literacy
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: communication-collaboration
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: working-with-data
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: self-organisation-project-basics
+    priority: 3
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: business-finance-fundamentals
+    priority: 1
+    targets: { foundation: practitioner, practitioner: advanced, advanced: advanced }

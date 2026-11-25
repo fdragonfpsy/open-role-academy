@@ -1,0 +1,15 @@
+id: motivation-engagement-wellbeing
+title:
+  en: Motivation, engagement and workload
+  de: Motivation, Engagement und Arbeitsbelastung
+description:
+  en: >-
+    Understand what motivates people and how leaders can support engagement: meaningful work, autonomy, recognition and development, plus noticing overload, balancing workload and supporting wellbeing within the leader's role (EU/Germany context at topic level).
+  de: >-
+    Verstehen, was Menschen motiviert und wie Führungskräfte Engagement fördern: sinnvolle Arbeit, Handlungsspielraum, Anerkennung und Entwicklung, dazu Überlastung erkennen, Arbeitsbelastung ausgleichen und Wohlbefinden im Rahmen der Führungsrolle unterstützen (Kontext EU/Deutschland, auf Themenebene).
+prerequisites: [one-to-one-coaching]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/22c2af9e-ba0d-4cee-abb6-b6dbef006cd5
+    label: motivate employees

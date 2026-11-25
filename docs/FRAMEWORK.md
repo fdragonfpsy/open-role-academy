@@ -6,130 +6,138 @@ Targets per **role level** (the learner's self-rated level): F = Foundation, P =
 
 ## Overview: role × competency
 
-| Competency | Track | core-track | controlling | customer-service | data-analytics | finance-accounting | human-resources | it-support-operations | legal-compliance | marketing | procurement-supply-chain | project-management | sales | software-development |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Business and finance fundamentals | core | F/P/A | P/A/A | —/F/F | F/P/A | P/A/A | F/F/P | —/F/F | P/A/A | —/F/F | F/P/A | F/P/P | —/F/F | F/P/A |
-| Communication and collaboration | core | F/P/A | F/P/A | F/P/A | F/P/A | F/P/P | F/P/A | F/P/P | F/P/A | F/P/A | F/P/A | F/P/A | F/P/A | F/P/A |
-| Digital and AI literacy | core | F/P/A | F/P/A | F/P/A | F/P/A | F/P/P | F/P/P | F/P/A | F/P/A | F/P/A | F/P/A | F/P/A | F/P/A | F/P/A |
-| Information security basics | core | F/P/A | F/P/P | P/A/A | F/P/A | F/P/P | F/P/P | P/A/A | F/P/P | P/A/A | F/P/A | F/P/A | P/A/A | F/P/A |
-| Self-organisation and project basics | core | F/P/A | F/P/P | F/P/P | F/P/P | F/P/P | F/P/P | F/P/P | F/P/P | F/P/P | F/P/P | F/P/A | F/P/P | F/P/P |
-| Working with data | core | F/P/A | F/P/A | F/F/P | F/P/P | F/P/A | F/F/P | F/F/P | F/P/A | F/F/P | F/P/P | F/F/P | F/F/P | F/P/P |
-| Account management and upselling | role |  |  |  |  |  |  |  |  |  |  |  | —/F/P |  |
-| Accounts payable | role |  |  |  |  | F/P/A |  |  |  |  |  |  |  |  |
-| Accounts receivable and credit management | role |  |  |  |  | F/P/A |  |  |  |  |  |  |  |  |
-| Requirements, agile delivery and code review | role |  |  |  |  |  |  |  |  |  |  |  |  | F/P/A |
-| Agile and hybrid delivery | role |  |  |  |  |  |  |  |  |  |  | —/F/P |  |  |
-| AI regulation and digital law overview (EU) | role |  |  |  |  |  |  |  | —/F/P |  |  |  |  |  |
-| Analytical problem framing and storytelling | role |  |  |  | F/P/A |  |  |  |  |  |  |  |  |  |
-| Anti-corruption and whistleblower protection (EU/Germany) | role |  |  |  |  |  |  |  | F/P/A |  |  |  |  |  |
-| APIs and system integration | role |  |  |  |  |  |  |  |  |  |  |  |  | F/P/A |
-| Backup and recovery | role |  |  |  |  |  |  | F/P/P |  |  |  |  |  |  |
-| Bookkeeping fundamentals | role |  |  |  |  | F/P/A |  |  |  |  |  |  |  |  |
-| Brand and messaging | role |  |  |  |  |  |  |  |  | F/P/A |  |  |  |  |
-| Budgeting and forecasting | role |  | F/P/A |  |  | —/F/P |  |  |  |  |  |  |  |  |
-| Business intelligence and reporting | role |  | F/P/A |  | —/F/P |  |  |  |  |  |  |  |  |  |
-| Business partnering and decision support | role |  | —/F/P |  |  |  |  |  |  |  |  |  |  |  |
-| Campaign planning and budgeting | role |  |  |  |  |  |  |  |  | —/F/P |  |  |  |  |
-| Cash and liquidity management | role |  | —/F/P |  |  | F/P/A |  |  |  |  |  |  |  |  |
-| Change and IT asset management | role |  |  |  |  |  |  | —/F/P |  |  |  |  |  |  |
-| CI/CD and DevOps basics | role |  |  |  |  |  |  |  |  |  |  |  |  | —/F/P |
-| Closing, contract and handover | role |  |  |  |  |  |  |  |  |  |  |  | F/P/A |  |
-| Complaint handling and de-escalation | role |  |  | F/P/A |  |  |  |  |  |  |  |  |  |  |
-| Compliance management and corporate governance | role |  |  |  |  |  |  |  | F/P/A |  |  |  |  |  |
-| Consumer rights basics (EU/Germany) | role |  |  | F/F/P |  |  |  |  |  |  |  |  |  |  |
-| Content marketing and copywriting | role |  |  |  |  |  |  |  |  | F/P/A |  |  |  |  |
-| Contract law basics (Germany/EU) | role |  |  |  |  |  |  |  | F/P/A |  |  |  |  |  |
-| Controlling processes and systems | role |  | F/P/A |  |  |  |  |  |  |  |  |  |  |  |
-| Cost accounting | role |  | F/P/A |  |  | F/P/A |  |  |  |  |  |  |  |  |
-| CRM, sales data and forecasting | role |  |  |  |  |  |  |  |  |  |  |  | F/P/P |  |
-| Customer communication, listening and empathy | role |  |  | F/P/A |  |  |  |  |  |  |  |  |  |  |
-| Customer data and privacy in service (EU/Germany) | role |  |  | F/P/A |  |  |  |  |  |  |  |  |  |  |
-| Understanding needs and solving customer problems | role |  |  | F/P/A |  |  |  |  |  |  |  |  |  |  |
-| Customer retention and voice of the customer | role |  |  | —/F/P |  |  |  |  |  |  |  |  |  |  |
-| Customer service fundamentals | role |  |  | F/P/A |  |  |  |  |  |  |  |  |  |  |
-| Data analytics fundamentals | role |  |  |  | F/P/A |  |  |  |  |  |  |  |  |  |
-| Data governance and privacy in analytics | role |  |  |  | F/P/A |  |  |  |  |  |  |  |  |  |
-| Data quality and cleaning | role |  |  |  | F/P/A |  |  |  |  |  |  |  |  |  |
-| Data sourcing and collection | role |  |  |  | F/P/A |  |  |  |  |  |  |  |  |  |
-| Data visualisation and dashboards | role |  |  |  | F/P/A |  |  |  |  |  |  |  |  |  |
-| Databases and data modelling basics | role |  |  |  |  |  |  |  |  |  |  |  |  | —/F/P |
-| Digital channels, SEO and SEM | role |  |  |  |  |  |  |  |  | F/P/A |  |  |  |  |
-| Discovery and needs analysis | role |  |  |  |  |  |  |  |  |  |  |  | F/P/A |  |
-| Diversity, equity and inclusion | role |  |  |  |  |  | F/P/A |  |  |  |  |  |  |  |
-| Email marketing and automation (Germany/EU) | role |  |  |  |  |  |  |  |  | F/P/A |  |  |  |  |
-| Employee relations and conflict resolution | role |  |  |  |  |  | —/F/P |  |  |  |  |  |  |  |
-| Employment law basics (Germany/EU) | role |  |  |  |  |  | F/P/A |  | F/P/P |  |  |  |  |  |
-| Endpoint and workplace device management | role |  |  |  |  |  |  | F/P/A |  |  |  |  |  |  |
-| Financial analysis and KPIs | role |  | F/P/A |  |  | —/F/P |  |  |  |  |  |  |  |  |
-| Financial statements and reporting | role |  |  |  |  | F/P/A |  |  |  |  |  |  |  |  |
-| GDPR and data protection compliance (EU/Germany) | role |  |  |  |  |  |  |  | F/P/A |  |  |  |  |  |
-| Occupational health, safety and well-being | role |  |  |  |  |  | F/F/P |  |  |  |  |  |  |  |
-| Data protection in HR (GDPR) | role |  |  |  |  |  | F/P/A |  |  |  |  |  |  |  |
-| Identity and access management | role |  |  |  |  |  |  | F/P/A |  |  |  |  |  |  |
-| Incident and request handling | role |  |  |  |  |  |  | F/P/A |  |  |  |  |  |  |
-| Intellectual property and copyright basics (EU/Germany) | role |  |  |  |  |  |  |  | —/F/P |  |  |  |  |  |
-| Internal controls and audit readiness | role |  | —/F/P |  |  | —/F/P |  |  | —/F/P |  |  |  |  |  |
-| Inventory and warehouse management | role |  |  |  |  |  |  |  |  |  | F/P/A |  |  |  |
-| Investment appraisal and capital budgeting | role |  | —/F/P |  |  |  |  |  |  |  |  |  |  |  |
-| IT service management basics | role |  |  |  |  |  |  | F/P/A |  |  |  |  |  |  |
-| Learning and development | role |  |  |  |  |  | F/P/A |  |  |  |  |  |  |  |
-| Legal foundations and sources of law (EU/Germany) | role |  |  |  |  |  |  |  | F/P/A |  |  |  |  |  |
-| Legal operations and documentation | role |  |  |  |  |  |  |  | —/F/P |  |  |  |  |  |
-| Logistics and transport planning | role |  |  |  |  |  |  |  |  |  | —/F/P |  |  |  |
-| Machine learning basics and AI in analytics | role |  |  |  | —/F/P |  |  |  |  |  |  |  |  |  |
-| Market and customer research | role |  |  |  |  |  |  |  |  | F/P/A |  |  |  |  |
-| Marketing analytics and attribution | role |  |  |  |  |  |  |  |  | F/P/A |  |  |  |  |
-| Marketing fundamentals and strategy | role |  |  |  |  |  |  |  |  | F/P/A |  |  |  |  |
-| Negotiation and supplier relationships | role |  |  |  |  |  |  |  |  |  | F/P/A |  |  |  |
-| Networking fundamentals | role |  |  |  |  |  |  | F/P/A |  |  |  |  |  |  |
-| Objection handling and negotiation | role |  |  |  |  |  |  |  |  |  |  |  | F/P/A |  |
-| Support channels: phone, email, chat and social | role |  |  | F/P/A |  |  |  |  |  |  |  |  |  |  |
-| Onboarding and offboarding | role |  |  |  |  |  | F/P/A |  |  |  |  |  |  |  |
-| Payroll and compensation basics (Germany) | role |  |  |  |  |  | F/P/P |  |  |  |  |  |  |  |
-| Performance management and feedback | role |  |  |  |  |  | —/F/P |  |  |  |  |  |  |  |
-| Personnel administration | role |  |  |  |  |  | F/P/A |  |  |  |  |  |  |  |
-| Procurement fundamentals and purchase-to-pay | role |  |  |  |  |  |  |  |  |  | F/P/A |  |  |  |
-| Profitability and pricing analysis | role |  | F/P/A |  |  |  |  |  |  |  |  |  |  |  |
-| Programming fundamentals and problem solving | role |  |  |  |  |  |  |  |  |  |  |  |  | F/P/A |
-| Project budget and cost control | role |  |  |  |  |  |  |  |  |  |  | —/F/P |  |  |
-| Project closure and lessons learned | role |  |  |  |  |  |  |  |  |  |  | F/P/P |  |  |
-| Project initiation and business case | role |  |  |  |  |  |  |  |  |  |  | F/P/A |  |  |
-| Proposals, quoting and pricing basics | role |  |  |  |  |  |  |  |  |  |  |  | —/F/P |  |
-| Prospecting and lead qualification | role |  |  |  |  |  |  |  |  |  |  |  | F/P/A |  |
-| Purchase order and invoice management | role |  |  |  |  |  |  |  |  |  | F/P/A |  |  |  |
-| Quality and change management | role |  |  |  |  |  |  |  |  |  |  | —/F/P |  |  |
-| Reconciliation and period-end closing | role |  |  |  |  | F/P/A |  |  |  |  |  |  |  |  |
-| Recruitment and selection | role |  |  |  |  |  | F/P/A |  |  |  |  |  |  |  |
-| Regulatory monitoring and legal research | role |  |  |  |  |  |  |  | F/P/A |  |  |  |  |  |
-| Resource and team coordination | role |  |  |  |  |  |  |  |  |  |  | F/P/A |  |  |
-| Risk and issue management | role |  |  |  |  |  |  |  | —/F/P |  |  | F/P/A |  |  |
-| Sales ethics and compliance (Germany/EU) | role |  |  |  |  |  |  |  |  |  |  |  | F/P/A |  |
-| Sales process and pipeline | role |  |  |  |  |  |  |  |  |  |  |  | F/P/A |  |
-| Scope and requirements management | role |  |  |  |  |  |  |  |  |  |  | F/P/A |  |  |
-| Scripting and automation basics | role |  |  |  |  |  |  | —/F/P |  |  |  |  |  |  |
-| Secure coding basics | role |  |  |  |  |  |  |  |  |  |  |  |  | F/P/A |
-| Segmentation, targeting and positioning | role |  |  |  |  |  |  |  |  | F/P/A |  |  |  |  |
-| Service levels and quality management | role |  |  | —/F/P |  |  |  |  |  |  |  |  |  |  |
-| Social media and community management | role |  |  |  |  |  |  |  |  | F/P/P |  |  |  |  |
-| Debugging and troubleshooting code | role |  |  |  |  |  |  |  |  |  |  |  |  | F/P/A |
-| Software design and architecture basics | role |  |  |  |  |  |  |  |  |  |  |  |  | F/P/A |
-| Software testing and quality | role |  |  |  |  |  |  |  |  |  |  |  |  | F/P/A |
-| Solution presentation and demo | role |  |  |  |  |  |  |  |  |  |  |  | F/P/A |  |
-| SQL and data querying | role |  |  |  | F/P/A |  |  |  |  |  |  |  |  |  |
-| Stakeholder management and project communication | role |  |  |  |  |  |  |  |  |  |  | F/P/A |  |  |
-| Statistics fundamentals | role |  |  |  | F/P/A |  |  |  |  |  |  |  |  |  |
-| Strategic sourcing and category management | role |  |  |  |  |  |  |  |  |  | F/P/A |  |  |  |
-| Supplier selection and evaluation | role |  |  |  |  |  |  |  |  |  | F/P/A |  |  |  |
-| Supply chain planning and demand management | role |  |  |  |  |  |  |  |  |  | —/F/P |  |  |  |
-| Supply chain risk and sustainability | role |  |  |  |  |  |  |  |  |  | —/F/P |  |  |  |
-| Business tax basics (Germany/EU) | role |  |  |  |  | F/P/A |  |  |  |  |  |  |  |  |
-| Tendering, RFx and contracting | role |  |  |  |  |  |  |  |  |  | —/F/P |  |  |  |
-| Ticketing and knowledge base | role |  |  | F/P/A |  |  |  |  |  |  |  |  |  |  |
-| Structured troubleshooting | role |  |  |  |  |  |  | F/P/A |  |  |  |  |  |  |
-| User-oriented support communication | role |  |  |  |  |  |  | F/P/A |  |  |  |  |  |  |
-| Variance analysis and performance management | role |  | F/P/A |  |  |  |  |  |  |  |  |  |  |  |
-| Version control and collaboration | role |  |  |  |  |  |  |  |  |  |  |  |  | F/P/A |
-| Work breakdown and scheduling | role |  |  |  |  |  |  |  |  |  |  | F/P/A |  |  |
+| Competency | Track | core-track | controlling | customer-service | data-analytics | finance-accounting | human-resources | it-support-operations | legal-compliance | marketing | people-leadership | procurement-supply-chain | project-management | sales | software-development |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Business and finance fundamentals | core | F/P/A | P/A/A | —/F/F | F/P/A | P/A/A | F/F/P | —/F/F | P/A/A | —/F/F | P/A/A | F/P/A | F/P/P | —/F/F | F/P/A |
+| Communication and collaboration | core | F/P/A | F/P/A | F/P/A | F/P/A | F/P/P | F/P/A | F/P/P | F/P/A | F/P/A | F/P/A | F/P/A | F/P/A | F/P/A | F/P/A |
+| Digital and AI literacy | core | F/P/A | F/P/A | F/P/A | F/P/A | F/P/P | F/P/P | F/P/A | F/P/A | F/P/A | F/P/A | F/P/A | F/P/A | F/P/A | F/P/A |
+| Information security basics | core | F/P/A | F/P/P | P/A/A | F/P/A | F/P/P | F/P/P | P/A/A | F/P/P | P/A/A | F/P/P | F/P/A | F/P/A | P/A/A | F/P/A |
+| Self-organisation and project basics | core | F/P/A | F/P/P | F/P/P | F/P/P | F/P/P | F/P/P | F/P/P | F/P/P | F/P/P | F/P/P | F/P/P | F/P/A | F/P/P | F/P/P |
+| Working with data | core | F/P/A | F/P/A | F/F/P | F/P/P | F/P/A | F/F/P | F/F/P | F/P/A | F/F/P | F/P/A | F/P/P | F/F/P | F/F/P | F/P/P |
+| Account management and upselling | role |  |  |  |  |  |  |  |  |  |  |  |  | —/F/P |  |
+| Accounts payable | role |  |  |  |  | F/P/A |  |  |  |  |  |  |  |  |  |
+| Accounts receivable and credit management | role |  |  |  |  | F/P/A |  |  |  |  |  |  |  |  |  |
+| Requirements, agile delivery and code review | role |  |  |  |  |  |  |  |  |  |  |  |  |  | F/P/A |
+| Agile and hybrid delivery | role |  |  |  |  |  |  |  |  |  |  |  | —/F/P |  |  |
+| AI regulation and digital law overview (EU) | role |  |  |  |  |  |  |  | —/F/P |  |  |  |  |  |  |
+| Analytical problem framing and storytelling | role |  |  |  | F/P/A |  |  |  |  |  |  |  |  |  |  |
+| Anti-corruption and whistleblower protection (EU/Germany) | role |  |  |  |  |  |  |  | F/P/A |  |  |  |  |  |  |
+| APIs and system integration | role |  |  |  |  |  |  |  |  |  |  |  |  |  | F/P/A |
+| Backup and recovery | role |  |  |  |  |  |  | F/P/P |  |  |  |  |  |  |  |
+| Bookkeeping fundamentals | role |  |  |  |  | F/P/A |  |  |  |  |  |  |  |  |  |
+| Brand and messaging | role |  |  |  |  |  |  |  |  | F/P/A |  |  |  |  |  |
+| Budgeting and forecasting | role |  | F/P/A |  |  | —/F/P |  |  |  |  |  |  |  |  |  |
+| Business intelligence and reporting | role |  | F/P/A |  | —/F/P |  |  |  |  |  |  |  |  |  |  |
+| Business partnering and decision support | role |  | —/F/P |  |  |  |  |  |  |  |  |  |  |  |  |
+| Campaign planning and budgeting | role |  |  |  |  |  |  |  |  | —/F/P |  |  |  |  |  |
+| Cash and liquidity management | role |  | —/F/P |  |  | F/P/A |  |  |  |  |  |  |  |  |  |
+| Change and IT asset management | role |  |  |  |  |  |  | —/F/P |  |  |  |  |  |  |  |
+| CI/CD and DevOps basics | role |  |  |  |  |  |  |  |  |  |  |  |  |  | —/F/P |
+| Closing, contract and handover | role |  |  |  |  |  |  |  |  |  |  |  |  | F/P/A |  |
+| Complaint handling and de-escalation | role |  |  | F/P/A |  |  |  |  |  |  |  |  |  |  |  |
+| Compliance management and corporate governance | role |  |  |  |  |  |  |  | F/P/A |  |  |  |  |  |  |
+| Consumer rights basics (EU/Germany) | role |  |  | F/F/P |  |  |  |  |  |  |  |  |  |  |  |
+| Content marketing and copywriting | role |  |  |  |  |  |  |  |  | F/P/A |  |  |  |  |  |
+| Contract law basics (Germany/EU) | role |  |  |  |  |  |  |  | F/P/A |  |  |  |  |  |  |
+| Controlling processes and systems | role |  | F/P/A |  |  |  |  |  |  |  |  |  |  |  |  |
+| Cost accounting | role |  | F/P/A |  |  | F/P/A |  |  |  |  |  |  |  |  |  |
+| CRM, sales data and forecasting | role |  |  |  |  |  |  |  |  |  |  |  |  | F/P/P |  |
+| Customer communication, listening and empathy | role |  |  | F/P/A |  |  |  |  |  |  |  |  |  |  |  |
+| Customer data and privacy in service (EU/Germany) | role |  |  | F/P/A |  |  |  |  |  |  |  |  |  |  |  |
+| Understanding needs and solving customer problems | role |  |  | F/P/A |  |  |  |  |  |  |  |  |  |  |  |
+| Customer retention and voice of the customer | role |  |  | —/F/P |  |  |  |  |  |  |  |  |  |  |  |
+| Customer service fundamentals | role |  |  | F/P/A |  |  |  |  |  |  |  |  |  |  |  |
+| Data analytics fundamentals | role |  |  |  | F/P/A |  |  |  |  |  |  |  |  |  |  |
+| Data governance and privacy in analytics | role |  |  |  | F/P/A |  |  |  |  |  |  |  |  |  |  |
+| Data quality and cleaning | role |  |  |  | F/P/A |  |  |  |  |  |  |  |  |  |  |
+| Data sourcing and collection | role |  |  |  | F/P/A |  |  |  |  |  |  |  |  |  |  |
+| Data visualisation and dashboards | role |  |  |  | F/P/A |  |  |  |  |  |  |  |  |  |  |
+| Databases and data modelling basics | role |  |  |  |  |  |  |  |  |  |  |  |  |  | —/F/P |
+| Delegation and accountability | role |  |  |  |  |  |  |  |  |  | F/P/A |  |  |  |  |
+| Digital channels, SEO and SEM | role |  |  |  |  |  |  |  |  | F/P/A |  |  |  |  |  |
+| Discovery and needs analysis | role |  |  |  |  |  |  |  |  |  |  |  |  | F/P/A |  |
+| Diversity, equity and inclusion | role |  |  |  |  |  | F/P/A |  |  |  | —/F/P |  |  |  |  |
+| Email marketing and automation (Germany/EU) | role |  |  |  |  |  |  |  |  | F/P/A |  |  |  |  |  |
+| Employee relations and conflict resolution | role |  |  |  |  |  | —/F/P |  |  |  | F/P/A |  |  |  |  |
+| Employment law basics (Germany/EU) | role |  |  |  |  |  | F/P/A |  | F/P/P |  | F/P/P |  |  |  |  |
+| Endpoint and workplace device management | role |  |  |  |  |  |  | F/P/A |  |  |  |  |  |  |  |
+| Financial analysis and KPIs | role |  | F/P/A |  |  | —/F/P |  |  |  |  |  |  |  |  |  |
+| Financial statements and reporting | role |  |  |  |  | F/P/A |  |  |  |  |  |  |  |  |  |
+| GDPR and data protection compliance (EU/Germany) | role |  |  |  |  |  |  |  | F/P/A |  |  |  |  |  |  |
+| Goal setting and team planning | role |  |  |  |  |  |  |  |  |  | F/P/A |  |  |  |  |
+| Occupational health, safety and well-being | role |  |  |  |  |  | F/F/P |  |  |  |  |  |  |  |  |
+| Data protection in HR (GDPR) | role |  |  |  |  |  | F/P/A |  |  |  |  |  |  |  |  |
+| Identity and access management | role |  |  |  |  |  |  | F/P/A |  |  |  |  |  |  |  |
+| Incident and request handling | role |  |  |  |  |  |  | F/P/A |  |  |  |  |  |  |  |
+| Intellectual property and copyright basics (EU/Germany) | role |  |  |  |  |  |  |  | —/F/P |  |  |  |  |  |  |
+| Internal controls and audit readiness | role |  | —/F/P |  |  | —/F/P |  |  | —/F/P |  |  |  |  |  |  |
+| Inventory and warehouse management | role |  |  |  |  |  |  |  |  |  |  | F/P/A |  |  |  |
+| Investment appraisal and capital budgeting | role |  | —/F/P |  |  |  |  |  |  |  |  |  |  |  |  |
+| IT service management basics | role |  |  |  |  |  |  | F/P/A |  |  |  |  |  |  |  |
+| Leadership fundamentals and role transition | role |  |  |  |  |  |  |  |  |  | F/P/A |  |  |  |  |
+| Leading teams through change | role |  |  |  |  |  |  |  |  |  | —/F/P |  |  |  |  |
+| Learning and development | role |  |  |  |  |  | F/P/A |  |  |  |  |  |  |  |  |
+| Legal foundations and sources of law (EU/Germany) | role |  |  |  |  |  |  |  | F/P/A |  |  |  |  |  |  |
+| Legal operations and documentation | role |  |  |  |  |  |  |  | —/F/P |  |  |  |  |  |  |
+| Logistics and transport planning | role |  |  |  |  |  |  |  |  |  |  | —/F/P |  |  |  |
+| Machine learning basics and AI in analytics | role |  |  |  | —/F/P |  |  |  |  |  |  |  |  |  |  |
+| Market and customer research | role |  |  |  |  |  |  |  |  | F/P/A |  |  |  |  |  |
+| Marketing analytics and attribution | role |  |  |  |  |  |  |  |  | F/P/A |  |  |  |  |  |
+| Marketing fundamentals and strategy | role |  |  |  |  |  |  |  |  | F/P/A |  |  |  |  |  |
+| Effective meetings and decision-making | role |  |  |  |  |  |  |  |  |  | F/P/P |  |  |  |  |
+| Motivation, engagement and workload | role |  |  |  |  |  |  |  |  |  | F/P/A |  |  |  |  |
+| Negotiation and supplier relationships | role |  |  |  |  |  |  |  |  |  |  | F/P/A |  |  |  |
+| Networking fundamentals | role |  |  |  |  |  |  | F/P/A |  |  |  |  |  |  |  |
+| Objection handling and negotiation | role |  |  |  |  |  |  |  |  |  |  |  |  | F/P/A |  |
+| Support channels: phone, email, chat and social | role |  |  | F/P/A |  |  |  |  |  |  |  |  |  |  |  |
+| Onboarding and offboarding | role |  |  |  |  |  | F/P/A |  |  |  |  |  |  |  |  |
+| One-to-one conversations and coaching | role |  |  |  |  |  |  |  |  |  | F/P/A |  |  |  |  |
+| Payroll and compensation basics (Germany) | role |  |  |  |  |  | F/P/P |  |  |  |  |  |  |  |  |
+| Performance management and feedback | role |  |  |  |  |  | —/F/P |  |  |  | F/P/A |  |  |  |  |
+| Personnel administration | role |  |  |  |  |  | F/P/A |  |  |  |  |  |  |  |  |
+| Procurement fundamentals and purchase-to-pay | role |  |  |  |  |  |  |  |  |  |  | F/P/A |  |  |  |
+| Profitability and pricing analysis | role |  | F/P/A |  |  |  |  |  |  |  |  |  |  |  |  |
+| Programming fundamentals and problem solving | role |  |  |  |  |  |  |  |  |  |  |  |  |  | F/P/A |
+| Project budget and cost control | role |  |  |  |  |  |  |  |  |  |  |  | —/F/P |  |  |
+| Project closure and lessons learned | role |  |  |  |  |  |  |  |  |  |  |  | F/P/P |  |  |
+| Project initiation and business case | role |  |  |  |  |  |  |  |  |  |  |  | F/P/A |  |  |
+| Proposals, quoting and pricing basics | role |  |  |  |  |  |  |  |  |  |  |  |  | —/F/P |  |
+| Prospecting and lead qualification | role |  |  |  |  |  |  |  |  |  |  |  |  | F/P/A |  |
+| Purchase order and invoice management | role |  |  |  |  |  |  |  |  |  |  | F/P/A |  |  |  |
+| Quality and change management | role |  |  |  |  |  |  |  |  |  |  |  | —/F/P |  |  |
+| Reconciliation and period-end closing | role |  |  |  |  | F/P/A |  |  |  |  |  |  |  |  |  |
+| Recruitment and selection | role |  |  |  |  |  | F/P/A |  |  |  |  |  |  |  |  |
+| Regulatory monitoring and legal research | role |  |  |  |  |  |  |  | F/P/A |  |  |  |  |  |  |
+| Resource and team coordination | role |  |  |  |  |  |  |  |  |  |  |  | F/P/A |  |  |
+| Risk and issue management | role |  |  |  |  |  |  |  | —/F/P |  |  |  | F/P/A |  |  |
+| Sales ethics and compliance (Germany/EU) | role |  |  |  |  |  |  |  |  |  |  |  |  | F/P/A |  |
+| Sales process and pipeline | role |  |  |  |  |  |  |  |  |  |  |  |  | F/P/A |  |
+| Scope and requirements management | role |  |  |  |  |  |  |  |  |  |  |  | F/P/A |  |  |
+| Scripting and automation basics | role |  |  |  |  |  |  | —/F/P |  |  |  |  |  |  |  |
+| Secure coding basics | role |  |  |  |  |  |  |  |  |  |  |  |  |  | F/P/A |
+| Segmentation, targeting and positioning | role |  |  |  |  |  |  |  |  | F/P/A |  |  |  |  |  |
+| Service levels and quality management | role |  |  | —/F/P |  |  |  |  |  |  |  |  |  |  |  |
+| Social media and community management | role |  |  |  |  |  |  |  |  | F/P/P |  |  |  |  |  |
+| Debugging and troubleshooting code | role |  |  |  |  |  |  |  |  |  |  |  |  |  | F/P/A |
+| Software design and architecture basics | role |  |  |  |  |  |  |  |  |  |  |  |  |  | F/P/A |
+| Software testing and quality | role |  |  |  |  |  |  |  |  |  |  |  |  |  | F/P/A |
+| Solution presentation and demo | role |  |  |  |  |  |  |  |  |  |  |  |  | F/P/A |  |
+| SQL and data querying | role |  |  |  | F/P/A |  |  |  |  |  |  |  |  |  |  |
+| Stakeholder management and project communication | role |  |  |  |  |  |  |  |  |  |  |  | F/P/A |  |  |
+| Statistics fundamentals | role |  |  |  | F/P/A |  |  |  |  |  |  |  |  |  |  |
+| Strategic sourcing and category management | role |  |  |  |  |  |  |  |  |  |  | F/P/A |  |  |  |
+| Supplier selection and evaluation | role |  |  |  |  |  |  |  |  |  |  | F/P/A |  |  |  |
+| Supply chain planning and demand management | role |  |  |  |  |  |  |  |  |  |  | —/F/P |  |  |  |
+| Supply chain risk and sustainability | role |  |  |  |  |  |  |  |  |  |  | —/F/P |  |  |  |
+| Business tax basics (Germany/EU) | role |  |  |  |  | F/P/A |  |  |  |  |  |  |  |  |  |
+| Team building and psychological safety | role |  |  |  |  |  |  |  |  |  | F/P/A |  |  |  |  |
+| Tendering, RFx and contracting | role |  |  |  |  |  |  |  |  |  |  | —/F/P |  |  |  |
+| Ticketing and knowledge base | role |  |  | F/P/A |  |  |  |  |  |  |  |  |  |  |  |
+| Structured troubleshooting | role |  |  |  |  |  |  | F/P/A |  |  |  |  |  |  |  |
+| User-oriented support communication | role |  |  |  |  |  |  | F/P/A |  |  |  |  |  |  |  |
+| Variance analysis and performance management | role |  | F/P/A |  |  |  |  |  |  |  |  |  |  |  |  |
+| Version control and collaboration | role |  |  |  |  |  |  |  |  |  |  |  |  |  | F/P/A |
+| Work breakdown and scheduling | role |  |  |  |  |  |  |  |  |  |  |  | F/P/A |  |  |
 
 ## Core skills for every role (`core-track`, core, published)
 
@@ -332,6 +340,31 @@ Make offers known and wanted: understand markets and customers, define target gr
 | Business and finance fundamentals | core | 3 | — | F | F | — |
 | Self-organisation and project basics | core | 3 | F | P | P | — |
 | Working with data | core | 3 | F | F | P | digital-ai-literacy |
+
+## People Leadership (`people-leadership`, role, draft)
+
+Lead a team well: grow from expert to team lead, delegate with clear accountability, set goals and plan work, hold one-to-one conversations and coach, give feedback, build a team with psychological safety, keep people motivated, handle conflicts, run effective meetings and decisions, lead through change, and know the labour-law and diversity basics for leaders in Germany and the EU.
+
+| Competency | Track | Priority | Foundation | Practitioner | Advanced | Prerequisites |
+|---|---|---|---|---|---|---|
+| Business and finance fundamentals | core | 1 | P | A | A | — |
+| Delegation and accountability | role | 1 | F | P | A | leadership-fundamentals-role-transition |
+| Goal setting and team planning | role | 1 | F | P | A | leadership-fundamentals-role-transition, self-organisation-project-basics |
+| Leadership fundamentals and role transition | role | 1 | F | P | A | communication-collaboration |
+| One-to-one conversations and coaching | role | 1 | F | P | A | leadership-fundamentals-role-transition, communication-collaboration |
+| Performance management and feedback | role | 1 | F | P | A | communication-collaboration |
+| Working with data | core | 1 | F | P | A | digital-ai-literacy |
+| Communication and collaboration | core | 2 | F | P | A | — |
+| Digital and AI literacy | core | 2 | F | P | A | — |
+| Employee relations and conflict resolution | role | 2 | F | P | A | employment-law-basics, communication-collaboration |
+| Leading teams through change | role | 2 | — | F | P | team-building-psychological-safety, goal-setting-team-planning |
+| Effective meetings and decision-making | role | 2 | F | P | P | communication-collaboration |
+| Motivation, engagement and workload | role | 2 | F | P | A | one-to-one-coaching |
+| Team building and psychological safety | role | 2 | F | P | A | leadership-fundamentals-role-transition |
+| Diversity, equity and inclusion | role | 3 | — | F | P | employment-law-basics |
+| Employment law basics (Germany/EU) | role | 3 | F | P | P | — |
+| Information security basics | core | 3 | F | P | P | digital-ai-literacy |
+| Self-organisation and project basics | core | 3 | F | P | P | — |
 
 ## Procurement & Supply Chain (`procurement-supply-chain`, role, published)
 

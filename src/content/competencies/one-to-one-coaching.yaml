@@ -1,0 +1,18 @@
+id: one-to-one-coaching
+title:
+  en: One-to-one conversations and coaching
+  de: Einzelgespräche und Coaching
+description:
+  en: >-
+    Hold regular one-to-one conversations with team members: prepare and structure them, listen actively, ask open questions, use a coaching approach to support development, and agree on follow-up actions.
+  de: >-
+    Regelmäßige Einzelgespräche mit Teammitgliedern führen: vorbereiten und strukturieren, aktiv zuhören, offene Fragen stellen, mit einem Coaching-Ansatz die Entwicklung fördern und Folgeschritte vereinbaren.
+prerequisites: [leadership-fundamentals-role-transition, communication-collaboration]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/0cc9c234-f817-4f4c-908a-4d28fe3b0f4a
+    label: coach employees
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/1d38a162-61a0-42e8-83ca-47ce3e881032
+    label: develop a coaching style
