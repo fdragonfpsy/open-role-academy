@@ -1,0 +1,14 @@
+id: eurlex-de-amtsblatt-zugang
+url: https://eur-lex.europa.eu/oj/direct-access.html?locale=de
+title: Zugang zum Amtsblatt der Europäischen Union
+provider: EUR-Lex (Europäische Union)
+language: de
+format: article
+minutes: 10
+license: free-access
+licenseUrl: https://eur-lex.europa.eu/content/legal-notice/legal-notice.html
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [regulatory-monitoring-legal-research]
+levels: [foundation, practitioner, advanced]
+note: Offizielle EU-Seite, frei zugänglich (HTTP 200 am 2026-11-25); Nachnutzungsbedingungen nicht geprüft -> nur verlinkt. Deutschsprachige Fassung des Zugangs zum Amtsblatt.

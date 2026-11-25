@@ -1,0 +1,14 @@
+id: wikipedia-de-digital-services-act
+url: https://de.wikipedia.org/wiki/Digital_Services_Act
+title: Digital Services Act
+provider: Wikipedia
+language: de
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [ai-regulation-digital-law]
+levels: [foundation, practitioner]
+note: Überblick zum Gesetz über digitale Dienste. Nur verlinkt; keine Passagen übernommen.

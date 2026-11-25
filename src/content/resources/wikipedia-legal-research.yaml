@@ -1,0 +1,14 @@
+id: wikipedia-legal-research
+url: https://en.wikipedia.org/wiki/Legal_research
+title: Legal research
+provider: Wikipedia
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [regulatory-monitoring-legal-research]
+levels: [foundation, practitioner, advanced]
+note: Overview of finding and using legal sources. Link only; no passages reproduced.

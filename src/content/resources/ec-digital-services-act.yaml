@@ -1,0 +1,14 @@
+id: ec-digital-services-act
+url: https://digital-strategy.ec.europa.eu/en/policies/digital-services-act
+title: The Digital Services Act
+provider: European Commission
+language: en
+format: article
+minutes: 10
+license: free-access
+licenseUrl: https://commission.europa.eu/legal-notice_en
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [ai-regulation-digital-law]
+levels: [foundation, practitioner]
+note: 'Official Commission page, freely accessible (HTTP 200 on 2026-11-25); reuse terms not assessed -> link only. Read 2026-11-25: rules for online services such as marketplaces, social media networks, app stores and travel platforms; complemented by the Digital Markets Act for gatekeepers.'

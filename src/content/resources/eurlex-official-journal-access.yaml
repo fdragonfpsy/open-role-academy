@@ -1,0 +1,14 @@
+id: eurlex-official-journal-access
+url: https://eur-lex.europa.eu/oj/direct-access.html
+title: Access to the Official Journal of the European Union
+provider: EUR-Lex (European Union)
+language: en
+format: article
+minutes: 10
+license: free-access
+licenseUrl: https://eur-lex.europa.eu/content/legal-notice/legal-notice.html
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [regulatory-monitoring-legal-research]
+levels: [foundation, practitioner, advanced]
+note: 'Official EU page, freely accessible (HTTP 200 on 2026-11-25); reuse terms not assessed -> link only. Read 2026-11-25: offers access to the Official Journal L and C series and browsing by date.'

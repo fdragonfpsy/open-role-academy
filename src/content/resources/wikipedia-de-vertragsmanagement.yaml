@@ -1,0 +1,14 @@
+id: wikipedia-de-vertragsmanagement
+url: https://de.wikipedia.org/wiki/Vertragsmanagement
+title: Vertragsmanagement
+provider: Wikipedia
+language: de
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [legal-operations-documentation]
+levels: [foundation, practitioner, advanced]
+note: Überblick zum Vertragsmanagement. Nur verlinkt; keine Passagen übernommen.

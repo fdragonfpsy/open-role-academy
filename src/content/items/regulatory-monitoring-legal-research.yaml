@@ -1,0 +1,146 @@
+competency: regulatory-monitoring-legal-research
+items:
+- id: rmlr-f-primary
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: Which of the following is a primary legal source?
+    de: Welche der folgenden Quellen ist eine primäre Rechtsquelle?
+  options:
+  - en: A textbook that explains a regulation
+    de: Ein Lehrbuch, das eine Verordnung erklärt
+    correct: false
+  - en: The text of an EU regulation itself
+    de: Der Text einer EU-Verordnung selbst
+    correct: true
+  - en: A blog post summarising a court ruling
+    de: Ein Blogbeitrag, der ein Gerichtsurteil zusammenfasst
+    correct: false
+  - en: An encyclopedia entry on the topic
+    de: Ein Nachschlagewerk-Eintrag zum Thema
+    correct: false
+  explanation:
+    en: Primary sources are the legal texts and decisions themselves; textbooks, blogs and encyclopedias are secondary sources that explain them.
+    de: Primärquellen sind die Rechtstexte und Entscheidungen selbst; Lehrbücher, Blogs und Nachschlagewerke sind Sekundärquellen, die sie erklären.
+  source: https://en.wikipedia.org/wiki/Legal_research
+- id: rmlr-f-official
+  level: foundation
+  difficulty: 1000
+  type: single
+  stem:
+    en: Where should you look for the authoritative wording of an EU act?
+    de: Wo suchst du den maßgeblichen Wortlaut eines EU-Rechtsakts?
+  options:
+  - en: In the first search result of a general web search engine
+    de: Im ersten Treffer einer allgemeinen Websuchmaschine
+    correct: false
+  - en: In a colleague's memory of what the text probably says
+    de: In der Erinnerung eines Kollegen daran, was im Text wohl steht
+    correct: false
+  - en: In the Official Journal of the EU, via EUR-Lex
+    de: Im Amtsblatt der EU über EUR-Lex
+    correct: true
+  - en: In a forum thread where users discuss the act informally
+    de: In einem Forenthread, in dem Nutzende den Rechtsakt locker besprechen
+    correct: false
+  explanation:
+    en: The Official Journal is the official publication channel for EU legal acts, and EUR-Lex gives access to it.
+    de: Das Amtsblatt ist der amtliche Veröffentlichungsweg für EU-Rechtsakte, und EUR-Lex bietet Zugang dazu.
+  source: https://eur-lex.europa.eu/oj/direct-access.html
+- id: rmlr-p-currency
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: You found a legal text online. Which question matters most before relying on it?
+    de: Du hast online einen Rechtstext gefunden. Welche Frage ist vor dem Verlass darauf am wichtigsten?
+  options:
+  - en: Whether the page uses a modern and attractive design
+    de: Ob die Seite ein modernes und ansprechendes Design nutzt
+    correct: false
+  - en: Whether many people have linked to it from their own sites
+    de: Ob viele Menschen von ihren eigenen Seiten darauf verlinkt haben
+    correct: false
+  - en: Which version it is and whether it is current
+    de: Welche Fassung es ist und ob sie für unseren Fall gilt
+    correct: true
+  - en: Whether the page is available in several languages at once
+    de: Ob die Seite gleichzeitig in mehreren Sprachen verfügbar ist
+    correct: false
+  explanation:
+    en: Law changes, so you must know which version you read and whether it is amended, replaced or applicable to your situation.
+    de: Recht ändert sich, daher musst du wissen, welche Fassung du liest und ob sie geändert, ersetzt oder auf deine Lage anwendbar ist.
+  source: https://en.wikipedia.org/wiki/Legal_research
+- id: rmlr-p-stage
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: 'A monitoring entry says: "EU proposal on topic X". What does this tell you about the legal status?'
+    de: 'Ein Monitoring-Eintrag lautet: „EU-Vorschlag zu Thema X“. Was sagt das über den Rechtsstatus?'
+  options:
+  - en: The rule is already binding on our company in full
+    de: Die Regel ist für unser Unternehmen bereits vollständig verbindlich
+    correct: false
+  - en: The rule has been adopted and only awaits its application
+    de: Die Regel ist angenommen und wartet nur noch auf ihre Anwendung
+    correct: false
+  - en: The rule has been cancelled, so the topic can be ignored
+    de: Die Regel wurde aufgehoben, daher kann das Thema ignoriert werden
+    correct: false
+  - en: 'It is only a proposal: not law yet, and it may change'
+    de: 'Es ist nur ein Vorschlag: noch kein Recht, und er kann sich ändern'
+    correct: true
+  explanation:
+    en: Proposal, adoption and application are separate stages; a proposal is not yet law, but it is worth tracking.
+    de: Vorschlag, Annahme und Anwendung sind getrennte Stufen; ein Vorschlag ist noch kein Recht, aber beobachtenswert.
+  source: https://commission.europa.eu/law/law-making-process_en
+- id: rmlr-a-horizon
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: What best describes horizon scanning in a legal department?
+    de: Was beschreibt Horizon Scanning in einer Rechtsabteilung am besten?
+  options:
+  - en: Predicting exactly which rules will be adopted and when they apply
+    de: Genau vorhersagen, welche Regeln angenommen werden und wann sie gelten
+    correct: false
+  - en: Finding early signals of regulatory change and ranking them
+    de: Frühe Signale regulatorischer Änderung finden und nach Relevanz ordnen
+    correct: true
+  - en: Reading each new law once it has entered into application
+    de: Jedes neue Gesetz lesen, nachdem es bereits in Anwendung gegangen ist
+    correct: false
+  - en: Archiving regulation that has been replaced by newer texts
+    de: Regulierung archivieren, die durch neuere Texte ersetzt wurde
+    correct: false
+  explanation:
+    en: Horizon scanning is the early detection and assessment of emerging developments; it ranks topics and does not predict outcomes.
+    de: Horizon Scanning ist die frühe Erkennung und Bewertung neuer Entwicklungen; es ordnet Themen und sagt keine Ergebnisse voraus.
+  source: https://en.wikipedia.org/wiki/Horizon_scanning
+- id: rmlr-a-log
+  level: advanced
+  difficulty: 1600
+  type: single
+  stem:
+    en: Which practice makes a regulatory assessment reviewable by others?
+    de: Welche Praxis macht eine regulatorische Bewertung für andere prüfbar?
+  options:
+  - en: Keeping the conclusion in your head and sharing it orally only
+    de: Das Ergebnis im Kopf behalten und nur mündlich weitergeben
+    correct: false
+  - en: Deleting earlier notes as soon as a final decision has been made
+    de: Frühere Notizen löschen, sobald eine endgültige Entscheidung gefallen ist
+    correct: false
+  - en: Recording sources, dates, stage, owner; facts apart from opinion
+    de: Quellen, Datum, Stufe, Verantwortliche festhalten und Fakten von Meinung trennen
+    correct: true
+  - en: Copying a summary from an encyclopedia into the decision paper
+    de: Eine Zusammenfassung aus einem Nachschlagewerk in das Entscheidungspapier kopieren
+    correct: false
+  explanation:
+    en: A log with sources, dates, stage, owner and a clear split between official facts and your assessment lets reviewers retrace the reasoning.
+    de: Ein Log mit Quellen, Datum, Stufe, Verantwortlichen und klarer Trennung von amtlichen Fakten und eigener Bewertung lässt Prüfende die Begründung nachvollziehen.
+  source: https://commission.europa.eu/law/law-making-process/planning-and-proposing-law/better-regulation_en
