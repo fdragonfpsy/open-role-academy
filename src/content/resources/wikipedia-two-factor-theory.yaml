@@ -1,0 +1,14 @@
+id: wikipedia-two-factor-theory
+url: https://en.wikipedia.org/wiki/Two-factor_theory
+title: Two-factor theory
+provider: Wikipedia
+language: en
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [motivation-engagement-wellbeing]
+levels: [practitioner, advanced]
+note: Herzberg motivation-hygiene theory. Link only; no passages reproduced.

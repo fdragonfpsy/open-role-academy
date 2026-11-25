@@ -1,0 +1,146 @@
+competency: motivation-engagement-wellbeing
+items:
+- id: meb-f-intrinsic
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: "Which example describes intrinsic motivation?"
+    de: "Welches Beispiel beschreibt intrinsische Motivation?"
+  options:
+  - en: "Someone works on a data problem because they find it interesting and satisfying"
+    de: "Jemand arbeitet an einem Datenproblem, weil sie es interessant und befriedigend findet"
+    correct: true
+  - en: "Someone works on a data problem only to receive a bonus that is paid at the end of the year"
+    de: "Jemand arbeitet an einem Datenproblem nur, um einen Bonus zu erhalten, der am Jahresende gezahlt wird"
+    correct: false
+  - en: "Someone works on a data problem only to avoid a warning from the manager in front of the team"
+    de: "Jemand arbeitet an einem Datenproblem nur, um eine Abmahnung der Führungskraft vor dem Team zu vermeiden"
+    correct: false
+  - en: "Someone works on a data problem only because a colleague will praise the result in the newsletter"
+    de: "Jemand arbeitet an einem Datenproblem nur, weil eine Kollegin das Ergebnis im Newsletter loben wird"
+    correct: false
+  explanation:
+    en: "Intrinsic motivation comes from internal factors such as enjoyment and curiosity. Rewards and avoiding punishment are extrinsic."
+    de: "Intrinsische Motivation kommt aus inneren Faktoren wie Freude und Neugier. Belohnungen und das Vermeiden von Strafe sind extrinsisch."
+  source: https://en.wikipedia.org/wiki/Motivation
+- id: meb-f-signals
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: "A reliable team member suddenly misses deadlines and withdraws from team chats. What is the best first step for a lead?"
+    de: "Ein verlässliches Teammitglied verpasst plötzlich Termine und zieht sich aus den Team-Chats zurück. Was ist der beste erste Schritt für eine Führungskraft?"
+  options:
+  - en: "Ask in a private conversation how the workload is and listen before deciding on changes"
+    de: "In einem privaten Gespräch nach der Arbeitsbelastung fragen und zuhören, bevor etwas geändert wird"
+    correct: true
+  - en: "Tell the person in the next team meeting that the deadlines are not acceptable any longer"
+    de: "Der Person im nächsten Teammeeting sagen, dass die verpassten Termine nicht mehr akzeptabel sind"
+    correct: false
+  - en: "Conclude that the person has burnout and recommend a specific medical treatment right away"
+    de: "Daraus schließen, dass die Person ein Burn-out hat, und sofort eine bestimmte Behandlung empfehlen"
+    correct: false
+  - en: "Wait for several months to see whether the behaviour changes on its own without any contact"
+    de: "Mehrere Monate abwarten, ob sich das Verhalten von selbst ändert, ohne Kontakt aufzunehmen"
+    correct: false
+  explanation:
+    en: "Changes in behaviour are signals, not diagnoses. A conversation about workload comes first; a lead does not diagnose."
+    de: "Verhaltensänderungen sind Signale und keine Diagnosen. Zuerst kommt das Gespräch über die Arbeitsbelastung; eine Führungskraft diagnostiziert nicht."
+  source: https://en.wikipedia.org/wiki/Occupational_stress
+- id: meb-p-sdt
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: "Which three basic psychological needs does self-determination theory name?"
+    de: "Welche drei psychologischen Grundbedürfnisse nennt die Selbstbestimmungstheorie?"
+  options:
+  - en: "Autonomy, competence and relatedness"
+    de: "Autonomie, Kompetenz und Zugehörigkeit"
+    correct: true
+  - en: "Salary, job security and a pleasant office with good working conditions"
+    de: "Gehalt, Arbeitsplatzsicherheit und ein angenehmes Büro mit guten Arbeitsbedingungen"
+    correct: false
+  - en: "Power, status and the chance to compete against other teams every quarter"
+    de: "Macht, Status und die Chance, jedes Quartal gegen andere Teams zu konkurrieren"
+    correct: false
+  - en: "Rewards, deadlines and detailed instructions for each task that is handed out"
+    de: "Belohnungen, Termine und detaillierte Anweisungen für jede Aufgabe, die vergeben wird"
+    correct: false
+  explanation:
+    en: "Deci and Ryan propose autonomy, competence and relatedness as basic needs. The theory is also debated in detail."
+    de: "Deci und Ryan nehmen Autonomie, Kompetenz und Zugehörigkeit als Grundbedürfnisse an. Im Detail ist die Theorie auch umstritten."
+  source: https://en.wikipedia.org/wiki/Self-determination_theory
+- id: meb-p-twofactor
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: "According to Herzberg's two-factor theory, what follows from improving only working conditions and pay?"
+    de: "Was folgt nach Herzbergs Zwei-Faktoren-Theorie daraus, nur Arbeitsbedingungen und Bezahlung zu verbessern?"
+  options:
+  - en: "It can reduce dissatisfaction but does not by itself create satisfaction, which depends on the work itself"
+    de: "Es kann Unzufriedenheit verringern, schafft aber allein keine Zufriedenheit, die von der Arbeit selbst abhängt"
+    correct: true
+  - en: "It automatically creates strong motivation, because pay is the only factor that matters at work"
+    de: "Es schafft automatisch starke Motivation, weil die Bezahlung der einzige Faktor bei der Arbeit ist"
+    correct: false
+  - en: "It has no effect at all on how people feel about their jobs, so it should be left unchanged"
+    de: "Es hat überhaupt keinen Einfluss darauf, wie Menschen ihre Arbeit empfinden, daher sollte man es lassen"
+    correct: false
+  - en: "It replaces the need for recognition and responsibility, which therefore become unnecessary"
+    de: "Es ersetzt das Bedürfnis nach Anerkennung und Verantwortung, die dadurch überflüssig werden"
+    correct: false
+  explanation:
+    en: "The theory separates hygiene factors (conditions, pay) from motivators (achievement, recognition, responsibility). Both matter, and they act independently."
+    de: "Die Theorie trennt Hygienefaktoren (Bedingungen, Bezahlung) von Motivatoren (Leistung, Anerkennung, Verantwortung). Beide zählen, und sie wirken unabhängig voneinander."
+  source: https://en.wikipedia.org/wiki/Two-factor_theory
+- id: meb-a-system
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: "Overtime in your team peaks at every month-end because several reports are requested at once. What is the most effective approach?"
+    de: "In deinem Team steigen die Überstunden jeden Monatsultimo, weil mehrere Berichte gleichzeitig angefragt werden. Was ist der wirksamste Ansatz?"
+  options:
+  - en: "Analyse the cause with the team, stagger or drop reports where possible and raise capacity issues with your own manager"
+    de: "Die Ursache mit dem Team analysieren, Berichte wenn möglich staffeln oder streichen und Kapazitätsprobleme mit deiner Führungskraft besprechen"
+    correct: true
+  - en: "Praise the team for its extra effort each month and expect the same commitment going forward"
+    de: "Das Team jeden Monat für den Zusatzeinsatz loben und dasselbe Engagement auch künftig erwarten"
+    correct: false
+  - en: "Ask each person individually to manage their stress better and take more breaks in the evening"
+    de: "Jede Person einzeln bitten, besser mit Stress umzugehen und abends mehr Pausen zu machen"
+    correct: false
+  - en: "Hire a person for the peak days by yourself without telling your own manager or anyone in HR"
+    de: "Eine Person für die Spitzentage allein einstellen, ohne deine Führungskraft oder HR zu informieren"
+    correct: false
+  explanation:
+    en: "Recurring overload usually has structural causes. Working on the system with the team and escalating capacity issues is more sustainable than relying on extra effort."
+    de: "Wiederkehrende Überlastung hat meist strukturelle Ursachen. Am System mit dem Team zu arbeiten und Kapazitätsfragen nach oben zu tragen ist nachhaltiger, als auf Zusatzeinsatz zu setzen."
+  source: https://openstax.org/books/organizational-behavior/pages/18-4-coping-with-work-related-stress
+- id: meb-a-burnout
+  level: advanced
+  difficulty: 1650
+  type: single
+  stem:
+    en: "A team member says she is exhausted and asks whether this is a medical condition. What is the most appropriate answer from a lead?"
+    de: "Eine Teamkollegin sagt, sie sei erschöpft, und fragt, ob das eine Erkrankung sei. Was ist die angemessenste Antwort einer Führungskraft?"
+  options:
+  - en: "Say you cannot judge that, suggest talking to a doctor or occupational health service and offer to look at her workload"
+    de: "Sagen, dass du das nicht beurteilen kannst, ein Gespräch mit einer Ärztin oder dem betriebsärztlichen Dienst empfehlen und anbieten, die Arbeitsbelastung anzuschauen"
+    correct: true
+  - en: "Tell her that it is burnout and that she should take several weeks off starting from tomorrow"
+    de: "Ihr sagen, dass es Burn-out ist und sie ab morgen mehrere Wochen freinehmen solle"
+    correct: false
+  - en: "Explain that exhaustion is normal in every job and that she should simply try to think more positively"
+    de: "Erklären, dass Erschöpfung in jedem Beruf normal ist und sie einfach positiver denken solle"
+    correct: false
+  - en: "Ask her to describe all of her symptoms so that you can write them down in the team's shared notes"
+    de: "Sie bitten, alle Symptome zu beschreiben, damit du sie in den gemeinsamen Notizen des Teams festhalten kannst"
+    correct: false
+  explanation:
+    en: "A lead does not diagnose or treat. The lead listens, reduces avoidable pressure and points to professional support. Health details are private."
+    de: "Eine Führungskraft diagnostiziert und behandelt nicht. Sie hört zu, verringert vermeidbaren Druck und verweist auf professionelle Hilfe. Gesundheitsdaten sind privat."
+  source: https://en.wikipedia.org/wiki/Occupational_burnout

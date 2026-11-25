@@ -1,0 +1,146 @@
+competency: one-to-one-coaching
+items:
+- id: ooc-f-purpose
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: "What mainly distinguishes a one-to-one from a team status meeting?"
+    de: "Was unterscheidet ein Einzelgespräch vor allem von einer Statusrunde im Team?"
+  options:
+  - en: "It focuses on the person: wellbeing, obstacles and what they want to learn"
+    de: "Es konzentriert sich auf die Person: wie es ihr geht, was sie bremst und was sie lernen möchte"
+    correct: true
+  - en: "It is a place to list every open task in detail so that nothing is forgotten by anyone"
+    de: "Es dient dazu, jede offene Aufgabe im Detail aufzulisten, damit niemand etwas vergisst"
+    correct: false
+  - en: "It is held only once a year to rate the person's performance on a fixed form"
+    de: "Es findet nur einmal im Jahr statt, um die Leistung der Person auf einem festen Bogen zu bewerten"
+    correct: false
+  - en: "It is a short meeting where the lead presents the team's plans and decisions"
+    de: "Es ist ein kurzes Treffen, in dem die Führungskraft Pläne und Entscheidungen des Teams vorstellt"
+    correct: false
+  explanation:
+    en: "A one-to-one is about the person. Task status belongs in it only as far as it helps the person."
+    de: "Ein Einzelgespräch dreht sich um die Person. Der Aufgabenstand gehört nur dazu, soweit er der Person hilft."
+  source: https://de.wikipedia.org/wiki/Mitarbeitergespr%C3%A4ch
+- id: ooc-f-open
+  level: foundation
+  difficulty: 1000
+  type: single
+  stem:
+    en: "Which of these is an open question?"
+    de: "Welche dieser Fragen ist eine offene Frage?"
+  options:
+  - en: "\"How is the new process working for you in your daily work?\""
+    de: "\"Wie läuft der neue Ablauf für dich in deiner täglichen Arbeit?\""
+    correct: true
+  - en: "\"Is the new process working for you in your daily work, yes or no?\""
+    de: "\"Läuft der neue Ablauf für dich in deiner täglichen Arbeit, ja oder nein?\""
+    correct: false
+  - en: "\"Did you finish the report before the deadline on Friday afternoon?\""
+    de: "\"Hast du den Bericht vor dem Termin am Freitagnachmittag fertiggestellt?\""
+    correct: false
+  - en: "\"Are you still happy with the number of projects on your plate?\""
+    de: "\"Bist du noch zufrieden mit der Zahl der Projekte auf deinem Tisch?\""
+    correct: false
+  explanation:
+    en: "An open question needs more than yes or no and invites the person to tell their own view."
+    de: "Eine offene Frage verlangt mehr als Ja oder Nein und lädt die Person ein, ihre Sicht zu schildern."
+  source: https://en.wikipedia.org/wiki/Open-ended_question
+- id: ooc-p-paraphrase
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: "A team member says the calls drain her energy. Which reply is a paraphrase that shows active listening?"
+    de: "Eine Teamkollegin sagt, die Anrufe laugen sie aus. Welche Antwort ist ein Paraphrasieren, das aktives Zuhören zeigt?"
+  options:
+  - en: "\"So it is the tone of the calls that wears you down, rather than how many there are?\""
+    de: "\"Dich zehrt also der Ton der Gespräche aus und weniger deren Anzahl?\""
+    correct: true
+  - en: "\"I know exactly how you feel, I had the same problem when I started in this job.\""
+    de: "\"Ich weiß genau, wie du dich fühlst, mir ging es am Anfang in diesem Job genauso.\""
+    correct: false
+  - en: "\"You should take more breaks between the calls, that usually solves this kind of issue within a few days.\""
+    de: "\"Du solltest zwischen den Anrufen mehr Pausen machen, das löst das Problem meistens.\""
+    correct: false
+  - en: "\"Everyone finds calls tiring at times, so let us move on to the next topic.\""
+    de: "\"Anrufe sind für alle mal anstrengend, lass uns zum nächsten Thema kommen.\""
+    correct: false
+  explanation:
+    en: "Paraphrasing puts the message in your own words and checks understanding. The other replies compare, advise or dismiss."
+    de: "Paraphrasieren gibt die Botschaft in eigenen Worten wieder und prüft das Verstehen. Die anderen Antworten vergleichen, raten oder wiegeln ab."
+  source: https://en.wikipedia.org/wiki/Active_listening
+- id: ooc-p-coaching
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: "An experienced colleague struggles with estimates and you want to build her own problem solving. What is the best first move?"
+    de: "Eine erfahrene Kollegin tut sich mit Schätzungen schwer, und du möchtest ihre eigene Problemlösung stärken. Was ist der beste erste Schritt?"
+  options:
+  - en: "Ask what a good result would look like and what she has already tried"
+    de: "Fragen, wie ein gutes Ergebnis aussähe und was sie schon versucht hat"
+    correct: true
+  - en: "Tell her your own estimation method and ask her to apply it from tomorrow"
+    de: "Ihr deine eigene Schätzmethode nennen und sie bitten, sie ab morgen anzuwenden"
+    correct: false
+  - en: "Tell her to work it out alone and not to come back with the same question again"
+    de: "Ihr sagen, sie solle es allein lösen und nicht noch einmal mit derselben Frage kommen"
+    correct: false
+  - en: "Send her to HR first because a skills gap is always an issue for the personnel team"
+    de: "Sie zuerst zu HR schicken, weil eine Kompetenzlücke immer ein Thema für die Personalabteilung ist"
+    correct: false
+  explanation:
+    en: "When the person has the knowledge, coaching questions on goal and reality (as in GROW) help her find her own solution."
+    de: "Wenn die Person das Wissen hat, helfen Coaching-Fragen zu Ziel und Realität (wie bei GROW), die eigene Lösung zu finden."
+  source: https://en.wikipedia.org/wiki/GROW_model
+- id: ooc-a-boundary
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: "In a one-to-one, an employee describes private difficulties that go well beyond work. What is the most appropriate response for a lead?"
+    de: "In einem Einzelgespräch schildert ein Mitarbeiter private Schwierigkeiten, die weit über die Arbeit hinausgehen. Was ist die angemessenste Reaktion einer Führungskraft?"
+  options:
+  - en: "Listen, show understanding, adjust work where needed and point to available support such as HR or occupational health"
+    de: "Zuhören, Verständnis zeigen, bei Bedarf die Arbeit anpassen und auf vorhandene Unterstützung wie HR oder betriebsärztliche Dienste hinweisen"
+    correct: true
+  - en: "Take over the role of counsellor and meet him regularly to work through the private issues"
+    de: "Die Rolle des Beraters übernehmen und ihn regelmäßig treffen, um die privaten Themen durchzuarbeiten"
+    correct: false
+  - en: "Ask for medical details so that you can judge how serious the situation really is"
+    de: "Nach medizinischen Details fragen, um beurteilen zu können, wie ernst die Lage wirklich ist"
+    correct: false
+  - en: "Change the subject to the project plan, since private matters should never be discussed at all"
+    de: "Zum Projektplan wechseln, da private Dinge grundsätzlich nie besprochen werden sollten"
+    correct: false
+  explanation:
+    en: "Coaching is development support, not treatment. A lead listens, adapts work and refers on instead of counselling or probing for details."
+    de: "Coaching ist Entwicklungsunterstützung und keine Behandlung. Eine Führungskraft hört zu, passt Arbeit an und verweist weiter, statt zu beraten oder Details zu erfragen."
+  source: https://de.wikipedia.org/wiki/Coaching
+- id: ooc-a-confidential
+  level: advanced
+  difficulty: 1600
+  type: single
+  stem:
+    en: "A team member says: \"I will tell you something, but you must promise to keep it secret.\" What is the best answer?"
+    de: "Ein Teammitglied sagt: \"Ich sage dir etwas, aber du musst versprechen, es geheim zu halten.\" Was ist die beste Antwort?"
+  options:
+  - en: "Explain what you can keep confidential and what you may have to pass on, then let the person decide what to share"
+    de: "Erklären, was du vertraulich behandeln kannst und was du eventuell weitergeben musst, und dann die Person entscheiden lassen, was sie erzählt"
+    correct: true
+  - en: "Promise full secrecy right away, because trust only grows when no condition is ever attached"
+    de: "Sofort völlige Verschwiegenheit zusagen, weil Vertrauen nur wächst, wenn nie eine Bedingung genannt wird"
+    correct: false
+  - en: "Refuse to listen at all, because a lead should never receive confidential information"
+    de: "Sich weigern zuzuhören, weil eine Führungskraft nie vertrauliche Informationen erhalten sollte"
+    correct: false
+  - en: "Say you will tell the whole team afterwards so that everyone shares the same level of information"
+    de: "Sagen, du werdest es hinterher dem ganzen Team erzählen, damit alle denselben Informationsstand haben"
+    correct: false
+  explanation:
+    en: "Do not promise secrecy you cannot keep, for example where safety or legal issues are involved. Being open about limits protects trust."
+    de: "Verspreche keine Geheimhaltung, die du nicht halten kannst, etwa bei Sicherheits- oder Rechtsfragen. Offenheit über Grenzen schützt das Vertrauen."
+  source: https://de.wikipedia.org/wiki/Mitarbeitergespr%C3%A4ch

@@ -1,0 +1,14 @@
+id: wikipedia-de-gruppennorm
+url: https://de.wikipedia.org/wiki/Gruppennorm
+title: Gruppennorm
+provider: Wikipedia
+language: de
+format: article
+minutes: 5
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [team-building-psychological-safety]
+levels: [practitioner, advanced]
+note: Gruppennormen als explizite oder stillschweigende soziale Normen (Artikel mit Qualitätshinweis). Nur verlinkt; keine Passagen übernommen.

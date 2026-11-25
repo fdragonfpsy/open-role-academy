@@ -1,0 +1,14 @@
+id: wikipedia-coaching
+url: https://en.wikipedia.org/wiki/Coaching
+title: Coaching
+provider: Wikipedia
+language: en
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [one-to-one-coaching]
+levels: [foundation, practitioner, advanced]
+note: Coaching as guidance of a learner toward goals; differs from mentoring. Link only; no passages reproduced.
