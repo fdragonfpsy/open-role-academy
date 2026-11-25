@@ -1,0 +1,14 @@
+id: wikipedia-de-veraenderungsmanagement
+url: https://de.wikipedia.org/wiki/Ver%C3%A4nderungsmanagement
+title: "Veränderungsmanagement"
+provider: "Wikipedia (Deutsch)"
+language: de
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [leading-change]
+levels: [foundation, practitioner, advanced]
+note: "Veränderungsmanagement; Phasen nach Lewin und Kotter. Nur verlinkt; keine Passagen übernommen."

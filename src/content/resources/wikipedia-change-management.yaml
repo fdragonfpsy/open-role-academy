@@ -1,0 +1,14 @@
+id: wikipedia-change-management
+url: https://en.wikipedia.org/wiki/Change_management
+title: "Change management"
+provider: "Wikipedia"
+language: en
+format: article
+minutes: 20
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [leading-change]
+levels: [foundation, practitioner, advanced]
+note: "Change management; Lewin, Kotter and ADKAR models; human factors and reasons for failure. Page carries a maintenance banner about possible LLM text (read 2026-11-25), so only widely documented model descriptions are used. Link only."

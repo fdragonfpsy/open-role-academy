@@ -1,0 +1,14 @@
+id: wikipedia-groupthink
+url: https://en.wikipedia.org/wiki/Groupthink
+title: "Groupthink"
+provider: "Wikipedia"
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [meetings-decision-making]
+levels: [practitioner, advanced]
+note: "Groupthink: desire for harmony leading to poor group decisions. Link only; no passages copied."

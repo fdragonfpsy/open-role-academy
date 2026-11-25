@@ -1,0 +1,146 @@
+competency: leading-change
+items:
+- id: lc-f-resist
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: "A team member reacts to a planned change with doubts. How should you interpret this first?"
+    de: "Ein Teammitglied reagiert mit Zweifeln auf eine geplante Veränderung. Wie solltest du das zuerst deuten?"
+  options:
+  - en: "As a sign of poor motivation that you should address in a warning"
+    de: "Als Zeichen mangelnder Motivation, das du mit einer Abmahnung ansprichst"
+    correct: false
+  - en: "As a normal reaction; ask what exactly worries the person"
+    de: "Als normale Reaktion; frage nach, was die Person genau beunruhigt"
+    correct: true
+  - en: "As a signal that the change is wrong and should be stopped now"
+    de: "Als Signal, dass die Veränderung falsch ist und sofort gestoppt werden sollte"
+    correct: false
+  - en: "As a personal attack that you should answer in front of the team"
+    de: "Als persönlichen Angriff, auf den du vor dem Team antwortest"
+    correct: false
+  explanation:
+    en: "Resistance is often a normal reaction to discomfort or uncertainty. Asking what worries the person turns it into a concern you can answer."
+    de: "Widerstand ist oft eine normale Reaktion auf Unbehagen oder Unsicherheit. Die Nachfrage macht daraus eine Sorge, auf die du antworten kannst."
+  source: https://en.wikipedia.org/wiki/Change_management
+- id: lc-f-why
+  level: foundation
+  difficulty: 1000
+  type: single
+  stem:
+    en: "Which message best opens the communication about a change?"
+    de: "Welche Botschaft eröffnet die Kommunikation über eine Veränderung am besten?"
+  options:
+  - en: "The new tool arrives next month; please read the manual by then"
+    de: "Das neue Werkzeug kommt nächsten Monat; bitte lest bis dahin die Anleitung gründlich durch"
+    correct: false
+  - en: "Management has decided; details will follow once everything is final"
+    de: "Die Leitung hat entschieden; Einzelheiten folgen, wenn alles feststeht"
+    correct: false
+  - en: "Do not worry; nothing important will change in your daily work"
+    de: "Keine Sorge; an eurer täglichen Arbeit ändert sich nichts Wichtiges"
+    correct: false
+  - en: "Why we change, what changes, what stays the same, what happens next"
+    de: "Warum wir etwas ändern, was sich ändert, was bleibt und was als Nächstes passiert"
+    correct: true
+  explanation:
+    en: "People need the reason, the scope, what stays stable and the next steps. Announcing without a reason invites rumours."
+    de: "Menschen brauchen den Grund, den Umfang, das Gleichbleibende und die nächsten Schritte. Eine Ankündigung ohne Grund fördert Gerüchte."
+  source: https://openstax.org/books/organizational-behavior/pages/16-3-managing-change
+- id: lc-f-involve
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: "Why does it help to involve employees in designing a change?"
+    de: "Warum hilft es, Beschäftigte an der Gestaltung einer Veränderung zu beteiligen?"
+  options:
+  - en: "It makes sure that every individual preference is met in the end"
+    de: "Es stellt sicher, dass am Ende jede einzelne persönliche Vorliebe vollständig erfüllt wird"
+    correct: false
+  - en: "It means leaders no longer have to explain the reasons for it"
+    de: "Es bedeutet, dass Führungskräfte die Gründe nicht mehr erklären müssen"
+    correct: false
+  - en: "It lets the team vote on whether the change goes ahead at all"
+    de: "Es lässt das Team darüber abstimmen, ob die Veränderung überhaupt kommt"
+    correct: false
+  - en: "People are more invested in changes they helped to shape"
+    de: "Menschen engagieren sich stärker für Veränderungen, die sie mitgestaltet haben"
+    correct: true
+  explanation:
+    en: "Participation raises commitment. It does not mean everything is open: be clear about what is fixed and what can be shaped."
+    de: "Beteiligung erhöht das Engagement. Sie heißt nicht, dass alles offen ist: Sage klar, was feststeht und was gestaltbar ist."
+  source: https://openstax.org/books/organizational-behavior/pages/16-3-managing-change
+- id: lc-p-models
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: "In the ADKAR model, a team member understands why the change is needed and wants to take part but does not know how to use the new system. Which block needs work?"
+    de: "Im ADKAR-Modell versteht ein Teammitglied, warum die Veränderung nötig ist, und will mitmachen, weiß aber nicht, wie das neue System zu bedienen ist. An welchem Baustein ist zu arbeiten?"
+  options:
+  - en: "Knowledge, for example through training and a short guide"
+    de: "Knowledge, zum Beispiel durch Schulung und eine kurze Anleitung"
+    correct: true
+  - en: "Awareness, by repeating the reasons for the change once more"
+    de: "Awareness, indem die Gründe für die Veränderung noch einmal wiederholt werden"
+    correct: false
+  - en: "Desire, by offering a reward for supporting the project"
+    de: "Desire, indem eine Belohnung für die Unterstützung des Projekts angeboten wird"
+    correct: false
+  - en: "Reinforcement, by checking progress again after several months"
+    de: "Reinforcement, indem der Fortschritt nach mehreren Monaten erneut geprüft wird"
+    correct: false
+  explanation:
+    en: "Awareness and Desire are present; the missing block is Knowledge of what to do. ADKAR suggests working on the weakest block first."
+    de: "Awareness und Desire sind vorhanden; es fehlt das Wissen, was zu tun ist. ADKAR empfiehlt, zuerst am schwächsten Baustein zu arbeiten."
+  source: https://en.wikipedia.org/wiki/Change_management
+- id: lc-p-pilot
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: "Why is a small pilot useful before rolling out a change to the whole team?"
+    de: "Warum ist ein kleiner Pilot vor dem Ausrollen einer Veränderung im ganzen Team nützlich?"
+  options:
+  - en: "It lets you skip communication, because the pilot group explains it"
+    de: "Er erspart die Kommunikation, weil die Pilotgruppe alles erklärt"
+    correct: false
+  - en: "It produces early lessons and a first small win before wide rollout"
+    de: "Er liefert frühe Erkenntnisse und einen ersten kleinen Erfolg vor dem breiten Ausrollen"
+    correct: true
+  - en: "It proves that all doubts of the remaining team were unfounded"
+    de: "Er beweist, dass alle Zweifel des übrigen Teams unbegründet waren"
+    correct: false
+  - en: "It replaces the need to check later whether the change has lasted"
+    de: "Er ersetzt die spätere Prüfung, ob die Veränderung im Alltag tatsächlich Bestand hat"
+    correct: false
+  explanation:
+    en: "A pilot reveals what works and what does not, and gives a visible first result. It does not replace communication or follow-up."
+    de: "Ein Pilot zeigt, was funktioniert und was nicht, und liefert ein sichtbares erstes Ergebnis. Er ersetzt weder Kommunikation noch Nachverfolgung."
+  source: https://openstax.org/books/organizational-behavior/pages/16-3-managing-change
+- id: lc-p-works-council
+  level: practitioner
+  difficulty: 1350
+  type: single
+  stem:
+    en: "In a German company with a works council, you plan to merge two teams and introduce new work methods. What is the sensible first step?"
+    de: "In einem deutschen Unternehmen mit Betriebsrat planst du, zwei Teams zusammenzulegen und neue Arbeitsmethoden einzuführen. Was ist der sinnvolle erste Schritt?"
+  options:
+  - en: "Announce the plan to the teams first so that rumours cannot spread"
+    de: "Den Teams den Plan zuerst ankündigen, damit sich keine Gerüchte im Haus verbreiten können"
+    correct: false
+  - en: "Ask HR or legal early whether the works council must be informed or involved"
+    de: "Früh bei HR oder Recht klären, ob der Betriebsrat informiert oder beteiligt werden muss"
+    correct: true
+  - en: "Wait until the merger has finished and then inform the works council"
+    de: "Warten, bis die Zusammenlegung abgeschlossen ist, und dann den Betriebsrat informieren"
+    correct: false
+  - en: "Ask each employee individually whether they agree to the new methods"
+    de: "Jede beschäftigte Person einzeln fragen, ob sie den neuen Methoden zustimmt"
+    correct: false
+  explanation:
+    en: "Such changes can trigger information, consultation or co-determination matters with the works council. Clarify this with HR or legal before announcing details; this is topic-level guidance, not legal advice."
+    de: "Solche Veränderungen können Informations-, Beratungs- oder Mitbestimmungsfragen mit dem Betriebsrat auslösen. Kläre das vor der Ankündigung mit HR oder Recht; das ist Orientierung auf Themenebene, keine Rechtsberatung."
+  source: https://de.wikipedia.org/wiki/Betriebs%C3%A4nderung

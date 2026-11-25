@@ -1,5 +1,18 @@
 # Status
 
+## 2026-11-25 (n) — People Leadership complete and published; Phase 4 content done; run summary
+
+**Done**
+- meetings-decision-making and leading-change (foundation, practitioner): 4 units per language (en+de, `ai-draft`), 12 items, 18 new link-only resources (verified 2026-11-25). Quality pass: every role competency has a non-Wikipedia and a German resource (delegation-accountability got OpenStax PoM 10.1, only a partial fit and not yet linked from a unit). People Leadership set to `status: published`; FRAMEWORK.md regenerated. Validator 0 errors/0 warnings; all checks green.
+- This run (PRs #119-#131): Software Development finished + published; Controlling, Legal & Compliance and People Leadership built from framework to published; e2e hardening (catalog level-filter count waits for re-render; unit e2e retries keyboard navigation to the dashboard link).
+- All 13 roles of CLAUDE.md §4.3 now have a framework and published content.
+
+**Reviewer to-dos:** "decision log" / "write your view down before speaking" tips are common practice, not sourced; async vs sync cited to the Wikipedia computer-mediated-communication section; Wikipedia "Change management" has an LLM-text maintenance banner (only model descriptions cited); works-council paragraph topic level only; link OpenStax PoM 10.1 from the delegation unit or drop it; German wording not human-reviewed; all legal/leadership claims still `ai-draft`.
+
+**Counts:** roles 14 role files · competencies 130 · units 728 (364 per language) · items 1420 · resources 843
+
+**Next:** Phase 4 follow-ups and Phase 6 maintenance items in ROADMAP (German answer-length cue rewrite batches #105/#106, license re-verification, weakest-explanation items, dependency updates); open `qa` nits #57, #107; Phase 5 stays paused/owner-gated.
+
 ## 2026-11-25 (m) — People Leadership content batch 2
 
 **Done**

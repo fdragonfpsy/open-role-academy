@@ -1,0 +1,146 @@
+competency: meetings-decision-making
+items:
+- id: mdm-f-purpose
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: "What should you do first when planning a team meeting?"
+    de: "Was solltest du bei der Planung eines Teammeetings zuerst tun?"
+  options:
+  - en: "Invite the whole department so that nobody feels left out of the later discussion"
+    de: "Die ganze Abteilung einladen, damit sich niemand von der Diskussion ausgeschlossen fühlt"
+    correct: false
+  - en: "Book the longest available slot to leave plenty of room for open topics"
+    de: "Den längsten freien Termin buchen, um viel Raum für offene Themen zu lassen"
+    correct: false
+  - en: "Write down the purpose, for example what you want to have decided or learned"
+    de: "Den Zweck aufschreiben, etwa was entschieden oder gelernt sein soll"
+    correct: true
+  - en: "Ask each person to bring a list of their own topics for the meeting"
+    de: "Alle bitten, eine Liste eigener Themen für das Meeting mitzubringen"
+    correct: false
+  explanation:
+    en: "A clear purpose tells you who to invite, how long it needs and whether a meeting is needed at all."
+    de: "Ein klarer Zweck zeigt, wen du einladen musst, wie lange es dauert und ob überhaupt ein Meeting nötig ist."
+  source: https://en.wikipedia.org/wiki/Meeting
+- id: mdm-f-agenda
+  level: foundation
+  difficulty: 1000
+  type: single
+  stem:
+    en: "Which agenda item is best prepared for a meeting?"
+    de: "Welcher Tagesordnungspunkt ist für ein Meeting am besten vorbereitet?"
+  options:
+  - en: "Budget: all questions about spending in the coming months"
+    de: "Budget: alle Fragen zu den Ausgaben der kommenden Monate"
+    correct: false
+  - en: "Open points: anything else the team wants to bring up today"
+    de: "Offene Punkte: alles, was das Team heute noch einbringen möchte"
+    correct: false
+  - en: "Tool choice: decide between tools A and B (owner: Ana, 15 min)"
+    de: "Werkzeugwahl: zwischen A und B entscheiden (Ana, 15 Min.)"
+    correct: true
+  - en: "Process: talk generally about how the team is working together at the moment"
+    de: "Prozess: darüber sprechen, wie das Team derzeit arbeitet"
+    correct: false
+  explanation:
+    en: "A good item names the topic, the goal (here: decide), the owner and the time, so people can prepare."
+    de: "Ein guter Punkt nennt Thema, Ziel (hier: entscheiden), Verantwortliche und Zeit, damit sich alle vorbereiten können."
+  source: https://en.wikipedia.org/wiki/Agenda_(meeting)
+- id: mdm-f-minutes
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: "What should short meeting minutes mainly contain?"
+    de: "Was sollte ein kurzes Meeting-Protokoll vor allem enthalten?"
+  options:
+  - en: "Every comment, in the order in which it was said, with the speaker's name"
+    de: "Jeden Beitrag in der Reihenfolge der Wortmeldungen, mit dem Namen der Sprechenden"
+    correct: false
+  - en: "The decisions taken and the actions, each with owner and due date"
+    de: "Die getroffenen Entscheidungen und die Aufgaben, jeweils mit Verantwortlichen und Termin"
+    correct: true
+  - en: "A judgement on how well each participant prepared for the meeting"
+    de: "Eine Bewertung, wie gut sich die einzelnen Teilnehmenden vorbereitet hatten"
+    correct: false
+  - en: "The full text of the slides that were shown in the meeting"
+    de: "Den vollständigen Text der im Meeting gezeigten Folien"
+    correct: false
+  explanation:
+    en: "Minutes record what was decided and who does what by when. They are not a transcript."
+    de: "Ein Protokoll hält fest, was beschlossen wurde und wer was bis wann tut. Es ist kein Wortprotokoll."
+  source: https://en.wikipedia.org/wiki/Minutes
+- id: mdm-p-method
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: "You must decide a question that affects the whole team, and you stay accountable. You want the team's input but not a vote. Which approach fits?"
+    de: "Du musst eine Frage entscheiden, die das ganze Team betrifft, und bleibst verantwortlich. Du willst den Input des Teams, aber keine Abstimmung. Welcher Weg passt?"
+  options:
+  - en: "Consult the team, then decide yourself and explain your reasons"
+    de: "Das Team anhören, dann selbst entscheiden und die Gründe erklären"
+    correct: true
+  - en: "Let the majority decide and accept whatever the vote result is"
+    de: "Die Mehrheit entscheiden lassen und das Abstimmungsergebnis akzeptieren"
+    correct: false
+  - en: "Decide alone and tell the team only after you have implemented it"
+    de: "Allein entscheiden und das Team erst nach der Umsetzung informieren"
+    correct: false
+  - en: "Keep discussing until every single person fully agrees with you"
+    de: "So lange diskutieren, bis wirklich alle ohne Vorbehalt zustimmen"
+    correct: false
+  explanation:
+    en: "Consulting before deciding uses the team's knowledge while keeping the accountability with you. Explaining the reasons builds trust."
+    de: "Anhören vor dem Entscheiden nutzt das Wissen des Teams und lässt die Verantwortung bei dir. Die Begründung schafft Vertrauen."
+  source: https://openstax.org/books/principles-management/pages/2-6-group-decision-making
+- id: mdm-p-consent
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: "How does consensus (or consent) differ from unanimity?"
+    de: "Wodurch unterscheiden sich Konsens (oder Konsent) von Einstimmigkeit?"
+  options:
+  - en: "Everyone must actively support every detail of the decision"
+    de: "Alle müssen jedes Detail der Entscheidung aktiv unterstützen"
+    correct: false
+  - en: "Only the team lead may raise an objection to the proposal"
+    de: "Nur die Führungskraft darf einen Einwand gegen den Vorschlag erheben"
+    correct: false
+  - en: "Votes are counted and the largest group wins the final decision"
+    de: "Stimmen werden gezählt und die größte Gruppe gewinnt die Entscheidung"
+    correct: false
+  - en: "Some may disagree in part but can still live with the proposal"
+    de: "Einige können teilweise anderer Meinung sein und den Vorschlag dennoch mittragen"
+    correct: true
+  explanation:
+    en: "Consensus means the group reaches broad acceptance even if some do not fully agree with every aspect. Unanimity requires everyone's support."
+    de: "Konsens heißt breite Akzeptanz, auch wenn nicht alle jedem Aspekt voll zustimmen. Einstimmigkeit verlangt die Unterstützung aller."
+  source: https://en.wikipedia.org/wiki/Consensus_decision-making
+- id: mdm-p-groupthink
+  level: practitioner
+  difficulty: 1350
+  type: single
+  stem:
+    en: "In a meeting, everybody agrees quickly and nobody raises concerns. What is a sensible counter-measure against groupthink?"
+    de: "In einem Meeting stimmen alle schnell zu, und niemand äußert Bedenken. Was ist eine sinnvolle Gegenmaßnahme gegen Gruppendenken?"
+  options:
+  - en: "Close the discussion quickly to protect the team's good mood"
+    de: "Die Diskussion rasch beenden, um die gute Stimmung im Team zu schützen"
+    correct: false
+  - en: "Ask someone to take the devil's advocate role and challenge the plan"
+    de: "Jemanden bitten, die Rolle des Advocatus Diaboli zu übernehmen und den Plan zu hinterfragen"
+    correct: true
+  - en: "Let the most senior person state their view first so all can follow"
+    de: "Die dienstälteste Person zuerst ihre Sicht nennen lassen, damit alle folgen können"
+    correct: false
+  - en: "Repeat the proposal until the last doubter finally stops asking questions"
+    de: "Den Vorschlag wiederholen, bis die letzte skeptische Person keine Fragen mehr stellt"
+    correct: false
+  explanation:
+    en: "A devil's advocate deliberately points out flaws, which makes it easier for others to voice concerns. A senior view first tends to increase conformity."
+    de: "Wer gezielt Schwächen benennt, macht es anderen leichter, Bedenken zu äußern. Zuerst die Sicht der Ranghöchsten zu hören, verstärkt eher die Anpassung."
+  source: https://en.wikipedia.org/wiki/Groupthink

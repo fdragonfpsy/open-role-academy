@@ -341,7 +341,7 @@ Make offers known and wanted: understand markets and customers, define target gr
 | Self-organisation and project basics | core | 3 | F | P | P | — |
 | Working with data | core | 3 | F | F | P | digital-ai-literacy |
 
-## People Leadership (`people-leadership`, role, draft)
+## People Leadership (`people-leadership`, role, published)
 
 Lead a team well: grow from expert to team lead, delegate with clear accountability, set goals and plan work, hold one-to-one conversations and coach, give feedback, build a team with psychological safety, keep people motivated, handle conflicts, run effective meetings and decisions, lead through change, and know the labour-law and diversity basics for leaders in Germany and the EU.
 

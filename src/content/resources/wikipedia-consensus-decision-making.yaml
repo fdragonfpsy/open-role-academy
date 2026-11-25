@@ -1,0 +1,14 @@
+id: wikipedia-consensus-decision-making
+url: https://en.wikipedia.org/wiki/Consensus_decision-making
+title: "Consensus decision-making"
+provider: "Wikipedia"
+language: en
+format: article
+minutes: 20
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [meetings-decision-making]
+levels: [practitioner, advanced]
+note: "Consensus versus unanimity, decision rules, blocking and standing aside, meeting roles. Link only; no passages copied."
