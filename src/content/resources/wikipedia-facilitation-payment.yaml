@@ -1,0 +1,17 @@
+id: wikipedia-facilitation-payment
+url: https://en.wikipedia.org/wiki/Facilitation_payment
+title: Facilitation payment
+provider: Wikipedia
+language: en
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies:
+- anti-corruption-whistleblower-protection
+levels:
+- practitioner
+- advanced
+note: Explains small payments to speed up routine official actions; treatment differs between jurisdictions. Link only.

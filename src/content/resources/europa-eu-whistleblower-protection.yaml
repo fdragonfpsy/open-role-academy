@@ -1,0 +1,18 @@
+id: europa-eu-whistleblower-protection
+url: https://commission.europa.eu/aid-development-cooperation-fundamental-rights/your-rights-eu/whistleblowers-protection_en
+title: Protection for whistleblowers
+provider: European Commission
+language: en
+format: article
+minutes: 10
+license: free-access
+licenseUrl: https://commission.europa.eu/legal-notice_en
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies:
+- anti-corruption-whistleblower-protection
+levels:
+- foundation
+- practitioner
+- advanced
+note: 'Official Commission page, freely accessible (HTTP 200 on 2026-11-25); reuse terms not assessed -> link only. Read 2026-11-25: Directive (EU) 2019/1937 sets minimum standards; requires effective internal and external reporting channels, proper follow-up and protection from retaliation.'

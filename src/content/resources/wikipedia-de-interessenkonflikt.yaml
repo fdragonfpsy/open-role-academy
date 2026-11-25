@@ -1,6 +1,6 @@
 id: wikipedia-de-interessenkonflikt
-url: "https://de.wikipedia.org/wiki/Interessenkonflikt"
-title: "Interessenkonflikt"
+url: https://de.wikipedia.org/wiki/Interessenkonflikt
+title: Interessenkonflikt
 provider: Wikipedia (Deutsch)
 language: de
 format: article
@@ -9,6 +9,10 @@ license: CC-BY-SA-4.0
 licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
 licenseVerifiedOn: 2026-11-25
 mode: link
-competencies: [business-partnering-decision-support]
-levels: [foundation, practitioner]
-note: "Wikipedia text under CC BY-SA; HTTP 200 on 2026-11-25. Link only."
+competencies:
+- business-partnering-decision-support
+- anti-corruption-whistleblower-protection
+levels:
+- foundation
+- practitioner
+note: Wikipedia text under CC BY-SA; HTTP 200 on 2026-11-25. Link only.

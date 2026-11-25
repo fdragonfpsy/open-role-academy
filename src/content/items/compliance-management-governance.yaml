@@ -1,0 +1,146 @@
+competency: compliance-management-governance
+items:
+- id: cmg-f-meaning
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: What does compliance mean for an organisation?
+    de: Was bedeutet Compliance für eine Organisation?
+  options:
+  - en: Acting in line with laws and with its own rules and commitments
+    de: Im Einklang mit Gesetzen und den eigenen Regeln und Selbstverpflichtungen handeln
+    correct: true
+  - en: Avoiding any contact with authorities so that nothing can be checked
+    de: Jeden Kontakt mit Behörden vermeiden, damit nichts geprüft werden kann
+    correct: false
+  - en: Maximising profit whatever the rules say, as long as nobody notices
+    de: Den Gewinn maximieren, was auch immer die Regeln sagen, solange es niemand bemerkt
+    correct: false
+  - en: Writing a long policy manual once and then storing it
+    de: Ein langes Richtlinienhandbuch einmal schreiben und dann ablegen
+    correct: false
+  explanation:
+    en: Compliance covers legal requirements and also internal policies and voluntary commitments.
+    de: Compliance umfasst rechtliche Vorgaben sowie interne Richtlinien und freiwillige Selbstverpflichtungen.
+  source: https://en.wikipedia.org/wiki/Regulatory_compliance
+- id: cmg-f-elements
+  level: foundation
+  difficulty: 1000
+  type: single
+  stem:
+    en: Which set lists typical building blocks of a compliance management system?
+    de: Welche Aufzählung nennt typische Bausteine eines Compliance-Management-Systems?
+  options:
+  - en: Budget planning, product design, pricing, advertising and recruiting, without any rule-related element
+    de: Budgetplanung, Produktdesign, Preisgestaltung, Werbung und Personalsuche ohne regelbezogenes Element
+    correct: false
+  - en: Risk assessment, policies, training, monitoring, reporting channels and improvement
+    de: Risikobewertung, Richtlinien, Schulung, Überwachung, Meldekanäle und Verbesserung
+    correct: true
+  - en: A single code of conduct that is never updated or checked after its publication
+    de: Ein einziger Verhaltenskodex, der nach seiner Veröffentlichung nie aktualisiert oder geprüft wird
+    correct: false
+  - en: Annual audits by the supervisory authority without any internal measures
+    de: Jährliche Prüfungen durch die Aufsichtsbehörde ganz ohne interne Maßnahmen
+    correct: false
+  explanation:
+    en: A CMS combines assessing risks, setting rules, teaching them, checking them, allowing concerns to be raised and learning from experience.
+    de: Ein CMS verbindet Risiken bewerten, Regeln setzen, sie vermitteln, sie prüfen, Bedenken ermöglichen und aus Erfahrung lernen.
+  source: https://en.wikipedia.org/wiki/Regulatory_compliance
+- id: cmg-p-prioritise
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: How should limited compliance effort be prioritised?
+    de: Wie sollte begrenzter Compliance-Aufwand priorisiert werden?
+  options:
+  - en: Evenly across all topics, so that none gets more training
+    de: Gleichmäßig über alle Themen, damit keines mehr Schulung bekommt
+    correct: false
+  - en: By the topics that are easiest to write policies about
+    de: Nach den Themen, zu denen sich am einfachsten Richtlinien schreiben lassen
+    correct: false
+  - en: By likelihood and severity of each risk for the business
+    de: Nach Wahrscheinlichkeit und Schwere jedes Risikos für das Geschäft
+    correct: true
+  - en: By the topics that the department already knows best
+    de: Nach den Themen, die die Abteilung bereits am besten kennt
+    correct: false
+  explanation:
+    en: A risk assessment focuses effort on the combinations of high likelihood and high impact and records why.
+    de: Eine Risikobewertung lenkt den Aufwand auf hohe Wahrscheinlichkeit bei hoher Auswirkung und hält das Warum fest.
+  source: https://en.wikipedia.org/wiki/Three_lines_of_defence
+- id: cmg-p-three-lines
+  level: practitioner
+  difficulty: 1320
+  type: single
+  stem:
+    en: In the three lines model, where does a compliance function mainly sit?
+    de: Wo ist eine Compliance-Funktion im Drei-Linien-Modell überwiegend angesiedelt?
+  options:
+  - en: In the first line, where it runs the operational controls alone
+    de: In der ersten Linie, wo sie die operativen Kontrollen allein betreibt
+    correct: false
+  - en: In the third line, where it audits the board independently
+    de: In der dritten Linie, wo sie die Leitung unabhängig prüft
+    correct: false
+  - en: Outside the model, because it has no link to risk management
+    de: Außerhalb des Modells, weil es keine Verbindung zum Risikomanagement gibt
+    correct: false
+  - en: In the second line, advising and monitoring the business
+    de: In der zweiten Linie, wo sie das Geschäft berät und überwacht
+    correct: true
+  explanation:
+    en: The first line owns risks and controls, the second line (risk management, compliance) oversees, and the third line (internal audit) gives independent assurance.
+    de: Die erste Linie verantwortet Risiken und Kontrollen, die zweite (Risikomanagement, Compliance) überwacht, die dritte (Interne Revision) prüft unabhängig.
+  source: https://en.wikipedia.org/wiki/Three_lines_of_defence
+- id: cmg-a-effective
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: Training completion is 98 percent, yet monitoring finds repeated breaches. What is the best next step?
+    de: Der Schulungsabschluss liegt bei 98 Prozent, die Überwachung zeigt aber wiederholte Verstöße. Was ist der beste nächste Schritt?
+  options:
+  - en: Look for causes such as training quality, access to rules and incentives
+    de: Ursachen suchen, etwa Schulungsqualität, Zugang zu Regeln und Anreize
+    correct: true
+  - en: Report the system as effective because the completion rate is high
+    de: Das System als wirksam melden, weil die Abschlussquote hoch ist
+    correct: false
+  - en: Repeat the same training twice a year without changing anything about it
+    de: Dieselbe Schulung zweimal im Jahr wiederholen, ohne daran etwas zu ändern
+    correct: false
+  - en: Stop monitoring because it only produces uncomfortable findings
+    de: Die Überwachung einstellen, weil sie nur unbequeme Feststellungen liefert
+    correct: false
+  explanation:
+    en: Effectiveness is shown by behaviour and evidence, not by completion statistics alone. Root causes may lie in training design, usability of rules or incentives.
+    de: Wirksamkeit zeigt sich an Verhalten und Belegen, nicht nur an Abschlussstatistiken. Ursachen können in Schulungsdesign, Nutzbarkeit der Regeln oder Anreizen liegen.
+  source: https://en.wikipedia.org/wiki/Corporate_governance
+- id: cmg-a-independence
+  level: advanced
+  difficulty: 1600
+  type: single
+  stem:
+    en: A compliance function also runs operational controls of the business. What follows for assurance?
+    de: Eine Compliance-Funktion betreibt auch operative Kontrollen des Geschäfts. Was folgt daraus für die Prüfsicherheit?
+  options:
+  - en: Nothing, since the second line may review its own work
+    de: Nichts, denn die zweite Linie darf ihre eigene Arbeit prüfen
+    correct: false
+  - en: Independent review by the third line becomes more important
+    de: Die unabhängige Prüfung durch die dritte Linie wird wichtiger
+    correct: true
+  - en: Internal audit should be dissolved to avoid duplicated work
+    de: Die Interne Revision sollte aufgelöst werden, um Doppelarbeit zu vermeiden
+    correct: false
+  - en: The governing body no longer needs reports on compliance
+    de: Das Leitungsorgan braucht keine Berichte zur Compliance mehr
+    correct: false
+  explanation:
+    en: When the second line takes on operational tasks, it would otherwise review its own work, so independent assurance gains weight.
+    de: Übernimmt die zweite Linie operative Aufgaben, würde sie sonst ihre eigene Arbeit prüfen; die unabhängige Prüfung gewinnt daher an Gewicht.
+  source: https://en.wikipedia.org/wiki/Three_lines_of_defence

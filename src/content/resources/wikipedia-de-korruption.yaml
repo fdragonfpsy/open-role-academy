@@ -1,6 +1,6 @@
 id: wikipedia-de-korruption
 url: https://de.wikipedia.org/wiki/Korruption
-title: "Korruption"
+title: Korruption
 provider: Wikipedia
 language: de
 format: article
@@ -9,6 +9,10 @@ license: CC-BY-SA-4.0
 licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
 licenseVerifiedOn: 2026-11-17
 mode: link
-competencies: [sales-ethics-compliance]
-levels: [practitioner, advanced]
-note: 'Includes a section on German law and on the situation in the EU and Germany. Page footer states Creative Commons "Namensnennung - Weitergabe unter gleichen Bedingungen". Link only; no passages reproduced.'
+competencies:
+- sales-ethics-compliance
+- anti-corruption-whistleblower-protection
+levels:
+- practitioner
+- advanced
+note: Includes a section on German law and on the situation in the EU and Germany. Page footer states Creative Commons "Namensnennung - Weitergabe unter gleichen Bedingungen". Link only; no passages reproduced.

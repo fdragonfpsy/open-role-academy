@@ -1,5 +1,17 @@
 # Status
 
+## 2026-11-25 (i) — Legal & Compliance content batch 2
+
+**Done**
+- compliance-management-governance (3 levels), anti-corruption-whistleblower-protection (3), intellectual-property-copyright-basics (foundation, practitioner): 8 units per language (en+de, `ai-draft`, "not legal advice" note), 18 items, 30 new link-only resources (HTTP 200, verified 2026-11-25). Role stays `draft`. All checks green.
+- Verified from fetched sources: Directive (EU) 2019/1937 at concept level (Commission page), HinSchG has internal/external reporting offices (de.wikipedia), German copyright not transferable / rights of use granted, trade-secret definition. No article numbers, fines, deadlines, case names.
+
+**Reviewer to-dos:** patent/trade mark/design descriptions, CC condition summaries, "copyright exceptions narrow in DE/EU", facilitation-payment wording, three-lines wording (en.wikipedia only); gesetze-im-internet.de, bundesjustizamt.de, wipo.int, dpma.de unreachable, so German sources are Wikipedia only and non-Wikipedia ones are English; German wording not human-reviewed.
+
+**Counts:** roles 12 (1 draft) · competencies 122 · units 670 · items 1354 · resources 755
+
+**Next:** Legal & Compliance batch 3 (regulatory-monitoring-legal-research, ai-regulation-digital-law, legal-operations-documentation), publish, quality pass.
+
 ## 2026-11-25 (h) — Legal & Compliance content batch 1
 
 **Done**

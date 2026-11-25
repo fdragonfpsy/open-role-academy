@@ -1,0 +1,146 @@
+competency: intellectual-property-copyright-basics
+items:
+- id: ip-f-types
+  level: foundation
+  difficulty: 930
+  type: single
+  stem:
+    en: Which right protects the visual appearance of a product, such as its shape?
+    de: Welches Recht schützt das Erscheinungsbild eines Erzeugnisses, etwa seine Form?
+  options:
+  - en: A design right
+    de: Ein Designrecht
+    correct: true
+  - en: A patent, which protects only the product's price
+    de: Ein Patent, das nur den Preis des Produkts schützt
+    correct: false
+  - en: A trade secret, which protects only public information
+    de: Ein Geschäftsgeheimnis, das nur öffentliche Informationen schützt
+    correct: false
+  - en: A licence, which is itself the work protected by copyright
+    de: Eine Lizenz, die selbst das urheberrechtlich geschützte Werk ist
+    correct: false
+  explanation:
+    en: Design rights protect appearance, patents protect technical inventions, trade marks protect distinguishing signs and copyright protects original works.
+    de: Designrechte schützen das Erscheinungsbild, Patente technische Erfindungen, Marken unterscheidende Zeichen und das Urheberrecht originelle Werke.
+  source: https://en.wikipedia.org/wiki/Industrial_design_right
+- id: ip-f-online
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: You find a photo online with no author and no licence note. What is the right approach?
+    de: Du findest ein Foto online ohne Urheber und ohne Lizenzhinweis. Was ist der richtige Ansatz?
+  options:
+  - en: Use it right away, because anything found on the internet is free to use for business
+    de: Es sofort verwenden, denn alles, was im Internet zu finden ist, ist für Geschäftszwecke frei nutzbar
+    correct: false
+  - en: Treat it as not cleared and choose another image or ask the legal team
+    de: Es als nicht geklärt behandeln und ein anderes Bild wählen oder die Rechtsabteilung fragen
+    correct: true
+  - en: Use it and add 'all rights reserved' under the photo
+    de: Es nutzen und 'alle Rechte vorbehalten' unter das Foto schreiben
+    correct: false
+  - en: Use it for a week and remove it only if somebody complains
+    de: Es eine Woche nutzen und nur entfernen, falls sich jemand beschwert
+    correct: false
+  explanation:
+    en: Copyright arises without registration, so a missing notice does not mean the image is free. Without a clear licence, treat it as not cleared.
+    de: Das Urheberrecht entsteht ohne Registrierung; ein fehlender Hinweis bedeutet daher nicht, dass das Bild frei ist. Ohne klare Lizenz gilt es als nicht geklärt.
+  source: https://de.wikipedia.org/wiki/Urheberrecht_(Deutschland)
+- id: ip-p-owner
+  level: practitioner
+  difficulty: 1180
+  type: single
+  stem:
+    en: According to the German copyright article, what happens when an employee creates a work?
+    de: Was gilt laut dem deutschen Urheberrechtsartikel, wenn eine beschäftigte Person ein Werk schafft?
+  options:
+  - en: The employer automatically becomes the author
+    de: Der Arbeitgeber wird automatisch zum Urheber
+    correct: false
+  - en: The work cannot be used by anyone without a patent
+    de: Das Werk kann ohne Patent von niemandem genutzt werden
+    correct: false
+  - en: Authorship stays with the creator; rights of use may pass depending on the contract
+    de: Die Urheberschaft bleibt bei der schaffenden Person; Nutzungsrechte können je nach Vertrag übergehen
+    correct: true
+  - en: Copyright is sold to the employer in full by default, as part of every employment relationship
+    de: Das Urheberrecht wird dem Arbeitgeber standardmäßig und vollständig als Teil jedes Arbeitsverhältnisses verkauft
+    correct: false
+  explanation:
+    en: The article describes that, in Germany, copyright itself is in principle not transferable and the author remains the author; rights of use are granted.
+    de: Der Artikel beschreibt, dass das Urheberrecht in Deutschland grundsätzlich nicht übertragbar ist und die Urheberschaft bestehen bleibt; Nutzungsrechte werden eingeräumt.
+  source: https://de.wikipedia.org/wiki/Urheberrecht_(Deutschland)
+- id: ip-p-cc
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: A company brochure wants to use an image under a CC licence with a non-commercial condition. What follows?
+    de: Eine Firmenbroschüre will ein Bild unter einer CC-Lizenz mit der Bedingung nicht kommerziell nutzen. Was folgt daraus?
+  options:
+  - en: It is fine, because every CC licence permits every kind of business use of the image
+    de: Das ist in Ordnung, denn jede CC-Lizenz erlaubt jede Art geschäftlicher Nutzung des Bildes
+    correct: false
+  - en: It is fine if the brochure is distributed for free to customers
+    de: Es ist in Ordnung, wenn die Broschüre kostenlos an Kunden verteilt wird
+    correct: false
+  - en: It is fine once the logo of the company covers the credit line
+    de: Es ist in Ordnung, sobald das Firmenlogo die Namensnennung verdeckt
+    correct: false
+  - en: It likely does not fit; ask the rights holder or pick another image
+    de: Das passt wahrscheinlich nicht; die Rechteinhabenden fragen oder ein anderes Bild wählen
+    correct: true
+  explanation:
+    en: A non-commercial condition excludes commercial uses; a brochure that promotes a business is likely commercial. Check the exact licence and ask the rights holder.
+    de: Eine Nicht-kommerziell-Bedingung schließt kommerzielle Nutzungen aus; eine Broschüre, die für ein Unternehmen wirbt, ist wahrscheinlich kommerziell. Prüfe die genaue Lizenz und frage die Rechteinhabenden.
+  source: https://creativecommons.org/about/cclicenses/
+- id: ip-f-licence
+  level: foundation
+  difficulty: 980
+  type: single
+  stem:
+    en: What is a licence in the context of intellectual property?
+    de: Was ist eine Lizenz im Zusammenhang mit geistigem Eigentum?
+  options:
+  - en: Permission to use a protected work under stated conditions
+    de: Die Erlaubnis, ein geschütztes Werk unter genannten Bedingungen zu nutzen
+    correct: true
+  - en: A registration that makes the person using the work its new author
+    de: Eine Eintragung, durch die die nutzende Person zur neuen urhebenden Person wird
+    correct: false
+  - en: A fine paid after an unauthorised use of the work has occurred
+    de: Eine Geldzahlung nach einer unerlaubten Nutzung des Werks
+    correct: false
+  - en: A rule that all works are free once they are published online
+    de: Eine Regel, nach der alle Werke frei sind, sobald sie online stehen
+    correct: false
+  explanation:
+    en: A licence grants permission with conditions such as scope, duration or attribution. Open licences such as Creative Commons are standard public licences.
+    de: Eine Lizenz erteilt eine Erlaubnis mit Bedingungen wie Umfang, Dauer oder Namensnennung. Offene Lizenzen wie Creative Commons sind standardisierte öffentliche Lizenzen.
+  source: https://creativecommons.org/about/cclicenses/
+- id: ip-p-secret
+  level: practitioner
+  difficulty: 1250
+  type: single
+  stem:
+    en: Which element is part of a trade secret as described by the Wikipedia article?
+    de: Welches Element gehört nach dem Wikipedia-Artikel zu einem Geschäftsgeheimnis?
+  options:
+  - en: The information must be registered at a public office first
+    de: Die Informationen müssen zuerst bei einem öffentlichen Amt eingetragen werden
+    correct: false
+  - en: The information is subject to reasonable steps to keep it secret
+    de: Die Informationen unterliegen angemessenen Maßnahmen zur Geheimhaltung
+    correct: true
+  - en: The information must be known to all competitors in the sector concerned
+    de: Die Informationen müssen allen Wettbewerbern der betroffenen Branche bekannt sein
+    correct: false
+  - en: The information must have no value to the business itself
+    de: Die Informationen dürfen für das Unternehmen selbst keinen Wert haben
+    correct: false
+  explanation:
+    en: A trade secret is not generally known, has commercial value because it is secret and is subject to reasonable secrecy measures.
+    de: Ein Geschäftsgeheimnis ist nicht allgemein bekannt, hat wegen der Geheimhaltung wirtschaftlichen Wert und unterliegt angemessenen Geheimhaltungsmaßnahmen.
+  source: https://en.wikipedia.org/wiki/Trade_secret
