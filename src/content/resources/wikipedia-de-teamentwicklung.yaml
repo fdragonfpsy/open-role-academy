@@ -1,0 +1,14 @@
+id: wikipedia-de-teamentwicklung
+url: https://de.wikipedia.org/wiki/Teamentwicklung
+title: Teamentwicklung
+provider: Wikipedia
+language: de
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [team-building-psychological-safety]
+levels: [foundation, practitioner, advanced]
+note: Teambildung und Teamentwicklung; enthält das Phasenmodell nach Tuckman. Nur verlinkt; keine Passagen übernommen.

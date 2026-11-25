@@ -165,7 +165,7 @@ One role per task, in the order of CLAUDE.md §4.3. Each task = framework + cont
 - [ ] People Leadership (framework done; role is draft)
   - [x] framework (role + 8 new competencies, 4 reused, `status: draft`)
   - [x] content batch 1: leadership-fundamentals-role-transition, delegation-accountability, goal-setting-team-planning
-  - [ ] content batch 2: one-to-one-coaching, team-building-psychological-safety, motivation-engagement-wellbeing
+  - [x] content batch 2: one-to-one-coaching, team-building-psychological-safety, motivation-engagement-wellbeing
   - [ ] content batch 3: meetings-decision-making, leading-change (check existing units for the 4 reused competencies); then `status: published` and quality pass
 
 ## Phase 5 — Optional extensions (only after Phase 4, still $0)

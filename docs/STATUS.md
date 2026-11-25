@@ -1,5 +1,15 @@
 # Status
 
+## 2026-11-25 (m) — People Leadership content batch 2
+
+**Done**
+- one-to-one-coaching, team-building-psychological-safety, motivation-engagement-wellbeing (3 levels each): 9 units per language (en+de, `ai-draft`), 18 items, 23 new link-only resources (Wikipedia en/de + four OpenStax Organizational Behavior chapters, NC-SA link-only); 13 existing resources re-tagged. Role stays `draft`. All checks green.
+- Also this evening: e2e hardening in #130 (retrying keyboard navigation to the dashboard link in unit.e2e; the step failed on two different PRs).
+
+**Reviewer to-dos:** OpenStax chapters verified by URL/keyword only; Edmondson, Tuckman (1965, Adjourning, "50%" conflict-stage remark) and burnout/WHO wording come from Wikipedia articles, not primary sources; lead-behaviour lists are practical suggestions, not research results; Germany/EU employer-duty lines (Arbeitszeitgesetz, Arbeitsschutz, psychische Belastung) must stay topic level; German Mitarbeitergespräch and Gruppennorm articles carry quality/neutrality banners; no German non-Wikipedia source; German wording not human-reviewed.
+
+**Next:** People Leadership batch 3 (meetings-decision-making, leading-change), publish, quality pass.
+
 ## 2026-11-25 (l) — People Leadership content batch 1
 
 **Done**

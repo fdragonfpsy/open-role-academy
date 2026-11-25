@@ -1,0 +1,14 @@
+id: wikipedia-grow-model
+url: https://en.wikipedia.org/wiki/GROW_model
+title: GROW model
+provider: Wikipedia
+language: en
+format: article
+minutes: 5
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [one-to-one-coaching]
+levels: [practitioner, advanced]
+note: GROW (goal, reality, obstacles/options, way forward) as a coaching conversation structure. Link only; no passages reproduced.

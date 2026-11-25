@@ -1,0 +1,146 @@
+competency: team-building-psychological-safety
+items:
+- id: tbp-f-safety
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: "Which sentence best describes psychological safety in a team?"
+    de: "Welcher Satz beschreibt psychologische Sicherheit in einem Team am besten?"
+  options:
+  - en: "People can raise ideas, questions, concerns and mistakes without fear of punishment or humiliation"
+    de: "Menschen können Ideen, Fragen, Bedenken und Fehler ansprechen, ohne Strafe oder Bloßstellung zu fürchten"
+    correct: true
+  - en: "Everyone in the team always agrees with each other, so that no real disagreement or conflict can ever come up in a meeting"
+    de: "Alle im Team sind sich immer einig, sodass nie eine Meinungsverschiedenheit entstehen kann"
+    correct: false
+  - en: "The team has no performance standards, so nobody can ever be held responsible for results"
+    de: "Das Team hat keine Leistungsstandards, sodass niemand je für Ergebnisse verantwortlich gemacht werden kann"
+    correct: false
+  - en: "The workplace is physically safe and fully covered by the employer's safety measures"
+    de: "Der Arbeitsplatz ist körperlich sicher und vollständig durch die Schutzmaßnahmen des Arbeitgebers abgedeckt"
+    correct: false
+  explanation:
+    en: "Psychological safety is about speaking up without fear of punishment or humiliation. It does not mean agreement or low standards."
+    de: "Psychologische Sicherheit heißt, sich ohne Angst vor Strafe oder Bloßstellung äußern zu können. Sie bedeutet weder Einigkeit noch niedrige Standards."
+  source: https://en.wikipedia.org/wiki/Psychological_safety
+- id: tbp-f-storming
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: "In the Tuckman model, in which stage do opinions typically clash and roles and status get negotiated?"
+    de: "In welcher Phase des Tuckman-Modells prallen Meinungen typischerweise aufeinander, und Rollen und Status werden ausgehandelt?"
+  options:
+  - en: "Storming"
+    de: "Storming"
+    correct: true
+  - en: "Forming, when people meet and are mostly polite and orient themselves"
+    de: "Forming, wenn sich die Menschen treffen, meist höflich sind und sich orientieren"
+    correct: false
+  - en: "Performing, when roles and norms are fully established and goals dominate"
+    de: "Performing, wenn Rollen und Normen fest etabliert sind und die Ziele im Vordergrund stehen"
+    correct: false
+  - en: "Norming, when disagreements are mostly resolved and shared rules develop"
+    de: "Norming, wenn Meinungsverschiedenheiten weitgehend geklärt sind und gemeinsame Regeln entstehen"
+    correct: false
+  explanation:
+    en: "Storming is the second stage: opinions clash and roles are negotiated. It is a normal part of the model."
+    de: "Storming ist die zweite Phase: Meinungen prallen aufeinander und Rollen werden ausgehandelt. Sie gehört im Modell zum Normalfall."
+  source: https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development
+- id: tbp-p-norms
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: "How should a lead best establish team norms such as response times and how to disagree?"
+    de: "Wie sollte eine Führungskraft Teamnormen wie Antwortzeiten und den Umgang mit Widerspruch am besten festlegen?"
+  options:
+  - en: "Work out a short list of agreements with the team, write it down and revisit it now and then"
+    de: "Mit dem Team eine kurze Liste von Vereinbarungen erarbeiten, aufschreiben und gelegentlich überprüfen"
+    correct: true
+  - en: "Write the rules alone and announce them in an e-mail so that nobody has to spend meeting time"
+    de: "Die Regeln allein schreiben und per E-Mail verkünden, damit im Meeting keine Zeit dafür aufgewendet werden muss"
+    correct: false
+  - en: "Leave the norms unspoken, because the team will find its own rules without any discussion"
+    de: "Die Normen unausgesprochen lassen, weil das Team seine Regeln ohne Gespräch von selbst findet"
+    correct: false
+  - en: "Copy the norms of another team word for word and never change them afterwards for anyone"
+    de: "Die Normen eines anderen Teams wörtlich übernehmen und sie danach für niemanden mehr ändern"
+    correct: false
+  explanation:
+    en: "Norms exist anyway, written or unwritten. Agreements developed with the team are more likely to be followed and can be revisited when the team changes."
+    de: "Normen gibt es ohnehin, ausdrücklich oder stillschweigend. Gemeinsam entwickelte Vereinbarungen werden eher befolgt und lassen sich bei Veränderungen im Team überprüfen."
+  source: https://de.wikipedia.org/wiki/Gruppennorm
+- id: tbp-p-mistake
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: "A team member reports a mistake early in a meeting. Which reaction best supports psychological safety?"
+    de: "Ein Teammitglied meldet in einem Meeting früh einen Fehler. Welche Reaktion stützt psychologische Sicherheit am besten?"
+  options:
+  - en: "Thank the person for the early report and ask what the team can learn and what support is needed"
+    de: "Der Person für die frühe Meldung danken und fragen, was das Team daraus lernen kann und welche Unterstützung nötig ist"
+    correct: true
+  - en: "Ask who else knew about it and why nobody said anything sooner in front of everybody"
+    de: "Fragen, wer sonst davon wusste und warum vor allen Anwesenden niemand früher etwas gesagt hat"
+    correct: false
+  - en: "Say nothing in the meeting and quietly note the mistake for the next performance review"
+    de: "Im Meeting nichts sagen und den Fehler still für die nächste Leistungsbeurteilung vermerken"
+    correct: false
+  - en: "Point out how the mistake could have been avoided and ask the person to be more careful"
+    de: "Darauf hinweisen, wie sich der Fehler hätte vermeiden lassen, und die Person zu mehr Sorgfalt anhalten"
+    correct: false
+  explanation:
+    en: "Thanking for early reports and focusing on learning shows that speaking up is safe. Public blame teaches people to hide problems."
+    de: "Dank für frühe Meldungen und der Blick aufs Lernen zeigen, dass Ansprechen sicher ist. Öffentliche Schuldzuweisung bringt Menschen bei, Probleme zu verbergen."
+  source: https://en.wikipedia.org/wiki/Psychological_safety
+- id: tbp-a-silent
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: "In a decision meeting nobody objects to your plan, which is unusual for this team. What is the best next step?"
+    de: "In einer Entscheidungsrunde widerspricht niemand deinem Plan, was für dieses Team ungewöhnlich ist. Was ist der beste nächste Schritt?"
+  options:
+  - en: "Invite dissent actively, for example by asking for two reasons the plan could fail or by collecting written input"
+    de: "Aktiv zu Widerspruch einladen, etwa indem du nach zwei Gründen fragst, warum der Plan scheitern könnte, oder schriftlichen Input einholst"
+    correct: true
+  - en: "Treat the silence as agreement and close the decision, because the team had every chance to speak"
+    de: "Das Schweigen als Zustimmung werten und die Entscheidung abschließen, weil das Team jede Gelegenheit zum Sprechen hatte"
+    correct: false
+  - en: "Ask the quietest person to explain in front of all why she has no objection to the plan"
+    de: "Die stillste Person bitten, vor allen zu erklären, warum sie keine Einwände gegen den Plan hat"
+    correct: false
+  - en: "Postpone the decision for a month without telling the team why the plan is on hold for now"
+    de: "Die Entscheidung um einen Monat verschieben, ohne dem Team zu sagen, warum der Plan vorerst ruht"
+    correct: false
+  explanation:
+    en: "Silence is not agreement. Teams that focus on avoiding conflict can hold back controversial ideas, so dissent needs an explicit invitation."
+    de: "Schweigen ist keine Zustimmung. Teams, die Konflikte vermeiden wollen, halten strittige Ideen zurück, daher braucht Widerspruch eine ausdrückliche Einladung."
+  source: https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development
+- id: tbp-a-hybrid
+  level: advanced
+  difficulty: 1600
+  type: single
+  stem:
+    en: "In your hybrid team the remote colleagues speak little in meetings. Which measure is most suitable?"
+    de: "In deinem Hybridteam sprechen die Remote-Kolleginnen und -Kollegen in Meetings wenig. Welche Maßnahme passt am besten?"
+  options:
+  - en: "Agree norms such as a speaking order and written decisions, and ask the remote colleagues what would help"
+    de: "Normen wie eine Redereihenfolge und schriftliche Entscheidungen vereinbaren und die Remote-Kolleginnen und -Kollegen fragen, was helfen würde"
+    correct: true
+  - en: "Ask everyone to come to the office every day so that the whole team can sit in one room again"
+    de: "Alle bitten, jeden Tag ins Büro zu kommen, damit das ganze Team wieder in einem Raum sitzt"
+    correct: false
+  - en: "Judge the remote colleagues by how often they speak, so that being visible in meetings becomes an explicit goal for them"
+    de: "Die Remote-Kolleginnen und -Kollegen danach beurteilen, wie oft sie sprechen, damit Sichtbarkeit zum erklärten Ziel wird"
+    correct: false
+  - en: "Hold side conversations with the people in the room and send a summary to the others later"
+    de: "Nebengespräche mit den Anwesenden im Raum führen und den Zugeschalteten später eine kurze schriftliche Zusammenfassung der Ergebnisse schicken"
+    correct: false
+  explanation:
+    en: "Hybrid teams need norms that give everyone equal access to information and voice. Asking those affected tells you what actually helps."
+    de: "Hybridteams brauchen Normen, die allen gleichen Zugang zu Informationen und Gehör geben. Die Betroffenen zu fragen zeigt, was tatsächlich hilft."
+  source: https://en.wikipedia.org/wiki/Psychological_safety

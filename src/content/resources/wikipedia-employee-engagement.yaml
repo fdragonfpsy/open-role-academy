@@ -1,0 +1,14 @@
+id: wikipedia-employee-engagement
+url: https://en.wikipedia.org/wiki/Employee_engagement
+title: Employee engagement
+provider: Wikipedia
+language: en
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [motivation-engagement-wellbeing]
+levels: [foundation, practitioner, advanced]
+note: Employee engagement as a concept; article notes it remains contested. Link only; no passages reproduced.

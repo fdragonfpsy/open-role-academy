@@ -1,0 +1,14 @@
+id: wikipedia-occupational-burnout
+url: https://en.wikipedia.org/wiki/Occupational_burnout
+title: Occupational burnout
+provider: Wikipedia
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [motivation-engagement-wellbeing]
+levels: [foundation, practitioner, advanced]
+note: Burnout as work-related phenomenon; article notes WHO does not classify it as a medical condition and that its status is debated. Link only; awareness only, no medical claims.
