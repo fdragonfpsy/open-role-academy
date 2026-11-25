@@ -1,0 +1,146 @@
+competency: goal-setting-team-planning
+items:
+- id: gs-f-smart
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: "Which goal is the clearest and best checkable?"
+    de: "Welches Ziel ist am klarsten und am besten überprüfbar?"
+  options:
+  - en: "Reply to 90 percent of e-mails within one working day by the end of the quarter"
+    de: "Bis Quartalsende 90 Prozent der E-Mails innerhalb eines Arbeitstags beantworten"
+    correct: true
+  - en: "Be much better at customer service than we were in the previous few years"
+    de: "Im Kundenservice deutlich besser sein, als wir es in den vergangenen Jahren waren"
+    correct: false
+  - en: "Try to answer customer e-mails somewhat faster at some point when time allows"
+    de: "Irgendwann versuchen, Kunden-E-Mails etwas schneller zu beantworten, wenn Zeit bleibt"
+    correct: false
+  - en: "Make all customers happy in as many cases as possible, whenever this seems feasible"
+    de: "Alle Kundinnen und Kunden in möglichst vielen Fällen glücklich machen, sofern es machbar erscheint"
+    correct: false
+  explanation:
+    en: "A good goal is specific, measurable and has a date, so you can tell whether it was reached."
+    de: "Ein gutes Ziel ist spezifisch, messbar und hat einen Termin, sodass man erkennen kann, ob es erreicht wurde."
+  source: https://en.wikipedia.org/wiki/SMART_criteria
+- id: gs-f-priority
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: "A new request arrives while the team is at capacity. What is a sensible response?"
+    de: "Eine neue Anfrage kommt, während das Team ausgelastet ist. Was ist eine sinnvolle Reaktion?"
+  options:
+  - en: "Ask what it replaces and let the owner of the priority decide."
+    de: "Fragen, was sie ersetzt, und die Person entscheiden lassen, die die Priorität verantwortet."
+    correct: true
+  - en: "Accept it silently and let everybody in the team work longer hours without telling anyone."
+    de: "Sie stillschweigend annehmen und alle im Team länger arbeiten lassen, ohne jemandem etwas zu sagen."
+    correct: false
+  - en: "Ignore it completely so that the existing plan of the quarter stays totally untouched."
+    de: "Sie völlig ignorieren, damit der bestehende Plan des Quartals vollkommen unberührt bleibt."
+    correct: false
+  - en: "Mark every single task on the list as top priority so nothing seems less important."
+    de: "Jede einzelne Aufgabe auf der Liste als höchste Priorität markieren, damit nichts weniger wichtig wirkt."
+    correct: false
+  explanation:
+    en: "Making the trade-off visible lets the right person decide what moves."
+    de: "Den Zielkonflikt sichtbar zu machen, lässt die richtige Person entscheiden, was sich verschiebt."
+  source: https://de.wikipedia.org/wiki/Eisenhower-Prinzip
+- id: gs-p-okr
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: "What does an OKR consist of at concept level?"
+    de: "Woraus besteht ein OKR auf Konzeptebene?"
+  options:
+  - en: "One objective with a few measurable key results"
+    de: "Ein Objective mit wenigen messbaren Key Results"
+    correct: true
+  - en: "A long list of tasks without any measurement of results"
+    de: "Eine lange Aufgabenliste ohne jede Messung von Ergebnissen"
+    correct: false
+  - en: "A yearly appraisal form that is filled in for each employee"
+    de: "Ein jährlicher Beurteilungsbogen, der für jede Person ausgefüllt wird"
+    correct: false
+  - en: "A single number on a dashboard that has no objective behind it"
+    de: "Eine einzelne Zahl auf einem Dashboard, hinter der kein Objective steht"
+    correct: false
+  explanation:
+    en: "Wikipedia describes an objective with typically three to five measurable key results."
+    de: "Wikipedia beschreibt ein Objective mit typischerweise drei bis fünf messbaren Key Results."
+  source: https://en.wikipedia.org/wiki/Objectives_and_key_results
+- id: gs-p-capacity
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: "A team has 600 hours on paper. After holidays, training and meetings about 450 remain, and goals need 500. What should the lead do?"
+    de: "Ein Team hat auf dem Papier 600 Stunden. Nach Urlaub, Weiterbildung und Besprechungen bleiben etwa 450, die Ziele brauchen 500. Was sollte die Führungskraft tun?"
+  options:
+  - en: "Show the numbers; decide with the priority owner what to postpone or drop."
+    de: "Die Zahlen zeigen; mit der Person, die die Priorität verantwortet, entscheiden, was verschoben oder gestrichen wird."
+    correct: true
+  - en: "Plan for all 600 hours and simply hope for the best during the quarter."
+    de: "Mit allen 600 Stunden planen und im Quartal schlicht auf das Beste hoffen."
+    correct: false
+  - en: "Plan with no buffer at all, because the team can surely speed up when needed."
+    de: "Ganz ohne Puffer planen, weil das Team bei Bedarf sicher schneller werden kann."
+    correct: false
+  - en: "Add even more goals to the plan so that everybody in the team stays busy."
+    de: "Noch mehr Ziele in den Plan aufnehmen, damit alle im Team beschäftigt bleiben."
+    correct: false
+  explanation:
+    en: "Effective capacity is lower than nominal capacity; if work exceeds it, decide what gives instead of squeezing."
+    de: "Die effektive Kapazität ist niedriger als die nominelle; übersteigt die Arbeit sie, entscheide, was weicht, statt zu quetschen."
+  source: https://en.wikipedia.org/wiki/Capacity_planning
+- id: gs-a-agree
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: "What does the German Wikipedia article distinguish regarding goals?"
+    de: "Was unterscheidet der deutsche Wikipedia-Artikel bei Zielen?"
+  options:
+  - en: "Goal agreement (mutual) versus Zielvorgabe (set by the manager)"
+    de: "Zielvereinbarung (gegenseitig) und Zielvorgabe (von der Führungskraft festgelegt)"
+    correct: true
+  - en: "Goals that contain numbers versus goals that are written down without any date"
+    de: "Ziele, die Zahlen enthalten, und Ziele, die ohne jeden Termin aufgeschrieben werden"
+    correct: false
+  - en: "Team goals versus the personal hobbies of the people who work in the team"
+    de: "Teamziele und die persönlichen Hobbys der Menschen, die im Team arbeiten"
+    correct: false
+  - en: "Yearly goals versus the weekly lunch appointments of the whole department"
+    de: "Jahresziele und die wöchentlichen Mittagstermine der gesamten Abteilung"
+    correct: false
+  explanation:
+    en: "A Zielvereinbarung is agreed by both sides, a Zielvorgabe is set one-sidedly; legal details need HR or legal input."
+    de: "Eine Zielvereinbarung wird von beiden Seiten getroffen, eine Zielvorgabe einseitig gesetzt; rechtliche Details brauchen Input von Personalabteilung oder Recht."
+  source: https://de.wikipedia.org/wiki/Zielvereinbarung
+- id: gs-a-measure
+  level: advanced
+  difficulty: 1600
+  type: single
+  stem:
+    en: "Reply time improves, but customers report unhelpful answers. What does this illustrate?"
+    de: "Die Antwortzeit verbessert sich, aber Kundinnen und Kunden melden unhilfreiche Antworten. Was zeigt das?"
+  options:
+  - en: "People may optimise the measure at the cost of quality, so add a quality check."
+    de: "Menschen optimieren womöglich die Kennzahl auf Kosten der Qualität, daher eine Qualitätsprüfung ergänzen."
+    correct: true
+  - en: "Measurement should be abandoned completely, because numbers can never help any team."
+    de: "Messung sollte ganz aufgegeben werden, weil Zahlen keinem Team je helfen können."
+    correct: false
+  - en: "The reply time goal was simply set too early in the quarter and should be moved later."
+    de: "Das Ziel zur Antwortzeit wurde schlicht zu früh im Quartal gesetzt und sollte später liegen."
+    correct: false
+  - en: "Customers always report problems regardless of the real quality of the answers they receive."
+    de: "Kundinnen und Kunden melden Probleme immer, unabhängig von der tatsächlichen Qualität der Antworten."
+    correct: false
+  explanation:
+    en: "Pair a number with a quality check, and treat measures as questions, not verdicts on people."
+    de: "Verbinde eine Zahl mit einer Qualitätsprüfung und behandle Kennzahlen als Fragen, nicht als Urteil über Menschen."
+  source: https://en.wikipedia.org/wiki/Objectives_and_key_results

@@ -164,7 +164,7 @@ One role per task, in the order of CLAUDE.md §4.3. Each task = framework + cont
   - [x] content batch 3: regulatory-monitoring-legal-research, ai-regulation-digital-law, legal-operations-documentation (reused competencies already have content); then `status: published` and quality pass
 - [ ] People Leadership (framework done; role is draft)
   - [x] framework (role + 8 new competencies, 4 reused, `status: draft`)
-  - [ ] content batch 1: leadership-fundamentals-role-transition, delegation-accountability, goal-setting-team-planning
+  - [x] content batch 1: leadership-fundamentals-role-transition, delegation-accountability, goal-setting-team-planning
   - [ ] content batch 2: one-to-one-coaching, team-building-psychological-safety, motivation-engagement-wellbeing
   - [ ] content batch 3: meetings-decision-making, leading-change (check existing units for the 4 reused competencies); then `status: published` and quality pass
 

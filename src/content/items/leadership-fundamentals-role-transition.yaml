@@ -1,0 +1,146 @@
+competency: leadership-fundamentals-role-transition
+items:
+- id: lfrt-f-results
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: "After a promotion to team lead, how do your results mainly come about?"
+    de: "Wie entstehen deine Ergebnisse nach der Beförderung zur Teamleitung hauptsächlich?"
+  options:
+  - en: "Through what the team achieves with your support"
+    de: "Durch das, was das Team mit deiner Unterstützung erreicht"
+    correct: true
+  - en: "Through doing most of the expert tasks yourself"
+    de: "Dadurch, dass du die meisten Fachaufgaben selbst erledigst"
+    correct: false
+  - en: "Through avoiding contact with the team so it stays independent"
+    de: "Dadurch, dass du Kontakt zum Team vermeidest, damit es unabhängig bleibt"
+    correct: false
+  - en: "Through reviewing each team member's work every hour"
+    de: "Dadurch, dass du die Arbeit jeder Person stündlich prüfst"
+    correct: false
+  explanation:
+    en: "A lead is measured on what the team achieves, so your role shifts from doing to enabling."
+    de: "Eine Führungskraft wird daran gemessen, was das Team erreicht; die Rolle verschiebt sich vom Machen zum Ermöglichen."
+  source: https://openstax.org/books/principles-management/pages/13-1-the-nature-of-leadership
+- id: lfrt-f-leadmanage
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: "Which statement fits the OpenStax description of leadership and management?"
+    de: "Welche Aussage passt zur Beschreibung von Führung und Management bei OpenStax?"
+  options:
+  - en: "Management means planning and controlling work; leadership means influence between interdependent people."
+    de: "Management heißt Arbeit planen und kontrollieren; Führung heißt Einfluss zwischen voneinander abhängigen Personen."
+    correct: true
+  - en: "Leadership and management are the same thing under two different names in every organisation and never differ."
+    de: "Führung und Management sind in jeder Organisation dasselbe unter zwei verschiedenen Namen und unterscheiden sich nie."
+    correct: false
+  - en: "Leaders never need planning skills, and managers never need any influence over the people they manage."
+    de: "Führende brauchen nie Planungsfähigkeiten, und Manager brauchen nie Einfluss auf die Menschen, die sie managen."
+    correct: false
+  - en: "Leadership only exists in very large companies that have several clearly separated hierarchy levels."
+    de: "Führung gibt es nur in sehr großen Unternehmen mit mehreren klar getrennten Hierarchieebenen."
+    correct: false
+  explanation:
+    en: "The chapter treats the two as different but connected: effective leaders often need management skills and the other way round."
+    de: "Das Kapitel behandelt beide als verschieden, aber verbunden: Wirksame Führende brauchen oft Managementfähigkeiten und umgekehrt."
+  source: https://openstax.org/books/principles-management/pages/13-1-the-nature-of-leadership
+- id: lfrt-p-situational
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: "What is the basic idea of situational leadership?"
+    de: "Was ist die Grundidee des situativen Führens?"
+  options:
+  - en: "Leaders adapt how much direction and support they give to the person and the task."
+    de: "Führungskräfte passen an, wie viel Anleitung und Unterstützung sie geben, je nach Person und Aufgabe."
+    correct: true
+  - en: "One fixed style is right for every person and every task."
+    de: "Ein fester Stil passt für jede Person und jede Aufgabe."
+    correct: false
+  - en: "Leaders should avoid giving any direction to experienced staff in all cases."
+    de: "Führungskräfte sollten erfahrenen Beschäftigten grundsätzlich nie Anleitung geben."
+    correct: false
+  - en: "Leaders decide their style once, when they take over, and never revisit it."
+    de: "Führungskräfte legen ihren Stil einmal bei Amtsantritt fest und überprüfen ihn nie."
+    correct: false
+  explanation:
+    en: "Situational models use task and relationship behaviour and say that no single style fits all situations."
+    de: "Situative Modelle nutzen Aufgaben- und Beziehungsorientierung und sagen, dass kein einzelner Stil für alle Situationen passt."
+  source: https://en.wikipedia.org/wiki/Situational_leadership_theory
+- id: lfrt-p-expect
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: "A new lead notices that two team members expect different things from her. What is the most useful first step?"
+    de: "Eine neue Teamleitung merkt, dass zwei Teammitglieder Unterschiedliches von ihr erwarten. Was ist der nützlichste erste Schritt?"
+  options:
+  - en: "Discuss expectations and decision rights with each person, write them down and review them."
+    de: "Erwartungen und Entscheidungsrechte mit jeder Person besprechen, aufschreiben und überprüfen."
+    correct: true
+  - en: "Wait quietly until the disagreement between the two team members disappears by itself over time."
+    de: "Ruhig abwarten, bis sich der Widerspruch zwischen den beiden Teammitgliedern mit der Zeit von selbst auflöst."
+    correct: false
+  - en: "Follow whichever of the two team members expresses their own view more loudly in meetings."
+    de: "Der Person unter beiden folgen, die ihre eigene Sicht in Besprechungen lauter äußert."
+    correct: false
+  - en: "Tell both of them that expectations are never to be discussed openly in the team."
+    de: "Beiden sagen, dass Erwartungen im Team grundsätzlich nie offen besprochen werden."
+    correct: false
+  explanation:
+    en: "Explicit expectations reduce role conflict; a regular review keeps them current."
+    de: "Ausdrückliche Erwartungen verringern Rollenkonflikte; eine regelmäßige Überprüfung hält sie aktuell."
+  source: https://de.wikipedia.org/wiki/Rollenkonflikt
+- id: lfrt-a-fallback
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: "Under deadline pressure, a lead repeatedly rewrites the team's analyses herself. What is the main risk of this habit?"
+    de: "Unter Termindruck schreibt eine Teamleitung wiederholt die Analysen des Teams selbst neu. Was ist das Hauptrisiko dieser Gewohnheit?"
+  options:
+  - en: "It removes time for planning and people development, and it signals mistrust."
+    de: "Es nimmt Zeit für Planung und Personalentwicklung und signalisiert Misstrauen."
+    correct: true
+  - en: "The team becomes more independent over time and needs much less coaching from the lead."
+    de: "Das Team wird mit der Zeit selbstständiger und braucht deutlich weniger Coaching von der Führungskraft."
+    correct: false
+  - en: "It proves that delegation always works very well for the whole team during a crisis."
+    de: "Es beweist, dass Delegieren für das ganze Team in einer Krise immer sehr gut funktioniert."
+    correct: false
+  - en: "It has no effect, because doing expert work is simply the main duty of every lead."
+    de: "Es hat keine Wirkung, weil Facharbeit schlicht die Hauptaufgabe jeder Führungskraft ist."
+    correct: false
+  explanation:
+    en: "Occasional intervention can be right in an emergency, but as a habit it crowds out lead tasks and weakens trust."
+    de: "Gelegentliches Eingreifen kann im Notfall richtig sein, als Gewohnheit verdrängt es Führungsaufgaben und schwächt Vertrauen."
+  source: https://en.wikipedia.org/wiki/Leadership
+- id: lfrt-a-sources
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: "According to the OpenStax chapter, why do followers of a leader typically comply, compared with subordinates of a manager?"
+    de: "Warum folgen laut dem OpenStax-Kapitel Gefolgte einer Führungsperson typischerweise, im Vergleich zu Untergebenen einer Führungskraft im Management?"
+  options:
+  - en: "They want to follow; subordinates often comply because of role authority, rewards or sanctions."
+    de: "Sie wollen folgen; Untergebene folgen oft wegen Rollenautorität, Belohnungen oder Sanktionen."
+    correct: true
+  - en: "They are forced to follow by formal sanctions alone, which is the only way leaders gain compliance."
+    de: "Sie werden allein durch formale Sanktionen zum Folgen gezwungen, was der einzige Weg ist, wie Führende Gehorsam erreichen."
+    correct: false
+  - en: "They have no real choice, because leaders always control all pay decisions in the organisation."
+    de: "Sie haben keine echte Wahl, weil Führende in der Organisation immer alle Gehaltsentscheidungen kontrollieren."
+    correct: false
+  - en: "They follow only in cases where the leader is at the same time their formal line manager."
+    de: "Sie folgen nur in Fällen, in denen die Führungsperson zugleich ihre formale Linienvorgesetzte ist."
+    correct: false
+  explanation:
+    en: "The chapter contrasts position-based power with followers who comply because they want to; sustained influence needs both."
+    de: "Das Kapitel stellt positionsbasierte Macht Gefolgten gegenüber, die folgen, weil sie es wollen; dauerhafter Einfluss braucht beides."
+  source: https://openstax.org/books/principles-management/pages/13-1-the-nature-of-leadership

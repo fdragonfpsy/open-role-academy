@@ -1,0 +1,14 @@
+id: wikipedia-delegation
+url: https://en.wikipedia.org/wiki/Delegation
+title: Delegation
+provider: Wikipedia
+language: en
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [delegation-accountability]
+levels: [foundation, practitioner, advanced]
+note: Delegation as distributing work, decision-making and responsibility; link to micromanagement. Link only; no passages reproduced.

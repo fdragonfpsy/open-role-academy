@@ -1,0 +1,14 @@
+id: wikipedia-leadership
+url: https://en.wikipedia.org/wiki/Leadership
+title: Leadership
+provider: Wikipedia
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [leadership-fundamentals-role-transition]
+levels: [foundation, practitioner, advanced]
+note: Overview of definitions of leadership; notes that the term is contested. Link only; no passages reproduced.

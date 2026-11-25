@@ -1,0 +1,14 @@
+id: wikipedia-responsibility-assignment-matrix
+url: https://en.wikipedia.org/wiki/Responsibility_assignment_matrix
+title: Responsibility assignment matrix (RACI)
+provider: Wikipedia
+language: en
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [delegation-accountability]
+levels: [practitioner, advanced]
+note: RACI roles - responsible, accountable, consulted, informed. Link only; no passages reproduced.
