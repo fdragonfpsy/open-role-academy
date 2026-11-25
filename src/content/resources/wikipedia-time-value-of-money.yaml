@@ -1,0 +1,14 @@
+id: wikipedia-time-value-of-money
+url: "https://en.wikipedia.org/wiki/Time_value_of_money"
+title: "Time value of money"
+provider: Wikipedia
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-25
+mode: link
+competencies: [investment-appraisal-capital-budgeting]
+levels: [foundation]
+note: "Wikipedia text under CC BY-SA; HTTP 200 on 2026-11-25. Link only."

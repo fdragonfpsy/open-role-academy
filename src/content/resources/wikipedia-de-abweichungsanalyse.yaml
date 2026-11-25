@@ -1,0 +1,14 @@
+id: wikipedia-de-abweichungsanalyse
+url: "https://de.wikipedia.org/wiki/Abweichungsanalyse"
+title: "Abweichungsanalyse"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-25
+mode: link
+competencies: [variance-analysis-performance-management]
+levels: [foundation, practitioner, advanced]
+note: "Wikipedia text under CC BY-SA; HTTP 200 on 2026-11-25. Link only."

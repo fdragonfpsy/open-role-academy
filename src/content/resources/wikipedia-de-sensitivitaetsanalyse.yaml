@@ -1,0 +1,14 @@
+id: wikipedia-de-sensitivitaetsanalyse
+url: "https://de.wikipedia.org/wiki/Sensitivit%C3%A4tsanalyse"
+title: "Sensitivitätsanalyse"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-25
+mode: link
+competencies: [investment-appraisal-capital-budgeting]
+levels: [practitioner]
+note: "Wikipedia text under CC BY-SA; HTTP 200 on 2026-11-25. Link only."
