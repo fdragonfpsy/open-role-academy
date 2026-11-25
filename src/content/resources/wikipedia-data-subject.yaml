@@ -1,0 +1,13 @@
+id: wikipedia-data-subject
+url: https://en.wikipedia.org/wiki/Data_subject
+title: "Data subject"
+provider: Wikipedia
+language: en
+format: article
+minutes: 5
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-25
+mode: link
+competencies: [gdpr-data-protection-compliance]
+levels: [foundation, practitioner]

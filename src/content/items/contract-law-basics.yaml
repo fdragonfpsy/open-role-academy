@@ -1,0 +1,218 @@
+competency: contract-law-basics
+items:
+- id: cl-f-formation
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: How does a contract usually come into being?
+    de: Wie kommt ein Vertrag in der Regel zustande?
+  options:
+  - en: One party makes an offer and the other accepts it
+    de: Eine Partei macht ein Angebot und die andere nimmt es an
+    correct: true
+  - en: One party signs a document and the other receives a copy without any reply
+    de: Eine Partei unterschreibt ein Dokument und die andere erhält eine Kopie ohne jede Antwort
+    correct: false
+  - en: A court issues the contract once both parties have complained about each other
+    de: Ein Gericht erlässt den Vertrag, sobald sich beide Parteien übereinander beschwert haben
+    correct: false
+  - en: A third party fixes the terms and neither side needs to agree to them
+    de: Eine dritte Partei legt die Bedingungen fest und keine Seite muss ihnen zustimmen
+    correct: false
+  explanation:
+    en: 'A contract typically arises from matching declarations of intent: offer and acceptance.'
+    de: 'Ein Vertrag entsteht typischerweise durch übereinstimmende Willenserklärungen: Angebot und Annahme.'
+  source: https://en.wikipedia.org/wiki/Offer_and_acceptance
+- id: cl-f-counter
+  level: foundation
+  difficulty: 980
+  type: single
+  stem:
+    en: A customer answers a quote with 'We accept, but delivery one week later.' What is the general view?
+    de: Ein Kunde antwortet auf ein Angebot mit 'Wir nehmen an, aber Lieferung eine Woche später.' Was gilt grundsätzlich?
+  options:
+  - en: The reply changes a term and is generally treated as a new offer
+    de: Die Antwort ändert eine Bedingung und gilt grundsätzlich als neues Angebot
+    correct: true
+  - en: A contract has formed on the original terms, because the customer said 'accept'
+    de: Ein Vertrag ist zu den ursprünglichen Bedingungen zustande gekommen, weil der Kunde 'annehmen' sagte
+    correct: false
+  - en: The quote has lapsed and the supplier may no longer reply to the customer
+    de: Das Angebot ist erloschen und der Lieferant darf dem Kunden nicht mehr antworten
+    correct: false
+  - en: The change is void and the customer is bound without delivery conditions
+    de: Die Änderung ist unwirksam und der Kunde ist ohne Lieferbedingungen gebunden
+    correct: false
+  explanation:
+    en: An acceptance must agree to the offer's terms. A changed term makes the reply a new offer that the other side can accept or reject.
+    de: Eine Annahme muss den Bedingungen des Angebots zustimmen. Eine geänderte Bedingung macht die Antwort zu einem neuen Angebot, das die andere Seite annehmen oder ablehnen kann.
+  source: https://en.wikipedia.org/wiki/Offer_and_acceptance
+- id: cl-f-types
+  level: foundation
+  difficulty: 1040
+  type: single
+  stem:
+    en: Why does the contract type matter?
+    de: Warum ist die Vertragsart wichtig?
+  options:
+  - en: Statutes attach different rights and duties to different contract types
+    de: Gesetze knüpfen an verschiedene Vertragsarten unterschiedliche Rechte und Pflichten
+    correct: true
+  - en: The type only decides the colour of the paper on which the contract is printed
+    de: Die Art entscheidet nur über die Farbe des Papiers, auf dem der Vertrag gedruckt wird
+    correct: false
+  - en: Only sales contracts are enforceable; other types are never binding on parties
+    de: Nur Kaufverträge sind durchsetzbar; andere Arten binden die Parteien nie
+    correct: false
+  - en: The type is relevant for tax purposes only and never for legal consequences
+    de: Die Art ist nur steuerlich relevant und nie für rechtliche Folgen
+    correct: false
+  explanation:
+    en: The type (sale, service, lease, employment ...) determines which statutory rules fill gaps and limit the parties.
+    de: Die Art (Kauf, Dienst, Miete, Arbeit ...) bestimmt, welche gesetzlichen Regeln Lücken füllen und die Parteien begrenzen.
+  source: https://de.wikipedia.org/wiki/Vertrag
+- id: cl-p-agb
+  level: practitioner
+  difficulty: 1150
+  type: single
+  stem:
+    en: What are general terms and conditions (AGB)?
+    de: Was sind Allgemeine Geschäftsbedingungen (AGB)?
+  options:
+  - en: Pre-formulated terms that one party presents to the other for many contracts
+    de: Vorformulierte Bedingungen, die eine Partei der anderen für viele Verträge stellt
+    correct: true
+  - en: Terms that two parties negotiate line by line for one specific contract only
+    de: Bedingungen, die zwei Parteien Zeile für Zeile nur für einen einzelnen Vertrag verhandeln
+    correct: false
+  - en: Public statutes that apply to every contract without having to be agreed
+    de: Öffentliche Gesetze, die für jeden Vertrag gelten, ohne vereinbart werden zu müssen
+    correct: false
+  - en: Internal guidelines of a company that never reach its customers or suppliers
+    de: Interne Richtlinien eines Unternehmens, die nie zu Kundschaft oder Lieferanten gelangen
+    correct: false
+  explanation:
+    en: AGB are standardised terms set by one side. Because the other side usually cannot negotiate them, they undergo a special content control.
+    de: AGB sind einseitig gestellte Standardbedingungen. Weil die andere Seite sie meist nicht verhandeln kann, unterliegen sie einer besonderen Inhaltskontrolle.
+  source: https://de.wikipedia.org/wiki/Allgemeine_Gesch%C3%A4ftsbedingungen
+- id: cl-p-disruption
+  level: practitioner
+  difficulty: 1230
+  type: single
+  stem:
+    en: Which pair names typical performance problems?
+    de: Welches Paar nennt typische Leistungsstörungen?
+  options:
+  - en: Delay and defects
+    de: Verzug und Mängel
+    correct: true
+  - en: Offer and acceptance
+    de: Angebot und Annahme
+    correct: false
+  - en: Signature and archiving
+    de: Unterschrift und Archivierung
+    correct: false
+  - en: Price list and catalogue
+    de: Preisliste und Katalog
+    correct: false
+  explanation:
+    en: Delay, defects and impossibility are typical performance problems. Offer and acceptance describe how a contract forms.
+    de: Verzug, Mängel und Unmöglichkeit sind typische Leistungsstörungen. Angebot und Annahme beschreiben das Zustandekommen.
+  source: https://de.wikipedia.org/wiki/Vertrag
+- id: cl-p-liability
+  level: practitioner
+  difficulty: 1320
+  type: single
+  stem:
+    en: A supplier's terms say it is liable for nothing under any circumstances. What is the sound reaction?
+    de: In den Bedingungen eines Lieferanten steht, er hafte unter keinen Umständen. Welche Reaktion ist sinnvoll?
+  options:
+  - en: Mark it as high-risk, note it is standard-terms wording and send it to counsel
+    de: Als hohes Risiko markieren, den Standardbedingungs-Charakter vermerken und an die Rechtsberatung geben
+    correct: true
+  - en: Accept it, since parties are free to agree anything they like in a contract
+    de: Akzeptieren, da die Parteien in einem Vertrag alles frei vereinbaren dürfen
+    correct: false
+  - en: Strike it silently and sign the rest without telling the other side about it
+    de: Sie stillschweigend streichen und den Rest unterschreiben, ohne die Gegenseite zu informieren
+    correct: false
+  - en: Declare it void yourself and tell the business that it has no effect at all
+    de: Sie selbst für unwirksam erklären und dem Fachbereich sagen, sie habe keinerlei Wirkung
+    correct: false
+  explanation:
+    en: Mandatory law limits what liability clauses can exclude, but validity is a legal question. Flag it and escalate.
+    de: Zwingendes Recht begrenzt, was Haftungsklauseln ausschließen können, doch die Wirksamkeit ist eine Rechtsfrage. Markieren und eskalieren.
+  source: https://de.wikipedia.org/wiki/Allgemeine_Gesch%C3%A4ftsbedingungen
+- id: cl-a-risk
+  level: advanced
+  difficulty: 1480
+  type: single
+  stem:
+    en: What is the best way to read a draft contract from a risk perspective?
+    de: Wie liest du einen Vertragsentwurf unter Risikogesichtspunkten am besten?
+  options:
+  - en: Compare it with the statutory default and your standard, and ask who bears each risk
+    de: Mit der gesetzlichen Grundregelung und deinem Standard vergleichen und fragen, wer welches Risiko trägt
+    correct: true
+  - en: Check the length and layout first and treat shorter drafts as lower in risk
+    de: Zuerst Länge und Layout prüfen und kürzere Entwürfe als weniger riskant behandeln
+    correct: false
+  - en: Read only the price clause, because all other clauses are standard in contracts
+    de: Nur die Preisklausel lesen, weil alle anderen Klauseln in Verträgen üblich sind
+    correct: false
+  - en: Rely on the other side's summary of the changes and skip the full draft
+    de: Sich auf die Zusammenfassung der Änderungen durch die Gegenseite verlassen und den Entwurf nicht lesen
+    correct: false
+  explanation:
+    en: A contract allocates risk. Comparing with defaults and your standard makes deviations visible.
+    de: Ein Vertrag verteilt Risiken. Der Vergleich mit Grundregelung und Standard macht Abweichungen sichtbar.
+  source: https://de.wikipedia.org/wiki/Rahmenvertrag
+- id: cl-a-playbook
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: What belongs in a clause playbook entry?
+    de: Was gehört in einen Eintrag eines Klausel-Playbooks?
+  options:
+  - en: A must-have position, a fall-back, tradeable points and who decides on exceptions
+    de: Eine Muss-Position, eine Rückfallposition, handelbare Punkte und wer über Ausnahmen entscheidet
+    correct: true
+  - en: Only the preferred wording, since alternatives would weaken the negotiation position
+    de: Nur der bevorzugte Wortlaut, weil Alternativen die Verhandlungsposition schwächen würden
+    correct: false
+  - en: The names of past counterparties and the prices they were willing to pay for goods
+    de: Die Namen früherer Vertragspartner und die Preise, die sie für Waren zu zahlen bereit waren
+    correct: false
+  - en: A list of statutes in full text, copied from public databases without any context
+    de: Eine Liste von Gesetzen im Volltext, ohne Zusammenhang aus öffentlichen Datenbanken kopiert
+    correct: false
+  explanation:
+    en: 'A playbook makes negotiation consistent: must-have, fall-back, nice-to-have and escalation.'
+    de: 'Ein Playbook macht Verhandlungen einheitlich: Muss-Punkt, Rückfallposition, Wunsch und Eskalation.'
+  source: https://en.wikipedia.org/wiki/Contract
+- id: cl-a-crossborder
+  level: advanced
+  difficulty: 1620
+  type: single
+  stem:
+    en: A supplier from another country proposes its own law and courts for your contract. What should you do?
+    de: Ein Lieferant aus einem anderen Land schlägt für euren Vertrag sein eigenes Recht und seine Gerichte vor. Was tust du?
+  options:
+  - en: List the countries involved and ask counsel, as such choices are not always free or unlimited
+    de: Die beteiligten Länder auflisten und die Rechtsberatung fragen, da solche Wahlen nicht immer frei oder unbegrenzt sind
+    correct: true
+  - en: Agree at once because a choice of law is a formality without practical consequences
+    de: Sofort zustimmen, weil eine Rechtswahl eine Formalie ohne praktische Folgen ist
+    correct: false
+  - en: Refuse any foreign law as a rule and strike the clause without discussing it
+    de: Fremdes Recht grundsätzlich ablehnen und die Klausel ohne Gespräch streichen
+    correct: false
+  - en: Leave the clause blank because the law applies on its own to every contract
+    de: Die Klausel offenlassen, weil das Recht für jeden Vertrag ohnehin von selbst feststeht
+    correct: false
+  explanation:
+    en: Governing law and jurisdiction have real consequences and are limited by mandatory rules, especially with consumers. Ask counsel.
+    de: Anwendbares Recht und Gerichtsstand haben reale Folgen und werden durch zwingende Regeln begrenzt, besonders bei Verbrauchenden. Frage die Rechtsberatung.
+  source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32011L0083
