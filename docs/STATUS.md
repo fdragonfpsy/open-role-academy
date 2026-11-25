@@ -1,5 +1,14 @@
 # Status
 
+## 2026-11-25 (g) — Legal & Compliance framework
+
+**Done**
+- Role `legal-compliance` (status `draft`): 12 role competencies (3 reused, 9 new with en/de texts and ESCO refs from the ESCO API) + 6 core. FRAMEWORK.md regenerated. All checks green.
+
+**Notes:** ESCO has no whistleblowing skill, so that competency uses ethics refs; corporate governance/ethics folded into compliance-management-governance; ESCO URIs not re-fetched individually; laws described at topic level only (EU/Germany labelled).
+
+**Next:** Legal & Compliance content batches 1-3, publish, quality pass.
+
 ## 2026-11-25 (f) — Controlling complete and published
 
 **Done**

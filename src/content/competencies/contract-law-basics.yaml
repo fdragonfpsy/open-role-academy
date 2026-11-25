@@ -1,0 +1,21 @@
+id: contract-law-basics
+title:
+  en: Contract law basics (Germany/EU)
+  de: Grundlagen des Vertragsrechts (Deutschland/EU)
+description:
+  en: >-
+    Know how contracts come into being and what they contain in Germany and the EU: offer and acceptance, typical contract types, general terms and conditions, liability and performance disruptions at topic level, and how to review and draft simple clauses with a checklist.
+  de: >-
+    Wissen, wie Verträge in Deutschland und der EU zustande kommen und was sie enthalten: Angebot und Annahme, typische Vertragsarten, Allgemeine Geschäftsbedingungen, Haftung und Leistungsstörungen auf Themenebene sowie das Prüfen und Entwerfen einfacher Klauseln mit einer Checkliste.
+prerequisites: [legal-foundations-sources-of-law]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/5c606d18-6404-4047-b235-350f18e11827
+    label: contract law
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/ed008ded-ce2a-449c-89cc-c559cf66ed1f
+    label: review completed contracts
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/f79e4715-5776-485c-ab7d-631c9b8d70ad
+    label: manage contract disputes

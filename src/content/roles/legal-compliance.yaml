@@ -1,0 +1,68 @@
+id: legal-compliance
+kind: role
+status: draft
+title:
+  en: Legal & Compliance
+  de: Recht & Compliance
+summary:
+  en: >-
+    Help the organisation act within the rules: understand sources of law in the EU and Germany, review contracts, apply data protection, run compliance management, prevent corruption and handle whistleblower reports, protect intellectual property, monitor regulation, assess legal risks, support audits and organise legal work.
+  de: >-
+    Die Organisation dabei unterstützen, regelkonform zu handeln: Rechtsquellen in der EU und in Deutschland verstehen, Verträge prüfen, Datenschutz anwenden, Compliance managen, Korruption vorbeugen und Hinweise von Hinweisgebenden bearbeiten, geistiges Eigentum schützen, Regulierung beobachten, rechtliche Risiken bewerten, Prüfungen unterstützen und die Rechtsarbeit organisieren.
+competencies:
+  # role-specific
+  - id: legal-foundations-sources-of-law
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: contract-law-basics
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: gdpr-data-protection-compliance
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: compliance-management-governance
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: anti-corruption-whistleblower-protection
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: employment-law-basics
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: intellectual-property-copyright-basics
+    priority: 2
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  - id: regulatory-monitoring-legal-research
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: risk-issue-management
+    priority: 2
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  - id: internal-controls-audit
+    priority: 3
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  - id: ai-regulation-digital-law
+    priority: 3
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  - id: legal-operations-documentation
+    priority: 3
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  # core track
+  - id: information-security-basics
+    priority: 3
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: digital-ai-literacy
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: communication-collaboration
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: working-with-data
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: self-organisation-project-basics
+    priority: 3
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: business-finance-fundamentals
+    priority: 1
+    targets: { foundation: practitioner, practitioner: advanced, advanced: advanced }

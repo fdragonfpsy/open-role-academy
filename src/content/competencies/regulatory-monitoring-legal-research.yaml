@@ -1,0 +1,21 @@
+id: regulatory-monitoring-legal-research
+title:
+  en: Regulatory monitoring and legal research
+  de: Regulatory Monitoring und Rechtsrecherche
+description:
+  en: >-
+    Find, evaluate and track legal sources: use official EU and German legal databases, distinguish primary from secondary sources, check that a text is current, monitor upcoming regulatory changes, assess their relevance for the business and summarise findings in a short, traceable legal memo.
+  de: >-
+    Rechtsquellen finden, bewerten und verfolgen: amtliche EU- und deutsche Rechtsdatenbanken nutzen, Primär- von Sekundärquellen unterscheiden, die Aktualität eines Textes prüfen, anstehende Rechtsänderungen beobachten, ihre Relevanz für das Unternehmen einschätzen und Ergebnisse in einem kurzen, nachvollziehbaren Rechtsvermerk zusammenfassen.
+prerequisites: [legal-foundations-sources-of-law]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/a8585efe-4011-47b2-9aed-cd01bd3652c0
+    label: legal research
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/8bdc520c-6293-4e99-bf6f-a44d5da3ebcb
+    label: monitor legislation developments
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/b9bf9e17-ae47-417b-bbb1-e8b7c263ccac
+    label: identify legal requirements

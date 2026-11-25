@@ -1,0 +1,18 @@
+id: anti-corruption-whistleblower-protection
+title:
+  en: Anti-corruption and whistleblower protection (EU/Germany)
+  de: Korruptionsprävention und Hinweisgeberschutz (EU/Deutschland)
+description:
+  en: >-
+    Recognise corruption and bribery risks (gifts, hospitality, conflicts of interest, third parties) and set up preventive measures at topic level. Understand the purpose of the EU whistleblower directive and the German Whistleblower Protection Act (HinSchG): internal reporting channels, confidentiality, protection from retaliation and handling reports.
+  de: >-
+    Korruptions- und Bestechungsrisiken (Geschenke, Einladungen, Interessenkonflikte, Dritte) erkennen und Präventionsmaßnahmen auf Themenebene gestalten. Zweck der EU-Hinweisgeberrichtlinie und des deutschen Hinweisgeberschutzgesetzes (HinSchG) verstehen: interne Meldekanäle, Vertraulichkeit, Schutz vor Repressalien und Umgang mit Meldungen.
+prerequisites: [compliance-management-governance]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/d2564da5-c21f-4c02-8887-c78a001bb183
+    label: adhere to organisational code of ethics
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/cef5c0f8-1e40-4c09-b6a7-aa7811849e5d
+    label: ethics

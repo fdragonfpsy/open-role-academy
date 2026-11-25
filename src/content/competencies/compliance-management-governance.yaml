@@ -1,0 +1,21 @@
+id: compliance-management-governance
+title:
+  en: Compliance management and corporate governance
+  de: Compliance-Management und Corporate Governance
+description:
+  en: >-
+    Understand how a compliance management system works: identifying legal and internal requirements, policies and codes of conduct, training and communication, monitoring and reporting, handling violations, and how governance bodies, roles and business ethics support a compliant culture (EU/Germany context).
+  de: >-
+    Verstehen, wie ein Compliance-Management-System funktioniert: rechtliche und interne Anforderungen erfassen, Richtlinien und Verhaltenskodizes, Schulung und Kommunikation, Überwachung und Berichterstattung, Umgang mit Verstößen sowie die Rolle von Governance-Gremien, Verantwortlichkeiten und Unternehmensethik für eine regelkonforme Kultur (Kontext EU/Deutschland).
+prerequisites: [legal-foundations-sources-of-law]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/f2c63b7a-ed6c-4890-9f8c-7685d172624c
+    label: implement corporate governance
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/6fce8d3f-a15f-4f26-943a-d200b32f6949
+    label: monitor company policy
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/d2564da5-c21f-4c02-8887-c78a001bb183
+    label: adhere to organisational code of ethics

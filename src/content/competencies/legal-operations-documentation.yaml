@@ -1,0 +1,21 @@
+id: legal-operations-documentation
+title:
+  en: Legal operations and documentation
+  de: Legal Operations und Dokumentation
+description:
+  en: >-
+    Organise the day-to-day work of a legal or compliance function: intake and prioritisation of requests, matter and deadline tracking, contract and document management with versioning and retention, templates and playbooks, confidentiality, and simple metrics for the function.
+  de: >-
+    Die tägliche Arbeit einer Rechts- oder Compliance-Funktion organisieren: Annahme und Priorisierung von Anfragen, Fall- und Fristenverfolgung, Vertrags- und Dokumentenmanagement mit Versionierung und Aufbewahrung, Vorlagen und Playbooks, Vertraulichkeit sowie einfache Kennzahlen für die Funktion.
+prerequisites: [legal-foundations-sources-of-law]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/66aad490-1c20-4e25-b189-634a218ee53e
+    label: legal case management
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/1d7234e4-1c76-4d67-9487-71d8c529cdc9
+    label: compile legal documents
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/623c75fa-f9f8-460c-b199-e17480687139
+    label: meet deadlines for preparing legal cases

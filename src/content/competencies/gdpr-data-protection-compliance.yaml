@@ -1,0 +1,18 @@
+id: gdpr-data-protection-compliance
+title:
+  en: GDPR and data protection compliance (EU/Germany)
+  de: DSGVO und Datenschutz-Compliance (EU/Deutschland)
+description:
+  en: >-
+    Apply the core ideas of the EU General Data Protection Regulation and German data protection law at topic level: principles, lawful bases, data subject rights, records of processing, processors and joint controllers, data protection impact assessments, breach handling and the role of the data protection officer and supervisory authorities.
+  de: >-
+    Die Kerngedanken der EU-Datenschutz-Grundverordnung und des deutschen Datenschutzrechts auf Themenebene anwenden: Grundsätze, Rechtsgrundlagen, Betroffenenrechte, Verzeichnis von Verarbeitungstätigkeiten, Auftragsverarbeitung und gemeinsame Verantwortung, Datenschutz-Folgenabschätzung, Umgang mit Datenschutzverletzungen sowie die Rolle von Datenschutzbeauftragten und Aufsichtsbehörden.
+prerequisites: [legal-foundations-sources-of-law, information-security-basics]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/a4346013-a967-4a58-a533-6b32ad1364c5
+    label: data protection
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/097c6a36-f031-4d3e-b5c1-62d6ffcb430b
+    label: respect data protection principles

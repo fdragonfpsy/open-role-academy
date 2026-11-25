@@ -1,0 +1,21 @@
+id: intellectual-property-copyright-basics
+title:
+  en: Intellectual property and copyright basics (EU/Germany)
+  de: Grundlagen des geistigen Eigentums und Urheberrechts (EU/Deutschland)
+description:
+  en: >-
+    Know the main intellectual property rights (copyright, trade marks, patents, designs, trade secrets) at topic level, who owns what in an employment or commissioning context, how licences work (including open licences such as Creative Commons) and how to check simple usage questions.
+  de: >-
+    Die wichtigsten Schutzrechte des geistigen Eigentums (Urheberrecht, Marken, Patente, Designs, Geschäftsgeheimnisse) auf Themenebene kennen, wissen, wem Rechte im Arbeits- oder Auftragsverhältnis zustehen, wie Lizenzen funktionieren (auch offene Lizenzen wie Creative Commons) und wie einfache Nutzungsfragen geprüft werden.
+prerequisites: [legal-foundations-sources-of-law]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/2ad081e6-0a3f-4612-ac15-7ace75d39e26
+    label: intellectual property law
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/e2103a1d-4a84-47a9-b4f7-774787573449
+    label: copyright legislation
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/a91732ce-988e-4105-9570-f425c6ffdc82
+    label: copyright and licenses related to digital content

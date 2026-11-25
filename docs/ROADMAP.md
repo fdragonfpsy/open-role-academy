@@ -157,7 +157,11 @@ One role per task, in the order of CLAUDE.md §4.3. Each task = framework + cont
   - [x] content batch 1: variance-analysis-performance-management, investment-appraisal-capital-budgeting
   - [x] content batch 2: profitability-pricing-analysis, controlling-processes-systems
   - [x] content batch 3: business-partnering-decision-support; then `status: published` and quality pass (non-Wikipedia + German resource per competency; reused competencies already have content)
-- [ ] Legal & Compliance
+- [ ] Legal & Compliance (framework done; role is draft)
+  - [x] framework (role + 9 new competencies, 3 reused, `status: draft`)
+  - [ ] content batch 1: legal-foundations-sources-of-law, contract-law-basics, gdpr-data-protection-compliance
+  - [ ] content batch 2: compliance-management-governance, anti-corruption-whistleblower-protection, intellectual-property-copyright-basics
+  - [ ] content batch 3: regulatory-monitoring-legal-research, ai-regulation-digital-law, legal-operations-documentation (reused competencies already have content); then `status: published` and quality pass
 - [ ] People Leadership
 
 ## Phase 5 — Optional extensions (only after Phase 4, still $0)
