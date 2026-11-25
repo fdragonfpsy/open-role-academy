@@ -1,0 +1,18 @@
+id: wikipedia-bribery
+url: https://en.wikipedia.org/wiki/Bribery
+title: Bribery
+provider: Wikipedia
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies:
+- anti-corruption-whistleblower-protection
+levels:
+- foundation
+- practitioner
+- advanced
+note: Link only; no passages reproduced.

@@ -1,0 +1,18 @@
+id: wikipedia-de-urheberrecht
+url: https://de.wikipedia.org/wiki/Urheberrecht_(Deutschland)
+title: Urheberrecht (Deutschland)
+provider: Wikipedia
+language: de
+format: article
+minutes: 25
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies:
+- intellectual-property-copyright-basics
+levels:
+- foundation
+- practitioner
+- advanced
+note: 'German copyright law (Germany). Read 2026-11-25: copyright itself is in principle not transferable, only rights of use are granted; a work order or employment does not change who the author is. Link only.'

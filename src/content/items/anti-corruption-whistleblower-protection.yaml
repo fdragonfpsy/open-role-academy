@@ -1,0 +1,146 @@
+competency: anti-corruption-whistleblower-protection
+items:
+- id: acw-f-bribery
+  level: foundation
+  difficulty: 920
+  type: single
+  stem:
+    en: Which situation is a typical bribery red flag?
+    de: Welche Situation ist ein typisches Warnsignal für Bestechung?
+  options:
+  - en: A valuable gift from a bidder shortly before the tender decision
+    de: Ein wertvolles Geschenk eines Bietenden kurz vor der Vergabeentscheidung
+    correct: true
+  - en: A company pen with a logo handed out at a public fair
+    de: Ein Firmenkugelschreiber mit Logo auf einer öffentlichen Messe
+    correct: false
+  - en: A correct invoice paid on time to the named supplier account
+    de: Eine korrekte Rechnung, pünktlich auf das genannte Lieferantenkonto bezahlt
+    correct: false
+  - en: A correct invoice, paid on time to the supplier's usual account as agreed
+    de: Eine korrekte Rechnung, wie vereinbart pünktlich auf das übliche Konto des Lieferanten bezahlt
+    correct: false
+  explanation:
+    en: High value and close timing to a decision suggest an attempt at influence; the policy and the compliance contact should be consulted.
+    de: Hoher Wert und zeitliche Nähe zu einer Entscheidung deuten auf einen Einflussversuch hin; Richtlinie und Compliance-Ansprechperson sind einzubeziehen.
+  source: https://en.wikipedia.org/wiki/Bribery
+- id: acw-f-conflict
+  level: foundation
+  difficulty: 1040
+  type: single
+  stem:
+    en: You find that your sibling owns a supplier that you are about to select. What do you do?
+    de: Du stellst fest, dass dein Geschwister einen Lieferanten besitzt, den du gleich auswählen sollst. Was tust du?
+  options:
+  - en: Decide as usual, because you will treat every supplier fairly
+    de: Wie üblich entscheiden, weil du jeden Lieferanten fair behandeln wirst
+    correct: false
+  - en: Disclose it and step back from the decision until it is clarified
+    de: Es offenlegen und von der Entscheidung zurücktreten, bis es geklärt ist
+    correct: true
+  - en: Say nothing, so that the supplier is not disadvantaged by your family link
+    de: Nichts sagen, damit der Lieferant nicht durch die Verwandtschaft benachteiligt wird
+    correct: false
+  - en: Select the supplier but lower the price to avoid suspicion
+    de: Den Lieferanten wählen, aber den Preis senken, um Verdacht zu vermeiden
+    correct: false
+  explanation:
+    en: A conflict of interest exists when a private interest could influence professional duties. Disclosure and stepping back protect everyone.
+    de: Ein Interessenkonflikt liegt vor, wenn ein privates Interesse berufliche Pflichten beeinflussen könnte. Offenlegung und Zurücktreten schützen alle.
+  source: https://en.wikipedia.org/wiki/Conflict_of_interest
+- id: acw-p-channel
+  level: practitioner
+  difficulty: 1220
+  type: single
+  stem:
+    en: Which feature is essential for an internal reporting channel?
+    de: Welches Merkmal ist für einen internen Meldekanal wesentlich?
+  options:
+  - en: Publishing the reporter's name to the whole team, for the sake of transparency in the matter
+    de: Den Namen der meldenden Person zur Transparenz in der Sache dem gesamten Team bekanntgeben
+    correct: false
+  - en: Closing every report without review to save time and cost
+    de: Jede Meldung ohne Prüfung schließen, um Zeit und Kosten zu sparen
+    correct: false
+  - en: Confidentiality, proper follow-up and a ban on retaliation
+    de: Vertraulichkeit, ordnungsgemäße Folgemaßnahmen und ein Verbot von Repressalien
+    correct: true
+  - en: Allowing only the direct manager of the reporter to receive it
+    de: Nur die direkte Führungskraft der meldenden Person darf sie entgegennehmen
+    correct: false
+  explanation:
+    en: The European Commission page describes effective confidential channels, proper follow-up and protection from retaliation as core requirements of the directive.
+    de: Die Seite der Europäischen Kommission beschreibt wirksame vertrauliche Kanäle, ordnungsgemäße Folgemaßnahmen und Schutz vor Repressalien als Kernanforderungen der Richtlinie.
+  source: https://commission.europa.eu/aid-development-cooperation-fundamental-rights/your-rights-eu/whistleblowers-protection_en
+- id: acw-p-third
+  level: practitioner
+  difficulty: 1340
+  type: single
+  stem:
+    en: An agent asks to be paid to a bank account in a third country, with vague services. What is the best response?
+    de: Ein Agent bittet darum, auf ein Konto in einem Drittland bezahlt zu werden, bei vagen Leistungen. Was ist die beste Reaktion?
+  options:
+  - en: Pay quickly since agents are used to such arrangements
+    de: Schnell zahlen, da Agenten solche Regelungen gewohnt sind
+    correct: false
+  - en: Split the payment into several small parts, so that it is not noticed by anyone
+    de: Die Zahlung in mehrere kleine Teile aufteilen, damit sie von niemandem bemerkt wird
+    correct: false
+  - en: Pay in cash at the next visit to keep the bank out of it
+    de: Beim nächsten Besuch bar zahlen, damit die Bank nicht beteiligt ist
+    correct: false
+  - en: Treat it as a red flag, ask for an explanation and involve compliance
+    de: Es als Warnsignal behandeln, um eine Erklärung bitten und Compliance einbinden
+    correct: true
+  explanation:
+    en: Unusual payment routes and unclear services are classic third-party red flags; payments must match documented services.
+    de: Ungewöhnliche Zahlungswege und unklare Leistungen sind klassische Warnsignale bei Dritten; Zahlungen müssen dokumentierten Leistungen entsprechen.
+  source: https://en.wikipedia.org/wiki/Bribery
+- id: acw-a-trust
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: A channel receives very few reports and a survey shows staff fear retaliation. What should the lead do?
+    de: Ein Kanal erhält sehr wenige Meldungen, und eine Umfrage zeigt Angst vor Repressalien. Was sollte die verantwortliche Person tun?
+  options:
+  - en: 'Address trust: independence, confidentiality, manager training and feedback'
+    de: 'Das Vertrauen angehen: Unabhängigkeit, Vertraulichkeit, Führungsschulung und Rückmeldung'
+    correct: true
+  - en: Conclude that there is no misconduct since few reports arrive
+    de: Schließen, dass es kein Fehlverhalten gibt, weil wenige Meldungen kommen
+    correct: false
+  - en: Advertise the hotline number on posters, without changing anything else about the process
+    de: Die Hotline-Nummer auf Plakaten bewerben, ohne am Verfahren etwas anderes zu ändern
+    correct: false
+  - en: Ask managers to find out who is unhappy and then talk to those people about their concerns directly
+    de: Führungskräfte bitten herauszufinden, wer unzufrieden ist, und dann direkt mit diesen Personen über deren Bedenken sprechen
+    correct: false
+  explanation:
+    en: Few reports are not proof of integrity. Trust depends on confidentiality, impartiality, follow-up and visible protection from retaliation.
+    de: Wenige Meldungen beweisen keine Integrität. Vertrauen hängt von Vertraulichkeit, Unparteilichkeit, Folgemaßnahmen und sichtbarem Schutz vor Repressalien ab.
+  source: https://commission.europa.eu/aid-development-cooperation-fundamental-rights/your-rights-eu/whistleblowers-protection_en
+- id: acw-a-balance
+  level: advanced
+  difficulty: 1620
+  type: single
+  stem:
+    en: Which statement about handling a report best balances the interests involved?
+    de: Welche Aussage zur Bearbeitung einer Meldung wägt die beteiligten Interessen am besten ab?
+  options:
+  - en: The accused person is presumed guilty until the investigation has been fully closed
+    de: Die beschuldigte Person gilt als schuldig, bis die Untersuchung vollständig abgeschlossen ist
+    correct: false
+  - en: Protect the reporter's identity and still give the accused a fair hearing
+    de: Die Identität der meldenden Person schützen und die beschuldigte Person trotzdem fair anhören
+    correct: true
+  - en: The reporter must be named to everyone involved for fairness
+    de: Die meldende Person muss zur Fairness allen Beteiligten genannt werden
+    correct: false
+  - en: Data protection rules do not apply to internal report files
+    de: Datenschutzregeln gelten nicht für interne Meldungsakten
+    correct: false
+  explanation:
+    en: Reporter protection does not mean presumption of guilt; the accused has rights, and data protection rules also apply to case files.
+    de: Schutz der meldenden Person bedeutet keine Vorverurteilung; Beschuldigte haben Rechte, und für Fallakten gilt auch das Datenschutzrecht.
+  source: https://de.wikipedia.org/wiki/Hinweisgeberschutzgesetz

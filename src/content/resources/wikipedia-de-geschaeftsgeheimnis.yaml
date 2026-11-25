@@ -1,0 +1,17 @@
+id: wikipedia-de-geschaeftsgeheimnis
+url: https://de.wikipedia.org/wiki/Gesch%C3%A4ftsgeheimnis
+title: Geschäftsgeheimnis
+provider: Wikipedia
+language: de
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies:
+- intellectual-property-copyright-basics
+levels:
+- practitioner
+- advanced
+note: Link only; no passages reproduced.

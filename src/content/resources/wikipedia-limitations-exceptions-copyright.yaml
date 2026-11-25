@@ -1,0 +1,16 @@
+id: wikipedia-limitations-exceptions-copyright
+url: https://en.wikipedia.org/wiki/Limitations_and_exceptions_to_copyright
+title: Limitations and exceptions to copyright
+provider: Wikipedia
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies:
+- intellectual-property-copyright-basics
+levels:
+- practitioner
+note: Concept overview of exceptions such as quotation or private copying; national rules differ. Link only.

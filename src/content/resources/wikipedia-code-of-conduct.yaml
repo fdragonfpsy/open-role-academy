@@ -1,0 +1,18 @@
+id: wikipedia-code-of-conduct
+url: https://en.wikipedia.org/wiki/Code_of_conduct
+title: Code of conduct
+provider: Wikipedia
+language: en
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies:
+- compliance-management-governance
+- anti-corruption-whistleblower-protection
+levels:
+- foundation
+- practitioner
+note: Link only; no passages reproduced.

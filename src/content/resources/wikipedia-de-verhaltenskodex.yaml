@@ -1,0 +1,18 @@
+id: wikipedia-de-verhaltenskodex
+url: https://de.wikipedia.org/wiki/Verhaltenskodex
+title: Verhaltenskodex
+provider: Wikipedia
+language: de
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies:
+- compliance-management-governance
+- anti-corruption-whistleblower-protection
+levels:
+- foundation
+- practitioner
+note: Link only; no passages reproduced.
