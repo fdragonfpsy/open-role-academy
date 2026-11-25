@@ -1,0 +1,14 @@
+id: wikipedia-de-schriftgutverwaltung
+url: https://de.wikipedia.org/wiki/Schriftgutverwaltung
+title: Schriftgutverwaltung
+provider: Wikipedia
+language: de
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [legal-operations-documentation]
+levels: [foundation, practitioner, advanced]
+note: Erklärt die systematische Aufzeichnung von Geschäftsvorgängen und -ergebnissen. Nur verlinkt; keine Passagen übernommen.

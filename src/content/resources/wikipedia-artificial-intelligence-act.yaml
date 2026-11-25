@@ -1,0 +1,14 @@
+id: wikipedia-artificial-intelligence-act
+url: https://en.wikipedia.org/wiki/Artificial_Intelligence_Act
+title: Artificial Intelligence Act
+provider: Wikipedia
+language: en
+format: article
+minutes: 20
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [ai-regulation-digital-law]
+levels: [foundation, practitioner, advanced]
+note: Encyclopedic overview of the EU AI Act; the page changes often, so check against official sources. Link only; no passages reproduced.

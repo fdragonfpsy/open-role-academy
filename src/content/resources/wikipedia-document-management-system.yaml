@@ -1,0 +1,14 @@
+id: wikipedia-document-management-system
+url: https://en.wikipedia.org/wiki/Document_management_system
+title: Document management system
+provider: Wikipedia
+language: en
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [legal-operations-documentation]
+levels: [foundation, practitioner, advanced]
+note: Describes systems that store, share, track and manage documents, often with version tracking. Link only; no passages reproduced.

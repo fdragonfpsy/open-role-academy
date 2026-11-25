@@ -1,0 +1,14 @@
+id: wikipedia-records-management
+url: https://en.wikipedia.org/wiki/Records_management
+title: Records management
+provider: Wikipedia
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [legal-operations-documentation]
+levels: [foundation, practitioner, advanced]
+note: Overview of managing records through their life cycle. Link only; no passages reproduced.

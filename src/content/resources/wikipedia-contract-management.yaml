@@ -1,0 +1,14 @@
+id: wikipedia-contract-management
+url: https://en.wikipedia.org/wiki/Contract_management
+title: Contract management
+provider: Wikipedia
+language: en
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [legal-operations-documentation]
+levels: [foundation, practitioner, advanced]
+note: Describes managing contracts from creation to execution and documenting changes. Link only; no passages reproduced.

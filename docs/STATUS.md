@@ -1,5 +1,20 @@
 # Status
 
+## 2026-11-25 (j) — Legal & Compliance complete and published
+
+**Done**
+- regulatory-monitoring-legal-research (3 levels), ai-regulation-digital-law and legal-operations-documentation (foundation, practitioner): 7 units per language (en+de, `ai-draft`, "not legal advice" note), 18 items, 26 new link-only resources (verified 2026-11-25). Legal & Compliance set to `status: published`; FRAMEWORK.md regenerated. Validator 0 errors/0 warnings; all checks green.
+- AI Act risk tiers named only as read on the Commission AI Act page; DSA/DMA described as on the Commission DSA page; no article numbers, deadlines, fines.
+- Earlier in this run: Software Development finished and published (#119, #120), Controlling framework + content + publish (#121-#124), Legal & Compliance framework + batches 1-2 (#125-#127), plus an e2e race fix in #123.
+
+**Reviewer to-dos:** check AI Act/DSA wording against live Commission pages; "legal hold" mention and BSI IT-Grundschutz reference in legal-operations-documentation-practitioner; all legal concept-level claims from batches 1-3 need a human/legal review before `reviewed`; German wording not human-reviewed.
+
+**Gaps:** German non-Wikipedia resources missing for compliance-management-governance, anti-corruption-whistleblower-protection, employment-law-basics, intellectual-property-copyright-basics, risk-issue-management, internal-controls-audit, legal-operations-documentation and some core competencies (German federal domains unreachable through the proxy; they have German Wikipedia only).
+
+**Counts:** roles 12 (0 draft) · competencies 122 · units 684 · items 1372 · resources 781
+
+**Next:** People Leadership framework (last role of Phase 4), then content batches.
+
 ## 2026-11-25 (i) — Legal & Compliance content batch 2
 
 **Done**

@@ -1,0 +1,146 @@
+competency: ai-regulation-digital-law
+items:
+- id: ai-f-risk
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: What does a risk-based approach to AI regulation mean?
+    de: Was bedeutet ein risikobasierter Ansatz der KI-Regulierung?
+  options:
+  - en: Every AI system is treated in exactly the same way, whatever its use
+    de: Jedes KI-System wird unabhängig von der Anwendung genau gleich behandelt
+    correct: false
+  - en: Only AI that was developed inside the EU is regulated at all
+    de: Nur KI, die innerhalb der EU entwickelt wurde, wird überhaupt reguliert
+    correct: false
+  - en: Risk is ignored and only the price of the system decides
+    de: Das Risiko wird ignoriert, und allein der Preis des Systems entscheidet
+    correct: false
+  - en: Stricter rules apply to uses with a higher risk to safety and rights
+    de: Für riskantere Anwendungen gelten strengere Regeln
+    correct: true
+  explanation:
+    en: 'The Commission describes the AI Act as risk-based: the higher the risk of a use, the stricter the rules.'
+    de: 'Die Kommission beschreibt die KI-Verordnung als risikobasiert: Je höher das Risiko einer Anwendung, desto strenger die Regeln.'
+  source: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+- id: ai-f-levels
+  level: foundation
+  difficulty: 1000
+  type: single
+  stem:
+    en: Which list matches the four risk levels described by the European Commission?
+    de: Welche Aufzählung entspricht den vier Risikostufen, die die Europäische Kommission beschreibt?
+  options:
+  - en: Low, medium, high and extreme, depending on company size
+    de: Niedrig, mittel, hoch und extrem, je nach Unternehmensgröße
+    correct: false
+  - en: Unacceptable, high, transparency, and minimal or no risk
+    de: Unannehmbar, hoch, Transparenz, minimal oder kein Risiko
+    correct: true
+  - en: Red, yellow, green and blue, chosen freely by each company
+    de: Rot, gelb, grün und blau, frei von jedem Unternehmen gewählt
+    correct: false
+  - en: Public, private, internal and secret, by document type
+    de: Öffentlich, privat, intern und geheim, nach Dokumentenart
+    correct: false
+  explanation:
+    en: The Commission names unacceptable risk, high risk, transparency risk and minimal or no risk.
+    de: Die Kommission nennt unannehmbares Risiko, hohes Risiko, Transparenzrisiko sowie minimales oder kein Risiko.
+  source: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+- id: ai-f-gdpr
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: An AI chatbot processes customers' personal data. Which statement is correct?
+    de: Ein KI-Chatbot verarbeitet personenbezogene Daten von Kundschaft. Welche Aussage stimmt?
+  options:
+  - en: Only AI rules apply; data protection rules are switched off
+    de: Nur KI-Regeln gelten; Datenschutzregeln sind ausgeschaltet
+    correct: false
+  - en: Because it is AI, no personal data rules can be relevant
+    de: Weil es KI ist, können keine Datenschutzregeln relevant sein
+    correct: false
+  - en: The chatbot vendor alone carries every duty
+    de: Allein der Chatbot-Anbieter trägt alle Pflichten
+    correct: false
+  - en: Data protection law such as the GDPR can apply as well
+    de: Datenschutzrecht wie die DSGVO kann ebenfalls gelten
+    correct: true
+  explanation:
+    en: 'AI rules do not replace other law: where personal data is processed, the GDPR can apply alongside.'
+    de: 'KI-Regeln ersetzen anderes Recht nicht: Werden personenbezogene Daten verarbeitet, kann die DSGVO daneben gelten.'
+  source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+- id: ai-p-inventory
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: Why start AI compliance work with an inventory of AI uses?
+    de: Warum beginnt man die KI-Compliance-Arbeit mit einem Inventar der KI-Anwendungen?
+  options:
+  - en: An inventory removes the need for any legal review of AI uses
+    de: Ein Inventar macht jede rechtliche Prüfung von KI-Anwendungen überflüssig
+    correct: false
+  - en: Only tools bought from outside vendors ever need to be listed
+    de: Nur von externen Anbietern gekaufte Werkzeuge müssen je aufgelistet werden
+    correct: false
+  - en: Classification and controls need facts about each use
+    de: Einstufung und Kontrollen brauchen Fakten zu jeder Anwendung
+    correct: true
+  - en: The register is shown to customers as part of marketing material
+    de: Das Register wird Kunden als Teil des Werbematerials gezeigt
+    correct: false
+  explanation:
+    en: Without knowing which tools exist, for what purpose and with which data, you cannot classify or control the risk.
+    de: Ohne zu wissen, welche Werkzeuge es gibt, wofür und mit welchen Daten, kann man das Risiko weder einstufen noch kontrollieren.
+  source: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+- id: ai-p-borderline
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: You are unsure whether an AI use is high risk. What is the sound step?
+    de: Du bist unsicher, ob eine KI-Anwendung hochriskant ist. Welcher Schritt ist richtig?
+  options:
+  - en: Decide quickly by the cheapest option so that nothing is delayed
+    de: Schnell nach der günstigsten Option entscheiden, damit nichts verzögert wird
+    correct: false
+  - en: Rely on an encyclopedia summary as the final answer to the question
+    de: Sich auf eine Zusammenfassung im Nachschlagewerk als endgültige Antwort verlassen
+    correct: false
+  - en: Check the official page, record the question, escalate
+    de: Amtliche Seite prüfen, Frage festhalten, an die Rechtsberatung eskalieren
+    correct: true
+  - en: Stop using every AI tool in the company until further notice
+    de: Alle KI-Werkzeuge im Unternehmen bis auf Weiteres abschalten
+    correct: false
+  explanation:
+    en: Borderline cases need a documented question and review by qualified counsel; official sources, not summaries, are the basis.
+    de: Grenzfälle brauchen eine dokumentierte Frage und die Prüfung durch qualifizierte Rechtsberatung; Grundlage sind amtliche Quellen, nicht Zusammenfassungen.
+  source: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+- id: ai-p-dsa
+  level: practitioner
+  difficulty: 1250
+  type: single
+  stem:
+    en: According to the Commission, which services does the Digital Services Act address?
+    de: Welche Dienste betrifft das Gesetz über digitale Dienste laut Kommission?
+  options:
+  - en: Online services such as marketplaces and social media networks
+    de: Online-Dienste wie Marktplätze, soziale Netzwerke und App-Stores
+    correct: true
+  - en: Only printed newspapers, magazines and traditional radio programmes
+    de: Nur gedruckte Zeitungen, Zeitschriften und klassische Radioprogramme
+    correct: false
+  - en: Only internal company spreadsheets that are shared by e-mail
+    de: Nur interne Unternehmenstabellen, die per E-Mail geteilt werden
+    correct: false
+  - en: Only AI systems that fall into the unacceptable risk level
+    de: Nur KI-Systeme, die in die Stufe des unannehmbaren Risikos fallen
+    correct: false
+  explanation:
+    en: The Commission lists marketplaces, social media networks, app stores and online travel and accommodation platforms; it is separate from the AI Act.
+    de: Die Kommission nennt Marktplätze, soziale Netzwerke, App-Stores sowie Reise- und Unterkunftsplattformen; es ist vom KI-Gesetz getrennt.
+  source: https://digital-strategy.ec.europa.eu/en/policies/digital-services-act

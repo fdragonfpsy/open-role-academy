@@ -1,0 +1,146 @@
+competency: legal-operations-documentation
+items:
+- id: lod-f-file
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: What should every matter or contract file have so that related documents stay together?
+    de: Was sollte jede Vorgangs- oder Vertragsakte haben, damit zusammengehörige Dokumente beieinander bleiben?
+  options:
+  - en: A different folder on each person's laptop
+    de: Einen eigenen Ordner auf dem Laptop jeder Person
+    correct: false
+  - en: A random title chosen by whoever saves it last
+    de: Einen zufälligen Titel, den die zuletzt speichernde Person wählt
+    correct: false
+  - en: No name, to keep it confidential
+    de: Keinen Namen, damit es vertraulich bleibt
+    correct: false
+  - en: A unique reference
+    de: Eine eindeutige Referenz
+    correct: true
+  explanation:
+    en: A unique reference ties drafts, approvals, the signed version and key dates to the same matter.
+    de: Eine eindeutige Referenz verbindet Entwürfe, Freigaben, die unterzeichnete Fassung und wichtige Termine mit demselben Vorgang.
+  source: https://en.wikipedia.org/wiki/Contract_management
+- id: lod-f-signed
+  level: foundation
+  difficulty: 1000
+  type: single
+  stem:
+    en: What should you do with a signed version of a contract?
+    de: Was solltest du mit der unterzeichneten Fassung eines Vertrags tun?
+  options:
+  - en: Edit it directly whenever a small typo is found afterwards
+    de: Direkt bearbeiten, sobald nachträglich ein kleiner Tippfehler auffällt
+    correct: false
+  - en: Keep it unchanged; record later changes separately
+    de: Unverändert lassen; spätere Änderungen getrennt festhalten
+    correct: true
+  - en: Delete the drafts and the signed copy after about one week
+    de: Entwürfe und unterzeichnete Kopie nach etwa einer Woche löschen
+    correct: false
+  - en: Send it to all staff members for a quick informal review
+    de: Allen Beschäftigten zur kurzen informellen Durchsicht schicken
+    correct: false
+  explanation:
+    en: The signed version documents what was agreed; changes belong in separate, labelled documents.
+    de: Die unterzeichnete Fassung dokumentiert, was vereinbart wurde; Änderungen gehören in getrennte, gekennzeichnete Dokumente.
+  source: https://en.wikipedia.org/wiki/Document_management_system
+- id: lod-f-retention
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: How long must a given type of legal document be kept?
+    de: Wie lange muss eine bestimmte Art von Rechtsdokument aufbewahrt werden?
+  options:
+  - en: Five years for every document, as one universal rule of thumb
+    de: Fünf Jahre für jedes Dokument als eine allgemeine Faustregel
+    correct: false
+  - en: Forever, regardless of what the document contains or who it concerns
+    de: Für immer, unabhängig davon, was das Dokument enthält oder wen es betrifft
+    correct: false
+  - en: Until the next office move or the next software replacement
+    de: Bis zum nächsten Büroumzug oder zum nächsten Softwarewechsel
+    correct: false
+  - en: It depends on type and rules, so check the approved schedule
+    de: Es hängt von Art und Regeln ab, also den freigegebenen Plan prüfen
+    correct: true
+  explanation:
+    en: Retention periods differ by document type and rule; take them from the approved retention schedule and ask the records or legal contact.
+    de: Aufbewahrungsfristen unterscheiden sich nach Dokumentenart und Regel; entnimm sie dem freigegebenen Plan und frage Schriftgutverwaltung oder Legal.
+  source: https://de.wikipedia.org/wiki/Aufbewahrungsfrist
+- id: lod-p-audit
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: What does an audit trail record?
+    de: Was hält ein Audit Trail fest?
+  options:
+  - en: Who did what and when, so events can be reconstructed
+    de: Wer wann was getan hat, damit Abläufe rekonstruiert werden können
+    correct: true
+  - en: Only the final signed result, without any of the earlier steps
+    de: Nur das endgültige unterzeichnete Ergebnis, ohne die früheren Schritte
+    correct: false
+  - en: The private opinions of the reviewers about each other's work
+    de: Die privaten Meinungen der Prüfenden über die Arbeit der anderen
+    correct: false
+  - en: The purchase price and licence cost of the software in use
+    de: Den Kaufpreis und die Lizenzkosten der genutzten Software
+    correct: false
+  explanation:
+    en: An audit trail shows who performed which action and when, which lets later reviewers retrace events.
+    de: Ein Audit Trail zeigt, wer welche Handlung wann ausgeführt hat, und lässt spätere Prüfende Ereignisse nachvollziehen.
+  source: https://en.wikipedia.org/wiki/Audit_trail
+- id: lod-p-hold
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: A dispute is foreseeable and a scheduled deletion of related documents is due. What is the sound step?
+    de: Ein Streit ist absehbar, und die planmäßige Löschung zugehöriger Dokumente steht an. Was ist der richtige Schritt?
+  options:
+  - en: Escalate to counsel to decide whether deletion must pause
+    de: Rechtsberatung entscheiden lassen, ob die Löschung auszusetzen ist
+    correct: true
+  - en: Delete on schedule, because the schedule always takes priority
+    de: Planmäßig löschen, denn der Plan hat immer Vorrang
+    correct: false
+  - en: Move the documents to private e-mail accounts for safekeeping
+    de: Die Dokumente zur Aufbewahrung in private E-Mail-Konten verschieben
+    correct: false
+  - en: Ask each author whether they remember what the documents said
+    de: Jede Autorin fragen, ob sie sich erinnert, was in den Dokumenten stand
+    correct: false
+  explanation:
+    en: Deletion may need to be paused when proceedings are foreseeable; this is a legal question, so it goes to counsel immediately.
+    de: Die Löschung muss womöglich ausgesetzt werden, wenn Verfahren absehbar sind; das ist eine Rechtsfrage und geht sofort an die Rechtsberatung.
+  source: https://de.wikipedia.org/wiki/Aufbewahrungsfrist
+- id: lod-p-template
+  level: practitioner
+  difficulty: 1250
+  type: single
+  stem:
+    en: Which measure belongs to basic template governance?
+    de: Welche Maßnahme gehört zur Grundsteuerung von Vorlagen?
+  options:
+  - en: Let everyone change their own copy quietly whenever they like
+    de: Jede Person ihre eigene Kopie jederzeit still nach Belieben ändern lassen
+    correct: false
+  - en: Name an owner, record changes, retire outdated versions
+    de: Verantwortliche benennen, Änderungen festhalten, Altes aussondern
+    correct: true
+  - en: Keep old templates in use indefinitely, even if they are wrong
+    de: Alte Vorlagen unbegrenzt weiter nutzen, auch wenn sie fehlerhaft sind
+    correct: false
+  - en: Hide the list of templates from the team to avoid confusion
+    de: Die Liste der Vorlagen vor dem Team verbergen, um Verwirrung zu vermeiden
+    correct: false
+  explanation:
+    en: A named owner, a change record and retirement of outdated versions keep templates reliable.
+    de: Eine benannte Verantwortliche, ein Änderungsnachweis und das Aussondern veralteter Fassungen halten Vorlagen verlässlich.
+  source: https://en.wikipedia.org/wiki/Version_control

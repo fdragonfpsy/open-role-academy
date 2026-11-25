@@ -285,7 +285,7 @@ Keep people productive and IT running: handle incidents and requests, troublesho
 | Self-organisation and project basics | core | 3 | F | P | P | — |
 | Working with data | core | 3 | F | F | P | digital-ai-literacy |
 
-## Legal & Compliance (`legal-compliance`, role, draft)
+## Legal & Compliance (`legal-compliance`, role, published)
 
 Help the organisation act within the rules: understand sources of law in the EU and Germany, review contracts, apply data protection, run compliance management, prevent corruption and handle whistleblower reports, protect intellectual property, monitor regulation, assess legal risks, support audits and organise legal work.
 
