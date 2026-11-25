@@ -1,0 +1,18 @@
+id: ai-regulation-digital-law
+title:
+  en: AI regulation and digital law overview (EU)
+  de: Überblick KI-Regulierung und Digitalrecht (EU)
+description:
+  en: >-
+    Get an overview of the EU digital regulatory landscape at topic level: the risk-based approach of the EU AI Act, obligations for providers and deployers in outline, how AI use connects to data protection, intellectual property and cybersecurity rules, and how to spot when legal review of a digital or AI project is needed.
+  de: >-
+    Einen Überblick über das digitale Regelwerk der EU auf Themenebene gewinnen: der risikobasierte Ansatz der EU-KI-Verordnung, Pflichten von Anbietern und Betreibern in Grundzügen, Verbindungen von KI-Nutzung zu Datenschutz, geistigem Eigentum und Cybersicherheitsregeln sowie das Erkennen, wann ein digitales oder KI-Projekt rechtlich geprüft werden muss.
+prerequisites: [digital-ai-literacy, gdpr-data-protection-compliance]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/7814e88f-c133-4c3b-b27f-857afa145d42
+    label: ICT security legislation
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/e465a154-93f7-4973-9ce1-31659fe16dd2
+    label: principles of artificial intelligence

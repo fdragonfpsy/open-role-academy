@@ -1,0 +1,18 @@
+id: legal-foundations-sources-of-law
+title:
+  en: Legal foundations and sources of law (EU/Germany)
+  de: Rechtsgrundlagen und Rechtsquellen (EU/Deutschland)
+description:
+  en: >-
+    Understand how legal systems are structured in the EU and Germany: the hierarchy and main types of legal sources (EU regulations and directives, federal and state law, case law, contracts), how courts and authorities relate to each other, and how to read a legal norm and apply it to a simple case at topic level.
+  de: >-
+    Den Aufbau der Rechtsordnung in der EU und in Deutschland verstehen: Rangfolge und Arten von Rechtsquellen (EU-Verordnungen und -Richtlinien, Bundes- und Landesrecht, Rechtsprechung, Verträge), das Verhältnis von Gerichten und Behörden sowie das Lesen einer Rechtsnorm und ihre Anwendung auf einen einfachen Fall auf Themenebene.
+prerequisites: []
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/b9bf9e17-ae47-417b-bbb1-e8b7c263ccac
+    label: identify legal requirements
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/c68e4cc4-b842-4660-a84c-48f11c70f657
+    label: legal department processes
