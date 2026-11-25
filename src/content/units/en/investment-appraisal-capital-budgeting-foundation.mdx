@@ -1,0 +1,95 @@
+---
+id: investment-appraisal-capital-budgeting-foundation
+competency: investment-appraisal-capital-budgeting
+level: foundation
+title: "Payback, time value of money and the idea of net present value"
+objectives:
+  - "Explain why a euro today is worth more than a euro later."
+  - "Calculate a simple payback period and name its limits."
+  - "Describe net present value (NPV) and its decision rule in words."
+  - "Distinguish cash flows from accounting profit in an investment case."
+minutes: 25
+resources:
+  - wikipedia-capital-budgeting
+  - wikipedia-payback-period
+  - wikipedia-time-value-of-money
+  - wikipedia-net-present-value
+  - wikipedia-de-investitionsrechnung
+  - wikipedia-de-amortisationsrechnung
+  - wikipedia-de-kapitalwertmethode
+status: ai-draft
+sources:
+  - title: "Capital budgeting"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Capital_budgeting
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Payback period"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Payback_period
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Time value of money"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Time_value_of_money
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Net present value"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Net_present_value
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Investitionsrechnung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Investitionsrechnung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Amortisationsrechnung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Amortisationsrechnung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Kapitalwertmethode"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Kapitalwertmethode
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+Companies regularly decide to buy machines, build software, open locations or replace equipment. These decisions tie up money for years. Investment appraisal (also called capital budgeting) is the set of methods used to judge whether the expected benefits justify the outlay. Controllers prepare the numbers and make the assumptions visible.
+
+## Cash flows, not profit
+
+Investment methods work with **cash flows**: the money expected to go out (the initial outlay and later costs) and come in (extra revenue or savings) in each period. Depreciation is not a cash flow; it only spreads an earlier outlay over time. Costs that are already spent and cannot be recovered (sunk costs) do not belong in the decision.
+
+## Time value of money
+
+A euro received today can be used or invested, so it is worth more than a euro received in a year. **Discounting** converts future cash flows to today's value using a discount rate r: present value = cash flow / (1 + r)^t, where t is the number of periods. The rate reflects the return that capital could earn elsewhere with similar risk; it is set by finance, not by the person proposing the project.
+
+## Payback period
+
+The **payback period** is the time it takes until cumulative cash inflows equal the initial outlay. It is easy to compute and gives a feeling for risk and liquidity: the shorter the payback, the sooner the money is back. Its limits: it ignores cash flows after the payback date and, in its simple form, ignores the time value of money.
+
+## Net present value
+
+The **net present value (NPV)** is the sum of all discounted cash flows, including the initial outlay. The basic decision rule is: if NPV is greater than zero, the investment earns more than the discount rate and is attractive on the numbers alone; if it is less than zero, it earns less. Non-financial factors, risk and available budget still matter.
+
+## Worked example
+
+Illustration only; invented figures. A project costs 10,000 EUR now and brings 4,000 EUR at the end of each of the next three years; the discount rate is 10 %. Cumulative inflows: 4,000, 8,000, 12,000, so payback is 2 years plus 2,000 / 4,000 of the third year = 2.5 years (assuming the inflow comes evenly). Present values: 4,000 / 1.1 = 3,636; 4,000 / 1.21 = 3,306; 4,000 / 1.331 = 3,005; sum about 9,947. NPV = 9,947 - 10,000, about -53 EUR. The project pays back within three years yet does not quite earn the 10 % required, which shows why payback alone is not enough.
+
+## Key takeaways
+
+- Use cash flows; ignore depreciation and sunk costs.
+- Discounting reflects the time value of money.
+- Payback is simple but ignores later cash flows (and, in the simple form, discounting).
+- NPV above zero means the project earns more than the discount rate.

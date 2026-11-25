@@ -1,0 +1,218 @@
+competency: variance-analysis-performance-management
+items:
+- id: vapm-f-sign
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: 'In this course a variance is calculated as actual minus budget. Monthly travel cost: budget 5,000 EUR, actual 5,600 EUR. How is the result best described?'
+    de: 'In diesem Kurs ist die Abweichung Ist minus Budget. Reisekosten im Monat: Budget 5.000 EUR, Ist 5.600 EUR. Wie lässt sich das Ergebnis am besten beschreiben?'
+  options:
+  - en: +600 EUR (+12 %), unfavourable for a cost
+    de: +600 EUR (+12 %), bei Kosten ungünstig
+    correct: true
+  - en: -600 EUR (-12 %), favourable for a cost
+    de: -600 EUR (-12 %), bei Kosten günstig
+    correct: false
+  - en: +600 EUR (+10 %), favourable for a cost
+    de: +600 EUR (+10 %), bei Kosten günstig
+    correct: false
+  - en: -600 EUR (-10 %), unfavourable for a cost
+    de: -600 EUR (-10 %), bei Kosten ungünstig
+    correct: false
+  explanation:
+    en: 5,600 - 5,000 = +600, which is 12 % of the 5,000 budget. Actual cost above budget is unfavourable.
+    de: 5.600 - 5.000 = +600, das sind 12 % des Budgets von 5.000. Ist-Kosten über Budget sind ungünstig.
+  source: https://en.wikipedia.org/wiki/Variance_(accounting)
+- id: vapm-f-rev
+  level: foundation
+  difficulty: 850
+  type: single
+  stem:
+    en: Revenue is 4 % below budget (actual minus budget is negative). How is this variance classified?
+    de: Der Umsatz liegt 4 % unter Budget (Ist minus Budget ist negativ). Wie wird diese Abweichung eingestuft?
+  options:
+  - en: Unfavourable, because revenue is lower than planned
+    de: Ungünstig, weil der Umsatz niedriger ist als geplant
+    correct: true
+  - en: Favourable, because the sign is negative
+    de: Günstig, weil das Vorzeichen negativ ist
+    correct: false
+  - en: Neutral, as percentages below 5 % never matter
+    de: Neutral, da Prozentwerte unter 5 % nie wichtig sind
+    correct: false
+  - en: Favourable, because costs are probably lower as well
+    de: Günstig, weil die Kosten wahrscheinlich auch niedriger sind
+    correct: false
+  explanation:
+    en: For revenue, actual below budget is unfavourable. The sign needs to be read together with the type of line, and a threshold is an agreement, not a rule of nature.
+    de: Bei Erlösen ist Ist unter Budget ungünstig. Das Vorzeichen muss zusammen mit der Art der Zeile gelesen werden; eine Schwelle ist eine Vereinbarung, kein Naturgesetz.
+  source: https://en.wikipedia.org/wiki/Variance_(accounting)
+- id: vapm-f-signal
+  level: foundation
+  difficulty: 1000
+  type: single
+  stem:
+    en: What does a variance between plan and actual tell you?
+    de: Was sagt eine Abweichung zwischen Plan und Ist aus?
+  options:
+  - en: Where figures differ; the cause is still open
+    de: Wo Zahlen abweichen; die Ursache bleibt offen
+    correct: true
+  - en: Why the figures differ and which person is to blame
+    de: Warum die Zahlen abweichen und wer schuld daran ist
+    correct: false
+  - en: That the plan was wrong and has to be replaced at once
+    de: Dass der Plan falsch war und sofort ersetzt werden muss
+    correct: false
+  - en: That the business as a whole is doing well or badly
+    de: Dass das Geschäft insgesamt gut oder schlecht läuft
+    correct: false
+  explanation:
+    en: A variance is a signal. The cause may be a real change, a wrong plan, timing or a booking error, and has to be established with the budget owner.
+    de: Eine Abweichung ist ein Hinweis. Ursache können eine echte Veränderung, ein fehlerhafter Plan, Timing oder ein Buchungsfehler sein; sie muss mit den Budgetverantwortlichen geklärt werden.
+  source: https://de.wikipedia.org/wiki/Soll-Ist-Vergleich
+- id: vapm-p-split
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: 'Budget: 1,000 units at 50 EUR. Actual: 900 units at 52 EUR. With price effect = (actual price - budget price) x actual volume, what is the volume effect?'
+    de: 'Budget: 1.000 Stück zu 50 EUR. Ist: 900 Stück zu 52 EUR. Mit Preiseffekt = (Ist-Preis - Budgetpreis) x Ist-Menge: Wie groß ist der Mengeneffekt?'
+  options:
+  - en: -5,000 EUR
+    de: -5.000 EUR
+    correct: true
+  - en: -3,200 EUR
+    de: -3.200 EUR
+    correct: false
+  - en: +1,800 EUR
+    de: +1.800 EUR
+    correct: false
+  - en: -5,200 EUR
+    de: -5.200 EUR
+    correct: false
+  explanation:
+    en: Volume effect = (900 - 1,000) x 50 = -5,000. With the price effect of +1,800 it reconciles to the total variance of -3,200.
+    de: Mengeneffekt = (900 - 1.000) x 50 = -5.000. Mit dem Preiseffekt von +1.800 ergibt sich die Gesamtabweichung von -3.200.
+  source: https://en.wikipedia.org/wiki/Variance_(accounting)
+- id: vapm-p-base
+  level: practitioner
+  difficulty: 1150
+  type: single
+  stem:
+    en: A manager asks how well the most recent expectation held. Which comparison answers this?
+    de: Eine Führungskraft fragt, wie gut die jüngste Erwartung gehalten hat. Welcher Vergleich beantwortet das?
+  options:
+  - en: Actual against the latest forecast
+    de: Ist gegen den letzten Forecast
+    correct: true
+  - en: Actual against the prior year
+    de: Ist gegen das Vorjahr
+    correct: false
+  - en: Budget against the prior year
+    de: Budget gegen das Vorjahr
+    correct: false
+  - en: Actual against the original budget
+    de: Ist gegen das ursprüngliche Budget
+    correct: false
+  explanation:
+    en: Actual versus forecast shows how accurate the latest expectation was. Versus budget shows performance against the original commitment; versus prior year shows development over time.
+    de: Ist gegen Forecast zeigt, wie treffend die jüngste Erwartung war. Gegen Budget zeigt es die Leistung gegenüber der ursprünglichen Vorgabe; gegen Vorjahr die Entwicklung im Zeitverlauf.
+  source: https://en.wikipedia.org/wiki/Variance_(accounting)
+- id: vapm-p-action
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: Which record best turns a variance explanation into control?
+    de: Welcher Eintrag macht aus einer Abweichungserklärung echte Steuerung?
+  options:
+  - en: Cause, corrective action, owner and follow-up date
+    de: Ursache, Maßnahme, Verantwortliche, Nachfasstermin
+    correct: true
+  - en: A short statement that the variance is being watched
+    de: Ein kurzer Hinweis, dass die Abweichung beobachtet wird
+    correct: false
+  - en: A copy of the ledger lines behind the variance
+    de: Eine Kopie der Buchungszeilen hinter der Abweichung
+    correct: false
+  - en: Only the percentage and the favourable marker
+    de: Nur der Prozentwert und die Kennzeichnung günstig
+    correct: false
+  explanation:
+    en: Without an owner and a date, an explanation stays a report. Control needs an agreed action that is followed up.
+    de: Ohne Verantwortliche und Termin bleibt eine Erklärung ein Bericht. Steuerung braucht eine vereinbarte Maßnahme, die nachverfolgt wird.
+  source: https://en.wikipedia.org/wiki/Root_cause_analysis
+- id: vapm-p-flex
+  level: practitioner
+  difficulty: 1350
+  type: single
+  stem:
+    en: Actual volume is above plan. Why is a flexible budget useful for variable costs?
+    de: Die Ist-Menge liegt über Plan. Warum ist ein flexibles Budget für variable Kosten nützlich?
+  options:
+  - en: It restates the budget at actual volume
+    de: Es rechnet das Budget auf die Ist-Menge um
+    correct: true
+  - en: It lets the budget be raised whenever actual costs exceed it
+    de: Es erlaubt, das Budget zu erhöhen, sobald die Ist-Kosten es übersteigen
+    correct: false
+  - en: It removes fixed costs from the report completely
+    de: Es nimmt Fixkosten vollständig aus dem Bericht
+    correct: false
+  - en: It replaces the forecast and makes it unnecessary
+    de: Es ersetzt den Forecast und macht ihn überflüssig
+    correct: false
+  explanation:
+    en: Comparing actual cost with the budget restated for actual volume isolates price and efficiency effects; the rest is explained by volume.
+    de: Der Vergleich der Ist-Kosten mit dem auf die Ist-Menge umgerechneten Budget isoliert Preis- und Effizienzeffekte; der Rest erklärt sich durch die Menge.
+  source: https://en.wikipedia.org/wiki/Variance_(accounting)
+- id: vapm-a-mix
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: 'Budget: A 100 units at 10 EUR, B 100 units at 20 EUR. Actual: A 140 units at 10 EUR, B 60 units at 20 EUR. What explains the revenue variance of -400 EUR?'
+    de: 'Budget: A 100 Stück zu 10 EUR, B 100 Stück zu 20 EUR. Ist: A 140 Stück zu 10 EUR, B 60 Stück zu 20 EUR. Was erklärt die Erlösabweichung von -400 EUR?'
+  options:
+  - en: 'A mix effect: more of the cheaper product sold'
+    de: 'Ein Mixeffekt: mehr vom günstigeren Produkt verkauft'
+    correct: true
+  - en: 'A volume effect: total units fell below budget'
+    de: 'Ein Mengeneffekt: Die Gesamtmenge fiel unter Budget'
+    correct: false
+  - en: 'A price effect: both prices were lowered'
+    de: 'Ein Preiseffekt: Beide Preise wurden gesenkt'
+    correct: false
+  - en: 'A timing effect: sales moved into the next month'
+    de: 'Ein Timingeffekt: Verkäufe verschoben sich in den Folgemonat'
+    correct: false
+  explanation:
+    en: Total units are 200 in both cases and prices are unchanged, so volume and price effects are zero. Mix effect = (140 - 100) x 10 + (60 - 100) x 20 = -400.
+    de: Die Gesamtmenge beträgt in beiden Fällen 200 und die Preise sind unverändert; Mengen- und Preiseffekt sind also null. Mixeffekt = (140 - 100) x 10 + (60 - 100) x 20 = -400.
+  source: https://en.wikipedia.org/wiki/Variance_(accounting)
+- id: vapm-a-control
+  level: advanced
+  difficulty: 1600
+  type: single
+  stem:
+    en: A cost centre overspends because of an unplanned group-wide cost allocation. How should a fair variance report treat this?
+    de: Eine Kostenstelle überschreitet ihr Budget wegen einer ungeplanten konzernweiten Umlage. Wie sollte ein fairer Abweichungsbericht das behandeln?
+  options:
+  - en: Show it as non-controllable and judge the rest
+    de: Als nicht beeinflussbar ausweisen, den Rest bewerten
+    correct: true
+  - en: Hide it inside the operational explanation so the report stays short and simple
+    de: In der operativen Erklärung verstecken, damit der Bericht kurz und einfach bleibt
+    correct: false
+  - en: Treat it exactly like an efficiency loss caused by the manager
+    de: Genau wie einen von der Führungskraft verursachten Effizienzverlust behandeln
+    correct: false
+  - en: Ignore it, since allocations never belong in variance reports
+    de: Ignorieren, da Umlagen nie in Abweichungsberichte gehören
+    correct: false
+  explanation:
+    en: Separating controllable from non-controllable variances keeps accountability fair and the conversation focused on what the owner can change.
+    de: Die Trennung in beeinflussbare und nicht beeinflussbare Abweichungen hält die Verantwortung fair und das Gespräch bei dem, was die Verantwortlichen ändern können.
+  source: https://en.wikipedia.org/wiki/Variance_(accounting)

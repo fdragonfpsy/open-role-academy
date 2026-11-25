@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-25 (d) — Controlling content batch 1
+
+**Done**
+- variance-analysis-performance-management (3 levels) and investment-appraisal-capital-budgeting (foundation, practitioner): 5 units per language (en+de, `ai-draft`), 15 items, 14 new link-only resources (HTTP 200, verified 2026-11-25). Role stays `draft`. All checks green.
+
+**Reviewer to-dos:** textbook definitions only, cited pages not read in full; NPV/payback/IRR example arithmetic and "10.4 % break-even" are invented illustrations; OpenStax 11.5 is CC BY-NC-SA (link only); no non-Wikipedia German source yet; NPV unit has no Germany/EU label for taxes; German wording not human-reviewed.
+
+**Counts:** roles 12 (2 draft) · competencies 113 · units 618 · items 1283 · resources 685
+
+**Next:** Controlling batch 2 (profitability-pricing-analysis, controlling-processes-systems).
+
 ## 2026-11-25 (c) — Controlling framework
 
 **Done**

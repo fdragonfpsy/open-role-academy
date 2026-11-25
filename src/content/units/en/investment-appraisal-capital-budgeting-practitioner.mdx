@@ -1,0 +1,113 @@
+---
+id: investment-appraisal-capital-budgeting-practitioner
+competency: investment-appraisal-capital-budgeting
+level: practitioner
+title: "NPV, IRR, sensitivity and the business case"
+objectives:
+  - "Calculate NPV for a series of cash flows and interpret the result."
+  - "Explain the internal rate of return (IRR) and its common pitfalls."
+  - "Run a simple sensitivity and scenario analysis on key assumptions."
+  - "Structure a short business case and plan benefits tracking after approval."
+minutes: 35
+resources:
+  - wikipedia-net-present-value
+  - wikipedia-internal-rate-of-return
+  - wikipedia-discounted-cash-flow
+  - wikipedia-sensitivity-analysis
+  - wikipedia-capital-budgeting
+  - openstax-managerial-capital-investment-methods
+  - wikipedia-de-kapitalwertmethode
+  - wikipedia-de-interner-zinsfuss
+  - wikipedia-de-sensitivitaetsanalyse
+status: ai-draft
+sources:
+  - title: "Net present value"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Net_present_value
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Internal rate of return"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Internal_rate_of_return
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Discounted cash flow"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Discounted_cash_flow
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Sensitivity analysis"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Sensitivity_analysis
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Capital budgeting"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Capital_budgeting
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Principles of Accounting, Volume 2, 11.5: Compare and Contrast Non-Time Value-Based Methods and Time Value-Based Methods in Capital Investment Decisions"
+    author: "OpenStax"
+    url: https://openstax.org/books/principles-managerial-accounting/pages/11-5-compare-and-contrast-non-time-value-based-methods-and-time-value-based-methods-in-capital-investment-decisions
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+  - title: "Kapitalwertmethode"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Kapitalwertmethode
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Interner Zinsfuß"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Interner_Zinsfu%C3%9F
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Sensitivitätsanalyse"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Sensitivit%C3%A4tsanalyse
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+After the basics (cash flows, discounting, payback), controllers are asked to compare projects, challenge assumptions and write up a case that decision makers can follow. This unit covers NPV with several cash flows, IRR, sensitivity and scenario analysis and the structure of a business case, including what happens after approval.
+
+## Net present value in practice
+
+NPV = sum over periods t = 0..n of CF_t / (1 + r)^t, where CF_0 is the initial outlay (negative). Put cash flows into a table by year, discount each one and add up. Use a spreadsheet function, but check the timing convention: some functions treat the first value as occurring at the end of period 1, not at time 0. Remember relevant items: working capital needs, taxes (country-specific; label the assumption), and a residual value if one is expected. Exclude sunk costs, and include only incremental cash flows, meaning those that arise because of the project.
+
+## Internal rate of return
+
+The **IRR** is the discount rate at which NPV equals zero. If IRR exceeds the required rate, the project is acceptable on the numbers. Pitfalls: with cash flows that change sign more than once there can be several IRRs or none; IRR can rank mutually exclusive projects differently from NPV, in particular when sizes or timing differ; and an IRR says nothing about the absolute value created. When NPV and IRR conflict for exclusive projects, NPV is the usual tie-breaker. Present both, with the discount rate stated.
+
+## Sensitivity and scenarios
+
+Forecast cash flows are uncertain. **Sensitivity analysis** changes one assumption at a time (volume, price, cost, discount rate) and shows how NPV reacts; the point where NPV becomes zero is a useful break-even value. **Scenario analysis** changes several assumptions together into a consistent story such as a base, a pessimistic and an optimistic case. Neither produces a probability; they show how robust the decision is and which assumptions deserve the most evidence.
+
+## The business case
+
+A concise business case contains: the problem or opportunity, options (including "do nothing"), costs and benefits by year, the NPV (and payback, IRR), main assumptions and risks, sensitivity results, and a recommendation with an owner. Keep sources for every number and mark estimates as such.
+
+## Benefits tracking after approval
+
+Approval is not the end. Assign owners to the benefits, compare actual costs and benefits with the case at fixed intervals, and feed learning back into later estimates. This closes the loop with variance analysis and prevents optimistic cases from going unchecked.
+
+## Worked example
+
+Illustration only; invented figures. Outlay 50,000 EUR now; inflows 20,000, 25,000 and 20,000 EUR at the end of years 1 to 3; discount rate 8 %. Present values: 20,000 / 1.08 = 18,519; 25,000 / 1.1664 = 21,433; 20,000 / 1.2597 = 15,877; sum about 55,829. NPV = 55,829 - 50,000, about +5,829 EUR, and IRR is above 8 %. Sensitivity: if all inflows are 10 % lower, the present value of inflows is about 50,246 and NPV about +246 EUR, so the project barely holds. If inflows fall by more than about 10.4 %, NPV turns negative. This tells the sponsor that the inflow forecast needs solid evidence.
+
+## Key takeaways
+
+- NPV adds discounted incremental cash flows including the initial outlay; check timing conventions in your tool.
+- IRR is the rate at which NPV is zero; use it with care and prefer NPV for exclusive projects.
+- Sensitivity changes one assumption; scenarios change a consistent set.
+- A business case states options, numbers, assumptions, risks and an owner; track benefits afterwards.

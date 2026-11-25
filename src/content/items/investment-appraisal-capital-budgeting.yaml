@@ -1,0 +1,170 @@
+competency: investment-appraisal-capital-budgeting
+items:
+- id: iacb-f-cash
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: Which item belongs in the cash flows of an investment appraisal?
+    de: Welcher Posten gehört in die Zahlungsströme einer Investitionsrechnung?
+  options:
+  - en: The expected extra cash inflow from the project
+    de: Die erwartete zusätzliche Einzahlung aus dem Projekt
+    correct: true
+  - en: Depreciation of the new equipment
+    de: Die Abschreibung der neuen Anlage
+    correct: false
+  - en: Money already spent on a study that cannot be recovered
+    de: Geld, das bereits für eine nicht rückholbare Studie ausgegeben wurde
+    correct: false
+  - en: A share of unchanged head-office costs
+    de: Ein Anteil unveränderter Verwaltungskosten der Zentrale
+    correct: false
+  explanation:
+    en: Appraisals use incremental cash flows. Depreciation is not a cash flow, and sunk costs or unchanged allocations do not change with the decision.
+    de: Investitionsrechnungen nutzen inkrementelle Zahlungen. Abschreibungen sind keine Zahlungen; Sunk Costs und unveränderte Umlagen hängen nicht von der Entscheidung ab.
+  source: https://en.wikipedia.org/wiki/Capital_budgeting
+- id: iacb-f-payback
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: Outlay 10,000 EUR; inflows of 4,000 EUR at the end of each year. After how many years is the payback reached, assuming even inflows during the year?
+    de: Auszahlung 10.000 EUR; Einzahlungen von 4.000 EUR am Ende jedes Jahres. Nach wie vielen Jahren ist die Amortisation erreicht, bei gleichmäßigem Zufluss im Jahr?
+  options:
+  - en: 2.5 years
+    de: 2,5 Jahre
+    correct: true
+  - en: 2 years
+    de: 2 Jahre
+    correct: false
+  - en: 3 years
+    de: 3 Jahre
+    correct: false
+  - en: 1.5 years
+    de: 1,5 Jahre
+    correct: false
+  explanation:
+    en: After two years 8,000 EUR are back; the remaining 2,000 EUR is half of the third year's 4,000 EUR, so payback is 2.5 years.
+    de: Nach zwei Jahren sind 8.000 EUR zurück; die restlichen 2.000 EUR sind die Hälfte der 4.000 EUR des dritten Jahres, also 2,5 Jahre.
+  source: https://en.wikipedia.org/wiki/Payback_period
+- id: iacb-f-tvm
+  level: foundation
+  difficulty: 1000
+  type: single
+  stem:
+    en: Why are future cash flows discounted in an NPV calculation?
+    de: Warum werden künftige Zahlungen bei der Kapitalwertberechnung abgezinst?
+  options:
+  - en: Later money is worth less than money today
+    de: Späteres Geld ist weniger wert als Geld heute
+    correct: true
+  - en: Inflows are always smaller than outflows
+    de: Einzahlungen sind immer kleiner als Auszahlungen
+    correct: false
+  - en: Future cash flows are certain and therefore cheaper
+    de: Künftige Zahlungen sind sicher und deshalb günstiger
+    correct: false
+  - en: Tax law requires discounting for every investment
+    de: Das Steuerrecht verlangt für jede Investition eine Abzinsung
+    correct: false
+  explanation:
+    en: Money available today can be used or invested, so a later payment has a lower present value. The discount rate captures that.
+    de: Geld, das heute verfügbar ist, kann genutzt oder angelegt werden; eine spätere Zahlung hat daher einen geringeren Barwert. Der Zinssatz bildet das ab.
+  source: https://en.wikipedia.org/wiki/Time_value_of_money
+- id: iacb-p-npv
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: Outlay 50,000 EUR now; inflows 20,000, 25,000 and 20,000 EUR at the ends of years 1 to 3; discount rate 8 %. What is the NPV, roughly?
+    de: Auszahlung 50.000 EUR jetzt; Einzahlungen 20.000, 25.000 und 20.000 EUR am Ende der Jahre 1 bis 3; Zinssatz 8 %. Wie hoch ist der Kapitalwert ungefähr?
+  options:
+  - en: +5,800 EUR
+    de: +5.800 EUR
+    correct: true
+  - en: +15,000 EUR
+    de: +15.000 EUR
+    correct: false
+  - en: -5,800 EUR
+    de: -5.800 EUR
+    correct: false
+  - en: +55,800 EUR
+    de: +55.800 EUR
+    correct: false
+  explanation:
+    en: Present values are about 18,519 + 21,433 + 15,877 = 55,829; minus the outlay of 50,000 gives about +5,829. +15,000 is the undiscounted sum.
+    de: Die Barwerte betragen etwa 18.519 + 21.433 + 15.877 = 55.829; abzüglich 50.000 ergibt sich etwa +5.829. +15.000 ist die nicht abgezinste Summe.
+  source: https://en.wikipedia.org/wiki/Net_present_value
+- id: iacb-p-irr
+  level: practitioner
+  difficulty: 1250
+  type: single
+  stem:
+    en: What is the internal rate of return (IRR) of a project?
+    de: Was ist der interne Zinsfuß (IRR) eines Projekts?
+  options:
+  - en: The discount rate at which the NPV is zero
+    de: Der Zinssatz, bei dem der Kapitalwert null ist
+    correct: true
+  - en: The average yearly accounting profit divided by the outlay
+    de: Der durchschnittliche jährliche Buchgewinn geteilt durch die Auszahlung
+    correct: false
+  - en: The rate the bank charges on the loan for the project
+    de: Der Zinssatz, den die Bank für das Projektdarlehen verlangt
+    correct: false
+  - en: The discount rate at which payback equals one year
+    de: Der Zinssatz, bei dem die Amortisation ein Jahr beträgt
+    correct: false
+  explanation:
+    en: IRR is defined as the discount rate that makes NPV equal to zero. A project is acceptable if IRR exceeds the required rate, subject to the usual pitfalls.
+    de: Der IRR ist der Zinssatz, bei dem der Kapitalwert null wird. Ein Projekt ist annehmbar, wenn der IRR den geforderten Satz übersteigt, mit den üblichen Fallstricken.
+  source: https://en.wikipedia.org/wiki/Internal_rate_of_return
+- id: iacb-p-conflict
+  level: practitioner
+  difficulty: 1350
+  type: single
+  stem:
+    en: For two mutually exclusive projects, IRR ranks A first and NPV ranks B first. What is the usual approach?
+    de: Bei zwei sich ausschließenden Projekten reiht der IRR A zuerst und der Kapitalwert B zuerst. Was ist üblich?
+  options:
+  - en: Prefer NPV, as it measures the value created
+    de: Den Kapitalwert bevorzugen, er misst den Wertbeitrag
+    correct: true
+  - en: Prefer IRR, as percentages are easier to read
+    de: Den IRR bevorzugen, da Prozentwerte leichter zu lesen sind
+    correct: false
+  - en: Choose the project with the shorter name in the report
+    de: Das Projekt wählen, das im Bericht zuerst steht
+    correct: false
+  - en: Reject both, because conflicts mean the data is wrong
+    de: Beide ablehnen, weil Widersprüche bedeuten, dass die Daten falsch sind
+    correct: false
+  explanation:
+    en: IRR can rank exclusive projects differently, especially with different sizes or timing. NPV states the absolute value created, so it is the usual tie-breaker.
+    de: Der IRR kann sich ausschließende Projekte anders reihen, besonders bei unterschiedlicher Größe oder Zeitprofil. Der Kapitalwert nennt den absoluten Wertbeitrag und entscheidet daher üblicherweise.
+  source: https://en.wikipedia.org/wiki/Internal_rate_of_return
+- id: iacb-p-sens
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: What does a one-at-a-time sensitivity analysis show?
+    de: Was zeigt eine Sensitivitätsanalyse, die jeweils eine Annahme ändert?
+  options:
+  - en: How NPV reacts when one assumption changes
+    de: Wie der Kapitalwert auf eine geänderte Annahme reagiert
+    correct: true
+  - en: The probability that the project will succeed
+    de: Die Wahrscheinlichkeit, dass das Projekt gelingt
+    correct: false
+  - en: How several assumptions change together in one story
+    de: Wie sich mehrere Annahmen gemeinsam in einer Geschichte ändern
+    correct: false
+  - en: Which cash flows are sunk and must be removed from the case
+    de: Welche Zahlungen Sunk Costs sind und aus dem Fall entfernt werden müssen
+    correct: false
+  explanation:
+    en: Sensitivity analysis varies one input at a time. Scenarios combine several assumptions; neither gives a probability.
+    de: Die Sensitivitätsanalyse variiert jeweils eine Eingangsgröße. Szenarien kombinieren mehrere Annahmen; keine von beiden liefert eine Wahrscheinlichkeit.
+  source: https://en.wikipedia.org/wiki/Sensitivity_analysis

@@ -154,9 +154,9 @@ One role per task, in the order of CLAUDE.md §4.3. Each task = framework + cont
   - [x] content: agile-delivery-code-review; then `status: published` and quality pass
 - [ ] Controlling (framework done; role is draft)
   - [x] framework (role + 5 new competencies, 6 reused, `status: draft`)
-  - [ ] content batch 1: cost-accounting, budgeting-forecasting, variance-analysis-performance-management
-  - [ ] content batch 2: financial-analysis-kpis, investment-appraisal-capital-budgeting, profitability-pricing-analysis
-  - [ ] content batch 3: controlling-processes-systems, business-partnering-decision-support, cash-liquidity-management, internal-controls-audit (check existing units first); then `status: published` and quality pass
+  - [x] content batch 1: variance-analysis-performance-management, investment-appraisal-capital-budgeting
+  - [ ] content batch 2: profitability-pricing-analysis, controlling-processes-systems
+  - [ ] content batch 3: business-partnering-decision-support; then `status: published` and quality pass (non-Wikipedia + German resource per competency; reused competencies already have content)
 - [ ] Legal & Compliance
 - [ ] People Leadership
 

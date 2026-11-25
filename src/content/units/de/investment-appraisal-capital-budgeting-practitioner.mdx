@@ -1,0 +1,113 @@
+---
+id: investment-appraisal-capital-budgeting-practitioner
+competency: investment-appraisal-capital-budgeting
+level: practitioner
+title: "Kapitalwert, interner Zinsfuß, Sensitivität und Business Case"
+objectives:
+  - "Den Kapitalwert für eine Reihe von Zahlungen berechnen und das Ergebnis deuten."
+  - "Den internen Zinsfuß (IRR) erklären und typische Fallstricke nennen."
+  - "Eine einfache Sensitivitäts- und Szenarioanalyse zu Schlüsselannahmen durchführen."
+  - "Einen kurzen Business Case gliedern und die Nutzenverfolgung nach der Freigabe planen."
+minutes: 35
+resources:
+  - wikipedia-net-present-value
+  - wikipedia-internal-rate-of-return
+  - wikipedia-discounted-cash-flow
+  - wikipedia-sensitivity-analysis
+  - wikipedia-capital-budgeting
+  - openstax-managerial-capital-investment-methods
+  - wikipedia-de-kapitalwertmethode
+  - wikipedia-de-interner-zinsfuss
+  - wikipedia-de-sensitivitaetsanalyse
+status: ai-draft
+sources:
+  - title: "Net present value"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Net_present_value
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Internal rate of return"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Internal_rate_of_return
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Discounted cash flow"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Discounted_cash_flow
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Sensitivity analysis"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Sensitivity_analysis
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Capital budgeting"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Capital_budgeting
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Principles of Accounting, Volume 2, 11.5: Compare and Contrast Non-Time Value-Based Methods and Time Value-Based Methods in Capital Investment Decisions"
+    author: "OpenStax"
+    url: https://openstax.org/books/principles-managerial-accounting/pages/11-5-compare-and-contrast-non-time-value-based-methods-and-time-value-based-methods-in-capital-investment-decisions
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+  - title: "Kapitalwertmethode"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Kapitalwertmethode
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Interner Zinsfuß"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Interner_Zinsfu%C3%9F
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Sensitivitätsanalyse"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Sensitivit%C3%A4tsanalyse
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Nach den Grundlagen (Zahlungsströme, Abzinsung, Amortisation) sollst du Projekte vergleichen, Annahmen hinterfragen und einen Fall so aufschreiben, dass Entscheidende ihn nachvollziehen können. Diese Einheit behandelt den Kapitalwert bei mehreren Zahlungen, den internen Zinsfuß, Sensitivitäts- und Szenarioanalyse und den Aufbau eines Business Case samt Nachverfolgung nach der Freigabe.
+
+## Kapitalwert in der Praxis
+
+Kapitalwert = Summe über die Perioden t = 0..n aus Z_t / (1 + r)^t, wobei Z_0 die (negative) Anfangsauszahlung ist. Lege die Zahlungen je Jahr in eine Tabelle, zinse jede ab und addiere. Nutze eine Tabellenfunktion, prüfe aber die Zeitkonvention: Manche Funktionen behandeln den ersten Wert als Zahlung am Ende der Periode 1 statt zum Zeitpunkt 0. Denke an relevante Posten: Kapitalbindung im Umlaufvermögen, Steuern (länderspezifisch; Annahme kennzeichnen) und einen Restwert, falls erwartet. Sunk Costs bleiben draußen, und nur inkrementelle Zahlungen zählen, also solche, die wegen des Projekts entstehen.
+
+## Interner Zinsfuß
+
+Der **interne Zinsfuß (IRR)** ist der Zinssatz, bei dem der Kapitalwert null ist. Übersteigt er den geforderten Zinssatz, ist das Projekt rechnerisch annehmbar. Fallstricke: Wechselt der Zahlungsstrom mehrfach das Vorzeichen, kann es mehrere interne Zinsfüße oder keinen geben; der IRR kann sich ausschließende Projekte anders reihen als der Kapitalwert, besonders bei unterschiedlicher Größe oder zeitlichem Verlauf; und er sagt nichts über den absoluten Wertbeitrag. Widersprechen sich Kapitalwert und IRR bei Alternativen, entscheidet üblicherweise der Kapitalwert. Zeige beide Werte mit genanntem Zinssatz.
+
+## Sensitivität und Szenarien
+
+Prognostizierte Zahlungen sind unsicher. Die **Sensitivitätsanalyse** verändert jeweils eine Annahme (Menge, Preis, Kosten, Zinssatz) und zeigt, wie der Kapitalwert reagiert; der Punkt, an dem er null wird, ist ein nützlicher Break-even-Wert. Die **Szenarioanalyse** verändert mehrere Annahmen gemeinsam zu einer stimmigen Geschichte, etwa Basis-, pessimistischer und optimistischer Fall. Keine von beiden liefert eine Wahrscheinlichkeit; sie zeigen, wie robust die Entscheidung ist und welche Annahmen die meisten Belege verdienen.
+
+## Der Business Case
+
+Ein knapper Business Case enthält: Problem oder Chance, Optionen (auch "nichts tun"), Kosten und Nutzen je Jahr, Kapitalwert (und Amortisation, IRR), wichtigste Annahmen und Risiken, Sensitivitätsergebnisse sowie eine Empfehlung mit Verantwortlichem. Belege jede Zahl mit einer Quelle und kennzeichne Schätzungen.
+
+## Nutzenverfolgung nach der Freigabe
+
+Mit der Freigabe ist es nicht getan. Benenne Verantwortliche für den Nutzen, vergleiche tatsächliche Kosten und Nutzen in festen Abständen mit dem Fall und lass die Erkenntnisse in spätere Schätzungen einfließen. Das schließt den Kreis zur Abweichungsanalyse und verhindert, dass optimistische Fälle ungeprüft bleiben.
+
+## Beispiel zur Veranschaulichung
+
+Nur zur Veranschaulichung; erfundene Zahlen. Auszahlung 50.000 EUR jetzt; Einzahlungen 20.000, 25.000 und 20.000 EUR am Ende der Jahre 1 bis 3; Zinssatz 8 %. Barwerte: 20.000 / 1,08 = 18.519; 25.000 / 1,1664 = 21.433; 20.000 / 1,2597 = 15.877; Summe rund 55.829. Kapitalwert = 55.829 - 50.000, etwa +5.829 EUR, und der IRR liegt über 8 %. Sensitivität: Sind alle Einzahlungen 10 % niedriger, beträgt der Barwert der Einzahlungen etwa 50.246 und der Kapitalwert etwa +246 EUR; das Projekt trägt also gerade noch. Sinken die Einzahlungen um mehr als etwa 10,4 %, wird der Kapitalwert negativ. Für die Auftraggebenden heißt das: Die Prognose der Einzahlungen braucht solide Belege.
+
+## Das Wichtigste in Kürze
+
+- Der Kapitalwert addiert abgezinste inkrementelle Zahlungen samt Anfangsauszahlung; Zeitkonventionen im Werkzeug prüfen.
+- Der IRR ist der Zinssatz mit Kapitalwert null; mit Vorsicht nutzen und bei Alternativen den Kapitalwert bevorzugen.
+- Sensitivität ändert eine Annahme, Szenarien ändern einen stimmigen Satz.
+- Ein Business Case nennt Optionen, Zahlen, Annahmen, Risiken und Verantwortliche; Nutzen danach verfolgen.
