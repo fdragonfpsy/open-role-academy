@@ -1,0 +1,218 @@
+competency: gdpr-data-protection-compliance
+items:
+- id: gd-f-personal
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: Which of the following is generally personal data?
+    de: Welches der folgenden Beispiele sind grundsätzlich personenbezogene Daten?
+  options:
+  - en: An email address that identifies a named employee
+    de: Eine E-Mail-Adresse, die eine namentlich bekannte Mitarbeiterin identifiziert
+    correct: true
+  - en: The total sales figure of a company over a whole financial year
+    de: Die Gesamtumsatzzahl eines Unternehmens über ein ganzes Geschäftsjahr
+    correct: false
+  - en: A fully anonymised statistic that cannot be linked back to any person
+    de: Eine vollständig anonymisierte Statistik, die keiner Person mehr zugeordnet werden kann
+    correct: false
+  - en: The name of a software product that the company buys from a vendor
+    de: Der Name eines Softwareprodukts, das das Unternehmen von einem Anbieter kauft
+    correct: false
+  explanation:
+    en: Personal data is information relating to an identified or identifiable person. Aggregated or anonymised data without such a link is not.
+    de: Personenbezogene Daten sind Informationen, die sich auf eine identifizierte oder identifizierbare Person beziehen. Aggregierte oder anonymisierte Daten ohne diesen Bezug sind es nicht.
+  source: https://de.wikipedia.org/wiki/Personenbezogene_Daten
+- id: gd-f-roles
+  level: foundation
+  difficulty: 960
+  type: single
+  stem:
+    en: Who is the 'controller' under the GDPR?
+    de: Wer ist 'Verantwortlicher' im Sinne der DSGVO?
+  options:
+  - en: The party that decides on the purposes and means of processing
+    de: Die Stelle, die über Zwecke und Mittel der Verarbeitung entscheidet
+    correct: true
+  - en: The person whose personal data is being processed in the case
+    de: Die Person, deren personenbezogene Daten im Fall verarbeitet werden
+    correct: false
+  - en: The supervisory authority that checks compliance in the member state
+    de: Die Aufsichtsbehörde, die im Mitgliedstaat die Einhaltung prüft
+    correct: false
+  - en: Any employee who has once opened a file that contains personal data
+    de: Jede Beschäftigte, die einmal eine Datei mit personenbezogenen Daten geöffnet hat
+    correct: false
+  explanation:
+    en: The controller decides why and how data is processed. The person concerned is the data subject; a processor acts on the controller's instructions.
+    de: Der Verantwortliche entscheidet, warum und wie Daten verarbeitet werden. Die Person, auf die sich die Daten beziehen, ist die betroffene Person; ein Auftragsverarbeiter handelt nach Weisung des Verantwortlichen.
+  source: https://en.wikipedia.org/wiki/General_Data_Protection_Regulation
+- id: gd-f-principle
+  level: foundation
+  difficulty: 1030
+  type: single
+  stem:
+    en: Contact data collected for a service contract is later wanted for an unrelated marketing idea. Which principle is most directly relevant?
+    de: Kontaktdaten, die für einen Dienstleistungsvertrag erhoben wurden, sollen später für eine ganz andere Marketingidee genutzt werden. Welcher Grundsatz ist am ehesten einschlägig?
+  options:
+  - en: Purpose limitation
+    de: Zweckbindung
+    correct: true
+  - en: Storage limitation
+    de: Speicherbegrenzung
+    correct: false
+  - en: Integrity and confidentiality
+    de: Integrität und Vertraulichkeit
+    correct: false
+  - en: Accuracy of the stored data
+    de: Richtigkeit der gespeicherten Daten
+    correct: false
+  explanation:
+    en: Data collected for specified purposes should not be used in ways incompatible with them. Check whether the new purpose is compatible.
+    de: Für festgelegte Zwecke erhobene Daten sollen nicht unvereinbar weiterverwendet werden. Prüfe, ob der neue Zweck vereinbar ist.
+  source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+- id: gd-p-basis
+  level: practitioner
+  difficulty: 1150
+  type: single
+  stem:
+    en: When should the lawful basis for a processing purpose be chosen and recorded?
+    de: Wann sollte die Rechtsgrundlage für einen Verarbeitungszweck gewählt und dokumentiert werden?
+  options:
+  - en: Before the processing starts, separately for each purpose
+    de: Vor Beginn der Verarbeitung, getrennt für jeden Zweck
+    correct: true
+  - en: After the first complaint, once a person has asked how the data is used
+    de: Nach der ersten Beschwerde, sobald eine Person fragt, wie die Daten verwendet werden
+    correct: false
+  - en: Once per year, together for all purposes of the company in a single note
+    de: Einmal im Jahr, gemeinsam für alle Zwecke des Unternehmens in einer einzigen Notiz
+    correct: false
+  - en: Only when data is sent to another country outside the EU and the EEA
+    de: Nur wenn Daten in ein Land außerhalb der EU und des EWR übermittelt werden
+    correct: false
+  explanation:
+    en: A lawful basis is needed for each purpose, and the controller should be able to show it. Choose it before processing.
+    de: Für jeden Zweck braucht es eine Rechtsgrundlage, und der Verantwortliche soll sie nachweisen können. Wähle sie vor der Verarbeitung.
+  source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+- id: gd-p-consent
+  level: practitioner
+  difficulty: 1240
+  type: single
+  stem:
+    en: Which feature is part of valid consent?
+    de: Welches Merkmal gehört zu einer wirksamen Einwilligung?
+  options:
+  - en: It is freely given, specific, informed and unambiguous
+    de: Sie ist freiwillig, für den bestimmten Fall, informiert und unmissverständlich
+    correct: true
+  - en: It is assumed from silence or from a pre-ticked box on the form
+    de: Sie wird aus Schweigen oder aus einem vorangekreuzten Kästchen im Formular abgeleitet
+    correct: false
+  - en: It is given once for all future purposes of the company in advance
+    de: Sie wird einmal für alle künftigen Zwecke des Unternehmens im Voraus erteilt
+    correct: false
+  - en: It can only be withdrawn through a lengthy written procedure by post
+    de: Sie kann nur über ein aufwendiges schriftliches Verfahren per Post widerrufen werden
+    correct: false
+  explanation:
+    en: Consent must be a clear, informed choice and withdrawal must be as easy as giving it. Pre-ticked boxes do not qualify.
+    de: Eine Einwilligung muss eine klare, informierte Entscheidung sein, und der Widerruf muss so einfach sein wie die Erteilung. Vorangekreuzte Kästchen genügen nicht.
+  source: https://www.edpb.europa.eu/system/files/documents/files/file1/edpb_guidelines_202005_consent_de.pdf
+- id: gd-p-processor
+  level: practitioner
+  difficulty: 1330
+  type: single
+  stem:
+    en: A cloud provider will process customer data on your behalf. What is needed?
+    de: Ein Cloud-Anbieter soll in deinem Auftrag Kundendaten verarbeiten. Was ist nötig?
+  options:
+  - en: A written processing agreement that fixes the processor's duties and your instructions
+    de: Ein schriftlicher Auftragsverarbeitungsvertrag, der Pflichten des Anbieters und deine Weisungen festlegt
+    correct: true
+  - en: Nothing, because the provider takes over all responsibility once data is uploaded
+    de: Nichts, weil der Anbieter mit dem Hochladen die gesamte Verantwortung übernimmt
+    correct: false
+  - en: Only a verbal assurance from the sales contact that the provider is secure
+    de: Nur eine mündliche Zusicherung der Vertriebskontakts, dass der Anbieter sicher ist
+    correct: false
+  - en: A consent form signed by every employee of your company who uses the service
+    de: Eine Einwilligung, die jede Beschäftigte deines Unternehmens unterschreibt, die den Dienst nutzt
+    correct: false
+  explanation:
+    en: When a processor works for you, the regulation requires a contract with defined content. The controller stays responsible.
+    de: Arbeitet ein Auftragsverarbeiter für dich, verlangt die Verordnung einen Vertrag mit festgelegtem Inhalt. Der Verantwortliche bleibt verantwortlich.
+  source: https://de.wikipedia.org/wiki/Auftragsverarbeitung
+- id: gd-a-dpia
+  level: advanced
+  difficulty: 1480
+  type: single
+  stem:
+    en: When is a data protection impact assessment (DPIA) considered?
+    de: Wann kommt eine Datenschutz-Folgenabschätzung (DSFA) in Betracht?
+  options:
+  - en: Before processing that is likely to result in a high risk to people
+    de: Vor einer Verarbeitung, die voraussichtlich ein hohes Risiko für Personen mit sich bringt
+    correct: true
+  - en: After a breach, as a replacement for notifying the authority and persons
+    de: Nach einer Verletzung, als Ersatz für die Meldung an Behörde und Betroffene
+    correct: false
+  - en: For every processing activity, however small and however low the risk is
+    de: Für jede Verarbeitungstätigkeit, egal wie klein und wie gering das Risiko ist
+    correct: false
+  - en: Only when the controller has appointed a data protection officer for the unit
+    de: Nur wenn der Verantwortliche eine Datenschutzbeauftragte für den Bereich benannt hat
+    correct: false
+  explanation:
+    en: A DPIA is a risk assessment done before high-risk processing. Authorities publish lists; check your authority's current ones.
+    de: Eine DSFA ist eine Risikobewertung vor einer Verarbeitung mit hohem Risiko. Behörden veröffentlichen Listen; prüfe die aktuellen deiner Behörde.
+  source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+- id: gd-a-breach
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: A laptop with customer data is lost. What is the sound first approach?
+    de: Ein Laptop mit Kundendaten geht verloren. Was ist der sinnvolle erste Ansatz?
+  options:
+  - en: Contain, assess the risk, check notification conditions in the regulation and document
+    de: Eindämmen, Risiko bewerten, Meldebedingungen in der Verordnung prüfen und dokumentieren
+    correct: true
+  - en: Wait for a few weeks to see whether the laptop turns up before telling anyone
+    de: Einige Wochen abwarten, ob der Laptop auftaucht, bevor jemand informiert wird
+    correct: false
+  - en: Document it only if the authority has been notified, otherwise it is not recorded
+    de: Nur dokumentieren, wenn die Behörde benachrichtigt wurde, sonst bleibt es unprotokolliert
+    correct: false
+  - en: Leave the decision to the finder, since the loss concerns only hardware assets
+    de: Die Entscheidung dem Finder überlassen, da der Verlust nur Hardware betrifft
+    correct: false
+  explanation:
+    en: Breach handling means detect, assess, decide on notification and document, including breaches that are not reported. Check deadlines in the regulation.
+    de: Der Umgang mit Verletzungen heißt erkennen, bewerten, Meldung entscheiden und dokumentieren, auch nicht gemeldete Fälle. Fristen im Verordnungstext prüfen.
+  source: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
+- id: gd-a-dpo
+  level: advanced
+  difficulty: 1620
+  type: single
+  stem:
+    en: Which statement about the data protection officer (DPO) is correct?
+    de: Welche Aussage über die oder den Datenschutzbeauftragten (DSB) ist richtig?
+  options:
+  - en: The DPO advises and monitors independently, while the organisation stays responsible
+    de: Die DSB berät und überwacht unabhängig, während die Organisation verantwortlich bleibt
+    correct: true
+  - en: The DPO takes over all legal responsibility for compliance from the controller
+    de: Die DSB übernimmt vom Verantwortlichen die gesamte rechtliche Verantwortung für die Einhaltung
+    correct: false
+  - en: The DPO decides which purposes of processing the business may pursue this year
+    de: Die DSB entscheidet, welche Verarbeitungszwecke das Unternehmen in diesem Jahr verfolgen darf
+    correct: false
+  - en: The DPO is the supervisory authority's employee placed inside the company
+    de: Die DSB ist Beschäftigte der Aufsichtsbehörde und ins Unternehmen entsandt
+    correct: false
+  explanation:
+    en: The DPO is an advisory and monitoring role, independent in its tasks, and a contact point. Compliance duties stay with the controller.
+    de: Die DSB hat beratende und überwachende Aufgaben, ist darin unabhängig und Anlaufstelle. Die Pflichten zur Einhaltung bleiben beim Verantwortlichen.
+  source: https://de.wikipedia.org/wiki/Datenschutzbeauftragter

@@ -1,0 +1,218 @@
+competency: legal-foundations-sources-of-law
+items:
+- id: lf-f-regdir
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: What is the main difference between an EU regulation and an EU directive?
+    de: Was unterscheidet eine EU-Verordnung von einer EU-Richtlinie im Kern?
+  options:
+  - en: A regulation applies in its entirety across the EU; a directive sets a goal that each country puts into its own law
+    de: Eine Verordnung gilt in der ganzen EU unmittelbar; eine Richtlinie gibt ein Ziel vor, das jedes Land umsetzt
+    correct: true
+  - en: A directive applies directly to citizens, while a regulation only addresses national ministries
+    de: Eine Richtlinie gilt unmittelbar für Bürgerinnen und Bürger, eine Verordnung richtet sich nur an nationale Ministerien
+    correct: false
+  - en: A regulation is only a non-binding recommendation, while a directive is always binding on companies
+    de: Eine Verordnung ist nur eine unverbindliche Empfehlung, eine Richtlinie bindet Unternehmen stets unmittelbar
+    correct: false
+  - en: There is no difference; both words describe the same type of act in all situations
+    de: Es gibt keinen Unterschied; beide Wörter bezeichnen in allen Situationen dieselbe Art von Rechtsakt
+    correct: false
+  explanation:
+    en: A regulation is binding and applies as it stands. A directive names a result and leaves the way to each EU country, which usually passes national law.
+    de: Eine Verordnung ist verbindlich und gilt unmittelbar. Eine Richtlinie nennt ein Ergebnis und überlässt den Weg den EU-Ländern, die meist nationale Gesetze erlassen.
+  source: https://european-union.europa.eu/institutions-law-budget/law/types-legislation_en
+- id: lf-f-sources
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: Which of the following is a typical source of law in Germany?
+    de: Welches der folgenden Beispiele ist eine typische Rechtsquelle in Deutschland?
+  options:
+  - en: A federal statute passed by the parliament
+    de: Ein vom Parlament beschlossenes Bundesgesetz
+    correct: true
+  - en: A colleague's opinion in an email about how the rule is usually applied
+    de: Die Meinung einer Kollegin in einer E-Mail dazu, wie die Regel üblicherweise gehandhabt wird
+    correct: false
+  - en: A press release that summarises an upcoming rule in plain language
+    de: Eine Pressemitteilung, die eine kommende Regel in einfacher Sprache zusammenfasst
+    correct: false
+  - en: A training slide deck about compliance prepared by an internal team
+    de: Eine Schulungspräsentation zur Compliance, die ein internes Team erstellt hat
+    correct: false
+  explanation:
+    en: Statutes passed by the competent parliament are classic sources of law. Opinions, summaries and slides may help you understand, but they are not themselves sources.
+    de: Gesetze, die das zuständige Parlament beschließt, sind klassische Rechtsquellen. Meinungen, Zusammenfassungen und Folien helfen beim Verstehen, sind aber selbst keine Quellen.
+  source: https://de.wikipedia.org/wiki/Rechtsquelle
+- id: lf-f-rank
+  level: foundation
+  difficulty: 1000
+  type: single
+  stem:
+    en: A clause in a company contract contradicts a mandatory statute. Which statement is generally correct?
+    de: Eine Klausel in einem Unternehmensvertrag widerspricht einem zwingenden Gesetz. Welche Aussage trifft grundsätzlich zu?
+  options:
+  - en: The higher-ranking mandatory statute prevails over the clause
+    de: Das ranghöhere zwingende Gesetz setzt sich gegenüber der Klausel durch
+    correct: true
+  - en: The contract prevails because the parties agreed to it voluntarily
+    de: Der Vertrag setzt sich durch, weil die Parteien ihn freiwillig vereinbart haben
+    correct: false
+  - en: Both rules apply in equal parts, so each side may choose the one it prefers
+    de: Beide Regeln gelten zu gleichen Teilen, sodass jede Seite die ihr passende wählen darf
+    correct: false
+  - en: The newer of the two always prevails, no matter how it ranks in the system
+    de: Die jüngere von beiden setzt sich immer durch, gleich wie sie im System eingeordnet ist
+    correct: false
+  explanation:
+    en: A contract sits below statutes in rank. It cannot remove mandatory law.
+    de: Ein Vertrag steht im Rang unter Gesetzen. Er kann zwingendes Recht nicht beseitigen.
+  source: https://de.wikipedia.org/wiki/Normenhierarchie
+- id: lf-p-conflict
+  level: practitioner
+  difficulty: 1150
+  type: single
+  stem:
+    en: Federal law and state law give different answers to the same question. Which statement is generally correct for Germany?
+    de: Bundesrecht und Landesrecht geben auf dieselbe Frage unterschiedliche Antworten. Was gilt für Deutschland grundsätzlich?
+  options:
+  - en: Federal law generally prevails over state law
+    de: Bundesrecht setzt sich grundsätzlich gegen Landesrecht durch
+    correct: true
+  - en: State law always prevails because it is closer to the people
+    de: Landesrecht setzt sich immer durch, weil es näher bei den Menschen liegt
+    correct: false
+  - en: The company may choose whichever of the two suits it better
+    de: Das Unternehmen darf sich die Regel aussuchen, die besser passt
+    correct: false
+  - en: Neither applies until a court has ruled on the conflict
+    de: Keine von beiden gilt, bis ein Gericht den Konflikt entschieden hat
+    correct: false
+  explanation:
+    en: The hierarchy of norms places federal law above state law. Whether a real conflict exists is a question for counsel.
+    de: Die Normenhierarchie stellt Bundesrecht über Landesrecht. Ob ein echter Konflikt vorliegt, klärt die Rechtsberatung.
+  source: https://de.wikipedia.org/wiki/Normenhierarchie
+- id: lf-p-subsumption
+  level: practitioner
+  difficulty: 1250
+  type: single
+  stem:
+    en: You apply a norm to a case. What is the correct order of steps?
+    de: Du wendest eine Norm auf einen Fall an. Wie ist die richtige Reihenfolge der Schritte?
+  options:
+  - en: Establish the facts, split the norm into conditions and consequence, check each condition, then state the result
+    de: Sachverhalt feststellen, Norm zerlegen, jede Voraussetzung prüfen, dann das Ergebnis nennen
+    correct: true
+  - en: State the desired result first, then look for a norm that supports it and skip the facts that do not fit
+    de: Zuerst das gewünschte Ergebnis festlegen, dann eine passende Norm suchen und unpassende Tatsachen auslassen
+    correct: false
+  - en: Look up the penalty, then decide whether the facts justify applying it to the case
+    de: Zuerst die Sanktion nachschlagen, dann entscheiden, ob der Sachverhalt ihre Anwendung rechtfertigt
+    correct: false
+  - en: Ask colleagues for their view and follow the majority without reading the norm text
+    de: Kolleginnen und Kollegen nach ihrer Meinung fragen und der Mehrheit folgen, ohne den Normtext zu lesen
+    correct: false
+  explanation:
+    en: Applying a norm means checking its conditions against the facts one by one. Starting from a wished-for result distorts the analysis.
+    de: Eine Norm anzuwenden heißt, ihre Voraussetzungen Schritt für Schritt am Sachverhalt zu prüfen. Wer vom gewünschten Ergebnis ausgeht, verzerrt die Analyse.
+  source: https://de.wikipedia.org/wiki/Normenhierarchie
+- id: lf-p-directive
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: A new EU directive was adopted. What does this usually mean for your company?
+    de: Eine neue EU-Richtlinie wurde verabschiedet. Was bedeutet das für dein Unternehmen in der Regel?
+  options:
+  - en: You check the national law that puts it into effect, because the directive addresses the EU countries
+    de: Du prüfst das nationale Umsetzungsgesetz, weil sich die Richtlinie an die EU-Länder richtet
+    correct: true
+  - en: Nothing changes, because directives are never relevant for companies in any form
+    de: Nichts ändert sich, weil Richtlinien für Unternehmen in keiner Form relevant sind
+    correct: false
+  - en: The directive text replaces all national laws on the topic from the day it is published
+    de: Der Richtlinientext ersetzt ab dem Tag der Veröffentlichung alle nationalen Gesetze zum Thema
+    correct: false
+  - en: Only the EU institutions need to act; companies never read national implementing acts
+    de: Nur die EU-Organe müssen handeln; Unternehmen lesen nationale Umsetzungsakte nie
+    correct: false
+  explanation:
+    en: Directives work through national law. In practice you look at the directive and at the national implementing act, and seek counsel on how they interact.
+    de: Richtlinien wirken über nationales Recht. In der Praxis liest du Richtlinie und nationales Umsetzungsgesetz und holst Rechtsrat zum Zusammenspiel ein.
+  source: https://en.wikipedia.org/wiki/Law_of_the_European_Union
+- id: lf-a-principles
+  level: advanced
+  difficulty: 1480
+  type: single
+  stem:
+    en: 'Two rules of the same rank cover the same topic: one general and older, one specific and newer. Which approach is sound?'
+    de: 'Zwei Regeln gleichen Rangs betreffen dasselbe Thema: eine allgemein und älter, eine speziell und jünger. Welches Vorgehen ist sinnvoll?'
+  options:
+  - en: Name the principle you rely on, such as specific over general, and mark any uncertainty
+    de: Den angewandten Grundsatz nennen, etwa speziell vor allgemein, und Unsicherheit kennzeichnen
+    correct: true
+  - en: Apply the older rule because it has been tested for longer in practice and keep quiet about it
+    de: Die ältere Regel anwenden, weil sie länger erprobt ist, und darüber nichts weiter sagen
+    correct: false
+  - en: Apply whichever rule gives the lower cost to the company and skip the reasoning
+    de: Die Regel anwenden, die dem Unternehmen geringere Kosten bringt, und die Begründung weglassen
+    correct: false
+  - en: Treat both as void until the legislator has clarified which one applies to the case
+    de: Beide als unwirksam behandeln, bis der Gesetzgeber klärt, welche für den Fall gilt
+    correct: false
+  explanation:
+    en: General principles such as rank, specificity and date help resolve collisions, but their use needs a stated reason. State it so others can review it.
+    de: Allgemeine Grundsätze wie Rang, Spezialität und Zeitpunkt helfen bei Kollisionen, ihre Anwendung braucht aber eine genannte Begründung, damit andere sie prüfen können.
+  source: https://de.wikipedia.org/wiki/Normenhierarchie
+- id: lf-a-caselaw
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: How should a compliance lead handle a court decision cited in an internal memo?
+    de: Wie sollte eine Compliance-Leitung mit einer Gerichtsentscheidung umgehen, die in einem internen Vermerk zitiert wird?
+  options:
+  - en: Check court, date and reference in an official database and record them with the memo
+    de: Gericht, Datum und Aktenzeichen in einer amtlichen Datenbank prüfen und mit dem Vermerk festhalten
+    correct: true
+  - en: Accept the citation as written because an internal memo is a reliable official source
+    de: Die Zitierung wie geschrieben übernehmen, weil ein interner Vermerk eine verlässliche amtliche Quelle ist
+    correct: false
+  - en: Replace it with a well-known decision from memory that seems to say the same thing
+    de: Sie durch eine bekannte Entscheidung aus dem Gedächtnis ersetzen, die Ähnliches zu sagen scheint
+    correct: false
+  - en: Ignore court decisions entirely because Germany relies only on statutes
+    de: Gerichtsentscheidungen ganz ignorieren, weil Deutschland sich nur auf Gesetze stützt
+    correct: false
+  explanation:
+    en: Court interpretations shape practice, but decisions must be traceable. Never cite from memory.
+    de: Auslegungen der Gerichte prägen die Praxis, doch Entscheidungen müssen nachvollziehbar sein. Zitiere nie aus dem Gedächtnis.
+  source: https://en.wikipedia.org/wiki/Case_law
+- id: lf-a-escalate
+  level: advanced
+  difficulty: 1600
+  type: single
+  stem:
+    en: Which situation is the clearest reason to escalate an assessment to counsel?
+    de: Welche Situation ist der klarste Grund, eine Bewertung an die Rechtsberatung zu eskalieren?
+  options:
+  - en: An EU rule and a national rule seem to point in different directions and exposure is high
+    de: EU-Regel und nationale Regel scheinen sich zu widersprechen und das Risiko ist hoch
+    correct: true
+  - en: The assessment is about a topic your team has handled before in the same way
+    de: Die Bewertung betrifft ein Thema, das dein Team bereits früher auf dieselbe Weise behandelt hat
+    correct: false
+  - en: The facts are complete, the norm is clear and the conditions are met without doubt
+    de: Der Sachverhalt ist vollständig, die Norm eindeutig und die Voraussetzungen sind zweifelsfrei erfüllt
+    correct: false
+  - en: A colleague asks for a quick answer and says it is probably fine
+    de: Eine Kollegin bittet um eine schnelle Antwort und sagt, es sei wahrscheinlich in Ordnung
+    correct: false
+  explanation:
+    en: Conflicts between levels of law combined with high exposure are classic escalation triggers. Speed pressure alone is not a reason to skip checks.
+    de: Konflikte zwischen Rechtsebenen bei hohem Risiko sind klassische Eskalationsgründe. Zeitdruck allein ist kein Grund, Prüfungen zu überspringen.
+  source: https://en.wikipedia.org/wiki/Hierarchy_of_norms

@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-25 (h) — Legal & Compliance content batch 1
+
+**Done**
+- legal-foundations-sources-of-law, contract-law-basics, gdpr-data-protection-compliance (3 levels each): 9 units per language (en+de, `ai-draft`, with "education, not legal advice" note), 27 items, 15 new link-only resources (HTTP 200, verified 2026-11-25); 15 existing resources re-tagged. Role stays `draft`. All checks green.
+
+**Reviewer to-dos (legal, concept level only, no article numbers/fines/deadlines):** federal vs state law and EU precedence; six GDPR lawful bases and data subject rights lists; processor contract requirements, DPIA content, breach-handling stages, DPO role; German AGB content-control statements; "changed terms in reply = new offer"; Wikipedia articles not read in full; gesetze-im-internet.de, bfdi.bund.de, EDPB overview unreachable from here (no German statute source for contract law); German wording not human-reviewed.
+
+**Counts:** roles 12 (1 draft) · competencies 122 · units 654 · items 1336 · resources 725
+
+**Next:** Legal & Compliance batch 2 (compliance-management-governance, anti-corruption-whistleblower-protection, intellectual-property-copyright-basics).
+
 ## 2026-11-25 (g) — Legal & Compliance framework
 
 **Done**
