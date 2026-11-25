@@ -1,0 +1,218 @@
+competency: profitability-pricing-analysis
+items:
+  - id: ppa-f-cm
+    level: foundation
+    difficulty: 900
+    type: single
+    stem:
+      en: "A product sells for 40 EUR and has variable costs of 25 EUR per unit. What is the contribution margin per unit and the contribution margin ratio?"
+      de: "Ein Produkt wird für 40 EUR verkauft und hat variable Kosten von 25 EUR je Stück. Wie hoch sind Deckungsbeitrag je Stück und Deckungsbeitragsquote?"
+    options:
+      - en: "15 EUR and 37.5 %"
+        de: "15 EUR und 37,5 %"
+        correct: true
+      - en: "15 EUR and 60 %"
+        de: "15 EUR und 60 %"
+        correct: false
+      - en: "25 EUR and 62.5 %"
+        de: "25 EUR und 62,5 %"
+        correct: false
+      - en: "40 EUR and 100 %"
+        de: "40 EUR und 100 %"
+        correct: false
+    explanation:
+      en: "Contribution margin per unit = 40 - 25 = 15 EUR; ratio = 15 / 40 = 37.5 %. The ratio is relative to revenue, not to variable cost."
+      de: "Deckungsbeitrag je Stück = 40 - 25 = 15 EUR; Quote = 15 / 40 = 37,5 %. Die Quote bezieht sich auf den Umsatz, nicht auf die variablen Kosten."
+    source: https://en.wikipedia.org/wiki/Contribution_margin
+  - id: ppa-f-be
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "Fixed costs are 18,000 EUR per month. The contribution margin per unit is 30 EUR. How many units must be sold to break even?"
+      de: "Die Fixkosten betragen 18.000 EUR pro Monat. Der Deckungsbeitrag je Stück beträgt 30 EUR. Wie viele Stück müssen für den Break-even verkauft werden?"
+    options:
+      - en: "540 units"
+        de: "540 Stück"
+        correct: false
+      - en: "600 units"
+        de: "600 Stück"
+        correct: true
+      - en: "1,800 units"
+        de: "1.800 Stück"
+        correct: false
+      - en: "18,000 units"
+        de: "18.000 Stück"
+        correct: false
+    explanation:
+      en: "Break-even units = fixed costs / contribution margin per unit = 18,000 / 30 = 600."
+      de: "Break-even-Menge = Fixkosten / Deckungsbeitrag je Stück = 18.000 / 30 = 600."
+    source: https://en.wikipedia.org/wiki/Break-even_(economics)
+  - id: ppa-f-margin-markup
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "An item costs 60 EUR and is sold for 75 EUR. Which statement is correct?"
+      de: "Ein Artikel kostet 60 EUR und wird für 75 EUR verkauft. Welche Aussage ist richtig?"
+    options:
+      - en: "Margin is 25 % and markup is 20 %"
+        de: "Die Marge beträgt 25 % und der Aufschlag 20 %"
+        correct: false
+      - en: "Margin and markup are both 25 %"
+        de: "Marge und Aufschlag betragen beide 25 %"
+        correct: false
+      - en: "Margin is 20 % and markup is 25 %"
+        de: "Die Marge beträgt 20 % und der Aufschlag 25 %"
+        correct: true
+      - en: "Margin is 15 % and markup is 20 %"
+        de: "Die Marge beträgt 15 % und der Aufschlag 20 %"
+        correct: false
+    explanation:
+      en: "Profit is 15. Margin = 15 / 75 = 20 % (share of price); markup = 15 / 60 = 25 % (share of cost)."
+      de: "Der Gewinn beträgt 15. Marge = 15 / 75 = 20 % (Anteil am Preis); Aufschlag = 15 / 60 = 25 % (Anteil an den Kosten)."
+    source: https://en.wikipedia.org/wiki/Markup_(business)
+  - id: ppa-p-levels
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "Customer X has contribution margin I of 30,000 EUR. Costs tied directly to X (special service, individual discounts) are 12,000 EUR. How is the result best described?"
+      de: "Kunde X hat einen Deckungsbeitrag I von 30.000 EUR. Direkt X zurechenbare Kosten (Sonderservice, individuelle Rabatte) betragen 12.000 EUR. Wie lässt sich das Ergebnis am besten beschreiben?"
+    options:
+      - en: "Contribution margin I falls to 18,000 EUR, the same level"
+        de: "Der Deckungsbeitrag I sinkt auf 18.000 EUR, dieselbe Stufe"
+        correct: false
+      - en: "Contribution margin II is 42,000 EUR after the costs"
+        de: "Der Deckungsbeitrag II beträgt 42.000 EUR nach den Kosten"
+        correct: false
+      - en: "The customer makes a total loss of 12,000 EUR"
+        de: "Der Kunde verursacht insgesamt 12.000 EUR Verlust"
+        correct: false
+      - en: "Contribution margin II is 18,000 EUR"
+        de: "Der Deckungsbeitrag II beträgt 18.000 EUR"
+        correct: true
+    explanation:
+      en: "Contribution margin II = 30,000 - 12,000 = 18,000. Costs are subtracted at the level where they can be attributed. Shared fixed costs are not yet deducted, so this is not a loss figure."
+      de: "Deckungsbeitrag II = 30.000 - 12.000 = 18.000. Kosten werden auf der Stufe abgezogen, auf der sie zurechenbar sind. Gemeinsame Fixkosten sind noch nicht abgezogen; es ist also keine Verlustzahl."
+    source: https://en.wikipedia.org/wiki/Customer_profitability
+  - id: ppa-p-allocation
+    level: practitioner
+    difficulty: 1300
+    type: single
+    stem:
+      en: "After allocating shared fixed costs by revenue, a customer shows a loss. Its contribution before that allocation is positive. What is the best next step before dropping the customer?"
+      de: "Nach Verteilung gemeinsamer Fixkosten nach Umsatz zeigt ein Kunde einen Verlust. Sein Beitrag vor dieser Verteilung ist positiv. Was ist vor einer Trennung der beste nächste Schritt?"
+    options:
+      - en: "Check whether shared costs would vanish without the customer"
+        de: "Prüfen, ob gemeinsame Kosten ohne den Kunden entfielen"
+        correct: true
+      - en: "Drop the customer, because every report loss must be removed"
+        de: "Den Kunden aufgeben, weil jeder Verlust im Bericht beseitigt werden muss"
+        correct: false
+      - en: "Change the allocation key until the customer shows a profit in the report"
+        de: "Den Verteilungsschlüssel so lange ändern, bis der Kunde einen Gewinn zeigt"
+        correct: false
+      - en: "Ignore the allocation and report only revenue to management"
+        de: "Die Verteilung ignorieren und dem Management nur den Umsatz melden"
+        correct: false
+    explanation:
+      en: "Allocated fixed costs usually continue if the customer leaves. The customer's positive contribution then helps cover them, so dropping it can lower total profit. Changing keys to get a wanted answer is not a sound practice."
+      de: "Verteilte Fixkosten fallen meist weiter an, wenn der Kunde geht. Sein positiver Beitrag hilft dann, sie zu decken; ihn aufzugeben kann den Gesamtgewinn senken. Schlüssel zu ändern, um ein gewünschtes Ergebnis zu erhalten, ist keine saubere Praxis."
+    source: https://en.wikipedia.org/wiki/Customer_profitability
+  - id: ppa-p-sens
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "Price 50 EUR, variable cost 30 EUR, fixed costs 12,000 EUR. The price is cut to 45 EUR. What is the new break-even volume?"
+      de: "Preis 50 EUR, variable Kosten 30 EUR, Fixkosten 12.000 EUR. Der Preis wird auf 45 EUR gesenkt. Wie hoch ist die neue Break-even-Menge?"
+    options:
+      - en: "600 units"
+        de: "600 Stück"
+        correct: false
+      - en: "800 units"
+        de: "800 Stück"
+        correct: true
+      - en: "667 units"
+        de: "667 Stück"
+        correct: false
+      - en: "1,200 units"
+        de: "1.200 Stück"
+        correct: false
+    explanation:
+      en: "New contribution margin per unit = 45 - 30 = 15; break-even = 12,000 / 15 = 800 units. A 10 % price cut raises break-even by a third (from 600)."
+      de: "Neuer Deckungsbeitrag je Stück = 45 - 30 = 15; Break-even = 12.000 / 15 = 800 Stück. Eine Preissenkung um 10 % erhöht den Break-even um ein Drittel (von 600)."
+    source: https://en.wikipedia.org/wiki/Break-even_(economics)
+  - id: ppa-a-target
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "Unit cost is 84 EUR. The target margin on price is 30 %. What price is required, and what is the equivalent markup on cost?"
+      de: "Die Stückkosten betragen 84 EUR. Die Zielmarge auf den Preis beträgt 30 %. Welcher Preis ist nötig und wie hoch ist der entsprechende Aufschlag auf die Kosten?"
+    options:
+      - en: "Price 109.20 EUR; markup 30 %"
+        de: "Preis 109,20 EUR; Aufschlag 30 %"
+        correct: false
+      - en: "Price 120 EUR; markup 30 %"
+        de: "Preis 120 EUR; Aufschlag 30 %"
+        correct: false
+      - en: "Price 120 EUR; markup about 42.9 %"
+        de: "Preis 120 EUR; Aufschlag rund 42,9 %"
+        correct: true
+      - en: "Price 109.20 EUR; markup about 42.9 %"
+        de: "Preis 109,20 EUR; Aufschlag rund 42,9 %"
+        correct: false
+    explanation:
+      en: "Price = cost / (1 - margin) = 84 / 0.70 = 120. Markup = 120 / 84 - 1 = about 42.9 %. Adding 30 % to cost (109.20) would give a margin of only about 23 %."
+      de: "Preis = Kosten / (1 - Marge) = 84 / 0,70 = 120. Aufschlag = 120 / 84 - 1 = rund 42,9 %. 30 % auf die Kosten (109,20) ergäben nur eine Marge von rund 23 %."
+    source: https://en.wikipedia.org/wiki/Markup_(business)
+  - id: ppa-a-special
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "A special order of 500 units is offered at 36 EUR. Variable cost is 30 EUR per unit, capacity is idle, and no extra fixed costs arise. Which view is best?"
+      de: "Ein Zusatzauftrag über 500 Stück wird zu 36 EUR angeboten. Die variablen Kosten betragen 30 EUR je Stück, Kapazität ist frei und es entstehen keine zusätzlichen Fixkosten. Welche Sicht ist am besten?"
+    options:
+      - en: "Reject it, because 36 EUR is below the full cost per unit of product"
+        de: "Ablehnen, weil 36 EUR unter den Vollkosten je Stück liegen"
+        correct: false
+      - en: "Accept it only if it also covers a share of allocated fixed costs"
+        de: "Nur annehmen, wenn er einen Anteil der verteilten Fixkosten deckt"
+        correct: false
+      - en: "Accept it because any positive revenue improves profit"
+        de: "Annehmen, weil jeder positive Umsatz den Gewinn verbessert"
+        correct: false
+      - en: "It adds 3,000 EUR; check side effects"
+        de: "Er bringt 3.000 EUR; Nebenwirkungen prüfen"
+        correct: true
+    explanation:
+      en: "Relevant contribution = 500 x (36 - 30) = 3,000 EUR, since fixed costs and idle capacity do not change. Full cost per unit is not the decision basis, but revenue alone is not either; side effects matter."
+      de: "Relevanter Beitrag = 500 x (36 - 30) = 3.000 EUR, da sich Fixkosten und freie Kapazität nicht ändern. Weder die Vollkosten je Stück noch der Umsatz allein sind die Entscheidungsgrundlage; Nebenwirkungen zählen."
+    source: https://en.wikipedia.org/wiki/Cost-plus_pricing
+  - id: ppa-a-approach
+    level: advanced
+    difficulty: 1450
+    type: single
+    stem:
+      en: "Which statement about pricing approaches is most accurate?"
+      de: "Welche Aussage zu Preisansätzen trifft am ehesten zu?"
+    options:
+      - en: "Cost-plus gives a floor but ignores willingness to pay"
+        de: "Cost-plus liefert eine Untergrenze, ignoriert aber die Zahlungsbereitschaft"
+        correct: true
+      - en: "Market-based pricing guarantees that the price is profitable"
+        de: "Marktorientierte Preisbildung garantiert, dass der Preis profitabel ist"
+        correct: false
+      - en: "Value-based pricing is the same as adding a fixed markup to cost"
+        de: "Wertorientierte Preisbildung ist dasselbe wie ein fester Aufschlag auf die Kosten"
+        correct: false
+      - en: "Cost-plus is the only approach that uses cost information"
+        de: "Cost-plus ist der einzige Ansatz, der Kosteninformationen nutzt"
+        correct: false
+    explanation:
+      en: "Each approach has a blind spot: cost-plus ignores customers, value-based needs measurable value, and market-based does not show whether the price covers costs. Controlling usually supplies the cost floor."
+      de: "Jeder Ansatz hat einen blinden Fleck: Cost-plus ignoriert Kunden, wertorientiert braucht messbaren Nutzen, und marktorientiert zeigt nicht, ob der Preis die Kosten deckt. Das Controlling liefert meist die Kostenuntergrenze."
+    source: https://en.wikipedia.org/wiki/Value-based_pricing

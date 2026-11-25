@@ -1,0 +1,92 @@
+---
+id: controlling-processes-systems-advanced
+competency: controlling-processes-systems
+level: advanced
+title: "Governance of reports, definitions and data quality"
+objectives:
+  - "Describe the elements of report governance: owner, definition, lineage, access and change control."
+  - "Explain why a KPI dictionary and a single agreed definition reduce conflicts."
+  - "Name dimensions of data quality and suitable controls for a controlling data model."
+  - "Plan a controlled change to a report or a system, including testing and sign-off."
+minutes: 30
+resources:
+  - wikipedia-data-governance
+  - wikipedia-data-quality
+  - wikipedia-data-lineage
+  - wikipedia-master-data-management
+  - wikipedia-business-intelligence
+  - wikipedia-de-business-intelligence
+status: ai-draft
+sources:
+  - title: "Data governance"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_governance
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Data quality"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_quality
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Data lineage"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_lineage
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Master data management"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Master_data_management
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Business intelligence"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Business_intelligence
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Business Intelligence"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Business_Intelligence
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+When several reports show different numbers for the "same" KPI, management stops trusting all of them. At advanced level, controlling designs the rules that keep reports consistent: who owns a report, how a KPI is defined, where its data comes from and how changes are made.
+
+## Elements of report governance
+
+- **Ownership:** every report and KPI has a named owner who answers questions and approves changes.
+- **Definitions:** a KPI dictionary states the formula, the data source, the unit, the sign convention, the update frequency and the exclusions. One definition is used everywhere, or a difference is named explicitly.
+- **Lineage:** you can trace a number back through the report, the data model and the ETL steps to the source. Data lineage makes impact analysis possible: if a source field changes, you know which reports are affected.
+- **Access:** access rights follow the need to know and are reviewed regularly; the principle of separating duties applies to changes and approvals.
+- **Change control:** changes to reports, calculation logic and mappings are requested, tested, approved and documented, and can be rolled back.
+
+## Data quality
+
+Data quality is commonly described by dimensions such as accuracy, completeness, consistency and timeliness (the exact list varies by source). Controls can be built in: validation rules at entry, completeness checks (are all cost centres present?), consistency checks across systems, and monitoring of load times. A data owner for each master data domain, together with a documented process for creating and closing cost centres, prevents many problems at the source. Master data management and data governance describe this as an organisational task, not a one-off clean-up.
+
+## Spreadsheets and manual steps
+
+Many controlling processes still include spreadsheets. They are flexible but prone to hidden errors. Reduce the risk with a clear input and output structure, protected formulas, version naming, a documented owner, a reconciliation to the system and a plan to move recurring manual steps into the system where the effort is justified.
+
+## Personal data in reports
+
+Reports that contain personal data, for example at the level of individual employees, fall under data protection rules. In the EU this includes the GDPR; in Germany, co-determination rights of the works council can also be relevant. Involve data protection and the works council early, and report at an aggregated level where possible.
+
+## Worked example
+
+Illustration only; invented. Two reports show "gross margin": sales uses revenue minus direct material, controlling uses revenue minus all variable costs. The dispute is solved by a KPI dictionary entry that defines "gross margin" for management reports and renames the sales view "material margin". The change request includes a test of the new definition against last year's figures, sign-off by both owners, and a note in the report footer with the version date.
+
+## Key takeaways
+
+- Governance means owner, definition, lineage, access and change control.
+- A KPI dictionary prevents conflicting numbers for the same name.
+- Build data quality controls into the process, not only into the clean-up.
+- Treat spreadsheets as part of the control environment and handle personal data carefully.

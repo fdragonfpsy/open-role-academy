@@ -1,0 +1,194 @@
+competency: controlling-processes-systems
+items:
+  - id: cps-f-cycle
+    level: foundation
+    difficulty: 850
+    type: single
+    stem:
+      en: "Which sequence best describes the planning, control and reporting cycle?"
+      de: "Welche Reihenfolge beschreibt den Regelkreis aus Planung, Steuerung und Berichtswesen am besten?"
+    options:
+      - en: "Plan, record, compare and analyse, report, act"
+        de: "Planen, erfassen, vergleichen und analysieren, berichten, handeln"
+        correct: true
+      - en: "Record actuals, report, plan, compare, close the period"
+        de: "Ist erfassen, berichten, planen, vergleichen, Periode abschließen"
+        correct: false
+      - en: "Report, plan, act, record actuals, compare with last year"
+        de: "Berichten, planen, handeln, Ist erfassen, mit Vorjahr vergleichen"
+        correct: false
+      - en: "Compare, plan, record actuals, adjust, report"
+        de: "Vergleichen, planen, Ist erfassen, anpassen, berichten"
+        correct: false
+    explanation:
+      en: "The cycle starts with a plan, records what happens, compares and analyses, reports to decision makers and leads to action and adjustment before the next cycle begins."
+      de: "Der Zyklus beginnt mit einem Plan, erfasst das Geschehen, vergleicht und analysiert, berichtet an die Entscheidenden und führt zu Maßnahmen und Anpassung, bevor der nächste Zyklus beginnt."
+    source: https://de.wikipedia.org/wiki/Controlling
+  - id: cps-f-calendar
+    level: foundation
+    difficulty: 950
+    type: single
+    stem:
+      en: "In the monthly reporting calendar, bookings are completed late. What is the most important consequence for controlling?"
+      de: "Im monatlichen Berichtskalender werden Buchungen verspätet abgeschlossen. Was ist die wichtigste Folge für das Controlling?"
+    options:
+      - en: "None, because reports are always produced on a fixed day"
+        de: "Keine, da Berichte immer an einem festen Tag erstellt werden"
+        correct: false
+      - en: "Later steps such as reconciliation are at risk"
+        de: "Spätere Schritte wie die Abstimmung sind gefährdet"
+        correct: true
+      - en: "The plan automatically updates itself to the new bookings"
+        de: "Der Plan aktualisiert sich automatisch auf die neuen Buchungen"
+        correct: false
+      - en: "Only the accounting team is affected, not controlling"
+        de: "Nur das Buchhaltungsteam ist betroffen, nicht das Controlling"
+        correct: false
+    explanation:
+      en: "The calendar is a chain. A late step moves or weakens every later step, so the risk should be flagged early."
+      de: "Der Kalender ist eine Kette. Ein später Schritt verschiebt oder schwächt alle folgenden Schritte; das Risiko sollte daher früh gemeldet werden."
+    source: https://de.wikipedia.org/wiki/Controlling
+  - id: cps-f-master
+    level: foundation
+    difficulty: 1000
+    type: single
+    stem:
+      en: "A new cost centre is created but not assigned to the reporting hierarchy. What is the likely effect?"
+      de: "Eine neue Kostenstelle wird angelegt, aber nicht der Berichtshierarchie zugeordnet. Was ist die wahrscheinliche Folge?"
+    options:
+      - en: "The bookings are automatically rejected by the ledger system"
+        de: "Die Buchungen werden vom Hauptbuch automatisch abgelehnt"
+        correct: false
+      - en: "The costs are shown twice in every report of the whole company"
+        de: "Die Kosten erscheinen in jedem Bericht des Unternehmens doppelt"
+        correct: false
+      - en: "Its costs may be missing from totals or unassigned"
+        de: "Seine Kosten können in Summen fehlen oder offen bleiben"
+        correct: true
+      - en: "No effect at all, as hierarchies are only cosmetic details"
+        de: "Keine Folge, da Hierarchien nur kosmetische Details sind"
+        correct: false
+    explanation:
+      en: "Reports group numbers by master data hierarchies. A missing assignment can distort totals while the underlying bookings stay correct."
+      de: "Berichte gruppieren Zahlen nach Stammdatenhierarchien. Eine fehlende Zuordnung kann Summen verzerren, während die zugrunde liegenden Buchungen korrekt bleiben."
+    source: https://en.wikipedia.org/wiki/Enterprise_resource_planning
+  - id: cps-p-flow
+    level: practitioner
+    difficulty: 1200
+    type: single
+    stem:
+      en: "Which description of a typical data flow into a controlling report is most accurate?"
+      de: "Welche Beschreibung eines typischen Datenflusses in einen Controlling-Bericht trifft am ehesten zu?"
+    options:
+      - en: "BI tool first, then the ERP, then the warehouse, then ETL"
+        de: "Zuerst das BI-Werkzeug, dann das ERP, dann das Warehouse, dann ETL"
+        correct: false
+      - en: "Reports are typed in by hand and never based on source systems"
+        de: "Berichte werden von Hand getippt und beruhen nie auf Quellsystemen"
+        correct: false
+      - en: "Data warehouse first, because the ERP only stores finished reports"
+        de: "Zuerst das Data-Warehouse, weil das ERP nur fertige Berichte speichert"
+        correct: false
+      - en: "Source systems, then ETL, then a warehouse or model, then BI"
+        de: "Quellsysteme, dann ETL, dann Warehouse oder Modell, dann BI"
+        correct: true
+    explanation:
+      en: "Transactions originate in source systems, ETL extracts and transforms them, the warehouse integrates them and BI tools present them. Plan data must match the actuals by account, cost centre and period."
+      de: "Buchungen entstehen in Quellsystemen, ETL extrahiert und transformiert sie, das Warehouse integriert sie und BI-Werkzeuge stellen sie dar. Plandaten müssen mit den Ist-Daten nach Konto, Kostenstelle und Periode zusammenpassen."
+    source: https://en.wikipedia.org/wiki/Extract,_transform,_load
+  - id: cps-p-recon
+    level: practitioner
+    difficulty: 1250
+    type: single
+    stem:
+      en: "A revenue report shows 2,000 EUR less than the ledger for the same period. What is the most useful first step?"
+      de: "Ein Umsatzbericht zeigt für dieselbe Periode 2.000 EUR weniger als das Hauptbuch. Was ist der nützlichste erste Schritt?"
+    options:
+      - en: "Confirm period, entity and currency filters, then drill down"
+        de: "Filter für Periode, Gesellschaft und Währung prüfen, dann eingrenzen"
+        correct: true
+      - en: "Add the missing 2,000 EUR manually to the report as a correction"
+        de: "Die fehlenden 2.000 EUR manuell als Korrektur zum Bericht addieren"
+        correct: false
+      - en: "Wait until next month, as small differences usually disappear"
+        de: "Bis zum nächsten Monat warten, da kleine Differenzen meist verschwinden"
+        correct: false
+      - en: "Replace the ledger figure with the report figure"
+        de: "Den Hauptbuchwert durch den Berichtswert ersetzen"
+        correct: false
+    explanation:
+      en: "Work from total to detail and confirm the basics first. A manual plug hides the cause, and the difference rarely disappears by itself."
+      de: "Gehe von der Summe zum Detail vor und prüfe zuerst die Grundlagen. Eine manuelle Korrektur versteckt die Ursache, und die Differenz verschwindet selten von selbst."
+    source: https://en.wikipedia.org/wiki/Data_reconciliation
+  - id: cps-p-cause
+    level: practitioner
+    difficulty: 1350
+    type: single
+    stem:
+      en: "After a data load, the report contains fewer records than the source extract. Which cause is most plausible?"
+      de: "Nach einem Ladevorgang enthält der Bericht weniger Datensätze als der Quellextrakt. Welche Ursache ist am plausibelsten?"
+    options:
+      - en: "The ledger has too many accounts for the report to show"
+        de: "Das Hauptbuch hat zu viele Konten, als dass der Bericht sie zeigen könnte"
+        correct: false
+      - en: "A mapping dropped records with unmatched keys"
+        de: "Eine Zuordnung hat Datensätze mit nicht passenden Schlüsseln verworfen"
+        correct: true
+      - en: "Plan data was loaded twice into the same model"
+        de: "Plandaten wurden doppelt in dasselbe Modell geladen"
+        correct: false
+      - en: "The report font is too small to display all rows"
+        de: "Die Schriftgröße des Berichts ist zu klein für alle Zeilen"
+        correct: false
+    explanation:
+      en: "Record counts after loading are a standard check. Unmatched keys in joins or mapping tables are a common reason why records vanish. Double loading would increase, not reduce, the count."
+      de: "Die Zahl der Datensätze nach dem Laden ist eine Standardprüfung. Nicht passende Schlüssel in Verknüpfungen oder Zuordnungstabellen sind ein häufiger Grund für fehlende Datensätze. Doppeltes Laden würde die Zahl erhöhen, nicht senken."
+    source: https://en.wikipedia.org/wiki/Extract,_transform,_load
+  - id: cps-a-dict
+    level: advanced
+    difficulty: 1500
+    type: single
+    stem:
+      en: "Two reports use different formulas under the same KPI name. What is the most sustainable fix?"
+      de: "Zwei Berichte verwenden unter demselben Kennzahlennamen unterschiedliche Formeln. Was ist die nachhaltigste Lösung?"
+    options:
+      - en: "Let each department keep using its own formula, silently"
+        de: "Jede Abteilung nutzt ihre eigene Formel, ohne darüber zu sprechen"
+        correct: false
+      - en: "Remove the KPI from all reports for good, silently"
+        de: "Die Kennzahl ohne Hinweis dauerhaft aus allen Berichten entfernen"
+        correct: false
+      - en: "Agree one owned KPI definition"
+        de: "Eine verantwortete Definition im Glossar vereinbaren"
+        correct: true
+      - en: "Choose whichever formula gives the higher value for the KPI"
+        de: "Die Formel wählen, die den höheren Wert liefert"
+        correct: false
+    explanation:
+      en: "Conflicting numbers under one name erode trust. A documented, owned definition, or an explicit rename where the logic really differs, resolves the conflict at its cause."
+      de: "Widersprüchliche Zahlen unter einem Namen untergraben das Vertrauen. Eine dokumentierte Definition mit Verantwortlichen oder eine ausdrückliche Umbenennung bei wirklich abweichender Logik löst den Konflikt an der Ursache."
+    source: https://en.wikipedia.org/wiki/Data_governance
+  - id: cps-a-lineage
+    level: advanced
+    difficulty: 1600
+    type: single
+    stem:
+      en: "A source system field is renamed. Which governance element mainly helps to find all affected reports?"
+      de: "Ein Feld im Quellsystem wird umbenannt. Welches Governance-Element hilft vor allem, alle betroffenen Berichte zu finden?"
+    options:
+      - en: "The report colour scheme used"
+        de: "Das verwendete Farbschema der Berichte"
+        correct: false
+      - en: "The meeting calendar for reports"
+        de: "Der Besprechungskalender der Berichte"
+        correct: false
+      - en: "The count of report users"
+        de: "Die Zahl der Berichtsnutzenden"
+        correct: false
+      - en: "Data lineage"
+        de: "Datenherkunft (Lineage)"
+        correct: true
+    explanation:
+      en: "Lineage traces how data moves from source through transformations to reports, which makes impact analysis possible before a change is made."
+      de: "Lineage zeigt, wie Daten von der Quelle über Transformationen in Berichte fließen; dadurch ist eine Auswirkungsanalyse vor einer Änderung möglich."
+    source: https://en.wikipedia.org/wiki/Data_lineage

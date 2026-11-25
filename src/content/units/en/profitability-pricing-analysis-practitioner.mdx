@@ -1,0 +1,98 @@
+---
+id: profitability-pricing-analysis-practitioner
+competency: profitability-pricing-analysis
+level: practitioner
+title: "Product and customer profitability, and sensitivity"
+objectives:
+  - "Build a multi-level contribution margin view for products or customers."
+  - "Explain why ranking by revenue or by first-level margin can mislead."
+  - "Recalculate break-even when price, variable cost or fixed cost changes."
+  - "Explain the limits of allocating fixed costs to customers or products."
+minutes: 30
+resources:
+  - wikipedia-customer-profitability
+  - wikibooks-de-kundendeckungsbeitragsrechnung
+  - openstax-managerial-break-even-sensitivity
+  - wikipedia-profit-margin
+  - wikipedia-markup-business
+  - wikipedia-de-deckungsbeitrag
+status: ai-draft
+sources:
+  - title: "Customer profitability"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Customer_profitability
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Marketing- und Vertriebscontrolling: Kundendeckungsbeitragsrechnung"
+    author: "Wikibooks-Autorinnen und -Autoren"
+    url: https://de.wikibooks.org/wiki/Marketing-_und_Vertriebscontrolling/_Instrumente_MVC/_Kundendeckungsbeitragsrechnung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Principles of Accounting, Volume 2, 3.3: Break-Even Sensitivity Analysis for a Single Product"
+    author: "OpenStax"
+    url: https://openstax.org/books/principles-managerial-accounting/pages/3-3-perform-break-even-sensitivity-analysis-for-a-single-product-under-changing-business-situations
+    license: CC-BY-NC-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    usage: cited
+  - title: "Profit margin"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Profit_margin
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Markup (business)"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Markup_(business)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Deckungsbeitrag"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Deckungsbeitrag
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+A total profit figure hides which products, customers or channels earn money and which consume it. Profitability analysis breaks the result down, so that management can decide where to grow, reprice or stop. The method is the contribution margin from the foundation unit, applied in several levels.
+
+## Multi-level contribution margin
+
+A common structure (German: mehrstufige Deckungsbeitragsrechnung) subtracts costs in steps, from the most directly attributable to the least:
+
+1. Revenue minus discounts and returns = net revenue.
+2. Net revenue minus variable product costs = contribution margin I.
+3. Contribution margin I minus costs that belong directly to the customer or product (for example special service, customer-specific logistics, dedicated marketing) = contribution margin II.
+4. Further steps follow for costs of a product group, a business unit or the whole company.
+
+The idea is to subtract a cost only at the level where it can be attributed without arbitrary allocation. Which levels exist is a design choice that you document.
+
+## Customer and product profitability
+
+For customers, the same logic applies: customer-specific discounts, payment terms, service effort and returns reduce the contribution. Two customers can have very similar revenue and very different contributions. Rankings change depending on the level you look at, so always show the level.
+
+Be cautious with fully allocated overhead. Allocating shared fixed costs by revenue or headcount makes a report look complete, but the allocation key drives the result. A customer that looks unprofitable after allocation may still contribute positively to fixed costs; dropping it can then lower total profit. Use full-cost views for pricing discussions only when you explain the allocation keys.
+
+## Sensitivity of break-even
+
+Break-even depends on price, variable cost and fixed cost. Recalculate it when one of them changes: a price cut lowers the contribution margin per unit and raises the break-even volume, often by more than people expect. A sensitivity table (for example price -5 %, 0 %, +5 % against volume) shows the range of outcomes.
+
+## Worked example
+
+Illustration only; invented figures. Customer A: revenue 100,000 EUR, variable costs 60,000, discounts and service tied to the customer 20,000. Customer B: revenue 40,000, variable costs 22,000, customer-specific costs 3,000.
+
+- Contribution margin I: A = 40,000 (40 %); B = 18,000 (45 %).
+- Contribution margin II: A = 20,000 (20 %); B = 15,000 (37.5 %).
+
+Customer A earns more in absolute terms, but only half of its first-level contribution remains. For the product of the foundation unit (price 50, variable cost 30, fixed costs 12,000), a 5 % price cut to 47.50 gives a contribution of 17.50 per unit and a break-even of 12,000 / 17.50 = about 686 units, instead of 600.
+
+## Key takeaways
+
+- Use contribution margin levels; subtract costs where they can be attributed.
+- Rankings can change between levels; always show which level you report.
+- Be transparent about allocation keys for shared fixed costs.
+- Test break-even for changes in price, variable cost and fixed cost.

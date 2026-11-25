@@ -43,6 +43,8 @@ async function run(browser, lang) {
   // Level filter by keyboard: focus the select, pick an option.
   await page.getByLabel(t.level, { exact: true }).focus();
   await page.keyboard.press('ArrowDown');
+  // Wait for the filter to re-render (slow runners: the update is async).
+  await page.waitForFunction((n) => document.querySelectorAll('#catalog-units > li').length < n, total, { timeout: 5000 }).catch(() => {});
   const afterLevel = await page.locator('#catalog-units > li').count();
   const selected = await page.getByLabel(t.level, { exact: true }).inputValue();
   check(selected === 'foundation' && afterLevel > 0 && afterLevel < total, L(`level filter narrows ${total} -> ${afterLevel}`));
