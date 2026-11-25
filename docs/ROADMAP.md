@@ -77,7 +77,7 @@ Item and resource quality (added by weekly review 2026-11-14, applies to all new
   - [x] IT Support & Operations (10) (exception: it-service-management has no non-Wikipedia resource yet)
   - [x] Finance & Accounting (11) (exceptions: 6 competencies without non-Wikipedia resource, see STATUS)
   - [x] Human Resources (11)
-- [ ] German answer-length cue and resource gaps (weekly review 2026-11-21; QA issues #105, #106). The length check now runs per language: 24 competencies have the correct **German** option as the uniquely longest in > 50% of single-choice items (English distractors were padded, German ones not). Rewrite German options (shorten the correct one or lengthen distractors with real content, not filler; keep en/de meaning equal). Tick a batch when `npm run validate:content` shows no `(de)` length warning for its competencies:
+- [x] German answer-length cue and resource gaps (weekly review 2026-11-21; QA issues #105, #106). The length check now runs per language: 24 competencies have the correct **German** option as the uniquely longest in > 50% of single-choice items (English distractors were padded, German ones not). Rewrite German options (shorten the correct one or lengthen distractors with real content, not filler; keep en/de meaning equal). Tick a batch when `npm run validate:content` shows no `(de)` length warning for its competencies:
   - [x] Core, IT, HR (6): communication-collaboration, working-with-data, incident-request-handling, employment-law-basics, recruitment-selection, hr-data-protection
   - [x] Sales, Marketing, Procurement (5): prospecting-lead-qualification, account-management-upselling, sales-ethics-compliance, marketing-fundamentals-strategy, logistics-transport-planning
   - [x] Customer Service (6): customer-needs-problem-solving, complaint-handling-de-escalation, service-level-quality-management, customer-data-privacy-service, customer-retention-feedback-voc, consumer-rights-basics
@@ -177,4 +177,4 @@ One role per task, in the order of CLAUDE.md §4.3. Each task = framework + cont
 
 - [ ] Re-verify licenses older than 180 days; fix or remove broken links from link-check issues
 - [ ] Improve the 5 items with the weakest explanations; check en/de wording quality
-- [ ] Dependency updates (minor/patch only, unless a major update is recorded in DECISIONS.md)
+- [x] Dependency updates (2026-11-25; recurring — repeat in later maintenance runs) (minor/patch only, unless a major update is recorded in DECISIONS.md)

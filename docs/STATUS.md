@@ -1,5 +1,13 @@
 # Status
 
+## 2026-11-25 (o) — Dependency updates, roadmap tidy
+
+**Done**
+- Minor/patch updates in the lockfile (astro 7.4.13, @astrojs/mdx 8.1.6, @astrojs/preact 6.1.6, supabase-js 2.119.2, vitest 5.1.2, eslint 10.15, typescript-eslint 8.74, @types/node). TypeScript 7 (major) deliberately not taken; needs its own decision. lint/typecheck/test/validate/build green locally.
+- Ticked the German answer-length-cue task: `validate:content` shows no `(de)` warnings.
+
+**Next:** remaining Phase 6 items (license re-verification when resources reach 180 days, weakest-explanation items, en/de wording quality); Phase 5 is optional and needs a privacy-policy update first; open `qa` nits #57, #107.
+
 ## 2026-11-25 (n) — People Leadership complete and published; Phase 4 content done; run summary
 
 **Done**
