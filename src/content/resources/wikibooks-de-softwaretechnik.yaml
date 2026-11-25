@@ -1,0 +1,14 @@
+id: wikibooks-de-softwaretechnik
+url: "https://de.wikibooks.org/wiki/Softwaretechnik"
+title: "Softwaretechnik"
+provider: Wikibooks (Deutsch)
+language: de
+format: book
+minutes: 30
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-25
+mode: link
+competencies: [agile-delivery-code-review]
+levels: [foundation, practitioner]
+note: "Open textbook; CC BY-SA stated in page footer; HTTP 200 on 2026-11-25. Link only."

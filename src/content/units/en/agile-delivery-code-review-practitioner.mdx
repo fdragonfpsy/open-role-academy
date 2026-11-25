@@ -1,0 +1,132 @@
+---
+id: agile-delivery-code-review-practitioner
+competency: agile-delivery-code-review
+level: practitioner
+title: "Refinement, definition of done and constructive reviews"
+objectives:
+  - "Refine backlog items so that they are ready to be worked on."
+  - "Use a definition of done and estimates with their limits in mind."
+  - "Review a change for correctness, tests and readability."
+  - "Use pair programming and resolve review disagreements."
+minutes: 30
+resources:
+  - wikipedia-agile-software-development
+  - wikipedia-user-story
+  - wikipedia-definition-of-done
+  - wikipedia-code-review
+  - wikipedia-pair-programming
+  - wikipedia-de-user-story
+  - wikipedia-de-code-review
+  - wikipedia-de-paarprogrammierung
+  - wikibooks-de-softwaretechnik
+status: ai-draft
+sources:
+  - title: "Agile software development"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Agile_software_development
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "User story"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/User_story
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Definition of done"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Definition_of_done
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Code review"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Code_review
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Pair programming"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Pair_programming
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "User Story"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/User_Story
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Code-Review"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Code-Review
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Paarprogrammierung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Paarprogrammierung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Softwaretechnik"
+    author: "Wikibooks-Autorinnen und -Autoren"
+    url: https://de.wikibooks.org/wiki/Softwaretechnik
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+Practitioners work independently, so they also shape how work is understood and checked. Two skills matter: making work clear enough before it starts, and reviewing others' code so that quality goes up without slowing the team down.
+
+## Backlog refinement
+
+**Refinement** (grooming) means that the team regularly looks at upcoming backlog items and makes them clear enough to start. Typical results:
+
+- an item is split if it is too big to finish in one iteration;
+- open questions are answered or turned into their own small task;
+- acceptance criteria are written, including unhappy paths such as errors and empty input;
+- the item is ordered by value and dependencies.
+
+User stories are often checked against the INVEST idea: independent, negotiable, valuable, estimable, small, testable. It is a checklist for conversation, not a rule.
+
+## Estimation and its limits
+
+Teams often estimate size in relative units such as story points instead of hours. An estimate is a shared guess under uncertainty. It helps with planning and showing that a story is too large, but it is not a promise. Compare an item with similar finished ones, discuss big differences between estimates and re-estimate when you learn something new.
+
+## Definition of done
+
+The **definition of done** is a shared checklist that every item must meet before it counts as finished. Examples (illustrative, agree your own): code reviewed, tests written and passing, documentation updated, acceptance criteria checked, change deployed to a test environment. It avoids the situation where "done" means something different for each person.
+
+## Reviewing a change
+
+A useful order for the reviewer:
+
+1. **Understand the goal** from the description and the linked story.
+2. **Correctness**: does it do what the criteria say, including edge cases and errors?
+3. **Tests**: do they prove the new behaviour and would they fail if it broke?
+4. **Readability and design**: names, size of functions, duplication, fit with the existing structure.
+5. **Risks**: input handling, security, performance and effects on other parts.
+
+Let tools check formatting and simple rules automatically so that people can focus on meaning. Mark comments by weight, for example "must fix" versus "optional suggestion", and approve when the remaining points are small.
+
+## As the author
+
+Keep changes small, describe context and testing, and review your own diff first. Respond to each comment with a change or a short reason. If you disagree, explain your reasoning and ask for the reviewer's concern; when stuck, talk directly or involve a third person instead of arguing in comments.
+
+## Pair programming
+
+In **pair programming** two people work at one task together, often with one writing code (driver) and one thinking ahead and checking (navigator), switching regularly. It acts like a continuous review, and is useful for hard or risky work and for sharing knowledge. It does not make every later review unnecessary; many teams combine both.
+
+## Worked example
+
+Illustration only; invented example. A story says "As a customer, I want to reset my password." During refinement the team finds it too large and splits it into "request a reset link" and "set a new password". The criteria include an expired link and an unknown email address. In the review, the reviewer marks one missing test for expired links as must fix and a variable name as optional. The author adds the test, and the definition of done (tests pass, reviewed, documentation updated) is met.
+
+## Key takeaways
+
+- Refine items until they are small, clear and testable.
+- Estimates are shared guesses; a definition of done keeps "done" consistent.
+- Review for goal, correctness, tests, readability and risks; automate the trivial checks.
+- Label comment weight, answer every comment and talk when text is not enough.

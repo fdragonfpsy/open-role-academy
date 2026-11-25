@@ -339,7 +339,7 @@ Win and grow customers: find and qualify prospects, understand their needs, pres
 | Self-organisation and project basics | core | 3 | F | P | P | — |
 | Working with data | core | 3 | F | F | P | digital-ai-literacy |
 
-## Software Development (`software-development`, role, draft)
+## Software Development (`software-development`, role, published)
 
 Build and ship reliable software: solve problems in code, collaborate with version control, design maintainable structures, test and debug, connect systems through APIs, model and store data, write secure code, automate delivery with CI/CD, and work in agile teams with requirements and code review.
 

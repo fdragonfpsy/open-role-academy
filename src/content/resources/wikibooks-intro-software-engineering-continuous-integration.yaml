@@ -1,0 +1,14 @@
+id: wikibooks-intro-software-engineering-continuous-integration
+url: "https://en.wikibooks.org/wiki/Introduction_to_Software_Engineering/Tools/Continuous_Integration"
+title: "Introduction to Software Engineering: Continuous Integration"
+provider: Wikibooks
+language: en
+format: book
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-25
+mode: link
+competencies: [ci-cd-devops-basics]
+levels: [foundation, practitioner]
+note: "Open textbook; CC BY-SA stated in page footer; HTTP 200 on 2026-11-25. Link only."

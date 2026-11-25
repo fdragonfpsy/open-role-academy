@@ -1,0 +1,128 @@
+---
+id: agile-delivery-code-review-advanced
+competency: agile-delivery-code-review
+level: advanced
+title: "Review practice at team level, technical debt and static analysis"
+objectives:
+  - "Design a review process that is fast enough and still effective."
+  - "Use static analysis and checklists to support review."
+  - "Handle technical debt visibly and decide when to take it."
+  - "Build a review culture that supports learning and psychological safety."
+minutes: 30
+resources:
+  - wikipedia-code-review
+  - wikipedia-static-program-analysis
+  - wikipedia-technical-debt
+  - wikipedia-pair-programming
+  - wikipedia-agile-software-development
+  - wikipedia-de-code-review
+  - wikipedia-de-statische-code-analyse
+  - wikipedia-de-technische-schulden
+  - wikibooks-de-softwaretechnik
+status: ai-draft
+sources:
+  - title: "Code review"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Code_review
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Static program analysis"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Static_program_analysis
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Technical debt"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Technical_debt
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Pair programming"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Pair_programming
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Agile software development"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Agile_software_development
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Code-Review"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Code-Review
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Statische Code-Analyse"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Statische_Code-Analyse
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Technische Schulden"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Technische_Schulden
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Softwaretechnik"
+    author: "Wikibooks-Autorinnen und -Autoren"
+    url: https://de.wikibooks.org/wiki/Softwaretechnik
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+At advanced level you influence how a whole team works. Review practice can be a source of learning and quality, or a bottleneck and a source of conflict. Technical debt decides how fast the team can move next year. Both need deliberate choices.
+
+## Designing the review process
+
+Questions to answer as a team and write down:
+
+- **Who reviews?** At least one person other than the author; for risky areas, someone who knows the area. Rotate reviewers to spread knowledge.
+- **How fast?** Waiting for review blocks work. Agree on a target response time and make review part of the daily routine instead of leaving it for the end of the day or iteration.
+- **How big?** Large changes are hard to review well. Aim for small changes; split refactoring from behaviour changes.
+- **What counts as approval?** Define when a change may be merged and who can block it.
+- **What is not reviewed by people?** Formatting, simple style and known error patterns belong to automation.
+
+Reviews are one of several quality measures next to tests, pair programming and automatic checks. Choose a mix that fits the risk; there is no single best form.
+
+## Static analysis as a partner
+
+**Static analysis** examines source code without running it, for example to find possible errors, unsafe patterns or style violations. Use it in the pipeline so that every change gets the same checks before a person looks at it. Be aware of limits: tools can produce false positives and miss problems, so results need judgement, and rules should be tuned so that people do not learn to ignore warnings.
+
+## Checklists
+
+A short, team-owned checklist helps reviewers remember important points, such as input validation, error handling, tests, logging and data protection. Keep it brief and update it after incidents: if a defect slipped through review, ask which question would have found it.
+
+## Technical debt
+
+**Technical debt** is a metaphor: quick or poor design choices make later changes more expensive, like interest on a loan. Debt can be taken consciously, for example to meet an important date, if the team plans to repay it. Unplanned debt grows from rushed work, unclear requirements or missing tests.
+
+Practical handling:
+
+- Make debt **visible**: record it in the backlog with the cost it causes, not just a feeling.
+- Decide deliberately: what is the benefit now, what is the cost later, who agrees?
+- Repay in small steps, for example during regular work, and prioritise debt that slows frequent changes.
+- Use review to notice new debt early and to refuse debt that has no benefit.
+
+## Review culture
+
+Reviews work when people feel safe to ask and to be wrong. Leads set the tone: review your own code openly, accept critique visibly, praise good solutions and treat defects as information about the process, not about people. Look at patterns instead of individuals; if the same kind of defect keeps appearing, change a checklist, a tool or a convention. Watch for harmful patterns: reviews used for status, nitpicking without weight, silent approval without reading.
+
+## Worked example
+
+Illustration only; invented example. A team notices that changes wait two days for review. They agree on a rule: review requests are looked at the same working day, changes should stay small, and the pipeline runs formatting and static analysis first. Reviewers now spend time on design and tests. A recurring error handling gap leads to a new checklist line. The team also adds a visible backlog item for an old, hard-to-change module with the effort it costs each iteration, and agrees to repay it in small steps.
+
+## Key takeaways
+
+- Agree on who reviews, how fast, how big and when to approve; automate the trivial parts.
+- Static analysis helps but needs tuning and judgement.
+- Treat technical debt as a visible, deliberate decision with a repayment plan.
+- A safe, blame-free culture makes reviews useful.

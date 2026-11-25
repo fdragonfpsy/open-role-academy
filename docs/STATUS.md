@@ -1,5 +1,14 @@
 # Status
 
+## 2026-11-25 (b) — Software Development complete and published
+
+**Done**
+- agile-delivery-code-review (3 levels): 6 units (en+de, `ai-draft`), 12 items, 14 link-only resources (HTTP 200, verified 2026-11-25). Quality pass: 3 Wikibooks resources added (CI, relational DB design, web app security); every role competency has a non-Wikipedia and a German resource. Software Development set to `status: published`; FRAMEWORK.md updated. Validator 0 errors/0 warnings; all checks green.
+
+**Reviewer to-dos:** INVEST, user-story template, driver/navigator roles, technical-debt "interest" metaphor from general knowledge; Wikibooks pages confirmed by title/HTTP 200 only; google eng-practices, agilemanifesto.org, scrumguides.org, OWASP unreachable from here (no primary-source links); databases' German non-Wikipedia resource is only the SQL Wikibook; German wording not human-reviewed.
+
+**Next:** Controlling framework (Phase 4).
+
 ## 2026-11-25 — Software Development content batch 3
 
 **Done**

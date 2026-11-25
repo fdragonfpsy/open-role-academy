@@ -1,0 +1,132 @@
+---
+id: agile-delivery-code-review-practitioner
+competency: agile-delivery-code-review
+level: practitioner
+title: "Refinement, Definition of Done und konstruktive Reviews"
+objectives:
+  - "Backlog-Einträge so aufbereiten, dass sie bearbeitbar sind."
+  - "Eine Definition of Done nutzen und Schätzungen mit ihren Grenzen einordnen."
+  - "Eine Änderung auf Korrektheit, Tests und Lesbarkeit prüfen."
+  - "Paarprogrammierung nutzen und Meinungsverschiedenheiten im Review lösen."
+minutes: 30
+resources:
+  - wikipedia-de-user-story
+  - wikipedia-de-code-review
+  - wikipedia-de-paarprogrammierung
+  - wikibooks-de-softwaretechnik
+  - wikipedia-agile-software-development
+  - wikipedia-user-story
+  - wikipedia-definition-of-done
+  - wikipedia-code-review
+  - wikipedia-pair-programming
+status: ai-draft
+sources:
+  - title: "User Story"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/User_Story
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Code-Review"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Code-Review
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Paarprogrammierung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Paarprogrammierung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Softwaretechnik"
+    author: "Wikibooks-Autorinnen und -Autoren"
+    url: https://de.wikibooks.org/wiki/Softwaretechnik
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Agile software development"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Agile_software_development
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "User story"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/User_story
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Definition of done"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Definition_of_done
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Code review"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Code_review
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Pair programming"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Pair_programming
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Du arbeitest selbstständig und prägst damit mit, wie Arbeit verstanden und geprüft wird. Zwei Fähigkeiten zählen: Arbeit vor dem Start klar genug zu machen und den Code anderer so zu prüfen, dass die Qualität steigt, ohne das Team auszubremsen.
+
+## Backlog-Pflege (Refinement)
+
+**Refinement** heißt, dass das Team regelmäßig anstehende Backlog-Einträge ansieht und so klärt, dass die Arbeit starten kann. Typische Ergebnisse:
+
+- Ein Eintrag wird geteilt, wenn er zu groß für eine Iteration ist.
+- Offene Fragen werden beantwortet oder zu einer eigenen kleinen Aufgabe.
+- Akzeptanzkriterien sind geschrieben, auch für Fehlerfälle und leere Eingaben.
+- Der Eintrag wird nach Wert und Abhängigkeiten eingeordnet.
+
+User Stories werden oft an der INVEST-Idee gemessen: unabhängig, verhandelbar, wertvoll, schätzbar, klein, testbar. Das ist eine Gesprächshilfe, keine feste Regel.
+
+## Schätzen und seine Grenzen
+
+Teams schätzen den Umfang oft relativ, zum Beispiel in Story Points statt in Stunden. Eine Schätzung ist eine gemeinsame Vermutung unter Unsicherheit. Sie hilft bei der Planung und zeigt, wenn eine Story zu groß ist, ist aber kein Versprechen. Vergleiche mit ähnlichen, fertigen Einträgen, besprich große Abweichungen und schätze neu, wenn du etwas dazulernst.
+
+## Definition of Done
+
+Die **Definition of Done** ist eine gemeinsame Checkliste, die jeder Eintrag erfüllen muss, bevor er als fertig gilt. Beispiele (zur Veranschaulichung, legt eure eigene fest): Code geprüft, Tests geschrieben und grün, Dokumentation angepasst, Akzeptanzkriterien kontrolliert, Änderung in einer Testumgebung bereitgestellt. So bedeutet „fertig“ nicht für jede Person etwas anderes.
+
+## Eine Änderung prüfen
+
+Eine nützliche Reihenfolge für die prüfende Person:
+
+1. **Ziel verstehen** aus Beschreibung und verlinkter Story.
+2. **Korrektheit**: Tut die Änderung, was die Kriterien sagen, auch bei Randfällen und Fehlern?
+3. **Tests**: Belegen sie das neue Verhalten und würden sie bei einem Fehler fehlschlagen?
+4. **Lesbarkeit und Entwurf**: Namen, Funktionsgröße, Duplikate, Passung zur bestehenden Struktur.
+5. **Risiken**: Eingabebehandlung, Sicherheit, Performance und Auswirkungen auf andere Teile.
+
+Lass Werkzeuge Formatierung und einfache Regeln automatisch prüfen, damit sich Menschen auf die Bedeutung konzentrieren. Gewichte Kommentare, zum Beispiel „muss behoben werden“ gegenüber „optionaler Vorschlag“, und gib frei, wenn nur Kleinigkeiten offen sind.
+
+## Als Autorin oder Autor
+
+Halte Änderungen klein, beschreibe Kontext und Tests und prüfe zuerst deinen eigenen Diff. Antworte auf jeden Kommentar mit einer Änderung oder einer kurzen Begründung. Bei Meinungsverschiedenheit erkläre deine Gründe und frage nach dem Anliegen der prüfenden Person; wenn es klemmt, sprecht direkt miteinander oder holt eine dritte Person dazu, statt in Kommentaren zu streiten.
+
+## Paarprogrammierung
+
+Bei der **Paarprogrammierung** arbeiten zwei Menschen gemeinsam an einer Aufgabe, oft schreibt eine Person den Code (Driver) und die andere denkt voraus und prüft (Navigator); die Rollen wechseln regelmäßig. Das wirkt wie ein laufendes Review und eignet sich für schwierige oder riskante Arbeit und für Wissensaustausch. Ein späteres Review wird dadurch nicht immer überflüssig; viele Teams kombinieren beides.
+
+## Praxisbeispiel
+
+Nur zur Veranschaulichung; erfundenes Beispiel. Eine Story lautet „Als Kunde möchte ich mein Passwort zurücksetzen.“ Im Refinement erkennt das Team, dass sie zu groß ist, und teilt sie in „Link zum Zurücksetzen anfordern“ und „Neues Passwort setzen“. Die Kriterien enthalten einen abgelaufenen Link und eine unbekannte E-Mail-Adresse. Im Review markiert der Prüfer einen fehlenden Test für abgelaufene Links als „muss behoben werden“ und einen Variablennamen als optional. Die Autorin ergänzt den Test, und die Definition of Done (Tests grün, geprüft, Dokumentation angepasst) ist erfüllt.
+
+## Wichtige Erkenntnisse
+
+- Verfeinere Einträge, bis sie klein, klar und testbar sind.
+- Schätzungen sind gemeinsame Vermutungen; eine Definition of Done hält „fertig“ einheitlich.
+- Prüfe auf Ziel, Korrektheit, Tests, Lesbarkeit und Risiken; automatisiere Triviales.
+- Gewichte Kommentare, beantworte jeden und sprich miteinander, wenn Text nicht reicht.
