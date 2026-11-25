@@ -1,5 +1,14 @@
 # Status
 
+## 2026-11-25 (l) — People Leadership content batch 1
+
+**Done**
+- leadership-fundamentals-role-transition, delegation-accountability, goal-setting-team-planning (3 levels each): 9 units per language (en+de, `ai-draft`), 18 items, 22 new link-only resources (Wikipedia en/de + OpenStax Principles of Management 13.1, NC-SA link-only); 10 existing resources re-tagged. Role stays `draft`. All checks green.
+
+**Reviewer to-dos:** Wikipedia API rate-limited, so German articles (situatives Führen, Delegation, Mikromanagement, RACI-Matrix, Rollenkonflikt) and English SMART/goal-setting/time-management pages not read in full; OpenStax 13.1 cited from summary only; the 1-5 delegation "freedom ladder" and reverse-delegation definition are original wording, not sourced; some distractors lengthened (slightly wordy); delegation-accountability has Wikipedia sources only; no German non-Wikipedia source; German wording not human-reviewed.
+
+**Next:** People Leadership batch 2 (one-to-one-coaching, team-building-psychological-safety, motivation-engagement-wellbeing).
+
 ## 2026-11-25 (k) — People Leadership framework
 
 **Done**

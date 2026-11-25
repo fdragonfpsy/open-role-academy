@@ -1,0 +1,14 @@
+id: wikipedia-de-menschenfuehrung
+url: https://de.wikipedia.org/wiki/Menschenf%C3%BChrung
+title: Menschenführung
+provider: Wikipedia
+language: de
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [leadership-fundamentals-role-transition]
+levels: [foundation, practitioner]
+note: Überblick zur Menschenführung durch Vorgesetzte. Nur verlinkt; keine Passagen übernommen.

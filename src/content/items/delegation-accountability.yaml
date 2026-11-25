@@ -1,0 +1,146 @@
+competency: delegation-accountability
+items:
+- id: da-f-handover
+  level: foundation
+  difficulty: 900
+  type: single
+  stem:
+    en: "Which of these belongs in a clear delegation?"
+    de: "Was gehört zu einer klaren Delegation?"
+  options:
+  - en: "Outcome, decisions the person may take, deadline and agreed support"
+    de: "Ergebnis, Entscheidungen, die die Person treffen darf, Termin und vereinbarte Unterstützung"
+    correct: true
+  - en: "Only the task title, because every additional detail would limit the creativity of the person"
+    de: "Nur der Titel der Aufgabe, weil jedes weitere Detail die Kreativität der Person einschränken würde"
+    correct: false
+  - en: "A list of every single keystroke or click, written down in exactly the right order"
+    de: "Eine Liste jedes einzelnen Tastendrucks oder Klicks, aufgeschrieben in genau der richtigen Reihenfolge"
+    correct: false
+  - en: "Nothing at all, because the person should guess what is expected and learn from that"
+    de: "Gar nichts, weil die Person erraten soll, was erwartet wird, und daraus lernen soll"
+    correct: false
+  explanation:
+    en: "A clear handover names outcome, authority, deadline and support, so the person can act independently."
+    de: "Eine klare Übergabe nennt Ergebnis, Befugnisse, Termin und Unterstützung, damit die Person selbstständig handeln kann."
+  source: https://en.wikipedia.org/wiki/Delegation
+- id: da-f-resp
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: "You delegate a report to a colleague. Who remains answerable for the team's results to your own manager?"
+    de: "Du delegierst einen Bericht an eine Kollegin. Wer bleibt gegenüber deiner Führungskraft für die Ergebnisse des Teams auskunftspflichtig?"
+  options:
+  - en: "You, because ultimate responsibility is not transferred"
+    de: "Du, weil die letztliche Verantwortung nicht übertragen wird"
+    correct: true
+  - en: "Nobody, because delegated tasks are outside your responsibility"
+    de: "Niemand, weil delegierte Aufgaben außerhalb deiner Verantwortung liegen"
+    correct: false
+  - en: "Only the colleague, because she wrote the report"
+    de: "Nur die Kollegin, weil sie den Bericht geschrieben hat"
+    correct: false
+  - en: "The person who reads the report last"
+    de: "Die Person, die den Bericht zuletzt liest"
+    correct: false
+  explanation:
+    en: "You can delegate authority for a task, but you stay answerable for the outcome of your team."
+    de: "Du kannst Befugnisse für eine Aufgabe übertragen, bleibst aber für das Ergebnis deines Teams auskunftspflichtig."
+  source: https://en.wikipedia.org/wiki/Delegation
+- id: da-p-outcome
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: "What does it mean to delegate an outcome rather than steps?"
+    de: "Was bedeutet es, ein Ergebnis statt Schritte zu delegieren?"
+  options:
+  - en: "Describe result, quality and limits, and leave the method to the person."
+    de: "Ergebnis, Qualität und Grenzen beschreiben und die Methode der Person überlassen."
+    correct: true
+  - en: "Let the person define the goal entirely alone, without any input or limits from the lead."
+    de: "Die Person das Ziel vollständig allein festlegen lassen, ohne Vorgaben oder Grenzen der Führungskraft."
+    correct: false
+  - en: "Prescribe each single step in detail and check every one of them again afterwards."
+    de: "Jeden einzelnen Schritt im Detail vorschreiben und danach jeden davon noch einmal prüfen."
+    correct: false
+  - en: "Give no information about the task and accept whatever result arrives at the end."
+    de: "Keine Informationen zur Aufgabe geben und akzeptieren, was am Ende ankommt."
+    correct: false
+  explanation:
+    en: "Outcome delegation respects skills and allows better methods, while limits keep the work safe."
+    de: "Ergebnisdelegation respektiert Fähigkeiten und erlaubt bessere Methoden, während Grenzen die Arbeit absichern."
+  source: https://en.wikipedia.org/wiki/Delegation
+- id: da-p-reverse
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: "A team member says, \"I'm stuck, can you just do it?\" Which response avoids reverse delegation?"
+    de: "Ein Teammitglied sagt: \"Ich komme nicht weiter, kannst du das nicht einfach machen?\" Welche Reaktion vermeidet Rückdelegation?"
+  options:
+  - en: "Ask for their proposal, give a hint if needed, agree who takes the next step."
+    de: "Nach dem Vorschlag fragen, bei Bedarf einen Hinweis geben, vereinbaren, wer den nächsten Schritt macht."
+    correct: true
+  - en: "Take the task back immediately and finish it yourself, so the work gets done quickly."
+    de: "Die Aufgabe sofort zurücknehmen und selbst fertigstellen, damit die Arbeit schnell erledigt wird."
+    correct: false
+  - en: "Say that asking for help is forbidden and that the team member must solve it alone."
+    de: "Sagen, dass Hilfe zu erbitten verboten ist und das Teammitglied es allein lösen muss."
+    correct: false
+  - en: "Hand the task to a third person without telling the first team member about it at all."
+    de: "Die Aufgabe an eine dritte Person geben, ohne das erste Teammitglied überhaupt zu informieren."
+    correct: false
+  explanation:
+    en: "Asking for a proposal keeps ownership with the person while still giving support."
+    de: "Die Frage nach einem Vorschlag lässt die Verantwortung bei der Person und gibt trotzdem Unterstützung."
+  source: https://en.wikipedia.org/wiki/Delegation
+- id: da-a-authority
+  level: advanced
+  difficulty: 1500
+  type: single
+  stem:
+    en: "A lead holds a team member answerable for a result but gives no access to the needed data. What is the problem?"
+    de: "Eine Teamleitung macht ein Teammitglied für ein Ergebnis verantwortlich, gibt aber keinen Zugriff auf die nötigen Daten. Was ist das Problem?"
+  options:
+  - en: "Accountability without the authority and means to act"
+    de: "Verantwortung ohne die Befugnis und Mittel zu handeln"
+    correct: true
+  - en: "Too much trust placed in the team member"
+    de: "Zu viel Vertrauen in das Teammitglied"
+    correct: false
+  - en: "A correct use of RACI, because one person must be accountable"
+    de: "Eine korrekte Anwendung von RACI, weil eine Person verantwortlich sein muss"
+    correct: false
+  - en: "The data should never be shared with anyone"
+    de: "Die Daten sollten nie mit jemandem geteilt werden"
+    correct: false
+  explanation:
+    en: "Wikipedia describes this pattern under micromanagement: accountability is passed down without authority to take alternative action."
+    de: "Wikipedia beschreibt dieses Muster unter Mikromanagement: Verantwortung wird nach unten gegeben, ohne Befugnis, anders zu handeln."
+  source: https://en.wikipedia.org/wiki/Micromanagement
+- id: da-a-failure
+  level: advanced
+  difficulty: 1600
+  type: single
+  stem:
+    en: "A delegated task fails. Which first step fits the unit best?"
+    de: "Eine delegierte Aufgabe scheitert. Welcher erste Schritt passt am besten zur Einheit?"
+  options:
+  - en: "Limit damage and inform those affected, then review your own part and learn with the person."
+    de: "Schaden begrenzen und Betroffene informieren, dann den eigenen Anteil prüfen und mit der Person lernen."
+    correct: true
+  - en: "Name the person publicly as the only cause so that everybody else can relax again."
+    de: "Die Person öffentlich als alleinige Ursache nennen, damit alle anderen wieder aufatmen können."
+    correct: false
+  - en: "Remove the task silently from the plan and avoid any conversation about what happened."
+    de: "Die Aufgabe stillschweigend aus dem Plan nehmen und jedes Gespräch darüber vermeiden, was passiert ist."
+    correct: false
+  - en: "Decide never to delegate anything important again, because delegation has clearly failed here."
+    de: "Beschließen, nie wieder etwas Wichtiges zu delegieren, weil Delegation hier eindeutig gescheitert ist."
+    correct: false
+  explanation:
+    en: "Stabilise first, then examine the briefing, freedom and check-ins, and treat failure as a chance to learn."
+    de: "Zuerst stabilisieren, dann Briefing, Freiheitsgrad und Zwischenstände prüfen und Scheitern als Lernchance behandeln."
+  source: https://en.wikipedia.org/wiki/Delegation
