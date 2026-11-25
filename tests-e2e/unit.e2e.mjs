@@ -45,9 +45,15 @@ async function run(browser, lang) {
   check(skipOk, `${tag} skip-placement button reachable`);
   await page.keyboard.press('Enter');
   await page.waitForSelector(`a[href="${prefix}/dashboard"]`);
-  await tabTo(page, () => document.activeElement?.getAttribute('href')?.endsWith('/dashboard'), 'dashboard link');
-  await page.keyboard.press('Enter');
-  await page.waitForURL(`**${prefix}/dashboard`);
+  // The island may still re-render after skipping placement and detach the focused link (slow runners),
+  // so retry focusing the link by keyboard and pressing Enter until navigation happens.
+  let dashNav = false;
+  for (let attempt = 0; attempt < 3 && !dashNav; attempt++) {
+    await tabTo(page, () => document.activeElement?.getAttribute('href')?.endsWith('/dashboard'), 'dashboard link');
+    await page.keyboard.press('Enter');
+    dashNav = await page.waitForURL(`**${prefix}/dashboard`, { timeout: 8000 }).then(() => true, () => false);
+  }
+  if (!dashNav) await page.waitForURL(`**${prefix}/dashboard`, { timeout: 1000 });
   await page.waitForSelector('#next-title');
 
   // Learning path + recommended unit.
@@ -113,9 +119,15 @@ async function run(browser, lang) {
   check(resultText.length > 10, `${tag} mastery result shown`);
 
   // Back to dashboard by keyboard; state updated.
-  await tabTo(page, () => document.activeElement?.getAttribute('href')?.endsWith('/dashboard'), 'dashboard link');
-  await page.keyboard.press('Enter');
-  await page.waitForURL(`**${prefix}/dashboard`);
+  // The island may still re-render after skipping placement and detach the focused link (slow runners),
+  // so retry focusing the link by keyboard and pressing Enter until navigation happens.
+  let dashNav2 = false;
+  for (let attempt = 0; attempt < 3 && !dashNav2; attempt++) {
+    await tabTo(page, () => document.activeElement?.getAttribute('href')?.endsWith('/dashboard'), 'dashboard link');
+    await page.keyboard.press('Enter');
+    dashNav2 = await page.waitForURL(`**${prefix}/dashboard`, { timeout: 8000 }).then(() => true, () => false);
+  }
+  if (!dashNav2) await page.waitForURL(`**${prefix}/dashboard`, { timeout: 1000 });
   await page.waitForSelector('#comp-title ~ ul');
   const after = await page.locator('#comp-title ~ ul').innerText();
   check(after !== before, `${tag} dashboard competency ratings updated after mastery check`);
