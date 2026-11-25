@@ -135,7 +135,7 @@ The shared core track that every role builds on: digital and AI literacy, commun
 | Working with data | core | 2 | F | P | A | digital-ai-literacy |
 | Business and finance fundamentals | core | 3 | F | P | A | — |
 
-## Controlling (`controlling`, role, draft)
+## Controlling (`controlling`, role, published)
 
 Steer the business with numbers: analyse costs and profitability, plan and forecast, explain variances, appraise investments, monitor liquidity, run the reporting cycle and advise managers as a business partner.
 

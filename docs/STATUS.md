@@ -1,5 +1,17 @@
 # Status
 
+## 2026-11-25 (f) — Controlling complete and published
+
+**Done**
+- business-partnering-decision-support (foundation, practitioner): 2 units per language (en+de, `ai-draft`), 9 items, 4 new link-only Wikipedia resources; 6 existing resources re-tagged. Publishing the role made the validator demand an advanced business-intelligence-reporting unit: added (en+de). Controlling set to `status: published`; FRAMEWORK.md regenerated. Validator 0 errors/0 warnings; all checks green.
+- Earlier in this run: #119/#120 Software Development batches 3-4 and publish, #121 Controlling framework, #122/#123 Controlling batches 1-2 (incl. an e2e race fix: catalog level-filter count now waits for re-render).
+
+**Reviewer to-dos:** OpenStax bounded-rationality / escalation-of-commitment and Wikipedia conflict-of-interest claims not checked against pages; a few items may still have a uniquely longest correct option in one language (validator silent); only 1 advanced item for business-partnering; cost-accounting, variance-analysis, investment-appraisal, controlling-processes-systems have just 1 non-Wikipedia resource (OpenStax NC links); German wording not human-reviewed; re-tagged resources not re-fetched.
+
+**Counts:** roles 12 (1 draft) · competencies 113 · units 636 · items 1309 · resources 710
+
+**Next:** Legal & Compliance framework (Phase 4).
+
 ## 2026-11-25 (e) — Controlling content batch 2
 
 **Done**
