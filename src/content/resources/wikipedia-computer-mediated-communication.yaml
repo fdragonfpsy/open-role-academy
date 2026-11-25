@@ -1,0 +1,14 @@
+id: wikipedia-computer-mediated-communication
+url: https://en.wikipedia.org/wiki/Computer-mediated_communication
+title: "Computer-mediated communication"
+provider: "Wikipedia"
+language: en
+format: article
+minutes: 12
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [meetings-decision-making]
+levels: [practitioner]
+note: "Section on synchronous (real-time) versus asynchronous forms. Link only; no passages copied."

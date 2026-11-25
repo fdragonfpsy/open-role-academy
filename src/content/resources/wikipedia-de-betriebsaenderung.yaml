@@ -1,0 +1,14 @@
+id: wikipedia-de-betriebsaenderung
+url: https://de.wikipedia.org/wiki/Betriebs%C3%A4nderung
+title: "Betriebsänderung"
+provider: "Wikipedia (Deutsch)"
+language: de
+format: article
+minutes: 12
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [leading-change]
+levels: [practitioner, advanced]
+note: "Betriebsänderung und Beteiligung des Betriebsrats (Deutschland). Nur verlinkt; keine Passagen übernommen. Auf Themenebene nutzen; keine Rechtsberatung."

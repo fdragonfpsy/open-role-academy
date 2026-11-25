@@ -1,0 +1,14 @@
+id: wikipedia-minutes
+url: https://en.wikipedia.org/wiki/Minutes
+title: "Minutes"
+provider: "Wikipedia"
+language: en
+format: article
+minutes: 8
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: '2026-11-25'
+mode: link
+competencies: [meetings-decision-making]
+levels: [foundation, practitioner]
+note: "Minutes as the written record of a meeting: decisions rather than transcripts. Link only; no passages copied."
