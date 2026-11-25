@@ -152,11 +152,11 @@ One role per task, in the order of CLAUDE.md §4.3. Each task = framework + cont
   - [x] content: software-testing-quality, software-debugging, apis-integration
   - [x] content: databases-data-modelling-basics, secure-coding-basics, ci-cd-devops-basics
   - [x] content: agile-delivery-code-review; then `status: published` and quality pass
-- [ ] Controlling (framework done; role is draft)
+- [x] Controlling (framework + content done; role published)
   - [x] framework (role + 5 new competencies, 6 reused, `status: draft`)
   - [x] content batch 1: variance-analysis-performance-management, investment-appraisal-capital-budgeting
   - [x] content batch 2: profitability-pricing-analysis, controlling-processes-systems
-  - [ ] content batch 3: business-partnering-decision-support; then `status: published` and quality pass (non-Wikipedia + German resource per competency; reused competencies already have content)
+  - [x] content batch 3: business-partnering-decision-support; then `status: published` and quality pass (non-Wikipedia + German resource per competency; reused competencies already have content)
 - [ ] Legal & Compliance
 - [ ] People Leadership
 

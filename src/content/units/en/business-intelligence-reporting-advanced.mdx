@@ -1,0 +1,75 @@
+---
+id: business-intelligence-reporting-advanced
+competency: business-intelligence-reporting
+level: advanced
+title: "Governing metrics and reliable reporting at scale"
+objectives:
+  - "Run a governed set of shared metrics with owners and a change process."
+  - "Handle conflicting definitions by naming and documenting both."
+  - "Monitor data freshness and failed loads so that users can trust the report."
+  - "Assess the impact of a KPI change before it is released."
+minutes: 30
+resources:
+  - wikipedia-business-intelligence
+  - wikipedia-de-business-intelligence
+  - wikipedia-de-datenintegration
+  - wikipedia-de-kennzahl
+  - mslearn-power-bi-overview
+status: ai-draft
+sources:
+  - title: "Business intelligence"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Business_intelligence
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Datenintegration"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Datenintegration
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Kennzahl"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Kennzahl
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+
+## Why this matters
+
+When many teams use the same reporting layer, the main risk is no longer a single wrong chart but a loss of trust: two reports show different numbers for the same name, or a dashboard silently shows old data. At advanced level you design the rules that prevent this.
+
+## A governed set of metrics
+
+Business intelligence combines data collection, integration, analysis and presentation to support decisions. Integrating data from several sources into one view is the task of data integration. Both only help if the shared metrics have clear rules:
+
+- One **owner** per metric, who approves definition changes.
+- One **written definition** (formula, filters, time basis, source) in a shared catalogue.
+- A **certified** or "official" label for the metrics that finance and management rely on, kept apart from experimental ones.
+- A short **change process**: propose, assess impact, approve, announce, release.
+
+## Conflicting definitions
+
+Two departments may both be right about "active customer" or "revenue". Do not force one definition on everyone by default. Publish both as separately named metrics, state which one is the default for management reporting, and let the data owners decide. The goal is that the same name always means the same thing.
+
+## Freshness and failures
+
+A report is only as reliable as its last successful load. Show a "data as of" date, monitor loads automatically and alert the owner when a load fails or is late. Asking every reader to check numbers by hand does not solve the cause; it moves the work to the people least able to do it.
+
+## Change impact
+
+Before changing a widely used KPI, list the reports, planning models and decisions that depend on it, compare old and new values for a reference period, decide whether history is restated, announce the change with a date, and keep the old definition documented. Without this, trends silently break.
+
+## Worked example
+
+Illustration only; invented figures. A new definition of "active customer" lowers the count by about a tenth. The BI lead checks dependencies: three management dashboards and a bonus-related target use the metric. She runs old and new definitions side by side for six months, informs the owners and publishes the new metric under a new name while the old one stays visible and marked as retiring.
+
+## Key takeaways
+
+- Govern metrics: owner, written definition, certification and change process.
+- Resolve conflicting definitions by naming both, with a stated default.
+- Monitor freshness and failures; do not rely on users to detect them.
+- Assess impact and run old and new in parallel before changing a KPI.

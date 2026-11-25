@@ -1,0 +1,75 @@
+---
+id: business-intelligence-reporting-advanced
+competency: business-intelligence-reporting
+level: advanced
+title: "Kennzahlen steuern und Berichte zuverlässig betreiben"
+objectives:
+  - "Einen gesteuerten Satz gemeinsamer Kennzahlen mit Verantwortlichen und Änderungsprozess betreiben."
+  - "Widersprüchliche Definitionen durch getrennte Benennung und Dokumentation lösen."
+  - "Datenaktualität und fehlgeschlagene Ladeläufe überwachen, damit Nutzende dem Bericht vertrauen."
+  - "Die Auswirkung einer Kennzahländerung vor der Freigabe bewerten."
+minutes: 30
+resources:
+  - wikipedia-business-intelligence
+  - wikipedia-de-business-intelligence
+  - wikipedia-de-datenintegration
+  - wikipedia-de-kennzahl
+  - mslearn-power-bi-overview
+status: ai-draft
+sources:
+  - title: "Business intelligence"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Business_intelligence
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Datenintegration"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Datenintegration
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Kennzahl"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Kennzahl
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+
+## Warum das wichtig ist
+
+Wenn viele Teams dieselbe Berichtsschicht nutzen, ist das Hauptrisiko nicht mehr eine einzelne falsche Grafik, sondern verlorenes Vertrauen: Zwei Berichte zeigen für denselben Namen unterschiedliche Zahlen, oder ein Dashboard zeigt unbemerkt alte Daten. Auf fortgeschrittenem Niveau entwirfst du die Regeln, die das verhindern.
+
+## Ein gesteuerter Satz von Kennzahlen
+
+Business Intelligence verbindet Datenerfassung, Integration, Analyse und Darstellung, um Entscheidungen zu unterstützen. Daten aus mehreren Quellen zu einer Sicht zusammenzuführen ist Aufgabe der Datenintegration. Beides hilft nur, wenn die gemeinsamen Kennzahlen klare Regeln haben:
+
+- Eine **verantwortliche Person** je Kennzahl, die Änderungen der Definition freigibt.
+- Eine **schriftliche Definition** (Formel, Filter, Zeitbasis, Quelle) in einem gemeinsamen Katalog.
+- Eine **Zertifizierung** oder Kennzeichnung "offiziell" für die Kennzahlen, auf die Finanzen und Management sich stützen, getrennt von experimentellen.
+- Ein kurzer **Änderungsprozess**: vorschlagen, Auswirkungen prüfen, freigeben, ankündigen, ausrollen.
+
+## Widersprüchliche Definitionen
+
+Zwei Abteilungen können bei "aktive Kundschaft" oder "Umsatz" beide recht haben. Erzwinge nicht standardmäßig eine Definition für alle. Veröffentliche beide als getrennt benannte Kennzahlen, lege fest, welche im Management-Reporting der Standard ist, und lass die Datenverantwortlichen entscheiden. Ziel ist, dass derselbe Name immer dasselbe bedeutet.
+
+## Aktualität und Ausfälle
+
+Ein Bericht ist nur so verlässlich wie sein letzter erfolgreicher Ladelauf. Zeige ein Datum "Datenstand", überwache Ladeläufe automatisch und alarmiere die verantwortliche Person bei Fehlern oder Verspätung. Alle Lesenden zu bitten, Zahlen von Hand zu prüfen, löst die Ursache nicht; es verlagert die Arbeit auf die, die dazu am wenigsten in der Lage sind.
+
+## Auswirkungen von Änderungen
+
+Bevor du eine viel genutzte Kennzahl änderst, liste die abhängigen Berichte, Planungsmodelle und Entscheidungen auf, vergleiche alte und neue Werte für einen Referenzzeitraum, entscheide, ob die Historie neu berechnet wird, kündige die Änderung mit Datum an und dokumentiere die alte Definition weiter. Sonst brechen Trends unbemerkt.
+
+## Rechenbeispiel
+
+Nur zur Veranschaulichung; erfundene Zahlen. Eine neue Definition von "aktive Kundschaft" senkt die Zahl um etwa ein Zehntel. Die BI-Leiterin prüft die Abhängigkeiten: Drei Management-Dashboards und ein bonusrelevantes Ziel nutzen die Kennzahl. Sie lässt alte und neue Definition sechs Monate parallel laufen, informiert die Verantwortlichen und veröffentlicht die neue Kennzahl unter neuem Namen, während die alte sichtbar und als auslaufend markiert bleibt.
+
+## Wichtige Punkte
+
+- Kennzahlen steuern: Verantwortliche, schriftliche Definition, Zertifizierung, Änderungsprozess.
+- Widersprüche lösen, indem beide Definitionen benannt werden, mit festgelegtem Standard.
+- Aktualität und Ausfälle überwachen; nicht auf die Nutzenden vertrauen.
+- Auswirkungen prüfen und alt und neu parallel laufen lassen, bevor eine Kennzahl geändert wird.

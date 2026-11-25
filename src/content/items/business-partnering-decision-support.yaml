@@ -1,0 +1,218 @@
+competency: "business-partnering-decision-support"
+items:
+- id: "bpds-f-role"
+  level: "foundation"
+  difficulty: 880
+  type: "single"
+  stem:
+    en: "What best describes the role of a controller as business partner?"
+    de: "Was beschreibt die Rolle von Controllenden als Business Partner am besten?"
+  options:
+  - en: "Supporting managers' decisions with information and advice"
+    de: "Entscheidungen von Führungskräften mit Informationen und Beratung unterstützen"
+    correct: true
+  - en: "Making the final business decisions on behalf of the managers"
+    de: "Die endgültigen Geschäftsentscheidungen anstelle der Führungskräfte treffen"
+    correct: false
+  - en: "Only producing the monthly report on time"
+    de: "Nur den Monatsbericht pünktlich erstellen"
+    correct: false
+  - en: "Approving every single expense in the department"
+    de: "Jede einzelne Ausgabe in der Abteilung genehmigen"
+    correct: false
+  explanation:
+    en: "Controllers prepare information and advise, but the decision stays with the manager who is accountable for it."
+    de: "Controllende bereiten Informationen vor und beraten, die Entscheidung bleibt bei der Führungskraft, die dafür verantwortlich ist."
+  source: "https://de.wikipedia.org/wiki/Controlling"
+- id: "bpds-f-message"
+  level: "foundation"
+  difficulty: 950
+  type: "single"
+  stem:
+    en: "A report shows that travel costs are 15% above plan. Which message is most useful to the manager?"
+    de: "Ein Bericht zeigt Reisekosten 15 % über Plan. Welche Botschaft ist für die Führungskraft am nützlichsten?"
+  options:
+  - en: "Travel costs are 15% over plan; cause, effect and two options follow"
+    de: "Die Reisekosten liegen 15 % über Plan; Ursache, Wirkung und zwei Optionen folgen"
+    correct: true
+  - en: "Account 6600 shows a variance of 15% against the plan for this month"
+    de: "Konto 6600 zeigt für diesen Monat eine Abweichung von 15 % gegenüber dem Plan"
+    correct: false
+  - en: "Travel costs are high again, so please be more careful in future"
+    de: "Die Reisekosten sind wieder hoch, bitte seid künftig vorsichtiger damit"
+    correct: false
+  - en: "The full list of all travel bookings of the year is attached"
+    de: "Die vollständige Liste aller Reisebuchungen des Jahres ist angehängt"
+    correct: false
+  explanation:
+    en: "A useful message combines the fact, why it matters and a next step. Raw data or a vague appeal leaves the work to the reader."
+    de: "Eine nützliche Botschaft verbindet Fakt, Bedeutung und nächsten Schritt. Rohdaten oder ein vager Appell überlassen die Arbeit den Lesenden."
+  source: "https://en.wikipedia.org/wiki/Management_accounting"
+- id: "bpds-f-coi"
+  level: "foundation"
+  difficulty: 1000
+  type: "single"
+  stem:
+    en: "Your own bonus depends on a figure that you are asked to report. What is the best first step?"
+    de: "Dein eigener Bonus hängt von einer Zahl ab, die du berichten sollst. Was ist der beste erste Schritt?"
+  options:
+  - en: "Disclose the conflict and let someone else check the figure"
+    de: "Den Konflikt offenlegen und die Zahl von jemand anderem prüfen lassen"
+    correct: true
+  - en: "Report the figure silently, because you are sure it is correct"
+    de: "Die Zahl stillschweigend berichten, weil du sicher bist, dass sie stimmt"
+    correct: false
+  - en: "Round the figure down slightly to be on the safe side"
+    de: "Die Zahl zur Sicherheit leicht abrunden"
+    correct: false
+  - en: "Hand over the task without telling anyone why"
+    de: "Die Aufgabe abgeben, ohne jemandem den Grund zu nennen"
+    correct: false
+  explanation:
+    en: "A conflict of interest is handled by making it visible and adding independent review. Being sure of your own honesty does not remove the appearance or the risk."
+    de: "Ein Interessenkonflikt wird behandelt, indem man ihn sichtbar macht und unabhängige Prüfung ergänzt. Die Überzeugung der eigenen Ehrlichkeit beseitigt weder Anschein noch Risiko."
+  source: "https://en.wikipedia.org/wiki/Conflict_of_interest"
+- id: "bpds-p-memo"
+  level: "practitioner"
+  difficulty: 1200
+  type: "single"
+  stem:
+    en: "Which element belongs in a decision memo besides the recommendation?"
+    de: "Welches Element gehört neben der Empfehlung in eine Entscheidungsvorlage?"
+  options:
+  - en: "The alternatives, including doing nothing, with trade-offs"
+    de: "Die Alternativen, auch Nichtstun, mit Zielkonflikten"
+    correct: true
+  - en: "Only the option that the controller already prefers, in full detail"
+    de: "Nur die Option, die die Controllerin schon bevorzugt, in allen Details"
+    correct: false
+  - en: "The detailed ledger postings of the whole last financial year"
+    de: "Die detaillierten Buchungen des gesamten letzten Geschäftsjahres"
+    correct: false
+  - en: "A written guarantee that the forecast will be met exactly"
+    de: "Eine schriftliche Garantie, dass die Prognose genau eintritt"
+    correct: false
+  explanation:
+    en: "Decision makers need to see the choice. Options with trade-offs show what is gained and given up, and the do-nothing option is the baseline for comparison."
+    de: "Entscheidende müssen die Wahl sehen. Optionen mit Zielkonflikten zeigen, was gewonnen und aufgegeben wird; Nichtstun ist die Vergleichsbasis."
+  source: "https://en.wikipedia.org/wiki/Scenario_planning"
+- id: "bpds-p-assume"
+  level: "practitioner"
+  difficulty: 1250
+  type: "single"
+  stem:
+    en: "A business case assumes that sales volume will double within a year. Which response is most constructive?"
+    de: "Ein Business Case nimmt an, dass sich der Absatz binnen eines Jahres verdoppelt. Welche Reaktion ist am konstruktivsten?"
+  options:
+  - en: "Ask what evidence supports it and show the result at lower volumes"
+    de: "Nach Belegen fragen und das Ergebnis bei niedrigeren Mengen zeigen"
+    correct: true
+  - en: "Accept it as given, because the sales team knows the market best"
+    de: "Sie als gegeben akzeptieren, weil der Vertrieb den Markt am besten kennt"
+    correct: false
+  - en: "Remove the business case from the discussion without any comment"
+    de: "Den Business Case ohne jeden Kommentar aus der Diskussion nehmen"
+    correct: false
+  - en: "Change the assumption to the figure you personally prefer"
+    de: "Die Annahme auf die Zahl ändern, die du persönlich bevorzugst"
+    correct: false
+  explanation:
+    en: "Constructive challenge asks for evidence and tests how sensitive the result is. It neither rubber-stamps nor rejects, and it does not replace one unsupported guess with another."
+    de: "Konstruktives Hinterfragen fordert Belege und prüft, wie empfindlich das Ergebnis ist. Es weder abnicken noch ablehnen, und es ersetzt keine unbelegte Schätzung durch eine andere."
+  source: "https://de.wikipedia.org/wiki/Sensitivit%C3%A4tsanalyse"
+- id: "bpds-p-scenario"
+  level: "practitioner"
+  difficulty: 1300
+  type: "single"
+  stem:
+    en: "What is the main purpose of scenario analysis in a recommendation?"
+    de: "Was ist der Hauptzweck einer Szenarioanalyse in einer Empfehlung?"
+  options:
+  - en: "To see which option holds up under several plausible futures"
+    de: "Zu sehen, welche Option unter mehreren plausiblen Zukünften trägt"
+    correct: true
+  - en: "To predict the single most likely future as exactly as possible"
+    de: "Die eine wahrscheinlichste Zukunft so genau wie möglich vorherzusagen"
+    correct: false
+  - en: "To make the optimistic case look more credible to the board"
+    de: "Den optimistischen Fall für die Geschäftsleitung glaubwürdiger wirken zu lassen"
+    correct: false
+  - en: "To replace the budget with a loose collection of forecasts"
+    de: "Das Budget durch eine lose Sammlung von Prognosen zu ersetzen"
+    correct: false
+  explanation:
+    en: "Scenarios are not forecasts. They show how options behave if conditions differ, so that a robust option can be chosen and warning signals defined."
+    de: "Szenarien sind keine Prognosen. Sie zeigen, wie Optionen sich bei anderen Bedingungen verhalten, damit eine robuste Option gewählt und Warnsignale definiert werden können."
+  source: "https://en.wikipedia.org/wiki/Scenario_planning"
+- id: "bpds-p-sensitivity"
+  level: "practitioner"
+  difficulty: 1330
+  type: "single"
+  stem:
+    en: "A sensitivity analysis shows that the result changes a lot when the selling price moves by 2%, but little when the cost of materials moves by 10%. What follows?"
+    de: "Eine Sensitivitätsanalyse zeigt: Das Ergebnis ändert sich stark bei 2 % Preisänderung, aber kaum bei 10 % Materialkostenänderung. Was folgt daraus?"
+  options:
+  - en: "The price assumption deserves the most scrutiny"
+    de: "Die Preisannahme verdient die meiste Prüfung"
+    correct: true
+  - en: "Materials are the key driver and need the most attention"
+    de: "Material ist der Haupttreiber und braucht die meiste Aufmerksamkeit"
+    correct: false
+  - en: "The model must be wrong because price and cost should react equally"
+    de: "Das Modell muss falsch sein, weil Preis und Kosten gleich reagieren müssten"
+    correct: false
+  - en: "Neither input matters for the final recommendation"
+    de: "Keine der beiden Größen ist für die endgültige Empfehlung wichtig"
+    correct: false
+  explanation:
+    en: "Sensitivity analysis ranks inputs by their effect on the result. A small price change with a large effect marks the assumption that must be examined most closely."
+    de: "Die Sensitivitätsanalyse ordnet Eingangsgrößen nach ihrer Wirkung auf das Ergebnis. Eine kleine Preisänderung mit großer Wirkung kennzeichnet die Annahme, die am genauesten geprüft werden muss."
+  source: "https://de.wikipedia.org/wiki/Sensitivit%C3%A4tsanalyse"
+- id: "bpds-p-pressure"
+  level: "practitioner"
+  difficulty: 1340
+  type: "single"
+  stem:
+    en: "A manager asks you to drop the pessimistic scenario from the memo because it looks unhelpful. What should you do?"
+    de: "Eine Führungskraft bittet dich, das pessimistische Szenario aus der Vorlage zu streichen, weil es unpassend wirkt. Was solltest du tun?"
+  options:
+  - en: "Keep it, explain why it matters, escalate if you cannot agree"
+    de: "Es behalten, die Bedeutung erklären, bei Uneinigkeit eskalieren"
+    correct: true
+  - en: "Remove it quietly to keep the working relationship friendly"
+    de: "Es stillschweigend streichen, um die Zusammenarbeit freundlich zu halten"
+    correct: false
+  - en: "Move it to an appendix that hardly anyone will ever read"
+    de: "Es in einen Anhang verschieben, den kaum jemand jemals liest"
+    correct: false
+  - en: "Remove it and tell only your own superior afterwards"
+    de: "Es streichen und nur die eigene Führungskraft danach informieren"
+    correct: false
+  explanation:
+    en: "Independence means that the numbers are not shaped by the wishes of the audience. A relevant downside belongs in the memo, and unresolved disagreement is escalated openly."
+    de: "Unabhängigkeit heißt, dass Zahlen nicht von den Wünschen der Adressaten geformt werden. Ein relevantes Risiko gehört in die Vorlage, und ungelöste Meinungsverschiedenheiten werden offen eskaliert."
+  source: "https://en.wikipedia.org/wiki/Conflict_of_interest"
+- id: "bpds-a-escalation"
+  level: "advanced"
+  difficulty: 1520
+  type: "single"
+  stem:
+    en: "A project is behind plan, but sponsors argue to continue because so much has already been spent. How should the controller frame the decision?"
+    de: "Ein Projekt liegt hinter dem Plan, doch die Sponsoren wollen weitermachen, weil schon so viel ausgegeben wurde. Wie sollte die Controllerin die Entscheidung rahmen?"
+  options:
+  - en: "Compare the remaining costs and benefits of each option from today"
+    de: "Die verbleibenden Kosten und Nutzen jeder Option ab heute vergleichen"
+    correct: true
+  - en: "Add the money already spent to the benefits of continuing"
+    de: "Das bereits ausgegebene Geld zum Nutzen des Weitermachens addieren"
+    correct: false
+  - en: "Recommend continuing so that nobody has to admit a mistake"
+    de: "Weitermachen empfehlen, damit niemand einen Fehler eingestehen muss"
+    correct: false
+  - en: "Stop at once, since projects behind plan never recover anyway"
+    de: "Sofort stoppen, da Projekte im Verzug sich ohnehin nie erholen"
+    correct: false
+  explanation:
+    en: "Money already spent cannot be recovered whichever option is chosen, so it should not drive the choice. Pulling the focus to future costs and benefits counters escalation of commitment."
+    de: "Bereits ausgegebenes Geld ist bei jeder Option nicht zurückholbar und sollte die Wahl nicht bestimmen. Der Blick auf künftige Kosten und Nutzen wirkt dem Festhalten am gescheiterten Kurs entgegen."
+  source: "https://openstax.org/books/principles-management/pages/2-4-barriers-to-effective-decision-making"
