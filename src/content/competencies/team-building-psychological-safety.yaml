@@ -1,0 +1,18 @@
+id: team-building-psychological-safety
+title:
+  en: Team building and psychological safety
+  de: Teamentwicklung und psychologische Sicherheit
+description:
+  en: >-
+    Build a team that works well together: clarify roles and working agreements, understand typical stages of team development, create psychological safety so people can raise concerns and mistakes, and strengthen cooperation, including in remote or hybrid teams.
+  de: >-
+    Ein Team aufbauen, das gut zusammenarbeitet: Rollen und Arbeitsvereinbarungen klären, typische Phasen der Teamentwicklung verstehen, psychologische Sicherheit schaffen, damit Bedenken und Fehler angesprochen werden, und die Zusammenarbeit stärken, auch in Remote- und Hybridteams.
+prerequisites: [leadership-fundamentals-role-transition]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/5650081a-877d-4d59-b7df-05c00572485a
+    label: encourage teambuilding
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/c291acb4-6992-46ff-bf72-681eb378daa5
+    label: work as a team

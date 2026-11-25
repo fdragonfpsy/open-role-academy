@@ -1,0 +1,15 @@
+id: delegation-accountability
+title:
+  en: Delegation and accountability
+  de: Delegieren und Verantwortung
+description:
+  en: >-
+    Hand over tasks effectively: choose what to delegate and to whom, define outcome, authority and deadline, agree on check-ins, support without taking over, and keep clear accountability while letting others own the work.
+  de: >-
+    Aufgaben wirksam übertragen: entscheiden, was an wen delegiert wird, Ergebnis, Befugnisse und Termin klären, Zwischenstände vereinbaren, unterstützen ohne zu übernehmen und die Verantwortung klar halten, während andere die Aufgabe eigenständig umsetzen.
+prerequisites: [leadership-fundamentals-role-transition]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/b00e948c-19be-4951-8cff-60f88f1046e9
+    label: delegate activities

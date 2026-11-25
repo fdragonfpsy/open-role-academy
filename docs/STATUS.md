@@ -1,5 +1,14 @@
 # Status
 
+## 2026-11-25 (k) — People Leadership framework
+
+**Done**
+- Role `people-leadership` (status `draft`): 12 role competencies (4 reused: performance-feedback, employee-relations-conflict, employment-law-basics, diversity-inclusion; 8 new with en/de texts and ESCO refs from the ESCO API) + 6 core. FRAMEWORK.md regenerated. All checks green.
+
+**Notes:** the 12-competency cap left out recruitment-selection, onboarding-offboarding and health-safety-wellbeing (wellbeing folded into motivation-engagement-wellbeing; logged in DECISIONS.md). Labour-law/works-council basics represented by employment-law-basics.
+
+**Next:** People Leadership content batches 1-3, publish, quality pass. This is the last Phase 4 role.
+
 ## 2026-11-25 (j) — Legal & Compliance complete and published
 
 **Done**

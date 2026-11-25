@@ -1,0 +1,18 @@
+id: leadership-fundamentals-role-transition
+title:
+  en: Leadership fundamentals and role transition
+  de: Führungsgrundlagen und Rollenwechsel
+description:
+  en: >-
+    Understand what changes when moving from expert to team lead: leadership versus management, the lead's responsibilities, leadership styles and when to use them, setting expectations, and building credibility in the first weeks.
+  de: >-
+    Verstehen, was sich beim Wechsel von der Fachkraft zur Teamleitung ändert: Führung und Management, die Verantwortung der Führungskraft, Führungsstile und ihr situativer Einsatz, Erwartungen klären und Glaubwürdigkeit in den ersten Wochen aufbauen.
+prerequisites: [communication-collaboration]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/1f1d2ff8-c4c1-45cc-9812-6a7ee84a73cb
+    label: lead a team
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/cb668e89-6ef5-4ff3-ab4a-506010e7e70b
+    label: manage a team

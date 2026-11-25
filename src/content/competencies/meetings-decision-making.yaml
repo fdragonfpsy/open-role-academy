@@ -1,0 +1,18 @@
+id: meetings-decision-making
+title:
+  en: Effective meetings and decision-making
+  de: Wirksame Meetings und Entscheidungsfindung
+description:
+  en: >-
+    Run meetings that produce results: decide whether a meeting is needed, prepare an agenda, facilitate participation, record decisions and actions, and choose a decision approach (consult, consent, decide alone) with transparent reasoning.
+  de: >-
+    Meetings leiten, die Ergebnisse bringen: entscheiden, ob ein Meeting nötig ist, eine Agenda vorbereiten, Beteiligung moderieren, Entscheidungen und Aufgaben festhalten und einen Entscheidungsansatz (anhören, Konsent, allein entscheiden) mit nachvollziehbarer Begründung wählen.
+prerequisites: [communication-collaboration]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/d62d2b4c-a6f8-439e-8a1b-4f29ab5f2c47
+    label: make decisions
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/906c9e66-bdee-4f8e-93d7-88d9fcf39a0a
+    label: fix meetings

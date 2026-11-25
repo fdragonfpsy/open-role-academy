@@ -1,0 +1,15 @@
+id: goal-setting-team-planning
+title:
+  en: Goal setting and team planning
+  de: Zielsetzung und Teamplanung
+description:
+  en: >-
+    Translate organisational priorities into clear team goals: formulate goals with simple methods such as SMART or OKR at concept level, plan work and capacity, set priorities, track progress and adjust plans together with the team.
+  de: >-
+    Prioritäten der Organisation in klare Teamziele übersetzen: Ziele mit einfachen Methoden wie SMART oder OKR auf Konzeptebene formulieren, Arbeit und Kapazität planen, Prioritäten setzen, Fortschritt verfolgen und Pläne gemeinsam mit dem Team anpassen.
+prerequisites: [leadership-fundamentals-role-transition, self-organisation-project-basics]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/272fddbb-917a-4720-8903-85ce51e1cbe5
+    label: imprint visionary aspirations into the business management
