@@ -1,0 +1,18 @@
+id: investment-appraisal-capital-budgeting
+title:
+  en: Investment appraisal and capital budgeting
+  de: Investitionsrechnung und Kapitalbudgetierung
+description:
+  en: >-
+    Evaluate investments with payback, net present value and internal rate of return, build business cases, run sensitivity and scenario analyses and track benefits after approval.
+  de: >-
+    Investitionen mit Amortisationsdauer, Kapitalwert und internem Zinsfuß bewerten, Business Cases erstellen, Sensitivitäts- und Szenarioanalysen durchführen und den Nutzen nach der Freigabe nachverfolgen.
+prerequisites: [business-finance-fundamentals, cost-accounting]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/bf12b461-1c53-4d81-a395-8ba77f7483c4
+    label: investment analysis
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/a4bbd0d9-a6be-4472-b05d-291e60cf6b4b
+    label: develop business case

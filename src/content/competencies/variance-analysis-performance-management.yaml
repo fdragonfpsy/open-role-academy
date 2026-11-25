@@ -1,0 +1,18 @@
+id: variance-analysis-performance-management
+title:
+  en: Variance analysis and performance management
+  de: Abweichungsanalyse und Performance-Steuerung
+description:
+  en: >-
+    Compare plan, actual and prior-period figures, split variances into price, volume and mix effects, find root causes with the business and agree corrective actions.
+  de: >-
+    Plan-, Ist- und Vorperiodenwerte vergleichen, Abweichungen in Preis-, Mengen- und Mixeffekte zerlegen, Ursachen mit dem Fachbereich klären und Gegenmaßnahmen vereinbaren.
+prerequisites: [budgeting-forecasting, financial-analysis-kpis]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/8a43795b-bb38-4f29-91df-a6c92ad4643c
+    label: analyse financial performance of a company
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/3369d4f5-bfa7-47dc-b61f-e74d0d91bf74
+    label: optimise financial performance

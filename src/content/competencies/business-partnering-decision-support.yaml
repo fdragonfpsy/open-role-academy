@@ -1,0 +1,18 @@
+id: business-partnering-decision-support
+title:
+  en: Business partnering and decision support
+  de: Business Partnering und Entscheidungsunterstützung
+description:
+  en: >-
+    Advise managers on financial matters, translate numbers into clear recommendations, challenge assumptions constructively and communicate results to non-finance audiences.
+  de: >-
+    Führungskräfte in Finanzfragen beraten, Zahlen in klare Empfehlungen übersetzen, Annahmen konstruktiv hinterfragen und Ergebnisse für Nicht-Finanzfachleute verständlich vermitteln.
+prerequisites: [communication-collaboration, financial-analysis-kpis]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/79c36c91-28a5-44b7-ab9b-7093b2d4b21e
+    label: advise on financial matters
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/5da3c765-10a3-49eb-934c-ec401ceb1a34
+    label: analyse business plans

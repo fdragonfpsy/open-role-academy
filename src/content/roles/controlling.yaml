@@ -1,0 +1,65 @@
+id: controlling
+kind: role
+status: draft
+title:
+  en: Controlling
+  de: Controlling
+summary:
+  en: >-
+    Steer the business with numbers: analyse costs and profitability, plan and forecast, explain variances, appraise investments, monitor liquidity, run the reporting cycle and advise managers as a business partner.
+  de: >-
+    Das Unternehmen mit Zahlen steuern: Kosten und Profitabilität analysieren, planen und prognostizieren, Abweichungen erklären, Investitionen bewerten, Liquidität überwachen, den Berichtszyklus betreiben und Führungskräfte als Business Partner beraten.
+competencies:
+  # role-specific
+  - id: cost-accounting
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: budgeting-forecasting
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: variance-analysis-performance-management
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: financial-analysis-kpis
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: business-intelligence-reporting
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: profitability-pricing-analysis
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: investment-appraisal-capital-budgeting
+    priority: 2
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  - id: cash-liquidity-management
+    priority: 2
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  - id: controlling-processes-systems
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: business-partnering-decision-support
+    priority: 2
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  - id: internal-controls-audit
+    priority: 3
+    targets: { foundation: null, practitioner: foundation, advanced: practitioner }
+  # core track
+  - id: information-security-basics
+    priority: 3
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: digital-ai-literacy
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: communication-collaboration
+    priority: 2
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: working-with-data
+    priority: 1
+    targets: { foundation: foundation, practitioner: practitioner, advanced: advanced }
+  - id: self-organisation-project-basics
+    priority: 3
+    targets: { foundation: foundation, practitioner: practitioner, advanced: practitioner }
+  - id: business-finance-fundamentals
+    priority: 1
+    targets: { foundation: practitioner, practitioner: advanced, advanced: advanced }

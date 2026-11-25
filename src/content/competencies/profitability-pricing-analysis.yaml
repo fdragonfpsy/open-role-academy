@@ -1,0 +1,21 @@
+id: profitability-pricing-analysis
+title:
+  en: Profitability and pricing analysis
+  de: Profitabilitäts- und Preisanalyse
+description:
+  en: >-
+    Analyse profitability by product, customer, channel and segment, use contribution margins and break-even analysis, and support pricing and cost-benefit decisions with numbers.
+  de: >-
+    Profitabilität nach Produkt, Kunde, Vertriebsweg und Segment analysieren, Deckungsbeiträge und Break-even-Analyse nutzen sowie Preis- und Kosten-Nutzen-Entscheidungen mit Zahlen unterstützen.
+prerequisites: [cost-accounting, financial-analysis-kpis]
+track: role
+frameworkRefs:
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/4cfc7ef6-e251-4c93-bd5e-fd6936dee11c
+    label: manage profitability
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/48b68726-0fd6-4e03-a5eb-82236516ee7a
+    label: provide cost benefit analysis reports
+  - framework: ESCO
+    uri: http://data.europa.eu/esco/skill/3ad4d492-6fae-47b3-b72a-9a7c1c17da6e
+    label: perform financial analysis on price strategies

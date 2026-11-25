@@ -1,5 +1,16 @@
 # Status
 
+## 2026-11-25 (c) — Controlling framework
+
+**Done**
+- Role `controlling` (status `draft`): 11 role competencies (6 reused from other roles, 5 new with en/de texts and ESCO refs from the ESCO API) + 6 core. FRAMEWORK.md regenerated. All checks green.
+
+**Notes:** reused `cost-accounting` has prerequisite `bookkeeping-fundamentals`, which is not in the Controlling role (validator accepts it). Some competencies have no foundation target, as in earlier roles.
+
+**Counts:** roles 12 (2 draft) · competencies 113 · units 608 · items 1267 · resources 671
+
+**Next:** Controlling content batches 1-3, publish, quality pass.
+
 ## 2026-11-25 (b) — Software Development complete and published
 
 **Done**
