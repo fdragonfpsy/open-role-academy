@@ -1,0 +1,96 @@
+---
+id: controlling-processes-systems-practitioner
+competency: controlling-processes-systems
+level: practitioner
+title: "Datenfluss vom ERP zum Bericht und Abstimmung"
+objectives:
+  - "Beschreiben, wie Daten typischerweise aus Quellsystemen in einen Bericht gelangen."
+  - "Die Rollen von ERP, Data-Warehouse, ETL und BI-Werkzeugen einfach erklären."
+  - "Stammdaten und Zuordnungstabellen erklären und warum sie viele Berichtsfehler verursachen."
+  - "Eine einfache Abstimmung zwischen Bericht und Hauptbuch durchführen und dokumentieren."
+minutes: 30
+resources:
+  - wikipedia-enterprise-resource-planning
+  - wikipedia-de-enterprise-resource-planning
+  - wikipedia-data-warehouse
+  - wikipedia-extract-transform-load
+  - wikipedia-de-stammdaten
+  - wikipedia-data-reconciliation
+status: ai-draft
+sources:
+  - title: "Enterprise resource planning"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Enterprise_resource_planning
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Enterprise-Resource-Planning"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Enterprise-Resource-Planning
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Data warehouse"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_warehouse
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Extract, transform, load"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Extract,_transform,_load
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Stammdaten"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Stammdaten
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Data reconciliation"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_reconciliation
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Ein Bericht ist nur so gut wie der Weg, den die Daten bis zu ihm genommen haben. Praktikerinnen und Praktiker im Controlling arbeiten oft zwischen Buchhaltung, IT und Management; sie brauchen ein klares Bild dieses Weges, um die Ursache einer falschen Zahl schnell zu finden.
+
+## Ein typischer Datenfluss
+
+Die Landschaften unterscheiden sich je Unternehmen, der logische Ablauf ist aber ähnlich:
+
+1. **ERP- und Quellsysteme** (Enterprise Resource Planning) enthalten Bewegungsdaten: Buchungen, Aufträge, Einkäufe, Zeiterfassung. Das ERP-System verbindet Geschäftsfunktionen auf einer gemeinsamen Datenbasis.
+2. **Extract, Transform, Load (ETL)** kopiert Daten aus den Quellen, bereinigt und wandelt sie um und lädt sie in ein Ziel.
+3. **Data-Warehouse** (oder Datenmodell) speichert integrierte, historische Daten in einer für das Berichtswesen gedachten Struktur.
+4. **BI- und Reporting-Werkzeuge** zeigen die Daten in Berichten und Dashboards.
+5. **Planungswerkzeuge** oder Tabellen ergänzen Plan- und Forecast-Daten, die mit den Ist-Daten über dieselben Dimensionen (Konto, Kostenstelle, Periode) zusammenpassen müssen.
+
+Jeder Schritt kann die Daten verändern; jeder Schritt ist deshalb ein Ort, an dem Differenzen entstehen.
+
+## Stammdaten und Zuordnung
+
+**Stammdaten** beschreiben die Objekte, auf die sich Buchungen beziehen: Konten, Kostenstellen, Produkte, Kunden, Hierarchien. Berichte gruppieren Zahlen nach diesen Hierarchien. Ist eine neue Kostenstelle noch keiner Hierarchie zugeordnet, können ihre Kosten in einer Summe fehlen oder als "nicht zugeordnet" erscheinen. Zuordnungstabellen, die Schlüssel zwischen Systemen übersetzen, brauchen eine verantwortliche Person und einen Änderungsprozess.
+
+## Abstimmung
+
+**Abstimmung** (Reconciliation) heißt, zwei Quellen zu vergleichen, die übereinstimmen sollten, und jede Differenz zu erklären. Typische Prüfungen: Die Berichtssumme entspricht der Hauptbuchsumme derselben Periode, die Zahl der Datensätze stimmt nach einem Ladevorgang, Salden schreiben den Vorperiodenstand fort und Vorzeichen sind einheitlich. Dokumentiere, was du geprüft hast, das Ergebnis und offene Punkte, damit jemand anderes die Prüfung wiederholen könnte.
+
+## Wenn Zahlen nicht stimmen
+
+Gehe von der Summe nach unten vor: Prüfe zuerst die Filter (Periode, Gesellschaft, Währung), vergleiche dann Summen nach Kontengruppe, dann nach Kostenstelle und liste zuletzt die Einzelposten auf. Typische Ursachen sind fehlende Zuordnungen, der Zeitpunkt des Datenladens, manuelle Buchungen nach dem Extrakt, abweichende Stichtage der Währungsumrechnung und Doppelzählung durch Verknüpfungen.
+
+## Beispiel zur Veranschaulichung
+
+Nur zur Veranschaulichung; erfundene Zahlen. Der Umsatzbericht zeigt 1.204.500 EUR, das Hauptbuch 1.210.000 EUR. Die Differenz von 5.500 EUR wird nach Kundengruppen eingegrenzt: Eine neue Kundengruppe fehlt in der Zuordnungstabelle, ihr Umsatz ist daher nicht in der Berichtshierarchie enthalten. Nach Ergänzung der Zuordnung und neuem Laden stimmen die Summen. Die Analystin oder der Analyst dokumentiert Ursache und Korrektur und richtet eine neue Prüfung ein, die jeden Monat nicht zugeordnete Posten auflistet.
+
+## Das Wichtigste in Kürze
+
+- Kenne den Weg: Quellsystem, ETL, Warehouse, BI-Werkzeug sowie Plandaten.
+- Stammdaten und Zuordnungstabellen sind eine Hauptquelle von Berichtsfehlern.
+- Berichte mit dem Hauptbuch abstimmen und die Prüfung dokumentieren.
+- Differenzen von der Summe bis zu Einzelposten untersuchen.

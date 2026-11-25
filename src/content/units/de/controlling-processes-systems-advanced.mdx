@@ -1,0 +1,92 @@
+---
+id: controlling-processes-systems-advanced
+competency: controlling-processes-systems
+level: advanced
+title: "Governance von Berichten, Definitionen und Datenqualität"
+objectives:
+  - "Die Elemente der Berichts-Governance beschreiben: Verantwortung, Definition, Datenherkunft, Zugriff und Änderungskontrolle."
+  - "Erklären, warum ein Kennzahlenglossar und eine einheitliche Definition Konflikte verringern."
+  - "Dimensionen der Datenqualität und passende Kontrollen für ein Controlling-Datenmodell nennen."
+  - "Eine kontrollierte Änderung an einem Bericht oder System mit Test und Freigabe planen."
+minutes: 30
+resources:
+  - wikipedia-data-governance
+  - wikipedia-data-quality
+  - wikipedia-data-lineage
+  - wikipedia-master-data-management
+  - wikipedia-business-intelligence
+  - wikipedia-de-business-intelligence
+status: ai-draft
+sources:
+  - title: "Data governance"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_governance
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Data quality"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_quality
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Data lineage"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_lineage
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Master data management"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Master_data_management
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Business intelligence"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Business_intelligence
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Business Intelligence"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Business_Intelligence
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Wenn mehrere Berichte für dieselbe Kennzahl unterschiedliche Zahlen zeigen, verliert das Management das Vertrauen in alle. Auf fortgeschrittenem Niveau gestaltet das Controlling die Regeln, die Berichte konsistent halten: Wer verantwortet einen Bericht, wie ist eine Kennzahl definiert, woher stammen die Daten und wie werden Änderungen durchgeführt?
+
+## Elemente der Berichts-Governance
+
+- **Verantwortung:** Jeder Bericht und jede Kennzahl hat eine benannte verantwortliche Person, die Fragen beantwortet und Änderungen freigibt.
+- **Definitionen:** Ein Kennzahlenglossar nennt Formel, Datenquelle, Einheit, Vorzeichenkonvention, Aktualisierungsrhythmus und Ausschlüsse. Es gilt überall eine Definition, oder ein Unterschied wird ausdrücklich benannt.
+- **Datenherkunft (Lineage):** Eine Zahl lässt sich über Bericht, Datenmodell und ETL-Schritte bis zur Quelle zurückverfolgen. So ist eine Auswirkungsanalyse möglich: Ändert sich ein Quellfeld, weißt du, welche Berichte betroffen sind.
+- **Zugriff:** Zugriffsrechte folgen dem Need-to-know-Prinzip und werden regelmäßig überprüft; für Änderungen und Freigaben gilt die Funktionstrennung.
+- **Änderungskontrolle:** Änderungen an Berichten, Berechnungslogik und Zuordnungen werden beantragt, getestet, freigegeben und dokumentiert und lassen sich zurücknehmen.
+
+## Datenqualität
+
+Datenqualität wird oft über Dimensionen wie Genauigkeit, Vollständigkeit, Konsistenz und Aktualität beschrieben (die genaue Liste variiert je nach Quelle). Kontrollen lassen sich einbauen: Validierungsregeln bei der Erfassung, Vollständigkeitsprüfungen (sind alle Kostenstellen vorhanden?), Konsistenzprüfungen zwischen Systemen und Überwachung der Ladezeiten. Eine verantwortliche Person je Stammdatenbereich und ein dokumentierter Prozess zum Anlegen und Schließen von Kostenstellen verhindern viele Probleme an der Quelle. Stammdatenmanagement und Data Governance beschreiben das als Daueraufgabe der Organisation, nicht als einmalige Bereinigung.
+
+## Tabellen und manuelle Schritte
+
+Viele Controlling-Prozesse enthalten weiterhin Tabellenkalkulationen. Sie sind flexibel, aber anfällig für versteckte Fehler. Verringere das Risiko mit klarer Eingabe- und Ausgabestruktur, geschützten Formeln, Versionsbezeichnung, dokumentierter Verantwortung, einer Abstimmung mit dem System und dem Plan, wiederkehrende manuelle Schritte ins System zu verlagern, wo der Aufwand gerechtfertigt ist.
+
+## Personenbezogene Daten in Berichten
+
+Berichte mit personenbezogenen Daten, zum Beispiel auf Ebene einzelner Mitarbeitender, unterliegen dem Datenschutz. In der EU gilt dafür unter anderem die DSGVO; in Deutschland können zudem Mitbestimmungsrechte des Betriebsrats relevant sein. Beziehe Datenschutz und Betriebsrat früh ein und berichte möglichst aggregiert.
+
+## Beispiel zur Veranschaulichung
+
+Nur zur Veranschaulichung; erfunden. Zwei Berichte zeigen "Rohertrag": Der Vertrieb rechnet Umsatz minus direktes Material, das Controlling Umsatz minus alle variablen Kosten. Der Streit wird durch einen Glossareintrag gelöst, der "Rohertrag" für Managementberichte definiert und die Vertriebssicht in "Materialmarge" umbenennt. Der Änderungsantrag enthält einen Test der neuen Definition mit den Vorjahreszahlen, die Freigabe beider Verantwortlichen und einen Hinweis mit Versionsdatum in der Fußzeile des Berichts.
+
+## Das Wichtigste in Kürze
+
+- Governance heißt Verantwortung, Definition, Datenherkunft, Zugriff und Änderungskontrolle.
+- Ein Kennzahlenglossar verhindert widersprüchliche Zahlen für denselben Namen.
+- Datenqualitätskontrollen gehören in den Prozess, nicht nur in die Bereinigung.
+- Tabellen gehören zum Kontrollumfeld; personenbezogene Daten sorgfältig behandeln.

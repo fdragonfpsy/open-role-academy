@@ -1,0 +1,96 @@
+---
+id: controlling-processes-systems-practitioner
+competency: controlling-processes-systems
+level: practitioner
+title: "Data flow from ERP to report, and reconciliation"
+objectives:
+  - "Describe how data typically flows from source systems into a report."
+  - "Explain the roles of ERP, data warehouse, ETL and BI tools in simple terms."
+  - "Explain master data and mapping tables and why they cause many report errors."
+  - "Perform and document a basic reconciliation between report and ledger."
+minutes: 30
+resources:
+  - wikipedia-enterprise-resource-planning
+  - wikipedia-de-enterprise-resource-planning
+  - wikipedia-data-warehouse
+  - wikipedia-extract-transform-load
+  - wikipedia-de-stammdaten
+  - wikipedia-data-reconciliation
+status: ai-draft
+sources:
+  - title: "Enterprise resource planning"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Enterprise_resource_planning
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Enterprise-Resource-Planning"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Enterprise-Resource-Planning
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Data warehouse"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_warehouse
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Extract, transform, load"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Extract,_transform,_load
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Stammdaten"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Stammdaten
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Data reconciliation"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_reconciliation
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+---
+
+## Why this matters
+
+A report is only as good as the path the data took to reach it. Practitioners in controlling often work between accounting, IT and management, so they need a clear picture of that path in order to find the cause of a wrong number quickly.
+
+## A typical data flow
+
+Setups differ between companies, but the logical flow is similar:
+
+1. **ERP and source systems** (enterprise resource planning) hold transactions: bookings, orders, purchases, time recording. The ERP integrates business functions on a common database.
+2. **Extract, transform, load (ETL)** copies data out of the sources, cleans and converts it, and loads it into a target.
+3. **Data warehouse** (or data model) stores integrated, historical data in a structure meant for reporting.
+4. **BI and reporting tools** show the data in reports and dashboards.
+5. **Planning tools** or spreadsheets add plan and forecast data, which must be matched with the actuals by the same dimensions (account, cost centre, period).
+
+Each step can change the data, so each step is a place where differences arise.
+
+## Master data and mapping
+
+**Master data** describes the entities that transactions refer to: accounts, cost centres, products, customers, hierarchies. Reports group numbers by these hierarchies. If a new cost centre is not yet assigned to a hierarchy, its costs may be missing in a total or appear as "unassigned". Mapping tables, which translate codes between systems, need an owner and a change process.
+
+## Reconciliation
+
+**Reconciliation** means comparing two sources that should agree and explaining any difference. Typical checks: the report total equals the ledger total for the same period, the number of records matches after a load, balances roll forward from the prior period, and signs are consistent. Document what you checked, the result and the open items, so that someone else could repeat it.
+
+## When numbers do not match
+
+Work from the total down: confirm the filter (period, entity, currency), compare totals by account group, then by cost centre, then list the single items. Typical causes are missing mappings, timing of the data load, manual postings after the extract, different currency conversion dates and double counting through joins.
+
+## Worked example
+
+Illustration only; invented figures. The revenue report shows 1,204,500 EUR, the ledger 1,210,000 EUR. The difference of 5,500 EUR is traced by customer group: one new customer group is missing in the mapping table, so its revenue is not included in the report hierarchy. After adding the mapping and reloading, the totals agree. The analyst documents the cause, the fix and a new check that lists unmapped items every month.
+
+## Key takeaways
+
+- Know the path: source system, ETL, warehouse, BI tool, plus planning data.
+- Master data and mapping tables are a main source of report errors.
+- Reconcile reports with the ledger and document the check.
+- Investigate differences from total down to single items.
