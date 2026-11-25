@@ -1,0 +1,14 @@
+id: wikipedia-foreign-key
+url: "https://en.wikipedia.org/wiki/Foreign_key"
+title: "Foreign key"
+provider: Wikipedia
+language: en
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-25
+mode: link
+competencies: [databases-data-modelling-basics]
+levels: [foundation]
+note: "Wikipedia text under CC BY-SA; HTTP 200 on 2026-11-25. Link only."

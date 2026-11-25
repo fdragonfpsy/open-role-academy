@@ -1,0 +1,101 @@
+---
+id: ci-cd-devops-basics-foundation
+competency: ci-cd-devops-basics
+level: foundation
+title: "Kontinuierliche Integration und Umgebungen"
+objectives:
+  - "Kontinuierliche Integration erklären und warum kleine, häufige Merges helfen."
+  - "Die Stufen einer einfachen Pipeline beschreiben."
+  - "Entwicklungs-, Test- und Produktionsumgebung unterscheiden."
+  - "Die Idee von DevOps erklären."
+minutes: 25
+resources:
+  - wikipedia-continuous-integration
+  - wikipedia-ci-cd
+  - wikipedia-deployment-environment
+  - wikipedia-devops
+  - wikipedia-de-kontinuierliche-integration
+  - wikipedia-de-devops
+status: ai-draft
+sources:
+  - title: "Continuous integration"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Continuous_integration
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "CI/CD"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/CI/CD
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Deployment environment"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Deployment_environment
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "DevOps"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/DevOps
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Kontinuierliche Integration"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Kontinuierliche_Integration
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "DevOps"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/DevOps
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Große, seltene Releases sind riskant: Viele Änderungen sammeln sich an, niemand weiß, welche etwas kaputt gemacht hat, und das Ausliefern wird zu einem gefürchteten Ereignis. Wer Build, Test und Auslieferung automatisiert, macht Releases klein, häufig und unspektakulär. Das ist das Ziel.
+
+## Kontinuierliche Integration (CI)
+
+Bei der **kontinuierlichen Integration** führen Entwickelnde ihre Änderungen oft in den gemeinsamen Hauptzweig zusammen, mindestens täglich, und jeder Merge löst automatisch einen Build und einen Testlauf aus. Probleme zeigen sich nach Minuten, solange die Änderung noch frisch im Kopf ist. Damit CI funktioniert, brauchst du ein Versionsverwaltungssystem, Tests, die ohne manuelle Schritte laufen, und eine Teamgewohnheit: Ist der Build rot, hat die Reparatur Vorrang.
+
+## Pipelines
+
+Eine **Pipeline** ist die automatisierte Abfolge von Schritten, die eine Änderung durchläuft. Eine einfache hat diese Stufen:
+
+1. **Build**: die Software kompilieren oder paketieren.
+2. **Test**: die automatisierten Tests ausführen (schnelle zuerst).
+3. **Analyse**: optionale Prüfungen wie Stilregeln oder Abhängigkeits-Scans.
+4. **Paketieren und ausrollen**: ein auslieferbares Artefakt erzeugen und in eine Umgebung bringen.
+
+Schlägt eine Stufe fehl, stoppt die Pipeline und meldet es. Die Pipeline-Definition liegt als Datei im Repository und wird daher wie Code versioniert.
+
+## Umgebungen
+
+Eine **Umgebung** ist ein Ort, an dem die Software läuft. Ein verbreiteter Aufbau:
+
+- **Entwicklung**: dein Rechner oder ein gemeinsames System zum Ausprobieren.
+- **Test oder Staging**: ähnelt der Produktion und dient zur Prüfung eines Releases, bevor Nutzende es sehen.
+- **Produktion**: das Livesystem für echte Nutzende, das die meiste Sorgfalt braucht.
+
+Dasselbe gebaute Artefakt sollte durch alle Umgebungen wandern; nur die Konfiguration unterscheidet sich.
+
+## CI/CD und DevOps
+
+CI/CD steht für kontinuierliche Integration und kontinuierliche Auslieferung (oder Bereitstellung): Die Pipeline führt von getestetem Code zu einer auslieferbaren oder ausgelieferten Version. **DevOps** ist eine Arbeitsweise, in der Entwicklung und Betrieb gemeinsam Verantwortung für Bau, Betrieb und Verbesserung eines Dienstes tragen, gestützt durch Automatisierung und Rückmeldungen aus laufenden Systemen.
+
+## Beispiel zur Veranschaulichung
+
+Nur zur Veranschaulichung; erfundenes Team. Ein vierköpfiges Team arbeitet an einer Buchungswebsite. Alle schieben kleine Änderungen auf kurzlebige Branches und öffnen einen Merge-Request. Die Pipeline baut die Seite, führt Unit-Tests und eine Stilprüfung aus und meldet das Ergebnis im Request. Nach dem Merge rollt die Pipeline automatisch auf die Testumgebung aus. Eines Morgens färbt ein Merge den Build rot; der Autor sieht den fehlgeschlagenen Test nach Minuten, behebt ihn und führt erneut zusammen. Niemand muss eine Woche an Änderungen durchsuchen.
+
+## Wichtige Erkenntnisse
+
+- CI heißt häufige Merges, jeweils durch automatischen Build und Tests geprüft.
+- Eine Pipeline führt Build-, Test-, Analyse- und Auslieferungsschritte aus und stoppt bei Fehlern.
+- Entwicklungs-, Test- und Produktionsumgebung dienen verschiedenen Zwecken; dasselbe Artefakt wandert durch sie.
+- DevOps teilt die Verantwortung für Bau und Betrieb von Software.

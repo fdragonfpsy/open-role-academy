@@ -150,7 +150,7 @@ One role per task, in the order of CLAUDE.md §4.3. Each task = framework + cont
   - [x] framework (role + 10 competencies, `status: draft`)
   - [x] content: programming-fundamentals-problem-solving, version-control-collaboration, software-design-architecture-basics
   - [x] content: software-testing-quality, software-debugging, apis-integration
-  - [ ] content: databases-data-modelling-basics, secure-coding-basics, ci-cd-devops-basics
+  - [x] content: databases-data-modelling-basics, secure-coding-basics, ci-cd-devops-basics
   - [ ] content: agile-delivery-code-review; then `status: published` and quality pass
 - [ ] Controlling
 - [ ] Legal & Compliance

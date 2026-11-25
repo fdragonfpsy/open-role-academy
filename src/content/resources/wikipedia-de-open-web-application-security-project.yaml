@@ -1,0 +1,14 @@
+id: wikipedia-de-open-web-application-security-project
+url: "https://de.wikipedia.org/wiki/Open_Web_Application_Security_Project"
+title: "Open Web Application Security Project"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-25
+mode: link
+competencies: [secure-coding-basics]
+levels: [foundation]
+note: "Wikipedia text under CC BY-SA; HTTP 200 on 2026-11-25. Link only."

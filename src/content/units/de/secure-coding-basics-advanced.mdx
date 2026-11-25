@@ -1,0 +1,109 @@
+---
+id: secure-coding-basics-advanced
+competency: secure-coding-basics
+level: advanced
+title: "CSRF, sicheres Design und Sicherheit in der Pipeline"
+objectives:
+  - "Cross-Site-Request-Forgery erklären und gängige Abwehr nennen."
+  - "Serverseitige Validierung und sichere Voreinstellungen als Entwurfsregeln anwenden."
+  - "Fuzzing, statische Analyse und Review als Sicherheitstests einsetzen."
+  - "Risiken durch Abhängigkeiten und Lieferkette für ein Team beurteilen."
+minutes: 30
+resources:
+  - wikipedia-cross-site-request-forgery
+  - wikipedia-data-validation
+  - wikipedia-fuzzing
+  - wikipedia-software-supply-chain
+  - wikipedia-principle-of-least-privilege
+  - wikipedia-de-cross-site-request-forgery
+  - wikipedia-de-fuzzing
+status: ai-draft
+sources:
+  - title: "Cross-site request forgery"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Cross-site_request_forgery
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Data validation"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_validation
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Fuzzing"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Fuzzing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Software supply chain"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Software_supply_chain
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Principle of least privilege"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Principle_of_least_privilege
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Cross-Site-Request-Forgery"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Cross-Site-Request-Forgery
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Fuzzing"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Fuzzing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Auf fortgeschrittenem Niveau bist du nicht nur für deinen Code verantwortlich, sondern dafür, wie ein Team Sicherheitslücken verhindert, findet und behandelt. Dazu braucht es Entwurfsregeln, die den sicheren Weg zum einfachen machen, und Tests, die bei jeder Änderung laufen.
+
+## Cross-Site-Request-Forgery (CSRF)
+
+**CSRF** bringt den Browser einer angemeldeten Person dazu, eine Anfrage an eine Website zu senden, bei der sie authentifiziert ist, zum Beispiel über einen präparierten Link oder ein Formular auf einer anderen Seite. Hängt der Browser die Sitzungsdaten automatisch an, kann der Server die Anfrage für echt halten. Gängige Abwehr:
+
+- Ein geheimes, unvorhersehbares **Anti-CSRF-Token** pro Sitzung oder Formular, das der Server bei zustandsändernden Anfragen prüft.
+- Cookie-Attribute, die das Senden von Cookies bei seitenübergreifenden Anfragen einschränken (das SameSite-Attribut), als zusätzliche Schicht.
+- Zustand nie mit GET-Anfragen ändern.
+
+Frameworks bieten diesen Schutz oft an; deine Aufgabe ist zu wissen, wann er aktiv ist, und ihn nicht abzuschalten.
+
+## Entwurfsregeln, die ganze Fehlerklassen verhindern
+
+- **Auf dem Server validieren, an Vertrauensgrenzen**, mit Positivlisten. Prüfungen im Client verbessern die Bedienung, sind aber keine Sicherheitsmaßnahme.
+- **Sicher als Voreinstellung**: Neue Konten, Tokens und Funktionen starten mit minimalen Rechten, riskante Optionen müssen bewusst eingeschaltet werden.
+- **Im Zweifel ablehnen**: Kann eine Prüfung nicht abgeschlossen werden, wird der Zugriff verweigert.
+- **Angriffsfläche verkleinern**: ungenutzte Endpunkte, Funktionen und Abhängigkeiten entfernen.
+- Fehlermeldungen für Nutzende frei von Interna halten; Details stattdessen für das Team protokollieren.
+
+## Sicherheitstests als Teil der Auslieferung
+
+- **Statische Analyse** durchsucht Quellcode nach riskanten Mustern, ohne ihn auszuführen; rechne mit Fehlalarmen und vereinbare, wie Funde bewertet werden.
+- **Abhängigkeits-Scans** melden bekannte Schwachstellen in Paketen.
+- **Fuzzing** füttert ein Programm mit vielen unerwarteten oder zufälligen Eingaben, um Abstürze und Fehler zu finden, die handgeschriebene Tests übersehen.
+- **Code-Review** mit Sicherheits-Checkliste und Tests für Missbrauchsfälle (was, wenn jemand diesen Wert sendet?).
+- Lass diese Prüfungen in der Pipeline laufen, damit sie bei jeder Änderung stattfinden, und halte einen kurzen Ablauf für gemeldete Schwachstellen bereit.
+
+## Lieferkette auf Teamebene
+
+Lege fest, wer eine Abhängigkeit hinzufügen darf und wie sie geprüft wird. Nutze Lock-Dateien und eine Möglichkeit, zu sehen, was in einer Ausgabe steckt (ein Bestandsverzeichnis der Komponenten). Begrenze die Rechte des Build-Systems, denn ein Build mit Zugriff auf Produktionsgeheimnisse ist ein Ziel.
+
+## Beispiel zur Veranschaulichung
+
+Nur zur Veranschaulichung; erfundene Admin-Seite. Eine interne Seite löscht eine Nutzerin, wenn sie eine GET-Anfrage mit der Nutzernummer erhält. Ein präparierter Link auf einer anderen Seite kann das für einen angemeldeten Administrator auslösen. Das Team stellt die Aktion auf POST um, ergänzt eine Anti-CSRF-Token-Prüfung und setzt das SameSite-Attribut am Sitzungscookie. Ein Test sendet die Anfrage ohne Token und erwartet eine Ablehnung. Ein Fuzzing-Lauf gegen die Importfunktion desselben Dienstes findet eine Eingabe, die den Parser abstürzen lässt; das Team behebt das und behält die Eingabe als Regressionstest.
+
+## Wichtige Erkenntnisse
+
+- CSRF missbraucht automatisch gesendete Zugangsdaten; Abwehr mit Tokens, eingeschränkten Cookies und ohne Zustandsänderung per GET.
+- Den sicheren Weg zur Voreinstellung machen: serverseitige Validierung, minimale Rechte, im Zweifel ablehnen.
+- Statische Analyse, Abhängigkeits-Scans, Fuzzing und Review kombinieren und automatisieren.
+- Abhängigkeiten und Build-System als Teil der Angriffsfläche behandeln.

@@ -1,0 +1,106 @@
+---
+id: ci-cd-devops-basics-practitioner
+competency: ci-cd-devops-basics
+level: practitioner
+title: "Delivery strategies, configuration and feature toggles"
+objectives:
+  - "Distinguish continuous delivery from continuous deployment."
+  - "Use blue-green deployment and rollback to reduce release risk."
+  - "Separate deployment from release with feature toggles."
+  - "Manage configuration outside code and describe infrastructure as code."
+minutes: 30
+resources:
+  - wikipedia-continuous-delivery
+  - wikipedia-blue-green-deployment
+  - wikipedia-feature-toggle
+  - wikipedia-twelve-factor-app-methodology
+  - wikipedia-infrastructure-as-code
+  - wikipedia-de-continuous-delivery
+  - wikipedia-de-feature-toggle
+status: ai-draft
+sources:
+  - title: "Continuous delivery"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Continuous_delivery
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Blue–green deployment"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Blue%E2%80%93green_deployment
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Feature toggle"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Feature_toggle
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Twelve-Factor App methodology"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Twelve-Factor_App_methodology
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Infrastructure as code"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Infrastructure_as_code
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Continuous Delivery"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Continuous_Delivery
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Feature Toggle"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Feature_Toggle
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+A pipeline that runs tests is the start. Practitioners decide how a tested change reaches users safely, how to undo it quickly, and how the same code runs in different environments.
+
+## Continuous delivery and continuous deployment
+
+With **continuous delivery**, every change that passes the pipeline is kept in a state where it could be released, and a person decides when to release. With **continuous deployment**, a passing change goes to production automatically with no manual approval. Which one fits depends on the risk, the quality of your tests and regulatory needs.
+
+## Reducing release risk
+
+- **Small changes** are easier to understand, test and undo.
+- **Blue-green deployment** keeps two production environments. The new version is installed in the idle one and checked; then traffic is switched over. If something is wrong, you switch back. It needs capacity for two environments and careful handling of shared data such as database changes.
+- **Rollback** means returning to the previous version. Plan it before you need it, and make database changes compatible with the old and the new code version for a while.
+- Other gradual approaches release to a small share of users first and watch before extending.
+
+## Feature toggles
+
+A **feature toggle** (feature flag) switches a function on or off by configuration without a new deployment. This separates **deployment** (code is in production) from **release** (users can use it). Unfinished work can be merged early but stays hidden, and a faulty feature can be switched off fast. The price: toggles add code paths that must be tested, so remove them when they are no longer needed.
+
+## Configuration and secrets
+
+Settings that differ per environment, such as addresses, limits and credentials, belong in configuration, not in code. The twelve-factor app approach recommends storing configuration in the environment, for example in environment variables. Secrets need extra care: keep them in a secrets store, never in the repository.
+
+## Infrastructure as code
+
+**Infrastructure as code** describes servers, networks and services in files that are versioned, reviewed and applied by tools. Environments become reproducible, and a change to the infrastructure goes through the same review and pipeline as application code.
+
+## Monitoring closes the loop
+
+After a release, watch error rates, response times and logs. A release is only finished when you know it works in production; alerts help to react quickly, and findings feed back into the next change.
+
+## Worked example
+
+Illustration only; invented shop. The team deploys a new checkout page with a feature toggle that is off. The pipeline puts it into the idle (green) environment; smoke tests pass and traffic is switched. Later the toggle is enabled for 5 percent of users. Error rates rise, the team switches the toggle off within minutes, fixes the cause and tries again. Database changes were added in a way that the old version can still use, so no rollback of the data was needed.
+
+## Key takeaways
+
+- Continuous delivery keeps changes releasable; continuous deployment releases automatically.
+- Blue-green deployment and planned rollback lower release risk.
+- Feature toggles separate deployment from release; remove old toggles.
+- Keep configuration and secrets out of code, describe infrastructure as code, and monitor after release.

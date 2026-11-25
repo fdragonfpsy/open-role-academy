@@ -1,0 +1,144 @@
+---
+id: databases-data-modelling-basics-practitioner
+competency: databases-data-modelling-basics
+level: practitioner
+title: "Normalisation, indexes and transactions"
+objectives:
+  - "Normalise a table to reduce redundancy and update anomalies."
+  - "Explain what an index does and its trade-off."
+  - "Describe transactions and the ACID properties."
+  - "Name risks of object-relational mapping and when to choose NoSQL."
+minutes: 30
+resources:
+  - wikipedia-database-normalization
+  - wikipedia-database-index
+  - wikipedia-acid
+  - wikipedia-database-transaction
+  - wikipedia-object-relational-mapping
+  - wikipedia-nosql
+  - wikipedia-de-normalisierung-datenbank
+  - wikipedia-de-datenbankindex
+  - wikipedia-de-acid
+  - wikipedia-de-transaktion-informatik
+  - wikipedia-de-objektrelationale-abbildung
+  - wikipedia-de-nosql
+status: ai-draft
+sources:
+  - title: "Database normalization"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Database_normalization
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Database index"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Database_index
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "ACID"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/ACID
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Database transaction"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Database_transaction
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Object–relational mapping"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "NoSQL"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/NoSQL
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Normalisierung (Datenbank)"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Normalisierung_(Datenbank)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Datenbankindex"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Datenbankindex
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "ACID"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/ACID
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Transaktion (Informatik)"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Transaktion_(Informatik)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Objektrelationale Abbildung"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Objektrelationale_Abbildung
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "NoSQL"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/NoSQL
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+A schema that works for ten rows can cause wrong data and slow pages at ten million. Three tools keep a database healthy as it grows: a clean structure (normalisation), indexes for speed, and transactions for correctness.
+
+## Normalisation
+
+Normalisation means splitting data so that each fact is stored once. When a customer's address is copied into every order row, an address change must be made in many places. If one is missed, the data contradicts itself. This is an **update anomaly**. Similar problems exist for inserting and deleting. The usual remedy is to move repeated facts into their own table and refer to them by a foreign key. Normal forms (first, second, third and so on) are named steps of this clean-up. Normalisation is not a goal at any price: reporting tables are sometimes denormalised on purpose to avoid expensive joins, and then you accept the duty to keep copies consistent.
+
+## Indexes
+
+An **index** is an additional data structure that lets the database find rows by a column value without reading the whole table, comparable to the index of a book. The trade-offs:
+
+- Queries that filter, join or sort on the indexed column become faster.
+- Every insert, update and delete must also maintain the index, so writes get slower, and the index uses storage.
+
+Index the columns you search and join on, not every column. Check the query plan of your database to see whether an index is used.
+
+## Transactions and ACID
+
+A **transaction** groups several operations into one unit. The classic properties are summed up as ACID:
+
+- **Atomicity**: all operations take effect or none do.
+- **Consistency**: a transaction takes the database from one valid state to another, respecting its rules.
+- **Isolation**: concurrent transactions do not see each other's half-finished work (the exact degree depends on the isolation level).
+- **Durability**: once committed, the result survives a crash.
+
+## Using a database from code
+
+Object-relational mapping (ORM) libraries map tables to objects in your language. They save boilerplate but can hide the SQL they produce. A typical trap is loading a list and then issuing one extra query per item. Look at the generated queries for important code paths. Whatever the library, pass values as parameters and never build SQL by concatenating user input.
+
+## Choosing NoSQL
+
+NoSQL stores fit when data is naturally a self-contained document, when the structure changes often, or when you must spread data over many machines. They may offer weaker guarantees than ACID for some operations, so read what a specific product promises.
+
+## Worked example
+
+Illustration only; invented bank. A transfer of 100 units subtracts from account A and adds to account B. Without a transaction, a crash between the two steps loses 100 units. You wrap both updates in one transaction: either both are committed or both are rolled back. Later the page that lists transactions of an account is slow. The query filters by `account_id`. You add an index on that column, and check with the query plan that it is used. Inserts get slightly slower, which is acceptable here.
+
+## Key takeaways
+
+- Store each fact once; normalisation avoids update anomalies, and denormalise only deliberately.
+- An index speeds up reads on its columns and costs write time and storage.
+- Transactions give atomicity, consistency, isolation and durability.
+- Check what an ORM generates, and always use parameters for values.

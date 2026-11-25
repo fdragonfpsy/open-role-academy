@@ -1,0 +1,114 @@
+---
+id: databases-data-modelling-basics-foundation
+competency: databases-data-modelling-basics
+level: foundation
+title: "Tabellen, Schlüssel und Beziehungen"
+objectives:
+  - "Beschreiben, wie eine relationale Datenbank Daten in Tabellen, Zeilen und Spalten speichert."
+  - "Primärschlüssel und Fremdschlüssel erklären."
+  - "Entitäten und 1:n-Beziehungen modellieren."
+  - "Die Idee hinter NoSQL-Datenbanken nennen und wann sie eine Option sind."
+minutes: 30
+resources:
+  - wikipedia-relational-model
+  - wikipedia-entity-relationship-model
+  - wikipedia-foreign-key
+  - wikipedia-nosql
+  - wikipedia-de-relationales-datenbankmodell
+  - wikipedia-de-entity-relationship-modell
+  - wikipedia-de-fremdschluessel
+  - wikipedia-de-primaerschluessel
+  - wikipedia-de-nosql
+status: ai-draft
+sources:
+  - title: "Relational model"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Relational_model
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Entity–relationship model"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Foreign key"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Foreign_key
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "NoSQL"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/NoSQL
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Relationales Datenbankmodell"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Relationales_Datenbankmodell
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Entity-Relationship-Modell"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Entity-Relationship-Modell
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Fremdschlüssel"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Fremdschl%C3%BCssel
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Primärschlüssel"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Prim%C3%A4rschl%C3%BCssel
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "NoSQL"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/NoSQL
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Fast jede Anwendung hält Daten, die einen Neustart überleben müssen: Kundschaft, Bestellungen, Einstellungen. Das übernimmt eine Datenbank, und wie du die Daten formst, entscheidet darüber, wie leicht sich die Anwendung erweitern lässt und wie zuverlässig sie bleibt. Du kannst Daten bereits mit SQL abfragen; hier lernst du, wie die Daten überhaupt organisiert werden.
+
+## Das relationale Modell
+
+Eine relationale Datenbank speichert Daten in **Tabellen**. Eine Tabelle beschreibt eine Art von Dingen, zum Beispiel Kundinnen und Kunden. Jede **Zeile** ist ein Exemplar, jede **Spalte** eine Eigenschaft mit festem Typ. Tabellen werden über gemeinsame Werte verknüpft, nicht ineinander verschachtelt.
+
+## Schlüssel
+
+- Ein **Primärschlüssel** ist eine Spalte (oder eine Gruppe von Spalten), deren Wert jede Zeile eindeutig bestimmt. Er darf nicht leer sein und sich nicht wiederholen.
+- Ein **Fremdschlüssel** ist eine Spalte, die den Primärschlüsselwert einer Zeile in einer anderen Tabelle enthält. Er drückt eine Beziehung aus und lässt die Datenbank Werte ablehnen, die ins Leere zeigen.
+
+## Entitäten und Beziehungen modellieren
+
+Bevor du Tabellen anlegst, skizzierst du die **Entitäten** (Dinge, die das System sich merken muss) und ihre **Beziehungen** in einem Entity-Relationship-Diagramm. Die üblichen Beziehungstypen:
+
+- 1:n: eine Kundin bestellt viele Male. Der Fremdschlüssel steht auf der "n"-Seite (Bestelltabelle).
+- m:n: Studierende besuchen Kurse, und Kurse haben Studierende. Eine dritte Tabelle, oft Zwischentabelle genannt, hält pro Paarung eine Zeile mit zwei Fremdschlüsseln.
+- 1:1: selten; meist könnten die Daten in einer Tabelle liegen.
+
+## NoSQL in einem Absatz
+
+"NoSQL" ist ein loser Sammelbegriff für Datenbanken, die nicht das klassische Tabellenmodell nutzen, etwa Dokumentendatenbanken mit JSON-ähnlichen Datensätzen oder Key-Value-Speicher. Man wählt sie oft für flexible Strukturen oder für die Verteilung der Daten auf viele Rechner. Sie sind eine Alternative, kein Ersatz: Relationale Datenbanken bleiben eine solide Wahl, wenn Daten klare Beziehungen haben und Änderungen konsistent sein müssen.
+
+## Beispiel zur Veranschaulichung
+
+Nur zur Veranschaulichung; erfundener Shop. Der Shop speichert Kundschaft und Bestellungen. Die Tabelle `customer` hat die Spalten `id` (Primärschlüssel), `name` und `email`. Die Tabelle `order` hat `id` (Primärschlüssel), `customer_id` (Fremdschlüssel auf `customer.id`) und `ordered_on`. Eine Kundin kann viele Bestellungen haben, daher steht `customer_id` in `order`. Produkte und Bestellungen bilden eine m:n-Beziehung, weil eine Bestellung mehrere Produkte enthält und ein Produkt in mehreren Bestellungen vorkommt. Du ergänzt die Zwischentabelle `order_item` mit den Fremdschlüsseln `order_id` und `product_id`. Versucht jemand, eine Bestellung mit einer nicht vorhandenen `customer_id` einzufügen, lehnt die Datenbank das ab.
+
+## Wichtige Erkenntnisse
+
+- Relationale Datenbanken speichern Daten in Tabellen aus Zeilen und typisierten Spalten.
+- Ein Primärschlüssel bestimmt eine Zeile; ein Fremdschlüssel zeigt auf eine Zeile einer anderen Tabelle.
+- Erst Entitäten und Beziehungen modellieren; m:n braucht eine Zwischentabelle.
+- NoSQL-Datenbanken nutzen andere Datenmodelle; wähle nach der Form deiner Daten und deinen Anforderungen.

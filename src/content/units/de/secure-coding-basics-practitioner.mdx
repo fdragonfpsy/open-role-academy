@@ -1,0 +1,98 @@
+---
+id: secure-coding-basics-practitioner
+competency: secure-coding-basics
+level: practitioner
+title: "XSS, minimale Rechte und Risiken durch Abhängigkeiten"
+objectives:
+  - "Cross-Site-Scripting erklären und mit Ausgabekodierung abwehren."
+  - "Das Prinzip der minimalen Rechte auf Konten und Dienste anwenden."
+  - "Risiken von Abhängigkeiten Dritter einschätzen."
+  - "Mehrere Verteidigungsschichten kombinieren."
+minutes: 30
+resources:
+  - wikipedia-cross-site-scripting
+  - wikipedia-principle-of-least-privilege
+  - wikipedia-software-supply-chain
+  - wikipedia-sql-injection
+  - wikipedia-de-cross-site-scripting
+  - wikipedia-de-sql-injection
+status: ai-draft
+sources:
+  - title: "Cross-site scripting"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Cross-site_scripting
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Principle of least privilege"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Principle_of_least_privilege
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Software supply chain"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Software_supply_chain
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "SQL injection"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/SQL_injection
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Cross-Site-Scripting"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Cross-Site-Scripting
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "SQL-Injection"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/SQL-Injection
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Wenn du SQL-Injection fernhalten kannst, geht es im nächsten Block darum, was in fremden Browsern läuft, wie viel Schaden ein einzelner kompromittierter Teil anrichten kann und was du von anderen einbindest. Wer selbstständig arbeitet, plant für den Ausfall: Nimm an, dass eine Abwehr versagt, und sorge dafür, dass andere den Schaden begrenzen.
+
+## Cross-Site-Scripting (XSS)
+
+**XSS** entsteht, wenn eine Anwendung nicht vertrauenswürdige Daten so in eine Webseite einfügt, dass der Browser sie als Skript ausführt. Das Skript läuft dann mit den Rechten der Seite, zum Beispiel in der Sitzung einer angemeldeten Person. Typische Quellen sind Kommentare, Profilnamen oder Suchbegriffe, die erneut angezeigt werden.
+
+Abwehr:
+
+- **Ausgabekodierung**: Kodiere Daten passend zur Stelle, an der sie eingefügt werden (HTML-Text, Attribut, URL, Skript). Moderne Template-Systeme und UI-Frameworks kodieren standardmäßig; die Gefahr liegt im Abschalten oder im Einfügen von rohem HTML.
+- Validiere Eingaben als zweite Schicht, und wenn du Formatierung erlauben musst, nutze eine gepflegte Bibliothek zum Bereinigen statt eines eigenen Filters.
+- Eine vom Server gesendete Content Security Policy kann begrenzen, welche Skripte eine Seite ausführen darf. Sie ist eine zusätzliche Schicht, kein Ersatz für Kodierung.
+
+## Minimale Rechte
+
+Das **Prinzip der minimalen Rechte** besagt, dass jede Nutzerin, jeder Prozess und jeder Dienst nur die Rechte bekommt, die die Aufgabe braucht. Ein Datenbankkonto einer Webanwendung, das nur die eigenen Tabellen lesen und schreiben darf, begrenzt den Schaden einer Injection-Lücke im Vergleich zu einem Administratorkonto. Wende das ebenso auf API-Tokens (enge Berechtigungsbereiche), Cloud-Rollen und Dateiberechtigungen an.
+
+## Risiken durch Abhängigkeiten
+
+Moderne Software besteht großteils aus Paketen Dritter. Ein Fehler in einem davon oder ein bösartiges Paket wird zu deinem Fehler. Das gehört zur **Software-Lieferkette**. Praktische Gewohnheiten:
+
+- Führe eine Liste deiner Abhängigkeiten mit Versionen und aktualisiere regelmäßig.
+- Nutze automatisches Scannen von Abhängigkeiten, das bekannte Schwachstellen meldet, und beurteile dann, ob du die betroffene Funktion nutzt.
+- Bevorzuge gepflegte Pakete mit wenigen weiteren Abhängigkeiten und fixiere Versionen mit einer Lock-Datei, damit Builds wiederholbar sind.
+
+## Mehrschichtige Verteidigung
+
+Keine einzelne Maßnahme ist perfekt. Kombiniere Validierung, parametrisierte Abfragen, Ausgabekodierung, minimale Rechte und Überwachung, damit ein Fehler in einer Schicht nicht zur vollständigen Kompromittierung führt.
+
+## Beispiel zur Veranschaulichung
+
+Nur zur Veranschaulichung; erfundenes Forum. Das Forum zeigt den Anzeigenamen in der Kommentarliste. Eine Nutzerin setzt den Namen auf Text mit einem Script-Tag. Weil das Template den Namen als rohes HTML einfügt, läuft das Skript bei allen Lesenden. Die Lösung: das Template kodiert den Namen als Text. Das Datenbankkonto des Forums durfte außerdem die Tabellenstruktur ändern; das Team reduziert es auf die Rechte, die die Anwendung braucht. Ein Abhängigkeits-Scan meldet eine bekannte Schwachstelle in einer Bibliothek zur Bildverkleinerung; das Team prüft die Version, aktualisiert auf die behobene Ausgabe und führt die Tests aus.
+
+## Wichtige Erkenntnisse
+
+- XSS ist nicht vertrauenswürdige Daten, die als Skript laufen; kodiere die Ausgabe passend zum Kontext.
+- Gib jedem Konto und Dienst nur die Rechte, die er braucht.
+- Abhängigkeiten gehören zur Angriffsfläche: erfassen, scannen, aktualisieren, fixieren.
+- Verteidigung in Schichten, damit ein Versagen nicht die volle Kompromittierung bedeutet.
