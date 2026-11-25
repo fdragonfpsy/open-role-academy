@@ -1,0 +1,224 @@
+competency: secure-coding-basics
+items:
+- id: sec-f-validate
+  level: foundation
+  difficulty: 850
+  type: single
+  stem:
+    en: "Why must input be validated on the server and not only in the browser?"
+    de: "Warum muss Eingabe auf dem Server und nicht nur im Browser validiert werden?"
+  options:
+  - en: "Because requests can be sent without the browser checks"
+    de: "Weil Anfragen die Prüfungen des Browsers umgehen können"
+    correct: true
+  - en: "Because browsers are not able to check text lengths at all"
+    de: "Weil Browser Textlängen grundsätzlich nicht prüfen können"
+    correct: false
+  - en: "Because server checks make the page load faster for users"
+    de: "Weil Prüfungen auf dem Server die Seite schneller laden lassen"
+    correct: false
+  - en: "Because browser checks are forbidden by the HTTP standard"
+    de: "Weil Prüfungen im Browser durch den HTTP-Standard verboten sind"
+    correct: false
+  explanation:
+    en: "Anyone can send requests directly to your server and skip the checks in the page. Client-side validation helps users but is no security measure."
+    de: "Jede Person kann Anfragen direkt an deinen Server senden und die Prüfungen der Seite umgehen. Validierung im Client hilft Nutzenden, ist aber keine Sicherheitsmaßnahme."
+  source: https://en.wikipedia.org/wiki/Data_validation
+- id: sec-f-sqli
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: "What is the standard defence against SQL injection?"
+    de: "Was ist die Standardabwehr gegen SQL-Injection?"
+  options:
+  - en: "Parameterised queries that keep values apart from SQL"
+    de: "Parametrisierte Abfragen, die Werte getrennt vom SQL-Text senden"
+    correct: true
+  - en: "Hiding the database name from the pages shown to the user"
+    de: "Den Datenbanknamen auf den angezeigten Seiten vor Nutzenden zu verbergen"
+    correct: false
+  - en: "Deleting every quote character from the data that is stored"
+    de: "Jedes Anführungszeichen aus den gespeicherten Daten zu löschen"
+    correct: false
+  - en: "Running the database on a different port than the default"
+    de: "Die Datenbank auf einem anderen Port als dem Standard zu betreiben"
+    correct: false
+  explanation:
+    en: "With placeholders, the database treats values only as data and never as part of the command. Hiding names or changing ports does not stop injection."
+    de: "Mit Platzhaltern behandelt die Datenbank Werte nur als Daten und nie als Teil des Befehls. Verbergen von Namen oder ein anderer Port verhindern Injection nicht."
+  source: https://en.wikipedia.org/wiki/SQL_injection
+- id: sec-f-secrets
+  level: foundation
+  difficulty: 1050
+  type: multi
+  stem:
+    en: "Which practices handle passwords and secrets safely? Select all that apply."
+    de: "Welche Vorgehensweisen gehen sicher mit Passwörtern und Geheimnissen um? Wähle alle zutreffenden aus."
+  options:
+  - en: "Store passwords as salted hashes made for passwords"
+    de: "Passwörter als gesalzene, für Passwörter gedachte Hashes speichern"
+    correct: true
+  - en: "Keep API keys out of the repository and rotate leaked ones"
+    de: "API-Schlüssel aus dem Repository halten und offengelegte tauschen"
+    correct: true
+  - en: "Keep passwords and personal data out of the log files"
+    de: "Passwörter und personenbezogene Daten aus den Logdateien halten"
+    correct: true
+  - en: "Commit a test password to the repository so others can use it"
+    de: "Ein Testpasswort ins Repository einchecken, damit andere es nutzen"
+    correct: false
+  - en: "Store passwords reversibly so support can read them to users"
+    de: "Passwörter umkehrbar speichern, damit der Support sie Nutzenden nennen kann"
+    correct: false
+  explanation:
+    en: "Salted password hashes, secrets outside the repository and clean logs are the basics. A secret that was committed counts as leaked."
+    de: "Gesalzene Passwort-Hashes, Geheimnisse außerhalb des Repositorys und saubere Logs sind die Grundlagen. Ein eingechecktes Geheimnis gilt als offengelegt."
+  source: https://en.wikipedia.org/wiki/Salt_(cryptography)
+- id: sec-p-xss
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: "A comment page shows user names. What is the main defence against cross-site scripting there?"
+    de: "Eine Kommentarseite zeigt Nutzernamen an. Was ist dort die wichtigste Abwehr gegen Cross-Site-Scripting?"
+  options:
+  - en: "Encode the name for HTML output so it is shown as text"
+    de: "Den Namen für die HTML-Ausgabe kodieren, damit er als Text erscheint"
+    correct: true
+  - en: "Hash the name with a salt before it is stored in the table"
+    de: "Den Namen vor dem Speichern in der Tabelle mit einem Salt hashen"
+    correct: false
+  - en: "Limit the number of comments that one user may post a day"
+    de: "Die Zahl der Kommentare begrenzen, die eine Person pro Tag posten darf"
+    correct: false
+  - en: "Use parameterised queries when the name is read back"
+    de: "Beim Zurücklesen des Namens parametrisierte Abfragen verwenden"
+    correct: false
+  explanation:
+    en: "XSS happens when data is inserted into a page in a way that the browser runs it. Encoding output for its context turns it into harmless text. Parameterised queries protect the database, not the page."
+    de: "XSS entsteht, wenn Daten so in eine Seite eingefügt werden, dass der Browser sie ausführt. Kodierung der Ausgabe passend zum Kontext macht daraus harmlosen Text. Parametrisierte Abfragen schützen die Datenbank, nicht die Seite."
+  source: https://en.wikipedia.org/wiki/Cross-site_scripting
+- id: sec-p-priv
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: "A web application only reads and writes its own tables. Which database account setup follows least privilege?"
+    de: "Eine Webanwendung liest und schreibt nur ihre eigenen Tabellen. Welche Einrichtung des Datenbankkontos folgt dem Prinzip der minimalen Rechte?"
+  options:
+  - en: "An account with read and write rights on those tables only"
+    de: "Ein Konto, das nur Lese- und Schreibrechte auf diese Tabellen hat"
+    correct: true
+  - en: "The administrator account, to avoid permission errors later"
+    de: "Das Administratorkonto, um spätere Berechtigungsfehler zu vermeiden"
+    correct: false
+  - en: "One shared account used by all services of the company"
+    de: "Ein gemeinsames Konto, das alle Dienste des Unternehmens nutzen"
+    correct: false
+  - en: "An account without a password so the application can connect"
+    de: "Ein Konto ohne Passwort, damit sich die Anwendung verbinden kann"
+    correct: false
+  explanation:
+    en: "Least privilege limits the damage of a flaw: if the application is attacked, the attacker gets only the rights of that narrow account."
+    de: "Minimale Rechte begrenzen den Schaden einer Lücke: Wird die Anwendung angegriffen, erhalten Angreifende nur die Rechte dieses engen Kontos."
+  source: https://en.wikipedia.org/wiki/Principle_of_least_privilege
+- id: sec-p-dep
+  level: practitioner
+  difficulty: 1350
+  type: single
+  stem:
+    en: "A scan reports a known vulnerability in a library you use. What is a sensible first step?"
+    de: "Ein Scan meldet eine bekannte Schwachstelle in einer Bibliothek, die du nutzt. Was ist ein sinnvoller erster Schritt?"
+  options:
+  - en: "Check the affected version and update to a fixed release"
+    de: "Betroffene Version prüfen, auf behobene Ausgabe aktualisieren"
+    correct: true
+  - en: "Ignore the report until a user complains about the problem"
+    de: "Die Meldung ignorieren, bis sich jemand über das Problem beschwert"
+    correct: false
+  - en: "Copy the library code into the project and edit it yourself"
+    de: "Den Bibliothekscode ins Projekt kopieren und selbst bearbeiten"
+    correct: false
+  - en: "Switch off the scanner so that the pipeline turns green"
+    de: "Den Scanner abschalten, damit die Pipeline wieder grün wird"
+    correct: false
+  explanation:
+    en: "First find out whether your version and use are affected, then update to a fixed release and run the tests. Ignoring or disabling the scan keeps the risk."
+    de: "Zuerst klären, ob Version und Nutzung betroffen sind, dann auf eine behobene Ausgabe aktualisieren und die Tests laufen lassen. Ignorieren oder Abschalten des Scans lässt das Risiko bestehen."
+  source: https://en.wikipedia.org/wiki/Software_supply_chain
+- id: sec-a-csrf
+  level: advanced
+  difficulty: 1450
+  type: single
+  stem:
+    en: "Which measure helps against cross-site request forgery?"
+    de: "Welche Maßnahme hilft gegen Cross-Site-Request-Forgery?"
+  options:
+  - en: "A secret anti-CSRF token that the server checks"
+    de: "Ein geheimes Anti-CSRF-Token, das der Server prüft"
+    correct: true
+  - en: "Encoding all text that is displayed to the reader on the page"
+    de: "Allen Text, der den Lesenden auf der Seite angezeigt wird, zu kodieren"
+    correct: false
+  - en: "Storing the passwords of the users as salted hashes"
+    de: "Die Passwörter der Nutzenden als gesalzene Hashes zu speichern"
+    correct: false
+  - en: "Allowing deletions through GET requests for easy testing"
+    de: "Löschvorgänge über GET-Anfragen zu erlauben, um das Testen zu erleichtern"
+    correct: false
+  explanation:
+    en: "CSRF abuses credentials that the browser attaches automatically. A token that an attacking page cannot know lets the server tell genuine requests apart. State changes through GET make things worse."
+    de: "CSRF missbraucht Zugangsdaten, die der Browser automatisch anhängt. Ein Token, das eine angreifende Seite nicht kennen kann, lässt den Server echte Anfragen erkennen. Zustandsänderungen per GET verschlimmern es."
+  source: https://en.wikipedia.org/wiki/Cross-site_request_forgery
+- id: sec-a-allow
+  level: advanced
+  difficulty: 1550
+  type: single
+  stem:
+    en: "Why is an allow-list for input usually safer than a deny-list?"
+    de: "Warum ist eine Positivliste für Eingaben meist sicherer als eine Negativliste?"
+  options:
+  - en: "Nobody can list all bad inputs, valid ones can be defined"
+    de: "Schlechte Eingaben lassen sich nicht aufzählen, gültige schon"
+    correct: true
+  - en: "Allow-lists run on the client and so need no server code"
+    de: "Positivlisten laufen im Client und brauchen daher keinen Servercode"
+    correct: false
+  - en: "Deny-lists are slower because they always reject all requests"
+    de: "Negativlisten sind langsamer, weil sie immer alle Anfragen ablehnen"
+    correct: false
+  - en: "Allow-lists replace the need for parameterised queries"
+    de: "Positivlisten ersetzen die Notwendigkeit parametrisierter Abfragen"
+    correct: false
+  explanation:
+    en: "An allow-list defines what is valid and rejects everything else, so unforeseen bad input is blocked by default. It still complements, and does not replace, parameterised queries and output encoding."
+    de: "Eine Positivliste legt fest, was gültig ist, und lehnt alles andere ab, sodass unvorhergesehene schlechte Eingaben standardmäßig blockiert werden. Sie ergänzt parametrisierte Abfragen und Ausgabekodierung, ersetzt sie aber nicht."
+  source: https://en.wikipedia.org/wiki/Data_validation
+- id: sec-a-tests
+  level: advanced
+  difficulty: 1650
+  type: multi
+  stem:
+    en: "Which measures belong to security testing in a delivery pipeline? Select all that apply."
+    de: "Welche Maßnahmen gehören zu Sicherheitstests in einer Auslieferungs-Pipeline? Wähle alle zutreffenden aus."
+  options:
+  - en: "Dependency scanning for known vulnerabilities in packages"
+    de: "Abhängigkeits-Scans auf bekannte Schwachstellen in Paketen"
+    correct: true
+  - en: "Static analysis of source code with triage of the findings"
+    de: "Statische Analyse des Quellcodes mit Bewertung der Funde"
+    correct: true
+  - en: "Fuzzing parsers and importers with unexpected input"
+    de: "Fuzzing von Parsern und Importfunktionen mit unerwarteter Eingabe"
+    correct: true
+  - en: "A single manual check shortly before the first release only"
+    de: "Eine einzige manuelle Prüfung nur kurz vor dem ersten Release"
+    correct: false
+  - en: "Permanently silencing every finding that is a false positive"
+    de: "Jeden Fund dauerhaft stummzuschalten, der ein Fehlalarm sein könnte"
+    correct: false
+  explanation:
+    en: "Automated scans, static analysis and fuzzing run on every change and find different kinds of flaws. A one-off check ages quickly, and findings should be triaged individually, not silenced in bulk."
+    de: "Automatische Scans, statische Analyse und Fuzzing laufen bei jeder Änderung und finden verschiedene Arten von Fehlern. Eine einmalige Prüfung veraltet schnell, und Funde sollten einzeln bewertet statt pauschal stummgeschaltet werden."
+  source: https://en.wikipedia.org/wiki/Fuzzing

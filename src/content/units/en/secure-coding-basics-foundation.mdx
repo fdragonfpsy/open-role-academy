@@ -1,0 +1,101 @@
+---
+id: secure-coding-basics-foundation
+competency: secure-coding-basics
+level: foundation
+title: "Never trust input: validation, injection and secrets"
+objectives:
+  - "Explain why all input must be treated as untrusted."
+  - "Describe SQL injection and the standard defence."
+  - "Validate input with allow-lists."
+  - "Handle passwords and secrets safely at a basic level."
+minutes: 25
+resources:
+  - wikipedia-secure-coding
+  - wikipedia-data-validation
+  - wikipedia-sql-injection
+  - wikipedia-salt-cryptography
+  - wikipedia-owasp
+  - wikipedia-de-sql-injection
+  - wikipedia-de-open-web-application-security-project
+status: ai-draft
+sources:
+  - title: "Secure coding"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Secure_coding
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Data validation"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_validation
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "SQL injection"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/SQL_injection
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Salt (cryptography)"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Salt_(cryptography)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "OWASP"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/OWASP
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "SQL-Injection"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/SQL-Injection
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Open Web Application Security Project"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Open_Web_Application_Security_Project
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+Attackers do not need to break encryption if your code does what a crafted input tells it to do. Most common vulnerabilities come from a few habits that are easy to learn: distrust input, keep data and commands apart, and protect secrets. Secure coding means building these habits into everyday work, not adding security at the end.
+
+## Treat all input as untrusted
+
+Input is everything that comes from outside your code: form fields, URL parameters, headers, uploaded files, API bodies. An attacker controls these values, and so can a user who simply makes a mistake. Check input on the server, because checks in the browser can be bypassed.
+
+## Validate with allow-lists
+
+**Input validation** checks that data has the expected type, length, range and format before it is used. Prefer an **allow-list** (define what is valid, reject the rest) over a deny-list (try to name everything bad), because nobody can list all bad inputs. Validation reduces risk but is not a full defence on its own; you also need the next point.
+
+## Keep data and commands apart: SQL injection
+
+**SQL injection** happens when user input is pasted into a SQL statement, so the database reads data as part of the command. The standard defence is **parameterised queries** (prepared statements): the statement has placeholders, the values are sent separately, and the database never interprets them as SQL. The same idea applies to other interpreters such as operating system commands.
+
+## Passwords and secrets
+
+- Never store passwords in plain text. Store a salted hash made with a hashing method designed for passwords; a **salt** is a random value added per password so that equal passwords do not give equal hashes.
+- Never put passwords, tokens or keys into source code or version control. Use environment variables or a secrets manager, and rotate a secret that has leaked.
+- Do not write secrets or personal data into log files.
+
+## Learn from shared lists
+
+The OWASP project publishes widely used overviews of common web application risks. Use them as a checklist for what to look out for.
+
+## Worked example
+
+Illustration only; invented login. A developer builds the query by joining the text `WHERE name = '` with the typed name and `'`. A tester types a name that contains a quote and extra SQL, and the statement changes its meaning. The fix: the statement `WHERE name = ?` with the name passed as a parameter. In addition, the name field is validated (allowed characters, maximum length), and the password column holds a salted hash, not the password.
+
+## Key takeaways
+
+- Treat every input as untrusted and validate it on the server with allow-lists.
+- Use parameterised queries so that data is never executed as a command.
+- Store passwords as salted hashes and keep secrets out of code and logs.
+- Use shared lists such as OWASP overviews as a checklist.

@@ -1,0 +1,98 @@
+---
+id: secure-coding-basics-practitioner
+competency: secure-coding-basics
+level: practitioner
+title: "XSS, least privilege and dependency risks"
+objectives:
+  - "Explain cross-site scripting and defend with output encoding."
+  - "Apply the principle of least privilege to accounts and services."
+  - "Assess risks of third-party dependencies."
+  - "Combine several layers of defence."
+minutes: 30
+resources:
+  - wikipedia-cross-site-scripting
+  - wikipedia-principle-of-least-privilege
+  - wikipedia-software-supply-chain
+  - wikipedia-sql-injection
+  - wikipedia-de-cross-site-scripting
+  - wikipedia-de-sql-injection
+status: ai-draft
+sources:
+  - title: "Cross-site scripting"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Cross-site_scripting
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Principle of least privilege"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Principle_of_least_privilege
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Software supply chain"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Software_supply_chain
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "SQL injection"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/SQL_injection
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Cross-Site-Scripting"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Cross-Site-Scripting
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "SQL-Injection"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/SQL-Injection
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+Once you can keep SQL injection out, the next group of problems is about what runs in other people's browsers, how much damage a single compromised part can do, and what you import from others. A practitioner designs for failure: assume that one defence will fail and make sure that others limit the damage.
+
+## Cross-site scripting (XSS)
+
+**XSS** occurs when an application puts untrusted data into a web page in a way that the browser runs it as script. The script then runs with the rights of the page, for example in the session of a logged-in user. Typical sources are comments, profile names or search terms that are shown again.
+
+Defences:
+
+- **Output encoding**: encode data for the place where it is inserted (HTML text, attribute, URL, script). Modern template systems and UI frameworks encode by default; the danger lies in switching this off or inserting raw HTML.
+- Validate input as a second layer, and if you must allow formatting, use a well-maintained sanitising library rather than your own filter.
+- A content security policy sent by the server can limit which scripts a page may run. It is an extra layer, not a replacement for encoding.
+
+## Least privilege
+
+The **principle of least privilege** says that every user, process and service gets only the rights it needs for its task. A web application's database account that can only read and write its own tables limits the damage of an injection flaw, compared with an administrator account. Apply the same to API tokens (narrow scopes), cloud roles and file permissions.
+
+## Dependency risks
+
+Modern software consists mostly of third-party packages. A flaw in one of them, or a malicious package, becomes your flaw. This is part of the **software supply chain**. Practical habits:
+
+- Keep a list of your dependencies and their versions, and update regularly.
+- Use automated dependency scanning that reports known vulnerabilities, then judge whether the affected function is used by you.
+- Prefer maintained packages with few extra dependencies, and pin versions with a lock file so that builds are repeatable.
+
+## Defence in depth
+
+No single measure is perfect. Combine validation, parameterised queries, output encoding, least privilege and monitoring, so that a mistake in one layer does not lead to a full compromise.
+
+## Worked example
+
+Illustration only; invented forum. The forum shows the display name of a user in the comment list. A user sets the name to text that contains a script tag. Because the template inserts the name as raw HTML, the script runs for every reader. The fix is to let the template encode the name as text. The forum's database account also had rights to change the table structure; the team reduces it to the rights the application needs. A dependency scan reports a known flaw in a library used for image resizing; the team checks the version, updates to the fixed release and runs the tests.
+
+## Key takeaways
+
+- XSS is untrusted data run as script; encode output for its context.
+- Give every account and service only the rights it needs.
+- Dependencies are part of your attack surface: inventory, scan, update, pin.
+- Layer defences so that one failure does not mean full compromise.

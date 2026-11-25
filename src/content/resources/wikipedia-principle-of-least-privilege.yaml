@@ -1,0 +1,14 @@
+id: wikipedia-principle-of-least-privilege
+url: "https://en.wikipedia.org/wiki/Principle_of_least_privilege"
+title: "Principle of least privilege"
+provider: Wikipedia
+language: en
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-25
+mode: link
+competencies: [secure-coding-basics]
+levels: [practitioner]
+note: "Wikipedia text under CC BY-SA; HTTP 200 on 2026-11-25. Link only."

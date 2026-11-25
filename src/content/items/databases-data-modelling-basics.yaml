@@ -1,0 +1,149 @@
+competency: databases-data-modelling-basics
+items:
+- id: db-f-pk
+  level: foundation
+  difficulty: 850
+  type: single
+  stem:
+    en: "What does the primary key of a table do?"
+    de: "Wozu dient der Primärschlüssel einer Tabelle?"
+  options:
+  - en: "It identifies each row of the table uniquely"
+    de: "Er bestimmt jede Zeile der Tabelle eindeutig"
+    correct: true
+  - en: "It sorts the rows of the table by their creation date"
+    de: "Er sortiert die Zeilen der Tabelle nach ihrem Erstelldatum"
+    correct: false
+  - en: "It encrypts the values of all other columns in the row"
+    de: "Er verschlüsselt die Werte aller anderen Spalten der Zeile"
+    correct: false
+  - en: "It links the table to the user account of the developer"
+    de: "Er verknüpft die Tabelle mit dem Benutzerkonto der Entwicklerin"
+    correct: false
+  explanation:
+    en: "A primary key value identifies exactly one row, so it must be unique and not empty. It does not sort or encrypt anything."
+    de: "Ein Primärschlüsselwert bestimmt genau eine Zeile, muss also eindeutig und nicht leer sein. Er sortiert oder verschlüsselt nichts."
+  source: https://en.wikipedia.org/wiki/Relational_model
+- id: db-f-fk
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: "A table order has a column customer_id that holds values of customer.id. What is this column?"
+    de: "Eine Tabelle order hat eine Spalte customer_id mit Werten aus customer.id. Was ist diese Spalte?"
+  options:
+  - en: "A foreign key that refers to a row in another table"
+    de: "Ein Fremdschlüssel auf eine Zeile einer anderen Tabelle"
+    correct: true
+  - en: "A primary key that has to be copied into every table"
+    de: "Ein Primärschlüssel, der in jede Tabelle kopiert werden muss"
+    correct: false
+  - en: "An index that makes all queries on the table faster"
+    de: "Ein Index, der alle Abfragen auf die Tabelle schneller macht"
+    correct: false
+  - en: "A backup column that stores the previous value of a row"
+    de: "Eine Sicherungsspalte, die den vorigen Wert einer Zeile speichert"
+    correct: false
+  explanation:
+    en: "A column that holds the key of a row in another table is a foreign key. It expresses the relationship and lets the database reject values that point to nothing."
+    de: "Eine Spalte, die den Schlüssel einer Zeile in einer anderen Tabelle enthält, ist ein Fremdschlüssel. Er drückt die Beziehung aus und lässt die Datenbank ins Leere zeigende Werte ablehnen."
+  source: https://en.wikipedia.org/wiki/Foreign_key
+- id: db-f-many
+  level: foundation
+  difficulty: 1050
+  type: single
+  stem:
+    en: "Students attend many courses, and each course has many students. How do you model this in tables?"
+    de: "Studierende besuchen viele Kurse, und jeder Kurs hat viele Studierende. Wie modellierst du das in Tabellen?"
+  options:
+  - en: "With a junction table that holds one row per student and course"
+    de: "Mit einer Zwischentabelle mit einer Zeile je Studierendem und Kurs"
+    correct: true
+  - en: "With a single column in the student table listing all course names"
+    de: "Mit einer einzigen Spalte in der Studierendentabelle mit allen Kursnamen"
+    correct: false
+  - en: "With a second primary key in the course table for each student"
+    de: "Mit einem zweiten Primärschlüssel in der Kurstabelle für jeden Studierenden"
+    correct: false
+  - en: "With one table per student that is created when they enrol"
+    de: "Mit einer eigenen Tabelle je Studierendem, die bei der Anmeldung entsteht"
+    correct: false
+  explanation:
+    en: "A many-to-many relationship needs a third table with two foreign keys, one row per pairing. Lists in one column or one table per student break the relational model and are hard to query."
+    de: "Eine m:n-Beziehung braucht eine dritte Tabelle mit zwei Fremdschlüsseln, eine Zeile je Paarung. Listen in einer Spalte oder eine Tabelle je Person brechen das relationale Modell und sind schwer abzufragen."
+  source: https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model
+- id: db-p-index
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: "What is the trade-off of adding an index to a column?"
+    de: "Welche Abwägung gehört zum Anlegen eines Index auf einer Spalte?"
+  options:
+  - en: "Reads on it get faster, writes get slower, storage grows"
+    de: "Lesen darüber wird schneller, Schreiben langsamer, Speicher wächst"
+    correct: true
+  - en: "Reads get slower while writes and storage stay exactly the same"
+    de: "Lesen wird langsamer, während Schreiben und Speicher exakt gleich bleiben"
+    correct: false
+  - en: "Writes get faster because rows are kept in sorted order for free"
+    de: "Schreiben wird schneller, weil Zeilen kostenlos sortiert gehalten werden"
+    correct: false
+  - en: "There is no trade-off, so every column should always be indexed"
+    de: "Es gibt keine Abwägung, daher sollte immer jede Spalte indiziert werden"
+    correct: false
+  explanation:
+    en: "An index speeds up lookups, joins and sorting on its columns, but every insert, update and delete must maintain it, and it uses storage. So index the columns you actually search on."
+    de: "Ein Index beschleunigt Suchen, Joins und Sortierung über seine Spalten, aber jedes Einfügen, Ändern und Löschen muss ihn pflegen, und er braucht Speicher. Indiziere daher die Spalten, nach denen du wirklich suchst."
+  source: https://en.wikipedia.org/wiki/Database_index
+- id: db-p-tx
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: "A transfer subtracts from account A and then adds to account B. The system crashes between both steps. Which property of a transaction prevents lost money?"
+    de: "Eine Überweisung zieht von Konto A ab und schreibt dann Konto B gut. Zwischen beiden Schritten stürzt das System ab. Welche Eigenschaft einer Transaktion verhindert verlorenes Geld?"
+  options:
+  - en: "Atomicity: either all steps take effect or none do"
+    de: "Atomarität: Entweder wirken alle Schritte oder keiner"
+    correct: true
+  - en: "Durability: the first step stays visible to every other user"
+    de: "Dauerhaftigkeit: Der erste Schritt bleibt für alle anderen sichtbar"
+    correct: false
+  - en: "Isolation: each account is locked until the next server update"
+    de: "Isolation: Jedes Konto bleibt bis zum nächsten Serverupdate gesperrt"
+    correct: false
+  - en: "Redundancy: the amount is stored again in a separate table"
+    de: "Redundanz: Der Betrag wird noch einmal in einer eigenen Tabelle gespeichert"
+    correct: false
+  explanation:
+    en: "Atomicity means that a transaction is applied completely or not at all, so the half-finished transfer is rolled back after the crash."
+    de: "Atomarität bedeutet, dass eine Transaktion ganz oder gar nicht angewendet wird; die halbfertige Überweisung wird nach dem Absturz zurückgerollt."
+  source: https://en.wikipedia.org/wiki/ACID
+- id: db-p-norm
+  level: practitioner
+  difficulty: 1350
+  type: multi
+  stem:
+    en: "Which statements about normalisation are correct? Select all that apply."
+    de: "Welche Aussagen zur Normalisierung sind richtig? Wähle alle zutreffenden aus."
+  options:
+  - en: "Each fact is stored once, which avoids update anomalies"
+    de: "Jede Tatsache wird einmal gespeichert, was Änderungsanomalien vermeidet"
+    correct: true
+  - en: "Repeated data moves into its own table and is referenced by a key"
+    de: "Wiederholte Daten wandern in eine eigene Tabelle, auf die ein Schlüssel verweist"
+    correct: true
+  - en: "Denormalising on purpose can be fine, if copies are kept consistent"
+    de: "Bewusstes Denormalisieren kann sinnvoll sein, wenn Kopien konsistent bleiben"
+    correct: true
+  - en: "It guarantees that every query runs faster than before"
+    de: "Sie garantiert, dass jede Abfrage schneller läuft als zuvor"
+    correct: false
+  - en: "It means that every table must have exactly two columns"
+    de: "Sie bedeutet, dass jede Tabelle genau zwei Spalten haben muss"
+    correct: false
+  explanation:
+    en: "Normalisation stores each fact once and links with keys, which prevents contradicting copies. It can cost extra joins, so reporting tables are sometimes denormalised deliberately."
+    de: "Normalisierung speichert jede Tatsache einmal und verknüpft über Schlüssel, was widersprüchliche Kopien verhindert. Sie kann zusätzliche Joins kosten, daher werden Berichtstabellen manchmal bewusst denormalisiert."
+  source: https://en.wikipedia.org/wiki/Database_normalization

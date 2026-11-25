@@ -1,0 +1,14 @@
+id: wikipedia-entity-relationship-model
+url: "https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model"
+title: "Entity–relationship model"
+provider: Wikipedia
+language: en
+format: article
+minutes: 15
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-25
+mode: link
+competencies: [databases-data-modelling-basics]
+levels: [foundation]
+note: "Wikipedia text under CC BY-SA; HTTP 200 on 2026-11-25. Link only."

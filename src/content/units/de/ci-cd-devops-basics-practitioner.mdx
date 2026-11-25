@@ -1,0 +1,106 @@
+---
+id: ci-cd-devops-basics-practitioner
+competency: ci-cd-devops-basics
+level: practitioner
+title: "Auslieferungsstrategien, Konfiguration und Feature-Toggles"
+objectives:
+  - "Continuous Delivery von Continuous Deployment unterscheiden."
+  - "Blue-Green-Deployment und Rollback nutzen, um Release-Risiken zu senken."
+  - "Auslieferung und Freischaltung mit Feature-Toggles trennen."
+  - "Konfiguration außerhalb des Codes verwalten und Infrastructure as Code beschreiben."
+minutes: 30
+resources:
+  - wikipedia-continuous-delivery
+  - wikipedia-blue-green-deployment
+  - wikipedia-feature-toggle
+  - wikipedia-twelve-factor-app-methodology
+  - wikipedia-infrastructure-as-code
+  - wikipedia-de-continuous-delivery
+  - wikipedia-de-feature-toggle
+status: ai-draft
+sources:
+  - title: "Continuous delivery"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Continuous_delivery
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Blue–green deployment"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Blue%E2%80%93green_deployment
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Feature toggle"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Feature_toggle
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Twelve-Factor App methodology"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Twelve-Factor_App_methodology
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Infrastructure as code"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Infrastructure_as_code
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Continuous Delivery"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Continuous_Delivery
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Feature Toggle"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Feature_Toggle
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Eine Pipeline, die Tests ausführt, ist der Anfang. Wer selbstständig arbeitet, entscheidet, wie eine getestete Änderung sicher zu den Nutzenden kommt, wie man sie schnell zurücknimmt und wie derselbe Code in verschiedenen Umgebungen läuft.
+
+## Continuous Delivery und Continuous Deployment
+
+Bei **Continuous Delivery** bleibt jede Änderung, die die Pipeline besteht, in einem Zustand, in dem sie ausgeliefert werden könnte, und ein Mensch entscheidet, wann ausgeliefert wird. Bei **Continuous Deployment** geht eine bestandene Änderung automatisch ohne manuelle Freigabe in die Produktion. Was passt, hängt vom Risiko, der Qualität deiner Tests und regulatorischen Anforderungen ab.
+
+## Release-Risiko senken
+
+- **Kleine Änderungen** sind leichter zu verstehen, zu testen und zurückzunehmen.
+- **Blue-Green-Deployment** hält zwei Produktionsumgebungen vor. Die neue Version wird in der unbenutzten installiert und geprüft; dann wird der Verkehr umgeschaltet. Stimmt etwas nicht, schaltest du zurück. Es braucht Kapazität für zwei Umgebungen und sorgfältigen Umgang mit gemeinsamen Daten, etwa Datenbankänderungen.
+- **Rollback** heißt, zur vorigen Version zurückzukehren. Plane ihn, bevor du ihn brauchst, und gestalte Datenbankänderungen eine Weile mit der alten und der neuen Codeversion verträglich.
+- Andere schrittweise Ansätze liefern zuerst an einen kleinen Teil der Nutzenden aus und beobachten, bevor sie ausweiten.
+
+## Feature-Toggles
+
+Ein **Feature-Toggle** (Feature-Flag) schaltet eine Funktion per Konfiguration ein oder aus, ohne neue Auslieferung. Das trennt **Auslieferung** (der Code ist in der Produktion) von **Freischaltung** (Nutzende können die Funktion verwenden). Unfertige Arbeit kann früh gemergt werden und bleibt verborgen, und eine fehlerhafte Funktion lässt sich schnell abschalten. Der Preis: Toggles erzeugen zusätzliche Codepfade, die getestet werden müssen; entferne sie daher, wenn sie nicht mehr gebraucht werden.
+
+## Konfiguration und Geheimnisse
+
+Einstellungen, die je Umgebung abweichen, etwa Adressen, Grenzwerte und Zugangsdaten, gehören in die Konfiguration, nicht in den Code. Der Twelve-Factor-App-Ansatz empfiehlt, Konfiguration in der Umgebung abzulegen, zum Beispiel in Umgebungsvariablen. Geheimnisse brauchen besondere Sorgfalt: Halte sie in einem Secrets-Speicher, nie im Repository.
+
+## Infrastructure as Code
+
+**Infrastructure as Code** beschreibt Server, Netze und Dienste in Dateien, die versioniert, geprüft und von Werkzeugen angewendet werden. Umgebungen werden reproduzierbar, und eine Änderung an der Infrastruktur durchläuft dieselbe Prüfung und Pipeline wie Anwendungscode.
+
+## Monitoring schließt den Kreis
+
+Beobachte nach einem Release Fehlerraten, Antwortzeiten und Logs. Ein Release ist erst fertig, wenn du weißt, dass es in der Produktion funktioniert; Alarme helfen, schnell zu reagieren, und Erkenntnisse fließen in die nächste Änderung.
+
+## Beispiel zur Veranschaulichung
+
+Nur zur Veranschaulichung; erfundener Shop. Das Team liefert eine neue Bezahlseite mit einem Feature-Toggle aus, der aus ist. Die Pipeline bringt sie in die unbenutzte (grüne) Umgebung; Smoke-Tests laufen durch, und der Verkehr wird umgeschaltet. Später wird der Toggle für 5 Prozent der Nutzenden eingeschaltet. Die Fehlerrate steigt, das Team schaltet den Toggle binnen Minuten aus, behebt die Ursache und versucht es erneut. Datenbankänderungen wurden so ergänzt, dass die alte Version sie weiter nutzen kann, daher war kein Zurückrollen der Daten nötig.
+
+## Wichtige Erkenntnisse
+
+- Continuous Delivery hält Änderungen auslieferbar; Continuous Deployment liefert automatisch aus.
+- Blue-Green-Deployment und geplanter Rollback senken das Release-Risiko.
+- Feature-Toggles trennen Auslieferung von Freischaltung; alte Toggles entfernen.
+- Konfiguration und Geheimnisse aus dem Code halten, Infrastruktur als Code beschreiben und nach dem Release überwachen.

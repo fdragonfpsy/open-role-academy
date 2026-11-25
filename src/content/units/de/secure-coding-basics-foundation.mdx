@@ -1,0 +1,101 @@
+---
+id: secure-coding-basics-foundation
+competency: secure-coding-basics
+level: foundation
+title: "Eingaben nie vertrauen: Validierung, Injection und Geheimnisse"
+objectives:
+  - "Erklären, warum jede Eingabe als nicht vertrauenswürdig gilt."
+  - "SQL-Injection und die Standardabwehr beschreiben."
+  - "Eingaben mit Positivlisten validieren."
+  - "Mit Passwörtern und Geheimnissen auf Grundniveau sicher umgehen."
+minutes: 25
+resources:
+  - wikipedia-secure-coding
+  - wikipedia-data-validation
+  - wikipedia-sql-injection
+  - wikipedia-salt-cryptography
+  - wikipedia-owasp
+  - wikipedia-de-sql-injection
+  - wikipedia-de-open-web-application-security-project
+status: ai-draft
+sources:
+  - title: "Secure coding"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Secure_coding
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Data validation"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_validation
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "SQL injection"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/SQL_injection
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Salt (cryptography)"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Salt_(cryptography)
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "OWASP"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/OWASP
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "SQL-Injection"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/SQL-Injection
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Open Web Application Security Project"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Open_Web_Application_Security_Project
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Warum das wichtig ist
+
+Angreifende müssen keine Verschlüsselung brechen, wenn dein Code tut, was eine präparierte Eingabe ihm sagt. Die meisten verbreiteten Schwachstellen entstehen aus wenigen Gewohnheiten, die sich leicht lernen lassen: Eingaben misstrauen, Daten und Befehle trennen und Geheimnisse schützen. Sichere Entwicklung heißt, diese Gewohnheiten in die tägliche Arbeit einzubauen, statt Sicherheit am Ende anzukleben.
+
+## Jede Eingabe gilt als nicht vertrauenswürdig
+
+Eingabe ist alles, was von außerhalb deines Codes kommt: Formularfelder, URL-Parameter, Header, hochgeladene Dateien, API-Bodys. Angreifende steuern diese Werte, und auch Nutzende können sich einfach vertippen. Prüfe Eingaben auf dem Server, denn Prüfungen im Browser lassen sich umgehen.
+
+## Mit Positivlisten validieren
+
+**Eingabevalidierung** prüft, ob Daten den erwarteten Typ, die Länge, den Bereich und das Format haben, bevor sie verwendet werden. Bevorzuge eine **Positivliste** (festlegen, was gültig ist, den Rest ablehnen) gegenüber einer Negativliste (alles Schlechte benennen wollen), denn niemand kann alle schlechten Eingaben auflisten. Validierung senkt das Risiko, ist allein aber keine vollständige Abwehr; dafür brauchst du den nächsten Punkt.
+
+## Daten und Befehle trennen: SQL-Injection
+
+**SQL-Injection** entsteht, wenn Nutzereingaben in eine SQL-Anweisung eingefügt werden und die Datenbank Daten als Teil des Befehls liest. Die Standardabwehr sind **parametrisierte Abfragen** (Prepared Statements): Die Anweisung hat Platzhalter, die Werte werden getrennt gesendet, und die Datenbank deutet sie nie als SQL. Derselbe Gedanke gilt für andere Interpreter, etwa Betriebssystembefehle.
+
+## Passwörter und Geheimnisse
+
+- Speichere Passwörter nie im Klartext. Speichere einen gesalzenen Hash, erzeugt mit einem für Passwörter gedachten Verfahren; ein **Salt** ist ein zufälliger Wert pro Passwort, damit gleiche Passwörter nicht gleiche Hashes ergeben.
+- Lege Passwörter, Tokens oder Schlüssel nie in Quellcode oder Versionsverwaltung. Nutze Umgebungsvariablen oder einen Secrets-Manager und tausche ein Geheimnis aus, das offengelegt wurde.
+- Schreibe keine Geheimnisse oder personenbezogenen Daten in Logdateien.
+
+## Von gemeinsamen Listen lernen
+
+Das OWASP-Projekt veröffentlicht weit verbreitete Übersichten häufiger Risiken von Webanwendungen. Nutze sie als Checkliste, worauf du achten musst.
+
+## Beispiel zur Veranschaulichung
+
+Nur zur Veranschaulichung; erfundener Login. Ein Entwickler baut die Abfrage, indem er den Text `WHERE name = '` mit dem eingegebenen Namen und `'` verbindet. Eine Testerin tippt einen Namen mit Anführungszeichen und zusätzlichem SQL, und die Anweisung ändert ihre Bedeutung. Die Lösung: die Anweisung `WHERE name = ?` mit dem Namen als Parameter. Zusätzlich wird das Namensfeld validiert (erlaubte Zeichen, Maximallänge), und die Passwortspalte enthält einen gesalzenen Hash statt des Passworts.
+
+## Wichtige Erkenntnisse
+
+- Jede Eingabe als nicht vertrauenswürdig behandeln und serverseitig mit Positivlisten validieren.
+- Parametrisierte Abfragen nutzen, damit Daten nie als Befehl ausgeführt werden.
+- Passwörter als gesalzene Hashes speichern und Geheimnisse aus Code und Logs fernhalten.
+- Gemeinsame Listen wie die OWASP-Übersichten als Checkliste nutzen.

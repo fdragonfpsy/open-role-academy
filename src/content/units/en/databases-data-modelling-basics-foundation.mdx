@@ -1,0 +1,114 @@
+---
+id: databases-data-modelling-basics-foundation
+competency: databases-data-modelling-basics
+level: foundation
+title: "Tables, keys and relationships"
+objectives:
+  - "Describe how a relational database stores data in tables, rows and columns."
+  - "Explain primary keys and foreign keys."
+  - "Model entities and one-to-many relationships."
+  - "Name the idea behind NoSQL databases and when they are an option."
+minutes: 30
+resources:
+  - wikipedia-relational-model
+  - wikipedia-entity-relationship-model
+  - wikipedia-foreign-key
+  - wikipedia-nosql
+  - wikipedia-de-relationales-datenbankmodell
+  - wikipedia-de-entity-relationship-modell
+  - wikipedia-de-fremdschluessel
+  - wikipedia-de-primaerschluessel
+  - wikipedia-de-nosql
+status: ai-draft
+sources:
+  - title: "Relational model"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Relational_model
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Entity–relationship model"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Foreign key"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Foreign_key
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "NoSQL"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/NoSQL
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Relationales Datenbankmodell"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Relationales_Datenbankmodell
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Entity-Relationship-Modell"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Entity-Relationship-Modell
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Fremdschlüssel"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Fremdschl%C3%BCssel
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Primärschlüssel"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Prim%C3%A4rschl%C3%BCssel
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "NoSQL"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/NoSQL
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+Nearly every application keeps data that must survive a restart: customers, orders, settings. A database does this job, and the way you shape the data decides how easy the application is to extend and how reliable it stays. You already know how to query data with SQL; here you learn how the data is organised in the first place.
+
+## The relational model
+
+A relational database stores data in **tables**. A table describes one kind of thing, such as customers. Each **row** is one instance, each **column** is one property with a fixed type. Tables are linked by shared values instead of being nested inside each other.
+
+## Keys
+
+- A **primary key** is a column (or a set of columns) whose value identifies each row uniquely. It must not be empty and must not repeat.
+- A **foreign key** is a column that holds the primary key value of a row in another table. It expresses a relationship and lets the database refuse values that point to nothing.
+
+## Modelling entities and relationships
+
+Before creating tables, sketch the **entities** (things the system must remember) and their **relationships** in an entity–relationship diagram. The common relationship types are:
+
+- one-to-many: one customer places many orders. The foreign key sits on the "many" side (the order table).
+- many-to-many: students attend courses and courses have students. A third table, often called a junction table, holds one row per pairing with two foreign keys.
+- one-to-one: rare; usually the data could live in one table.
+
+## NoSQL in one paragraph
+
+"NoSQL" is a loose label for databases that do not use the classic table model, for example document stores that keep JSON-like records or key-value stores. They are often chosen for flexible structures or for spreading data over many machines. They are an alternative, not a replacement: relational databases remain a solid default when data has clear relationships and you need consistent updates.
+
+## Worked example
+
+Illustration only; invented shop. The shop stores customers and orders. The table `customer` has the columns `id` (primary key), `name` and `email`. The table `order` has `id` (primary key), `customer_id` (foreign key to `customer.id`) and `ordered_on`. One customer can have many orders, so `customer_id` sits in `order`. Products and orders form a many-to-many relationship, because an order has several products and a product appears in several orders. You add the junction table `order_item` with the foreign keys `order_id` and `product_id`. If someone tries to insert an order with a `customer_id` that does not exist, the database rejects it.
+
+## Key takeaways
+
+- Relational databases store data in tables of rows and typed columns.
+- A primary key identifies a row; a foreign key points to a row in another table.
+- Model entities and relationships first; many-to-many needs a junction table.
+- NoSQL databases use other data models; choose by the shape of your data and your needs.

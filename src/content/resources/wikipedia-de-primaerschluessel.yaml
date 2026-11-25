@@ -1,0 +1,14 @@
+id: wikipedia-de-primaerschluessel
+url: "https://de.wikipedia.org/wiki/Prim%C3%A4rschl%C3%BCssel"
+title: "Primärschlüssel"
+provider: Wikipedia (Deutsch)
+language: de
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+licenseVerifiedOn: 2026-11-25
+mode: link
+competencies: [databases-data-modelling-basics]
+levels: [foundation]
+note: "Wikipedia text under CC BY-SA; HTTP 200 on 2026-11-25. Link only."

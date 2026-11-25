@@ -1,0 +1,109 @@
+---
+id: secure-coding-basics-advanced
+competency: secure-coding-basics
+level: advanced
+title: "CSRF, secure design and security in the pipeline"
+objectives:
+  - "Explain cross-site request forgery and common defences."
+  - "Apply server-side validation and secure defaults as design rules."
+  - "Use fuzzing, static analysis and review as security tests."
+  - "Judge dependency and supply-chain risks for a team."
+minutes: 30
+resources:
+  - wikipedia-cross-site-request-forgery
+  - wikipedia-data-validation
+  - wikipedia-fuzzing
+  - wikipedia-software-supply-chain
+  - wikipedia-principle-of-least-privilege
+  - wikipedia-de-cross-site-request-forgery
+  - wikipedia-de-fuzzing
+status: ai-draft
+sources:
+  - title: "Cross-site request forgery"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Cross-site_request_forgery
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Data validation"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Data_validation
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Fuzzing"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Fuzzing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Software supply chain"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Software_supply_chain
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Principle of least privilege"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Principle_of_least_privilege
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Cross-Site-Request-Forgery"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Cross-Site-Request-Forgery
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "Fuzzing"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Fuzzing
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+At advanced level you are responsible not only for your own code but for how a team prevents, finds and handles security flaws. That needs design rules that make the safe way the easy way, and testing that runs on every change.
+
+## Cross-site request forgery (CSRF)
+
+**CSRF** tricks a logged-in user's browser into sending a request to a site where the user is authenticated, for example by a prepared link or form on another site. If the browser attaches the session credentials automatically, the server may take the request as genuine. Common defences:
+
+- A secret, unpredictable **anti-CSRF token** per session or form that the server checks on state-changing requests.
+- Cookie attributes that restrict sending cookies with cross-site requests (the SameSite attribute), as an additional layer.
+- Never change state with GET requests.
+
+Frameworks often provide these protections; your task is to know when they are active and not to disable them.
+
+## Design rules that prevent classes of flaws
+
+- **Validate on the server, at trust boundaries**, with allow-lists. Client-side checks improve usability but are no security measure.
+- **Secure by default**: new accounts, tokens and features start with minimal rights, and risky options must be switched on deliberately.
+- **Fail closed**: when a check cannot be completed, deny access.
+- **Reduce the attack surface**: remove unused endpoints, features and dependencies.
+- Keep error messages for users free of internal details; log details for the team instead.
+
+## Security tests as part of delivery
+
+- **Static analysis** scans source code for risky patterns without running it; expect false positives and agree on how findings are triaged.
+- **Dependency scanning** reports known vulnerabilities in packages.
+- **Fuzzing** feeds large amounts of unexpected or random input to a program to find crashes and flaws that hand-written tests miss.
+- **Code review** with a security checklist, and tests for abuse cases (what if a user sends this value?).
+- Run these checks in the pipeline so that they happen on every change, and keep a short process for handling a reported vulnerability.
+
+## Supply chain at team level
+
+Decide who may add a dependency and how it is reviewed. Use lock files and a way to see what is in a release (an inventory of components). Limit the rights of the build system, because a build that can reach production secrets is a target.
+
+## Worked example
+
+Illustration only; invented admin page. An internal page deletes a user when it receives a GET request with the user number. A prepared link on another site can trigger it for a logged-in administrator. The team changes the action to POST, adds an anti-CSRF token check and sets the SameSite attribute on the session cookie. They add a test that sends the request without a token and expects a rejection. A fuzzing run against the import function of the same service finds an input that crashes the parser; the team fixes it and keeps the input as a regression test.
+
+## Key takeaways
+
+- CSRF abuses automatic credentials; defend with tokens, restricted cookies and no state change via GET.
+- Make the safe way the default: server-side validation, minimal rights, fail closed.
+- Combine static analysis, dependency scanning, fuzzing and review, and automate them.
+- Treat dependencies and the build system as part of the attack surface.

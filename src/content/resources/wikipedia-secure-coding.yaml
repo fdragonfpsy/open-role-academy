@@ -1,0 +1,14 @@
+id: wikipedia-secure-coding
+url: "https://en.wikipedia.org/wiki/Secure_coding"
+title: "Secure coding"
+provider: Wikipedia
+language: en
+format: article
+minutes: 10
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+licenseVerifiedOn: 2026-11-25
+mode: link
+competencies: [secure-coding-basics]
+levels: [foundation]
+note: "Wikipedia text under CC BY-SA; HTTP 200 on 2026-11-25. Link only."

@@ -1,0 +1,101 @@
+---
+id: ci-cd-devops-basics-foundation
+competency: ci-cd-devops-basics
+level: foundation
+title: "Continuous integration and environments"
+objectives:
+  - "Explain continuous integration and why small, frequent merges help."
+  - "Describe the stages of a basic pipeline."
+  - "Distinguish development, test and production environments."
+  - "Explain the idea of DevOps."
+minutes: 25
+resources:
+  - wikipedia-continuous-integration
+  - wikipedia-ci-cd
+  - wikipedia-deployment-environment
+  - wikipedia-devops
+  - wikipedia-de-kontinuierliche-integration
+  - wikipedia-de-devops
+status: ai-draft
+sources:
+  - title: "Continuous integration"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Continuous_integration
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "CI/CD"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/CI/CD
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Deployment environment"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/Deployment_environment
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "DevOps"
+    author: "Wikipedia contributors"
+    url: https://en.wikipedia.org/wiki/DevOps
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+    usage: cited
+  - title: "Kontinuierliche Integration"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/Kontinuierliche_Integration
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+  - title: "DevOps"
+    author: "Wikipedia-Autorinnen und -Autoren"
+    url: https://de.wikipedia.org/wiki/DevOps
+    license: CC-BY-SA-4.0
+    licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+    usage: cited
+---
+
+## Why this matters
+
+Big, rare releases are risky: many changes pile up, nobody knows which one broke something, and releasing becomes an event that people fear. Automating build, test and release makes releases small, frequent and boring, which is the goal.
+
+## Continuous integration (CI)
+
+In **continuous integration**, developers merge their changes into the shared main branch often, for example daily, and every merge triggers an automatic build and test run. Problems show up within minutes while the change is still fresh in mind. For CI to work, you need a version control system, tests that run without manual steps, and a team habit: when the build is red, fixing it comes first.
+
+## Pipelines
+
+A **pipeline** is the automated sequence of steps a change goes through. A basic one has these stages:
+
+1. **Build**: compile or package the software.
+2. **Test**: run the automated tests (fast ones first).
+3. **Analyse**: optional checks such as style rules or dependency scanning.
+4. **Package and deploy**: produce a deployable artefact and put it into an environment.
+
+If a stage fails, the pipeline stops and reports it. The pipeline definition is stored as a file in the repository, so it is versioned like code.
+
+## Environments
+
+An **environment** is a place where the software runs. A common setup:
+
+- **Development**: your machine or a shared system where you try things.
+- **Test or staging**: resembles production and is used to check a release before users see it.
+- **Production**: the live system used by real users, which needs the most care.
+
+The same built artefact should move through the environments; only configuration differs.
+
+## CI/CD and DevOps
+
+CI/CD stands for continuous integration and continuous delivery (or deployment): the pipeline continues from tested code to a releasable, or released, version. **DevOps** is a way of working in which development and operations share responsibility for building, running and improving a service, supported by automation and by feedback from running systems.
+
+## Worked example
+
+Illustration only; invented team. A team of four works on a booking website. Each pushes small changes to a short-lived branch and opens a merge request. The pipeline builds the site, runs unit tests and a style check, and reports the result in the request. Once merged, the pipeline deploys to the test environment automatically. One morning a merge turns the build red; the author sees the failing test within minutes, fixes it and merges again. Nobody has to hunt through a week of changes.
+
+## Key takeaways
+
+- CI means frequent merges, each verified by an automatic build and tests.
+- A pipeline runs build, test, analysis and deployment steps and stops on failure.
+- Development, test and production environments serve different purposes; move the same artefact through them.
+- DevOps shares responsibility for building and running software.

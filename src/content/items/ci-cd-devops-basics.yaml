@@ -1,0 +1,149 @@
+competency: ci-cd-devops-basics
+items:
+- id: cicd-f-ci
+  level: foundation
+  difficulty: 850
+  type: single
+  stem:
+    en: "What is the core idea of continuous integration?"
+    de: "Was ist der Kerngedanke der kontinuierlichen Integration?"
+  options:
+  - en: "Changes are merged often, each merge is built and tested"
+    de: "Änderungen werden oft zusammengeführt und automatisch geprüft"
+    correct: true
+  - en: "One person merges all changes by hand once at the end of a project"
+    de: "Eine Person führt alle Änderungen einmal am Projektende von Hand zusammen"
+    correct: false
+  - en: "Every developer keeps a private copy of the code for several months"
+    de: "Jede Entwicklerin hält mehrere Monate eine private Kopie des Codes"
+    correct: false
+  - en: "Tests are run only by customers after the software was released"
+    de: "Tests werden erst von Kundschaft nach der Auslieferung durchgeführt"
+    correct: false
+  explanation:
+    en: "Frequent small merges with automatic build and tests show problems within minutes, while the change is still fresh."
+    de: "Häufige kleine Merges mit automatischem Build und Tests zeigen Probleme nach Minuten, solange die Änderung noch frisch ist."
+  source: https://en.wikipedia.org/wiki/Continuous_integration
+- id: cicd-f-env
+  level: foundation
+  difficulty: 950
+  type: single
+  stem:
+    en: "What is the purpose of a test or staging environment?"
+    de: "Wofür dient eine Test- oder Staging-Umgebung?"
+  options:
+  - en: "To check a release in a production-like setup first"
+    de: "Ein Release vorab in einer produktionsähnlichen Umgebung zu prüfen"
+    correct: true
+  - en: "To store the backups of the production database for all years"
+    de: "Die Backups der Produktionsdatenbank für alle Jahre aufzubewahren"
+    correct: false
+  - en: "To run the live website for real customers on a small budget"
+    de: "Die Live-Website für echte Kundschaft mit kleinem Budget zu betreiben"
+    correct: false
+  - en: "To replace the need for automated tests in the pipeline"
+    de: "Die Notwendigkeit automatisierter Tests in der Pipeline zu ersetzen"
+    correct: false
+  explanation:
+    en: "A staging environment resembles production so that problems appear there first. It complements automated tests and does not replace them."
+    de: "Eine Staging-Umgebung ähnelt der Produktion, damit Probleme zuerst dort auftreten. Sie ergänzt automatisierte Tests und ersetzt sie nicht."
+  source: https://en.wikipedia.org/wiki/Deployment_environment
+- id: cicd-f-fail
+  level: foundation
+  difficulty: 1050
+  type: multi
+  stem:
+    en: "A pipeline stage fails after a merge. Which statements describe good practice? Select all that apply."
+    de: "Eine Pipeline-Stufe schlägt nach einem Merge fehl. Welche Aussagen beschreiben gute Praxis? Wähle alle zutreffenden aus."
+  options:
+  - en: "The pipeline stops and reports the failure to the team"
+    de: "Die Pipeline stoppt und meldet den Fehler an das Team"
+    correct: true
+  - en: "Fixing the red build has priority over new work"
+    de: "Die Reparatur des roten Builds hat Vorrang vor neuer Arbeit"
+    correct: true
+  - en: "The pipeline definition is kept in the repository like code"
+    de: "Die Pipeline-Definition liegt wie Code im Repository"
+    correct: true
+  - en: "The failing test is deleted so the build turns green again"
+    de: "Der fehlschlagende Test wird gelöscht, damit der Build wieder grün wird"
+    correct: false
+  - en: "The change is deployed to production and fixed there later"
+    de: "Die Änderung geht in die Produktion und wird dort später repariert"
+    correct: false
+  explanation:
+    en: "A failing stage should stop the pipeline and be fixed first. Deleting tests or deploying a failing change hides the problem."
+    de: "Eine fehlschlagende Stufe soll die Pipeline stoppen und zuerst behoben werden. Tests zu löschen oder eine fehlerhafte Änderung auszuliefern verdeckt das Problem."
+  source: https://en.wikipedia.org/wiki/Continuous_integration
+- id: cicd-p-cd
+  level: practitioner
+  difficulty: 1200
+  type: single
+  stem:
+    en: "What distinguishes continuous deployment from continuous delivery?"
+    de: "Was unterscheidet Continuous Deployment von Continuous Delivery?"
+  options:
+  - en: "With deployment, passing changes ship automatically"
+    de: "Bei Deployment gehen bestandene Änderungen automatisch in die Produktion"
+    correct: true
+  - en: "With deployment, no automated tests are run in the pipeline"
+    de: "Bei Deployment werden in der Pipeline keine automatisierten Tests ausgeführt"
+    correct: false
+  - en: "With delivery, the software is never released to any users"
+    de: "Bei Delivery wird die Software nie an irgendwelche Nutzenden ausgeliefert"
+    correct: false
+  - en: "With delivery, only the documentation is built and published"
+    de: "Bei Delivery wird nur die Dokumentation gebaut und veröffentlicht"
+    correct: false
+  explanation:
+    en: "Continuous delivery keeps every change releasable and a person decides when to release; continuous deployment releases each passing change automatically."
+    de: "Continuous Delivery hält jede Änderung auslieferbar, und ein Mensch entscheidet über den Zeitpunkt; Continuous Deployment liefert jede bestandene Änderung automatisch aus."
+  source: https://en.wikipedia.org/wiki/Continuous_delivery
+- id: cicd-p-bg
+  level: practitioner
+  difficulty: 1300
+  type: single
+  stem:
+    en: "How does blue-green deployment reduce release risk?"
+    de: "Wie senkt Blue-Green-Deployment das Release-Risiko?"
+  options:
+  - en: "The new version is checked in an idle copy first"
+    de: "Die neue Version wird erst in einer ungenutzten Kopie geprüft"
+    correct: true
+  - en: "The new version replaces the running one while users are online"
+    de: "Die neue Version ersetzt die laufende, während Nutzende online sind"
+    correct: false
+  - en: "The old version is deleted before the new one is installed"
+    de: "Die alte Version wird gelöscht, bevor die neue installiert wird"
+    correct: false
+  - en: "Only colours of the user interface are changed in each release"
+    de: "In jedem Release werden nur die Farben der Oberfläche geändert"
+    correct: false
+  explanation:
+    en: "Two production environments allow a check before the switch and a fast switch back if something is wrong. Shared data such as database changes still needs care."
+    de: "Zwei Produktionsumgebungen erlauben eine Prüfung vor dem Umschalten und ein schnelles Zurückschalten bei Problemen. Gemeinsame Daten wie Datenbankänderungen brauchen weiterhin Sorgfalt."
+  source: https://en.wikipedia.org/wiki/Blue%E2%80%93green_deployment
+- id: cicd-p-toggle
+  level: practitioner
+  difficulty: 1350
+  type: single
+  stem:
+    en: "What do feature toggles allow a team to do?"
+    de: "Was erlauben Feature-Toggles einem Team?"
+  options:
+  - en: "Deploy code now and release the function later"
+    de: "Code auszuliefern und die Funktion später freizuschalten"
+    correct: true
+  - en: "Skip the code review for every change behind a toggle"
+    de: "Das Code-Review für jede Änderung hinter einem Toggle zu überspringen"
+    correct: false
+  - en: "Keep toggles in the code forever without any cleanup"
+    de: "Toggles ohne jedes Aufräumen für immer im Code zu behalten"
+    correct: false
+  - en: "Test a function only once because toggles cannot fail"
+    de: "Eine Funktion nur einmal zu testen, weil Toggles nicht fehlschlagen können"
+    correct: false
+  explanation:
+    en: "A toggle separates deployment from release, so unfinished work can be merged early and a faulty function can be switched off fast. Toggles add code paths that need tests and cleanup."
+    de: "Ein Toggle trennt Auslieferung von Freischaltung, sodass unfertige Arbeit früh gemergt und eine fehlerhafte Funktion schnell abgeschaltet werden kann. Toggles erzeugen Codepfade, die Tests und Aufräumen brauchen."
+  source: https://en.wikipedia.org/wiki/Feature_toggle

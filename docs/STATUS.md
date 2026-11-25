@@ -1,5 +1,14 @@
 # Status
 
+## 2026-11-25 — Software Development content batch 3
+
+**Done**
+- databases-data-modelling-basics (2 levels), secure-coding-basics (3), ci-cd-devops-basics (2): 7 units per language (en+de, `ai-draft`), 21 items, 47 link-only Wikipedia resources (HTTP 200, verified 2026-11-25). Role stays `draft`. All checks green.
+
+**Reviewer to-dos:** written from general knowledge, cited pages not read in full: ACID descriptions, twelve-factor config in env vars, SameSite vs CSRF, blue-green/feature toggles, "merge often, e.g. daily" for CI, invented "5 percent of users" example; German wording not human-reviewed; verify `sources` titles/URLs.
+
+**Next:** Software Development batch 4 (agile-delivery-code-review), then publish and quality pass.
+
 ## 2026-11-24 (b) — Software Development content batch 2
 
 **Done**
