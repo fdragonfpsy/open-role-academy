@@ -1,5 +1,12 @@
 # Status
 
+## 2026-11-26 — QA nit #107; no open roadmap tasks left
+
+**Done**
+- Removed authoring-process sentences ("could not be checked for this course") from 9 units (consumer-rights-basics, email-marketing-automation, en+de); replaced by neutral hedges ("national law adds details; ask legal counsel"). Fixes #107 (item stems that quote sources remain, to be changed when next edited). All checks green.
+
+**Stopped because:** nothing actionable left. Roadmap open items are Phase 5 (owner-gated, needs privacy update) and Maintenance (no licenses older than 180 days; no weak-explanation list defined). Open `qa` nits: #57.
+
 ## 2026-11-25 (o) — Dependency updates, roadmap tidy
 
 **Done**
