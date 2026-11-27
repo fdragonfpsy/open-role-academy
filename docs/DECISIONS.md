@@ -2,6 +2,11 @@
 
 Format: date — decision — reason — alternatives considered.
 
+## 2026-11-27 — Third instance: quality agent; builder on Sundays only (owner decision)
+- **Decision:** A quality agent (CLAUDE.md §14) runs every evening except Sunday, max 3 competencies per run, high-risk topics first, on sonnet with opus only for disputed legal/tax/safety facts. The builder runs on Sunday evenings only. The weekly review stays on Saturday night.
+- **Reason:** All 13 roles exist, so the roadmap is almost empty. The weekly reviews found shallow work: Wikipedia-heavy sources, recall-only advanced items, answer cues, and a few wrong legal details. Nothing has been read by a human. A cap of 3 per run also spreads usage over the week instead of spending it in two nights.
+- **Alternatives:** Keep the builder adding features (low value now); more review runs only (they find problems but do not fix them in depth).
+
 ## 2026-11-21 — Answer-length cue checked per language; German cue pass before more Phase 4 content (weekly review)
 - **Decision:** The `uniquely longest` warning in `validate:content` runs separately for en and de. ROADMAP gets a "German answer-length cue and resource gaps" task (4 batches + 1 resource sub-task) in the quality-pass section, ahead of the remaining Data & Analytics content. Browser e2e in CI is added as a Phase 3 task.
 - **Reason:** The en-only check was cleared by padding English distractors; in German 24 competencies are still cued (> 50%). German is a first-class language (CLAUDE.md §1). e2e passes locally but is not run in CI.

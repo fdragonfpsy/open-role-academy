@@ -173,6 +173,24 @@ One role per task, in the order of CLAUDE.md §4.3. Each task = framework + cont
 - [ ] Optional AI tutor via Cloudflare Workers AI free allocation: explain-this-unit only, strict per-IP and per-day limits, labeled, never used for scoring; update privacy policy first
 - [ ] Anonymous, cookie-less aggregate item statistics to calibrate item difficulty (only if it can be done without personal data)
 
+## Phase Q — Quality deepening (quality agent, CLAUDE.md §14)
+
+Progress is tracked per competency in `docs/QUALITY.md`; tick a role when all its competencies are `done`.
+- [ ] Legal & Compliance
+- [ ] Human Resources
+- [ ] Finance & Accounting
+- [ ] IT Support & Operations
+- [ ] Sales
+- [ ] Marketing
+- [ ] Customer Service
+- [ ] Project Management
+- [ ] Procurement & Supply Chain
+- [ ] Data & Analytics
+- [ ] Software Development
+- [ ] Controlling
+- [ ] People Leadership
+- [ ] Core track
+
 ## Maintenance (every 10th routine run, or when nothing else is open)
 
 - [ ] Re-verify licenses older than 180 days; fix or remove broken links from link-check issues

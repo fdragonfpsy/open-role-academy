@@ -198,6 +198,34 @@ A separate weekly run reviews the builder's work with fresh context and steers t
 
 **Report**: prepend a dated entry to `docs/WEEKLY.md` with: done this week (counts), quality verdict, problems found, changes made, recommendations for the owner (including whether more or fewer run windows look worthwhile, based on throughput), and a one-line reminder that the owner should compare this with the plan's usage meter.
 
-**Builder rule**: at the start of every run, fix open `qa` issues labeled `blocker` or `fix` before new roadmap work.
+**Builder rule**: at the start of every run, fix open `qa` issues labeled `blocker` or `fix` before new roadmap work. Since 2026-11-27 the builder runs on Sunday evenings only (§14); the quality agent fixes `qa` issues about content it is working on.
 
 **Models**: the weekly review runs on **opus** (medium effort) and does the review and judgement itself; do not delegate the review to sonnet subagents. Use **haiku** subagents only for mechanical work (link checks, counting PRs and commits, running checks). The nightly builder stays on sonnet (§12); a different model for the reviewer reduces shared blind spots.
+
+## 14. Quality deepening (third instance)
+
+The builder made all roles in breadth; the **quality agent** now makes them trustworthy in depth. It improves existing content; it does not add roles or features.
+
+**Schedule and roles**
+- Quality agent: every evening except Sunday (own scheduled task, prompt `prompts/QUALITY.md`), same windows as §11.
+- Builder: **Sunday evening only** (open `qa` issues labeled `blocker`/`fix`, open roadmap tasks, maintenance). On other days the builder does nothing if it is started.
+- Weekly review (§13): Saturday night; it audits the quality agent's work too.
+- Never run two instances on the same branch; the quality agent works only on `claude/quality-*` branches.
+
+**Order of work** (ledger: `docs/QUALITY.md`, one row per competency)
+1. High-risk first: Legal & Compliance; HR (employment law, data protection, health & safety, payroll); Finance (tax, financial statements, internal controls); every information-security and data-protection competency.
+2. Then the other roles in the order of §4.3, core track last.
+
+**One slice = one competency, all of this:**
+1. **Fact-check** every factual claim in its units (en and de): numbers, laws, articles, deadlines, standards, definitions. Open the cited source and confirm it; for laws prefer the official text (EUR-Lex, gesetze-im-internet.de). Fix, hedge or delete what cannot be confirmed. No new unsourced facts.
+2. **Sources:** every competency gets at least 2 non-Wikipedia resources from the preferred list (§6), license-checked; Wikipedia may stay as an extra.
+3. **Items:** advanced items must require application or judgement (a scenario, a calculation, a trade-off), not recall; no obviously absurd distractors; no length or absolute-word cues in either language (the validator warnings must be 0 for this competency); explanations teach why the wrong options are wrong.
+4. **en/de:** both versions say the same thing; natural German, du-form.
+5. **Human review list:** add the competency to `docs/HUMAN-REVIEW.md` with risk level (high/medium/low), the 1–3 units a human expert should read first and the exact claims worth checking. Never set `status: reviewed`; only a human does that.
+6. Update the ledger row (date, what changed, counts) and open a PR with `automerge`.
+
+**Pace:** at most **3 competencies per run**. Depth beats speed; a finished, checked competency is the unit of progress. This also keeps weekly usage steady instead of spending it in one night.
+
+**Models:** main session **sonnet** (medium effort). Use an **opus** subagent only to settle a disputed legal, tax or safety fact; **haiku** subagents for link and license checks and running the validator.
+
+**Not allowed:** new roles or competencies, engine or UI changes (file a `qa` issue for the builder instead), changing §2, §6, §9, §11 or §13/§14, or marking content as reviewed.
