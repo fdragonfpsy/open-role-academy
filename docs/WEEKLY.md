@@ -2,6 +2,57 @@
 
 QA and project-management reports by the weekly review run (CLAUDE.md §13). Newest first.
 
+## 2026-11-28 — Weekly review #3 (scope: PRs #109–#135, merged 2026-11-21 to 2026-11-27)
+
+**Done this week (counts)**
+- 27 PRs merged (26 builder + 1 owner setup session, #135), 0 open, 0 started but not merged. Roadmap: 34 boxes ticked. These were the German length-cue batches, the resource gaps (#105, #106), e2e in CI, and Phase 4 for Data & Analytics, Software Development, Controlling, Legal & Compliance and People Leadership, all published. **Phase 4 is complete: all 13 roles are published.** Phase Q (quality agent, §14) was added on 27 Nov. 0 of 130 ledger rows are done so far.
+- Content: 130 competencies (+32) · 728 units (+232) · 1420 items (+360) · 843 resources (+346). Tests 110 → 111.
+- CI: 35 PR runs, 9 failed + 1 cancelled (7 on Sun 22, when e2e entered CI, and 2 on Wed 25). Each was fixed within the same run, and no branch stayed red longer than about 10 min. `main` never went red. Locally on `main`: lint, typecheck, 110 tests, validate:content (0 errors, 0 warnings before this PR) and build all pass.
+
+**Runs (Berlin time, first → last merge)**
+| Run | PRs | Span | Note |
+|---|---|---|---|
+| Sat 21 Nov, 02:17 | #108 | — | weekly review #2 |
+| Sat 21 Nov, 20:13 | #109 | — | 1 slice (German cue pass) |
+| Sun 22 Nov, 20:14–21:21 | #110–#115 | 1 h 07 min | 6 slices; stopped with ~2 h left ("run kept lean") |
+| Mon 23 Nov, 20:14 | #116 | — | 1 slice |
+| Tue 24 Nov, 20:20–20:31 | #117–#118 | 11 min | 2 slices |
+| Wed 25 Nov, 20:17–22:27 | #119–#133 | 2 h 10 min | 15 slices (3½ roles) |
+| Thu 26 Nov, 20:10 | #134 | — | 1 slice; "nothing actionable left" |
+| Fri 27 Nov, 15:24 | #135 | — | owner session (introduces §14), daytime; not a routine run |
+| Fri 27 Nov, evening | — | — | no quality-agent output (#138) |
+Every routine merge falls inside the §11 windows.
+
+**QA verdict: facts and licensing are sound. Item design is still the weak point, and legal units are vaguer than they need to be.**
+Sampled 4 items each from 22 of the 32 new competencies (all legal, controlling, high-risk software and leadership ones), 88 items in English plus 22 in German. I recomputed every calculation item and read one unit in full in en and de (gdpr-data-protection-compliance practitioner). I also scanned numbers and claims in 4 more units, ran resource and licence statistics over all 346 new resources, and reviewed the CI and e2e changes. No learner UI or engine code changed this week.
+- Facts: every sampled calculation is correct: variance ±12%, mix effect −400, NPV +5,829 at 8%, CM ratio 37.5%, special order +3,000, CM II. GDPR roles, DPO, DPIA trigger, six lawful bases, processor contract and RoPA match the Regulation. The AI Act four risk tiers and the DSA scope match the Commission pages. Software items (CSRF tokens, 401 vs 403, idempotency keys, atomicity, index trade-offs, mutation testing) are correct. No errors found.
+- Licensing (§6): clean. All 346 new resources are `mode: link` (CC-BY-SA 303, CC-BY-NC-SA 25, free-access 17, CC-BY 1), 0 embeds repo-wide, and every `licenseVerifiedOn` is recent.
+- Resources: **regressed.** 83% of the new resources are Wikipedia (last week 71%), and 61 of 130 competencies have fewer than 2 non-Wikipedia resources. §14 step 2 covers this; it is the main sourcing job for the quality agent.
+- Items (§8): length cue gone in both languages (validator). **But a second cue is strong:** 33% of distractors contain an absolute word ("always", "never", "only") against 7% of correct options (de 35% vs 11%). Many advanced items in Legal, Controlling and Leadership still pair one sensible answer with 2–3 strawmen ("choose the project with the shorter name", "the report colour scheme", "stop monitoring because it produces uncomfortable findings"). This is the pattern §14 step 3 targets. Two items had padded or near-duplicate distractors (acw-f-bribery, cps-a-dict): fixed here.
+- Legal units: 24 units in 9 legal competencies say "no section numbers, deadlines or amounts" and leave out easy-to-verify facts the learner needs, such as the GDPR response period, although the unit already links EUR-Lex (#136).
+- en/de: the sampled unit pair has full structural parity, with natural German, du-form and inclusive wording. German item options read naturally.
+- Narration: 9 item stems in 7 competencies still quote "the Wikipedia article" (added to #57). #107 closed (fixed in #134).
+- CI/e2e: e2e now runs in CI. Good. But the fixes for flaky tests added retry loops: Enter pressed up to 3×, Space pressed again, a wait for focus to be stolen. These can hide lost keyboard input or focus stealing for real users on slow devices (#137, for the builder).
+- Not checked: DigComp 3.0 labels against the JRC page (carried over again); a full axe scan (no UI change this week).
+
+**Problems found**
+1. The quality agent has produced nothing yet. The first planned evening (Fri 27) left no branch, PR or STATUS line (#138, owner).
+2. Throughput is uneven and runs stop early with vague reasons. Wed gave 15 slices; Sun, Mon and Tue together gave 9 and stopped with hours left ("run kept lean"). The stop-reason rule from last week is followed only loosely. This matters less now, because the builder runs only on Sundays.
+3. A rule without a check: §14 requires absolute-word cues to show 0 validator warnings, but the validator had no such check, so the quality agent could not measure it.
+4. Source quality regressed (83% Wikipedia in new resources) while breadth was being finished.
+5. §12 model use still cannot be verified from git.
+
+**Changes made (this PR, `claude/pm-weekly-2026-11-28`)**
+- `validate:content`: new per-language **absolute-word cue** warning (more than 50% of a competency's single-choice items cued), with a test. It shows 23 warnings (17 competencies) now. The quality agent clears them per competency.
+- Items: fixed the near-duplicate distractor in `acw-f-bribery` and the padded distractors in `cps-a-dict` (en+de).
+- DECISIONS: entry for the new check. Issues: #136 (`qa`, `fix`, legal facts withheld), #137 (`qa`, `fix`, e2e retries), #138 (`owner`, quality-agent schedule); comment on #57; #107 closed.
+
+**Recommendations for the owner**
+- Check that the quality-agent schedule exists and fires Mon–Sat at 20:00 (#138). Without it, Phase Q does not move.
+- Run windows: no change. At most 3 competencies per run × 6 evenings means up to 18 per week, so the 130 ledger rows take about 7–8 weeks. If the first runs regularly finish 3 competencies early, raising the cap is a §14 decision for you. Wait for 2 weeks of data first.
+- Still open: apply the Supabase migration (BLOCKERS); fill the legal placeholders and the Cloudflare steps in `docs/LAUNCH.md`; delete the stale branch `claude/admiring-mayer-dn6uyq` (third report in a row).
+- Compare this report with the Claude plan's usage meter: did Wednesday's 15-slice night use most of the week, and how much does a 3-competency quality run cost?
+
 ## 2026-11-21 — Weekly review #2 (scope: PRs #60–#104, merged 2026-11-14 to 2026-11-20)
 
 **Done this week (counts)**

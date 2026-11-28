@@ -2,6 +2,11 @@
 
 Format: date — decision — reason — alternatives considered.
 
+## 2026-11-28 — Absolute-word cue becomes a validator warning (weekly review)
+- **Decision:** `validate:content` warns (per language) when more than 50% of a competency's single-choice items have absolute words ("always", "never", "only", "immer", "nur" …) in at least 2 distractors but none in the correct option. The word lists sit in `ABSOLUTE_WORDS` in `src/validator/validate.ts`. The check currently flags 23 files (17 competencies). It is a warning, not an error.
+- **Reason:** CLAUDE.md §14 asks the quality agent to remove absolute-word cues with "validator warnings 0", but no such check existed, so the rule could not be measured. Across all items, 33% of distractors contain an absolute word against 7% of correct options (de: 35% vs 11%). That cue is as strong as the length cue was.
+- **Alternatives:** An item-level error (would turn `main` red at once); counting single distractors (too noisy, since "only" is often legitimate); leaving the check to manual review (the 2026-11-21 report showed that an unchecked rule gets gamed or skipped).
+
 ## 2026-11-27 — Third instance: quality agent; builder on Sundays only (owner decision)
 - **Decision:** A quality agent (CLAUDE.md §14) runs every evening except Sunday, max 3 competencies per run, high-risk topics first, on sonnet with opus only for disputed legal/tax/safety facts. The builder runs on Sunday evenings only. The weekly review stays on Saturday night.
 - **Reason:** All 13 roles exist, so the roadmap is almost empty. The weekly reviews found shallow work: Wikipedia-heavy sources, recall-only advanced items, answer cues, and a few wrong legal details. Nothing has been read by a human. A cap of 3 per run also spreads usage over the week instead of spending it in two nights.

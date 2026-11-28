@@ -152,11 +152,11 @@ items:
       en: "Two reports use different formulas under the same KPI name. What is the most sustainable fix?"
       de: "Zwei Berichte verwenden unter demselben Kennzahlennamen unterschiedliche Formeln. Was ist die nachhaltigste Lösung?"
     options:
-      - en: "Let each department keep using its own formula, silently"
-        de: "Jede Abteilung nutzt ihre eigene Formel, ohne darüber zu sprechen"
+      - en: "Let each department keep its own formula and explain the gap in a footnote"
+        de: "Jede Abteilung behält ihre Formel, und eine Fußnote erklärt die Abweichung"
         correct: false
-      - en: "Remove the KPI from all reports for good, silently"
-        de: "Die Kennzahl ohne Hinweis dauerhaft aus allen Berichten entfernen"
+      - en: "Remove the KPI from the reports until the dispute is settled"
+        de: "Die Kennzahl aus den Berichten nehmen, bis der Streit geklärt ist"
         correct: false
       - en: "Agree one owned KPI definition"
         de: "Eine verantwortete Definition im Glossar vereinbaren"

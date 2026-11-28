@@ -250,6 +250,39 @@ describe('content validator', () => {
     expect(cueWarnings(b)).toHaveLength(0);
   });
 
+  it('warns when absolute words mark the distractors but not the correct option (per language)', () => {
+    const absWarnings = (b: ContentBundle) =>
+      validateContent(b, { today: TODAY }).filter((i) => i.level === 'warning' && /absolute words/.test(i.message));
+    const b = validBundle();
+    for (const item of d(b.items[0]!.data).items) item.options = [
+      { en: 'Check the version first', de: 'Zuerst die Version prüfen', correct: true },
+      { en: 'Always update at once', de: 'Sofort aktualisieren', correct: false },
+      { en: 'Never update a library', de: 'Eine Bibliothek prüfen', correct: false },
+      { en: 'Ask a colleague', de: 'Eine Kollegin fragen', correct: false },
+    ];
+    const en = absWarnings(b);
+    expect(en).toHaveLength(1);
+    expect(en[0]!.message).toMatch(/\(en\)/);
+    for (const item of d(b.items[0]!.data).items) {
+      item.options[1].en = 'Update at once';
+      item.options[1].de = 'Immer sofort aktualisieren';
+      item.options[2].de = 'Nie eine Bibliothek aktualisieren';
+    }
+    const de = absWarnings(b);
+    expect(de).toHaveLength(1);
+    expect(de[0]!.message).toMatch(/\(de\)/);
+    // An absolute word in the correct option too removes the cue.
+    for (const item of d(b.items[0]!.data).items) item.options[0].de = 'Immer zuerst die Version prüfen';
+    expect(absWarnings(b)).toHaveLength(0);
+    // Words that merely contain an absolute word (e.g. "allein", "Niere") do not count.
+    for (const item of d(b.items[0]!.data).items) {
+      item.options[0].de = 'Zuerst die Version prüfen';
+      item.options[1].de = 'Allein aktualisieren';
+      item.options[2].de = 'Nieren prüfen';
+    }
+    expect(absWarnings(b)).toHaveLength(0);
+  });
+
   it('warns when a competency has no framework reference', () => {
     const b = validBundle();
     const warnings = validateContent(b, { today: TODAY }).filter((i) => i.level === 'warning');

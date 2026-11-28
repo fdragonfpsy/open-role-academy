@@ -14,8 +14,8 @@ items:
   - en: A company pen with a logo handed out at a public fair
     de: Ein Firmenkugelschreiber mit Logo auf einer öffentlichen Messe
     correct: false
-  - en: A correct invoice paid on time to the named supplier account
-    de: Eine korrekte Rechnung, pünktlich auf das genannte Lieferantenkonto bezahlt
+  - en: A standard volume discount that is written into the signed framework contract
+    de: Ein üblicher Mengenrabatt, der im unterzeichneten Rahmenvertrag festgelegt ist
     correct: false
   - en: A correct invoice, paid on time to the supplier's usual account as agreed
     de: Eine korrekte Rechnung, wie vereinbart pünktlich auf das übliche Konto des Lieferanten bezahlt
