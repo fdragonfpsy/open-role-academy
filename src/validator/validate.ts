@@ -25,6 +25,29 @@ export const LICENSE_MAX_AGE_DAYS = 180;
 /** Warn when more than this share of a competency's single-choice items has the correct option as the uniquely longest (checked per language, en and de). */
 export const LONGEST_CORRECT_MAX_SHARE = 0.5;
 export const LONGEST_CORRECT_MIN_ITEMS = 4;
+/**
+ * Absolute-word cue (weekly review 2026-11-28): test-wise learners rule out options with words like "always"/"never".
+ * An item is cued when its correct option has no absolute word but at least ABSOLUTE_CUE_MIN_DISTRACTORS distractors do.
+ * Warn when more than ABSOLUTE_CUE_MAX_SHARE of a competency's single-choice items are cued (per language).
+ */
+export const ABSOLUTE_CUE_MAX_SHARE = 0.5;
+export const ABSOLUTE_CUE_MIN_DISTRACTORS = 2;
+export const ABSOLUTE_WORDS: Record<'en' | 'de', RegExp> = {
+  en: /\b(always|never|only|all|every|everyone|everything|none|nothing|nobody|no one|entirely|completely|guaranteed?|guarantees)\b/i,
+  de: /(?<![\p{L}])(immer|nie|niemals|nur|alle|allen|alles|jede|jeder|jedes|jeden|jedem|keine|keiner|keines|keinen|keinem|nichts|niemand|ausschließlich|völlig|vollständig|stets|garantiert)(?![\p{L}])/iu,
+};
+
+/** True if the correct option has no absolute word while ≥2 distractors have one (single-choice items). */
+export function correctAvoidsAbsoluteWords(
+  options: readonly { en: string; de: string; correct: boolean }[],
+  lang: 'en' | 'de' = 'en',
+): boolean {
+  const correct = options.filter((o) => o.correct);
+  if (correct.length !== 1) return false;
+  const re = ABSOLUTE_WORDS[lang];
+  if (re.test(correct[0]![lang])) return false;
+  return options.filter((o) => !o.correct && re.test(o[lang])).length >= ABSOLUTE_CUE_MIN_DISTRACTORS;
+}
 
 export interface ValidateOptions {
   /** ISO date used for "verified in the future" / "older than 180 days" checks. */
@@ -169,6 +192,13 @@ export function validateContent(bundle: ContentBundle, opts: ValidateOptions): I
           file,
           `${cued}/${singles.length} single-choice items have the correct option as the uniquely longest (${lang}); ` +
             `rewrite options so length gives no clue (max ${Math.round(LONGEST_CORRECT_MAX_SHARE * 100)}%)`,
+        );
+      const absCued = singles.filter((i) => correctAvoidsAbsoluteWords(i.options, lang)).length;
+      if (singles.length >= LONGEST_CORRECT_MIN_ITEMS && absCued / singles.length > ABSOLUTE_CUE_MAX_SHARE)
+        warn(
+          file,
+          `${absCued}/${singles.length} single-choice items have absolute words (always, never, only …) in ≥${ABSOLUTE_CUE_MIN_DISTRACTORS} distractors but not in the correct option (${lang}); ` +
+            `rewrite distractors as plausible misconceptions (max ${Math.round(ABSOLUTE_CUE_MAX_SHARE * 100)}%)`,
         );
     }
   }
